@@ -2,7 +2,7 @@
   "docsets_to_publish": [
     {
       "docset_name": "dynamics365-contact-center",
-      "build_source_folder": "cc-docs",
+      "build_source_folder": "contact-center",
       "build_output_subfolder": "dynamics365-contact-center",
       "locale": "en-us",
       "monikers": [],

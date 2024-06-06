@@ -16,9 +16,9 @@ Dynamics 365 Contact Center is a Copilot-first, cloud-based contact center that 
 
 ## Section heading
 
-<!--add your content here-->
 
-<!--Next steps Required. Provide at least one next step and no more than three. Include some context so the customer can determine why they would click the link.-->
+
+
 ## Next steps
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+

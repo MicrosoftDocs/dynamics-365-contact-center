@@ -139,9 +139,9 @@ additionalContent:
     - title: Collaborate
     - title: Explore your apps
       links:
-      - url: /dynamics365/customer-service/implement/cs-admin-center
+      - url: implement/cc-admin-center.md
         text: Admins, use Contact Center admin center
-      - url: /dynamics365/customer-service/implement/csw-overview
+      - url: implement/ccw-overview.md
         text: Agents, use Contact center workspace
 
   - title: Related products

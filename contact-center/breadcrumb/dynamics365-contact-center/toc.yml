@@ -1,3 +1,7 @@
 - name: Dynamics 365 Contact Center
   tocHref: /
   topicHref: /
+  items:
+  - name: Customer Service
+    tocHref: /dynamics365/contact-center/
+    topicHref: /dynamics365/contact-center/index

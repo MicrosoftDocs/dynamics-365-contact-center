@@ -141,7 +141,7 @@
         - name: Use WeChat channel
           href: /dynamics365/customer-service/use/wechat-channel?context=/dynamics365/contact-center/context/use-context
         - name: View social profiles
-          href: s/dynamics365/customer-service/use/upported-channels-social-profiles?context=/dynamics365/contact-center/context/use-context
+          href: /dynamics365/customer-service/use/supported-channels-social-profiles?context=/dynamics365/contact-center/context/use-context
       - name: Agent productivity tools
         items: 
         - name: Productivity pane in Customer Service workspace

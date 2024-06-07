@@ -42,7 +42,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "~/breadcrumb/dynamics365-contact-center/toc.yml",
+      "breadcrumb_path": "~/breadcrumb/dynamics365-contact-center/toc.json",
       "feedback_system": "Standard",
       "permissioned-type": "public"
     },

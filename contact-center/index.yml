@@ -29,10 +29,7 @@ highlightedContent:
     - title: Training
       itemType: training
       url: /learn/modules/get-started-with-dynamics-365-contact-center/
-    # Card
-    - title: Troubleshoot
-      itemType: concept
-      url: /troubleshoot/dynamics-365/contact-center/welcome-contact-center
+
 additionalContent: 
   sections:
   - title: Implement

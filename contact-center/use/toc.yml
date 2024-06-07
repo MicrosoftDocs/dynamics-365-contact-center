@@ -7,7 +7,7 @@
       - name: Welcome to Dynamics 365 Contact Center
         href: ../overview-contact-center.md
       - name: Troubleshoot and FAQs
-        href: /implement/cs-troubleshooting-faqs?context=/dynamics365/contact-center/context/use-context
+        href: /dynamics365/customer-service/implement/cs-troubleshooting-faqs?context=/dynamics365/contact-center/context/use-context
       - name: Inbox
         items:
           - name: Use the inbox

@@ -7,11 +7,11 @@
       - name: Welcome to Dynamics 365 Contact Center
         href: ../overview-contact-center.md
       - name: Troubleshoot and FAQs
-        href: /implement/cs-troubleshooting-faqs?toc=/dynamics365/contact-center/use/toc.json&bc=../../breadcrumb/toc.yml
+        href: /implement/cs-troubleshooting-faqs?context=/dynamics365/contact-center/context/use-context
       - name: Inbox
         items:
           - name: Use the inbox
-            href: /dynamics365/customer-service/use/use-inbox?toc=/dynamics365/contact-center/use/toc.json&bc=../../breadcrumb/toc.yml
+            href: /dynamics365/customer-service/use/use-inbox?context=/dynamics365/contact-center/context/use-context
       - name: Timeline
         items: 
           - name: Use timeline

@@ -205,7 +205,7 @@
           - name: Omnichannel Summary dashboard
             href: /dynamics365/customer-service/use/omnichannel-summary-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Omnichannel Conversation dashboard
-            href:/dynamics365/customer-service/use/ oc-conversation-dashboard?context=/dynamics365/contact-center/context/use-context
+            href: /dynamics365/customer-service/use/ oc-conversation-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Omnichannel Queue dashboard
             href: /dynamics365/customer-service/use/oc-queue-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Omnichannel Voice dashboard

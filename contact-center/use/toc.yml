@@ -5,19 +5,19 @@
       - name: Dynamics 365 Contact Center documentation
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
-        href: ../overview.md
+        href: ../overview-contact-center.md
       - name: Troubleshoot and FAQs
         href: ../implement/cs-troubleshooting-faqs.md?toc=/dynamics365/customer-service/use/toc.json&bc=../../breadcrumb/toc.yml
       - name: Inbox
         items:
           - name: Use the inbox
-            href: use-inbox.md
+            href: /dynamics365/customer-service/use/use-inbox?context=/dynamics365/context/contact-center-context
       - name: Timeline
         items: 
           - name: Use timeline
             href: /powerapps/user/add-activities
           - name: Learn about linking timeline notes with table records
-            href: link-note-to-entity-task.md
+            href: /dynamics365/customer-service/use/link-note-to-entity-task
       - name: Unified routing and assignment
         items:
           - name: View historical analytics reports

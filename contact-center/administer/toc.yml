@@ -5,7 +5,7 @@
       - name: Dynamics 365 Contact Center documentation
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
-        href: ../overview-contact-center
+        href: ../overview-contact-center.md
       - name: Manage roles and personas
         items:
         - name: Manage users

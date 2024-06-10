@@ -1,0 +1,12 @@
+- name: Dynamics 365 Contact Center
+  items: 
+    - name: Extend your contact center
+      items:
+      - name: Dynamics 365 Contact Center documentation
+        href: ../index.yml
+      - name: Welcome to Dynamics 365 Contact Center
+        href: ../overview-contact-center.md?context=../context/extend-context
+    - name: Administer Dynamics 365 Contact Center
+      href: ../overview-contact-center.md?context=../context/administer-context
+    - name: Manage Dynamics 365 Contact Center
+      href: ../overview-contact-center.md?context=../context/use-context

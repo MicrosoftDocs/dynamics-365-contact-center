@@ -5,7 +5,7 @@
       - name: Dynamics 365 Contact Center documentation
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
-        href: ../overview-contact-center.md
+        href: ../overview-contact-center.md?context=../context/administer-context
       - name: Manage roles and personas
         items:
         - name: Manage users
@@ -16,6 +16,14 @@
           href: /dynamics365/customer-service/administer/role-persona-mapping?context=../context/administer-context
         - name: Delete historical data of agent capacity updates
           href: /dynamics365/customer-service/administer/manage-historical-data-capacity-updates?context=../context/administer-context
+      - name: Set up Dynamics 365 Contact center
+        items:
+        - name: System requirements for Dynamics 365 Contact Center
+          href: system-requirements.md
+        - name: Set up embedded experience
+          href: set-up-embedded-experience.md
+        - name: Set up standalone experience
+          href: set-up-standalone-experience.md
       - name: Unified routing and assignment
         items:
         - name: Overview of unified routing
@@ -42,3 +50,8 @@
             href: /dynamics365/customer-service/administer/configure-preferred-agent?context=../context/administer-context
           - name: Manage overflow of work items in queues
             href: /dynamics365/customer-service/administer/manage-overflow?context=../context/administer-context
+        - name: Configure routing to preferred agents
+    - name: Manage Dynamics 365 Contact Center
+      href: ../overview-contact-center.md?context=../context/use-context
+    - name: Extend Dynamics 365 Contact Center
+      href: ../overview-contact-center.md?context=../context/extend-context

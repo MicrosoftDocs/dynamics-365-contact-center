@@ -5,9 +5,7 @@
       - name: Dynamics 365 Contact Center documentation
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
-        href: ../overview-contact-center.md
-      - name: Troubleshoot and FAQs
-        href: /dynamics365/customer-service/implement/cs-troubleshooting-faqs?context=../context/use-context
+        href: ../overview-contact-center.md?context=../context/use-context
       - name: Inbox
         items:
           - name: Use the inbox
@@ -278,9 +276,7 @@
         href: https://cloudblogs.microsoft.com/dynamics365/it/product/dynamics-365-customer-service
       - name: Community
         href: https://community.dynamics.com/forums/thread/?groupid=25cd05f7-e478-4843-beb5-9ecf4b3e1f74
-    - name: Administer Dynamics 365 Customer Service
-      href: /dynamics365/customer-service/implement/overview?toc=/dynamics365/customer-service/administer/toc.json&bc=../../breadcrumb/toc.yml
-    - name: Implement Dynamics 365 Customer Service
-      href: /dynamics365/customer-service/implement/cs-troubleshooting-faqs?toc=/dynamics365/customer-service/implement/toc.json&bc=../../breadcrumb/toc.yml
-    - name: Develop Dynamics 365 Customer Service
-      href: /dynamics365/customer-service/develop/omnichannel-developer?toc=/dynamics365/customer-service/develop/toc.json&bc=../../breadcrumb/toc.yml
+    - name: Administer Dynamics 365 Contact Center
+      href: ../overview-contact-center.md?context=../context/administer-context
+    - name: Extend Dynamics 365 Contact Center
+      href: ../overview-contact-center.md?context=../context/extend-context

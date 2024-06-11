@@ -72,11 +72,9 @@
           href: /dynamics365/customer-service/use/voice-channel-monitor-calls?context=../context/use-context
       - name: Chat and Channels
         items:
-        - name: Omnichannel for Customer Service for agents
-          href: /dynamics365/customer-service/use/omnichannel-customer-service-app-agent?context=../context/use-context
-        - name: Sign into the agent app
-          href: /dynamics365/customer-service/use/oc-sign-in-omnichannel?context=../context/use-context
-        - name: Know the agent interface in Omnichannel for Customer Service
+        - name: Overview of Contact Center workspace
+          href: ccw-overview.md
+        - name: Know the agent interface
           href: /dynamics365/customer-service/use/oc-introduction-agent-interface?context=../context/use-context
         - name: View agent dashboard and work items
           href: /dynamics365/customer-service/use/oc-agent-dashboard?context=../context/use-context
@@ -130,8 +128,6 @@
           href: /dynamics365/customer-service/use/sms-telesign-twilio?context=../context/use-context
         - name: Use Facebook channel
           href: /dynamics365/customer-service/use/facebook?context=../context/use-context
-        - name: Use Google's Business Messages channel
-          href: /dynamics365/customer-service/use/google-business-messages?context=../context/use-context
         - name: Use WhatsApp channel
           href: /dynamics365/customer-service/use/whatsapp?context=../context/use-context
         - name: Use Microsoft Teams channel
@@ -142,7 +138,7 @@
           href: /dynamics365/customer-service/use/supported-channels-social-profiles?context=../context/use-context
       - name: Agent productivity tools
         items: 
-        - name: Productivity pane in Customer Service workspace
+        - name: Productivity pane in Contact Center workspace
           href: /dynamics365/customer-service/use/csw-productivity-pane?context=../context/use-context
         - name: View smart assist suggestions for knowledge articles and similar cases
           href: /dynamics365/customer-service/use/oc-view-ai-suggested-cases-articles?context=../context/use-context
@@ -184,9 +180,9 @@
           href: /dynamics365/customer-service/use/copilot-chat-customer-service-data?context=../context/use-context
       - name: Analytics dashboards and insights
         items: 
-        - name: Use Omnichannel real-time analytics dashboards
+        - name: Use real-time analytics dashboards
           items:
-          - name: Overview of Omnichannel real-time analytics reports
+          - name: Overview of real-time analytics reports
             href: /dynamics365/customer-service/use/intro-realtime-analytics-dashboard?context=../context/use-context
           - name: Summary report
             href: /dynamics365/customer-service/use/realtime-summary-dashboard?context=../context/use-context
@@ -196,25 +192,25 @@
             href: /dynamics365/customer-service/use/realtime-agents-analytics?context=../context/use-context
           - name: Ongoing Conversation report
             href: /dynamics365/customer-service/use/realtime-ongoing?context=../context/use-context
-        - name: Use Omnichannel historical analytics dashboards
+        - name: Use historical analytics dashboards
           items: 
-          - name: Omnichannel for Customer Service dashboards
+          - name: Dashboards
             href: /dynamics365/customer-service/use/omnichannel-analytics-insights?context=../context/use-context
-          - name: Omnichannel Summary dashboard
+          - name: Summary dashboard
             href: /dynamics365/customer-service/use/omnichannel-summary-dashboard?context=../context/use-context
-          - name: Omnichannel Conversation dashboard
+          - name: Conversation dashboard
             href: /dynamics365/customer-service/use/ oc-conversation-dashboard?context=../context/use-context
-          - name: Omnichannel Queue dashboard
+          - name: Queue dashboard
             href: /dynamics365/customer-service/use/oc-queue-dashboard?context=../context/use-context
-          - name: Omnichannel Voice dashboard
+          - name: Voice dashboard
             href: /dynamics365/customer-service/use/voice-channel-reports-analytics?context=../context/use-context
-          - name: Omnichannel Agent dashboard
+          - name: Agent dashboard
             href: /dynamics365/customer-service/use/agent-dashboard?context=../context/use-context
-          - name: Omnichannel Bot dashboard
+          - name: Bot dashboard
             href: /dynamics365/customer-service/use/oc-bot-dashboard?context=../context/use-context
-          - name: Omnichannel Conversation topic dashboard
+          - name: Conversation topic dashboard
             href: /dynamics365/customer-service/use/oc-conversation-topics-dashboard?context=../context/use-context
-          - name: Omnichannel Voicemail dashboard
+          - name: Voicemail dashboard
             href: /dynamics365/customer-service/use/oc-voicemail-dashboard?context=../context/use-context
           - name: Unified routing dashboard
             href: /dynamics365/customer-service/use/oc-historical-analytics-unified-routing?context=../context/use-context
@@ -226,11 +222,11 @@
               href: /dynamics365/customer-service/use/monitor-conversations?context=../context/use-context
             - name: Monitor and analyze sentiments
               href: /dynamics365/customer-service/use/supervisor-sentiment-monitoring?context=../context/use-context
-        - name: View and understand Omnichannel Ongoing Conversations dashboard
+        - name: View and understand Ongoing Conversations dashboard
           href: /dynamics365/customer-service/use/ongoing-conversations-dashboard?context=../context/use-context
         - name: Analytics reports refresh and data retention
           href: /dynamics365/customer-service/use/info-analytics-reports?context=../context/use-context
-        - name: Use Omnichannel for Customer Service metrics
+        - name: Use metrics
           href: /dynamics365/customer-service/use/oc-metrics-dimensions?context=../context/use-context
         - name: Personalize analytics
           items: 
@@ -256,9 +252,9 @@
             href: /dynamics365/customer-service/use/datamapping-realtime?context=../context/use-context
           - name: Dataverse entities used in historical and real-time analytics
             href: /dynamics365/customer-service/use/dataverse-entities?context=../context/use-context
-      - name: Report issues in Omnichannel for Customer Service
+      - name: Report issues in Dynamics 365 Contact Center
         href: /dynamics365/customer-service/use/report-issues?context=../context/use-context
-      - name: Share feedback in Customer Service
+      - name: Share feedback
         href: /dynamics365/customer-service/use/cs-share-feedback?context=../context/use-context
     - name: Responsible AI
       items:

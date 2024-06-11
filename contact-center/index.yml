@@ -6,7 +6,7 @@ brand: dynamics
 
 metadata:
   title: Dynamics 365 Contact Center
-  description: Discover how to make the most of Dynamics 365 Customer Service with training, docs, and videos covering product capabilities and how-to articles. Learn about the suite of capabilities that Customer Service provides and ensure that your business delivers the best customer service experience to your customers.
+  description: Discover how to make the most of Dynamics 365 Contact Center with training, docs, and videos covering product capabilities and how-to articles. Learn about the suite of capabilities that Dynamics 365 Contact Center provides and ensure that your business delivers the best contact center experience to your customers.
   ms.topic: hub-page
   author: neeranelli
   ms.author: nenellim
@@ -117,8 +117,6 @@ additionalContent:
         text: Use email to interact consistently with customers
       - url: /power-apps/user/add-activities
         text: Manage conversations and activities on the timeline
-      - url: /dynamics365/customer-service/use/search-knowledge-articles-csh
-        text: Search and use knowledge articles
     - title: Use Copilot
       links:
       - url: /dynamics365/customer-service/use/use-copilot-features
@@ -136,9 +134,9 @@ additionalContent:
     - title: Collaborate
     - title: Explore your apps
       links:
-      - url: implement/cc-admin-center.md
+      - url: administer/cc-admin-center.md
         text: Admins, use Contact Center admin center
-      - url: implement/ccw-overview.md
+      - url: administer/ccw-overview.md
         text: Agents, use Contact center workspace
 
   - title: Related products

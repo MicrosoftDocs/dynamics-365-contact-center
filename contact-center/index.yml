@@ -56,7 +56,7 @@ additionalContent:
         text: Set up roles and enable users in Dynamics 365 Contact Center
       - url: /dynamics365/customer-service/implement/persona-privilege-mapping.md
         text: Set up personas and privileges in Dynamics 365 Contact Center
-      - url: /dynamics365/customer-service/implement/customer-service-workspace-system-requirements
+      - url: system-requirements-contact-center.md
         text: System requirements for Dynamics 365 Contact Center  
   - title: Administer and develop
     items:

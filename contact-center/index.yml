@@ -138,7 +138,7 @@ additionalContent:
         text: Admins, use Contact Center admin center
       - url: administer/ccw-overview.md
         text: Agents, use Contact center workspace
-      - url: /power-apps/user/view-compose-email?context=../context/use-context
+      - url: /power-apps/user/view-compose-email?context=context/use-context
         text: View, compose, and respond to emails
         
 

@@ -24,7 +24,7 @@ highlightedContent:
     # Card
     - title: What's new
       itemType: whats-new
-      url: implement/whats-new-contact-center.md
+      url: implement/whats-new.md
     # Card
     - title: Training
       itemType: training

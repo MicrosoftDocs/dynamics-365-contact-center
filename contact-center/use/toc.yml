@@ -41,7 +41,7 @@
           - name: Email templates
             items: 
             - name: Create an email template
-              href: /power-apps/user/email-template-create?context=../context/use-context
+              href: /power-apps/user/email-template-create?branch=main&context=/dynamics365/contact-center/context/use-context
             - name: Insert an email template
               href: /power-apps/user/insert-email-template?context=../context/use-context
             - name: Personalize emails with dynamic text

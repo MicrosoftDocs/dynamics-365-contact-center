@@ -67,7 +67,7 @@ additionalContent:
         text: Provision unified routing for Dynamics 365 Contact Center
       - url: /dynamics365/customer-service/administer/voice-channel-install?context=context/administer-context
         text: Configure the voice channel
-     - title: Develop
+    - title: Develop
       links:
       - url: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=context/extend-context
         text: Dynamics 365 Contact Center entity reference
@@ -75,7 +75,7 @@ additionalContent:
         text: Live chat SDK Reference
       - url: /dynamics365/customer-service/develop/develop-live-chat-widget?context=context/extend-context
         text: Develop a custom live chat widget
-     - title: Customize
+    - title: Customize
       links:
       - url: /dynamics365/customer-service/administer/omnichannel-customizer?context=context/administer-context
         text: Customize forms for your agents and supervisors

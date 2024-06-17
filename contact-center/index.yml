@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: neeranelli
   ms.author: nenellim
-  ms.date: 05/24/2024
+  ms.date: 07/01/2024
   ms.custom: bap-template
   hide_bc: true
 
@@ -20,11 +20,11 @@ highlightedContent:
     # Card
     - title: Welcome to Dynamics 365 Contact Center
       itemType: get-started
-      url: overview-contact-center.md
+      url: implement/overview-contact-center.md
     # Card
     - title: What's new
       itemType: whats-new
-      url: whats-new-contact-center.md
+      url: implement/whats-new-contact-center.md
     # Card
     - title: Training
       itemType: training
@@ -48,52 +48,47 @@ additionalContent:
         text: Try Contact Center
       - url: https://dynamics.microsoft.com/contact-center/pricing/
         text: Buy Contact Center
-      - url: /dynamics365/customer-service/implement/omnichannel-provision-license../context/administer-context
+      - url: /dynamics365/customer-service/implement/omnichannel-provision-license?context=context/administer-context
         text: Provision Dynamics 365 Contact Center
     - title: Set up 
       links:
-      - url: /dynamics365/customer-service/implement/add-users-assign-roles.md
+      - url: /dynamics365/customer-service/implement/add-users-assign-roles?context=context/implement-context
         text: Set up roles and enable users in Dynamics 365 Contact Center
-      - url: /dynamics365/customer-service/implement/persona-privilege-mapping.md
+      - url: /dynamics365/customer-service/implement/persona-privilege-mapping?context=context/implement-context
         text: Set up personas and privileges in Dynamics 365 Contact Center
-      - url: system-requirements-contact-center.md
+      - url: implement/system-requirements-contact-center.md
         text: System requirements for Dynamics 365 Contact Center  
+ 
   - title: Administer and develop
     items:
     - title: Configure
       links:
-      - url: /dynamics365/customer-service/administer/provision-unified-routing
+      - url: /dynamics365/customer-service/administer/provision-unified-routing?context=context/administer-context
         text: Provision unified routing for Dynamics 365 Contact Center
-      - url: /dynamics365/customer-service/administer/voice-channel-install
+      - url: /dynamics365/customer-service/administer/voice-channel-install?context=context/administer-context
         text: Configure the voice channel
-      
-    - title: Develop
+     - title: Develop
       links:
-      - url: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref
+      - url: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=context/extend-context
         text: Dynamics 365 Contact Center entity reference
-      - url: /dynamics365/customer-service/develop/omnichannel-reference
+      - url: /dynamics365/customer-service/develop/omnichannel-reference?context=context/extend-context
         text: Live chat SDK Reference
-      - url: /dynamics365/customer-service/develop/develop-live-chat-widget
+      - url: /dynamics365/customer-service/develop/develop-live-chat-widget?context=context/extend-context
         text: Develop a custom live chat widget
-    - title: Customize
+     - title: Customize
       links:
-      - url: /dynamics365/customer-service/administer/omnichannel-customizer
+      - url: /dynamics365/customer-service/administer/omnichannel-customizer?context=context/administer-context
         text: Customize forms for your agents and supervisors
-      - url: /dynamics365/customer-service/administer/model-customize-reports
+      - url: /dynamics365/customer-service/administer/model-customize-reports?context=context/administer-context
         text: Customize data models for historical and real-time analytics reports
     - title: Integrate
       links: 
-      - url: /dynamics365/customer-service/administer/voice-channel-contextual-transfer-external-ivr
-        text: Integrate a third-party IVR system with voice channel
       - url: /dynamics365/customer-service/administer/configure-bot-virtual-agent
         text: Integrate a Copilot Studio bot
-
     - title: Configure AI features
       links:
-      - url: /dynamics365/customer-service//administer/configure-copilot-features
+      - url: /dynamics365/customer-service//administer/configure-copilot-features?context=context/administer-context
         text: Manage Copilot features
-      - url: /dynamics365/customer-service/administer/copilot-powerapps-settings
-        text: Configure copilot features for custom case forms and custom apps
 
   - title: Manage your contact center
     items:
@@ -101,42 +96,42 @@ additionalContent:
       links:
       - url: overview-contact-center.md
         text: Overview of Dynamics 365 Contact Center
-      - url: /dynamics365/customer-service/use/channels
+      - url: /dynamics365/customer-service/use/channels?context=context/use-context
         text: Communicate over multiple channels
-      - url: /dynamics365/customer-service/administer/voice-channel
+      - url: /dynamics365/customer-service/administer/voice-channel?context=context/use-context
         text: Communicate over the voice channel
-      - url: /dynamics365/customer-service/use/voice-channel-transfer-consult
+      - url: /dynamics365/customer-service/use/voice-channel-transfer-consult?context=context/use-context
         text: Transfer calls and consult with users in the voice channel
-      - url: /dynamics365/customer-service/use/oc-conversation-control
+      - url: /dynamics365/customer-service/use/oc-conversation-control?context=context/use-context
         text: View the communication panel 
-    - title: Increase productivity and customer satisfaction 
+    - title: Increase productivity and customer satisfaction
       links:
-      - url: /dynamics365/customer-service/use/csw-productivity-pane
+      - url: /dynamics365/customer-service/use/csw-productivity-pane?context=context/use-context
         text: Use the productivity pane to resolve customer issues
-      - url: /dynamics365/customer-service/use/create-personal-quick-replies
+      - url: /dynamics365/customer-service/use/create-personal-quick-replies?context=context/use-context
         text: Use email to interact consistently with customers
-      - url: /power-apps/user/add-activities
+      - url: /power-apps/user/add-activities?context=context/use-context
         text: Manage conversations and activities on the timeline
     - title: Use Copilot
       links:
-      - url: /dynamics365/customer-service/use/use-copilot-features
+      - url: /dynamics365/customer-service/use/use-copilot-features?context=context/use-context
         text: Use Copilot to solve customer issues
-      - url: /dynamics365/customer-service/use/copilot-use-summary#summarize-conversations
+      - url: /dynamics365/customer-service/use/copilot-use-summary#summarize-conversations?context=context/use-context
         text: Use Copilot to summarize conversations
-      - url: /dynamics365/customer-service/use/use-copilot-features#ask-a-question
+      - url: /dynamics365/customer-service/use/use-copilot-features#ask-a-question?context=context/use-context
         text: Ask a question in Copilot
     - title: Get insights and analyze contact center operations 
       links:
-      - url: /dynamics365/customer-service/use/copilot-analytics-report
+      - url: /dynamics365/customer-service/use/copilot-analytics-report?context=context/use-context
         text: View Copilot analytics report
-      - url: /dynamics365/customer-service/use/customize-reports
+      - url: /dynamics365/customer-service/use/customize-reports?context=context/use-context
         text: Customize visual display
     - title: Collaborate
     - title: Explore your apps
       links:
       - url: administer/cc-admin-center.md
         text: Admins, use Contact Center admin center
-      - url: administer/ccw-overview.md
+      - url: use/ccw-overview.md
         text: Agents, use Contact center workspace
       - url: /power-apps/user/email-template-create?branch=main&context=/dynamics365/contact-center/context/use-context
         text: View, compose, and respond to emails

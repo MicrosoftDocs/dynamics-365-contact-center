@@ -14,13 +14,12 @@ ms.custom: bap-template
 
 Copilot case and conversation summaries help you to quickly understand the context of a case and resolve customer issues more efficiently.
 
-
 ## Enable case summaries
 
 Case summaries help agents understand the context of a case, enabling them to resolve customer issues efficiently. Agents get a concise summary of the case with the case title, customer, case subject, product, priority, case type, and case description. Email activity records, notes linked to a case, and conversation summaries are also used to generate the case summary. 
 
 > [!IMPORTANT]
-> - Case summary is available in the Contact Center standalone app only.
+> - Copilot case summary is available in the Contact Center standalone app only.
 > - A minimum of 50 [tokens](https://platform.openai.com/docs/introduction) are required to generate a case summary. 50 tokens translate to approximately 38 words in English, without counting spaces. Therefore, you'll need a minimum of 38 English words specified across the case fields that copilot uses to generate the case summary.
 > - Bot conversations aren't automatically included in the conversation summary.
  
@@ -49,6 +48,9 @@ For Copilot to automatically generate a conversation summary for a live conversa
 
 Copilot can translate case and conversation summaries to the agent's preferred language. To enable translation, in the Contact Center admin center, select **Let agents translate responses**. Agents can select the **Translate** button to translate the summary to their preferred language.
 
+## Enable agent experience data
+
+You can allow Copilot to record and use agent interaction data and feedback to analyze the quality of the summaries and build usage reports.
 
 ### See also
 

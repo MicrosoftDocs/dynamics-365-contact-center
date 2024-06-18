@@ -30,7 +30,7 @@ The connector for Salesforce in Dynamics 365 Contact Center allows organizations
 
 1. In the site map of Contact Center admin center, go to **Workspaces** under **Agent experience**, and select **Manage** for **Data synchronization from external CRMs**.
 1. On the **Data synchronization from external CRMs** page, select **New**.
-1. On **Add Third party CRM connector**, select **Salesforce**, and select **Next**.
+1. On **Create a CRM connector**, select **Salesforce**, and select **Next**.
     1. On the **Connection Setup** dialog, select the ellipses for Salesforce, and select **Add new connection**. 
     1. On the dialog that appears, select the Salesforce environment and Salesforce API version, and select **Sign in**.
     1. On the Salesforce sign in page, sign in with the Salesforce user credentials. Complete the multifactor authentication if it's configured. The **Allow Access** dialog appears.
@@ -55,7 +55,7 @@ You can do the following actions with the connector:
 - View diagnostic details.
 - Edit the details of the connector:
     - **Data tables**: Update the tables that need to be synchronized.
-    - **Field mappings**: Update the column mappings.
+    - **Field mappings**: Update the column mappings. Use the reset option to reset the mappings to the out-of-the-box defined ones.
     - **Data access permissions**: Update the Teams who can access the data.
 
 ### Data types supported in Dataverse

@@ -6,14 +6,20 @@
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
         href: ../overview-contact-center.md?context=../context/administer-context
+      - Get started
+        items:
+        - name: Try
+          items:
+          - name: Sign up for a free Contact Center trial
+            href: try-contact-center.md
       - name: Set up Dynamics 365 Contact center
         items:
         - name: System requirements for Dynamics 365 Contact Center
           href: system-requirements-contact-center.md
         - name: Set up embedded experience
           href: set-up-embedded-experience.md
-        - name: Set up standalone experience
-          href: set-up-standalone-experience.md
+      - name: Troubleshooting and FAQs
+        href: cc-troubleshooting-faqs.md
     - name: Manage Dynamics 365 Contact Center
       href: ../overview-contact-center.md?context=../context/use-context
     - name: Extend Dynamics 365 Contact Center

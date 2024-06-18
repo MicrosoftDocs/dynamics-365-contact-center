@@ -11,11 +11,19 @@ ms.custom: bap-template
 ---
 
 
-# What's new Dynamics 365 Contact Center
+# What's new in Dynamics 365 Contact Center
 
+Welcome to Dynamics 365 Contact Center.
 
-## Section heading
+Engagement with customers continues to be revolutionized with the power of Generative AI across all 
+channels of communication. Dynamics 365 Contact Center is an AI-first contact center from Microsoft 
+that works with any CRM or third-party solution, allowing customers to use Omnichannel for Customer Service with AI 
+capabilities with a CRM of the customer’s choice.
+
+Watch out for the new capabilities and exciting features that'll be updated here periodically.
 
 ## Next steps
+
+To fill in.
 
 

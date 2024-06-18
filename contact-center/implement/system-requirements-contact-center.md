@@ -61,7 +61,7 @@ The customer-facing live chat widget that you display on your portal supports th
 
 ## Provision Dynamics 365 Contact Center
 
-To enable the Omnichannel for Customer Service app in your org, see [Provision Omnichannel for Customer Service](/dynamics365/customer-service/implement/omnichannel-provision-license).
+To enable the omnichannel capabilities in your org, see [Provision Omnichannel for Customer Service](/dynamics365/customer-service/implement/omnichannel-provision-license).
 
 > [!NOTE]
 >

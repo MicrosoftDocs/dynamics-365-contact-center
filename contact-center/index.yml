@@ -26,9 +26,10 @@ highlightedContent:
       itemType: whats-new
       url: implement/whats-new.md
     # Card
-    - title: Training
-      itemType: training
-      url: /learn/modules/get-started-with-dynamics-365-contact-center/
+    - title: Troubleshoot
+      itemType: concept
+      url: /troubleshoot/dynamics-365/customer-service/welcome-customer-service
+
 
 additionalContent: 
   sections:
@@ -44,11 +45,11 @@ additionalContent:
         text: Adoption guide
     - title: Try/Buy/Provision
       links: 
-      - url: /dynamics365/customer-service/implement/try-contact-center
+      - url: implement/try-contact-center.md
         text: Try Contact Center
       - url: https://dynamics.microsoft.com/contact-center/pricing/
         text: Buy Contact Center
-      - url: /dynamics365/customer-service/implement/omnichannel-provision-license?context=context/administer-context
+      - url: /dynamics365/customer-service/implement/omnichannel-provision-license?context=context/implement-context
         text: Provision Dynamics 365 Contact Center
     - title: Set up 
       links:
@@ -81,14 +82,12 @@ additionalContent:
         text: Customize forms for your agents and supervisors
       - url: /dynamics365/customer-service/administer/model-customize-reports?context=context/administer-context
         text: Customize data models for historical and real-time analytics reports
-    - title: Integrate
-      links: 
-      - url: /dynamics365/customer-service/administer/configure-bot-virtual-agent
-        text: Integrate a Copilot Studio bot
     - title: Configure AI features
       links:
       - url: /dynamics365/customer-service//administer/configure-copilot-features?context=context/administer-context
         text: Manage Copilot features
+      - url: /dynamics365/customer-service/administer/configure-bot-virtual-agent
+        text: Integrate a Copilot Studio bot  
 
   - title: Manage your contact center
     items:
@@ -98,7 +97,7 @@ additionalContent:
         text: Overview of Dynamics 365 Contact Center
       - url: /dynamics365/customer-service/use/channels?context=context/use-context
         text: Communicate over multiple channels
-      - url: /dynamics365/customer-service/administer/voice-channel?context=context/use-context
+      - url: /dynamics365/customer-service/administer/voice-channel?context=context/administer-context
         text: Communicate over the voice channel
       - url: /dynamics365/customer-service/use/voice-channel-transfer-consult?context=context/use-context
         text: Transfer calls and consult with users in the voice channel
@@ -126,17 +125,7 @@ additionalContent:
         text: View Copilot analytics report
       - url: /dynamics365/customer-service/use/customize-reports?context=context/use-context
         text: Customize visual display
-    - title: Collaborate
-    - title: Explore your apps
-      links:
-      - url: administer/cc-admin-center.md
-        text: Admins, use Contact Center admin center
-      - url: use/ccw-overview.md
-        text: Agents, use Contact center workspace
-      - url: /power-apps/user/email-template-create?branch=main&context=/dynamics365/contact-center/context/use-context
-        text: View, compose, and respond to emails
-        
-
+       
   - title: Related products
     items:
         # Card

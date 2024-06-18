@@ -44,6 +44,10 @@
           - name: Manage overflow of work items in queues
             href: /dynamics365/customer-service/administer/manage-overflow?context=../context/administer-context
         - name: Configure routing to preferred agents
+      - name: Connectors for CRM solutions
+        items:
+        - name: Configure connector for Salesforce
+          href: configure-salesforce-connector.md
     - name: Manage Dynamics 365 Contact Center
       href: ../overview-contact-center.md?context=../context/use-context
     - name: Extend Dynamics 365 Contact Center

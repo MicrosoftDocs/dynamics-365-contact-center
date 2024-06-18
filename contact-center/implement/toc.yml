@@ -6,7 +6,7 @@
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
         href: ../overview-contact-center.md?context=../context/administer-context
-      - Get started
+      - name: Get started
         items:
         - name: Try
           items:

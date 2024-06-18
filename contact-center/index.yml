@@ -70,7 +70,7 @@ additionalContent:
         text: Configure the voice channel
     - title: Configure connectors
       links:
-      - url: administer/conifigure-salesforce-connector.md
+      - url: administer/configure-salesforce-connector.md
         text: Configure the Salesforce connector    
     - title: Configure AI features
       links:
@@ -91,7 +91,7 @@ additionalContent:
     items:
     - title: Communicate over channels that your customers prefer
       links:
-      - url: overview-contact-center.md
+      - url: implement/overview-contact-center.md
         text: Overview of Dynamics 365 Contact Center
       - url: /dynamics365/customer-service/use/channels?context=context/use-context
         text: Communicate over multiple channels

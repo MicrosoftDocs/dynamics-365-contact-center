@@ -68,6 +68,16 @@ additionalContent:
         text: Provision unified routing for Dynamics 365 Contact Center
       - url: /dynamics365/customer-service/administer/voice-channel-install?context=context/administer-context
         text: Configure the voice channel
+    - title: Configure connectors
+      links:
+      - url: administer/conifigure-salesforce-connector.md
+        text: Configure the Salesforce connector    
+    - title: Configure AI features
+      links:
+      - url: /dynamics365/customer-service//administer/configure-copilot-features?context=context/administer-context
+        text: Manage Copilot features
+      - url: /dynamics365/customer-service/administer/configure-bot-virtual-agent
+        text: Integrate a Copilot Studio bot  
     - title: Develop
       links:
       - url: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=context/extend-context
@@ -76,19 +86,7 @@ additionalContent:
         text: Live chat SDK Reference
       - url: /dynamics365/customer-service/develop/develop-live-chat-widget?context=context/extend-context
         text: Develop a custom live chat widget
-    - title: Customize
-      links:
-      - url: /dynamics365/customer-service/administer/omnichannel-customizer?context=context/administer-context
-        text: Customize forms for your agents and supervisors
-      - url: /dynamics365/customer-service/administer/model-customize-reports?context=context/administer-context
-        text: Customize data models for historical and real-time analytics reports
-    - title: Configure AI features
-      links:
-      - url: /dynamics365/customer-service//administer/configure-copilot-features?context=context/administer-context
-        text: Manage Copilot features
-      - url: /dynamics365/customer-service/administer/configure-bot-virtual-agent
-        text: Integrate a Copilot Studio bot  
-
+    
   - title: Manage your contact center
     items:
     - title: Communicate over channels that your customers prefer

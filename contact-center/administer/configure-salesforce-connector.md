@@ -77,7 +77,7 @@ Dataverse supports the following data types. The Virtual and EntityName attribut
 
 ### See also
 
-[Single sign-on SAML protocol](entra/identity-platform/single-sign-on-saml-protocol)  
+[Single sign-on SAML protocol](/entra/identity-platform/single-sign-on-saml-protocol)  
 [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams)  
 
 

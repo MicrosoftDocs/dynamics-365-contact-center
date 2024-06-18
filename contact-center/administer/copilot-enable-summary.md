@@ -48,10 +48,6 @@ For Copilot to automatically generate a conversation summary for a live conversa
 
 Copilot can translate case and conversation summaries to the agent's preferred language. To enable translation, in the Contact Center admin center, select **Let agents translate responses**. Agents can select the **Translate** button to translate the summary to their preferred language.
 
-## Enable agent experience data
-
-You can allow Copilot to record and use agent interaction data and feedback to analyze the quality of the summaries and build usage reports.
-
 ### See also
 
 [Use Copilot to summarize cases and conversations](../use/copilot-use-summary.md)<br>

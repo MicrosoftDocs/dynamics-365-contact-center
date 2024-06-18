@@ -1,6 +1,6 @@
 ---
-title: Enable Copilot features in Customer Service
-description: Learn how to enable the various Copilot features in Customer Service.
+title: Enable Copilot features 
+description: Learn how to enable the various Copilot features
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: neeranelli
@@ -53,7 +53,7 @@ More information: [Tenant settings](/power-platform/admin/tenant-settings) and [
 
 ## Opt in to continue with Copilot setup
 
-In Contact Center admin center, the [**Copilot help pane**](copilot-enable-help-pane.md) or [**Summaries**](copilot-enable-summary.md) page, the application displays the following message and links:
+In Contact Center admin center, the [**Copilot for questions and emails**](copilot-enable-help-pane.md) or [**Summaries**](copilot-enable-summary.md) page, the application displays the following message and links:
 
 - An error message to enable data movement across regions if you're in a region where Copilot features aren't available by default or if you want to opt out of using Copilot.
 - A link to the Power Platform admin center app to enable data movement across regions.
@@ -64,7 +64,7 @@ In Contact Center admin center, the [**Copilot help pane**](copilot-enable-help-
 
 ## Opt out from using Copilot features
 
-In Contact Center admin center, opt out from the copilot features on the **Copilot help pane** or **Summaries** page. When you opt out, the application erases the training data. If you want to use the features again, you must consent to the terms of use and opt in.
+In Contact Center admin center, opt out from the copilot features on the **Copilot for questions and emails** or **Summaries** page. When you opt out, the application erases the training data. If you want to use the features again, you must consent to the terms of use and opt in.
 
 ## Make Copilot available to agents
 
@@ -76,22 +76,17 @@ Perform the following steps to add the Copilot features to an agent experience p
 
 1. Go to [**Agent experience profiles**](create-agent-experience-profile.md#assign-users-templates-configure-productivity-pane-channels) using one of the following navigation options:
    - **Agent experience** > **Workspaces**
-   - **Copilot help pane** > **Agent access** > **agent experience profiles**
+   - **Copilot for questions and emails** > **Agent access** > **agent experience profiles**
 1. Select the required agent experience profile.
-1. On the **Productivity Pane**, turn on the **Copilot help pane** toggle so that agents can use the Copilot features such suggest a response, ask a question, and write an email on the productivity pane.
+1. On the **Productivity Pane**, turn on the **Copilot for questions and emails* toggle so that agents can use the Copilot features such suggest a response, ask a question, and write an email on the productivity pane.
 
    :::image type="content" source="../media/copilot-help-pane-enable-mini.png" alt-text="Screenshot of the Productivity panel in agent experience profile." lightbox="../media/copilot-help-pane-enable.png":::|
 
-1.  In the **Copilot AI features** section, select edit and then select  the required features **Ask a question**, **Scan customer conversation and suggest a response**, **Write an email**, **Case summary**, **Live conversation summary**, you want to enable for that profile.  
-
-    :::image type="content" source="../media/copilot-agent-experience-mini.png" alt-text="Screenshot of Copilot AI features section in Copilot." lightbox="../media/copilot-agent-experience.png":::|
-
-    > [!NOTE]
-    > You must turn on the **Copilot help pane** toggle to enable the **Ask a question**, **Scan customer conversation and suggest a response**, **Write an email** features.
+1.  In the **Copilot AI features** section, select edit and then select  the required features **Ask a question**, **Write an email**, **Case summary**, **Live conversation summary**, you want to enable for that profile.  
 
 ## Record agent interactions with Copilot
 
-In the **Summaries** and **Copilot help pane** configuration pages, you can select **Record transcripts of agent interaction with Copilot, agent actions, and agent feedback on AI suggestions** to record and understand how agents are interacting with Copilot and how Copilot is performing in a support organization. Agents can also share feedback about Copilot actions, which helps Copilot perform better. You can also [download](../develop/download-copilot-transcript-data.md) and use the data to analyze knowledge sources, and build usage reports.
+In the **Summaries** and **Copilot for questions and emails** configuration pages, you can select **Record transcripts of agent interaction with Copilot, agent actions, and agent feedback on AI suggestions** to record and understand how agents are interacting with Copilot and how Copilot is performing in a support organization. Agents can also share feedback about Copilot actions, which helps Copilot perform better. You can also [download](../develop/download-copilot-transcript-data.md) and use the data to analyze knowledge sources, and build usage reports.
 
 
 ## Assign roles and privileges

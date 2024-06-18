@@ -20,6 +20,9 @@ The system stores the copilot interaction data in the [msdyn_copilotinteraction]
 
 To view the Copilot report, open Customer Service historical analytics and select the **Copilot** tab.
 
+> [!NOTE]
+> Case summary isn't available for the Contact Center embedded experience.
+
 ## Copilot report
 
 You can use filters to focus on the information that's important to you:

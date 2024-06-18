@@ -74,7 +74,6 @@ To use the draft that Copilot generates, do the following actions:
 
 To return to the prompts, select **Start over** at the bottom of the Copilot pane.
 
-
 ## Next Step
 
 [Use Copilot to solve customer issues](use-copilot-features.md)

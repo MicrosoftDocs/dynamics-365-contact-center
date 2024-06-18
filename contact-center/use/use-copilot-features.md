@@ -44,12 +44,6 @@ With Copilot, you can take the following actions:
 - **Ask follow-up turn by turn questions**: If Copilot's response isn't immediately useful, you can ask follow-up questions and guide Copilot in a natural, conversational way.
 - **Ask Copilot to attempt a better response**: Copilot can also rephrase responses based on more guidance such as, "Can you summarize your response?" or "Can you attempt a response providing details for each of the steps you mentioned?"
 
-### Use auto-prompts
-
-When you have an active case or conversation open, Copilot suggests prompts based on the context of the case or the conversation. Copilot generates prompts only for the first question and not for follow-up questions. Copilot generates the prompts as follows:
-
-- For a case, Copilot considers the title, description, notes, and emails linked to the case.
-- For a conversation, Copilot considers the intent in the first three messages to generate a prompt, and then every third message to refresh the prompts. You can select a prompt to generate a response.
 
 ### View responses
 
@@ -72,8 +66,6 @@ If you're satisfied with the response Copilot provides, you can use the whole th
 ### Provide feedback
 
 To rate the usefulness of Copilot's responses, select the thumbs-up or thumbs-down icon.
-
-
 
 ### See also
 

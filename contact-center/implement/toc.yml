@@ -10,7 +10,7 @@
         items:
         - name: Try
           items:
-          - name: Sign up for a free Contact Center trial
+          - name: Sign up for a free Dynamics 365 Contact Center trial
             href: try-contact-center.md
       - name: What's new
         href: whats-new.md

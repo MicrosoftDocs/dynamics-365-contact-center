@@ -6,10 +6,55 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: get-started
-ms.date: 06/10/2024
+ms.date: 07/01/2024
 ms.custom: bap-template
 ---
 
+The Embeddable Conversation Widget is a feature of the Dynamics 365 Contact Center that allows agents to chat with customers directly from any third-party customer relationship management (CRM) system. The widget can be embedded into any web page or application that supports HTML and JavaScript, and it provides a seamless and consistent chat experience across different platforms.
+
 # Set up embedded experience for Dynamics 365 Contact Center
 
-_To be filled_
+1. Sign in to Salesforce.
+
+2. Download the Salesforce installation package using URL template as https://<sfdc-org-url>/packaging/installPackage.apexp?p0=04t8b000001BV5mAAG, replacing <sfdc-org-url> with your Salesforce Org URL.
+
+Example of <sfdc-org-url>: flow-power-1788--dev3.sandbox.lightning.force.com 
+
+3. Select ‘Install for All Users’ and Click ‘Install’.
+
+4. After the installation is complete, you should see a confirmation screen. Click ‘Done’ to proceed.
+
+Note: If the package was installed successfully, you should see a screen with ‘CCaaSforSF’ listed as one of the installed packages.
+
+5. Navigate to the setup screen by clicking the gear icon in the top right corner.
+
+6. Use the quick find menu in left side of screen to search for ‘Call Center.’
+
+7. If this is your first time setting this up, click Continue.
+
+8. Edit the ‘Dynamics 365 Call Center Adapter’ call center file.
+
+9. Update the CTI Adapter URL and save. This widget URL is the same one you used for testing Dynamics Call Center.
+
+10. Select Manage Call Center Users and then choose Add more users.
+
+11. Choose the user record that you're currently logged in with and select Save.
+
+12. To create a softphone layout:
+    1. Use the quick find menu to search for 'Softphone Layouts'.
+    2. Either create a new softphone layout or edit an existing one.
+    3. Verify that 'Is Default Layout' is checked and then select Save.
+
+13. To set up the softphone utility for your application, navigate to the App Manager in setup and edit the Service Console application.
+
+14. Add the softphone utility by going to utility items and choosing "Open CTI Softphone".
+
+15. Name your softphone appropriately (for example, "MSFT Omnichannel"), set the width to 400, and the height to 600, then select Save.
+
+16. Navigate to the Service Console from the App Page.
+
+17. Enable pop-ups.
+
+18. Refresh your browser. You should start seeing the Omnichannel Add-on in your application.
+
+19. To connect Copilot to the CRM system, select "Sandbox" as the Logon URI and v58.0 as the Salesforce API Version to set up the third-party CRM connection.

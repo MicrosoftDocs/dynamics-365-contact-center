@@ -5,7 +5,7 @@
       - name: Dynamics 365 Contact Center documentation
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
-        href: overview-contact-center.md?context=../context/implement-context
+        href: overview-contact-center.md
       - name: Get started
         items:
         - name: Try
@@ -23,6 +23,6 @@
       - name: Troubleshooting and FAQs
         href: cc-troubleshooting-faqs.md
     - name: Manage Dynamics 365 Contact Center
-      href: ../overview-contact-center.md?context=../context/use-context
+      href: overview-contact-center.md?context=../context/use-context
     - name: Extend Dynamics 365 Contact Center
-      href: ../overview-contact-center.md?context=../context/extend-context
+      href: overview-contact-center.md?context=../context/extend-context

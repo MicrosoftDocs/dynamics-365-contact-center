@@ -20,11 +20,11 @@ highlightedContent:
     # Card
     - title: Welcome to Dynamics 365 Contact Center
       itemType: get-started
-      url: implement/overview-contact-center
+      url: implement/overview-contact-center.md
     # Card
     - title: What's new
       itemType: whats-new
-      url: implement/whats-new
+      url: implement/whats-new.md
     # Card
     - title: Troubleshoot
       itemType: concept

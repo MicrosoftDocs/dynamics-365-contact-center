@@ -72,7 +72,7 @@
           href: https://cloudblogs.microsoft.com/dynamics365
         - name: Community
           href: https://community.dynamics.com/
-     - name: Manage Dynamics 365 Contact Center
-       href: overview-contact-center.md?context=../context/use-context
-     - name: Extend Dynamics 365 Contact Center
-       href: overview-contact-center.md?context=../context/extend-context
+    - name: Manage Dynamics 365 Contact Center
+      href: overview-contact-center.md?context=../context/use-context
+    - name: Extend Dynamics 365 Contact Center
+      href: overview-contact-center.md?context=../context/extend-context

@@ -5,13 +5,15 @@
       - name: Dynamics 365 Contact Center documentation
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
-        href: ../overview-contact-center.md?context=../context/administer-context
+        href: overview-contact-center.md?context=../context/implement-context
       - name: Get started
         items:
         - name: Try
           items:
           - name: Sign up for a free Contact Center trial
             href: try-contact-center.md
+      - name: What's new
+        href: whats-new.md
       - name: Set up Dynamics 365 Contact center
         items:
         - name: System requirements for Dynamics 365 Contact Center

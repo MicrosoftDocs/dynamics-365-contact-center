@@ -22,6 +22,12 @@
           href: set-up-embedded-experience.md
       - name: Troubleshooting and FAQs
         href: cc-troubleshooting-faqs.md
+      - name: Availability
+        items:
+        - name: International availability of Omnichannel for Customer Service
+          href: implement/international-availability.md
+        - name: Dynamics 365 US Government Community Cloud (GCC) availability
+          href: /dynamics365/customer-service/implement/government-availability?context=../context/implement-context
     - name: Manage Dynamics 365 Contact Center
       href: overview-contact-center.md?context=../context/use-context
     - name: Extend Dynamics 365 Contact Center

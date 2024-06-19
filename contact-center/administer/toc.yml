@@ -44,10 +44,81 @@
           - name: Manage overflow of work items in queues
             href: /dynamics365/customer-service/administer/manage-overflow?context=../context/administer-context
         - name: Configure routing to preferred agents
+          href: /dynamics365/customer-service/administer/configure-preferred-agent?context=../context/administer-context
+        - name: Set up skill-based routing
+          items:
+          - name: Overview of skill-based routing
+            href: /dynamics365/customer-service/administer/overview-skill-work-distribution?context=../context/administer-context
+          - name: Set up skills, create rating model, assign skills to agents
+            href: /dynamics365/customer-service/administer/setup-skills-assign-agents?context=../context/administer-context
+          - name: Enable agents to update skills
+            href: /dynamics365/customer-service/administer/allow-agents-update-skills?context=../context/administer-context
+          - name: Set up skill-based routing in unified routing
+            href: /dynamics365/customer-service/administer/set-up-skill-based-routing?context=../context/administer-context
+          - name: Set up intelligent skill finder model in unified routing
+            href: /dynamics365/customer-service/administer/set-up-isf-model?context=../context/administer-context
+        - name: Model data tables as skills
+          href: /dynamics365/customer-service/administer/model-tables-as-skills-ur?context=../context/administer-context
+        - name: Use sentiment prediction-based routing
+          href: /dynamics365/customer-service/administer/use-sentiment-prediction-for-routing?context=../context/administer-context
+        - name: Use effort estimation model for routing
+          href: /dynamics365/customer-service/administer/use-effort-estimation-for-routing?context=../context/administer-context
+        - name: FAQ about unified routing
+          href: /dynamics365/customer-service/administer/unified-routing-faqs?context=../context/administer-context 
       - name: Connectors for CRM solutions
         items:
         - name: Configure connector for Salesforce
           href: configure-salesforce-connector.md
+      - name: Agent experience profiles for Customer Service
+        items:
+        - name: Overview of agent experience profiles
+          href: /dynamics365/customer-service/administer/overview?context=../context/administer-context
+        - name: Roles and permissions
+          href: /dynamics365/customer-service/administer/security-roles?context=../context/administer-context
+        - name: Create and use agent experience profiles
+          href: /dynamics365/customer-service/administer/create-agent-experience-profile?context=../context/administer-context
+        - name: Add users to agent experience profiles
+          href: /dynamics365/customer-service/administer/add-profile-default?context=../context/administer-context
+        - name: Configure the inbox for agents
+          href: /dynamics365/customer-service/administer/configure-inbox?context=../context/administer-context
+        - name: Templates
+          items:
+          - name: Manage session templates
+            href: /dynamics365/customer-service/administer/session-templates?context=../context/administer-context
+          - name: Manage application tab templates
+            href: /dynamics365/customer-service/administer/application-tab-templates?context=../context/administer-context
+          - name: Manage notification templates
+            href: /dynamics365/customer-service/administer/notification-templates?context=../context/administer-context
+          - name: Associate templates with workstreams
+            href: /dynamics365/customer-service/administer/associate-templates?context=../context/administer-context
+        - name: Productivity tools
+          items:
+          - name: Overview of productivity tools
+            href: /dynamics365/customer-service/administer/productivity-tools?context=../context/administer-context
+          - name: Manage smart assist
+            href: /dynamics365/customer-service/administer/smart-assist?context=../context/administer-context
+          - name: Manage agent scripts
+            href: /dynamics365/customer-service/administer/agent-scripts?context=../context/administer-context
+          - name: macros
+            items:  
+            - name: Manage macros
+              href: /dynamics365/customer-service/administer/macros?context=../context/administer-context
+            - name: Use productivity automation macros
+              href: /dynamics365/customer-service/administer/macros-productivity-automation?context=../context/administer-context
+            - name: Use session connector macros
+              href: /dynamics365/customer-service/administer/macros-session-action?context=../context/administer-context
+            - name: Use Omnichannel connector macros
+              href: /dynamics365/customer-service/administer/macros-omnichannel-action?context=../context/administer-context
+            - name: Use flow connectors
+              href: /dynamics365/customer-service/administer/macro-flow-connector?context=../context/administer-context
+            - name: Review macro run history
+              href: /dynamics365/customer-service/administer/review-macros?context=../context/administer-context                                  
+          - name: Manage custom productivity tools
+            href: /dynamics365/customer-service/administer/manage-custom-productivity-tools?context=../context/administer-context
+          - name: Use automation dictionary to pass parameters keys
+            href: /dynamics365/customer-service/administer/automation-dictionary-keys?context=../context/administer-context
+          - name: FAQ about adding users to agent experience profile
+            href: /dynamics365/customer-service/administer/faq-agent-experience-profile?context=../context/administer-context
     - name: Manage Dynamics 365 Contact Center
       href: ../overview-contact-center.md?context=../context/use-context
     - name: Extend Dynamics 365 Contact Center

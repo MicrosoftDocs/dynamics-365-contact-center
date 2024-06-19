@@ -45,7 +45,7 @@
       - name: Availability
         items:
         - name: International availability of Dynamics 365 Contact Center
-          href: implement/international-availability.md
+          href: international-availability.md
         - name: Dynamics 365 US Government Community Cloud (GCC) availability
           href: /dynamics365/customer-service/implement/government-availability?context=../context/implement-context
       - name: Accessibility and privacy

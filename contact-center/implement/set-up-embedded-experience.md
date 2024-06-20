@@ -16,15 +16,12 @@ The Embeddable Conversation Widget is a feature of the Dynamics 365 Contact Cent
 
 1. Sign in to Salesforce.
 
-2. Download the Salesforce installation package using URL template as https://<sfdc-org-url>/packaging/installPackage.apexp?p0=04t8b000001BV5mAAG, replacing <sfdc-org-url> with your Salesforce Org URL.
-
-Example of <sfdc-org-url>: flow-power-1788--dev3.sandbox.lightning.force.com 
+2. Download the Salesforce installation package by using the following URL template: `https://<sfdc-org-url>/packaging/installPackage.apexp?p0=04t8b000001BV5mAAG`, replacing `<sfdc-org-url>` with your specific Salesforce Org URL. For instance, your Salesforce Org URL might be `flow-power-1788--dev3.sandbox.lightning.force.com`.
 
 3. Select ‘Install for All Users’ and Click ‘Install’.
 
-4. After the installation is complete, you should see a confirmation screen. Click ‘Done’ to proceed.
-
-Note: If the package was installed successfully, you should see a screen with ‘CCaaSforSF’ listed as one of the installed packages.
+4. After the installation is complete, a confirmation screen appears. Click 'Done' to continue. 
+Please note, a successful installation will display a screen listing 'CCaaSforSF' as an installed package.
 
 5. Navigate to the setup screen by clicking the gear icon in the top right corner.
 
@@ -34,7 +31,7 @@ Note: If the package was installed successfully, you should see a screen with �
 
 8. Edit the ‘Dynamics 365 Call Center Adapter’ call center file.
 
-9. Update the CTI Adapter URL and save. This widget URL is the same one you used for testing Dynamics Call Center.
+9. Update the CTI Adapter URL and save your changes. The URL for this widget is the same as the one you used for testing the Dynamics Call Center. You can find the CTI Adapter URL on the welcome page of the Contact Center admin center. Alternatively, you can create your embedded widget URL using this template: `https://ccaas-embed-prod.azureedge.net/widget/index.html?dynamicsUrl=https://[ORG_URL]&tenantId=[TENANT_ID]&msdynembedmode=3`. Replace `[ORG_URL]` with your organization's URL (for example, `msdynccaas.crm.dynamics.com`) and `[TENANT_ID]` with your tenant ID (for example, `8cd46c97-38dd-4560-9228-3df8a717a198`).
 
 10. Select Manage Call Center Users and then choose Add more users.
 

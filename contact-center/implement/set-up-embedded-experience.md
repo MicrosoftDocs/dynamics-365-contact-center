@@ -14,7 +14,7 @@ The Embeddable Conversation Widget is a feature of the Dynamics 365 Contact Cent
 
 # Set up embedded experience for Dynamics 365 Contact Center
 
-Follow the steps below to set up embedded experience for Dynamics 365 Contact Center.
+To set up embedded experience for Dynamics 365 Contact Center, make sure these services or features are in place:
 
 1. Sign in to Salesforce.
 

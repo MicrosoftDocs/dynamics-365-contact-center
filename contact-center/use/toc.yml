@@ -70,7 +70,7 @@
           href: /dynamics365/customer-service/use/voice-channel-call-recordings-transcripts?context=../context/use-context
         - name: Monitor voice calls
           href: /dynamics365/customer-service/use/voice-channel-monitor-calls?context=../context/use-context
-      - name: Chat and Channels
+      - name: Agent experience
         items:
         - name: Overview of Contact Center workspace
           href: ccw-overview.md
@@ -120,6 +120,8 @@
           href: /dynamics365/customer-service/use/oc-real-time-translation?context=../context/use-context
         - name: Markdown formats for agents
           href: /dynamics365/customer-service/use/markdown-formats-agents?context=../context/use-context
+      - name: Use messaging channels
+        items:
         - name: Introduction to channels
           href: /dynamics365/customer-service/use/channels?context=../context/use-context
         - name: Overview of SMS channels
@@ -199,7 +201,7 @@
           - name: Summary dashboard
             href: /dynamics365/customer-service/use/omnichannel-summary-dashboard?context=../context/use-context
           - name: Conversation dashboard
-            href: /dynamics365/customer-service/use/ oc-conversation-dashboard?context=../context/use-context
+            href: /dynamics365/customer-service/use/oc-conversation-dashboard?context=../context/use-context
           - name: Queue dashboard
             href: /dynamics365/customer-service/use/oc-queue-dashboard?context=../context/use-context
           - name: Voice dashboard

@@ -6,7 +6,7 @@
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
         href: ../overview-contact-center.md?context=../context/extend-context
-      - Overview
+      - name: Overview
       - href: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=../context/extend-context
     - name: Administer Dynamics 365 Contact Center
       href: ../overview-contact-center.md?context=../context/administer-context

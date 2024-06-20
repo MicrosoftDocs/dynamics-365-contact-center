@@ -1,8 +1,8 @@
 ---
 title: Overview of Contact Center workspace
 description: Learn how to use the Contact Center workspace app.
-author: smurkute
-ms.author: shwetamurkute
+author: platkat
+ms.author: ktaylor
 ms.reviewer: smurkute
 ms.topic: how-to
 ms.collection: 

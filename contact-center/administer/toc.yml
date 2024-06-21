@@ -247,6 +247,14 @@
         href: set-up-chat-widget.md
       - name: Configure a chat widget
         href: add-chat-widget.md
+      - name: Configure file attachments
+        href: configure-file-attachment.md
+      - name: Configure pre-conversation surveys
+        href: configure-pre-chat-survey.md
+      - name: Set up visitor location detection
+        href: geo-location-provider.md
+      - name: Configure self-service settings for customer actions
+        href: enable-self-service-settings.md  
     - name: Channels
       items:
       - name: Set up SMS channels
@@ -277,10 +285,6 @@
         href: configure-microsoft-teams.md
       - name: Configure a custom messaging channel
         href: configure-custom-channel.md
-    - name: Agent settings
-      items:
-      - name: Configure file attachments
-        href: configure-file-attachment.md
       - name: Enable file attachments
         href: enable-file-attachments.md
       - name: Enable formatted messages
@@ -313,8 +317,6 @@
         href: create-operating-hours.md
       - name: Manage context variables
         href: manage-context-variables.md
-      - name: Configure pre-conversation surveys
-        href: configure-pre-chat-survey.md
       - name: Configure post-conversation surveys
         href: configure-post-conversation-survey.md
       - name: Identify customers automatically
@@ -331,14 +333,8 @@
         href: configure-payment-profiles.md
       - name: Enable real-time translation of conversations
         href: enable-real-time-translation.md
-      - name: Set up customer location detection
-        href: geo-location-provider.md
-      - name: Configure self-service settings for customer actions
-        href: enable-self-service-settings.md
       - name: Configure automated messages
         href: configure-automated-message.md
-      - name: Create message templates
-        href: create-message-templates.md
       - name: Configure outbound messages
         href: outbound-messaging.md
       - name: Configure data masking

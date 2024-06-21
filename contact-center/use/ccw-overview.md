@@ -18,6 +18,10 @@ The Contact Center workspace application provides a powerful agent desktop with 
 
 You must have the Omnichannel Agent role.
 
+## Access the app
+
+The app is automatically installed in all the Dynamics 365 Contact Center organizations. You can sign in to Dynamics 365, and on the apps page, select Contact Center workspace.
+
 ## Use Contact Center workspace
 
 Use the resources in the following articles to learn how to use Contact Center workspace.

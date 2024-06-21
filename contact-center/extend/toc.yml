@@ -6,46 +6,46 @@
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
         href: ../overview-contact-center.md?context=../context/extend-context
-        - name: Chat
-          items:  
-          - name: Develop a custom live chat widget
-            href: /dynamics365/customer-service/develop/develop-live-chat-widget?context=../context/extend-context
-          - name: Customize live chat widgets using data tags
-            href: /dynamics365/customer-service/develop/customize-chat-widget?context=../context/extend-context
-          - name: Customize live chat widgets for mobile apps
-            href: /dynamics365/customer-service/develop/render-live-chat-widget-mobile?context=../context/extend-context
-          - name: Download transcripts in bulk
-            href: /dynamics365/customer-service/develop/download-transcripts-bulk?context=../context/extend-context
-          - name: Add a web resource for real-time translation
-            href: /dynamics365/customer-service/develop/add-web-resource-real-time-translation?context=../context/extend-context
-          - name: Enable third-party cobrowse and screen sharing
-            href: /dynamics365/customer-service/develop/third-party-co-browse?context=../context/extend-context
-          - name: Live chat widget telemetry
-            href: /dynamics365/customer-service/develop/live-chat-telemetry?context=../context/extend-context 
-          - name: Configure link to conversation button
-            href: /dynamics365/customer-service/develop/configure-link-to-conversation-model-driven-app-form?context=../context/extend-context 
-          - name: Start a chat
-            href: /dynamics365/customer-service/develop/initiate-chat-wait-time?context=../context/extend-context
-          - name: Start chat proactively
-            href: /dynamics365/customer-service/develop/start-proactive-chat?context=../context/extend-context
-          - name: Send authentication token
-            href: /dynamics365/customer-service/develop/send-auth-token-starting-chat?context=../context/extend-context       
-          - name: Configure automatic closure of conversations using web API
-            href: /dynamics365/customer-service/develop/auto-close-conversation?context=../context/extend-context
-          - name: Send custom context during live chat
-            href: /dynamics365/customer-service/develop/send-context-starting-chat?context=../context/extend-context
-          - name: Display custom context in Conversation summary
-            href: /dynamics365/customer-service/develop/display-custom-context?context=../context/extend-context
-        - name: Channels
+      - name: Chat
+        items:
+        - name: Develop a custom live chat widget
+          href: /dynamics365/customer-service/develop/develop-live-chat-widget?context=../context/extend-context
+        - name: Customize live chat widgets using data tags
+          href: /dynamics365/customer-service/develop/customize-chat-widget?context=../context/extend-context
+        - name: Customize live chat widgets for mobile apps
+          href: /dynamics365/customer-service/develop/render-live-chat-widget-mobile?context=../context/extend-context
+        - name: Download transcripts in bulk
+          href: /dynamics365/customer-service/develop/download-transcripts-bulk?context=../context/extend-context
+        - name: Add a web resource for real-time translation
+          href: /dynamics365/customer-service/develop/add-web-resource-real-time-translation?context=../context/extend-context
+        - name: Enable third-party cobrowse and screen sharing
+          href: /dynamics365/customer-service/develop/third-party-co-browse?context=../context/extend-context
+        - name: Live chat widget telemetry
+          href: /dynamics365/customer-service/develop/live-chat-telemetry?context=../context/extend-context 
+        - name: Configure link to conversation button
+          href: /dynamics365/customer-service/develop/configure-link-to-conversation-model-driven-app-form?context=../context/extend-context 
+        - name: Start a chat
+          href: /dynamics365/customer-service/develop/initiate-chat-wait-time?context=../context/extend-context
+        - name: Start chat proactively
+          href: /dynamics365/customer-service/develop/start-proactive-chat?context=../context/extend-context
+        - name: Send authentication token
+          href: /dynamics365/customer-service/develop/send-auth-token-starting-chat?context=../context/extend-context       
+        - name: Configure automatic closure of conversations using web API
+          href: /dynamics365/customer-service/develop/auto-close-conversation?context=../context/extend-context
+        - name: Send custom context during live chat
+          href: /dynamics365/customer-service/develop/send-context-starting-chat?context=../context/extend-context
+        - name: Display custom context in Conversation summary
+          href: /dynamics365/customer-service/develop/display-custom-context?context=../context/extend-context
+      - name: Channels
+        items: 
+        - name: Integrate a custom messaging channel
           items: 
-          - name: Integrate a custom messaging channel
-            items: 
-            - name: Integrate your own custom channel using Direct Line
-              href: /dynamics365/customer-service/develop/bring-your-own-channel?context=../context/extend-context
-            - name: Test the custom messaging channel
-              href: /dynamics365/customer-service/develop/test-custom-channel-sample-html?context=../context/extend-context
-            - name: Markdown formats in custom channels that use Direct Line
-              href: /dynamics365/customer-service/develop/markdown-formats-dev?context=../context/extend-context   
+          - name: Integrate your own custom channel using Direct Line
+            href: /dynamics365/customer-service/develop/bring-your-own-channel?context=../context/extend-context
+          - name: Test the custom messaging channel
+            href: /dynamics365/customer-service/develop/test-custom-channel-sample-html?context=../context/extend-context
+          - name: Markdown formats in custom channels that use Direct Line
+            href: /dynamics365/customer-service/develop/markdown-formats-dev?context=../context/extend-context   
       - name: Copilot in Customer Service
         items:  
         - name: Download Copilot transcripts and interaction data
@@ -89,7 +89,7 @@
       - name: Extend Omnichannel for Customer Service
          href: /dynamics365/customer-service/develop/extend-omnichannel?context=../context/extend-context
       - name: Overview of entity reference
-      - href: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=../context/extend-context
+        href: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=../context/extend-context
     - name: Administer Dynamics 365 Contact Center
       href: ../implement/overview-contact-center.md?context=../context/administer-context
     - name: Manage Dynamics 365 Contact Center

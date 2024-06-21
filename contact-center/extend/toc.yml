@@ -5,7 +5,7 @@
       - name: Dynamics 365 Contact Center documentation
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
-        href: ../overview-contact-center.md?context=../context/extend-context
+        href: ../implement/overview-contact-center.md?context=../context/extend-context
       - name: Connectors
         items:
         - name: Configure Zendesk connector
@@ -27,13 +27,13 @@
         - name: Live chat widget telemetry
           href: /dynamics365/customer-service/develop/live-chat-telemetry?context=../context/extend-context 
         - name: Configure link to conversation button
-          href: /dynamics365/customer-service/develop/configure-link-to-conversation-model-driven-app-form?context=../context/extend-context 
+          href: /dynamics365/customer-service/develop/configure-link-to-conversation-model-driven-app-form?context=../context/extend-context
         - name: Start a chat
           href: /dynamics365/customer-service/develop/initiate-chat-wait-time?context=../context/extend-context
         - name: Start chat proactively
           href: /dynamics365/customer-service/develop/start-proactive-chat?context=../context/extend-context
         - name: Send authentication token
-          href: /dynamics365/customer-service/develop/send-auth-token-starting-chat?context=../context/extend-context       
+          href: /dynamics365/customer-service/develop/send-auth-token-starting-chat?context=../context/extend-context
         - name: Configure automatic closure of conversations using web API
           href: /dynamics365/customer-service/develop/auto-close-conversation?context=../context/extend-context
         - name: Send custom context during live chat
@@ -53,7 +53,7 @@
       - name: Copilot in Customer Service
         items:  
         - name: Download Copilot transcripts and interaction data
-          href: /dynamics365/customer-service/develop/download-copilot-transcript-data?context=../context/extend-context               
+          href: /dynamics365/customer-service/develop/download-copilot-transcript-data?context=../context/extend-context
       - name: Agent productivity tools
         items: 
         - name: Build a smart assist bot
@@ -61,7 +61,7 @@
         - name: Implement custom scenario
           href: /dynamics365/customer-service/develop/smart-assist-scenario?context=../context/extend-context
         - name: Retrieve and format rich messages
-          href: /dynamics365/customer-service/develop/reference/methods/message-object?context=../context/extend-context  
+          href: /dynamics365/customer-service/develop/reference/methods/message-object?context=../context/extend-context
       - name: Bots
         items:
         - name: Configure bot context
@@ -94,6 +94,14 @@
         href: /dynamics365/customer-service/develop/extend-omnichannel?context=../context/extend-context
       - name: Overview of entity reference
         href: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=../context/extend-context
+    - name: Responsible AI
+      items:
+      - name: Overview
+        href: /dynamics365/customer-service/implement/responsible-ai-overview?context=../context/extend-context
+      - name: Responsible AI FAQ for Copilot in Customer Service
+        href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=../context/extend-context
+    - name: Implement Dynamics 365 Contact center
+      href: ../implement/overview-contact-center.md?context=../context/implement-context
     - name: Administer Dynamics 365 Contact Center
       href: ../implement/overview-contact-center.md?context=../context/administer-context
     - name: Manage Dynamics 365 Contact Center

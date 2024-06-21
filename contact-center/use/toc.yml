@@ -5,7 +5,7 @@
       - name: Dynamics 365 Contact Center documentation
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
-        href: ../overview-contact-center.md?context=../context/use-context
+        href: ../implement/overview-contact-center.md?context=../context/use-context
       - name: Inbox
         items:
           - name: Use the inbox
@@ -108,7 +108,7 @@
           href: /dynamics365/customer-service/use/create-personal-quick-replies?context=../context/use-context
         - name: Manage presence status
           href: /dynamics365/customer-service/use/oc-manage-presence-status?context=../context/use-context
-        - name: FAQ on agent presence in Customer Service
+        - name: FAQ on agent presence in contact center
           href: /dynamics365/customer-service/use/presence-faq?context=../context/use-context
         - name: Search for transcripts
           href: /dynamics365/customer-service/use/oc-search-transcipts?context=../context/use-context
@@ -175,11 +175,67 @@
         - name: Use Copilot to generate knowledge drafts from cases
           href: /dynamics365/customer-service/use/use-copilot-knowledge-from-cases?context=../context/use-context
         - name: Understand how Copilot supports different languages
-          href: /dynamics365/customer-service/use/copilot-language-support.md
+          href: /dynamics365/customer-service/use/copilot-language-support?context=../context/use-context
         - name: View analytics for Copilot impact
           href: /dynamics365/customer-service/use/copilot-analytics-report?context=../context/use-context
         - name: Chat with Customer Service data in Copilot for Microsoft 365 (preview)
           href: /dynamics365/customer-service/use/copilot-chat-customer-service-data?context=../context/use-context
+      - name: Knowledge management
+        items:
+        - name: Overview of knowledge management 
+          href: /dynamics365/customer-service/use/overview-knowledge-management?context=../context/use-context
+        - name: Understand the knowledge article creation process
+          href: /dynamics365/customer-service/use/ka-process?context=../context/use-context
+        - name: Create and manage knowledge articles 
+          href: /dynamics365/customer-service/use/customer-service-hub-user-guide-knowledge-article?context=../context/use-context
+        - name: Configure the knowledge article authoring language
+          href: /dynamics365/customer-service/use/set-knowledge-article-authoring-language?context=../context/use-context
+        - name: Review knowledge articles 
+          href: /dynamics365/customer-service/use/review-ka?context=../context/use-context
+        - name: Publish knowledge articles 
+          href: /dynamics365/customer-service/use/publish-ka?context=../context/use-context
+        - name: Create and manage article versions
+          href: /dynamics365/customer-service/use/ka-versions?context=../context/use-context
+        - name: Translate knowledge articles 
+          href: /dynamics365/customer-service/use/translate-ka?context=../context/use-context
+        - name: Manage feedback for knowledge articles
+          href: /dynamics365/customer-service/use/feedback-sla?context=../context/use-context 
+        - name: Create templates for knowledge articles
+          href: /dynamics365/customer-service/use/create-templates-knowledge-article?context=../context/use-context
+        - name: Prevent duplicate workflows with knowledge article operations
+          href: /dynamics365/customer-service/use/dup-workflows-ka?context=../context/use-context
+        - name: Knowledge article analytics
+          href: /dynamics365/customer-service/use/dashboards-ka?context=../context/use-context
+        - name: Search knowledge articles
+          href: /dynamics365/customer-service/use/search-knowledge-articles-csh?context=../context/use-context
+        - name: Email a knowledge article
+          href: /dynamics365/customer-service/use/email-articles?context=../context/use-context
+        - name: Link and unlink knowledge articles
+          href: /dynamics365/customer-service/use/link-articles?context=../context/use-context
+        - name: Filter knowledge articles
+          href: /dynamics365/customer-service/use/filter-articles?context=../context/use-context
+        - name: Submit ratings and feedback for knowledge articles
+          href: /dynamics365/customer-service/use/submit-feedback?context=../context/use-context        
+        - name: Understand how search works in knowledge management
+          href: /dynamics365/customer-service/use/search-operators?context=../context/use-context
+        - name: Search the knowledge base on portals
+          href: /dynamics365/customer-service/use/knowledge-base-search-methods?context=../context/use-context
+      - name: Microsoft Teams for collaboration
+        items:
+        - name: Use Microsoft Teams chat
+          href: /dynamics365/customer-service/use/use-teams-chat?context=../context/use-context
+        - name: Use suggested contacts to collaborate with coworkers
+          href: /dynamics365/customer-service/use/teams-use-suggested-contacts?context=../context/use-context
+        - name: Use Teams meetings
+          href: /dynamics365/customer-service/use/use-teams-meetings?context=../context/use-context
+        - name: Collaborate with AI-suggested contacts in Microsoft Teams
+          href: /dynamics365/customer-service/use/use-ai-suggested-contacts-teams?context=../context/use-context
+        - name: Use auto-summarization for ongoing conversations
+          href: /dynamics365/customer-service/use/cs-ai-generated-summary?context=../context/use-context
+        - name: Use Join a Teams call to enhance customer conversations
+          href: /dynamics365/customer-service/use/join-a-teams-call?context=../context/use-context
+        - name: Use customer support swarming to resolve issues
+          href: /dynamics365/customer-service/use/use-customer-support-swarming?context=../context/use-context
       - name: Analytics dashboards and insights
         items: 
         - name: Use real-time analytics dashboards
@@ -271,10 +327,10 @@
       - name: Support
         href: /dynamics365/get-started/support/
       - name: Blog
-        href: https://cloudblogs.microsoft.com/dynamics365/it/product/dynamics-365-customer-service
+        href: https://cloudblogs.microsoft.com/dynamics365
       - name: Community
-        href: https://community.dynamics.com/forums/thread/?groupid=25cd05f7-e478-4843-beb5-9ecf4b3e1f74
+        href: https://community.dynamics.com
     - name: Administer Dynamics 365 Contact Center
-      href: ../overview-contact-center.md?context=../context/administer-context
+      href: ../implement/overview-contact-center.md?context=../context/administer-context
     - name: Extend Dynamics 365 Contact Center
-      href: ../overview-contact-center.md?context=../context/extend-context
+      href: ../implement/overview-contact-center.md?context=../context/extend-context

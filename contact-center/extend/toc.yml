@@ -6,7 +6,7 @@
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
         href: ../overview-contact-center.md?context=../context/extend-context
-      - Connectors
+      - name: Connectors
         items:
         - name: Configure Zendesk connector
           href: configure-zendesk-connector.md

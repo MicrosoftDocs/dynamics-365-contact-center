@@ -30,7 +30,6 @@ highlightedContent:
       itemType: concept
       url: /troubleshoot/dynamics-365/customer-service/welcome-customer-service
 
-
 additionalContent: 
   sections:
   - title: Implement
@@ -139,5 +138,3 @@ additionalContent:
         - title: Microsoft Copilot Studio
           summary: Build chatbots easily with Copilot Studio.
           url: /microsoft-copilot-studio/
-
-

@@ -218,7 +218,7 @@
         - name: Manage phone music
           href: /dynamics365/customer-service/administer/voice-channel-music?context=../context/administer-context
         - name: Set up a multilingual bot
-          href:/dynamics365/customer-service/administer/ set-up-multilingual-pva-bot?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/ set-up-multilingual-pva-bot?context=../context/administer-context
         - name: Set up a multilingual contact center
           href: /dynamics365/customer-service/administer/voice-channel-multi-language-contact-center?context=../context/administer-context
         - name: Bring your own carrier

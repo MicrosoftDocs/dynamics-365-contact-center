@@ -6,6 +6,10 @@
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
         href: ../overview-contact-center.md?context=../context/extend-context
+      - Connectors
+        items:
+        - name: Configure Zendesk connector
+          href: configure-zendesk-connector.md
       - name: Chat
         items:
         - name: Develop a custom live chat widget

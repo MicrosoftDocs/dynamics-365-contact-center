@@ -28,7 +28,7 @@ Use the resources in the following articles to learn how to use Contact Center w
 
 - [Introduction to the agent interface](/dynamics365/customer-service/use/oc-introduction-agent-interface?context=../context/use-context)
 - [Manage sessions](/dynamics365/customer-service/use/oc-manage-sessions?context=../context/use-context)
-- [Manage applications](o/dynamics365/customer-service/use/oc-manage-applications?context=../context/use-context)
+- [Manage applications](/dynamics365/customer-service/use/oc-manage-applications?context=../context/use-context)
 - [Understand conversation states](/dynamics365/customer-service/use/oc-conversation-state?context=../context/use-context)
 - [Monitor real-time customer sentiment](/dynamics365/customer-service/use/oc-monitor-real-time-customer-sentiment-sessions?context=../context/use-context)
 - [View notifications](/dynamics365/customer-service/use/oc-notifications?context=../context/use-context)

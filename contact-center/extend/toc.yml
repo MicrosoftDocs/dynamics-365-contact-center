@@ -87,7 +87,7 @@
         - name: Pass authentication token to bot during single sign-on in live chat
           href: /dynamics365/customer-service/develop/pass-auth-token-sso-live-chat?context=../context/extend-context
       - name: Extend Omnichannel for Customer Service
-         href: /dynamics365/customer-service/develop/extend-omnichannel?context=../context/extend-context
+        href: /dynamics365/customer-service/develop/extend-omnichannel?context=../context/extend-context
       - name: Overview of entity reference
         href: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=../context/extend-context
     - name: Administer Dynamics 365 Contact Center

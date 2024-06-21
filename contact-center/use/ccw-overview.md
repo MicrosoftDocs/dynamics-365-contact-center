@@ -1,8 +1,8 @@
 ---
 title: Overview of Contact Center workspace
 description: Learn how to use the Contact Center workspace app.
-author: smurkute
-ms.author: shwetamurkute
+author: platkat
+ms.author: ktaylor
 ms.reviewer: smurkute
 ms.topic: how-to
 ms.collection: 
@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Overview of Contact Center workspace
 
-The Contact Center workspace application on a web browser provides a unified and consistent single-view experience for the agents to view conversation details, customer information, and access Line-of-Business applications from within the app. As an agent, you can use the app to manage the assigned work items and have simultaneous customer sessions without losing the context of each session. You can view the holistic data of the customer with the details of their previous interaction, which ensures you have all the available information to resolve the customer issue.
+The Dynamics 365 Contact Center workspace application provides a powerful agent desktop with Copilot capabilities and collaboration tools across channels like live chat, SMS, voice, Microsoft Teams, and social channels. Contact Center connects to your organization's CRM to provide contextual knowledge and customer data to assist agents in resolving customer queries. As an agent, you can have simultaneous customer sessions within the app without losing the context of each session. You can also use Copilot within Contact Center to ask questions pertaining to a case, removing the need to manually search across multiple knowledge sources.
 
 ## Prerequisites
 

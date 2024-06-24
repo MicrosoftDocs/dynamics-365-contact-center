@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting and FAQs #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: Concept description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
+title: Troubleshooting and FAQs
+description: Learn about how to access the troubleshooting information and FAQ that you might have for Dynamics 365 Contact Center.
 ms.date: 07/01/2024
 author: neeranelli
 ms.author: nenellim

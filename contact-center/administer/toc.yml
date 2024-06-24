@@ -5,10 +5,10 @@
       - name: Dynamics 365 Contact Center documentation
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
-        href: ../overview-contact-center.md?context=../context/administer-context
+        href: ../implement/overview-contact-center.md?context=../context/administer-context
       - name: Use Contact Center admin center
         href: cc-admin-center.md
-      - name: Manage roles and personas
+      - name: Manage user roles and personas
         items:
         - name: Manage users
           href: /dynamics365/customer-service/administer/users-user-profiles?context=../context/administer-context

@@ -37,7 +37,7 @@ The Embeddable Conversation Widget is a feature of the Dynamics 365 Contact Cent
 
 3. Select **Install for All Users** and Click **Install**.
 
-4. After the installation is complete, a confirmation screen appears. Click **Done** to continue. Please note, a successful installation will display a screen listing **CCaaSforSF** as an installed package.
+4. After the installation is complete, a confirmation screen appears. Click **Done** to continue. A successful installation will display a screen listing **CCaaSforSF** as an installed package.
 
 5. Navigate to the **Setup** by clicking the gear icon in the top right corner.
 

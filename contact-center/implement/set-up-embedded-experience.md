@@ -1,7 +1,7 @@
 ---
 title: Set up embedded experience for Dynamics 365 Contact Center
 description: Learn about how to set up the embedded experience for Dynamics 365 Contact Center.
-author: neeranelli
+author: shwetamurkute
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
@@ -14,7 +14,22 @@ ms.custom: bap-template
 
 The Embeddable Conversation Widget is a feature of the Dynamics 365 Contact Center that allows agents to chat with customers directly from any third-party customer relationship management (CRM) system. The widget can be embedded into any web page or application that supports HTML and JavaScript, and it provides a seamless and consistent chat experience across different platforms.
 
-To set up embedded experience for Dynamics 365 Contact Center, make sure these services or features are in place:
+## Prerequisites
+
+- Set up the prerequisites mentioned in the system requirements. More information: [Prerequisites](../implement/system-requirements-contact-center.md#prerequisites).
+
+- Ensure that the provisioning user has the following permissions:
+  - Microsoft 365 Global admin role. More information: [Assign admin roles to user in Microsoft Office 365](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide)
+  - Dynamics 365 System Administrator role on the root business unit for your organization. More information: [Assign security roles to a user in Power Platform](https://learn.microsoft.com/en-us/power-platform/admin/assign-security-roles) and [Create or edit business units](https://learn.microsoft.com/en-us/power-platform/admin/create-edit-business-units)
+  - Read-Write access in the Client Access License Information (CAL). More information: [Create a Read-Write user account in Power Platform](https://learn.microsoft.com/en-us/power-platform/admin/create-users#create-a-read-write-user-account)
+  
+- [Set up Omnichannel for Customer Service](https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/omnichannel-provision-license#set-up-omnichannel-for-customer-service-)
+
+- Ensure you have CTI Adapter URL, which is available on the Contact Center admin center's welcome page. Alternatively, you can create your embedded widget URL using this template: `https://ccaas-embed-prod.azureedge.net/widget/index.html?dynamicsUrl=https://[ORG_URL]&tenantId=[TENANT_ID]&msdynembedmode=3`. Replace `[ORG_URL]` with your organization's URL (for example, `msdynccaas.crm.dynamics.com`) and `[TENANT_ID]` with your tenant ID (for example, `8cd46c97-38dd-4560-9228-3df8a717a198`).
+> [!NOTE]
+> If the URL ends with the number 3, it will display the CCaaS widget. If it ends with the number 1, it will display the Copilot for service widget.
+
+## Set up Call Center in Salesforce
 
 1. Sign in to Salesforce.
 
@@ -30,12 +45,11 @@ To set up embedded experience for Dynamics 365 Contact Center, make sure these s
 
 7. Click **Continue** if this is your first time setting up this feature.
 
-8. Edit the *Dynamics 365 Call Center Adapter* call center file.
-
-9. Update the CTI Adapter URL and save your changes. The URL for this widget is the same as the one you used for testing the Dynamics Call Center. You can find the CTI Adapter URL on the welcome page of the Contact Center admin center. Alternatively, you can create your embedded widget URL using this template: `https://ccaas-embed-prod.azureedge.net/widget/index.html?dynamicsUrl=https://[ORG_URL]&tenantId=[TENANT_ID]&msdynembedmode=3`. Replace `[ORG_URL]` with your organization's URL (for example, `msdynccaas.crm.dynamics.com`) and `[TENANT_ID]` with your tenant ID (for example, `8cd46c97-38dd-4560-9228-3df8a717a198`).
-Please note, if the URL ends with the number 3, it will display the CCaaS widget. If it ends with the number 1, it will display the Copilot for service widget.
+8. Edit the call center file by updating the CTI Adapter URL and save your changes.
 
 10. Go to **Manage Call Center Users** > **Add more users**, select the user record that you're currently logged in with and select **Save**.
+
+## Set up Softphone in Salesforce
 
 11. To create a softphone layout:
     1. In the **Quick Find** box, search for **Softphone Layouts**.
@@ -53,3 +67,5 @@ Please note, if the URL ends with the number 3, it will display the CCaaS widget
 16. Refresh your browser. You should start seeing the Omnichannel Add-on in your application.
 
 17. To connect Copilot to the CRM system, select "Sandbox" as the Login URI and v58.0 as the Salesforce API Version to set up the third-party CRM connection.
+
+### See also

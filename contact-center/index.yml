@@ -42,10 +42,8 @@ additionalContent:
         text: Implementation
       - url: /dynamics365/adoption/adoption-guide
         text: Adoption guide
-    - title: Try/Buy/Provision
+    - title: Buy/Provision
       links: 
-      - url: implement/try-contact-center.md
-        text: Try Contact Center
       - url: https://dynamics.microsoft.com/contact-center/pricing/
         text: Buy Contact Center
       - url: /dynamics365/customer-service/implement/omnichannel-provision-license?context=context/implement-context

@@ -330,6 +330,8 @@
         href: https://cloudblogs.microsoft.com/dynamics365
       - name: Community
         href: https://community.dynamics.com
+    - name: Implement Dynamics 365 Contact center
+      href: ../implement/overview-contact-center.md?context=../context/implement-context
     - name: Administer Dynamics 365 Contact Center
       href: ../implement/overview-contact-center.md?context=../context/administer-context
     - name: Extend Dynamics 365 Contact Center

@@ -22,6 +22,14 @@
           href: international-availability.md
         - name: Dynamics 365 US Government Community Cloud (GCC) availability
           href: /dynamics365/customer-service/implement/government-availability?context=../context/implement-context
+      - name: Accessibility and privacy
+        items:
+        - name: Accessibility
+          href: /dynamics365/get-started/accessibility/customer-engagement/accessibility
+        - name: Privacy and personal data
+          href: /dynamics365/get-started/privacy/
+        - name: Keyboard navigation support
+          href: /dynamics365/customer-service/implement/keyboard-navigation-support-customer-service-hub?context=../context/implement-context
       - name: System requirements for Dynamics 365 Contact Center
         items:
         - name: System requirements
@@ -48,7 +56,7 @@
             href: /dynamics365/customer-service/implement/delete-solution?context=../context/implement-context
           - name: Upgrade Dynamics 365 Contact Center
             href: /dynamics365/customer-service/implement/upgrade-omnichannel?context=../context/implement-context
-      - name: User Management
+      - name: Set up users and security
         items:
         - name: Overview of user management
           href: /dynamics365/customer-service/implement/overview-users?context=../context/implement-context
@@ -58,14 +66,6 @@
           href: /dynamics365/customer-service/implement/add-users-assign-roles?context=../context/implement-context
         - name: Personas and privileges
           href: /dynamics365/customer-service/implement/persona-privilege-mapping?context=../context/implement-context
-      - name: Accessibility and privacy
-        items:
-        - name: Accessibility
-          href: /dynamics365/get-started/accessibility/customer-engagement/accessibility
-        - name: Privacy and personal data
-          href: /dynamics365/get-started/privacy/
-        - name: Keyboard navigation support
-          href: /dynamics365/customer-service/implement/keyboard-navigation-support-customer-service-hub?context=../context/implement-context
       - name: Responsible AI
         items:
         - name: Overview
@@ -82,6 +82,8 @@
           href: https://cloudblogs.microsoft.com/dynamics365
         - name: Community
           href: https://community.dynamics.com/
+    - name: Administer Dynamics 365 Contact Center
+      href: overview-contact-center.md?context=../context/administer-context
     - name: Manage Dynamics 365 Contact Center
       href: overview-contact-center.md?context=../context/use-context
     - name: Extend Dynamics 365 Contact Center

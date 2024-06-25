@@ -16,7 +16,7 @@ The Zendesk connector allows organizations to engage with their customers using 
 
 ## Prerequisites 
 
-- [Zendesk](https://[your_subdomain].zendesk.com) instance
+- [Zendesk](https://`<your_subdomain>`.zendesk.com) instance
 - License for Dynamic 365 Contact Center
 - Power Platform System administrator permissions
 - Basic understanding of how to use Power Automate flows or Power Apps

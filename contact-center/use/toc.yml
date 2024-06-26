@@ -74,8 +74,6 @@
         items:
         - name: Overview of Contact Center workspace
           href: ccw-overview.md
-        - name: Know the agent interface
-          href: /dynamics365/customer-service/use/oc-introduction-agent-interface?context=../context/use-context
         - name: View agent dashboard and work items
           href: /dynamics365/customer-service/use/oc-agent-dashboard?context=../context/use-context
         - name: View agent notifications

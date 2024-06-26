@@ -377,8 +377,6 @@
             href: /dynamics365/customer-service/administer/bot-session-licensing?context=../context/administer-context
           - name: Integrate an Azure bot
             href: /dynamics365/customer-service/administer/configure-bot-azure?context=../context/administer-context
-          - name: Sample configuration
-            href: /dynamics365/customer-service/administer/sample-config-azure-bot?context=../context/administer-context
         - name: Integrate a Copilot Studio bot
           href: /dynamics365/customer-service/administer/configure-bot-virtual-agent?context=../context/administer-context
       - name: Knowledge management

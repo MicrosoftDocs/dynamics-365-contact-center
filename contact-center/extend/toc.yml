@@ -10,6 +10,8 @@
         items:
         - name: Configure Zendesk connector
           href: configure-zendesk-connector.md
+        - name: Configure ServiceNow connector
+          href: configure-servicenow-connector.md  
       - name: Chat
         items:
         - name: Develop a custom live chat widget

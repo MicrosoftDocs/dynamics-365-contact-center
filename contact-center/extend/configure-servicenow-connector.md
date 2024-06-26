@@ -14,7 +14,7 @@ ms.custom: bap-template
 The Microsoft Contact Center — Power Automate solution for ServiceNow connector allows organizations to engage with their customers using capabilities such as voice, video, SMS, live chat, and social messaging from their third-party CRM solutions. You can use Power Automate data connectors to sync the contacts and accounts data from the ServiceNow CRM solution into Dataverse.
 
 ## Prerequisites
-- [ServiceNow](https://[your-instance-name].service-now.com/) instance
+-  A ServiceNow instance. For example, `https://[your-instance-name].service-now.com/`
 - License for Dynamic 365 Contact Center, that include the Power Automate and Power Apps subscriptions.
 - Power Platform System administrator permissions
 - Basic understanding of how to use Power Automate flows or Power Apps

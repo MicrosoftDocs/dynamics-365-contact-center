@@ -5,16 +5,84 @@
       - name: Dynamics 365 Contact Center documentation
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
-        href: ../overview-contact-center.md?context=../context/administer-context
+        href: overview-contact-center.md
+      - name: Get started
+        items:
+        - name: Buy
+          items:
+          - name: Buy Dynamics 365 Contact Center
+            href: https://dynamics.microsoft.com/contact-center/pricing/
+      - name: What's new
+        href: whats-new.md
+      - name: Troubleshooting and FAQs
+        href: cc-troubleshooting-faqs.md
+      - name: Availability
+        items:
+        - name: International availability of Dynamics 365 Contact Center
+          href: international-availability.md
+        - name: Dynamics 365 US Government Community Cloud (GCC) availability
+          href: /dynamics365/customer-service/implement/government-availability?context=../context/implement-context
+      - name: System requirements for Dynamics 365 Contact Center
+        items:
+        - name: System requirements
+          href: system-requirements-contact-center.md
+        - name: Service quotas
+          href: /dynamics365/customer-service/implement/service-quotas?context=../context/implement-context
+        - name: Best practices to set up voice channel
+          href: /dynamics365/customer-service/implement/voice-channel-best-practices?context=../context/implement-context
       - name: Set up Dynamics 365 Contact center
         items:
-        - name: System requirements for Dynamics 365 Contact Center
-          href: system-requirements-contact-center.md
         - name: Set up embedded experience
           href: set-up-embedded-experience.md
-        - name: Set up standalone experience
-          href: set-up-standalone-experience.md
+        - name: Install Dynamics 365 Contact Center
+          items:
+          - name: Provision Dynamics 365 Contact Center
+            href: /dynamics365/customer-service/implement/omnichannel-provision-license?context=../context/implement-context
+          - name: Export and import app configuration data
+            href: /dynamics365/customer-service/implement/export-import-omnichannel-data?context=../context/implement-context
+          - name: Copy an environment with Dynamics 365 Contact Center
+            href: /dynamics365/customer-service/implement/copy-environment-with-omnichannel?context=../context/implement-context
+          - name: Uninstall Dynamics 365 Contact Center
+            href: /dynamics365/customer-service/implement/remove-omnichannel?context=../context/implement-context
+          - name: Uninstall solutions
+            href: /dynamics365/customer-service/implement/delete-solution?context=../context/implement-context
+          - name: Upgrade Dynamics 365 Contact Center
+            href: /dynamics365/customer-service/implement/upgrade-omnichannel?context=../context/implement-context
+      - name: User Management
+        items:
+        - name: Overview of user management
+          href: /dynamics365/customer-service/implement/overview-users?context=../context/implement-context
+        - name: Create users and assign security roles
+          href: /power-platform/admin/create-users-assign-online-security-roles?context=../context/implement-context
+        - name: Assign roles and enable users
+          href: /dynamics365/customer-service/implement/add-users-assign-roles?context=../context/implement-context
+        - name: Personas and privileges
+          href: /dynamics365/customer-service/implement/persona-privilege-mapping?context=../context/implement-context
+      - name: Accessibility and privacy
+        items:
+        - name: Accessibility
+          href: /dynamics365/get-started/accessibility/customer-engagement/accessibility
+        - name: Privacy and personal data
+          href: /dynamics365/get-started/privacy/
+        - name: Keyboard navigation support
+          href: /dynamics365/customer-service/implement/keyboard-navigation-support-customer-service-hub?context=../context/implement-context
+      - name: Responsible AI
+        items:
+        - name: Overview
+          href: /dynamics365/customer-service/implement/responsible-ai-overview?context=../context/implement-context
+        - name: Responsible AI FAQ for Copilot in Customer Service
+          href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=../context/implement-context
+      - name: Resources
+        items:
+        - name: Training
+          href: /training/dynamics365/customer-service
+        - name: Support
+          href: /dynamics365/get-started/support/
+        - name: Blog
+          href: https://cloudblogs.microsoft.com/dynamics365
+        - name: Community
+          href: https://community.dynamics.com/
     - name: Manage Dynamics 365 Contact Center
-      href: ../overview-contact-center.md?context=../context/use-context
+      href: overview-contact-center.md?context=../context/use-context
     - name: Extend Dynamics 365 Contact Center
-      href: ../overview-contact-center.md?context=../context/extend-context
+      href: overview-contact-center.md?context=../context/extend-context

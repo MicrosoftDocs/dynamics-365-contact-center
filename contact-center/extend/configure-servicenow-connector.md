@@ -81,7 +81,7 @@ Repeat the same configuration for the Contact table.
 ## Configure incremental data sync
 
 
-Incremental data sync updates the Zendesk data to Dataverse in realtime through automated triggers.
+Incremental data sync updates the ServiceNow data to Dataverse in realtime through automated triggers.
 ServiceNow uses scripts to trigger notifications when a record is created, updated, and deleted. You must use the Customer Service Plugin to trigger these notifications. You must create the script in the following order:
 
 1. Create REST Message
@@ -150,7 +150,7 @@ For example, the **Account Name** field in Dataverse can be mapped to the **Name
 
 **Account**
 
-| Zendesk | Dataverse |
+| ServiceNow | Dataverse |
 |---------|-----------|
 | name   | name |
 |phone|telephone1 |

@@ -12,8 +12,6 @@ ms.custom: bap-template
 
 # System requirements for Dynamics 365 Contact Center
 
-
-
 This article provides information about the prerequisites and system requirements for deploying Dynamics 365 Contact Center in your organization.
 
 You can deploy Dynamics 365 Contact Center and use it in the following ways:
@@ -29,11 +27,25 @@ This section lists the prerequisites for using Dynamics 365 Contact Center.
 
 Make sure that Dynamics 365 Contact Center is available in your region. More information: [International availability](international-availability.md)
 
-### Licensing
+### Licenses
 
-- You must have an active subscription to Microsoft Dynamics 365 Customer Service Enterprise or Dynamics 365 Customer Engagement Plan in your tenant for each user of Digital Messaging or Chat for Dynamics 365 Customer Service.
-- For each chat channel user, you must have an active subscription to the **Dynamics 365 Customer Service Digital Messaging add-on** for each Digital Messaging user or **Chat for Dynamics 365 Customer Service**.
-- For each voice channel user, you must have an active subscription to **Dynamics 365 Customer Service Voice Channel Add-in** or **Dynamics 365 Customer Service Digital Messaging and Voice Add-in**. For information on purchasing add-ins, see [Buy an add-on](/microsoft-365/commerce/buy-or-edit-an-add-on?view=o365-worldwide#buy-an-add-on&preserve-view=true).
+To use Dynamics 365 Contact Center with third-party customer relationship management (CRM) solutions, one or more active subscriptions of the following standalone licenses are required for each channel user.
+
+| Capability | License |
+| --- | --- |
+| Voice, chat, and digital messaging | Dynamics 365 Contact Center |
+| Chat and digital messaging | Dynamics 365 Contact Center Digital |
+| Voice | Dynamics 365 Contact Center Voice |
+
+To use Dynamics 365 Contact Center with Dynamics 365 Customer Service Enterprise, one or more active subscriptions of the following add-on licenses are required for each channel user.
+
+| Capability | License |
+| --- | --- |
+| Voice, chat, and digital messaging | Dynamics 365 Contact Center Add-on for Customer Service Enterprise|
+| Chat and digital messaging | Dynamics 365 Contact Center Digital Add-on for Customer Service Enterprise|
+| Voice |Dynamics 365 Contact Center Voice Add-on for Customer Service Enterprise |
+
+For information on purchasing add-ins, see [Buy an add-on](/microsoft-365/commerce/buy-or-edit-an-add-on?view=o365-worldwide#buy-an-add-on&preserve-view=true).
 
 For more information about licenses and pricing, see the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
 
@@ -43,7 +55,7 @@ The system requirements to use Dynamics 365 Contact Center are as follows. These
 
 | Area | Requirements |
 |----------|----------|
-| Model-driven app | Dynamics 365 Customer Service 9.2.21034.00160 or later.  |
+| Contact Center workspace app | Dynamics 365 Contact Center 9.2.21034.00160 or later.  |
 | Web browsers | Supported browsers:<li> Microsoft Edge ([Chromium based](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)); version 79.0.309.65 or later is required for the desktop notifications feature. </li> <li> Google Chrome </li> **Important**<br> Dynamics 365 Contact Center uses third-party cookies for authentication. Make sure that the cookies are not blocked in your browser in any mode so that certain services, such as agent or supervisor presence, can work properly. |
 | Azure Communication Services |Required for first-party voice and SMS in the voice channel in production environments. For requirements specific to Azure Communication Services, see [Network recommendations](/azure/communication-services/concepts/voice-video-calling/network-requirements). |
 | Hardware | <ul><li>Microphone and speakers for the voice experience.</li><li>**Minimum:** 4 GB of RAM</li><ul> |
@@ -61,7 +73,7 @@ The customer-facing live chat widget that you display on your portal supports th
 
 ## Provision Dynamics 365 Contact Center
 
-To enable the omnichannel capabilities in your org, see [Provision Omnichannel for Customer Service](/dynamics365/customer-service/implement/omnichannel-provision-license).
+To enable the omnichannel capabilities in your org, see [Provision channels](/dynamics365/customer-service/implement/omnichannel-provision-license).
 
 > [!NOTE]
 >
@@ -69,7 +81,7 @@ To enable the omnichannel capabilities in your org, see [Provision Omnichannel f
 
 ## Allow access to websites
 
-If your organization uses a URL filter to block a category of websites or URLs, ensure that you allow the following websites as an exception for your users so they can access the Omnichannel for Customer Service app on the business portal.
+If your organization uses a URL filter to block a category of websites or URLs, ensure that you allow the following websites as an exception for your users so they can access the Contact Center workspace app on the business portal.
 
 - `https://*.communication.azure.com`
 - `https://login.microsoft.net`

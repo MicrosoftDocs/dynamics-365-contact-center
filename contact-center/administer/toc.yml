@@ -247,8 +247,6 @@
           href: /dynamics365/customer-service/administer/set-up-chat-widget?context=../context/administer-context
         - name: Configure a chat widget
           href: /dynamics365/customer-service/administer/add-chat-widget?context=../context/administer-context
-        - name: Enable resizing of communication panel
-          href: /dynamics365/customer-service/administer/ csac-resize-cp?context=../context/administer-context  
         - name: Configure file attachments
           href: /dynamics365/customer-service/administer/configure-file-attachment?context=../context/administer-context
         - name: Configure pre-conversation surveys
@@ -323,6 +321,8 @@
           href: /dynamics365/customer-service/administer/enable-transcripts-messaging-channels?context=../context/administer-context
         - name: Enable sound notifications
           href: /dynamics365/customer-service/administer/enable-sound-notifications?context=../context/administer-context
+        - name: Enable resizing of communication panel
+          href: /dynamics365/customer-service/administer/ csac-resize-cp?context=../context/administer-context
         - name: Enable missed notifications
           href: /dynamics365/customer-service/administer/ manage-missed-notifications?context=../context/administer-context
         - name: Enable automatic update of presence on rejection of work assignment

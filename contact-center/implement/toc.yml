@@ -44,8 +44,8 @@
           href: set-up-embedded-experience.md
         - name: Install Dynamics 365 Contact Center
           items:
-          - name: Provision Dynamics 365 Contact Center
-            href: /dynamics365/customer-service/implement/omnichannel-provision-license?context=../context/implement-context
+          - name: Provision channels
+            href: provision-channels.md
           - name: Export and import app configuration data
             href: /dynamics365/customer-service/implement/export-import-omnichannel-data?context=../context/implement-context
           - name: Copy an environment with Dynamics 365 Contact Center

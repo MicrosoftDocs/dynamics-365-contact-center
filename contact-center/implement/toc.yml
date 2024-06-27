@@ -87,4 +87,4 @@
     - name: Manage Dynamics 365 Contact Center
       href: ../use/ccw-overview.md
     - name: Extend Dynamics 365 Contact Center
-      href: ..extend/configure-zendesk-connector.md
+      href: ../extend/configure-zendesk-connector.md

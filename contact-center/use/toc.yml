@@ -323,8 +323,8 @@
       - name: Community
         href: https://community.dynamics.com
     - name: Implement Dynamics 365 Contact center
-      href: ../implement/overview-contact-center.md?context=../context/implement-context
+      href: ../implement/overview-contact-center.md
     - name: Administer Dynamics 365 Contact Center
-      href: ../implement/overview-contact-center.md?context=../context/administer-context
+      href: ../administer/cc-admin-center.md
     - name: Extend Dynamics 365 Contact Center
-      href: ../implement/overview-contact-center.md?context=../context/extend-context
+      href: ..extend/configure-zendesk-connector.md

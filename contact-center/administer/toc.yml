@@ -461,14 +461,8 @@
           href: /dynamics365/customer-service/administer/model-customize-reports?context=../context/administer-context
         - name: Configure forecasting
           items:
-          - name: Configure case forecasting
-            href: /dynamics365/customer-service/administer/configure-volume-forecasting?context=../context/administer-context
           - name: Configure agent forecasting for conversation
             href: /dynamics365/customer-service/administer/configure-agent-forecasting-conversation?context=../context/administer-context
-        - name: Configure AI suggestions for article keywords and descriptions
-          href: /dynamics365/customer-service/administer/configure-ai-suggested-article-keywords-description?context=../context/administer-context
-        - name: Configure AI topic clustering for conversation
-          href: /dynamics365/customer-service/administer/ai-topic-clustering-conversations?context=../context/administer-context
         - name: Configure real-time customer sentiment
           href: /dynamics365/customer-service/administer/enable-sentiment-analysis?context=../context/administer-context
       - name: Responsible AI
@@ -478,8 +472,8 @@
         - name: Responsible AI FAQ for Copilot in Customer Service
           href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=../context/administer-context
     - name: Implement Dynamics 365 Contact center
-      href: ../implement/overview-contact-center.md?context=../context/implement-context
+      href: ../implement/overview-contact-center.md
     - name: Manage Dynamics 365 Contact Center
-      href: ../implement/overview-contact-center.md?context=../context/use-context
+      href: ../use/ccw-overview.md
     - name: Extend Dynamics 365 Contact Center
-      href: ../implement/overview-contact-center.md?context=../context/extend-context
+      href: ..extend/configure-zendesk-connector.md

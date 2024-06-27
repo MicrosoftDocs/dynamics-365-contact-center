@@ -101,8 +101,8 @@
       - name: Responsible AI FAQ for Copilot in Customer Service
         href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=../context/extend-context
     - name: Implement Dynamics 365 Contact center
-      href: ../implement/overview-contact-center.md?context=../context/implement-context
+      href: ../implement/international-availability.md
     - name: Administer Dynamics 365 Contact Center
-      href: ../implement/overview-contact-center.md?context=../context/administer-context
+      href: ../administer/cc-admin-center.md
     - name: Manage Dynamics 365 Contact Center
-      href: ../implement/overview-contact-center.md?context=../context/use-context
+      href: ../use/ccw-overview.md

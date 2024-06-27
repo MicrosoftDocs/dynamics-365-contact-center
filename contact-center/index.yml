@@ -46,16 +46,16 @@ additionalContent:
       links: 
       - url: https://dynamics.microsoft.com/contact-center/pricing/
         text: Buy Contact Center
-      - url: /dynamics365/customer-service/implement/omnichannel-provision-license?context=context/implement-context
+      - url: implement/provision-channels.md
         text: Provision Dynamics 365 Contact Center
     - title: Set up 
       links:
+      - url: implement/system-requirements-contact-center.md
+        text: System requirements for Dynamics 365 Contact Center 
       - url: /dynamics365/customer-service/implement/add-users-assign-roles?context=context/implement-context
         text: Set up roles and enable users in Dynamics 365 Contact Center
       - url: /dynamics365/customer-service/implement/persona-privilege-mapping?context=context/implement-context
         text: Set up personas and privileges in Dynamics 365 Contact Center
-      - url: implement/system-requirements-contact-center.md
-        text: System requirements for Dynamics 365 Contact Center  
  
   - title: Administer and develop
     items:
@@ -69,6 +69,8 @@ additionalContent:
       links:
       - url: administer/configure-salesforce-connector.md
         text: Configure the Salesforce connector    
+      - url: extend/configure-zendesk-connector.md
+        text: Configure the Zendesk connector    
     - title: Configure AI features
       links:
       - url: /dynamics365/customer-service//administer/configure-copilot-features?context=context/administer-context
@@ -88,23 +90,19 @@ additionalContent:
     items:
     - title: Communicate over channels that your customers prefer
       links:
-      - url: implement/overview-contact-center.md
-        text: Overview of Dynamics 365 Contact Center
+      - url: use/ccw-overview.md
+        text: Use Contact Center workspace      
       - url: /dynamics365/customer-service/use/channels?context=context/use-context
         text: Communicate over multiple channels
       - url: /dynamics365/customer-service/administer/voice-channel?context=context/administer-context
         text: Communicate over the voice channel
-      - url: /dynamics365/customer-service/use/voice-channel-transfer-consult?context=context/use-context
-        text: Transfer calls and consult with users in the voice channel
-      - url: /dynamics365/customer-service/use/oc-conversation-control?context=context/use-context
-        text: View the communication panel 
     - title: Increase productivity and customer satisfaction
       links:
       - url: /dynamics365/customer-service/use/csw-productivity-pane?context=context/use-context
         text: Use the productivity pane to resolve customer issues
       - url: /dynamics365/customer-service/use/create-personal-quick-replies?context=context/use-context
-        text: Use email to interact consistently with customers
-      - url: /power-apps/user/add-activities?context=context/use-context
+        text: Guide customer interactions with agent scripts
+      - url: /dynamics365/customer-service/use/oc-agent-scripts?context=..context/use-context
         text: Manage conversations and activities on the timeline
     - title: Use Copilot
       links:
@@ -118,6 +116,8 @@ additionalContent:
       links:
       - url: /dynamics365/customer-service/use/copilot-analytics-report?context=context/use-context
         text: View Copilot analytics report
+      - url: /dynamics365/customer-service/use/realtime-summary-dashboard?context=context/use-context
+        text: View summary report in real-time analytics
       - url: /dynamics365/customer-service/use/customize-reports?context=context/use-context
         text: Customize visual display
        

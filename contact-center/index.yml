@@ -50,12 +50,12 @@ additionalContent:
         text: Provision Dynamics 365 Contact Center
     - title: Set up 
       links:
+      - url: implement/system-requirements-contact-center.md
+        text: System requirements for Dynamics 365 Contact Center 
       - url: /dynamics365/customer-service/implement/add-users-assign-roles?context=context/implement-context
         text: Set up roles and enable users in Dynamics 365 Contact Center
       - url: /dynamics365/customer-service/implement/persona-privilege-mapping?context=context/implement-context
         text: Set up personas and privileges in Dynamics 365 Contact Center
-      - url: implement/system-requirements-contact-center.md
-        text: System requirements for Dynamics 365 Contact Center  
  
   - title: Administer and develop
     items:
@@ -90,16 +90,12 @@ additionalContent:
     items:
     - title: Communicate over channels that your customers prefer
       links:
-      - url: implement/overview-contact-center.md
-        text: Overview of Dynamics 365 Contact Center
       - url: use/ccw-overview.md
         text: Use Contact Center workspace      
       - url: /dynamics365/customer-service/use/channels?context=context/use-context
         text: Communicate over multiple channels
       - url: /dynamics365/customer-service/administer/voice-channel?context=context/administer-context
         text: Communicate over the voice channel
-      - url: /dynamics365/customer-service/use/voice-channel-transfer-consult?context=context/use-context
-        text: Transfer calls and consult with users in the voice channel
     - title: Increase productivity and customer satisfaction
       links:
       - url: /dynamics365/customer-service/use/csw-productivity-pane?context=context/use-context
@@ -121,7 +117,7 @@ additionalContent:
       - url: /dynamics365/customer-service/use/copilot-analytics-report?context=context/use-context
         text: View Copilot analytics report
       - url: /dynamics365/customer-service/use/realtime-summary-dashboard?context=context/use-context
-        text: Customize visual display
+        text: View summary report in real-time analytics
       - url: /dynamics365/customer-service/use/customize-reports?context=context/use-context
         text: Customize visual display
        

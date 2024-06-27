@@ -46,7 +46,7 @@ additionalContent:
       links: 
       - url: https://dynamics.microsoft.com/contact-center/pricing/
         text: Buy Contact Center
-      - url: /dynamics365/customer-service/implement/omnichannel-provision-license?context=context/implement-context
+      - url: implement/provision-channels.md
         text: Provision Dynamics 365 Contact Center
     - title: Set up 
       links:

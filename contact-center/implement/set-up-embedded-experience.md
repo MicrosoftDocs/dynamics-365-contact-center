@@ -47,7 +47,7 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
 1. To create a softphone layout:
     1. In the **Quick Find** box, search for **Softphone Layouts**.
     2. Create a new softphone layout or edit an existing one.
-    3. Verify that **Is Default Layout** is checked and then select **Save**.
+    3. Verify that **Is Default Layout** is selected and then select **Save**.
 
 2. To set up the softphone utility for your application, navigate to the **App Manager** in setup and edit the **Service Console** application.
 

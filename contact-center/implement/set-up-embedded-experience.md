@@ -18,7 +18,7 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
 
 - Set up the prerequisites mentioned in the system requirements. More information: [Prerequisites](system-requirements-contact-center.md#prerequisites).
   
-- Ensure that the omnichannel capabilities are enabled in your org, see [Provision channels](/dynamics365/customer-service/implement/omnichannel-provision-license).
+- Make sure that the omnichannel capabilities are enabled in your org, see [Provision channels](../implement/provision-channels.md).
 
 - Ensure that the provisioning user has the permission to System Administrator role in Salesforce.
 

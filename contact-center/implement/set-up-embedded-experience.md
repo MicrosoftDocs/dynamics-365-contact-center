@@ -20,7 +20,7 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
   
 - Make sure that the omnichannel capabilities are enabled in your org, see [Provision channels](../implement/provision-channels.md).
 
-- Ensure that the provisioning user has the permission to System Administrator role in Salesforce.
+- Make sure that the provisioning user has permission to the System Administrator role in Salesforce.
 
 - Ensure you have embedded widget URL. To find the embedded widget URL, head to the Contact Center admin center's welcome page. Click the **Open** button under **Your default contact center**, then navigate to the **Conversation widget** tab. You'll find the URL listed under **Integration into third-party systems**.
 

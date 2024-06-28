@@ -57,7 +57,7 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
 
 5. Navigate to the **Service Console** from the **Apps** page.
 
-6. Refresh your browser. You should start seeing the Omnichannel Add-on in your application.
+6. Refresh your browser. The embedded widget appears in your application.
 
 7. To connect Copilot to the CRM system, select required Login URI and v58.0 as the Salesforce API Version to set up the third-party CRM connection.
 

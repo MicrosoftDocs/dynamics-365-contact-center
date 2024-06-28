@@ -23,11 +23,11 @@ Having this information ready can help support agents reduce the hold time that 
 - Conversation summary
 - Timeline
 
-For active conversations, you can view the **Active Conversation** form on the agent dashboard of the Contact Center workspace app. The **Active Conversation** form doesn't display details of closed conversations. To view closed conversations, use the **Closed work items** section of the agent dashboard. More information: [View agent dashboard and conversations](oc-agent-dashboard.md)
+For active conversations, you can view the **Active Conversation** form on the agent dashboard of the Contact Center workspace app. The **Active Conversation** form doesn't display details of closed conversations. To view closed conversations, use the **Closed work items** section of the agent dashboard. 
 
 You'll see the following options on the **Active Conversation** page:  
 
-- **Save**: You can edit and save standard and custom field values added to the **Active Conversation** form by your administrator. However, the following [Logical column names](../administer/supported-customizations.md#logical-column-names) aren't supported. If a default value is already set for a field, the value appears on the form automatically.
+- **Save**: You can edit and save standard and custom field values added to the **Active Conversation** form by your administrator. However, the following [Logical column names] aren't supported. If a default value is already set for a field, the value appears on the form automatically.
 - **Refresh**: Refreshes the data in the form.
 - **Queue:** The queue through which the conversation has been assigned to you.
 - **Start time:** The time when you started the conversation.
@@ -38,15 +38,13 @@ The application displays the customer or account details with inline edit capabi
    > - The form selector to switch between **Active Conversation** and **Closed Conversation** is hidden. You can't switch to closed conversation form from the **Active Conversation** form while the conversation is still active or vice versa.
    > - You can see the form selector on the enhanced Active Conversation form if your administrator has enabled it for you. More information: [Display the form selector on Active Conversation form](../administer/add-customer-summary-settings.md#display-the-form-selector-on-active-conversation-form). However, if you use the form selector to switch to the closed conversation form, you'll see errors.
 
-
-
 ## View customer details
 
 This section provides details such as the contact name or account name. For a contact, you can view the location, email, and other details. For an account, you can view location, telephone number, and primary contact person for the account.
 
 Use the customer section to search for an existing contact or account record, and select the record to link it to the conversation. If the record doesn't exist, you can create a new contact or account record by using the **Add Contact** or **Add Account** button, respectively. After you create it, search for the record and then select it to link it to the conversation.
 
- Displays the customer or account details. The fields displayed on this card are based on your administrator's configuration. For more information, go to [Add the Customer 360 component to a case form](../administer/add-display-components-to-case-form.md#add-the-customer-360-component-to-a-case-form).<br>
+ Displays the customer or account details. The fields displayed on this card are based on your administrator's configuration. For more information, go to [Add the Customer 360 component to a case form]
 
 You can edit the customer or account details inline, without navigating to another tab. However, if you see the default **Customer(Contact or Account)** card, your administrator has disabled the enhanced **Customer Details** experience for the **Active Conversation** form.
  
@@ -88,8 +86,7 @@ The **Self service** tab displays information about the activities that the cust
 | Knowledge article viewed | The knowledge article viewed, with time stamp. |
 | Custom action performed | Any other custom action that's tracked by your organization, with time stamp. |
 
-To configure the appearance of the **Self service** tab, see [Enable self-service settings for customer actions in a conversation summary](../administer/enable-self-service-settings.md).
-
+To configure the appearance of the **Self service** tab, see [Enable self-service settings for customer actions in a conversation summary]
 ### View Visitor details
 
 The **Visitor details** tab provides information such as whether the customer is authenticated, the browser the customer used to contact support, the operating system used by the customer, the customer's location, and the language used during the interaction.
@@ -110,11 +107,3 @@ The **Linked records** field shows the record that's linked to the conversation.
 
 
 ### See also
-
-[Search for and share knowledge articles](../oc-search-knowledge-articles.md)  
-[View communication panel](oc-conversation-control.md)  
-[Monitor real-time customer sentiment](oc-monitor-real-time-customer-sentiment-sessions.md)  
-[View active conversation for an incoming conversation request](oc-view-customer-summary-incoming-conversation-request.md)  
-[setContextProvider](../develop/reference/methods/setContextProvider.md)  
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

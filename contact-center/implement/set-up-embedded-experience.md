@@ -28,7 +28,7 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
 
 1. Download the call center definition file from the following location: `https://github.com/microsoft/copilot-for-service/blob/main/samples/SFCallCenter/Dynamics365CallCenter.xml`.
 
-1. Open the file, replace the "CTI Adapter URL" with embedded widget URL, and then save your changes.
+1. Open the file, replace the "CTI Adapter URL" with the embedded widget URL, and then save your changes.
 
 1. Sign in to Salesforce.
 

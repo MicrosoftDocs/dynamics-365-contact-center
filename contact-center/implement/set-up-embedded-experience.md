@@ -36,7 +36,7 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
 
 1. In the **Quick Find** box, search for **Call Center**.
 
-1. Click **Continue** if this is your first time setting up this feature.
+1. Select **Continue** if this is your first time setting up this feature.
 
 1. Click **Import** and select the Call Center definition file.
 

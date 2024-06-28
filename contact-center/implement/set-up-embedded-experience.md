@@ -24,7 +24,7 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
 
 - Make sure that you have the embedded widget URL. To find the embedded widget URL, go to the welcome page of Contact Center admin center. Select **Open** under **Your default contact center**, then navigate to the **Conversation widget** tab. You'll find the URL listed under **Integration into third-party systems**.
 
-## Set up Call Center in Salesforce
+## Set up the call center in Salesforce
 
 1. Download the Call Center definition file from the following URL: `https://github.com/microsoft/copilot-for-service/blob/main/samples/SFCallCenter/Dynamics365CallCenter.xml`.
 

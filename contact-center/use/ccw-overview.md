@@ -22,6 +22,32 @@ You must have the Omnichannel Agent role.
 
 The app is automatically installed in all the Dynamics 365 Contact Center organizations. You can sign in to Dynamics 365, and on the apps page, select Contact Center workspace.
 
+## Contact Center workspace sessions and tabs
+
+Contact Center workspace allows agents to work on multiple sessions at a time in a single app while keeping the work organized.
+- Agents can work on up to nine sessions and within a session, they can open up to 10 tabs.
+-  A new session starts when an agent opens a case from the **Home** session or accepts an incoming conversation.
+-  If the agent opens the customer record from a session, a new tab opens in the same session. 
+- Agents can select the hamburger icon to access the site map. 
+- When an agent opens a page from the site map, the page loads in the current focused session.
+
+### Navigate sessions and tabs
+
+ The following table gives an overview of the multisession navigation:
+
+| Action | Result |
+| ------------ |------------- |
+| Open a record from the Home session | Record opens in a new session. |
+| Open a record from the Global search | Record opens in a new session. |
+| Open a record from the retrieved search records | Record opens in a focused session. |
+| Open a record using the Quick Create notification | Record opens in a new session |
+| Create a new record | Record opens in a new session |
+| Open a record from the timeline | Record opens in a new tab in the focused session |
+| Open a record from a form lookup | Record opens in a new tab in the focused session |
+| Open a view from the Sitemap | View opens in a new tab in the focused session |
+| Open a dashboard from the Sitemap | Dashboard opens in a new tab in the focused session|
+
+
 ## Use Contact Center workspace
 
 Use the resources in the following articles to learn how to use Contact Center workspace.

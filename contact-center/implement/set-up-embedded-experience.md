@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Set up embedded experience for Dynamics 365 Contact Center
 
-The Embeddable Conversation Widget is a feature of the Dynamics 365 Contact Center that allows agents to chat with customers directly from any third-party customer relationship management (CRM) system. The widget can be embedded into any web page or application that supports HTML and JavaScript, and it provides a seamless and consistent chat experience across different platforms.
+The embeddable conversation widget is a feature of the Dynamics 365 Contact Center that allows agents to chat with customers directly from any third-party customer relationship management (CRM) system. The widget can be embedded into any web page or application that supports HTML and JavaScript, and it provides a seamless and consistent chat experience across different platforms.
 
 ## Prerequisites
 

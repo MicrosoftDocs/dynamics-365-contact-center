@@ -97,6 +97,6 @@ See the following table for the languages supported by the different features in
 ### See also
 
 [Languages supported in voice-enabled copilots](/microsoft-copilot-studio/voice-supported-languages)  
-[Languages supported in Copilot features](/administer/cs-region-availability-service-limits#language-support-for-ai-based-analytics-and-insights-in-customer-service)  
+[Languages supported in Copilot features](/dynamics365/customer-service/administer/cs-region-availability-service-limits#language-support-for-ai-based-analytics-and-insights-in-customer-service)  
 [System requirements for Dynamics 365 Contact Center](system-requirements-contact-center.md)  
 

@@ -14,6 +14,14 @@ ms.custom: bap-template
 
 You can use Copilot to summarize cases and conversations if your administrator has enabled this feature.
 
+> [!NOTE]
+> The feature availability information is as follows.
+>
+> |Feature| Dynamics 365 Contact Center&mdash;embedded | Dynamics 365 Contact Center&mdash;standalone | 
+> |--------------|----------|----------|
+> | Case Summary | No  | Yes   |
+> | Conversation Summary | Yes   | Yes   | 
+
 ## Prerequisites
 
 Your administrator has enabled the Copilot conversation summary feature.

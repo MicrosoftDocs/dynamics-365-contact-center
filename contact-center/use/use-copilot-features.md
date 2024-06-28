@@ -14,6 +14,15 @@ ms.custom: bap-template
 
 Copilot is an AI-powered tool that revolutionizes the agent experience/ It provides real-time assistance to resolve issues faster, handle cases more efficiently, and automate time-consuming tasks so you can focus on delivering high-quality service to your customers.
 
+> [!NOTE]
+> The feature availability information is as follows.
+>
+> |Feature| Dynamics 365 Contact Center&mdash;embedded | Dynamics 365 Contact Center&mdash;standalone | 
+>  |--------------|----------|----------|
+> | Ask a question | Yes  | Yes   | 
+> | Draft an email | Yes   | Yes   | 
+> | Generate chat responses | Yes   | Yes   | 
+
 > [!IMPORTANT]
 > The AI-generated content is a suggestion. It's your responsibility to review and edit the suggested content to make sure it's accurate and appropriate before sharing the responses.
 
@@ -68,8 +77,6 @@ If you're satisfied with the response Copilot provides, you can use the whole th
 To rate the usefulness of Copilot's responses, select the thumbs-up or thumbs-down icon.
 
 ## Draft a chat response (Preview)
-
-[!INCLUDE [preview-banner](../../../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Use Copilot to draft chat responses when you're in a conversation with a customer.
 

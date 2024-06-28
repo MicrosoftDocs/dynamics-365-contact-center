@@ -69,25 +69,18 @@
       - name: Use Copilot
         items: 
         - name: Use Copilot to solve customer issues 
-          href: /dynamics365/customer-service/use/use-copilot-features?context=../context/use-context
+          href: ../administer/use-copilot-features.md
         - name: Use Copilot to summarize cases and conversations
-          href: /dynamics365/customer-service/use/copilot-use-summary?context=../context/use-context
-        - name: Summarize cases
-          href: /dynamics365/customer-service/use/copilot-use-summary#summarize-cases?context=../context/use-context
-        - name: Summarize conversations
-          href: /dynamics365/customer-service/use/copilot-use-summary#summarize-conversations?context=../context/use-context
         - name: Ask a question
-          href: /dynamics365/customer-service/use/use-copilot-features#ask-a-question?context=../context/use-context
+          href: ../administer/use-copilot-features.md
         - name: Draft a chat response (preview)
-          href: /dynamics365/customer-service/use/use-copilot-features#draft-a-chat-response-preview?context=../context/use-context
+          href: ../administer/use-copilot-features.md
         - name: Write an email with Copilot
-          href: /dynamics365/customer-service/use/use-copilot-email?context=../context/use-context
-        - name: Use Copilot filters
-          href: /dynamics365/customer-service/use/use-copilot-filters?context=../context/use-context
+          href: ../administer/use-copilot-email.md
         - name: Understand how Copilot supports different languages
-          href: /dynamics365/customer-service/use/copilot-language-support?context=../context/use-context
+          href: ../administer/copilot-language-support.md
         - name: View analytics for Copilot impact
-          href: /dynamics365/customer-service/use/copilot-analytics-report?context=../context/use-context
+          href: ../administer/copilot-analytics-reports.md
         - name: Chat with Customer Service data in Copilot for Microsoft 365 (preview)
           href: /dynamics365/customer-service/use/copilot-chat-customer-service-data?context=../context/use-context
       - name: Timeline

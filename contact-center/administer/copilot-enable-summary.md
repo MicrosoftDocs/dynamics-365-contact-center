@@ -14,9 +14,20 @@ ms.custom: bap-template
 
 Copilot case and conversation summaries help you to quickly understand the context of a case and resolve customer issues more efficiently.
 
+> [!NOTE]
+> The feature availability information is as follows.
+>
+> |Feature| Dynamics 365 Contact Center&mdash;embedded | Dynamics 365 Contact Center&mdash;standalone | 
+> |--------------|----------|----------|
+> | Case Summary | No  | Yes   |
+> | Conversation Summary | Yes   | Yes   | 
+
 ## Enable case summaries
 
-Case summaries help agents understand the context of a case, enabling them to resolve customer issues efficiently. Agents get a concise summary of the case with the case title, customer, case subject, product, priority, case type, and case description. Email activity records, notes linked to a case, and conversation summaries are also used to generate the case summary. 
+Case summaries help agents understand the context of a case, enabling them to resolve customer issues efficiently. Agents get a concise summary of the case based on their CRM as follows:
+
+- Salesforce: case id, description, subject, priority, type, customer name, case url, email, comments, and text post activities linked to the case.
+- ServiceNow: incident id, description, short description, priority, type, customer name, incident url, email, email and comments linked to the incident.
 
 > [!IMPORTANT]
 > - Copilot case summary is available in the Contact Center standalone app only.
@@ -28,7 +39,6 @@ Case summaries help agents understand the context of a case, enabling them to re
     - **Operations** > **Insights** > **Summaries**
 1. Select **Manage** in **Summaries**.
 1. Select **Make case summaries available to agents** to display a summary of the case on the **Case** page. 
-1. Select **Manage data** to [modify the source case fields that Copilot uses to generate case summaries](copilot-map-custom-fields.md). 
 1. If you want Copilot to exclude emails from specific email addresses when generating responses, select **Add email address**. You can specify up to 10 email addresses. For example, you might not want to include automatic notification emails in your case summary. You can add the email address and Copilot won't use those emails to generate case summaries.
 
 ## Enable conversation summaries
@@ -40,7 +50,6 @@ For Copilot to automatically generate a conversation summary for a live conversa
    - **When a conversation ends**: Generates a summary when the conversation ends. 
       - Select **Allow agents to create case with a button in the summary** to allow agents to see the **Create case** button in the conversation summary. A new case is created when the agent selects **Create case**.
    - **On demand, by selecting a button to summarize the conversation**: Generate a summary at any point in the conversation, whenever the agent selects the copilot **Summarize conversation** in the conversation panel.
-   - Select [**Manage format**](customize-copilot-conv-summary.md) to  the change the format in which the conversation summary is displayed to agents.
 
 ## Enable translation
 

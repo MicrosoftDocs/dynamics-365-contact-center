@@ -15,6 +15,12 @@ When you draft customer emails, Copilot can offer suggestions to make them clear
 
 *Always review the response* Copilot generates before you send the email to the customer.
 
+> [!NOTE]
+> The feature availability information is as follows.
+>
+> |Feature| Dynamics 365 Contact Center&mdash;embedded | Dynamics 365 Contact Center&mdash;standalone | 
+>  |--------------|----------|----------|
+> | Draft an email | Yes   | Yes   | 
 ## Use Copilot to draft an email
 
 When you use Copilot to draft an email, you can use the following features to help you write a response to a customer:
@@ -82,4 +88,4 @@ To return to the prompts, select **Start over** at the bottom of the Copilot pan
 
 [Enable Copilot to draft emails](../administer/copilot-email-enable.md)
 [FAQ for Copilot in Customer Service](../administer/faq-copilot-features.md) 
-[Responsible AI FAQ for copilot features](../implement/faq-responsible-ai-copilot.md)   
+[FAQ for Copilot in Customer Service](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=../context/administer-context) 

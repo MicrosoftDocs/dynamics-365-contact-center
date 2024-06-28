@@ -71,10 +71,10 @@ The Copilot report displays the following metrics.
 
 ## Next Steps
 
-You can view the [transcripts of interactions](../develop/download-copilot-transcript-data.md) between agents and Copilot. 
+You can view the [transcripts of interactions]( /dynamics365/customer-service/develop/download-copilot-transcript-data?context=../context/extend-context) between agents and Copilot. 
 
 ### See also
 
 [Use copilot features](use-copilot-features.md)  
 [Configure copilot](../administer/configure-copilot-features.md)  
-[Enable historical analytics for Copilot](../administer/configure-cs-historical-analytics-csh.md#enable-historical-analytics-for-copilot)
+

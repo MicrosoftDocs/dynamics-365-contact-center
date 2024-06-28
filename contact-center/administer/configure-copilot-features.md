@@ -53,13 +53,13 @@ In Contact Center admin center, opt out from the copilot features on the **Copil
 
 ## Make Copilot available to agents
 
-For agents to be able to use the copilot features, you need to enable the copilot features in [agent experience profiles](add-profile-default.md). By default, agents added to the out-of-the-box agent experience profiles can use the Copilot features.
+For agents to be able to use the copilot features, you need to enable the copilot features in [agent experience profiles](/dynamics365/customer-service/administer/add-profile-default?context=../context/administer-context). By default, agents added to the out-of-the-box agent experience profiles can use the Copilot features.
 
-If you'd like to limit the features that agents can use, you can create a custom agent experience profile and enable the required features. You can then [assign the custom profile to the agents](add-profile-default.md).
+If you'd like to limit the features that agents can use, you can create a custom agent experience profile and enable the required features. You can then [assign the custom profile to the agents](/dynamics365/customer-service/administer/add-profile-default?context=../context/administer-context).
 
 Perform the following steps to add the Copilot features to an agent experience profile:
 
-1. Go to [**Agent experience profiles**](create-agent-experience-profile.md#assign-users-templates-configure-productivity-pane-channels) using one of the following navigation options:
+1. Go to [**Agent experience profiles**](/dynamics365/customer-service/administer/create-agent-experience-profile?context=../context/administer-context) using one of the following navigation options:
    - **Agent experience** > **Workspaces**
    - **Copilot for questions and emails** > **Agent access** > **agent experience profiles**
 1. Select the required agent experience profile.
@@ -71,7 +71,7 @@ Perform the following steps to add the Copilot features to an agent experience p
 
 ## Record agent interactions with Copilot
 
-In the **Summaries** and **Copilot for questions and emails** configuration pages, you can select **Record transcripts of agent interaction with Copilot, agent actions, and agent feedback on AI suggestions** to record and understand how agents are interacting with Copilot and how Copilot is performing in a support organization. Agents can also share feedback about Copilot actions, which helps Copilot perform better. You can also [download](../develop/download-copilot-transcript-data.md) and use the data to analyze knowledge sources, and build usage reports.
+In the **Summaries** and **Copilot for questions and emails** configuration pages, you can select **Record transcripts of agent interaction with Copilot, agent actions, and agent feedback on AI suggestions** to record and understand how agents are interacting with Copilot and how Copilot is performing in a support organization. Agents can also share feedback about Copilot actions, which helps Copilot perform better. You can also [download](/dynamics365/customer-service/develop/msdyn_copilottranscriptdata?context=../context/extend-context) and use the data to analyze knowledge sources, and build usage reports.
 
 ## Assign roles and privileges
 

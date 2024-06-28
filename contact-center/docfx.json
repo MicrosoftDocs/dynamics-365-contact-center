@@ -42,7 +42,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "~/dynamics365/contact-center/breadcrumb/toc.json",
+      "breadcrumb_path": "/dynamics365/contact-center/breadcrumb/dynamics365-contact-center/toc.json",
+      "uhfHeaderId": "MSDocsHeader-Dynamics365-ContactCenter",
       "feedback_system": "Standard",
       "permissioned-type": "public"
     },

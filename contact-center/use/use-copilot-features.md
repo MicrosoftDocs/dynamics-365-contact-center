@@ -21,7 +21,7 @@ Copilot is an AI-powered tool that revolutionizes the agent experience/ It provi
 
 | Requirement type | You must have |  
 |-----------------------|---------|
-| **License** | <ul><li>Dynamics 365 Customer Service Enterprise for summarize cases, ask a question, draft emails, and copilot analytics</li><li>Customer Service add-in (Chat, Digital Messaging, or Voice) for draft a chat response and summarize conversations</li></ul> |
+| **License** | <ul><li>Dynamics 365 Contact Center license |
 
 ## Prerequisites
 
@@ -67,9 +67,23 @@ If you're satisfied with the response Copilot provides, you can use the whole th
 
 To rate the usefulness of Copilot's responses, select the thumbs-up or thumbs-down icon.
 
+## Draft a chat response (Preview)
+
+[!INCLUDE [preview-banner](../../../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+Use Copilot to draft chat responses when you're in a conversation with a customer.
+
+:::image type="content" source="../media/copilot-responses.png" alt-text="Screenshot of Copilot suggested responses for conversations.":::
+
+### Generate a chat response
+
+Select the one-click response generation button at the lower-right corner of the Conversation control panel and at the lower-left corner of the Copilot pane. Copilot analyzes the context of the conversation and the latest customer question or message, and drafts a response to send directly to the customer. You don't need to manually type the question.
+
+> [!NOTE]
+> The one-click response generation feature is available in North America, Europe, and the United Kingdom only.
+
 ### See also
 
 [Understand Copilot language support](copilot-language-support.md)  
 [Manage copilot features in Customer Service](../administer/configure-copilot-features.md)  
-[Responsible AI FAQ for copilot features](../implement/faq-responsible-ai-copilot.md)   
-[FAQ for Copilot in Customer Service](../administer/faq-copilot-features.md) 
+[FAQ for Copilot in Customer Service](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=../context/administer-context) 

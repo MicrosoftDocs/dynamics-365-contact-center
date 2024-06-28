@@ -84,8 +84,6 @@
           href: /dynamics365/customer-service/use/use-copilot-email?context=../context/use-context
         - name: Use Copilot filters
           href: /dynamics365/customer-service/use/use-copilot-filters?context=../context/use-context
-        - name: Use Copilot to generate knowledge drafts from cases
-          href: /dynamics365/customer-service/use/use-copilot-knowledge-from-cases?context=../context/use-context
         - name: Understand how Copilot supports different languages
           href: /dynamics365/customer-service/use/copilot-language-support?context=../context/use-context
         - name: View analytics for Copilot impact

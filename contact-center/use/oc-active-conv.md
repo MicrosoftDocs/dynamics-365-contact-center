@@ -11,7 +11,6 @@ ms.custom: bap-template
 
 # View customer information on Active Conversation form
 
-
 One of the major challenges that customers face when contacting customer support is repeatedly giving the same information about the issue to each support agent they talk to. And if they want to review the status of their request later, they have to share the same information with another support agent to explain the context of the engagement. To avoid this situation, support agents need access to all the information the customer has provided, including details about the product or service, issue, case history, related cases, and location.
 
 Having this information ready can help support agents reduce the hold time that they spend retrieving customer information, reduce average handling time, and increase customer satisfaction by resolving issues faster.
@@ -24,9 +23,9 @@ Having this information ready can help support agents reduce the hold time that 
 - Conversation summary
 - Timeline
 
-For active conversations, you can view the **Active Conversation** form on the agent dashboard of the Customer Service workspace or Omnichannel for Customer Service app. The **Active Conversation** form doesn't display details of closed conversations. To view closed conversations, use the **Closed work items** section of the agent dashboard. More information: [View agent dashboard and conversations](oc-agent-dashboard.md)
+For active conversations, you can view the **Active Conversation** form on the agent dashboard of the Contact Center workspace app. The **Active Conversation** form doesn't display details of closed conversations. To view closed conversations, use the **Closed work items** section of the agent dashboard. More information: [View agent dashboard and conversations](oc-agent-dashboard.md)
 
-If your administrator has enabled the **Customise active conversation form**  in Customer Service admin center, you'll see the following options on the **Active Conversation** page:  
+You'll see the following options on the **Active Conversation** page:  
 
 - **Save**: You can edit and save standard and custom field values added to the **Active Conversation** form by your administrator. However, the following [Logical column names](../administer/supported-customizations.md#logical-column-names) aren't supported. If a default value is already set for a field, the value appears on the form automatically.
 - **Refresh**: Refreshes the data in the form.
@@ -34,24 +33,12 @@ If your administrator has enabled the **Customise active conversation form**  in
 - **Start time:** The time when you started the conversation.
 - **Related**: To select and navigate to the required entities.
 
-Depending on the settings that are enabled for you, you'll see one of the following layouts:
-
-  ### [Enhanced Active Conversation page](#tab/enhancedcustomersummarypage)
-
-  If your administrator has enabled the **Enhanced Active conversation form**  in Customer Service admin center, you see the enhanced **Active Conversation** page. The application displays the customer or account details with inline edit capabilities.  
+The application displays the customer or account details with inline edit capabilities.  
    > [!NOTE]
    > - The form selector to switch between **Active Conversation** and **Closed Conversation** is hidden. You can't switch to closed conversation form from the **Active Conversation** form while the conversation is still active or vice versa.
    > - You can see the form selector on the enhanced Active Conversation form if your administrator has enabled it for you. More information: [Display the form selector on Active Conversation form](../administer/add-customer-summary-settings.md#display-the-form-selector-on-active-conversation-form). However, if you use the form selector to switch to the closed conversation form, you'll see errors.
 
-   :::image type="content" source="../media/enh-custsummary-overall-mini.png" alt-text="Enhanced quick case form" lightbox="../media/enh-custsummary-overall.png":::
 
-  ### [Default Active Conversation page](#tab/customersummarypage)
-
-  If your administrator hasn't enabled the **Enhanced Active conversation form** in **Customer Service admin center**, you see the default Active Conversation view.
-
-  :::image type="content" source="../media/customer-summary.png" alt-text="View the Active Conversation page" :::
-
----
 
 ## View customer details
 
@@ -59,24 +46,11 @@ This section provides details such as the contact name or account name. For a co
 
 Use the customer section to search for an existing contact or account record, and select the record to link it to the conversation. If the record doesn't exist, you can create a new contact or account record by using the **Add Contact** or **Add Account** button, respectively. After you create it, search for the record and then select it to link it to the conversation.
 
-Depending on the settings that are enabled for you, you'll see one of the following layouts:
+ Displays the customer or account details. The fields displayed on this card are based on your administrator's configuration. For more information, go to [Add the Customer 360 component to a case form](../administer/add-display-components-to-case-form.md#add-the-customer-360-component-to-a-case-form).<br>
+
+You can edit the customer or account details inline, without navigating to another tab. However, if you see the default **Customer(Contact or Account)** card, your administrator has disabled the enhanced **Customer Details** experience for the **Active Conversation** form.
  
-  ### [Enhanced Active Conversation&mdash;Customer Details](#tab/enhancedcustomer)
-
-   Displays the customer or account details. The fields displayed on this card are based on your administrator's configuration. For more information, go to [Add the Customer 360 component to a case form](../administer/add-display-components-to-case-form.md#add-the-customer-360-component-to-a-case-form).<br>
-
-   You can edit the customer or account details inline, without navigating to another tab. However, if you see the default **Customer(Contact or Account)** card, your administrator has disabled the enhanced **Customer Details** experience for the **Active Conversation** form.
  
-   :::image type="content" source="../media/enh-custsummary-conv.png" alt-text="View enhanced CustomerContact or Account" :::
-
-   ### [Default Active Conversation&mdash;Customer(Contact or Account)](#tab/customer)
-    
-   View customer details on the default Customer(Contact or Account) layout.
-
-   :::image type="content" source="../media/customer-summary-customer-form.png" alt-text="View enhanced CustomerContact or Account" :::
-
----
-
 ## View Conversation summary
 
 Conversation summary changes.
@@ -89,7 +63,6 @@ The **Conversation summary** section provides detailed information about the con
 - **Queue:** The queue through which the conversation has been assigned to you.
 - **Start time:** The time when you started the conversation.
 
-   :::image type="content" source="../media/conversation-details.png" alt-text="View conversation details.":::
  
 In addition, the **Conversation summary** section includes several tabs:
 
@@ -123,15 +96,11 @@ The **Visitor details** tab provides information such as whether the customer is
 
 If the customer has signed in to the portal to initiate the chat with a support agent, the **Authenticated** field value is **Yes**; otherwise, the **Authenticated** field value is **No**.
 
-![Authenticated chat shown as Yes on the Visitor details tab](../media/conversation-summary-authenticated-chat.PNG "Authenticated chat shown as Yes on the Visitor details tab") ![Unauthenticated chat shown as No on the Visitor details tab](../media/conversation-summary-unauthenticated-chat.PNG "Unauthenticated chat shown as No on the Visitor details tab")
-
-To learn more, see [Create chat authentication settings](../administer/create-chat-auth-settings.md).
 
 ### View Additional details
 
 If your administrator or developer has configured the **Additional details** tab and if any other context variables exist, they're displayed on the **Additional details** tab for live chat channels.
 
-To learn more, see [setContextProvider](../develop/reference/methods/setContextProvider.md).
 
 ## View Timeline
 
@@ -139,8 +108,6 @@ This section displays customer-related activities in the form of a timeline. You
 
 The **Linked records** field shows the record that's linked to the conversation. 
 
-> [!div class='mx-imgBorder']
-> ![View only the linked records in the drop-down.](../media/customer-summary-linked-records.PNG "View only the linked records in the drop-down list")
 
 ### See also
 

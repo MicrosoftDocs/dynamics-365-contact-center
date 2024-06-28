@@ -45,7 +45,7 @@ To learn about supported languages for Copilot, see [Language support for AI-bas
 
 In Contact Center admin center, the [**Copilot for questions and emails**](copilot-enable-help-pane.md) or [**Summaries**](copilot-enable-summary.md) page, when you enable the copilot features, you must opt in to continue with the setup. The opt-in page displays a link to review the terms and conditions. You can select **Opt in** to continue with the setup.  
 
-  :::image type="content" source="../media/copilot-enable-opt-in-mini.png" alt-text="Screenshot of the Copilot Help Pane page." lightbox="../media/copilot-enable-opt-in.png":::
+
 
 ## Opt out from using Copilot features
 
@@ -114,7 +114,6 @@ More information: [Security roles and privileges](/power-platform/admin/security
 
 [Enable Copilot case and conversation summaries](copilot-enable-summary.md)  
 [Enable Copilot help pane](copilot-enable-help-pane.md)  
-[Display Copilot case summary on custom case forms](copilot-powerapps-settings.md)  
 
 ### See also
  

@@ -8,8 +8,6 @@
         href: ../implement/overview-contact-center.md?context=/dynamics365/contact-center/context/extend-context
       - name: Connectors
         items:
-        - name: Configure Zendesk connector
-          href: configure-zendesk-connector.md
         - name: Configure ServiceNow connector
           href: configure-servicenow-connector.md
         - name: Configure custom CRM connector

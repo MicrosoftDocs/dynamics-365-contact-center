@@ -88,7 +88,7 @@ additionalContent:
     
   - title: Use and manage the contact center
     items:
-    - title: Communicate over channels that your customers prefer
+    - title: Communicate over channels your customers prefer
       links:
       - url: use/ccw-overview.md
         text: Use Contact Center workspace      

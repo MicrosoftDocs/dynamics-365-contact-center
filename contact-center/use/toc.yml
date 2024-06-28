@@ -325,4 +325,4 @@
     - name: Administer Dynamics 365 Contact Center
       href: ../administer/cc-admin-center.md
     - name: Extend Dynamics 365 Contact Center
-      href: ../extend/configure-zendesk-connector.md
+      href: ../extend/configure-servicenow-connector.md

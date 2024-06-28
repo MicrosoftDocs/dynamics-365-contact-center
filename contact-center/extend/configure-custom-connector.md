@@ -67,7 +67,7 @@ To create webhooks, ensure you have the HTTP endpoint for the Power Automate flo
 1. Select the required flow and then select **Edit**. 
 1. Select **Manual** in the flow, and then copy the HTTP URL. Repeat the steps for the organization and user flows for all the create, update, and delete operations.
 
-You can use this URL as the webhook endpoint. For more information, see: [Configure incremental data sync](configure-zendesk-connector.md#configure-incremental-data-sync)
+You can use this URL as the webhook endpoint.
 
 ### Add a custom CRM using Business rules
 

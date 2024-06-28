@@ -1,13 +1,13 @@
 ---
 title: Configure the connector for Zendesk
 description: Learn how to use the connector for Zendesk CRM solution to fetch data into Dataverse and use in Dynamics 365 Contact Center.
-author: neeranelli
-ms.author: nenellim
-ms.reviewer: nenellim
-ms.topic: how-to
-ms.collection:
-ms.date: 07/01/2024
+author: gandhamm
+ms.author: mgandham
+ms.reviewer: mgandham
+ms.topic: how-to 
+ms.date: 06/25/2024
 ms.custom: bap-template
+ms.collection:
 ---
 
 # Configure the connector for Zendesk

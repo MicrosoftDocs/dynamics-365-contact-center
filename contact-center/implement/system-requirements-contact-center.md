@@ -14,11 +14,6 @@ ms.custom: bap-template
 
 This article provides information about the prerequisites and system requirements for deploying Dynamics 365 Contact Center in your organization.
 
-You can deploy Dynamics 365 Contact Center and use it in the following ways:
-
-- Dynamics 365 Contact Center&mdash;embedded experience
-- Contact Center workspace&mdash;standalone experience
-
 ## Prerequisites
 
 This section lists the prerequisites for using Dynamics 365 Contact Center.
@@ -29,12 +24,12 @@ Make sure that Dynamics 365 Contact Center is available in your region. More inf
 
 ### Licenses
 
-To use Dynamics 365 Contact Center with third-party customer relationship management (CRM) solutions, one or more active subscriptions of the following standalone licenses are required for each channel user.
+To use Dynamics 365 Contact Center with a customer relationship management (CRM) solution of your choice, one or more active subscriptions of the following standalone licenses are required for each channel user.
 
 | Capability | License |
 | --- | --- |
 | Voice, chat, and digital messaging | Dynamics 365 Contact Center |
-| Chat and digital messaging | Dynamics 365 Contact Center Digital |
+| Chat, digital messaging | Dynamics 365 Contact Center Digital |
 | Voice | Dynamics 365 Contact Center Voice |
 
 To use Dynamics 365 Contact Center with Dynamics 365 Customer Service Enterprise, one or more active subscriptions of the following add-on licenses are required for each channel user.
@@ -60,6 +55,7 @@ The system requirements to use Dynamics 365 Contact Center are as follows. These
 | Azure Communication Services |Required for first-party voice and SMS in the voice channel in production environments. For requirements specific to Azure Communication Services, see [Network recommendations](/azure/communication-services/concepts/voice-video-calling/network-requirements). |
 | Hardware | <ul><li>Microphone and speakers for the voice experience.</li><li>**Minimum:** 4 GB of RAM</li><ul> |
 | Internet bandwidth for voice and video |<ul><li>**Minimum:** 4-Mbps upload speed; 8-Mbps download speed</li><li>**Recommended:** 8-Mbps upload speed; 16-Mbps download speed</li></ul> |
+|Embedded experience| System requirements for the preferred CRM solution |
 
 For other hardware and software requirements, see [Model-driven app requirements](/power-platform/admin/web-application-requirements).
 
@@ -83,6 +79,7 @@ To enable the omnichannel capabilities in your org, see [Provision channels](/dy
 
 If your organization uses a URL filter to block a category of websites or URLs, ensure that you allow the following websites as an exception for your users so they can access the Contact Center workspace app on the business portal.
 
+- `https://ccaas-embed-prod.azureedge.net`
 - `https://*.communication.azure.com`
 - `https://login.microsoft.net`
 - `https://login.microsoftonline.com`
@@ -142,20 +139,6 @@ Location-specific links that should be made accessible are as follows.
 | France | `oc-cdn-public-fra.azureedge.net/*`|
 | Switzerland | `oc-cdn-public-che.azureedge.net/*` |
 | United Arab Emirates | `oc-cdn-ocuae-uae.azureedge.net/*`|
-
-### Government Community Cloud (GCC)
-
-The Government community cloud links that should be made accessible are as follows.
-
-- `https://*.communication.azure.us`
-- `https://ocprodocprodnamgs.blob.core.usgovcloudapi.net`
-- `https://*.omnichannelengagementhub.us/*`
-- `https://oc-auth.azurewebsites.us`
-- `https://swc.cdn.skype.com/*`
-- `https://config.edge.skype.com/*`
-- `https://*.gcc.teams.microsoft.com`
-- `https://api.ams.gcc.teams.microsoft.com/*`
-- `https://browser.pipe.aria.microsoft.com/*`
 
 ### See also
 

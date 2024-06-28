@@ -19,6 +19,9 @@
         - name: Delete historical data of agent capacity updates
           href: /dynamics365/customer-service/administer/manage-historical-data-capacity-updates?context=/dynamics365/contact-center/context/administer-context
       - name: Set up Dynamics 365 Contact center
+        items:
+        - name: Set up embedded experience
+          href: set-up-embedded-experience.md
       - name: Unified routing and assignment
         items:
         - name: Overview of unified routing

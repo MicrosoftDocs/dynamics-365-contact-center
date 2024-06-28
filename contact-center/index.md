@@ -1,1 +1,0 @@
-# Welcome to dynamics365-contact-center!

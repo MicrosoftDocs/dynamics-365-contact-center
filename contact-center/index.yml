@@ -1,0 +1,138 @@
+### YamlMime:Hub
+
+title: Dynamics 365 Contact Center documentation
+summary: Discover how to make the most of Dynamics 365 Contact Center with training, docs, and videos covering product capabilities and how-to articles. Learn about the suite of capabilities that Dynamics 365 Contact Center provides and make sure that your business delivers the best contact center experience to your customers.
+brand: dynamics
+
+metadata:
+  title: Dynamics 365 Contact Center
+  description: Discover how to make the most of Dynamics 365 Contact Center with training, docs, and videos covering product capabilities and how-to articles. Learn about the suite of capabilities that Dynamics 365 Contact Center provides and make sure that your business delivers the best contact center experience to your customers.
+  ms.topic: hub-page
+  author: neeranelli
+  ms.author: nenellim
+  ms.date: 07/01/2024
+  ms.custom: bap-template
+  hide_bc: true
+
+highlightedContent:
+
+  items:
+    # Card
+    - title: Welcome to Dynamics 365 Contact Center
+      itemType: get-started
+      url: implement/overview-contact-center.md
+    # Card
+    - title: What's new
+      itemType: whats-new
+      url: implement/whats-new.md
+    # Card
+    - title: Troubleshoot
+      itemType: concept
+      url: /troubleshoot/dynamics-365/customer-service/welcome-customer-service
+
+additionalContent: 
+  sections:
+  - title: Implement
+    items:
+    - title: Guidance 
+      links: 
+      - url: /dynamics365/guidance/implementation-guide/security
+        text: Security and compliance
+      - url: /dynamics365/guidance/implementation-guide/overview
+        text: Implementation
+      - url: /dynamics365/adoption/adoption-guide
+        text: Adoption guide
+    - title: Buy/Provision
+      links: 
+      - url: https://dynamics.microsoft.com/contact-center/pricing/
+        text: Buy Contact Center
+      - url: implement/provision-channels.md
+        text: Provision Dynamics 365 Contact Center
+    - title: Set up 
+      links:
+      - url: implement/system-requirements-contact-center.md
+        text: System requirements for Dynamics 365 Contact Center 
+      - url: /dynamics365/customer-service/implement/add-users-assign-roles?context=context/implement-context
+        text: Set up roles and enable users in Dynamics 365 Contact Center
+      - url: /dynamics365/customer-service/implement/persona-privilege-mapping?context=context/implement-context
+        text: Set up personas and privileges in Dynamics 365 Contact Center
+ 
+  - title: Administer and develop
+    items:
+    - title: Configure
+      links:
+      - url: /dynamics365/customer-service/administer/provision-unified-routing?context=context/administer-context
+        text: Provision unified routing for Dynamics 365 Contact Center
+      - url: /dynamics365/customer-service/administer/voice-channel-install?context=context/administer-context
+        text: Configure the voice channel
+    - title: Configure connectors
+      links:
+      - url: administer/configure-salesforce-connector.md
+        text: Configure the Salesforce connector    
+      - url: extend/configure-zendesk-connector.md
+        text: Configure the Zendesk connector    
+    - title: Configure AI features
+      links:
+      - url: /dynamics365/customer-service//administer/configure-copilot-features?context=context/administer-context
+        text: Manage Copilot features
+      - url: /dynamics365/customer-service/administer/configure-bot-virtual-agent
+        text: Integrate a Copilot Studio bot  
+    - title: Develop
+      links:
+      - url: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=context/extend-context
+        text: Dynamics 365 Contact Center entity reference
+      - url: /dynamics365/customer-service/develop/omnichannel-reference?context=context/extend-context
+        text: Live chat SDK Reference
+      - url: /dynamics365/customer-service/develop/develop-live-chat-widget?context=context/extend-context
+        text: Develop a custom live chat widget
+    
+  - title: Manage your contact center
+    items:
+    - title: Communicate over channels that your customers prefer
+      links:
+      - url: use/ccw-overview.md
+        text: Use Contact Center workspace      
+      - url: /dynamics365/customer-service/use/channels?context=context/use-context
+        text: Communicate over multiple channels
+      - url: /dynamics365/customer-service/administer/voice-channel?context=context/administer-context
+        text: Communicate over the voice channel
+    - title: Increase productivity and customer satisfaction
+      links:
+      - url: /dynamics365/customer-service/use/csw-productivity-pane?context=context/use-context
+        text: Use the productivity pane to resolve customer issues
+      - url: /dynamics365/customer-service/use/create-personal-quick-replies?context=context/use-context
+        text: Guide customer interactions with agent scripts
+      - url: /dynamics365/customer-service/use/oc-agent-scripts?context=..context/use-context
+        text: Manage conversations and activities on the timeline
+    - title: Use Copilot
+      links:
+      - url: /dynamics365/customer-service/use/use-copilot-features?context=context/use-context
+        text: Use Copilot to solve customer issues
+      - url: /dynamics365/customer-service/use/copilot-use-summary#summarize-conversations?context=context/use-context
+        text: Use Copilot to summarize conversations
+      - url: /dynamics365/customer-service/use/use-copilot-features#ask-a-question?context=context/use-context
+        text: Ask a question in Copilot
+    - title: Get insights and analyze contact center operations 
+      links:
+      - url: /dynamics365/customer-service/use/copilot-analytics-report?context=context/use-context
+        text: View Copilot analytics report
+      - url: /dynamics365/customer-service/use/realtime-summary-dashboard?context=context/use-context
+        text: View summary report in real-time analytics
+      - url: /dynamics365/customer-service/use/customize-reports?context=context/use-context
+        text: Customize visual display
+       
+  - title: Related products
+    items:
+        # Card
+        - title: Microsoft Power Apps
+          summary: Learn how to quickly build low-code apps that modernize processes and solve tough business challenges in your organization using Power Apps.
+          url: /power-apps/
+        - title: Microsoft Power Platform
+          summary: Learn how to quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, rapidly design, configure, and publish modern websites using Power Pages, and build intelligent bots with a no-code interface using Copilot Studio.
+          url: /power-platform/
+        - title: Azure Communication Services
+          summary: Build powerful, cloud-based communication and customer engagement experiences by adding voice, video, chat, sms, email, teams interoperability, call automation, and telephony to your apps.
+          url: /azure/communication-services/
+        - title: Microsoft Copilot Studio
+          summary: Build chatbots easily with Copilot Studio.
+          url: /microsoft-copilot-studio/

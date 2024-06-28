@@ -16,7 +16,7 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
 
 ## Prerequisites
 
-- Set up the prerequisites mentioned in the system requirements. More information: [Prerequisites](system-requirements-contact-center.md#prerequisites).
+- Set up the prerequisites mentioned in the system requirements. More information: [Prerequisites](../implement/system-requirements-contact-center.md#prerequisites).
   
 - Make sure that the omnichannel capabilities are enabled in your org, see [Provision channels](../implement/provision-channels.md).
 
@@ -26,13 +26,13 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
 
 ## Set up the call center in Salesforce
 
-1. Download the call center definition file from the following location: `https://github.com/microsoft/copilot-for-service/blob/main/samples/SFCallCenter/Dynamics365CallCenter.xml`. Make sure you are signed into GitHub to access the file.
+1. Download the call center definition file from the following location: `https://github.com/microsoft/copilot-for-service/blob/main/samples/SFCallCenter/Dynamics365CallCenter.xml`. Make sure you're signed into GitHub to access the file.
 
 1. Open the file, replace the "CTI Adapter URL" with the embedded widget URL, and then save your changes.
 
 1. Sign in to Salesforce.
 
-1. Navigate to the **Setup** by clicking the gear icon in the top right corner.
+1. Navigate to the **Setup** by clicking the gear icon in the top-right corner.
 
 1. In the **Quick Find** box, search for **Call Center**.
 
@@ -59,6 +59,6 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
 
 1. Refresh your browser. The embedded widget appears in your application.
 
-1. To connect Copilot to the CRM system, select required Login URI and v58.0 as the Salesforce API Version to set up the third-party CRM connection.
+1. To connect Copilot to the CRM system, select required sign in URI and v58.0 as the Salesforce API Version to set up the third-party CRM connection.
 
 ### See also

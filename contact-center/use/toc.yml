@@ -19,7 +19,7 @@
         - name: View communication panel
           href: /dynamics365/customer-service/use/oc-conversation-control?context=../context/use-context
         - name: View active conversations
-          href: ../administer/oc-active-conv.md
+          href: ../use/oc-active-conv.md
         - name: Create a record
           href: /dynamics365/customer-service/use/oc-create-record?context=../context/use-context
         - name: Search, link, and unlink a record

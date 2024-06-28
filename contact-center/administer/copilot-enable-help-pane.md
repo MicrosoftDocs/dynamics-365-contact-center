@@ -10,16 +10,13 @@ ms.date: 04/29/2024
 ms.custom: bap-template 
 ---
 
-# Enable Copilot for questions and emails
+# Enable Copilot assist
 
-The Copilot allows agents to use Copilot features such as respond to questions and compose an email.
+The Copilot allows agents to use Copilot features such as respond to questions, suggest a response, and compose an email.
 
 ## Prerequisites
 
-- You have the System Administrator role.
-- If you aren't in the North America region and you want to use the web search powered by Bing feature, you must enable data movement across regions and Bing search in Power Platform admin center. See [Enable data movement across regions](/power-platform/admin/geographical-availability-copilot).
-
-   :::image type="content" source="../media/ppac-gen-ai-features.png" alt-text="Power Platform Admin center bing chat.":::
+ You have the System Administrator role.
 
 ## Enable Copilot assist features
 
@@ -51,8 +48,7 @@ If you've disabled the knowledge base option, agents will be able to use Copilot
 
 ### Add trusted webpages as sources
 
-You can select **Add web address** in **Web resources** to add trusted domains. You can add up to five trusted web domains for Copilot to search and generate responses from. Copilot searches for information up to two levels down from the configured domain. You must enable the Bing Search in Power Platform admin center to add trusted web sources. See [Enable data across geographic locations](/microsoft-copilot-studio/manage-data-movement-outside-us#enable-data-across-geographic-locations).
-
+You can select **Add web address** in **Web resources** to add trusted domains. You can add up to five trusted web domains for Copilot to search and generate responses from. Copilot searches for information up to two levels down from the configured domain. 
 Copilot uses articles that are two nodes down the configured domain.
 
 > [!NOTE]

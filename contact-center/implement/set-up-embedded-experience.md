@@ -53,7 +53,7 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
 
 3. Go to **Utility Items** and select **Open CTI Softphone** to add the softphone utility.
 
-4. Name your softphone appropriately (for example, "MSFT Omnichannel"), set the width to 400, and the height to 600, then select **Save**.
+1. Name your softphone appropriately (for example, "MSFT Omnichannel"), set the width to 400, and height to 600, then select **Save**.
 
 5. Navigate to the **Service Console** from the **Apps** page.
 

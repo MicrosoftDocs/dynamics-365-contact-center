@@ -69,8 +69,8 @@ additionalContent:
       links:
       - url: administer/configure-salesforce-connector.md
         text: Configure the Salesforce connector    
-      - url: extend/configure-zendesk-connector.md
-        text: Configure the Zendesk connector    
+      - url: extend/configure-servicenow-connector.md
+        text: Configure the ServiceNow connector    
     - title: Configure AI features
       links:
       - url: /dynamics365/customer-service//administer/configure-copilot-features?context=context/administer-context
@@ -86,7 +86,7 @@ additionalContent:
       - url: /dynamics365/customer-service/develop/develop-live-chat-widget?context=context/extend-context
         text: Develop a custom live chat widget
     
-  - title: Manage your contact center
+  - title: Use and manage the contact center
     items:
     - title: Communicate over channels that your customers prefer
       links:

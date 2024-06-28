@@ -42,7 +42,7 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
 
 1. Go to **Manage Call Center Users** > **Add more users**, select the user record that you're currently logged in with and select **Save**.
 
-## Set up Softphone in Salesforce
+## Set up a softphone in Salesforce
 
 1. To create a softphone layout:
     1. In the **Quick Find** box, search for **Softphone Layouts**.

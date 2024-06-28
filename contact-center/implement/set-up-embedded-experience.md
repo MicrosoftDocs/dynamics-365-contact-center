@@ -26,7 +26,7 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
 
 ## Set up the call center in Salesforce
 
-1. Download the call center definition file from the following location: `https://github.com/microsoft/copilot-for-service/blob/main/samples/SFCallCenter/Dynamics365CallCenter.xml`.
+1. Download the call center definition file from the following location: `https://github.com/microsoft/copilot-for-service/blob/main/samples/SFCallCenter/Dynamics365CallCenter.xml`. Make sure you are signed into GitHub to access the file.
 
 1. Open the file, replace the "CTI Adapter URL" with the embedded widget URL, and then save your changes.
 
@@ -48,17 +48,17 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
     1. In the **Quick Find** box, search for **Softphone Layouts**.
     2. Create a new softphone layout or edit an existing one.
     3. Verify that **Is Default Layout** is selected and then select **Save**.
+    
+1. To set up the softphone utility for your application, navigate to the **App Manager** in setup and edit the **Service Console** application.
 
-2. To set up the softphone utility for your application, navigate to the **App Manager** in setup and edit the **Service Console** application.
-
-3. Go to **Utility Items** and select **Open CTI Softphone** to add the softphone utility.
+1. Go to **Utility Items** and select **Open CTI Softphone** to add the softphone utility.
 
 1. Name your softphone appropriately (for example, "MSFT Omnichannel"), set the width to 400, and height to 600, then select **Save**.
 
-5. Navigate to the **Service Console** from the **Apps** page.
+1. Navigate to the **Service Console** from the **Apps** page.
 
-6. Refresh your browser. The embedded widget appears in your application.
+1. Refresh your browser. The embedded widget appears in your application.
 
-7. To connect Copilot to the CRM system, select required Login URI and v58.0 as the Salesforce API Version to set up the third-party CRM connection.
+1. To connect Copilot to the CRM system, select required Login URI and v58.0 as the Salesforce API Version to set up the third-party CRM connection.
 
 ### See also

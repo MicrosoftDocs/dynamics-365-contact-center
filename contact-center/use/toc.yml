@@ -71,6 +71,7 @@
         - name: Use Copilot to solve customer issues 
           href: ../use/use-copilot-features.md
         - name: Use Copilot to summarize cases and conversations
+          href: ../use/copilot-use-summary.md
         - name: Ask a question
           href: ../use/use-copilot-features.md#ask-a-question
         - name: Draft a chat response (preview)

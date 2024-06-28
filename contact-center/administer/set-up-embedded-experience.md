@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Set up embedded experience for Dynamics 365 Contact Center
 
-The embeddable conversation widget is a feature of the Dynamics 365 Contact Center that allows agents to chat with customers directly from any third-party customer relationship management (CRM) system. The widget can be embedded into any web page or application that supports HTML and JavaScript, and it provides a seamless and consistent chat experience across different platforms.
+The embedded conversation widget is a feature of the Dynamics 365 Contact Center that allows agents to chat with customers directly from any third-party customer relationship management (CRM) system. You can embed the widget into any web page or application that supports HTML and JavaScript, and it provides a seamless and consistent chat experience across different platforms.
 
 ## Prerequisites
 
@@ -62,3 +62,5 @@ The embeddable conversation widget is a feature of the Dynamics 365 Contact Cent
 1. To connect Copilot to the CRM system, select required sign in URI and v58.0 as the Salesforce API Version to set up the third-party CRM connection.
 
 ### See also
+
+[View communication panel](/dynamics365/customer-service/use/oc-conversation-control?context=/dynamics365/contact-center/context/use-context)

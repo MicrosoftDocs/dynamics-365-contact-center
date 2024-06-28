@@ -30,7 +30,7 @@ See the following table for the availability of the channels in the supported ge
 | Germany |	Yes | No|
 | Government Community Cloud (GCC)<sup>1</sup> | No | No |
 | India | Yes | No |
-| Japan |	Yes |
+| Japan |	Yes | |
 | North America | Yes | Yes |
 | South America | Yes | No |
 | Switzerland |	Yes | No |
@@ -41,7 +41,7 @@ See the following table for the availability of the channels in the supported ge
 
 See the following table for the languages supported by the different features in Dynamics 365 Contact Center.
 
-| Language | Language code | Digital messaging| Voice | Copilot Studio | OC IVR <sup>**1**</sup> | Copilot in Customer Service |
+| Language | Language code | Digital messaging| Voice | Copilot Studio | OC IVR <sup>**1**</sup> | Copilot |
 | --- | --- | --- | --- | --- | --- | --- |
 | Arabic - Saudi Arabia | ar-SA | Yes | No | No | No | No |
 | Bulgarian | bg-BGC UI | Yes | Yes | No  | No | No |

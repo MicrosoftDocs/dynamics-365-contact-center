@@ -76,6 +76,8 @@
         items:
         - name: Training
           href: /training/dynamics365/customer-service
+        - name: Dynamics 365 reference architectures
+          href: /dynamics365/guidance/reference-architectures/
         - name: Support
           href: /dynamics365/get-started/support/
         - name: Blog

@@ -52,18 +52,18 @@ additionalContent:
       links:
       - url: implement/system-requirements-contact-center.md
         text: System requirements for Dynamics 365 Contact Center 
-      - url: /dynamics365/customer-service/implement/add-users-assign-roles?context=context/implement-context
+      - url: /dynamics365/customer-service/implement/add-users-assign-roles?context=/dynamics365/contact-center/context/implement-context
         text: Set up roles and enable users in Dynamics 365 Contact Center
-      - url: /dynamics365/customer-service/implement/persona-privilege-mapping?context=context/implement-context
+      - url: /dynamics365/customer-service/implement/persona-privilege-mapping?context=/dynamics365/contact-center/context/implement-context
         text: Set up personas and privileges in Dynamics 365 Contact Center
  
   - title: Administer and develop
     items:
     - title: Configure
       links:
-      - url: /dynamics365/customer-service/administer/provision-unified-routing?context=context/administer-context
+      - url: /dynamics365/customer-service/administer/provision-unified-routing?context=/dynamics365/contact-center/context/administer-context
         text: Provision unified routing for Dynamics 365 Contact Center
-      - url: /dynamics365/customer-service/administer/voice-channel-install?context=context/administer-context
+      - url: /dynamics365/customer-service/administer/voice-channel-install?context=/dynamics365/contact-center/context/administer-context
         text: Configure the voice channel
     - title: Configure connectors
       links:
@@ -73,17 +73,17 @@ additionalContent:
         text: Configure the ServiceNow connector    
     - title: Configure AI features
       links:
-      - url: /dynamics365/customer-service//administer/configure-copilot-features?context=context/administer-context
+      - url: /dynamics365/customer-service//administer/configure-copilot-features?context=/dynamics365/contact-center/context/administer-context
         text: Manage Copilot features
-      - url: /dynamics365/customer-service/administer/configure-bot-virtual-agent
+      - url: /dynamics365/customer-service/administer/configure-bot-virtual-agent?context=/dynamics365/contact-center/context/administer-context
         text: Integrate a Copilot Studio bot  
     - title: Develop
       links:
-      - url: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=context/extend-context
+      - url: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=/dynamics365/contact-center/context/extend-context
         text: Dynamics 365 Contact Center entity reference
-      - url: /dynamics365/customer-service/develop/omnichannel-reference?context=context/extend-context
+      - url: /dynamics365/customer-service/develop/omnichannel-reference?context=/dynamics365/contact-center/context/extend-context
         text: Live chat SDK Reference
-      - url: /dynamics365/customer-service/develop/develop-live-chat-widget?context=context/extend-context
+      - url: /dynamics365/customer-service/develop/develop-live-chat-widget?context=/dynamics365/contact-center/context/extend-context
         text: Develop a custom live chat widget
     
   - title: Use and manage the contact center
@@ -92,33 +92,33 @@ additionalContent:
       links:
       - url: use/ccw-overview.md
         text: Use Contact Center workspace      
-      - url: /dynamics365/customer-service/use/channels?context=context/use-context
+      - url: /dynamics365/customer-service/use/channels?context=/dynamics365/contact-center/context/use-context
         text: Communicate over multiple channels
-      - url: /dynamics365/customer-service/administer/voice-channel?context=context/administer-context
+      - url: /dynamics365/customer-service/administer/voice-channel?context=/dynamics365/contact-center/context/administer-context
         text: Communicate over the voice channel
     - title: Increase productivity and customer satisfaction
       links:
-      - url: /dynamics365/customer-service/use/csw-productivity-pane?context=context/use-context
+      - url: /dynamics365/customer-service/use/csw-productivity-pane?context=/dynamics365/contact-center/context/use-context
         text: Use the productivity pane to resolve customer issues
-      - url: /dynamics365/customer-service/use/create-personal-quick-replies?context=context/use-context
+      - url: /dynamics365/customer-service/use/create-personal-quick-replies?context=/dynamics365/contact-center/context/use-context
         text: Guide customer interactions with agent scripts
-      - url: /dynamics365/customer-service/use/oc-agent-scripts?context=..context/use-context
+      - url: /dynamics365/customer-service/use/oc-agent-scripts?context=/dynamics365/contact-center/context/use-context
         text: Manage conversations and activities on the timeline
     - title: Use Copilot
       links:
-      - url: /dynamics365/customer-service/use/use-copilot-features?context=context/use-context
+      - url: /dynamics365/customer-service/use/use-copilot-features?context=/dynamics365/contact-center/context/use-context
         text: Use Copilot to solve customer issues
-      - url: /dynamics365/customer-service/use/copilot-use-summary#summarize-conversations?context=context/use-context
+      - url: /dynamics365/customer-service/use/copilot-use-summary#summarize-conversations?context=/dynamics365/contact-center/context/use-context
         text: Use Copilot to summarize conversations
-      - url: /dynamics365/customer-service/use/use-copilot-features#ask-a-question?context=context/use-context
+      - url: /dynamics365/customer-service/use/use-copilot-features#ask-a-question?context=/dynamics365/contact-center/context/use-context
         text: Ask a question in Copilot
     - title: Get insights and analyze contact center operations 
       links:
-      - url: /dynamics365/customer-service/use/copilot-analytics-report?context=context/use-context
+      - url: /dynamics365/customer-service/use/copilot-analytics-report?context=/dynamics365/contact-center/context/use-context
         text: View Copilot analytics report
-      - url: /dynamics365/customer-service/use/realtime-summary-dashboard?context=context/use-context
+      - url: /dynamics365/customer-service/use/realtime-summary-dashboard?context=/dynamics365/contact-center/context/use-context
         text: View summary report in real-time analytics
-      - url: /dynamics365/customer-service/use/customize-reports?context=context/use-context
+      - url: /dynamics365/customer-service/use/customize-reports?context=/dynamics365/contact-center/context/use-context
         text: Customize visual display
        
   - title: Related products

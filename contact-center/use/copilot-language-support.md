@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Understand how Copilot supports different languages
 
-Copilot generates responses to agent's questions and supports case and conversation summary features in [multiple languages](../administer/cs-region-availability-service-limits.md#language-support-for-ai-based-analytics-and-insights-in-customer-service).
+Copilot generates responses to agent's questions and supports case and conversation summary features in [multiple languages](../implement/international-availability.md#language-availability).
 
 The key features are as follows:
 

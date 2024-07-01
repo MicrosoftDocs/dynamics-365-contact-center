@@ -16,7 +16,7 @@ ms.collection: bap-ai-copilot
 Copilot helps agents to complete tasks related to conversations, cases, and email more easily. With the Copilot report, supervisors and customer service managers can identify the impact that Copilot is having across their customer service operation.
 
 
-The system stores the copilot interaction data in the [msdyn_copilotinteraction](../develop/reference/entities/msdyn_copilotinteraction.md), [msdyn_copilotinteractiondata](../develop/reference/entities/msdyn_copilotinteractiondata.md), [msdyn_copilottranscript](../develop/reference/entities/msdyn_copilottranscript.md), and [msdyn_copilottranscriptdata](../develop/reference/entities/msdyn_copilottranscriptdata.md) tables. You can use the information to build custom metrics in reporting and analytics and understand how Copilot is being used in your organization.
+The system stores the copilot interaction data in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/msdyn_copilotinteraction?context=../context/extend-context), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/msdyn_copilotinteractiondata?context=../context/extend-context), [msdyn_copilottranscript](/dynamics365/customer-service/develop/msdyn_copilottranscript?context=../context/extend-context), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/msdyn_copilottranscriptdata?context=../context/extend-context) tables. You can use the information to build custom metrics in reporting and analytics and understand how Copilot is being used in your organization.
 
 To view the Copilot report, open Customer Service historical analytics and select the **Copilot** tab.
 
@@ -71,10 +71,10 @@ The Copilot report displays the following metrics.
 
 ## Next Steps
 
-You can view the [transcripts of interactions](../develop/download-copilot-transcript-data.md) between agents and Copilot. 
+You can view the [transcripts of interactions]( /dynamics365/customer-service/develop/download-copilot-transcript-data?context=../context/extend-context) between agents and Copilot. 
 
 ### See also
 
 [Use copilot features](use-copilot-features.md)  
 [Configure copilot](../administer/configure-copilot-features.md)  
-[Enable historical analytics for Copilot](../administer/configure-cs-historical-analytics-csh.md#enable-historical-analytics-for-copilot)
+

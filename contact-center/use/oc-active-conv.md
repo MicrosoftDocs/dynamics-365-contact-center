@@ -36,7 +36,7 @@ You'll see the following options on the **Active Conversation** page:
 The application displays the customer or account details with inline edit capabilities.  
    > [!NOTE]
    > - The form selector to switch between **Active Conversation** and **Closed Conversation** is hidden. You can't switch to closed conversation form from the **Active Conversation** form while the conversation is still active or vice versa.
-   > - You can see the form selector on the enhanced Active Conversation form if your administrator has enabled it for you. More information: [Display the form selector on Active Conversation form](../administer/add-customer-summary-settings.md#display-the-form-selector-on-active-conversation-form). However, if you use the form selector to switch to the closed conversation form, you'll see errors.
+   > - You can see the form selector on the enhanced Active Conversation form if your administrator has enabled it for you. More information: [Display the form selector on Active Conversation form](/dynamics365/customer-service/administer/add-customer-summary-settings?context=/dynamics365/contact-center/context/administer-context). However, if you use the form selector to switch to the closed conversation form, you'll see errors.
 
 ## View customer details
 

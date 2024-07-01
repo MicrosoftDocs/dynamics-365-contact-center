@@ -241,7 +241,9 @@
         - name: Enable summarization of cases and conversations
           href: ../administer/copilot-enable-summary.md
         - name: Enable Copilot help pane features
-          href: ../administer/copilot-enable-help-pane.md          
+          href: ../administer/copilot-enable-help-pane.md  
+        - name: Enable Copilot to draft emails
+          href: ../administer/copilot-email-enable.md          
         - name: Copilot architecture diagram
           href: /digital-contact-center-platform/guidance/dynamics-365-customer-service-copilot-architecture?toc=/dynamics365/customer-service/administer/toc.json&bc=../../breadcrumb/toc.yml
         - name: FAQ for Copilot in Customer Service

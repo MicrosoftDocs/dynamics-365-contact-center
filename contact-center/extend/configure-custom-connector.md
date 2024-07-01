@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Configure the connector for custom CRM solution
 
-The Microsoft Contact Center — Power Automate solution for third party custom CRM connector allows organizations to engage with their customers using capabilities such as voice, video, SMS, live chat, and social messaging from their third-party CRM solutions. You can use Power Automate data connectors to sync the contacts and accounts data from the custom CRM solution into Dataverse.
+The Microsoft Contact Center&mdash;Power Automate solution for third party custom CRM connector allows organizations to engage with their customers using capabilities such as voice, video, SMS, live chat, and social messaging from their third-party CRM solutions. You can use Power Automate data connectors to sync the contacts and accounts data from the custom CRM solution into Dataverse.
 
 ## Prerequisites 
 
@@ -37,7 +37,7 @@ You can migrate data from your custom CRM to Dataverse in the following way:
 
 Perform the steps outlined in the sections that follow.
 
-### Add a Dataverse Connector
+### Add a Dataverse connector
 
 1. Follow the steps in [Add a connection](/power-automate/add-manage-connections#add-a-connection) to add a Dataverse connection, and then select **Create**.
 1. In the pop-up window that appears, select your account. A connection is created.

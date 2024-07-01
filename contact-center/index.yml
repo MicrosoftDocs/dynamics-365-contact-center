@@ -44,7 +44,7 @@ additionalContent:
         text: Adoption guide
     - title: Buy/Provision
       links: 
-      - url: https://dynamics.microsoft.com/contact-center/pricing/
+      - url: https://www.microsoft.com/dynamics-365/products/contact-center/pricing/
         text: Buy Contact Center
       - url: implement/provision-channels.md
         text: Provision Dynamics 365 Contact Center

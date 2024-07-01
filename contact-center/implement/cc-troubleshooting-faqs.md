@@ -18,9 +18,9 @@ The troubleshooting articles explain how to diagnose and fix issues that you mig
 
 ## FAQ
 
-- [FAQ about unified routing](/dynamics365/customer-service/administer/unified-routing-faqs?context=../context/administer-context)  
-- [FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features?context=../context/administer-context)  
-- [FAQ about the voice channel](/dynamics365/customer-service/administer/voice-channel-faqs?context=../context/administer-context)
+- [FAQ about unified routing](/dynamics365/customer-service/administer/unified-routing-faqs?context=/dynamics365/contact-center/administer-context)  
+- [FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features?context=/dynamics365/contact-center/administer-context)  
+- [FAQ about the voice channel](/dynamics365/customer-service/administer/voice-channel-faqs?context=/dynamics365/contact-center/administer-context)
 
 ## Next steps
 

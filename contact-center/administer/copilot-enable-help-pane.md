@@ -33,7 +33,7 @@ You can configure the knowledge base for Copilot to generate responses.
 
 ### Prerequisites
 
-Make sure that you have [knowledge management](/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search#set-up-knowledge-management?context=../context/administer-context) configured in your environment and your knowledge article parameters are as follows:
+Make sure that you have [knowledge management](/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search#set-up-knowledge-management?context=/dynamics365/contact-center/administer-context) configured in your environment and your knowledge article parameters are as follows:
    - Updated with the latest version
    - The state is set to Published
 

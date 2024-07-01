@@ -88,4 +88,4 @@ To return to the prompts, select **Start over** at the bottom of the Copilot pan
 
 [Enable Copilot to draft emails](../administer/copilot-email-enable.md)
 [FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features?context=/dynamics365/contact-center/context/administer-context) 
-[FAQ for Copilot in Customer Service](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=../context/administer-context) 
+[FAQ for Copilot in Customer Service](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/administer-context) 

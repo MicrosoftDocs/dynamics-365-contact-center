@@ -48,7 +48,7 @@ You can copy the summary, refresh it, and provide feedback.
 Copilot conversation summaries provide context and relay the steps that you took to solve the issue. You can summarize chat and transcribed voice conversations.
 
 > [!NOTE]
-> If your administrator has enabled auto-summarization for ongoing conversations, you get an AI-generated summary of the conversation along with the Copilot-generated conversation summary. The two summaries may be slightly different. [Learn more about auto-summarized conversations]( /dynamics365/customer-service/use/cs-ai-generated-summary?context=../context/use-context).
+> If your administrator has enabled auto-summarization for ongoing conversations, you get an AI-generated summary of the conversation along with the Copilot-generated conversation summary. The two summaries may be slightly different. [Learn more about auto-summarized conversations]( /dynamics365/customer-service/use/cs-ai-generated-summary?context=/dynamics365/contact-center/use-context).
 
 ### Get a conversation summary
 

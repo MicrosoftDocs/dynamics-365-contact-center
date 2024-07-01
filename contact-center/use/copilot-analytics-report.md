@@ -67,7 +67,7 @@ The Copilot report displays the following metrics.
 
 ## Next Steps
 
-You can view the [transcripts of interactions]( /dynamics365/customer-service/develop/download-copilot-transcript-data?context=../context/extend-context) between agents and Copilot. 
+You can view the [transcripts of interactions]( /dynamics365/customer-service/develop/download-copilot-transcript-data?context=/dynamics365/contact-center/extend-context) between agents and Copilot. 
 
 ### See also
 

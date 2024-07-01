@@ -68,8 +68,6 @@
           href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/implement-context
       - name: Resources
         items:
-        - name: Training
-          href: /training/dynamics365/customer-service
         - name: Dynamics 365 reference architectures
           href: /dynamics365/guidance/reference-architectures/
         - name: Support

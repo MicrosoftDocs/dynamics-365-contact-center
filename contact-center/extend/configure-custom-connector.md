@@ -26,7 +26,7 @@ The Microsoft Contact Center&mdash;Power Automate solution for third party custo
     - Source CRM ID
     - Source CRM URL
 
-## Data migration
+## Copy data
 
 You can migrate data from your custom CRM to Dataverse in the following way:
 

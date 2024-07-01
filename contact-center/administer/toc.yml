@@ -5,68 +5,71 @@
       - name: Dynamics 365 Contact Center documentation
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
-        href: ../implement/overview-contact-center.md?context=../context/administer-context
+        href: ../implement/overview-contact-center.md?context=/dynamics365/contact-center/context/administer-context
       - name: Use Contact Center admin center
         href: cc-admin-center.md
       - name: Manage user roles and personas
         items:
         - name: Manage users
-          href: /dynamics365/customer-service/administer/users-user-profiles?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/users-user-profiles?context=/dynamics365/contact-center/context/administer-context
         - name: Manage capacity profiles
-          href: /dynamics365/customer-service/administer/capacity-profiles?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/capacity-profiles?context=/dynamics365/contact-center/context/administer-context
         - name: Manage personas and custom security roles
-          href: /dynamics365/customer-service/administer/role-persona-mapping?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/role-persona-mapping?context=/dynamics365/contact-center/context/administer-context
         - name: Delete historical data of agent capacity updates
-          href: /dynamics365/customer-service/administer/manage-historical-data-capacity-updates?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/manage-historical-data-capacity-updates?context=/dynamics365/contact-center/context/administer-context
       - name: Set up Dynamics 365 Contact center
+        items:
+        - name: Set up embedded experience
+          href: set-up-embedded-experience.md
       - name: Unified routing and assignment
         items:
         - name: Overview of unified routing
           href: /dynamics365/customer-service/administer/overview-unified-routing
         - name: How to set up unified routing
-          href: /dynamics365/customer-service/administer/set-up-routing-process?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/set-up-routing-process?context=/dynamics365/contact-center/context/administer-context
         - name: Create and manage workstreams
-          href: /dynamics365/customer-service/administer/create-workstreams?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context
         - name: Create and manage queues for unified routing
-          href: /dynamics365/customer-service/administer/queues-omnichannel?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/queues-omnichannel?context=/dynamics365/contact-center/context/administer-context
         - name: Configure work classification
           items:
           - name: Configure work classification rules
-            href: /dynamics365/customer-service/administer/configure-work-classification?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-work-classification?context=/dynamics365/contact-center/context/administer-context
           - name: Configure route-to-queue rules
-            href: /dynamics365/customer-service/administer/configure-route-to-queue-rules?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-route-to-queue-rules?context=/dynamics365/contact-center/context/administer-context
         - name: Assignment methods for queues
           items:
           - name: Assignment methods in unified routing
-            href: /dynamics365/customer-service/administer/assignment-methods?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/assignment-methods?context=/dynamics365/contact-center/context/administer-context
           - name: Configure assignment methods for queues
-            href: /dynamics365/customer-service/administer/configure-assignment-rules?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-assignment-rules?context=/dynamics365/contact-center/context/administer-context
           - name: Configure routing to preferred agents
-            href: /dynamics365/customer-service/administer/configure-preferred-agent?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-preferred-agent?context=/dynamics365/contact-center/context/administer-context
           - name: Manage overflow of work items in queues
-            href: /dynamics365/customer-service/administer/manage-overflow?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/manage-overflow?context=/dynamics365/contact-center/context/administer-context
         - name: Configure routing to preferred agents
-          href: /dynamics365/customer-service/administer/configure-preferred-agent?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-preferred-agent?context=/dynamics365/contact-center/context/administer-context
         - name: Set up skill-based routing
           items:
           - name: Overview of skill-based routing
-            href: /dynamics365/customer-service/administer/overview-skill-work-distribution?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/overview-skill-work-distribution?context=/dynamics365/contact-center/context/administer-context
           - name: Set up skills, create rating model, assign skills to agents
-            href: /dynamics365/customer-service/administer/setup-skills-assign-agents?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/setup-skills-assign-agents?context=/dynamics365/contact-center/context/administer-context
           - name: Enable agents to update skills
-            href: /dynamics365/customer-service/administer/allow-agents-update-skills?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/allow-agents-update-skills?context=/dynamics365/contact-center/context/administer-context
           - name: Set up skill-based routing in unified routing
-            href: /dynamics365/customer-service/administer/set-up-skill-based-routing?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/set-up-skill-based-routing?context=/dynamics365/contact-center/context/administer-context
           - name: Set up intelligent skill finder model in unified routing
-            href: /dynamics365/customer-service/administer/set-up-isf-model?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/set-up-isf-model?context=/dynamics365/contact-center/context/administer-context
         - name: Model data tables as skills
-          href: /dynamics365/customer-service/administer/model-tables-as-skills-ur?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/model-tables-as-skills-ur?context=/dynamics365/contact-center/context/administer-context
         - name: Use sentiment prediction-based routing
-          href: /dynamics365/customer-service/administer/use-sentiment-prediction-for-routing?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/use-sentiment-prediction-for-routing?context=/dynamics365/contact-center/context/administer-context
         - name: Use effort estimation model for routing
-          href: /dynamics365/customer-service/administer/use-effort-estimation-for-routing?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/use-effort-estimation-for-routing?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ about unified routing
-          href: /dynamics365/customer-service/administer/unified-routing-faqs?context=../context/administer-context 
+          href: /dynamics365/customer-service/administer/unified-routing-faqs?context=/dynamics365/contact-center/context/administer-context 
       - name: Connectors for CRM solutions
         items:
         - name: Configure connector for Salesforce
@@ -74,161 +77,161 @@
       - name: Agent experience profiles for Customer Service
         items:
         - name: Overview of agent experience profiles
-          href: /dynamics365/customer-service/administer/overview?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/overview?context=/dynamics365/contact-center/context/administer-context
         - name: Roles and permissions
-          href: /dynamics365/customer-service/administer/security-roles?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/security-roles?context=/dynamics365/contact-center/context/administer-context
         - name: Create and use agent experience profiles
-          href: /dynamics365/customer-service/administer/create-agent-experience-profile?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/create-agent-experience-profile?context=/dynamics365/contact-center/context/administer-context
         - name: Add users to agent experience profiles
-          href: /dynamics365/customer-service/administer/add-profile-default?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/add-profile-default?context=/dynamics365/contact-center/context/administer-context
         - name: Configure the inbox for agents
-          href: /dynamics365/customer-service/administer/configure-inbox?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-inbox?context=/dynamics365/contact-center/context/administer-context
         - name: Templates
           items:
           - name: Manage session templates
-            href: /dynamics365/customer-service/administer/session-templates?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/session-templates?context=/dynamics365/contact-center/context/administer-context
           - name: Manage application tab templates
-            href: /dynamics365/customer-service/administer/application-tab-templates?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/application-tab-templates?context=/dynamics365/contact-center/context/administer-context
           - name: Manage notification templates
-            href: /dynamics365/customer-service/administer/notification-templates?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/notification-templates?context=/dynamics365/contact-center/context/administer-context
           - name: Associate templates with workstreams
-            href: /dynamics365/customer-service/administer/associate-templates?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/associate-templates?context=/dynamics365/contact-center/context/administer-context
         - name: Productivity tools
           items:
           - name: Overview of productivity tools
-            href: /dynamics365/customer-service/administer/productivity-tools?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/productivity-tools?context=/dynamics365/contact-center/context/administer-context
           - name: Manage smart assist
-            href: /dynamics365/customer-service/administer/smart-assist?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/smart-assist?context=/dynamics365/contact-center/context/administer-context
           - name: Manage agent scripts
-            href: /dynamics365/customer-service/administer/agent-scripts?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/agent-scripts?context=/dynamics365/contact-center/context/administer-context
           - name: macros
             items:  
             - name: Manage macros
-              href: /dynamics365/customer-service/administer/macros?context=../context/administer-context
+              href: /dynamics365/customer-service/administer/macros?context=/dynamics365/contact-center/context/administer-context
             - name: Use productivity automation macros
-              href: /dynamics365/customer-service/administer/macros-productivity-automation?context=../context/administer-context
+              href: /dynamics365/customer-service/administer/macros-productivity-automation?context=/dynamics365/contact-center/context/administer-context
             - name: Use session connector macros
-              href: /dynamics365/customer-service/administer/macros-session-action?context=../context/administer-context
+              href: /dynamics365/customer-service/administer/macros-session-action?context=/dynamics365/contact-center/context/administer-context
             - name: Use Omnichannel connector macros
-              href: /dynamics365/customer-service/administer/macros-omnichannel-action?context=../context/administer-context
+              href: /dynamics365/customer-service/administer/macros-omnichannel-action?context=/dynamics365/contact-center/context/administer-context
             - name: Use flow connectors
-              href: /dynamics365/customer-service/administer/macro-flow-connector?context=../context/administer-context
+              href: /dynamics365/customer-service/administer/macro-flow-connector?context=/dynamics365/contact-center/context/administer-context
             - name: Review macro run history
-              href: /dynamics365/customer-service/administer/review-macros?context=../context/administer-context                                  
+              href: /dynamics365/customer-service/administer/review-macros?context=/dynamics365/contact-center/context/administer-context                                  
           - name: Manage custom productivity tools
-            href: /dynamics365/customer-service/administer/manage-custom-productivity-tools?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/manage-custom-productivity-tools?context=/dynamics365/contact-center/context/administer-context
           - name: FAQ about adding users to agent experience profile
-            href: /dynamics365/customer-service/administer/faq-agent-experience-profile?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/faq-agent-experience-profile?context=/dynamics365/contact-center/context/administer-context
       - name: Workforce management
         items:
         - name: Configure the agent calendar view
-          href: /dynamics365/customer-service/administer/configure-agent-calendar?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-agent-calendar?context=/dynamics365/contact-center/context/administer-context
         - name: Configure routing based on agent calendar (preview)
-          href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/administer-context
       - name: Email
         items:
         - name: Configure email
-          href: /dynamics365/customer-service/administer/customer-service-hub-user-guide-email-admin?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/customer-service-hub-user-guide-email-admin?context=/dynamics365/contact-center/context/administer-context
         - name: Customize the email experience
-          href: /dynamics365/customer-service/administer/customer-service-hub-user-guide-email-font-admin?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/customer-service-hub-user-guide-email-font-admin?context=/dynamics365/contact-center/context/administer-context
         - name: Configure the enhanced insert email template dialog
-          href: /power-apps/user/customize-insert-email-template?context=../context/administer-context
+          href: /power-apps/user/customize-insert-email-template?context=/dynamics365/contact-center/context/administer-context
         - name: Configure the enhanced email template editor page
-          href: /power-apps/user/cs-email-template-builder?context=../context/administer-context
+          href: /power-apps/user/cs-email-template-builder?context=/dynamics365/contact-center/context/administer-context
         - name: Enable enhanced experience for email attachments
-          href: /dynamics365/customer-service/administer/add-enhanced-attachment-control?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/add-enhanced-attachment-control?context=/dynamics365/contact-center/context/administer-context
         - name: Enable enhanced recipient control for email
-          href: /dynamics365/customer-service/administer/add-recipient-control?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/add-recipient-control?context=/dynamics365/contact-center/context/administer-context
         - name: Configure a default signature template for a queue
-          href: /dynamics365/customer-service/administer/add-signature-template-queue?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/add-signature-template-queue?context=/dynamics365/contact-center/context/administer-context
         - name: Email FAQ and known issues
           href: /power-apps/user/activities-known-issues?toc=/dynamics365/customer-service/administer/toc.json&bc=../../breadcrumb/toc.yml
       - name: Inbox
         items:
         - name: Configure the inbox
-          href: /dynamics365/customer-service/administer/configure-inbox?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-inbox?context=/dynamics365/contact-center/context/administer-context
       - name: Timeline
         items:
         - name: Configure timeline
           href: /powerapps/maker/model-driven-apps/set-up-timeline-control?toc=/dynamics365/customer-service/administer/toc.json&bc=../../breadcrumb/toc.yml
         - name: Turn on linking of timeline notes with other table records
-          href: /dynamics365/customer-service/administer/link-note-to-entity?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/link-note-to-entity?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ about Activities and the Timeline Wall
           href: /powerapps/user/faq-for-timeline-and-activity
-        - name: Voice
+      - name: Voice
+        items:
+        - name: Introduction to the voice channel
+          href: /dynamics365/customer-service/administer/voice-channel?context=/dynamics365/contact-center/context/administer-context
+        - name: Supported cloud locations
+          href: /dynamics365/customer-service/administer/voice-channel-region-availability?context=/dynamics365/contact-center/context/administer-context
+        - name: Supported languages and locale codes
+          href: /dynamics365/customer-service/administer/voice-channel-supported-languages?context=/dynamics365/contact-center/context/administer-context
+        - name: Install the voice channel
+          href: /dynamics365/customer-service/administer/voice-channel-install?context=/dynamics365/contact-center/context/administer-context
+        - name: Use trial phone numbers
+          href: /dynamics365/customer-service/administer/voice-channel-trial-phone-numbers?context=/dynamics365/contact-center/context/administer-context
+        - name: Connect to Azure Communication Services
           items:
-          - name: Introduction to the voice channel
-            href: /dynamics365/customer-service/administer/voice-channel?context=../context/administer-context
-          - name: Supported cloud locations
-            href: /dynamics365/customer-service/administer/voice-channel-region-availability?context=../context/administer-context
-          - name: Supported languages and locale codes
-            href: /dynamics365/customer-service/administer/voice-channel-supported-languages?context=../context/administer-context
-          - name: Install the voice channel
-            href: /dynamics365/customer-service/administer/voice-channel-install?context=../context/administer-context
-          - name: Use trial phone numbers
-            href: /dynamics365/customer-service/administer/voice-channel-trial-phone-numbers?context=../context/administer-context
           - name: Connect to Azure Communication Services
-            items:
-            - name: Connect to Azure Communication Services
-              href: /dynamics365/customer-service/administer/voice-channel-acs-resource?context=../context/administer-context
-            - name: 'Quickstart: Connect using a new Azure resource'
-              href: /dynamics365/customer-service/administer/voice-channel-connect-new-resource?context=../context/administer-context
-            - name: 'Advanced: Connect using an existing Azure resource'
-              href: /dynamics365/customer-service/administer/voice-channel-connect-existing-resource?context=../context/administer-context
-            - name: Sync from Azure Communication Services
-              href: /dynamics365/customer-service/administer/voice-channel-sync-from-acs?context=../context/administer-context
-            - name: Disconnect from Azure Communication Services
-              href: /dynamics365/customer-service/administer/voice-channel-disconnect-from-acs?context=../context/administer-context
-          - name: Manage phone numbers
-            href: /dynamics365/customer-service/administer/voice-channel-manage-phone-numbers?context=../context/administer-context
-          - name: Set up inbound calling
-            href: /dynamics365/customer-service/administer/voice-channel-inbound-calling?context=../context/administer-context
-          - name: Set up outbound calling
-            href: /dynamics365/customer-service/administer/voice-channel-outbound-calling?context=../context/administer-context
-          - name: Enable agents to search for contacts and open records from outbound dialer (preview)
-            href: /dynamics365/customer-service/administer/add-outbound-dialer-settings?context=../context/administer-context  
-          - name: Support emergency calls made by agents
-            href: /dynamics365/customer-service/administer/voice-channel-emergency-calling?context=../context/administer-context
-          - name: Forward your Teams calls to digital contact center
-            href: /dynamics365/customer-service/administer/voice-forward-calls?context=../context/administer-context
-          - name: Configure voicemail to manage inbound calls
-            href: /dynamics365/customer-service/administer/voice-channel-voicemail?context=../context/administer-context
-          - name: Configure direct callback
-            href: /dynamics365/customer-service/administer/voice-channel-direct-callback?context=../context/administer-context
-          - name: Configure outbound and inbound profiles
-            href: /dynamics365/customer-service/administer/configure-outbound-inbound-profiles?context=../context/administer-context
-          - name: Configure historical analytics for voice
-            href: /dynamics365/customer-service/administer/cs-voice-historical-analytics?context=../context/administer-context
-          - name: Configure Copilot Studio bots for voice
-            href: /dynamics365/customer-service/administer/voice-channel-pva-bots?context=../context/administer-context
-          - name: View voice calls usage
-            href: /dynamics365/customer-service/administer/voice-channel-usage?context=../context/administer-context
-          - name: Configure post-call survey
-            href: /dynamics365/customer-service/administer/voice-channel-survey?context=../context/administer-context
-          - name: Block spam numbers
-            href: /dynamics365/customer-service/administer/voice-channel-block-number?context=../context/administer-context
-          - name: Configure call recording, transcription, and real-time translation
-            href: /dynamics365/customer-service/administer/voice-channel-configure-transcripts?context=../context/administer-context
-          - name: Enable voice call experiences
-            href: /dynamics365/customer-service/administer/configure-end-of-call-survey?context=../context/administer-context
-          - name: Delete call recordings
-            href: /dynamics365/customer-service/administer/voice-channel-delete-calls?context=../context/administer-context
-          - name: Enable voice consult with Microsoft Teams users
-            href: /dynamics365/customer-service/administer/voice-consult-microsoft-teams-user?context=../context/administer-context
-          - name: Manage phone music
-            href: /dynamics365/customer-service/administer/voice-channel-music?context=../context/administer-context
-          - name: Set up a multilingual bot
-            href: /dynamics365/customer-service/administer/ set-up-multilingual-pva-bot?context=../context/administer-context
-          - name: Set up a multilingual contact center
-            href: /dynamics365/customer-service/administer/voice-channel-multi-language-contact-center?context=../context/administer-context
-          - name: Bring your own carrier
-            href: /dynamics365/customer-service/administer/voice-channel-bring-your-own-number?context=../context/administer-context
-          - name: Integrate a third-party IVR system with voice channel
-            href: /dynamics365/customer-service/administer/voice-channel-contextual-transfer-external-ivr?context=../context/administer-context
-          - name: Pricing scenarios for voice calling
-            href: /dynamics365/customer-service/administer/voice-channel-pricing-scenarios?context=../context/administer-context
-          - name: FAQ about the voice channel
-            href: /dynamics365/customer-service/administer/voice-channel-faqs?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/voice-channel-acs-resource?context=/dynamics365/contact-center/context/administer-context
+          - name: 'Quickstart: Connect using a new Azure resource'
+            href: /dynamics365/customer-service/administer/voice-channel-connect-new-resource?context=/dynamics365/contact-center/context/administer-context
+          - name: 'Advanced: Connect using an existing Azure resource'
+            href: /dynamics365/customer-service/administer/voice-channel-connect-existing-resource?context=/dynamics365/contact-center/context/administer-context
+          - name: Sync from Azure Communication Services
+            href: /dynamics365/customer-service/administer/voice-channel-sync-from-acs?context=/dynamics365/contact-center/context/administer-context
+          - name: Disconnect from Azure Communication Services
+            href: /dynamics365/customer-service/administer/voice-channel-disconnect-from-acs?context=/dynamics365/contact-center/context/administer-context
+        - name: Manage phone numbers
+          href: /dynamics365/customer-service/administer/voice-channel-manage-phone-numbers?context=/dynamics365/contact-center/context/administer-context
+        - name: Set up inbound calling
+          href: /dynamics365/customer-service/administer/voice-channel-inbound-calling?context=/dynamics365/contact-center/context/administer-context
+        - name: Set up outbound calling
+          href: /dynamics365/customer-service/administer/voice-channel-outbound-calling?context=/dynamics365/contact-center/context/administer-context
+        - name: Enable agents to search for contacts and open records from outbound dialer (preview)
+          href: /dynamics365/customer-service/administer/add-outbound-dialer-settings?context=/dynamics365/contact-center/context/administer-context  
+        - name: Support emergency calls made by agents
+          href: /dynamics365/customer-service/administer/voice-channel-emergency-calling?context=/dynamics365/contact-center/context/administer-context
+        - name: Forward your Teams calls to digital contact center
+          href: /dynamics365/customer-service/administer/voice-forward-calls?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure voicemail to manage inbound calls
+          href: /dynamics365/customer-service/administer/voice-channel-voicemail?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure direct callback
+          href: /dynamics365/customer-service/administer/voice-channel-direct-callback?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure outbound and inbound profiles
+          href: /dynamics365/customer-service/administer/configure-outbound-inbound-profiles?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure historical analytics for voice
+          href: /dynamics365/customer-service/administer/cs-voice-historical-analytics?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure Copilot Studio bots for voice
+          href: /dynamics365/customer-service/administer/voice-channel-pva-bots?context=/dynamics365/contact-center/context/administer-context
+        - name: View voice calls usage
+          href: /dynamics365/customer-service/administer/voice-channel-usage?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure post-call survey
+          href: /dynamics365/customer-service/administer/voice-channel-survey?context=/dynamics365/contact-center/context/administer-context
+        - name: Block spam numbers
+          href: /dynamics365/customer-service/administer/voice-channel-block-number?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure call recording, transcription, and real-time translation
+          href: /dynamics365/customer-service/administer/voice-channel-configure-transcripts?context=/dynamics365/contact-center/context/administer-context
+        - name: Enable voice call experiences
+          href: /dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context
+        - name: Delete call recordings
+          href: /dynamics365/customer-service/administer/voice-channel-delete-calls?context=/dynamics365/contact-center/context/administer-context
+        - name: Enable voice consult with Microsoft Teams users
+          href: /dynamics365/customer-service/administer/voice-consult-microsoft-teams-user?context=/dynamics365/contact-center/context/administer-context
+        - name: Manage phone music
+          href: /dynamics365/customer-service/administer/voice-channel-music?context=/dynamics365/contact-center/context/administer-context
+        - name: Set up a multilingual bot
+          href: /dynamics365/customer-service/administer/ set-up-multilingual-pva-bot?context=/dynamics365/contact-center/context/administer-context
+        - name: Set up a multilingual contact center
+          href: /dynamics365/customer-service/administer/voice-channel-multi-language-contact-center?context=/dynamics365/contact-center/context/administer-context
+        - name: Bring your own carrier
+          href: /dynamics365/customer-service/administer/voice-channel-bring-your-own-number?context=/dynamics365/contact-center/context/administer-context
+        - name: Integrate a third-party IVR system with voice channel
+          href: /dynamics365/customer-service/administer/voice-channel-contextual-transfer-external-ivr?context=/dynamics365/contact-center/context/administer-context
+        - name: Pricing scenarios for voice calling
+          href: /dynamics365/customer-service/administer/voice-channel-pricing-scenarios?context=/dynamics365/contact-center/context/administer-context
+        - name: FAQ about the voice channel
+          href: /dynamics365/customer-service/administer/voice-channel-faqs?context=/dynamics365/contact-center/context/administer-context
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features
@@ -244,240 +247,240 @@
         - name: Copilot architecture diagram
           href: /digital-contact-center-platform/guidance/dynamics-365-customer-service-copilot-architecture?toc=/dynamics365/customer-service/administer/toc.json&bc=../../breadcrumb/toc.yml
         - name: FAQ for Copilot in Customer Service
-          href: /dynamics365/customer-service/administer/faq-copilot-features?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/faq-copilot-features?context=/dynamics365/contact-center/context/administer-context
       - name: Chat 
         items:
         - name: Introduction to the chat channel
-          href: /dynamics365/customer-service/administer/set-up-chat-widget?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/set-up-chat-widget?context=/dynamics365/contact-center/context/administer-context
         - name: Configure a chat widget
-          href: /dynamics365/customer-service/administer/add-chat-widget?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/add-chat-widget?context=/dynamics365/contact-center/context/administer-context
         - name: Configure file attachments
-          href: /dynamics365/customer-service/administer/configure-file-attachment?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-file-attachment?context=/dynamics365/contact-center/context/administer-context
         - name: Configure pre-conversation surveys
-          href: /dynamics365/customer-service/administer/configure-pre-chat-survey?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-pre-chat-survey?context=/dynamics365/contact-center/context/administer-context
         - name: Set up visitor location detection
-          href: /dynamics365/customer-service/administer/geo-location-provider?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/geo-location-provider?context=/dynamics365/contact-center/context/administer-context
         - name: Configure self-service settings for customer actions
-          href: /dynamics365/customer-service/administer/enable-self-service-settings?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/enable-self-service-settings?context=/dynamics365/contact-center/context/administer-context
         - name: Enable download, email of chat transcripts
-          href: /dynamics365/customer-service/administer/download-email-chat-transcripts?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/download-email-chat-transcripts?context=/dynamics365/contact-center/context/administer-context
         - name: Configure agent display name
-          href: /dynamics365/customer-service/administer/agent-display-name?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/agent-display-name?context=/dynamics365/contact-center/context/administer-context
         - name: Configure proactive chat
-          href: /dynamics365/customer-service/administer/proactive-chat?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/proactive-chat?context=/dynamics365/contact-center/context/administer-context
         - name: Configure persistent chat
-          href: /dynamics365/customer-service/administer/persistent-chat?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/persistent-chat?context=/dynamics365/contact-center/context/administer-context
         - name: Configure reconnection to a previous chat session
-          href: /dynamics365/customer-service/administer/configure-reconnect-chat?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-reconnect-chat?context=/dynamics365/contact-center/context/administer-context
         - name: Show customers their position in a queue
-          href: /dynamics365/customer-service/administer/show-queue?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/show-queue?context=/dynamics365/contact-center/context/administer-context
         - name: Show customers their average wait time in a queue
-          href: /dynamics365/customer-service/administer/average-wait-time?context=../context/administer-context        
+          href: /dynamics365/customer-service/administer/average-wait-time?context=/dynamics365/contact-center/context/administer-context        
         - name: Embed chat widget in your website or portal
-          href: /dynamics365/customer-service/administer/embed-chat-widget-portal?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/embed-chat-widget-portal?context=/dynamics365/contact-center/context/administer-context
       - name: Channels
         items:
         - name: Set up SMS channels
           items:
           - name: Configure an SMS channel using Azure Communication Services
-            href: /dynamics365/customer-service/administer/configure-sms-channel-acs?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-sms-channel-acs?context=/dynamics365/contact-center/context/administer-context
           - name: Configure an SMS channel for TeleSign
-            href: /dynamics365/customer-service/administer/configure-sms-channel?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-sms-channel?context=/dynamics365/contact-center/context/administer-context
           - name: Configure an SMS channel for Twilio
-            href: /dynamics365/customer-service/administer/configure-sms-channel-twilio?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-sms-channel-twilio?context=/dynamics365/contact-center/context/administer-context
         - name: Set up social channels
           items:
           - name: Configure an Apple Messages for Business channel
-            href: /dynamics365/customer-service/administer/configure-apple-messages-for-business-channel?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-apple-messages-for-business-channel?context=/dynamics365/contact-center/context/administer-context
           - name: Configure a Facebook channel
-            href: /dynamics365/customer-service/administer/configure-facebook-channel?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-facebook-channel?context=/dynamics365/contact-center/context/administer-context
           - name: Configure a LINE channel
-            href: /dynamics365/customer-service/administer/configure-line-channel?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-line-channel?context=/dynamics365/contact-center/context/administer-context
           - name: Configure a WhatsApp channel
-            href: /dynamics365/customer-service/administer/configure-whatsapp-channel?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-whatsapp-channel?context=/dynamics365/contact-center/context/administer-context
           - name: Configure a WeChat channel
-            href: /dynamics365/customer-service/administer/configure-wechat-channel?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-wechat-channel?context=/dynamics365/contact-center/context/administer-context
           - name: Social channel setup FAQs
             items:
             - name: FAQ for Facebook channel setup
-              href: /dynamics365/customer-service/administer/facebook-channel-setup-faq?context=../context/administer-context
+              href: /dynamics365/customer-service/administer/facebook-channel-setup-faq?context=/dynamics365/contact-center/context/administer-context
         - name: Configure a Microsoft Teams channel
-          href: /dynamics365/customer-service/administer/configure-microsoft-teams?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-microsoft-teams?context=/dynamics365/contact-center/context/administer-context
         - name: Configure a custom messaging channel
-          href: /dynamics365/customer-service/administer/configure-custom-channel?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-custom-channel?context=/dynamics365/contact-center/context/administer-context
         - name: Enable file attachments
-          href: /dynamics365/customer-service/administer/enable-file-attachments?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/enable-file-attachments?context=/dynamics365/contact-center/context/administer-context
         - name: Delete a channel instance
-          href: /dynamics365/customer-service/administer/delete-channel?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/delete-channel?context=/dynamics365/contact-center/context/administer-context
       - name: Agent productivity tools
         items:
         - name: Productivity pane
-          href: /dynamics365/customer-service/administer/productivity-pane?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/productivity-pane?context=/dynamics365/contact-center/context/administer-context
         - name: Create quick replies
-          href: /dynamics365/customer-service/administer/create-quick-replies?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/create-quick-replies?context=/dynamics365/contact-center/context/administer-context
         - name: Manage rich messages
-          href: /dynamics365/customer-service/administer/create-rich-messages?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/create-rich-messages?context=/dynamics365/contact-center/context/administer-context
         - name: Enable personal quick replies
-          href: /dynamics365/customer-service/administer/enable-personal-quick-replies?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/enable-personal-quick-replies?context=/dynamics365/contact-center/context/administer-context
         - name: Enable formatted messages
-          href: /dynamics365/customer-service/administer/enable-formatted-messages?context=../context/administer-context  
+          href: /dynamics365/customer-service/administer/enable-formatted-messages?context=/dynamics365/contact-center/context/administer-context  
         - name: Enable transcripts
-          href: /dynamics365/customer-service/administer/enable-transcripts-messaging-channels?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/enable-transcripts-messaging-channels?context=/dynamics365/contact-center/context/administer-context
         - name: Enable sound notifications
-          href: /dynamics365/customer-service/administer/enable-sound-notifications?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/enable-sound-notifications?context=/dynamics365/contact-center/context/administer-context
         - name: Enable resizing of communication panel
-          href: /dynamics365/customer-service/administer/ csac-resize-cp?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/ csac-resize-cp?context=/dynamics365/contact-center/context/administer-context
         - name: Enable missed notifications
-          href: /dynamics365/customer-service/administer/ manage-missed-notifications?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/ manage-missed-notifications?context=/dynamics365/contact-center/context/administer-context
         - name: Enable automatic update of presence on rejection of work assignment
-          href: /dynamics365/customer-service/administer/enable-agent-reject-notifications?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/enable-agent-reject-notifications?context=/dynamics365/contact-center/context/administer-context
         - name: Enable auto-assignment of conversations
-          href: /dynamics365/customer-service/administer/enable-auto-assign-conversations?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/enable-auto-assign-conversations?context=/dynamics365/contact-center/context/administer-context
         - name: Enable sharing of knowledge articles
-          href: /dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search#set-up-knowledge-management?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search#set-up-knowledge-management?context=/dynamics365/contact-center/context/administer-context
       - name: Advanced configuration settings
         items:
         - name: Configure operating hours
-          href: /dynamics365/customer-service/administer/create-operating-hours?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/create-operating-hours?context=/dynamics365/contact-center/context/administer-context
         - name: Manage context variables
-          href: /dynamics365/customer-service/administer/manage-context-variables?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/manage-context-variables?context=/dynamics365/contact-center/context/administer-context
         - name: Configure post-conversation surveys
-          href: /dynamics365/customer-service/administer/configure-post-conversation-survey?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-post-conversation-survey?context=/dynamics365/contact-center/context/administer-context
         - name: Identify customers automatically
-          href: /dynamics365/customer-service/administer/record-identification-rule?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/record-identification-rule?context=/dynamics365/contact-center/context/administer-context
         - name: Close conversations automatically
-          href: /dynamics365/customer-service/administer/auto-close-conversation-powerapps?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/auto-close-conversation-powerapps?context=/dynamics365/contact-center/context/administer-context
         - name: Manage authentication settings
           items:
           - name: Configure authentication settings for chat
-            href: /dynamics365/customer-service/administer/create-chat-auth-settings?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/create-chat-auth-settings?context=/dynamics365/contact-center/context/administer-context
           - name: Configure authentication settings for Apple Messages for Business
-            href: /dynamics365/customer-service/administer/create-chat-auth-settings#create-authentication-settings-for-apple-messages-for-business?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/create-chat-auth-settings#create-authentication-settings-for-apple-messages-for-business?context=/dynamics365/contact-center/context/administer-context
         - name: Configure payment profiles
-          href: /dynamics365/customer-service/administer/configure-payment-profiles?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-payment-profiles?context=/dynamics365/contact-center/context/administer-context
         - name: Enable real-time translation of conversations
-          href: /dynamics365/customer-service/administer/enable-real-time-translation?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/enable-real-time-translation?context=/dynamics365/contact-center/context/administer-context
         - name: Configure automated messages
-          href: /dynamics365/customer-service/administer/configure-automated-message?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-automated-message?context=/dynamics365/contact-center/context/administer-context
         - name: Configure outbound messages
-          href: /dynamics365/customer-service/administer/outbound-messaging?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/outbound-messaging?context=/dynamics365/contact-center/context/administer-context
         - name: Configure data masking
-          href: /dynamics365/customer-service/administer/data-masking-settings?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/data-masking-settings?context=/dynamics365/contact-center/context/administer-context
         - name: Manage enhanced Active Conversation settings
-          href: /dynamics365/customer-service/administer/add-customer-summary-settings?context=../context/administer-context  
+          href: /dynamics365/customer-service/administer/add-customer-summary-settings?context=/dynamics365/contact-center/context/administer-context  
       - name: Bots
         items:
         - name: Overview of bots
-          href: /dynamics365/customer-service/administer/overview-bots?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/overview-bots?context=/dynamics365/contact-center/context/administer-context
         - name: Best practices for configuring bots
-          href: /dynamics365/customer-service/administer/configure-bot-best-practices?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-bot-best-practices?context=/dynamics365/contact-center/context/administer-context
         - name: Manage your bots
-          href: /dynamics365/customer-service/administer/manage-your-bots?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/manage-your-bots?context=/dynamics365/contact-center/context/administer-context
         - name: Configure context variables for bots
-          href: /dynamics365/customer-service/administer/context-variables-for-bot?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/context-variables-for-bot?context=/dynamics365/contact-center/context/administer-context
         - name: Configure Azure bots
           items:
           - name: Bot sessions and licensing
-            href: /dynamics365/customer-service/administer/bot-session-licensing?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/bot-session-licensing?context=/dynamics365/contact-center/context/administer-context
           - name: Integrate an Azure bot
-            href: /dynamics365/customer-service/administer/configure-bot-azure?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-bot-azure?context=/dynamics365/contact-center/context/administer-context
         - name: Integrate a Copilot Studio bot
-          href: /dynamics365/customer-service/administer/configure-bot-virtual-agent?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-bot-virtual-agent?context=/dynamics365/contact-center/context/administer-context
       - name: Knowledge management
         items:
         - name: Configure knowledge management
-          href: /dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search?context=/dynamics365/contact-center/context/administer-context
         - name: Work with knowledge articles
-          href: /dynamics365/customer-service/administer/work-knowledge-articles?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/work-knowledge-articles?context=/dynamics365/contact-center/context/administer-context
         - name: Set up external knowledge search providers
-          href: /dynamics365/customer-service/administer/set-up-search-providers?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/set-up-search-providers?context=/dynamics365/contact-center/context/administer-context
         - name: Add integrated search providers
           items:
           - name: Manage integrated search providers
-            href: /dynamics365/customer-service/administer/add-search-provider?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/add-search-provider?context=/dynamics365/contact-center/context/administer-context
           - name: Configure knowledge article schema mapping
-            href: /dynamics365/customer-service/administer/int-data-mapping?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/int-data-mapping?context=/dynamics365/contact-center/context/administer-context
           - name: View and use insights for search providers
-            href: /dynamics365/customer-service/administer/view-and-use-insights?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/view-and-use-insights?context=/dynamics365/contact-center/context/administer-context
           - name: Schema details to build a metadata mapping template
-            href: /dynamics365/customer-service/develop/int-search-metadata-schema?context=../context/administer-context
+            href: /dynamics365/customer-service/develop/int-search-metadata-schema?context=/dynamics365/contact-center/context/administer-context
         - name: Customize knowledge article search filters
-          href: /dynamics365/customer-service/administer/enable-knowledge-article-search-filters?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/enable-knowledge-article-search-filters?context=/dynamics365/contact-center/context/administer-context
         - name: Create and manage knowledge categories
-          href: /dynamics365/customer-service/administer/create-manage-categories?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/create-manage-categories?context=/dynamics365/contact-center/context/administer-context
         - name: Create knowledge article templates in Power Apps
           href: /power-platform/admin/create-templates-articles
         - name: Integrate knowledge management in Dynamics 365 with Copilot Studio bots
-          href: /dynamics365/customer-service/administer/integrate-KM-with-PVA?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/integrate-KM-with-PVA?context=/dynamics365/contact-center/context/administer-context
         - name: Configure the origin allowlist for knowledge articles
-          href: /dynamics365/customer-service/administer/configure-knowledge-article-origin-allow-list?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-knowledge-article-origin-allow-list?context=/dynamics365/contact-center/context/administer-context
         - name: Configure knowledge search control on app side pane for an entity record
-          href: /dynamics365/customer-service/administer/configure-knowledge-search-control-productivity-pane?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-knowledge-search-control-productivity-pane?context=/dynamics365/contact-center/context/administer-context
         - name: Add the knowledge base search control to forms
-          href: /dynamics365/customer-service/administer/add-knowledge-base-search-control-forms?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/add-knowledge-base-search-control-forms?context=/dynamics365/contact-center/context/administer-context
         - name: Add a knowledge article rich text editor control to a form
-          href: /dynamics365/customer-service/administer/rich-text-editor-ka?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/rich-text-editor-ka?context=/dynamics365/contact-center/context/administer-context
       - name: Microsoft Teams for collaboration
         items:
         - name: Introduction to collaboration
-          href: /dynamics365/customer-service/administer/collaboration?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/collaboration?context=/dynamics365/contact-center/context/administer-context
         - name: Configure Microsoft Teams chat
-          href: /dynamics365/customer-service/administer/configure-teams-chat?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-teams-chat?context=/dynamics365/contact-center/context/administer-context
         - name: Enable Teams meetings in Customer Service apps
-          href: /dynamics365/customer-service/administer/configure-teams-meetings?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-teams-meetings?context=/dynamics365/contact-center/context/administer-context
         - name: Configure AI suggestions for contacts in Teams
-          href: /dynamics365/customer-service/administer/configure-teams-collaboration?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-teams-collaboration?context=/dynamics365/contact-center/context/administer-context
         - name: Configure rules-based suggestions for contacts in Teams
-          href: /dynamics365/customer-service/administer/configure-rules-based-suggested-contacts?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-rules-based-suggested-contacts?context=/dynamics365/contact-center/context/administer-context
         - name: Configure auto-summarization of conversations
-          href: /dynamics365/customer-service/administer/cs-enable-ai-generated-summary?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/cs-enable-ai-generated-summary?context=/dynamics365/contact-center/context/administer-context
         - name: Set up Join a Teams call for agents
-          href: /dynamics365/customer-service/administer/set-up-join-a-teams-call?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/set-up-join-a-teams-call?context=/dynamics365/contact-center/context/administer-context
         - name: Configure customer support swarming
-          href: /dynamics365/customer-service/administer/configure-customer-support-swarming?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-customer-support-swarming?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ about setting up Teams chat
-          href: /dynamics365/customer-service/administer/faq-teams-chat?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/faq-teams-chat?context=/dynamics365/contact-center/context/administer-context
       - name: Analytics dashboards and insights
         items:
         - name: Use and customize analytics and insights
-          href: /dynamics365/customer-service/administer/analytics_overview?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/analytics_overview?context=/dynamics365/contact-center/context/administer-context
         - name: Supported regions and languages for analytics and insights
-          href: /dynamics365/customer-service/administer/cs-region-availability-service-limits?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/cs-region-availability-service-limits?context=/dynamics365/contact-center/context/administer-context
         - name: Service limits for analytics and insights
-          href: /dynamics365/customer-service/administer/ana-ser-limits?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/ana-ser-limits?context=/dynamics365/contact-center/context/administer-context
         - name: Configure analytics and insights dashboards
-          href: /dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh?context=/dynamics365/contact-center/context/administer-context
         - name: Manage real-time analytics dashboards
           items:
           - name: Manage Omnichannel real-time analytics reports
-            href: /dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator?context=/dynamics365/contact-center/context/administer-context
           - name: Manage access to Ongoing Conversations dashboard
-            href: /dynamics365/customer-service/administer/configure-ongoing-conversations-dashbaord?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-ongoing-conversations-dashbaord?context=/dynamics365/contact-center/context/administer-context
         - name: Enable supervisor access to manage conversations
-          href: /dynamics365/customer-service/administer/enable-monitor-assign-transfer-conv?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/enable-monitor-assign-transfer-conv?context=/dynamics365/contact-center/context/administer-context
         - name: Manage historical analytics dashboards
           items:
           - name: Manage Omnichannel historical analytics reports
-            href: /dynamics365/customer-service/administer/oc-historical-analytics-reports?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/oc-historical-analytics-reports?context=/dynamics365/contact-center/context/administer-context
           - name: Manage Knowledge analytics
-            href: /dynamics365/customer-service/administer/enable-knowledge-search-insights?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/enable-knowledge-search-insights?context=/dynamics365/contact-center/context/administer-context
         - name: Customize data models of historical and real-time analytics reports
-          href: /dynamics365/customer-service/administer/model-customize-reports?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/model-customize-reports?context=/dynamics365/contact-center/context/administer-context
         - name: Configure forecasting
           items:
           - name: Configure agent forecasting for conversation
-            href: /dynamics365/customer-service/administer/configure-agent-forecasting-conversation?context=../context/administer-context
+            href: /dynamics365/customer-service/administer/configure-agent-forecasting-conversation?context=/dynamics365/contact-center/context/administer-context
         - name: Configure real-time customer sentiment
-          href: /dynamics365/customer-service/administer/enable-sentiment-analysis?context=../context/administer-context
+          href: /dynamics365/customer-service/administer/enable-sentiment-analysis?context=/dynamics365/contact-center/context/administer-context
       - name: Responsible AI
         items:
         - name: Overview
-          href: /dynamics365/customer-service/implement/responsible-ai-overview?context=../context/administer-context
+          href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/administer-context
         - name: Responsible AI FAQ for Copilot in Customer Service
-          href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=../context/administer-context
+          href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/administer-context
     - name: Implement Dynamics 365 Contact center
       href: ../implement/international-availability.md
     - name: Manage Dynamics 365 Contact Center
       href: ../use/ccw-overview.md
     - name: Extend Dynamics 365 Contact Center
-      href: ../extend/configure-zendesk-connector.md
+      href: ../extend/configure-servicenow-connector.md

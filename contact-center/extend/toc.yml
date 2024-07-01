@@ -5,105 +5,103 @@
       - name: Dynamics 365 Contact Center documentation
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
-        href: ../implement/overview-contact-center.md?context=../context/extend-context
+        href: ../implement/overview-contact-center.md?context=/dynamics365/contact-center/context/extend-context
       - name: Connectors
         items:
-        - name: Configure Zendesk connector
-          href: configure-zendesk-connector.md
         - name: Configure ServiceNow connector
-          href: configure-servicenow-connector.md  
+          href: configure-servicenow-connector.md
         - name: Configure custom CRM connector
-          href: configure-custom-connector.md  
+          href: configure-custom-connector.md
       - name: Chat
         items:
         - name: Develop a custom live chat widget
-          href: /dynamics365/customer-service/develop/develop-live-chat-widget?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/develop-live-chat-widget?context=/dynamics365/contact-center/context/extend-context
         - name: Customize live chat widgets using data tags
-          href: /dynamics365/customer-service/develop/customize-chat-widget?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/customize-chat-widget?context=/dynamics365/contact-center/context/extend-context
         - name: Customize live chat widgets for mobile apps
-          href: /dynamics365/customer-service/develop/render-live-chat-widget-mobile?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/render-live-chat-widget-mobile?context=/dynamics365/contact-center/context/extend-context
         - name: Download transcripts in bulk
-          href: /dynamics365/customer-service/develop/download-transcripts-bulk?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/download-transcripts-bulk?context=/dynamics365/contact-center/context/extend-context
         - name: Add a web resource for real-time translation
-          href: /dynamics365/customer-service/develop/add-web-resource-real-time-translation?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/add-web-resource-real-time-translation?context=/dynamics365/contact-center/context/extend-context
         - name: Enable third-party cobrowse and screen sharing
-          href: /dynamics365/customer-service/develop/third-party-co-browse?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/third-party-co-browse?context=/dynamics365/contact-center/context/extend-context
         - name: Live chat widget telemetry
-          href: /dynamics365/customer-service/develop/live-chat-telemetry?context=../context/extend-context 
+          href: /dynamics365/customer-service/develop/live-chat-telemetry?context=/dynamics365/contact-center/context/extend-context 
         - name: Configure link to conversation button
-          href: /dynamics365/customer-service/develop/configure-link-to-conversation-model-driven-app-form?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/configure-link-to-conversation-model-driven-app-form?context=/dynamics365/contact-center/context/extend-context
         - name: Start a chat
-          href: /dynamics365/customer-service/develop/initiate-chat-wait-time?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/initiate-chat-wait-time?context=/dynamics365/contact-center/context/extend-context
         - name: Start chat proactively
-          href: /dynamics365/customer-service/develop/start-proactive-chat?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/start-proactive-chat?context=/dynamics365/contact-center/context/extend-context
         - name: Send authentication token
-          href: /dynamics365/customer-service/develop/send-auth-token-starting-chat?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/send-auth-token-starting-chat?context=/dynamics365/contact-center/context/extend-context
         - name: Configure automatic closure of conversations using web API
-          href: /dynamics365/customer-service/develop/auto-close-conversation?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/auto-close-conversation?context=/dynamics365/contact-center/context/extend-context
         - name: Send custom context during live chat
-          href: /dynamics365/customer-service/develop/send-context-starting-chat?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/send-context-starting-chat?context=/dynamics365/contact-center/context/extend-context
         - name: Display custom context in Conversation summary
-          href: /dynamics365/customer-service/develop/display-custom-context?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/display-custom-context?context=/dynamics365/contact-center/context/extend-context
       - name: Channels
         items: 
         - name: Integrate a custom messaging channel
           items: 
           - name: Integrate your own custom channel using Direct Line
-            href: /dynamics365/customer-service/develop/bring-your-own-channel?context=../context/extend-context
+            href: /dynamics365/customer-service/develop/bring-your-own-channel?context=/dynamics365/contact-center/context/extend-context
           - name: Test the custom messaging channel
-            href: /dynamics365/customer-service/develop/test-custom-channel-sample-html?context=../context/extend-context
+            href: /dynamics365/customer-service/develop/test-custom-channel-sample-html?context=/dynamics365/contact-center/context/extend-context
           - name: Markdown formats in custom channels that use Direct Line
-            href: /dynamics365/customer-service/develop/markdown-formats-dev?context=../context/extend-context   
+            href: /dynamics365/customer-service/develop/markdown-formats-dev?context=/dynamics365/contact-center/context/extend-context   
       - name: Copilot in Customer Service
         items:  
         - name: Download Copilot transcripts and interaction data
-          href: /dynamics365/customer-service/develop/download-copilot-transcript-data?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/download-copilot-transcript-data?context=/dynamics365/contact-center/context/extend-context
       - name: Agent productivity tools
         items: 
         - name: Build a smart assist bot
-          href: /dynamics365/customer-service/develop/smart-assist-bot?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/smart-assist-bot?context=/dynamics365/contact-center/context/extend-context
         - name: Implement custom scenario
-          href: /dynamics365/customer-service/develop/smart-assist-scenario?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/smart-assist-scenario?context=/dynamics365/contact-center/context/extend-context
         - name: Retrieve and format rich messages
-          href: /dynamics365/customer-service/develop/reference/methods/message-object?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/reference/methods/message-object?context=/dynamics365/contact-center/context/extend-context
       - name: Bots
         items:
         - name: Configure bot context
           items:
           - name: Configure bot context
-            href: /dynamics365/customer-service/develop/enable-bot-context?context=../context/extend-context
+            href: /dynamics365/customer-service/develop/enable-bot-context?context=/dynamics365/contact-center/context/extend-context
           - name: Azure bots
             items:
             - name: Enable bot context for Azure bots
-              href: /dynamics365/customer-service/develop/enable-bot-context-azure?context=../context/extend-context
+              href: /dynamics365/customer-service/develop/enable-bot-context-azure?context=/dynamics365/contact-center/context/extend-context
             - name: Parse event activity JSON to get bot context
-              href: /dynamics365/customer-service/develop/parse-activity-json-to-get-bot-context?context=../context/extend-context
+              href: /dynamics365/customer-service/develop/parse-activity-json-to-get-bot-context?context=/dynamics365/contact-center/context/extend-context
           - name: Copilot Studio
             items:
             - name: Enable bot context for Copilot Studio bots
-              href: /dynamics365/customer-service/develop/enable-bot-context-pva?context=../context/extend-context   
+              href: /dynamics365/customer-service/develop/enable-bot-context-pva?context=/dynamics365/contact-center/context/extend-context   
           - name: Code samples for parsing activity JSON 
-            href: /dynamics365/customer-service/develop/bot-context-json-samples?context=../context/extend-context
+            href: /dynamics365/customer-service/develop/bot-context-json-samples?context=/dynamics365/contact-center/context/extend-context
         - name: Configure Azure bots to escalate and end conversations
-          href: /dynamics365/customer-service/develop/bot-escalate-end-conversation?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/bot-escalate-end-conversation?context=/dynamics365/contact-center/context/extend-context
         - name: Download file attachments from Azure bot
-          href: /dynamics365/customer-service/develop/download-attachments-bot?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/download-attachments-bot?context=/dynamics365/contact-center/context/extend-context
         - name: Get Microsoft Teams user details from Azure bot
-          href: /dynamics365/customer-service/develop/user-details-teams-azure-bot?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/user-details-teams-azure-bot?context=/dynamics365/contact-center/context/extend-context
         - name: Display suggested actions in a vertical layout
-          href: /dynamics365/customer-service/develop/suggested-actions?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/suggested-actions?context=/dynamics365/contact-center/context/extend-context
         - name: Pass authentication token to bot during single sign-on in live chat
-          href: /dynamics365/customer-service/develop/pass-auth-token-sso-live-chat?context=../context/extend-context
+          href: /dynamics365/customer-service/develop/pass-auth-token-sso-live-chat?context=/dynamics365/contact-center/context/extend-context
       - name: Extend Omnichannel for Customer Service
-        href: /dynamics365/customer-service/develop/extend-omnichannel?context=../context/extend-context
+        href: /dynamics365/customer-service/develop/extend-omnichannel?context=/dynamics365/contact-center/context/extend-context
       - name: Overview of entity reference
-        href: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=../context/extend-context
+        href: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=/dynamics365/contact-center/context/extend-context
     - name: Responsible AI
       items:
       - name: Overview
-        href: /dynamics365/customer-service/implement/responsible-ai-overview?context=../context/extend-context
+        href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/extend-context
       - name: Responsible AI FAQ for Copilot in Customer Service
-        href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=../context/extend-context
+        href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/extend-context
     - name: Implement Dynamics 365 Contact center
       href: ../implement/international-availability.md
     - name: Administer Dynamics 365 Contact Center

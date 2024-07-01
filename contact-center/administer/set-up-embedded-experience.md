@@ -2,17 +2,17 @@
 title: Set up embedded experience for Dynamics 365 Contact Center
 description: Learn about how to set up the embedded experience for Dynamics 365 Contact Center.
 author: shwetamurkute
-ms.author: nenellim
-ms.reviewer: nenellim
+ms.author: smurkute
+ms.reviewer: smurkute
 ms.topic: how-to
-ms.collection: get-started
+ms.collection:
 ms.date: 07/01/2024
 ms.custom: bap-template
 ---
 
 # Set up embedded experience for Dynamics 365 Contact Center
 
-The embedded conversation widget is a feature of the Dynamics 365 Contact Center that allows agents to chat with customers directly from any third-party customer relationship management (CRM) system. You can embed the widget into any web page or application that supports HTML and JavaScript, and it provides a seamless and consistent chat experience across different platforms.
+The embedded conversation widget is a feature of Dynamics 365 Contact Center that allows agents to chat with customers directly from any third-party customer relationship management (CRM) system. You can embed the widget into any web page or application that supports HTML and JavaScript, and it provides a seamless and consistent chat experience across different platforms.
 
 ## Prerequisites
 
@@ -26,13 +26,13 @@ The embedded conversation widget is a feature of the Dynamics 365 Contact Center
 
 ## Set up the call center in Salesforce
 
-1. Download the call center definition file from the following location: `https://github.com/microsoft/copilot-for-service/blob/main/samples/SFCallCenter/Dynamics365CallCenter.xml`. Make sure you're signed into GitHub to access the file.
+1. Download the call center definition file from the following location: `https://github.com/microsoft/copilot-for-service/blob/main/samples/SFCallCenter/Dynamics365CallCenter.xml`. Make sure that you're signed into GitHub to access the file.
 
 1. Open the file, replace the "CTI Adapter URL" with the embedded widget URL, and then save your changes.
 
 1. Sign in to Salesforce.
 
-1. Navigate to the **Setup** by clicking the gear icon in the top-right corner.
+1. Navigate to the **Setup** by selecting the gear icon in the top-right corner.
 
 1. In the **Quick Find** box, search for **Call Center**.
 

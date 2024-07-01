@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: neeranelli
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 03/07/2024
+ms.date: 07/01/2024
 ms.custom: bap-template 
 ---
 
@@ -26,8 +26,8 @@ Copilot case and conversation summaries help you to quickly understand the conte
 
 Case summaries help agents understand the context of a case, enabling them to resolve customer issues efficiently. Agents get a concise summary of the case based on their CRM as follows:
 
-- Salesforce: case id, description, subject, priority, type, customer name, case url, email, comments, and text post activities linked to the case.
-- ServiceNow: incident id, description, short description, priority, type, customer name, incident url, email, email and comments linked to the incident.
+- Salesforce: case id, description, subject, priority, type, customer name, case url, email, and text post activities linked to the case.
+- ServiceNow: incident id, description, short description, priority, type, customer name, incident url, email, and notes linked to the incident.
 
 > [!IMPORTANT]
 > - Copilot case summary is available in the Contact Center standalone app only.

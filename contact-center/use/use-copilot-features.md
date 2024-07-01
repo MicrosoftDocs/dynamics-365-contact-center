@@ -93,4 +93,4 @@ Select the one-click response generation button at the lower-right corner of the
 
 [Understand Copilot language support](copilot-language-support.md)  
 [Manage copilot features in Customer Service](../administer/configure-copilot-features.md)  
-[FAQ for Copilot in Customer Service](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=../context/administer-context) 
+[FAQ for Copilot in Customer Service](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/administer-context) 

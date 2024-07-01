@@ -72,8 +72,7 @@ The customer-facing live chat widget that you display on your portal supports th
 To enable the omnichannel capabilities in your org, see [Provision channels](provision-channels.md).
 
 > [!NOTE]
->
-> - We recommend that you use browsers in normal mode to optimally experience the Contact Center workspace app.
+> We recommend that you use browsers in normal mode to optimally experience the Contact Center workspace app.
 
 ## Allow access to websites
 

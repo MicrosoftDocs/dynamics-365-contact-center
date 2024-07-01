@@ -55,7 +55,7 @@ Afer you configure the data connector and sync it from the Salesforce instance, 
 
 ### Data types supported in Dataverse
 
-Dataverse supports the following data types. Dataverse doesn't support the Virtual and EntityName attributeTypes.
+Dataverse supports the following data types. Dataverse doesn't support the Virtual and EntityName data types.
 
 | Dataverse columns of attribute type | Salesforce columns of data type type |
 |-----------|-------------|
@@ -106,10 +106,12 @@ The actions that you can do with the connector are listed in this section.
 
 :::image type="content" source="../media/connector-salesforce.png" alt-text="Screenshot of the connector window in Contact Center.":::
 
+When you update to add new tables or mappings, the data for the existing tables and mappings is also synced. If a table or mapped field is removed, the data remains in Dataverse and new data only isn't synced.
+ 
 - Activate or Deactivate the connector.
 - View diagnostic details.
 - Edit the details of the connector:
-    - **Data tables**: Update the tables that need to be synchronized.
+    - **Data tables**: Update the tables that you want to sync.
     - **Field mappings**: Update the column mappings. Use the reset option to reset the mappings to the out-of-the-box defined ones.
     - **Data access permissions**: Update the Teams ID that's used to write the data into Dataverse.
 

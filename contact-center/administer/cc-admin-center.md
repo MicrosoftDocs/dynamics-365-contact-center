@@ -10,7 +10,7 @@ ms.date: 07/01/2024
 ms.custom: bap-template
 ---
 
-# Contact Center admin center
+# Use Contact Center admin center
 
 Welcome to Contact Center admin center, the app that unifies and simplifies the administration experience of your contact center.
 
@@ -35,4 +35,5 @@ The app is automatically installed in all the Dynamics 365 Contact Center organi
 
 ### See also
 
-[System requirements for Dynamics 365 Contact Center](system-requirements-contact-center.md)  
+[System requirements for Dynamics 365 Contact Center](../implement/system-requirements-contact-center.md)    
+[International availability of Dynamics 365 Contact Center](../implement/international-availability.md)  

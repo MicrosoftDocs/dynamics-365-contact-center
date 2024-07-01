@@ -66,8 +66,11 @@ Dataverse supports the following data types. Dataverse doesn't support the Virtu
 | Uniqueidentifier, Lookup, Owner, Customer | string with data type: ID, reference |
 | DateTime | string with data type: date, datetime |
 
+### Predefined data mappings
 
-| Salesforce Field name | Dataverse Field Name |
+The predefined data mappings for the Contact table are as follows.
+
+| Salesforce field name | Dataverse field Name |
 |-----------------------|----------------------|
 | AssistantName         | AssistantName        |
 | AssistantPhone        | AssistantPhone       |
@@ -83,9 +86,9 @@ Dataverse supports the following data types. Dataverse doesn't support the Virtu
 | Salutation            | Salutation           |
 | Phone                 | Telephone1           |
 
+The predefined data mappings for the Account table are as follows.
 
-
-| Salesforce Field name | Dataverse Field Name |
+| Salesforce fField name | Dataverse field Name |
 |-----------------------|----------------------|
 | GUID from SF AccountId (transformed data) | AccountId |
 | AccountNumber | AccountNumber |
@@ -96,8 +99,6 @@ Dataverse supports the following data types. Dataverse doesn't support the Virtu
 | Sic | SIC |
 | Phone | Telephone1 |
 | TickerSymbol | TickerSymbol |
-
-
 
 ## Manage the data connector
 
@@ -120,7 +121,6 @@ The actions that you can do with the connector are listed in this section.
 ### See also
 
 [Single sign-on SAML protocol](/entra/identity-platform/single-sign-on-saml-protocol)  
-[Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams)  
 
 
 

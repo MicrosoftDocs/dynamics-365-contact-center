@@ -35,8 +35,7 @@ You can migrate data from your custom CRM to Dataverse using the Power Automate 
 
 ## Import Power Automate flows to sync Account and Contact records
 
-Perform the following steps:
-
+Perform the steps outlined in the sections that follow.
 
 ### Add a Dataverse Connector
 
@@ -58,7 +57,6 @@ You can establish a connection to your custom CRM using the following methods:
 Your HTTP action can send and receive JSON requests and responses.
 
 ### Add a custom CRM using webhooks
-
 
 Set up webhooks in your custom CRM to facilitate incremental data synchronization. Webhooks trigger notifications upon the creation, update, or deletion of a record. 
 
@@ -89,7 +87,9 @@ In Power Automate, select the required flow and then select **Run**.
 > [!NOTE]
 > The create, update, and delete events automatically trigger the flows.
 
+### See also
 
+[Configure a connector for ServiceNow](configure-servicenow-connector.md)  
 
 
 

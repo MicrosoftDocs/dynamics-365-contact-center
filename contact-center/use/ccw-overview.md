@@ -10,7 +10,7 @@ ms.date: 07/01/2024
 ms.custom: bap-template
 ---
 
-# Overview of Contact Center workspace
+# Use Contact Center workspace
 
 The Contact Center workspace application is an agent-facing app in Dynamics 365 Contact Center that provides a powerful agent desktop with Copilot capabilities and collaboration tools across channels like live chat, SMS, voice, Microsoft Teams, and social channels. Contact Center workspace connects to your organization's customer relationship manager (CRM) solution to provide contextual knowledge and customer data to assist agents in resolving customer queries. As an agent, you can have simultaneous customer sessions within the app without losing the context of each session. You can also use Copilot within Contact Center workspace to ask questions pertaining to a case, removing the need to manually search across multiple knowledge sources.
 

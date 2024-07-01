@@ -73,27 +73,19 @@
       - name: Use Copilot
         items: 
         - name: Use Copilot to solve customer issues 
-          href: /dynamics365/customer-service/use/use-copilot-features?context=/dynamics365/contact-center/context/use-context
+          href: ../use/use-copilot-features.md
         - name: Use Copilot to summarize cases and conversations
-          href: /dynamics365/customer-service/use/copilot-use-summary?context=/dynamics365/contact-center/context/use-context
-        - name: Summarize cases
-          href: /dynamics365/customer-service/use/copilot-use-summary#summarize-cases?context=/dynamics365/contact-center/context/use-context
-        - name: Summarize conversations
-          href: /dynamics365/customer-service/use/copilot-use-summary#summarize-conversations?context=/dynamics365/contact-center/context/use-context
+          href: ../use/copilot-use-summary.md
         - name: Ask a question
-          href: /dynamics365/customer-service/use/use-copilot-features#ask-a-question?context=/dynamics365/contact-center/context/use-context
+          href: ../use/use-copilot-features.md#ask-a-question
         - name: Draft a chat response (preview)
-          href: /dynamics365/customer-service/use/use-copilot-features#draft-a-chat-response-preview?context=/dynamics365/contact-center/context/use-context
+          href: ../use/use-copilot-features.md#draft-a-chat-response-preview
         - name: Write an email with Copilot
-          href: /dynamics365/customer-service/use/use-copilot-email?context=/dynamics365/contact-center/context/use-context
-        - name: Use Copilot filters
-          href: /dynamics365/customer-service/use/use-copilot-filters?context=/dynamics365/contact-center/context/use-context
-        - name: Use Copilot to generate knowledge drafts from cases
-          href: /dynamics365/customer-service/use/use-copilot-knowledge-from-cases?context=/dynamics365/contact-center/context/use-context
+          href: ../use/use-copilot-email.md
         - name: Understand how Copilot supports different languages
-          href: /dynamics365/customer-service/use/copilot-language-support?context=/dynamics365/contact-center/context/use-context
+          href: ../use/copilot-language-support.md
         - name: View analytics for Copilot impact
-          href: /dynamics365/customer-service/use/copilot-analytics-report?context=/dynamics365/contact-center/context/use-context
+          href: ../use/copilot-analytics-report.md
         - name: Chat with Customer Service data in Copilot for Microsoft 365 (preview)
           href: /dynamics365/customer-service/use/copilot-chat-customer-service-data?context=/dynamics365/contact-center/context/use-context
       - name: Unified routing and assignment

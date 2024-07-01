@@ -194,7 +194,7 @@
           href: /dynamics365/customer-service/administer/configure-outbound-inbound-profiles?context=/dynamics365/contact-center/context/administer-context
         - name: Configure historical analytics for voice
           href: /dynamics365/customer-service/administer/cs-voice-historical-analytics?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure Copilot Studio bots for voice
+        - name: Configure IVR bots for voice
           href: /dynamics365/customer-service/administer/voice-channel-pva-bots?context=/dynamics365/contact-center/context/administer-context
         - name: View voice calls usage
           href: /dynamics365/customer-service/administer/voice-channel-usage?context=/dynamics365/contact-center/context/administer-context

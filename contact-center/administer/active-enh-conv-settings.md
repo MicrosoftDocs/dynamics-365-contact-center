@@ -1,12 +1,13 @@
 ---
-title: Manage the enhanced Active Conversation settings | MicrosoftDocs 
+title: Manage the enhanced Active Conversation settings
 description: Manage the enhanced Active Conversation settings.
 author: gandhamm 
 ms.author: mgandham
-ms.reviewer: neeranelli
+ms.reviewer: mgandham
 ms.topic: how-to 
-ms.date: 12/21/2023
-ms.custom: bap-template 
+ms.date: 07/01/2024
+ms.custom: bap-template
+ms.collection:
 ---
 
 # Manage enhanced Active Conversation settings
@@ -19,7 +20,7 @@ The enhanced Active Conversation experience displays the customer details that a
 
 To enable the enhanced Active Conversation form and customize the form, perform the following steps:
 
-1. In Customer Service admin center, go to **Workspaces**.
+1. In Contact Center admin center, go to **Workspaces**.
 1. Select **Manage** for **Active conversation form settings** in **Workspaces**.
 1. Select the following options:
     - **Enhanced active conversation form** to enable the enhanced Active Conversation experience. The following features are available as a part of the enhanced experience:
@@ -76,5 +77,4 @@ Perform the following steps to revert to the required default experience:
 
 ### See also
 
-[View customer information on Active Conversation form](../use/oc-customer-summary.md) <br>
-[Get started with Customer Service workspace](../implement/csw-overview.md)
+[View customer information on Active Conversation form](/dynamics365/customer-service/use/oc-customer-summary)  

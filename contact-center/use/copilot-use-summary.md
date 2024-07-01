@@ -1,12 +1,12 @@
 ---
 title: Use Copilot to summarize cases and conversations
-description: Learn how agents can use Copilot to summarize cases and conversations in Customer Service workspace.
+description: Learn how agents can use Copilot to get cases and conversation summaries in Dynamics 365 Contact Center.
 author: gandhamm 
 ms.author: mgandham 
 ms.reviewer: neeranelli 
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 03/07/2024
+ms.date: 07/01/2024
 ms.custom: bap-template 
 ---
 

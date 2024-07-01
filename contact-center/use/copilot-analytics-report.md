@@ -1,12 +1,12 @@
 ---
 title: View copilot analytics report
 description: Learn how to view and understand Copilot metrics.
-ms.date: 11/06/2023
-ms.topic: conceptual
-author: neeranelli
-ms.author: nenellim
-ms.reviewer: shujoshi
-ms.custom: bap-template
+author: gandhamm 
+ms.author: mgandham
+ms.reviewer: mgandham
+ms.topic: how-to 
+ms.date: 07/01/2024
+ms.custom: bap-template 
 ms.collection: bap-ai-copilot
 ---
 
@@ -16,7 +16,7 @@ ms.collection: bap-ai-copilot
 Copilot helps agents to complete tasks related to conversations, cases, and email more easily. With the Copilot report, supervisors and customer service managers can identify the impact that Copilot is having across their customer service operation.
 
 
-The system stores the copilot interaction data in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/msdyn_copilotinteraction?context=../context/extend-context), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/msdyn_copilotinteractiondata?context=../context/extend-context), [msdyn_copilottranscript](/dynamics365/customer-service/develop/msdyn_copilottranscript?context=../context/extend-context), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/msdyn_copilottranscriptdata?context=../context/extend-context) tables. You can use the information to build custom metrics in reporting and analytics and understand how Copilot is being used in your organization.
+The system stores the copilot interaction data in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/msdyn_copilotinteraction?context=/dynamics365/contact-center/context/extend-context), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/msdyn_copilotinteractiondata?context=/dynamics365/contact-center/context/extend-context), [msdyn_copilottranscript](/dynamics365/customer-service/develop/msdyn_copilottranscript?context=/dynamics365/contact-center/context/extend-context), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/msdyn_copilottranscriptdata?context=/dynamics365/contact-center/context/extend-context) tables. You can use the information to build custom metrics in reporting and analytics and understand how Copilot is being used in your organization.
 
 To view the Copilot report, open Customer Service historical analytics and select the **Copilot** tab.
 

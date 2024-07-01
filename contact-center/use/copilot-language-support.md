@@ -5,14 +5,14 @@ author: gandhamm
 ms.author: mgandham
 ms.collection: bap-ai-copilot
 ms.topic: conceptual
-ms.reviewer: 
-ms.date: 04/30/2024
+ms.reviewer: mgandham
+ms.date: 07/01/2024
 ms.custom: bap-template 
 ---
 
 # Understand how Copilot supports different languages
 
-Copilot generates responses to agent's questions and supports case and conversation summary features in [multiple languages](../administer/cs-region-availability-service-limits.md#language-support-for-ai-based-analytics-and-insights-in-customer-service).
+Copilot generates responses to agent's questions and supports case and conversation summary features in [multiple languages](/dynamics365/customer-service/implement/international-availability?context=/dynamics365/contact-center/context/implement-context).
 
 The key features are as follows:
 
@@ -53,4 +53,4 @@ The following scenarios can help you understand the language Copilot uses to gen
 
 ### See also
 
-[Use Copilot to solve customer issues](../use/use-copilot-features.md)
+[Use Copilot to solve customer issues](../use/use-copilot-features.md)  

@@ -20,8 +20,6 @@
         items:
         - name: International availability of Dynamics 365 Contact Center
           href: international-availability.md
-        - name: Dynamics 365 US Government Community Cloud (GCC) availability
-          href: /dynamics365/customer-service/implement/government-availability?context=/dynamics365/contact-center/context/implement-context
       - name: Accessibility and privacy
         items:
         - name: Accessibility
@@ -37,11 +35,7 @@
         - name: Service quotas
           href: /dynamics365/customer-service/implement/service-quotas?context=/dynamics365/contact-center/context/implement-context
         - name: Best practices to set up voice channel
-          href: /dynamics365/customer-service/implement/voice-channel-best-practices?context=/dynamics365/contact-center/context/implement-context
-      - name: Set up Dynamics 365 Contact center
-        items:
-        - name: Set up embedded experience
-          href: set-up-embedded-experience.md
+          href: /dynamics365/customer-service/implement/voice-channel-best-practices?context=../context/implement-context
         - name: Install Dynamics 365 Contact Center
           items:
           - name: Provision channels
@@ -89,4 +83,4 @@
     - name: Manage Dynamics 365 Contact Center
       href: ../use/ccw-overview.md
     - name: Extend Dynamics 365 Contact Center
-      href: ../extend/configure-zendesk-connector.md
+      href: ../extend/configure-servicenow-connector.md

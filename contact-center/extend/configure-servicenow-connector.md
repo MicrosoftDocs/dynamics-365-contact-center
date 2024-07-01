@@ -5,8 +5,9 @@ author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
-ms.date: 06/25/2024
-ms.custom: bap-template 
+ms.date: 07/01/2024
+ms.custom: bap-template
+ms.collection:
 ---
 
 # Configure the connector for ServiceNow
@@ -14,7 +15,7 @@ ms.custom: bap-template
 The Microsoft Contact Center — Power Automate solution for ServiceNow connector allows organizations to engage with their customers using capabilities such as voice, video, SMS, live chat, and social messaging from their third-party CRM solutions. You can use Power Automate data connectors to sync the contacts and accounts data from the ServiceNow CRM solution into Dataverse.
 
 ## Prerequisites
--  A ServiceNow instance. For example, `https://[your-instance-name].service-now.com/`
+- A ServiceNow instance. For example, `https://[your-instance-name].service-now.com/`
 - License for Dynamic 365 Contact Center, that include the Power Automate and Power Apps subscriptions.
 - Power Platform System administrator permissions
 - Basic understanding of how to use Power Automate flows or Power Apps
@@ -55,21 +56,23 @@ Repeat the same configuration for the Contact table.
 
 ## Import the Power Automate flow
 
-**Add a ServiceNow connector**
+Perform the steps outlined in the sections that follow.
+
+### Add a ServiceNow connector
+
 1. In Power Automate, follow the steps in [Add a connection](/power-automate/add-manage-connections#add-a-connection) to add a ServiceNow connection.
 1. Specify your ServiceNow instance and credentials, and then select **Create**.
 
-**Add a Dataverse Connector**
+### Add a Dataverse Connector
 
 1. In Power Automate, follow the steps in [Add a connection](/power-automate/add-manage-connections#add-a-connection) to add a Dataverse connection, and then select **Create**.
 1. In the pop-up window that appears, select your account. A connection is created.
 
-**Download flows from GitHub**
+### Download flows from GitHub
 
-1. Download all the Power Automate flows from the [ServiceNow](https://github.com/microsoft/copilot-for-service/tree/CCaaS-3P-CRM-Connector/flows/ServiceNow) repository.
+Download all the Power Automate flows from the [ServiceNow](https://github.com/microsoft/copilot-for-service/tree/CCaaS-3P-CRM-Connector/flows/ServiceNow) repository.
 
-
-**Import flows to Power Automate**
+### Import flows to Power Automate
 
 1. In Power Automate, select **My flows**.
 1. In **Import**, select **Import** and then select **Import Package (legacy)**.  
@@ -80,12 +83,11 @@ Repeat the same configuration for the Contact table.
 
 ## Configure incremental data sync
 
-
-Incremental data sync updates the ServiceNow data to Dataverse in realtime through automated triggers.
+Incremental data sync updates the ServiceNow data to Dataverse in real time through automated triggers.
 ServiceNow uses scripts to trigger notifications when a record is created, updated, and deleted. You must use the Customer Service Plugin to trigger these notifications. You must create the script in the following order:
 
-1. Create REST Message
-2. Create Business Rule
+1. Create REST message
+2. Create a business rule
 
 > [!NOTE]
 > The following steps must be performed for both Account and Contact tables.
@@ -96,7 +98,7 @@ ServiceNow uses scripts to trigger notifications when a record is created, updat
 1. Select **Outbound** > **Rest Message**.
 1. Select **New** to create a new REST message.
 1. In the **Rest Message** page, specify the required fields. See: [Create a REST message](https://docs.servicenow.com/bundle/tokyo-application-development/page/integrate/outbound-rest/task/t_ConfiguringARESTMessage.html).
-   - Create individual REST Messages for create, update, and delete. Update the **Endpoint** field in **REST Messages** with the Power Automates flow. Perform the following steps to get the URL:
+   - Create individual REST Messages for create, update, and delete. Update the **Endpoint** field in **REST Messages** with the Power Automate flow. Perform the following steps to get the URL:
 
      1. Select the required flow and then select **Edit**. 
      1. Select **Manual** in the flow, and then copy the HTTP URL. Repeat the steps for the organization and user flows for all the create, update, and delete operations
@@ -118,7 +120,7 @@ ServiceNow uses scripts to trigger notifications when a record is created, updat
 
 ## Run The Power Automate Flow 
 
-In Power Automate https://make.powerautomate.com/environments/[environmentId], select the required flow from **Cloud flows** and then select **Run**.
+In Power Automate https://make.powerautomate.com/environments/[environmentId], select the required flow from **Cloud flows**, and then select **Run**.
 
 ## Edit flows and field mappings (Optional) 
 
@@ -130,7 +132,7 @@ For example, the **Account Name** field in Dataverse can be mapped to the **Name
 
 ### Predefined column mapping
 
- The following table describes the predefined column mapping for the ServiceNow and Dataverse connectors for Contact and Account.
+The following table describes the predefined column mapping for the ServiceNow and Dataverse connectors for Contact and Account.
 
 **Contact**
 
@@ -162,3 +164,7 @@ For example, the **Account Name** field in Dataverse can be mapped to the **Name
 | Static Value: ServiceNow  | msdyn_source_crm |
 |u_base_url | msdyn_source_crm_url |
 | sys_created_on | createddate |
+
+### See also
+
+[Configure a custom connector](configure-custom-connector.md)  

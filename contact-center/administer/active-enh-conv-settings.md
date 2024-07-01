@@ -1,12 +1,13 @@
 ---
-title: Manage the enhanced Active Conversation settings | MicrosoftDocs 
+title: Manage the enhanced Active Conversation settings
 description: Manage the enhanced Active Conversation settings.
 author: gandhamm 
 ms.author: mgandham
-ms.reviewer: neeranelli
+ms.reviewer: mgandham
 ms.topic: how-to 
-ms.date: 12/21/2023
-ms.custom: bap-template 
+ms.date: 07/01/2024
+ms.custom: bap-template
+ms.collection:
 ---
 
 # Manage enhanced Active Conversation settings
@@ -19,13 +20,13 @@ The enhanced Active Conversation experience displays the customer details that a
 
 To enable the enhanced Active Conversation form and customize the form, perform the following steps:
 
-1. In Customer Service admin center, go to **Workspaces**.
+1. In Contact Center admin center, go to **Workspaces**.
 1. Select **Manage** for **Active conversation form settings** in **Workspaces**.
 1. Select the following options:
     - **Enhanced active conversation form** to enable the enhanced Active Conversation experience. The following features are available as a part of the enhanced experience:
       - Configurable **Customer 360** card with inline edit capabilities. 
       - The default form selector to switch between active and closed conversations is hidden.
-    - **Customize active conversation form** to display **Queue**, **Start time**, options to save and refresh on the **Active Conversation** form, and enable customizations in [Customizations supported by the Conversation form](supported-customizations.md#customizations-supported-by-the-conversation-form). Select **Power Apps** to further customize the form. If you're customizing the form in Power Apps, we recommend the following guidelines:
+    - **Customize active conversation form** to display **Queue**, **Start time**, options to save and refresh on the **Active Conversation** form, and enable customizations in [Customizations supported by the Conversation form](/dynamics365/customer-service/administer/supported-customizations?context=/dynamics365/contact-center/context/administer-context). Select **Power Apps** to further customize the form. If you're customizing the form in Power Apps, we recommend the following guidelines:
        - Reduce the number of custom controls. Keep only the most frequently used controls on the default tab. The remaining data-driven controls should be distributed into secondary tabs to allow the default tab to load quickly. 
        - Limit the amount of customizations using the form Onload event.
        - Limit the amount of external data coming from Canvas apps for efficient and productive forms.
@@ -76,5 +77,4 @@ Perform the following steps to revert to the required default experience:
 
 ### See also
 
-[View customer information on Active Conversation form](../use/oc-customer-summary.md) <br>
-[Get started with Customer Service workspace](../implement/csw-overview.md)
+[View customer information on Active Conversation form](/dynamics365/customer-service/use/oc-customer-summary)  

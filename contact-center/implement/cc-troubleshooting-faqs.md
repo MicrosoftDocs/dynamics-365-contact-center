@@ -22,5 +22,5 @@ The troubleshooting articles explain how to diagnose and fix issues that you mig
 - [FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features?context=../context/administer-context)  
 - [FAQ about the voice channel](/dynamics365/customer-service/administer/voice-channel-faqs?context=../context/administer-context)
 
-## Next steps
+
 

@@ -19,6 +19,9 @@
         - name: Delete historical data of agent capacity updates
           href: /dynamics365/customer-service/administer/manage-historical-data-capacity-updates?context=/dynamics365/contact-center/context/administer-context
       - name: Set up Dynamics 365 Contact center
+        items:
+        - name: Set up embedded experience
+          href: set-up-embedded-experience.md
       - name: Unified routing and assignment
         items:
         - name: Overview of unified routing
@@ -131,18 +134,10 @@
           href: /dynamics365/customer-service/administer/customer-service-hub-user-guide-email-admin?context=/dynamics365/contact-center/context/administer-context
         - name: Customize the email experience
           href: /dynamics365/customer-service/administer/customer-service-hub-user-guide-email-font-admin?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure the enhanced insert email template dialog
-          href: /power-apps/user/customize-insert-email-template?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure the enhanced email template editor page
-          href: /power-apps/user/cs-email-template-builder?context=/dynamics365/contact-center/context/administer-context
         - name: Enable enhanced experience for email attachments
           href: /dynamics365/customer-service/administer/add-enhanced-attachment-control?context=/dynamics365/contact-center/context/administer-context
-        - name: Enable enhanced recipient control for email
-          href: /dynamics365/customer-service/administer/add-recipient-control?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure a default signature template for a queue
-          href: /dynamics365/customer-service/administer/add-signature-template-queue?context=/dynamics365/contact-center/context/administer-context
         - name: Email FAQ and known issues
-          href: /power-apps/user/activities-known-issues?toc=/dynamics365/customer-service/administer/toc.json&bc=../../breadcrumb/toc.yml
+          href: /power-apps/user/activities-known-issues?context=/dynamics365/contact-center/context/administer-context
       - name: Inbox
         items:
         - name: Configure the inbox
@@ -150,7 +145,7 @@
       - name: Timeline
         items:
         - name: Configure timeline
-          href: /powerapps/maker/model-driven-apps/set-up-timeline-control?toc=/dynamics365/customer-service/administer/toc.json&bc=../../breadcrumb/toc.yml
+          href: /powerapps/maker/model-driven-apps/set-up-timeline-control?context=/dynamics365/contact-center/context/administer-context
         - name: Turn on linking of timeline notes with other table records
           href: /dynamics365/customer-service/administer/link-note-to-entity?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ about Activities and the Timeline Wall
@@ -218,7 +213,7 @@
         - name: Manage phone music
           href: /dynamics365/customer-service/administer/voice-channel-music?context=/dynamics365/contact-center/context/administer-context
         - name: Set up a multilingual bot
-          href: /dynamics365/customer-service/administer/ set-up-multilingual-pva-bot?context=/dynamics365/contact-center/context/administer-context
+          href: /dynamics365/customer-service/administer/set-up-multilingual-pva-bot?context=/dynamics365/contact-center/context/administer-context
         - name: Set up a multilingual contact center
           href: /dynamics365/customer-service/administer/voice-channel-multi-language-contact-center?context=/dynamics365/contact-center/context/administer-context
         - name: Bring your own carrier
@@ -238,7 +233,9 @@
         - name: Enable summarization of cases and conversations
           href: ../administer/copilot-enable-summary.md
         - name: Enable Copilot help pane features
-          href: ../administer/copilot-enable-help-pane.md          
+          href: ../administer/copilot-enable-help-pane.md  
+        - name: Enable Copilot to draft emails
+          href: ../administer/copilot-email-enable.md          
         - name: Copilot architecture diagram
           href: /digital-contact-center-platform/guidance/dynamics-365-customer-service-copilot-architecture?toc=/dynamics365/customer-service/administer/toc.json&bc=../../breadcrumb/toc.yml
         - name: FAQ for Copilot in Customer Service
@@ -324,9 +321,9 @@
         - name: Enable sound notifications
           href: /dynamics365/customer-service/administer/enable-sound-notifications?context=/dynamics365/contact-center/context/administer-context
         - name: Enable resizing of communication panel
-          href: /dynamics365/customer-service/administer/ csac-resize-cp?context=/dynamics365/contact-center/context/administer-context
+          href: /dynamics365/customer-service/administer/csac-resize-cp?context=/dynamics365/contact-center/context/administer-context
         - name: Enable missed notifications
-          href: /dynamics365/customer-service/administer/ manage-missed-notifications?context=/dynamics365/contact-center/context/administer-context
+          href: /dynamics365/customer-service/administer/manage-missed-notifications?context=/dynamics365/contact-center/context/administer-context
         - name: Enable automatic update of presence on rejection of work assignment
           href: /dynamics365/customer-service/administer/enable-agent-reject-notifications?context=/dynamics365/contact-center/context/administer-context
         - name: Enable auto-assignment of conversations
@@ -478,4 +475,4 @@
     - name: Manage Dynamics 365 Contact Center
       href: ../use/ccw-overview.md
     - name: Extend Dynamics 365 Contact Center
-      href: ../extend/configure-zendesk-connector.md
+      href: ../extend/configure-servicenow-connector.md

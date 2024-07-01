@@ -1,18 +1,26 @@
 ---
 title: Use Copilot to summarize cases and conversations
-description: Learn how agents can use Copilot to summarize cases and conversations in Customer Service workspace.
+description: Learn how agents can use Copilot to get cases and conversation summaries in Dynamics 365 Contact Center.
 author: gandhamm 
 ms.author: mgandham 
 ms.reviewer: neeranelli 
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 03/07/2024
+ms.date: 07/01/2024
 ms.custom: bap-template 
 ---
 
 # Use Copilot to summarize cases and conversations 
 
 You can use Copilot to summarize cases and conversations if your administrator has enabled this feature.
+
+> [!NOTE]
+> The feature availability information is as follows.
+>
+> |Feature| Dynamics 365 Contact Center&mdash;embedded | Dynamics 365 Contact Center&mdash;standalone | 
+> |--------------|----------|----------|
+> | Case Summary | No  | Yes   |
+> | Conversation Summary | Yes   | Yes   | 
 
 ## Prerequisites
 
@@ -40,7 +48,7 @@ You can copy the summary, refresh it, and provide feedback.
 Copilot conversation summaries provide context and relay the steps that you took to solve the issue. You can summarize chat and transcribed voice conversations.
 
 > [!NOTE]
-> If your administrator has enabled auto-summarization for ongoing conversations, you get an AI-generated summary of the conversation along with the Copilot-generated conversation summary. The two summaries may be slightly different. [Learn more about auto-summarized conversations](cs-ai-generated-summary.md).
+> If your administrator has enabled auto-summarization for ongoing conversations, you get an AI-generated summary of the conversation along with the Copilot-generated conversation summary. The two summaries may be slightly different. [Learn more about auto-summarized conversations]( /dynamics365/customer-service/use/cs-ai-generated-summary?context=../context/use-context).
 
 ### Get a conversation summary
 

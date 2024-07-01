@@ -10,9 +10,9 @@ ms.date: 07/01/2024
 ms.custom: bap-template
 ---
 
-# Contact Center admin center
+# Use Contact Center admin center
 
-Welcome to Contact Center admin center, the app that unifies and simplifies administration experience of your contact center.
+Welcome to Contact Center admin center, the app that unifies and simplifies the administration experience of your contact center.
 
 Use the Contact Center admin center app to set up the features in Dynamics 365 Contact Center, such as unified routing, knowledge articles, channels, voice, and agent experience profiles.
 
@@ -33,8 +33,7 @@ You must have the System administrator role.
 
 The app is automatically installed in all the Dynamics 365 Contact Center organizations. You can sign in to Dynamics 365, and on the apps page, select Contact Center admin center.
 
-## Next steps
-
-
-
 ### See also
+
+[System requirements for Dynamics 365 Contact Center](../implement/system-requirements-contact-center.md)    
+[International availability of Dynamics 365 Contact Center](../implement/international-availability.md)  

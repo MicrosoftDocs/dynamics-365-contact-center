@@ -12,8 +12,14 @@ ms.collection: bap-ai-copilot
 
 # View copilot analytics report
 
+> [!NOTE]
+> The feature availability information is as follows.
+>
+> | Dynamics 365 Contact Center&mdash;embedded | Dynamics 365 Contact Center&mdash;standalone | 
+> |----------|----------|
+>  | No  | Yes   | 
 
-Copilot helps agents to complete tasks related to conversations, cases, and email more easily. With the Copilot report, supervisors and customer service managers can identify the impact that Copilot is having across their customer service operation.
+Copilot helps agents to complete tasks related to conversations and email more easily. With the Copilot report, supervisors and customer service managers can identify the impact that Copilot is having across their customer service operation.
 
 
 The system stores the copilot interaction data in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/msdyn_copilotinteraction?context=../context/extend-context), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/msdyn_copilotinteractiondata?context=../context/extend-context), [msdyn_copilottranscript](/dynamics365/customer-service/develop/msdyn_copilottranscript?context=../context/extend-context), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/msdyn_copilottranscriptdata?context=../context/extend-context) tables. You can use the information to build custom metrics in reporting and analytics and understand how Copilot is being used in your organization.
@@ -42,16 +48,6 @@ The Copilot report displays the following metrics.
 | Total copilot AI responses | The total number of responses that Copilot provided |
 | Number of responses used | The number of times that text from a copilot response was copied |
 | Percentage of copilot AI responses used | The percentage of responses that were copied |
-
-### Productivity: Cases
-
-| Metric | Description |
-|--------|---------|
-| Total cases resolved | The number of cases that were resolved when Copilot was available for use |
-| Number of cases resolved using copilot AI | The number of cases that were resolved when Copilot was used |
-| Percentage of cases resolved using copilot AI | The percentage of cases that were resolved when Copilot was used |
-| Avg. days to close for cases | The average time that elapsed after the case was created and until it was resolved; displays data when Copilot was used and when it wasn't used |
-| Case throughput | The number of cases that were resolved on average per day; displays data when Copilot was used and when it wasn't used |
 
 ### Productivity: Conversations
 

@@ -34,11 +34,11 @@ You have the System Administrator role.
 
 ## Region availability and data movement
 
-The respond to questions, compose an email, and summarize cases and conversations features are generally available in the North America region only. These features are in preview in the rest of the supported regions. More information: [Region availability](../implement/international-availability.md#geographic-location-availability).
+The respond to questions, compose an email, and summarize cases and conversations features are generally available in the North America region only. These features are in preview in the rest of the supported regions. More information: [Region availability](/dynamics365/customer-service/administer/cs-region-availability-service-limits#region-availability-of-analytics-and-insights?context=/dynamics365/contact-center/context/administer-context)).
 
 ## Supported languages
 
-To learn about supported languages for Copilot, see [Language support for AI-based analytics and insights](../implement/international-availability.md#language-availability).
+To learn about supported languages for Copilot, see [Language support for AI-based analytics and insights]( /dynamics365/customer-service/administer/cs-region-availability-service-limits#language-support-for-ai-based-analytics-and-insights-in-customer-service?context=/dynamics365/contact-center/context/administer-context).
 
 
 ## Opt in to continue with Copilot setup

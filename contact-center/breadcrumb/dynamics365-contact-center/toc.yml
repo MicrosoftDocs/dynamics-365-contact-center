@@ -5,3 +5,9 @@
   - name: Dynamics 365 Contact Center
     tocHref: /dynamics365/contact-center/
     topicHref: /dynamics365/contact-center/
+  - name: Dynamics 365 Contact Center
+    tocHref: /power-platform/
+    topicHref: /dynamics365/contact-center/
+  - name: Dynamics 365 Contact Center
+    tocHref: /dynamics365/
+    topicHref: /dynamics365/contact-center/

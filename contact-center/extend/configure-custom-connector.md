@@ -28,7 +28,7 @@ The Microsoft Contact Center — Power Automate solution for third party custom 
 
 ## Data migration
 
-You can migrate data from your custom CRM to Dataverse using the Power Automate [flows](/power-automate/flow-types) in the following way:
+You can migrate data from your custom CRM to Dataverse in the following way:
 
 - **Initial sync**: Migrate data from CRM to Dataverse through manual triggers. We recommend that you use [pagination](/power-automate/dataverse/list-rows?tabs=classic-designer) as Power Automate connectors have a limit on the number of records that can be fetched at a time.
 - **Incremental sync**: Migrate data through automated triggers.
@@ -47,18 +47,21 @@ You can establish a connection to your custom CRM using the following methods:
 
 ### Add a custom CRM connector
 
-1. Follow the steps in [Add a connection](/power-automate/add-manage-connections#add-a-connection) to find and add the 
+Add a custom connector in one of the following ways:
+
+#### Power Automate
+
+1. Follow the steps in [Add a connection](/power-automate/add-manage-connections#add-a-connection) to find and add the custom CRM connector.
 1. Specify the required information. A connection is created.
 
-### Add a custom CRM using API calls
+#### Add a custom CRM using API calls
 
 1. Create a new [flow](/power-automate/get-started-logic-flow) in Power Automate.
 1. Add the HTTP action and specify the required parameters such as the URL, method, and headers. In **Parameters** > **Authentication** set the **Authentication Type** to **Basic** and specify the **Username** and **Password**.
 
 Your HTTP action can send and receive JSON requests and responses.
 
-### Add a custom CRM using webhooks
-
+#### Add a custom CRM using webhooks
 
 Set up webhooks in your custom CRM to facilitate incremental data synchronization. Webhooks trigger notifications upon the creation, update, or deletion of a record. 
 

@@ -96,7 +96,7 @@ ServiceNow uses scripts to trigger notifications when a record is created, updat
 1. Select **Outbound** > **Rest Message**.
 1. Select **New** to create a new REST message.
 1. In the **Rest Message** page, specify the required fields. See: [Create a REST message](https://docs.servicenow.com/bundle/tokyo-application-development/page/integrate/outbound-rest/task/t_ConfiguringARESTMessage.html).
-   - Create individual REST Messages for create, update, and delete. Update the **Endpoint** field in **REST Messages** with the Power Automates flow. Perform the following steps to get the URL:
+   - Create individual REST Messages for create, update, and delete. Update the **Endpoint** field in **REST Messages** with the Power Automate flow. Perform the following steps to get the URL:
 
      1. Select the required flow and then select **Edit**. 
      1. Select **Manual** in the flow, and then copy the HTTP URL. Repeat the steps for the organization and user flows for all the create, update, and delete operations

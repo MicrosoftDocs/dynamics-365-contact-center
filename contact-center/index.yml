@@ -44,7 +44,7 @@ additionalContent:
         text: Adoption guide
     - title: Buy/Provision
       links: 
-      - url: https://dynamics.microsoft.com/contact-center/pricing/
+      - url: https://www.microsoft.com/dynamics-365/products/contact-center/pricing/
         text: Buy Contact Center
       - url: implement/provision-channels.md
         text: Provision Dynamics 365 Contact Center
@@ -61,8 +61,8 @@ additionalContent:
     items:
     - title: Configure
       links:
-      - url: /dynamics365/customer-service/administer/provision-unified-routing?context=/dynamics365/contact-center/context/administer-context
-        text: Provision unified routing for Dynamics 365 Contact Center
+      - url: administer/set-up-embedded-experience.md
+        text: Set up embedded experience
       - url: /dynamics365/customer-service/administer/voice-channel-install?context=/dynamics365/contact-center/context/administer-context
         text: Configure the voice channel
     - title: Configure connectors

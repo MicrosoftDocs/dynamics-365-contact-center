@@ -26,7 +26,7 @@ Some of the key capabilities of Dynamics 365 Contact Center are as follows:
 
 :::image type="content" source="../media/contact-center-overview.png" alt-text="A screenshot of the end-to-end working of the Dynamics 365 Contact Center.":::
 
-An overview video of Dynamics 365 Contact Center is as follows:
+An overview video of Dynamics 365 Contact Center is as follows.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1mL7H?maskLevel=0]
 

@@ -49,6 +49,9 @@
       "permissioned-type": "public"
     },
     "fileMetadata": {},
-    "template": []
+    "template": [],
+    "ms.service": {
+      "contact-center/**.*": "dynamics-365-contact-center"
+    }
   }
 }

@@ -34,7 +34,7 @@ An overview video of Dynamics 365 Contact Center is as follows.
 
 [System requirements for Dynamics 365 Contact Center](system-requirements-contact-center.md)  
 
-### See also
+### Related information
 
 [Use Contact Center admin center to configure features](../administer/cc-admin-center.md)  
 

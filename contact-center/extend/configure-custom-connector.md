@@ -42,7 +42,7 @@ Perform the steps outlined in the sections that follow.
 1. Follow the steps in [Add a connection](/power-automate/add-manage-connections#add-a-connection) to add a Dataverse connection, and then select **Create**.
 1. In the pop-up window that appears, select your account. A connection is created.
 
-You can establish a connection to your CRM using the following methods:
+You can establish a connection to your CRM instance using the following methods.
 
 ### Add any CRM connector
 

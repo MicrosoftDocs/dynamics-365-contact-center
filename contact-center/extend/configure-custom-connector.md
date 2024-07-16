@@ -17,7 +17,7 @@ The Microsoft Contact Center&mdash;Power Automate solution for any CRM connector
 ## Prerequisites 
 
 -  A CRM instance
-- License for Dynamic 365 Contact Center, that include the Power Automate and Power Apps subscriptions.
+- License for Dynamics 365 Contact Center that includes the Power Automate and Power Apps subscriptions.
 - Power Platform System administrator permissions
 - Basic understanding of how to use Power Automate flows or Power Apps
 - Ensure that the Power Apps and Power Automate environments are the same.
@@ -50,17 +50,17 @@ Add a connector in one of the following ways:
 
 **Power Automate**    
 
-1. Follow the steps in [Add a connection](/power-automate/add-manage-connections#add-a-connection) to find and add the CRM connector.
+1. To find and add the CRM connector, follow the steps in [Add a connection](/power-automate/add-manage-connections#add-a-connection).
 1. Specify the required information. A connection is created.
 
-**Add a CRM using API calls**      
+**Add a connector using API calls**      
 
 1. Create a new [flow](/power-automate/get-started-logic-flow) in Power Automate.
 1. Add the HTTP action and specify the required parameters such as the URL, method, and headers. In **Parameters** > **Authentication** set the **Authentication Type** to **Basic** and specify the **Username** and **Password**.
 
 Your HTTP action can send and receive JSON requests and responses.
 
-**Add a CRM using webhooks**    
+**Add a connector using webhooks**    
 
 Set up webhooks in your CRM to facilitate incremental data synchronization. Webhooks trigger notifications upon the creation, update, or deletion of a record. 
 
@@ -71,27 +71,27 @@ To create webhooks, ensure you have the HTTP endpoint for the Power Automate flo
 
 You can use this URL as the webhook endpoint in your CRM.
 
-**Add a CRM using Business rules**     
+**Add a connector using Business rules**     
 
 You can use trigger notifications when a record is created, updated, and deleted. You must use the Customer Service Plugin to trigger these notifications. You must create the script in the following order:
 
 1. Create REST Message
 2. Create Business Rule
 
-For more information, see: [Configure incremental data sync](configure-servicenow-connector.md)
+For more information, see [Configure incremental data sync](configure-servicenow-connector.md).
 
  **Use Apex triggers**    
 
-Use [Apex triggers](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dev_guide.htm). Ensure that your CRM instance has the required privileges to create the triggers.
+Use [Apex triggers](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dev_guide.htm). Make sure that your CRM instance has the required privileges to create the triggers.
 
 ## Run the Power Automate Flow 
 
-In Power Automate, select the required flow and then select **Run**. 
+In Power Automate, select the required flow, and then select **Run**. 
 
 > [!NOTE]
 > The create, update, and delete events automatically trigger the flows.
 
-### See also
+### Related information
 
 [Configure a connector for ServiceNow](configure-servicenow-connector.md)  
 

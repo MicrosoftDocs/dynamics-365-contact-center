@@ -96,4 +96,3 @@ In Power Automate, select the required flow, and then select **Run**.
 [Configure a connector for ServiceNow](configure-servicenow-connector.md)  
 
 
-

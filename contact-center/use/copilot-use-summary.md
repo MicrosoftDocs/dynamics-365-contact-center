@@ -68,5 +68,5 @@ You can also take the following actions:
 
 ## Next steps
 
-[Use Copilot to solve customer issues](use-copilot-features.md)
+[Use Copilot to solve customer issues](use-copilot-features.md)  
 

@@ -105,4 +105,6 @@ This section displays customer-related activities in the form of a timeline. You
 The **Linked records** field shows the record linked to the conversation. 
 
 
-### See also
+### Related information
+
+[Use Contact Center workspace](ccw-overview.md)  

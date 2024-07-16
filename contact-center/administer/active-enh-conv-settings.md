@@ -75,6 +75,6 @@ Perform the following steps to revert to the required default experience:
 1. Select **Publish All Customizations**.
 
 
-### See also
+### Related information
 
 [View customer information on Active Conversation form](/dynamics365/customer-service/use/oc-customer-summary)  

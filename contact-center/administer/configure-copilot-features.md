@@ -113,7 +113,7 @@ More information: [Security roles and privileges](/power-platform/admin/security
 [Enable Copilot case and conversation summaries](copilot-enable-summary.md)  
 [Enable Copilot help pane](copilot-enable-help-pane.md)  
 
-### See also
+### Related information
  
 [Use Copilot features](../use/use-copilot-features.md)  
 [Responsible AI FAQ for copilot features](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/administer-context)  

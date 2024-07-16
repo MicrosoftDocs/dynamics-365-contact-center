@@ -47,8 +47,8 @@ Copilot uses the following out-of-the-box case fields to draft emails:
 
 [Write an email with Copilot](../use/use-copilot-email.md)
 
-### See also
+### Related information
 
 [Understand Copilot language support](../use/copilot-language-support.md)  
 [Manage copilot features in Customer Service](../administer/configure-copilot-features.md)    
-[FAQ for Copilot in Customer Service](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/administer-context) 
+[FAQ for Copilot in Customer Service](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/administer-context)  

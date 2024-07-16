@@ -33,7 +33,7 @@ You must have the System administrator role.
 
 The app is automatically installed in all the Dynamics 365 Contact Center organizations. You can sign in to Dynamics 365, and on the apps page, select Contact Center admin center.
 
-### See also
+### Related information
 
 [System requirements for Dynamics 365 Contact Center](../implement/system-requirements-contact-center.md)    
 [International availability of Dynamics 365 Contact Center](../implement/international-availability.md)  

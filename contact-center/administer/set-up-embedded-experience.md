@@ -63,4 +63,4 @@ The embedded conversation widget is a feature of Dynamics 365 Contact Center tha
 
 ### Related information
 
-[View communication panel](/dynamics365/customer-service/use/oc-conversation-control?context=/dynamics365/contact-center/context/use-context)
+[View communication panel](/dynamics365/customer-service/use/oc-conversation-control?context=/dynamics365/contact-center/context/use-context)  

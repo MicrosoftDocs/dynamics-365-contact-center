@@ -125,7 +125,7 @@ In Power Automate https://make.powerautomate.com/environments/[environmentId], s
 
 1. If you want to edit the flow or field mappings, select the flow that you want to edit. 
 1. Select **Edit**.
-1. You can use outputs from previous triggers and actions in the Dynamic content selector, or modify them using [expressions](/power-platform/blog/power-automate/use-expressions-in-actions/).
+1. You can use outputs from previous triggers and actions in the Dynamic content selector, or modify them using [expressions](/power-platform/blog/power-automate/use-expressions-in-actions).
 
 For example, the **Account Name** field in Dataverse can be mapped to the **Name** field in ServiceNow with the `‘triggerBody()?['name']’` expression. See: [ServiceNow REST API reference](https://docs.servicenow.com/bundle/washingtondc-api-reference/page/build/applications/concept/api-rest.html)
 

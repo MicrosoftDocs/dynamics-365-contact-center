@@ -69,7 +69,7 @@ Perform the following steps to add the Copilot features to an agent experience p
 
 ## Record agent interactions with Copilot
 
-In the **Summaries** and **Copilot for questions and emails** configuration pages, you can select **Record transcripts of agent interaction with Copilot, agent actions, and agent feedback on AI suggestions** to record and understand how agents are interacting with Copilot and how Copilot is performing in a support organization. Agents can also share feedback about Copilot actions, which helps Copilot perform better. You can also [download](/dynamics365/customer-service/develop/msdyn_copilottranscriptdata?context=/dynamics365/contact-center/extend-context) and use the data to analyze knowledge sources, and build usage reports.
+In the **Summaries** and **Copilot for questions and emails** configuration pages, you can select **Record transcripts of agent interaction with Copilot, agent actions, and agent feedback on AI suggestions** to record and understand how agents are interacting with Copilot and how Copilot is performing in a support organization. Agents can also share feedback about Copilot actions, which helps Copilot perform better. You can also [download](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscriptdata?context=/dynamics365/contact-center/extend-context) and use the data to analyze knowledge sources, and build usage reports.
 
 ## Assign roles and privileges
 

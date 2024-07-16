@@ -139,7 +139,7 @@ Location-specific links that should be made accessible are as follows.
 | Switzerland | `oc-cdn-public-che.azureedge.net/*` |
 | United Arab Emirates | `oc-cdn-ocuae-uae.azureedge.net/*`|
 
-### See also
+### Related information
 
 [Get started with Contact Center workspace](../use/ccw-overview.md)  
 

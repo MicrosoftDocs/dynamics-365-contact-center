@@ -73,7 +73,7 @@ You can use this URL as the webhook endpoint in your CRM.
 
 **Add a connector using Business rules**     
 
-You can use trigger notifications when a record is created, updated, and deleted. You must use the Customer Service Plugin to trigger these notifications. You must create the script in the following order:
+You can use trigger notifications when a record is created, updated, and deleted. You must use the **Customer Service** plugin to trigger these notifications. You must create the script in the following order:
 
 1. Create REST Message
 2. Create Business Rule

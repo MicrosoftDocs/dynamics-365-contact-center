@@ -83,7 +83,7 @@ Download all the Power Automate flows from the [ServiceNow](https://github.com/m
 
 ## Configure incremental data sync
 
-Incremental data sync updates the ServiceNow data to Dataverse in real time through automated triggers. ServiceNow uses scripts to trigger notifications when a record is created, updated, and deleted. You must use the Customer Service Plugin to trigger these notifications. You must create the script in the following order:
+Incremental data sync updates the ServiceNow data to Dataverse in real time through automated triggers. ServiceNow uses scripts to trigger notifications when a record is created, updated, and deleted. You must use the **Customer Service** plugin to trigger these notifications. You must create the script in the following order:
 
 1. Create REST message
 2. Create a business rule

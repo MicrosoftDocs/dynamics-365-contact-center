@@ -28,7 +28,7 @@ The Microsoft Contact Center&mdash;Power Automate solution for any CRM connector
 
 ## Copy data
 
-You can copy data from your CRM to Dataverse in the following way:
+You can copy data from your CRM instance to Dataverse in one of the following ways:
 
 - **Initial sync**: Copy data from CRM to Dataverse through manual triggers. We recommend that you use [pagination](/power-automate/dataverse/list-rows?tabs=classic-designer) as Power Automate connectors have a limit on the number of records that can be fetched at a time.
 - **Incremental sync**: Copy data through automated triggers.

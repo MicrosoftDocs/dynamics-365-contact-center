@@ -89,7 +89,7 @@ Select the one-click response generation button at the lower-right corner of the
 > [!NOTE]
 > The one-click response generation feature is available in North America, Europe, and the United Kingdom only.
 
-### See also
+### Related information
 
 [Understand Copilot language support](copilot-language-support.md)  
 [Manage copilot features in Customer Service](../administer/configure-copilot-features.md)  

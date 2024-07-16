@@ -51,6 +51,6 @@ The following scenarios can help you understand the language Copilot uses to gen
 | The contact center embedded app's UI language is Spanish. The Salesforce UI language is German. The knowledge articles are in German. The Copilot prompt is in Finnish. |  Copilot doesn't display a response as the UI language and knowledge article language are different. |
 
 
-### See also
+### Related information
 
 [Use Copilot to solve customer issues](../use/use-copilot-features.md)  

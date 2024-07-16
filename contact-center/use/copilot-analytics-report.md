@@ -69,8 +69,7 @@ The Copilot report displays the following metrics.
 
 You can view the [transcripts of interactions]( /dynamics365/customer-service/develop/download-copilot-transcript-data?context=/dynamics365/contact-center/extend-context) between agents and Copilot. 
 
-### See also
+### Related information
 
 [Use copilot features](use-copilot-features.md)  
 [Configure copilot](../administer/configure-copilot-features.md)  
-

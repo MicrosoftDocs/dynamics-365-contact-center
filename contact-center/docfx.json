@@ -48,10 +48,11 @@
       "feedback_github_repo": "MicrosoftDocs/dynamics-365-contact-center",
       "permissioned-type": "public"
     },
-    "fileMetadata": {},
-    "template": [],
-    "ms.service": {
-      "contact-center/**.*": "dynamics-365-contact-center"
-    }
+    "fileMetadata": {
+      "ms.service": {
+        "**.*": "dynamics-365-contact-center"
+      }
+    },
+    "template": []    
   }
 }

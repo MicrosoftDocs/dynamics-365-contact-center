@@ -19,7 +19,7 @@ ms.collection: bap-ai-copilot
 > |----------|----------|
 >  | No  | Yes   | 
 
-Copilot helps agents to complete tasks related to conversations and email more easily. With the Copilot report, supervisors and customer service managers can identify the impact that Copilot is having across their customer service operation.
+Copilot helps agents to complete tasks related to conversations and email more easily. With the Copilot report, supervisors and customer service managers can identify the effect that Copilot is having across their customer service operation.
 
 
 The system stores the copilot interaction data in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/msdyn_copilotinteraction?context=/dynamics365/contact-center/context/extend-context), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/msdyn_copilotinteractiondata?context=/dynamics365/contact-center/context/extend-context), [msdyn_copilottranscript](/dynamics365/customer-service/develop/msdyn_copilottranscript?context=/dynamics365/contact-center/context/extend-context), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/msdyn_copilottranscriptdata?context=/dynamics365/contact-center/context/extend-context) tables. You can use the information to build custom metrics in reporting and analytics and understand how Copilot is being used in your organization.
@@ -54,8 +54,8 @@ The Copilot report displays the following metrics.
 | Metric | Description |
 |--------|---------|
 | Total conversations | The total number of conversations in which the agent engaged with the customer at least once while Copilot was available; doesn't include email and voice |
-| Number of conversations using copilot AI | The number of engaged conversations that have used Copilot; lists only conversations that have ended |
-| Percentage of conversations using copilot AI | The percentage of engaged conversations that have used Copilot |
+| Number of conversations using copilot AI | The number of engaged conversations that used Copilot; lists only conversations that have ended |
+| Percentage of conversations using copilot AI | The percentage of engaged conversations that used Copilot |
 | Avg conversation handle time | The average time that elapsed after a conversation started until it ended; displays data when Copilot was used and when it wasn't used |
 | Conversation throughput | The number of conversations, excluding email and voice, completed on average per day; displays data when Copilot was used and when it wasn't used |
 

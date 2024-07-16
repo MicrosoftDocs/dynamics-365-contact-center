@@ -45,8 +45,6 @@ To learn about supported languages for Copilot, see [Language support for AI-bas
 
 In Contact Center admin center, the [**Copilot for questions and emails**](copilot-enable-help-pane.md) or [**Summaries**](copilot-enable-summary.md) page, when you enable the copilot features, you must opt in to continue with the setup. The opt-in page displays a link to review the terms and conditions. You can select **Opt in** to continue with the setup.  
 
-
-
 ## Opt out from using Copilot features
 
 In Contact Center admin center, opt out from the copilot features on the **Copilot for questions and emails** or **Summaries** page. When you opt out, the application erases the training data. If you want to use the features again, you must consent to the terms of use and opt in.
@@ -55,7 +53,7 @@ In Contact Center admin center, opt out from the copilot features on the **Copil
 
 For agents to be able to use the copilot features, you need to enable the copilot features in [agent experience profiles](/dynamics365/customer-service/administer/add-profile-default?context=/dynamics365/contact-center/administer-context). By default, agents added to the out-of-the-box agent experience profiles can use the Copilot features.
 
-If you'd like to limit the features that agents can use, you can create a custom agent experience profile and enable the required features. You can then [assign the custom profile to the agents](/dynamics365/customer-service/administer/add-profile-default?context=/dynamics365/contact-center/administer-context).
+You can create a custom agent experience profile and enable the required features to limit the features agents can use. You can then [assign the custom profile to the agents](/dynamics365/customer-service/administer/add-profile-default?context=/dynamics365/contact-center/administer-context).
 
 Perform the following steps to add the Copilot features to an agent experience profile:
 

@@ -43,7 +43,9 @@
         - name: Display custom context in Conversation summary
           href: /dynamics365/customer-service/develop/display-custom-context?context=/dynamics365/contact-center/context/extend-context
       - name: Channels
-        items: 
+        items:
+        - name: Enable fields to identify customers
+          href: enable-fields-identify-customers.md
         - name: Integrate a custom messaging channel
           items: 
           - name: Integrate your own custom channel using Direct Line

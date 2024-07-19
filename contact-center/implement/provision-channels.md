@@ -55,7 +55,7 @@ After the channels are successfully provisioned, you can update the environment 
 
 [Instance is not available to select on the provisioning application](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/instance-unavailable-provision-omnichannel)
 
-### See also
+### Related information
 
 [Create workstreams](/dynamics365/customer-service/administer/create-workstreams)  
 [Manage users](/dynamics365/customer-service/administer/users-user-profiles)  

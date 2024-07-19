@@ -35,7 +35,7 @@ To enable the enhanced Active Conversation form and customize the form, perform 
    > [!NOTE]
    > When **Customize active conversation form** is enabled:
    > - If an agent initiates an outbound call to emergency services, the active conversation form doesn't display the **Save** and **Refresh** options.
-   > - If an agent initiates a consult with other agents who are from a different business unit and don't have the read permissions at the organization level for the conversation entity, they won't have access to the conversation.
+   > - If an agent initiates a consult with other agents who are from a different business unit and don't have read permissions at the organization level for the conversation entity, they won't have access to the conversation.
 
 
     :::image type="content" source="../media/enh-active-conv-config.png" alt-text="Configuration settings" lightbox="../media/enh-active-conv-config-max.png"::: 
@@ -75,6 +75,6 @@ Perform the following steps to revert to the required default experience:
 1. Select **Publish All Customizations**.
 
 
-### See also
+### Related information
 
 [View customer information on Active Conversation form](/dynamics365/customer-service/use/oc-customer-summary)  

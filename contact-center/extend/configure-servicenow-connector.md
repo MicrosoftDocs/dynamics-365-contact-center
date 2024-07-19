@@ -12,15 +12,15 @@ ms.collection:
 
 # Configure the connector for ServiceNow
 
-The Microsoft Contact Center — Power Automate solution for ServiceNow connector allows organizations to engage with their customers using capabilities such as voice, video, SMS, live chat, and social messaging from their third-party CRM solutions. You can use Power Automate data connectors to sync the contacts and accounts data from the ServiceNow CRM solution into Dataverse.
+The Microsoft Contact Center&mdash;Power Automate solution for ServiceNow connector allows organizations to engage with their customers using capabilities such as voice, video, SMS, live chat, and social messaging from their non-Microsoft CRM solutions. You can use Power Automate data connectors to sync the contacts and accounts data from the ServiceNow CRM solution into Dataverse.
 
 ## Prerequisites
 - A ServiceNow instance. For example, `https://[your-instance-name].service-now.com/`
-- License for Dynamic 365 Contact Center, that include the Power Automate and Power Apps subscriptions.
-- Power Platform System administrator permissions
-- Basic understanding of how to use Power Automate flows or Power Apps
-- Ensure that the Power Apps and Power Automate environments are the same.
-- The Dynamics 365 CCaaS CRM Connector, **msdyn_ContactCenterCRMConnector**, is available is available in the Power Apps environment and the Account and Contact tables have the following columns:
+- License for Dynamics 365 Contact Center that includes the Power Automate and Power Apps subscriptions.
+- Power Platform System administrator permissions.
+- Basic understanding of how to use Power Automate flows or Power Apps.
+- Environments for Power Apps and Power Automate are the same.
+- The Dynamics 365 CCaaS CRM Connector, **msdyn_ContactCenterCRMConnector**, is available in the Power Apps environment and the Account and Contact tables have the following columns:
     - Source CRM
     - Source CRM ID
     - Source CRM URL
@@ -31,7 +31,7 @@ The process for using the Power Automate flow is as follows:
 
 1. Configure the View-In-CRM functionality
 1. Import Power Automate flows
-1. Configure Incremental Data Sync (Create, Update and Delete)
+1. Configure Incremental Data Sync (Create, Update, and Delete)
 1. Run the power automate flow
 
 ## Configure View-In-CRM functionality
@@ -40,19 +40,19 @@ ServiceNow uses calculated field feature to create a special field to store the 
 
 To create the custom field in ServiceNow, perform the following steps:
 
-1. Sign in to ServiceNow instance (https://[your-instance-name].service-now.com/), select **All** and then search for table.
-1. Select **Tables** in **System Definition** and then select **Account** and **Contact** table to create a custom field. 
-1. Select **New** and then specify the following:
-    - Table: Account[customer_account]
-    - Type: String
-    - Column label: Base URL
-    - Column name: u_base_url
-    - Application: Global
-    - Select the Active check box.
-1. Select the **CalculatedValue** tab and then select the **Calculated** checkbox. Add return `gs.getProperty('instance_name');` in **Calculation** textbox.
-1. Select **Save** and then select **Update**.
+1. Sign in to ServiceNow instance (https://[your-instance-name].service-now.com/), select **All**, and then search for table.
+1. Select **Tables** in **System Definition**, and then select the **Account** and **Contact** tables to create a custom field. 
+1. Select **New**, and then specify the following:
+    - **Table**: Account[customer_account]
+    - **Type**: String
+    - **Column label**: Base URL
+    - **Column name**: u_base_url
+    - **Application**: Global
+    - Select the **Active** checkbox.
+1. Select the **CalculatedValue** tab, and then select the **Calculated** checkbox. Add return `gs.getProperty('instance_name');` in **Calculation** textbox.
+1. Select **Save**, and then select **Update**.
 
-Repeat the same configuration for the Contact table.
+Repeat the same configuration for the **Contact** table.
 
 ## Import the Power Automate flow
 
@@ -83,8 +83,7 @@ Download all the Power Automate flows from the [ServiceNow](https://github.com/m
 
 ## Configure incremental data sync
 
-Incremental data sync updates the ServiceNow data to Dataverse in real time through automated triggers.
-ServiceNow uses scripts to trigger notifications when a record is created, updated, and deleted. You must use the Customer Service Plugin to trigger these notifications. You must create the script in the following order:
+Incremental data sync updates the ServiceNow data to Dataverse in real time through automated triggers. ServiceNow uses scripts to trigger notifications when a record is created, updated, and deleted. You must use the **Customer Service** plugin to trigger these notifications. You must create the script in the following order:
 
 1. Create REST message
 2. Create a business rule
@@ -94,7 +93,7 @@ ServiceNow uses scripts to trigger notifications when a record is created, updat
 
 ### Create REST message
 
-1. Login to the ServiceNow instance, select **All** and search for rest message in the search bar.
+1. Sign in to the ServiceNow instance, select **All**, and search for REST message in the search bar.
 1. Select **Outbound** > **Rest Message**.
 1. Select **New** to create a new REST message.
 1. In the **Rest Message** page, specify the required fields. See: [Create a REST message](https://docs.servicenow.com/bundle/tokyo-application-development/page/integrate/outbound-rest/task/t_ConfiguringARESTMessage.html).
@@ -107,9 +106,9 @@ ServiceNow uses scripts to trigger notifications when a record is created, updat
      1. Copy the  **REST Message** and **Name** fields on this page, which are required in **Business Rules** script. 
    - Create a new variable, **baseURL**. The value of this variable is the initial part of the same endpoint that contains hostname/IP and port number.  
 
-### Create Business Rule
+### Create a Business Rule
 
-1. Login to the ServiceNow instance, select **All** and search for business rules in the search bar.
+1. Sign in to the ServiceNow instance, select **All** and search for business rules in the search bar.
 1. Select **System Definition** > **Business Rule**.
 1. Select **New** to create a new REST message.
 1. In the **Business Rule** page, specify the required information. See: [Business Rules](https://developer.servicenow.com/dev.do#!/learn/courses/washingtondc/app_store_learnv2_scripting_washingtondc_scripting_in_servicenow/app_store_learnv2_scripting_washingtondc_server_side_scripting/app_store_learnv2_scripting_washingtondc_business_rules).
@@ -126,7 +125,7 @@ In Power Automate https://make.powerautomate.com/environments/[environmentId], s
 
 1. If you want to edit the flow or field mappings, select the flow that you want to edit. 
 1. Select **Edit**.
-1. You can use outputs from previous triggers and actions in the Dynamic content selector, or modify them using [expressions](/power-platform/blog/power-automate/use-expressions-in-actions/).
+1. You can use outputs from previous triggers and actions in the Dynamic content selector, or modify them using [expressions](https://www.microsoft.com/power-platform/blog/power-automate/use-expressions-in-actions/).
 
 For example, the **Account Name** field in Dataverse can be mapped to the **Name** field in ServiceNow with the `‘triggerBody()?['name']’` expression. See: [ServiceNow REST API reference](https://docs.servicenow.com/bundle/washingtondc-api-reference/page/build/applications/concept/api-rest.html)
 
@@ -165,6 +164,6 @@ The following table describes the predefined column mapping for the ServiceNow a
 |u_base_url | msdyn_source_crm_url |
 | sys_created_on | createddate |
 
-### See also
+### Related information
 
 [Configure a custom connector](configure-custom-connector.md)  

@@ -120,7 +120,7 @@ When you update to add new tables or mappings, the data for the existing tables 
 [Configure a workstream](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context)  
 
 
-### See also
+### Related information
 
 [Single sign-on SAML protocol](/entra/identity-platform/single-sign-on-saml-protocol)  
 

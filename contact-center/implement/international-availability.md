@@ -94,7 +94,7 @@ See the following table for the languages supported by the different features in
 | Ukrainian - Ukraine | uk-UA | Yes | No |
 | Vietnamese - Vietnam | vi-VN | Yes | Yes |
 
-### See also
+### Related information
 
 [Languages supported in voice-enabled copilots](/microsoft-copilot-studio/voice-supported-languages)  
 [Languages supported in Copilot features](/dynamics365/customer-service/administer/cs-region-availability-service-limits#language-support-for-ai-based-analytics-and-insights-in-customer-service)  

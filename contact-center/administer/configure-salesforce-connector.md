@@ -6,13 +6,16 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection:
-ms.date: 07/01/2024
+ms.date: 07/23/2024
 ms.custom: bap-template
 ---
 
 # Configure the connector for Salesforce
 
-The connector for Salesforce in Dynamics 365 Contact Center allows organizations to engage with their customers using omnichannel capabilities like voice, video, SMS, live chat, and social messaging while keeping their current investments in third-party CRMs. The omnichannel add-in will work with third-party CRMs through data connectors. These connectors will help bring the contacts and accounts data from Salesforce into Dataverse. 
+
+The connector for Salesforce in Dynamics 365 Contact Center allows organizations to engage with customers using omnichannel capabilities while keeping their investments in non-Microsoft CRM solutions. 
+
+The omnichannel add-in uses data connectors to work with non-Microsoft CRM solutions. These connectors help bring the contacts and accounts data from Salesforce into Dataverse. 
 
 ## Prerequisites
 
@@ -24,32 +27,35 @@ The connector for Salesforce in Dynamics 365 Contact Center allows organizations
 > [!NOTE]
 > We recommend the following:
 > - Back up the existing data in the Contact and Account tables in Dataverse before you set up the connector to rollback if any data issues occur.
-> - For optimal performance, limit the data size to 10 GB.
+> - For optimal performance, limit the data size to 10 GB. Also, make sure that you have sufficient quota for Salesforce API requests to support your data syncing needs.
 
 ## Configure the data connector
 
-Afer you configure the data connector and sync it from the Salesforce instance, we recommend that you don't make any changes to the synchronized data in Datverse. If you need to, update the data in Salesforce and run a sync again.
+> [!IMPORTANT]
+> After you configure the data connector and sync it from the Salesforce instance, we recommend that you don't make any changes to the synchronized data in Dataverse as the changes aren't synced back with Salesforce. If you need to, update the data in Salesforce and run a sync again.
 
 1. In the site map of Contact Center admin center, go to **Workspaces** under **Agent experience**, and select **Manage** for **Data synchronization from external CRMs**. You can also select **Open** under **CRM connection wizard** on the home page.
 1. On the **Data synchronization from external CRMs** page, select **New**.
-1. On **Create a CRM connector**, select **Salesforce**, and select **Next**. The **Connection Setup** dialog displays **Sign in**, if you are connecting to Salesforce for the first time, or the ellipses.
+1. On **Create a CRM connector**, select **Salesforce**, and select **Next**. The **Connection Setup** dialog displays **Sign in** if you're connecting to Salesforce for the first time, or the ellipses.
 
     > [!NOTE]
-    > You are redirected to Microsoft Power Apps to connect to your Salesforce instance. The connection is used by Dynamics 365 to sync data.
+    > The system redirects you to Microsoft Power Apps to connect to your Salesforce instance. The connection is used by Dynamics 365 to sync data.
 
     1. Select the displayed option and then select **Add new connection**. 
     1. On the dialog that appears, select the Salesforce environment and Salesforce API version, and select **Sign in**.
-    1. On the Salesforce sign in page, sign in with the Salesforce user credentials. Complete the multifactor authentication if it's configured. The **Allow Access** dialog appears.
+    1. On the Salesforce sign in page, sign in with the Salesforce user credentials. Complete the multifactor authentication if necessary. The **Allow Access** dialog appears.
     1. Select **Allow**. A green tick mark on the **Connection Setup** dialog indicates a successful connection to the Salesforce instance.
     1. Select **Create**. 
 1. On the **Add Third party CRM connector**, select **I agree to share connector permissions**, and select **Next**.
     1. On the **Enable salesforce permissions** page, complete the steps listed on the page by signing into the Salesforce instance that opens on a new tab.
-    1. Go to the setup page in Contact Center admin center, and select the checkbox that indicates you have completed the steps in Salesforce.
+    1. Go to the setup page in Contact Center admin center, and select the checkbox that indicates you completed the steps in Salesforce.
 1. Select **Next**.
 1. On the **Choose tables to sync** page, select the **Accounts** and **Contacts** tables that you want to sync. To maintain the relationship about the linked data between the records, we recommend that you select both the tables.
-1. Select **Next**, and in the **Column mapping** section, map the source and destination columns according to your business needs. Make sure that the data types for the mapped columns are compatible. See the table in **Data types supported in Dataverse**.
+1. Select **Next**, and do the following steps in the **Column mapping** section:
+   1. Map the source and destination columns. You can also update the predefined mappings according to your business needs. For the list of compatible datatypes, see the table in **Data types supported in Dataverse**.
+   1. Repeat the steps for the selected tables.
 1. Select **Next**, and on the Teams permissions page, select the Teams permission. The Team ID is used to write the data into Dataverse and therefore the Team ID must have read and write permissions on the selected tables. Otherwise, data sync fails. More information: [Teams in Dataverse](/power-platform/admin/manage-teams)
-1. On the next page, review the mappings for each of the tables that you have selected. You have the option to go back and change a setting.
+1. On the next page, review the mappings for each of the tables that you selected. You can go back and change a setting.
 1. Select **Create**. A successfully connected message is displayed on the Summary page.
 1. Select the checkbox to activate the connector and data sync, and select **Done**. You can view the sync status on the **Data synchronization from external CRMs** page.
 
@@ -102,7 +108,7 @@ The predefined data mappings for the Account table are as follows.
 
 ## Manage the data connector
 
-The actions that you can do with the connector are listed in this section.
+The actions that you can do with the selected connector are listed in this section.
 
 :::image type="content" source="../media/connector-salesforce.png" alt-text="Screenshot of the connector window in Contact Center.":::
 
@@ -118,7 +124,6 @@ When you update to add new tables or mappings, the data for the existing tables 
 ## Next steps
 
 [Configure a workstream](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context)  
-
 
 ### Related information
 

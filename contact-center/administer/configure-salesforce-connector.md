@@ -52,7 +52,7 @@ The omnichannel add-in uses data connectors to work with non-Microsoft CRM solut
 1. Select **Next**.
 1. On the **Choose tables to sync** page, select the **Accounts** and **Contacts** tables that you want to sync. To maintain the relationship about the linked data between the records, we recommend that you select both the tables.
 1. Select **Next**, and do the following steps in the **Column mapping** section:
-   1. Map the source and destination columns. You can also update the predefined mappings according to your business needs. For the list of compatible datatypes, see the table in **Data types supported in Dataverse**.
+   1. Map the source and destination columns. You can also update the predefined mappings according to your business needs. The source column shows compatible data type fields only. For the list of compatible data types, see the table in **Data types supported in Dataverse**.
    1. Repeat the steps for the selected tables.
 1. Select **Next**, and on the Teams permissions page, select the Teams permission. The Team ID is used to write the data into Dataverse and therefore the Team ID must have read and write permissions on the selected tables. Otherwise, data sync fails. More information: [Teams in Dataverse](/power-platform/admin/manage-teams)
 1. On the next page, review the mappings for each of the tables that you selected. You can go back and change a setting.

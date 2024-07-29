@@ -236,7 +236,7 @@
           href: copilot-enable-help-pane.md  
         - name: Enable Copilot to draft emails
           href: copilot-email-enable.md
-        - name: Supported languages for Copilot
+        - name: Languages supported in Copilot
           href: /dynamics365/customer-service/administer/cs-region-availability-service-limits#language-support-for-ai-based-analytics-and-insights-in-customer-service?context=/dynamics365/contact-center/context/administer-context
         - name: Copilot architecture diagram
           href: /digital-contact-center-platform/guidance/dynamics-365-customer-service-copilot-architecture?context=/dynamics365/contact-center/context/administer-context

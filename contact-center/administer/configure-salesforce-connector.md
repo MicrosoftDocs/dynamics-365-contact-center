@@ -12,10 +12,9 @@ ms.custom: bap-template
 
 # Configure the connector for Salesforce
 
-
 The connector for Salesforce in Dynamics 365 Contact Center allows organizations to engage with customers using omnichannel capabilities while keeping their investments in non-Microsoft CRM solutions. 
 
-The omnichannel add-in uses data connectors to work with non-Microsoft CRM solutions. These connectors help bring the contacts and accounts data from Salesforce into Dataverse. 
+The omnichannel add-in uses data connectors to work with non-Microsoft CRM solutions. The connector for Salesforce helps bring the contacts and accounts data from Salesforce into Dataverse. 
 
 ## Prerequisites
 
@@ -39,7 +38,7 @@ The omnichannel add-in uses data connectors to work with non-Microsoft CRM solut
 1. On **Create a CRM connector**, select **Salesforce**, and select **Next**. The **Connection Setup** dialog displays **Sign in** if you're connecting to Salesforce for the first time, or the ellipses.
 
     > [!NOTE]
-    > The system redirects you to Microsoft Power Apps to connect to your Salesforce instance. The connection is used by Dynamics 365 to sync data.
+    > The system redirects you to Power Apps to connect to your Salesforce instance. The connection is used by Dynamics 365 to sync data.
 
     1. Select the displayed option and then select **Add new connection**. 
     1. On the dialog that appears, select the Salesforce environment and Salesforce API version, and select **Sign in**.

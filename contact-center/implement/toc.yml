@@ -18,8 +18,8 @@
           href: whats-new.md
         - name: Deprecations
           items:
-             - name: Deprecations in Contact Center
-               href: deprecations-contact-center.md
+          - name: Deprecations in Contact Center
+            href: deprecations-contact-center.md
       - name: Troubleshooting and FAQs
         href: cc-troubleshooting-faqs.md
       - name: Availability

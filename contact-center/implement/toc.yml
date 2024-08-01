@@ -12,10 +12,16 @@
           items:
           - name: Buy Dynamics 365 Contact Center
             href: https://dynamics.microsoft.com/contact-center/pricing/
-      - name: What's new
-        href: whats-new.md
       - name: Troubleshooting and FAQs
         href: cc-troubleshooting-faqs.md
+      - name: What's new
+        items:
+        - name: Release plans
+          href: whats-new.md
+        - name: Deprecations
+          items:
+          - name: Deprecations in Dynamics 365 Contact Center
+            href: deprecations-contact-center.md
       - name: Availability
         items:
         - name: International availability of Dynamics 365 Contact Center

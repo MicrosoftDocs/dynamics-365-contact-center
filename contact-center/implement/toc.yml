@@ -13,7 +13,13 @@
           - name: Buy Dynamics 365 Contact Center
             href: https://dynamics.microsoft.com/contact-center/pricing/
       - name: What's new
+      items:
+      - name: Release plans
         href: whats-new.md
+      - name: Deprecations
+        items:
+        - name: Deprecations in Contact Center
+          href: deprecations-contact-center.md
       - name: Troubleshooting and FAQs
         href: cc-troubleshooting-faqs.md
       - name: Availability
@@ -35,7 +41,7 @@
         - name: Service quotas
           href: /dynamics365/customer-service/implement/service-quotas?context=/dynamics365/contact-center/context/implement-context
         - name: Best practices to set up voice channel
-          href: /dynamics365/customer-service/implement/voice-channel-best-practices?context=/dynamics365/contact-center/context/implement-context
+          href: /dynamics365/customer-service/implement/voice-channel-best-practices?context=../context/implement-context
         - name: Install Dynamics 365 Contact Center
           items:
           - name: Provision channels

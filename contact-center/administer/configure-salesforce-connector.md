@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection:
-ms.date: 07/23/2024
+ms.date: 08/01/2024
 ms.custom: bap-template
 ---
 
@@ -26,12 +26,12 @@ The omnichannel add-in uses data connectors to work with non-Microsoft CRM solut
 > [!NOTE]
 > We recommend the following:
 > - Back up the existing data in the Contact and Account tables in Dataverse before you set up the connector to rollback if any data issues occur.
-> - For optimal performance, limit the data size to 10 GB. Also, make sure that you have sufficient quota for Salesforce API requests to support your data syncing needs.
+> - For optimal performance, limit the data size to 10 GB. Also, make sure that you have sufficient Salesforce API requests limits to support your data syncing needs.
 
 ## Configure the data connector
 
 > [!IMPORTANT]
-> After you configure the data connector and sync it from the Salesforce instance, we recommend that you don't make any changes to the synchronized data in Dataverse as the changes aren't synced back with Salesforce. If you need to, update the data in Salesforce and run a sync again.
+> After you configure the data connector and sync it from the Salesforce instance, we recommend that you don't make any changes to the synchronized data in Dataverse as the changes aren't synced back with Salesforce. If you need to, update the data in Salesforce only.
 
 1. In the site map of Contact Center admin center, go to **Workspaces** under **Agent experience**, and select **Manage** for **Data synchronization from external CRMs**. You can also select **Open** under **CRM connection wizard** on the home page.
 1. On the **Data synchronization from external CRMs** page, select **New**.

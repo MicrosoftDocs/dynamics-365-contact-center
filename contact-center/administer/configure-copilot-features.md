@@ -34,7 +34,7 @@ You have the System Administrator role.
 
 ## Region availability and data movement
 
-The respond to questions, compose an email, and summarize cases and conversations features are generally available in the North America region only. These features are in preview in the rest of the supported regions. More information: [Region availability](/dynamics365/customer-service/administer/cs-region-availability-service-limits#region-availability-of-analytics-and-insights?context=/dynamics365/contact-center/context/administer-context)).
+The respond to questions, compose an email, and summarize cases and conversations features are generally available in the North America region only. These features are in preview in the rest of the supported regions. More information: [Region availability](/dynamics365/customer-service/administer/cs-region-availability-service-limits#region-availability-of-analytics-and-insights?context=/dynamics365/contact-center/context/administer-context).
 
 ## Supported languages
 

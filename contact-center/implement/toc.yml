@@ -20,7 +20,7 @@
           href: whats-new.md
         - name: Deprecations
           items:
-          - name: Deprecations in Contact Center
+          - name: Deprecations in Dynamics 365 Contact Center
             href: deprecations-contact-center.md
       - name: Availability
         items:

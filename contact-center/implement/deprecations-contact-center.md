@@ -10,7 +10,7 @@ ms.custom: bap-template
 ms.collection:
 ---
 
-# Deprecations in Contact Center
+# Deprecations in Dynamics 365 Contact Center
 
 The features that are deprecated in Contact Center are listed in this article.
 
@@ -22,3 +22,8 @@ Administrators and IT professionals can use this information to prepare for futu
 ## Local hosting support for voice channel in India and Japan will be deprecated in September 2024
 
 Effective September 09, 2024, local hosting capabilities for the voice channel in India and Japan will be deprecated. For existing voice installations, this deprecation is the first step of transitioning to the enhanced voice experience. If you want to continue to use the voice channel, you can explore the global cloud deployment option in the nearest geographic location, subjective to your country laws for using the voice channel in Dynamics 365 Contact Center. Learn more in [Supported cloud locations for voice channel](/dynamics365/customer-service/administer/voice-channel-region-availability).
+
+### Related information
+
+[Deprecations in Customer Service](/dynamics365/customer-service/implement/deprecations-customer-service)  
+[Important changes (deprecations) coming in Power Apps, Power Automate](/power-platform/important-changes-coming)  

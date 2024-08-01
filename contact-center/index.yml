@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: neeranelli
   ms.author: nenellim
-  ms.date: 07/01/2024
+  ms.date: 07/29/2024
   ms.custom: bap-template
   hide_bc: true
 
@@ -25,6 +25,10 @@ highlightedContent:
     - title: What's new
       itemType: whats-new
       url: implement/whats-new.md
+    # Card
+    - title: Training
+      itemType: training
+      url: /training/modules/get-started-contact-center/  
     # Card
     - title: Troubleshoot
       itemType: concept
@@ -68,9 +72,11 @@ additionalContent:
     - title: Configure connectors
       links:
       - url: administer/configure-salesforce-connector.md
-        text: Configure the Salesforce connector    
+        text: Configure the connector for Salesforce     
       - url: extend/configure-servicenow-connector.md
-        text: Configure the ServiceNow connector    
+        text: Configure the connector for ServiceNow
+      - url: extend/configure-custom-connector.md
+        text: Configure a connector for any CRM solution
     - title: Configure AI features
       links:
       - url: administer/configure-copilot-features.md

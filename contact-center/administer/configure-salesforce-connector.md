@@ -26,7 +26,7 @@ The omnichannel add-in uses data connectors to work with non-Microsoft CRM solut
 > [!NOTE]
 > We recommend the following:
 > - Back up the existing data in the Contact and Account tables in Dataverse before you set up the connector to rollback if any data issues occur.
-> - For optimal performance, limit the data size to 10 GB. Also, make sure that you have sufficient Salesforce API requests limits to support your data syncing needs.
+> - For optimal performance, limit the data size to 10 GB. Also, make sure that you have sufficient Salesforce API requests limit to support your data syncing needs.
 
 ## Configure the data connector
 

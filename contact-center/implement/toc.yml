@@ -41,7 +41,7 @@
         - name: Service quotas
           href: /dynamics365/customer-service/implement/service-quotas?context=/dynamics365/contact-center/context/implement-context
         - name: Best practices to set up voice channel
-          href: /dynamics365/customer-service/implement/voice-channel-best-practices?context=../context/implement-context
+          href: /dynamics365/customer-service/implement/voice-channel-best-practices?context=/dynamics365/contact-center/context/implement-context
         - name: Install Dynamics 365 Contact Center
           items:
           - name: Provision channels

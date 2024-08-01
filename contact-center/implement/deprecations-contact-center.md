@@ -12,7 +12,7 @@ ms.collection:
 
 # Deprecations in Dynamics 365 Contact Center
 
-The features that are deprecated in Contact Center are listed in this article.
+The features that are deprecated in Dynamics 365 Contact Center are listed in this article.
 
 Administrators and IT professionals can use this information to prepare for future releases.
 

@@ -13,11 +13,11 @@
           - name: Buy Dynamics 365 Contact Center
             href: https://dynamics.microsoft.com/contact-center/pricing/
       - name: What's new
-      items:
+        items:
         - name: Release plans
           href: whats-new.md
         - name: Deprecations
-            items:
+          items:
              - name: Deprecations in Contact Center
                href: deprecations-contact-center.md
       - name: Troubleshooting and FAQs

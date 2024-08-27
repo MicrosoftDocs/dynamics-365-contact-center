@@ -468,6 +468,12 @@
             href: /dynamics365/customer-service/administer/configure-agent-forecasting-conversation?context=/dynamics365/contact-center/context/administer-context
         - name: Configure real-time customer sentiment
           href: /dynamics365/customer-service/administer/enable-sentiment-analysis?context=/dynamics365/contact-center/context/administer-context
+      - name: App configuration
+        items:
+        - name: Migrate configurations for channels using solutions
+          href: /dynamics365/customer-service/administer/migrate-configurations?context=/dynamics365/contact-center/context/administer-context
+        - name: Best practices for configuration lifecycle management
+          href: alm-best-practices.md
       - name: Responsible AI
         items:
         - name: Overview

@@ -26,9 +26,9 @@ For a successful import into the target environment, maintain parity between the
 
 We recommend that you don't edit managed configuration records on the target environment directly. If you edit a managed configuration, you create an active customization for that configuration record that can lead to multiple issues as follows:
 
-- The active customization can lead to a failure when you delete the managed solution containing the configuration. It happens due to the presence of multiple solution layers in which a configuration record, which is part of that managed solution, exists.
+- The active customization can lead to a failure when you delete the managed solution containing the configuration. The failure happens due to the presence of multiple solution layers in which a configuration record exists that's a part of the managed solution.
 
-- The active layer on the managed record can prevent future configuration updates brought in from source environment from being applied onto the target environment. It can in turn lead to a bad user experience and confusion around things not working despite successful import of the latest version of the managed solution. The active layer always takes precedence over the managed layer. 
+- The active layer on the managed record can prevent future configuration updates from source environment being applied onto the target environment. It can in turn lead to a bad user experience and confusion around features not working despite successful import of the latest version of the managed solution. The active layer always takes precedence over the managed layer. 
 
 The correct approach is to import any changes to managed configuration records as part of the managed solution imports.
 

@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Configure a WhatsApp channel through Azure Communication Services (preview)
 
-[!INCLUDE[cc-feature-availability-embedded-yes](../../includes/cc-feature-availability-embedded-yes.md)]
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
 > [!IMPORTANT]
 > This is a preview feature.
@@ -107,8 +107,6 @@ Perform the following steps:
 
 ### Related information
 
-
-[Understand and create workstreams](/dynamics365/customer-service/administer/work-streams-introduction?context=/dynamics365/contact-center/context/administer-context)  
 [Configure automated messages](/dynamics365/customer-service/administer/configure-automated-message?context=/dynamics365/contact-center/context/administer-context)  
 [Configure a post-conversation survey](/dynamics365/customer-service/administer/configure-post-conversation-survey?context=/dynamics365/contact-center/context/administer-context) 
 [Skill-based routing](/dynamics365/customer-service/administer/overview-skill-work-distribution?context=/dynamics365/contact-center/context/administer-context)  
@@ -116,4 +114,4 @@ Perform the following steps:
 [Delete a configured channel](/dynamics365/customer-service/administer/delete-channel?context=/dynamics365/contact-center/context/administer-context) 
 [Support for live chat and asynchronous channels](/dynamics365/customer-service/administer/delete-channel?context=/dynamics365/card-support-in-channels/context/administer-context)  
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

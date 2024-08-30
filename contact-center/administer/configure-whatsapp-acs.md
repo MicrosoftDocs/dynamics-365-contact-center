@@ -28,16 +28,16 @@ The success of social media customer service, like all other customer services, 
    - Create or use an existing Azure Communication Services resource. Learn more at [Create and manage Communication Services resources](/azure/communication-services/quickstarts/create-communication-resource).
     - Obtain a phone number that can send and receive SMS. The following are supported:
        - Purchase a [phone number](/azure/communication-services/quickstarts/telephony/get-phone-number) or [import phone numbers](voice-channel-sync-from-acs.md)
-       - [Bring your own phone number from existing providers](voice-channel-bring-your-own-number.md) or migrate your existing WhatsApp business accounts with phone number.
+       - [Bring your own phone number from existing providers](/dynamics365/customer-service/administer/voice-channel-bring-your-own-number?context=/dynamics365/contact-center/context/administer-context) or migrate your existing WhatsApp business accounts with phone number.
    - [Advanced Messaging for WhatsApp](/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview) is set up in Azure Communication Services. Perform the steps in [register WhatsApp business account](/azure/communication-services/quickstarts/advanced-messaging/whatsapp/connect-whatsapp-business-account).
    - Configure [Event Grid](/azure/communication-services/quickstarts/advanced-messaging/whatsapp/handle-advanced-messaging-events) with Microsoft Entra app authentication. Learn more at [Secure WebHook delivery with Microsoft Entra ID in Azure Event Grid](/azure/event-grid/secure-webhook-delivery).
 
 ## End-to-end walkthrough
 
 1. Get Azure Communication Services details to connect.
-2. Create a WhatsApp channel
-3. Create routing rules
-4. Modify settings for a specific WhatsApp phone number
+2. Create a WhatsApp channel.
+3. Create routing rules.
+4. Modify settings for a specific WhatsApp phone number.
 
 ## Fetch Azure Communication Services details
 
@@ -76,44 +76,15 @@ Copy the following information from the [Azure portal](https://ms.portal.azure.c
      1. Perform the steps the following section to add the WhatsApp endpoint to the Azure Communication Services resource.
      1. Select the check box to confirm that the WhatsApp channel is setup correctly and then select **Done**.
       
-    **Add the WhatsApp endpoint to Azure Communication Services resource**
+### Add the WhatsApp endpoint to Azure Communication Services resource
 
-      1. In the Azure portal, go to the **Events** page.
-      1. Select the event subscription that you created as a part of the [Advanced Messaging for WhatsApp](/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview) setup in Azure Communication Services.
-      1. In the Event Subscription page > **Endpoint** select **Change** for the endpoint and add the **WhatsApp inbound URL** that you copied from the Callback information page in the WhatsApp channel setup.
+   1. In the Azure portal, go to the **Events** page.
+   1. Select the event subscription that you created as a part of the [Advanced Messaging for WhatsApp](/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview) setup in Azure Communication Services.
+   1. In the Event Subscription page > **Endpoint** select **Change** for the endpoint and add the **WhatsApp inbound URL** that you copied from the Callback information page in the WhatsApp channel setup.
          
 ## Configure a workstream for the WhatsApp channel
 
-1. To configure routing and work distribution, you can create a [workstream](create-workstreams.md) with the **Channel** set to **WhatsApp** or select an existing one.
-
-1. Select the workstream that you've created for the WhatsApp channel and on the workstream page, select **Set up WhatsApp** to configure the following options:
-   
-    1. On the **Channel** page, select the Azure Communication Services channel or the Twilio number that you created.
-   
-    2. On the **Language** page, select the language.
-    
-    3. On the **Behaviors** page, configure the following options:
-      - [Custom automated messages](configure-automated-message.md)
-      - [WhatsApp message templates](#configure-whatsapp-message-templates)
-      - [Post-conversation survey](configure-post-conversation-survey.md)
-    4. On the **User features** page, set the toggle for **File attachments** to **On** and select the following checkboxes if you want to allow agents and customers to send and receive file attachments. More information: [Enable file attachments](enable-file-attachments.md).
-      - Customers can send file attachments
-      - Agents can send file attachments
-    5. Verify the settings on the **Summary** page, and select **Finish**. The WhatsApp channel instance is configured.
-
-1. Configure routing rules. More information: [Configure work classification](configure-work-classification.md).
-
-1. Configure work distribution. More information: [Work distribution settings](create-workstreams.md#configure-work-distribution)
-
-1. Optionally, [add a bot](create-workstreams.md#add-a-bot-to-a-workstream).
-
-1. Based on your business needs, in **Advanced settings**, configure the following options:
-   - [Sessions](session-templates.md)
-   - [Agent notifications](notification-templates.md#out-of-the-box-notification-templates)
-   - [Context variables](manage-context-variables.md#add-context-variables))
-   - [Smart assist bots](../develop/smart-assist-bot.md)
-   - [Quick replies](create-quick-replies.md)
-   
+To configure routing and work distribution, you can create a [workstream](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context) with the **Channel** set to **WhatsApp** or select an existing one.
 
 ### Configure WhatsApp message templates
 
@@ -136,13 +107,13 @@ Perform the following steps:
 
 ### Related information
 
-[Understand and create workstreams](../work-streams-introduction.md)  
-[Configure automated messages](configure-automated-message.md)  
-[Configure a post-conversation survey](configure-post-conversation-survey.md)  
-[Skill-based routing](overview-skill-work-distribution.md)  
-[Create message templates](create-message-templates.md)  
-[Templates](/dynamics365/app-profile-manager/templates-overview)  
-[Delete a configured channel](delete-channel.md)  
-[Support for live chat and asynchronous channels](card-support-in-channels.md)  
+
+[Understand and create workstreams](/dynamics365/customer-service/administer/work-streams-introduction?context=/dynamics365/contact-center/context/administer-context)  
+[Configure automated messages](/dynamics365/customer-service/administer/configure-automated-message?context=/dynamics365/contact-center/context/administer-context)  
+[Configure a post-conversation survey](/dynamics365/customer-service/administer/configure-post-conversation-survey?context=/dynamics365/contact-center/context/administer-context) 
+[Skill-based routing](/dynamics365/customer-service/administer/overview-skill-work-distribution?context=/dynamics365/contact-center/context/administer-context)  
+[Create message templates](/dynamics365/customer-service/administer/create-message-templates?context=/dynamics365/contact-center/context/administer-context)  
+[Delete a configured channel](/dynamics365/customer-service/administer/delete-channel?context=/dynamics365/contact-center/context/administer-context) 
+[Support for live chat and asynchronous channels](/dynamics365/customer-service/administer/delete-channel?context=/dynamics365/card-support-in-channels/context/administer-context)  
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

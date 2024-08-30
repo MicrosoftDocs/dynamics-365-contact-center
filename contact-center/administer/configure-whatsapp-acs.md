@@ -66,7 +66,7 @@ Copy the following information from the [Azure portal](https://ms.portal.azure.c
      1. In the **Channel settings** page, specify the following. 
          - **ACS resource name**: The **Name** of the resource.
          - **ACS connection string**: The **Connection string** corresponding to the resource.
-         - **Event grid app ID**: **AAD Tenant ID**.
+         - **Event grid app ID**: **Microsoft Entra Tenant ID**.
          - **Event grid app tenant ID**:  **Microsoft Entra Application  or URI**.
          - Select the check box to confirm that the Azure Communication Services resource is connected only to one organization.
      1. In the **WhatsApp channel ID**, select **Add**, and on the page that appears, enter the following information:

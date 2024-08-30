@@ -112,6 +112,6 @@ Perform the following steps:
 [Skill-based routing](/dynamics365/customer-service/administer/overview-skill-work-distribution?context=/dynamics365/contact-center/context/administer-context)  
 [Create message templates](/dynamics365/customer-service/administer/create-message-templates?context=/dynamics365/contact-center/context/administer-context)  
 [Delete a configured channel](/dynamics365/customer-service/administer/delete-channel?context=/dynamics365/contact-center/context/administer-context)  
-[Support for live chat and asynchronous channels](/dynamics365/customer-service/administer/delete-channel?context=/dynamics365/card-support-in-channels/context/administer-context)  
+[Support for live chat and asynchronous channels](/dynamics365/customer-service/administer/card-support-in-channels?context=/dynamics365/card-support-in-channels/context/administer-context)  
 
 

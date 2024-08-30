@@ -292,8 +292,10 @@
             href: /dynamics365/customer-service/administer/configure-facebook-channel?context=/dynamics365/contact-center/context/administer-context
           - name: Configure a LINE channel
             href: /dynamics365/customer-service/administer/configure-line-channel?context=/dynamics365/contact-center/context/administer-context
-          - name: Configure a WhatsApp channel
+          - name: Configure a WhatsApp channel in Twilio
             href: /dynamics365/customer-service/administer/configure-whatsapp-channel?context=/dynamics365/contact-center/context/administer-context
+          - name: Configure a WhatsApp channel through Azure Communication Services (preview)
+            href: configure-whatsapp-acs.md    
           - name: Configure a WeChat channel
             href: /dynamics365/customer-service/administer/configure-wechat-channel?context=/dynamics365/contact-center/context/administer-context
           - name: Social channel setup FAQs

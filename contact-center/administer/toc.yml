@@ -306,6 +306,8 @@
           href: /dynamics365/customer-service/administer/configure-microsoft-teams?context=/dynamics365/contact-center/context/administer-context
         - name: Configure a custom messaging channel
           href: /dynamics365/customer-service/administer/configure-custom-channel?context=/dynamics365/contact-center/context/administer-context
+        - name: Support for live chat and asynchronous channels
+          href: /dynamics365/customer-service/administer/card-support-in-channels?context=/dynamics365/contact-center/context/administer-context
         - name: Enable file attachments
           href: /dynamics365/customer-service/administer/enable-file-attachments?context=/dynamics365/contact-center/context/administer-context
         - name: Delete a channel instance
@@ -360,6 +362,8 @@
           href: /dynamics365/customer-service/administer/enable-real-time-translation?context=/dynamics365/contact-center/context/administer-context
         - name: Configure automated messages
           href: /dynamics365/customer-service/administer/configure-automated-message?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure message templates
+          href: /dynamics365/customer-service/administer/create-message-templates?context=/dynamics365/contact-center/context/administer-context
         - name: Configure outbound messages
           href: /dynamics365/customer-service/administer/outbound-messaging?context=/dynamics365/contact-center/context/administer-context
         - name: Configure data masking

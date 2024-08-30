@@ -91,7 +91,7 @@ To configure routing and work distribution, you can create a [workstream](/dynam
 You can configure the option for agents to send WhatsApp-approved messages. If 24 hours pass after a customer's last message, agents will only be able to send messages from WhatsApp-approved templates until the customer responds. You must perform the steps in Send WhatsApp template messages to send WhatsApp Template messages using Advanced Communication Messages SDK before you add them in the application.
 
 > [!NOTE]
-> Only text based message templates are supported.
+> Text-based message templates only are supported.
 
 Perform the following steps:
 
@@ -107,11 +107,11 @@ Perform the following steps:
 
 ### Related information
 
-[Configure automated messages](/dynamics365/customer-service/administer/configure-automated-message?context=/dynamics365/contact-center/context/administer-context)  
-[Configure a post-conversation survey](/dynamics365/customer-service/administer/configure-post-conversation-survey?context=/dynamics365/contact-center/context/administer-context) 
-[Skill-based routing](/dynamics365/customer-service/administer/overview-skill-work-distribution?context=/dynamics365/contact-center/context/administer-context)  
-[Create message templates](/dynamics365/customer-service/administer/create-message-templates?context=/dynamics365/contact-center/context/administer-context)  
-[Delete a configured channel](/dynamics365/customer-service/administer/delete-channel?context=/dynamics365/contact-center/context/administer-context)  
-[Support for live chat and asynchronous channels](/dynamics365/customer-service/administer/card-support-in-channels?context=/dynamics365/card-support-in-channels/context/administer-context)  
+[Configure automated messages](/dynamics365/customer-service/administer/configure-automated-message?context=/dynamics365/contact-center/context/administer-context)   
+[Configure a post-conversation survey](/dynamics365/customer-service/administer/configure-post-conversation-survey?context=/dynamics365/contact-center/context/administer-context)  
+[Skill-based routing](/dynamics365/customer-service/administer/overview-skill-work-distribution?context=/dynamics365/contact-center/context/administer-context)   
+[Create message templates](/dynamics365/customer-service/administer/create-message-templates?context=/dynamics365/contact-center/context/administer-context)   
+[Delete a configured channel](/dynamics365/customer-service/administer/delete-channel?context=/dynamics365/contact-center/context/administer-context)   
+[Support for live chat and asynchronous channels](/dynamics365/customer-service/administer/card-support-in-channels?context=/dynamics365/card-support-in-channels/context/administer-context)   
 
 

@@ -23,11 +23,11 @@ The success of social media customer service, like all other customer services, 
 
 ## Prerequisites
 
-- Make sure channels are provisioned in your environment. More information: [Provision Omnichannel for Customer Service](../implement/omnichannel-provision-license.md).
+- Make sure channels are provisioned in your environment. More information: [Provision Omnichannel for Customer Service](/dynamics365/customer-service/implement/omnichannel-provision-license?context=/dynamics365/contact-center/context/implement-context).
 - Have an Azure account with an active subscription. Make sure that the Azure subscription and Dynamics 365 account are in the same tenant. Learn more at [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account).
    - Create or use an existing Azure Communication Services resource. Learn more at [Create and manage Communication Services resources](/azure/communication-services/quickstarts/create-communication-resource).
     - Obtain a phone number that can send and receive SMS. The following are supported:
-       - Purchase a [phone number](/azure/communication-services/quickstarts/telephony/get-phone-number) or [import phone numbers](voice-channel-sync-from-acs.md)
+       - Purchase a [phone number](/azure/communication-services/quickstarts/telephony/get-phone-number) or [import phone numbers](/dynamics365/customer-service/administer/voice-channel-sync-from-acs?context=/dynamics365/contact-center/context/administer-context)
        - [Bring your own phone number from existing providers](/dynamics365/customer-service/administer/voice-channel-bring-your-own-number?context=/dynamics365/contact-center/context/administer-context) or migrate your existing WhatsApp business accounts with phone number.
    - [Advanced Messaging for WhatsApp](/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview) is set up in Azure Communication Services. Perform the steps in [register WhatsApp business account](/azure/communication-services/quickstarts/advanced-messaging/whatsapp/connect-whatsapp-business-account).
    - Configure [Event Grid](/azure/communication-services/quickstarts/advanced-messaging/whatsapp/handle-advanced-messaging-events) with Microsoft Entra app authentication. Learn more at [Secure WebHook delivery with Microsoft Entra ID in Azure Event Grid](/azure/event-grid/secure-webhook-delivery).

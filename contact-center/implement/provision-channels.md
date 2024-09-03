@@ -37,30 +37,37 @@ You can provision the following channels:
     > More information: [Pricing](https://www.microsoft.com/dynamics-365/products/contact-center/pricing), Dynamics 365 Licensing Guide, and [How to purchase through Volume Licensing](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy).
 
 - Set up the prerequisites mentioned in the system requirements.
+- Dynamics 365 System Administrator role on the root business unit for your organization. More information: [Assign security roles to a user in Power Platform](/power-platform/admin/assign-security-roles) and [Create or edit business units](/power-platform/admin/create-edit-business-units)
 
-- Ensure that the provisioning user has the following permissions:
-  - Microsoft 365 Global admin role. More information: [Assign admin roles to user in Microsoft Office 365](/microsoft-365/admin/add-users/assign-admin-roles)
-  - Dynamics 365 System Administrator role on the root business unit for your organization. More information: [Assign security roles to a user in Power Platform](/power-platform/admin/assign-security-roles) and [Create or edit business units](/power-platform/admin/create-edit-business-units)
-  - Read-Write access in the Client Access License Information (CAL). More information: [Create a Read-Write user account in Power Platform](/power-platform/admin/create-users#create-a-read-write-user-account)
+## Set up channels<a name="set-up-omnichannel"> </a>
 
-## Set up channels
-
-To set up the channels for configuring and using in Dynamics 365 Contact Center, perform the steps in [Set up Omnichannel for Customer Service](/dynamics365/customer-service/implement/omnichannel-provision-channels).
+You can set up channels in the Customer Service admin center or Contact Center admin center application. In the Power Platform admin center application, you can only view existing environments and channels; you can't enable, edit, or delete channels.
 
 > [!NOTE]
-> You'll be able to use the admin center experience to provision channels after it's available in your region. Once the new experience is available, you can only view existing environments and channels in the Power Platform admin center.
+> If you don't see the provisioning option in the admin center, it's not yet available in your region. You can [provision the channels](/dynamics365/customer-service/implement/omnichannel-provision-license?context=/dynamics365/contact-center/context/implement-context) in Power Platform admin center.
 
-## Update Omnichannel for Customer Service application
+To set up the channels, perform the following steps:
 
-After the channels are successfully provisioned, you can update the environment by enabling or disabling the required channels in Power Platform admin center. More information: [Update Omnichannel for Customer Service application](/dynamics365/customer-service/implement/omnichannel-provision-license#update-omnichannel-for-customer-service-application)
+1. Select **Channels** in **Customer Support**. 
+1. Select **Manage** for **Manage channels**. The Manage channels page appears. 
+1. Select the channels that you want to use. 
+    Depending on your licenses, you can view the channels that you can enable. If you don't have the required licenses, the checkboxes for the corresponding channels are disabled. Learn more about licenses at More information: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
+1. Select **Save**.
 
-### Troubleshoot provisioning
+The channel setup can take several minutes. The application provisions the channel in the background. You can close the window and check after some time, or refresh to see if it's complete. When the setup is complete, the enabled channels appear in your environment.
 
-[Instance is not available to select on the provisioning application](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/instance-unavailable-provision-omnichannel)
+If the provisioning fails, an error message appears that indicates that the provisioning failed. Select the error message to view the details.
+
+### Turn off channels
+
+1. Select  **Customer Support** > **Channels** > **Manage channels**. 
+1. Clear the checkbox for the channel you want to turn off. The application displays a message asking you to confirm the action. Select **Turn off** to confirm.
+
+Once you turn off the channel, agents will no longer be able to access the channel.
 
 ### Related information
 
-[Create workstreams](/dynamics365/customer-service/administer/create-workstreams)  
-[Manage users](/dynamics365/customer-service/administer/users-user-profiles)  
+[Create workstreams](/dynamics365/customer-service/administer/create-workstreams)   
+[Manage users](/dynamics365/customer-service/administer/users-user-profiles)   
 
 

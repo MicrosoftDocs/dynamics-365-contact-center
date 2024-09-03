@@ -1,14 +1,14 @@
 ---
 title: Reset, restore, recover omnichannel environments
 description: Follow these steps to reset, restore, or recover a Dynamics 365 environment that includes omnichannel capabilities.
-author: neeranelli
-ms.author: nenellim
-ms.reviewer: 
+author: gandhamm
+ms.author: mgandham
+ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: 
 ms.date: 08/12/2024
 ms.custom: bap-template
-ai.usage: ai-assisted
+
 ---
 
 # Reset, restore, recover omnichannel environments
@@ -35,6 +35,4 @@ This process retrieves a recently deleted environment, restoring it to its state
 
 Recovering a deleted environment restores the omnichannel environment to its state before deletion.
 
-## Next steps
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->

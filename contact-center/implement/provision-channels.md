@@ -63,7 +63,7 @@ If the provisioning fails, an error message appears that you can select to view 
 1. Select  **Customer Support** > **Channels** > **Manage channels**. 
 1. Clear the checkbox for the channel that you want to turn off. The application displays a confirmation message. Select **Turn off**.
 
-Once you turn off the channel, agents will no longer be able to access the channel.
+After you turn off the channel, agents won't be able to access the channel.
 
 ### Related information
 

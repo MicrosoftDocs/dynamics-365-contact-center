@@ -39,7 +39,7 @@ You can provision the following channels:
 - Set up the prerequisites mentioned in the system requirements.
 - Dynamics 365 System Administrator role on the root business unit for your organization. More information: [Assign security roles to a user in Power Platform](/power-platform/admin/assign-security-roles) and [Create or edit business units](/power-platform/admin/create-edit-business-units)
 
-## Set up channels<a name="set-up-omnichannel"> </a>
+## Set up channels
 
 You can set up channels in the Customer Service admin center or Contact Center admin center application. In the Power Platform admin center application, you can only view existing environments and channels; you can't enable, edit, or delete channels.
 

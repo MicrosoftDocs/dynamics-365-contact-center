@@ -56,7 +56,7 @@ To set up the channels, perform the following steps:
 
 The setup can take several minutes. The application provisions the channel in the background. You can close the window and check after some time or refresh to see if it's complete. When the setup is complete, the enabled channels appear in your environment.
 
-If the provisioning fails, an error message appears that indicates that the provisioning failed. Select the error message to view the details.
+If the provisioning fails, an error message appears that you can select to view the details.
 
 ### Turn off channels
 

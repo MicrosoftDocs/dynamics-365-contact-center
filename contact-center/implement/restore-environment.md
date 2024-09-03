@@ -1,6 +1,6 @@
 ---
 title: Reset, restore, recover omnichannel environments
-description: Follow these steps to reset,restore or recover a Dynamics 365 environment that includes omnichannel capabilities.
+description: Follow these steps to reset, restore, or recover a Dynamics 365 environment that includes omnichannel capabilities.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: 
@@ -19,7 +19,7 @@ You can reset, restore, or recover your omnichannel environments.
 
 ## Reset organization
 
-This operation restores the environment to its original state. It can be used create a new project, free up storage space, and remove an environment containing personal data. In Power Platform admin center, follow the steps in [Reset environment](/power-platform/admin/reset-environment) to reset the environment.
+This operation restores the environment to its original state. It can be used to create a new project, free up storage space, and remove an environment containing personal data. In Power Platform admin center, follow the steps in [Reset environment](/power-platform/admin/reset-environment) to reset the environment.
 
 After you reset the environment, you must provision the channels again to use omnichannel capabilities. Learn more at [provision channels](provision-channels.md).
 
@@ -31,9 +31,9 @@ After you restore the environment, you must provision the channels again to use 
 
 ## Recover organization
 
-This process retrieves a recently deleted environment, restoring it to its state before deletion. It's useful for recovering an environment that was accidentally deleted, along with all its data and configurations. In Power Platform admin center to perform the steps in [Recover environment](/power-platform/admin/recover-environment) to revert to the default settings.
+This process retrieves a recently deleted environment, restoring it to its state before deletion. It's useful for recovering an environment that was accidentally deleted, along with all its data and configurations. In Power Platform admin center, perform the steps in [Recover environment](/power-platform/admin/recover-environment) to recover the default settings.
 
-Recovering a deleted environment restores the omnichannel environment to its state prior to deletion.
+Recovering a deleted environment restores the omnichannel environment to its state before deletion.
 
 ## Next steps
 

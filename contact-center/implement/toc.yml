@@ -52,7 +52,7 @@
             href: /dynamics365/customer-service/implement/copy-environment-with-omnichannel?context=/dynamics365/contact-center/context/implement-context
           - name: Reset, restore, recover omnichannel environments
             href: /dynamics365/customer-service/implement/restore-environment?context=/dynamics365/contact-center/context/implement-context  
-         - name: Uninstall Dynamics 365 Contact Center
+          - name: Uninstall Dynamics 365 Contact Center
             href: /dynamics365/customer-service/implement/remove-omnichannel?context=/dynamics365/contact-center/context/implement-context
           - name: Uninstall solutions
             href: /dynamics365/customer-service/implement/delete-solution?context=/dynamics365/contact-center/context/implement-context

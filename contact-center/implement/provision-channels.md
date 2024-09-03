@@ -54,7 +54,7 @@ To set up the channels, perform the following steps:
     Depending on your licenses, you can view the channels that you can enable. If you don't have the required licenses, the checkboxes for the corresponding channels are disabled. Learn more about licenses at More information: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
 1. Select **Save**.
 
-The setup can take several minutes. The application provisions the channel in the background. You can close the window and check after some time or refresh to see if it's complete. When the setup is complete, the enabled channels appear in your environment.
+The setup can take several minutes. The application provisions the channel in the background. You can close the window and check after some time or refresh it to see if it's complete. When the setup is complete, the enabled channels appear in your environment.
 
 If the provisioning fails, an error message appears that you can select to view the details.
 

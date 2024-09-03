@@ -45,7 +45,10 @@ You can provision the following channels:
 
 ## Set up channels
 
-To set up the channels for configuring and using in Dynamics 365 Contact Center, perform the steps in [Set up Omnichannel for Customer Service](/dynamics365/customer-service/implement/omnichannel-provision-license#set-up-omnichannel-for-customer-service).
+To set up the channels for configuring and using in Dynamics 365 Contact Center, perform the steps in [Set up Omnichannel for Customer Service](/dynamics365/customer-service/implement/omnichannel-provision-channels).
+
+> [!NOTE]
+> You'll be able to use the admin center experience to provision channels after it's available in your region. Once the new experience is available, you can only view existing environments and channels in the Power Platform admin center.
 
 ## Update Omnichannel for Customer Service application
 

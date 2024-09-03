@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: 
-ms.date: 08/12/2024
+ms.date: 09/03/2024
 ms.custom: bap-template
 
 ---
@@ -31,6 +31,6 @@ After you restore the environment, you must provision the channels again to use 
 
 ## Recover organization
 
-You can retrieve a recently deleted omnichannel environment and restore it to its prior to deletion state. In Power Platform admin center, perform the steps in [Recover environment](/power-platform/admin/recover-environment) to recover the default settings.
+You can retrieve a recently deleted omnichannel environment and restore it to its previous state. In Power Platform admin center, perform the steps in [Recover environment](/power-platform/admin/recover-environment) to recover the default settings.
 
 

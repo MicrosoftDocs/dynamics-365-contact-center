@@ -29,9 +29,7 @@ You can provision the following channels:
 
 ## Prerequisites
 
-- Obtain an active subscription of one or more of the following:
-
-  - See the [system requirements for Dynamics 365 Contact Center](system-requirements-contact-center.md) for the required licenses to provision channels.
+- See [system requirements for Dynamics 365 Contact Center](system-requirements-contact-center.md) for the required licenses to provision channels.
   
     > [!NOTE]
     > More information: [Pricing](https://www.microsoft.com/dynamics-365/products/contact-center/pricing), Dynamics 365 Licensing Guide, and [How to purchase through Volume Licensing](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy).
@@ -63,7 +61,6 @@ If the provisioning fails, an error message appears that you can select to view 
 1. Select  **Customer Support** > **Channels** > **Manage channels**. 
 1. Clear the checkbox for the channel that you want to turn off. The application displays a confirmation message. Select **Turn off**.
 
-After you turn off the channel, agents won't be able to access the channel.
 
 ### Related information
 

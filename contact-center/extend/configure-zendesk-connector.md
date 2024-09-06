@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Configure the connector for Zendesk
 
-The Microsoft Contact Center&mdash;Power Automate solution for Zendesk connector allows organizations to engage with their customers using capabilities such as voice, video, SMS, live chat, and social messaging from their non Microsoft CRM solutions. You can use Power Automate data connectors to sync the contacts and accounts data from the Zendesk CRM solution into Dataverse.
+The Microsoft Contact Center&mdash;Power Automate solution for Zendesk connector allows organizations to engage with their customers using capabilities such as voice, video, SMS, live chat, and social messaging from their non-Microsoft CRM solutions. You can use Power Automate data connectors to sync the contacts and accounts data from the Zendesk CRM solution into Dataverse.
 
 ## Prerequisites 
 
@@ -104,7 +104,7 @@ To create webhooks, ensure you have the HTTP endpoint for the Power Automate flo
 In Power Automate, select the required flow, and then select **Run**. 
 
 > [!NOTE]
-> Automated flows are automatically triggered by create, update, and delete events.
+> Create, update, and delete events automatically trigger automated flows.
 
 ## Edit flows and field mappings (Optional) 
 

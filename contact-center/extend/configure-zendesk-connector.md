@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Configure the connector for Zendesk
 
-The Microsoft Contact Center—Power Automate solution for Zendesk connector allows organizations to engage with their customers using capabilities such as voice, video, SMS, live chat, and social messaging from their non Microsoft CRM solutions. You can use Power Automate data connectors to sync the contacts and accounts data from the Zendesk CRM solution into Dataverse.
+The Microsoft Contact Center&mdash;Power Automate solution for Zendesk connector allows organizations to engage with their customers using capabilities such as voice, video, SMS, live chat, and social messaging from their non Microsoft CRM solutions. You can use Power Automate data connectors to sync the contacts and accounts data from the Zendesk CRM solution into Dataverse.
 
 ## Prerequisites 
 
@@ -28,25 +28,25 @@ The Microsoft Contact Center—Power Automate solution for Zendesk connector all
 
 ## Import Power Automate flows to sync Account and Contact records
 
-Perform the steps in the following sections import the Power Automate flows for Zendesk.
+Perform the steps in the following sections to import the Power Automate flows for Zendesk.
 
-**Add a Zendesk connector**
+### Add a Zendesk connector
 
 1. Follow the steps in [Add a connection](/power-automate/add-manage-connections#add-a-connection) to add a Zendesk connection.
 1. Specify your Zendesk domain, and then select **Create**.
 1. In the pop-up window, sign in with your Zendesk credentials.
 1. In the pop-up window that appears, select **Allow** to Power Platform to access your Zendesk account. A connection is created.
 
-**Add a Dataverse Connector**
+### Add a Dataverse Connector
 
 1. Follow the steps in [Add a connection](/power-automate/add-manage-connections#add-a-connection) to add a Dataverse connection, and then select **Create**.
 1. In the pop-up window that appears, select your account. A connection is created.
 
-**Download flows from GitHub**
+### Download flows from GitHub**
  
 Download all the Power Automate flows from the [Zendesk](https://github.com/microsoft/copilot-for-service/tree/CCaaS-3P-CRM-Connector/flows/Zendesk) repository.
 
-**Import flows to Power Automate**
+### Import flows to Power Automate
 
 1. In Power Automate, select **My flows**.
 1. In **Import**, select **Import** and then select **Import Package (legacy)**.  
@@ -75,14 +75,14 @@ You must update the credentials in the Power Automate flows to connect them to y
 
 Set up webhooks in Zendesk to facilitate incremental data synchronization. Webhooks trigger notifications upon the creation, update, or deletion of a record. Name the flows to reflect the operation such as create, update, delete and the entity involved such as org, user. For example, `ZendeskCreateOrgHttp`. 
 
-**Retrieve endpoint**
+### Retrieve endpoint
 
 To create webhooks, ensure you have the HTTP endpoint for the Power Automate flow. Perform the following steps to get the endpoint in Power Automate: 
 
 1. Select the required flow and then select **Edit**. 
 1. Select **Manual** in the flow, and then copy the HTTP URL. Repeat the steps for the organization and user flows for all the create, update, and delete operations.
 
-**Add endpoint to Zendesk**
+### Add endpoint to Zendesk
 
 1. Sign in to your Zendesk instance and then select Admin center. 
 1. Select **Apps and Integrations** > **Webhooks**. Perform the steps in [create a webhook](https://support.zendesk.com/hc/en-us/articles/4408839108378-Creating-webhooks-to-interact-with-third-party-systems#:~:text=To%20create%20a%20webhook,event%20types%20from%20the%20dropdown) to create a webhook.
@@ -115,7 +115,7 @@ In Power Automate, select the required flow, and then select **Run**.
 
  The following table describes the predefined column mapping for the Zendesk and Dataverse connectors for Contact and Account.
 
-**Contact**
+### Contact
 
 | Zendesk | Dataverse |
 |---------|-----------|
@@ -129,7 +129,7 @@ In Power Automate, select the required flow, and then select **Run**.
 |Calculated Value | msdyn_source_crm_url |
 | Created_at | createddate |
 
-**Account**
+### Account
 
 | Zendesk | Dataverse |
 |---------|-----------|
@@ -139,7 +139,4 @@ In Power Automate, select the required flow, and then select **Run**.
 | Static Value: Zendesk  | msdyn_source_crm |
 |Calculated Value | msdyn_source_crm_url |
 | Created_at | createddate |
-
-
-
 

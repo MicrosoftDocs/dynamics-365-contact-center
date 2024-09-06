@@ -63,8 +63,8 @@ Incremental data sync updates the Zendesk data to Dataverse in real time through
 You must update the credentials in the Power Automate flows to connect the flows to your Zendesk account. For all the incremental automated-triggered flows such as create, delete, and update, perform the following steps: 
 
 1. In Power Automate **Cloud flows** select the ZendeskCreateUserAPICall, ZendeskUpdateUserAPICall, and ZendeskCreateOrgHttp flows and then select **Edit**. Perform the following actions:    
-  - Update the subdomain in the **URI** section with your Zendesk subdomain.
-  - Update the **Method** to **GET**
+   - Update the subdomain in the **URI** section with your Zendesk subdomain.
+   - Update the **Method** to **GET**
 1. Select **Authentication** in **Advanced parameters**, and specify the following:
    - Authentication Type: **Basic**
    - Specify your Zendesk credentials in the **Username** and **Password** fields.
@@ -88,7 +88,7 @@ To create webhooks, ensure you have the HTTP endpoint for the Power Automate flo
 1. Sign in to your Zendesk instance and then select Admin center. 
 1. Select **Apps and Integrations** > **Webhooks**. Perform the steps in [create a webhook](https://support.zendesk.com/hc/en-us/articles/4408839108378-Creating-webhooks-to-interact-with-third-party-systems#:~:text=To%20create%20a%20webhook,event%20types%20from%20the%20dropdown) to create a webhook.
 1. Select **Create webhook**.
-1. For organization events, in the Create webhook page, select the following options in **Organization events**:
+1. For organization events, in the **Create webhook** page, select the following options in **Organization events**:
     -  **Support Organization Created** to create an organization, and then select **Next**.
     - **Support Organization name changed** to update the organization, and then select **Next**. 
     - **Support Organization deleted** to delete the organization, and then select **Next**. 
@@ -110,11 +110,11 @@ In Power Automate, select the required flow, and then select **Run**.
 
 1. If you want to edit the flow or field mappings, select the flow that you want to edit. 
 1. Select **Edit**.
-1. You can use outputs from previous triggers and actions in the Dynamic content selector, or modify them by building an expression. See: [Use expressions in flow actions](https://www.microsoft.com/power-platform/blog/power-automate/use-expressions-in-actions).
+1. You can use outputs from previous triggers and actions in the Dynamic content selector, or modify them by building an expression. Learn more at [use expressions in flow actions](https://www.microsoft.com/power-platform/blog/power-automate/use-expressions-in-actions).
 
 ### Predefined column mapping
 
- The following table describes the predefined column mapping for the Zendesk and Dataverse connectors for Contact and Account.
+ The following tables describe the predefined column mapping for the Zendesk and Dataverse connectors for Contact and Account.
 
 ### Contact
 
@@ -141,3 +141,7 @@ In Power Automate, select the required flow, and then select **Run**.
 |Calculated Value | msdyn_source_crm_url |
 | Created_at | createddate |
 
+### Related information
+
+[Configure a connector for ServiceNow](configure-servicenow-connector.md)   
+[Configure the connector for any CRM solution](configure-customer-connector.md)   

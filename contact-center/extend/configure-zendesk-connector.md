@@ -51,15 +51,16 @@ Download all the Power Automate flows from the [Zendesk](https://github.com/micr
 1. In Power Automate, select **My flows**.
 1. In **Import**, select **Import** and then select **Import Package (legacy)**.  
 1. Select the downloaded flows and then select **Upload**.
-1. In the **Import package** window, for the Microsoft Dataverse resource type, select **Select during import** and then select the Dataverse connection that you created and then select **Save**.
-1. The connection is displayed on the Import page. Select **Import**.
-1. The imported flows are displayed in the **My flows** page. The flows are disabled by default. For the flow you want to enables, select the more items (ellipsis) and then select **Turn on** to enable them.
+1. In the **Import package** window, for the Microsoft Dataverse resource type, select **Select during import** and then select the Dataverse connection that you created.
+1. Select **Save**. The connection is displayed on the Import page. 
+1. Select **Import**. The imported flows are displayed in the **My flows** page. They are disabled by default.
+1. To enable a flow, select more items (ellipsis) and then select **Turn on** to enable them.
 
 ## Configure incremental data sync
 
-Incremental data sync updates the Zendesk data to Dataverse in real-time through automated triggers.
+Incremental data sync updates the Zendesk data to Dataverse in real time through automated triggers.
 
-You must update the credentials in the Power Automate flows to connect them to your Zendesk account. For all the incremental automated-triggered flows such as create, delete, and update, perform the following steps: 
+You must update the credentials in the Power Automate flows to connect the flows to your Zendesk account. For all the incremental automated-triggered flows such as create, delete, and update, perform the following steps: 
 
 1. In Power Automate **Cloud flows** select the ZendeskCreateUserAPICall, ZendeskUpdateUserAPICall, and ZendeskCreateOrgHttp flows and then select **Edit**. Perform the following actions:    
   - Update the subdomain in the **URI** section with your Zendesk subdomain.
@@ -98,7 +99,7 @@ To create webhooks, ensure you have the HTTP endpoint for the Power Automate flo
 1. Specify a name and update the **Endpoint URL** field with the endpoint copied from Power Automate flow.
 1. Select **Test Webhook**, and then select **Send Test**. If you get a 202 Accepted response, the webhook is configured successfully. 
 
-## Run The Power Automate Flow 
+## Run the Power Automate flow 
 
 In Power Automate, select the required flow, and then select **Run**. 
 

@@ -12,12 +12,12 @@ ms.custom: bap-template
 
 # Configure the connector for Zendesk
 
-The Microsoft Contact Center — Power Automate solution for Zendesk connector allows organizations to engage with their customers using capabilities such as voice, video, SMS, live chat, and social messaging from their third-party CRM solutions. You can use Power Automate data connectors to sync the contacts and accounts data from the Zendesk CRM solution into Dataverse.
+The Microsoft Contact Center—Power Automate solution for Zendesk connector allows organizations to engage with their customers using capabilities such as voice, video, SMS, live chat, and social messaging from their non Microsoft CRM solutions. You can use Power Automate data connectors to sync the contacts and accounts data from the Zendesk CRM solution into Dataverse.
 
 ## Prerequisites 
 
 -  A Zendesk `https://<your_subdomain>.zendesk.com` instance
-- License for Dynamic 365 Contact Center, that include the Power Automate and Power Apps subscriptions.
+- License for Dynamic 365 Contact Center that includes the Power Automate and Power Apps subscriptions.
 - Power Platform System administrator permissions
 - Basic understanding of how to use Power Automate flows or Power Apps
 - Ensure that the Power Apps and Power Automate environments are the same.
@@ -57,7 +57,7 @@ Download all the Power Automate flows from the [Zendesk](https://github.com/micr
 
 ## Configure incremental data sync
 
-Incremental data sync updates the Zendesk data to Dataverse in realtime through automated triggers.
+Incremental data sync updates the Zendesk data to Dataverse in real-time through automated triggers.
 
 You must update the credentials in the Power Automate flows to connect them to your Zendesk account. For all the incremental automated-triggered flows such as create, delete, and update, perform the following steps: 
 
@@ -100,7 +100,7 @@ To create webhooks, ensure you have the HTTP endpoint for the Power Automate flo
 
 ## Run The Power Automate Flow 
 
-In Power Automate, select the required flow and then select **Run**. 
+In Power Automate, select the required flow, and then select **Run**. 
 
 > [!NOTE]
 > Automated flows are automatically triggered by create, update, and delete events.

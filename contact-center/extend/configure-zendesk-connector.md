@@ -109,7 +109,7 @@ In Power Automate, select the required flow, and then select **Run**.
 
 1. If you want to edit the flow or field mappings, select the flow that you want to edit. 
 1. Select **Edit**.
-1. You can use outputs from previous triggers and actions in the Dynamic content selector, or modify them by building an expression. See: [Use expressions in flow actions](/power-platform/blog/power-automate/use-expressions-in-actions/).
+1. You can use outputs from previous triggers and actions in the Dynamic content selector, or modify them by building an expression. See: [Use expressions in flow actions](https://www.microsoft.com/power-platform/blog/power-automate/use-expressions-in-actions).
 
 ### Predefined column mapping
 

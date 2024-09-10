@@ -40,7 +40,7 @@ The success of social media customer service, like all other customer services, 
 4. Modify settings for a specific WhatsApp phone number.<br>
 
 
-[!VIDEO https://www.youtube.com/embed/tYS0qcv-8Jc]
+ [!VIDEO https://www.youtube.com/embed/tYS0qcv-8Jc]
 
 
 ## Fetch Azure Communication Services details

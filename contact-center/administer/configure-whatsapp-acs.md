@@ -1,7 +1,7 @@
 ---
 title: Configure a WhatsApp channel through Azure Communication Services (preview)
 description: Use this article to learn how to configure the WhatsApp channel through Azure Communication Services.
-ms.date: 08/30/2024
+ms.date: 09/10/2024
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -23,7 +23,7 @@ The success of social media customer service, like all other customer services, 
 
 ## Prerequisites
 
-- Make sure channels are provisioned in your environment. More information: [Provision Omnichannel for Customer Service](/dynamics365/customer-service/implement/omnichannel-provision-license?context=/dynamics365/contact-center/context/implement-context).
+- Make sure channels are provisioned in your environment. Learn more in [provision channels](../implement/provision-channels.md).
 - Have an Azure account with an active subscription. Make sure that the Azure subscription and Dynamics 365 account are in the same tenant. Learn more at [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account).
    - Create or use an existing Azure Communication Services resource. Learn more at [Create and manage Communication Services resources](/azure/communication-services/quickstarts/create-communication-resource).
     - Obtain a phone number that can send and receive SMS. The following are supported:
@@ -37,11 +37,15 @@ The success of social media customer service, like all other customer services, 
 1. Get Azure Communication Services details to connect.
 2. Create a WhatsApp channel.
 3. Create routing rules.
-4. Modify settings for a specific WhatsApp phone number.
+4. Modify settings for a specific WhatsApp phone number.<br>
+
+
+[!VIDEO https://www.youtube.com/embed/tYS0qcv-8Jc]
+
 
 ## Fetch Azure Communication Services details
 
-Copy the following information from the [Azure portal](https://ms.portal.azure.com/). You'll need these details to configure the WhatsApp channel through Contact Center admin center or Customer Service admin center.
+Copy the following information from the [Azure portal](https://ms.portal.azure.com/). You need these details to configure the WhatsApp channel through Contact Center admin center or Customer Service admin center.
    
    1. Go to **Resource groups** and select the required resource group. 
    1. Select the required **Resource** from the resource group.
@@ -73,15 +77,16 @@ Copy the following information from the [Azure portal](https://ms.portal.azure.c
          - **Name**: Specify a name.
          - **Channel ID**: Specify the **Channel ID** for the WhatsApp channel you created in Azure Communication Services.
      1. On the **Callback information** page, copy the value in the **WhatsApp inbound URL** box to use in the Azure Communication Services event grid.
-     1. Perform the steps the following section to add the WhatsApp endpoint to the Azure Communication Services resource.
+     1. Perform the following steps in Azure portal to add the webhook information and configure filters based on the channel id:
+        1. In the **Events** page, select the event subscription that you created as a part of the [Advanced Messaging for WhatsApp](/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview) setup in Azure Communication Services.
+        1. In the Event Subscription page > **Endpoint** select **Change** for the endpoint and add the **WhatsApp inbound URL** that you copied from the Callback information page in the WhatsApp channel setup.
+        1. Select the webhook URL and then select **Filters**.
+        1. In the **ADVANCED FILTERS** section, specify the following:
+           - **Key**: data.to
+           - **Operator**: String is in
+           - **Value**:  Specify the **Channel ID** for the WhatsApp channel you created in Azure Communication Services.
      1. Select the check box to confirm that the WhatsApp channel is set up correctly and then select **Done**.
-      
-### Add the WhatsApp endpoint to Azure Communication Services resource
-
-   1. In the Azure portal, go to the **Events** page.
-   1. Select the event subscription that you created as a part of the [Advanced Messaging for WhatsApp](/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview) setup in Azure Communication Services.
-   1. In the Event Subscription page > **Endpoint** select **Change** for the endpoint and add the **WhatsApp inbound URL** that you copied from the Callback information page in the WhatsApp channel setup.
-         
+               
 ## Configure a workstream for the WhatsApp channel
 
 To configure routing and work distribution, you can create a [workstream](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context) with the **Channel** set to **WhatsApp** or select an existing one.

@@ -79,7 +79,7 @@ Copy the following information from the [Azure portal](https://ms.portal.azure.c
      1. On the **Callback information** page, copy the value in the **WhatsApp inbound URL** box to use in the Azure Communication Services event grid.
      1. Perform the following steps in Azure portal to add the webhook information and configure filters based on the channel id:
         1. In the **Events** page, select the event subscription that you created as a part of the [Advanced Messaging for WhatsApp](/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview) setup in Azure Communication Services.
-        1. In the Event Subscription page > **Endpoint** select **Change** for the endpoint and add the **WhatsApp inbound URL** that you copied from the Callback information page in the WhatsApp channel setup.
+        1. In the Event Subscription page > **Endpoint** select **Change** for the endpoint and add the **WhatsApp inbound URL** that you copied from the **Callback information** page in the WhatsApp channel setup.
         1. Select the webhook URL and then select **Filters**.
         1. In the **ADVANCED FILTERS** section, specify the following:
            - **Key**: data.to

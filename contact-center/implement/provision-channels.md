@@ -1,6 +1,6 @@
 ---
 title: Provision channels in Dynamics 365 Contact Center
-description: Perform the steps in this article to provision and add channels so that you can you start using the product.
+description: Perform the steps in this article to provision and add channels so that you can start using the product.
 ms.date: 09/03/2024
 ms.topic: how-to
 author: neeranelli

@@ -12,7 +12,7 @@ ms.custom: bap-template
 # Use agent dashboard and call controls in the voice channel
 
 
-[!INCLUDE[cc-feature-availability-embedded-yes](../../includes/cc-feature-availability-embedded-yes.md)]
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
 The voice channel is integrated directly with Dynamics 365 by way of the agent dashboard. The dashboard offers you a consolidated view of the calling interface, the customer summary, case history, and timeline. The dashboard helps you provide quick, effective, and proactive solutions to customer issues. The agent experience in the voice channel is similar to the chat and other channels, which reduces agent training time and costs.
 
@@ -38,7 +38,7 @@ To avoid the recording and transcription of what you say while the customer is o
   > -  When you initiate a consult, you are the primary agent and the new participant has a consult role. Select **Transfer** next to the participant to transfer the call to the consulting agent or supervisor. Once the call is transferred, you're the consulting agent and can leave the call without ending the call. The consulting agent becomes the primary agent. If the primary agent leaves the call, the call ends for the customer.
   > - Consulting on a call doesn't affect the collaborating agent's capacity.
 - **Transfer**: Select this option is to transfer the call to an agent, queue, a Teams user, or an external phone number. After you transfer the call, the agent to whom the call is transferred is the primary agent and you'll no longer be on the call.
-    During a transfer to the queue, the customer is automatically put on hold. When you transfer a call to another agent, your number is displayed on the caller ID. The transcription and recording of transferred calls continue if the administrator enabled the [option](../administer/voice-channel-configure-transcripts.md#enable-call-recording-and-transcription-for-voice). You can disable recording from the dashboard. See: [Transfer and consult scenarios](/dynamics365/customer-service/use/voice-channel-transfer-consult?context=/dynamics365/contact-center/context/use-context)
+    During a transfer to the queue, the customer is automatically put on hold. When you transfer a call to another agent, your number is displayed on the caller ID. The transcription and recording of transferred calls continue if the administrator enabled the [option](/dynamics365/customer-service/voice-channel-configure-transcripts#enable-call-recording-and-transcription-for-voice?context=/dynamics365/contact-center/context/administer-context). You can disable recording from the dashboard. See: [Transfer and consult scenarios](/dynamics365/customer-service/use/voice-channel-transfer-consult?context=/dynamics365/contact-center/context/use-context)
 - **Rejoin**: Select this option to rejoin the call. If you're disconnected from the call, you can rejoin the call from the Active Conversation form directly, instead of refreshing the page and then rejoining the call. Only primary agents see the **Rejoin** option. If the customer ends the call or the call is rerouted to the next available agent while you are disconnected, you'll hear a message that the customer ended the call or was rerouted on selecting **Rejoin**.
 - **End**: End the call.
 - **Dialpad**: Select this option to dial an extension number. If you must use the dial pad to send a response while navigating an IVR, select the dial pad icon next to the external participant in the participant list.

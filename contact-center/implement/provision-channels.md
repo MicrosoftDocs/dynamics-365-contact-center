@@ -12,6 +12,9 @@ ms.collection:
 
 # Provision channels in Dynamics 365 Contact Center
 
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
+
+
 Dynamics 365 Contact Center provides a modern, customizable, high-productivity experience that lets agents help customers across different channels via a unified interface. It lets organizations choose the channel that suits their business needs. It also ensures that a high level of responsive, quality service is received across channels.
 
 To find out if Dynamics 365 Contact Center is available in your region, see [International availability](international-availability.md).

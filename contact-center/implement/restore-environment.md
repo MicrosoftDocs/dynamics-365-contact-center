@@ -13,6 +13,9 @@ ms.custom: bap-template
 
 # Reset, restore, recover omnichannel environments
 
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
+
+
 In your omnichannel environments, you can manage various events and operations that are essential to maintain and oversee your organization's environments within specific platforms or systems.
 
 You can reset, restore, or recover your omnichannel environments.

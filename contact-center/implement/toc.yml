@@ -68,6 +68,8 @@
           href: /dynamics365/customer-service/implement/add-users-assign-roles?context=/dynamics365/contact-center/context/implement-context
         - name: Personas and privileges
           href: /dynamics365/customer-service/implement/persona-privilege-mapping?context=/dynamics365/contact-center/context/implement-context
+      - name: Copilot in Dynamics 365 Contact Center architecture
+        href: /guidance/reference-architectures/dynamics-365-customer-service-copilot-architecture?context=/dynamics365/contact-center/context/implement-context
       - name: Responsible AI
         items:
         - name: Overview

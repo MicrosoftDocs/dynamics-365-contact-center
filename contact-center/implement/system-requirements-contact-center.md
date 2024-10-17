@@ -54,7 +54,7 @@ The following table shows the system requirements for using Dynamics 365 Contact
 | Web browsers | <p>Supported browsers:</p><ul><li>Microsoft&nbsp;Edge ([Chromium based](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)) version 79.0.309.65 or later is required for the desktop notifications feature.</li><li>Google Chrome.</li></ul><p><strong>Important:</strong> Dynamics 365 Contact Center uses third-party cookies for authentication. To ensure that services such as agent or supervisor presence can work correctly, make sure that the cookies aren't blocked in your browser in any mode.</p> |
 | Azure Communication Services | Azure Communication Services is required for first-party voice and text (SMS) in the voice channel in production environments. Learn about requirements that are specific to Azure Communication Services in [Network recommendations](/azure/communication-services/concepts/voice-video-calling/network-requirements). |
 | Hardware | <ul><li>A microphone and speakers are required for the voice experience.</li><li>**Minimum:** 4 gigabytes (GB) of RAM.</li><ul> |
-| Internet bandwidth for voice and video | <ul><li>**Minimum:** 4 megabits per second (Mbps) upload speed, 8 Mbps download speed.</li><li>**Recommended:** 8 Mbps upload speed, 16 Mbps download speed.</li></ul> |
+| Internet bandwidth for voice and video | <ul><li>**Minimum:** 4-megabits per second (Mbps) upload speed, 8-Mbps download speed.</li><li>**Recommended:** 8-Mbps upload speed, 16-Mbps download speed.</li></ul> |
 | Embedded experience | System requirements for the preferred CRM solution must be met. |
 
 Learn about other hardware and software requirements in [Model-driven app requirements](/power-platform/admin/web-application-requirements).
@@ -76,7 +76,7 @@ Learn how to enable the omnichannel capabilities in your organization in [Provis
 
 ## Allow access to websites
 
-If your organization uses a URL filter to block a category of websites or URLs, make sure that you allow the following websites as an exception for your users, so that they can access the Contact Center workspace app in the business portal:
+If your organization uses a URL filter to block a category of websites or URLs, make sure that you allow the following websites as an exception for your users. In this way, you ensure that those users can access the Contact Center workspace app in the business portal.
 
 - `https://ccaas-embed-prod.azureedge.net`
 - `https://*.communication.azure.com`

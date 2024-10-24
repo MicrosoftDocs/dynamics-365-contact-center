@@ -36,9 +36,7 @@ The omnichannel add-in uses data connectors to work with non-Microsoft CRM solut
 
 1. In Contact Center admin center, in the site map, under **Agent experience**, go to **Workspaces**. Then, for **Data synchronization from external CRMs**, select **Manage**. Alternatively, on the home page, under **CRM connection wizard**, select **Open**.
 1. On the **Data synchronization from external CRMs** page, select **New**.
-1. On the **Create a CRM connector** page, select **Salesforce**, and then select **Next**.
-
-    If you're connecting to Salesforce for the first time, the **Connection Setup** dialog box that appears includes a **Sign in** button. Otherwise, it includes an ellipsis (**&hellip;**) button.
+1. On the **Create a CRM connector** page, select **Salesforce**, and then select **Next**. If you're connecting to Salesforce for the first time, the **Connection Setup** dialog displays a **Sign in** button. Otherwise, the dialog displays an ellipsis (**&hellip;**) button that you can use to sign in.
 
     > [!NOTE]
     > The system redirects you to Power Apps to connect to your Salesforce instance. Dynamics 365 uses the connection to sync data.
@@ -59,11 +57,7 @@ The omnichannel add-in uses data connectors to work with non-Microsoft CRM solut
 1. Select **Next**.
 1. On the **Choose tables to sync** page, select the `Contacts` and `Accounts` tables that you want to sync. To maintain the relationship about the linked data between the records, we recommend that you select both tables.
 1. Select **Next**.
-1. In the **Column mapping** section, follow these steps:
-
-    1. Map the source and destination columns. You can also update the predefined mappings according to your business needs. The source column shows only fields that have a [compatible data type](#data-types-supported-in-dataverse).
-    1. Repeat the steps for the selected tables.
-
+1. For each table that you selected, in the **Column mapping** section, map the source and destination columns. You can also update the predefined mappings according to your business needs. The source column shows only fields that have a [compatible data type](#data-types-supported-in-dataverse).
 1. Select **Next**.
 1. On the **Teams permissions** page, select the Teams permission. The Team ID is used to write data to Dataverse. Therefore, it must have read and write permissions on the selected tables. Otherwise, data synchronization fails. Learn more in [Teams in Dataverse](/power-platform/admin/manage-teams).
 1. On the next page, review the mappings for each table that you selected. You can go back and change settings as you require.

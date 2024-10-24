@@ -1,16 +1,14 @@
 ---
 title: Set up embedded experience for Dynamics 365 Contact Center
 description: Learn how to set up the embedded experience for Dynamics 365 Contact Center.
-author: shwetamurkute
-ms.author: smurkute
-ms.reviewer: smurkute
+author: neeranelli
+ms.author: nenellim
+ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection:
-ms.date: 07/01/2024
+ms.date: 10/24/2024
 ms.custom: bap-template
 ---
-
-<!-- note from editor: In line 64, I changed "select the required sign in URI" to "select the required sign-in URI". Please verify this change is correct. -->
 
 # Set up embedded experience for Dynamics 365 Contact Center
 

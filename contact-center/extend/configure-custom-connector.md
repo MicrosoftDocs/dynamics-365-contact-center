@@ -18,10 +18,10 @@ The Microsoft Contact Center&mdash;Power Automate solution for any CRM connector
 
 -  A CRM instance
 - License for Dynamics 365 Contact Center that includes the Power Automate and Power Apps subscriptions.
-- Power Platform System administrator permissions
-- Basic understanding of how to use Power Automate flows or Power Apps
+- Power Platform System administrator permissions.
+- Basic understanding of how to use Power Automate flows or Power Apps.
 - Ensure that the Power Apps and Power Automate environments are the same.
-- The Dynamics 365 CCaaS CRM Connector, **msdyn_ContactCenterCRMConnector**, is available in the Power Apps environment and the Account and Contact [tables](/power-apps/maker/data-platform/entity-overview) have the following columns:
+- The **msdyn_ContactCenterCRMConnector** connector is available in the Power Apps environment and the Account and Contact [tables](/power-apps/maker/data-platform/entity-overview) have the following columns:
     - Source CRM
     - Source CRM ID
     - Source CRM URL

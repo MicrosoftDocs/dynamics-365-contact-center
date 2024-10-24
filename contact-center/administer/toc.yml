@@ -182,6 +182,8 @@
           href: /dynamics365/customer-service/administer/voice-channel-outbound-calling?context=/dynamics365/contact-center/context/administer-context
         - name: Enable agents to search for contacts and open records from outbound dialer (preview)
           href: /dynamics365/customer-service/administer/add-outbound-dialer-settings?context=/dynamics365/contact-center/context/administer-context  
+        - name: Use Azure Virtual Desktop to access voice channel
+          href: configure-voice-avd.md
         - name: Support emergency calls made by agents
           href: /dynamics365/customer-service/administer/voice-channel-emergency-calling?context=/dynamics365/contact-center/context/administer-context
         - name: Forward your Teams calls to digital contact center
@@ -292,8 +294,10 @@
             href: /dynamics365/customer-service/administer/configure-facebook-channel?context=/dynamics365/contact-center/context/administer-context
           - name: Configure a LINE channel
             href: /dynamics365/customer-service/administer/configure-line-channel?context=/dynamics365/contact-center/context/administer-context
-          - name: Configure a WhatsApp channel
+          - name: Configure a WhatsApp channel in Twilio
             href: /dynamics365/customer-service/administer/configure-whatsapp-channel?context=/dynamics365/contact-center/context/administer-context
+          - name: Configure a WhatsApp channel through Azure Communication Services (preview)
+            href: configure-whatsapp-acs.md    
           - name: Configure a WeChat channel
             href: /dynamics365/customer-service/administer/configure-wechat-channel?context=/dynamics365/contact-center/context/administer-context
           - name: Social channel setup FAQs
@@ -304,6 +308,8 @@
           href: /dynamics365/customer-service/administer/configure-microsoft-teams?context=/dynamics365/contact-center/context/administer-context
         - name: Configure a custom messaging channel
           href: /dynamics365/customer-service/administer/configure-custom-channel?context=/dynamics365/contact-center/context/administer-context
+        - name: Support for live chat and asynchronous channels
+          href: /dynamics365/customer-service/administer/card-support-in-channels?context=/dynamics365/contact-center/context/administer-context
         - name: Enable file attachments
           href: /dynamics365/customer-service/administer/enable-file-attachments?context=/dynamics365/contact-center/context/administer-context
         - name: Delete a channel instance
@@ -358,6 +364,8 @@
           href: /dynamics365/customer-service/administer/enable-real-time-translation?context=/dynamics365/contact-center/context/administer-context
         - name: Configure automated messages
           href: /dynamics365/customer-service/administer/configure-automated-message?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure message templates
+          href: /dynamics365/customer-service/administer/create-message-templates?context=/dynamics365/contact-center/context/administer-context
         - name: Configure outbound messages
           href: /dynamics365/customer-service/administer/outbound-messaging?context=/dynamics365/contact-center/context/administer-context
         - name: Configure data masking
@@ -468,6 +476,12 @@
             href: /dynamics365/customer-service/administer/configure-agent-forecasting-conversation?context=/dynamics365/contact-center/context/administer-context
         - name: Configure real-time customer sentiment
           href: /dynamics365/customer-service/administer/enable-sentiment-analysis?context=/dynamics365/contact-center/context/administer-context
+      - name: App configuration
+        items:
+        - name: Migrate configurations for channels using solutions
+          href: /dynamics365/customer-service/administer/migrate-configurations?context=/dynamics365/contact-center/context/administer-context
+        - name: Best practices for configuration lifecycle management
+          href: alm-best-practices.md
       - name: Responsible AI
         items:
         - name: Overview

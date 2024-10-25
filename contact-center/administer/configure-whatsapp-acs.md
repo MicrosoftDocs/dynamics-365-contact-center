@@ -39,10 +39,6 @@ The success of social media customer service, like all other customer services, 
 3. Create routing rules.
 4. Modify settings for a specific WhatsApp phone number.<br>
 
-
-> [!VIDEO https://www.youtube.com/embed/tYS0qcv-8Jc]
-
-
 ## Fetch Azure Communication Services details
 
 Copy the following information from the [Azure portal](https://ms.portal.azure.com/). You need these details to configure the WhatsApp channel through Contact Center admin center or Customer Service admin center.

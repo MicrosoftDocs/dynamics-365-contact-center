@@ -54,7 +54,9 @@ To avoid the recording and transcription of what you say while the customer is o
   > The **Link to conversation** button is disabled after you end the voice call. Open account or contact on a new tab and select **Link to conversation** to link record (customer or case) to conversation.
 
 - **Transcription**: When your administrator enables the transcription and recording service, the conversation between you and the customer is automatically transcribed in real time. This means that you don't need to take notes during the call. This feature also helps your supervisor or agent (in a call transfer) to see the call history.
-   - **Hide Transcript**: You can hide the transcript if you don't want to see it during the call. Select **Show Transcript** to display the transcript again.
+   - **Hide Transcript**: You can hide the transcript if you don't want to see it during the call. Select **Show Transcript** to display the transcript again. 
+     > [!NOTE]
+     > When you select **Hide Transcript** or **Show Transcript**, the setting persists across all calls and sessions. For example, if you hide the transcript in one call, it remains hidden in all subsequent calls until you select **Show Transcript**.
 - **Sentiment analysis**: The transcript is used for *live* sentiment analysis. This means that you or your supervisor can instantly view and gauge the customer's mood and feeling via the sentiment icons.
 
 ## Report a phone number as spam

@@ -21,12 +21,12 @@ Administrators and IT professionals can use this information to prepare for futu
 
 ## Deprecation of local hosting support for the voice channel
 
-The deprecation schedule of the local hosting capabilities for the voice channel is as follows: 
+The deprecation schedule of the local hosting capabilities for the legacy voice channel is as follows: 
 
 - **Switzerland**: Effective October 31, 2024
 - **India and Japan**: Effective September 09, 2024 
 
-For existing voice installations, the deprecation is the first step toward transitioning to the enhanced voice experience. To continue using the voice channel, you should explore the global cloud deployment option in the nearest geographic location, subject to your country or region laws for using the voice channel in Dynamics 365 Contact Center. Learn more in [Supported cloud locations for voice channel](/dynamics365/customer-service/administer/voice-channel-region-availability).
+For the existing legacy voice installations, the deprecation is the first step toward transitioning to the enhanced voice experience. To continue using the voice channel, you should explore the global cloud deployment option in the nearest geographic location, subject to your country or region laws for using the voice channel in Dynamics 365 Contact Center. Learn more in [Supported cloud locations for voice channel](/dynamics365/customer-service/administer/voice-channel-region-availability).
 
 ### Related information
 

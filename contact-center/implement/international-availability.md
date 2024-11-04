@@ -26,16 +26,16 @@ See the following table for the availability of the channels in the supported ge
 | Australia | Yes | Yes |
 | Canada | Yes | Yes |
 | Europe |	Yes | Yes |
-| France | Yes | No |
-| Germany |	Yes | No|
-| Government Community Cloud High (GCC High) | No | No |
-| Government Community Cloud Moderate (GCC Moderate) | No | No |
-| India | Yes | No |
-| Japan |	Yes | No |
+| France | Yes | Yes |
+| Germany |	Yes | Yes |
+| Government Community Cloud High (GCC High) | No | Yes |
+| Government Community Cloud Moderate (GCC Moderate) | No | Yes |
+| India | Yes | Yes |
+| Japan | Yes | Yes |
 | North America | Yes | Yes |
-| South America | Yes | No |
-| Switzerland |	Yes | No |
-| United Arab Emirates (UAE) | Yes | No |
+| South America | Yes | Yes |
+| Switzerland |	Yes | Yes |
+| United Arab Emirates (UAE) | Yes | Yes |
 | United Kingdom | Yes | Yes |
 
 ## Language availability

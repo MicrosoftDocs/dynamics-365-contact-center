@@ -22,10 +22,10 @@ The following table shows which channels are available in the supported geograph
 
 | Region | Digital | Voice |
 |---|---|---|
-| Asia Pacific|	Yes | Yes |
+| Asia Pacific | Yes | Yes |
 | Australia | Yes | Yes |
 | Canada | Yes | Yes |
-| Europe |	Yes | Yes |
+| Europe | Yes | Yes |
 | France | Yes | Yes |
 | Germany |	Yes | Yes |
 | Government Community Cloud High (GCC High) | No | Yes |

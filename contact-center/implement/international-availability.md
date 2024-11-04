@@ -1,6 +1,6 @@
 ---
 title: International availability of Dynamics 365 Contact Center
-description: Discover which geographic locations and languages are supported by Dynamics 365 Contact Center.
+description: Learn which geographic locations and languages Dynamics 365 Contact Center supports.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
@@ -12,16 +12,16 @@ ms.custom: bap-template
 
 # International availability of Dynamics 365 Contact Center
 
-This document provides information about the geographic location and language availability of live chat, digital messaging, and voice channels in Dynamics 365 Contact Center.
+This article provides information about the geographic location and language availability of live chat, digital messaging, and voice channels in Dynamics 365 Contact Center.
 
 ## Geographic location availability
 
-Your Microsoft 365 tenant must be co-located in one of the following geographic locations where Dynamics 365 Contact Center is available. These geographic locations refer to your Microsoft 365 tenant only and not the data center where your Power Platform environment or org instance resides.
+Your Microsoft 365 tenant must be co-located in one of the following geographic locations where Dynamics 365 Contact Center is available. These geographic locations refer only to your Microsoft 365 tenant, not to the data center where your Microsoft Power Platform environment or organization instance resides.
 
-See the following table for the availability of the channels in the supported geographical regions.
+The following table shows which channels are available in the supported geographical regions.
 
-| Region| Digital | Voice |
-|-------|---------|-------|
+| Region | Digital | Voice |
+|---|---|---|
 | Asia Pacific|	Yes | Yes |
 | Australia | Yes | Yes |
 | Canada | Yes | Yes |
@@ -40,10 +40,10 @@ See the following table for the availability of the channels in the supported ge
 
 ## Language availability
 
-See the following table for the languages supported by the different features in Dynamics 365 Contact Center.
+The following table shows which languages the different features in Dynamics 365 Contact Center support.
 
 | Language | Language code | Digital | Voice |
-| --- | --- | --- | --- | 
+|---|---|---|---|
 | Arabic - Saudi Arabia | ar-SA | Yes | No |
 | Bulgarian | bg-BGC | Yes | Yes |
 | Catalan - Spain | ca-ES | Yes | Yes |
@@ -90,13 +90,12 @@ See the following table for the languages supported by the different features in
 | Spanish - United States | es-US | Yes | Yes|
 | Swedish - Sweden | sv-SE | Yes | Yes |
 | Thai - Thailand | th-TH | Yes | Yes |
-| Turkish - Turkey | tr-TR | Yes | Yes |
+| Turkish - Türkiye | tr-TR | Yes | Yes |
 | Ukrainian - Ukraine | uk-UA | Yes | No |
 | Vietnamese - Vietnam | vi-VN | Yes | Yes |
 
-### Related information
+## Related information
 
 [Languages supported in voice-enabled copilots](/microsoft-copilot-studio/voice-supported-languages)  
 [Languages supported in Copilot features](/dynamics365/customer-service/administer/cs-region-availability-service-limits#language-support-for-ai-based-analytics-and-insights-in-customer-service)  
 [System requirements for Dynamics 365 Contact Center](system-requirements-contact-center.md)  
-

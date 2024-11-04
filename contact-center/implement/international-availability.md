@@ -26,15 +26,15 @@ The following table shows which channels are available in the supported geograph
 | Australia | Yes | Yes |
 | Canada | Yes | Yes |
 | Europe | Yes | Yes |
-| France | Yes | Yes |
-| Germany |	Yes | Yes |
-| Government Community Cloud High (GCC High) | No | Yes |
-| Government Community Cloud Moderate (GCC Moderate) | No | Yes |
-| India | Yes | Yes |
-| Japan | Yes | Yes |
+| France | Yes | No |
+| Germany |	Yes | No |
+| Government Community Cloud High (GCC High) | No | No |
+| Government Community Cloud Moderate (GCC Moderate) | No | No |
+| India | Yes | No |
+| Japan | Yes | No |
 | North America | Yes | Yes |
-| South America | Yes | Yes |
-| Switzerland |	Yes | Yes |
+| South America | Yes | No |
+| Switzerland |	Yes | No |
 | United Arab Emirates (UAE) | Yes | Yes |
 | United Kingdom | Yes | Yes |
 

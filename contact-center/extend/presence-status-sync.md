@@ -780,7 +780,7 @@ The following sections provide examples of the JSON payload for the presence mod
 }
 
 ```
-
+---
 
 ## Use APIs to get or modify presence status
 

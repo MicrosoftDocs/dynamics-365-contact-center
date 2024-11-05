@@ -101,9 +101,9 @@
         - name: Synchronize agent presence status across multiple syst
           href: presence-status-sync.md  
         - name: CCaaS_GetPresence 
-          href: api/ccaas-getpresence.md
+          href: /api/ccaas-getpresence.md
         - name: CCaaS_ModifyAgentPresence
-          href: api/ccaas-modifyagentpresence.md
+          href: /api/ccaas-modifyagentpresence.md
       - name: Extend Omnichannel for Customer Service
         href: /dynamics365/customer-service/develop/extend-omnichannel?context=/dynamics365/contact-center/context/extend-context
       - name: Overview of entity reference

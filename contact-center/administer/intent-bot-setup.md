@@ -10,30 +10,41 @@ ms.date: 11/05/2024
 ms.custom: bap-template
 ---
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
 
-<!--This template provides the basic structure of a how-to article. See [Write a how-to topic](write-a how-to.md) in the contributor guide. To provide feedback on this template contact [bace feedback](mailto:templateswg@microsoft.com).-->
-
-<!--H1. Required. Pick an H1 that clearly conveys the task the user will complete.-->
 # Heading
 
-<!--Introductory paragraph. Required. Lead with a light intro that describes, in customer-friendly language, what the customer will learn, or do, or accomplish. Answer the fundamental "why would I want to do this?" question. Keep it short.-->
-<!--add your intro paragraph here-->
+With the help of customer intent agents, bot owners no longer need to create a bunch of manual bot topics that could be deprecated. It alos takes away the complexity of creating and authoring bots to work for intent. Customer intent agent discovers historical data and maintains an up-to-date intent library, along with the attributes to support intent determination, interview, and fulfillment, leading to much higher deflection.
 
-<!--Prerequisites. Optional. If you need prerequisites, make them your first H2 in a how-to guide. Use clear language and use a list format.-->
+This takes away the complexity of creating and authoring bots to work for intent.
+
+
 ## Prerequisites
 
-<!--add your content here-->
 
-<!--H2s. Required. A how-to article explains how to do a task. The bulk of each H2 should be a procedure.-->
-## Section heading
 
-<!--Intro paragraph-->
-<!--Step 1-->
-<!--Step 2-->
-<!--Step n-->
+## Benefits of 
 
-<!--Next steps. Optional. Provide no more than three next steps. Include some context so the customer can determine why they would click the link.-->
+
+Provide the ability to use the determined intent and interview responses to improve the quality of generated answers for both bots and agents.
+
+## Set up
+
+1.	In CSAC, go to 	Customer Support > Intent. The Customer Intent Agent (preview) page appears.
+2.	On the Customer Intent Agent (preview) page, switch the Turn on Customer Intent Agent toggle to On.
+3.	In the Intent discovery section, enable the following:
+1.	Manage intent discovery setup. Learn more in (Neeraja’s admin doc)
+2.	Manage intent groups and intents. Learn more in (Neeraja’s admin doc)	
+4.	In the Intent-based suggestions section, select Enable for chatbots. The Bots page appears.
+5.	Select the customer service bot connected to your omnichannel environment for agent transfers.
+6.	Select Add intent-based features. This takes you to Copilot Studio.
+7.	Select Customer Service Copilot Bot in Copilot, and then select Component collections in Settings.
+8.	In Manage component collections, Follow-up suggestions” appears by default in the list to be added to the Copilot.
+9.	Select Add to copilot. 
+
+## Disconnect a bot to stop agent transfers from that bot (Need info)
+
+You can also disconnect a bot to stop agent transfers for that bot.
+
 ## Next steps
 
 <!--Remove all the comments in this template before you sign-off or merge to the main branch.-->

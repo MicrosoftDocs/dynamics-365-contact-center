@@ -1,49 +1,57 @@
 ---
 title: Synchronize presence API status 
 description: How-to synchronize agent's API status
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
+author: gandhamm
+ms.author: mgandham
+ms.reviewer: mgansham
 ms.topic: how-to #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+ms.collection: 
 ms.date: 11/04/2024
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template 
 ---
 
-# Synchronize presence API status 
+# Synchronize agent presence status across multiple systems
 
- Presence APIs in Dynamics 365 Contact Center provide methods to access and update agent availability information across multiple systems. You can synchronize agents' presence status to avoid overbooking and ensure synchronization across platforms.
+ Presence APIs provide methods to access and update agent availability information across multiple systems. You can synchronize agents' presence status to avoid overbooking and ensure synchronization across platforms.
 
 ## Prerequisites
+
+Before you start, make sure you have the following:
+
 - A license for Dynamics 365 Contact Center.
-- Agents should have Omnichannel agent or Omnichannel Supervisor role for the presence to load or for the agent to modify the presence status.
-- When you are integrating with a third party application such as Teams, the application must be allowlisted in Dataverse to access APIs and entities.
-- If the APIs are used to synchronize presence between two systems:
-  - Make sure that a middleware system is implemented to pass messages between Dynamics 365 Contact Center and the other system.
-  - An agent dictionary must be built in the middleware.
+- Omnichannel agent or Omnichannel Supervisor role for the agents whose presence status you want to sync.
+- A third-party application that you want to integrate with, such as Teams. The application must be allowlisted in Dataverse to access APIs and entities.
+- A middleware system that can pass messages between Dynamics 365 Contact Center, Dynamics 365 Customer Service and the other application.
+- An agent dictionary in the middleware that maps the agents' IDs in both systems.
 
+## Set up a webhook for agent presence changes
 
-## Retrieve agent presence change event or addition of new agent
-
-A webhook allows an external service to start a particular runbook in Azure Automation through a single HTTP request. To retrieve the agent presence change event or addition of a new agent from Dynamics 365, you can set up a webhook for the msdyn_agentstatus entity, which the system updates with the agent's status updates.
-
-Perform the steps in the following sections to set up a webhook on the table:
-
-### Create and update a webhook
+A webhook allows an external service to start a particular runbook in Azure Automation through a single HTTP request. To get notified of agent presence changes or new agents, you can set up a webhook for the **msdyn_agentstatus** entity, which stores the agent's status updates.
 
 1. [Create and register a webhook](/power-apps/developer/data-platform/register-web-hook) using the plug-in registration tool.
-1. Perform the steps in [Register a step for the WebHook](/power-apps/developer/data-platform/register-web-hook#register-a-step-for-a-webhook) to register the publish the updates to presence status updates and new agent notifications with the following parameters: 
-      - Primary Entity: msdyn_agentstatus
-      - Execution Mode: Synchronous
-      - Deployment: Server
+1. [Register a step for the WebHook](/power-apps/developer/data-platform/register-web-hook#register-a-step-for-a-webhook) for updating an agent's presence status or adding a new agent with the following parameters: 
+      - **Primary Entity**: msdyn_agentstatus
+      - **Execution Mode**: Synchronous
+      - **Deployment**: Server
    > [!NOTE]
-   > If you want to capture presence changes only, we recommend that you need to set Filtering attributes to current presence.
+   > If you want to capture only presence changes, we recommend that you set **Filtering attributes** to current presence to improve performance.
+
 
 ## Use the webhook
 
-When the agent's presence status changes or a new agent is created, the webhook notifies third party systems about the update to the presence that you can use to synchronously update the agent's presence in their system. You can get the msdyn_agentid for which the presence changed to msdyn_currentpresenceid.
+When the agent's presence status changes or a new agent is added in the application, the webhook sends a notification to the external service with the updated information. You can use this information to sync the agent's presence status in the other system. From the webhook response, you can get the **msdyn_agentid** for which the presence changed to **msdyn_currentpresenceid**.
 
-The following sections provide examples of the JSON payload for the presence modified and add new agent events.
+By default, the out-of-the-box presence statuses mapped to the following presence id.
+
+| Presence Status | Presence Id                          |
+|-----------------|--------------------------------------|
+| Available       | f523f628-c07a-e811-8162-000d3aa11f50 |
+| Busy            | efdeb843-c07a-e811-8162-000d3aa11f50 |
+| Busy DND        | 08971864-c07a-e811-8162-000d3aa11f50 |
+| Offline         | 70139190-c07a-e811-8162-000d3aa11f50 |
+| Away            | 3dacae76-c07a-e811-8162-000d3aa11f50 |
+
+The following sections provide examples of the JSON payload for the presence modified and add new agent events. 
 
 ###  [Presence modified](#tab/presencemodified)
 
@@ -769,7 +777,6 @@ The following sections provide examples of the JSON payload for the presence mod
 }
 
 ```
-
 
 ## Use APIs to get or modify presence status
 

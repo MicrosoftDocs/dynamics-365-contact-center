@@ -48,16 +48,16 @@ If successful, this method returns a 200 OK response code and a presence object 
 
 | Key                        | Type          | Description                                                                 |
 |----------------------------|---------------|-----------------------------------------------------------------------------|
-| ActiveBrowserSessions      | Integer       | Provides the number of browsers/tabs the agent is currently logged into.    |
-| AgentId                    | GUID          | The ID of the caller user in the systemusers entity.                        |
-| AgentName                  | String        | The name of the caller user in the systemusers entity.                      |
-| Timestamp                  | Integer       | Login time in seconds from epoch.                                           |
-| AllowedChannels            | String array  | List of channels allowed for the caller user.                               |
-| CurrentPresenceStatusInfo  | String        | Current presence name description for the caller user.                      |
-| DisabledChannels           | String array  | List of channels disabled for the caller user.                              |
-| PresenceId                 | GUID          | Represents presence returned; more details can be fetched from DV via OData calls to the Presence Entity. |
+| ActiveBrowserSessions      | Integer       | The number of browsers or tabs that the agent is logged into.      |
+| AgentId                    | GUID          | The ID of the agent in the systemusers entity.                           |
+| AgentName                  | String        |  The name of the agent in the systemusers entity.                        |
+| Timestamp                  | Integer       |  The login time in seconds from epoch.                                           |
+| AllowedChannels            | String array  |  The channels that the agent can use.                              |
+| CurrentPresenceStatusInfo  | String        | The name of the current presence status for the agent.                   |
+| DisabledChannels           | String array  | The channels that the agent cannot use.                               |
+| PresenceId                 | GUID          | The ID of the presence status for the agent. You can use this ID to query more details from the Presence entity by using OData calls. |
 
-## Example cURL Request
+## Sample cURL Request
 
 ```bash
 curl -X GET \

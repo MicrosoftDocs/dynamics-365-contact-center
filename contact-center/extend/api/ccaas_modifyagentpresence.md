@@ -49,16 +49,18 @@ If successful, this method returns a 200 OK response code. The method returns th
 
 None
 
-## Example cURL Request
+## Sample cURL Request
 
 ```bash
-curl --location 'https://presencesqlorg.crmtest.Dynamics.com/api/data/v9.2/CCaaS_ModifyAgentPresence' \
---header 'MSCRMCallerID: cc05cf62-6242-ee11-be6e-6045bdd7ac2c' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer Token' \
---header 'Cookie: ReqClientId=b7f90cc4-78dc-4a4a-8d08-352d5e5e46f6; orgId=f676e8ea-5e42-ee11-94d0-000d3a8cbde5' \
---data '{
-  "ApiVersion": "1.0",
-  "AgentId": "e8d18063-6242-ee11-be6e-6045bdee3caa",
-  "PresenceId": "70139190-c07a-e811-8162-000d3aa11f50"
+curl --location 
+ 'https://presencesqlorg.crmtest.Dynamics.com/api/data/v9.2/CCaaS_ModifyAgentPresence' \
+ --header 'MSCRMCallerID: cc05cf62-6242-ee11-be6e-6045bdd7ac2c' \
+ --header 'Content-Type: application/json' \
+ --header 'Authorization: Bearer Token' \
+ --header 'Cookie: ReqClientId=b7f90cc4-78dc-4a4a-8d08-352d5e5e46f6; orgId=f676e8ea-5e42-ee11-94d0-000d3a8cbde5' \
+ --data '{
+   "ApiVersion": "1.0",
+   "AgentId": "e8d18063-6242-ee11-be6e-6045bdee3caa",
+   "PresenceId": "70139190-c07a-e811-8162-000d3aa11f50"
 }'
+```

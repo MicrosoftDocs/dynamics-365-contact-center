@@ -1,6 +1,6 @@
 ---
-title: Synchronize presence API status 
-description: How-to synchronize agent's API status
+title: Synchronize agent presence status across multiple systems
+description: How-to synchronize agent presence status across multiple systems.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgansham

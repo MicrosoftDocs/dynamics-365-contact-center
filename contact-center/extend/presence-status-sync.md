@@ -53,10 +53,10 @@ By default, the out-of-the-box presence statuses mapped to the following presenc
 
 The following sections provide examples of the JSON payload for the presence modified and add new agent events. 
 
-###  [Presence modified](#tab/presencemodified)
+ ### [Presence modified](#tab/presencemodified)
 
-```json
-{
+ ```json
+ {
    "BusinessUnitId":"a3c20b02-4e38-ef11-a315-000d3a5a54dc",
    "CorrelationId":"e1bcd028-ae87-4ca6-af27-a17ee680dbc9",
    "Depth":1,
@@ -365,12 +365,14 @@ The following sections provide examples of the JSON payload for the presence mod
    "UserAzureActiveDirectoryObjectId":"00000000-0000-0000-0000-000000000000",
    "UserId":"d89254ff-9438-ef11-a315-000d3a5a54dc"
 }
-```
-### [Add new agent](#tab/addnewagent)
 
-```json
-{
-"BusinessUnitId":"e95e91cf-7b10-ef11-9f8a-6045bdd4c6be",
+```
+
+ ### [Add new agent](#tab/addnewagent)
+
+ ```json
+ {
+ "BusinessUnitId":"e95e91cf-7b10-ef11-9f8a-6045bdd4c6be",
    "CorrelationId":"58dc9af0-fe25-4f81-b3f3-c4cb147c2ec4",
    "Depth":1,
    "InitiatingUserAgent":"",

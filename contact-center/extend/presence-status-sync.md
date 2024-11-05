@@ -15,27 +15,17 @@ ms.custom: bap-template #Required; don't change.
  Presence APIs in Dynamics 365 Contact Center provide methods to access and update agent availability information across multiple systems. You can synchronize agents' presence status to avoid overbooking and ensure synchronization across platforms.
 
 ## Prerequisites
-- A license to use Omnichannel for Customer Service.
-- Agents should have ‘Agent’ or ‘Supervisor’ persona to load presence in Dynamics 365.
-- To modify the presence, the user should have a ‘Supervisor’ persona.
-- Have the 3rd party app whitelisted in Dataverse to access APIs and entities.
+- A license for Dynamics 365 Contact Center.
+- Agents should have Omnichannel agent or Omnichannel Supervisor role for the presence to load or for the agent to modify the presence status.
+- When you are integrating with a third party application such as Teams, the application must be allowlisted in Dataverse to access APIs and entities.
+- If the APIs are used to synchronize presence between two systems:
+  - Make sure that a middleware system is implemented to pass messages between Dynamics 365 Contact Center and the other system.
+  - An agent dictionary must be built in the middleware.
 
-### Other Considerations
-In case these APIs are used to synchronize presence between two systems:
-- The middleware needs to be implemented to convey the messages between Dynamics 365 and the other system.
-- An agent dictionary needs to be built in the middleware.
 
-## Section heading
+## Retrieve agent presence change event or addition of new agent
 
-Perform the following steps to synchronize presence API status:
-
-1. Retrieve agent presence change event or addition of new agent from the application.
-1. Modify the agent presence status in Dynamics 365
-1. Get an agents' presence from Dynamics 365
-
-## Retrieve agent presence change event or addition of new agent from Dynamics 365
-
-A webhook allows an external service to start a particular runbook in Azure Automation through a single HTTP request. To retrieve the agent presence change event or addition of a new agent from Dynamics 365, you can set up a webhook for the msdyn_agentstatuses entity, which the system updates with the agent's status updates.
+A webhook allows an external service to start a particular runbook in Azure Automation through a single HTTP request. To retrieve the agent presence change event or addition of a new agent from Dynamics 365, you can set up a webhook for the msdyn_agentstatus entity, which the system updates with the agent's status updates.
 
 Perform the steps in the following sections to set up a webhook on the table:
 
@@ -777,7 +767,9 @@ The following sections provide examples of the JSON payload for the presence mod
    "UserAzureActiveDirectoryObjectId":"00000000-0000-0000-0000-000000000000",
    "UserId":"09eb2446-db10-ef11-9f8a-6045bdd4c6be"
 }
+
 ```
+
 
 ## Use APIs to get or modify presence status
 
@@ -786,5 +778,5 @@ The following sections provide examples of the JSON payload for the presence mod
 1. Generate tokens using in certificate based authentication using your application ID. Learn more in [Use OAuth authentication with Microsoft Dataverse](/power-apps/developer/data-platform/authenticate-oauth).
 1. Assign impersonation privileges to the application. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
 1. Perform the required API calls as follows:
-     - CCaaS_ModifyAgentPresence to update the agent's presence status
-     - CCaaS_GetPresence to get the agent's presence status.
+     - [CCaaS_ModifyAgentPresence](/api/ccaas_modifyagentpresence.md) to update the agent's presence status
+     - [CCaaS_GetPresence](/api/ccaas_getpresence.md) to get the agent's presence status.

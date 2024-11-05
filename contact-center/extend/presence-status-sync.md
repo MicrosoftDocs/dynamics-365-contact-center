@@ -53,6 +53,16 @@ By default, the out-of-the-box presence statuses mapped to the following presenc
 
 The following sections provide examples of the JSON payload for the presence modified and add new agent events. 
 
+## Use APIs to get or modify presence status
+
+ You can use custom APIs to get or modify the agent's presence status. Do the following steps to use these APIs:
+
+1. Generate tokens using in certificate based authentication using your application ID. Learn more in [Use OAuth authentication with Microsoft Dataverse](/power-apps/developer/data-platform/authenticate-oauth).
+1. Assign impersonation privileges to the application. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
+1. Perform the required API calls as follows:
+     - [CCaaS_ModifyAgentPresence](api/ccaas_modifyagentpresence.md) to update the agent's presence status
+     - [CCaaS_GetPresence](api/ccaas_getpresence.md) to get the agent's presence status.
+
  ### [Presence modified](#tab/presencemodified)
 
  ```json
@@ -779,13 +789,3 @@ The following sections provide examples of the JSON payload for the presence mod
 }
 
 ```
-
-## Use APIs to get or modify presence status
-
- You can use custom APIs to get or modify the agent's presence status. Do the following steps to use these APIs:
-
-1. Generate tokens using in certificate based authentication using your application ID. Learn more in [Use OAuth authentication with Microsoft Dataverse](/power-apps/developer/data-platform/authenticate-oauth).
-1. Assign impersonation privileges to the application. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
-1. Perform the required API calls as follows:
-     - [CCaaS_ModifyAgentPresence](api/ccaas_modifyagentpresence.md) to update the agent's presence status
-     - [CCaaS_GetPresence](api/ccaas_getpresence.md) to get the agent's presence status.

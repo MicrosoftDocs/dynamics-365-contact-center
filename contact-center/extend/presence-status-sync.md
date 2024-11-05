@@ -53,20 +53,11 @@ By default, the out-of-the-box presence statuses mapped to the following presenc
 
 The following sections provide examples of the JSON payload for the presence modified and add new agent events. 
 
-## Use APIs to get or modify presence status
-
- You can use custom APIs to get or modify the agent's presence status. Do the following steps to use these APIs:
-
-1. Generate tokens using in certificate based authentication using your application ID. Learn more in [Use OAuth authentication with Microsoft Dataverse](/power-apps/developer/data-platform/authenticate-oauth).
-1. Assign impersonation privileges to the application. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
-1. Perform the required API calls as follows:
-     - [CCaaS_ModifyAgentPresence](api/ccaas_modifyagentpresence.md) to update the agent's presence status
-     - [CCaaS_GetPresence](api/ccaas_getpresence.md) to get the agent's presence status.
 
  ### [Presence modified](#tab/presencemodified)
 
- ```json
- {
+  ```json
+  {
    "BusinessUnitId":"a3c20b02-4e38-ef11-a315-000d3a5a54dc",
    "CorrelationId":"e1bcd028-ae87-4ca6-af27-a17ee680dbc9",
    "Depth":1,
@@ -374,21 +365,21 @@ The following sections provide examples of the JSON payload for the presence mod
    "Stage":40,
    "UserAzureActiveDirectoryObjectId":"00000000-0000-0000-0000-000000000000",
    "UserId":"d89254ff-9438-ef11-a315-000d3a5a54dc"
-}
+ }
 
-```
+ ```
 
  ### [Add new agent](#tab/addnewagent)
 
- ```json
- {
- "BusinessUnitId":"e95e91cf-7b10-ef11-9f8a-6045bdd4c6be",
-   "CorrelationId":"58dc9af0-fe25-4f81-b3f3-c4cb147c2ec4",
-   "Depth":1,
-   "InitiatingUserAgent":"",
-   "InitiatingUserAzureActiveDirectoryObjectId":"00000000-0000-0000-0000-000000000000",
-   "InitiatingUserId":"09eb2446-db10-ef11-9f8a-6045bdd4c6be",
-   "InputParameters":[
+  ```json
+  {
+  "BusinessUnitId":"e95e91cf-7b10-ef11-9f8a-6045bdd4c6be",
+    "CorrelationId":"58dc9af0-fe25-4f81-b3f3-c4cb147c2ec4",
+    "Depth":1,
+    "InitiatingUserAgent":"",
+    "InitiatingUserAzureActiveDirectoryObjectId":"00000000-0000-0000-0000-000000000000",
+    "InitiatingUserId":"09eb2446-db10-ef11-9f8a-6045bdd4c6be",
+    "InputParameters":[
       {
          "key":"Target",
          "value":{
@@ -788,4 +779,15 @@ The following sections provide examples of the JSON payload for the presence mod
    "UserId":"09eb2446-db10-ef11-9f8a-6045bdd4c6be"
 }
 
-```
+ ```
+
+
+## Use APIs to get or modify presence status
+
+ You can use custom APIs to get or modify the agent's presence status. Do the following steps to use these APIs:
+
+1. Generate tokens using in certificate based authentication using your application ID. Learn more in [Use OAuth authentication with Microsoft Dataverse](/power-apps/developer/data-platform/authenticate-oauth).
+1. Assign impersonation privileges to the application. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
+1. Perform the required API calls as follows:
+     - [CCaaS_ModifyAgentPresence](api/ccaas_modifyagentpresence.md) to update the agent's presence status
+     - [CCaaS_GetPresence](api/ccaas_getpresence.md) to get the agent's presence status.

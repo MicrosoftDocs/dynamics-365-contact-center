@@ -785,5 +785,5 @@ The following sections provide examples of the JSON payload for the presence mod
 1. Generate tokens using in certificate based authentication using your application ID. Learn more in [Use OAuth authentication with Microsoft Dataverse](/power-apps/developer/data-platform/authenticate-oauth).
 1. Assign impersonation privileges to the application. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
 1. Perform the required API calls as follows:
-     - [CCaaS_ModifyAgentPresence](/api/ccaas_modifyagentpresence.md) to update the agent's presence status
-     - [CCaaS_GetPresence](/api/ccaas_getpresence.md) to get the agent's presence status.
+     - [CCaaS_ModifyAgentPresence](api/ccaas_modifyagentpresence.md) to update the agent's presence status
+     - [CCaaS_GetPresence](api/ccaas_getpresence.md) to get the agent's presence status.

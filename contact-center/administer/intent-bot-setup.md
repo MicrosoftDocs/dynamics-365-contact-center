@@ -1,6 +1,6 @@
 ---
 title: Configure intent-based follow-up suggestions for customer intent agents
-description:
+description: This article explains how to configure intent-based follow-up suggestions for customer intent agents using intent assist to automate and streamline the process.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: Soumyasd27

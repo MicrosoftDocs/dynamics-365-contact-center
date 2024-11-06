@@ -37,8 +37,8 @@ Intent assist discovers historical data and maintains an up-to-date intent libra
 1.	In Customer Service admin center, go to **Customer Support** > **Intent**. The **Customer Intent Agent (preview)** page appears.
 1.	On the **Customer Intent Agent (preview)** page, switch the **Turn on Customer Intent Agent** toggle to **On**.
 1.	In the **Intent discovery** section, enable the following:
-    1.	**Manage intent discovery setup**. Learn more in (Provide link to Neeraja’s admin doc)
-    1.	**Manage intent groups and intents**. Learn more in (Provide link to Neeraja’s admin doc)	
+    1.	**Manage intent discovery setup**. Learn more in (Will provide link to Neeraja’s admin doc)
+    1.	**Manage intent groups and intents**. Learn more in (Will provide link to Neeraja’s admin doc)	
 1.	In the **Intent-based suggestions** section, select **Enable for chatbots** and then select **Manage**. The **Bots** page appears.
 1.	Select the customer service bot connected to your omnichannel environment for agent transfers.
 1.	Select **Add intent-based features**. This takes you to Copilot Studio.
@@ -47,10 +47,10 @@ Intent assist discovers historical data and maintains an up-to-date intent libra
 1.	Select **Add to copilot** and save.
 
 
-## Disconnect a bot to stop agent transfers from that bot (Need info)
+## Disconnect a customer intent agent to stop agent transfers from that customer intent agents (Need info from PMs)
 
-You can also disconnect a bot to stop agent transfers for that bot.
+You can also disconnect a customer intent agent to stop agent transfers for that customer intent agent.
 
 ## Related information
 
-(Provide links to Admin and agent docs)
+(Will provide links to admin and agent docs)

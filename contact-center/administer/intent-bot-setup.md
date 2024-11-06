@@ -32,7 +32,7 @@ Intent assist discovers historical data and maintains an up-to-date intent libra
 - The application also harvests this conversation to detect any updates, and discovers new intent attributes that can be used in future interviews.
 - In the next customer interaction with a customer intent agent, the customer intent agent can self service the customer issue with the newly harvested knowledge and intent, and provide a tailored response without any customer service representative involvement.
 
-## Set up customer intent agents in Microsoft Copilot studio
+## Set up customer intent agents in Microsoft Copilot Studio
 
 1.	In Customer Service admin center, go to **Customer Support** > **Intent**. The **Customer Intent Agent (preview)** page appears.
 1.	On the **Customer Intent Agent (preview)** page, switch the **Turn on Customer Intent Agent** toggle to **On**.
@@ -42,7 +42,7 @@ Intent assist discovers historical data and maintains an up-to-date intent libra
 1.	In the **Intent-based suggestions** section, select **Enable for chatbots** and then select **Manage**. The **Bots** page appears.
 1.	Select the customer service bot connected to your omnichannel environment for agent transfers.
 1.	Select **Add intent-based features**. This takes you to Copilot Studio.
-1.	Select **Customer Service Copilot Bot in Copilot**, and then select **Component collections** in **Settings**.
+1.	In Microsoft Copilot Studio, select **Customer Service Copilot Bot in Copilot**, and then select **Component collections** in **Settings**.
 1.	In **Manage component collections**, **Follow-up suggestions** appears by default in the list to be added to the Copilot.
 1.	Select **Add to copilot** and save.
 

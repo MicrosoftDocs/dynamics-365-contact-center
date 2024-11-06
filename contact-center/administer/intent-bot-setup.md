@@ -1,5 +1,5 @@
 ---
-title: Set up customer intent agents in Microsoft Copilot studio
+title: Configure intent-based follow-up suggestions for customer intent agents
 description:
 author: Soumyasd27
 ms.author: sdas
@@ -11,11 +11,11 @@ ms.custom: bap-template
 ---
 
 
-# Set up customer intent agents in Microsoft Copilot studio
+# Configure intent-based follow-up suggestions for customer intent agents
 
-With the help of customer intent agents, bot owners no longer need to create and author bots to work for intent. It also takes away the effort of creating a bunch of manual bot topics that could be deprecated.
+With the help of customer intent agents, owners of customer intent agents no longer need to create and author customer intent agents to work for intent. It also takes away the effort of creating a bunch of manual customer intent agents topics that could be deprecated.
 
-Customer intent agent discovers historical data and maintains an up-to-date intent library, along with the attributes to support intent determination, interview, and fulfillment, leading to much higher deflection.
+Intent assist discovers historical data and maintains an up-to-date intent library, along with the attributes to support intent determination, interview, and fulfillment, leading to much higher deflection.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ Customer intent agent discovers historical data and maintains an up-to-date inte
 - The system also harvests this conversation to detect any updates, and discovers new intent attributes that can be used in future interviews.
 - In the next customer interaction with a customer intent agent, the customer intent agent can self service the customer issue with the newly harvested knowledge and intent, and provide a tailored response without any agent involvement.
 
-## Set up
+## Set up customer intent agents in Microsoft Copilot studio
 
 1.	In Customer Service admin center, go to **Customer Support** > **Intent**. The **Customer Intent Agent (preview)** page appears.
 1.	On the **Customer Intent Agent (preview)** page, switch the **Turn on Customer Intent Agent** toggle to **On**.

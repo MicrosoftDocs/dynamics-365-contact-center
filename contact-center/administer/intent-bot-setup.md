@@ -32,7 +32,7 @@ Intent assist uses the determined intent and interview responses to also improve
 - Once the issue is closed, a new knowledge article for the undocumented resolved issue is harvested, along with new intent attributes for use in self service.
 - The supervisor approves and publishes the article, and it's made available in the knowledge source that the Copilot Studio bot is connected to.
 - The application also harvests this conversation to detect any updates, and discovers new intent attributes that can be used in future interviews.
-- In the next customer interaction with a customer intent agent, the customer intent agent can self service the customer issue with the newly harvested knowledge and intent, and provide a tailored response without any customer service representative involvement.
+- In the next customer interaction with a customer intent agent, the customer intent agent can self service the customer issue with the newly harvested knowledge and intent, and provide a tailored response without the involvement of any customer service representative.
 
 ## Set up customer intent agents in Microsoft Copilot Studio
 
@@ -49,7 +49,7 @@ Intent assist uses the determined intent and interview responses to also improve
 1.	Select **Add to copilot** and save.
 
 
-## Disconnect a customer intent agent to stop agent transfers from that customer intent agents (Need info from PMs)
+## Disconnect a customer intent agent (Need info from PMs)
 
 You can also disconnect a customer intent agent to stop agent transfers for that customer intent agent.
 

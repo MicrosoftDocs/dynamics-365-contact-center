@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 # Configure intent-based follow-up suggestions for customer intent agents
 
-As an administrator, you'll no longer need to create and author customer intent agents to work for intent. It also takes away the effort of creating a bunch of manual customer intent agents topics that could be deprecated.
+As an administrator, you'll no longer need to create customer intent agents to work for intent. It also takes away the effort of manually creating customer intent agents topics that could be deprecated.
 
 Intent assist discovers historical data and maintains an up-to-date intent library, along with the attributes to support intent determination, interview, and fulfillment, leading to much higher deflection.
 

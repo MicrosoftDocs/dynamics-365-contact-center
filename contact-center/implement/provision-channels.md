@@ -12,6 +12,9 @@ ms.collection:
 
 # Provision channels in Dynamics 365 Contact Center
 
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
+
+
 Dynamics 365 Contact Center provides a modern, customizable, high-productivity experience that lets agents help customers across different channels via a unified interface. It lets organizations choose the channel that suits their business needs. It also ensures that a high level of responsive, quality service is received across channels.
 
 To find out if Dynamics 365 Contact Center is available in your region, see [International availability](international-availability.md).
@@ -41,8 +44,6 @@ You can provision the following channels:
 
 You can set up channels in the Contact Center admin center or Customer Service admin center application. In Power Platform admin center, while you can view existing environments and channels, you can't enable, edit, or delete channels.
 
-> [!NOTE]
-> If you don't see the provisioning option in the admin center, it's not yet available in your region. You can [provision the channels](/dynamics365/customer-service/implement/omnichannel-provision-license?context=/dynamics365/contact-center/context/implement-context) in Power Platform admin center.
 
 To set up the channels, perform the following steps:
 

@@ -29,6 +29,29 @@ This topic provides the steps to import the sample template and then connect the
 - Self- service/Account lookup 
 - Re-prompt/Entity validation 
 
+Intent Detection from Conversational Phrase 
+This feature enables the IVR system to accurately identify the caller's intent by analyzing their spoken phrases, ensuring that inquiries are routed to the appropriate resources or workflows.
+The current template is built to recognize the customer’s intent to track the status of their order.
+
+
+
+Numeric Input by Voice  
+Allowing users to provide numeric information through voice input streamlines the interaction process, making it easier for callers to enter data such as account numbers or PINs without needing to use a keypad.
+
+Distinguish Number Entities Based on Length
+The IVR can differentiate between numeric entities based on their length, enhancing accuracy in identifying account numbers, phone numbers, or other relevant data, ensuring that the correct information is processed.
+
+Self-Service/Account Lookup  
+This functionality empowers callers to access their account information or perform self-service tasks without the need for agent assistance, improving efficiency and customer satisfaction.
+
+Re-Prompt/Entity Validation 
+The system can re-prompt callers for clarification if the initial input is unclear, validating entities to ensure that the correct information is captured before proceeding, thereby reducing errors and improving the overall interaction experience.
+
+## Deployment steps
+
+1. Download the zip file and save it to your local machine.
+1. In Copilot Studio, perform the steps in [import a solution](/microsoft-copilot-studio/authoring-export-import-copilot-components#import-a-solution-to-add-component-collections-to-an-environment) to import the zip file. The template is displayed on the **Scenarios** page.
+1. Perform the steps in 
 ## Next steps
 
 <!--Remove all the comments in this template before you sign-off or merge to the main branch.-->

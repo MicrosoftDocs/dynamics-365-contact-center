@@ -46,7 +46,7 @@ The following table shows which languages the different features in Dynamics 365
 |---|---|---|---|
 | Arabic - Saudi Arabia | ar-SA | Yes | No |
 | Bulgarian | bg-BGC | Yes | Yes |
-| Catalan - Spain | ca-ES | Yes | Yes |
+| Catalan | ca-ES | Yes | Yes |
 | Chinese - China - Mandarin | zh-CN | Yes | Yes |
 | Chinese - HK SAR - Cantonese | zh-HK | Yes | Yes |
 | Chinese - Taiwan - Traditional | zh-TW | Yes | Yes 

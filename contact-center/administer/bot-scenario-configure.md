@@ -56,4 +56,3 @@ The IVR bot template is intended to help customers track the status of their ord
 1. At any point in the call, if you say "speak to an agent" the it bot transfers you to a customer service representative based on the workstream configuration.
  
 
-## Next steps

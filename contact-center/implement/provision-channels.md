@@ -45,7 +45,7 @@ You can provision the following channels:
 You can set up channels in the Contact Center admin center or Customer Service admin center application. In Power Platform admin center, while you can view existing environments and channels, you can't enable, edit, or delete channels.
 
 > [!NOTE]
-> Starting October 2024, the legacy provisioning of channels in Power Platform admin center is deprecated and will no longer be accessible through the Manage button. Learn more in [Deprecations](/dynamics365/customer-service/implement/deprecations-customer-service)
+> Starting October 2024, the legacy provisioning of channels in Power Platform admin center is deprecated and can't be edited on the **Dynamics 365 apps** page. Learn more in [Deprecations](/dynamics365/customer-service/implement/deprecations-customer-service)
 
 To set up the channels, perform the following steps:
 

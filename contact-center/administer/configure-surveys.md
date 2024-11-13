@@ -12,11 +12,9 @@ ms.custom: bap-template
 
 # Configure post-conversation surveys (preview)
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 You can create and manage surveys that the customers after a call or conversation ends. When you create a survey in Contact Center admin center or Customer Service admin center, the application automatically provisions a Copilot Studio survey agent that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses. In this article, we will cover how you can use Microsoft Copilot Studio to unify the process of configuring surveys across channels in Dynamics 365 Contact Center and Dynamics 365 Customer Service with the generative capabilities of Copilot Studio agents.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 The survey appears for the customer after the customer service representative (representative) or customer ends the conversation.
  
@@ -96,6 +94,7 @@ Edit the **Conversation Start** system topic only. All other system topics are d
     1. Extract the query parameters from the custom host URL and enter in the code snippet.
     1. In the cshtml file, use following code.
 
+    ```
         @{ 
             var environment = Request.Query["Environment"]; 
         
@@ -109,15 +108,18 @@ Edit the **Conversation Start** system topic only. All other system topics are d
         
             var invitationId = Request.Query["InvitationId"]; 
         } 
+    ```
 
 1. Copy the following code snippet and paste it to your HTML website.
-    
-    <!DOCTYPE html> 
-    <html> 
+   
+``` 
+    <!DOCTYPE html>
+    <html>
     <body> 
     <iframe src="https://powerva.microsoft.com/environments/@environment/bots/@bot/webchat?__version__=2&SurveyVersion=@surveyVersion&RegardingLiveWorkItemId=@regardingLiveWorkItemId&SurveyId=@surveyId&InvitationId=@invitationId" frameborder="0" style="width: 300px; height: 500px;"></iframe> 
     </body> 
     </html>  
+```
 1. Style the iframe to match your website.
 
 ## Enable the post-conversation survey for digital messaging channels

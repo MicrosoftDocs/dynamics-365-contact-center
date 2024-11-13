@@ -366,16 +366,6 @@
           href: /dynamics365/customer-service/administer/data-masking-settings?context=/dynamics365/contact-center/context/administer-context
         - name: Manage enhanced Active Conversation settings
           href: /dynamics365/customer-service/administer/add-customer-summary-settings?context=/dynamics365/contact-center/context/administer-context  
-      - name: Feedback surveys
-        items:
-        - name: Configure post-conversation surveys (preview)
-          href: configure-surveys.md
-        - name: Enable feedback on voice call quality
-          href: /dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure post-call survey
-          href: /dynamics365/customer-service/administer/voice-channel-survey?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure post-conversation surveys using Customer Voice
-          href: /dynamics365/customer-service/administer/configure-post-conversation-survey?context=/dynamics365/contact-center/context/administer-context
       - name: Bots
         items:
         - name: Overview of bots

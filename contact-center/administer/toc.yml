@@ -384,6 +384,16 @@
             href: /dynamics365/customer-service/administer/configure-bot-azure?context=/dynamics365/contact-center/context/administer-context
         - name: Integrate a Copilot Studio bot
           href: /dynamics365/customer-service/administer/configure-bot-virtual-agent?context=/dynamics365/contact-center/context/administer-context
+      - name: Feedback surveys
+        items:
+        - name: Configure post-conversation surveys (preview)
+          href: configure-surveys.md
+        - name: Enable feedback on voice call quality
+          href: /dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure post-call survey
+          href: /dynamics365/customer-service/administer/voice-channel-survey?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure post-conversation surveys using Customer Voice
+          href: /dynamics365/customer-service/administer/configure-post-conversation-survey?context=/dynamics365/contact-center/context/administer-context
       - name: Knowledge management
         items:
         - name: Configure knowledge management

@@ -1,17 +1,17 @@
 ---
-title: Configure intent-based follow-up suggestions for customer intent agents
+title: Configure intent-based suggestions for Copilot Studio bots
 description: This article explains how to configure intent-based follow-up suggestions for customer intent agents using intent assist to automate and streamline the process.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 11/06/2024
+ms.date: 11/13/2024
 ms.custom: bap-template
 ---
 
 
-# Configure intent-based follow-up suggestions for customer intent agents
+# Configure intent-based suggestions for customer intent agents
 
 As an administrator, you'll no longer need to manually create customer intent agent topics that could be deprecated.
 
@@ -21,7 +21,7 @@ Intent assist uses the determined intent and interview responses to also improve
 
 ## Prerequisites
 
-- **Customer Intent Agent** is enabled on the Customer Intent Agent (preview) page.
+- **Customer Intent Agent (preview)** is enabled and intent discovery is set up.
 - Make sure that you have a system administrator role. (Please provide info on any other roles/licenses that may be required)
 
 ## Here's how it works
@@ -43,7 +43,7 @@ Intent assist uses the determined intent and interview responses to also improve
     1.	**Manage intent groups and intents**. Learn more in (Will provide link to Neeraja’s admin doc)	
 1.	In the **Intent-based suggestions** section, select **Enable for chatbots** and then select **Manage**. The **Bots** page appears.
 1.	Select the customer service bot connected to your omnichannel environment for agent transfers.
-1.	Select **Add intent-based features**. This takes you to Copilot Studio.
+1.	Select **Add intent-based features**. This takes you to Microsoft Copilot Studio.
 1.	In Microsoft Copilot Studio, select **Customer Service Copilot Bot in Copilot**, and then select **Component collections** in **Settings**.
 1.	In **Manage component collections**, **Follow-up suggestions** appears by default in the list to be added to the Copilot.
 1.	Select **Add to copilot** and save.

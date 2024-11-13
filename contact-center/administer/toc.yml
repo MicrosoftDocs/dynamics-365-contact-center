@@ -200,14 +200,10 @@
           href: /dynamics365/customer-service/administer/voice-channel-pva-bots?context=/dynamics365/contact-center/context/administer-context
         - name: View voice calls usage
           href: /dynamics365/customer-service/administer/voice-channel-usage?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure post-call survey
-          href: /dynamics365/customer-service/administer/voice-channel-survey?context=/dynamics365/contact-center/context/administer-context
         - name: Block spam numbers
           href: /dynamics365/customer-service/administer/voice-channel-block-number?context=/dynamics365/contact-center/context/administer-context
         - name: Configure call recording, transcription, and real-time translation
           href: /dynamics365/customer-service/administer/voice-channel-configure-transcripts?context=/dynamics365/contact-center/context/administer-context
-        - name: Enable voice call experiences
-          href: /dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context
         - name: Delete call recordings
           href: /dynamics365/customer-service/administer/voice-channel-delete-calls?context=/dynamics365/contact-center/context/administer-context
         - name: Enable voice consult with Microsoft Teams users
@@ -346,8 +342,6 @@
           href: /dynamics365/customer-service/administer/create-operating-hours?context=/dynamics365/contact-center/context/administer-context
         - name: Manage context variables
           href: /dynamics365/customer-service/administer/manage-context-variables?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure post-conversation surveys
-          href: /dynamics365/customer-service/administer/configure-post-conversation-survey?context=/dynamics365/contact-center/context/administer-context
         - name: Identify customers automatically
           href: /dynamics365/customer-service/administer/record-identification-rule?context=/dynamics365/contact-center/context/administer-context
         - name: Close conversations automatically
@@ -372,6 +366,16 @@
           href: /dynamics365/customer-service/administer/data-masking-settings?context=/dynamics365/contact-center/context/administer-context
         - name: Manage enhanced Active Conversation settings
           href: /dynamics365/customer-service/administer/add-customer-summary-settings?context=/dynamics365/contact-center/context/administer-context  
+      - name: Feedback surveys
+        items:
+        - name: Configure post-conversation surveys (preview)
+          href: configure-surveys.md
+        - name: Enable feedback on voice call quality
+          href: /dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure post-call survey
+          href: /dynamics365/customer-service/administer/voice-channel-survey?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure post-conversation surveys using Customer Voice
+          href: /dynamics365/customer-service/administer/configure-post-conversation-survey?context=/dynamics365/contact-center/context/administer-context
       - name: Bots
         items:
         - name: Overview of bots

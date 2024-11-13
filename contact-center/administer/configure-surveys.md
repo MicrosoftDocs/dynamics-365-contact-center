@@ -13,10 +13,10 @@ ms.custom: bap-template
 # Configure post-conversation surveys (preview)
 
 
-You can create and manage surveys that the customers after a call or conversation ends. When you create a survey in Contact Center admin center or Customer Service admin center, the application automatically provisions a Copilot Studio survey agent that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses. In this article, we will cover how you can use Microsoft Copilot Studio to unify the process of configuring surveys across channels in Dynamics 365 Contact Center and Dynamics 365 Customer Service with the generative capabilities of Copilot Studio agents.
+You can create and manage surveys that go out to the customers after a call or conversation ends. When you create a survey in Contact Center admin center or Customer Service admin center, the application automatically provisions a Copilot Studio survey agent that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses. In this article, we will cover how you can use Microsoft Copilot Studio to unify the process of configuring surveys across channels in Dynamics 365 Contact Center and Dynamics 365 Customer Service with the generative capabilities of Copilot Studio agents.
 
 
-The survey appears for the customer after the customer service representative (representative) or customer ends the conversation.
+The survey appears for the customer after the customer service representative (representative) ends the conversation.
  
 With Microsoft Copilot Studio agents, you can:
 - Gather customer feedback and configure contextual actions depending on the feedback.
@@ -47,7 +47,7 @@ With Microsoft Copilot Studio agents, you can:
     - **Blank Template**: Use it to start a survey from scratch. 
 1. On the **Properties** page, do the following:
     - **Name**: Enter a name based on the survey template that you selected.
-    - **Language**: Select a language from the supported languages list. The languages that're supported in Copilot Studio only appear.
+    - **Language**: Select a language from the supported languages list. The languages that are supported in Copilot Studio only appear.
     - Select the **Enable for Voice Channels** toggle if you want to use the survey for voice conversations.
 1. Select **Next**, and on the page that appears, review your choices.
 1. Select **Save survey**. The **Survey Created** page displays the summary and link to the survey where it's hosted. The application creates a survey agent with the same name as the survey and is hosted at the same link.
@@ -61,7 +61,7 @@ After you create the survey in the admin center, it needs to be published. If yo
 1. Update the survey to suit your business needs. 
 1. Select **Publish**. After a couple of minutes, the survey status is updated as **Ready** on the Contact Center admin center or Customer Service admin center page.
 
-### verify the Dataverse connection
+### Verify the Dataverse connection
 
 Make sure that the Dataverse connection is established for Copilot Studio so that you can publish the survey agent. Learn more at [Set up a Dataverse connection](/power-apps/maker/data-platform/create-connection-reference).
 
@@ -73,7 +73,7 @@ Manage your surveys on the **Customer feedback (preview)** page.
 - **Edit**: Select a survey, and then select **Edit**. You can edit the survey name only.
 - **Demo link**: Select a link to preview the survey and see how it appears in runtime.
 - **Status**: Indicates whether a survey is ready or in progress.
-- Voice Enabled: Indicates whether a survey is enabled for the voice channel.
+- **Voice Enabled**: Indicates whether a survey is enabled for the voice channel.
 
 ### Manage the survey agents in Copilot Studio
 
@@ -125,7 +125,7 @@ Edit the **Conversation Start** system topic only. All other system topics are d
 ## Enable the post-conversation survey for digital messaging channels
 
 1. Perform the steps 1 through 3 in [Configure the post-conversation survey](/dynamics365/customer-service/administer/configure-post-conversation-survey#configure-the-post-conversation-survey).
-1. Select **Powered by Microsoft Copilot Studio (preview)**.
+1. Select **Powered by Microsoft Copilot Studio (preview)**. Select a survey from the list. Only those surveys that you create using the customer feedback option and in published state are displayed for you to select.
 1. Perform the rest of the steps in **Configure the post-conversation survey**.
 
 ## Enable the post-call survey for the voice channel

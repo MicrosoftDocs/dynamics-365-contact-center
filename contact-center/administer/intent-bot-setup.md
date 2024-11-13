@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 # Configure intent-based suggestions for Copilot Studio bot
 
-As an administrator, you'll no longer need to manually create customer intent agent topics that could be deprecated.
+As an administrator, you'll no longer need to manually create and manage Copilot Studio topics that could be deprecated.
 
 Intent assist discovers historical data and maintains an up-to-date intent library, along with the attributes to support intent determination, interview, and fulfillment, leading to much higher deflection.
 
@@ -21,7 +21,8 @@ Intent assist uses the determined intent and interview responses to also improve
 
 ## Prerequisites
 
-- **Customer Intent Agent (preview)** is enabled and intent discovery is set up.
+- **Customer Intent Agent (preview)** is enabled.
+- Intent discovery is set up and there are intents in the intent library.
 - Your Copilot Studio bot must be connected to a workstream in omnichannel.
 
 ## Here's how it works
@@ -45,9 +46,12 @@ Intent assist uses the determined intent and interview responses to also improve
 1.	Select the chatbot connected to your omnichannel environment for agent transfers.
 1.	Select **Add intent-based features**. This takes you to Microsoft Copilot Studio.
 1.	In Microsoft Copilot Studio, select **Customer Service Copilot Bot in Copilot**, and then select **Component collections** in **Settings**.
-1.	In **Manage component collections**, **Follow-up suggestions** appears by default in the list to be added to the Copilot.
+1.	In **Manage component collections**, **Intent-based suggestions (public preview)** appears by default in the list to be added to the Copilot.
 1.	Select **Add to copilot** and save.
 1. Publish the bot.
+
+Once added, you will see a series of topics added to your agent 
+
 
 ## Disconnect a customer intent agent (Do we need this?)
 
@@ -55,4 +59,4 @@ You can also disconnect a Copilot Studio bots to stop agent transfers for that C
 
 ## Related information
 
-(Will provide links to admin and agent docs)
+[Create a copilot](/microsoft-copilot-studio/authoring-first-bot?tabs=web#create-a-copilot)

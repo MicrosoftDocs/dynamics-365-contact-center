@@ -42,13 +42,12 @@ Intent assist uses the determined intent and interview responses to also improve
     1.	**Manage intent discovery setup**. Learn more in (Will provide link to Neeraja’s admin doc)
     1.	**Manage intent groups and intents**. Learn more in (Will provide link to Neeraja’s admin doc)	
 1.	In the **Intent-based suggestions** section, select **Enable for chatbots** and then select **Manage**. The **Bots** page appears.
-1.	Select the customer service bot connected to your omnichannel environment for agent transfers.
+1.	Select the chatbot connected to your omnichannel environment for agent transfers.
 1.	Select **Add intent-based features**. This takes you to Microsoft Copilot Studio.
 1.	In Microsoft Copilot Studio, select **Customer Service Copilot Bot in Copilot**, and then select **Component collections** in **Settings**.
 1.	In **Manage component collections**, **Follow-up suggestions** appears by default in the list to be added to the Copilot.
 1.	Select **Add to copilot** and save.
 1. Publish the bot.
-
 
 ## Disconnect a customer intent agent (Do we need this?)
 

@@ -75,4 +75,4 @@ For the example above, to route the call to a language-specific representative, 
 
 ## View metrics for multilingual bots
 
-You can see how your multilingual bots perform by using [Omnichannel historical](../use/oc-bot-dashboard.md) and [real-time analytics](../use/agent-realtime-dashboard.md) reports. You can filter by Last Language to see metrics for bots based on their final language. This can help you evaluate how well your bots communicate with customers in different languages. For more information, go to [customize bot dashboards](../use/customize-agent-dashboard.md).
+You can see how your multilingual bots perform by using [Omnichannel historical](/dynamics365/customer-service/use/oc-bot-dashboard?context=/dynamics365/contact-center/context/use-context) and [real-time analytics](../use/agent-realtime-dashboard.md) reports. You can filter by Last Language to see metrics for bots based on their final language. This can help you evaluate how well your bots communicate with customers in different languages. For more information, go to [customize bot dashboards](../use/customize-agent-dashboard.md).

@@ -37,26 +37,37 @@ Intent assist uses the determined intent and interview responses to also improve
 
 ## Set up Copilot Studio bots for intent management
 
-1.	In Customer Service admin center, go to **Customer Support** > **Intent**. The **Customer Intent Agent (preview)** page appears.
-1.	On the **Customer Intent Agent (preview)** page, switch the **Turn on Customer Intent Agent** toggle to **On**.
-1.	In the **Intent discovery** section, enable the following:
-    1.	**Manage intent discovery setup**. Learn more in (Will provide link to Neeraja’s admin doc)
-    1.	**Manage intent groups and intents**. Learn more in (Will provide link to Neeraja’s admin doc)	
-1.	In the **Intent-based suggestions** section, select **Enable for chatbots** and then select **Manage**. The **Bots** page appears.
-1.	Select the chatbot connected to your omnichannel environment for agent transfers.
-1.	Select **Add intent-based features**. This takes you to Microsoft Copilot Studio.
-1.	In Microsoft Copilot Studio, select **Customer Service Copilot Bot in Copilot**, and then select **Component collections** in **Settings**.
-1.	In **Manage component collections**, **Intent-based suggestions (public preview)** appears by default in the list to be added to the Copilot.
-1.	Select **Add to copilot** and save.
-1. Publish the bot.
+1.	In Customer Service admin center, navigate to the **Customer Intent Agent (preview)** page > **Intent-based suggestions** section.
+1. Select **Enable for chatbots** and then select **Manage**. The **Bots** page appears.
+1. Select the chatbot connected to your omnichannel environment for agent transfers.
+1. Select **Add intent-based features**. This takes you to Microsoft Copilot Studio.
+1. In Microsoft Copilot Studio, select **Component collections** in **Settings**.
+1.	In **Manage component collections (preview)**, search and select **Intent-based suggestions**.
+1.	Select **Add to agent** and save. 
+    You can also disconnect a Copilot Studio bots to stop agent transfers for that Copilot Studio bot.
+1. Publish the bot. Once added, you will see a series of Intent-based suggestions topics added to your agent.
 
-Once added, you will see a series of topics added to your agent 
+## Resolve connection references
+
+## Update the Intent-based suggestions - Handoff topic
+
+## Connect to knowledge sources
+
+Connect the knowledge articles in your CRM instance to your Copilot studio bot. Learn more in [Integrate knowledge management in Dynamics 365 with a Copilot Studio bot](/dynamics365/customer-service/administer/integrate-km-with-pva).
+
+## Customize the variables in the Intent-based suggestions-Configuration topic
+this is a non-customizable topic that contains a list variables that can be overwritten to provide desired behavior.
 
 
-## Disconnect a customer intent agent (Do we need this?)
 
-You can also disconnect a Copilot Studio bots to stop agent transfers for that Copilot Studio bot.
+## Override default variable
+
+## Disable end user authentication
+
+
+
 
 ## Related information
 
 [Create a copilot](/microsoft-copilot-studio/authoring-first-bot?tabs=web#create-a-copilot)
+[Add knowledge to a copilot](/microsoft-copilot-studio/knowledge-add-existing-copilot)

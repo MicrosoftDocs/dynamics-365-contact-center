@@ -35,11 +35,11 @@ In Contact Center admin center or Customer Service admin center, for a voice cha
 1. In the **Bots** section of the workstream, add the bot that you want to use for the voice channel. The application displays a warning message in the following scenarios:
 
 - When you add a bot to a workstream and the voice channel languages don't match the bot's supported languages.
-- When you add a new language to an existing voice channel in the workstream that the bot doesn't support.
+- When you add a new language to an existing voice channel that the bot doesn't support.
 
 > [!NOTE]
-> - The primary language of the voice channel must match either the primary or one of the secondary languages of the bot in Copilot Studio. If not, the bot uses its primary language instead.
-> - If you enable transcription for a voice channel, the bot transcript shows the detected language. However, if the bot switches to a language that the channel doesn't support, the transcript uses the primary language of the channel.
+> - The language of the voice channel must match either the primary or one of the secondary languages of the bot in Copilot Studio. If not, the bot uses its primary language instead.
+> - If you enable transcription for a voice channel, the transcript is displayed in the language the bot detects. However, if the bot switches to a language that the channel doesn't support, the transcript is displayed in the primary language of the channel.
 > - There might be a slight delay in updating the transcript when the bot changes languages. Some parts of the transcript might be in the previous language.
 
 ### Examples

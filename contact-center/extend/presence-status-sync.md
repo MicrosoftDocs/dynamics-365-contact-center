@@ -51,10 +51,10 @@ By default, the out-of-the-box presence statuses mapped to the following presenc
 | Offline         | 70139190-c07a-e811-8162-000d3aa11f50 |
 | Away            | 3dacae76-c07a-e811-8162-000d3aa11f50 |
 
-The following sections provide examples of the JSON payload for the presence modified and add new agent events. 
+The following sections provide examples of the JSON payload for when the agent presence is modified and when a new agent is added. 
 
 
- ### [Presence modified](#tab/presencemodified)
+ ### [Modify agent presence](#tab/modifyagentpresence)
 
 ```json
 {

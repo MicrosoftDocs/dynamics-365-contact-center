@@ -32,7 +32,7 @@ To enable the bot to detect the customer language and respond in same language, 
 In Contact Center admin center or Customer Service admin center, for a voice channel in a  workstream, perform the following steps:
 
 1. [Add a phone number to the workstream and configure language settings](/dynamics365/customer-service/administer/voice-channel-inbound-calling#add-a-phone-number-to-the-workstream-and-configure-language-settings?context=/dynamics365/contact-center/context/administer-context)
-1. In the **Bots** section of the workstream, add the bot that you want to use for the voice channel. The application displays a warning message in the following scenarios:
+1. In the **Bots** section of the workstream, add the bot that you want to use. The application displays a warning message in the following scenarios:
 
 - When you add a bot to a workstream and the voice channel languages don't match the bot's supported languages.
 - When you add a new language to an existing voice channel that the bot doesn't support.

@@ -18,7 +18,7 @@ The **Bots** report provides insights into key metrics for all the Copilot Studi
 
 ## Prerequisites
 
-- You must have the **Analytics Report Author** role to use the visual customizations in the bot dashboard. Visual customization is limited to the data available in the embedded Power BI report. If you want to add additional data, you need a Power BI license and enable data model customization.
+- You must have the **Analytics Report Author** role to use the visual customizations in the bot dashboard. Visual customization is limited to the data available in the embedded Power BI report. If you want to add more data, you need a Power BI license and enable data model customization.
 
 ## Key metrics
 

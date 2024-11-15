@@ -40,7 +40,7 @@ In Contact Center admin center or Customer Service admin center, for a voice cha
 > [!NOTE]
 > - The language of the voice channel must match either the primary or one of the secondary languages of the bot in Copilot Studio. If the languages don't match, the bot uses its primary language.
 > - If you enable transcription for a voice channel, the transcript is displayed in the language the bot detects. However, if the bot switches to a language that the channel doesn't support, the transcript is displayed in the primary language of the channel.
-> - There might be a slight delay in updating the transcript when the bot changes languages. Some parts of the transcript might be in the previous language.
+> - There might be a slight delay for the transcript to be updated when the bot changes languages. Some parts of the transcript might be in the previous language.
 
 ### Examples
 

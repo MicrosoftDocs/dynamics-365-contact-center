@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 You can configure a single voice bot to communicate with customers in different languages, reducing the overhead of creating and maintaining multiple bots in a copilot.
 
-To enable the bot to detect and respond in the customer's language, you need to configure a workstream with one of these options:
+To enable the bot to detect the customer language and respond in same language, configure a workstream with one of the following options:
 
 - Multiple voice channels with different phone numbers for different languages.
 - A single voice channel with one phone number that supports multiple languages.

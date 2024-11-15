@@ -20,7 +20,7 @@ You can configure the bot to handle situations where the customer can't reach th
 To handle bot call failures, update the bot settings in the voice workstream as follows:
 
 1. In the **Bot** section, select **Edit** to open the **Edit bot** pane. 
-1. Choose one of these failure handling options:
+1. Choose one of options:
     - **Prompt and hang-up**: The system plays a [default message](/dynamics365/customer-service/administer/configure-automated-message#preconfigured-automated-message-triggers) and ends the call.
     - **Prompt and transfer to external number**: The system plays the default message and then transfers the call to an external number that you enter in the **External phone number** field. Use the E.164 format, with a plus sign (+) followed by the country code and phone number.
     - **Prompt and escalate**: The system plays the default message and then connects the call to an agent.

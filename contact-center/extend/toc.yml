@@ -96,6 +96,14 @@
           href: /dynamics365/customer-service/develop/suggested-actions?context=/dynamics365/contact-center/context/extend-context
         - name: Pass authentication token to bot during single sign-on in live chat
           href: /dynamics365/customer-service/develop/pass-auth-token-sso-live-chat?context=/dynamics365/contact-center/context/extend-context
+      - name: Presence
+        items:
+        - name: Synchronize agent presence status across multiple systems
+          href: presence-status-sync.md  
+        - name: CCaaS_GetPresence 
+          href: /api/ccaas-getpresence.md
+        - name: CCaaS_ModifyAgentPresence
+          href: /api/ccaas-modifyagentpresence.md
       - name: Extend Omnichannel for Customer Service
         href: /dynamics365/customer-service/develop/extend-omnichannel?context=/dynamics365/contact-center/context/extend-context
       - name: Overview of entity reference

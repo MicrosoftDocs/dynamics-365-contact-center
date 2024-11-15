@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 You can configure the bot to handle situations where the customer can't reach the IVR bot or when there's a system or network failure. Instead of the call dropping abruptly, the IVR system informs the customer about the issue before hanging up or transferring them to a representative.
 
-## Configure bot failure treatment
+## Handle bot call failures
 
 To set up how the bot handles failures for a workstream, follow these steps:
 

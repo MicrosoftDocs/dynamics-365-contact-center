@@ -17,7 +17,7 @@ You can configure the bot to handle situations where the customer can't reach th
 
 ## Handle bot call failures
 
-To set up how the bot handles failures for a workstream, follow these steps:
+To handle bot call failures, update the bot settings in the voice workstream as follows:
 
 1. In the **Bot** section, select **Edit** to open the **Edit bot** pane. 
 1. Choose one of these failure handling options:

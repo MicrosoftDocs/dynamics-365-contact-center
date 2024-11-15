@@ -22,7 +22,7 @@ The **Bots** report provides insights into key metrics for all the Copilot Studi
 
 ## Key metrics
 
-Out-of-the-box, the dashboard displays key metrics for the last 24 hours, such as total bot conversations, Outgoing bot conversations, Completed bot conversations, Transferred bot conversations, and Average bot conversation duration to help you understand bot utilization and optimize performance in real time.
+Out of the box, the dashboard displays key metrics for the last 24 hours, such as total bot conversations, outgoing bot conversations, completed bot conversations, transferred bot conversations, and average bot conversation duration to help you understand bot usage and optimize performance in real time.
 
 You can filter the report by selecting **All** to view bot performance across all channels or by choosing a specific channel. Additional filters include time, queue, time zone, and conversation status. For more information, see [Overview of Omnichannel Real-time analytics dashboards](/dynamics365/customer-service/use/intro-realtime-analytics-dashboard).
 

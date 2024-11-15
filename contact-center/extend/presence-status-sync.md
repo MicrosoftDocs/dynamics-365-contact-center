@@ -3,8 +3,8 @@ title: Synchronize agent presence status across multiple systems
 description: How-to synchronize agent presence status across multiple systems.
 author: gandhamm
 ms.author: mgandham
-ms.reviewer: mgansham
-ms.topic: how-to #Required; don't change.
+ms.reviewer: mgandham
+ms.topic: how-to 
 ms.collection: 
 ms.date: 11/15/2024
 ms.custom: bap-template 

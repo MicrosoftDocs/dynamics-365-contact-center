@@ -98,7 +98,7 @@
           href: /dynamics365/customer-service/develop/pass-auth-token-sso-live-chat?context=/dynamics365/contact-center/context/extend-context
       - name: Presence
         items:
-        - name: Synchronize agent presence status across multiple syst
+        - name: Synchronize agent presence status across multiple systems
           href: presence-status-sync.md  
         - name: CCaaS_GetPresence 
           href: /api/ccaas-getpresence.md

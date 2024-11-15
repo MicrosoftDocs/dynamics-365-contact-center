@@ -144,4 +144,4 @@ In Power Automate, select the required flow, and then select **Run**.
 ### Related information
 
 [Configure a connector for ServiceNow](configure-servicenow-connector.md)   
-[Configure the connector for any CRM solution](configure-customer-connector.md)   
+[Configure the connector for any CRM solution](configure-custom-connector.md)   

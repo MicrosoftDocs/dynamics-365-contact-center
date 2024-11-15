@@ -42,22 +42,22 @@
           href: /dynamics365/customer-service/implement/service-quotas?context=/dynamics365/contact-center/context/implement-context
         - name: Best practices to set up voice channel
           href: /dynamics365/customer-service/implement/voice-channel-best-practices?context=/dynamics365/contact-center/context/implement-context
-        - name: Install Dynamics 365 Contact Center
-          items:
-          - name: Provision channels
-            href: provision-channels.md
-          - name: Export and import app configuration data
-            href: /dynamics365/customer-service/implement/export-import-omnichannel-data?context=/dynamics365/contact-center/context/implement-context
-          - name: Copy an environment with Dynamics 365 Contact Center
-            href: /dynamics365/customer-service/implement/copy-environment-with-omnichannel?context=/dynamics365/contact-center/context/implement-context
-          - name: Reset, restore, recover omnichannel environments
-            href: restore-environment.md  
-          - name: Uninstall Dynamics 365 Contact Center
-            href: /dynamics365/customer-service/implement/remove-omnichannel?context=/dynamics365/contact-center/context/implement-context
-          - name: Uninstall solutions
-            href: /dynamics365/customer-service/implement/delete-solution?context=/dynamics365/contact-center/context/implement-context
-          - name: Upgrade Dynamics 365 Contact Center
-            href: /dynamics365/customer-service/implement/upgrade-omnichannel?context=/dynamics365/contact-center/context/implement-context
+      - name: Install Dynamics 365 Contact Center
+        items:
+        - name: Provision channels
+          href: provision-channels.md
+        - name: Export and import app configuration data
+          href: /dynamics365/customer-service/implement/export-import-omnichannel-data?context=/dynamics365/contact-center/context/implement-context
+        - name: Copy an environment with Dynamics 365 Contact Center
+          href: /dynamics365/customer-service/implement/copy-environment-with-omnichannel?context=/dynamics365/contact-center/context/implement-context
+        - name: Reset, restore, recover omnichannel environments
+          href: restore-environment.md  
+        - name: Uninstall Dynamics 365 Contact Center
+          href: /dynamics365/customer-service/implement/remove-omnichannel?context=/dynamics365/contact-center/context/implement-context
+        - name: Uninstall solutions
+          href: /dynamics365/customer-service/implement/delete-solution?context=/dynamics365/contact-center/context/implement-context
+        - name: Upgrade Dynamics 365 Contact Center
+          href: /dynamics365/customer-service/implement/upgrade-omnichannel?context=/dynamics365/contact-center/context/implement-context
       - name: Set up users and security
         items:
         - name: Overview of user management
@@ -68,6 +68,8 @@
           href: /dynamics365/customer-service/implement/add-users-assign-roles?context=/dynamics365/contact-center/context/implement-context
         - name: Personas and privileges
           href: /dynamics365/customer-service/implement/persona-privilege-mapping?context=/dynamics365/contact-center/context/implement-context
+      - name: Copilot in Dynamics 365 Contact Center architecture
+        href: /guidance/reference-architectures/dynamics-365-customer-service-copilot-architecture?context=/dynamics365/contact-center/context/implement-context
       - name: Responsible AI
         items:
         - name: Overview

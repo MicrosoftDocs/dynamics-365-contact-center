@@ -182,6 +182,8 @@
           href: /dynamics365/customer-service/administer/voice-channel-outbound-calling?context=/dynamics365/contact-center/context/administer-context
         - name: Enable agents to search for contacts and open records from outbound dialer (preview)
           href: /dynamics365/customer-service/administer/add-outbound-dialer-settings?context=/dynamics365/contact-center/context/administer-context  
+        - name: Use Azure Virtual Desktop to access voice channel
+          href: configure-voice-avd.md
         - name: Support emergency calls made by agents
           href: /dynamics365/customer-service/administer/voice-channel-emergency-calling?context=/dynamics365/contact-center/context/administer-context
         - name: Forward your Teams calls to digital contact center

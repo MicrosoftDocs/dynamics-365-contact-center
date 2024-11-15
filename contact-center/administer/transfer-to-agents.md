@@ -1,5 +1,5 @@
 ---
-title: Transfer conversations from customer service representatives to agents
+title: Transfer conversations from customer service representatives to bots
 description: Learn how a customer service representative can transfer a conversation back to a bot.
 author: gandhamm
 ms.author: mgandham

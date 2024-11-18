@@ -44,10 +44,18 @@ Intent assist uses the determined intent and interview responses to also improve
 1. In Microsoft Copilot Studio, select **Component collections** in **Settings**.
 1.	In **Manage component collections (preview)**, search and select **Intent-based suggestions**.
 1.	Select **Add to agent** and save. 
-    You can also disconnect a Copilot Studio bots to stop agent transfers for that Copilot Studio bot.
+    You can also disconnect a Copilot Studio bots to stop agent transfers for that Copilot Studio bot by selecting **Remove agent**.
 1. Publish the bot. Once added, you will see a series of Intent-based suggestions topics added to your agent.
 
-## Resolve connection references
+## Add connection references
+
+You must add connection references for every new organization when you use it for the first time. Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
+
+1. Sign in to [make.powerapps.com](https://make.powerapps.com) and select your environment.
+1. Go to **Solutions** > **Default Solution** > **Objects** > **Connection References**.
+1. Search for the **IA.Cr.IAPluginDVConnector** connection reference.
+1. Create a connection to **Microsoft Dataverse**. 
+1. [Publish the bot](/microsoft-copilot-studio/publication-fundamentals-publish-channels?tabs=web). 
 
 ## Update the Intent-based suggestions - Handoff topic
 

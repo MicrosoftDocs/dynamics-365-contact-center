@@ -45,7 +45,7 @@ Intent assist uses the determined intent and interview responses to also improve
 1.	In **Manage component collections (preview)**, search and select **Intent-based suggestions**.
 1.	Select **Add to agent** and save. 
     You can also disconnect a Copilot Studio bots to stop agent transfers for that Copilot Studio bot by selecting **Remove agent**.
-1. Publish the bot. Once added, you will see a series of Intent-based suggestions topics added to your agent.
+1. Publish the bot. Once added, you'll see a series of Intent-based suggestions topics added to your agent.
 
 ## Add connection references
 
@@ -59,16 +59,41 @@ You must add connection references for every new organization when you use it fo
 
 ## Update the Intent-based suggestions - Handoff topic
 
+You must have added the required knowledge sources to your Copilot. Learn more in [Add knowledge to a copilot](microsoft-copilot-studio/knowledge-add-existing-copilot).
+
+1. In the **Intent-based suggestions – Handoff** topic, add a node and go to **Advanced** >**Generative answer** and select **SolutionQuery** for input. 
+1. Select **Edit**, enable **Search only selected sources** and then select the relevant knowledge sources that you  added as a prerequisite.
+1. Add another node as **Topic management** > **Go to another topic** > **End of Conversation** to add logic to complete the conversation flow after providing an answer.
+
 ## Connect to knowledge sources
 
-Connect the knowledge articles in your CRM instance to your Copilot studio bot. Learn more in [Integrate knowledge management in Dynamics 365 with a Copilot Studio bot](/dynamics365/customer-service/administer/integrate-km-with-pva).
+Connect the knowledge articles in your CRM instance to your Copilot Studio bot. Learn more in [Integrate knowledge management in Dynamics 365 with a Copilot Studio bot](/dynamics365/customer-service/administer/integrate-km-with-pva).
 
-## Customize the variables in the Intent-based suggestions-Configuration topic
-this is a non-customizable topic that contains a list variables that can be overwritten to provide desired behavior.
+Make sure that that you add the new action you’ve created called **Generate answer from Dataverse knowledge articles for Power Virtual Agent** to the handoff topic instead of using Generative answer. 
+
+## Customize the variables in the Intent-based suggestions - Configuration topic
+
+The Intent-based suggestions - Configuration is a non-customizable topic that contains a list of variables that can be overwritten to provide the desired behavior. Here is a list of variables in the topic. 
+
+Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variables?tabs=webApp).
+
+
+|Variable  |Default |Description  |
+|---------|---------|---------|
+|Global.EnableIntentConfirmation    |    False     |      If enabled, chat bot will ask the customer to confirm the intent before moving on to the intent attributes questions.    |
+|Global.EnableIntentRephrase     |   False      |    If enabled, if intent cannot be determined or intent was not confirmed by customer, we will ask customer to rephrase their issue.      |
+|Global.RephraseCount     |     1    |   Determines the number of times we ask the customer to rephrase before giving up.       |
+|Global.AllowIntentShift      |  False       | If enabled, when intent change is detected, start over and go through confirmation and interview process again for the newly detected intent. If disabled, it will end the loop if we detect a shift in customer intent.         |
+|Global.EnableAskAllQuestions     |   False       |    If enabled, ask all intent attribute questions before ending the loop, regardless of whether the customer answers the question in the next turn. If disabled, as soon as the customer doesn’t answer an intent attribute questions, end the loop (a solution query will still be generated and gen answers should still be initiated).      |
+|Global.EnableEndUserAuthentication      |    True     |  If enabled, end user (C2) would need to be authenticated and will need access to the underlying Dataverse instance in order to connect to the intent library and get intent response. If disabled, it will fallback to maker authentication to connect to the Dataverse instance. We recommend for most users to override this to false and use maker authentication.        |
+
+
 
 
 
 ## Override default variable
+To override default variables,
+
 
 ## Disable end user authentication
 

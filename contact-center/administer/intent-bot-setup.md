@@ -1,12 +1,12 @@
 ---
 title: Configure intent-based suggestions for Copilot Studio bots
-description: This article explains how to configure intent-based follow-up suggestions for Copilot Studio bot using intent assist to automate and streamline the process.
+description: This article explains how to configure intent-based suggestions for Copilot Studio bots using intent assist to automate and streamline the process.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 11/13/2024
+ms.date: 11/18/2024
 ms.custom: bap-template
 ---
 
@@ -44,7 +44,7 @@ Intent assist uses the determined intent and interview responses to also improve
 1. In Microsoft Copilot Studio, select **Component collections** in **Settings**.
 1.	In **Manage component collections (preview)**, search and select **Intent-based suggestions**.
 1.	Select **Add to agent** and save. 
-    You can also disconnect a Copilot Studio bots to stop agent transfers for that Copilot Studio bot by selecting **Remove agent**.
+    You can also disconnect a Copilot Studio bot to stop agent transfers for that Copilot Studio bot by selecting **Remove agent**.
 1. Publish the bot. Once added, you'll see a series of Intent-based suggestions topics added to your agent.
 
 ## Add connection references
@@ -61,7 +61,7 @@ You must add connection references for every new organization when you use it fo
 
 You must have added the required knowledge sources to your Copilot. Learn more in [Add knowledge to a copilot](microsoft-copilot-studio/knowledge-add-existing-copilot).
 
-1. In the **Intent-based suggestions – Handoff** topic, add a node and go to **Advanced** >**Generative answer** and select **SolutionQuery** for input. 
+1. In the **Intent-based suggestions – Handoff** topic, add a node and go to **Advanced** >**Generative answer** and select **SolutionQuery** for Input. 
 1. Select **Edit**, enable **Search only selected sources** and then select the relevant knowledge sources that you  added as a prerequisite.
 1. Add another node as **Topic management** > **Go to another topic** > **End of Conversation** to add logic to complete the conversation flow after providing an answer.
 
@@ -69,14 +69,11 @@ You must have added the required knowledge sources to your Copilot. Learn more i
 
 Connect the knowledge articles in your CRM instance to your Copilot Studio bot. Learn more in [Integrate knowledge management in Dynamics 365 with a Copilot Studio bot](/dynamics365/customer-service/administer/integrate-km-with-pva).
 
-Make sure that that you add the new action you’ve created called **Generate answer from Dataverse knowledge articles for Power Virtual Agent** to the handoff topic instead of using Generative answer. 
+Make sure that that you add the new action you’ve created called **Generate answer from Dataverse knowledge articles for Power Virtual Agent** to the Handoff topic instead of using generative answer. 
 
 ## Customize the variables in the Intent-based suggestions - Configuration topic
 
 The Intent-based suggestions - Configuration is a non-customizable topic that contains a list of variables that can be overwritten to provide the desired behavior. Here is a list of variables in the topic. 
-
-Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variables?tabs=webApp).
-
 
 |Variable  |Default |Description  |
 |---------|---------|---------|
@@ -87,20 +84,22 @@ Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variable
 |Global.EnableAskAllQuestions     |   False       |    If enabled, ask all intent attribute questions before ending the loop, regardless of whether the customer answers the question in the next turn. If disabled, as soon as the customer doesn’t answer an intent attribute questions, end the loop (a solution query will still be generated and gen answers should still be initiated).      |
 |Global.EnableEndUserAuthentication      |    True     |  If enabled, end user (C2) would need to be authenticated and will need access to the underlying Dataverse instance in order to connect to the intent library and get intent response. If disabled, it will fallback to maker authentication to connect to the Dataverse instance. We recommend for most users to override this to false and use maker authentication.        |
 
+### Override default variable
 
+To override any of the variables for the intent-based suggestions:
 
+1. Select **Add node (+)** and **Variable management** > **Set a variable value**.
+1. Select the variable that you want to change and update the value.
+1. Save and publish the bot.
 
+Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variables?tabs=webApp).
 
-## Override default variable
-To override default variables,
+### Disable end user authentication
 
-
-## Disable end user authentication
-
-
-
+We recommend you to disable end user authentication. To do this, set the **Global.EnableEndUserAuthentication** to **False**.
 
 ## Related information
 
 [Create a copilot](/microsoft-copilot-studio/authoring-first-bot?tabs=web#create-a-copilot)
 [Add knowledge to a copilot](/microsoft-copilot-studio/knowledge-add-existing-copilot)
+[Global variables](/microsoft-copilot-studio/authoring-variables-bot?tabs=webApp)

@@ -1,5 +1,5 @@
 ---
-title: Set up embedded experience in ServiceNow for Dynamics 365 Contact Center 
+title: Set up the embedded experience in ServiceNow for Dynamics 365 Contact Center 
 description: Learn how to set up the embedded experience in ServiceNow for Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
@@ -10,7 +10,7 @@ ms.date: 11/18/2024
 ms.custom: bap-template
 ---
 
-# Set up embedded experience in ServiceNow for Dynamics 365 Contact Center
+# Set up the embedded experience in ServiceNow
 
 The embedded conversation widget is a feature of Dynamics 365 Contact Center that allows agents to chat with customers directly from any non-Microsoft customer relationship management (CRM) system. You can embed the widget into any web page or application that supports HTML and JavaScript, and it provides a seamless and consistent chat experience across different platforms.
 

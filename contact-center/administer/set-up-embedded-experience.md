@@ -22,7 +22,7 @@ The embedded conversation widget is a feature of Dynamics 365 Contact Center tha
 
 - The provisioning user has System Administrator permissions in Salesforce.
 
-- You have the embedded widget URL. To find the embedded widget URL, go to the welcome page of the Dynamics 365 Contact Center admin center. Select **Open** under **Your default contact center** and then navigate to the **Conversation widget** tab. The URL is listed under **Integration into third-party systems**.
+- You have the widget URL. To find the embedded widget URL, go to the welcome page of the Dynamics 365 Contact Center admin center. Select **Open** under **Your default contact center** and then navigate to the **Conversation widget** tab. The URL is listed under **Integration into third-party systems**.
 
 ## Set up the call center in Salesforce
 

@@ -20,7 +20,9 @@
           href: /dynamics365/customer-service/administer/manage-historical-data-capacity-updates?context=/dynamics365/contact-center/context/administer-context
       - name: Set up Dynamics 365 Contact center
         items:
-        - name: Set up embedded experience
+        - name: Set up the embedded experience in ServiceNow
+          href: set-up-embedded-experience-servicenow.md
+        - name: Set up the embedded experience in Salesforce
           href: set-up-embedded-experience.md
       - name: Unified routing and assignment
         items:
@@ -198,6 +200,8 @@
           href: /dynamics365/customer-service/administer/cs-voice-historical-analytics?context=/dynamics365/contact-center/context/administer-context
         - name: Configure IVR bots for voice
           href: /dynamics365/customer-service/administer/voice-channel-pva-bots?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure multilingual IVR bots
+          href: configure-multilingual-agents.md      
         - name: View voice calls usage
           href: /dynamics365/customer-service/administer/voice-channel-usage?context=/dynamics365/contact-center/context/administer-context
         - name: Configure post-call survey
@@ -214,10 +218,8 @@
           href: /dynamics365/customer-service/administer/voice-consult-microsoft-teams-user?context=/dynamics365/contact-center/context/administer-context
         - name: Manage phone music
           href: /dynamics365/customer-service/administer/voice-channel-music?context=/dynamics365/contact-center/context/administer-context
-        - name: Set up a multilingual bot
+        - name: Use bot framework composer to set up a multilingual bot for voice channel
           href: /dynamics365/customer-service/administer/set-up-multilingual-pva-bot?context=/dynamics365/contact-center/context/administer-context
-        - name: Set up a multilingual contact center
-          href: /dynamics365/customer-service/administer/voice-channel-multi-language-contact-center?context=/dynamics365/contact-center/context/administer-context
         - name: Bring your own carrier
           href: /dynamics365/customer-service/administer/voice-channel-bring-your-own-number?context=/dynamics365/contact-center/context/administer-context
         - name: Integrate a third-party IVR system with voice channel
@@ -380,16 +382,18 @@
           href: /dynamics365/customer-service/administer/configure-bot-best-practices?context=/dynamics365/contact-center/context/administer-context
         - name: Manage your bots
           href: /dynamics365/customer-service/administer/manage-your-bots?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure context variables for bots
-          href: /dynamics365/customer-service/administer/context-variables-for-bot?context=/dynamics365/contact-center/context/administer-context
+        - name: Integrate a Copilot Studio bot
+          href: /dynamics365/customer-service/administer/configure-bot-virtual-agent?context=/dynamics365/contact-center/context/administer-context          
+        - name: Transfer conversations from customer service representatives to agents
+          href: transfer-to-agents.md               
         - name: Configure Azure bots
           items:
           - name: Bot sessions and licensing
             href: /dynamics365/customer-service/administer/bot-session-licensing?context=/dynamics365/contact-center/context/administer-context
           - name: Integrate an Azure bot
             href: /dynamics365/customer-service/administer/configure-bot-azure?context=/dynamics365/contact-center/context/administer-context
-        - name: Integrate a Copilot Studio bot
-          href: /dynamics365/customer-service/administer/configure-bot-virtual-agent?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure context variables for bots
+          href: /dynamics365/customer-service/administer/context-variables-for-bot?context=/dynamics365/contact-center/context/administer-context      
       - name: Knowledge management
         items:
         - name: Configure knowledge management

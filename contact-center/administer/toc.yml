@@ -20,7 +20,9 @@
           href: /dynamics365/customer-service/administer/manage-historical-data-capacity-updates?context=/dynamics365/contact-center/context/administer-context
       - name: Set up Dynamics 365 Contact center
         items:
-        - name: Set up embedded experience
+        - name: Set up the embedded experience in ServiceNow
+          href: set-up-embedded-experience-servicenow.md
+        - name: Set up the embedded experience in Salesforce
           href: set-up-embedded-experience.md
       - name: Unified routing and assignment
         items:

@@ -392,7 +392,7 @@
           href: /dynamics365/customer-service/administer/context-variables-for-bot?context=/dynamics365/contact-center/context/administer-context      
       - name: Feedback surveys
         items:
-        - name: Configure post-conversation surveys (preview)
+        - name: Configure feedback surveys using Copilot Studio (preview)
           href: configure-surveys.md
         - name: Enable feedback on voice call quality
           href: /dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context

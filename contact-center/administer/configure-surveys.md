@@ -1,22 +1,24 @@
 ---
-title: Configure post-conversation surveys (preview)
+title: Configure feedback surveys using Copilot Studio (preview)
 description: Learn how configure surveys using Copilot Studio agents.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer:
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 11/12/2024
+ms.date: 11/22/2024
 ms.custom: bap-template
 ---
 
-# Configure post-conversation surveys (preview)
+# Configure feedback surveys using Copilot Studio (preview)
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 You can create and manage surveys that go out to the customers after a call or conversation ends. When you create a survey in Contact Center admin center or Customer Service admin center, the application automatically provisions a Copilot Studio survey agent that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses. In this article, we will cover how you can use Microsoft Copilot Studio to unify the process of configuring surveys across channels in Dynamics 365 Contact Center and Dynamics 365 Customer Service with the generative capabilities of Copilot Studio agents.
 
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-The survey appears for the customer after the customer service representative (representative) ends the conversation.
+The survey appears for the customer after the customer service representative (representative) ends the conversation or call.
  
 With Microsoft Copilot Studio agents, you can:
 - Gather customer feedback and configure contextual actions depending on the feedback.
@@ -63,7 +65,15 @@ After you create the survey in the admin center, it needs to be published. If yo
 
 ### Verify the Dataverse connection
 
-Make sure that the Dataverse connection is established for Copilot Studio so that you can publish the survey agent. Learn more at [Set up a Dataverse connection](/power-apps/maker/data-platform/create-connection-reference).
+Make sure that the Dataverse connection is established for Copilot Studio so that you can publish the survey agent. 
+
+1. Sign into Power Apps, and then go to **Solutions**.
+1. On the **Solutions** page, select **Default Solution** under **Unmanaged**.
+1. On the page that appears, search for **Connection references** under **Objects**, and then select **Microsoft Dataverse connection reference for MCS Survey**.
+1. On the edit pane that appears, select a connection in the **Connection** box or select **New connection**. A new tab opens to create a connection.
+1. Complete the steps to create a **Microsoft Dataverse** connection and select it in the **Connection** box.
+
+Learn more at [Set up a Dataverse connection](/power-apps/maker/data-platform/create-connection-reference).
 
 ### Manage the surveys
 
@@ -140,6 +150,10 @@ Edit the **Conversation Start** system topic only. All other system topics are d
 
 The survey results are stored in Dataverse tables. To view the survey responses, in Power Apps, go to **Tables**, and select **Customer feedback survey response**.
 
+The CSAT scores are displayed in the Omnichannel historical analytics report.
+
 ### Related information
+
+[Enable feedback on voice call quality](/dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context)  
 
 

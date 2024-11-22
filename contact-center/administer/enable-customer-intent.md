@@ -1,5 +1,5 @@
 ---
-title: Manage intent using Copilot
+title: Manage intent using Copilot (preview)
 description: 
 author: neeranelli
 ms.author: nenellim
@@ -18,8 +18,6 @@ Copilot presents a curated list of questions and suggested solutions in the chat
 
 ## Enable customer intent agent
 
-
-
 1. In Contact Center admin center or Customer Service admin center, select **Intent** under **Customer support**.
 1. On the **Customer Intent Agent (preview)** page that appears, enable the **Turn on Customer Intent Agent** toggle.
 
@@ -34,7 +32,7 @@ You need to run the AI model on data sources like cases and conversations to ide
    - **Data source**: Available for conversations only and therefore read-only.
    - **Data granularity**: Select **Low**, **Medium**, or **High** in the list.
    - **Record status**: Select **Pending**, **Approved**, or **Discarded** in the list.
-
+1. Select **Simulate** to simulate the 
 
 
 

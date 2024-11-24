@@ -1,58 +1,63 @@
 ---
-title: Configure a sample IVR bot template
-description: Learn how to configure a sample IVR bot template.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: how-to #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+title: Configure a sample voice agent template
+description: Learn how to configure a sample voice agent template.
+author: gandhamm
+ms.author: mgandham
+ms.reviewer: mgandham
+ms.topic: how-to 
+ms.collection: 
 ms.date: 11/06/2024
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template
 ---
 
-# Configure a sample IVR bot template
+# Configure a sample voice agent template
 
-This topic provides the steps to import the Interactive Voice Response (IVR) agent sample template and then connect the agent to a workstream in Dynamics 365 Contact Center or Customer Service. The sample provides a pre-built template with the following IVR capabilities for managing customer conversations:
+ > [!NOTE]
+ > Some examples are for illustration only and are fictitious. No real association is intended or inferred.
 
-- **Intent Detection from Conversational Phrase**: Identifies the caller's intent by analyzing spoken phrases, ensuring inquiries are routed to the appropriate resources or workflows. The template recognizes customer intent to track order status.
+This article explains how the Interactive Voice Response (IVR) or voice agent sample that's created in Microsoft Copilot Studio  works when connected with a workstream in Dynamics 365 Contact Center or Customer Service. The sample provides a prebuilt template with the following capabilities for managing customer conversations:
 
-- **Numeric Input by Voice**: Allows users to provide numeric information through voice input, streamlining the process for entering data such as account numbers or PINs without using a keypad.
+- **Intent detection from conversational phrases**: Identifies the caller's intent by analyzing spoken phrases, ensuring inquiries are routed to the appropriate resources or workflows. The template recognizes customer intent to track order status.
 
-- **Distinguish Number Entities Based on Length**: Differentiates between numeric entities based on their length, enhancing accuracy in identifying account numbers, phone numbers, or other relevant data.
+- **Numeric input by voice**: Allows users to provide numeric information through voice input. This streamlines the process for entering data such as account numbers or PINs without using a keypad.
 
-- **Self-Service/Account Lookup**: Enables callers to access account information or perform self-service tasks without agent assistance, improving efficiency and customer satisfaction.
+- **Distinguish number entities based on length**: Differentiates between numeric entities based on their length, enhancing accuracy in identifying account numbers, phone numbers, or other relevant data.
 
-- **Re-Prompt/Entity Validation**: Re-prompts callers for clarification if the initial input is unclear, validating entities to ensure correct information is captured, reducing errors and improving the interaction experience.
+- **self-service/account lookup**: Enables callers to access account information or perform self-service tasks without agent assistance, improving efficiency and customer satisfaction.
+
+- **Reprompt/entity validation**: Prompts callers for clarification if the initial input is unclear, validates entities to ensure correct information is captured. This reduces errors and improves the interaction experience.
 
 ## Prerequisites
 
-- Dynamics 365 Contact Center or Customer Service license
-- Microsoft Copilot Studio license.
-- Voice channel is provisioned and you have procured phone numbers.
-- Workstream is set up and the phone number is linked to a voice channel. 
+- Dataverse is provisioned in your environment to store and manage tables.
+- [Voice channel is provisioned](../implement/provision-channels.md)
+- [Procure phone numbers](/dynamics365/customer-service/administer/voice-channel-manage-phone-numbers?context=/dynamics365/contact-center/context/administer-context)
+-  [Workstream is set up and the phone number is linked to a voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?context=/dynamics365/contact-center/context/administer-context). 
 
+## Import and configure voice agent template
 
-## Import and configure the IVR bot template
-
-1. Download the zip file and save it to your local machine.
+1. Download the zip file and save it to your local machine. You can download the zip file from [here].
 1. In Copilot Studio, perform the steps in [import a solution](/microsoft-copilot-studio/authoring-export-import-copilot-components#import-a-solution-to-add-component-collections-to-an-environment) to import the zip file. The template is displayed on the **Scenarios** page.
-1. In the Copilots page, you'll see the IVR bot. You can modify the bot's workflow setting, bot topics, and call routing to align with your customer service processes and scenarios.
-1. Perform the steps in [Set up IVR bots in the voice channel](/customer-service/administer/voice-channel-pva-bots) to finish the bot configuration in Dynamics 365 Contact Center or Customer Service.
+1. In the Agents page, you see the voice agent. You can modify the agent's workflow setting, topics, and call routing to align with your customer service processes and scenarios.
+1. To finish the agent configuration in Dynamics 365 Contact Center or Customer Service, perform the steps in [Set up voice agents in the voice channel](/customer-service/administer/voice-channel-pva-bots)
 
  > [!NOTE]
- >  We recommend you add the bot to the voice workstream in the omnichannel app and test it before you make changes to the bot topics.
+ >  We recommend you add the agent to the voice workstream in the omnichannel app and test it before you make changes to the topics.
 
-## Contoso Order Status bot workflow
+## Contoso Order Status voice agent workflow
 
-The IVR bot template is intended to help customers track the status of their orders. When you call the the phone number linked to the workstream the bot is added, the bot workflow is as follows:
+The voice agent template is intended to help customers track the status of their orders. When you call the the phone number linked to the workstream the agent is added, the workflow is as follows:
 
-1. Bot greets you and asks  how it can help.
-1. You say, "I want to track my order."
-1. The bot recognizes the your intent to track an order and prompts you to provide the order number or phone number. 
-1. You can either say the order number or enter it using the dialpad. In this example, can use: 12345678911234. The bot then validates the order number. If the order number is not valid, the bot prompts you to specify the order number again.  
-1. The bot then asks for your zip code. You can either say the zipcode or type it in. In this example, use 90210. The bot validates the zip code. If the zip code is not valid, the bot prompts you to specify the zip code again.
-1. The bot retrieves and tells you the status of your order.
-1.  The bot then asks if you want text updates and if there is anything else it can help you with. If you say No, the call ends.
-1. At any point in the call, if you say "speak to an agent" the it bot transfers you to a customer service representative based on the workstream configuration.
- 
+1. The agent greets the customer and asks how it can help.
+1. The customer says, "I want to track my order."
+1. The agent recognizes the customer's intent to track an order and prompts the customer to provide the order number or phone number. 
+1. The customer can either say the order number or enter it using the dialpad. 
+1. The agent then validates the order number. If the order number isn't valid, the agent prompts the customer to specify the order number again.  
+1. The agent then asks for your zip code. 
+1. The customer can either say the zipcode or type it in. The agent validates the zip code. If the zip code isn't valid, the agent prompts the customer to specify the zip code again.
+1. The agent retrieves the status and tells you the status of your order.
+1. The agent then asks the customer if there's anything else it can help the customer with. Based on the customer's response, the following actions occur:
+     - **No**: Call ends. 
+     - **Yes**: Call is ongoing, but the agent doesn't engage with the call further. In Copilot Studio, you can add an end conversation topic here to end the call.
+1. The agent transfers the customer to a customer service representative based on the workstream configuration, if the customer requests to speak to a service representative at any point during the call. 
 

@@ -59,6 +59,6 @@ The voice agent template is intended to help customers track the status of their
 1. The agent retrieves the status and tells you the status of your order.
 1. The agent then asks the customer if there's anything else it can help the customer with. Based on the customer's response, the following actions occur:
      - **No**: Call ends. 
-     - **Yes**: Call is ongoing, but the agent doesn't engage with the call further. In Copilot Studio, you can add an end conversation topic here to end the call.
+     - **Yes**: Call continues, but the agent doesn't engage with the call further. In Copilot Studio, you can add an end conversation topic to end the call.
 1. The agent transfers the customer to a customer service representative based on the workstream configuration, if the customer requests to speak to a service representative at any point during the call. 
 

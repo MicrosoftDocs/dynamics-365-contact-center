@@ -26,12 +26,10 @@ Make sure that your administrator enabled the following features in Customer Ser
 
 When you accept a live chat or persistent chat conversation, the application shows **Intent-based suggestions (preview)** in **Ask a question** in Copilot help pane. 
 
-The intent shows the following based on whether the agent maps the conversation context to a specific intent, a general intent group, or can't map it to any known intent.
-
-- **Agent maps the conversation context to a specific intent**: You see the intent as the issue. When you expand this card, You can see the relevant information that you need to resolve the issue as questions.
-   
-- **Agent maps the conversation context to a general intent group**: You see the intent along with further questions to clarify the intent. 
-- **Agent can't map the context of the conversation**: Nothing is displayed in **Intent-based suggestions (preview**).
+- Based on whether the agent maps the conversation context to a specific intent, a general intent group, or can't map it to any known intent, you'll see the following:
+   - Intent as the issue and relevant questions that you need to resolve the issue
+   - Intent as the issue along with further questions to clarify the intent
+   - Nothing is displayed 
 - If a customer's intent changes during a conversation, the agent detects the change in intent and updates the suggestions based on the current intent. The agent saves previous intents and suggested questions along with the conversation history. So even if you transfer conversation to another service representative, they can view historical intents and suggested questions.
   
 ### Use intent-based suggestions

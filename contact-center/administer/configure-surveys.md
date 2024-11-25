@@ -35,11 +35,11 @@ With Microsoft Copilot Studio agents, you can:
 ## Prerequisites
 
 - Copilot Studio and the channels in Dynamics 365 Contact Center or Dynamics 365 Customer Service are available in the same environment.
-- System administrator role.
+- System Administrator role.
 
 ## Create a survey
 
-1. In the site map of Contact Center admin center or Customer Service admin center, go to **Customer setting** in **Customer Support**, and select **Manage** for **Customer feedback (preview)**.
+1. In the site map of Contact Center admin center or Customer Service admin center, go to **Customer settings** in **Customer Support**, and select **Manage** for **Customer feedback (preview)**.
 1. On the **Customer feedback (preview)** page, select **New**.
 1. On the **Add new customer feedback survey** wizard, select one of the following templates, and then select **Next**:
     - **Customer Satisfaction (CSAT) Survey**: Use to ask questions, such as, “On a scale of 1-5, how would you rate your overall satisfaction with the service you received?”

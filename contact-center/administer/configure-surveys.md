@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer:
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 11/22/2024
+ms.date: 11/25/2024
 ms.custom: bap-template
 ---
 
@@ -14,8 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-You can create and manage surveys that go out to the customers after a call or conversation ends. When you create a survey in Contact Center admin center or Customer Service admin center, the application automatically provisions a Copilot Studio survey agent that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses. In this article, we will cover how you can use Microsoft Copilot Studio to unify the process of configuring surveys across channels in Dynamics 365 Contact Center and Dynamics 365 Customer Service with the generative capabilities of Copilot Studio agents.
-
+You can create and manage surveys that go out to the customers after a call or conversation ends. When you create a survey in Contact Center admin center or Customer Service admin center, the application automatically provisions a Microsoft Copilot Studio survey agent that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses.
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The survey appears for the customer after the customer service representative (representative) ends the conversation or call.
@@ -35,17 +34,17 @@ With Microsoft Copilot Studio agents, you can:
 
 ## Prerequisites
 
-- Copilot Studio and contact center channels are available in the same environment.
+- Copilot Studio and the channels in Dynamics 365 Contact Center or Dynamics 365 Customer Service are available in the same environment.
 - System administrator role.
 
 ## Create a survey
 
-1. In the site map of Contact Center admin center or Customer Service admin center, go to **Customer setting** under **Customer Support**, and select **Manage** for **Customer feedback (preview)**.
+1. In the site map of Contact Center admin center or Customer Service admin center, go to **Customer setting** in **Customer Support**, and select **Manage** for **Customer feedback (preview)**.
 1. On the **Customer feedback (preview)** page, select **New**.
 1. On the **Add new customer feedback survey** wizard, select one of the following templates, and then select **Next**:
-    - **Customer Satisfaction (CSAT) Survey**: A widely used survey metric to assess customer satisfaction with their recent support experience. To measure this, you can ask customers: “On a scale of 1-5, how would you rate your overall satisfaction with the service you received?”
-    - **Net Promoter Score (NPS) Survey**: A survey metric used to measure customer loyalty. To gauge this, you can ask: “On a scale of 0 to 10, how likely are you to recommend our product/service/company?” 
-    - **Customer Effort Score (CES)**: A survey metric that quantifies the ease with which customers can complete their desired actions or resolve issues when interacting with a company’s products or services. It is typically measured by asking customers: “On a scale of 1 to 7, how easy was it to get the help you needed?
+    - **Customer Satisfaction (CSAT) Survey**: Use to ask questions, such as, “On a scale of 1-5, how would you rate your overall satisfaction with the service you received?”
+    - **Net Promoter Score (NPS) Survey**: Use to measure customer loyalty, such as, “On a scale of 0 to 10, how likely are you to recommend our product/service/company?” 
+    - **Customer Effort Score (CES)**: Use to quantify the ease with which customers can complete their desired actions or resolve issues when interacting with a company’s products or services. Frame questions, such as, “On a scale of 1 to 7, how easy was it to get the help you needed?
     - **Blank Template**: Use it to start a survey from scratch. 
 1. On the **Properties** page, do the following:
     - **Name**: Enter a name based on the survey template that you selected.
@@ -61,7 +60,7 @@ After you create the survey in the admin center, it needs to be published. If yo
 
 1. Select the survey that you created. The survey opens in Copilot Studio page on a new tab. 
 1. Update the survey to suit your business needs. 
-1. Select **Publish**. After a couple of minutes, the survey status is updated as **Ready** on the Contact Center admin center or Customer Service admin center page.
+1. Select **Publish**. After a couple of minutes, the survey status is updated as **Ready** on the Contact Center admin center or Customer Service admin center **Customer feedback (preview)** page.
 
 ### Verify the Dataverse connection
 
@@ -77,7 +76,7 @@ Learn more at [Set up a Dataverse connection](/power-apps/maker/data-platform/cr
 
 ### Manage the surveys
 
-Only those surveys that you create using the **Customer feedback (preview)** option appear in the admin center. You can't use surveys that aren't created using this feature.
+The surveys that you create using the **Customer feedback (preview)** option only appear on the **Customer feedback (preview)** page. You can't manage surveys created using other methods, such as Customer Voice.
 
 Manage your surveys on the **Customer feedback (preview)** page.
 - **Edit**: Select a survey, and then select **Edit**. You can edit the survey name only.
@@ -97,7 +96,9 @@ Edit the **Conversation Start** system topic only. All other system topics are d
 
 ### Set up custom hosting
 
-1. In Contact Center admin center or Customer Service admin center, go the survey that you want to host on a link other than the default one.
+You can host surveys on a link other than the default one.
+
+1. In Contact Center admin center or Customer Service admin center, select the survey that you want to custom host.
 1. Select the survey and select **Edit**.
 1. In **Survey URL**, enter the custom host page URL where you want to display the survey.
 1. Do the following for a seamless hosting experience:
@@ -122,14 +123,14 @@ Edit the **Conversation Start** system topic only. All other system topics are d
 
 1. Copy the following code snippet and paste it to your HTML website.
    
-``` 
-    <!DOCTYPE html>
-    <html>
-    <body> 
-    <iframe src="https://powerva.microsoft.com/environments/@environment/bots/@bot/webchat?__version__=2&SurveyVersion=@surveyVersion&RegardingLiveWorkItemId=@regardingLiveWorkItemId&SurveyId=@surveyId&InvitationId=@invitationId" frameborder="0" style="width: 300px; height: 500px;"></iframe> 
-    </body> 
-    </html>  
-```
+    ``` 
+        <!DOCTYPE html>
+        <html>
+        <body> 
+        <iframe src="https://powerva.microsoft.com/environments/@environment/bots/@bot/webchat?__version__=2&SurveyVersion=@surveyVersion&RegardingLiveWorkItemId=@regardingLiveWorkItemId&SurveyId=@surveyId&InvitationId=@invitationId" frameborder="0" style="width: 300px; height: 500px;"></iframe> 
+        </body> 
+        </html>  
+    ```
 1. Style the iframe to match your website.
 
 ## Enable the post-conversation survey for digital messaging channels

@@ -15,7 +15,7 @@ ms.custom: bap-template
  > [!NOTE]
  > Some examples are for illustration only and are fictitious. No real association is intended or inferred.
 
-This article explains how the Interactive Voice Response (IVR) or voice agent sample that's created in Microsoft Copilot Studio  works when connected with a workstream in Dynamics 365 Contact Center or Customer Service. The sample provides a prebuilt template with the following capabilities for managing customer conversations:
+This article explains how the Interactive Voice Response (IVR) or voice agent sample that's created in Microsoft Copilot Studio works when connected with a workstream in Dynamics 365 Contact Center or Dynamics 365 Customer Service. The sample provides a prebuilt template with the following capabilities for managing customer conversations:
 
 - **Intent detection from conversational phrases**: Identifies the caller's intent by analyzing spoken phrases, ensuring inquiries are routed to the appropriate resources or workflows. The template recognizes customer intent to track order status.
 

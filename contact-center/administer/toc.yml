@@ -200,6 +200,8 @@
           href: /dynamics365/customer-service/administer/cs-voice-historical-analytics?context=/dynamics365/contact-center/context/administer-context
         - name: Configure IVR bots for voice
           href: /dynamics365/customer-service/administer/voice-channel-pva-bots?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure a sample voice agent template
+          href: bot-scenario-configure.md
         - name: Configure multilingual IVR bots
           href: configure-multilingual-agents.md      
         - name: View voice calls usage

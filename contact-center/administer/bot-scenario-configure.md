@@ -43,7 +43,7 @@ This article explains how the Interactive Voice Response (IVR) or voice agent sa
 1. To finish the agent configuration in Dynamics 365 Contact Center or Customer Service, perform the steps in [Set up voice agents in the voice channel](/dynamics365/customer-service/administer/voice-channel-pva-bots?context=/dynamics365/contact-center/context/administer-context).
 
  > [!NOTE]
- > We recommend you add the agent to the voice workstream in the omnichannel app and test it before you make changes to the topics.
+ > We recommend that you add the agent to the voice workstream in the omnichannel app and test it before you make changes to the topics.
 
 ## Contoso Order Status voice agent workflow
 

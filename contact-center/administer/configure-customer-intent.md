@@ -70,7 +70,7 @@ The intent groups that the AI model identifies are displayed on the **All intent
 1. Select **Next**.
 1. On the page that appears, select **Add**.
 1. Select the intents in the list that match and select **Add**.
-1. Select **Save**. The intent group is displayed in the All intent groups view.
+1. Select **Save**. The intent group is displayed in the **All intent groups** view.
  
 ### Related information
 

@@ -26,5 +26,4 @@ Customer intent agent can be used in the following scenarios:
 **Assisted service**: Significantly reduce issue handling time by continuously detecting updates to intent based on ongoing conversations and provide: 
 - Persist information that's discovered by Copilot in self service to quickly get the service representative up to speed on the intent and information gathered.
 - A curated list of questions and suggested solutions as the next response that Copilot recommends the representative send to the customer.
-- Separately show the detected intent, suggested follow-up questions and responses, suggested solutions in a holistic view. 
-- 
+- Separately show the detected intent, suggested follow-up questions and responses, suggested solutions in a holistic view.

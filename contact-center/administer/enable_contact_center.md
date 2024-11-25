@@ -19,8 +19,8 @@ You can create a custom agent experience profile and enable the required feature
 Perform the following steps to add the Copilot features to an agent experience profile:
 
 1. Go to Agent experience profiles using one of the following navigation options:
-  - **Agent experience** > **Workspaces**
-  - **Intent > Agent access** > **Customer Intent Agent (preview)** > **Enable for support representatives**
+   - **Agent experience** > **Workspaces**
+   - **Intent > Agent access** > **Customer Intent Agent (preview)** > **Enable for support representatives**
 1. Select the required agent experience profile.
 1. On the Productivity Pane, turn on the **Copilot help pane** toggle so that agents can use ask a question.
 1. In the **Copilot AI features** section, select edit and then select the required **Intent-based suggestions(preview)**

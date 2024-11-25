@@ -37,9 +37,7 @@ This article explains how the Interactive Voice Response (IVR) or voice agent sa
 ## Import and configure voice agent template
 
 
-see [Sample schema for capacity profiles](https://github.com/microsoft/Dynamics365-Apps-Samples/blob/neeranelli-patch-10/contact-center/copilot-agents/ContosoOrderStatusCOS_1_2_0_32.zip)
-
-1. Download the [sample voice agent zip]((https://github.com/microsoft/Dynamics365-Apps-Samples/tree/master/customer-service/unified-routing-sample-schemas/Sample%20schema%20for%20capacity%20profiles.xml)) file and save it to your local machine. You can download the zip file from [here].
+1. Download the [sample voice agent zip]((https://github.com/microsoft/Dynamics365-Apps-Samples/tree/master/contact-center/copilot-agents/ContosoOrderStatusCOS_1_2_0_32.zip) file and save it to your local machine. You can download the zip file from [here].
 1. In Copilot Studio, perform the steps in [import a solution](/microsoft-copilot-studio/authoring-export-import-copilot-components#import-a-solution-to-add-component-collections-to-an-environment) to import the zip file. The template is displayed on the **Scenarios** page.
 1. In the Agents page, you see the voice agent. You can modify the agent's workflow setting, topics, and call routing to align with your customer service processes and scenarios.
 1. To finish the agent configuration in Dynamics 365 Contact Center or Customer Service, perform the steps in [Set up voice agents in the voice channel](/dynamics365/customer-service/administer/voice-channel-pva-bots?context=/dynamics365/contact-center/context/administer-context).

@@ -20,7 +20,9 @@
           href: /dynamics365/customer-service/administer/manage-historical-data-capacity-updates?context=/dynamics365/contact-center/context/administer-context
       - name: Set up Dynamics 365 Contact center
         items:
-        - name: Set up embedded experience
+        - name: Set up the embedded experience in ServiceNow
+          href: set-up-embedded-experience-servicenow.md
+        - name: Set up the embedded experience in Salesforce
           href: set-up-embedded-experience.md
       - name: Unified routing and assignment
         items:
@@ -198,18 +200,16 @@
           href: /dynamics365/customer-service/administer/cs-voice-historical-analytics?context=/dynamics365/contact-center/context/administer-context
         - name: Configure IVR bots for voice
           href: /dynamics365/customer-service/administer/voice-channel-pva-bots?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure a sample voice agent template
+          href: bot-scenario-configure.md
         - name: Configure multilingual IVR bots
           href: configure-multilingual-agents.md      
         - name: View voice calls usage
           href: /dynamics365/customer-service/administer/voice-channel-usage?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure post-call survey
-          href: /dynamics365/customer-service/administer/voice-channel-survey?context=/dynamics365/contact-center/context/administer-context
         - name: Block spam numbers
           href: /dynamics365/customer-service/administer/voice-channel-block-number?context=/dynamics365/contact-center/context/administer-context
         - name: Configure call recording, transcription, and real-time translation
           href: /dynamics365/customer-service/administer/voice-channel-configure-transcripts?context=/dynamics365/contact-center/context/administer-context
-        - name: Enable voice call experiences
-          href: /dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context
         - name: Delete call recordings
           href: /dynamics365/customer-service/administer/voice-channel-delete-calls?context=/dynamics365/contact-center/context/administer-context
         - name: Enable voice consult with Microsoft Teams users
@@ -346,8 +346,6 @@
           href: /dynamics365/customer-service/administer/create-operating-hours?context=/dynamics365/contact-center/context/administer-context
         - name: Manage context variables
           href: /dynamics365/customer-service/administer/manage-context-variables?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure post-conversation surveys
-          href: /dynamics365/customer-service/administer/configure-post-conversation-survey?context=/dynamics365/contact-center/context/administer-context
         - name: Identify customers automatically
           href: /dynamics365/customer-service/administer/record-identification-rule?context=/dynamics365/contact-center/context/administer-context
         - name: Close conversations automatically
@@ -390,8 +388,20 @@
             href: /dynamics365/customer-service/administer/bot-session-licensing?context=/dynamics365/contact-center/context/administer-context
           - name: Integrate an Azure bot
             href: /dynamics365/customer-service/administer/configure-bot-azure?context=/dynamics365/contact-center/context/administer-context
+        - name: Integrate a Copilot Studio bot
+          href: /dynamics365/customer-service/administer/configure-bot-virtual-agent?context=/dynamics365/contact-center/context/administer-context
         - name: Configure context variables for bots
           href: /dynamics365/customer-service/administer/context-variables-for-bot?context=/dynamics365/contact-center/context/administer-context      
+      - name: Feedback surveys
+        items:
+        - name: Configure feedback surveys using Copilot Studio (preview)
+          href: configure-surveys.md
+        - name: Enable feedback on voice call quality
+          href: /dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure post-call survey
+          href: /dynamics365/customer-service/administer/voice-channel-survey?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure post-conversation surveys using Customer Voice
+          href: /dynamics365/customer-service/administer/configure-post-conversation-survey?context=/dynamics365/contact-center/context/administer-context
       - name: Knowledge management
         items:
         - name: Configure knowledge management

@@ -24,12 +24,12 @@ The success of social media customer service, like all other customer services, 
 ## Prerequisites
 
 - Channels are provisioned in your environment. Learn more in [provision channels](../implement/provision-channels.md).
-- You Have an Azure account with an active subscription. Make sure that the Azure subscription and Dynamics 365 account are in the same tenant. Learn more at [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account).
-   - Create or use an existing Azure Communication Services resource. Learn more at [Create and manage Communication Services resources](/azure/communication-services/quickstarts/create-communication-resource).
+- You have an Azure account with an active subscription. Make sure that the Azure subscription and Dynamics 365 account are in the same tenant. Learn more at [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account).
+   - Create or use an existing Azure Communication Services resource. Learn more in [Create and manage Communication Services resources](/azure/communication-services/quickstarts/create-communication-resource).
     - Obtain a phone number that can send and receive SMS. You have several options:
-       - Purchase a phone number or import one from Azure Communication Services. Learn more in [Get and manage phone number](/azure/communication-services/quickstarts/telephony/get-phone-number) or [import phone numbers](/dynamics365/customer-service/administer/voice-channel-sync-from-acs?context=/dynamics365/contact-center/context/administer-context)
+       - Purchase a phone number or import one from Azure Communication Services. Learn more in [Get and manage phone number](/azure/communication-services/quickstarts/telephony/get-phone-number) or [import phone numbers](/dynamics365/customer-service/administer/voice-channel-sync-from-acs?context=/dynamics365/contact-center/context/administer-context).
        - Bring a phone number from your provider. Learn more in [Bring your own carrier](/dynamics365/customer-service/administer/voice-channel-bring-your-own-number?context=/dynamics365/contact-center/context/administer-context).
-       -Migrate your existing WhatsApp business accounts with phone number.
+       -    Migrate your existing WhatsApp business accounts with phone number.
    - Set up Advanced Messaging for WhatsApp. Learn more in [Advanced Messaging for WhatsApp in Azure Communication Services](/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview) and [Register WhatsApp business account](/azure/communication-services/quickstarts/advanced-messaging/whatsapp/connect-whatsapp-business-account).
    - Set up Event Grid with Microsoft Entra app authentication. Learn more in [Handle Advanced Messaging events](/azure/communication-services/quickstarts/advanced-messaging/whatsapp/handle-advanced-messaging-events) and [Deliver events to Microsoft Entra protected endpoints](/azure/event-grid/secure-webhook-delivery).
 
@@ -43,7 +43,7 @@ The success of social media customer service, like all other customer services, 
 
 ## Get Azure Communication Services details
 
-You'll need these details when you create the WhatsApp channel in [the following section](#create-a-whatsapp-channel). You might find it helpful to have the Azure portal and the Contact Center admin center or Customer Service admin center open in separate browser tabs and switch back and forth as needed.
+You'll need these details when you create the WhatsApp channel in [the following section](#create-a-whatsapp-channel). You might find it helpful to have the Azure portal and the Contact Center admin center or Customer Service admin center open in separate browser tabs and switch back and forth as required.
    
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/).
 
@@ -51,7 +51,9 @@ You'll need these details when you create the WhatsApp channel in [the following
  
 1. Copy the name of the resource. You'll paste this value in the **ACS resource name** field when you create the WhatsApp channel in the admin center.
 
-1. Select **Events**. Select the event subscription that you created when you set up Advanced Messaging for WhatsApp in [Prerequisites](#prerequisites). Select **Additional features**, and then scroll down to **MICROSOFT ENTRA AUTHENTICATION**.
+1. Select **Events**. Select the event subscription that you created when you set up Advanced Messaging for WhatsApp in [Prerequisites](#prerequisites).
+
+1. Select **Additional features**, and then scroll down to **MICROSOFT ENTRA AUTHENTICATION**.
 
 1. Copy the value of **Microsoft Entra Application ID or URI**. You'll paste this value in the **Event grid app ID** field in the WhatsApp channel settings.
 
@@ -65,9 +67,9 @@ You'll need these details when you create the WhatsApp channel in [the following
 
 You can create a WhatsApp channel in either the Contact Center admin center or the Customer Service admin center.
 
-1. Under **Customer support**, select **Channels**.
+1. In **Customer support**, select **Channels**.
 
-1. Under **Accounts**, to the right of **Messaging accounts**, select **Manage**.
+1. In **Accounts**, select **Manage** for **Messaging accounts**.
 
 1. Select **Add account**.
 
@@ -86,9 +88,9 @@ In the following instructions, you'll provide the information from the Azure por
    - **Event grid app tenant ID**: Paste the **Microsoft Entra Application or URI**.
    - **ACS connecting string**: Paste the primary key **Connection string**.
 
-1. Select the check box to confirm that the Azure Communication Services resource is connected to only one organization, and then select **Next**.
+1. Select the checkbox to confirm that the Azure Communication Services resource is connected to only one organization, and then select **Next**.
 
-1. Select **+ Add**, and then enter the following information:
+1. Select **Add**, and then enter the following information:
 
    - **Name**: Enter a name for the channel.
    - **Channel ID**: Paste the **Channel ID** that you copied from the Azure portal.
@@ -109,7 +111,7 @@ In the following instructions, you'll provide the information from the Azure por
    - **Operator**: **String is in**
    - **Value**: Paste the **Channel ID** from the Azure portal.
 
-1. Select the check box to confirm that the WhatsApp channel is set up correctly, and then select **Done**.
+1. Select the checkbox to confirm that the WhatsApp channel is set up correctly, and then select **Done**.
                
 ## Create a workstream for the WhatsApp channel
 
@@ -123,7 +125,7 @@ You must create WhatsApp message templates before you can add them to your Whats
 
 1. In the admin center, edit the WhatsApp workstream.
 
-1. On the **Behaviors** page, under **WhatsApp message templates**, select **+ Add**.
+1. On the **Behaviors** page, under **WhatsApp message templates**, select **Add**.
 
 1. Enter a **Name** for the template.
 
@@ -133,7 +135,7 @@ You must create WhatsApp message templates before you can add them to your Whats
 
 1. Select **Save**.
 
-1. Create as many templates as you require.
+You can create as many templates as you require.
 
 ### Related information
 

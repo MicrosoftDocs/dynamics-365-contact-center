@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Sign up for a free Dynamics 365 Contact Center trial
 
-[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
+_**Applies to**: Dynamics 365 Contact Center&mdash;embedded and Dynamics 365 Contact Center&mdash;standalone
 
 Dynamics 365 Contact Center offers a 30-day free trial. After a quick sign-up, you'll have access to many of the app's key features. The trial allows you to test the app with sample data and even try out your own customer data. [Learn more about what Contact Center has to offer](overview-contact-center.md).
 

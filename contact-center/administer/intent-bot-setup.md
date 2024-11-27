@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 11/26/2024
+ms.date: 11/27/2024
 ms.custom: bap-template
 ---
 
@@ -65,7 +65,7 @@ We recommend you to change to Copilot author authentication from end user authen
 
 ## Update the Intent-based suggestions - Handoff topic
 
-You must have added the required knowledge sources to your Copilot. Learn more in [Add knowledge to a copilot](microsoft-copilot-studio/knowledge-add-existing-copilot).
+You must have added the required knowledge sources to your Copilot Studio bot. Learn more in [Add knowledge to a Copilot Studio bot](/microsoft-copilot-studio/knowledge-add-existing-copilot).
 
 1. In the **Intent-based suggestions – Handoff** topic, add a node and go to **Advanced** >**Generative answer** and select **SolutionQuery** for Input. 
 1. Select **Edit**, enable **Search only selected sources** and then select the relevant knowledge sources that you  added as a prerequisite.

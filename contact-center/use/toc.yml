@@ -228,6 +228,8 @@
             href: /dynamics365/customer-service/use/realtime-summary-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Voice report
             href: /dynamics365/customer-service/use/realtime-voice-dashboard?context=/dynamics365/contact-center/context/use-context
+          - name: Bot report
+            href: agent-realtime-dashboard.md     
           - name: Agents report
             href: /dynamics365/customer-service/use/realtime-agents-analytics?context=/dynamics365/contact-center/context/use-context
           - name: Ongoing Conversation report
@@ -292,6 +294,8 @@
             href: /dynamics365/customer-service/use/datamapping-realtime?context=/dynamics365/contact-center/context/use-context
           - name: Dataverse entities used in historical and real-time analytics
             href: /dynamics365/customer-service/use/dataverse-entities?context=/dynamics365/contact-center/context/use-context
+          - name: Customize the bot dashboard
+            href: customize-agent-dashboard.md
       - name: Report issues in Dynamics 365 Contact Center
         href: /dynamics365/customer-service/use/report-issues?context=/dynamics365/contact-center/context/use-context
       - name: Share feedback

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: conceptual 
 ms.collection:
-ms.date: 07/01/2024
+ms.date: 11/27/2024
 ms.custom: bap-template
 ---
 
@@ -22,20 +22,20 @@ The following table shows which channels are available in the supported geograph
 
 | Region | Digital | Voice |
 |---|---|---|
-| Asia Pacific|	Yes | Yes |
+| Asia Pacific | Yes | Yes |
 | Australia | Yes | Yes |
 | Canada | Yes | Yes |
-| Europe |	Yes | Yes |
+| Europe | Yes | Yes |
 | France | Yes | No |
-| Germany |	Yes | No|
+| Germany |	Yes | No |
 | Government Community Cloud High (GCC High) | No | No |
 | Government Community Cloud Moderate (GCC Moderate) | No | No |
 | India | Yes | No |
-| Japan |	Yes | No |
+| Japan | Yes | No |
 | North America | Yes | Yes |
 | South America | Yes | No |
 | Switzerland |	Yes | No |
-| United Arab Emirates (UAE) | Yes | No |
+| United Arab Emirates (UAE) | Yes | Yes |
 | United Kingdom | Yes | Yes |
 
 ## Language availability

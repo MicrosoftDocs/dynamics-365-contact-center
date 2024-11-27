@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 This article answers your most frequently asked questions about the free product trial of Customer Service and Omnichannel for Customer Service.
 
-[!INCLUDE [trial-platform-faqs](/dynamics365/shared/trials/trial-faq-platform)]
+[!INCLUDE [trial-platform-faqs](~/../includes/shared/trials/trial-faq-platform.md)]
 
 ### Can I convert the trial to a paid license?
 

@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Dynamics 365 Contact Center trials FAQ
 
-_**Applies to**: Dynamics 365 Contact Center&mdash;embedded and Dynamics 365 Contact Center&mdash;standalone
+_**Applies to**: Dynamics 365 Contact Center&mdash;embedded and standalone
 
 This article answers your most frequently asked questions about the free product trial of Customer Service and Omnichannel for Customer Service.
 

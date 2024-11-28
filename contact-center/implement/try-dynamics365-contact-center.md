@@ -12,12 +12,12 @@ ms.custom: bap-template
 
 # Sign up for a free Dynamics 365 Contact Center trial
 
-_**Applies to**: Dynamics 365 Contact Center&mdash;embedded and Dynamics 365 Contact Center&mdash;standalone
+_**Applies to**: Dynamics 365 Contact Center&mdash;embedded and standalone
 
 Dynamics 365 Contact Center offers a 30-day free trial. After a quick sign-up, you'll have access to many of the app's key features. The trial allows you to test the app with sample data and even try out your own customer data. [Learn more about what Contact Center has to offer](overview-contact-center.md).
 
 To sign up for the trial:
-1. Go to the Try Dynamics 365 Contact Center page and select **Try for free**.
+1. Go to the [Try Dynamics 365 Contact Center](https://www.microsoft.com/dynamics-365/products/contact-center) page and select **Try for free**.
 1. Follow the onscreen guidance to enter the email associated with your Microsoft account or your personal email ID, such as alansteiner@gmail.com, and your contact information.
 
 
@@ -38,8 +38,8 @@ The trial environment includes many of the same features as the paid version. Th
 
 ### More resources
 
-[Trial FAQ]()  
-[Dynamics 365 Contact Center free trial sign up page]()  
+[Trial FAQ](contact-center-trial-faq.md)  
+[Dynamics 365 Contact Center free trial sign up page](https://www.microsoft.com/dynamics-365/free-trial)  
 [Explore Dynamics 365 Contact Center training](/training/modules/get-started-contact-center/)  
 
 

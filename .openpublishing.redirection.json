@@ -2,7 +2,7 @@
   "redirections": [
 
     {
-      "source_path": "/dynamics365/contact-center/administer/bot-connectivity-issues.md",
+      "source_path": "contact-center/administer/bot-connectivity-issues.md",
       "redirect_url": "/dynamics365/customer-service/administer/voice-channel-pva-bots",
       "redirect_document_id": "false"
     }

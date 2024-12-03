@@ -226,11 +226,11 @@
           href: /dynamics365/customer-service/administer/voice-channel-pricing-scenarios?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ about the voice channel
           href: /dynamics365/customer-service/administer/voice-channel-faqs?context=/dynamics365/contact-center/context/administer-context
-      - name: Intent
+      - name: Customer Intent Agent (preview)
         items:
-        - name: Overview of customer intent agent
+        - name: Overview of Customer Intent Agent
           href: overview-customer-intent-agent.md
-        - name: Configure customer intent agent
+        - name: Configure Customer Intent Agent
           href: configure-customer-intent.md
       - name: Copilot in Contact Center
         items:

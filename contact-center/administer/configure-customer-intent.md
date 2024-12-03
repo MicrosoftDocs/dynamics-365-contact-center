@@ -1,5 +1,5 @@
 ---
-title: Manage intent using Copilot (preview)
+title: Manage Customer Intent Agent (preview)
 description: 
 author: neeranelli
 ms.author: nenellim
@@ -10,7 +10,7 @@ ms.date: 11/14/2024
 ms.custom: bap-template
 ---
 
-# Manage intent using Copilot
+# Manage Customer Intent Agent (preview)
 
 Customer intent agent uses generative AI to autonomously discover ongoing intents from your customer service instance, analyzing past interactions to create an intent library that enhances dynamic conversations. The service representatives use the information to quickly understand customer needs, guide conversations with follow-up questions, and provide tailored solutions in real time.
 
@@ -18,14 +18,14 @@ Copilot presents a curated list of questions and suggested solutions in the chat
 
 Use the information in this article to manage the intents in Contact Center admin center or Customer Service admin center in your Dynamics 365 instance.
 
-## Enable customer intent agent
+## Enable Customer Intent Agent
 
 1. In Contact Center admin center or Customer Service admin center, select **Intent** under **Customer support**.
 1. On the **Customer Intent Agent (preview)** page that appears, enable the **Turn on Customer Intent Agent** toggle.
 
 ## Manage intent discovery setup
 
-You can enable customer intent agent to analyze past conversations within the Customer Service instance to discover new intents to add into the intent library. After you set it up, the first run of intent discovery analyzes historical data for up to two months. After that, the intent discovery runs daily.
+You can enable Customer Intent Agent to analyze past conversations within the Customer Service instance to discover new intents to add into the intent library. After you set it up, the first run of intent discovery analyzes historical data for up to two months. After that, the intent discovery runs daily.
 
 You need to run the AI model on data sources like cases and conversations to identify intent groups and related intents.
 
@@ -36,10 +36,14 @@ You need to run the AI model on data sources like cases and conversations to ide
    - **Data source**: Available for conversations only and therefore read-only.
    - **Data granularity**: Select **Low**, **Medium**, or **High** in the list. If you select low, fewer intent groups are created.
    - **Record status**: Select **Pending**, **Approved**, or **Discarded** in the list to indicate the default status that you'd like to set for the newly-mined intents.
-1. If you want to simulate the intent discovery, select **Simulate**. After the simulation is complete, you can export the simulation data using the Export to Excel option to validate the intent groups.
+1. If you want to simulate the intent discovery, select **Simulate**. After the discovery is complete, a simulation of the intent groups is available.
+1. Select **Add into job schedule** to run the intent discovery.
+1. In the **Simulation history** column, select **View simulation**. The simulation details, such as status and simulation date and time are displayed. 
+1. Select the simulation, and then select **Export to Excel** option. The Excel file is downloaded to your local computer.
+   > [!NOTE]
+   > You can view the simulation for successful runs only. The Excel file is empty for failed simulations.
 
 After the first run of the intent discovery, the intent groups are listed on the **All intent groups** page.
-
 
 ## Manage intent groups
 

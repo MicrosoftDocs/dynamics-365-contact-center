@@ -322,3 +322,5 @@
       href: ../administer/cc-admin-center.md
     - name: Extend Dynamics 365 Contact Center
       href: ../extend/configure-servicenow-connector.md
+    - name: Dynamics 365 Customer Service documentation
+      href: /dynamics365/customer-service/

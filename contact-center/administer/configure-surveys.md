@@ -93,6 +93,7 @@ You can edit your survey agents to fulfill your business needs as follows:
 - Add extra topic questions
 
 Edit the **Conversation Start** system topic only. All other system topics are disabled and must not be used.
+[NOTE] The context variables listed in the following document are passed into Copilot Studio https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/context-variables-for-bot#context-variables-for-copilot-studio-bots
 
 ### Set up custom hosting
 

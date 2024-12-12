@@ -63,10 +63,10 @@ If successful, this method returns a 200 OK response code and a presence object 
 curl -X GET \
   'https://presencesqlorg.crmtest.Dynamics.com/api/presence/GetAgentPresence/394382b6-a4d4-ee11-904c-00224808a166' \
   --header 'Accept: */*' \
-  --header 'OrganizationId: 1e97a1fa-ebd3-ee11-9048-000d3a3501e9' \
+  --header 'OrganizationId: 11bb11bb-cc22-dd33-ee44-55ff55ff55ff' \
   --header 'Content-Type: application/json' \
-  --header 'x-ms-organization-id: 1e97a1fa-ebd3-ee11-9048-000d3a3501e9' \
-  --header 'tenantId: 8cd46c97-38dd-4560-9228-3df8a717a140' \
+  --header 'x-ms-organization-id: 11bb11bb-cc22-dd33-ee44-55ff55ff55ff' \
+  --header 'tenantId: aaaabbbb-0000-cccc-1111-dddd2222eeee' \
   --header 'MSCRMCallerID: cc05cf62-6242-ee11-be6e-6045bdd7ac2c' \
   --header 'Authorization: Bearer Token'
 ```

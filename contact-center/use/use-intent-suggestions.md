@@ -1,6 +1,6 @@
 ---
 title: Use intent-based suggestions
-description: Learn how to use intent-based suggestions in Customer Service admin center or Contact Center admin center to help customer service representatives handle customer conversations with ease.
+description: Learn how to use intent-based suggestions to help customer service representatives handle customer conversations with ease.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
@@ -18,7 +18,7 @@ Intent based suggestions help customer service representatives (CSRs) handle cus
 ## Prerequisites
 
 Make sure that your administrator enabled the following features in Customer Service admin center or Contact Center admin center:
-- The Ask-a-question feature in Copilot help pane. Learn more in [Enable Copilot assist features](copilot-enable-help-pane.md).
+- The Ask-a-question feature in Copilot help pane. Learn more in [Enable Copilot assist features](../administer/copilot-enable-help-pane.md).
 - Intent discovery.
 - Intent-based suggestions for the required [agent experience profile](/dynamics365/customer-service/administer/create-agent-experience-profile). 
 

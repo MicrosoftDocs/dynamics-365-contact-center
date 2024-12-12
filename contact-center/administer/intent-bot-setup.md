@@ -83,12 +83,12 @@ The Intent-based suggestions - Configuration is a non-customizable topic that co
 
 |Variable  |Default |Description  |
 |---------|---------|---------|
-|Global.EnableIntentConfirmation    |    False     |      If enabled, chat bot will ask the customer to confirm the intent before moving on to the intent attributes questions.    |
-|Global.EnableIntentRephrase     |   False      |    If enabled, if intent cannot be determined or intent was not confirmed by customer, we will ask customer to rephrase their issue.      |
-|Global.RephraseCount     |     1    |   Determines the number of times we ask the customer to rephrase before giving up.       |
-|Global.AllowIntentShift      |  False       | If enabled, when intent change is detected, start over and go through confirmation and interview process again for the newly detected intent. If disabled, it will end the loop if we detect a shift in customer intent.         |
-|Global.EnableAskAllQuestions     |   False       |    If enabled, ask all intent attribute questions before ending the loop, regardless of whether the customer answers the question in the next turn. If disabled, as soon as the customer doesn’t answer an intent attribute questions, end the loop (a solution query will still be generated and gen answers should still be initiated).      |
-|Global.EnableEndUserAuthentication      |    True     |  If enabled, end user (C2) would need to be authenticated and will need access to the underlying Dataverse instance in order to connect to the intent library and get intent response. If disabled, it will fallback to maker authentication to connect to the Dataverse instance. We recommend for most users to override this to false and use maker authentication.        |
+|Global.EnableIntentConfirmation    |    False     |      If enabled, chat bot asks the customer to confirm the intent before moving on to the intent attributes questions.    |
+|Global.EnableIntentRephrase     |   False      |    If enabled, and if intent can't be determined or intent isn't confirmed by customer, customers are asked to rephrase their issue.      |
+|Global.RephraseCount     |     1    |   Determines the number of times customers are asked to rephrase before giving up.       |
+|Global.AllowIntentShift      |  False       | If enabled, when intent change is detected, the confirmation and interview process starts again for the newly detected intent. If disabled, it ends the loop if a shift in customer intent is detected.         |
+|Global.EnableAskAllQuestions     |   False       |    If enabled, asks all intent-attribute questions before ending the loop, regardless of whether the customer answers the question in the next turn. If disabled, as soon as the customer doesn’t answer an intent attribute question, ends the loop (a solution query is still generated and generated answers are still initiated).      |
+|Global.EnableEndUserAuthentication      |    True     |  If enabled, end user (C2) needs to be authenticated and needs access to the underlying Dataverse instance in order to connect to the intent library and get intent response. If disabled, it goes to the maker authentication to connect to the Dataverse instance. We recommend users to override this to false and use maker authentication.        |
 
 ### Override default variable
 

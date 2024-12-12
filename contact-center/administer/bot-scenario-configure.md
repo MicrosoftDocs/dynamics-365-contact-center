@@ -29,12 +29,13 @@ This article explains how the Interactive Voice Response (IVR) or voice agent sa
 
 ## Prerequisites
 
-- Dataverse is provisioned in your environment to store and manage tables. For more information, please see: https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-copilot
-- https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html
-- https://learn.microsoft.com/en-us/power-apps/maker/data-platform/low-code-plugins-copilot-studio
+- Dataverse is provisioned in your environment to store and manage tables. Learn more in:
+    - [Improve copilot responses from Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-copilot)
+    - [Create low-code plug-ins to use with a copilot (preview)](/power-apps/maker/data-platform/low-code-plugins-copilot-studio)
+    - [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot)
 - [Voice channel is provisioned](../implement/provision-channels.md)
 - [Procure phone numbers](/dynamics365/customer-service/administer/voice-channel-manage-phone-numbers?context=/dynamics365/contact-center/context/administer-context)
--  [Workstream is set up and the phone number is linked to a voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?context=/dynamics365/contact-center/context/administer-context). 
+- [Workstream is set up and the phone number is linked to a voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?context=/dynamics365/contact-center/context/administer-context). 
 
 ## Import and configure voice agent template
 

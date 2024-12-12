@@ -232,6 +232,8 @@
           href: overview-customer-intent-agent.md
         - name: Configure Customer Intent Agent
           href: configure-customer-intent.md
+        - name: Configure intent-based suggestions for Copilot Studio bots
+          href: intent-bot-setup.md
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features

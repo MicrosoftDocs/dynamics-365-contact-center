@@ -71,6 +71,9 @@
         - name: Monitor voice calls
           href: /dynamics365/customer-service/use/voice-channel-monitor-calls?context=/dynamics365/contact-center/context/use-context
       - name: Use intents
+        items:
+        - name: Use intent-based suggestions
+          href: use-intent-suggestions.md
       - name: Use Copilot
         items: 
         - name: Use Copilot to solve customer issues 

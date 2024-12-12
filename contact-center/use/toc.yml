@@ -70,6 +70,7 @@
           href: /dynamics365/customer-service/use/voice-channel-call-recordings-transcripts?context=/dynamics365/contact-center/context/use-context
         - name: Monitor voice calls
           href: /dynamics365/customer-service/use/voice-channel-monitor-calls?context=/dynamics365/contact-center/context/use-context
+      - name: Use intents
       - name: Use Copilot
         items: 
         - name: Use Copilot to solve customer issues 

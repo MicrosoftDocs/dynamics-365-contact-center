@@ -5,7 +5,13 @@
       "source_path": "contact-center/administer/bot-connectivity-issues.md",
       "redirect_url": "/dynamics365/customer-service/administer/voice-channel-pva-bots",
       "redirect_document_id": "false"
-    }
+    },
+    {
+      "source_path": "contact-center/use/agent-realtime-dashboard.md",
+      "redirect_url": "/dynamics365/customer-service/use/oc-bot-dashboard",
+      "redirect_document_id": "false"
+    },
+
   ]
 }
 

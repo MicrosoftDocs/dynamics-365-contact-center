@@ -61,6 +61,9 @@ After you create the survey in the admin center, it needs to be published. If yo
 1. Select the survey that you created. The survey opens in Copilot Studio page on a new tab. 
 1. Update the survey to suit your business needs. 
 1. Select **Publish**. After a couple of minutes, the survey status is updated as **Ready** on the Contact Center admin center or Customer Service admin center **Customer feedback (preview)** page.
+2. For any issues publishing the survey bot, please see https://learn.microsoft.com/en-us/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/error-in-conversation-start-topic
+
+
 
 ### Verify the Dataverse connection
 

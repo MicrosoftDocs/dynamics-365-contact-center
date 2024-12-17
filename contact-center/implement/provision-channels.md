@@ -63,6 +63,8 @@ If the provisioning fails, an error message appears that you can select to view 
 
 1. Select  **Customer Support** > **Channels** > **Manage channels**. 
 1. Clear the checkbox for the channel that you want to turn off. The application displays a confirmation message. Select **Turn off**.
+> [!NOTE]
+> Disabling and then reenabling channels will require channel instance to be reconfigured again. 
 
 
 ### Related information

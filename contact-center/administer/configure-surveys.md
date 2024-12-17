@@ -60,7 +60,7 @@ After you create the survey in the admin center, it needs to be published. If yo
 
 1. Select the survey that you created. The survey opens in Copilot Studio page on a new tab. 
 1. Update the survey to suit your business needs. 
-1. Select **Publish**. After a couple of minutes, the survey status is updated as **Ready** on the Contact Center admin center or Customer Service admin center **Customer feedback (preview)** page.
+1. Select **Publish**. After a couple of minutes, the survey status is updated as **Ready** on the Contact Center admin center or Customer Service admin center **Customer feedback (preview)** page. For any publishing issues, please see the troubleshooting section below.
 
 ### Verify the Dataverse connection
 
@@ -93,6 +93,7 @@ You can edit your survey agents to fulfill your business needs as follows:
 - Add extra topic questions
 
 Edit the **Conversation Start** system topic only. All other system topics are disabled and must not be used.
+If you would like to add an additional question and store the data in Dataverse, the response variable name must start with “MCS_”.
 
 ### Set up custom hosting
 

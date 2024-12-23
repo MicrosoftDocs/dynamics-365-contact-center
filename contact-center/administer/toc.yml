@@ -234,7 +234,7 @@
           href: configure-customer-intent.md
         - name: Enable intent-based suggestions for service representatives
           href: enable-intent-for-service-reps.md
-        - name: Configure intent-based suggestions for Copilot Studio bots
+        - name: Configure intent-based suggestions for Copilot Studio agents
           href: intent-bot-setup.md
       - name: Copilot in Contact Center
         items:

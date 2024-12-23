@@ -153,6 +153,11 @@ The survey results are stored in Dataverse tables. To view the survey responses,
 
 The CSAT scores are displayed in the Omnichannel historical analytics report.
 
+### Troubleshoot issues
+
+Learn how to troubleshoot [error in conversation start topic when publishing survey agent](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/error-in-conversation-start-topic
+).
+
 ### Related information
 
 [Enable feedback on voice call quality](/dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context)  

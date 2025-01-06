@@ -12,9 +12,13 @@ ms.custom: bap-template
 
 # Manage Customer Intent Agent (preview)
 
-Customer intent agent uses generative AI to autonomously discover ongoing intents from your customer service instance, analyzing past interactions to create an intent library that enhances dynamic conversations. The service representatives use the information to quickly understand customer needs, guide conversations with follow-up questions, and provide tailored solutions in real time.
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+Customer Intent Agent uses generative AI to autonomously discover ongoing intents from your customer service instance, analyzing past interactions to create an intent library that enhances dynamic conversations. The service representatives use the information to quickly understand customer needs, guide conversations with follow-up questions, and provide tailored solutions in real time.
 
 Copilot presents a curated list of questions and suggested solutions in the chat response box, which enhances efficiency by reducing manual typing. For self-service, Copilot generates relevant follow-up questions and uses the information to query the knowledge source, leading to higher deflection rates and allowing representatives to focus on cases that require manual intervention.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Use the information in this article to manage the intents in Contact Center admin center or Customer Service admin center in your Dynamics 365 instance.
 
@@ -34,11 +38,11 @@ You need to run the AI model on data sources like cases and conversations to ide
 1. In **Intent discovery settings**, enter the following details:
    - **Name**: An intuitive name that meets your business requirement.
    - **Data source**: Available for conversations only and therefore read-only.
-   - **Data granularity**: Select **Low**, **Medium**, or **High** in the list. If you select low, fewer intent groups are created.
-   - **Record status**: Select **Pending**, **Approved**, or **Discarded** in the list to indicate the default status that you'd like to set for the newly-mined intents.
+   - **Data granularity**: Select **Low**, **Medium**, or **High** in the list. If you select low, fewer intent groups are created, and vice versa happens if you select high. If you select **Medium**, the system creates a balanced number of intent groups between low and high.
+   - **Record status**: Select **Pending**, **Approved**, or **Discarded** in the list to indicate the default status that you'd like to set for the newly-discovered intents.
 1. If you want to simulate the intent discovery, select **Simulate**. After the discovery is complete, a simulation of the intent groups is available.
 1. Select **Add into job schedule** to run the intent discovery.
-1. In the **Simulation history** column, select **View simulation**. The simulation details, such as status and simulation date and time are displayed. 
+1. In the **Simulation history** column, select **View simulation**. The simulation details, such as status and simulation date and time are displayed. Simulation uses the last 1000 records to generate intent and intent groups. The simulation helps administrators evaluate the intents and decide on granularity.
 1. Select the simulation, and then select **Export to Excel** option. The Excel file is downloaded to your local computer.
    > [!NOTE]
    > You can view the simulation for successful runs only. The Excel file is empty for failed simulations.
@@ -47,7 +51,7 @@ After the first run of the intent discovery, the intent groups are listed on the
 
 ## Manage intent groups
 
-The intent groups that the AI model identifies are displayed on the **All intent groups** page. You can manage the intent groups by reviewing, approving, or editing the intents in them.
+You can logically organize the intents into intent groups. The intent group represents the business expertise that's needed to solve the intents belonging to the group. The intent groups that the AI model identifies are displayed on the **All intent groups** page. You can manage the intent groups by reviewing, approving, or editing the intents in them.
 
 1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage intent groups and intents**. The **All intent groups** page displays the list of intents that the AI model discovered. If you create a custom intent group, the intent source shows as **Admin edited**. The **Intents** column displays the number of intents in each intent group.
     

@@ -1,6 +1,6 @@
 ---
-title: Overview of Customer Intent Agent
-description: Learn about what is Customer Intent Agent and how it works in Dynamics 365 Contact Center and Dynamics 365 Customer Service.
+title: Overview of Customer Intent Agent (preview)
+description: Learn about Customer Intent Agent and how it works in Dynamics 365 Contact Center and Dynamics 365 Customer Service.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: 
@@ -10,9 +10,13 @@ ms.date: 11/13/2024
 ms.custom: bap-template
 ---
 
-# Overview of Customer Intent Agent
+# Overview of Customer Intent Agent (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Customer Intent Agent uses generative AI to autonomously discover ongoing intents in your contact center instance, analyzing past interactions between customer service representatives (service representatives or representatives) and customers to create an intent library that enhances dynamic conversations. This benefits both assisted and self-service scenarios by enabling agents and representatives to quickly understand customer needs, guide conversations with follow-up questions, and provide tailored solutions in real time. 
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Customer Intent Agent can be used in the following scenarios:
 
@@ -27,3 +31,5 @@ Customer Intent Agent can be used in the following scenarios:
 - Persist information that's discovered by Copilot in self service to quickly get the service representative up to speed on the intent and information gathered.
 - A curated list of questions and suggested solutions as the next response that Copilot recommends the representative send to the customer.
 - Separately show the detected intent, suggested follow-up questions and responses, suggested solutions in a holistic view.
+
+### Related information

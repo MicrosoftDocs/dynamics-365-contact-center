@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: 
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 11/14/2024
+ms.date: 01/18/2025
 ms.custom: bap-template
 ---
 
@@ -82,8 +82,8 @@ You can logically organize the intents into intent groups. The intent group repr
  
 ### Related information
 
-[Enable intent for support representatives]  
-[Use intent agents]  
+[Enable intent for support representatives](enable-intent-for-service-reps.md)    
+[Use intent agents](../use/use-intent-suggestions.md)   
 
 
 

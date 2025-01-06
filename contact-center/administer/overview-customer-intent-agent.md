@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: 
 ms.topic: overview
 ms.collection: bap-ai-copilot
-ms.date: 11/13/2024
+ms.date: 01/18/2025
 ms.custom: bap-template
 ---
 
@@ -23,7 +23,7 @@ Customer Intent Agent can be used in the following scenarios:
 **Self service**: The intent can be added to a custom Copilot Studio agent that connects to the intent library to dynamically chat with the customer to:
 
 - Determine customer intent based on discovered intents, such as refund, from the intent library.
-- Ask follow-up questions based on additional attributes, such as error code, product name, and purchase date that're mined from historical conversations.
+- Ask follow-up questions based on additional attributes, such as error code, product name, and purchase date that're discovered from historical conversations.
 - Understand responses from customers to determine what follow-up questions have been answered by the customer.
 - Generate a query to knowledge base to search for solutions based on gathered information.
 

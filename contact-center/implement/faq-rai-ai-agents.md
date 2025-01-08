@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Responsible AI FAQ for AI Agents (preview)
 
-[!INCLUDE[cc-feature-availability](../../includes/cc-feature-availability.md)]
+[!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 

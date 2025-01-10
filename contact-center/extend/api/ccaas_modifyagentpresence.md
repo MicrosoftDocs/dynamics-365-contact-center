@@ -57,10 +57,10 @@ curl --location
  --header 'MSCRMCallerID: cc05cf62-6242-ee11-be6e-6045bdd7ac2c' \
  --header 'Content-Type: application/json' \
  --header 'Authorization: Bearer Token' \
- --header 'Cookie: ReqClientId=b7f90cc4-78dc-4a4a-8d08-352d5e5e46f6; orgId=f676e8ea-5e42-ee11-94d0-000d3a8cbde5' \
+ --header 'Cookie: ReqClientId=00001111-aaaa-2222-bbbb-3333cccc4444; orgId=33dd33dd-ee44-ff55-aa66-77bb77bb77bb' \
  --data '{
    "ApiVersion": "1.0",
-   "AgentId": "e8d18063-6242-ee11-be6e-6045bdee3caa",
-   "PresenceId": "70139190-c07a-e811-8162-000d3aa11f50"
+   "AgentId": "33dd33dd-ee44-ff55-aa66-77bb77bb77bb",
+   "PresenceId": "55ff55ff-aa66-bb77-cc88-99dd99dd99dd"
 }'
 ```

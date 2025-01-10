@@ -22,7 +22,7 @@ To sign up for the trial:
 
 
 > [!NOTE]
-> - Before you sign up for a trial, check the availability of the product in the region you want to try it in. Learn more in [International availability](international-availability.md). The trial experience isn't supported in Brazil, Government Community Cloud, Norway, or South Africa.
+> - Before you sign up for a trial, check the availability of the product in the region you want to try it in.
 > - If you use a personal email ID to sign up for the trial, you might not be able to access some trial features. Learn more in [Contact Center Trial FAQ](contact-center-trial-faq.md).
 
 The trial takes a few moments to load, then you can start using Contact Center.

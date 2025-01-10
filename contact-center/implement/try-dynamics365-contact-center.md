@@ -23,7 +23,7 @@ To sign up for the trial:
 
 > [!NOTE]
 > - Check the availability of the product in the region you want to try before you sign up for a trial.
-> - If you use a personal email ID to sign up for the trial, not all the trial features might be available. Learn more in [Contact Center Trial FAQ](contact-center-trial-faq.md).
+> - If you use a personal email ID to sign up for the trial, not all trial features might be available. Learn more in [Contact Center Trial FAQ](contact-center-trial-faq.md).
 
 The trial takes a few moments to load, then you can start using Contact Center.
 

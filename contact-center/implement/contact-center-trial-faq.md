@@ -57,7 +57,7 @@ Sample data comes with the trial environment and experience. To get a fresh data
 
 ### Can I call the trial phone number from outside the US?
 
-No, you can't call the trial phone number because it's a toll-free US number that works within the US only. For more information and a workaround, refer to [Use trial phone numbers](./administer/voice-channel-trial-phone-numbers.md).
+No, you can't call the trial phone number because it's a toll-free US number that works within the US only. For more information and a workaround, refer to [Use trial phone numbers](../administer/voice-channel-trial-phone-numbers.md).
 
 ### Can I use the trial phone numbers for inbound or outbound SMS?
 

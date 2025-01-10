@@ -24,14 +24,14 @@ Yes, you can purchase licenses through direct, credit card purchase at admin.mic
 
 To purchase the license using an existing account, work with the administrator of the account to apply for licenses.
 
-After you've applied for the license to your tenant, you can publish your environment to production. You can remove the sample data. However, you have to manually reset the configuration and remove any test data that you've added. We recommend that you create a fresh environment to use for your production environment and add the configurations you’d like to move forward with.
+After you apply for the license to your tenant, you can publish your environment to production. You can remove the sample data. However, you must manually reset the configuration and remove any test data that you added. We recommend that you create a fresh environment to use for your production environment and add the configurations you want to move forward with.
 
 ### What are the trial limits and quotas?
 
 The following limitations apply for the trial:
 
-- The trial is available to you for 30 days. After that, you can request for an extension for another 30 days, buy a paid license, or sign up for a new trial.
-- The trial will expire if there’s no activity on the app for 14 consecutive days. Expired trials can't be reactivated. However, you can start a new trial.
+- The trial is available to you for 30 days. After that, you can request an extension for another 30 days, buy a paid license, or sign up for a new trial.
+- The trial expires if there’s no activity on the app for 14 consecutive days. Expired trials can't be reactivated. However, you can start a new trial.
 - You can have only one active trial per app at a time. You can sign up again after your current trial for the app ends.
 
 ## Dynamics 365 Contact Center-specific questions
@@ -69,7 +69,7 @@ No. The trial phone numbers aren't configured to make outbound calls.
 
 ### Which geographical regions are supported in the trial version?
 
-To know about the geographical regions supported in Dynamics 365 Contact Center in [International availability](international-availability.md). Additionally, the new trial experience isn't supported in Brazil, Government Community Cloud, Norway, and South Africa.
+To learn about the geographical regions that are supported in Dynamics 365 Contact Center, refer to [International availability](international-availability.md). Additionally, the new trial experience isn't supported in Brazil, Government Community Cloud, Norway, and South Africa.
 
 ### Which languages are supported in the trial version of Contact Center?
 
@@ -80,4 +80,3 @@ The [Language availability](international-availability.md#language-availability)
 [Try Dynamics 365 Contact Center](try-dynamics365-contact-center.md)  
 [Overview of Contact Center workspace](../use/ccw-overview.md)  
  
-

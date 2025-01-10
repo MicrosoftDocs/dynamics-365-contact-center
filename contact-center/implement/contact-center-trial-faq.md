@@ -71,7 +71,7 @@ No. The trial phone numbers aren't configured to make outbound calls.
 
 To learn about the geographical regions that are supported in Dynamics 365 Contact Center, refer to [International availability](international-availability.md). Additionally, the new trial experience isn't supported in Brazil, Government Community Cloud, Norway, or South Africa.
 
-### Which languages are supported in the trial version of Contact Center?
+### Which languages are supported in the trial version?
 
 The [Language availability](international-availability.md#language-availability) section lists the languages that Dynamics 365 Contact Center supports.
 

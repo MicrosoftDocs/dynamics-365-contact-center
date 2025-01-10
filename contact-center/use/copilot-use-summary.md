@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Summarize cases in non-Microsoft CRMs
 
-[!INCLUDE[cc-feature-availability-embed-only](../../includes/cc-feature-availability-embed-only.md)]
+[!INCLUDE[cc-feature-availability-embed-only](../includes/cc-feature-availability-embed-only.md)]
 
 Copilot case summaries help you quickly understand the context of a case and resolve customer issues more efficiently. In a non-Microsft CRM, the case summary appears as a card on the **Ask a question** tab in the Copilot help pane. 
 

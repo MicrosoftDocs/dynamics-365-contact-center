@@ -8,6 +8,12 @@
         href: overview-contact-center.md
       - name: Get started
         items:
+        - name: Try
+          items:
+          - name: Sign up for a free Dynamics 365 Contact Center trial
+            href: try-dynamics365-contact-center.md
+          - name: Dynamics 365 Contact Center trial FAQ
+            href: contact-center-trial-faq.md
         - name: Buy
           items:
           - name: Buy Dynamics 365 Contact Center

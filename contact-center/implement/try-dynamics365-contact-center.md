@@ -14,16 +14,16 @@ ms.custom: bap-template
 
 _**Applies to**: Dynamics 365 Contact Center&mdash;embedded and standalone
 
-Dynamics 365 Contact Center offers a 30-day free trial. After a quick sign-up, you'll have access to many of the app's key features. The trial allows you to test the app with sample data and even try out your own customer data. [Learn more about what Contact Center has to offer](overview-contact-center.md).
+Dynamics 365 Contact Center offers a 30-day free trial. After a quick sign-up, you can access many of the app's key features. The trial version allows you to test the app with sample data and even try out your own customer data. [Learn more about what Contact Center has to offer](overview-contact-center.md).
 
 To sign up for the trial:
-1. Go to the [Try Dynamics 365 Contact Center](https://www.microsoft.com/dynamics-365/products/contact-center) page and select **Try for free**.
+1. Go to the [Try Dynamics 365 Contact Center](https://www.microsoft.com/dynamics-365/products/contact-center) page, and then select **Try for free**.
 1. Follow the onscreen guidance to enter the email associated with your Microsoft account or your personal email ID, such as alansteiner@gmail.com, and your contact information.
 
 
 > [!NOTE]
-> - Check the availability of the product in the region you want to try before you sign up for a trial.
-> - If you use a personal email ID to sign up for the trial, not all trial features might be available. Learn more in [Contact Center Trial FAQ](contact-center-trial-faq.md).
+> - Before you sign up for a trial, check the availability of the product in the region you want to try it in. Learn more in [International availability](international-availability.md). The trial experience isn't supported in Brazil, Government Community Cloud, Norway, or South Africa.
+> - If you use a personal email ID to sign up for the trial, you might not be able to access some trial features. Learn more in [Contact Center Trial FAQ](contact-center-trial-faq.md).
 
 The trial takes a few moments to load, then you can start using Contact Center.
 
@@ -32,7 +32,7 @@ The trial takes a few moments to load, then you can start using Contact Center.
 The trial environment includes many of the same features as the paid version. The following links guide you through using some of the key features.
 
 - [Learn about the voice channel](/dynamics365/customer-service/administer/voice-channel?context=/dynamics365/contact-center/context/administer-context)
-- [Know more about chat notifications](/dynamics365/customer-service/use/oc-notifications?context=/dynamics365/contact-center/context/use-context)
+- [Learn about chat notifications](/dynamics365/customer-service/use/oc-notifications?context=/dynamics365/contact-center/context/use-context)
 - [Set up the embedded experience](../administer/set-up-embedded-experience.md)
 - [Use Copilot to solve customer issues](../use/use-copilot-features.md)
 

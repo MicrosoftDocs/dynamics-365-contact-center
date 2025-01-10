@@ -57,7 +57,7 @@ Sample data comes with the trial environment and experience. To get a fresh data
 
 ### Can I call the trial phone number from outside the US?
 
-No, you can't call the trial phone number because it's a toll-free US number that works within the US only. For more information and a workaround, see Use trial phone number.
+No, you can't call the trial phone number because it's a toll-free US number that works within the US only. For more information and a workaround, refer to Use trial phone number.
 
 ### Can I use the trial phone numbers for inbound or outbound SMS?
 
@@ -69,7 +69,7 @@ No. The trial phone numbers aren't configured to make outbound calls.
 
 ### Which geographical regions are supported in the trial version?
 
-To learn about the geographical regions that are supported in Dynamics 365 Contact Center, refer to [International availability](international-availability.md). Additionally, the new trial experience isn't supported in Brazil, Government Community Cloud, Norway, and South Africa.
+To learn about the geographical regions that are supported in Dynamics 365 Contact Center, refer to [International availability](international-availability.md). Additionally, the new trial experience isn't supported in Brazil, Government Community Cloud, Norway, or South Africa.
 
 ### Which languages are supported in the trial version of Contact Center?
 

@@ -242,6 +242,8 @@
           href: /dynamics365/customer-service/administer/cs-region-availability-service-limits#language-support-for-ai-based-analytics-and-insights-in-customer-service?context=/dynamics365/contact-center/context/administer-context
         - name: Copilot architecture diagram
           href: /digital-contact-center-platform/guidance/dynamics-365-customer-service-copilot-architecture?context=/dynamics365/contact-center/context/administer-context
+        - name: Enable knowledge sources from Microsoft Copilot Studio (preview)
+          href: /dynamics365/customer-service/administer/knowledge-copilot?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ for Copilot in Customer Service
           href: /dynamics365/customer-service/administer/faq-copilot-features?context=/dynamics365/contact-center/context/administer-context
       - name: Chat 

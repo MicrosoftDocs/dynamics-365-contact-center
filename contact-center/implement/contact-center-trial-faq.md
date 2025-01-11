@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Dynamics 365 Contact Center trials FAQ
 
-_**Applies to**: Dynamics 365 Contact Center&mdash;embedded and standalone
+_**Applies to**: Dynamics 365 Contact Center&mdash;embedded and standalone_
 
 This article answers your most frequently asked questions about the free product trial of Customer Service and Omnichannel for Customer Service.
 
@@ -45,7 +45,7 @@ The environment you receive in trial is a fully functional, Power Platform envir
 - Dynamics 365 Contact Center, with Live chat, digital messaging, and voice channels
   - Chat, voice, and other digital messaging channels
   - Unified routing
-  - Agent Experiences&mdash;Contact Center workspace (Standalone) and embed experience through the embedded widget
+  - Agent Experiences&mdash;Contact Center workspace (standalone) and embedded experience through the embedded widget
 
 ### How do I remove sample data from the trial instance?
 

@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-embed-only](../includes/cc-feature-availability-embed-only.md)]
 
-Copilot case summaries help you quickly understand the context of a case and resolve customer issues more efficiently. In a non-Microsft CRM, the case summary appears as a card on the **Ask a question** tab in the Copilot help pane. 
+Copilot case summaries help you quickly understand the context of a case and resolve customer issues more efficiently. In a non-Microsoft CRM, the case summary appears as a card on the **Ask a question** tab in the Copilot help pane. 
 
 > [!IMPORTANT]
 > - Case summary is a preview feature in Microsoft 365 Copilot for Service.
@@ -28,6 +28,12 @@ When you sign in to a non-Microsoft CRM, you can generate case summary as follow
    - Select the Copilot icon and then then select **Summarize case**.
 
 ## Generate case summaries
+
+In the non-Microsoft CRM, you can generate the case summary as follows:
+
+- Select the required case or incident.
+- Select **Microsoft contact center**. The Copilot help pane appears.
+- In the **Ask a question** tab, select **Summarize case**. The case summary appears in the help pane.
 
 Copilot generates case summaries based on the following case information for the corresponding CRMs:
 
@@ -44,11 +50,6 @@ Copilot generates case summaries based on the following case information for the
  - **Work notes and comments**: ID, TextContext, Created Date.
  - **Email**: Id, Body, Created Date, FromAddress, ToAddress
 
-In the non-Microsoft CRM, you can generate the case summary as follows:
-
-- Select the required case or incident.
-- Select **Microsoft contact center**. The Copilot help pane appears.
-- In the **Ask a question** tab, select **Summarize case**. The case summary appears in the help pane.
 
 You can copy the summary, refresh it, and provide feedback.
 

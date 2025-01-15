@@ -14,7 +14,7 @@ ms.collection:
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-Dynamics 365 Contact Center provides a modern, customizable, high-productivity experience that lets agents help customers across different channels via a unified interface. It lets organizations choose the channel that suits their business needs. It also ensures that a high level of responsive, quality service is received across channels.
+Dynamics 365 Contact Center provides a modern, customizable, high-productivity experience that lets agents help customers across different channels via a Unified Interface. It lets organizations choose the channel that suits their business needs. It also ensures that a high level of responsive, quality service is received across channels.
 
 To find out if Dynamics 365 Contact Center is available in your region, see [International availability](international-availability.md).
 
@@ -31,13 +31,13 @@ You can provision the following channels:
 
 ## Prerequisites
 
-- See [system requirements for Dynamics 365 Contact Center](system-requirements-contact-center.md) for the required licenses to provision channels.
+- Review the [system requirements for Dynamics 365 Contact Center](system-requirements-contact-center.md) for information about the required licenses to provision channels.
   
     > [!NOTE]
     > Learn more at [Pricing](https://www.microsoft.com/dynamics-365/products/contact-center/pricing), Dynamics 365 Licensing Guide, and [How to purchase through Volume Licensing](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy).
 
 - Set up the prerequisites mentioned in the system requirements.
-- Dynamics 365 System Administrator role on the root business unit for your organization. Learn more at [assign security roles to a user in Power Platform](/power-platform/admin/assign-security-roles) and [Create or edit business units](/power-platform/admin/create-edit-business-units)
+- Set up the Dynamics 365 System Administrator role on the root business unit for your organization. Learn more at [assign security roles to a user in Power Platform](/power-platform/admin/assign-security-roles) and [Create or edit business units](/power-platform/admin/create-edit-business-units)
 
 ## Set up channels
 
@@ -51,7 +51,7 @@ To set up the channels, perform the following steps:
     Depending on your licenses, you can view the channels that you can enable. If you don't have the required licenses, the checkboxes for the corresponding channels are disabled. Learn more about licenses [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
 1. Select **Save**.
 
-The setup can take several minutes. The application provisions the channel in the background. You can close the window and check after some time or refresh it to see if it's complete. When the setup is complete, the enabled channels appear in your environment.
+The setup can take several minutes. The application provisions the channel in the background. You can close the window and check after some time, or refresh it to see if it's complete. When the setup is complete, the enabled channels appear in your environment.
 
 If the provisioning fails, an error message appears that you can select to view the details.
 

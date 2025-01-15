@@ -1,7 +1,7 @@
 ---
 title: Provision channels in Dynamics 365 Contact Center
 description: Perform the steps in this article to provision and add channels so that you can start using the product.
-ms.date: 01/06/2025
+ms.date: 01/15/2025
 ms.topic: how-to
 author: neeranelli
 ms.author: nenellim
@@ -41,10 +41,7 @@ You can provision the following channels:
 
 ## Set up channels
 
-You can set up channels in the Contact Center admin center or Customer Service admin center application. In Power Platform admin center, while you can view existing environments and channels, you can't enable, edit, or delete channels.
-
-> [!NOTE]
-> Starting October 2024, the legacy provisioning of channels in Power Platform admin center is deprecated and can't be edited on the **Dynamics 365 apps** page. Learn more in [Deprecations](/dynamics365/customer-service/implement/deprecations-customer-service)
+You can set up channels in the Contact Center admin center or Customer Service admin center application.
 
 To set up the channels, perform the following steps:
 

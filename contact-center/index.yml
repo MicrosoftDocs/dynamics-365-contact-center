@@ -49,7 +49,7 @@ additionalContent:
     - title: Try/Buy/Provision
       links: 
       - url: implement/try-dynamics365-contact-center.md
-        text: Try Dynamics 365 Contact Center
+        text: Try Dynamics 365 Contact Center 
       - url: https://www.microsoft.com/dynamics-365/products/contact-center/pricing/
         text: Buy Dynamics 365 Contact Center
       - url: implement/provision-channels.md

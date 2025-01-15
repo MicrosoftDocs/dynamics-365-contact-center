@@ -1,7 +1,7 @@
 ---
 title: Provision channels in Dynamics 365 Contact Center
 description: Perform the steps in this article to provision and add channels so that you can start using the product.
-ms.date: 11/07/2024
+ms.date: 01/06/2025
 ms.topic: how-to
 author: neeranelli
 ms.author: nenellim
@@ -13,7 +13,6 @@ ms.collection:
 # Provision channels in Dynamics 365 Contact Center
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
-
 
 Dynamics 365 Contact Center provides a modern, customizable, high-productivity experience that lets agents help customers across different channels via a unified interface. It lets organizations choose the channel that suits their business needs. It also ensures that a high level of responsive, quality service is received across channels.
 
@@ -61,9 +60,10 @@ If the provisioning fails, an error message appears that you can select to view 
 
 ### Turn off channels
 
+You can turn off a channel if you no longer require it. However, to enable the channel again, you'd need to reconfigure the channel instance.
+
 1. Select  **Customer Support** > **Channels** > **Manage channels**. 
 1. Clear the checkbox for the channel that you want to turn off. The application displays a confirmation message. Select **Turn off**.
-
 
 ### Related information
 

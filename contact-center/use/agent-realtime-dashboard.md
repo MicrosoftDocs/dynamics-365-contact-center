@@ -35,8 +35,6 @@ Key KPIs for bots include:
 
 You can identify trends in real-time bot performance with interactive charts and reports such as conversations over time, average bot conversation duration, and conversations by status.
 
- The visual display helps you discern changes and patterns in the data so that you can act quickly to address the most important issues.
-
 When you select a component in a chart, the data is filtered accordingly. In this way, you can view only data that is related to the selected component. For example, if you select the **Completed bot conversations** component in **Conversations over time**, the dashboard is refreshed and shows only the conversations that are currently in the **Completed** state.
 
 ## Bot details drill-down

@@ -41,7 +41,7 @@ When you select a component in a chart, the data is filtered accordingly. In thi
 
 ## Bot details drill-down
 
-You can select a bot from **Bot name** section on the dashboard to view key metrics and insights about individual bots' performance.
+You can select a bot from the **Bot name** filter on the dashboard to view key metrics and insights about individual bots' performance.
 
 ## Customize bot dashboard
 

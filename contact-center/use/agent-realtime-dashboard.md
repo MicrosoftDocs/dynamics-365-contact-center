@@ -19,14 +19,14 @@ Out of the box, the dashboard displays key metrics for the last 24 hours to help
 You can filter the report by selecting **All** to view bot performance across all channels or by choosing a specific channel. Filters include time, queue, time zone, and conversation status. Learn more in [Overview of Omnichannel real-time analytics dashboards](/dynamics365/customer-service/use/intro-realtime-analytics-dashboard#filter-information-displayed-on-dashboard).
 
 
-## Key performance indicators (KPIs)
+## Key metrics
 
-Key KPIs for bots include:
+Key performance indicators(KPIs) for bots include:
 
 - **Total bot conversations**: The number of ongoing or closed conversations handled by the bot within the specified duration.
 - **Total bot ongoing conversations**: The number of conversations currently in progress.
 - **Total bot completed conversations**: The number of conversations that are successfully resolved or end within the specified duration.
-- **Total bot transferred conversations**: The number of bot conversations that are escalated to a human agent or an external phone number within the specified duration.
+- **Total bot transferred conversations**: The number of bot conversations that are escalated to a customer service representative or an external phone number within the specified duration.
 - **Average conversation duration**: The average time each conversation lasts. The conversation duration is calculated from the time the bot is assigned to the conversation until the bot escalates the conversation or ends it.
 
 :::image type="content" source="../media/oc-realtime-dashboard.png" alt-text="Screenshot of realtime bot dashboard"::: 

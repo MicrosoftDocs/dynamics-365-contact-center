@@ -1,6 +1,6 @@
 ---
 title: View and understand the bot report in Omnichannel real-time analytics
-description: Learn about the bot report in Omnichannel real-time analytics
+description: Learn about the bot report in Omnichannel real-time analytics.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham

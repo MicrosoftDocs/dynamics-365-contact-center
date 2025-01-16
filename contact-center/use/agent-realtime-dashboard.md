@@ -21,7 +21,7 @@ You can filter the report by selecting **All** to view bot performance across al
 
 ## Key metrics
 
-Key performance indicators(KPIs) for bots include:
+Key performance indicators (KPIs) for bots include:
 
 - **Total bot conversations**: The number of ongoing or closed conversations handled by the bot within the specified duration.
 - **Total bot ongoing conversations**: The number of conversations currently in progress.

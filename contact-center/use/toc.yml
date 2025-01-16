@@ -230,6 +230,8 @@
             href: /dynamics365/customer-service/use/realtime-voice-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Agents report
             href: /dynamics365/customer-service/use/realtime-agents-analytics?context=/dynamics365/contact-center/context/use-context
+          - name: Bot report
+            href: agent-realtime-dashboard.md
           - name: Ongoing Conversation report
             href: /dynamics365/customer-service/use/realtime-ongoing?context=/dynamics365/contact-center/context/use-context
         - name: Use historical analytics dashboards

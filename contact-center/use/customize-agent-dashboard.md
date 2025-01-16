@@ -25,17 +25,20 @@ Perform the steps in [Add a filter to an entire page](/power-bi/create-reports/p
 | Dialed number identification service (DNIS) | Choose a customer-facing phone number from the list to see bot metrics for that number.<br> You can track call volumes for different campaigns or services, analyze marketing effectiveness, customize Interactive Voice Response (IVR) experiences, and generate detailed reports on call patterns, ultimately helping to optimize resource allocation and improve customer service. | Real time and historical| Voice only | DimPhoneNumber: DNIS |
 | Last language  | Filter and view bot metrics by the last language used.<br> This metric helps you understand your callers' language preferences and optimize multilingual support.<br> For example, a conversation can start in English before the customer switches to Spanish or a conversation begins and ends in Spanish. If you select Spanish as the last language, the report displays the metrics for all conversations that ended in Spanish. In our example, the dashboard displays metrics for both the conversations.<br>**Note**: In the real-time bot dashboard, setting the Last language filter displays metrics for conversations that were escalated to an agent or an external number and are in the closed state. The metrics aren't updated when the bot conversation is ongoing. | Real time and historical| Chat and voice | DimLanguage: Language |
 
-## Failed calls
+:::image type="content" source="../media/oc-realtime-dashboard.png" alt-text="Screenshot of realtime bot dashboard with filters."::: 
+
+
+## Fallback action calls
 
 Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi-report-add-visualizations-i#add-visualizations-to-the-report) to represent **FactSession : Failed bot conversation** data in a [Single number card](/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#single-number) visual for failed calls on the bot dashboard.
 
 | Title |   Definition | Applies to | Channel | Data |
 | --------------- | --------------- |
-| Failed calls | The number of conversations initiated by the customer but couldn't be connected to a bot due to a system failure. The application registers a call only after the classification rules in the workstream run and the work distribution system routes the call to the bot. This indicates that a bot was assigned to the call. Calls that fail before this step don't appear on the dashboard.| Real time and historical| Chat and voice | FactSession: Failed bot conversation|
+| Fallback action calls | The number of conversations initiated by the customer but couldn't be connected to a bot due to a system failure. The application registers a call only after the classification rules in the workstream run and the work distribution system routes the call to the bot. This indicates that a bot was assigned to the call. Calls that fail before this step don't appear on the dashboard.| Real time and historical| Chat and voice | FactSession: Failed bot conversation|
 
-## Outcome reason
+## Session level outcome reason
 
-Perform the steps in [add a matrix visualization](/power-bi/visuals/power-bi-visualization-matrix-visual#lets-create-a-matrix-visual) to represent **Outcome reason** in a matrix visual to view metrics by outcome reason for bots to the report.
+Perform the steps in [add a matrix visualization](/power-bi/visuals/power-bi-visualization-matrix-visual#lets-create-a-matrix-visual) to represent **Session level outcome reason** in a matrix visual to view metrics by outcome reason for bots to the report.
 
 | Title |   Definition | Applies to | Channel | Data |
 | --------------- | --------------- |

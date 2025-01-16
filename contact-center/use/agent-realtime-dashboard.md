@@ -29,7 +29,7 @@ Key performance indicators (KPIs) for bots include:
 - **Total bot transferred conversations**: The number of bot conversations that are escalated to a customer service representative or an external phone number within the specified duration.
 - **Average conversation duration**: The average time each conversation lasts. The conversation duration is calculated from the time the bot is assigned to the conversation until the bot escalates the conversation or ends it.
 
-:::image type="content" source="../media/oc-realtime-dashboard.png" alt-text="Screenshot of realtime bot dashboard"::: 
+:::image type="content" source="../media/oc-realtime-bot-dashboard.png" alt-text="Screenshot of realtime bot dashboard"::: 
 
 ## Monitor trends
 
@@ -47,8 +47,8 @@ You can edit the report to add the following bot specific metrics and filters to
 
 - Dialed number identification service (DNIS)
 - Last language
-- Failed calls
-- Outcome reason
+- Fallback action calls
+- Session level outcome reasons
 
 To customize the bot dashboard, see [customize visual display](customize-agent-dashboard.md). 
 

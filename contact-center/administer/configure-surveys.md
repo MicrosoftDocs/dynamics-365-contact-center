@@ -44,7 +44,7 @@ With Microsoft Copilot Studio agents, you can:
 1. On the **Add new customer feedback survey** wizard, select one of the following templates, and then select **Next**:
     - **Customer Satisfaction (CSAT) Survey**: Use to ask questions, such as, “On a scale of 1-5, how would you rate your overall satisfaction with the service you received?”
     - **Net Promoter Score (NPS) Survey**: Use to measure customer loyalty, such as, “On a scale of 0 to 10, how likely are you to recommend our product/service/company?” 
-    - **Customer Effort Score (CES)**: Use to quantify the ease with which customers can complete their desired actions or resolve issues when interacting with a company’s products or services. Frame questions, such as, “On a scale of 1 to 7, how easy was it to get the help you needed?
+    - **Customer Effort Score (CES)**: Use to quantify the ease with which customers can complete their desired actions or resolve issues when interacting with a company’s products or services. Frame questions, such as, “Were we able to resolve your issue?"
     - **Blank Template**: Use it to start a survey from scratch. 
 1. On the **Properties** page, do the following:
     - **Name**: Enter a name based on the survey template that you selected.
@@ -95,6 +95,8 @@ You can edit your survey agents to fulfill your business needs as follows:
 
 Edit the **Conversation Start** system topic only. All other system topics are disabled and must not be used.
 If you would like to add an additional question and store the data in Dataverse, the response variable name must start with “MCS_”.
+
+[!NOTE] Please do not delete the survey bot from Copilot Studio as this will cause issues. 
 
 ### Set up custom hosting
 

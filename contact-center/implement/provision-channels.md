@@ -37,7 +37,7 @@ You can provision the following channels:
     > Learn more at [Pricing](https://www.microsoft.com/dynamics-365/products/contact-center/pricing), Dynamics 365 Licensing Guide, and [How to purchase through Volume Licensing](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy).
 
 - Set up the prerequisites mentioned in the system requirements.
-- Set up the Dynamics 365 System Administrator role on the root business unit for your organization. Learn more at [assign security roles to a user in Power Platform](/power-platform/admin/assign-security-roles) and [Create or edit business units](/power-platform/admin/create-edit-business-units)
+- Set up the Dynamics 365 System Administrator role on the root business unit for your organization. Learn more at [assign security roles to a user in Power Platform](/power-platform/admin/assign-security-roles) and [Create or edit business units](/power-platform/admin/create-edit-business-units).
 
 ## Set up channels
 
@@ -58,7 +58,7 @@ If the provisioning fails, an error message appears that you can select to view 
 ### Turn off channels
 
 > [!IMPORTANT]
-> You can turn off a channel if you no longer require it. However, turning off all channels that are enabled and then reenabling them requires that you reconfigure the channel instance.
+> You can turn off a channel if you no longer require it. However, to reenable the channel that you turned off, you need to reconfigure the channel instance.
 
 1. Select  **Customer Support** > **Channels** > **Manage channels**. 
 1. Clear the checkbox for the channel that you want to turn off. The application displays a confirmation message. Select **Turn off**.

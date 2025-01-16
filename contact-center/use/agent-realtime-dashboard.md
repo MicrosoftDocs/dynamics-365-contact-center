@@ -35,7 +35,7 @@ Key performance indicators (KPIs) for bots include:
 
 You can identify trends in real-time bot performance with interactive charts and reports such as conversations over time, average bot conversation duration, and conversations by status.
 
-You can filter the data in the chart by selecting a component. For example, if you select the **Completed bot conversations** component in **Conversations over time**, the dashboard shows the conversations that're currently in the **Completed** state.
+You can filter the data in the chart by selecting a component. For example, if you select the **Completed bot conversations** component in **Conversations over time**, the dashboard shows the conversations that are currently in the **Completed** state.
 
 ## Bot details drill-down
 

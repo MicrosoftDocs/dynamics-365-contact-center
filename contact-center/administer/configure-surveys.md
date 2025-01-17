@@ -96,7 +96,8 @@ You can edit your survey agents to fulfill your business needs as follows:
 Edit the **Conversation Start** system topic only. All other system topics are disabled and must not be used.
 If you would like to add an additional question and store the data in Dataverse, the response variable name must start with “MCS_”.
 
-[!NOTE] Please do not delete the survey bot from Copilot Studio as this will cause issues. 
+>[!NOTE]
+> We recommend that you don't delete the survey bot from Copilot Studio as this causes issues. 
 
 ### Set up custom hosting
 

@@ -97,8 +97,7 @@ Edit the **Conversation Start** system topic only. All other system topics are d
 If you would like to add an additional question and store the data in Dataverse, the response variable name must start with “MCS_”.
 
 >[!NOTE]
-> We recommend that you don't delete the survey bot from Copilot Studio as this causes issues. 
-
+> We recommend that you don't delete the survey bot from Copilot Studio.
 ### Set up custom hosting
 
 You can host surveys on a link other than the default one.

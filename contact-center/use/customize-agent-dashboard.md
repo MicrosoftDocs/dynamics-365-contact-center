@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: conceptual 
 ms.collection: 
-ms.date: 11/15/2024
+ms.date: 01/17/2025
 ms.custom: bap-template 
 ---
 
@@ -34,7 +34,7 @@ Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi
 
 | Title |   Definition | Applies to | Channel | Data |
 | --------------- | --------------- |
-| Fallback action calls | The number of conversations initiated by the customer but couldn't be connected to a bot due to a system failure. The application registers a call only after the classification rules in the workstream run and the work distribution system routes the call to the bot. This indicates that a bot was assigned to the call. Calls that fail before this step don't appear on the dashboard.| Real time and historical| Chat and voice | FactSession: Failed bot conversation|
+| Fallback action calls | The number of conversations initiated by the customer but couldn't be connected to a bot due to a system failure. The application registers a call only after the classification rules in the workstream run and the work distribution system routes the call to the bot. This indicates that a bot was assigned to the call. Calls that fail before this step don't appear on the dashboard.| Real time and historical| Voice only | FactSession: Failed bot conversation|
 
 ## Session level outcome reason
 

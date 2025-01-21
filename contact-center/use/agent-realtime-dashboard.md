@@ -48,7 +48,7 @@ You can edit the report to add the following bot specific metrics and filters to
 - Dialed number identification service (DNIS)
 - Last language
 - Fallback action calls
-- Session level outcome reasons
+- Bot session level outcome reasons
 
 To customize the bot dashboard, see [customize visual display](customize-agent-dashboard.md). 
 

@@ -30,13 +30,13 @@ Perform the steps in [Add a filter to an entire page](/power-bi/create-reports/p
 
 ## Fallback action calls
 
-Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi-report-add-visualizations-i#add-visualizations-to-the-report) to represent **FactSession : Failed bot conversation** data in a [Single number card](/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#single-number) visual for failed calls on the bot dashboard.
+Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi-report-add-visualizations-i#add-visualizations-to-the-report) to represent **FactSession : Failed bot conversation** data in a [Single number card](/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#single-number) visual for fallback action calls on the bot dashboard.
 
 | Title |   Definition | Applies to | Channel | Data |
 | --------------- | --------------- |
 | Fallback action calls | The number of conversations initiated by the customer but couldn't be connected to a bot due to a system failure. The application registers a call only after the classification rules in the workstream run and the work distribution system routes the call to the bot. This indicates that a bot was assigned to the call. Calls that fail before this step don't appear on the dashboard.| Real time and historical| Voice only | FactSession: Failed bot conversation|
 
-## Session level outcome reason
+## Bot session level outcome reason
 
 Perform the steps in [add a matrix visualization](/power-bi/visuals/power-bi-visualization-matrix-visual#lets-create-a-matrix-visual) to represent **Session level outcome reason** in a matrix visual to view metrics by outcome reason for bots to the report.
 

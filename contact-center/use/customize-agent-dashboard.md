@@ -12,9 +12,9 @@ ms.custom: bap-template
 
 # Customize the bot dashboard
 
-You can customize the out-of-the-box real-time and historical bot dashboards with additional filters and metrics to effectively visualize your bot metrics. Learn more at [customize visual display](/dynamics365/customer-service/use/customize-reports)
+You can customize the out-of-the-box real-time and historical bot dashboards with additional filters and metrics to effectively visualize your bot metrics. Learn more in [customize visual display](/dynamics365/customer-service/use/customize-reports)
 
- The table describes the filters and metrics that you can add to the bot dashboards to help visualize key performance indicators(KPI).
+ The table describes the filters and metrics that you can add to the bot dashboards to help visualize key performance indicators (KPI).
 
 ## Filters
 
@@ -23,7 +23,7 @@ Perform the steps in [Add a filter to an entire page](/power-bi/create-reports/p
 | Title |   Definition | Applies to| Channel | Data |
 | --------------- | --------------- |
 | Dialed number identification service (DNIS) | Choose a customer-facing phone number from the list to see bot metrics for that number.<br> You can track call volumes for different campaigns or services, analyze marketing effectiveness, customize Interactive Voice Response (IVR) experiences, and generate detailed reports on call patterns, ultimately helping to optimize resource allocation and improve customer service. | Real time and historical| Voice only | DimPhoneNumber: DNIS |
-| Last language  | Filter and view bot metrics by the last language used.<br> This metric helps you understand your callers' language preferences and optimize multilingual support.<br> For example, a conversation can start in English before the customer switches to Spanish or a conversation begins and ends in Spanish. If you select Spanish as the last language, the report displays the metrics for all conversations that ended in Spanish. In our example, the dashboard displays metrics for both the conversations.<br>**Note**: In the real-time bot dashboard, setting the Last language filter displays metrics for conversations that were escalated to an agent or an external number and are in the closed state. The metrics aren't updated when the bot conversation is ongoing. | Real time and historical| Chat and voice | DimLanguage: Language |
+| Language  | Filter and view bot metrics by the last language used.<br> This metric helps you understand your callers' language preferences and optimize multilingual support.<br> For example, a conversation can start in English before the customer switches to Spanish or a conversation begins and ends in Spanish. If you select Spanish as the last language, the report displays the metrics for all conversations that ended in Spanish. In our example, the dashboard displays metrics for both the conversations.<br>**Note**: In the real-time bot dashboard, setting the Last language filter displays metrics for conversations that were escalated to an agent or an external number and are in the closed state. The metrics aren't updated when the bot conversation is ongoing. | Real time and historical| Chat and voice | DimLanguage: Language |
 
 :::image type="content" source="../media/oc-realtime-dashboard.png" alt-text="Screenshot of realtime bot dashboard with filters."::: 
 

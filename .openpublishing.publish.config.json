@@ -31,6 +31,11 @@
       "url": "https://github.com/MicrosoftDocs/powerapps-docs-pr",
       "branch": "main",
       "branch_mapping": {}
+    },
+    {"path_to_root": "includes",
+      "url": "https://github.com/MicrosoftDocs/dynamics-365-customer-engagement-pr",
+      "branch": "main",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {},

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: overview
 ms.collection: get-started
-ms.date: 07/01/2024
+ms.date: 01/16/2025
 ms.custom: bap-template
 ---
 

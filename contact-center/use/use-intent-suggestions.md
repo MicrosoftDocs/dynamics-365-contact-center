@@ -19,7 +19,7 @@ Intent based suggestions help customer service representatives (CSRs) handle cus
 
 Make sure that your administrator enabled the following features in Customer Service admin center or Contact Center admin center:
 - The Ask-a-question feature in Copilot help pane. Learn more in [Enable Copilot assist features](../administer/copilot-enable-help-pane.md).
-- Intent discovery.
+- Intent is enabled. Learn more in [manage customer intent agent](../administer/manage-customer-intent-agent.md)
 - Intent-based suggestions for the required [agent experience profile](/dynamics365/customer-service/administer/create-agent-experience-profile). 
 
 ## How intent-based suggestions work

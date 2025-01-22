@@ -1,16 +1,16 @@
 ---
 title: Enable intent-based suggestions for service representatives
-description: Learn how to use intent-based suggestions in Customer Service admin center or Contact Center admin center to help customer service representatives handle customer conversations with ease.
+description: Enable intent-based suggestions in Customer Service admin center or Contact Center admin center to help customer service representatives handle customer conversations with ease.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
-ms.topic: how-to #Required; don't change.
-ms.collection: 
+ms.topic: how-to
+ms.collection: bap-ai-copilot
 ms.date: 11/13/2024
 ms.custom: bap-template 
 ---
 
-# Enable intent-based suggestions for customer service representatives
+# Enable intent-based suggestions for service representatives
 
 For agents to be able to use intent-based suggestions for live chat and persistent conversations, you need to enable **Intent-based suggestions (preview)** in agent experience profiles. By default, agents added to the out-of-the-box agent experience profiles can use the intent-based suggestions.
 

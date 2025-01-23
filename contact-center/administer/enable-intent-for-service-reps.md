@@ -1,5 +1,5 @@
 ---
-title: Enable intent-based suggestions for service representatives
+title: Enable intent-based suggestions for service representatives (preview)
 description: Enable intent-based suggestions in Customer Service admin center or Contact Center admin center to help customer service representatives handle customer conversations with ease.
 author: gandhamm
 ms.author: mgandham
@@ -10,7 +10,7 @@ ms.date: 11/13/2024
 ms.custom: bap-template 
 ---
 
-# Enable intent-based suggestions for service representatives
+# Enable intent-based suggestions for service representatives (preview)
 
 Intent-based suggestions help customer service representatives (service representatives or representatives)  resolve live chat and persistent chat issues faster and more accurately. For service representatives to use this feature, you need to enable **Intent-based suggestions (preview)** in agent experience profiles. By default, representatives added to the out-of-the-box agent experience profiles can use the intent-based suggestions.
 

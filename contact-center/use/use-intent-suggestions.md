@@ -1,5 +1,5 @@
 ---
-title: Use intent-based suggestions
+title: Use intent-based suggestions (preview)
 description: Learn how to use intent-based suggestions to help customer service representatives handle customer conversations with ease.
 author: gandhamm
 ms.author: mgandham
@@ -11,7 +11,7 @@ ms.custom: bap-template
 ---
 
 
-# Use intent-based suggestions
+# Use intent-based suggestions (preview)
 
 Intent-based suggestions help you handle customer conversations with ease. The intent agent analyzes your organization's historical support interactions to provide real-time context and intelligent guidance throughout the chat. You can quickly understand customer needs, ask the right questions, and deliver accurate solutions—all while reducing manual typing and handling time.
 

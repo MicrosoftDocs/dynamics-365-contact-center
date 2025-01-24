@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 01/22/2025
+ms.date: 01/24/2025
 ms.custom: bap-template
 ---
 
@@ -23,6 +23,7 @@ You can configure Customer Intent Agent with Copilot Studio agents to provide up
 - **Customer Intent Agent (preview)** is enabled.
 - Intent discovery is set up and there are intents in the intent library.
 - Your Copilot Studio agent must be connected to a workstream in omnichannel.
+- Makers must have the **Environment Maker** role to create in and have access to a Copilot Studio environment.
 
 ## Here's how it works
 
@@ -75,9 +76,9 @@ You must have added the required knowledge sources to your Copilot Studio agent.
 
 Connect the knowledge articles in your CRM instance to your Copilot Studio agent. Learn more in [Integrate knowledge management in Dynamics 365 with a Copilot Studio bot](/dynamics365/customer-service/administer/integrate-km-with-pva).
 
-Make sure that that you add the new action you’ve created called **Generate answer from Dataverse knowledge articles for Power Virtual Agent** to the Handoff topic instead of using generative answer. 
+Make sure that you add the new flow that you created called **Generate answer from Dataverse knowledge articles for Power Virtual Agent** to the Handoff topic instead of using generative answer. 
 
-## Customize the variables in the Intent-based suggestions - Configuration topic
+## Variables in the Intent-based suggestions - Configuration topic
 
 The Intent-based suggestions - Configuration is a non-customizable topic that contains a list of variables that can be overwritten to provide the desired behavior. Here is a list of variables in the topic. 
 

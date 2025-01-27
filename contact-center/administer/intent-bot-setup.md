@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 01/24/2025
+ms.date: 01/27/2025
 ms.custom: bap-template
 ---
 
@@ -22,8 +22,8 @@ You can configure Customer Intent Agent with Copilot Studio agents to provide up
 
 - **Customer Intent Agent (preview)** is enabled.
 - Intent discovery is set up and there are intents in the intent library.
-- Your Copilot Studio agent must be connected to a workstream in omnichannel.
-- Makers must have the **Environment Maker** role to create in and have access to a Copilot Studio environment.
+- Your Copilot Studio agent is connected to a workstream in omnichannel.
+- Makers have the **Environment Maker** role.
 
 ## Here's how it works
 
@@ -35,7 +35,7 @@ You can configure Customer Intent Agent with Copilot Studio agents to provide up
 
 ## Set up Copilot Studio agents for intent management
 
-1.	In Customer Service admin center, navigate to the **Customer Intent Agent (preview)** page > **Intent-based suggestions** section.
+1. In Customer Service admin center, navigate to the **Customer Intent Agent (preview)** page > **Intent-based suggestions** section.
 1. Select **Enable for chatbots** and then select **Manage**. The **Bots** page appears.
 1. Select the chatbot connected to your omnichannel environment for agent transfers.
 1. Select **Add intent-based features**. This takes you to **Manage component collections (preview)** in Microsoft Copilot Studio.
@@ -64,19 +64,19 @@ You can switch to Copilot author authentication if users connecting to Copilot S
 1. Select the  ellipsis next to **Connect action** > **Properties**.
 1. Select the **End user authentication** dropdown and change it from **User authentication** to **Copilot author authentication**. 
 
-## Update the Intent-based suggestions - Handoff topic
-
-You must have added the required knowledge sources to your Copilot Studio agent. Learn more in [Add knowledge to a Copilot Studio bot](/microsoft-copilot-studio/knowledge-add-existing-copilot).
-
-1. In the **Intent-based suggestions – Handoff** topic, add a node and go to **Advanced** >**Generative answer** and select **SolutionQuery** for Input. Adding a SolutionQuery helps generate information from the determined intent and answered questions to search knowledge sources for a solution response.
-1. Select **Edit**, enable **Search only selected sources** and then select the relevant knowledge sources that you added as a prerequisite.
-1. Add another node as **Topic management** > **Go to another topic** > **End of Conversation** to add logic to complete the conversation flow after providing an answer.
-
 ## Connect to CRM knowledge articles
 
 Connect the knowledge articles in your CRM instance to your Copilot Studio agent. Learn more in [Integrate knowledge management in Dynamics 365 with a Copilot Studio bot](/dynamics365/customer-service/administer/integrate-km-with-pva).
 
 Make sure that you add the new flow that you created called **Generate answer from Dataverse knowledge articles for Power Virtual Agent** to the Handoff topic instead of using generative answer. 
+
+## Update the Intent-based suggestions - Handoff topic
+
+You can also connect to other knowledge sources, supported by Copilot Studio, to your Copilot Studio agent. Learn more in [Add knowledge to a Copilot Studio bot](/microsoft-copilot-studio/knowledge-add-existing-copilot).
+
+1. In the **Intent-based suggestions – Handoff** topic, add a node and go to **Advanced** >**Generative answer** and select **SolutionQuery** for Input. Adding a SolutionQuery helps generate information from the determined intent and answered questions to search knowledge sources for a solution response.
+1. Select **Edit**, enable **Search only selected sources** and then select the relevant knowledge sources that you added as a prerequisite.
+1. Add another node as **Topic management** > **Go to another topic** > **End of Conversation** to add logic to complete the conversation flow after providing an answer.
 
 ## Variables in the Intent-based suggestions - Configuration topic
 

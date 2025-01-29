@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: conceptual 
 ms.collection:
-ms.date: 11/27/2024
+ms.date: 01/29/2025
 ms.custom: bap-template
 ---
 
@@ -34,7 +34,7 @@ The following table shows which channels are available in the supported geograph
 | Japan | Yes | No |
 | North America | Yes | Yes |
 | South America | Yes | No |
-| Switzerland |	Yes | No |
+| Switzerland |	Yes | Yes |
 | United Arab Emirates (UAE) | Yes | Yes |
 | United Kingdom | Yes | Yes |
 

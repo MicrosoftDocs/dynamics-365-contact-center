@@ -23,9 +23,10 @@ The key features are as follows:
 
 ## Scenarios
 
-### Standalone app
 
-The following scenarios can help you understand the language Copilot uses to generate responses in the standalone app.
+### [Standalone](#tab/copilotstandalone)
+
+  The following scenarios can help you understand the language Copilot uses to generate responses in the standalone app.
 
 | Scenarios | Copilot response | 
 | --- | --- | 
@@ -36,7 +37,9 @@ The following scenarios can help you understand the language Copilot uses to gen
 |  The UI language is set to Spanish. The knowledge articles are in the English language only. The agent asks a question in Spanish.| No response is generated. |
 | The UI language is set to Japanese. The Bing Market language is set to Japanese and the location is set to ja-JP. The agent asks a question that Copilot responds to with content from the public web pages. | Copilot returns responses if the restricted Bing search results are available in the set [market code](/bing/search-apis/bing-web-search/reference/market-codes) of ja-JP. |
 
-### Embed app
+
+### [Embedded](#tab/copilotembedded)
+
 
 The following scenarios can help you understand the language Copilot uses to generate responses in the embedded app.
 
@@ -50,6 +53,7 @@ The following scenarios can help you understand the language Copilot uses to gen
 | The contact center embedded app's UI language is Spanish. The Salesforce UI language is German. The knowledge articles are in Spanish. The Copilot prompt is in Finnish. |  Copilot displays the results in Spanish. |
 | The contact center embedded app's UI language is Spanish. The Salesforce UI language is German. The knowledge articles are in German. The Copilot prompt is in Finnish. |  Copilot doesn't display a response as the UI language and knowledge article language are different. |
 
+---
 
 ### Related information
 

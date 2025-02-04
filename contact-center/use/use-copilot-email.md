@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Write an email with Copilot
 
-[!INCLUDE[cc-feature-availability-cfs-yes](../../includes/cc-feature-availability-cfs-yes.md)]
+[!INCLUDE[cc-feature-availability-cfs-yes](../includes/cc-feature-availability-cfs-yes.md)]
 
 When you draft customer emails, Copilot can offer suggestions to make them clearer, concise, and compelling.
 
@@ -38,7 +38,7 @@ Your administrator has enabled this feature.
   
   ### [Draft an email in the rich text editor](#tab/richtexteditor)
 
-   [!INCLUDE[cc-feature-availability](../../includes/cc-feature-availability.md)]
+   [!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
 
 
    :::image type="content" source="../media/draft-an-email-inline.png" alt-text="Screenshot of draft an email in rich text editor.":::
@@ -65,7 +65,7 @@ When you use Copilot to draft an email, you can use the following features to he
 
 ### Use filters
 
-[!INCLUDE[cc-feature-availability-cs-only](../../includes/cc-feature-availability-cs-only.md)]
+[!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
 You can select **Filters** to choose the relevant knowledge articles only that Copilot must use to generate the response.
 
@@ -90,7 +90,7 @@ You can select the Adjust with Copilot icon to change the length and tone of the
 
 ### Use follow-up prompts
 
-[!INCLUDE[cc-feature-availability](../../includes/cc-feature-availability.md)]
+[!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
 
 If you aren't satisfied with Copilot's response, you can use follow-up custom prompts and guide Copilot in a natural, conversational way. You can use up to five prompts at a time to refine the email draft. If the knowledge base is enabled, Copilot will also use those sources.
 
@@ -127,6 +127,6 @@ If translation is enabled, you can select **Translate** and then select your pre
 
 ### Related information
 [View, compose and respond to email](/power-apps/user/view-compose-email)  
-[Enable Copilot to draft emails](../administer/copilot-email-enable.md)  
-[FAQ for Copilot in Customer Service](../administer/faq-copilot-features.md)   
-[Responsible AI FAQ for copilot features](../implement/faq-responsible-ai-copilot.md)    
+[Enable Copilot to draft emails](/dynamics365/customer-service/administer/copilot-email-enable)  
+[FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)   
+[Responsible AI FAQ for copilot features](/dynamics365/customer-service/implement/faq-responsible-ai-copilot)    

@@ -12,9 +12,9 @@ ms.custom: bap-template
 
 # Draft a chat response (Preview)
 
-[!INCLUDE[cc-feature-availability](../../includes/cc-feature-availability.md)]
+[!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
 
-[!INCLUDE [preview-banner](../../../shared-content/shared/preview-includes/preview-note-d365.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Copilot is an AI-powered tool that revolutionizes the agent experience in Dynamics 365 Customer Service. It provides real-time assistance to resolve issues faster, handle cases more efficiently, and automate time-consuming tasks so you can focus on delivering high-quality service to your customers.
 
@@ -30,7 +30,7 @@ Copilot is an AI-powered tool that revolutionizes the agent experience in Dynami
 ## Prerequisites
 
 - Make sure that your administrator has turned on the Copilot features.
-- To use the summarize cases feature, [case summaries through ask a question](../administer/enable-ask-summarize-cases.md) (preview) is enabled.
+- To use the summarize cases feature, [case summaries through ask a question](/dynamics365/customer-service/administer/enable-ask-summarize-cases) (preview) is enabled.
 
 ## Draft a chat response
 
@@ -48,6 +48,6 @@ Select the one-click response generation button at the lower-right corner of the
 ### Related information
 
 [Understand Copilot language support](copilot-language-support.md)  
-[Manage copilot features in Customer Service](../administer/configure-copilot-features.md)  
-[Responsible AI FAQ for copilot features](../implement/faq-responsible-ai-copilot.md)   
-[FAQ for Copilot in Customer Service](../administer/faq-copilot-features.md)  
+[Manage copilot features in Customer Service](/dynamics365/customer-service/administer/configure-copilot-features)  
+[Responsible AI FAQ for copilot features](/dynamics365/customer-service/implement/faq-responsible-ai-copilot)   
+[FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)  

@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 # Use Copilot to summarize conversations
 
-[!INCLUDE[cc-feature-availability-embedded-yes](../../includes/cc-feature-availability-embedded-yes.md)]
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
 Copilot conversation summaries provide context and relay the steps that you took to solve the issue. You can summarize chat and transcribed voice conversations.
 
@@ -22,7 +22,7 @@ Copilot conversation summaries provide context and relay the steps that you took
 Your administrator has enabled the Copilot conversation summary feature.
 
 > [!NOTE]
-> If your administrator has enabled auto-summarization for ongoing conversations, you get an AI-generated summary of the conversation along with the Copilot-generated conversation summary. The two summaries may be slightly different. [Learn more about auto-summarized conversations](cs-ai-generated-summary.md).
+> If your administrator has enabled auto-summarization for ongoing conversations, you get an AI-generated summary of the conversation along with the Copilot-generated conversation summary. The two summaries may be slightly different. [Learn more about auto-summarized conversations](/dynamics365/customer-service/use/cs-ai-generated-summary).
 
 ## Navigation
 

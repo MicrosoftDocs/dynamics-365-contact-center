@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Ask a question 
 
-[!INCLUDE[cc-feature-availability-cfs-yes](../../includes/cc-feature-availability-cfs-yes.md)]
+[!INCLUDE[cc-feature-availability-cfs-yes](../includes/cc-feature-availability-cfs-yes.md)]
 
 When you sign in to any of the Customer Service agent apps, Copilot opens in the right side panel with the **Ask a question** tab ready. Copilot acts as your partner, helping to answer questions without you having to search for the information. Copilot quickly retrieves information, generates summaries for cases, and gets required details about case data, all within the same interface.
 
@@ -23,7 +23,7 @@ When you sign in to any of the Customer Service agent apps, Copilot opens in the
 ## Prerequisites
 
 - Make sure that your administrator has turned on the Copilot features.
-- To use the summarize cases feature, [case summaries through ask a question](../administer/enable-ask-summarize-cases.md) (preview) is enabled.
+- To use the summarize cases feature, [case summaries through ask a question](/dynamics365/customer-service/administer/enable-ask-summarize-cases) (preview) is enabled.
 
 ## Navigation
 
@@ -71,7 +71,7 @@ You can make the following types of requests:
 
 ## [Embedded experience](#tab/embeddedapps)
 
-[!INCLUDE[cc-feature-availability-embed-only](../../includes/cc-feature-availability-embed-only.md)]
+[!INCLUDE[cc-feature-availability-embed-only](../includes/cc-feature-availability-embed-only.md)]
 
 
 If you are using the embed experience or Microsoft 365 Copilot for Service, in a non-Microsoft CRM, the case summary appears as a card on the **Ask a question** tab in the Copilot help pane. 
@@ -80,7 +80,7 @@ If you are using the embed experience or Microsoft 365 Copilot for Service, in a
 
 ## Use auto prompts
 
-[!INCLUDE [cc-feature-availability-embedded-yes](../../includes/cc-feature-availability-embedded-yes.md)]
+[!INCLUDE [cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
 
 When you have an active case or conversation open, Copilot suggests prompts based on the context of the case or the conversation. Copilot generates prompts only for the first question and not for follow-up questions. Copilot generates the prompts as follows:
@@ -94,7 +94,7 @@ When you have an active case or conversation open, Copilot suggests prompts base
 
 ## Use proactive prompts
 
-[!INCLUDE [cc-feature-availability-embedded-yes](../../includes/cc-feature-availability-embedded-yes.md)]
+[!INCLUDE [cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
 
 Copilot proactively suggests prompts, without you having to type one, that you can use to prioritize cases effectively and solve customer queries quickly.
@@ -121,9 +121,9 @@ If your administrator enabled translation, you can select **Translate** and then
 
 ### Use targeted phrases in Copilot to get responses from plugins (preview)
 
-[!INCLUDE[cc-feature-availability](../../includes/cc-feature-availability.md)]
+[!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
 
-[!INCLUDE [preview-banner](../../../shared-content/shared/preview-includes/preview-note-d365.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 If your administrator has configured prompt plugins, you can use targeted keywords to gather quick information about the case that you're working on. For example, you can use the following steps to get the account summary of a case. If Copilot doesn't find any details that match the term, then it falls back to the knowledge source to display the resolution from the configured knowledge articles.
 

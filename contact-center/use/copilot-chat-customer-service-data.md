@@ -13,7 +13,7 @@ ms.collection: bap-ai-copilot
 
 # Chat with case data in Customer Service (preview)
 
-[!INCLUDE [preview-banner](../../../shared-content/shared/preview-includes/preview-note-d365.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 This article explains how to use Microsoft Copilot for Microsoft 365 to chat with case data by using the Customer Service plugin.
 
@@ -61,6 +61,6 @@ Some examples of prompts are as follows:
 
 [Use Copilot to solve customer issues](use-copilot-features.md)  
 [Understand Copilot language support](copilot-language-support.md)  
-[Manage copilot features in Customer Service](../administer/configure-copilot-features.md)  
-[Responsible AI FAQ for copilot features](../implement/faq-responsible-ai-copilot.md)   
+[Manage copilot features in Customer Service](amics365/customer-service/administer/faq-copilot-features)  
+[Responsible AI FAQ for copilot features](/dynamics365/customer-service/implement/faq-responsible-ai-copilot)   
 [FAQ for Copilot in Customer Service](../administer/faq-copilot-features.md)  

@@ -73,7 +73,7 @@
       - name: Use Copilot
         items: 
         - name: Copilot feature availability across applications
-          href: copilot-feature-guide.md
+          href: copilot-feature-availability.md  
         - name: Summarize cases
           href: copilot-use-summary.md
         - name: Summarize conversations

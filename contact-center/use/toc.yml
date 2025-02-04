@@ -73,23 +73,22 @@
       - name: Use Copilot
         items: 
         - name: Copilot feature availability across applications
-          href: /dynamics365/customer-service/use/copilot-feature-guide?context=/dynamics365/context/contact-center-context
+          href: copilot-feature-guide.md
         - name: Summarize cases
           href: copilot-use-summary.md
         - name: Summarize conversations
-          href: /dynamics365/customer-service/use/copilot-summarize-conversations?context=/dynamics365/context/contact-center-context  
+          href: copilot-summarize-conversations.md  
         - name: Ask a question
-          href: /dynamics365/customer-service/use/use-ask-a-question?context=/dynamics365/context/contact-center-context  
+          href: use-ask-a-question.md  
         - name: Draft a chat response (preview)
-          href: /dynamics365/customer-service/use/use-copilot-features?context=/dynamics365/context/contact-center-context  
+          href: use-copilot-features.md  
         - name: Write an email with Copilot
-          href: /dynamics365/customer-service/use/use-copilot-email?context=/dynamics365/context/contact-center-context  
+          href: use-copilot-email.md  
         - name: Understand how Copilot supports different languages
-          href: copilot-language-support.md
-        - name: View analytics for Copilot impact
-          href: copilot-analytics-report.md
-        - name: Chat with Customer Service data in Copilot for Microsoft 365 (preview)
-          href: /dynamics365/customer-service/use/copilot-chat-customer-service-data?context=/dynamics365/contact-center/context/use-context
+        - name: Use Copilot filters
+          href: use-copilot-filters.md
+        - name: Chat with case data in Customer Service (preview)
+          href: copilot-chat-customer-service-data.md
       - name: Unified routing and assignment
         items:
           - name: View historical analytics reports

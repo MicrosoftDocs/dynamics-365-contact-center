@@ -55,7 +55,7 @@ Proactive prompting enables agents to discover and prompt Copilot effortlessly, 
 
 
 
-[!INCLUDE [preview-banner](../../../shared-content/shared/preview-includes/preview-note-d365.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Select **For customer chat** in the **Copilot help pane** page of Customer Service admin center. The one-click response generation button appears on both the communication panel for a conversation and on the **Ask a question** tab on the Copilot help pane in Customer Service workspace. Copilot retrieves the context and drafts the response based on the knowledge resources configured for your organization.
 
@@ -65,7 +65,7 @@ You can configure the knowledge base for Copilot to generate responses.
 
 ### Prerequisites
 
-Make sure that you have [knowledge management](set-up-knowledge-management-embedded-knowledge-search.md#setup-overview) configured in your environment and your knowledge article parameters are as follows:
+Make sure that you have [knowledge management](/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search#setup-overview) configured in your environment and your knowledge article parameters are as follows:
    - Updated with the latest version
    - The state is set to Published
 
@@ -81,7 +81,7 @@ If you've disabled the knowledge base option, agents will be able to use Copilot
 
 ### Add trusted webpages as sources
 
-[!INCLUDE [cc-feature-availability-embedded-yes](../../includes/cc-feature-availability-embedded-yes.md)]
+[!INCLUDE [cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
 You can select **Add web address** in **Web resources** to add trusted domains. You can add up to five trusted web domains for Copilot to search and generate responses from. Copilot searches for information up to two levels down from the configured domain. You must enable the Bing Search in Power Platform admin center to add trusted web sources. See [Enable data across geographic locations](/microsoft-copilot-studio/manage-data-movement-outside-us#enable-data-across-geographic-locations).
 

@@ -238,6 +238,12 @@
           href: copilot-enable-help-pane.md  
         - name: Enable Copilot to draft emails
           href: copilot-email-enable.md
+        - name: Enable Copilot plugins for generative AI (preview)
+          href: enable-copilot-plugins-for-generative-ai.md 
+        - name: Customize Copilot conversation summaries
+          href: customize-copilot-conv-summary.md   
+        - name: Enable knowledge sources from Microsoft Copilot Studio (preview)
+          href: knowledge-copilot.md               
         - name: Languages supported in Copilot
           href: /dynamics365/customer-service/administer/cs-region-availability-service-limits#language-support-for-ai-based-analytics-and-insights-in-customer-service?context=/dynamics365/contact-center/context/administer-context
         - name: Copilot architecture diagram

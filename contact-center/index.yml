@@ -118,7 +118,7 @@ additionalContent:
         text: Use Copilot to solve customer issues
       - url: use/copilot-summarize-conversations.md  
         text: Use Copilot to summarize conversations
-      - url: use/se-ask-a-question.md
+      - url: use/use-ask-a-question.md
         text: Ask a question in Copilot
     - title: Get insights and analyze contact center operations 
       links:

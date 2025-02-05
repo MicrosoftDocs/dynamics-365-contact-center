@@ -25,7 +25,7 @@ Copilot case summaries help you quickly understand the context of a case and res
 When you sign in to a non-Microsoft CRM, you can generate case summary as follows:
    - Launch the embedded experience and then login to your Dynamics account.
    - In the Copilot help pane that appears, select **Ask a question**.
-   - Select the Copilot icon and then then select **Summarize case**.
+   - Select the Copilot icon and then select **Summarize case**.
 
 ## Generate case summaries
 
@@ -40,8 +40,8 @@ Copilot generates case summaries based on the following case information for the
 **Salesforce**: Copilot generates the case summary based on the case fields and activities associated with the case. The case summary includes the following information:
 
   - **Case fields**: case ID, description, subject, priority, type, customer name, case URL, email, and product name if the service representative has access.
-  - **Text post**: ID, Title, body, createddate
-  - **Comment**: Id, body, createddate
+  - **Text post**: ID, Title, body, created date
+  - **Comment**: Id, body, created date
   - **Email**: ID, body, lastmodifieddate, fromaddress, toaddress.
 
 **ServiceNow**: Copilot generates the case summary based on the incident data and activities that are attached with the incident. The case summary includes the following information:

@@ -61,6 +61,6 @@ Some examples of prompts are as follows:
 
 [Use Copilot to solve customer issues](use-copilot-features.md)  
 [Understand Copilot language support](copilot-language-support.md)  
-[Manage copilot features in Customer Service](amics365/customer-service/administer/faq-copilot-features)  
+[Manage copilot features in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)  
 [Responsible AI FAQ for copilot features](/dynamics365/customer-service/implement/faq-responsible-ai-copilot)   
-[FAQ for Copilot in Customer Service](../administer/faq-copilot-features.md)  
+[FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)  

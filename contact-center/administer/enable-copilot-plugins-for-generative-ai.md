@@ -56,7 +56,7 @@ Use the following information:
       - **Specific user roles**: Select the roles in the list.
    1. Select **Next**, and on the **Define inputs(optional)** screen, define the input to improve the answers that Copilot generates.
    1. In **Responses**, select **Don't summarize plugin responses** if you don't want Copilot to interpret the answers and instead present the entire response that's available in the plugin.
-1. Select **Next** and on the **Plugin data** screen, select **Store this plugin's data**. The data is stored in your Dataverse database as part of your agent interactions with Copilot as chat transcripts. Learn more in [Copilot transcripts and interaction data](../develop/download-copilot-transcript-data.md).
+1. Select **Next** and on the **Plugin data** screen, select **Store this plugin's data**. The data is stored in your Dataverse database as part of your agent interactions with Copilot as chat transcripts. Learn more in [Copilot transcripts and interaction data](/dynamics365/customer-service/develop/download-copilot-transcript-data).
 
     > [!IMPORTANT]
     > Irrespective of whether you select the checkbox, Copilot Studio saves all the plugin data as part of agent conversation transcripts. Microsoft doesn't have access to this information.
@@ -92,7 +92,7 @@ Use the following information:
    1. Select **Next**.
    1. On the **Define inputs(optional)** screen, provide the input to improve the answers that Copilot generates.
    1. In **Responses**, select **Don't summarize plugin responses** if you don't want Copilot to interpret the answers and instead present the entire response that's available in the plugin.
-   1. Select **Next** and on the **Save plugin data in Dynamics 365** screen, select **Save this plugin's data in Dynamics 365 Copilot transcript**. The data is stored in your Dataverse database as part of your agent interactions with Copilot as chat transcripts. Learn more at [Copilot transcripts and interaction data](../develop/download-copilot-transcript-data.md).
+   1. Select **Next** and on the **Save plugin data in Dynamics 365** screen, select **Save this plugin's data in Dynamics 365 Copilot transcript**. The data is stored in your Dataverse database as part of your agent interactions with Copilot as chat transcripts. Learn more at [Copilot transcripts and interaction data](/dynamics365/customer-service/develop/download-copilot-transcript-data).
 
       > [!IMPORTANT]
       > Irrespective of whether you select the checkbox, Copilot Studio saves all the plugin data as part of agent conversation transcripts. Microsoft doesn't have access to this information.
@@ -120,6 +120,6 @@ You can also author plugin actions in Copilot Studio to use certified connectors
 
 ### Related information
 
-[FAQ for Copilot](faq-copilot-features.md)  
+[FAQ for Copilot](/dynamics365/customer-service/administer/faq-copilot-features)  
 [Configure Copilot in Customer Service](configure-copilot-features.md)  
-[Responsible AI FAQ for Copilot in Customer Service](../implement/faq-responsible-ai-copilot.md)  
+[Responsible AI FAQ for Copilot in Customer Service](/dynamics365/customer-service/implement/faq-responsible-ai-copilot)  

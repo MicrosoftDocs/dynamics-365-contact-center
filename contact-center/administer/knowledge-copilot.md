@@ -27,7 +27,7 @@ The performance of your Copilot is highly correlated to the quality of the knowl
 
 - You have the System Administrator role. 
 - A license for  Microsoft Copilot Studio is available. 
-- [Copilot in Customer Service is enabled](configure-copilot-features.md#manage-copilot-features-in-customer-service).
+- [Copilot in Customer Service is enabled](/dynamics365/customer-service/administer/configure-copilot-features#manage-copilot-features-in-customer-service).
 - For SharePoint, Dataverse, or enterprise data using Microsoft Graph connectors, you must have the required authentication. Learn more in [source authentication](/microsoft-copilot-studio/knowledge-copilot-studio#source-authentication).
 
 ## Enable knowledge sources configured in Copilot Studio

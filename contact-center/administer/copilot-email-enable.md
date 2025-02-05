@@ -87,5 +87,5 @@ In Customer Service admin center, go to **Copilot for questions and emails** and
 
 [Understand Copilot language support](../use/copilot-language-support.md)  
 [Manage copilot features in Customer Service](../administer/configure-copilot-features.md)   
-[FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features.md)    
+[FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)    
 [Responsible AI FAQ for copilot features](/dynamics365/customer-service/implement/faq-responsible-ai-copilot)   

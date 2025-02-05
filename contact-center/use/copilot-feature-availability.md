@@ -20,7 +20,7 @@ This article provides information about the Copilot features supported across Dy
 | [Customize data Copilot uses for case summaries](../administer/copilot-map-custom-fields.md)          | Yes                           | No                                                  | No                                               | No                             |
 | [Generate conversation summaries](copilot-summarize-conversations.md)   | Yes                           | Yes                                                 | Yes                                               | No                                |
 | [Customize conversation summaries](../administer/customize-copilot-conv-summary.md)  | Yes                           | Yes                                                 | Yes                                               | No                                |
-| [Summarize closed conversations in non-Microsoft CRMs](https://review.learn.microsoft.com/en-us/microsoft-copilot-service/copilot-ask-a-question?branch=mg-cp-features#generate-conversation-summary)  | No                          | No                                               | No                                               | Yes                             |
+| [Summarize closed conversations in non-Microsoft CRMs](/microsoft-copilot-service/copilot-ask-a-question#generate-conversation-summary)  | No                          | No                                               | No                                               | Yes                             |
 | [View custom record summaries](../administer/copilot-enable-custom-record-summaries.md) | Yes                          | No                                               | No                                               | No                             |
 | Use an internal knowledge base as a knowledge source  | Yes                          | Yes                                               | Yes                                               | Yes                             |
 | [Enable knowledge sources from Microsoft Copilot Studio (preview)](../administer/knowledge-copilot.md) | Yes                          | Yes                                               | No                                              | No                            |
@@ -31,7 +31,7 @@ This article provides information about the Copilot features supported across Dy
 | [Use proactive prompts based on conversation data](use-ask-a-question.md#use-proactive-prompts) | Yes                          | Yes                                               | Yes                                              | No |  
 |[Use targeted phrases in Copilot to get responses from plugins (preview)](use-ask-a-question.md#use-targeted-phrases-in-copilot-to-get-responses-from-plugins-preview)| Yes | Yes | No | No |
 | [Filter knowledge articles to generate responses](use-copilot-filters.md) | Yes | No | No | No |
-|[Summarize cases in non-Microsoft CRMs](https://review.learn.microsoft.com/en-us/dynamics365/contact-center/use/copilot-use-summary?branch=mg-copilot-feature)| No | No | Yes | Yes|
+|[Summarize cases in non-Microsoft CRMs](copilot-use-summary.md)| No | No | Yes | Yes|
 |[Ask about case data](use-ask-a-question.md#summarize-cases-and-ask-about-case-data)| Yes | No | No | No|
 |[Translate Copilot responses](use-ask-a-question.md#translate-responses) | Yes | Yes | Yes | Yes|
 | [Write an email from Copilot help pane](use-copilot-email.md) | Yes | Yes | Yes | Yes |
@@ -43,4 +43,4 @@ This article provides information about the Copilot features supported across Dy
 | [Filter knowledge articles to generate responses](use-copilot-filters.md) | Yes | No | No | No |
 | [Use Copilot to generate knowledge drafts from cases (preview)](use-copilot-knowledge-from-cases.md) | Yes | No | No | No |
 | [Use Copilot analytics](copilot-analytics-report.md) | Yes | Yes | No | No|
-|[Resolution Notes](https://review.learn.microsoft.com/en-us/microsoft-copilot-service/copilot-ask-a-question?branch=mg-cp-features#generate-resolution-notes)| No | No | Yes | Yes |
+|[Resolution Notes](/microsoft-copilot-service/copilot-ask-a-question#generate-resolution-notes)| No | No | Yes | Yes |

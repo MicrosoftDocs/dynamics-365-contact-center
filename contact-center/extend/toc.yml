@@ -62,44 +62,44 @@
           href: /dynamics365/customer-service/develop/download-copilot-transcript-data?context=/dynamics365/contact-center/context/extend-context
       - name: Agent productivity tools
         items: 
-        - name: Build a smart assist bot
+        - name: Build a smart assist AI agent
           href: /dynamics365/customer-service/develop/smart-assist-bot?context=/dynamics365/contact-center/context/extend-context
         - name: Implement custom scenario
           href: /dynamics365/customer-service/develop/smart-assist-scenario?context=/dynamics365/contact-center/context/extend-context
         - name: Retrieve and format rich messages
           href: /dynamics365/customer-service/develop/reference/methods/message-object?context=/dynamics365/contact-center/context/extend-context
-      - name: Bots
+      - name: AI agents
         items:
-        - name: Configure bot context
+        - name: Configure AI agent context
           items:
-          - name: Configure bot context
+          - name: Configure AI agent context
             href: /dynamics365/customer-service/develop/enable-bot-context?context=/dynamics365/contact-center/context/extend-context
-          - name: Azure bots
+          - name: Azure AI agents
             items:
-            - name: Enable bot context for Azure bots
+            - name: Enable context for Azure AI agents
               href: /dynamics365/customer-service/develop/enable-bot-context-azure?context=/dynamics365/contact-center/context/extend-context
-            - name: Parse event activity JSON to get bot context
+            - name: Parse event activity JSON to get AI agent context
               href: /dynamics365/customer-service/develop/parse-activity-json-to-get-bot-context?context=/dynamics365/contact-center/context/extend-context
           - name: Copilot Studio
             items:
-            - name: Enable bot context for Copilot Studio bots
+            - name: Enable context for Copilot agents
               href: /dynamics365/customer-service/develop/enable-bot-context-pva?context=/dynamics365/contact-center/context/extend-context   
           - name: Code samples for parsing activity JSON 
             href: /dynamics365/customer-service/develop/bot-context-json-samples?context=/dynamics365/contact-center/context/extend-context
-        - name: Configure Azure bots to escalate and end conversations
+        - name: Configure Azure AI agents to escalate and end conversations
           href: /dynamics365/customer-service/develop/bot-escalate-end-conversation?context=/dynamics365/contact-center/context/extend-context
-        - name: Download file attachments from Azure bot
+        - name: Download file attachments from Azure AI agent
           href: /dynamics365/customer-service/develop/download-attachments-bot?context=/dynamics365/contact-center/context/extend-context
-        - name: Get Microsoft Teams user details from Azure bot
+        - name: Get Microsoft Teams user details from Azure AI agent
           href: /dynamics365/customer-service/develop/user-details-teams-azure-bot?context=/dynamics365/contact-center/context/extend-context
         - name: Display suggested actions in a vertical layout
           href: /dynamics365/customer-service/develop/suggested-actions?context=/dynamics365/contact-center/context/extend-context
-        - name: Pass authentication token to bot during single sign-on in live chat
+        - name: Pass authentication token to AI agent during single sign-on in live chat
           href: /dynamics365/customer-service/develop/pass-auth-token-sso-live-chat?context=/dynamics365/contact-center/context/extend-context
       - name: Presence
         items:
-        - name: Synchronize agent presence status across multiple systems
-          href: presence-status-sync.md  
+        - name: Synchronize presence status across multiple systems for representatives
+          href: presence-status-sync.md
         - name: CCaaS_GetPresence 
           href: api/ccaas_getpresence.md
         - name: CCaaS_ModifyAgentPresence

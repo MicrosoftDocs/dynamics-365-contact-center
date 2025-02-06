@@ -12,11 +12,11 @@ ms.custom: bap-template
 
 # Welcome to Dynamics 365 Contact Center
 
-Dynamics 365 Contact Center is a Copilot-first, cloud-based product that brings intelligence, automation, and efficiency to every engagement channel in the customer relationship management (CRM) solution of your choice. It helps organizations deliver frictionless experiences across channels, provide effortless self-service, supercharge agent productivity, and reduce operational costs. Dynamics 365 Contact Center provides access to omnichannel capabilities, such as conversation summaries, interactive voice response (IVR) and chatbots, sentiment analysis, and live transcriptions and translations that are infused with generative AI.
+Dynamics 365 Contact Center is a Copilot-first, cloud-based product that brings intelligence, automation, and efficiency to every engagement channel in the customer relationship management (CRM) solution of your choice. It helps organizations deliver frictionless experiences across channels, provide effortless self-service, supercharge agent productivity, and reduce operational costs. Dynamics 365 Contact Center provides access to omnichannel capabilities, such as conversation summaries, interactive voice response (IVR) and AI agents, sentiment analysis, and live transcriptions and translations that are infused with generative AI.
 
 Here are some of the key capabilities of Dynamics 365 Contact Center:
 
-- Provide self-service through chat and voice bots.
+- Provide self-service through AI agents.
 - Manage conversations across voice and digital channels.
 - Use unified routing to efficiently route work items.
 - Use AI-driven embedded insights and analytics to improve customer satisfaction.

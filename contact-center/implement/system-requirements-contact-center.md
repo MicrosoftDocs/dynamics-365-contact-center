@@ -1,7 +1,7 @@
 ---
 title: System requirements for Dynamics 365 Contact Center
 description: Learn about the prerequisites, system requirements, and accessible websites for deploying and using Dynamics 365 Contact Center.
-ms.date: 07/01/2024
+ms.date: 02/05/2025
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim

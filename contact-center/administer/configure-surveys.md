@@ -1,6 +1,6 @@
 ---
-title: Configure feedback surveys using Copilot agent (preview)
-description: Learn how configure surveys in your contact center using agents in Copilot Studio.
+title: Configure feedback surveys using Copilot Studio (preview)
+description: Learn how configure surveys in your contact center using survey agents in Copilot Studio.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer:
@@ -10,7 +10,7 @@ ms.date: 11/25/2024
 ms.custom: bap-template
 ---
 
-# Configure feedback surveys using Copilot agent (preview)
+# Configure feedback surveys using Copilot Studio (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -19,7 +19,7 @@ You can create and manage surveys that go out to the customers after a call or c
 
 The survey appears for the customer after the customer service representative (representative) ends the conversation or call.
  
-With Microsoft Copilot Studio agents, you can:
+With survey agents, you can:
 - Gather customer feedback and configure contextual actions depending on the feedback.
 - Unify and centralize the process of configuring surveys across digital messaging, voice, and custom channels.
 - Use predefined templates to create surveys.

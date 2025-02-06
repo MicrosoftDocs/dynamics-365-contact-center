@@ -137,7 +137,7 @@ additionalContent:
           summary: Learn how to quickly build custom apps, automate workflows to improve productivity, analyze data for insights, and design modern websites.
           url: /power-platform/
         - title: Azure Communication Services
-          summary: Build powerful, cloud-based communication and customer engagement experiences by adding voice, video, chat, SMS, email, and telephony to your apps.
+          summary: Build powerful, cloud-based communication and customer engagement experiences by adding voice, chat, SMS, email, and telephony to your apps.
           url: /azure/communication-services/
         - title: Microsoft Copilot Studio
           summary: Build Copilot agents easily with Copilot Studio.

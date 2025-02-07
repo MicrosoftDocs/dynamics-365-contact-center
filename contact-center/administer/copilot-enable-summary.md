@@ -23,7 +23,7 @@ Case summaries help agents understand the context of a case, enabling them to re
 
 > [!IMPORTANT]
 > - A minimum of 50 [tokens](https://platform.openai.com/docs/introduction) are required to generate a case summary. 50 tokens translate to approximately 38 words in English, without counting spaces. Therefore, you'll need a minimum of 38 English words specified across the case fields that copilot uses to generate the case summary.
-> - Bot conversations aren't automatically included in the conversation summary.
+> - AI agent conversations aren't automatically included in the conversation summary.
  
 1. In Customer Service admin center, select **Ask a question** in **Copilot for questions and emails** for Copilot case summaries to be available.
 1. Use one of the following navigation options: 

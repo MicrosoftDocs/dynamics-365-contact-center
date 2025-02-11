@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 01/27/2025
+ms.date: 02/11/2025
 ms.custom: bap-template
 ---
 
@@ -89,7 +89,6 @@ The Intent-based suggestions - Configuration is a non-customizable topic that co
 |Global.RephraseCount     |     1    |   Determines the number of times customers are asked to rephrase before giving up.       |
 |Global.AllowIntentShift      |  False       | If enabled, when intent change is detected, the confirmation and interview process starts again for the newly detected intent. If disabled, it ends the loop if a shift in customer intent is detected.         |
 |Global.EnableAskAllQuestions     |   False       |    If enabled, asks all intent-attribute questions before ending the loop, regardless of whether the customer answers the question in the next turn. If disabled, as soon as the customer doesn’t answer an intent attribute question, ends the loop (a solution query is still generated and generated answers are still initiated).      |
-|Global.EnableEndUserAuthentication      |    True     |  If enabled, end user (C2) needs to be authenticated and needs access to the underlying Dataverse instance in order to connect to the intent library and get intent response. If disabled, it goes to the maker authentication to connect to the Dataverse instance. We recommend users to override this to false and use maker authentication.        |
 
 ### Override default variable
 
@@ -101,10 +100,6 @@ To override any of the variables for the intent-based suggestions:
 1. Save and publish the bot.
 
 Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variables?tabs=webApp).
-
-### Disable end user authentication
-
-We recommend you to disable end user authentication. To do this, set the **Global.EnableEndUserAuthentication** to **False**.
 
 ## Related information
 

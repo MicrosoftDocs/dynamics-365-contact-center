@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # View and understand the bot report in Omnichannel real-time analytics
 
-[!INCLUDE[cc-rebrand-bot-agent](../../includes/cc-rebrand-bot-agent.md)]
+[!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 
 The **Bot** report provides insights into key metrics for all the Copilot Studio AI agents used in your contact center. It allows you to monitor the volumes of in-progress and completed AI agent conversations.

@@ -6,13 +6,16 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: conceptual 
 ms.collection: 
-ms.date: 01/17/2025
+ms.date: 02/11/2025
 ms.custom: bap-template 
 ---
 
 # Customize the bot dashboard
 
-You can customize the out-of-the-box real-time and historical bot dashboards with additional filters and metrics to effectively visualize your bot metrics. Learn more in [customize visual display](/dynamics365/customer-service/use/customize-reports)
+[!INCLUDE[cc-rebrand-bot-agent](../../includes/cc-rebrand-bot-agent.md)]
+
+
+You can customize the out-of-the-box real-time and historical bot dashboards with additional filters and metrics to effectively visualize your AI agent metrics. Learn more in [customize visual display](/dynamics365/customer-service/use/customize-reports).
 
  The table describes the filters and metrics that you can add to the bot dashboards to help visualize key performance indicators (KPI).
 

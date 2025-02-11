@@ -6,13 +6,16 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: conceptual 
 ms.collection: 
-ms.date: 01/17/2025
+ms.date: 02/11/2025
 ms.custom: bap-template 
 ---
 
 # Customize the bot dashboard
 
-You can customize the out-of-the-box real-time and historical bot dashboards with additional filters and metrics to effectively visualize your bot metrics. Learn more in [customize visual display](/dynamics365/customer-service/use/customize-reports)
+[!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
+
+
+You can customize the out-of-the-box real-time and historical bot dashboards with additional filters and metrics to effectively visualize your bot metrics. Learn more in [customize visual display](/dynamics365/customer-service/use/customize-reports).
 
  The table describes the filters and metrics that you can add to the bot dashboards to help visualize key performance indicators (KPI).
 
@@ -34,12 +37,12 @@ Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi
 
 | Title |   Definition | Applies to | Channel | Data |
 | --------------- | --------------- |
-| Fallback action calls | The number of conversations initiated by the customer but couldn't be connected to a bot due to a system failure. The application registers a call only after the classification rules in the workstream run and the work distribution system routes the call to the bot. This indicates that a bot was assigned to the call. Calls that fail before this step don't appear on the dashboard.| Real time and historical| Voice only | FactSession: Failed bot conversation|
+| Fallback action calls | The number of conversations initiated by the customer but couldn't be connected to an AI agent due to a system failure. The application registers a call only after the classification rules in the workstream run and the work distribution system routes the call to the AI agent. This indicates that an AI agent was assigned to the call. Calls that fail before this step don't appear on the dashboard.| Real time and historical| Voice only | FactSession: Failed bot conversation|
 
 ## Bot session level outcome reason
 
-Perform the steps in [add a matrix visualization](/power-bi/visuals/power-bi-visualization-matrix-visual#lets-create-a-matrix-visual) to represent **Session level outcome reason** in a matrix visual to view metrics by outcome reason for bots to the report.
+Perform the steps in [add a matrix visualization](/power-bi/visuals/power-bi-visualization-matrix-visual#lets-create-a-matrix-visual) to represent **Session level outcome reason** in a matrix visual to view metrics by outcome reason for AI agents to the report.
 
 | Title |   Definition | Applies to | Channel | Data |
 | --------------- | --------------- |
-|  Metrics by outcome reason|  The number of engaged conversations grouped by the outcome reason. <br><ul><li>**User exit**: The number of conversations that end either because the customer ends the conversation or the session times out while waiting for the customer's response.</li> <li> **AgentTransferConfiguredByAuthor**: The number of bot conversations transferred to an agent or external number based on the bot's configuration. For example, if an article ends with "Transfer to an agent" when the user selects "No," the bot transfers the conversation without the user requesting escalation, per the bot's business rules.</li><li>**Resolved**: The number of bot conversations that were resolved by the bot. </li><li>**User error**: The number of bot conversations that ended because of incorrect bot design.</li></ul> | Historical | Chat and voice | Outcome reason |
+|  Metrics by outcome reason|  The number of engaged conversations grouped by the outcome reason. <br><ul><li>**User exit**: The number of conversations that end either because the customer ends the conversation or the session times out while waiting for the customer's response.</li> <li> **AgentTransferConfiguredByAuthor**: The number of bot conversations transferred to an agent or external number based on the AI agent's configuration. For example, if an article ends with "Transfer to an agent" when the user selects "No," the AI agent transfers the conversation without the user requesting escalation, per the AI agent's business rules.</li><li>**Resolved**: The number of bot conversations that were resolved by the AI agent. </li><li>**User error**: The number of bot conversations that ended because of incorrect AI agent design.</li></ul> | Historical | Chat and voice | Outcome reason |

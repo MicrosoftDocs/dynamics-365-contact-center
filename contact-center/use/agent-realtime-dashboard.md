@@ -15,7 +15,7 @@ ms.custom: bap-template
 [!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 
-The **Bot** report provides insights into key metrics for all the Copilot Studio agents used in your contact center. It allows you to monitor the volumes of in-progress and completed AI agent conversations.
+The **Bot** report provides insights into key metrics for all the Copilot agents used in your contact center. It allows you to monitor the volumes of in-progress and completed AI agent conversations.
 
 Out of the box, the dashboard displays key metrics for the last 24 hours to help you understand AI agent usage and optimize performance in real time.
 

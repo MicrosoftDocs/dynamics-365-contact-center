@@ -383,25 +383,25 @@
           href: /dynamics365/customer-service/administer/data-masking-settings?context=/dynamics365/contact-center/context/administer-context
         - name: Manage enhanced Active Conversation settings
           href: /dynamics365/customer-service/administer/add-customer-summary-settings?context=/dynamics365/contact-center/context/administer-context  
-      - name: Bots
+      - name: AI agents
         items:
-        - name: Overview of bots
+        - name: Overview of AI agents
           href: /dynamics365/customer-service/administer/overview-bots?context=/dynamics365/contact-center/context/administer-context
-        - name: Best practices for configuring bots
+        - name: Best practices for configuring AI agents
           href: /dynamics365/customer-service/administer/configure-bot-best-practices?context=/dynamics365/contact-center/context/administer-context
-        - name: Manage your bots
+        - name: Manage your AI agents
           href: /dynamics365/customer-service/administer/manage-your-bots?context=/dynamics365/contact-center/context/administer-context
-        - name: Integrate a Copilot Studio agent
+        - name: Integrate a Copilot agent
           href: /dynamics365/customer-service/administer/configure-bot-virtual-agent?context=/dynamics365/contact-center/context/administer-context          
         - name: Configure context variables for agents
           href: /dynamics365/customer-service/administer/context-variables-for-bot?context=/dynamics365/contact-center/context/administer-context              
         - name: Transfer conversations from customer service representatives to agents
-          href: transfer-to-agents.md
-        - name: Configure Azure bots
+          href: transfer-to-agents.md                    
+        - name: Configure Azure AI agents 
           items:
-          - name: Bot sessions and licensing
+          - name: AI agent sessions and licensing
             href: /dynamics365/customer-service/administer/bot-session-licensing?context=/dynamics365/contact-center/context/administer-context
-          - name: Integrate an Azure bot
+          - name: Integrate an Azure AI agent
             href: /dynamics365/customer-service/administer/configure-bot-azure?context=/dynamics365/contact-center/context/administer-context
       - name: Feedback surveys
         items:

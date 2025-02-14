@@ -85,7 +85,7 @@ additionalContent:
         text: Integrate a Copilot Studio bot  
     - title: Develop
       links:
-      - url: /dynamics365/customer-service/develop/reference/entities/about-entity-reference?context=/dynamics365/contact-center/context/extend-context
+      - url: /dynamics365/customer-service/develop/reference/about-entity-reference?context=/dynamics365/contact-center/context/extend-context
         text: Dynamics 365 Contact Center entity reference
       - url: /dynamics365/customer-service/develop/omnichannel-reference?context=/dynamics365/contact-center/context/extend-context
         text: Live chat SDK Reference

@@ -21,6 +21,9 @@ Out of the box, the dashboard displays key metrics for the last 24 hours to help
 
 You can filter the report by selecting **All** to view AI agent performance across all channels or by choosing a specific channel. Filters include time, queue, time zone, and conversation status. Learn more in [Overview of Omnichannel real-time analytics dashboards](/dynamics365/customer-service/use/intro-realtime-analytics-dashboard#filter-information-displayed-on-dashboard).
 
+## Prerequisites
+
+To view the report in Customer Service worskpace, administrators with the Omnichannel agent role must enable the realtime Bot dashboard in **Customer Service admin center** > **Insights** **Productivity** > **Real-time Analytics**.
 
 ## Key metrics
 

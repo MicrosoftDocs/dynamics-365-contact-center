@@ -384,7 +384,7 @@
           href: /dynamics365/customer-service/administer/configure-bot-virtual-agent?context=/dynamics365/contact-center/context/administer-context          
         - name: Configure context variables for agents
           href: /dynamics365/customer-service/administer/context-variables-for-bot?context=/dynamics365/contact-center/context/administer-context              
-        - name: Transfer conversations from customer service representatives to agents
+        - name: Transfer conversations from customer service representatives to AI agents
           href: transfer-to-agents.md                    
         - name: Configure Azure AI agents 
           items:

@@ -1,12 +1,12 @@
 ---
 title: Configure feedback surveys using Copilot Studio (preview)
-description: Learn how configure surveys in your contact center using survey agents in Copilot Studio.
+description: Learn how to configure surveys in your contact center using survey AI agents in Copilot Studio.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer:
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 11/25/2024
+ms.date: 02/18/2025
 ms.custom: bap-template
 ---
 
@@ -19,7 +19,7 @@ You can create and manage surveys that go out to the customers after a call or c
 
 The survey appears for the customer after the customer service representative (representative) ends the conversation or call.
  
-With survey agents, you can:
+With survey AI agents, you can:
 - Gather customer feedback and configure contextual actions depending on the feedback.
 - Unify and centralize the process of configuring surveys across digital messaging, voice, and custom channels.
 - Use predefined templates to create surveys.
@@ -27,9 +27,9 @@ With survey agents, you can:
 
 ## How it works
 
-1. Create a survey agent in Contact Center admin center or Customer Service admin center.
-1. Edit the survey agent in Copilot Studio.
-1. Add the survey agent to the appropriate channel.
+1. Create a survey AI agent in Contact Center admin center or Customer Service admin center.
+1. Edit the survey AI agent in Copilot Studio.
+1. Add the survey AI agent to the appropriate channel.
 1. Experience the survey runtime behavior in Contact Center workspace or Customer Service workspace.
 
 ## Prerequisites
@@ -51,7 +51,7 @@ With survey agents, you can:
     - **Language**: Select a language from the supported languages list. The languages that are supported in Copilot Studio only appear.
     - Select the **Enable for Voice Channels** toggle if you want to use the survey for voice conversations.
 1. Select **Next**, and on the page that appears, review your choices.
-1. Select **Save survey**. The **Survey Created** page displays the summary and link to the survey where it's hosted. The application creates a survey agent with the same name as the survey and is hosted at the same link.
+1. Select **Save survey**. The **Survey Created** page displays the summary and link to the survey where it's hosted. The application creates a survey AI agent with the same name as the survey and is hosted at the same link.
 1. Select **Close**. The survey is listed on the **Customer feedback (preview)** page and its status displays as **In Progress**.
 
 ### Complete the configuration in Copilot Studio
@@ -65,7 +65,7 @@ After you create the survey in the admin center, it needs to be published. If yo
 
 ### Verify the Dataverse connection
 
-Make sure that the Dataverse connection is established for Copilot Studio so that you can publish the survey agent. 
+Make sure that the Dataverse connection is established for Copilot Studio so that you can publish the survey AI agent. 
 
 1. Sign into Power Apps, and then go to **Solutions**.
 1. On the **Solutions** page, select **Default Solution** under **Unmanaged**.
@@ -73,7 +73,7 @@ Make sure that the Dataverse connection is established for Copilot Studio so tha
 1. On the edit pane that appears, select a connection in the **Connection** box or select **New connection**. A new tab opens to create a connection.
 1. Complete the steps to create a **Microsoft Dataverse** connection and select it in the **Connection** box.
 
-Learn more at [Set up a Dataverse connection](/power-apps/maker/data-platform/create-connection-reference).
+Learn more in [Set up a Dataverse connection](/power-apps/maker/data-platform/create-connection-reference).
 
 ### Manage the surveys
 
@@ -85,10 +85,10 @@ Manage your surveys on the **Customer feedback (preview)** page.
 - **Status**: Indicates whether a survey is ready or in progress.
 - **Voice Enabled**: Indicates whether a survey is enabled for the voice channel.
 
-### Manage the survey agents in Copilot Studio
+### Manage the survey AI agents in Copilot Studio
 
-You can edit your survey agents to fulfill your business needs as follows:
-- Customize agent messages
+You can edit your survey AI agents to fulfill your business needs as follows:
+- Customize AI agent messages
 - Add branching logic
 - Add more actions
 - Add extra topic questions
@@ -97,7 +97,7 @@ Edit the **Conversation Start** system topic only. All other system topics are d
 If you would like to add an additional question and store the data in Dataverse, the response variable name must start with “MCS_”.
 
 > [!NOTE]
-> We recommend that you don't delete the survey agent from Copilot Studio.
+> We recommend that you don't delete the survey AI agent from Copilot Studio.
 
 ### Set up custom hosting
 

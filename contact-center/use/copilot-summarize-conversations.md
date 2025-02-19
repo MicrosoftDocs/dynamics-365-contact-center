@@ -1,12 +1,12 @@
 ---
 title: Use Copilot to summarize conversations
-description: Learn how agents can use Copilot to summarize cases and conversations in Customer Service workspace.
+description: Learn how customer service representatives can use Copilot to summarize cases and conversations in Customer Service workspace.
 author: gandhamm 
 ms.author: mgandham 
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 01/10/2025
+ms.date: 02/19/2025
 ms.custom: bap-template 
 ---
 
@@ -33,7 +33,7 @@ Your administrator enabled the Copilot conversation summary feature.
 
 Based on your administrator's configuration, you see the following options in Customer Service workspace or Contact Center workspace:
 
-- The Copilot conversation summary generated automatically when you request a consultation with another agent, transfer the conversation, or end the conversation. You can select **Summarize conversation** to generate the summary for an ongoing conversation, based on your administrator's configurations.
+- The Copilot conversation summary generated automatically when you request a consultation with another customer service representative, transfer the conversation, or end the conversation. You can select **Summarize conversation** to generate the summary for an ongoing conversation, based on your administrator's configurations.
 - The summary is displayed in a paragraph format or a structured format.
   - The paragraph format summarizes the conversation in a single paragraph.
      :::image type="content" source="../media/copilot-conv-summary.png" alt-text="Screenshot of a Copilot conversation summary.":::

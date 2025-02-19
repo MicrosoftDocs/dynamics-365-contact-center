@@ -6,13 +6,13 @@ ms.author: mgandham
 ms.collection: bap-ai-copilot
 ms.topic: conceptual
 ms.reviewer: mgandham
-ms.date: 01/16/2025
+ms.date: 02/19/2025
 ms.custom: bap-template 
 ---
 
 # Understand how Copilot supports different languages
 
-Copilot generates responses to agent's questions and supports case and conversation summary features in [multiple languages](/dynamics365/customer-service/implement/international-availability?context=/dynamics365/contact-center/context/implement-context).
+Copilot generates responses to customer service representative's (service representative or representative) questions and supports case and conversation summary features in [multiple languages](/dynamics365/customer-service/implement/international-availability?context=/dynamics365/contact-center/context/implement-context).
 
 The key features are as follows:
 
@@ -32,10 +32,10 @@ The key features are as follows:
 | --- | --- | 
 |The UI language is set to Spanish and a case has notes in Spanish. | Copilot generates the case summary in Spanish. |
 | The UI language is set to Spanish. The case description is in French. The email thread is in Spanish. | Copilot generates the case summary in Spanish. |
-| The UI language is set to Spanish. The knowledge articles are in Spanish. The agent asks a question in Spanish. | Copilot displays the results in Spanish. |
-| The  UI language is set to Spanish. The agent asks a question in French. | Copilot displays the results in Spanish. |
-|  The UI language is set to Spanish. The knowledge articles are in the English language only. The agent asks a question in Spanish.| No response is generated. |
-| The UI language is set to Japanese. The Bing Market language is set to Japanese and the location is set to ja-JP. The agent asks a question that Copilot responds to with content from the public web pages. | Copilot returns responses if the restricted Bing search results are available in the set [market code](/bing/search-apis/bing-web-search/reference/market-codes) of ja-JP. |
+| The UI language is set to Spanish. The knowledge articles are in Spanish. The service representative asks a question in Spanish. | Copilot displays the results in Spanish. |
+| The  UI language is set to Spanish. The service representative asks a question in French. | Copilot displays the results in Spanish. |
+|  The UI language is set to Spanish. The knowledge articles are in the English language only. The service representative asks a question in Spanish.| No response is generated. |
+| The UI language is set to Japanese. The Bing Market language is set to Japanese and the location is set to ja-JP. The service representative asks a question that Copilot responds to with content from the public web pages. | Copilot returns responses if the restricted Bing search results are available in the set [market code](/bing/search-apis/bing-web-search/reference/market-codes) of ja-JP. |
 
 
 ### [Embedded](#tab/copilotembedded)

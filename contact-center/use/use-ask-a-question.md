@@ -1,6 +1,6 @@
 ---
 title: Ask a question
-description: Learn how to use the Ask a question feature in Copilot within Customer Service agent apps to enhance efficiency.
+description: Learn how to use the Ask a question feature in Copilot within Customer Service customer service representative apps to enhance efficiency.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: 
@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-cfs-yes](../includes/cc-feature-availability-cfs-yes.md)]
 
-When you sign in to any of the Customer Service agent apps, Copilot opens in the right side panel with the **Ask a question** tab ready. Copilot acts as your partner, helping to answer questions without you having to search for the information. Copilot quickly retrieves information, generates summaries for cases, and gets required details about case data, all within the same interface.
+When you sign in to any of the Customer Service customer service representative (service representative or representative) apps, Copilot opens in the right side panel with the **Ask a question** tab ready. Copilot acts as your partner, helping to answer questions without you having to search for the information. Copilot quickly retrieves information, generates summaries for cases, and gets required details about case data, all within the same interface.
 
 > [!IMPORTANT]
 > The AI-generated content is a suggestion. It's your responsibility to review and edit the suggested content to make sure it's accurate and appropriate before sharing the responses.
@@ -62,7 +62,7 @@ You can make the following types of requests:
 - Show active escalated cases.
 - Show cases that are due soon.
 - Show cases due the next day.
-- Show active cases that agents own.
+- Show active cases that service representatives own.
 - Show my active cases.
 - Get the case details.
 - Get the case resolution details for a case.

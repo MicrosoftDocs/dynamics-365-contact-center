@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 12/13/2024
+ms.date: 02/19/2025
 ms.custom: bap-template
 ---
 
@@ -32,7 +32,7 @@ Make sure the following prerequisites exist:
 
 ## Prompt plugin
 
-With prompt plugins, you can connect Copilot to Dataverse, and let your agents securely access data.
+With prompt plugins, you can connect Copilot to Dataverse, and let your customer service representatives (service representatives or representatives) securely access data.
 
 Use the following information:
 1. [Generate content or extract insights with AI Builder prompts](/microsoft-copilot-studio/copilot-ai-plugins#generate-content-or-extract-insights-with-ai-builder-prompts) to create a prompt plugin.
@@ -56,7 +56,7 @@ Use the following information:
       - **Specific user roles**: Select the roles in the list.
    1. Select **Next**, and on the **Define inputs(optional)** screen, define the input to improve the answers that Copilot generates.
    1. In **Responses**, select **Don't summarize plugin responses** if you don't want Copilot to interpret the answers and instead present the entire response that's available in the plugin.
-1. Select **Next** and on the **Plugin data** screen, select **Store this plugin's data**. The data is stored in your Dataverse database as part of your agent interactions with Copilot as chat transcripts. Learn more in [Copilot transcripts and interaction data](/dynamics365/customer-service/develop/download-copilot-transcript-data).
+1. Select **Next** and on the **Plugin data** screen, select **Store this plugin's data**. The data is stored in your Dataverse database as part of your service representative interactions with Copilot as chat transcripts. Learn more in [Copilot transcripts and interaction data](/dynamics365/customer-service/develop/download-copilot-transcript-data).
 
     > [!IMPORTANT]
     > Irrespective of whether you select the checkbox, Copilot Studio saves all the plugin data as part of agent conversation transcripts. Microsoft doesn't have access to this information.
@@ -66,7 +66,7 @@ Use the following information:
 
 ## Custom connector plugin
 
-Use the custom connector to create a connector plugin for non-Microsoft solutions like order management. Copilot can then access the relevant data, such as the order details for an order ID that the agent provides.
+Use the custom connector to create a connector plugin for non-Microsoft solutions like order management. Copilot can then access the relevant data, such as the order details for an order ID that the service representative provides.
 
 Use the following information:
 1. [Custom connector](/connectors/custom-connectors/define-blank) to create a custom connector in Power Automate.
@@ -77,22 +77,22 @@ Use the following information:
 
 ### Configure settings for the custom connector
 
-1. In the site map of Customer Service admin center, do one of the following steps to access the plugins:
+1. In the site map of Contact Center admin center or Customer Service admin center, do one of the following steps to access the plugins:
    - Select **Productivity** > **Plugins for generative AI (Preview)** under **Agent experience**.
    - Select **Insights** > **Plugins for generative AI (Preview)** under **Operations**. 
 1. Select **Manage**.
 1. On the **Plugins for generative AI (Preview)** page, select the custom connector plugin, and then select **Turn on** on the command bar.
    1. On the **Select user authentication** dialog, select the ellipsis (…) button in **Set up a link to the connector**, and then select the required connection. A green check mark indicates that the data source is successfully connected.
    1. In **User authentication**, select one of the following options:
-      - **Admin**: Uses admin authentication to give data access to agents.
-      - **Agent**: Requires agents to authenticate themselves at runtime.  This option is recommended if the data is restricted or sensitive.
+      - **Admin**: Uses admin authentication to give data access to service representatives.
+      - **Agent**: Requires service representatives to authenticate themselves at runtime.  This option is recommended if the data is restricted or sensitive.
    1. On the **Manage user access** screen, select one of the following access types:
       - **All agents who have Copilot**: Agents who have Copilot enabled for them through their agent experience profiles.
       - **Specific user roles**: Select the roles in the list.
    1. Select **Next**.
    1. On the **Define inputs(optional)** screen, provide the input to improve the answers that Copilot generates.
    1. In **Responses**, select **Don't summarize plugin responses** if you don't want Copilot to interpret the answers and instead present the entire response that's available in the plugin.
-   1. Select **Next** and on the **Save plugin data in Dynamics 365** screen, select **Save this plugin's data in Dynamics 365 Copilot transcript**. The data is stored in your Dataverse database as part of your agent interactions with Copilot as chat transcripts. Learn more at [Copilot transcripts and interaction data](/dynamics365/customer-service/develop/download-copilot-transcript-data).
+   1. Select **Next** and on the **Save plugin data in Dynamics 365** screen, select **Save this plugin's data in Dynamics 365 Copilot transcript**. The data is stored in your Dataverse database as part of your service representative interactions with Copilot as chat transcripts. Learn more at [Copilot transcripts and interaction data](/dynamics365/customer-service/develop/download-copilot-transcript-data).
 
       > [!IMPORTANT]
       > Irrespective of whether you select the checkbox, Copilot Studio saves all the plugin data as part of agent conversation transcripts. Microsoft doesn't have access to this information.
@@ -106,7 +106,7 @@ Use the options on the command menu to manage the plugins. The edit button lets 
 
 ## Certified connector plugin
 
-You can also author plugin actions in Copilot Studio to use certified connectors. For example, the connector for Salesforce or DocuSign that's available in Power Automate can let Copilot access the relevant data based on agent input.
+You can also author plugin actions in Copilot Studio to use certified connectors. For example, the connector for Salesforce or DocuSign that's available in Power Automate can let Copilot access the relevant data based on service representative input.
 
 ### Considerations
 

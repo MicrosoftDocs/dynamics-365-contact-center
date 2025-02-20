@@ -60,7 +60,7 @@ When a customer calls the phone number for German, the agent responds in English
 
 You also have another workstream, Contoso Coffee Beans, with these settings:
  - A voice channel with a single phone number. The primary language is Spanish. French and English are additional languages.
- - The Contoso returns agent is configured as the agent for the workstream. It greets the customer in its primary language. Then it asks the customer to choose their preferred language by voice or text input. The options are: one English, two Italian, three Portuguese. The agent switches to the chosen language.
+ - The Contoso returns agent is configured for the workstream, which greets the customer in its primary language. The agent then asks the customer to choose their preferred language by voice or text input. The options are: one English, two Italian, three Portuguese. The agent switches to the chosen language.
 
 When a customer calls the phone number linked to the voice channel, the agent says hello in Spanish and repeats the options for other languages. If the customer says "English" or presses 1, the agent switches to English and continues in English.
 

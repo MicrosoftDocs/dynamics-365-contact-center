@@ -53,7 +53,7 @@ In this scenario, after an AI agent has transferred a conversation to a service 
 4. The conversation is transferred to a service representative as the representative has second-highest capacity.
 5. The customer chats with the service representative.
 6. The service representative has finished delivering support and wants to hand off the conversation to a second agent (Agent B), which resides in the same queue.
-7. The service representative is disconnected from the conversation, and the conversation is routed to agent B.
+7. The service representative is disconnected from the conversation, and the conversation is routed to Agent B.
 8. Agent B receives the messages in the following order:
     - A conversation update that the “Agent is added”
     - The Omnichannel Set context event

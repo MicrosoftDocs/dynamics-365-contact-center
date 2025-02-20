@@ -14,14 +14,14 @@ ms.custom:
   - ai-seo-date:11/11/2024
 ---
 
-# Transfer conversations from customer service representatives to agents
+# Transfer conversations from customer service representatives to AI agents
 
 [!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 
-In some support scenarios, a customer service representative may need to transfer a conversation back to a Copilot Studio agent after providing personalized support. This transfer can help with basic, repetitive tasks or collect additional data, such as in a customer survey.
+In some support scenarios, a customer service representative may need to transfer a conversation back to an AI agent after providing personalized support. This transfer can help with basic, repetitive tasks or collect additional data, such as in a customer survey.
 
-You can facilitate the transfer of a conversation from a customer service representative (service representative or representative) back to an agent in the following ways:
+You can facilitate the transfer of a conversation from a customer service representative (service representative or representative) back to an AI agent in the following ways:
 
 - Create two agents that reside in two queues
 - Create two agents that reside in the same queue
@@ -52,7 +52,7 @@ In this scenario, after an agent has transferred a conversation to a service rep
 4. The conversation is transferred to a service representative as the representative has second-highest capacity.
 5. The customer chats with the service representative.
 6. The service representative has finished delivering support and wants to hand off the conversation to a second agent (Agent B), which resides in the same queue.
-7. The service representative is disconnected from the conversation, and the conversation is routed to Bot B.
+7. The service representative is disconnected from the conversation, and the conversation is routed to Agent B.
 8. Agent B receives the messages in the following order:
     - A conversation update that the “Agent is added”
     - The Omnichannel Set context event

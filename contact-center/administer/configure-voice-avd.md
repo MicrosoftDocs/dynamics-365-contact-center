@@ -27,7 +27,7 @@ Make sure representatives perform the following steps to access the voice channe
 1. Restart the remote desktop client and the service representative's device.
 1. Ensure that service representatives see **Remote Desktop(Insider)** is displayed on the remote desktop client.
 1. Select the **ellipsis** (…) and then select **Subscribe**. 
-1. Customer service representatives (service representatives or representatives) see **SessionDesktop** once they're subscribed. Service representatives can sign in the Virtual Desktop to use the voice channel.
+1. Customer service representatives see **SessionDesktop** once they're subscribed. Service representatives can sign in the Virtual Desktop to use the voice channel.
 
 ## Agent experience when local machine disconnects from Virtual Desktop
 

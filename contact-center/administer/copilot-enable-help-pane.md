@@ -77,7 +77,7 @@ Make sure that you have [knowledge management](/dynamics365/customer-service/adm
 
 Select **Knowledge base** to allow Copilot to use internal knowledge base resources for generating responses. Then information is used for the ask a question and draft an email in the Copilot help pane and rich text editor. By default, this option is disabled.
 
-If you've disabled the knowledge base option, representatives will be able to use Copilot to draft an email using the **Suggest a call**, **Request more information**, **Empathize with feedback** and **Custom** prompts.
+If you've disabled the knowledge base option, agents can use Copilot to draft an email using the **Suggest a call**, **Request more information**, **Empathize with feedback** and **Custom** prompts.
 
 ### Add trusted webpages as sources
 

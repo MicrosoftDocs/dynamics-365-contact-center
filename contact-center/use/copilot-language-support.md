@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Understand how Copilot supports different languages
 
-Copilot generates responses to customer service representative's (service representative or representative) questions and supports case and conversation summary features in [multiple languages](/dynamics365/customer-service/implement/international-availability?context=/dynamics365/contact-center/context/implement-context).
+Copilot generates responses to questions that customer service representatives (service representatives or representatives) ask and supports the case and conversation summary features in [multiple languages](/dynamics365/customer-service/implement/international-availability?context=/dynamics365/contact-center/context/implement-context).
 
 The key features are as follows:
 

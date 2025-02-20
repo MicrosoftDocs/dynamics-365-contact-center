@@ -35,7 +35,7 @@ By default, the option to use knowledge sources to draft emails is disabled. If 
 [!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
 
 
-For your service representatives to use the write an email feature inline in the rich text editor, do the following steps:
+For your service representatives to write an email inline in the rich text editor, do the following steps:
 
 1. In [Power Apps](https://make.powerapps.com/), select the environment that contains your solution.
 1. In **Apps**, select the required app to enable the Copilot control in the rich text editor.
@@ -57,11 +57,11 @@ To enable your service representatives to use the write an email feature from th
 1. Switch the **Write an email - Help pane** toggle to **On**.
 1. Select **Save**.
 
-### Modify the fields used to draft emails
+### Modify the fields used to draft emails in Copilot help pane
 
 [!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
 
-You can modify the source case fields that Copilot uses to draft emails and improve the context and accuracy of the results. You can also select a custom field that Copilot uses to generate responses.
+You can modify the source case fields that Copilot uses to draft emails and improve the context and accuracy of the results. You can also select a custom field that Copilot uses to generate responses. This feature is available in the Copilot help pane only.
 
 Copilot uses the following out-of-the-box case fields to draft emails:
 
@@ -75,8 +75,7 @@ Copilot uses the following out-of-the-box case fields to draft emails:
 In Contact Center admin center or Customer Service admin center, go to **Copilot for questions and emails** and then select **Manage data**. The steps to modify the source fields that Copilot uses to draft emails are like the steps to modify the fields used to generate case summaries. Learn more in [modify the fields used to generate case summaries](/dynamics365/customer-service/administer/copilot-map-custom-fields#modify-the-fields-used-to-generate-case-summaries).
 
 > [!NOTE]
-> - You can modify the source fields that Copilot uses to draft emails in the Copilot help pane only and not in the rich text editor.
-> - You can't modify the **Case Notes** and **Email Content** field values that Copilot uses to draft emails.
+> You can't modify the **Case Notes** and **Email Content** field values that Copilot uses to draft emails.
 
 ## Next Step
 

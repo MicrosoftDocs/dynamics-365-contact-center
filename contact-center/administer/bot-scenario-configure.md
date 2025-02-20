@@ -26,7 +26,7 @@ This article explains how the Interactive Voice Response (IVR) or voice agent sa
 
 - **Distinguish number entities based on length**: Differentiates between numeric entities based on their length, enhancing accuracy in identifying account numbers, phone numbers, or other relevant data.
 
-- **self-service/account lookup**: Enables callers to access account information or perform self-service tasks without service representative assistance, improving efficiency and customer satisfaction.
+- **self-service/account lookup**: Enables callers to access account information or perform self-service tasks without customer service representative assistance, improving efficiency and customer satisfaction.
 
 - **Reprompt/entity validation**: Prompts callers for clarification if the initial input is unclear, validates entities to ensure correct information is captured. This reduces errors and improves the interaction experience.
 

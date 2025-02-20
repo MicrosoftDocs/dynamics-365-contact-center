@@ -45,7 +45,7 @@ In this scenario, an agent has transferred a conversation to a service represent
 
 ### Two agents in one queue
 
-In this scenario, after an agent has transferred a conversation to a service representative, the representative will transfer the conversation to another agent in the same queue when the service representative's task is over. For the conversation to flow correctly, you must set the first agent (Agent A) with the highest capacity, the service representative with the next highest capacity, and the second agent (Agent B) with the lowest capacity.
+In this scenario, after an AI agent has transferred a conversation to a service representative, the representative will transfer the conversation to another AI agent in the same queue when the service representative's task is over. For the conversation to flow correctly, you must set the first AI agent (Agent A) with the highest capacity, the service representative with the next highest capacity, and the second AI agent (Agent B) with the lowest capacity.
 
 1. A customer starts a conversation that is routed to a queue.
 2. The first agent (Agent A) that has the highest capacity accepts the conversation.

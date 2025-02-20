@@ -48,7 +48,7 @@ For your service representatives to write an email inline in the rich text edito
 
 ## Enable write an email in the side pane
 
-To enable your service representatives to use the write an email feature from the Copilot side pane, perform the following steps in Contact Center admin center or Customer Service admin center:
+To enable your service representatives to write an email in the Copilot side pane, perform the following steps in Contact Center admin center or Customer Service admin center:
 
 1. Go to **Copilot for questions and emails** using one of following options:
       - **Agent Experience** > **Productivity** 

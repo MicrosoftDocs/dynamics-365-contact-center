@@ -35,7 +35,7 @@ In the non-Microsoft CRM, you can generate the case summary as follows:
 - Select **Microsoft contact center**. The Copilot help pane appears.
 - In the **Ask a question** tab, select **Summarize case**. The case summary appears in the help pane.
 
-Copilot generates case summaries based on the following case information for the corresponding CRMs:
+Copilot generates case summaries based on the following case information for the corresponding CRM systems:
 
 **Salesforce**: Copilot generates the case summary based on the case fields and activities associated with the case. The case summary includes the following information:
 

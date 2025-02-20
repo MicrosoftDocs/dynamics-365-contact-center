@@ -36,7 +36,7 @@ This article provides information about the Copilot features supported across Dy
 |[Translate Copilot responses](use-ask-a-question.md#translate-responses) | Yes | Yes | Yes | Yes|
 | [Write an email from Copilot help pane](use-copilot-email.md) | Yes | Yes | Yes | Yes |
 | [Internal knowledge sources used to draft emails](use-copilot-email.md#how-copilot-uses-knowledge-base-and-web-sources) | Yes| Yes | Yes| Yes|
-| [Modify the fields used to draft emails](../administer/copilot-email-enable.md#modify-the-fields-used-to-draft-emails) | Yes | Yes | No | No|
+| [Modify the fields used to draft emails](../administer/copilot-email-enable.md#modify-the-fields-used-to-draft-emails-in-copilot-help-pane) | Yes | Yes | No | No|
 | [Use Copilot email assist from email editor](use-copilot-email.md) | Yes | Yes | No| No|
 |[Translate copilot generated email drafts](use-copilot-email.md#translate-responses) | Yes | Yes | Yes | Yes|
 | [Draft a chat response(preview)](use-copilot-features.md) | Yes | Yes | No | No|

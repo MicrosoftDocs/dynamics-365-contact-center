@@ -37,7 +37,7 @@ In this scenario, an AI agent has transferred a conversation to a service repres
 4. The customer requests to chat with a service representative.
 5. The conversation is transferred to a service representative within Queue 1.
 6. The customer converses with the service representative.
-7. The service representative has completed delivering support and wants to hand off the conversation to a second  (Agent B), which resides in Queue 2.
+7. The service representative has completed delivering support and wants to hand off the conversation to a second AI agent, Agent B, which resides in Queue 2.
 8. The service representative is disconnected from the conversation.
 9. The conversation routed to Agent B in Queue 2.
 10. The system triggers Agent B to send a greeting message.

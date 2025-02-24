@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer:
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 02/22/2025
+ms.date: 02/24/2025
 ms.custom: bap-template
 ---
 
@@ -162,7 +162,7 @@ The CSAT scores are displayed in the Omnichannel historical analytics report.
 
 You can configure the system to send a survey through email after the service representative resolves a case.
 
-Do the following steps to configure post case resolution surveys in Customer Service admin center: 
+Do the following steps to configure post-case resolution surveys in Contact Center admin center: 
 1. In the site map, under **Customer Support** > **Case settings**, select **Manage** for **Post case resolution survey (preview)**. The post case resolution surveys are triggered through Power Automate flows. The **Enable survey invite flow** dialog appears.
 1. Select **Turn on**. The Power Automate flows page opens on a new tab.
 1. Search for and enable the **Send a Microsoft Copilot Survey bot when a case is resolved in Dynamics 365** flow.
@@ -170,10 +170,8 @@ Do the following steps to configure post case resolution surveys in Customer Ser
    1. Turn on the **Enable case resolution survey** toggle. The **Microsoft Copilot Studio survey** and **Email template** areas appear.
    1. Select **Microsoft Copilot Studio survey**, and on the **Survey** pane that appears, select a survey in **Default survey**, and then save and close.
    1. The email template to send the survey link to customers is selected by default. You can create and set an email template of your choice. Learn more in [Create email templates](/power-apps/user/email-template-create?context=%2Fdynamics365%2Fcontext%2Fcustomer-service-context).
-1. Save the corresponding changes.  
+1. Save the corresponding changes.
 
 ### Related information
 
 [Enable feedback on voice call quality](/dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context)  
-
-

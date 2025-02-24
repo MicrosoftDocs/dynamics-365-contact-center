@@ -17,7 +17,7 @@ ms.custom: bap-template
 You can create and manage surveys that go out to the customers after a call or conversation ends. When you create a survey in Contact Center admin center or Customer Service admin center, the application automatically provisions a Copilot survey agent that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses.
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-The survey appears for the customer after the customer service representative (representative) ends the conversation or call.
+The survey appears for the customer after the customer service representative (service representative or representative) ends the conversation or call.
  
 With survey agents, you can:
 - Gather customer feedback and configure contextual actions depending on the feedback.

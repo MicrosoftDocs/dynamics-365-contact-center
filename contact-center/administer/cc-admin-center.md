@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection:
-ms.date: 02/06/2025
+ms.date: 02/27/2025
 ms.custom: bap-template
 ---
 
@@ -27,13 +27,12 @@ The features include:
 
 ## Prerequisites
 
-You must have the System administrator role.
+You must have the System administrator role. Make sure that the [System requirements for Dynamics 365 Contact Center](../implement/system-requirements-contact-center.md) are met.
 
 ## Use Contact Center admin center
 
 The app is automatically installed in all the Dynamics 365 Contact Center organizations. You can sign in to Dynamics 365, and on the apps page, select Contact Center admin center.
 
 ### Related information
-
-[System requirements for Dynamics 365 Contact Center](../implement/system-requirements-contact-center.md)    
+ 
 [International availability of Dynamics 365 Contact Center](../implement/international-availability.md)  

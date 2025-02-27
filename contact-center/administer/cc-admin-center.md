@@ -27,7 +27,8 @@ The features include:
 
 ## Prerequisites
 
-You must have the System administrator role. Make sure that the [System requirements for Dynamics 365 Contact Center](../implement/system-requirements-contact-center.md) are met.
+- You must have the System administrator role. 
+- Make sure that the [System requirements for Dynamics 365 Contact Center](../implement/system-requirements-contact-center.md) are met.
 
 ## Use Contact Center admin center
 

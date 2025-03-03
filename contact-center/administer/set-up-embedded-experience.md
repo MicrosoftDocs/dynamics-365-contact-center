@@ -6,19 +6,19 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection:
-ms.date: 10/24/2024
+ms.date: 03/03/2025
 ms.custom: bap-template
 ---
 
 # Set up the embedded experience in Salesforce
 
-The embedded conversation widget is a feature of Dynamics 365 Contact Center that allows agents to chat with customers directly from any non-Microsoft customer relationship management (CRM) system. You can embed the widget into any web page or application that supports HTML and JavaScript, and it provides a seamless and consistent chat experience across different platforms.
+The embedded conversation widget is a feature of Dynamics 365 Contact Center that allows customer service representatives (service representatives or representatives) to chat with customers directly from any non-Microsoft customer relationship management (CRM) system. You can embed the widget into any web page or application that supports HTML and JavaScript, and it provides a seamless and consistent chat experience across different platforms.
 
 ## Prerequisites
 
-- The prerequisites mentioned in the system requirements are set up. More information: [Prerequisites](../implement/system-requirements-contact-center.md#prerequisites)
+- The prerequisites mentioned in the system requirements are set up. Learn more in [Prerequisites](../implement/system-requirements-contact-center.md#prerequisites).
   
-- Omnichannel capabilities are enabled in your org. More information: [Provision channels](../implement/provision-channels.md)
+- Omnichannel capabilities are enabled in your org. Learn more in [Provision channels](../implement/provision-channels.md).
 
 - The provisioning user has System Administrator permissions in Salesforce.
 

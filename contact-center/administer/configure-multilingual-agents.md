@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: 
-ms.date: 12/16/2024
+ms.date: 03/03/2025
 ms.custom: bap-template 
 ---
 
@@ -16,7 +16,7 @@ ms.custom: bap-template
 [!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 
-You can configure a single voice agent to communicate with customers in different languages, reducing the overhead of creating and maintaining multiple agents in a copilot.
+You can configure a single voice agent to communicate with customers in different languages, reducing the overhead of creating and maintaining multiple AI agents (agents) in a copilot.
 
 To enable the agent to detect the customer language and respond in same language, configure a workstream with one of the following options:
 
@@ -28,7 +28,7 @@ To enable the agent to detect the customer language and respond in same language
 - Configure [Voice-enabled agent](/microsoft-copilot-studio/voice-build-from-template) in Copilot Studio.
 - Configure the languages the voice channel supports as  primary or secondary languages for the Copilot Studio agent. Learn more in [multilingual capabilities](/microsoft-copilot-studio/multilingual). The agent must support all the languages that the voice channel supports.
 - Configure [voice workstream](/dynamics365/customer-service/administer/voice-channel-inbound-calling#set-up-a-voice-workstream?context=/dynamics365/contact-center/context/administer-context) in the Contact Center admin center or Customer Service admin center.
-- Define the language-based routing rules. More information: [Configure work classification rulesets for unified routing](/dynamics365/customer-service/administer/configure-work-classification?context=/dynamics365/contact-center/context/administer-context).
+- Define the language-based routing rules. Learn more in [Configure work classification rulesets for unified routing](/dynamics365/customer-service/administer/configure-work-classification?context=/dynamics365/contact-center/context/administer-context).
 
 ## Configure multilingual agents for the workstream
 
@@ -60,9 +60,9 @@ When a customer calls the phone number for German, the agent responds in English
 
 You also have another workstream, Contoso Coffee Beans, with these settings:
  - A voice channel with a single phone number. The primary language is Spanish. French and English are additional languages.
- - The Contoso returns agent is configured as the agent for the workstream. The agent greets the customer in its primary language. Then it asks the customer to choose their preferred language by voice or text input. The options are: one English, two Italian, three Portuguese. The agent switches to the chosen language.
+ - The Contoso returns agent is configured for the workstream, which greets the customer in its primary language. The agent then asks the customer to choose their preferred language by voice or text input. The options are: one English, two Italian, three Portuguese. The agent switches to the chosen language.
 
-When a customer calls the phone number linked to the voice channel, the agent says hello in Spanish and repeats the options for other languages. If the customer says "English" or presses 1, the agent switches to English and continues in English.
+When a customer calls the phone number linked to the voice channel, the AI agent says hello in Spanish and repeats the options for other languages. If the customer says "English" or presses 1, the agent switches to English and continues in English.
 
 ## Escalate the call to a representative
 
@@ -75,4 +75,4 @@ For the example in **Scenario 1** or **Scenario 2**, to route the call to a lang
 
 ## View metrics for multilingual agents
 
-You can see how your multilingual agents perform by using [Omnichannel historical](/dynamics365/customer-service/use/oc-bot-dashboard?context=/dynamics365/contact-center/context/use-context)report. You can filter by Last Language to see metrics for agents based on the language they've used to communicate with the customer. The **Last Language** filter isn't available on the dashboard by default. To add the filter, perform the steps in [customize bot dashboards](../use/customize-agent-dashboard.md).
+You can see how your multilingual agents perform by using [Omnichannel historical](/dynamics365/customer-service/use/oc-bot-dashboard?context=/dynamics365/contact-center/context/use-context) report. You can filter by Last Language to see metrics for agents based on the language they've used to communicate with the customer. The **Last Language** filter isn't available on the dashboard by default. To add the filter, perform the steps in [customize bot dashboards](../use/customize-agent-dashboard.md).

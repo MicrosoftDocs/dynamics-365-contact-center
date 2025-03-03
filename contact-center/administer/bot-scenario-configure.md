@@ -6,11 +6,14 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 11/25/2024
+ms.date: 03/03/2025
 ms.custom: bap-template
 ---
 
 # Configure a sample voice agent template
+
+[!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
+
 
  > [!NOTE]
  > Some examples are for illustration only and are fictitious. No real association is intended or inferred.
@@ -23,7 +26,7 @@ This article explains how the Interactive Voice Response (IVR) or voice agent sa
 
 - **Distinguish number entities based on length**: Differentiates between numeric entities based on their length, enhancing accuracy in identifying account numbers, phone numbers, or other relevant data.
 
-- **self-service/account lookup**: Enables callers to access account information or perform self-service tasks without agent assistance, improving efficiency and customer satisfaction.
+- **self-service/account lookup**: Enables callers to access account information or perform self-service tasks without customer service representative assistance, improving efficiency and customer satisfaction.
 
 - **Reprompt/entity validation**: Prompts callers for clarification if the initial input is unclear, validates entities to ensure correct information is captured. This reduces errors and improves the interaction experience.
 
@@ -42,7 +45,7 @@ This article explains how the Interactive Voice Response (IVR) or voice agent sa
 
 1. Download the [sample voice agent zip](https://go.microsoft.com/fwlink/?linkid=2297969) file and save it to your local machine.
 1. In Copilot Studio, perform the steps in [import a solution](/microsoft-copilot-studio/authoring-export-import-copilot-components#import-a-solution-to-add-component-collections-to-an-environment) to import the zip file. The template is displayed on the **Scenarios** page.
-1. In the Agents page, you see the voice agent. You can modify the agent's workflow setting, topics, and call routing to align with your customer service processes and scenarios.
+1. In the Agents page, you see the voice agent. You can modify the AI agent's (agent) workflow setting, topics, and call routing to align with your customer service processes and scenarios.
 1. To finish the agent configuration in Dynamics 365 Contact Center or Customer Service, perform the steps in [Set up voice agents in the voice channel](/dynamics365/customer-service/administer/voice-channel-pva-bots?context=/dynamics365/contact-center/context/administer-context).
 
  > [!NOTE]

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: conceptual 
 ms.collection:
-ms.date: 11/27/2024
+ms.date: 03/03/2025
 ms.custom: bap-template
 ---
 
@@ -18,7 +18,7 @@ This article provides information about the geographic location and language ava
 
 Your Microsoft 365 tenant must be co-located in one of the following geographic locations where Dynamics 365 Contact Center is available. These geographic locations refer only to your Microsoft 365 tenant, not to the data center where your Microsoft Power Platform environment or organization instance resides.
 
-The following table shows which channels are available in the supported geographical regions.
+The following table shows the channels that're available in the supported geographical regions.
 
 | Region | Digital | Voice |
 |---|---|---|
@@ -34,13 +34,13 @@ The following table shows which channels are available in the supported geograph
 | Japan | Yes | No |
 | North America | Yes | Yes |
 | South America | Yes | No |
-| Switzerland |	Yes | No |
+| Switzerland |	Yes | Yes |
 | United Arab Emirates (UAE) | Yes | Yes |
 | United Kingdom | Yes | Yes |
 
 ## Language availability
 
-The following table shows which languages the different features in Dynamics 365 Contact Center support.
+The following table shows the languages that the different features in Dynamics 365 Contact Center support.
 
 | Language | Language code | Digital | Voice |
 |---|---|---|---|

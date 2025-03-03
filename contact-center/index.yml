@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: neeranelli
   ms.author: nenellim
-  ms.date: 07/29/2024
+  ms.date: 02/06/2025
   ms.custom: bap-template
   hide_bc: true
 
@@ -44,8 +44,6 @@ additionalContent:
         text: Security and compliance
       - url: /dynamics365/guidance/implementation-guide/overview
         text: Implementation
-      - url: /dynamics365/adoption/adoption-guide
-        text: Adoption guide
     - title: Try/Buy/Provision
       links: 
       - url: implement/try-dynamics365-contact-center.md
@@ -87,7 +85,7 @@ additionalContent:
         text: Integrate a Copilot Studio bot  
     - title: Develop
       links:
-      - url: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=/dynamics365/contact-center/context/extend-context
+      - url: /dynamics365/customer-service/develop/reference/about-entity-reference?context=/dynamics365/contact-center/context/extend-context
         text: Dynamics 365 Contact Center entity reference
       - url: /dynamics365/customer-service/develop/omnichannel-reference?context=/dynamics365/contact-center/context/extend-context
         text: Live chat SDK Reference
@@ -116,9 +114,9 @@ additionalContent:
       links:
       - url: use/use-copilot-features.md
         text: Use Copilot to solve customer issues
-      - url: use/copilot-use-summary.md#summarize-conversations
+      - url: use/copilot-summarize-conversations.md  
         text: Use Copilot to summarize conversations
-      - url: use/use-copilot-features.md#ask-a-question
+      - url: use/use-ask-a-question.md
         text: Ask a question in Copilot
     - title: Get insights and analyze contact center operations 
       links:
@@ -136,11 +134,11 @@ additionalContent:
           summary: Learn how to quickly build low-code apps that modernize processes and solve tough business challenges in your organization using Power Apps.
           url: /power-apps/
         - title: Microsoft Power Platform
-          summary: Learn how to quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, rapidly design, configure, and publish modern websites using Power Pages, and build intelligent bots with a no-code interface using Copilot Studio.
+          summary: Learn how to quickly build custom apps, automate workflows to improve productivity, analyze data for insights, and design modern websites.
           url: /power-platform/
         - title: Azure Communication Services
-          summary: Build powerful, cloud-based communication and customer engagement experiences by adding voice, video, chat, SMS, email, teams interoperability, call automation, and telephony to your apps.
+          summary: Build powerful, cloud-based communication and customer engagement experiences by adding voice, chat, SMS, email, and telephony to your apps.
           url: /azure/communication-services/
         - title: Microsoft Copilot Studio
-          summary: Build chatbots easily with Copilot Studio.
+          summary: Build Copilot agents easily with Copilot Studio.
           url: /microsoft-copilot-studio/

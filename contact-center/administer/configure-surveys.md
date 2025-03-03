@@ -1,12 +1,12 @@
 ---
 title: Configure feedback surveys using Copilot Studio (preview)
-description: Learn how configure surveys using Copilot Studio agents.
+description: Learn how to configure surveys in your contact center using survey agents in Copilot Studio.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer:
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 11/25/2024
+ms.date: 03/03/2025
 ms.custom: bap-template
 ---
 
@@ -14,12 +14,15 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-You can create and manage surveys that go out to the customers after a call or conversation ends. When you create a survey in Contact Center admin center or Customer Service admin center, the application automatically provisions a Microsoft Copilot Studio survey agent that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses.
+[!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
+
+
+You can create and manage surveys that go out to the customers after a call or conversation ends. When you create a survey in Contact Center admin center or Customer Service admin center, the application automatically provisions an AI agent (agent) survey that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses.
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-The survey appears for the customer after the customer service representative (representative) ends the conversation or call.
+The survey appears for the customer after the customer service representative (service representative or representative) ends the conversation or call.
  
-With Microsoft Copilot Studio agents, you can:
+With survey agents, you can:
 - Gather customer feedback and configure contextual actions depending on the feedback.
 - Unify and centralize the process of configuring surveys across digital messaging, voice, and custom channels.
 - Use predefined templates to create surveys.
@@ -73,7 +76,7 @@ Make sure that the Dataverse connection is established for Copilot Studio so tha
 1. On the edit pane that appears, select a connection in the **Connection** box or select **New connection**. A new tab opens to create a connection.
 1. Complete the steps to create a **Microsoft Dataverse** connection and select it in the **Connection** box.
 
-Learn more at [Set up a Dataverse connection](/power-apps/maker/data-platform/create-connection-reference).
+Learn more in [Set up a Dataverse connection](/power-apps/maker/data-platform/create-connection-reference).
 
 ### Manage the surveys
 
@@ -96,8 +99,9 @@ You can edit your survey agents to fulfill your business needs as follows:
 Edit the **Conversation Start** system topic only. All other system topics are disabled and must not be used.
 If you would like to add an additional question and store the data in Dataverse, the response variable name must start with “MCS_”.
 
->[!NOTE]
-> We recommend that you don't delete the survey bot from Copilot Studio.
+> [!NOTE]
+> We recommend that you don't delete the survey agent from Copilot Studio.
+
 ### Set up custom hosting
 
 You can host surveys on a link other than the default one.
@@ -157,8 +161,20 @@ The survey results are stored in Dataverse tables. To view the survey responses,
 
 The CSAT scores are displayed in the Omnichannel historical analytics report.
 
+## Configure case resolution survey
+
+You can configure the system to send a survey through email after the service representative resolves a case.
+
+Follow these steps to configure post-case resolution surveys in Contact Center admin center: 
+1. In the site map, under **Customer Support** > **Case settings**, select **Manage** for **Post case resolution survey (preview)**. The post case resolution surveys are triggered through Power Automate flows. The **Enable survey invite flow** dialog appears.
+1. Select **Turn on**. The Power Automate flows page opens on a new tab.
+1. Search for and enable the **Send a Microsoft Copilot Survey bot when a case is resolved in Dynamics 365** flow.
+1. In **Post case resolution survey (preview)**, do the following actions:
+   1. Turn on the **Enable case resolution survey** toggle. The **Microsoft Copilot Studio survey** and **Email template** areas appear.
+   1. Select **Microsoft Copilot Studio survey**, and on the **Survey** pane that appears, select a survey in **Default survey**, and then save and close.
+   1. The email template to send the survey link to customers is selected by default. You can create and set an email template of your choice. Learn more in [Create email templates](/power-apps/user/email-template-create?context=%2Fdynamics365%2Fcontext%2Fcustomer-service-context).
+1. Save the corresponding changes.
+
 ### Related information
 
 [Enable feedback on voice call quality](/dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context)  
-
-

@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 > [!IMPORTANT]
 > This is a preview feature.
-> Preview features aren’t meant for production use and might have restricted functionality. To sign up to use this feature, fill out [this](https://forms.office.com/r/xu3K2hDic1) form.
+> Preview features aren’t meant for production use and might have restricted functionality.
 
 The success of social media customer service, like all other customer services, depends on the quality of customer care provided. Communications from customer service representatives should be timely, accurate, sensitive, brief, and friendly, which ultimately improves customer satisfaction and brand loyalty. To enhance customer satisfaction and improve communications, the omnichannel capability in the application enables you to send and receive WhatsApp messages using [Azure Communication Services](/azure/communication-services). You can use the WhatsApp channel feature to engage in conversations with customers for product inquiry and customer service scenarios with those who prefer to communicate using WhatsApp. 
 

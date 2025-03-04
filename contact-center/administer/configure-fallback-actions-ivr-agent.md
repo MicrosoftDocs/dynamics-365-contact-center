@@ -1,7 +1,7 @@
 ---
 
 title: Configure fallback actions for the IVR agent
-description: Learn how to configure and manage fallback actions.
+description: Learn how to configure and manage fallback actions for the IVR agent.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
@@ -23,13 +23,13 @@ To manage IVR agent call fallback, update the agent settings in the voice workst
 1. Choose one of options:
     - **Prompt and hang-up**: The system plays a [default message](/dynamics365/customer-service/administer/configure-automated-message#preconfigured-automated-message-triggers) and ends the call.
     - **Prompt and transfer to external number**: The system plays the default message and then transfers the call to an external number that you enter in the **External phone number** field. Use the E.164 format, with a plus sign (+) followed by the country code and phone number.
-    - **Prompt and escalate**: The system plays the default message and then connects the call to an agent.
-    - **Wait Music and Escalate**: The system plays wait music and then connects the call to an agent.
+    - **Prompt and escalate**: The system plays the default message and then connects the call to a customer service representative (service representative or representative).
+    - **Wait Music and Escalate**: The system plays wait music and then connects the call to a service representative.
 1.  Select **Save**. 
 
 Instead of the default message, the system plays the [wait music](/dynamics365/customer-service/administer/voice-channel-music#add-hold-and-wait-music-to-the-workstream?context=/dynamics365/contact-center/context/administer-context) or [custom messages](/dynamics365/customer-service/administer/configure-automated-message?context=/dynamics365/contact-center/context/administer-context) if you have configured them.
 
 
-## View failed calls for agents
+## View failed calls for AI agents
 
 You can use the out-of-the-box **Fallback calls** metric in the Omnichannel historical reports bot dashboard and Omnichannel real-time analytics report to view the number of conversations that were initiated by the customer but couldn't be connected due to system challenges. Learn more in [Customize the bot dashboard](../use/customize-agent-dashboard.md)

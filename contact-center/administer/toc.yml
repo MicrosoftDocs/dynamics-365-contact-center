@@ -205,7 +205,7 @@
         - name: Configure multilingual IVR agents
           href: configure-multilingual-agents.md   
         - name: Configure fallback actions for the IVR agent
-          href: bot-connectivity-issues.md         
+          href: configure-fallback-actions-ivr-agent.md         
         - name: View voice calls usage
           href: /dynamics365/customer-service/administer/voice-channel-usage?context=/dynamics365/contact-center/context/administer-context
         - name: Block spam numbers

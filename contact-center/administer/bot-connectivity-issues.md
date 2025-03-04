@@ -1,11 +1,11 @@
 ---
 
-title: Configure fallback actions
+title: Configure fallback actions for the IVR agent
 description: Learn how to configure and manage fallback actions.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
-ms.date: 11/15/2024
+ms.date: 03/04/2025
 ms.topic: how-to
 ms.collection:
 ms.custom: bap-template
@@ -17,7 +17,7 @@ You can configure the AI agent (agent) to handle situations where the customer c
 
 ## Manage call fallback actions
 
-To manage IVR agent call faillback, update the agent settings in the voice workstream as follows:
+To manage IVR agent call fallback, update the agent settings in the voice workstream as follows:
 
 1. In the **Bot** section, select **Edit** to open the **Edit bot** pane. 
 1. Choose one of options:

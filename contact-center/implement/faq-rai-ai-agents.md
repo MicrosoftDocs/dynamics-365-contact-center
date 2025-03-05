@@ -45,6 +45,18 @@ The Knowledge Management Agent helps create and manage customer knowledge in rea
 
 - **Ensures compliance**: Sensitive data is scrubbed automatically, and organizations can extend compliance checks with custom automation.
 
+
+### Case Management Agent
+
+The case management agent helps automates case handling, saving time service representatives spend on manually filling case details. Administrators can customize the agent's behavior by configuring rules per the organization's requirements.
+ 
+The agent does the following:
+
+ - **Autonomous case creation and update**: Automatically creates and updates cases from live chats and emails. The agent uses AI to predict and populate relevant fields.
+
+- **Automated follow-up and closure**: Sends follow-up emails and resolves cases based on predefined rules, streamlining the case closure process. 
+
+
 ## What is the system’s intended use?
 
 These AI agents are designed to:

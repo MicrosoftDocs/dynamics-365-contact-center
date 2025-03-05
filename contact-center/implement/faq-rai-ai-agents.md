@@ -48,6 +48,9 @@ The Knowledge Management Agent helps create and manage customer knowledge in rea
 
 ### Case Management Agent
 
+> [!NOTE]
+> Case Management Agent is available in Customer Service only.
+
 The Case Management Agent helps automate case handling, saving time service representatives spend on manually filling case details. Administrators can customize the agent's behavior by configuring rules per the organization's requirements.
  
 The capabilities of the Case Management Agent include:

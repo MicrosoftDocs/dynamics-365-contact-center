@@ -55,7 +55,7 @@ The Case Management Agent helps automate case handling, saving time service repr
  
 The capabilities of the Case Management Agent include:
 
- - **Autonomous case creation and update**: Creates and updates cases from live chats and emails automatically. The agent uses AI to predict and populate relevant fields.
+ - **Autonomous case creation and update**: Creates and updates cases from live chats and updates cases from emails automatically. The agent uses AI to predict and populate relevant fields.
 
 - **Automated follow-up and closure**: Sends follow-up emails and resolves cases based on predefined rules, streamlining the case closure process. 
 

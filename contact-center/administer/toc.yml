@@ -203,7 +203,9 @@
         - name: Configure a sample voice agent template
           href: bot-scenario-configure.md
         - name: Configure multilingual IVR agents
-          href: configure-multilingual-agents.md      
+          href: configure-multilingual-agents.md   
+        - name: Configure fallback actions for the IVR agent
+          href: configure-fallback-actions-ivr-agent.md         
         - name: View voice calls usage
           href: /dynamics365/customer-service/administer/voice-channel-usage?context=/dynamics365/contact-center/context/administer-context
         - name: Block spam numbers

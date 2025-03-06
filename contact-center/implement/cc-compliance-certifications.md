@@ -10,9 +10,9 @@ ms.date: 03/06/2025
 ms.custom: bap-template
 ---
 
-# Compliance certifications of Dynamics 365 Contact Center
+# Compliance certifications for Dynamics 365 Contact Center
 
-Refer to the Microsoft Dynamics 365 [Cloud services compliance](https://aka.ms/d365-compliance-list) document and [Service Trust Portal](https://servicetrust.microsoft.com/) for information about the compliance certifications of **Dynamics 365 Contact Center**.
+Refer to the Microsoft Dynamics 365 [Cloud services compliance](https://aka.ms/d365-compliance-list) document and [Service Trust Portal](https://servicetrust.microsoft.com/) for information about the compliance certifications for **Dynamics 365 Contact Center**.
 
 ### Related information
 

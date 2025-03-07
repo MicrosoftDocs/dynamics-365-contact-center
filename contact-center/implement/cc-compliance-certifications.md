@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Compliance certifications for Dynamics 365 Contact Center
 
-Dynamics 365 Contact Center is designed with compliance at its core and is a Core Online Service as defined in the [Microsoft Product Terms](https://go.microsoft.com/fwlink/?linkid=2309612). It's compliant with or covered by: 
+Dynamics 365 Contact Center is designed with compliance at its core and is a Core Online Service as defined in the [Microsoft Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms). It's compliant with or covered by: 
 
 - Health Insurance Portability and Accountability Act (HIPAA) coverage
 
@@ -22,7 +22,7 @@ Dynamics 365 Contact Center is designed with compliance at its core and is a Cor
 - The Cloud Security Alliance (CSA) Security Trust Assurance and Risk (STAR)
 - United Kingdom Government Cloud (G-Cloud) 
 
-Refer to the Microsoft [Service Trust Portal](https://servicetrust.microsoft.com/) for information about the compliance certifications for **Dynamics 365 Contact Center**.
+Refer to the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) for information about the compliance certifications for **Dynamics 365 Contact Center**.
 
 ### Related information
 

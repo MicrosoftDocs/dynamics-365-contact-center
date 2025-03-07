@@ -50,7 +50,7 @@ You can enable and configure the prompts that appear in the **Ask a question** t
 1. On the **Manage prompt settings** page, select the following as required:
     - **Suggested prompts**
     - **Proactive insights**
-3.	In the **Configure prompts** section, select **Add new prompt** to add the prompts that you would like to use.
+3.	In the **Prompts from my organization** section, select **Add new prompt** to add the prompts that you would like to use.
 4.	Select **Save and close**.
 
 ## Enable draft a response (preview)

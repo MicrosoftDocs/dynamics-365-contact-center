@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: 
 ms.topic: conceptual 
 ms.collection:
-ms.date: 01/30/2025
+ms.date: 03/07/2025
 ms.custom: bap-template 
 ---
 
@@ -94,7 +94,7 @@ When you have an active case or conversation open, Copilot suggests prompts base
 
 ## Use proactive prompts
 
-[!INCLUDE [cc-feature-availability-embedded-yes](../../includes/cc-feature-availability-embedded-yes.md)]
+[!INCLUDE [cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
 
 Copilot proactively suggests prompts, without you having to type one, that you can use to prioritize cases effectively and solve customer queries quickly.

@@ -35,7 +35,7 @@ Key performance indicators (KPIs) for AI agents include:
 - **Total bot transferred conversations**: The number of AI agent conversations that are escalated to a customer service representative or an external phone number within the specified duration.
 - **Average conversation duration**: The average time each conversation lasts. The conversation duration is calculated from the time the AI agent is assigned to the conversation until the AI agent escalates the conversation or ends it.
 
-:::image type="content" source="../media/oc-realtime-bot-dashboard.png" alt-text="Screenshot of realtime bot dashboard"::: 
+:::image type="content" source="../media/oc-realtime-bot-dashboard.png" alt-text="Screenshot of realtime bot dashboard" lightbox="../media/oc-realtime-bot-dashboard-mini.png":::
 
 ## Monitor trends
 

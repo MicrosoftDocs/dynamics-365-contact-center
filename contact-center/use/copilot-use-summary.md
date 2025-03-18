@@ -1,70 +1,57 @@
 ---
-title: Use Copilot to summarize cases and conversations
-description: Learn how agents can use Copilot to get cases and conversation summaries in Dynamics 365 Contact Center.
+title: Use Copilot to summarize cases
+description: Learn how customer service representatives can use Copilot to get cases and conversation summaries in Dynamics 365 Contact Center.
 author: gandhamm 
 ms.author: mgandham 
 ms.reviewer: neeranelli 
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 07/01/2024
+ms.date: 02/19/2025
 ms.custom: bap-template 
 ---
 
-# Use Copilot to summarize cases and conversations 
+# Summarize cases in non-Microsoft CRMs
 
-You can use Copilot to summarize cases and conversations if your administrator enabled this feature.
+[!INCLUDE[cc-feature-availability-embed-only](../includes/cc-feature-availability-embed-only.md)]
 
-> [!NOTE]
-> The feature availability information is as follows.
->
-> |Feature| Dynamics 365 Contact Center&mdash;embedded | Dynamics 365 Contact Center&mdash;standalone | 
-> |--------------|----------|----------|
-> | Case Summary | No  | Yes   |
-> | Conversation Summary | Yes   | Yes   | 
+Copilot case summaries help you quickly understand the context of a case and resolve customer issues more efficiently. In a non-Microsoft CRM, the case summary appears as a card on the **Ask a question** tab in the Copilot help pane. 
 
-## Prerequisites
+> [!IMPORTANT]
+> - Case summary is a preview feature in Microsoft 365 Copilot for Service.
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-Your administrator enabled the Copilot conversation summary feature.
+## Navigation
 
-## Summarize cases
+When you sign in to a non-Microsoft CRM, you can generate case summary as follows:
+   - Launch the embedded experience and then login to your Dynamics account.
+   - In the Copilot help pane that appears, select **Ask a question**.
+   - Select the Copilot icon and then select **Summarize case**.
 
-Copilot case summaries help you quickly understand the context of a case and resolve customer issues more efficiently. The case summary includes key information such as the case title, customer, subject, product, priority, case type, and description.
+## Generate case summaries
 
-### Get a case summary
+In the non-Microsoft CRM, you can generate the case summary as follows:
 
-The case summary appears as a card on the case form. When you open a case, the case summary card is collapsed by default so that your screen isn't cluttered with information. To expand the summary, select the card.
+- Select the required case or incident.
+- Select **Microsoft contact center**. The Copilot help pane appears.
+- In the **Ask a question** tab, select **Summarize case**. The case summary appears in the help pane.
 
-:::image type="content" source="../media/copilot-case-summary.png" alt-text="Screenshot of a Copilot case summary.":::
+Copilot generates case summaries based on the following case information for the corresponding CRM systems:
+
+**Salesforce**: Copilot generates the case summary based on the case fields and activities associated with the case. The case summary includes the following information:
+
+  - **Case fields**: case ID, description, subject, priority, type, customer name, case URL, email, and product name if the service representative has access.
+  - **Text post**: ID, Title, body, created date
+  - **Comment**: Id, body, created date
+  - **Email**: ID, body, lastmodifieddate, fromaddress, toaddress.
+
+**ServiceNow**: Copilot generates the case summary based on the incident data and activities that are attached with the incident. The case summary includes the following information:
+
+ - **Incident data** : incident ID, description, short description, priority, type, customer name, incident URL, email, and notes.
+ - **Work notes and comments**: ID, TextContext, Created Date.
+ - **Email**: Id, Body, Created Date, FromAddress, ToAddress
+
 
 You can copy the summary, refresh it, and provide feedback.
-
-> [!NOTE]
-> - Case summary isn't available for the Contact Center embedded experience.
-> - You can also generate a case summary for cases that are resolved or canceled.
-> - A case summary isn't generated if the descriptions added in the source case fields that Copilot uses are less than 38 words in English, without counting spaces.
-
-## Summarize conversations
-
-Copilot conversation summaries provide context and relay the steps that you took to solve the issue. You can summarize chat and transcribed voice conversations.
-
-> [!NOTE]
-> If your administrator enabled auto-summarization for ongoing conversations, you get an AI-generated summary of the conversation along with the Copilot-generated conversation summary. The two summaries may be slightly different. [Learn more about auto-summarized conversations]( /dynamics365/customer-service/use/cs-ai-generated-summary?context=/dynamics365/contact-center/use-context).
-
-### Get a conversation summary
-
-Based on your administrator's configuration, Copilot summaries appear as follows:
-
-- The Copilot conversation summary generated automatically when you request a consultation with another agent, transfer the conversation, or end the conversation. You can select **Summarize conversation** to generate the summary for an ongoing conversation.
-- The summary is displayed in a paragraph format or a structured format.
-  - The paragraph format summarizes the conversation in a single paragraph.
-  - The structured format summarizes and organizes the information in the conversation based on the options your administrator selected. 
-       
-You can also take the following actions:
-
-- Copy the summary.
-- Select **Create case** to create a case and populate the description with the summary, if your administrator enabled this feature.
-- Share feedback about the summary.
-- Close the summary card.
 
 ## Next steps
 

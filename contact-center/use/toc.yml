@@ -76,22 +76,22 @@
           href: use-intent-suggestions.md
       - name: Use Copilot
         items: 
-        - name: Use Copilot to solve customer issues 
-          href: use-copilot-features.md
-        - name: Use Copilot to summarize cases and conversations
+        - name: Copilot feature availability across applications
+          href: copilot-feature-availability.md  
+        - name: Summarize cases
           href: copilot-use-summary.md
+        - name: Summarize conversations
+          href: copilot-summarize-conversations.md  
         - name: Ask a question
-          href: use-copilot-features.md#ask-a-question
+          href: use-ask-a-question.md  
         - name: Draft a chat response (preview)
-          href: use-copilot-features.md#draft-a-chat-response-preview
+          href: use-copilot-features.md  
         - name: Write an email with Copilot
-          href: use-copilot-email.md
+          href: use-copilot-email.md  
         - name: Understand how Copilot supports different languages
           href: copilot-language-support.md
-        - name: View analytics for Copilot impact
-          href: copilot-analytics-report.md
-        - name: Chat with Customer Service data in Copilot for Microsoft 365 (preview)
-          href: /dynamics365/customer-service/use/copilot-chat-customer-service-data?context=/dynamics365/contact-center/context/use-context
+        - name: Chat with case data in Customer Service (preview)
+          href: copilot-chat-customer-service-data.md
       - name: Unified routing and assignment
         items:
           - name: View historical analytics reports
@@ -234,6 +234,8 @@
             href: /dynamics365/customer-service/use/realtime-voice-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Agents report
             href: /dynamics365/customer-service/use/realtime-agents-analytics?context=/dynamics365/contact-center/context/use-context
+          - name: Bot report
+            href: agent-realtime-dashboard.md
           - name: Ongoing Conversation report
             href: /dynamics365/customer-service/use/realtime-ongoing?context=/dynamics365/contact-center/context/use-context
         - name: Use historical analytics dashboards

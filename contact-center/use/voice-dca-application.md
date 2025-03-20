@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 The Desktop Companion Application is a backup system when the Dynamics 365 Customer Service or Dynamics 365 Contact Center web application fails to load, allowing customer service representatives (service representatives or representatives) to continue customer conversations without interruption. The application uses a desktop connection that reduces both inbound and outbound latency and can certify your external device can also be certified through the application, eliminating external hardware compatibility problems providing, and ensures faster connectivity.
 
-[!INCLUDE [preview-banner](../../../shared-content/shared/preview-includes/preview-note-d365.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

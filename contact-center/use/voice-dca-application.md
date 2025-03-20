@@ -1,6 +1,6 @@
 ---
-title: Use agent dashboard and call controls in the voice channel (preview)
-description: Learn how you can use the agent dashboard, call controls, and make and receive customer calls.
+title: Use the Desktop companion application with the voice channel (preview)
+description: Learn how you can use the dekstop companion application with the voice channel.
 ms.date: 10/30/2024
 ms.topic: how-to
 author: gandhamm
@@ -9,7 +9,7 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Use agent dashboard and call controls in the voice channel (preview)
+# Use the Desktop companion application with the voice channel (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 

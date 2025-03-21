@@ -38,7 +38,7 @@ With survey agents, you can:
 ## Prerequisites
 
 - Copilot Studio and the channels in Dynamics 365 Contact Center or Dynamics 365 Customer Service are available in the same environment.
-- System Administrator role.
+- Omnichannel administrator role.
 
 ## Create a survey
 

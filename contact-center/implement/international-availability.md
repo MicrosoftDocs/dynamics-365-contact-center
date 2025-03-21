@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: conceptual 
 ms.collection:
-ms.date: 03/03/2025
+ms.date: 03/12/2025
 ms.custom: bap-template
 ---
 
@@ -44,7 +44,7 @@ The following table shows the languages that the different features in Dynamics 
 
 | Language | Language code | Digital | Voice |
 |---|---|---|---|
-| Arabic - Saudi Arabia | ar-SA | Yes | No |
+| Arabic - Saudi Arabia | ar-SA | Yes | Yes |
 | Bulgarian | bg-BGC | Yes | Yes |
 | Catalan | ca-ES | Yes | Yes |
 | Chinese - China - Mandarin | zh-CN | Yes | Yes |

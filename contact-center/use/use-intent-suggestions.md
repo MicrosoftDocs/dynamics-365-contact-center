@@ -50,3 +50,4 @@ You can do these actions in **Intent-based suggestions (preview)**:
 
 
 
+:::image type="content" source="../media/intent-mgmt-agent-experience-mini.png" alt-text="Screenshot of the structured settings for conversation summary" lightbox="../media/intent-mgmt-agent-experience.png":::|

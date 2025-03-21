@@ -1,6 +1,6 @@
 ---
 title: Install and manage Desktop companion application for voice channel (preview)
-description: Learn how to install Deskstop companion application for the voice channel.
+description: Learn how to install Desktop companion application for the voice channel.
 ms.date: 10/30/2024
 ms.topic: how-to
 author: gandhamm

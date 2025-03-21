@@ -43,7 +43,7 @@ To add the Copilot features to an agent experience profile, follow these steps:
 
 When a service representative accepts a live chat or persistent chat conversation, the **Intent-based suggestions (preview)** card appears in the **Ask a question** tab of Copilot help pane.
 
- The AI agent maps the context of the conversation to a specific intent, a general intent group and displays the relevant intent attributes as questions. The service representative can use these questions to get the necessary information from the customer to resolve the issue.
+ The intent agent maps the context of the conversation to a specific intent, a general intent group and displays the relevant intent attributes as questions. The service representative can use these questions to get the necessary information from the customer to resolve the issue.
    
   For example, the agent maps the customer's issue to the intent "Returning Contoso CX300 coffee machine". This intent has these intent attributes:
     -	Date of purchase
@@ -52,10 +52,14 @@ When a service representative accepts a live chat or persistent chat conversatio
 
  Service representatives can use the questions that the agent suggests for these attributes, such as "When did you buy the coffee machine?" and "What is your order number?" to get the necessary information from the customer.
 
-When the agent maps the context to a general intent group but not a specific intent, the agent shows the intent group and a follow-up question to clarify the intent. 
+When the agent can map the context to a general intent group but not a specific intent, the service representative sees only the high level intent and a follow-up question to clarify the intent. 
 
    For example, the agent maps the customer's issue to the intent group "Coffee machine issues". To narrow down the intent, it suggests a question that you can ask the customer for more information, such as "What kind of coffee machine issue do you have?"
 
 If the agent can't map the context to any known intent group or intent, it shows nothing.
 
-If a customer's intent changes during a conversation, the agent detects the change and updates the suggestions based on the current intent. It also saves the previous intents and suggested questions with the conversation history. This way, if the service representative transfers the conversation to another representative, they can see the historical intent, the suggested questions, and the customer's responses.
+If a customer's intent changes during a conversation, the agent detects the change and updates the suggestions based on the current intent. It also saves the previous intents and suggested questions with the conversation history. 
+
+## Next steps
+
+- [Use intent-based suggestions (preview)](use-intent-suggestions.md)

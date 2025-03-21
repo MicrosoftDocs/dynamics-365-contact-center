@@ -62,4 +62,4 @@ If a customer's intent changes during a conversation, the agent detects the chan
 
 ## Next steps
 
-- [Use intent-based suggestions (preview)](use-intent-suggestions.md)
+- [Use intent-based suggestions (preview)](../use/use-intent-suggestions.md)

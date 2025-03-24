@@ -21,7 +21,7 @@ The Desktop companion application is a backup system when the Dynamics 365 Custo
 
 You can install the Desktop companion application on a customer service representative's desktop as follows:
 
-1. Download and run the Desktop Companion Application for Dynamics 365 Contact Center from [here](https://aka.ms/dca-preview-installer). You must have administrator privileges to install the application on the desktop.
+1. [Download and run the Desktop Companion Application for Dynamics 365 Contact Center](https://aka.ms/dca-preview-installer). You must have administrator privileges to install the application on the desktop.
 1. Double click the installer file to start the installation process. You can also install the application from the command line. Learn more in [msiexec](/windows-server/administration/windows-commands/msiexec).
 
 > [!NOTE]

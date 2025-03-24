@@ -48,4 +48,4 @@ You can do the following actions:
 
 ## Related information
 
-[Manage Desktop companion application for voice channel (preview)](../administer/install-manage-desktop-app.md)
+[Install and manage Desktop companion application for voice channel (preview)](../administer/install-manage-desktop-app.md)

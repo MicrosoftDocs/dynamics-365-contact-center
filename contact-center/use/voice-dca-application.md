@@ -23,11 +23,11 @@ The Desktop companion application serves as a backup when the Dynamics 365 Custo
 - The Desktop companion application is installed on your desktop.
 
 
-## Using the Desktop Companion Application
+## Use the Desktop companion application
 
-After you sign in to Contact Center or Customer Service and you receive a call, you can launch the Desktop companion application from the windows toolbar to continue the conversation from the web browser.
+After you sign in to the agent application in Contact Center or Customer Service and you receive a call, you can launch the Desktop companion application from the Windows toolbar to continue the conversation from the web browser.
 
-Launch the application if you face issues such as network latency, web application freezes or reloads, or to ensure that your headset and wireless devices stay connected.
+Launch the application if you face issues such as network latency, web application freezes or reloads. You can also make sure that your headset and wireless devices stay  connected using the application.
 
 :::image type="content" source="../media/dca-screenshot.png" alt-text="Screenshot of desktop companion application" :::
 

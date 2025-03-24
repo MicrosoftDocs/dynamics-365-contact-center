@@ -27,13 +27,13 @@ You can install the Desktop companion application on a customer service represen
 > [!NOTE]
 > [Microsoft Visual C++ Redistributable package](/cpp/windows/latest-supported-vc-redist) must be installed on the desktop. 
 
-## Diagnostic data collection
+## How diagnostics data is collected
 
 The diagnostic data collected from Desktop companion application is used to keep the application secure and up-to-date; to detect, diagnose, and fix problems; and to make product improvements. This data doesn't include a user's name or email address, the content of the user's files, or information about apps unrelated to the product. 
 
-Microsoft is dedicated to being transparent with our customers about the data we collect from our client software and giving them more control over their data. As part of this work, diagnostic data collected from our the applications as customer service representatives use their devices is classified as either *Required* or *Optional*. This classification will make it easier for you to make informed choices about their privacy.
+Microsoft is dedicated to being transparent with our customers about the data we collect from our client software and giving them more control over their data. Diagnostic data collected from our applications as cservice representatives use their devices is classified as either *Required* or *Optional*. This classification makes it easier for you to make informed choices about their privacy.
 
-The Desktop companion application software doesn't collect optional diagnostic data by default unless the user specified otherwise during the initial installation process or later in the product's settings. Learn more about required data and optional data in [Diagnostic data collection](/power-automate/desktop-flows/diagnostic-data?WT.mc_id=powerautomate_inproduct_padconsole#required-data). 
+The Desktop companion application software doesn't collect optional diagnostic data by default. Learn more about required data and optional data in [Diagnostic data collection](/power-automate/desktop-flows/diagnostic-data?WT.mc_id=powerautomate_inproduct_padconsole#required-data). 
 
 ## Related information
 

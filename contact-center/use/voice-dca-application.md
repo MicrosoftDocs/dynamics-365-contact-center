@@ -38,7 +38,9 @@ You can do the following actions:
 - On an active call, you can use the call controls to mute, unmute the call, or end the call.
 - You can switch between an active call and a call that's on hold.
 - Select **Settings** to do the following actions:
-   - View the available microphone and speaker devices and select the device you want to use.
+   - Select **Language** to specify the language you want to use.
+   - In the **Device Settings** section, you can view the available microphone and speaker devices and select the device you want to use.
    - Select **Test Call** to ensure that the microphone and speaker are working well.
+   - View the application's version information in **About this app**.
 
-:::image type="content" source="../media/dca-call-screenshot.png" alt-text="Screenshot of desktop companion application with ongoing calls" :::
+   :::image type="content" source="../media/dca-call-screenshot.png" alt-text="Screenshot of desktop companion application with ongoing calls" :::

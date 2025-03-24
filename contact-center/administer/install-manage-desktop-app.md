@@ -25,7 +25,7 @@ You can install the Desktop companion application on a customer service represen
 1. Double click the installer file to start the installation process. You can also install the application from the command line. Learn more in [msiexec](/windows-server/administration/windows-commands/msiexec).
 
 > [!NOTE]
-> [Microsoft Visual C++ Redistributable package](/cpp/windows/latest-supported-vc-redist?view=msvc-170) must be installed on the desktop. 
+> [Microsoft Visual C++ Redistributable package](/cpp/windows/latest-supported-vc-redist) must be installed on the desktop. 
 
 ## Diagnostic data collection
 

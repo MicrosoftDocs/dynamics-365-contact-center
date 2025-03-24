@@ -1,7 +1,7 @@
 ---
 title: Use the Desktop companion application with the voice channel (preview)
 description: Learn how you can use the desktop companion application with the voice channel.
-ms.date: 10/30/2024
+ms.date: 03/24/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -13,7 +13,8 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The Desktop companion application is a backup system when the Dynamics 365 Customer Service or Dynamics 365 Contact Center web application faces issues, that allows customer service representatives (service representatives or representatives) to continue customer conversations without interruption. 
+
+The Desktop companion application serves as a backup when the Dynamics 365 Customer Service or Dynamics 365 Contact Center web application encounters issues and allows you to continue conversations without interruption.
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

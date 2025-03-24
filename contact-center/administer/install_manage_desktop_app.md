@@ -1,7 +1,7 @@
 ---
 title: Manage Desktop companion application for voice channel (preview)
 description: Learn how to install Desktop companion application for the voice channel.
-ms.date: 10/30/2024
+ms.date: 03/24/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham

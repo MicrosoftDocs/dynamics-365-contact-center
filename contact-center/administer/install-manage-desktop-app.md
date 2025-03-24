@@ -27,7 +27,7 @@ You can install the Desktop companion application on a customer service represen
 > [!NOTE]
 > [Microsoft Visual C++ Redistributable package](/cpp/windows/latest-supported-vc-redist) must be installed on the desktop. 
 
-## How diagnostics data is collected
+## Manage diagnostic data collection
 
 The diagnostic data collected from Desktop companion application is used to keep the application secure and up-to-date; to detect, diagnose, and fix problems; and to make product improvements. This data doesn't include a user's name or email address, the content of the user's files, or information about apps unrelated to the product. 
 

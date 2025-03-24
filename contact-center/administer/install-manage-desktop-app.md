@@ -34,3 +34,7 @@ The diagnostic data collected from Desktop companion application is used to keep
 Microsoft is dedicated to being transparent with our customers about the data we collect from our client software and giving them more control over their data. As part of this work, diagnostic data collected from our the applications as customer service representatives use their devices is classified as either *Required* or *Optional*. This classification will make it easier for you to make informed choices about their privacy.
 
 The Desktop companion application software doesn't collect optional diagnostic data by default unless the user specified otherwise during the initial installation process or later in the product's settings. Learn more about required data and optional data in [Diagnostic data collection](/power-automate/desktop-flows/diagnostic-data?WT.mc_id=powerautomate_inproduct_padconsole#required-data). 
+
+## Related information
+
+[Use the Desktop companion application with the voice channel (preview)](../use/voice-dca-application.md)

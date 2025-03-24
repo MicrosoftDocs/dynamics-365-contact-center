@@ -186,7 +186,7 @@
           href: /dynamics365/customer-service/administer/add-outbound-dialer-settings?context=/dynamics365/contact-center/context/administer-context  
         - name: Use Azure Virtual Desktop to access voice channel
           href: configure-voice-avd.md
-        - name: Manage Desktop companion application (preview)
+        - name: Install and manage Desktop companion application (preview)
           href: install-manage-desktop-app.md
         - name: Support emergency calls made by customer service representatives
           href: /dynamics365/customer-service/administer/voice-channel-emergency-calling?context=/dynamics365/contact-center/context/administer-context

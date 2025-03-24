@@ -31,7 +31,7 @@ You can install the Desktop companion application on a customer service represen
 
 The diagnostic data collected from Desktop companion application is used to keep the application secure and up-to-date; to detect, diagnose, and fix problems; and to make product improvements. This data doesn't include a user's name or email address, the content of the user's files, or information about apps unrelated to the product. 
 
-Microsoft is dedicated to being transparent with our customers about the data we collect from our client software and giving them more control over their data. Diagnostic data collected from our applications as cservice representatives use their devices is classified as either *Required* or *Optional*. This classification makes it easier for you to make informed choices about their privacy.
+Microsoft is dedicated to being transparent with customers about the data collected from client software and providing them with control over their data. Diagnostic data collected from applications as service representatives use their devices is classified as either *Required* or *Optional*. This classification makes it easier for you to make informed choices about their privacy.
 
 The Desktop companion application software doesn't collect optional diagnostic data by default. Learn more about required data and optional data in [Diagnostic data collection](/power-automate/desktop-flows/diagnostic-data?WT.mc_id=powerautomate_inproduct_padconsole#required-data). 
 

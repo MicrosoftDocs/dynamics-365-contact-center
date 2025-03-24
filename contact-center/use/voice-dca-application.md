@@ -20,7 +20,7 @@ The Desktop companion application serves as a backup when the Dynamics 365 Custo
 
 ## Prerequisites
 
-- The Desktop companion application is installed on your desktop.
+The Desktop companion application is installed on your desktop.
 
 
 ## Use the Desktop companion application

@@ -62,6 +62,8 @@
           href: voice-channel-agent-experience.md
         - name: How to avoid call disconnection
           href: voice-channel-agent-experience.md#how-to-avoid-call-disconnection
+        - name: Use the Desktop companion application (preview)
+          href: voice-dca-application.md
         - name: Manage voicemails
           href: /dynamics365/customer-service/use/manage-voicemails?context=/dynamics365/contact-center/context/use-context
         - name: Transfer calls and consult with other users

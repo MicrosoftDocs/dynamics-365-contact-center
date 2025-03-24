@@ -1,6 +1,6 @@
 ---
 title: Use the Desktop companion application with the voice channel (preview)
-description: Learn how you can use the desktop companion application with the voice channel.
+description: Learn how to use the Desktop companion application with the voice channel.
 ms.date: 03/24/2025
 ms.topic: how-to
 author: gandhamm

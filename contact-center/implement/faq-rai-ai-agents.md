@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 01/18/2025
+ms.date: 03/28/2025
 ms.custom: 
 - bap-template
 - responsible-ai-faq
@@ -35,15 +35,28 @@ The Customer Intent Agent uses generative AI to autonomously discover ongoing cu
 
 - **Enhance self-service capabilities**: The agent generates follow-up questions and queries knowledge sources based on collected information, resulting in higher deflection rates and allowing service representatives to focus on complex cases.
 
-### Knowledge Management Agent
+### Customer Knowledge Management Agent
 
-The Knowledge Management Agent helps create and manage customer knowledge in real time. After a case is closed, the Knowledge Management Agent:
+The Customer Knowledge Management Agent helps create and manage customer knowledge in real time. After a case is closed, the Knowledge Management Agent:
 
 - **Analyzes case details and related information**: Includes notes, conversations, and emails to draft a knowledge article.
 
 - **Fills knowledge gaps**: Identifies whether the new article is necessary by comparing the case against the existing Dynamics 365 knowledge base, making sure that no duplication exists.
 
 - **Ensures compliance**: Sensitive data is scrubbed automatically, and organizations can extend compliance checks with custom automation.
+
+### Case Management Agent
+
+> [!NOTE]
+> Case Management Agent is available in Customer Service only.
+
+The Case Management Agent helps automate case handling, saving time service representatives spend on manually filling case details. Administrators can customize the agent's behavior by configuring rules per the organization's requirements.
+ 
+The capabilities of the Case Management Agent include:
+
+ - **Autonomous case creation and update**: Creates and updates cases from live chats and updates cases from emails automatically. The agent uses AI to predict and populate relevant fields.
+
+- **Automated follow-up and closure**: Sends follow-up emails and resolves cases based on predefined rules, streamlining the case closure process. 
 
 ## What is the system’s intended use?
 

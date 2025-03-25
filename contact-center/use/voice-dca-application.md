@@ -25,7 +25,7 @@ The Desktop companion application is installed on your desktop.
 
 ## Use the Desktop companion application
 
-After you sign in to the agent application in Contact Center or Customer Service and receive a call, you can also view the call in the Desktop companion application. Open the application from the Windows toolbar to see the call in the application and continue the conversation from the web browser. You can also minimize the application. When minimized, the Desktop companion application is running in the background.
+After you sign in to the agent application in Contact Center or Customer Service and receive a call, you can also view the call in the Desktop companion application. Open the application from the Windows toolbar to see the call in the application and continue the conversation from the web browser. You can also minimize the application. When minimized, the Desktop companion application runs in the background.
 
 Launch the application if you face issues such as network latency, web application freezes or reloads. You can also make sure that your headset and wireless devices stay  connected using the application.
 

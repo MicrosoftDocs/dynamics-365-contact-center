@@ -1,12 +1,12 @@
 ---
 title: Configure feedback surveys using Copilot Studio (preview)
-description: Learn how configure surveys in your contact center using survey agents in Copilot Studio.
+description: Learn how to configure surveys in your contact center using survey agents in Copilot Studio.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer:
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 02/24/2025
+ms.date: 03/03/2025
 ms.custom: bap-template
 ---
 
@@ -14,7 +14,10 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-You can create and manage surveys that go out to the customers after a call or conversation ends. When you create a survey in Contact Center admin center or Customer Service admin center, the application automatically provisions a Copilot survey agent that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses.
+[!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
+
+
+You can create and manage surveys that go out to the customers after a call or conversation ends. When you create a survey in Contact Center admin center or Customer Service admin center, the application automatically provisions an AI agent (agent) survey that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses.
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The survey appears for the customer after the customer service representative (service representative or representative) ends the conversation or call.
@@ -35,7 +38,7 @@ With survey agents, you can:
 ## Prerequisites
 
 - Copilot Studio and the channels in Dynamics 365 Contact Center or Dynamics 365 Customer Service are available in the same environment.
-- System Administrator role.
+- Omnichannel administrator role.
 
 ## Create a survey
 
@@ -73,7 +76,7 @@ Make sure that the Dataverse connection is established for Copilot Studio so tha
 1. On the edit pane that appears, select a connection in the **Connection** box or select **New connection**. A new tab opens to create a connection.
 1. Complete the steps to create a **Microsoft Dataverse** connection and select it in the **Connection** box.
 
-Learn more at [Set up a Dataverse connection](/power-apps/maker/data-platform/create-connection-reference).
+Learn more in [Set up a Dataverse connection](/power-apps/maker/data-platform/create-connection-reference).
 
 ### Manage the surveys
 

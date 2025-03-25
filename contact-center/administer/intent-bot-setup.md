@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Configure intent-based suggestions for Copilot agents
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 [!INCLUDE [cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 Customer Intent Agent discovers historical data and maintains an up-to-date intent library, along with the attributes to support intent determination, interview, and fulfillment, leading to higher deflection.
@@ -19,6 +21,8 @@ Customer Intent Agent discovers historical data and maintains an up-to-date inte
 Customer Intent Agent uses the determined intent and interview responses to improve the quality of generated answers for both Copilot agents and customer service representatives (service representatives or representatives).
 
 You can configure Customer Intent Agent with Copilot agents to provide updated solutions for customer issues.
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

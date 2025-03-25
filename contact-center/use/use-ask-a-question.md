@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: 
 ms.topic: conceptual 
 ms.collection:
-ms.date: 01/30/2025
+ms.date: 03/07/2025
 ms.custom: bap-template 
 ---
 
@@ -38,7 +38,7 @@ You can ask free-form questions just as you'd ask your colleague or supervisor w
 
 With Copilot, you can take the following actions:
 
-- **Ask a direct question**: Copilot shows the most relevant answer from the knowledge sources that your organization has provided.
+- **Ask a direct question**: Copilot shows the most relevant answer from the knowledge sources that your organization has provided. Based on the context of the question, Copilot proactively suggests prompts that you can use to ask follow-up questions or get more details.
 - **Ask follow-up turn by turn questions**: If Copilot's response isn't immediately useful, you can ask follow-up questions and guide Copilot in a natural, conversational way.
 - **Ask Copilot to attempt a better response**: Copilot can also rephrase responses based on more guidance such as, "Can you summarize your response?" or "Can you attempt a response providing details for each of the steps you mentioned?"
 
@@ -100,7 +100,11 @@ When you have an active case or conversation open, Copilot suggests prompts base
 Copilot proactively suggests prompts, without you having to type one, that you can use to prioritize cases effectively and solve customer queries quickly.
 
 - You can use the default prompts, such as **Summarize**, **Ask**, and **Discover** to get started with Copilot, with just a single click. For example, you can select the **Summarize** prompt to get a case summary. After you select **Summarize**, enter the case number to view the case details on the help pane, without having to open the case.
-- You can also select **View prompts** which provides the default prompts on demand at any time.   
+- You can also save frequently used prompts for quick access.
+- You can select **View prompts** to use one of the following prompts:
+   - Default prompts 
+   - Prompts set up by your administrator
+   - Prompts that you bookmarked
 - You can use Copilot to get summaries of multiple cases in the help pane, that help you decide which case to work on first, based on priority and customer needs.
 - When you pick your case or a new conversation to work on, the context of Copilot switches to the particular case and suggests new prompts automatically, without you having to type one. Copilot gathers relevant information and provides you with the information, thereby increasing your efficiency in resolving customer issues.
 
@@ -108,7 +112,6 @@ Copilot proactively suggests prompts, without you having to type one, that you c
 
 > [!NOTE]
 > Copilot generates proactive prompts based on case data in Customer Service only.
-
 ## View responses
 
 Copilot streams the generated responses on the UI incrementally, and you can view the responses as they're generated. You can also select **Stop responding** for Copilot to stop generating responses, allowing you to start afresh.

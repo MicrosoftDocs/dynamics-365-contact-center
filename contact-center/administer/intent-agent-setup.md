@@ -71,21 +71,21 @@ You can switch to Copilot author authentication if users connecting to Copilot S
 1. Select the  ellipsis next to **Connect action** > **Properties**.
 1. Select the **End user authentication** dropdown and change it from **User authentication** to **Copilot author authentication**. 
 
-## Connect to CRM knowledge articles
-
-Connect the knowledge articles in your CRM instance to your Copilot agent. Learn more in [Integrate knowledge management in Dynamics 365 with Copilot agents](/dynamics365/customer-service/administer/integrate-km-with-pva).
-
-Make sure that you add the new flow that you created called **Generate answer from Dataverse knowledge articles for Power Virtual Agent** to the Handoff topic instead of using generative answer. 
-
 ## Connect to intent-based suggestions 
 
-You can also connect to other knowledge sources, supported by Copilot Studio, to your Copilot agent. Learn more in [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot).
+To use customer intent agent, you need to connect your Copilot agent to a knowledge source. Learn more in [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot).
 
 1. In your existing topic flow, where you want to use Customer Intent Agent, add a node for **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**. For other scenarios, we recommend adding this node to the **Conversational boosting** system topic that triggers off Unknown topic.
 1. To add behavior after intent determination and interview completes, select **Add a condition**, and set it to **IntentInterviewComplete is equal to true, And IntentInterviewIncomplete is equal to true**.
 1. If there isn't any such node, add a node under the condition in step 2, and then go to **Advanced** > **Create generative answers** and select **SolutionQuery** for Input. Adding a SolutionQuery helps generate information from the determined intent and answered questions to search knowledge sources for a solution response.
 1. Add another node as **Topic management** > **Go to another topic** > **End of Conversation** to add logic to complete the conversation flow after providing an answer.
 1. Under **All other conditions**, add a node for **Topic management** > **Transfer conversation** to ensure that when an intent isn't detected, the conversation is escalated to a support representative.
+
+## Connect to CRM knowledge articles
+
+Connect the knowledge articles in your CRM instance to your Copilot agent. Learn more in [Integrate knowledge management in Dynamics 365 with Copilot agents](/dynamics365/customer-service/administer/integrate-km-with-pva).
+
+Make sure that you add the new flow that you created called **Generate answer from Dataverse knowledge articles for Power Virtual Agent** to the Handoff topic instead of using generative answer. 
 
 ### Intent-based suggestions output variables
 

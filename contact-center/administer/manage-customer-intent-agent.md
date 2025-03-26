@@ -13,17 +13,6 @@ ms.custom:
   - ai-gen-description
   - ai-seo-date:03/25/2025
 ---
----
-title: Manage Customer Intent Agent (preview)
-description: 
-author: neeranelli
-ms.author: nenellim
-ms.reviewer: 
-ms.topic: how-to
-ms.collection: bap-ai-copilot
-ms.date: 03/28/2025
-ms.custom: bap-template
----
 
 # Manage Customer Intent Agent (preview)
 

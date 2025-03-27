@@ -10,7 +10,7 @@ ms.date: 03/28/2025
 ms.custom: bap-template
 ---
 
-# Configure intent-based suggestions for Copilot agents
+# Configure intent-based suggestions for Copilot agents (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 

@@ -103,7 +103,7 @@ This section lists the output variables from Customer Intent Agent that provide 
 
 ## Variables in the Intent-based suggestions - Configuration topic
 
-The Intent-based suggestions - Configuration is a noncustomizable topic that contains a list of variables that can be overwritten to provide the desired behavior. Here's a list of variables in the topic. 
+The **Intent-based suggestions - Configuration** is a non-customizable topic that contains a list of variables that can be overwritten to provide the desired behavior. Here's a list of variables in the topic. 
 
 |Variable  |Default |Description  |
 |---------|---------|---------|

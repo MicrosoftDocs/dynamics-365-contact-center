@@ -73,7 +73,7 @@ You can switch to Copilot author authentication if users connecting to Copilot S
 
 ## Connect to intent-based suggestions 
 
-To use customer intent agent, you need to connect your Copilot agent to a knowledge source. Learn more in [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot).
+To use Customer Intent Agent, you need to connect your Copilot agent to a knowledge source. Learn more in [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot).
 
 1. In your existing topic flow, where you want to use Customer Intent Agent, add a node for **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**. For other scenarios, we recommend adding this node to the **Conversational boosting** system topic that triggers off Unknown topic.
 1. To add behavior after intent determination and interview completes, select **Add a condition**, and set it to **IntentInterviewComplete is equal to true, And IntentInterviewIncomplete is equal to true**.

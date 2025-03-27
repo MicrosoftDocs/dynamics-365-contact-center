@@ -28,12 +28,15 @@ To use intent-based suggestions, you need the following features enabled by your
   
 ## Use intent-based suggestions
 
-You can do these actions in **Intent-based suggestions (preview)**:
+You can do the following actions in **Intent-based suggestions (preview)**:
 
-- View the intent identified by the agent. The agent tries to map the conversation context to a specific intent or a general intent group based on your organization's data. You see one of the following suggestions:
+-  View the intent identified by the agent. The agent tries to map the conversation context to a specific intent or a general intent group based on your organization's data. You see one of the following suggestions:
+   - "Looking for suggestions", when the agent is mapping the context to an intent.
    - The intent as the issue and relevant questions that you need to ask to resolve the issue.
-   - The intent as the issue along with further questions to clarify the issue.
+   - The intent group as the issue along with further questions to clarify the issue.
    - Nothing, if the agent can't map the context to any known intent.
+> [!NOTE]
+> When there are no active conversations, the agent displays the "Suggestions unavailable" message on the card.
 - Select **Tab** to populate the current question in your chat text box. You can send the question as-is or edit the text before you send it to the customer. 
 - Optionally, you can hover over any question and then select the **Send to conversation** icon to fill the chat text box with that question. 
 - View a visual indicator against each question the customer answers. The customer's responses also appear with the question. If the customer answers the question, the agent marks it as answered and moves on to the next question. 
@@ -44,7 +47,5 @@ You can do these actions in **Intent-based suggestions (preview)**:
 If the customer's intent changes during a conversation, the agent detects the change and updates the suggestions based on the current intent. The agent also saves previous intents and suggested questions along with the conversation history. This way, if you transfer the conversation to another service representative, they can view historical intents and suggested questions.
 - Select **thumbs-down button** if the agent incorrectly identified the issue. It stops showing that issue and disables the suggested questions.
 
+ :::image type="content" source="../media/intent-mgmt-agent-experience-mini.png" alt-text="Screenshot of the structured settings for conversation summary" lightbox="../media/intent-mgmt-agent-experience.png":::|
 
-
-
-:::image type="content" source="../media/intent-mgmt-agent-experience-mini.png" alt-text="Screenshot of the structured settings for conversation summary" lightbox="../media/intent-mgmt-agent-experience.png":::|

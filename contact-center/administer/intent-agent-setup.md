@@ -45,7 +45,7 @@ You can configure Customer Intent Agent with Copilot agents to provide updated s
 1. Select **Enable for chatbots** and then select **Manage**. The **Bots** page appears.
 1. Select the agent connected to your omnichannel environment for agent transfers.
 1. Select **Add intent-based features** that takes you to **Manage component collections (preview)** in Microsoft Copilot Studio.
-1.	In **Manage component collections (preview)**, search and select **Intent-based suggestions (preview)**.
+1.	In **Manage component collections (preview)**, search for and select **Intent-based suggestions (preview)**.
 1.	Select **Add agent**. 
     You can also disconnect a Copilot agent to stop agent transfers for that Copilot agent by selecting **Remove from agent**.
 

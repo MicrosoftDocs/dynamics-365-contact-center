@@ -1,13 +1,17 @@
 ---
-title: Manage Customer Intent Agent (preview)
-description: 
+title: Manage Customer Intent Agent (Preview)
+description: Learn how to manage Customer Intent Agent in Dynamics 365. Enable intent discovery, manage intent groups, and improve customer service efficiency.
 author: neeranelli
 ms.author: nenellim
-ms.reviewer: 
+ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.date: 03/28/2025
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:03/25/2025
 ---
 
 # Manage Customer Intent Agent (preview)
@@ -16,7 +20,7 @@ ms.custom: bap-template
 
 Customer Intent Agent uses generative AI to autonomously discover ongoing intents from your customer service instance, analyzing past interactions to create an intent library that enhances dynamic conversations. The service representatives use the information to quickly understand customer needs, guide conversations with follow-up questions, and provide tailored solutions in real time.
 
-Copilot presents a curated list of questions and suggested solutions in the chat response box, which enhances efficiency by reducing manual typing. For self-service, Copilot generates relevant follow-up questions and uses the information to query the knowledge source, leading to higher deflection rates and allowing representatives to focus on cases that require manual intervention.
+Copilot presents a curated list of questions and suggested solutions in the chat response box, which enhances efficiency by reducing manual typing. For self-service, Copilot generates relevant follow-up questions and uses the information to query the knowledge source, leading to higher deflection rates and allowing representatives to focus on cases that require manual intervention.  
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

@@ -83,7 +83,7 @@ To use Customer Intent Agent, you need to connect your Copilot agent to a knowle
 
 ## Connect to CRM knowledge articles
 
-Connect the knowledge articles in your CRM instance to your Copilot agent. Learn more in [Integrate knowledge management in Dynamics 365 with Copilot agents](/dynamics365/customer-service/administer/integrate-km-with-pva).
+Connect the knowledge articles in your Dynamics 365 instance to your Copilot agent. Learn more in [Integrate knowledge management in Dynamics 365 with Copilot agents](/dynamics365/customer-service/administer/integrate-km-with-pva).
 
 Make sure that you add the new flow that you created called **Generate answer from Dataverse knowledge articles for Power Virtual Agent** to the Handoff topic instead of using generative answer. 
 

@@ -63,7 +63,7 @@ You must add connection references for every new organization. Learn more in [Ad
 
 ## End-user authentication
 
-By default, users must be authenticated to access Microsoft Dataverse instance to be able to connect to the intent library and get intent response. 
+By default, users must be authenticated to access the Microsoft Dataverse instance to be able to connect to the intent library and get intent response. 
 
 You can switch to Copilot author authentication if users connecting to Copilot Studio don't have access to the underlying Dataverse instance.
 

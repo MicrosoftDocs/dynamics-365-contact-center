@@ -48,7 +48,6 @@ You can configure Copilot agents with Customer Intent Agent to provide updated s
 1.	In **Manage component collections (preview)**, search for and select **Intent-based suggestions (preview)**.
 1.	Select **Add agent**. 
     You can also disconnect a Copilot agent to stop agent transfers for that Copilot agent by selecting **Remove from agent**.
-
 1. Select **Publish**. Once added, you see a series of Intent-based suggestions topics added to your agent.
 
 ## Add connection references
@@ -59,7 +58,7 @@ You must add connection references for every new organization. Learn more in [Ad
 1. Go to **Solutions** > **Default Solution** > **Objects** > **Connection References**.
 1. Search for the **IA.Cr.IAPluginDVConnector** connection reference.
 1. Create a connection to **Microsoft Dataverse**. 
-1. [Publish the agent](/microsoft-copilot-studio/publication-fundamentals-publish-channels?tabs=web).
+1. Go to Microsoft Copilot Studio and [publish the agent](/microsoft-copilot-studio/publication-fundamentals-publish-channels?tabs=web).
 
 ## End-user authentication
 
@@ -75,13 +74,13 @@ You can switch to Copilot author authentication if users connecting to Copilot S
 
 To use Customer Intent Agent, you need to connect your Copilot agent to a knowledge source. Learn more in [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot).
 
-1. In your existing topic flow, where you want to use Customer Intent Agent, add the following node: **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**. For other scenarios, we recommend adding this node to the **Conversational boosting** system topic that triggers the Unknown topic.
-1. To add behavior after intent determination and interview completes, select **Add a condition**, and set it to **IntentInterviewComplete is equal to true, And IntentInterviewIncomplete is equal to true**.
-1. If there isn't any such node, add a node under the condition in step 2, and then go to **Advanced** > **Create generative answers** and select **SolutionQuery** for Input. Adding a SolutionQuery helps generate information from the determined intent and answered questions to search knowledge sources for a solution response.
+1. In your existing topic flow, where you want to use Customer Intent Agent, add the following node: **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**. For a default agent, we recommend you to add the node to the **Conversational boosting** system topic that triggers the **Unknown** topic.
+1. To add behavior after intent determination and interview completes, select **Add a condition**, and set it to **Global.IntentInterviewComplete is equal to true**,  **Or** **Global.IntentInterviewIncomplete is equal to true**.
+1. If there isn't an output variable node, add a node under the **Condition** in step 2, and then go to **Advanced** > **Create generative answers** and select **SolutionQuery** for Input. Adding a **SolutionQuery** helps generate information from the determined intent and answered questions to search knowledge sources for a solution response.
 1. Add another node as **Topic management** > **Go to another topic** > **End of Conversation** to add logic to complete the conversation flow after providing an answer.
 1. Under **All other conditions**, add a node for **Topic management** > **Transfer conversation** to ensure that when an intent isn't detected, the conversation is escalated to a support representative.
 
-## Connect to CRM knowledge articles
+## Connect to your knowledge base
 
 Connect the knowledge articles in your Dynamics 365 instance to your Copilot agent. Learn more in [Integrate knowledge management in Dynamics 365 with Copilot agents](/dynamics365/customer-service/administer/integrate-km-with-pva).
 

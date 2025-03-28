@@ -57,6 +57,9 @@ With survey agents, you can:
 1. Select **Save survey**. The **Survey Created** page displays the summary and link to the survey where it's hosted. The application creates a survey agent with the same name as the survey and is hosted at the same link.
 1. Select **Close**. The survey is listed on the **Customer feedback (preview)** page and its status displays as **In Progress**.
 
+>[!NOTE] 	When performing a copy of an organization, please note that survey bots from the source environment will not be functional in the target environment. To ensure proper functionality, create new survey bots in the target environment. For more information, visit Configure feedback surveys using Copilot Studio (preview) | Microsoft Learn
+[image](https://github.com/user-attachments/assets/f5661c50-72f1-450c-baec-78df3c855b9f)
+
 ### Complete the configuration in Copilot Studio
 
 After you create the survey in the admin center, it needs to be published. If you're creating the survey for the first time using Copilot Studio, the Dataverse connection must be set up before you publish the survey.
@@ -101,6 +104,8 @@ If you would like to add an additional question and store the data in Dataverse,
 
 > [!NOTE]
 > We recommend that you don't delete the survey agent from Copilot Studio.
+
+
 
 ### Set up custom hosting
 

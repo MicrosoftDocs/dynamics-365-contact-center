@@ -54,7 +54,7 @@ When a service representative accepts a live chat or persistent chat conversatio
 
 When the agent can map the context to a general intent group but not a specific intent, the service representative sees only the high level intent and a follow-up question to clarify the intent. 
 
-   For example, the agent maps the customer's issue to the intent group "Coffee machine issues". To narrow down the intent, it suggests a question that you can ask the customer for more information, such as "What kind of coffee machine issue do you have?"
+For example, the agent maps the customer's issue to the intent group "Coffee machine issues". To narrow down the intent, it suggests a question that you can ask the customer for more information, such as "What kind of coffee machine issue do you have?"
 
 If the agent can't map the context to any known intent group or intent, it shows nothing.
 

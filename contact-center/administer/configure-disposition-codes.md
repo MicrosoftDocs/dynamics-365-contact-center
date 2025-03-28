@@ -28,4 +28,4 @@ Perform the following steps to enable disposition codes for voice and chat chann
 
 ## Runtime experience
 
-When you enable disposition codes, service representatives can't close a session without selecting a disposition code. The disposition code is recorded in the conversation transcript and can be used for reporting and analysis. Learn more in [Disposition codes](/customer-service/use/oc-customer-summary#disposition-codes).
+When you enable disposition codes, service representatives can't close a session without selecting a disposition code. The disposition code is recorded in the conversation transcript and can be used for reporting and analysis. Learn more in [Disposition codes](/customer-service/use/oc-customer-summary#set-disposition-codes).

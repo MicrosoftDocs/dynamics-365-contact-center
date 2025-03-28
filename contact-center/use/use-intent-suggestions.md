@@ -35,15 +35,15 @@ You can do the following actions in **Intent-based suggestions (preview)**:
    - The intent as the issue and relevant questions that you need to ask to resolve the issue.
    - The intent group as the issue along with further questions to clarify the issue.
    - Nothing, if the agent can't map the context to any known intent.
-> [!NOTE]
-> When there are no active conversations, the agent displays the "Suggestions unavailable" message on the card.
+   > [!NOTE]
+   > When active conversations aren't there, the agent displays the "Suggestions unavailable" message on the card.
 - Select **Tab** to populate the current question in your chat text box. You can send the question as-is or edit the text before you send it to the customer. 
-- Optionally, you can hover over any question and then select the **Send to conversation** icon to fill the chat text box with that question. 
+- Optionally, you can hover over any question and then select **Send to conversation** to fill the chat text box with the question. 
 - View a visual indicator against each question the customer answers. The customer's responses also appear with the question. If the customer answers the question, the agent marks it as answered and moves on to the next question. 
- > [!NOTE]
- > If the customer answers a question before the agent suggests a question, the agent recognizes that the question is answered and moves on to the next question.
-- Select **Request Solution** after you have all the information required to resolve the issue. The agent retrieves information from your organization's knowledge base and shows it in **Ask a question**, only if there's no existing ongoing conversation in that pane.
-- Expand **Intent-based suggestions (preview)** header to see all the historical intents identified for a conversation. Select a historical intent to view the suggested questions and the customer's response.  
+  > [!NOTE]
+  > If the customer answers a question before the agent suggests a question, the agent recognizes that the question is answered and moves on to the next question.
+- Select **Request Solution** after you have all the information required to resolve the issue. The agent retrieves information from your organization's knowledge base and shows it in **Ask a question**, only when there's no existing ongoing conversation in the pane.
+- Expand the **Intent-based suggestions (preview)** header to see all the historical intents identified for a conversation. Select a historical intent to view the suggested questions and the customer's response.  
 If the customer's intent changes during a conversation, the agent detects the change and updates the suggestions based on the current intent. The agent also saves previous intents and suggested questions along with the conversation history. This way, if you transfer the conversation to another service representative, they can view historical intents and suggested questions.
 - Select **thumbs-down button** if the agent incorrectly identified the issue. It stops showing that issue and disables the suggested questions.
 

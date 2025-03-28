@@ -20,7 +20,7 @@ Intent-based suggestions help customer service representatives (service represen
 
 ## Prerequisites
 
-- Customer Intent Agent is enabled. Learn more in [Manage Customer Intent Agent](manage-customer-intent-agent.md)
+- Customer Intent Agent is enabled. Learn more in [Manage Customer Intent Agent](manage-customer-intent-agent.md).
 - The Ask-a-question feature in Copilot help pane is enabled. Learn more in [Enable Copilot assist features](copilot-enable-help-pane.md).
 
 

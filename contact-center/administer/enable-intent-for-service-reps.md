@@ -45,7 +45,7 @@ When a service representative accepts a live chat or persistent chat conversatio
 
  The intent agent maps the context of the conversation to a specific intent, a general intent group and displays the relevant intent attributes as questions. The service representative can use these questions to get the necessary information from the customer to resolve the issue.
    
-  For example, the agent maps the customer's issue to the intent "Returning Contoso CX300 coffee machine". This intent has these intent attributes:
+  For example, the agent maps the customer's issue to the intent "Returning Contoso CX300 coffee machine". This intent has the following intent attributes:
     -	Date of purchase
     -	Order number
     -	Return reason

@@ -14,9 +14,9 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-[!INCLUDE [cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
-
 Customer Intent Agent discovers intent from historical data and maintains an up-to-date intent library, along with the attributes to support intent determination, interview, and fulfillment, leading to higher deflection rates.
+
+[!INCLUDE [cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 Customer Intent Agent uses the determined intent and interview responses to improve the quality of generated answers for both Copilot agents and customer service representatives (service representatives or representatives).
 
@@ -26,7 +26,7 @@ You can configure Copilot agents with Customer Intent Agent to provide updated s
 
 ## Prerequisites
 
-- [**Customer Intent Agent (preview)** is enabled](manage-customer-intent-agent.md#enable-customer-intent-agent).
+- [Customer Intent Agent is enabled](manage-customer-intent-agent.md#enable-customer-intent-agent).
 - [Intent discovery is set up and there are intents in the intent library](manage-customer-intent-agent.md#manage-intent-discovery-setup).
 - Your Copilot agent is connected to knowledge sources and a workstream in omnichannel.
 - Makers have the **Environment Maker** role.
@@ -131,4 +131,4 @@ Customer Intent Agents might receive periodic updates, that update the correspon
 
 [Create a copilot](/microsoft-copilot-studio/authoring-first-bot?tabs=web#create-a-copilot)  
 [Add knowledge to a copilot](/microsoft-copilot-studio/knowledge-add-existing-copilot)  
-[Global variables](/microsoft-copilot-studio/authoring-variables-bot?tabs=webApp)
+[Global variables](/microsoft-copilot-studio/authoring-variables-bot?tabs=webApp)  

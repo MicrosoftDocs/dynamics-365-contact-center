@@ -267,7 +267,9 @@
         - name: Configure pre-conversation surveys
           href: /dynamics365/customer-service/administer/configure-pre-chat-survey?context=/dynamics365/contact-center/context/administer-context
         - name: Manage enhanced Active Conversation settings
-          href: active-enh-conv-settings.md          
+          href: active-enh-conv-settings.md    
+        - name: Configure disposition codes
+          href: configure-disposition-codes.md        
         - name: Set up visitor location detection
           href: /dynamics365/customer-service/administer/geo-location-provider?context=/dynamics365/contact-center/context/administer-context
         - name: Configure self-service settings for customer actions

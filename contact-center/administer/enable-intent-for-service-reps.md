@@ -43,7 +43,7 @@ To add the Copilot features to an experience profile, follow these steps:
 
 When a service representative accepts a live chat or persistent chat conversation, the **Intent-based suggestions (preview)** card appears in the **Ask a question** tab of Copilot help pane.
 
- The intent agent maps the context of the conversation to a specific intent or general intent group and displays the relevant intent attributes as questions. The service representative can use these questions to get the necessary information from the customer to resolve the issue.
+ The intent agent maps the context of the conversation to a specific intent and displays the relevant intent attributes as questions. The service representative can use these questions to get the necessary information from the customer to resolve the issue.
    
   For example, the agent maps the customer's issue to the intent "Returning Contoso CX300 coffee machine". This intent has the following intent attributes:
     -	Date of purchase

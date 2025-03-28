@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Intent-based suggestions help customer service representatives (service representatives or representatives) resolve live chat and persistent chat issues faster and more accurately. For service representatives to use this feature, you need to enable **Intent-based suggestions (preview)** in agent experience profiles. By default, representatives added to the out-of-the-box agent experience profiles can use the intent-based suggestions.
+Intent-based suggestions help customer service representatives (service representatives or representatives) resolve live chat and persistent chat issues faster and more accurately. For service representatives to use this feature, you need to enable **Intent-based suggestions (preview)** in experience profiles. By default, representatives added to the out-of-the-box  experience profiles can use the intent-based suggestions.
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -26,14 +26,14 @@ Intent-based suggestions help customer service representatives (service represen
 
 ## Enable intent-based suggestions for service representatives
 
-You can create a [custom agent experience profile](/dynamics365/customer-service/administer/create-agent-experience-profile) and enable the required features to limit the features representatives can use. You can then assign the custom profile to the representatives. Learn more in [Add users to agent experience profiles](/dynamics365/customer-service/administer/add-profile-default).
+You can create a [custom experience profile](/dynamics365/customer-service/administer/create-agent-experience-profile) and enable the required features to limit the features representatives can use. You can then assign the custom profile to the representatives. Learn more in [Add users to experience profiles](/dynamics365/customer-service/administer/add-profile-default).
 
-To add the Copilot features to an agent experience profile, follow these steps:
+To add the Copilot features to an experience profile, follow these steps:
 
-1. Go to agent experience profiles using one of the following navigation options:
+1. Go to experience profiles using one of the following navigation options:
    - **Agent experience** > **Workspaces**
    - **Customer support**>**Intent** > **Customer Intent Agent (preview)** > **Enable for support representatives**
-1. Select the required agent experience profile.
+1. Select the required experience profile.
 1. In **Productivity pane**, select **Edit** and then turn on the **Copilot help pane** toggle.
 1. In **Copilot AI features** select **Edit** and then select the following for the representatives to be able to view intent-based suggestions:
      1. **Ask a question**

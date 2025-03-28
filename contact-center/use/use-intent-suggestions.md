@@ -49,3 +49,6 @@ If the customer's intent changes during a conversation, the agent detects the ch
 
    :::image type="content" source="../media/intent-mgmt-agent-experience-mini.png" alt-text="Screenshot of the structured settings for conversation summary" lightbox="../media/intent-mgmt-agent-experience.png":::|
 
+## Related information
+
+[Enable intent-based suggestions for service representatives (preview)](../administer/enable-intent-for-service-reps.md)

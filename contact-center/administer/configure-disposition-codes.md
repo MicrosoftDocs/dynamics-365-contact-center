@@ -10,7 +10,7 @@ ms.reviewer: mgandham
 
 # Configure disposition codes
 
-[!INCLUDE[cc-feature-availability-embedded-yes](../../includes/cc-feature-availability-embedded-yes.md)]
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
 Disposition codes help you categorize and record the outcome of each customer interaction with the customer service representative(service representatives or representatives) in a contact center, enabling you to assess and improve customer interactions.
 

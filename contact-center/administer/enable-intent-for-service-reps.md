@@ -52,7 +52,7 @@ When a service representative accepts a live chat or persistent chat conversatio
 
  Service representatives can use the questions that the agent suggests for these attributes, such as "When did you buy the coffee machine?" and "What is your order number?" to get the necessary information from the customer.
 
-When the agent can map the context to a general intent group but not a specific intent, the service representative sees only the high level intent and a follow-up question to clarify the intent. 
+When the agent maps the context to a general intent group but not a specific intent, the service representative sees only the high level intent and a follow-up question to clarify the intent. 
 
 For example, the agent maps the customer's issue to the intent group "Coffee machine issues". To narrow down the intent, it suggests a question that the representative can ask the customer for more information, such as "What kind of coffee machine issue do you have?"
 

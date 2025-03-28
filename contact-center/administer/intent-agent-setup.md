@@ -94,7 +94,7 @@ This section lists the output variables from Customer Intent Agent that provide 
 |Variable  |Scenario |
 |---------|---------|
 |Global.IntentInterviewComplete    |  If set to true, ensures that the intent is determined and all the interview questions were answered.       |
-|Global.IntentInterviewIncomplete    |   If set to true, indicates that the intent is determined but not all interview questions were answered. You can still query knowledge based on incomplete information gathered, but you might choose a different behavior.  |
+|Global.IntentInterviewIncomplete    |   If set to true, indicates that the intent is determined but not all interview questions were answered. You can still query knowledge based on the information gathered, but you might choose a different behavior.  |
 |Global.IntentUndetected     |    If set to true, indicates that a known intent from the intent library wasn't detected, or was detected but rejected by the customer. |
 |Global.IntentShifted     |   If set to true, indicates that the customer's intent shifted but AllowIntentShift is set to false.     |
 |Global.IntentError    |     If set to true, indicates that there was an error in detecting intent. The issue could be transitory like a time-out, but if it's consistent, we recommend that you disable intent-based suggestions and contact support. | 

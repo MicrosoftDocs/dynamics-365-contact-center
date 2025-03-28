@@ -26,7 +26,7 @@ Intent-based suggestions help customer service representatives (service represen
 
 ## Enable intent-based suggestions for service representatives
 
-You can create a [custom experience profile](/dynamics365/customer-service/administer/create-agent-experience-profile) and enable the required features to limit the features representatives can use. You can then assign the custom profile to the representatives. Learn more in [Add users to experience profiles](/dynamics365/customer-service/administer/add-profile-default).
+You can create a [custom experience profile](/dynamics365/customer-service/administer/create-agent-experience-profile) and enable the required features that representatives can use. You can then assign the custom profile to the representatives. Learn more in [Add users to experience profiles](/dynamics365/customer-service/administer/add-profile-default).
 
 To add the Copilot features to an experience profile, follow these steps:
 
@@ -43,7 +43,7 @@ To add the Copilot features to an experience profile, follow these steps:
 
 When a service representative accepts a live chat or persistent chat conversation, the **Intent-based suggestions (preview)** card appears in the **Ask a question** tab of Copilot help pane.
 
- The intent agent maps the context of the conversation to a specific intent, a general intent group and displays the relevant intent attributes as questions. The service representative can use these questions to get the necessary information from the customer to resolve the issue.
+ The intent agent maps the context of the conversation to a specific intent or general intent group and displays the relevant intent attributes as questions. The service representative can use these questions to get the necessary information from the customer to resolve the issue.
    
   For example, the agent maps the customer's issue to the intent "Returning Contoso CX300 coffee machine". This intent has the following intent attributes:
     -	Date of purchase
@@ -54,7 +54,7 @@ When a service representative accepts a live chat or persistent chat conversatio
 
 When the agent can map the context to a general intent group but not a specific intent, the service representative sees only the high level intent and a follow-up question to clarify the intent. 
 
-For example, the agent maps the customer's issue to the intent group "Coffee machine issues". To narrow down the intent, it suggests a question that you can ask the customer for more information, such as "What kind of coffee machine issue do you have?"
+For example, the agent maps the customer's issue to the intent group "Coffee machine issues". To narrow down the intent, it suggests a question that the representative can ask the customer for more information, such as "What kind of coffee machine issue do you have?"
 
 If the agent can't map the context to any known intent group or intent, it shows nothing.
 

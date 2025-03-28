@@ -20,11 +20,11 @@ ms.custom:
 
 Customer Intent Agent uses generative AI to autonomously discover intents from your customer service instance, analyzing past interactions to create an intent library that enhances dynamic conversations. The customer service representatives (service representatives or representatives) use the information to quickly understand customer needs, guide conversations with follow-up questions, and provide tailored solutions in real time.
 
-Copilot presents a curated list of questions and suggested solutions in the chat response box, which enhances efficiency by reducing manual typing. For self-service, Copilot generates relevant follow-up questions and uses the information to query the knowledge source, leading to higher deflection rates and allowing representatives to focus on cases that require manual intervention.  
+The AI agent presents a curated list of questions and suggested solutions in the chat response box, which enhances efficiency by reducing manual typing. For self-service, the agent generates relevant follow-up questions and uses the information to query the knowledge source, leading to higher deflection rates and allowing representatives to focus on cases that require manual intervention.  
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-Use the information in this article to manage the intents in Contact Center admin center or Customer Service admin center in your Dynamics 365 instance.
+Use the information in this article to manage the intents in Contact Center admin center or Customer Service admin center.
 
 ## Enable Customer Intent Agent
 
@@ -35,7 +35,7 @@ Use the information in this article to manage the intents in Contact Center admi
 
 You can enable Customer Intent Agent to analyze past conversations within the Customer Service instance to discover new intents to add into the intent library. After you set it up, the first run of intent discovery analyzes historical data for up to two months. After that, the intent discovery runs daily.
 
-You need to run the AI model on data sources like cases and conversations to identify intent groups and related intents.
+You need to run the AI model on data sources like conversations to identify intent groups and related intents.
 
 1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage intent discovery setup**.
 1. On the **Manage intent discovery setup** page, select **Add intent discovery setting**.
@@ -56,13 +56,13 @@ After the first run of the intent discovery, the intent groups are listed on the
 
 ## Manage intent groups
 
-You can logically organize the intents into intent groups. The intent group represents the business expertise that's needed to solve the intents belonging to the group. The intent groups that the AI model identifies are displayed on the **All intent groups** page. You can manage the intent groups by reviewing, approving, or editing the intents in them.
+You can logically organize the intents into intent groups. The intent group represents the business expertise that's needed to solve the intents belonging to the group. The intent groups that the AI model identifies are displayed on the **All intent groups** page. You can manage the intent groups by reviewing, approving, or updating the intents in them.
 
 1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage intent groups and intents**. The **All intent groups** page displays the list of intents that the AI model discovered. If you create a custom intent group, the intent source shows as **Admin edited**. The **Intents** column displays the number of intents in each intent group.
     
    :::image type="content" source="../media/list-of-intent-groups.png" alt-text="Screenshot of intent groups list.":::
 
-1. Select an intent group to edit its intents. The `<intent_group_name>` page displays the details, such as review status and the list of intents in the group.
+1. Select an intent group to manage its intents. The `<intent_group_name>` page displays the details, such as review status and the list of intents in the group.
 
    :::image type="content" source="../media/manage-intents.png" alt-text="Screenshot of manage intents in intent group.":::
 

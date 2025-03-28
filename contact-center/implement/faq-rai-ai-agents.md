@@ -27,7 +27,7 @@ AI Agents are intelligent tools designed to enhance customer service efficiency 
 
 ### Customer Intent Agent
 
-The Customer Intent Agent uses generative AI to autonomously discover ongoing customer intents by analyzing past interactions in your customer relationship management (CRM) system. It builds an intent library to:
+The Customer Intent Agent uses generative AI to autonomously discover customer intents by analyzing past interactions in your customer relationship management (CRM) system. It builds an intent library to:
 
 - **Improve dynamic conversations**: Service representatives quickly understand customer needs, guide interactions with relevant follow-up questions, and offer real-time tailored solutions.
 
@@ -41,7 +41,7 @@ The Customer Knowledge Management Agent helps create and manage customer knowled
 
 - **Analyzes case details and related information**: Includes notes, conversations, and emails to draft a knowledge article.
 
-- **Fills knowledge gaps**: Identifies whether the new article is necessary by comparing the case against the existing Dynamics 365 knowledge base, making sure that no duplication exists.
+- **Fills knowledge gaps**: Identifies whether the new article is necessary by comparing the case against the existing Dynamics 365 knowledge base, avoiding duplicates.
 
 - **Ensures compliance**: Sensitive data is scrubbed automatically, and organizations can extend compliance checks with custom automation.
 

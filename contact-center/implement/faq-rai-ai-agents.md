@@ -70,7 +70,7 @@ These AI agents are designed to:
 
 ## How is AI Agent evaluated? What metrics are used to measure performance?
 
-Performance is evaluated using Microsoft's internal support data and through ongoing pilots within Microsoft Customer Service and Support (CSS). The Customer Intent Agent is assessed based on the accuracy of extracted intents against manually identified ground truth derived from internal support data. Similarly, the Knowledge Management Agent is evaluated for the quality and relevance of its generated knowledge articles, to make sure that they align with the established ground truth and avoid duplication. The Case Management Agent is evaluated for the quality and relevance of its predictions of the values of the configured fields, generated from the specified context sources. 
+Performance is evaluated using Microsoft's internal support data and through ongoing pilots within Microsoft Customer Service and Support (CSS). The Customer Intent Agent is assessed based on the accuracy of extracted intents against manually identified ground truth derived from internal support data. Similarly, the Knowledge Management Agent is evaluated for the quality and relevance of its generated knowledge articles, to make sure that they align with the established ground truth and avoid duplication. The Case Management Agent is evaluated based on the quality and relevance of its predictions for the configured fields, generated from the specified context sources.
 
 Additionally, evaluation datasets are run to assess performance against potential personally identifiable information (PII) leaks, reflecting Microsoft's commitment to protecting customer privacy. Privacy and compliance is a critical focus of these evaluations.
 

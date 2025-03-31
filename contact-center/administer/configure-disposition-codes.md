@@ -12,7 +12,7 @@ ms.reviewer: mgandham
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-Disposition codes help you categorize and record the outcome of each customer interaction with the customer service representative(service representatives or representatives) in a contact center, enabling you to assess and improve customer interactions.
+Disposition codes allow you to categorize and record the outcome of the customer's interaction with the customer service representative(service representatives or representatives), helping you to assess and improve customer interactions.
 
 Perform the following steps to enable disposition codes for voice and chat channels:
 
@@ -22,9 +22,9 @@ Perform the following steps to enable disposition codes for voice and chat chann
 1. In the **New Disposition Code** textbox, specify a name for the disposition code, and then select **Add**.
    The disposition code is added to the list of disposition codes. You can add more disposition codes by repeating the previous step.
 1. Select a disposition code from the list, and then select **Delete** to remove the disposition code.
-> [!NOTE]
-> Id you delete a disposition code that is associated with a conversation, the conversation will still have the disposition code. 
-1. Select **Save**.
+  > [!NOTE]
+  > Even if you delete a disposition code that is associated with a conversation, the conversation still displays the disposition code. 
+6. Select **Save**.
 
 ## Runtime experience
 

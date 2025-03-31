@@ -1,7 +1,7 @@
 ---
 title: Configure disposition codes
-description: Learn how to configure disposition codes for voice and chat channels.
-ms.date: 03/28/2025
+description: Learn how to configure disposition codes for voice and messaging channels.
+ms.date: 03/31/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -12,9 +12,9 @@ ms.reviewer: mgandham
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-Disposition codes allow you to categorize and record the outcome of the customer's interaction with the customer service representative(service representatives or representatives), helping you to assess and improve customer interactions.
+Disposition codes allow you to categorize and record the outcome of the customers interaction with the customer service representative (service representatives or representatives), helping you to assess and improve customer interactions.
 
-Perform the following steps to enable disposition codes for voice and chat channels:
+## Enable disposition codes 
 
 1. In the Customer Service admin center or Contact Center admin center, select **Customer settings** in **Customer support**.
 1. In the **Customer settings** page, select **Manage** for **Disposition code**.
@@ -29,3 +29,8 @@ Perform the following steps to enable disposition codes for voice and chat chann
 ## Runtime experience
 
 When you enable disposition codes, service representatives can't close a session without selecting a disposition code. The disposition code is recorded in the conversation transcript and can be used for reporting and analysis. Learn more in [Disposition codes](/customer-service/use/oc-customer-summary#set-disposition-codes).
+
+## Related information
+
+[View customer information on Active Conversation form](/customer-service/use/oc-customer-summary)   
+[Manage sessions in the workspace app](/customer-service/use/oc-manage-sessions)

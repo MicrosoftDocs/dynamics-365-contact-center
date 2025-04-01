@@ -28,6 +28,9 @@ With survey agents, you can:
 - Use predefined templates to create surveys.
 - Allow supervisors to view and review feedback summarized into actionable insights.
 
+> [!NOTE]
+> When you copy an environment, while the survey agents are copied, they won't work as expected in the target environment. We recommend that you create new survey agents in the target environment.
+
 ## How it works
 
 1. Create a survey agent in Contact Center admin center or Customer Service admin center.
@@ -56,9 +59,6 @@ With survey agents, you can:
 1. Select **Next**, and on the page that appears, review your choices.
 1. Select **Save survey**. The **Survey Created** page displays the summary and link to the survey where it's hosted. The application creates a survey agent with the same name as the survey and is hosted at the same link.
 1. Select **Close**. The survey is listed on the **Customer feedback (preview)** page and its status displays as **In Progress**.
-
->[!NOTE] 	When performing a copy of an organization, please note that survey bots from the source environment will not be functional in the target environment. To ensure proper functionality, create new survey bots in the target environment. For more information, visit Configure feedback surveys using Copilot Studio (preview) | Microsoft Learn
-[image](https://github.com/user-attachments/assets/f5661c50-72f1-450c-baec-78df3c855b9f)
 
 ### Complete the configuration in Copilot Studio
 
@@ -104,8 +104,6 @@ If you would like to add an additional question and store the data in Dataverse,
 
 > [!NOTE]
 > We recommend that you don't delete the survey agent from Copilot Studio.
-
-
 
 ### Set up custom hosting
 
@@ -173,7 +171,8 @@ You can configure the system to send a survey through email after the service re
 Follow these steps to configure post-case resolution surveys in Contact Center admin center: 
 1. In the site map, under **Customer Support** > **Case settings**, select **Manage** for **Post case resolution survey (preview)**. The post case resolution surveys are triggered through Power Automate flows. The **Enable survey invite flow** dialog appears.
 1. Select **Turn on**. The Power Automate flows page opens on a new tab.
-1. Search for and enable the **Send a Microsoft Copilot Survey bot when a case is resolved in Dynamics 365** flow.
+   - Search for and enable the **Send a Microsoft Copilot Survey bot when a case is resolved in Dynamics 365** flow.
+   - Alternatively, you can enable the cloud flow in Power Apps > **Solutions** > **Default Solution** under **Unmanaged**, and search for **Send a Microsoft Copilot Survey bot when a case is resolved in Dynamics 365**.
 1. In **Post case resolution survey (preview)**, do the following actions:
    1. Turn on the **Enable case resolution survey** toggle. The **Microsoft Copilot Studio survey** and **Email template** areas appear.
    1. Select **Microsoft Copilot Studio survey**, and on the **Survey** pane that appears, select a survey in **Default survey**, and then save and close.

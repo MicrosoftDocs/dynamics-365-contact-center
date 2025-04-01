@@ -173,7 +173,7 @@ Follow these steps to configure post-case resolution surveys in Contact Center a
 1. Select **Turn on**. The Power Automate flows page opens on a new tab.
    - Search for and enable the **Send a Microsoft Copilot Survey bot when a case is resolved in Dynamics 365** flow.
    - Alternatively, you can enable the cloud flow in Power Apps > **Solutions** > **Default Solution** under **Unmanaged**, and search for **Send a Microsoft Copilot Survey bot when a case is resolved in Dynamics 365**.
-1. In **Post case resolution survey (preview)**, do the following actions:
+1. Go back to the admin center, and in **Post case resolution survey (preview)**, do the following actions:
    1. Turn on the **Enable case resolution survey** toggle. The **Microsoft Copilot Studio survey** and **Email template** areas appear.
    1. Select **Microsoft Copilot Studio survey**, and on the **Survey** pane that appears, select a survey in **Default survey**, and then save and close.
    1. The email template to send the survey link to customers is selected by default. You can create and set an email template of your choice. Learn more in [Create email templates](/power-apps/user/email-template-create?context=%2Fdynamics365%2Fcontext%2Fcustomer-service-context).

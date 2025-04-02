@@ -1,7 +1,7 @@
 ---
-title: Configure a WhatsApp channel through Azure Communication Services (preview)
+title: Configure a WhatsApp channel through Azure Communication Services 
 description: Use this article to learn how to configure the WhatsApp channel through Azure Communication Services.
-ms.date: 03/03/2025
+ms.date: 04/02/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -10,13 +10,10 @@ ms.collection:
 ms.custom: bap-template
 ---
 
-# Configure a WhatsApp channel through Azure Communication Services (preview)
+# Configure a WhatsApp channel through Azure Communication Services 
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-> [!IMPORTANT]
-> This is a preview feature.
-> Preview features aren’t meant for production use and might have restricted functionality.
 
 The success of social media customer service, like all other customer services, depends on the quality of customer care provided. Communications from customer service representatives should be timely, accurate, sensitive, brief, and friendly, which ultimately improves customer satisfaction and brand loyalty. To enhance customer satisfaction and improve communications, the omnichannel capability in the application enables you to send and receive WhatsApp messages using [Azure Communication Services](/azure/communication-services). You can use the WhatsApp channel feature to engage in conversations with customers for product inquiry and customer service scenarios with those who prefer to communicate using WhatsApp. 
 
@@ -76,7 +73,7 @@ You can create a WhatsApp channel in either the Contact Center admin center or t
 
 1. Select the data sharing consent message, and then select **Next**.
 
-1. In the **Provider** list, select **Azure Communication Services (Preview)**.
+1. In the **Provider** list, select **Azure Communication Services**.
 
 In the following instructions, you'll provide the information from the Azure portal in [the previous section](#get-azure-communication-services-details).
 

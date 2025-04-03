@@ -28,6 +28,9 @@ With survey agents, you can:
 - Use predefined templates to create surveys.
 - Allow supervisors to view and review feedback summarized into actionable insights.
 
+> [!NOTE]
+> When you copy an environment, while the survey agents are copied, they won't work as expected in the target environment. We recommend that you create new survey agents in the target environment.
+
 ## How it works
 
 1. Create a survey agent in Contact Center admin center or Customer Service admin center.
@@ -168,8 +171,9 @@ You can configure the system to send a survey through email after the service re
 Follow these steps to configure post-case resolution surveys in Contact Center admin center: 
 1. In the site map, under **Customer Support** > **Case settings**, select **Manage** for **Post case resolution survey (preview)**. The post case resolution surveys are triggered through Power Automate flows. The **Enable survey invite flow** dialog appears.
 1. Select **Turn on**. The Power Automate flows page opens on a new tab.
-1. Search for and enable the **Send a Microsoft Copilot Survey bot when a case is resolved in Dynamics 365** flow.
-1. In **Post case resolution survey (preview)**, do the following actions:
+   - Search for and enable the **Send a Microsoft Copilot Survey bot when a case is resolved in Dynamics 365** flow.
+   - Alternatively, you can enable the cloud flow in Power Apps > **Solutions** > **Default Solution** under **Unmanaged**, and search for **Send a Microsoft Copilot Survey bot when a case is resolved in Dynamics 365**.
+1. Go back to the admin center, and in **Post case resolution survey (preview)**, do the following actions:
    1. Turn on the **Enable case resolution survey** toggle. The **Microsoft Copilot Studio survey** and **Email template** areas appear.
    1. Select **Microsoft Copilot Studio survey**, and on the **Survey** pane that appears, select a survey in **Default survey**, and then save and close.
    1. The email template to send the survey link to customers is selected by default. You can create and set an email template of your choice. Learn more in [Create email templates](/power-apps/user/email-template-create?context=%2Fdynamics365%2Fcontext%2Fcustomer-service-context).

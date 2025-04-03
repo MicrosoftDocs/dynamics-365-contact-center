@@ -33,7 +33,7 @@ Use the information in this article to manage the intents in Copilot Service adm
 
 ## Manage lines of business
 
-A line of business can be a service, product, product category, or the way your company organizes and supports its business activities. It's used as a partition within a large enterprise that represents a specific set of intents and intent groups.
+A line of business can be a service, product, product category, or the way your company organizes and supports its business activities. It's used as a partition that represents a specific set of intents and intent groups in a large enterprise.
  
 ### Add line of business
 

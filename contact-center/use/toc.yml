@@ -72,7 +72,7 @@
           href: /dynamics365/customer-service/use/voice-channel-call-recordings-transcripts?context=/dynamics365/contact-center/context/use-context
         - name: Monitor voice calls
           href: /dynamics365/customer-service/use/voice-channel-monitor-calls?context=/dynamics365/contact-center/context/use-context
-      - name: Use autonomous agents
+      - name: Use autonomous agents (preview)
         items:
         - name: Overview of autonomous agents
           href: ../administer/autonomous-agents-overview.md

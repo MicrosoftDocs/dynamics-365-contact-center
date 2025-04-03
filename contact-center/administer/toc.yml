@@ -230,11 +230,11 @@
           href: /dynamics365/customer-service/administer/voice-channel-pricing-scenarios?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ about the voice channel
           href: /dynamics365/customer-service/administer/voice-channel-faqs?context=/dynamics365/contact-center/context/administer-context
-      - name: Autonomous agents
+      - name: Autonomous agents (preview)
         items:
         - name: Overview of autonomous agents
           href: autonomous-agents-overview.md
-        - name: Customer Intent Agent (preview)
+        - name: Customer Intent Agent 
           items:
           - name: Overview of Customer Intent Agent
             href: overview-customer-intent-agent.md

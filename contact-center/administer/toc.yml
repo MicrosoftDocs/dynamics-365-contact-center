@@ -525,7 +525,7 @@
         - name: Overview
           href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/administer-context
         - name: Responsible AI FAQ for AI Agents (Preview)
-          href: faq-rai-ai-agents.md
+          href: ../implement/faq-rai-ai-agents.md
         - name: Responsible AI FAQ for Copilot in Customer Service
           href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/administer-context
     - name: Implement Dynamics 365 Contact center

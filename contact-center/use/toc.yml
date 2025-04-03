@@ -72,8 +72,10 @@
           href: /dynamics365/customer-service/use/voice-channel-call-recordings-transcripts?context=/dynamics365/contact-center/context/use-context
         - name: Monitor voice calls
           href: /dynamics365/customer-service/use/voice-channel-monitor-calls?context=/dynamics365/contact-center/context/use-context
-      - name: Use intents
+      - name: Use autonomous agents
         items:
+        - name: Overview of autonomous agents
+          href: ../administer/autonomous-agents-overview.md
         - name: Use intent-based suggestions
           href: use-intent-suggestions.md
       - name: Use Copilot
@@ -310,6 +312,8 @@
       items:
       - name: Overview
         href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/use-context
+      - name: Responsible AI FAQ for AI Agents (Preview)
+        href: faq-rai-ai-agents.md
       - name: Responsible AI FAQ for Copilot in Customer Service
         href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/use-context
     - name: Resources

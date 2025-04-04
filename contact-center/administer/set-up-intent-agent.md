@@ -116,7 +116,7 @@ The **Intent-based suggestions - Configuration** is a non-customizable topic tha
 
 To override any of the variables for the intent-based suggestions:
 
-1. Go to the **System > Conversation start** topic.
+1. Go to the **System**  > **Conversation start** topic.
 1. Select **Add node (+)** and **Variable management** > **Set a variable value**.
 1. Select the variable that you want to change and update the value.
 1. Save and publish the agent.

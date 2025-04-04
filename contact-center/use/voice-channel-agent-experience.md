@@ -74,7 +74,7 @@ You can add notes to help your administrator review and block numbers. After you
 
 You can use the Microsoft Remote Desktop client to connect to the voice channel using Azure Virtual Desktop. You can learn more about the disconnection scenarios at [Agent experience when local machine disconnects from the Azure Virtual Desktop instance](../administer/configure-voice-avd.md)
 
-## How to avoid call disconnection
+## Avoid call disconnection
 
 Avoid the following actions to prevent call drops:
 

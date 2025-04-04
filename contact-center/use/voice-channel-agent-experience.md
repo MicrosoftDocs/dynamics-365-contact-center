@@ -1,7 +1,7 @@
 ---
 title: Use agent dashboard and call controls in the voice channel
 description: Learn how you can use the agent dashboard, call controls, and make and receive customer calls.
-ms.date: 10/30/2024
+ms.date: 04/04/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -74,13 +74,11 @@ You can add notes to help your administrator review and block numbers. After you
 
 You can use the Microsoft Remote Desktop client to connect to the voice channel using Azure Virtual Desktop. You can learn more about the disconnection scenarios at [Agent experience when local machine disconnects from the Azure Virtual Desktop instance](../administer/configure-voice-avd.md)
 
-## How to avoid call disconnection
+## Avoid call disconnection
 
 Avoid the following actions to prevent call drops:
 
-- Refresh your browser or select browser bookmark icons when you're in an active call. When you select refresh, and then select leave on the confirm refresh dialog, the page unloads and you're disconnected from the call. The customer hears hold music until you rejoin the call from the **My work items** section of **Omnichannel Agent Dashboard**. If you're disconnected from your browser for more than 90 seconds the call is reassigned to another agent in the queue. The call isn't reassigned if you reconnect within 90 seconds.
 - Open other apps that need access to the microphone. It results in loss of your audio connection, and the customer can't hear you.
-- Open the Customer Service workspace or Contact Center workspace app in more than one tab in the browser. It causes issues in agent presence.
 - Close the session directly to end call. If you do, the conversation moves from active to wrap up. Then if you close the session, the state goes from wrap up to closed. So, we recommend that you go through the conversation status route and select the **End** button and then close the session to take care of the wrap-up activities.
 
 ## Share feedback on call quality

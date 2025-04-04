@@ -72,12 +72,14 @@
           href: /dynamics365/customer-service/use/voice-channel-call-recordings-transcripts?context=/dynamics365/contact-center/context/use-context
         - name: Monitor voice calls
           href: /dynamics365/customer-service/use/voice-channel-monitor-calls?context=/dynamics365/contact-center/context/use-context
-      - name: Use autonomous agents (preview)
+      - name: Use autonomous service agents (preview)
         items:
-        - name: Overview of autonomous agents
+        - name: Overview of autonomous service agents
           href: ../administer/autonomous-agents-overview.md?context=/dynamics365/contact-center/context/use-context
-        - name: Use intent-based suggestions
-          href: use-intent-suggestions.md
+        - name: Customer Intent Agent
+          items:
+          - name: Use intent-based suggestions
+            href: use-intent-suggestions.md
       - name: Use Copilot
         items: 
         - name: Copilot feature availability across applications

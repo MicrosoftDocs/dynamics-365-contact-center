@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 03/28/2025
+ms.date: 04/04/2025
 ms.custom: bap-template
 ---
 
@@ -30,6 +30,7 @@ You can configure Copilot agents with Customer Intent Agent to provide updated s
 - [Intent discovery is set up and there are intents in the intent library](manage-customer-intent-agent.md#manage-intent-discovery-setup).
 - Your Copilot agent is connected to knowledge sources and a workstream in omnichannel.
 - Makers have the **Environment Maker** role.
+- To add connection references, you must have the administrator role.
 
 ## Here's how it works
 
@@ -52,7 +53,7 @@ You can configure Copilot agents with Customer Intent Agent to provide updated s
 
 ## Add connection references
 
-You must add connection references for every new organization. Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
+Add connection references for each new organization. You only need to create them once, even if you add multiple agents to the organization. Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
 
 1. Sign in to [make.powerapps.com](https://make.powerapps.com) and select your environment.
 1. Go to **Solutions** > **Default Solution** > **Objects** > **Connection References**.
@@ -78,7 +79,7 @@ To use Customer Intent Agent, you need to connect your Copilot agent to a knowle
 1. To add the behavior after intent determination and interview completion, select **Add a condition**, and set it to **Global.IntentInterviewComplete is equal to true**,  **Or**,  **Global.IntentInterviewIncomplete is equal to true**.
 1. If there isn't an output variable node, add a node under the **Condition** in step 2, and then go to **Advanced** > **Create generative answers** and select **SolutionQuery** for **Input**. Adding a **SolutionQuery** helps generate information from the determined intent and answered questions to search knowledge sources for a solution response.
 1. To add logic to complete the conversation flow after providing an answer, add another node: **Topic management** > **Go to another topic** > **End of Conversation**.
-1. Under **All other conditions**, add a node for **Topic management** > **Transfer conversation** to ensure that when an intent isn't detected, the conversation is escalated to a support representative.
+1. Under **All other conditions**, add a node for **Topic management** > **Transfer conversation** to ensure that when an intent isn't detected, or if there was an error with intent detection, the conversation is escalated to a support representative.
 
 ## Connect to your knowledge base
 
@@ -116,7 +117,7 @@ The **Intent-based suggestions - Configuration** is a non-customizable topic tha
 
 To override any of the variables for the intent-based suggestions:
 
-1. Go to the **Conversation start** topic.
+1. Go to the **System**  > **Conversation start** topic.
 1. Select **Add node (+)** and **Variable management** > **Set a variable value**.
 1. Select the variable that you want to change and update the value.
 1. Save and publish the agent.

@@ -52,9 +52,7 @@ You can configure Copilot agents with Customer Intent Agent to provide updated s
 
 ## Add connection references
 
- You need an administrator role to add connection references. Add connection references for each new organization. You only need to create them once, even if you add multiple agents to the organization.
-
-Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
+ You need an administrator role to add connection references. Add connection references for each new organization. You only need to create them once, even if you add multiple agents to the organization. Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
 
 1. Sign in to [make.powerapps.com](https://make.powerapps.com) and select your environment.
 1. Go to **Solutions** > **Default Solution** > **Objects** > **Connection References**.

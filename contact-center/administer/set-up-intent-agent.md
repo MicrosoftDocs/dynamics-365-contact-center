@@ -30,6 +30,7 @@ You can configure Copilot agents with Customer Intent Agent to provide updated s
 - [Intent discovery is set up and there are intents in the intent library](manage-customer-intent-agent.md#manage-intent-discovery-setup).
 - Your Copilot agent is connected to knowledge sources and a workstream in omnichannel.
 - Makers have the **Environment Maker** role.
+- To add connection references, you have the administrator role.
 
 ## Here's how it works
 
@@ -52,7 +53,7 @@ You can configure Copilot agents with Customer Intent Agent to provide updated s
 
 ## Add connection references
 
- You need an administrator role to add connection references. Add connection references for each new organization. You only need to create them once, even if you add multiple agents to the organization. Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
+Add connection references for each new organization. You only need to create them once, even if you add multiple agents to the organization. Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
 
 1. Sign in to [make.powerapps.com](https://make.powerapps.com) and select your environment.
 1. Go to **Solutions** > **Default Solution** > **Objects** > **Connection References**.

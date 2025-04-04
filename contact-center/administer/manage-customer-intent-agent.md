@@ -26,6 +26,10 @@ The AI agent presents a curated list of questions and suggested solutions in the
 
 Use the information in this article to manage the intents in Copilot Service admin center.
 
+## Prerequisites
+
+[Set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
+
 ## Enable Customer Intent Agent
 
 1. In the site map of Copilot Service admin center, select **Intent** under **Customer support**.

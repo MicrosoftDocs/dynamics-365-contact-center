@@ -50,9 +50,6 @@ A line of business can be a service, product, product category, or the way your 
 
 For every line of business that you identify, you can create rules for cases and conversations. You can create one rule only (one each for a case and conversation) per line of business.
 
-> [!IMPORTANT]
-> During runtime, for chat and other channels, Copilot and Intent-based suggestions must be enabled to determine the intent. For cases, the system uses the case title, description, and case notes to determine the intent.
-
 1. On the **Manage Lines of business** page, in **Case Rules**, select **Create rule**.
 1. On the dialog that appears, enter the rule name and select a line of business.
 1. In **Conditions**, define the conditions for the rules to run. In the rules for conversations, we recommend that you configure the same workstream that’s associated with the line of business.

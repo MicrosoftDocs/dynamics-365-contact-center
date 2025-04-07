@@ -64,7 +64,7 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
   1. Specify the prompt for Copilot to generate a partial draft. For example, "Add a personal statement of empathy".
   1. Select **Generate**. Copilot generates the partial draft. You can use it as-is or adjust the draft before adding it to the email.
 
-    :::image type="content" source="../media/partial-draft-email.png" alt-text="Screenshot of a partial draft an email in rich text editor."::: 
+   :::image type="content" source="../media/partial-draft-email.png" alt-text="Screenshot of a partial draft an email in rich text editor."::: 
 
  **Use follow-up prompts**
 

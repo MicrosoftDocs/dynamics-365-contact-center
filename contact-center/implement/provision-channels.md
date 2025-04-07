@@ -58,7 +58,7 @@ If the provisioning fails, an error message appears that you can select to view 
 ### Turn off channels
 
 > [!IMPORTANT]
-> You can turn off a channel if you no longer require it. However, to reenable the channel that you turned off, you need to reconfigure the channel instance.
+> You can turn off a channel if you no longer need it. However, if you turn off all the channels, you need to reconfigure any newly-enabled channel because the previous configurations won't work.
 
 1. Select  **Customer Support** > **Channels** > **Manage channels**. 
 1. Clear the checkbox for the channel that you want to turn off. The application displays a confirmation message. Select **Turn off**.

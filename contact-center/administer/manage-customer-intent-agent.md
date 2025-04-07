@@ -59,7 +59,7 @@ For every line of business that you identify, you can create rules for cases and
 1. Optionally, select **Run backfill**. When selected, it’s used to associate past cases with a line of business for intent discovery. The system makes sure that intent discovery works properly by tagging past cases with the appropriate line of business.
 1. Save and close.
 
-Repeat the steps for creating rules and conditions for conversations for the lines of business you’d like to.
+Repeat the steps for creating rules and conditions for conversations for the lines of business you’d like to add.
 
 ## Manage intent discovery setup
 

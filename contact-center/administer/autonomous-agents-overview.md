@@ -39,7 +39,7 @@ The Customer Knowledge Management Agent helps extract knowledge from cases and m
 ### Related information
 
 [Enable intent for support representatives](enable-intent-for-service-reps.md)   
-[Overview of Customer Intent Agent](overview-customer-intent-agent.md) 
+[Overview of Customer Intent Agent](overview-customer-intent-agent.md)  
 [Set up Case Management Agent](/dynamics365/customer-service/administer/set-up-autonomous-case-agents)  
 [Manage Customer Knowledge Management Agent ](/dynamics365/customer-service/administer/admin-km-agent)  
 [Set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go)  

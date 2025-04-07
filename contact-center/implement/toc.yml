@@ -40,6 +40,10 @@
           href: /dynamics365/get-started/privacy/
         - name: Keyboard navigation support
           href: /dynamics365/customer-service/implement/keyboard-navigation-support-customer-service-hub?context=/dynamics365/contact-center/context/implement-context
+      - name: Compliance
+        items:
+        - name: Compliance certifications
+          href: cc-compliance-certifications.md
       - name: System requirements for Dynamics 365 Contact Center
         items:
         - name: System requirements
@@ -78,6 +82,8 @@
         items:
         - name: Overview
           href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/implement-context
+        - name: Responsible AI FAQ for AI Agents (Preview)
+          href: faq-rai-ai-agents.md
         - name: Responsible AI FAQ for Copilot in Customer Service
           href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/implement-context
       - name: Resources

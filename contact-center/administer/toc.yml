@@ -186,6 +186,8 @@
           href: /dynamics365/customer-service/administer/add-outbound-dialer-settings?context=/dynamics365/contact-center/context/administer-context  
         - name: Use Azure Virtual Desktop to access voice channel
           href: configure-voice-avd.md
+        - name: Install and manage Desktop companion application (preview)
+          href: install-manage-desktop-app.md
         - name: Support emergency calls made by customer service representatives
           href: /dynamics365/customer-service/administer/voice-channel-emergency-calling?context=/dynamics365/contact-center/context/administer-context
         - name: Forward your Teams calls to digital contact center
@@ -203,7 +205,9 @@
         - name: Configure a sample voice agent template
           href: bot-scenario-configure.md
         - name: Configure multilingual IVR agents
-          href: configure-multilingual-agents.md      
+          href: configure-multilingual-agents.md   
+        - name: Configure fallback actions for the IVR agent
+          href: configure-fallback-actions-ivr-agent.md         
         - name: View voice calls usage
           href: /dynamics365/customer-service/administer/voice-channel-usage?context=/dynamics365/contact-center/context/administer-context
         - name: Block spam numbers
@@ -226,6 +230,22 @@
           href: /dynamics365/customer-service/administer/voice-channel-pricing-scenarios?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ about the voice channel
           href: /dynamics365/customer-service/administer/voice-channel-faqs?context=/dynamics365/contact-center/context/administer-context
+      - name: Autonomous service agents (preview)
+        items:
+        - name: Overview of autonomous service agents
+          href: autonomous-agents-overview.md
+        - name: Customer Intent Agent 
+          items:
+          - name: Overview of Customer Intent Agent
+            href: overview-customer-intent-agent.md
+          - name: Manage Customer Intent Agent
+            href: manage-customer-intent-agent.md
+          - name: Enable intent-based suggestions for service representatives
+            href: enable-intent-for-service-reps.md
+          - name: Configure intent-based suggestions for Copilot agents
+            href: set-up-intent-agent.md
+          - name: Set up a pay-as-you-go plan
+            href: /dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features
@@ -238,6 +258,12 @@
           href: copilot-enable-help-pane.md  
         - name: Enable Copilot to draft emails
           href: copilot-email-enable.md
+        - name: Enable Copilot plugins for generative AI (preview)
+          href: enable-copilot-plugins-for-generative-ai.md 
+        - name: Customize Copilot conversation summaries
+          href: customize-copilot-conv-summary.md   
+        - name: Enable knowledge sources from Microsoft Copilot Studio (preview)
+          href: knowledge-copilot.md               
         - name: Languages supported in Copilot
           href: /dynamics365/customer-service/administer/cs-region-availability-service-limits#language-support-for-ai-based-analytics-and-insights-in-customer-service?context=/dynamics365/contact-center/context/administer-context
         - name: Copilot architecture diagram
@@ -257,7 +283,9 @@
         - name: Configure pre-conversation surveys
           href: /dynamics365/customer-service/administer/configure-pre-chat-survey?context=/dynamics365/contact-center/context/administer-context
         - name: Manage enhanced Active Conversation settings
-          href: active-enh-conv-settings.md          
+          href: active-enh-conv-settings.md    
+        - name: Configure disposition codes
+          href: configure-disposition-codes.md        
         - name: Set up visitor location detection
           href: /dynamics365/customer-service/administer/geo-location-provider?context=/dynamics365/contact-center/context/administer-context
         - name: Configure self-service settings for customer actions
@@ -298,7 +326,7 @@
             href: /dynamics365/customer-service/administer/configure-line-channel?context=/dynamics365/contact-center/context/administer-context
           - name: Configure a WhatsApp channel in Twilio
             href: /dynamics365/customer-service/administer/configure-whatsapp-channel?context=/dynamics365/contact-center/context/administer-context
-          - name: Configure a WhatsApp channel through Azure Communication Services (preview)
+          - name: Configure a WhatsApp channel through Azure Communication Services
             href: configure-whatsapp-acs.md    
           - name: Configure a WeChat channel
             href: /dynamics365/customer-service/administer/configure-wechat-channel?context=/dynamics365/contact-center/context/administer-context
@@ -372,25 +400,25 @@
           href: /dynamics365/customer-service/administer/data-masking-settings?context=/dynamics365/contact-center/context/administer-context
         - name: Manage enhanced Active Conversation settings
           href: /dynamics365/customer-service/administer/add-customer-summary-settings?context=/dynamics365/contact-center/context/administer-context  
-      - name: Bots
+      - name: AI agents
         items:
-        - name: Overview of bots
+        - name: Overview of AI agents
           href: /dynamics365/customer-service/administer/overview-bots?context=/dynamics365/contact-center/context/administer-context
-        - name: Best practices for configuring bots
+        - name: Best practices for configuring AI agents
           href: /dynamics365/customer-service/administer/configure-bot-best-practices?context=/dynamics365/contact-center/context/administer-context
-        - name: Manage your bots
+        - name: Manage your AI agents
           href: /dynamics365/customer-service/administer/manage-your-bots?context=/dynamics365/contact-center/context/administer-context
-        - name: Integrate a Copilot Studio agent
+        - name: Integrate a Copilot agent
           href: /dynamics365/customer-service/administer/configure-bot-virtual-agent?context=/dynamics365/contact-center/context/administer-context          
         - name: Configure context variables for agents
           href: /dynamics365/customer-service/administer/context-variables-for-bot?context=/dynamics365/contact-center/context/administer-context              
         - name: Transfer conversations from customer service representatives to agents
           href: transfer-to-agents.md                    
-        - name: Configure Azure bots
+        - name: Configure Azure AI agents 
           items:
-          - name: Bot sessions and licensing
+          - name: AI agent sessions and licensing
             href: /dynamics365/customer-service/administer/bot-session-licensing?context=/dynamics365/contact-center/context/administer-context
-          - name: Integrate an Azure bot
+          - name: Integrate an Azure AI agent
             href: /dynamics365/customer-service/administer/configure-bot-azure?context=/dynamics365/contact-center/context/administer-context
       - name: Feedback surveys
         items:
@@ -498,6 +526,8 @@
         items:
         - name: Overview
           href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/administer-context
+        - name: Responsible AI FAQ for AI Agents (Preview)
+          href: ../implement/faq-rai-ai-agents.md
         - name: Responsible AI FAQ for Copilot in Customer Service
           href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/administer-context
     - name: Implement Dynamics 365 Contact center

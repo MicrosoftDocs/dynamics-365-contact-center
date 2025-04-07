@@ -90,7 +90,7 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
  > - If the knowledge base isn't enabled, you will see the **Suggest a call**, **Request more information**, **Empathize with feedback**, and **Custom** prompts only.
  > - If you've left the **Regarding** field empty, you will see the **Suggest a call**, **Empathize with feedback**, and **Custom** prompts only.
 
-     :::image type="content" source="../media/copilot-email-sidepane-mini.png" alt-text="Screenshot of draft an email in the side pane." lightbox="../media/copilot-email-sidepane.png":::
+  :::image type="content" source="../media/copilot-email-sidepane-mini.png" alt-text="Screenshot of draft an email in the side pane." lightbox="../media/copilot-email-sidepane.png":::
 
 ---
 

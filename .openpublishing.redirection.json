@@ -3,7 +3,7 @@
 
     {
       "source_path": "contact-center/administer/bot-connectivity-issues.md",
-      "redirect_url": "/dynamics365/customer-service/administer/voice-channel-pva-bots",
+      "redirect_url": "/dynamics365/customer-service/administer/configure-fallback-actions-ivr-agent",
       "redirect_document_id": "false"
     }
 

@@ -61,7 +61,9 @@
         - name: Use call controls and the agent desktop for voice
           href: voice-channel-agent-experience.md
         - name: How to avoid call disconnection
-          href: voice-channel-agent-experience.md#how-to-avoid-call-disconnection
+          href: voice-channel-agent-experience.md#avoid-call-disconnection
+        - name: Use the Desktop companion application (preview)
+          href: voice-dca-application.md
         - name: Manage voicemails
           href: /dynamics365/customer-service/use/manage-voicemails?context=/dynamics365/contact-center/context/use-context
         - name: Transfer calls and consult with other users
@@ -70,24 +72,32 @@
           href: /dynamics365/customer-service/use/voice-channel-call-recordings-transcripts?context=/dynamics365/contact-center/context/use-context
         - name: Monitor voice calls
           href: /dynamics365/customer-service/use/voice-channel-monitor-calls?context=/dynamics365/contact-center/context/use-context
+      - name: Use autonomous service agents (preview)
+        items:
+        - name: Overview of autonomous service agents
+          href: ../administer/autonomous-agents-overview.md?context=/dynamics365/contact-center/context/use-context
+        - name: Customer Intent Agent
+          items:
+          - name: Use intent-based suggestions
+            href: use-intent-suggestions.md
       - name: Use Copilot
         items: 
-        - name: Use Copilot to solve customer issues 
-          href: use-copilot-features.md
-        - name: Use Copilot to summarize cases and conversations
+        - name: Copilot feature availability across applications
+          href: copilot-feature-availability.md  
+        - name: Summarize cases
           href: copilot-use-summary.md
+        - name: Summarize conversations
+          href: copilot-summarize-conversations.md  
         - name: Ask a question
-          href: use-copilot-features.md#ask-a-question
+          href: use-ask-a-question.md  
         - name: Draft a chat response (preview)
-          href: use-copilot-features.md#draft-a-chat-response-preview
+          href: use-copilot-features.md  
         - name: Write an email with Copilot
-          href: use-copilot-email.md
+          href: use-copilot-email.md  
         - name: Understand how Copilot supports different languages
           href: copilot-language-support.md
-        - name: View analytics for Copilot impact
-          href: copilot-analytics-report.md
-        - name: Chat with Customer Service data in Copilot for Microsoft 365 (preview)
-          href: /dynamics365/customer-service/use/copilot-chat-customer-service-data?context=/dynamics365/contact-center/context/use-context
+        - name: Chat with case data in Customer Service (preview)
+          href: copilot-chat-customer-service-data.md
       - name: Unified routing and assignment
         items:
           - name: View historical analytics reports
@@ -304,6 +314,8 @@
       items:
       - name: Overview
         href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/use-context
+      - name: Responsible AI FAQ for AI Agents (Preview)
+        href: ../implement/faq-rai-ai-agents.md
       - name: Responsible AI FAQ for Copilot in Customer Service
         href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/use-context
     - name: Resources

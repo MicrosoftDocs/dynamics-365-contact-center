@@ -49,7 +49,7 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
 
   Copilot displays the email template used to generate the draft. You can select **Choose a different template** if the template isn’t appropriate. The following actions are applicable:
    - The **Copilot recommended templates** dialog appears.
-   - The system displays the ten email templates that Copilot recommends based on the context of email. 
+   - The system displays five email templates that Copilot recommends based on the context of email. 
    - You can select one of the templates recommended by Copilot or manually search for and insert an email template. Learn more in [Enhanced email template selection dialog](/power-apps/user/insert-email-template#enhanced-email-template-selection-dialog)
  
    :::image type="content" source="../media/draft-an-email-inline.png" alt-text="Screenshot of draft an email in rich text editor."::: 
@@ -63,6 +63,7 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
   1. Insert your cursor where you want to generate partial text in the email body and then select **Draft with Copilot**. The **Draft with Copilot** card appears. 
   1. Specify the prompt for Copilot to generate a partial draft. For example, "Add a personal statement of empathy".
   1. Select **Generate**. Copilot generates the partial draft. You can use it as-is or adjust the draft before adding it to the email.
+  1. You can also turn on the **Use knowledge base** toggle to use knowledge base sources to generate the draft. 
 
    :::image type="content" source="../media/partial-draft-email.png" alt-text="Screenshot of a partial draft an email in rich text editor."::: 
 

@@ -230,16 +230,22 @@
           href: /dynamics365/customer-service/administer/voice-channel-pricing-scenarios?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ about the voice channel
           href: /dynamics365/customer-service/administer/voice-channel-faqs?context=/dynamics365/contact-center/context/administer-context
-      - name: Customer Intent Agent (preview)
+      - name: Autonomous service agents (preview)
         items:
-        - name: Overview of Customer Intent Agent
-          href: overview-customer-intent-agent.md
-        - name: Manage Customer Intent Agent
-          href: manage-customer-intent-agent.md
-        - name: Enable intent-based suggestions for service representatives
-          href: enable-intent-for-service-reps.md
-        - name: Configure intent-based suggestions for Copilot agents
-          href: set-up-intent-agent.md
+        - name: Overview of autonomous service agents
+          href: autonomous-agents-overview.md
+        - name: Customer Intent Agent 
+          items:
+          - name: Overview of Customer Intent Agent
+            href: overview-customer-intent-agent.md
+          - name: Manage Customer Intent Agent
+            href: manage-customer-intent-agent.md
+          - name: Enable intent-based suggestions for service representatives
+            href: enable-intent-for-service-reps.md
+          - name: Configure intent-based suggestions for Copilot agents
+            href: set-up-intent-agent.md
+          - name: Set up a pay-as-you-go plan
+            href: /dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features
@@ -520,6 +526,8 @@
         items:
         - name: Overview
           href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/administer-context
+        - name: Responsible AI FAQ for AI Agents (Preview)
+          href: ../implement/faq-rai-ai-agents.md
         - name: Responsible AI FAQ for Copilot in Customer Service
           href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/administer-context
     - name: Implement Dynamics 365 Contact center

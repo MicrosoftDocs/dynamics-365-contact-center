@@ -24,12 +24,39 @@ The AI agent presents a curated list of questions and suggested solutions in the
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-Use the information in this article to manage the intents in Contact Center admin center or Customer Service admin center.
+Use the information in this article to manage the intents in Copilot Service admin center.
+
+## Prerequisites
+
+[Set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 
 ## Enable Customer Intent Agent
 
-1. In Contact Center admin center or Customer Service admin center, select **Intent** under **Customer support**.
+1. In the site map of Copilot Service admin center, select **Intent** under **Customer support**.
 1. On the **Customer Intent Agent (preview)** page that appears, enable the **Turn on Customer Intent Agent** toggle.
+
+## Manage lines of business
+
+A line of business can be a service, product, product category, or the way your company organizes and supports its business activities. It's used as a partition that represents a specific set of intents and intent groups in a large enterprise.
+ 
+### Add line of business
+
+1. In the site map of Copilot Service admin center, go to **Intent**, and select **Manage** for **Add Line of business (Optional)**.
+1. On the **Manage Lines of business** page, select **Add Line of business**.
+1. Enter the name and description that indicates the line of business.
+1. Select **Add**. The line of business is listed in the **Lines of business** table.
+
+### Create rules for cases and conversations
+
+For every line of business that you identify, you can create rules for cases and conversations. You can create one rule only (one each for a case and conversation) per line of business.
+
+1. On the **Manage Lines of business** page, in **Case Rules**, select **Create rule**.
+1. On the dialog that appears, enter the rule name and select a line of business.
+1. In **Conditions**, define the conditions for the rules to run. In the rules for conversations, we recommend that you configure the same workstream that’s associated with the line of business.
+1. Optionally, select **Run backfill**. When selected, it’s used to associate past cases with a line of business for intent discovery. The system makes sure that intent discovery works properly by tagging past cases with the appropriate line of business.
+1. Save and close.
+
+Repeat the steps for creating rules and conditions for conversations for the lines of business you’d like to add.
 
 ## Manage intent discovery setup
 

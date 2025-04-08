@@ -128,7 +128,7 @@ Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variable
 
 ## Updates to Customer Intent Agent
 
-Customer Intent Agents might receive periodic updates, that update the corresponding component collection. To get access and receive these updates, you need to manually publish your Copilot agent.
+Customer Intent Agents might receive periodic updates that update the corresponding component collection. To get access and receive these updates, you need to manually publish your Copilot agent.
 
 ## Related information
 

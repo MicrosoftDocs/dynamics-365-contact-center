@@ -32,7 +32,7 @@ Before you proceed, make sure you:
 - [Set up intent discovery and add intents to the intent library](manage-customer-intent-agent.md#manage-intent-discovery-setup).
 - Connect your Copilot agent to knowledge sources and a workstream in omnichannel.
 - Assign the **Environment Maker** role to makers.
-- Have the administrator role to add connection references. 
+- Get the administrator role to add connection references. 
 
 ## How it works
 

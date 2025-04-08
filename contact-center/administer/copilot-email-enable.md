@@ -57,6 +57,10 @@ To enable your service representatives to write an email in the Copilot side pan
 1. Switch the **Write an email - Help pane** toggle to **On**.
 1. Select **Save**.
 
+## Enable Copilot to recommend email templates
+
+Select the **Copilot for email templates** checkbox to enable Copilot to recommend email templates. Copilot automatically selects the most appropriate email template and inserts it in the email editor, based on the prompt specified by the service representative. Learn more in [Use Copilot to draft an email in the rich text editor](/dynamics365/contact-center/use/use-copilot-email#use-copilot-to-draft-an-email). This feature is available in the inline email editor only.
+
 ### Modify the fields used to draft emails in Copilot help pane
 
 [!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
@@ -77,7 +81,7 @@ In Contact Center admin center or Customer Service admin center, go to **Copilot
 > [!NOTE]
 > You can't modify the **Case Notes** and **Email Content** field values that Copilot uses to draft emails.
 
-## Next Step
+## Next Steps
 
 [Write an email with Copilot](../use/use-copilot-email.md)
 

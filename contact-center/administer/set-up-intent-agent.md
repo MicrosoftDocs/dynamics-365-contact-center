@@ -26,11 +26,13 @@ You can configure Copilot agents with Customer Intent Agent to provide updated s
 
 ## Prerequisites
 
-- [Customer Intent Agent is enabled](manage-customer-intent-agent.md#enable-customer-intent-agent).
-- [Intent discovery is set up and there are intents in the intent library](manage-customer-intent-agent.md#manage-intent-discovery-setup).
-- Your Copilot agent is connected to knowledge sources and a workstream in omnichannel.
-- Makers have the **Environment Maker** role.
-- To add connection references, you must have the administrator role.
+Before you proceed, make sure you:
+
+- [Enable Customer Intent Agent](manage-customer-intent-agent.md#enable-customer-intent-agent).
+- [Set up intent discovery and add intents to the intent library](manage-customer-intent-agent.md#manage-intent-discovery-setup).
+- Connect your Copilot agent to knowledge sources and a workstream in omnichannel.
+- Assign the **Environment Maker** role to makers.
+- Have the administrator role to add connection references. 
 
 ## How it works
 

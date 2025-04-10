@@ -100,11 +100,6 @@ The first time you access the dashboard, any scenarios you configured appear in 
 - **Recurrence time slot**: The day or time the report runs.
 - **Recurrence time zone**: The time zone in which the report runs.
 
-### Navigation
-
-- In the default view, go to the hamburger menu, and then under **Workforce Management**, select **Forecasting**.
-- If the enhanced multisession workspace view is enabled, select **Forecast** on the site map.
-
 ### Data visualization
 
 When you open a report, the following visualizations are available:

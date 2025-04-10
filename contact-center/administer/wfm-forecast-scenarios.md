@@ -1,7 +1,7 @@
 ---
 title: Forecast case and conversation volumes
 description: Learn how to use forecast reports to predict service representative, case, and conversation volumes.
-ms.date: 03/15/2025
+ms.date: 04/11/2025
 ms.topic: conceptual
 author: lalexms
 ms.author: laalexan
@@ -56,9 +56,9 @@ Before you can use the forecast reports, ensure that your administrator assigned
 
 ## View the forecast reports in the Copilot Service workspace app
 
-### Navigation
+You can view the forecast reports on the **Forecasting** dashboard.
 
-You can view the forecast reports on the **Forecasting** dashboard as follows:
+### Navigation
 
 - In the default view, go to the hamburger menu, and then under **Workforce Management**, select **Forecasting**.
 - If the enhanced multisession workspace view is enabled, select **Forecast** on the site map.
@@ -71,7 +71,7 @@ You can create either short-term or long-term forecasts.
 
 - **Long term**: This mode displays the actual and predicted case and conversation volumes and service representative demand per day, for a time range of up to six months, depending on how many days of cases or conversations were created in the past. This forecast can be used to plan service representative resourcing and recruitment to meet a future demand.
 
-### Create a short-term or long term forecast
+### Create a short-term or long-term forecast
 
 1. On the Copilot Service workspace site map, select **Forecasting** under **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.
 1. Select the ellipsis > **New**, and the select either **Short-term** or **Long-term** from the dropdown menu. The **New Forecast Scenario** page appears.
@@ -90,9 +90,6 @@ You can create either short-term or long-term forecasts.
       1. **Seasonality**: Use the dropdown menu to select a holiday calendar if applicable.
       1. **External data**: If you're using external data as your data source, select the search field, browse to your file, and then select it.
 1. Select **Save**.
-
-
-To change the report mode, switch the **Daily** or **Intraday** toggle button on the report, depending on which mode you want to view the report in.
 
 ### Filters for case, conversation, and agents for conversations forecasting
 

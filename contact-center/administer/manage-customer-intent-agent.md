@@ -95,6 +95,8 @@ After the first run of the intent discovery, the intent groups are listed on the
 1. On the **Knowledge articles** tab, select **Add** to associate the knowledge articles with the intent. The knowledge articles are used to provide additional information about the intent. You can add multiple knowledge articles for an intent.
 
 :::image type="content" source="../media/create-intent.png" alt-text="Screenshot of create intent page with all details and attributes." lightbox="../media/create-intent.png":::
+
+You can manage the intents to be used in AI agent in bulk. On the Manage intents page, select the approved intents, and on the command menu, select **Use in AI agent**. The intents are used in the AI agent.
  
 ## Manage intent groups
 

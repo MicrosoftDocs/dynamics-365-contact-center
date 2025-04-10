@@ -14,16 +14,13 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-Agents can draft emails faster with Copilot. Agents can draft emails in the Copilot side pane or inline from the rich text editor. 
+Customer Service representatives (service representatives or representatives) can draft emails faster with Copilot. Service representatives can draft emails in the Copilot side pane or inline from the rich text editor. 
 
 ## Prerequisites
 
 - [Enable data movement across regions](/power-platform/admin/geographical-availability-copilot#enable-data-movement-across-regions) in Power Platform admin center if your environment doesn't have United States, India, Australia, and United Kingdom as the geography for data processing and storage.
 - [Opt in to AI terms to continue with Copilot setup](configure-copilot-features.md#opt-in-to-continue-with-copilot-setup) in Customer Service admin center.
 
-## Region availability
-
-The draft an email feature is enabled by default in the Copilot help pane and rich text editor by default in the United States, India, Australia, and United Kingdom. For other regions, you must perform the steps in the following sections for Copilot to assist customer service representatives (service representatives or representatives) with composing emails.
 
 ## Enable knowledge sources for Copilot to draft emails
 
@@ -81,7 +78,7 @@ In Contact Center admin center or Customer Service admin center, go to **Copilot
 > [!NOTE]
 > You can't modify the **Case Notes** and **Email Content** field values that Copilot uses to draft emails.
 
-## Next steps
+## Next Steps
 
 [Write an email with Copilot](../use/use-copilot-email.md)
 

@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-cfs-yes](../includes/cc-feature-availability-cfs-yes.md)]
 
-When you draft customer emails, Copilot can offer suggestions to make them clearer, concise, and compelling.
+When you draft customer emails, Copilot can offer suggestions to make them clear, concise, and compelling.
 
 *Always review the response* Copilot generates before you send the email to the customer.
 
@@ -25,7 +25,7 @@ When you draft customer emails, Copilot can offer suggestions to make them clear
 
 ## Navigation
 
-- In Customer Service workspace or Contact Center workspace, you can access **Ask a question** from the Copilot help pane once you sign in.
+- In Copilot Service workspace, you can access **Ask a question** from the Copilot help pane once you sign in.
 - When you sign in to a non-Microsoft CRM, you can access the feature as follows:
    - Launch the embedded experience and then login to your Dynamics account.
    - In the Copilot help pane that appears, select **Write an email**.

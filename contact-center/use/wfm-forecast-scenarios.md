@@ -67,7 +67,7 @@ You can view the forecast reports on the **Forecasting** dashboard.
 
 You can create either short-term or long-term forecasts.
 
-**Short term**: This report is typically used for daily forecasts. It displays an intraday view of the actual and predicted case and conversation volumes and service representative demand in intervals of 15 minutes, for a time range of up to six weeks, depending on how many days of cases or conversations were created in the past. This forecast can be used to schedule service representatives day-to-day to meet the near-term demand.
+- **Short term**: This report is typically used for daily forecasts. It displays an intraday view of the actual and predicted case and conversation volumes and service representative demand in intervals of 15 minutes, for a time range of up to six weeks, depending on how many days of cases or conversations were created in the past. This forecast can be used to schedule service representatives day-to-day to meet the near-term demand.
 
 - **Long term**: This mode displays the actual and predicted case and conversation volumes and service representative demand per day, for a time range of up to six months, depending on how many days of cases or conversations were created in the past. This forecast can be used to plan service representative resourcing and recruitment to meet a future demand.
 

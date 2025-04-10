@@ -16,10 +16,10 @@ Capacity planning helps you ensure you have the right number of customer service
 
 Key ways you can plan for capacity are as follows:
 
-**Short-term planning**: Forecast staffing needs in 15-minute intervals for up to six weeks, allowing real-time adjustments.
-**Long-term planning**: Plan daily staffing requirements for up to six months to support strategic workforce decisions.
-**Scenario analysis**: Model different workload scenarios to assess the impact of changes in demand.
-**Data slicing**: View staffing projections by specific channels and queues for deeper insights.
+- **Short-term planning**: Forecast staffing needs in 15-minute intervals for up to six weeks, allowing real-time adjustments.
+- **Long-term planning**: Plan daily staffing requirements for up to six months to support strategic workforce decisions.
+- **Scenario analysis**: Model different workload scenarios to assess the impact of changes in demand.
+- **Data slicing**: View staffing projections by specific channels and queues for deeper insights.
 
 ## Prerequisites
 

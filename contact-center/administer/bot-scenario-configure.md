@@ -56,8 +56,8 @@ The voice agent template is intended to help customers track the status of their
 
 
 1. The agent greets the customer and asks how it can help. The AI agent template has a Dataverse query that replicates an API call which happens at the start of a call. This query returns a holiday sale message for Valentine’s Day. 
-  > [!NOTE]
-  > The customer can select Spanish-US by selecting * (asterisk). However, the rest of the AI agent's workflow hasn'r been translated to Spanish. The agent will continue to respond in English.
+   > [!NOTE]
+   > The customer can select Spanish-US by selecting * (asterisk). However, the rest of the AI agent's workflow hasn'r been translated to Spanish. The agent will continue to respond in English.
 1. The customer says, "I want to track my order."
 1. The agent recognizes the customer's intent to track an order and prompts the customer to provide the order number or phone number. If the customer says a phrase that the AI agent can't handle, the agent uses **Generative Answers** to provide information. The agent redirects the user to the main menu with the prompt, "What else can I help you with".
 1.  The AI agent initiates a Dataverse query to trigger Automatic Number Identification to validate the caller. In this example, the Dataverse table returns sample Automatic Number Identification information to the AI agent. The agent then asks the customer if they want to look up the status of the order associated with that phone number.

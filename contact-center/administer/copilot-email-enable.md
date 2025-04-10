@@ -81,7 +81,7 @@ In Contact Center admin center or Customer Service admin center, go to **Copilot
 > [!NOTE]
 > You can't modify the **Case Notes** and **Email Content** field values that Copilot uses to draft emails.
 
-## Next Steps
+## Next steps
 
 [Write an email with Copilot](../use/use-copilot-email.md)
 

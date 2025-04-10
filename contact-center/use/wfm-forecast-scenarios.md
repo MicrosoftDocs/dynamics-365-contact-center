@@ -23,7 +23,7 @@ This article describes how to navigate the forecast reports in Copilot Service w
 
 ## Overview
 
-Customer service supervisors need to to ensure that they have an adequate number of customer service representatives (service representatives or representatives) available to serve their customers. Overcapacity results in higher costs, while under capacity results in longer customer wait times, which negatively affects customer satisfaction.
+Customer service supervisors need to ensure that they have an adequate number of customer service representatives (service representatives or representatives) available to serve their customers. Overcapacity results in higher costs, while under capacity results in longer customer wait times, which negatively affects customer satisfaction.
 
 As a supervisor, you can use the forecast scenario reports to help plan the right level of staffing for your business which is based on the predicted volume of cases and conversations, along with the predicted service representative demand for conversations.
 

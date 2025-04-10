@@ -11,17 +11,14 @@ ms.collection:
 ---
 # Use shift swapping
 
-Shift swapping lets you, as a supervisor, help your customer service representatives (service representatives, representatives) exchange their bookings and provide coverage for themselves and other representatives without affecting the schedule. 
+Shift swapping lets you customer service representatives (service representatives, representatives) exchange their bookings and provide coverage for themselves and other representatives without affecting the schedule. 
 
 Key features include the following:
 
-- Receive notifications via email or in-app when a swap request is accepted or rejected by agents.
-- Review and either approve or decline swap requests as part of the approval process.
-
-Benefits for your service representatives include the following:
-
-- Swap shifts 1:1 with a colleague, or post the swap request publicly for any team member to pick up.
-- Receive notifications via email or in-app when the swap is accepted or rejected by a colleague. 
+- Supervisors receive notifications via email or in-app when a swap request is accepted or rejected by agents.
+- Supervisors can review and either approve or decline swap requests as part of the approval process.
+- Service representatives can swap shifts 1:1 with a colleague, or post the swap request publicly for any team member to pick up.
+- Reprensentatives can receive notifications via email or in-app when the swap is accepted or rejected by a colleague. 
 
 ## Create a shift swap request
 

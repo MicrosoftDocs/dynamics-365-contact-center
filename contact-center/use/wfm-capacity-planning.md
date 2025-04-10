@@ -12,7 +12,7 @@ ms.collection:
 
 # Use capacity planning to predict your staffing needs
 
-Capacity planning enables you to forecast staffing needs at different levels of granularity, helping you align your workforce capacity with service demand.
+Capacity planning helps you ensure you have the right number of customer service representatives (service representatives or representatives) available at the right time. It enables you to forecast your staffing needs at different levels of granularity to help you align your workforce capacity with your expected service demand. 
 
 Key ways you can plan for capacity are as follows:
 
@@ -25,5 +25,37 @@ Key ways you can plan for capacity are as follows:
 
 To activate this feature, your administrator must first install the **Workforce Management for Customer Service** package in the Power Platform admin center app, and then enable the feature in Copilot Service admin center.
 
-## Procedural information
+## Create a capacity plan
+
+1. On the Copilot Service workspace site map, select **Capacity planning** in **Workforce Management**. The **Active Capacity Plans** dashboard appears.
+1. Select **New**, and the select either **Short-term** or **Long-term** from the dropdown menu. The **New Capacity Plan** page appears.
+1. On the **Details** card, fill in the **Name**, and then search for the **Forecast Scenario** you want to use..
+1. On the **Configuration parameters** card, fill in the following details:
+     - **Service Level (%)**: The percentage of the conversations needed to meet the target answer time. For example, if you set your required service level percentage to 80 and your target answer time to 77, it indicates that you want 80 percent of your conversations to be answered in 77 seconds or less.
+     - **Shrinkage**: The percentage of time service representatives are unavailable to handle conversations. If you increase this number, the percentage of time that the service representatives are unavailable goes up, which means you would need more service representatives to meet the service-level agreement.
+     - **Target Answer Time (Seconds)**: The number of seconds in which you want your service representatives to answer their conversations.
+     - **Concurrency (#)**: The number of simultaneous interactions per service representative. For voice calls, this value should be set to one. For chats and messaging channels, this value can be set as desired.
+1. On the **Forecast run schedule** card, make sure the toggle for **Auto-extension** is set to **Yes**.
+1. Select **Save**.
+
+## View your capacity plans
+
+1. In **Copilot Service workspace**, select **Capacity planning** in **Workforce Management** in the site map. The **Active Forecast Scenarios** dashboard appears.
+1. Select the plan you want to view from the list, and then select the **Reports** tab.
+
+### Data filters and visualizations
+
+When you open a report, the following filters and visualizations are available:
+
+**Duration**: Allows you to input the date range or use the sliders to set the dates.
+**Intervals**: Select the **Daily**, **Weekly**, or **Monthly** view.
+**Channel**: Select one or more channels for which you want data displayed.
+**Queue**: Select one or more queues for which you want data displayed.
+
+In the **Capacity Plan Output** section, you can view the following details: 
+
+**Detailed view**: You can filter the data in the following ways:
+   - **All**: Displays the capacity numbers across all channels and queues. You can use the drill up and down buttons to drill to specific levels in the hierarchy.
+   - **Channel**: Displays the capacity numbers, sliced by each channel. You can use the drill up and down buttons to drill to specific levels in the hierarchy.
+   - **Queue**: Displays the capacity numbers, sliced by each queue. You can use the drill up and down buttons to drill to specific levels in the hierarchy.
 

@@ -40,7 +40,7 @@ Key features include:
 
 1. In the site map of the Copilot Service admin center app, go to **Operations**, and then select **Workforce management**. The **Workforce management** page appears.
 1. In **Time management**, select **Manage** next to **Timeoff request types**.
-1. On the **Active Time Off Types** page, select **New**. The **New Time Off Type** page appears.
+1. On the **Time-off request types** page, select **New**. The **New Time Off Type** page appears.
 1. Enter the following details:
      1. **Name**: The name you want for your time off type. For example, sick leave or vacation.
      1. **Description** (optional): The description of the activity.

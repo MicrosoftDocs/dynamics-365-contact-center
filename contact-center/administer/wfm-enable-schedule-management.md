@@ -1,0 +1,41 @@
+---
+title: Enable schedule management
+description: Learn how to enable schedule management features in Copilot Service admin center.
+ms.date: 04/11/2025
+ms.topic: how-to
+author: lalexms
+ms.author: laalexan
+ms.reviewer: laalexan
+search.audienceType: 
+  - admin
+  - customizer
+  - enduser
+ms.custom: 
+  - dyn365-customerservice
+---
+
+# Enable schedule management to improve customer service
+
+Schedule management lets you organize service activities by bringing together all the necessary resources, such as customer service representatives (service representatives or representatives), facilities, and equipment. Schedule management ensures that resources are scheduled optimally and efficiently to avoid disruptions in service. Schedule management can help your organization improve the quality of service for your customers.
+
+## Prerequisites
+
+1. Install the **Workforce Management for Customer Service** package in the Power Platform admin center app. Once installed, you can create forecast scenarios based on your operational needs.
+1. Set up your user profiles:
+     1. In the site map of the Copilot Service admin center app, go to **Operations**, and then select **Workforce management**. The **Workforce management** page appears.
+     1. In **Workforce setup**, select **View** next to **User management**.
+
+   Refer to the following articles to set up your user profiles.
+    -	[Manage user profiles](users-user-profiles.md)
+    -	[Create and manage capacity profiles](capacity-profiles.md)
+    -	[Manage personas and custom security profiles](role-persona-mapping.md)
+    
+## Enable schedule management
+
+1.	In the site map of the Copilot Service admin center app, go to **Operations**, and then select **Workforce management**. The **Workforce management** page appears.
+1.	In **Shift & Schedule Management**, select **Manage** next to **Schedule Management**.
+1.	On the **Schedule management** page, set the **Allow agents to accept schedule** toggle to **On**.
+3.	For **Schedule acceptance deadline (days)**, set the number of days for a service representative to be able to accept their schedule.
+4.	Select **Save and Close**.
+
+   

@@ -12,7 +12,7 @@ ms.collection:
 
 # View and approve time-off requests
 
-You can view and approve or reject time-off requests on the active requests page, including the representative name, request type, status, and date the request was created.
+You can view and approve or reject time-off requests from customer service representatives (service representatives or representatives) on the active requests page. The page shows details that include the representative name, request type, status, and date that the reprentative created the request.
 
 ## View and take action on a time-off request
 

@@ -32,7 +32,7 @@ A shift plan includes the following key components:
 
 ## Prerequisites
 
-Before you can work with shift plans, your administrator must enable the feature in Copilot Service admin center. More information: [Enable shift and schedule management](../administer/wfm-enable-schedule-management.md).
+Before you can work with shift plans, your administrator must enable the feature in Copilot Service admin center. More information: [Enable shift and schedule management](../administer/wfm-enable-schedule-management).
 
 ## Create a shift plan
 

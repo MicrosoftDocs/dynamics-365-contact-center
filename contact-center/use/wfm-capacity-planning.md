@@ -1,5 +1,5 @@
 ---
-title: Use capacity planning to predict your staffing needs
+title: Create and manage capacity planning
 description: Learn how to set up capacity plans to help you effectively manage your workforce.
 ms.date: 04/11/2025
 ms.topic: how-to
@@ -10,7 +10,7 @@ ms.custom: bap-template
 ms.collection:
 ---
 
-# Use capacity planning to predict your staffing needs
+# Create and manage capacity planning
 
 Capacity planning helps you ensure you have the right number of customer service representatives (service representatives or representatives) available at the right time. It enables you to forecast your staffing needs at different levels of granularity to help you align your workforce capacity with your expected service demand. 
 

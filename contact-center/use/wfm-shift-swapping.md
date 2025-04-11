@@ -11,7 +11,7 @@ ms.collection:
 ---
 # Use shift swapping
 
-Shift swapping lets you customer service representatives (service representatives, representatives) exchange their bookings and provide coverage for themselves and other representatives without affecting the schedule. 
+Shift swapping lets your customer service representatives (service representatives, representatives) exchange their bookings and provide coverage for themselves and other representatives without affecting the schedule. 
 
 Key features include the following:
 

@@ -1,5 +1,5 @@
 ---
-title: Create and manaage forecast scenarios
+title: Create and manaage forecast scenarios to predict staffing needs
 description: Learn how to use forecast scenario reports to predict service representative, case, and conversation volumes.
 ms.date: 04/11/2025
 ms.topic: conceptual

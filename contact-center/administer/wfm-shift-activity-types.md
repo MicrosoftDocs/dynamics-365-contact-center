@@ -26,9 +26,9 @@ A shift activity type helps you define the type of work to be performed as part 
      1. In **Workforce setup**, select **View** next to **User management**.
 
    Refer to the following articles to set up your user profiles.
-    -	[Manage user profiles](users-user-profiles.md)
-    -	[Create and manage capacity profiles](capacity-profiles.md)
-    -	[Manage personas and custom security profiles](role-persona-mapping.md)
+    -	[Manage user profiles](/dynamics365/customer-service/users-user-profiles)
+    -	[Create and manage capacity profiles](/dynamics365/customer-service/capacity-profiles)
+    -	[Manage personas and custom security profiles](/dynamics365/customer-service/role-persona-mapping)
 
 ## Configure a shift activity type
 

@@ -23,4 +23,4 @@ When you create a forecast scenario, you can use historical data as the input so
 1. For **File**, select **Choose File**, and then browse to and select the file you want to use.
 1. Select **Save**.
 
-You can now use this file as your data source when you create a new forecast report.
+You can now use this file as your data source when you [create a new forecast report](wfm-forecast-scenarios.md#create-a-short-term-or-long-term-forecast-report).

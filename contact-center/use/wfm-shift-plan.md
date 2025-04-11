@@ -18,7 +18,7 @@ As a supervisor, you can use shift plans to effectively plan and schedule your c
 
 A shift plan is a predefined template you create that details the structure and characteristics of a specific shift, along with the staffing requirements. It allows you to establish your organization’s shift structure and plan for your staffing needs in advance. This preparation helps ensure you have the right service representatives available at the right time to support your business operations.
 
-A shift plan includes the following key components:
+A shift plan includes the following key components: 
 
 - **Start date**: Specifies the date that the shift plan begins. This date is in the time zone that's set for the shift plan.
 - **End date**: Specifies the date that the shift plan ends. This date is in the time zone that has been set for the shift plan.
@@ -39,13 +39,13 @@ Before you can work with shift plans, your administrator must enable the feature
 1. In the site map of the Copilot Service workspace app, go to **Workforce management**, and then select **Shift Planning**. The **My Shift Plans** page appears.
 1. Select **New**, and then select either **Schedule manually** or **Schedule with capacity plan** from the dropdown menu. The **New Shift Plan** page appears.
 1. On the **Plan Details** card, fill in the following required details:
-     1. **Shift Plan Name**: The name for the shift plan.
-     1. **Start Date**: The start date for the shift plan.
-     1. **End Date**: The end date for the shift plan.
-     1. **Required Staff**: The number of staff members needed for the shift.
-     1. **Start time**: The shift start time. Once you save the shift plan, you can't change this time.
-     1. **End time**: The shift end time.
-     1. **Time zone**: The time zone where the shift occurs. Once you save the shift plan, you can't change the time zone.
+     - **Shift Plan Name**: The name for the shift plan.
+     - **Start Date**: The start date for the shift plan.
+     - **End Date**: The end date for the shift plan.
+     - **Required Staff**: The number of staff members needed for the shift.
+     - **Start time**: The shift start time. Once you save the shift plan, you can't change this time.
+     - **End time**: The shift end time.
+     - **Time zone**: The time zone where the shift occurs. Once you save the shift plan, you can't change the time zone.
 1. On the **Activity Itinerary** card, select **Add activity**, and then select the activities you want to add the shift from the dropdown menu. You can update the duration of any activity after adding it to the **Activity Itinerary** by hovering on the activity. Handle bars appear on the activity box. You can select the respective handle bar, and then drag it to increase or decrease the duration of the activity. You can also change the order of activities or delete them as follows:
    - To move the activity, drag the activity up or down. You can also right-click the activity, and then select **Move up** or **Move down**.
    - To delete the activity, select the activity, and then press the **Del** key on your keyboard. You can also right-click the activity, and then select **Delete**.

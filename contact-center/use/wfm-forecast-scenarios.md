@@ -38,14 +38,12 @@ You can use the forecast reports for service representative, case, and conversat
 
 - Automatically detect seasonality from historical traffic with the settings option to import your holiday calendar. This function helps the forecasting model to accurately predict case or conversation volumes during special, seasonal events.
 
-Learn more about how the forecast models work for this feature in [How agent forecasting for conversation works](../administer/configure-agent-forecasting-conversation.md#how-agent-forecasting-for-conversation-works) and [How case volume forecasting works](../administer/configure-volume-forecasting.md#how-case-forecasting-works).
-
 > [!NOTE]
 > Be aware of the following when using forecasting scenario reports:
 >
 > - Forecast reports might misstate volume estimates for many reasons, including unanticipated trends or business developments.
 >
-> - Forecast reports are currently available in certain geographical locations. Learn more in [Supported regions and languages for analytics and insights](/dynamics365/customer-service/administer/cs-region-availability-service-limits.md#supported-regions-and-languages-for-analytics-and-insights).
+> - Forecast reports are currently available in certain geographical locations. Learn more in [Supported regions and languages for analytics and insights](/customer-service/administer/cs-region-availability-service-limits.md#supported-regions-and-languages-for-analytics-and-insights).
 
 ## Prerequisites
 

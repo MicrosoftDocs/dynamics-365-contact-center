@@ -1,5 +1,5 @@
 ---
-title: Forecast case and conversation volumes
+title: Create and manaage forecast scenarios
 description: Learn how to use forecast scenario reports to predict service representative, case, and conversation volumes.
 ms.date: 04/11/2025
 ms.topic: conceptual
@@ -10,7 +10,7 @@ ms.custom: bap-template
 ms.collection:
 ---
 
-# Forecast case and conversation volumes, and service representatives for conversations
+# Create and manage forecast scenarios
 
 
 This article describes how to navigate the forecast reports in Copilot Service workspace so that you can successfully meet the staffing demands of your organization.

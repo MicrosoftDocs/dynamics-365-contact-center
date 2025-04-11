@@ -54,7 +54,7 @@ Learn more about how the forecast models work for this feature in [How agent for
 
 Before you can use the forecast reports, ensure that your administrator assigned a role to you that has **Read** privileges on the **msdyn_dataanalyticsreport_forecast** table. 
 
-## Short-term and long-term forecast scenarios
+## Forecast scenario types
 
 You can create either short-term or long-term forecasts.
 
@@ -65,7 +65,7 @@ You can create either short-term or long-term forecasts.
 ## Create a short-term or long-term forecast report
 
 1. On the Copilot Service workspace site map, select **Forecasting** under **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.
-1. Select the ellipsis > **New**, and the select either **Short-term** or **Long-term** from the dropdown menu. The **New Forecast Scenario** page appears.
+1. Select **New**, and the select either **Short-term** or **Long-term** from the dropdown menu. The **New Forecast Scenario** page appears.
 1. On the **Details** card, fill in the **Name** and **Duration (Days)** fields.
 1. On the **Configuration parameters** card, select the following:
       1. **Forecast entity**: Select either **Conversation** or **Case**.

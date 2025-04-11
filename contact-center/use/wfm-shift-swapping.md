@@ -18,7 +18,7 @@ Key features include the following:
 - Supervisors receive notifications via email or in-app when a swap request is accepted or rejected by agents.
 - Supervisors can review and either approve or decline swap requests as part of the approval process.
 - Service representatives can swap shifts 1:1 with a colleague, or post the swap request publicly for any team member to pick up.
-- Reprensentatives can receive notifications via email or in-app when the swap is accepted or rejected by a colleague. 
+- Representatives can receive notifications via email or in-app when the swap is accepted or rejected by a colleague. 
 
 ## Create a shift swap request
 

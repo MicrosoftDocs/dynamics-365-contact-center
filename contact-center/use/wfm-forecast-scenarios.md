@@ -43,7 +43,7 @@ You can use the forecast reports for service representative, case, and conversat
 >
 > - Forecast reports might misstate volume estimates for many reasons, including unanticipated trends or business developments.
 >
-> - Forecast reports are currently available in certain geographical locations. Learn more in [Supported regions and languages for analytics and insights](/customer-service/administer/cs-region-availability-service-limits.md#supported-regions-and-languages-for-analytics-and-insights).
+> - Forecast reports are currently available in certain geographical locations. Learn more in [Supported regions and languages for analytics and insights](/dynamics365/customer-service/administer/cs-region-availability-service-limits#supported-regions-and-languages-for-analytics-and-insights).
 
 ## Prerequisites
 

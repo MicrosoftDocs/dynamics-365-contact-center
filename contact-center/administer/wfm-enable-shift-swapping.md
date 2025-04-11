@@ -16,7 +16,7 @@ ms.custom:
 
 # Enable shift swapping
 
-Shift swapping allows supervisors to offer their customer service representatives (service representatives or representatives) the ability to swap shifts directly with other representatives.
+Shift swapping allows supervisors to offer their customer service representatives (service representatives or representatives) the ability to swap shifts with other representatives.
 
 ## Prerequisites
 

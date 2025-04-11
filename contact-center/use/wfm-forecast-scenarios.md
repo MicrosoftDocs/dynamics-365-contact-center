@@ -36,7 +36,7 @@ You can use the forecast reports for service representative, case, and conversat
 
 - View a rollup of actual and forecasted volume on an hourly, daily, weekly, monthly, and yearly basis.
 
-- Automatically detect seasonality from historical traffic with the settings option to import your holiday calendar. This function helps the forecasting model to accurately predict case or conversation volumes during special, seasonal events.
+- Automatically detect seasonality from historical traffic with the settings option to import your holiday calendar. This function helps the forecasting model to predict case or conversation volumes during special, seasonal events.
 
 > [!NOTE]
 > Be aware of the following when using forecasting scenario reports:

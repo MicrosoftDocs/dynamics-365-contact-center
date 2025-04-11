@@ -37,5 +37,5 @@ To enable shift swapping, complete the following steps:
 1. In the site map of the Copilot Service admin center app, go to **Operations**, and then select **Workforce management**. The **Workforce management** page appears.
 1.	In **Time management**, select **Manage** next to **Shift swapping**.
 1.	On the **Swapping** page, set the **Enable shift swap** toggle to **On**.
-1.	In **Shift swap expiry (days)**, enter the number of days for the swapping to last.
+1.	In **Shift swap expiry (days)**, enter the number of days until the shift swap expires.
 1.	Select **Save and Close**.

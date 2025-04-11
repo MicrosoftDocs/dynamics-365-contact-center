@@ -127,29 +127,29 @@
       - name: Workforce management
         items:
         - name: Forecasting
-        items:
-        - name: Enable volume forecasting
-          href: wfm-configure-forecast-scenarios.md
-        - name: Enable capacity planning
-          href: wfm-configure-capacity-planning.md
-      - name: Shift and schedule management
-        items: 
-        - name: Enable shift activity types
-          href: wfm-shift-activity-types.md
-        - name: Enable schedule management
-          href: wfm-enable-schedule-management.md
-        - name: Enable shift-based routing (preview)
-          href: wfm-enable-shift-based-routing.md
-      - name: Time management
-        items:
-        - name: Enable the representative calendar
-          href: wfm-configure-representative-calendar.md
-        - name: Enable time-off request types
-          href: wfm-time-off-request-types.md
-        - name: Enable shift bidding
-          href: wfm-enable-shift-bids.md
-        - name: Enable shift swapping
-          href: wfm-enable-shift-swapping.md
+          items:
+          - name: Enable volume forecasting
+            href: wfm-configure-forecast-scenarios.md
+          - name: Enable capacity planning
+            href: wfm-configure-capacity-planning.md
+        - name: Shift and schedule management
+          items: 
+          - name: Enable shift activity types
+            href: wfm-shift-activity-types.md
+          - name: Enable schedule management
+            href: wfm-enable-schedule-management.md
+          - name: Enable shift-based routing (preview)
+            href: wfm-enable-shift-based-routing.md
+        - name: Time management
+          items:
+          - name: Enable the representative calendar
+            href: wfm-configure-representative-calendar.md
+          - name: Enable time-off request types
+            href: wfm-time-off-request-types.md
+          - name: Enable shift bidding
+            href: wfm-enable-shift-bids.md
+          - name: Enable shift swapping
+            href: wfm-enable-shift-swapping.md
       - name: Email
         items:
         - name: Configure email

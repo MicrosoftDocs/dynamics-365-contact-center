@@ -1,6 +1,6 @@
 ---
-title: Create and manaage forecast scenarios
-description: Learn how to use forecast scenario reports to predict service representative, case, and conversation volumes.
+title: View and approve time-off requests
+description: Learn how to view and approve or reject time-off requests in your organization.
 ms.date: 04/11/2025
 ms.topic: conceptual
 author: lalexms

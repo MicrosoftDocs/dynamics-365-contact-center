@@ -26,7 +26,7 @@ Complete the following steps:
 
 1. In the Copilot Service workspace app, go to **Service Calendar**.
 1. Select **New** > **Shift swap request**. The **New WEM Request** page appears.
-1. On the **Details** tab, complete the following items: 
+1. On the **Details** tab, enter the following details: 
       1. **Date**: Date when you want to swap the shift.
       1. **Shift Plan**: Select the shift from the dropdown list.
       1. **Full shift day**: If you want to swap the entire day, turn on the toggle.

@@ -32,7 +32,7 @@ A shift plan includes the following key components:
 
 ## Prerequisites
 
-Before you can work with shift plans, your administrator must enable the feature in Copilot Service admin center. More information: [Enable shift and schedule management](../administer/wfm-enable-schedule-management).
+Before you can work with shift plans, your administrator must enable the feature in Copilot Service admin center. More information: [Enable shift and schedule management](../administer/wfm-enable-schedule-management.md).
 
 ## Create a shift plan
 
@@ -76,7 +76,7 @@ Once you define your shift plan, you must schedule your customer service represe
          > [!NOTE]
          > Each activity in the activity itinerary is created as a booking for the representative.
 
-### Add extra bookings for a customer serivce representative
+### Add extra bookings for a customer service representative
 
 Complete the following steps to add extra bookings for a service representative.
 

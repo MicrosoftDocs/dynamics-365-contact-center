@@ -12,8 +12,6 @@ ms.collection:
 
 # Create and schedule a shift plan
 
-[!INCLUDE [preview-disclaimer](../../../ce/includes/preview-disclaimer.md)]
-
 As a customer service supervisor, you need to be able to manage and schedule agents based on availability, skill sets, and business needs. Being able to manage and schedule your customer service representatives (service representatives or representatives) helps you ensure that your contact center has adequate coverage for all of your customer service operations.
 
 As a supervisor, you can use shift plans to effectively plan and schedule your customer service representatives.
@@ -34,7 +32,7 @@ A shift plan includes the following key components:
 
 ## Prerequisites
 
-Before you can work with shift plans, your administrator must enable the feature in Copilot Service admin center. More information: [Configure shift and schedule management](../administer/wfm-configure-shift-management.md).
+Before you can work with shift plans, your administrator must enable the feature in Copilot Service admin center. More information: [Enable shift and schedule management](../administer/wfm-enable-schedule-management).
 
 ## Create a shift plan
 
@@ -125,5 +123,5 @@ Complete the following steps to publish the schedules.
 
 ## See also
 
-[Configure capacity planning](../administer/wfm-configure-capacity-planning.md)
+[Configure capacity planning](../administer/wfm-configure-capacity-planning)
 

@@ -14,7 +14,7 @@ ms.collection:
 
 If you have a large volume of customer service representatives (service representatives or representatives) that you want to schedule activites for, you can use the auto scheduler on the schedule board to quickly create the shift plan.
 
-# Use auto schedule
+## Use auto schedule
 
 1. On the Copilot Service workspace site map, select **Shift planning** in **Workforce Management**. The **My Shift Plans** page appears.
 1. Select the shift plan you want to use to book the representatives, and then select **Schedule people** on the task bar. The shift scheduler board appears.

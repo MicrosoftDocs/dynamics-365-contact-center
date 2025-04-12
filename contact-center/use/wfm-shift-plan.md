@@ -24,7 +24,7 @@ A shift plan includes the following key components:
 - **End date**: Specifies the date that the shift plan ends. This date is in the time zone that has been set for the shift plan.
 - **Start time**: Specifies the time that the shift starts. The shift starts on this time for each day of the week, as defined by the *Weekly recurrence*.
 - **End time**:  Specifies the time that the shift ends. The shift ends on this time for each day of the week, as defined by the *Weekly recurrence*.
-- **Required staff**: Specifies the required number of customer service representatives needed for seamless operations during the shift defined by the plan.
+- **Capacity plan**: Specifies the required number of customer service representatives needed for seamless operations during the shift defined by the plan.
 - **Skills**: Specifies the preferred skills that a customer service representative needs to have to work the shift.
 - **Queues**: Specifies the preferred support queues that a customer service representative has to be part of for the shift.
 - **Calendar**: Defines the operational parameters of the shift plan, including any holiday calendars your contact center observes, the days of the week that the shift plan is operational (weekly recurrence), and the time zone of the shift plan.

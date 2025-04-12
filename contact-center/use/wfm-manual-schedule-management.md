@@ -1,7 +1,7 @@
 ---
 title: Use manual schedule management
 description: Learn how to use manual schedule management 
-ms.date: 04/11/2025
+ms.date: 04/14/2025
 ms.topic: conceptual
 author: lalexms
 ms.author: laalexan

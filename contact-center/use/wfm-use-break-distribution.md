@@ -12,7 +12,7 @@ ms.collection:
 
 # Use break distribution to assign breaks for service representatives
 
-If you have a large volume of customer service representatives (service representatives or representatives) that you want to schedule activites for, you can use the auto scheduler on the schedule board to quickly create the shift plan.
+If you have a large volume of customer service representatives (service representatives or representatives) that you want to schedule activities for, you can use the auto scheduler on the schedule board to quickly create the shift plan.
 
 ## Use break distribution
 
@@ -25,5 +25,5 @@ If you have a large volume of customer service representatives (service represen
      - **Maximum time from shift shift start**: Latest time from when the shift begins for a representative to go on a break.
      - **Minimum time before next break**: The minimum amount of time you want the representative to have in between breaks.
 1. Select **Schedule**. The schedule board updates and displays the breaks for the agents in the activity itinerary.
-1. Select **Publish**. The system sends a booking notication to the representatives who are scheduled for breaks.
+1. Select **Publish**. The system sends a booking notification to the representatives who are scheduled for breaks.
    

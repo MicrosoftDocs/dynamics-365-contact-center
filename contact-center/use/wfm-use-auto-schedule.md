@@ -12,7 +12,7 @@ ms.collection:
 
 # Use auto schedule to schedule service representatives
 
-If you have a large volume of customer service representatives (service representatives or representatives) that you want to schedule activites for, you can use the auto scheduler on the schedule board to quickly create the shift plan.
+If you have a large volume of customer service representatives (service representatives or representatives) that you want to schedule activities for, you can use the auto scheduler on the schedule board to quickly create the shift plan.
 
 ## Use auto schedule
 
@@ -23,5 +23,5 @@ If you have a large volume of customer service representatives (service represen
 1. Set the filters for **Agent availability**, **Match Skills**, and **Match Queue** as desired.
 1. Set the **Availability order** to either **Most Available to Least** or **Least Available to Most**.
 1. Select **Schedule**. The schedule board updates and fills the activities for the agents in the activity itinerary.
-1. Select **Publish**. The system sends a booking notication to the representatives who are scheduled.
+1. Select **Publish**. The system sends a booking notification to the representatives who are scheduled.
    

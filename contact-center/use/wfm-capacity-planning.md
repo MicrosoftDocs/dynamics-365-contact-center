@@ -29,7 +29,7 @@ To activate this feature, your administrator must first install the **Workforce 
 
 1. On the Copilot Service workspace site map, select **Capacity planning** in **Workforce Management**. The **Active Capacity Plans** page appears.
 1. Select **New**, and the select either **Short-term** or **Long-term** from the dropdown menu. The **New Capacity Plan** page appears.
-1. On the **Details** card, fill in the **Name**, and then search for the **Forecast Scenario** you want to use..
+1. On the **Details** card, fill in the **Name**, and then search for the **Forecast Scenario** you want to use.
 1. On the **Configuration parameters** card, fill in the following details:
      - **Service Level (%)**: The percentage of the conversations needed to meet the target answer time. For example, if you set your required service level percentage to 80 and your target answer time to 77, it indicates that you want 80 percent of your conversations to be answered in 77 seconds or less.
      - **Shrinkage**: The percentage of time service representatives are unavailable to handle conversations. If you increase this number, the percentage of time that the service representatives are unavailable goes up, which means you would need more service representatives to meet the service-level agreement.

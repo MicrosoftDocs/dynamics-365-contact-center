@@ -107,7 +107,7 @@ To edit existing bookings for a service representative, complete the following s
 
 ## Publish shift plan
 
-Once you schedule the necessary service representatives, you must publish the schedules. Publishing the schedule moves the shift plan to the **Published** state. Additionally, the bookings are moved to the **Committed** state, and then customer service representatives receive notifications of their bookings and can view the published bookings on the **My Schedule** calendar.
+Once you schedule the necessary service representatives, you must publish the schedules. Publishing the schedule moves the shift plan to the **Published** state. Additionally, the bookings are moved to the **Committed** state. Customer service representatives then receive notifications of their bookings via email and in the app, and can view their bookings on the **My Schedule** calendar.
 
 
 Complete the following steps to publish the schedules.

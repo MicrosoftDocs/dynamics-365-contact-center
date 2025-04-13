@@ -119,7 +119,7 @@ Complete the following steps to publish the schedules.
 
 1. Repeat this step for any other months for the shift plan.
 
-   Customer service representatives are now able to see the published bookings under the **My Schedule** calendar.
+   Customer service representatives receive notifications of their bookings and can view the published bookings on the **My Schedule** calendar.
 
 ## See also
 

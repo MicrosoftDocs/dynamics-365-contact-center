@@ -73,7 +73,7 @@ You can create either short-term or long-term forecasts.
       1. **Run time zone**: Use the dropdown menu to select the time zone you want the system to use when it runs the report.
 1. On the **Historical data** card, fill in the following details:
       1. **Data source**: Select **Internal**: Select **Internal** or **External**.
-      1. **Historical data start date**: Choose how far back in time you want to begin the data. By default, this date is two years previous from the present date when you create the report.
+      1. **Historical data start date**: Select the date from which you want to track the data. By default, this date is set to two years before the current date when you create the report.
       1. **Seasonality**: Use the dropdown menu to select a holiday calendar if applicable.
       1. **External data**: If you're using external data as your data source, select the search field, browse to your file, and then select it. Learn how to import an external data file in [Import data for forecast scenarios](wfm-import-historical-data.md).
 1. Select **Save**.

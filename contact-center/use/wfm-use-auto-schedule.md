@@ -20,7 +20,7 @@ If you have a large volume of customer service representatives (service represen
 1. Select the shift plan you want to use to book the representatives, and then select **Schedule people** on the task bar. The shift scheduler board appears.
 2. Select the **Schedule** dropdown menu, and then select **Auto-Schedule**. The **Auto-Schedule Criteria** pane appears.
 1. For **Duration**, select the start and end dates for the activity.
-1. Set the filters for **Agent availability**, **Match Skills**, and **Match Queue** as desired.
+1. Set the filters for **Agent availability**, **Match Skills**, and **Match Queue** as required.
 1. Set the **Availability order** to either **Most Available to Least** or **Least Available to Most**.
 1. Select **Schedule**. The schedule board updates and fills the activities for the agents in the activity itinerary.
 1. Select **Publish**. The system sends a booking notification to the representatives who are scheduled.

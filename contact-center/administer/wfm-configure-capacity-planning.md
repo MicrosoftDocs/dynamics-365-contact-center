@@ -1,7 +1,7 @@
 ---
 title: Enable capacity planning
 description: Learn how to enable capacity planning so that supervisors can plan for the right number of service representatives.
-ms.date: 04/11/2025
+ms.date: 04/14/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan

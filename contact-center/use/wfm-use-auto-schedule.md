@@ -12,7 +12,7 @@ ms.collection:
 
 # Use auto schedule to schedule service representatives
 
-If you have a large volume of customer service representatives (service representatives or representatives) that you want to schedule activities for, you can use the auto scheduler on the schedule board to quickly create the shift plan.
+If you have many customer service representatives (service representatives or representatives) to schedule activities for, use the auto scheduler on the schedule board to quickly create a shift plan.
 
 ## Use auto schedule
 

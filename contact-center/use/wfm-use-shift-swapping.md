@@ -12,7 +12,7 @@ ms.collection:
 
 # Use shift swapping
 
-As a customer service representative, shift swapping can be useful for managing your work-life balance. It allows you to exchange shifts with other representatives, giving you the flexibility to attend to personal commitments without affecting your work responsibilities. Shift swapping can help you ensure that your shifts are covered while also supporting your peers.
+As a customer service representative, you can use shift swapping to manage your work-life balance. It allows you to exchange shifts with other representatives and gives you the flexibility to attend to personal commitments without affecting your work responsibilities. Shift swapping helps ensure that your shifts are covered while also supporting your peers.
 
 ## Create a shift swap request
 

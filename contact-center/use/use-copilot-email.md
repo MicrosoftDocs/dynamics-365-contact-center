@@ -50,7 +50,7 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
   Copilot displays the email template used to generate the draft. You can select **Choose a different template** if the template isn’t appropriate. The following actions are applicable:
    - The **Copilot recommended templates** dialog appears.
    - The system displays five email templates that Copilot recommends based on the context of email. 
-   - You can select one of the templates recommended by Copilot or manually search for and insert an email template. Learn more in [Enhanced email template selection dialog](/power-apps/user/insert-email-template#enhanced-email-template-selection-dialog)
+   - You can select one of the templates recommended by Copilot or manually search for and insert an email template. Learn more in [Enhanced email template selection dialog](/power-apps/user/insert-email-template#enhanced-email-template-selection-dialog).
  
    :::image type="content" source="../media/draft-an-email-inline.png" alt-text="Screenshot of draft an email in rich text editor."::: 
 

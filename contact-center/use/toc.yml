@@ -330,8 +330,6 @@
         items:
         - name: Create and manage shift plans
           href: wfm-shift-plan.md
-        - name: Use manual schedule management
-          href: wfm-manual-schedule-management.md
         - name: Use auto schedule to schedule service representatives
           href: wfm-use-auto-schedule.md
       - name: Shift-based routing

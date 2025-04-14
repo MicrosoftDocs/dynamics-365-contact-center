@@ -80,7 +80,7 @@ You can create either short-term or long-term forecasts.
 
 ## View your forecast reports
 
-1. In **Copilot Service workspace**, select **Forecast scenarios** under **Workforce Management** in the site map. The **Active Forecast Scenarios** dashboard appears.
+1. In the site map of Copilot Service workspace, select **Forecast scenarios** under **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.
 2. Select the **Reports** tab. A list of the reports you created appears.
 
 The first time you access the dashboard, any scenarios you configured appear in **Draft** status until the first trigger occurs. After that, the scenario shows as in progress until it completes. For each scenario, the following details are displayed:

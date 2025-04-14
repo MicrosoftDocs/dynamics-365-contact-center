@@ -26,7 +26,7 @@ Manual schedule management lets you, as a supervisor, define the specific number
      - **Start time**: The shift start time. Once you save the shift plan, you can't change this time.
      - **End time**: The shift end time.
      - **Time zone**: The time zone where the shift occurs. Once you save the shift plan, you can't change the time zone.
-1. On the **Activity Itinerary** card, select **Add activity**, and then select the activities you want to add the shift from the dropdown menu. You can update the duration of any activity after adding it to the **Activity Itinerary** by hovering on the activity. Handle bars appear on the activity box. You can select the respective handle bar, and then drag it to increase or decrease the duration of the activity. You can also change the order of activities or delete them as follows:
+1. On the **Activity Itinerary** card, select **Add activity**, and then select the activities you want to add to the shift from the dropdown menu. You can update the duration of any activity after adding it to the **Activity Itinerary** by hovering on the activity. Handle bars appear on the activity box. You can select the respective handle bar, and then drag it to increase or decrease the duration of the activity. You can also change the order of activities or delete them as follows:
    - To move the activity, drag the activity up or down. You can also right-click the activity, and then select **Move up** or **Move down**.
    - To delete the activity, select the activity, and then press the **Del** key on your keyboard. You can also right-click the activity, and then select **Delete**.
 1. Select **Save**.

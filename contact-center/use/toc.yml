@@ -331,11 +331,11 @@
         - name: Use manual schedule management
           href: wfm-manual-schedule-management.md
         - name: Use auto schedule to schedule service representatives
-          href: wfm-auto-schedule.md
+          href: wfm-use-auto-schedule.md
       - name: Time management
         items:
         - name: Manage time-off requests
-          href: wfm-view-time-off-requests.mc 
+          href: wfm-view-time-off-requests.md 
     - name: Responsible AI
       items:
       - name: Overview

@@ -15,7 +15,7 @@ When you create a forecast scenario, use historical data as the input source for
 
 ## Import a historical data file 
 
-1. On the Copilot Service workspace site map, select **Forecast External Data** under **Workforce Management**. The **Active File uploads** page appears.
+1. In the site map of Copilot Service workspace, select **Forecast External Data** under **Workforce Management**. The **Active File uploads** page appears.
 1. Select **New**. The **New WEM File Upload** page appears.
 1. For **Name**, enter a name for the file.
 1. For **File data interval**, select either **Intraday** (short term) or **Daily** (long term).

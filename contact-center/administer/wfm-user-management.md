@@ -20,7 +20,7 @@ The first step to managing your workforce is to set up your users with the corre
 
 This article walks you through the process of creating users and assigning the appropriate security roles and skills to help you enable effective workforce management.
 
-## Create supervisors and service representatives and assign security roles
+## Create users and assign security roles
 
 You can create service representatives and supervisors either manually or by bulk upload using the [User Management](/dynamics365/customer-service/administer/users-user-profiles) feature in Dynamics 365. 
 

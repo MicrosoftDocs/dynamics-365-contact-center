@@ -64,7 +64,7 @@ You can create either short-term or long-term forecasts.
 1. On the **Details** card, fill in the **Name** and **Duration (Days)** fields.
 1. On the **Configuration parameters** card, select the following:
       1. **Forecast entity**: Select either **Conversation** or **Case**.
-      2. **Channels**: Search for and select the channel you want. You can choose multiple channels.
+      2. **Channels**: Search for and select the channel you want. You can select multiple channels.
       1. **Queues**: Use the search option to find the queue you want, or select **New Record** > **Queues** to create one. You can choose multiple queues.
 1. On the **Forecast run schedule** card, fill in the following details:
       1. **Auto-extension**: Set the toggle to **Yes** if you want to run the forecast. If you set the toggle to **No**, the forecast schedule remains in draft state and doesn't get created.

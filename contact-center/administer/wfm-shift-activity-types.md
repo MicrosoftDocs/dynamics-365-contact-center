@@ -16,19 +16,11 @@ ms.custom:
 
 # Configure shift activity types
 
-A shift activity type helps you define the type of work to be performed as part of a booking. Shift activity types help you manage and schedule customer service representative (service representative or representative) activities, and coordinate and schedule resources.
+A shift activity type helps you define the type of work to be performed as part of a booking. Shift activity types help you manage and schedule customer service representative (service representative or representative) activities more efficiently by categorizing tasks, aligning resources with required skills, and ensuring the right coverage at the right time.
 
 ## Prerequisites
 
-1. Install the **Workforce Management for Customer Service** package in the Power Platform admin center app.
-1. Set up your user profiles:
-     1. In the site map of the Copilot Service admin center app, go to **Operations**, and then select **Workforce management**. The **Workforce management** page appears.
-     1. In **Workforce setup**, select **View** next to **User management**.
-
-   Refer to the following articles to set up your user profiles.
-    -	[Manage user profiles](/dynamics365/customer-service/users-user-profiles)
-    -	[Create and manage capacity profiles](/dynamics365/customer-service/capacity-profiles)
-    -	[Manage personas and custom security profiles](/dynamics365/customer-service/role-persona-mapping)
+1. Complete the steps in [Set up user management](wfm-user-management.md).
 
 ## Configure a shift activity type
 

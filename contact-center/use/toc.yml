@@ -336,7 +336,7 @@
         items:
         - name: Manage time-off requests
           href: wfm-view-time-off-requests.mc 
-   - name: Responsible AI
+    - name: Responsible AI
       items:
       - name: Overview
         href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/use-context

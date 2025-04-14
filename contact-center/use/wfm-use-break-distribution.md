@@ -21,7 +21,7 @@ If you have a large volume of customer service representatives (service represen
 2. Select the **Schedule** dropdown menu, and then select **Break Distribution**. The **Break Distribution** pane appears.
 1. For **Duration**, select the start and end dates for the break.
 1. Select the check box next to any of the break types you want to set for your representatives, and then enter the corresponding times:
-     - **Minimum time from shift start**: Soonest time from when the shift begins for a representative to go on a break.
+     - **Minimum time from shift start**: Earliest break time after the shift starts.
      - **Maximum time from shift start**: Latest break time after the shift starts.
      - **Minimum time before next break**: The minimum amount of time you want the representative to have in between breaks.
 1. Select **Schedule**. The schedule board updates and displays the breaks for the agents in the activity itinerary.

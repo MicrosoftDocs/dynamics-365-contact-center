@@ -12,7 +12,7 @@ ms.collection:
 
 # Create and manage capacity planning
 
-Capacity planning helps you ensure you have the right number of customer service representatives (service representatives or representatives) available at the right time. It enables you to forecast your staffing needs at different levels of granularity to help you align your workforce capacity with your expected service demand. 
+Capacity planning ensures you have the right number of customer service representatives (service representatives or representatives) available at the right time. It lets you forecast staffing needs at different levels of detail to align workforce capacity with the expected service demand.
 
 Key ways you can plan for capacity are as follows:
 

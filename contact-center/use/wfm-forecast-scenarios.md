@@ -22,9 +22,9 @@ This article describes how to navigate the forecast reports in Copilot Service w
 
 Customer service supervisors need to ensure that they have an adequate number of customer service representatives (service representatives or representatives) available to serve their customers. Overcapacity results in higher costs, while under capacity results in longer customer wait times, which negatively affects customer satisfaction.
 
-As a supervisor, you can use the forecast scenario reports to help plan the right level of staffing for your business which is based on the predicted volume of cases and conversations, along with the predicted service representative demand for conversations.
+As a supervisor, you can use the forecast scenario reports to help plan the right level of staffing for your business which is based on the predicted volume of cases and conversations.
 
-You can use the forecast reports for service representative, case, and conversation volumes in the following ways:
+You can use the forecast reports for case and conversation volumes in the following ways:
 
 - Forecast upcoming case and conversation volumes based on historical traffic and the number of service representatives needed to meet the forecasted conversation volume. For conversation volume forecasting, if your administrator has configured AI agents for your conversational channels, the system excludes conversations that AI agents handle without having a service representative join the conversation. This function ensures that you can rely on the predicted conversation volumes for service representative staffing.
 

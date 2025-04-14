@@ -59,7 +59,7 @@ You can create either short-term or long-term forecasts.
 
 ## Create a short-term or long-term forecast report
 
-1. On the Copilot Service workspace site map, select **Forecasting** under **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.
+1. In the site map of Copilot Service workspace, select **Forecasting** under **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.
 1. Select **New**, and the select either **Short-term** or **Long-term** from the dropdown menu. The **New Forecast Scenario** page appears.
 1. On the **Details** card, fill in the **Name** and **Duration (Days)** fields.
 1. On the **Configuration parameters** card, select the following:

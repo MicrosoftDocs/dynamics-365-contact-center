@@ -18,5 +18,5 @@ You can view and approve or reject time-off requests from customer service repre
 
 1. On the Copilot Service workspace site map, select **Request Management** under **Workforce Management**. The **All Active Requests** page appears, and shows a list of all requests.
 1. Select the time-off request you want to take action on from the list. The request page appears, where you can view the details of the time off, include start, end, time-off type, total hours, and any notes the service representative entered.
-1. Select **Approve** to approve the request, or **Reject** to reject the request. If notifications are enabled in your organization, a notification is sent to the representative.
+1. Select **Approve** or **Reject**.  If notifications are enabled in your organization, a notification is sent to the representative.
 

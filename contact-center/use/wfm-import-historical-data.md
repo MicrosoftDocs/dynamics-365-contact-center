@@ -1,5 +1,5 @@
 ---
-title: Import historical data for forecast scenarios
+title: Import historical data
 description: Learn how to import historical data to use in your case and conversation forecast scenarios.
 ms.date: 04/11/2025
 ms.topic: how-to

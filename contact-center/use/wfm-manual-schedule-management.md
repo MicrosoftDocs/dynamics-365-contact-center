@@ -12,7 +12,7 @@ ms.collection:
 
 # Use manual schedule management
 
-Manual schedule management lets you, as a supervisor, define the specific number of customer service representatives (service representatives or representatives) you need across all shifts in a given time span. Any shift plans you create will automatically assign the number of staff you need.
+As a supervisor, you can manually schedule management to define the number of customer service representatives (service representatives or representatives) needed across all shifts in a specific time span. Shift plans that you create automatically assign the required number of staff.
 
 ## Use manual scheduling to assign shifts to representatives
 

@@ -1,7 +1,7 @@
 ---
 title: Enable shift activity types
 description: Learn how to configure shift activity types for your organization.
-ms.date: 04/11/2025
+ms.date: 04/14/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan

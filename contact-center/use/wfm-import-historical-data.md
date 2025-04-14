@@ -11,7 +11,7 @@ ms.collection:
 ---
 # Import historical data
 
-When you create a forecast scenario, you can use historical data as the input source for the forecasting model to use to predict volume in the future. Historical data can be configured to go back in time up to two years from the present date when you create the forecast report. To configure the report to use historical data, you must first upload a historical data file.
+When you create a forecast scenario, use historical data as the input source for the forecasting model to predict future volume. Historical data can be tracked up to two years from the date when you create the forecast report. To configure the report to use historical data, you must first upload a historical data file.
 
 ## Import a historical data file 
 

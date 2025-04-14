@@ -125,6 +125,9 @@
           - name: FAQ about adding users to agent experience profile
             href: /dynamics365/customer-service/administer/faq-agent-experience-profile?context=/dynamics365/contact-center/context/administer-context
       - name: Manage your workforce
+        items:
+        - name: User management
+          href: wfm-user-management.md
         - name: Forecasting
           items:
           - name: Enable volume forecasting

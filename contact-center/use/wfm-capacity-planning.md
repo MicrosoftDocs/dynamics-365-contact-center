@@ -56,6 +56,6 @@ In the **Capacity Plan Output** section, **Detailed view**, you can filter the d
 
 **Detailed view**: You can filter the data in the following ways:
    - **All**: Displays the capacity numbers across all channels and queues.
-   - **Channel**: Displays the capacity numbers, sliced by each channel. You can use the drill up and down buttons to drill to specific levels in the hierarchy.
+   - **Channel**: Displays the capacity numbers, sliced by each channel. 
    - **Queue**: Displays the capacity numbers, sliced by each queue. You can use the drill up and down buttons to drill to specific levels in the hierarchy.
 

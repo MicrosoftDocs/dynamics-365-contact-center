@@ -20,7 +20,7 @@ A shift activity type helps you define the type of work to be performed as part 
 
 ## Prerequisites
 
-1. Complete the steps in [Set up user management](wfm-user-management.md).
+Complete the steps in [Set up user management](wfm-user-management.md).
 
 ## Configure a shift activity type
 

@@ -20,7 +20,7 @@ When you create a forecast scenario, use historical data as the input source for
 1. For **Name**, enter a name for the file.
 1. For **File data interval**, select either **Intraday** (short term) or **Daily** (long term).
 1. Select **Save**.
-1. For **File**, select **Choose File**, and then browse to and select the file you want to use.
+1. For **File**, select **Choose File**, and then browse and select the required file.
 1. Select **Save**.
 
 You can now use this file as your data source when you [create a new forecast report](wfm-forecast-scenarios.md#create-a-short-term-or-long-term-forecast-report).

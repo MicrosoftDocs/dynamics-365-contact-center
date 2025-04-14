@@ -47,7 +47,7 @@ You can use the forecast reports for service representative, case, and conversat
 
 ## Prerequisites
 
-Before you can use the forecast reports, ensure that your administrator assigned a role to you that has **Read** privileges on the **msdyn_dataanalyticsreport_forecast** table. 
+Your administrator has assigned a role to you that has **Read** privileges on the **msdyn_dataanalyticsreport_forecast** table. 
 
 ## Forecast scenario types
 

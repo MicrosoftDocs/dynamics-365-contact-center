@@ -40,7 +40,7 @@ Your administrator has installed the **Workforce Management for Customer Service
 
 ## View your capacity plans
 
-1. In **Copilot Service workspace**, select **Capacity planning** in **Workforce Management** in the site map. The **Active Forecast Scenarios** dashboard appears.
+1. In the site map of **Copilot Service workspace**, select **Capacity planning** in **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.
 1. Select the plan you want to view from the list, and then select the **Reports** tab.
 
 ### Data filters and visualizations

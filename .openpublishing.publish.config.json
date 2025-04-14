@@ -32,7 +32,8 @@
       "branch": "main",
       "branch_mapping": {}
     },
-    {"path_to_root": "includes",
+    {
+      "path_to_root": "includes",
       "url": "https://github.com/MicrosoftDocs/dynamics-365-customer-engagement-pr",
       "branch": "main",
       "branch_mapping": {}

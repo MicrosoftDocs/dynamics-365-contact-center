@@ -14,16 +14,13 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-Agents can draft emails faster with Copilot. Agents can draft emails in the Copilot side pane or inline from the rich text editor. 
+Customer Service representatives (service representatives or representatives) can draft emails faster with Copilot. Service representatives can draft emails in the Copilot side pane or inline from the rich text editor. 
 
 ## Prerequisites
 
 - [Enable data movement across regions](/power-platform/admin/geographical-availability-copilot#enable-data-movement-across-regions) in Power Platform admin center if your environment doesn't have United States, India, Australia, and United Kingdom as the geography for data processing and storage.
 - [Opt in to AI terms to continue with Copilot setup](configure-copilot-features.md#opt-in-to-continue-with-copilot-setup) in Customer Service admin center.
 
-## Region availability
-
-The draft an email feature is enabled by default in the Copilot help pane and rich text editor by default in the United States, India, Australia, and United Kingdom. For other regions, you must perform the steps in the following sections for Copilot to assist customer service representatives (service representatives or representatives) with composing emails.
 
 ## Enable knowledge sources for Copilot to draft emails
 
@@ -57,6 +54,10 @@ To enable your service representatives to write an email in the Copilot side pan
 1. Switch the **Write an email - Help pane** toggle to **On**.
 1. Select **Save**.
 
+## Enable Copilot to recommend email templates
+
+Select the **Copilot for email templates** checkbox to enable Copilot to recommend email templates. Copilot automatically selects the most appropriate email template and inserts it in the email editor, based on the prompt specified by the service representative. Learn more in [Use Copilot to draft an email in the rich text editor](/dynamics365/contact-center/use/use-copilot-email#use-copilot-to-draft-an-email). This feature is available in the inline email editor only.
+
 ### Modify the fields used to draft emails in Copilot help pane
 
 [!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
@@ -77,7 +78,7 @@ In Contact Center admin center or Customer Service admin center, go to **Copilot
 > [!NOTE]
 > You can't modify the **Case Notes** and **Email Content** field values that Copilot uses to draft emails.
 
-## Next Step
+## Next Steps
 
 [Write an email with Copilot](../use/use-copilot-email.md)
 

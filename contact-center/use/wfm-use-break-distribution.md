@@ -12,7 +12,7 @@ ms.collection:
 
 # Use break distribution to assign breaks for service representatives
 
-If you have a large volume of customer service representatives (service representatives or representatives) that you want to schedule activities for, you can use the auto scheduler on the schedule board to quickly create the shift plan.
+To schedule breaks for your customer service representatives (service representatives or representatives), you can use the shift schedule board to quickly breaks. Representatives are then notified of their breaks via email and in-app notifications.
 
 ## Use break distribution
 

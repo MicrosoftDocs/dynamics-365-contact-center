@@ -26,7 +26,9 @@ Key features include:
 
 ## Prerequisites
 
-Complete the steps in [Set up user management](wfm-user-management.md).
+- Complete the steps in [Set up user management](wfm-user-management.md).
+- For service representatives to be able to submit their time off requests, make sure that they're assigned to the correct manager.
+
 
 ## Configure a time-off request type
 

@@ -50,7 +50,7 @@ When you open a report, the following filters and visualizations are available:
 - **Duration**: Allows you to enter the date range or use the sliders to set the dates.
 - **Intervals**: Select the **Daily**, **Weekly**, or **Monthly** view.
 - **Channel**: Select one or more channels for which you want data displayed.
-**Queue**: Select one or more queues for which you want data displayed.
+- **Queue**: Select one or more queues for which you want data displayed.
 
 In the **Capacity Plan Output** section, you can view the following details: 
 

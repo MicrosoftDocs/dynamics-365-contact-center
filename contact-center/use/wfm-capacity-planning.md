@@ -23,7 +23,7 @@ You can plan capacity in the following ways:
 
 ## Prerequisites
 
-To activate this feature, your administrator must first install the **Workforce Management for Customer Service** package in the Power Platform admin center app, and then enable the feature in Copilot Service admin center.
+Your administrator has installed the **Workforce Management for Customer Service** package in the Power Platform admin center app and then enabled the feature in Copilot Service admin center.
 
 ## Create a capacity plan
 

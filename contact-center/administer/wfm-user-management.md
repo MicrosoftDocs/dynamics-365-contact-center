@@ -29,7 +29,7 @@ Make sure your users are assigned the following security roles:
 - Supervisors must be assigned the Omnichannel supervisor security role.
 - Service representatives must be assigned the Omnichannel agent security role.
 
-## Assign skills and proficiency levels  
+## Create and assign skills and proficiency levels  
 
 Before assigning tasks and scheduling, you must equip your service representatives with the necessary skills and proficiency levels. This ensures that the right individuals are assigned to the appropriate tasks based on their expertise.
 

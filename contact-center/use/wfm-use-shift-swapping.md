@@ -16,7 +16,7 @@ As a customer service representative, shift swapping can be useful for managing 
 
 ## Create a shift swap request
 
-1. On the Copilot Service workspace site map, select **Request Management** under **Workforce Management**. The **All Active Requests** page appears.
+1. In the site map of Copilot Service workspace, select **Request Management** under **Workforce Management**. The **All Active Requests** page appears.
 1. Select **New**, and then select **Shift Swap** from the dropdown menu. The **New WEM Request** page appears.
 1. On the **Select shift** card, enter the details as follows:
       - **Date**: Select the date for the shift you want to swap.

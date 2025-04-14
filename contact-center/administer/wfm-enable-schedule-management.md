@@ -36,6 +36,8 @@ Schedule management lets you organize service activities for your customer servi
 1.	In **Shift & Schedule Management**, select **Manage** next to **Schedule Management**.
 1.	On the **Schedule management** page, set the **Allow agents to accept schedule** toggle to **On**.
 3.	For **Schedule acceptance deadline (days)**, set the number of days for a service representative to be able to accept their schedule.
+    > [!Note]
+    > If the representative doesn't accept or reject within the deadline, then the system automatically sets the schedule to rejected status.
 4.	Select **Save and Close**.
 
    

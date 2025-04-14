@@ -322,6 +322,8 @@
           href: wfm-forecast-scenarios.md
         - name: Import historical data
           href: wfm-import-historical-data.md
+      - name: Capacity planning
+        items:
         - name: Create and manage capacity plans
           href: wfm-capacity-planning.md
       - name: Shift planning and scheduling
@@ -332,7 +334,11 @@
           href: wfm-manual-schedule-management.md
         - name: Use auto schedule to schedule service representatives
           href: wfm-use-auto-schedule.md
-      - name: Time management
+      - name: Shift-based routing
+        items:
+        - name: Overview of shift-based routing
+          href: /dynamics365/customer-service/use/shift-based-routing?context=/dynamics365/contact-center/context/use-context
+      - name: Time-off request management
         items:
         - name: Manage time-off requests
           href: wfm-view-time-off-requests.md 

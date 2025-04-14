@@ -16,7 +16,7 @@ Manual schedule management lets you, as a supervisor, define the specific number
 
 ## Use manual scheduling to assign shifts to representatives
 
-In the site map of the Copilot Service workspace app, go to **Workforce management**, and then select **Shift Planning**. The **My Shift Plans** page appears.
+1. In the site map of the Copilot Service workspace app, go to **Workforce management**, and then select **Shift Planning**. The **My Shift Plans** page appears.
 1. Select **New**, and then select either **Schedule manually** or **Schedule with capacity plan** from the dropdown menu. The **New Shift Plan** page appears.
 1. On the **Plan Details** card, fill in the following required details:
      - **Shift Plan Name**: The name for the shift plan.

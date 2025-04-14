@@ -14,7 +14,7 @@ ms.collection:
 
 Capacity planning ensures you have the right number of customer service representatives (service representatives or representatives) available at the right time. It lets you forecast staffing needs at different levels of detail to align workforce capacity with the expected service demand.
 
-Key ways you can plan for capacity are as follows:
+You can plan capacity in the following ways:
 
 - **Short-term planning**: Forecast staffing needs in 15-minute intervals for up to six weeks, allowing real-time adjustments.
 - **Long-term planning**: Plan daily staffing requirements for up to six months to support strategic workforce decisions.

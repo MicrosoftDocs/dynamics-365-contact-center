@@ -1,5 +1,5 @@
 ---
-title: Use shift swapping to manage your work activities
+title: Use shift swapping
 description: Learn how to set up shift swapping to help you efficiently manage your work schedule.
 ms.date: 04/14/2025
 ms.topic: how-to

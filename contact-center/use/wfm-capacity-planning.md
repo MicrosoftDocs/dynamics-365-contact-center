@@ -53,8 +53,6 @@ When you open a report, the following filters and visualizations are available:
 - **Queue**: Select one or more queues for which you want data displayed.
 
 In the **Capacity Plan Output** section, **Detailed view**, you can filter the data in the following ways:
-
-**Detailed view**: You can filter the data in the following ways:
    - **All**: Displays the capacity numbers across all channels and queues.
    - **Channel**: Displays the capacity numbers, sliced by each channel. 
    - **Queue**: Displays the capacity numbers, sliced by each queue. 

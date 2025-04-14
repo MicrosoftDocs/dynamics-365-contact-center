@@ -19,15 +19,7 @@ When you enable the representative calendar, customer service representatives (s
 
 ## Prerequisites
 
-1. Install the **Workforce Management for Customer Service** package in the Power Platform admin center app. Once installed, you can create forecast scenarios based on your operational needs.
-1. Set up your user profiles:
-     1. In the site map of the Copilot Service admin center app, go to **Operations**, and then select **Workforce management**. The **Workforce management** page appears.
-     1. In **Workforce setup**, select **View** next to **User management**.
-
-   Refer to the following articles to set up your user profiles.
-    -	[Manage user profiles](/dynamics365/customer-service/users-user-profiles)
-    -	[Create and manage capacity profiles](/dynamics365/customer-service/capacity-profiles)
-    -	[Manage personas and custom security profiles](/dynamics365/customer-service/role-persona-mapping)
+Complete the steps in [Set up user management](wfm-user-management.md).
 
 ## Enable the representative calendar
 
@@ -35,13 +27,3 @@ When you enable the representative calendar, customer service representatives (s
 1. In **Time management**, select **Manage** next to **Representative calendar**.
 1. On the **Representative calendar** page, set the **Enable my schedule for customer service representatives** toggle to **On**.
 1. Select **Save and Close**.
-
-## Shift bookings view for supervisors
-
-The shift booking list view lets supervisors view the bookings that are imported from their third-party workforce management system. Supervisors can use this view to access a consolidated list of bookings for all representatives in their system. The shift bookings view offers a comprehensive breakdown of each representative’s individual activities, including work hours, time off, lunch breaks, trainings, and more.
-
-Administrators can utilize this view to verify the proper functioning of the third-party adapter booking sync process.
-
-1. In Copilot Service workspace, expand the site map, and then in **Workforce management**, select **Shift Bookings**.
-
-2. Select the **All Shift Bookings** view.

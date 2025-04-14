@@ -12,7 +12,7 @@ ms.collection:
 
 # Use shift bidding to select shifts
 
-Shift bidding allows customer service representatives (service representatives, representatives) to participate in selecting their shifts through a bidding process. Supervisors release shift plans for bidding, detailing available shifts, and then representatives can submit bids based on their preferred working hours. Shifts are assigned based on the best match, and then representatives are notified and can confirm their assigned shifts.
+Shift bidding allows you to select your shifts through a bidding process. Supervisors release shift plans for bidding, detailing available shifts, and then you can submit bids based on your preferred working hours. Shifts are assigned based on the best match.  Once notified, you can confirm your assigned shifts.
 
 ## Use shift bidding
 

@@ -16,7 +16,7 @@ If you have many customer service representatives (service representatives or re
 
 ## Use auto schedule
 
-1. On the Copilot Service workspace site map, select **Shift planning** in **Workforce Management**. The **My Shift Plans** page appears.
+1. In the site map of Copilot Service workspace, select **Shift planning** in **Workforce Management**. The **My Shift Plans** page appears.
 1. Select the shift plan you want to use to book the representatives, and then select **Schedule people** on the task bar. The shift scheduler board appears.
 2. Select the **Schedule** dropdown menu, and then select **Auto-Schedule**. The **Auto-Schedule Criteria** pane appears.
 1. For **Duration**, select the start and end dates for the activity.

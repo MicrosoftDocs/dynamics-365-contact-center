@@ -1,6 +1,6 @@
 ---
 title: Use shift bidding to select shifts.
-description: Learn how to use shift bidding to help you efficiently manage your work schedule.
+description: Learn how to use shift bidding to help you manage your work schedule.
 ms.date: 04/14/2025
 ms.topic: how-to
 author: lalexms

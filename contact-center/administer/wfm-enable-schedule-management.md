@@ -16,7 +16,10 @@ ms.custom:
 
 # Enable schedule management to improve customer service
 
-Schedule management lets you organize service activities for your customer service representatives (service representatives or representatives). Schedule management ensures that representatives are scheduled optimally and efficiently to avoid disruptions in service. Schedule management can help your organization improve the quality of service for your customers.
+Schedule management lets you organize service activities for your customer service representatives (service representatives or representatives). It offers you the following benefits:
+
+- Ensures that representatives are scheduled optimally and efficiently to avoid disruptions in service.
+- Helps your organization improve the quality of service for your customers.
 
 ## Prerequisites
 

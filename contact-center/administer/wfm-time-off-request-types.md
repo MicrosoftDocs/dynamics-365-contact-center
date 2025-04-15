@@ -1,7 +1,7 @@
 ---
 title: Configure time-off requests
 description: Learn how to configure time-off request types to help your organization efficiently handle leave requests.
-ms.date: 04/11/2025
+ms.date: 04/14/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan

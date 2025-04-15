@@ -20,7 +20,7 @@ The first step to managing your workforce is to set up your users with the corre
 
 This article walks you through the process of creating users and assigning the appropriate security roles and skills to help you enable effective workforce management.
 
-## Create supervisors and service representatives and assign security roles
+## Create users and assign security roles
 
 You can create service representatives and supervisors either manually or by bulk upload using the [User Management](/dynamics365/customer-service/administer/users-user-profiles) feature in Dynamics 365. 
 
@@ -29,7 +29,7 @@ Make sure your users are assigned the following security roles:
 - Supervisors must be assigned the Omnichannel supervisor security role.
 - Service representatives must be assigned the Omnichannel agent security role.
 
-## Assign skills and proficiency levels  
+## Create and assign skills and proficiency levels  
 
 Before assigning tasks and scheduling, you must equip your service representatives with the necessary skills and proficiency levels. This ensures that the right individuals are assigned to the appropriate tasks based on their expertise.
 

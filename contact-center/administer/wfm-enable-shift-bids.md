@@ -1,7 +1,7 @@
 ---
 title: Enable shift bids
 description: Learn how to enable shift bids so that customer service representatives can use a bidding process to determine their shift selections.
-ms.date: 04/11/2025
+ms.date: 04/14/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan

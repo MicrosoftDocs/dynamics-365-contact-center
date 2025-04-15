@@ -1,7 +1,7 @@
 ---
 title: Enable shift-based routing
 description: Learn how to enable shift-based routing to route and assign cases and conversations based on representative availability.
-ms.date: 04/11/2025
+ms.date: 04/14/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan

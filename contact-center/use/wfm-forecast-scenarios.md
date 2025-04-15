@@ -20,22 +20,18 @@ This article describes how to navigate the forecast reports in Copilot Service w
 
 ## Overview
 
-Customer service supervisors need to ensure that they have an adequate number of customer service representatives (service representatives or representatives) available to serve their customers. Overcapacity results in higher costs, while under capacity results in longer customer wait times, which negatively affects customer satisfaction.
+Forecast scenarios are essential for predicting future demand in terms of volume, such as the number of customer interactions, cases, or conversations that are expected within your contact center. By analyzing historical data and identifying trends, these scenarios allow you to anticipate fluctuations in demand, and help you make informed decisions and better prepare for varying levels of service volume.
 
-As a supervisor, you can use the forecast scenario reports to help plan the right level of staffing for your business which is based on the predicted volume of cases and conversations.
+As a supervisor, you can use the forecast scenario to help plan for expected volume fluctuations, enabling you to prepare for periods of high or low demand. By analyzing different forecast scenarios, you can make data-driven decisions about resource allocation, optimize staffing levels, and ensure that service levels are maintained througout various periods of activity.
 
 You can use the forecast reports for case and conversation volumes in the following ways:
 
-- Forecast upcoming case and conversation volumes based on historical traffic and the number of service representatives needed to meet the forecasted conversation volume. For conversation volume forecasting, if your administrator has configured AI agents for your conversational channels, the system excludes conversations that AI agents handle without having a service representative join the conversation. This function ensures that you can rely on the predicted conversation volumes for service representative staffing.
-
-- Visualize forecasted volumes and service representative demand on a daily basis, for a time range up to six months, depending on how many days of cases or conversations were created in the past. This forecast can be used to plan service representative resourcing and recruitment, to meet future demand.
-
-- Visualize forecast volumes and service representative demand for a time range up to six weeks, depending on how many days of cases or conversations were created in the past. This forecast can be used to schedule service representatives to meet the near-term demand.
-
+- Forecast upcoming case and conversation volumes using historical traffic data, whether sourced internally from Dynamics 365 or externally from an imported file upload.
+- For conversation volume forecasting, if your administrator has configured AI agents for your conversation channels, the system excludes conversations that AI agents handle without having a service representative join the conversation. This function ensures that you can rely on the predicted conversation volumes for service representative staffing.
+- Forecast case and conversation volumes on a daily basis for a time range up to six months for long-term busines planning.
+- For short-term staffing and intraday planning, forecast case and conversation volumes at 15-minute intervals for a time range of up to six weeks.
 - Slice forecasted volumes and service representative demand by channel and queue.
-
 - View a rollup of actual and forecasted volume on an hourly, daily, weekly, monthly, and yearly basis.
-
 - Automatically detect seasonality from historical traffic with the settings option to import your holiday calendar. This function helps the forecasting model to predict case or conversation volumes during special, seasonal events.
 
 > [!NOTE]
@@ -53,14 +49,14 @@ Your administrator has assigned a role to you that has **Read** privileges on th
 
 You can create either short-term or long-term forecasts.
 
-- **Short term**: This report is typically used for daily forecasts. It displays an intraday view of the actual and predicted case and conversation volumes and service representative demand in intervals of 15 minutes, for a time range of up to six weeks, depending on how many days of cases or conversations were created in the past. This forecast can be used to schedule service representatives day-to-day to meet the near-term demand.
+- **Short term**: This report is typically used for daily forecasts. It displays an intraday view of the actual and predicted case and conversation volumes in intervals of 15 minutes, for a time range of up to six weeks, depending on how many days of cases or conversations were created in the past.
 
-- **Long term**: This mode displays the actual and predicted case and conversation volumes and service representative demand per day, for a time range of up to six months, depending on how many days of cases or conversations were created in the past. This forecast can be used to plan service representative resourcing and recruitment to meet a future demand.
+- **Long term**: This report displays the actual and predicted case and conversation volumes per day, for a time range of up to six months, depending on how many days of cases or conversations were created in the past.
 
 ## Create a short-term or long-term forecast report
 
 1. In the site map of Copilot Service workspace, select **Forecasting** under **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.
-1. Select **New**, and the select either **Short-term** or **Long-term** from the dropdown menu. The **New Forecast Scenario** page appears.
+1. Select **New**, and then select either **Short-term** or **Long-term** from the dropdown menu. The **New Forecast Scenario** page appears.
 1. On the **Details** card, fill in the **Name** and **Duration (Days)** fields.
 1. On the **Configuration parameters** card, select the following:
       1. **Forecast entity**: Select either **Conversation** or **Case**.
@@ -69,7 +65,7 @@ You can create either short-term or long-term forecasts.
 1. On the **Forecast run schedule** card, fill in the following details:
       1. **Auto-extension**: Set the toggle to **Yes** if you want to run the forecast. If you set the toggle to **No**, the forecast schedule remains in draft state and doesn't get created.
       2. **Day of the week**: Select the day of the week that you want the report to be created on. Use for long-term forecasts only. 
-      1. **Run time slot**: For short-term, use the dropdown menu to select the time window for which you want the system to use when it runs the report. The forecast scenario for short term runs every day. For long-term, select the day.
+      1. **Run time slot**: For short-term, use the dropdown menu to select the time window you want the system to use when it runs the report. The forecast scenario for short term runs every day. For long-term, select the day.
       1. **Run time zone**: Use the dropdown menu to select the time zone you want the system to use when it runs the report.
 1. On the **Historical data** card, fill in the following details:
       1. **Data source**: Select **Internal**: Select **Internal** or **External**.
@@ -85,7 +81,7 @@ You can create either short-term or long-term forecasts.
 
 The first time you access the dashboard, any scenarios you configured appear in **Draft** status until the first trigger occurs. After that, the scenario shows as **In progress** until it completes. For each scenario, the following details are displayed:
 
-- **Name**: The name of you gave the scenario
+- **Name**: The name of you gave the scenario.
 - **Current Status**: The state of the scenario. This status can be **Draft**, **Completed**.
 - **Interval**: The type of scenario.
 - **Duration**: The length of time.
@@ -105,7 +101,7 @@ When you open a report, the following visualizations are available:
 
 **Queue**: Select one or more queues for which you want data displayed.
 
-**Trend chart**: Shows the actual historical volumes from the past to the predicted volume in the future. The forecast is based on actual case, conversation, and service representative records created in the past.
+**Trend chart**: Shows the actual historical volumes from the past to the predicted volume in the future. The forecast is based on actual case and conversation records created in the past.
 
 **Detailed view**: You can filter the data in the following ways:
    - **All**: Displays the actual and forecasted numbers across all channels and queues. You can use the drill up and down buttons to drill to specific levels in the hierarchy.

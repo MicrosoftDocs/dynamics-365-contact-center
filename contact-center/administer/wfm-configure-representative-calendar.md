@@ -1,7 +1,7 @@
 ---
 title: Enable the representative calendar
 description: Learn how to enable the customer service representative calendar so that your representatives can see all the booked time on their calendars.
-ms.date: 04/11/2025
+ms.date: 04/14/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan

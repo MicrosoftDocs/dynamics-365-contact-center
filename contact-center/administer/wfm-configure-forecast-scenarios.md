@@ -16,7 +16,7 @@ ms.custom:
 
 # Enable volume forecasting for supervisors
 
-Forecasting allows supervisors to predict case and conversation volumes, and customer service representative demand based on historical trends.
+Forecasting allows supervisors to predict case and conversation volumes demand based on historical trends.
 
 Key benefits include:
 

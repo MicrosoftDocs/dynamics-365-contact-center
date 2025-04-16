@@ -1,7 +1,7 @@
 ---
 title: Enable forecasting
 description: Learn how to enable forecasting features so supervisors can predict case and conversation volumes and representative demand.
-ms.date: 04/14/2025
+ms.date: 04/16/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -16,7 +16,7 @@ ms.custom:
 
 # Enable volume forecasting for supervisors
 
-Forecasting allows supervisors to predict case and conversation volumes, and customer service representative demand based on historical trends.
+Forecasting allows supervisors to predict case and conversation volumes demand based on historical trends.
 
 Key benefits include:
 

@@ -38,6 +38,7 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
   ### [Draft an email in the rich text editor](#tab/richtexteditor)
 
   When you use Copilot to draft an email, you can use the following features to help you write a response to a customer.
+
  **Use prompts**
 
  You can use the predefined prompts to generate email drafts in the **Write an email** tab of the Copilot help pane:

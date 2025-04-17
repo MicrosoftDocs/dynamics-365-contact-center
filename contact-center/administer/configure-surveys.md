@@ -98,7 +98,7 @@ Multilingual survey agents work only when you set up an IVR agent that identifie
 
   :::image type="content" source="../media/screenshot-survey-global-variable.png" alt-text="A screenshot of how the global variable needs to be configured in Copilot Studio topic." lightbox="../media/screenshot-survey-global-variable.png":::  
 
-- If you don't see the **User.Language variable** in the **Conversation Start** topic, add it as follows and save and publish.
+- If you don't see the **User.Language variable** in the **Conversation Start** topic, set it as follows and save and publish.
   
 ```
     Switch(

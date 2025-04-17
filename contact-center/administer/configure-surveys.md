@@ -97,66 +97,38 @@ Multilingual survey agents work only when you set up an IVR agent that identifie
 - In your survey agent, make sure that the **Global.va_CustomerLocale** variable is set in the **Set Global Variables** topic.
 - If you don't see the **Global.va_CustomerLocale** in the **Conversation Start** topic, add it as follows and save and publish.
   
-   ```
+```
     Switch(
     Lower(Global.CustomerLocale), 
-
         "en-us", Locale.English, 
-
         "en-au", Locale.English_AU, 
-
         "en-gb", Locale.English_UK, 
-
         "es-es", Locale.Spanish, 
-
         "es-us", Locale.Spanish_US, 
-
         "tr-tr", Locale.Turkish, 
-
         "fr-fr", Locale.French, 
-
         "fr-ca", Locale.French_Canada, 
-
         "de-de", Locale.German, 
-
         "it-it", Locale.Italian, 
-
         "pt-pt", Locale.Portuguese_Brazilian, 
-
         "zh-cn", Locale.Chinese_Simplified, 
-
         "zh-tw", Locale.Chinese_Traditional, 
-
         "cs-cz", Locale.Czech, 
-
         "da-DK", Locale.Danish, 
-
         "fi-fi", Locale.Finnish, 
-
         "el-gr", Locale.Greek, 
-
         "hi-in", Locale.Hindi, 
-
         "id-id", Locale.Indonesian, 
-
         "nb-no", Locale.Norwegian, 
-
         "pl-pl", Locale.Polish, 
-
         "ru-ru", Locale.Russian, 
-
         "sv-se", Locale.Swedish, 
-
         "th-th", Locale.Thai, 
-
         "ja-jp", Locale.Japanese, 
-
         "ko-kr", Locale.Korean, 
-
         System.User.Language // Default
-    
-        )
-    ```  
+    )
+```  
 
 ### Manage the surveys
 

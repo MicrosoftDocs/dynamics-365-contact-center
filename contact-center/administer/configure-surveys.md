@@ -20,7 +20,7 @@ You can create and manage surveys that go out to the customers after a call or c
 
 [!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
-The survey appears for the customer after the customer service representative (service representative or representative) ends the conversation or call.
+The survey appears for the customer after the representative ends the conversation or call.
  
 With survey agents, you can:
 - Gather customer feedback and configure contextual actions depending on the feedback.

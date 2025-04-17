@@ -102,7 +102,7 @@ Multilingual survey agents work only when you set up an IVR agent that identifie
   
 ```
     Switch(
-    Lower(Global.CustomerLocale), 
+    Lower(Global.va_CustomerLocale), 
         "en-us", Locale.English, 
         "en-au", Locale.English_AU, 
         "en-gb", Locale.English_UK, 

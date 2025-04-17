@@ -10,16 +10,15 @@ ms.date: 04/18/2025
 ms.custom: bap-template
 ---
 
-# Configure feedback surveys using Copilot Studio (preview)
+# Configure feedback surveys using Copilot Studio
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-[!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
-
 
 You can create and manage surveys that go out to the customers after a call or conversation ends. When you create a survey in Copilot Service admin center, the application automatically provisions an AI agent (agent) survey that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+[!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 The survey appears for the customer after the customer service representative (service representative or representative) ends the conversation or call.
  
@@ -94,9 +93,11 @@ Multilingual survey agents work only when you set up an IVR agent that identifie
 - Add all other supported languages as a secondary language with the locale codes that you expect the survey agent to handle.
 
 - In the IVR agent, configure a topic with an **on redirect trigger** and set the following global variable: **va_CustomerLocale**.
-- Set the Global.va_CustomerLocale variable in the topic for verifying the customer language.
-- In your survey agent, make sure that the Global.va_CustomerLocale variable is set in the Set Global Variables topic.
-- If you don't see the Global.va_CustomerLocale in the Conversation Start topic, add it as follows and save and publish.
+- Set the **Global.va_CustomerLocale** variable in the topic for verifying the customer language.
+- In your survey agent, make sure that the **Global.va_CustomerLocale** variable is set in the **Set Global Variables** topic.
+- If you don't see the **Global.va_CustomerLocale** in the **Conversation Start** topic, add it as follows and save and publish.
+  
+   ```
     Switch(
     Lower(Global.CustomerLocale), 
 
@@ -155,7 +156,8 @@ Multilingual survey agents work only when you set up an IVR agent that identifie
         System.User.Language // Default
     
         )
-    
+    ```  
+
 ### Manage the surveys
 
 The surveys that you create using the **Customer feedback (preview)** option only appear on the **Customer feedback (preview)** page. You can't manage surveys created using other methods, such as Customer Voice.

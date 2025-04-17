@@ -52,7 +52,7 @@ This article explains how the Interactive Voice Response (IVR) or voice agent sa
 ## Contoso Order Status voice agent workflow
 
  > [!NOTE]
- > Some examples are for illustration only and are fictitious. No real association is intended or inferred.
+ > Examples are for illustration only and are fictitious. No real association is intended or inferred.
 
 The voice agent template is intended to help customers track the status of their orders. When you call the the phone number linked to the workstream the agent is added to, the workflow is as follows:
 

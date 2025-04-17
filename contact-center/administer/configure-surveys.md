@@ -83,7 +83,7 @@ Make sure that the Dataverse connection is established for Copilot Studio so tha
 
 Learn more in [Set up a Dataverse connection](/power-apps/maker/data-platform/create-connection-reference).
 
-### Configure multilingual surveys
+### Configure multilingual survey agents
 
 In Dynamics 365 Contact Center, you can set the primary language only for the survey. You can configure multilingual surveys in Copilot Studio. Learn more in [Configure and create multilingual agents](/microsoft-copilot-studio/multilingual)
 

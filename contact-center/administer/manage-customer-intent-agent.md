@@ -96,7 +96,7 @@ After the first run of the intent discovery, the intent groups are listed on the
 
   :::image type="content" source="../media/create-intent.png" alt-text="Screenshot of create intent page with all details and attributes." lightbox="../media/create-intent.png":::
 
-You can manage the intents to be used in AI agent in bulk. On the Manage intents page, select the approved intents, and on the command menu, select **Use in AI agent**. The intents are used in the AI agent.
+You can manage the intents to be used in AI agent in bulk. On the **Manage intents** page, select the approved intents, and on the command menu, select **Use in AI agent**. The intents are used in the AI agent.
  
 ## Manage intent groups
 

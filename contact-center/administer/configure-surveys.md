@@ -10,7 +10,7 @@ ms.date: 04/18/2025
 ms.custom: bap-template
 ---
 
-# Configure feedback surveys using Copilot Studio
+# Configure feedback surveys using Copilot Studio (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 

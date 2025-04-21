@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 03/07/2025
+ms.date: 04/21/2025
 ms.custom: bap-template 
 ---
 
@@ -78,6 +78,12 @@ Make sure that you have [knowledge management](/dynamics365/customer-service/adm
 Select **Knowledge base** to allow Copilot to use internal knowledge base resources for generating responses. Then information is used for the ask a question and draft an email in the Copilot help pane and rich text editor. By default, this option is disabled.
 
 If you've disabled the knowledge base option, agents can use Copilot to draft an email using the **Suggest a call**, **Request more information**, **Empathize with feedback** and **Custom** prompts.
+
+### Enable knowledge sources configured in Copilot Studio (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+You can enable customers to integrate various knowledge sources without having to add the content directly into the Dynamics 365 knowledge base. When knowledge sources are added, Copilot can use enterprise data from Power Platform, Dynamics 365 data, websites, and external systems. Knowledge sources allow your agents to provide relevant information and insights for your customers. Learn more in [Enable knowledge sources from Microsoft Copilot Studio (preview)](knowledge-copilot.md).
 
 ### Add trusted webpages as sources
 

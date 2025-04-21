@@ -83,7 +83,7 @@ If you've disabled the knowledge base option, agents can use Copilot to draft an
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-You can enable customers to integrate various knowledge platforms without having to add the content directly into the Dynamics 365 knowledge base. When knowledge sources are added, Copilot can use enterprise data from Power Platform, Dynamics 365 data, websites, and external systems. Knowledge sources allow your agents to provide relevant information and insights for your customers. Learn more in [Enable knowledge sources from Microsoft Copilot Studio (preview)](knowledge-copilot.md).
+You can enable customers to integrate various knowledge sources without having to add the content directly into the Dynamics 365 knowledge base. When knowledge sources are added, Copilot can use enterprise data from Power Platform, Dynamics 365 data, websites, and external systems. Knowledge sources allow your agents to provide relevant information and insights for your customers. Learn more in [Enable knowledge sources from Microsoft Copilot Studio (preview)](knowledge-copilot.md).
 
 ### Add trusted webpages as sources
 

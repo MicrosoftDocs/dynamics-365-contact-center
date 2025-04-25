@@ -31,9 +31,9 @@ The high-level process to configure the Teams Phone is as follows:
 - User with License Administrator role and Teams administrator role.
   - A user with License Administrator role and Teams administrator role is needed for creating the Teams resource account and for assigning a Teams calling license to the Teams resource account.
   - The Teams phone in Dynamics 365 Contact Center voice channel also requires the latest Microsoft Teams PowerShell module installed in the user’s machine.
-    - Install Microsoft Teams PowerShell module in the user’s machine if it is not yet installed.
-    - Update the Microsoft Teams PowerShell module if it's already installed.
-  - For runtime, the service representatives assigned to the voice queue need a Teams calling license.
+    - [Install Microsoft Teams PowerShell module](/microsoftteams/teams-powershell-install#installing-using-the-powershellgallery) in the user’s machine if it is not yet installed.
+    - [Update the Microsoft Teams PowerShell module](/microsoftteams/teams-powershell-install#update-teams-powershell-module) if it's already installed.
+  - At runtime, the service representatives assigned to the voice queue need a Teams calling license.
 
 ## Enable voice channel
 

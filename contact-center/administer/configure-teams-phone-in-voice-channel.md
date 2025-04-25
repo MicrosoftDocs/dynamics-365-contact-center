@@ -1,5 +1,5 @@
 ---
-title: Configure Teams phone in voice channel
+title: Configure Teams phone in voice channel (preview)
 description: Learn how to configure Teams phone in voice channel.
 author: neeranelli
 ms.author: nenellim
@@ -10,7 +10,9 @@ ms.date: 04/25/2025
 ms.custom: bap-template
 ---
 
-# Configure Teams phone in voice channel
+# Configure Teams phone in voice channel (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Integrate your existing Microsoft Teams Phone with Dynamics 365 Contact Center to simplify your voice call configuration.
 
@@ -22,6 +24,8 @@ The high-level process to configure the Teams Phone is as follows:
 1. Assign license to Teams resource account.
 1. Assign service number to Teams resource account.
 1. Configure inbound calling.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

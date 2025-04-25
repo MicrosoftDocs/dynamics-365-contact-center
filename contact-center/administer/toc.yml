@@ -212,7 +212,7 @@
           href: install-manage-desktop-app.md
         - name: Support emergency calls made by customer service representatives
           href: /dynamics365/customer-service/administer/voice-channel-emergency-calling?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure Teams phone in digital contact center
+        - name: Configure Teams phone in digital contact center (preview)
           href: configure-teams-phone-in-voice-channel.md
         - name: Forward your Teams calls to digital contact center
           href: /dynamics365/customer-service/administer/voice-forward-calls?context=/dynamics365/contact-center/context/administer-context

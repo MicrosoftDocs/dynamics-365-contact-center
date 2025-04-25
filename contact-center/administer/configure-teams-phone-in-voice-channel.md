@@ -112,7 +112,7 @@ Perform the following steps to configure inbound calling and sync Teams service 
 
 When a customer calls the Teams Phone number to connect with a representative, the representative receives the call notification on both the Copilot Service workspace app and Teams desktop or web app. The representative needs to accept the call notification on the Copilot Service workspace app. The representative can use the call controls to interact with the customers.
 
-## How Teams user subject-matter expert receive and handle the consult and transfer requests from agent
+## How Teams SMEs receive and handle consult and transfer requests from representatives
 
 When a representative initiates a consult or transfer request to a Teams user subject-matter expert, the Teams user receives the call notification on the Teams desktop or web app.
 

@@ -32,7 +32,7 @@ Your administrator installed the Workforce Management for Customer Service packa
 Section | Description |
 | ------ | ----------- |
 | **Service Rep List** | Lists all service representatives scheduled for the shift plan, along with their current state (for example, Available, On Break, In Training), Time in State (mins), and Total scheduled time (mins). |
-| **Adherence Gantt Chart** | Displays each representative's actual activities versus scheduled activities on a visual timeline. Out-of-adherence time periods are highlighted as seperate segments.  |
+| **Adherence Gantt Chart** | Displays each representative's actual activities versus scheduled activities on a visual timeline. Out-of-adherence time periods are highlighted as separate segments.  |
 | **Adherence Summary Metrics** | Provides key team metrics such as overall adherence percentage, total scheduled time, and total time out of adherence. |
 
 

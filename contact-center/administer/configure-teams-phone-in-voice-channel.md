@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to 
 ms.collection: 
-ms.date: 04/25/2025
+ms.date: 04/30/2025
 ms.custom: bap-template
 ---
 
@@ -29,9 +29,11 @@ The high-level process to configure the Teams Phone is as follows:
 
 ## Prerequisites
 
-- [Teams phone license](/microsoftteams/user-access) with Teams calling plan, Teams direct routing, or Teams Operator [Connect PSTN connectivity](/microsoftteams/pstn-connectivity) options.
-- Service phone number
-- Dynamics 365 Customer service environment 
+- Teams tenant with [Teams phone license](/microsoftteams/user-access) with Teams calling plan, Teams direct routing, or Teams Operator [Connect PSTN connectivity](/microsoftteams/pstn-connectivity) options.
+- Service phone number.
+    - We recommend that you use a non-production service phone number for testing Teams phone.
+    - Create a resource account for the service number when you enable the Dynamics 365 organization for Teams phone system.
+- Dynamics 365 Contact Center or Dynamics 365 Customer Service premium license.
 - User with License Administrator role and Teams administrator role.
   - A user with License Administrator role and Teams administrator role is needed for creating the Teams resource account and for assigning a Teams calling license to the Teams resource account.
   - The Teams phone in Dynamics 365 Contact Center voice channel also requires the latest Microsoft Teams PowerShell module installed in the user’s machine.
@@ -65,7 +67,7 @@ As a Teams administrator, run the following Teams PowerShell cmdlets.
 
 1. To create the Teams resource account for the Dynamics 365 application ID.
 ```
-   New-CsOnlineApplicationInstance -UserPrincipalName <NewTeamsResourceAccountEmailAddress> -DisplayName "<NewTeamsResourceAccountDisplayName>" -ApplicationID "4b8f0dce-d7d5-47a3-a27c-1764b90505e2"
+   New-CsOnlineApplicationInstance -UserPrincipalName <NewTeamsResourceAccountEmailAddress> -DisplayName "<NewTeamsResourceAccountDisplayName>" -ApplicationID "GUID"
 ```
    Copy the Object ID of the new Teams resource account. You need it for running the next cmdlets.
 

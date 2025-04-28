@@ -1,13 +1,17 @@
 ---
 title: Configure Teams phone in voice channel (preview)
-description: Learn how to configure Teams phone in voice channel.
+description: Learn how to configure Teams Phone in the voice channel to streamline call management and enhance customer support.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.topic: how-to 
-ms.collection: 
-ms.date: 04/30/2025
-ms.custom: bap-template
+ms.topic: how-to
+ms.collection: null
+ms.date: 04/28/2025
+ms.custom:
+  - bap-template
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/28/2025
 ---
 
 # Configure Teams phone in voice channel (preview)

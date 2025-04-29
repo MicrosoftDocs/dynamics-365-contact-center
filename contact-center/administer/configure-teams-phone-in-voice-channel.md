@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: null
-ms.date: 04/28/2025
+ms.date: 04/30/2025
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -45,7 +45,7 @@ The high-level process to configure the Teams Phone is as follows:
     - [Update the Microsoft Teams PowerShell module](/microsoftteams/teams-powershell-install#update-teams-powershell-module) if it's already installed.
   - At runtime, the service representatives assigned to the voice queue need a Teams calling license.
 
-## Enable voice channel
+## Enable the voice channel
 
 Perform the following steps to configure the Teams Phone in the admin center of Dynamics 365 Customer Service:
 
@@ -57,11 +57,13 @@ The Teams administrator requires the Azure Communication Service immutable resou
 1.	On the **Phone numbers** page, select the **Advanced** button
 1.	On the **Manage telephony** page, navigate to the **Teams telephony** tab. You’ll see the Azure Communication Service immutable resource ID with a Dynamics 365 Application ID.
 
-## Create Teams resource account
+## Create a Teams resource account
 
 In Teams, a resource account is required for every number that's used with Dynamics 365 Contact Center application.
 
-Run the PowerShell cmdlets to create and associate the Teams resource account with the Azure Communication Services resource for the Dynamics 365 application.
+Download the [script](https://github.com/microsoft/Dynamics365-Apps-Samples/blob/neeranelli-patch-11/contact-center/TeamsPhoneSystem-TeamsAdminCenterOnboardScript.ps1) and run it to create and associate the Teams resource account with the Dynamics 365 application.
+
+Alternatively, you can run the following PowerShell cmdlets  in the specified order to create and associate the Teams resource account with the Dynamics 365 application.
 
 As a Teams administrator, run the following Teams PowerShell cmdlets.
 
@@ -87,6 +89,8 @@ As a Teams administrator, run the following Teams PowerShell cmdlets.
 Assign license to Teams resource account by performing the steps in [Assign a license](/microsoftteams/manage-resource-accounts#assign-a-license).
 
 ## Assign service number to Teams resource account
+
+To assign a service nunber through Teams admin center, perform the steps in [Manage phone numbers for users](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user)
 
 For assigning a Calling plan service number to the Teams resource account, perform the steps in [Assign a phone number](/microsoftteams/manage-resource-accounts#assign-a-phone-number).
 

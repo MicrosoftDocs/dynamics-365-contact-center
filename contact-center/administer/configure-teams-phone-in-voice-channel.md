@@ -97,19 +97,19 @@ For assigning a Calling plan service number to the Teams resource account, perfo
 If you're assigning a Direct Routing service phone to the Teams resource account, then use the following steps instead.
 
 1. Run the following Teams PowerShell cmdlet to assign a Direct Routing service phone number to the Teams resource account.
-```
+   ```
     Set-CsPhoneNumberAssignment -Identity <TeamsResourceAccountEmailAddress> -PhoneNumber <DirectRoutingPhoneNumberInE164Format> -PhoneNumberType DirectRouting
-```
+   ```
 1. Run the following Teams PowerShell cmdlet to assign a Direct Routing Policy to the Teams resource account. This enables the Team resource account to place phone calls in external phone number consult or transfer scenarios.
 
-```
+   ```
    Grant-CsOnlineVoiceRoutingPolicy -Identity <TeamsResourceAccountEmailAddress> -PolicyName "<DirectRoutingPolicyName>"
-```
-If you want to assign an operator connect service phone to the Teams resource account, then use the following steps instead.
+   ```
+   If you want to assign an operator connect service phone to the Teams resource account, then use the following steps instead.
 
-```   
+   ```   
    Set-CsPhoneNumberAssignment -Identity <TeamsResourceAccountEmailAddress> -PhoneNumber <OperatorConnectPhoneNumberInE164Format> -PhoneNumberType OperatorConnect
-```
+   ```
  
 ## Configure inbound calling
 

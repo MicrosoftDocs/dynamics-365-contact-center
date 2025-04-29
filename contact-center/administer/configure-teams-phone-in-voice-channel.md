@@ -68,9 +68,9 @@ Alternatively, you can run the following PowerShell cmdlets  in the specified or
 As a Teams administrator, run the following Teams PowerShell cmdlets.
 
 1. To sign in.
-
+   ```
    Connect-MicrosoftTeams
-
+   ``` 
 1. To create the Teams resource account for the Dynamics 365 application ID.
    ```
    New-CsOnlineApplicationInstance -UserPrincipalName <NewTeamsResourceAccountEmailAddress> -DisplayName "<NewTeamsResourceAccountDisplayName>" -ApplicationID "GUID"
@@ -82,7 +82,7 @@ As a Teams administrator, run the following Teams PowerShell cmdlets.
    Set-CsOnlineApplicationInstance -Identity <TeamsResourceAccountObjectId> -ApplicationId "4b8f0dce-d7d5-47a3-a27c-1764b90505e2" -AcsResourceId "<OrganizationAzureCommunicationServiceImmutableResourceID>"
    
    Sync-CsOnlineApplicationInstance -ObjectId <TeamsResourceAccountObjectId> -ApplicationId "4b8f0dce-d7d5-47a3-a27c-1764b90505e2" -AcsResourceId "<OrganizationAzureCommunicationServiceImmutableResourceID >"
-  ```
+```
 
 ## Assign license to Teams resource account
 

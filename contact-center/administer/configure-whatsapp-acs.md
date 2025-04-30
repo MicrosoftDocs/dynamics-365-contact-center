@@ -61,7 +61,7 @@ You'll need these details when you create the WhatsApp channel in [the following
 
 ## Create a WhatsApp channel
 
-You can create a WhatsApp channel in either the Contact Center admin center or the Copilot Service admin center.
+You can create a WhatsApp channel in Copilot Service admin center.
 
 1. In **Customer support**, select **Channels**.
 

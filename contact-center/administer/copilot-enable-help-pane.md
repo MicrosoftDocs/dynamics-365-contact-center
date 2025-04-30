@@ -29,7 +29,7 @@ Perform the following steps to enable the Copilot features in Copilot Service ad
 
 1. Use one of the following navigation options:
       - **Support Experience** > **Productivity** > **Copilot for questions and email**
-      - **Operations** > **Insights** > **AI feature settings** > **Copilot for questions and email**
+      - **Operations** > **Insights** > **Copilot for questions and email**
 1. Select **Manage** in **Copilot for questions and email**. The **Copilot for questions and email* page appears. You can select the Copilot features you'd like to enable for service representatives on this page.
 
      :::image type="content" source="../media/copilot-admin-email-mini.png" alt-text="Screenshot of ask a question in Copilot pane." lightbox="../media/copilot-admin-email.png":::

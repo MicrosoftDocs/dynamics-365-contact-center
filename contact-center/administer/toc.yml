@@ -126,6 +126,8 @@
             href: /dynamics365/customer-service/administer/faq-agent-experience-profile?context=/dynamics365/contact-center/context/administer-context
       - name: Manage your workforce
         items:
+        - name: Install the package
+          href: wfm-package-installation.md
         - name: User management
           href: wfm-user-management.md
         - name: Forecasting

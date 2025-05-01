@@ -54,10 +54,6 @@
           href: /dynamics365/customer-service/use/oc-real-time-translation?context=/dynamics365/contact-center/context/use-context
         - name: Markdown formats for agents
           href: /dynamics365/customer-service/use/markdown-formats-agents?context=/dynamics365/contact-center/context/use-context
-        - name: Use shift bidding
-          href: wfm-representative-shift-bidding.md
-        - name: Use shift swapping
-          href: wfm-use-shift-swapping.md
       - name: Voice
         items:
         - name: Call a customer
@@ -314,32 +310,36 @@
         href: /dynamics365/customer-service/use/report-issues?context=/dynamics365/contact-center/context/use-context
       - name: Share feedback
         href: /dynamics365/customer-service/use/cs-share-feedback?context=/dynamics365/contact-center/context/use-context
-    - name: Manage workforce
-      items:
-      - name: Forecasting
-        items: 
-        - name: Create and manage forecast scenarios
-          href: wfm-forecast-scenarios.md
-        - name: Import historical data
-          href: wfm-import-historical-data.md
-      - name: Capacity planning
+      - name: Manage workforce
         items:
-        - name: Create and manage capacity plans
-          href: wfm-capacity-planning.md
-      - name: Shift planning and scheduling
-        items:
-        - name: Create and manage shift plans
-          href: wfm-shift-plan.md
-        - name: Use auto schedule to schedule service representatives
-          href: wfm-use-auto-schedule.md
+        - name: Forecasting
+          items: 
+          - name: Create and manage forecast scenarios
+            href: wfm-forecast-scenarios.md
+          - name: Import historical data
+            href: wfm-import-historical-data.md
+        - name: Capacity planning
+          items:
+          - name: Create and manage capacity plans
+            href: wfm-capacity-planning.md
+        - name: Shift planning and scheduling
+          items:
+          - name: Create and manage shift plans
+            href: wfm-shift-plan.md
+          - name: Use auto schedule to schedule service representatives
+            href: wfm-use-auto-schedule.md
+          - name: Use shift bidding
+            href: wfm-representative-shift-bidding.md
+          - name: Use shift swapping
+            href: wfm-use-shift-swapping.md
       - name: Shift-based routing
-        items:
-        - name: Overview of shift-based routing
-          href: /dynamics365/customer-service/use/shift-based-routing?context=/dynamics365/contact-center/context/use-context
-      - name: Time-off request management
-        items:
-        - name: Manage time-off requests
-          href: wfm-view-time-off-requests.md 
+          items:
+          - name: Overview of shift-based routing
+            href: /dynamics365/customer-service/use/shift-based-routing?context=/dynamics365/contact-center/context/use-context
+        - name: Time-off request management
+          items:
+          - name: Manage time-off requests
+            href: wfm-view-time-off-requests.md 
     - name: Responsible AI
       items:
       - name: Overview

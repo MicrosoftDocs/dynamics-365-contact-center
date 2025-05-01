@@ -332,7 +332,7 @@
             href: wfm-representative-shift-bidding.md
           - name: Use shift swapping
             href: wfm-use-shift-swapping.md
-      - name: Shift-based routing
+        - name: Shift-based routing
           items:
           - name: Overview of shift-based routing
             href: /dynamics365/customer-service/use/shift-based-routing?context=/dynamics365/contact-center/context/use-context

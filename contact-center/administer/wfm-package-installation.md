@@ -24,5 +24,5 @@ Complete the following steps:
 7. Review and agree to the terms of service, and then select **Install** to begin the installation process.
 
 ### Related information
-[Set up your workforce with required roles and skills](wfm-user-management)
+[Set up your workforce with required roles and skills](wfm-user-management.md)
    

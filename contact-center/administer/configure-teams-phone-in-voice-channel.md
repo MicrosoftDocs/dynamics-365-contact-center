@@ -37,7 +37,7 @@ The high-level process to configure the Teams Phone is as follows:
 - [Service phone number](/microsoftteams/manage-phone-numbers-landing-page#service-numbers).
     - We recommend that you use a non-production service phone number for testing Teams Phone.
     - Create a resource account for the service number when you enable the Dynamics 365 organization for Teams Phone system.
-- Dynamics 365 Contact Center or Dynamics 365 Customer Service premium license with the [voice channel provisioned](../implement/provision-channels.md#set-up-channels) and configured.
+- Dynamics 365 Contact Center or Dynamics 365 Customer Service premium license with the [voice channel provisioned](../implement/provision-channels.md#set-up-channels) and [configured](/dynamics365/customer-service/administer/voice-channel-install).
 - User with License Administrator role and Teams administrator role.
   - A user with License Administrator, Teams administrator, and Skype for Business Administrator roles is needed for creating the Teams resource account and for assigning a Teams calling license to the Teams resource account.
   - The Teams Phone in Dynamics 365 Contact Center voice channel also requires the latest Microsoft Teams PowerShell module installed in the user’s machine.
@@ -62,7 +62,7 @@ The Teams administrator requires the Azure Communication Service immutable resou
 
 In Teams, a resource account is required for every number that's used with Dynamics 365 Contact Center application.
 
-Download the [script](https://github.com/microsoft/Dynamics365-Apps-Samples/blob/neeranelli-patch-11/contact-center/TeamsPhoneSystem-TeamsAdminCenterOnboardScript.ps1) and run it to create and associate the Teams resource account with the Dynamics 365 application.
+Download the [script](https://github.com/microsoft/Dynamics365-Apps-Samples/blob/master/contact-center/TeamsPhoneSystem-TeamsAdminCenterOnboardScript.ps1) and run it to create and associate the Teams resource account with the Dynamics 365 application.
 
 Alternatively, you can run the following PowerShell cmdlets  in the specified order to create and associate the Teams resource account with the Dynamics 365 application.
 

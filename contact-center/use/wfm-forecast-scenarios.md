@@ -107,4 +107,5 @@ When you open a report, the following visualizations are available:
    - **All**: Displays the actual and forecasted numbers across all channels and queues. 
    - **Channel**: Displays the actual and forecasted numbers, sliced by each channel. 
    - **Queue**: Displays the actual and forecasted numbers, sliced by each queue.
+     
      For all the filters, you can use the drill up and down buttons to drill to specific levels in the hierarchy.

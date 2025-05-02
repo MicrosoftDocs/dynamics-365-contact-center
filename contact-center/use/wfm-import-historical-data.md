@@ -1,7 +1,7 @@
 ---
 title: Import historical data
 description: Learn how to import historical data to use in your case and conversation forecast scenarios.
-ms.date: 04/11/2025
+ms.date: 05/02/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -24,3 +24,13 @@ When you create a forecast scenario, use historical data as the input source for
 1. Select **Save**.
 
 You can now use this file as your data source when you [create a new forecast report](wfm-forecast-scenarios.md#create-a-short-term-or-long-term-forecast-report).
+
+## Required data
+
+Refer to the following tables to understand the required headers, values, and descriptions.
+
+### Daily data
+
+
+
+### Intraday data

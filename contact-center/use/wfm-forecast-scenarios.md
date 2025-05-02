@@ -20,7 +20,7 @@ This article describes how to navigate the forecast reports in Copilot Service w
 
 ## Overview
 
-Forecast scenarios are essential for predicting future demand in terms of volume, such as the number of customer interactions, cases, or conversations that are expected within your contact center. When you analyze historical data and identifying trends, these scenarios help you anticipate fluctuations in demand, and make informed decisions and better prepare for varying levels of service volume.
+Forecast scenarios are essential to predict future demand in terms of volume, such as the number of customer interactions, cases, or conversations that are expected within your contact center. When you analyze historical data and identify trends, these scenarios help you anticipate fluctuations in demand, make informed decisions, and prepare for varying levels of service volume.
 
 As a supervisor, you can use the forecast scenario to help plan for expected volume fluctuations, enabling you to prepare for periods of high or low demand. As you analyze different forecast scenarios, you can make data-driven decisions about resource allocation, optimize staffing levels, and ensure that service levels are maintained throughout various periods of activity.
 
@@ -35,11 +35,11 @@ You can use the forecast reports for case and conversation volumes in the follow
 - Automatically detect seasonality from historical traffic with the settings option to import your holiday calendar. This function helps the forecasting model to predict case or conversation volumes during special, seasonal events.
 
 > [!NOTE]
-> When using forecasting scenario reports, keep the following details in mind:
+> When using forecasting scenario reports, note that:
 >
-> - Forecast reports might contain inaccuracies in volume estimates due to various factors, such as unexpected trends or unforeseen business developments..
+> - Forecast reports might contain inaccuracies in volume estimates due to various factors, such as unexpected trends or unforeseen business developments.
 >
-> - Forecast reports are currently available in certain geographical locations. Learn more in [Supported regions and languages for analytics and insights](/dynamics365/customer-service/administer/cs-region-availability-service-limits#supported-regions-and-languages-for-analytics-and-insights).
+> - Forecast reports are currently available in specific geographical locations. Learn more in [Supported regions and languages for analytics and insights](/dynamics365/customer-service/administer/cs-region-availability-service-limits#supported-regions-and-languages-for-analytics-and-insights).
 
 ## Prerequisites
 
@@ -95,7 +95,7 @@ The first time you access the dashboard, any scenarios you configured appear in 
 
 When you open a report, the following visualizations are available:
 
-**Duration**: Allows you to input the date range or use the sliders to set the dates.
+**Duration**: Allows you to enter the date range or use the sliders to set the dates.
 
 **Channel**: Select one or more channels for which you want data displayed.
 
@@ -104,6 +104,7 @@ When you open a report, the following visualizations are available:
 **Trend chart**: Shows the actual historical volumes from the past to the predicted volume in the future. The forecast is based on actual case and conversation records created in the past.
 
 **Detailed view**: You can filter the data in the following ways:
-   - **All**: Displays the actual and forecasted numbers across all channels and queues. You can use the drill up and down buttons to drill to specific levels in the hierarchy.
-   - **Channel**: Displays the actual and forecasted numbers, sliced by each channel. You can use the drill up and down buttons to drill to specific levels in the hierarchy.
-   - **Queue**: Displays the actual and forecasted numbers, sliced by each queue. You can use the drill up and down buttons to drill to specific levels in the hierarchy.
+   - **All**: Displays the actual and forecasted numbers across all channels and queues. 
+   - **Channel**: Displays the actual and forecasted numbers, sliced by each channel. 
+   - **Queue**: Displays the actual and forecasted numbers, sliced by each queue.
+     For all the filters, you can use the drill up and down buttons to drill to specific levels in the hierarchy.

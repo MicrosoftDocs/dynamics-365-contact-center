@@ -1,7 +1,7 @@
 ---
 title: Install the package
 description: Learn how to install the package so that you can set up the features to manage your workspace.
-ms.date: 04/28/2025
+ms.date: 05/01/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan

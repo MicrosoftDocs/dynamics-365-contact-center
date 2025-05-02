@@ -131,7 +131,6 @@ When a customer calls the Teams Phone number to connect with a representative, t
 
 [Call recordings and transcripts](/dynamics365/customer-service/administer/voice-channel-configure-transcripts?context=/dynamics365/contact-center/context/administer-context)   
 [Call a customer](/dynamics365/customer-service/use/voice-channel-call-customer?context=/dynamics365/contact-center/context/use-context)  
-[Use call controls and representative desktop for voice](../use/voice-channel-agent-experience.md)  
-[Transfer calls and consult with users](/dynamics365/customer-service/use/voice-channel-transfer-consult?context=/dynamics365/contact-center/context/use-context)  
+[Use call controls and representative desktop for voice](../use/voice-channel-agent-experience.md)   
 
 

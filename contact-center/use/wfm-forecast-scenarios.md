@@ -16,26 +16,26 @@ ms.collection:
 This article describes how to navigate the forecast reports in Copilot Service workspace so that you can successfully meet the staffing demands of your organization.
 
 > [!IMPORTANT]
-> This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. This feature is not intended for use in making, and should not be used to make, decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365 Copilot Service workspace, this feature, and any associated feature or service in compliance with all applicable laws, including laws relating to accessing individual employee analytics and monitoring, recording, and storing communications with end users. This also includes adequately notifying end users that their communications with customer service representatives may be monitored, recorded, or stored and, as required by applicable laws, obtaining consent from end users before using the feature with them. Customers are also encouraged to have a mechanism in place to inform their customer service representatives that their communications with end users may be monitored, recorded, or stored.
+> This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. This feature isn't intended for use in making, and shouldn't be used to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365 Copilot Service workspace, this feature, and any associated feature or service in compliance with all applicable laws, including laws relating to accessing individual employee analytics and monitoring, recording, and storing communications with end users. This also includes adequately notifying end users that their communications with customer service representatives might be monitored, recorded, or stored and, as required by applicable laws, obtaining consent from end users before using the feature with them. Customers are also encouraged to have a mechanism in place to inform their customer service representatives that their communications with end users might be monitored, recorded, or stored.
 
 ## Overview
 
-Forecast scenarios are essential for predicting future demand in terms of volume, such as the number of customer interactions, cases, or conversations that are expected within your contact center. By analyzing historical data and identifying trends, these scenarios allow you to anticipate fluctuations in demand, and help you make informed decisions and better prepare for varying levels of service volume.
+Forecast scenarios are essential for predicting future demand in terms of volume, such as the number of customer interactions, cases, or conversations that are expected within your contact center. When you analyze historical data and identifying trends, these scenarios help you anticipate fluctuations in demand, and make informed decisions and better prepare for varying levels of service volume.
 
-As a supervisor, you can use the forecast scenario to help plan for expected volume fluctuations, enabling you to prepare for periods of high or low demand. By analyzing different forecast scenarios, you can make data-driven decisions about resource allocation, optimize staffing levels, and ensure that service levels are maintained througout various periods of activity.
+As a supervisor, you can use the forecast scenario to help plan for expected volume fluctuations, enabling you to prepare for periods of high or low demand. As you analyze different forecast scenarios, you can make data-driven decisions about resource allocation, optimize staffing levels, and ensure that service levels are maintained throughout various periods of activity.
 
 You can use the forecast reports for case and conversation volumes in the following ways:
 
 - Forecast upcoming case and conversation volumes using historical traffic data, whether sourced internally from Dynamics 365 or externally from an imported file upload.
-- For conversation volume forecasting, if your administrator has configured AI agents for your conversation channels, the system excludes conversations that AI agents handle without having a service representative join the conversation. This function ensures that you can rely on the predicted conversation volumes for service representative staffing.
-- Forecast case and conversation volumes on a daily basis for a time range up to six months for long-term busines planning.
+- For conversation volume forecasting, if your administrator configured AI agents for your conversation channels, the system excludes conversations that AI agents handle without having a service representative join the conversation. This function ensures that you can rely on the predicted conversation volumes for service representative staffing.
+- Forecast case and conversation volumes on a daily basis for a time range up to six months for long-term business planning.
 - For short-term staffing and intraday planning, forecast case and conversation volumes at 15-minute intervals for a time range of up to six weeks.
 - Slice forecasted volumes and service representative demand by channel and queue.
 - View a rollup of actual and forecasted volume on an hourly, daily, weekly, monthly, and yearly basis.
 - Automatically detect seasonality from historical traffic with the settings option to import your holiday calendar. This function helps the forecasting model to predict case or conversation volumes during special, seasonal events.
 
 > [!NOTE]
-> Be aware of the following when using forecasting scenario reports:
+> When using forecasting scenario reports, keep the following details in mind:
 >
 > - Forecast reports might contain inaccuracies in volume estimates due to various factors, such as unexpected trends or unforeseen business developments..
 >
@@ -43,7 +43,7 @@ You can use the forecast reports for case and conversation volumes in the follow
 
 ## Prerequisites
 
-Your administrator has assigned a role to you that has **Read** privileges on the **msdyn_dataanalyticsreport_forecast** table. 
+Your administrator assigned a role to you that has **Read** privileges on the **msdyn_dataanalyticsreport_forecast** table. 
 
 ## Forecast scenario types
 

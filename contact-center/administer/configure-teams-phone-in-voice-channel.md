@@ -1,20 +1,20 @@
 ---
-title: Configure Teams phone in voice channel (preview)
+title: Configure Teams Phone in voice channel (preview)
 description: Learn how to configure Teams Phone in the voice channel to streamline call management and enhance customer support.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: null
-ms.date: 04/30/2025
+ms.date: 05/02/2025
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
   - ai-gen-description
-  - ai-seo-date:04/28/2025
+  - ai-seo-date:05/02/2025
 ---
 
-# Configure Teams phone in voice channel (preview)
+# Configure Teams Phone in voice channel (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -33,16 +33,17 @@ The high-level process to configure the Teams Phone is as follows:
 
 ## Prerequisites
 
-- Teams tenant with [Teams phone license](/microsoftteams/user-access) with Teams calling plan, Teams direct routing, or Teams Operator [Connect PSTN connectivity](/microsoftteams/pstn-connectivity) options.
-- Service phone number.
-    - We recommend that you use a non-production service phone number for testing Teams phone.
-    - Create a resource account for the service number when you enable the Dynamics 365 organization for Teams phone system.
-- Dynamics 365 Contact Center or Dynamics 365 Customer Service premium license.
+- Teams tenant with [Teams Phone license](/microsoftteams/teams-phone-licensing#teams-phone-licensing) with Teams Calling Plan, Teams Direct Routing, or Teams Operator Connect [PSTN connectivity](/microsoftteams/pstn-connectivity) options.
+- [Service phone number](/microsoftteams/manage-phone-numbers-landing-page#service-numbers).
+    - We recommend that you use a non-production service phone number for testing Teams Phone.
+    - Create a resource account for the service number when you enable the Dynamics 365 organization for Teams Phone system.
+- Dynamics 365 Contact Center or Dynamics 365 Customer Service premium license with the [voice channel provisioned](../implement/provision-channels.md#set-up-channels) and configured.
 - User with License Administrator role and Teams administrator role.
-  - A user with License Administrator role and Teams administrator role is needed for creating the Teams resource account and for assigning a Teams calling license to the Teams resource account.
-  - The Teams phone in Dynamics 365 Contact Center voice channel also requires the latest Microsoft Teams PowerShell module installed in the user’s machine.
-    - [Install Microsoft Teams PowerShell module](/microsoftteams/teams-powershell-install#installing-using-the-powershellgallery) in the user’s machine if it is not yet installed.
+  - A user with License Administrator, Teams administrator, and Skype for Business Administrator roles is needed for creating the Teams resource account and for assigning a Teams calling license to the Teams resource account.
+  - The Teams Phone in Dynamics 365 Contact Center voice channel also requires the latest Microsoft Teams PowerShell module installed in the user’s machine.
+    - [Install Microsoft Teams PowerShell module](/microsoftteams/teams-powershell-install#installing-using-the-powershellgallery) in the user’s system if it is not yet installed.
     - [Update the Microsoft Teams PowerShell module](/microsoftteams/teams-powershell-install#update-teams-powershell-module) if it's already installed.
+  - To synchronize the phone number, the Teams Administrator or Teams Telephony Administrator role and [TeamsResourceAccount.Read.All Graph permission](/graph/permissions-reference).
   - At runtime, the service representatives assigned to the voice queue need a Teams calling license.
 
 ## Enable the voice channel
@@ -126,13 +127,11 @@ Perform the following steps to configure inbound calling and sync Teams service 
 
 When a customer calls the Teams Phone number to connect with a representative, the representative receives the call notification on both the Copilot Service workspace app and Teams desktop or web app. The representative needs to accept the call notification on the Copilot Service workspace app. The representative can use the call controls to interact with the customers.
 
-## How Teams SMEs receive and handle consult and transfer requests from representatives
-
-When a representative initiates a consult or transfer request to a Teams user subject-matter expert, the Teams user receives the call notification on the Teams desktop or web app.
-
 ### Related information
 
 [Call recordings and transcripts](/dynamics365/customer-service/administer/voice-channel-configure-transcripts?context=/dynamics365/contact-center/context/administer-context)   
+[Call a customer](/dynamics365/customer-service/use/voice-channel-call-customer?context=/dynamics365/contact-center/context/use-context)  
 [Use call controls and representative desktop for voice](../use/voice-channel-agent-experience.md)  
+[Transfer calls and consult with users](/dynamics365/customer-service/use/voice-channel-transfer-consult?context=/dynamics365/contact-center/context/use-context)  
 
 

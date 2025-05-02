@@ -339,7 +339,9 @@
         - name: Time-off request management
           items:
           - name: Manage time-off requests
-            href: wfm-view-time-off-requests.md 
+            href: wfm-view-time-off-requests.md
+          - name: Create a time-off request
+            href: wfm-create-time-off-request.md
     - name: Responsible AI
       items:
       - name: Overview

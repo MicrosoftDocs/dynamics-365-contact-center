@@ -23,9 +23,9 @@ Integrate your existing Microsoft Teams Phone with Dynamics 365 Contact Center t
 The high-level process to configure the Teams Phone is as follows:
 
 1. Verify prerequisites.
-1. Create Teams resource account for the Dynamics 365 application ID and associate Teams resource account with the Dynamics organization’s Azure Communication Services resource.
-1. Assign license to Teams resource account.
-1. Assign service number to Teams resource account.
+1. Create a Teams resource account for the Dynamics 365 application ID and associate the Teams resource account with the Dynamics organization’s Azure Communication Services resource.
+1. Assign a license to the Teams resource account.
+1. Assign a service number to the Teams resource account.
 1. Configure the Teams Phone in the voice channel
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
@@ -40,9 +40,9 @@ You need to configure new IVR agents in Copilot Studio because the existing IVR 
     - Create a resource account for the service number when you enable the Dynamics 365 organization for Teams Phone system.
 - Dynamics 365 Contact Center or Dynamics 365 Customer Service premium license with the [voice channel provisioned](../implement/provision-channels.md#set-up-channels) and [configured](/dynamics365/customer-service/administer/voice-channel-install). An Azure Communication Services resource is provisioned when you provision the voice channel.
 - User with License Administrator role and Teams administrator role.
-  - A user with License Administrator, Teams administrator, and Skype for Business Administrator roles is needed for creating the Teams resource account and for assigning a Teams calling license to the Teams resource account.
+  - A user with License Administrator, Teams administrator, and Skype for Business Administrator roles is needed. These roles are for creating the Teams resource account and for assigning a Teams calling license to the Teams resource account.
   - The Teams Phone in Dynamics 365 Contact Center voice channel also requires the latest Microsoft Teams PowerShell module installed in the user’s machine.
-    - [Install Microsoft Teams PowerShell module](/microsoftteams/teams-powershell-install#installing-using-the-powershellgallery) in the user’s system if it is not yet installed.
+    - [Install Microsoft Teams PowerShell module](/microsoftteams/teams-powershell-install#installing-using-the-powershellgallery) in the user’s system if it isn't yet installed.
     - [Update the Microsoft Teams PowerShell module](/microsoftteams/teams-powershell-install#update-teams-powershell-module) if it's already installed.
   - To synchronize the phone number, the [Teams Administrator or Teams Telephony Administrator role](/entra/identity-platform/quickstart-configure-app-access-web-apis) and [TeamsResourceAccount.Read.All Graph permission](/graph/permissions-reference).
   - At runtime, the service representatives assigned to the voice queue need a Teams calling license.
@@ -53,7 +53,7 @@ In Teams, a resource account is required for every number that's used with Dynam
 
 Download the [script](https://github.com/microsoft/Dynamics365-Apps-Samples/blob/master/contact-center/TeamsPhoneSystem-TeamsAdminCenterOnboardScript.ps1) and run it to create and associate the Teams resource account with the Dynamics 365 application.
 
-Alternatively, you can run the following PowerShell cmdlets in the specified order to create and associate the Teams resource account with the Dynamics 365 application.
+Alternatively, you can run the following PowerShell cmdlets in the specified order. The Teams resource account is created and associated with the Dynamics 365 application.
 
 As a Teams administrator, run the following Teams PowerShell cmdlets in administrator mode.
 
@@ -76,13 +76,13 @@ As a Teams administrator, run the following Teams PowerShell cmdlets in administ
 
 ## Assign license to Teams resource account
 
-Assign license to Teams resource account by performing the steps in [Assign a license](/microsoftteams/manage-resource-accounts#assign-a-license).
+Do the steps in [Assign a license](/microsoftteams/manage-resource-accounts#assign-a-license) to assign a license to the Teams resource account.
 
 ## Assign service number to Teams resource account
 
-To assign a service number through Teams admin center, perform the steps in [Manage phone numbers for users](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user)
+Do the steps in [Manage phone numbers for users](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user) to assign a service number through Teams admin center.
 
-For assigning a Calling plan service number to the Teams resource account, perform the steps in [Assign a phone number](/microsoftteams/manage-resource-accounts#assign-a-phone-number).
+Do the steps in [Assign a phone number](/microsoftteams/manage-resource-accounts#assign-a-phone-number) to assign a calling plan service number to the Teams resource account.
 
 If you're assigning a Direct Routing service phone to the Teams resource account, then use the following steps instead.
 
@@ -90,7 +90,7 @@ If you're assigning a Direct Routing service phone to the Teams resource account
    ```
     Set-CsPhoneNumberAssignment -Identity <TeamsResourceAccountEmailAddress> -PhoneNumber <DirectRoutingPhoneNumberInE164Format> -PhoneNumberType DirectRouting
    ```
-1. Run the following Teams PowerShell cmdlet to assign a Direct Routing Policy to the Teams resource account. This enables the Team resource account to place phone calls in external phone number consult or transfer scenarios.
+1. Run the following Teams PowerShell cmdlet to assign a Direct Routing Policy to the Teams resource account. The Team resource account can then place phone calls in external phone number consult or transfer scenarios.
 
    ```
    Grant-CsOnlineVoiceRoutingPolicy -Identity <TeamsResourceAccountEmailAddress> -PolicyName "<DirectRoutingPolicyName>"
@@ -101,16 +101,17 @@ If you're assigning a Direct Routing service phone to the Teams resource account
    Set-CsPhoneNumberAssignment -Identity <TeamsResourceAccountEmailAddress> -PhoneNumber <OperatorConnectPhoneNumberInE164Format> -PhoneNumberType OperatorConnect
    ```
  
-## Configure Teams phone in the voice channel
+## Configure Teams Phone in the voice channel
 
-Perform the following steps to configure inbound calling and sync Teams service phone numbers.
+Do the following steps to configure inbound calling and sync the Teams service phone numbers.
 
 1. In the site map of Copilot Service admin center, select **Channels** in **Customer support**. The **Channels** page appears.
 1. Select **Manage** for **Phone numbers**.
 1. On the **Phone numbers** page, select **Advanced**.
 1. On the **Manage telephony** page, navigate to the **Teams telephony** tab. You’ll see the Azure Communication Service immutable resource ID with a Dynamics 365 Application ID.
 1. Select **Sync** to create the phone number record for the Teams service number.
-1. [Create a workstream](/dynamics365/customer-service/administer/create-workstreams), and then add a voice channel to the workstream for the Teams service phone number by performing the steps in [Set up inbound calling](/dynamics365/customer-service/administer/voice-channel-inbound-calling).
+1. [Create a workstream](/dynamics365/customer-service/administer/create-workstreams).
+1. Add a voice channel to the workstream for the Teams service phone number by performing the steps in [Set up inbound calling](/dynamics365/customer-service/administer/voice-channel-inbound-calling).
 
 ## How representatives receive and handle the Teams calls
 

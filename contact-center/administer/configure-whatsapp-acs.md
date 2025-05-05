@@ -1,7 +1,7 @@
 ---
 title: Configure a WhatsApp channel through Azure Communication Services 
 description: Use this article to learn how to configure the WhatsApp channel through Azure Communication Services.
-ms.date: 04/02/2025
+ms.date: 05/05/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -39,7 +39,7 @@ The success of social media customer service, like all other customer services, 
 
 ## Get Azure Communication Services details
 
-You'll need these details when you create the WhatsApp channel in [the following section](#create-a-whatsapp-channel). You might find it helpful to have the Azure portal and the Contact Center admin center or Customer Service admin center open in separate browser tabs and switch back and forth as required.
+You'll need these details when you create the WhatsApp channel in [the following section](#create-a-whatsapp-channel). You might find it helpful to have the Azure portal and the Copilot Service admin center open in separate browser tabs and switch back and forth as required.
    
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/).
 
@@ -61,7 +61,7 @@ You'll need these details when you create the WhatsApp channel in [the following
 
 ## Create a WhatsApp channel
 
-You can create a WhatsApp channel in either the Contact Center admin center or the Customer Service admin center.
+You can create a WhatsApp channel in Copilot Service admin center.
 
 1. In **Customer support**, select **Channels**.
 

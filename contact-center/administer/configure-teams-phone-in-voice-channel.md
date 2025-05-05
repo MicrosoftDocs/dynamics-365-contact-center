@@ -30,7 +30,7 @@ The high-level process to configure the Teams Phone is as follows:
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-You need to configure new IVR agents in Copilot Studio because the existing IVR agents aren't currently supported in the Teams Phone integration.
+You need to configure new IVR agents in Copilot Studio because the existing IVR agents might not work with the Teams Phone integration.
 
 ## Prerequisites
 

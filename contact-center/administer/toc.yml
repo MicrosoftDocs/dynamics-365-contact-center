@@ -126,6 +126,8 @@
             href: /dynamics365/customer-service/administer/faq-agent-experience-profile?context=/dynamics365/contact-center/context/administer-context
       - name: Manage your workforce
         items:
+        - name: Install the package
+          href: wfm-package-installation.md
         - name: User management
           href: wfm-user-management.md
         - name: Forecasting
@@ -256,6 +258,8 @@
         items:
         - name: Overview of autonomous service agents
           href: autonomous-agents-overview.md
+        - name: Manage consumption-based billing, capacity
+          href: /dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context
         - name: Customer Intent Agent 
           items:
           - name: Overview of Customer Intent Agent
@@ -266,8 +270,6 @@
             href: enable-intent-for-service-reps.md
           - name: Configure intent-based suggestions for Copilot agents
             href: set-up-intent-agent.md
-          - name: Set up a pay-as-you-go plan
-            href: /dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features

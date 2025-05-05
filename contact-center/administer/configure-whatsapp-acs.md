@@ -1,7 +1,7 @@
 ---
 title: Configure a WhatsApp channel through Azure Communication Services 
 description: Use this article to learn how to configure the WhatsApp channel through Azure Communication Services.
-ms.date: 04/22/2025
+ms.date: 05/05/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham

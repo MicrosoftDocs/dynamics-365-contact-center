@@ -46,6 +46,9 @@ You can do the following actions:
 
    :::image type="content" source="../media/dca-call-screenshot.png" alt-text="Screenshot of desktop companion application with ongoing calls" :::
 
+> [!NOTE]
+> We recommend that you use the Desktop companion application with only one environment at a time. To switch between environments, close the current environment before moving to another.
+
 ## Related information
 
 [Install and manage Desktop companion application for voice channel (preview)](../administer/install-manage-desktop-app.md)

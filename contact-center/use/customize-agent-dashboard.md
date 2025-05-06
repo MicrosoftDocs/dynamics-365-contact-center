@@ -4,7 +4,7 @@ description: Learn more about customizing bot dashboards with additional filters
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
-ms.topic: conceptual 
+ms.topic: article
 ms.collection: 
 ms.date: 02/11/2025
 ms.custom: bap-template 

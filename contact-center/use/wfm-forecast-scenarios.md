@@ -37,7 +37,7 @@ You can use the forecast reports for case and conversation volumes in the follow
 > [!NOTE]
 > When using forecasting scenario reports, note that:
 >
-> - Forecast reports might contain inaccuracies in volume estimates due to various factors, such as unexpected trends or unforeseen business developments.
+> - Forecast reports aim to provide accurate volume estimates but may not fully account for external factors such as unexpected trends, or sudden business needs.
 >
 > - Forecast reports are currently available in specific geographical locations. Learn more in [Supported regions and languages for analytics and insights](/dynamics365/customer-service/administer/cs-region-availability-service-limits#supported-regions-and-languages-for-analytics-and-insights).
 

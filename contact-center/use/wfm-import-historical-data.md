@@ -34,14 +34,14 @@ You can now use this file as your data source when you [create a new forecast re
 Refer to the following tables to understand the required headers, values, and descriptions.
 
 
-### Daily Data:
+### Daily/Long Term Data:
 
  **DateTime** | **ChannelId** | **ChannelName** | **QueueId** | **QueueName** | **Volume** | **AHT** | **Interval** | **MaxVolumeByHour** | **AgentCount** 
 --------------|---------------|-----------------|-------------|---------------|------------|---------|--------------|---------------------|----------------
 
 
  
-### Intra Day Data:###
+### Intra Day/Short Term Data:
  **DateTime** | **ChannelId** | **ChannelName** | **QueueId** | **QueueName** | **Volume** | **AHT** | **Interval** | **MaxVolumeByHour** 
 --------------|---------------|-----------------|-------------|---------------|------------|---------|--------------|---------------------
 

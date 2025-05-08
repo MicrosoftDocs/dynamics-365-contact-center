@@ -41,9 +41,9 @@ Refer to the following example tables to understand the required headers, values
 #### Daily data descriptions
 
 **DateTime**: The date and time for the forecast data point. The format is as follows: yyyy-MM-dd HH:mm:ss  
-**ChannelId**: The channel ID, such as voice, web or any custom channel. This is the value from the system you obtained the data from. If you don't know the value, leave it as "1".  
+**ChannelId**: The channel ID, such as voice, web, or any custom channel. This value is from the system you obtained the data from. If you don't know the value, leave it as 1.  
 **ChannelName**: The name of the channel that corresponds to your host system's ID.  
-**QueueId**: The ID of the queue that the datapoint corresponds to, from your host system. If you don't know the value, leave it as "1".  
+**QueueId**: The ID of the queue that the datapoint corresponds to, from your host system. If you don't know the value, leave it as 1.  
 **QueueName**: The name of the queue that corresponds to your host system's ID.  
 **Volume**: The number of incidents or conversations for the day with the combination of queue and channel. The value should be a whole number.  
 **AHT**: The average duration of one incident or conversation interaction, in minutes. The value should be a whole number.  
@@ -58,9 +58,9 @@ Refer to the following example tables to understand the required headers, values
 #### Intraday data descriptions
 
 **DateTime**: The date and time for the forecast data point. The format is as follows: yyyy-MM-dd HH:mm:ss  
-**ChannelId**: The channel ID, such as voice, web or any custom channel. This is the value from the system you obtained the data from. If you don't know the value, leave it as "1".  
+**ChannelId**: The channel ID, such as voice, web, or any custom channel. This value is from the system you obtained the data from. If you don't know the value, leave it as 1.  
 **ChannelName**: The name of the channel that corresponds to your host system's ID.  
-**QueueId**: The ID of the queue that the datapoint corresponds to, from your host system. If you don't know the value, leave it as "1".  
+**QueueId**: The ID of the queue that the datapoint corresponds to, from your host system. If you don't know the value, leave it as 1.  
 **QueueName**: The name of the queue that corresponds to your host system's ID.  
 **Volume**: The number of incidents or conversations for the day with the combination of queue and channel. The value should be a whole number.  
 **AHT**: The average duration of one incident or conversation interaction, in minutes. The value should be a whole number.  

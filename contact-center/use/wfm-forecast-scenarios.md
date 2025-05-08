@@ -16,7 +16,7 @@ ms.collection:
 This article describes how to navigate the forecast reports in Copilot Service workspace so that you can successfully meet the staffing demands of your organization.
 
 > [!IMPORTANT]  
-> This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. This feature isn't intended for use in making, and shouldn't be used to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365 Copilot Service workspace, this feature, and any associated feature or service in compliance with all applicable laws, including laws that relate to accessing individual employee analytics and monitoring, recording, and storing communications with end users. This also includes adequately notifying end users that their communications with customer service representatives might be monitored, recorded, or stored and, as required by applicable laws, obtaining consent from end users before using the feature with them. Customers are also encouraged to have a mechanism in place to inform their customer service representatives that their communications with end users might be monitored, recorded, or stored.
+> This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. This feature isn't intended for use in making, and shouldn't be used to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365 Copilot Service workspace, this feature, and any associated feature or service in compliance with all applicable laws. This compliance includes laws that relate to accessing individual employee analytics, and monitoring, recording, and storing communications with end users. This compliance also includes your responbility to adequately notify end users that their communications with customer service representatives might be monitored, recorded, or stored and, as required by applicable laws, obtaining consent from end users before using the feature with them. Customers are also encouraged to have a mechanism in place to inform their customer service representatives that their communications with end users might be monitored, recorded, or stored.
 
 ## Overview
 
@@ -35,8 +35,6 @@ You can use the forecast reports for case and conversation volumes in the follow
 - Automatically detect seasonality from historical traffic with the settings option to import your holiday calendar. This function helps the forecasting model to predict case or conversation volumes during special, seasonal events.
 
 > [!NOTE]
-> When using forecasting scenario reports, note that:
->
 > - Forecast reports aim to provide accurate volume estimates but might not fully account for external factors, such as unexpected trends or sudden business needs.
 >
 > - Forecast reports are currently available in specific geographical locations. Learn more in [Supported regions and languages for analytics and insights](/dynamics365/customer-service/administer/cs-region-availability-service-limits#supported-regions-and-languages-for-analytics-and-insights).
@@ -89,7 +87,7 @@ The first time you access the dashboard, any scenarios you configured appear in 
 - **Interval**: The type of scenario.
 - **Duration**: The length of time.
 - **Target entity**: The record type.
-- **Last Run On**: The date the scenario last ran. Based on the **Forecast run schedule** you selected.
+- **Last Run On**: The date the scenario last ran. This date is based on the **Forecast run schedule** you selected.
 - **Is recurring**: Indicates whether the scenario repeats.
 - **Recurrence time slot**: The day or time the report runs.
 - **Recurrence time zone**: The time zone in which the report runs.

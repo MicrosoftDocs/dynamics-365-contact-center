@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes.
-ms.date: 05/02/2025
+ms.date: 05/07/2025
 ms.topic: conceptual
 author: lalexms
 ms.author: laalexan
@@ -37,7 +37,7 @@ You can use the forecast reports for case and conversation volumes in the follow
 > [!NOTE]
 > When using forecasting scenario reports, note that:
 >
-> - Forecast reports aim to provide accurate volume estimates but may not fully account for external factors such as unexpected trends, or sudden business needs.
+> - Forecast reports aim to provide accurate volume estimates but might not fully account for external factors, such as unexpected trends or sudden business needs.
 >
 > - Forecast reports are currently available in specific geographical locations. Learn more in [Supported regions and languages for analytics and insights](/dynamics365/customer-service/administer/cs-region-availability-service-limits#supported-regions-and-languages-for-analytics-and-insights).
 

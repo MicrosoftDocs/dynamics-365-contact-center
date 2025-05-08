@@ -52,7 +52,8 @@ Refer to the following example tables to understand the required headers, values
 **MaxVolumeByHour**: The maximum number of interactions/conversations, per day. The value should be a whole number.  
 **AgentCount**: (Daily forecast only) The number of agents required.  
  
-### Intraday (short-term) data:
+### Intraday (short-term) data
+
  **DateTime** | **ChannelId** | **ChannelName** | **QueueId** | **QueueName** | **Volume** | **AHT** | **Interval** | **MaxVolumeByHour** 
 --------------|---------------|-----------------|-------------|---------------|------------|---------|--------------|---------------------
 

@@ -12,11 +12,10 @@ ms.collection:
 
 # Create and manage forecast scenarios
 
-
 This article describes how to navigate the forecast reports in Copilot Service workspace so that you can successfully meet the staffing demands of your organization.
 
-> [!IMPORTANT]  
-> This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. This feature isn't intended for use in making, and shouldn't be used to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365 Copilot Service workspace, this feature, and any associated feature or service in compliance with all applicable laws. This compliance includes laws that relate to accessing individual employee analytics, and monitoring, recording, and storing communications with end users. This compliance also includes your responbility to adequately notify end users that their communications with customer service representatives might be monitored, recorded, or stored and, as required by applicable laws, obtaining consent from end users before using the feature with them. Customers are also encouraged to have a mechanism in place to inform their customer service representatives that their communications with end users might be monitored, recorded, or stored.
+> [!IMPORTANT]
+> This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. This feature isn't intended for use in making, and you shouldn't use it to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365 Copilot Service workspace, this feature, and any associated feature or service in compliance with all applicable laws. This compliance includes laws that relate to accessing individual employee analytics, and monitoring, recording, and storing communications with end users. This compliance also includes your responsibility to adequately notify end users that their communications with customer service representatives might be monitored, recorded, or stored and, as required by applicable laws, obtaining consent from end users before your organization uses this feature with them. Customers are also encouraged to have a mechanism in place to inform their customer service representatives that their communications with end users might be monitored, recorded, or stored.
 
 ## Overview
 

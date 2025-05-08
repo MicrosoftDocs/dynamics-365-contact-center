@@ -176,6 +176,14 @@
           href: /dynamics365/customer-service/administer/link-note-to-entity?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ about Activities and the Timeline Wall
           href: /powerapps/user/faq-for-timeline-and-activity
+      - name: Proactive engagement
+        items:
+        - name: Overview of proactive engagement
+          href: proactive-engagement-overview.md
+        - name: Configure proactive engagement
+          href: configure-proactive-engagement.md
+        - name: References for proactive engagement
+          href: references-for-proactive-engagement.md
       - name: Voice
         items:
         - name: Introduction to the voice channel

@@ -19,7 +19,7 @@ When you create a forecast scenario, use historical data as the input source for
 1. Select **New**. The **New WEM File Upload** page appears.
 
    > [!NOTE]  
-   > You must use the CSV file format and format the headers and explained in [Required data](#required-data).
+   > You must use the CSV file format and format the headers as explained in [Required data](#required-data).
 
 1. For **Name**, enter a name for the file.
 1. For **File data interval**, select either **Intraday** (short term) or **Daily** (long term).

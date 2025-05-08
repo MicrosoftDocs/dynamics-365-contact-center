@@ -31,10 +31,11 @@ You can now use this file as your data source when you [create a new forecast re
 
 ## Required data
 
-The following tables outline the data format and structure required for importing historical data into the forecasting model. These tables specify the necessary headers, acceptable values, and their descriptions to ensure compatibility with the system.
-Refer to the following example tables to understand the required headers, values, and descriptions.
+The following tables outline the data format and structure required for importing historical data into the forecasting model. These tables specify the necessary headers, values, and descriptions to ensure compatibility with the system.
 
 ### Daily (long-term) data
+
+#### Table format
 
  **DateTime** | **ChannelId** | **ChannelName** | **QueueId** | **QueueName** | **Volume** | **AHT** | **Interval** | **MaxVolumeByHour** | **AgentCount** 
 --------------|---------------|-----------------|-------------|---------------|------------|---------|--------------|---------------------|----------------
@@ -53,6 +54,8 @@ Refer to the following example tables to understand the required headers, values
 **AgentCount**: (Daily forecast only) The number of agents required.  
  
 ### Intraday (short-term) data
+
+#### Table format
 
  **DateTime** | **ChannelId** | **ChannelName** | **QueueId** | **QueueName** | **Volume** | **AHT** | **Interval** | **MaxVolumeByHour** 
 --------------|---------------|-----------------|-------------|---------------|------------|---------|--------------|---------------------

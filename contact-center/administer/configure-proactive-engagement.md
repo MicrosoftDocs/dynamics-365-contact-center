@@ -20,8 +20,9 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 
 - Specific licenses are required to configure and use proactive engagement in Dynamics 365 Contact Center. Learn more in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2309719).
 - Voice channel is provisioned and configured. Learn more in [Provision channels](../implement/provision-channels.md) and [Install the voice channel](../implement/install-voice-channel.md).
-- Dynamics 365 Customer Insights
-- Microsoft Copilot Studio
+- If utilizing Dynamics 365 Customer Insights Journey for your customer journey authoring, you must obtain a Customer Insights Journey license Customer Insights license guidance - Dynamics 365 Customer Insights | Microsoft Learn
+- If utilizing Microsoft Copilot Studio agents, you must have a Copilot Studio license Get access to Copilot Studio - Microsoft Copilot Studio | Microsoft Learn
+
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -29,16 +30,21 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 
 1. Configure a phone number.
 1. Configure an outbound type of workstream for voice in the Copilot Service admin center.
-1. Configure the voice channel.
+1. Configure the behaviors.
 1. Configure an AI agent.
 1. Add the AI agent to the workstream.
 1. Configure outcomes using Power Automate flows.
 1. Configure context variables.
-1. Configure notification templates.
-1. Configure outbound profile settings.
-1. Define notification templates to use in progressive dialing mode.
+1. Configure and define notification templates to use in the progressive and preview dial modes.
 1. Create a proactive engagement in the Copilot Service admin center.
 1. Configure journeys using Customer Insights or the API.
+
+
+## Set up an outbound workstream
+1.	Navigate to the workstreams tab and select New workstream 
+2.	Select Outbound as this will be the workstream used for your proactive engagement. 
+a.	Important: Outbound workstreams should only be created for calls done through proactive engagement. For agent dialed outbound calls, please see Set up outbound calling in the voice channel | Microsoft Learn
+3.	Select a name for the outbound workstream and setup the fallback queue.
 
 ## Configure settings for proactive engagement
 
@@ -52,9 +58,10 @@ You can navigate to the proactive engagement settings in one of the following wa
    - **Description**: Enter a description for the proactive engagement.
    - **Workstream**: Select a workstream.
    - **Channel type**: **Voice** is selected by default and not available for edit.
+   - Important: The name and description of the engagement will be seen by the support representatives in the agent notification so it is recommended to use descriptive information to help them understand the call
 1. In **Routing details**, enter the following information:
    - **Primary queue**: Select a queue. 
-   - **Fallback queue**: Select a fallback queue.
+   - **Fallback queue**: This will be pre-populated based on the fallback queue set for the outbound workstream.
    - **Skills**: Select the skills that are required for the proactive engagement.
 1. Select **Next**. The **Dialing modes** page appears.
 1. Select one of the dialing modes as follows:
@@ -62,10 +69,11 @@ You can navigate to the proactive engagement settings in one of the following wa
    - **Progressive**: The system starts the call with an agent and then adds a representative after the agent actions are complete.
    - **Preview**: The system add the representative to the call and then dials the customer.
 1. Select one of the following priority levels:
-   - **Normal**: 
-   - **High**: 
-   - **Critical**: 
-1. Select the number of concurrent calls that can be assigned to the representative in **Maximum calls per representative**. This setting is available for Copilot and progressive dialing modes.
+   - **Normal**
+   - **High**
+   - **Critical** 
+1. Select the number of concurrent calls for Copilot Mode. This refers to the maximum number of calls to be made by the bot at the same time. The maximum number you can select is 500 calls.
+2. Select the max number of calls that can be assigned to the representative in **Maximum calls per representative**. This setting is available forthe progressive dialing mode. This refers to the maximum amount of customer calls to make per available representative. The lower the number, the more balanced a representative’s call volume may be. The max number of calls you can choose is 5.
 1. In **Call order**, select one of the following options:
    - **Earliest Scheduled Date**
    - **Last in First Out**
@@ -75,11 +83,15 @@ You can navigate to the proactive engagement settings in one of the following wa
    - **Stop making calls immediately**: No further calls are made.
    - **Continue making calls**:
      - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
-1. Optionally, select **Use rules** to define rules in the **Rules** section. Configure the settings to decrease the concurrent calls percent based on the threshold parameters for one of the following:
-   - **Average wait time**
-   - **Abandonment rate**
+1. Rules are also available to set for Copilot and Progressive Mode. These help control the throttling and pacing for the proactive engagement. The following rules are available
+a.	   Abandonment rate (Copilot and Progressive Mode). This refers to the percentage of customers who hang up before connecting with a representative.
+b.	   Average wait time (Copilot and Progressive Mode). This refers to the average amount of time it takes for customers to connect to representatives.
+c.	   Escalation count (Copilot Mode). This refers to the total number of escalations made from the AI agent.
+d.	   Open concurrent  escalations (Copilot Mode). This refers to the total number of open escalations that haven't been resolved. 
+
 1. Select **Next**.
 1. On the **Outcomes** page, select the outcomes that are available for the proactive engagement, and then select **Next**.
+      a.	To add attributes, please add context variables to your outbound workstream Manage context variables | Microsoft Learn
 1. The **Summary** page displays the settings that you configured. Review the settings, and then select **Create**.
 
 ## Configure proactive engagement with a journey using Customer Insights
@@ -106,7 +118,107 @@ The dial modes are used to determine how the system will initiate calls to custo
 _Need information on how to configure outcomes._
 
 ## Runtime experience
+Customer Service Representatives will see the proactive engagement calls based on notitification template created for the outbound workstream. They will see the Name and the Description that is set for the proactive engagement. 
 
-_Need information on runtime experience._
+For preview calls, CSR's will be able to start or reject the call. 
+For progressive calls, CSR's will only be able to start the call. 
+
+CSR's will also be able to select disposition codes to record the outcome of the interaction. For more information https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-disposition-codes
+
+
+## Dataverse Data Models  
+As the Proactive Engagement solution, there is a set of Dataverse tables created to monitor the Proactive Engagement.  
+
+Proactive Engagement Configuration: Entity definition  
+Dataverse Table Name: msdyn_proactive_engagement_config  
+Table Type: Standard  
+Column  	Schema name  
+Name  	msdyn_name  
+Description  	msdyn_description  
+Proactive Outreach Type  	msdyn_type  
+Workstream  	msdyn_workstream  
+Dial Mode Type  	msdyn_dialmode_type  
+Ignore Queue Hours  	msdyn_ignore_queue_hours  
+Priority  	msdyn_priority  
+Processing Order  	msdyn_processing_order  
+Maximum Concurrent Calls  	msdyn_max_concurrent_calls  
+Maximum Calls Per Agent  	msdyn_max_calls_per_agent  
+Reserve Agent Capacity  	msdyn_reserve_agent_capacity  
+Bot Failure Treatment Type  	msdyn_bot_failure_treatment_type  
+Bot Failure Treatment Rate Threshold  
+  	msdyn_bot_failure_treatment_rate_threshold  
+Queue  	msdyn_queue  
+Throttle Metric  	msdyn_throttle_metric  
+Throttle Threshold  	msdyn_throttle_threshold  
+Throttle Control Period  
+  	msdyn_throttle_control_period  
+Throttle Adjustment Percentage  
+  	msdyn_throttle_adjustment_percentage  
+ 
+Proactive Engagement Configuration Status: Entity definition  
+This is a new 1:1 table with Proactive Engagement Configuration to store the status (suspended or not) of a Proactive Engagement Configuration, and the type of the last change.  
+Dataverse Table Name: msdyn_proactive_engagement_config_status  
+Column  	Schema name  
+Proactive Engagement Configuration  	msdyn_proactive_engagement_config  
+Is Active 	msdyn_suspended  
+Suspension Type  	msdyn_suspension_type  
+ 
+Proactive Engagement Configuration Characteristic: Entity definition  
+This is a new table to store the many-to-many relationship between msdyn_proactive_engagement_config and characteristic (aka Skill)  
+Dataverse Table Name: msdyn_proactive_eng_config_characteristic  
+Column  	Schema name  
+Proactive Engagement Configuration  	msdyn_proactive_engagement_configuration  
+Characteristic  	msdyn_characteristic  
+ 
+Proactive Engagement Configuration Attribute: Entity definition  
+Dataverse Table Name: msdyn_proactive_engagement_config_attribute  
+This is a table with a Many-To-One relationship to the new Proactive Engagement Configuration table.  The data stored here is meant to define some element keywords of the “data contract” that exists between the CIJ Journey and the Bot for result attributes.  
+Column  	Schema Name  
+Proactive Engagement Configuration  	msdyn_proactive_engagement_config  
+Keyword  	msdyn_keyword  
+ 
+Proactive Delivery: Entity definition  
+Dataverse Table Name: msdyn_proactive_delivery  
+All delivery requests that are accepted via the Proactive Engagement input API will get a row in this table.  
+Column  	Schema Name  
+Delivery Id  	msdyn_delivery_id  
+Conversation Id  	msdyn_conversation_id  
+Call Id  	msdyn_call_id  
+Proactive Engagement Configuration Id  	msdyn_proactive_engagement_config_id  
+Journey Id  	msdyn_journey_id  
+Journey Run Id  	msdyn_journey_run_id  
+Contact Id  	msdyn_contact_id  
+Channel  	msdyn_channel  
+Status  	msdyn_status  
+Queue Id  	msdyn_queue_id  
+Tracking Id  	msdyn_tracking_id  
+Dial Mode Type  	msdyn_dialmode_type  
+To Address  	msdyn_to_address  
+From Address  	msdyn_from_address  
+Window Start Date  	msdyn_window_start_date  
+Window End Date  	msdyn_window_end_date  
+Start Date  	msdyn_start_date  
+End Date  	msdyn_end_date  
+Result  	msdyn_result  
+Result Date  	msdyn_result_date  
+Disposition Codes  	msdyn_disposition_codes  
+ 
+Proactive Delivery Attribute: Entity definition  
+This table stores all the input and result name value pairs associated with the delivery. 
+Dataverse Table Name: msdyn_proactive_delivery_attribute  
+Column  	Schema Name  
+Proactive Delivery  	msdyn_proactive_delivery  
+Keyword  	msdyn_keyword  
+Value  	msdyn_value  
+Type  	msdyn_type  
+ 
+Conversation Attribute: Entity definition 
+This is an Elastic table with Many-To-One relationship to existing Conversation table.  This is where the bot author will write attributes collected during the call flow. 
+Column  	Schema Name  
+Conversation  	msdyn_conversation_id  
+Keyword  	msdyn_keyword  
+Value  	msdyn_value  
+ 
+
 
 ### Related information

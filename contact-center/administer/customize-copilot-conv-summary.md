@@ -18,7 +18,7 @@ You can customize the fields that Copilot uses to generate conversation summarie
 
 ## Set conversation summary format
 
-In Contact Center admin center or Copilot Service admin center, perform the following steps:
+In Copilot Service admin center, perform the following steps:
 
 1. Use one of the following navigation options: 
     - **Support Experience** > **Productivity** > **Summaries**

@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes.
-ms.date: 05/02/2025
+ms.date: 05/08/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -12,11 +12,10 @@ ms.collection:
 
 # Create and manage forecast scenarios
 
-
 This article describes how to navigate the forecast reports in Copilot Service workspace so that you can successfully meet the staffing demands of your organization.
 
 > [!IMPORTANT]
-> This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. This feature isn't intended for use in making, and shouldn't be used to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365 Copilot Service workspace, this feature, and any associated feature or service in compliance with all applicable laws, including laws relating to accessing individual employee analytics and monitoring, recording, and storing communications with end users. This also includes adequately notifying end users that their communications with customer service representatives might be monitored, recorded, or stored and, as required by applicable laws, obtaining consent from end users before using the feature with them. Customers are also encouraged to have a mechanism in place to inform their customer service representatives that their communications with end users might be monitored, recorded, or stored.
+> This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. This feature isn't intended for use in making, and you shouldn't use it to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365 Copilot Service workspace, this feature, and any associated feature or service in compliance with all applicable laws. This compliance includes laws that relate to accessing individual employee analytics, and monitoring, recording, and storing communications with end users. This compliance also includes your responsibility to adequately notify end users that their communications with customer service representatives might be monitored, recorded, or stored and, as required by applicable laws, obtaining consent from end users before your organization uses this feature with them. Customers are also encouraged to have a mechanism in place to inform their customer service representatives that their communications with end users might be monitored, recorded, or stored.
 
 ## Overview
 
@@ -35,9 +34,7 @@ You can use the forecast reports for case and conversation volumes in the follow
 - Automatically detect seasonality from historical traffic with the settings option to import your holiday calendar. This function helps the forecasting model to predict case or conversation volumes during special, seasonal events.
 
 > [!NOTE]
-> When using forecasting scenario reports, note that:
->
-> - Forecast reports might contain inaccuracies in volume estimates due to various factors, such as unexpected trends or unforeseen business developments.
+> - Forecast reports aim to provide accurate volume estimates but might not fully account for external factors, such as unexpected trends or sudden business needs.
 >
 > - Forecast reports are currently available in specific geographical locations. Learn more in [Supported regions and languages for analytics and insights](/dynamics365/customer-service/administer/cs-region-availability-service-limits#supported-regions-and-languages-for-analytics-and-insights).
 
@@ -74,6 +71,9 @@ You can create either short-term or long-term forecasts.
       1. **External data**: If you're using external data as your data source, select the search field, browse to your file, and then select it. Learn how to import an external data file in [Import data for forecast scenarios](wfm-import-historical-data.md).
 1. Select **Save**.
 
+> [!NOTE]  
+> The forecast scenario runs within two hours after setup for the first time. Subsequent runs follow the schedule set on the **Forecast Run Schedule** card.
+
 ## View your forecast reports
 
 1. In the site map of Copilot Service workspace, select **Forecast scenarios** under **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.
@@ -86,7 +86,7 @@ The first time you access the dashboard, any scenarios you configured appear in 
 - **Interval**: The type of scenario.
 - **Duration**: The length of time.
 - **Target entity**: The record type.
-- **Last Run On**: The date the scenario last ran. Based on the **Forecast run schedule** you selected.
+- **Last Run On**: The date the scenario last ran. This date is based on the **Forecast run schedule** you selected.
 - **Is recurring**: Indicates whether the scenario repeats.
 - **Recurrence time slot**: The day or time the report runs.
 - **Recurrence time zone**: The time zone in which the report runs.

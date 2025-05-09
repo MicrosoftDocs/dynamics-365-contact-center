@@ -69,7 +69,7 @@ The following table header examples outline the format and structure required fo
 **QueueName**: The name of the queue that corresponds to your host system's ID.  
 **Volume**: The number of incidents or conversations for the day with the combination of queue and channel. The value should be a whole number.  
 **AHT**: The average handling time for one incident or conversation interaction, in minutes. The value should be a whole number.  
-**Interval**: 15 minute intervals.  
+**Interval**: 15-minute intervals.  
 **MaxVolumeByHour**: The maximum number of interactions or conversations, per day. The value should be a whole number. 
 
 ### Related information

@@ -4,7 +4,7 @@ description: Learn how to use the ask a question feature in Copilot within Custo
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: 
-ms.topic: conceptual 
+ms.topic: how-to
 ms.collection:
 ms.date: 03/07/2025
 ms.custom: bap-template 
@@ -27,7 +27,7 @@ When you sign in to any of the Customer Service customer service representative 
 
 ## Navigation
 
-- In Customer Service workspace or Contact Center workspace, you can access **Ask a question** from the Copilot help pane once you sign in.
+- In Copilot Service workspace, you can access **Ask a question** from the Copilot help pane once you sign in.
 - When you sign in to a non-Microsoft CRM, you can generate case summary as follows:
    - Launch the embedded experience and then login to your Dynamics account.
    - In the Copilot help pane that appears, select **Ask a question**.
@@ -48,9 +48,9 @@ With Copilot, you can take the following actions:
 
 Based on the app you are using, you can use Copilot to generate case summary and ask about case data from the **Ask a question** tab.
 
-### [Customer Service workspace](#tab/standaloneapps)
+### [Copilot Service workspace](#tab/standaloneapps)
 
- In the Customer Service workspace, Copilot enables you to:
+ In the Copilot Service workspace, Copilot enables you to:
 
 - **Ask to summarize cases** (preview): Copilot generates case summaries directly within the Ask a question tab, allowing you to access them without disrupting your current workflow. The case summary includes key information such as the case title, customer, priority, case type, and description.
 - **Ask about case data** (preview): Copilot enables you to access and use case data effectively, resulting in improved case management. You can ask questions about your case data to manage case workload in a better way.

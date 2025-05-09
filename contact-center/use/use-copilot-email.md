@@ -4,7 +4,7 @@ description: Learn how customer service representatives can use Copilot to draft
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
-ms.topic: conceptual
+ms.topic: article
 ms.collection: bap-ai-copilot
 ms.date: 02/19/2025
 ms.custom: bap-template 

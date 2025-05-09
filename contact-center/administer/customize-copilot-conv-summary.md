@@ -21,7 +21,7 @@ You can customize the fields that Copilot uses to generate conversation summarie
 In Contact Center admin center or Copilot Service admin center, perform the following steps:
 
 1. Use one of the following navigation options: 
-    - **Agent Experience** > **Productivity** > **Summaries**
+    - **Support Experience** > **Productivity** > **Summaries**
     - **Operations** > **Insights** > **Summaries**
 1. In **Summaries**, for **Live conversation summaries**, select the **Manage format** link. The **Manage format** pane shows the formats that the conversation summary is generated. You can select one of the following options: 
    - **Paragraph**:  Generates the summary in a single paragraph.

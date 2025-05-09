@@ -23,7 +23,7 @@ You can filter the report by selecting **All** to view AI agent performance acro
 
 ## Prerequisites
 
-To view the report in Customer Service worskpace, administrators with the Omnichannel agent role must enable the realtime Bot dashboard in **Customer Service admin center** > **Insights** **Productivity** > **Real-time Analytics**.
+To view the report in Copilot Service worskpace, administrators with the Omnichannel agent role must enable the realtime Bot dashboard in **Copilot Service admin center** > **Insights** **Productivity** > **Real-time Analytics**.
 
 ## Key metrics
 

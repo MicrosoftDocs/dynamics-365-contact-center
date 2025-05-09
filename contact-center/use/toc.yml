@@ -312,6 +312,8 @@
         href: /dynamics365/customer-service/use/cs-share-feedback?context=/dynamics365/contact-center/context/use-context
       - name: Manage workforce
         items:
+        - name: Adherence Tracker
+          href: wfm-adherence-tracker.md
         - name: Forecasting
           items: 
           - name: Create and manage forecast scenarios

@@ -4,7 +4,7 @@ description: Learn what's new in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.topic: conceptual
+ms.topic: whats-new
 ms.collection:
 ms.date: 01/10/2025
 ms.custom: bap-template

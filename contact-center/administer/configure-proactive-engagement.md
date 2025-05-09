@@ -47,6 +47,21 @@ You can navigate to the proactive engagement settings in one of the following wa
 1. Select **Next**. The **Dialing modes** page appears
 1. Select one of the dialing modes as follows:
    - **Copilot**: The system automatically dials the customer and connects the call to the agent when the customer answers. This mode is used for high-volume outbound calls.
-   - **Progressive**: The system dials the customer and waits for the agent to connect the call. This mode is used for medium-volume outbound calls.
-   - **Preview**: The system dials the customer and waits for the agent to connect the call. This mode is used for low-volume outbound calls.
-
+   - **Progressive**: The system starts the call with an agent and the adds a representative after the agent actions are complete.
+   - **Preview**: The system add the representative to the call and then dials the customer.
+1. Select one of the following priority levels:
+   - **Normal**: 
+   - **High**: 
+   - **Critical**: 
+1. Select the number of concurrent calls that can be assigned to the representative in **Maximum calls per representative**. This setting is available for Copilot and progressive dialing modes.
+1. Call order: Select one of the following options:
+   - **Earliest Scheduled Date**
+   - **Last in First Out**
+   - **First in, First Out**
+1. Under **Operating hours**, select the checkbox if calls can be made outside of queue hours. This setting is available for Copilot and progressive dialing modes.
+1. Select the action for how the call be handled if the agent fails during the call.
+   - Stop making calls immediately
+   - Continue making calls
+     - Rate of failure reaches: Select a value from the Percent dropdown list. The default value is one.
+1. Optionally, you can define rules in the **Rules** section. Select **Use rules**.
+    

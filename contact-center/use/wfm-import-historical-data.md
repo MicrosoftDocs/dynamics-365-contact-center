@@ -70,7 +70,7 @@ The following tables outline the data format and structure required for importin
 **Volume**: The number of incidents or conversations for the day with the combination of queue and channel. The value should be a whole number.  
 **AHT**: The average duration of one incident or conversation interaction, in minutes. The value should be a whole number.  
 **Interval**: 15 min  
-**MaxVolumeByHour**: The maximum number of interactions/conversations, per day. The value should be a whole number. 
+**MaxVolumeByHour**: The maximum number of interactions or conversations, per day. The value should be a whole number. 
 
 ### Related information
 

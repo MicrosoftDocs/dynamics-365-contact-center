@@ -72,7 +72,7 @@ You can create either short-term or long-term forecasts.
 1. Select **Save**.
 
 > [!NOTE]  
-> The forecast scenario runs within two hours of the setup for the first time. The subsequent runs follow the schedule set on the **Forecast Run Schedule** card.
+> The forecast scenario runs within two hours after setup for the first time. Subsequent runs follow the schedule set on the **Forecast Run Schedule** card.
 
 ## View your forecast reports
 

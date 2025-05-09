@@ -277,7 +277,7 @@
         - name: Manage Copilot features
           href: configure-copilot-features.md
         - name: Make Copilot available to agents
-          href: configure-copilot-features.md#make-copilot-available-to-agents
+          href: configure-copilot-features.md#make-copilot-available-to-service-representatives
         - name: Enable summarization of cases and conversations
           href: copilot-enable-summary.md
         - name: Enable Copilot help pane features

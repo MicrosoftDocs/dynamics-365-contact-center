@@ -4,7 +4,7 @@ description: Learn how to use the ask a question feature in Copilot within Custo
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: 
-ms.topic: conceptual 
+ms.topic: how-to
 ms.collection:
 ms.date: 03/07/2025
 ms.custom: bap-template 

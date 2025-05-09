@@ -4,7 +4,7 @@ description: Learn about the bot report in Omnichannel real-time analytics.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
-ms.topic: conceptual 
+ms.topic: concept-article
 ms.collection: 
 ms.date: 02/10/2025
 ms.custom: bap-template 

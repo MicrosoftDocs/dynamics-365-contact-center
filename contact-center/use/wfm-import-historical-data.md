@@ -55,7 +55,7 @@ The following table header examples outline the format and structure required fo
  
 ### Intraday (short-term) data
 
-#### Table format
+#### Data format
 
  **DateTime** | **ChannelId** | **ChannelName** | **QueueId** | **QueueName** | **Volume** | **AHT** | **Interval** | **MaxVolumeByHour** 
 --------------|---------------|-----------------|-------------|---------------|------------|---------|--------------|---------------------
@@ -68,8 +68,8 @@ The following table header examples outline the format and structure required fo
 **QueueId**: The ID of the queue that the datapoint corresponds to, from your host system. If you don't know the value, leave it as 1.  
 **QueueName**: The name of the queue that corresponds to your host system's ID.  
 **Volume**: The number of incidents or conversations for the day with the combination of queue and channel. The value should be a whole number.  
-**AHT**: The average duration of one incident or conversation interaction, in minutes. The value should be a whole number.  
-**Interval**: 15 min  
+**AHT**: The average handling time for one incident or conversation interaction, in minutes. The value should be a whole number.  
+**Interval**: 15 minute intervals.  
 **MaxVolumeByHour**: The maximum number of interactions or conversations, per day. The value should be a whole number. 
 
 ### Related information

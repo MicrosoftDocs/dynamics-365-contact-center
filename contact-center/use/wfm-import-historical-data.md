@@ -1,7 +1,7 @@
 ---
 title: Import historical data
 description: Learn how to import historical data to use in your case and conversation forecast scenarios.
-ms.date: 04/11/2025
+ms.date: 05/08/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -17,6 +17,10 @@ When you create a forecast scenario, use historical data as the input source for
 
 1. In the site map of Copilot Service workspace, select **Forecast External Data** under **Workforce Management**. The **Active File uploads** page appears.
 1. Select **New**. The **New WEM File Upload** page appears.
+
+   > [!NOTE]  
+   > You must use the CSV file format and format the headers as explained in [Required data](#required-data).
+
 1. For **Name**, enter a name for the file.
 1. For **File data interval**, select either **Intraday** (short term) or **Daily** (long term).
 1. Select **Save**.
@@ -24,3 +28,50 @@ When you create a forecast scenario, use historical data as the input source for
 1. Select **Save**.
 
 You can now use this file as your data source when you [create a new forecast report](wfm-forecast-scenarios.md#create-a-short-term-or-long-term-forecast-report).
+
+## Required data
+
+The following table header examples outline the format and structure required for importing historical data into the forecasting model. They specify the necessary headers, values, and descriptions to ensure compatibility with the system.
+
+### Daily (long-term) data
+
+#### Data format
+
+ **DateTime** | **ChannelId** | **ChannelName** | **QueueId** | **QueueName** | **Volume** | **AHT** | **Interval** | **MaxVolumeByHour** | **AgentCount** 
+--------------|---------------|-----------------|-------------|---------------|------------|---------|--------------|---------------------|----------------
+
+#### Daily data descriptions
+
+**DateTime**: The date and time for the forecast data point. The format is yyyy-MM-dd HH:mm:ss. For example: 2025-01-25 00:15:00
+**ChannelId**: The channel ID, such as voice, web, or any custom channel. This value is from the system you obtained the data from. If you don't know the value, leave it as 1.  
+**ChannelName**: The name of the channel that corresponds to your host system's ID.  
+**QueueId**: The ID of the queue that the datapoint corresponds to, from your host system. If you don't know the value, leave it as 1.  
+**QueueName**: The name of the queue that corresponds to your host system's ID.  
+**Volume**: The number of incidents or conversations for the day with the combination of queue and channel. The value should be a whole number.  
+**AHT**: The average handling time for one incident or conversation interaction, in minutes. The value should be a whole number.  
+**Interval**: Daily  
+**MaxVolumeByHour**: The maximum number of interactions or conversations, per day. The value should be a whole number.  
+**AgentCount**: (Daily forecast only) The number of agents required.  
+ 
+### Intraday (short-term) data
+
+#### Data format
+
+ **DateTime** | **ChannelId** | **ChannelName** | **QueueId** | **QueueName** | **Volume** | **AHT** | **Interval** | **MaxVolumeByHour** 
+--------------|---------------|-----------------|-------------|---------------|------------|---------|--------------|---------------------
+
+#### Intraday data descriptions
+
+**DateTime**: The date and time for the forecast data point. The format is yyyy-MM-dd HH:mm:ss, and should be in 15-minute intervals. For example: 2025-01-25 00:15:00
+**ChannelId**: The channel ID, such as voice, web, or any custom channel. This value is from the system you obtained the data from. If you don't know the value, leave it as 1.  
+**ChannelName**: The name of the channel that corresponds to your host system's ID.  
+**QueueId**: The ID of the queue that the datapoint corresponds to, from your host system. If you don't know the value, leave it as 1.  
+**QueueName**: The name of the queue that corresponds to your host system's ID.  
+**Volume**: The number of incidents or conversations for the day with the combination of queue and channel. The value should be a whole number.  
+**AHT**: The average handling time for one incident or conversation interaction, in minutes. The value should be a whole number.  
+**Interval**: 15-minute intervals.  
+**MaxVolumeByHour**: The maximum number of interactions or conversations, per day. The value should be a whole number. 
+
+### Related information
+
+[Create and manage forecast scenarios](wfm-forecast-scenarios.md)

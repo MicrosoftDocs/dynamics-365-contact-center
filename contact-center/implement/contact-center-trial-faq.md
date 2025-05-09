@@ -4,7 +4,7 @@ description: Solutions to common questions related to Dynamics 365 Contact Cente
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.topic: conceptual 
+ms.topic: faq
 ms.collection: get-started
 ms.date: 01/10/2025
 ms.custom: bap-template

@@ -4,7 +4,7 @@ description: Learn how to use Copilot for Microsoft 365 to chat with service dat
 ms.date: 02/19/2025
 ms.custom:
   - bap-template
-ms.topic: conceptual
+ms.topic: how-to
 author: lalexms
 ms.author: laalexan
 ms.reviewer: laalexan

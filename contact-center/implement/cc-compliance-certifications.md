@@ -4,7 +4,7 @@ description: This article provides information on compliance certification requi
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.topic: conceptual 
+ms.topic: concept-article
 ms.collection: 
 ms.date: 03/07/2025
 ms.custom: bap-template

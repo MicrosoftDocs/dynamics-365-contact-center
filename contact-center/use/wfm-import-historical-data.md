@@ -52,6 +52,19 @@ The following table header examples outline the format and structure required fo
 **Interval**: Daily  
 **MaxVolumeByHour**: The maximum number of interactions or conversations, per day. The value should be a whole number.  
 **AgentCount**: (Daily forecast only) The number of agents required.  
+
+#### Example
+
+The following example illustrates the expected data format for a *Daily data file*
+
+|DateTime|ChannelId|ChannelName|QueueId|QueueName|Volume|AHT|Interval|MaxVolumeByHour|AgentCount|
+|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
+|01-01-2025 01:06|2|CHName2|2|Q2|89|106|Daily|44|35|
+|01-01-2025 07:11|1|CHName1|2|Q2|89|105|Daily|44|35|
+|01-01-2025 09:45|2|CHName2|1|Q1|89|104|Daily|44|35|
+|01-01-2025 10:22|1|CHName1|1|Q1|89|104|Daily|44|35|
+
+
  
 ### Intraday (short-term) data
 
@@ -71,6 +84,17 @@ The following table header examples outline the format and structure required fo
 **AHT**: The average handling time for one incident or conversation interaction, in minutes. The value should be a whole number.  
 **Interval**: 15-minute intervals.  
 **MaxVolumeByHour**: The maximum number of interactions or conversations, per day. The value should be a whole number. 
+
+#### Example
+
+The following example illustrates the expected data format for an *Intra Day data file*.
+
+|DateTime|ChannelId|ChannelName|QueueId|QueueName|Volume|AHT|Interval|MaxVolumeByHour|
+|:----|:----|:----|:----|:----|:----|:----|:----|:----|
+|20-01-2025 00:15|3|CHName3|3|Q3|59|114|15 mins|28|
+|20-01-2025 03:00|2|CHName2|2|Q2|67|110|15 mins|25|
+|20-01-2025 06:30|2|CHName2|2|Q2|75|108|15 mins|32|
+|20-01-2025 07:45|1|CHName1|1|Q1|52|119|15 mins|46|
 
 ### Related information
 

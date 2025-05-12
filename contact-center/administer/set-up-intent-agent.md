@@ -45,7 +45,7 @@ Before you proceed, make sure you:
 
 ## Set up Copilot agents for intent management
 
-1. In Customer Service admin center, navigate to the **Customer Intent Agent (preview)** page > **Intent-based suggestions** section.
+1. In Copilot Service admin center, navigate to the **Customer Intent Agent (preview)** page > **Intent-based suggestions** section.
 1. Select **Enable for chatbots** and then select **Manage**. The **Bots** page appears.
 1. Select the agent connected to your omnichannel environment for agent transfers.
 1. Select **Add intent-based features**, which takes you to **Manage component collections (preview)** in Microsoft Copilot Studio.

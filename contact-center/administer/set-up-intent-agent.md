@@ -54,7 +54,7 @@ Before you proceed, make sure you:
 
 ## Add connection references
 
-Add connection references for each new organization once, even if you add multiple agents to it. Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
+Add connection references for each new organization once, even if you add multiple agents to the organization. Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
 
 1. Sign in to [make.powerapps.com](https://make.powerapps.com) and select your environment.
 1. Go to **Solutions** > **Default Solution** > **Objects** > **Connection References**.

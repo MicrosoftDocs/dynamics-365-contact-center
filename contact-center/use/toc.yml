@@ -168,7 +168,7 @@
           href: /dynamics365/customer-service/use/oc-view-ai-suggested-cases-articles?context=/dynamics365/contact-center/context/use-context
         - name: View smart assist suggestions
           href: /dynamics365/customer-service/use/oc-smart-assist?context=/dynamics365/contact-center/context/use-context
-        - name: View the agent calendar
+        - name: View the representative calendar
           href: /dynamics365/customer-service/use/use-agent-calendar?context=/dynamics365/contact-center/context/use-context
         - name: Use agent diagnostics as a self-help tool
           href: /dynamics365/customer-service/use/use-agent-diagnostics?context=/dynamics365/contact-center/context/use-context
@@ -310,6 +310,38 @@
         href: /dynamics365/customer-service/use/report-issues?context=/dynamics365/contact-center/context/use-context
       - name: Share feedback
         href: /dynamics365/customer-service/use/cs-share-feedback?context=/dynamics365/contact-center/context/use-context
+      - name: Manage workforce
+        items:
+        - name: Adherence Tracker
+          href: wfm-adherence-tracker.md
+        - name: Forecasting
+          items: 
+          - name: Create and manage forecast scenarios
+            href: wfm-forecast-scenarios.md
+          - name: Import historical data
+            href: wfm-import-historical-data.md
+        - name: Capacity planning
+          items:
+          - name: Create and manage capacity plans
+            href: wfm-capacity-planning.md
+        - name: Shift planning and scheduling
+          items:
+          - name: Create and manage shift plans
+            href: wfm-shift-plan.md
+          - name: Use auto schedule to schedule service representatives
+            href: wfm-use-auto-schedule.md
+          - name: Use shift bidding
+            href: wfm-representative-shift-bidding.md
+          - name: Use shift swapping
+            href: wfm-use-shift-swapping.md
+          - name: Use the Schedule Calendar
+            href: /dynamics365/customer-service/use/use-agent-calendar?context=/dynamics365/contact-center/context/use-context
+        - name: Time-off request management
+          items:
+          - name: Manage time-off requests
+            href: wfm-view-time-off-requests.md
+          - name: Create a time-off request
+            href: wfm-create-time-off-request.md
     - name: Responsible AI
       items:
       - name: Overview

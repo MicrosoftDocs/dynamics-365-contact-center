@@ -124,12 +124,36 @@
             href: /dynamics365/customer-service/administer/manage-custom-productivity-tools?context=/dynamics365/contact-center/context/administer-context
           - name: FAQ about adding users to agent experience profile
             href: /dynamics365/customer-service/administer/faq-agent-experience-profile?context=/dynamics365/contact-center/context/administer-context
-      - name: Workforce management
+      - name: Manage your workforce
         items:
-        - name: Configure the agent calendar view
-          href: /dynamics365/customer-service/administer/configure-agent-calendar?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure routing based on agent calendar (preview)
-          href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/administer-context
+        - name: Install the package
+          href: wfm-package-installation.md
+        - name: User management
+          href: wfm-user-management.md
+        - name: Forecasting
+          items:
+          - name: Enable volume forecasting
+            href: wfm-configure-forecast-scenarios.md
+          - name: Enable capacity planning
+            href: wfm-configure-capacity-planning.md
+        - name: Shift and schedule management
+          items: 
+          - name: Enable shift activity types
+            href: wfm-shift-activity-types.md
+          - name: Enable schedule management
+            href: wfm-enable-schedule-management.md
+          - name: Enable shift-based routing (preview)
+            href: wfm-enable-shift-based-routing.md
+        - name: Time management
+          items:
+          - name: Enable the representative calendar
+            href: wfm-configure-representative-calendar.md
+          - name: Enable time-off request types
+            href: wfm-time-off-request-types.md
+          - name: Enable shift bidding
+            href: wfm-enable-shift-bids.md
+          - name: Enable shift swapping
+            href: wfm-enable-shift-swapping.md
       - name: Email
         items:
         - name: Configure email
@@ -190,6 +214,8 @@
           href: install-manage-desktop-app.md
         - name: Support emergency calls made by customer service representatives
           href: /dynamics365/customer-service/administer/voice-channel-emergency-calling?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure Teams Phone in voice channel (preview)
+          href: configure-teams-phone-in-voice-channel.md
         - name: Forward your Teams calls to digital contact center
           href: /dynamics365/customer-service/administer/voice-forward-calls?context=/dynamics365/contact-center/context/administer-context
         - name: Configure voicemail to manage inbound calls
@@ -234,6 +260,8 @@
         items:
         - name: Overview of autonomous service agents
           href: autonomous-agents-overview.md
+        - name: Manage consumption-based billing, capacity
+          href: /dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context
         - name: Customer Intent Agent 
           items:
           - name: Overview of Customer Intent Agent
@@ -244,14 +272,12 @@
             href: enable-intent-for-service-reps.md
           - name: Configure intent-based suggestions for Copilot agents
             href: set-up-intent-agent.md
-          - name: Set up a pay-as-you-go plan
-            href: /dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features
           href: configure-copilot-features.md
         - name: Make Copilot available to agents
-          href: configure-copilot-features.md#make-copilot-available-to-agents
+          href: configure-copilot-features.md#make-copilot-available-to-service-representatives
         - name: Enable summarization of cases and conversations
           href: copilot-enable-summary.md
         - name: Enable Copilot help pane features

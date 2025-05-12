@@ -27,16 +27,14 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 
 ## How it works
 
-1. Configure a phone number.
+1. Configure a [phone number](/dynamics365/customer-service/administer/voice-channel-manage-phone-numbers?context=/dynamics365/contact-center/context/administer-context).
 1. Configure an outbound type of workstream for voice in the Copilot Service admin center.
-1. Configure the voice channel.
-1. Configure an AI agent.
-1. Add the AI agent to the workstream.
+1. Configure the [voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?tabs=enhancedvoice#configure-a-voice-channel?context=/dynamics365/contact-center/context/administer-context).
+1. Configure an [AI agent and add to the workstream](/dynamics365/customer-service/administer/configure-bot-virtual-agent?context=/dynamics365/contact-center/context/administer-context).
 1. Configure outcomes using Power Automate flows.
-1. Configure context variables.
-1. Configure notification templates.
-1. Configure outbound profile settings.
-1. Define notification templates to use in progressive dialing mode.
+1. Configure [context variables](/dynamics365/customer-service/administer/manage-context-variables#add-context-variables?context=/dynamics365/contact-center/context/administer-context).
+1. Configure [notification templates](/dynamics365/customer-service/administer/notification-templates#create-a-notification-template?context=/dynamics365/contact-center/context/administer-context) to use in progressive dialing mode.
+1. Configure [outbound profile settings](/dynamics365/customer-service/administer/configure-outbound-inbound-profiles#create-outbound-profiles?context=/dynamics365/contact-center/context/administer-context).
 1. Create a proactive engagement in the Copilot Service admin center.
 1. Configure journeys using Customer Insights or the API.
 

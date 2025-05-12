@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 04/18/2025
+ms.date: 05/12/2025
 ms.custom: bap-template
 ---
 
@@ -30,6 +30,7 @@ Before you proceed, make sure you:
 
 - [Enable Customer Intent Agent](manage-customer-intent-agent.md#enable-customer-intent-agent).
 - [Set up intent discovery and add intents to the intent library](manage-customer-intent-agent.md#manage-intent-discovery-setup).
+- To use intents with Copilot agents, enable the **Use in AI Agents** checkbox for that specific intent.
 - Connect your Copilot agent to knowledge sources and a workstream in omnichannel.
 - Assign the **Environment Maker** role to makers.
 - Get the administrator role to add connection references. 

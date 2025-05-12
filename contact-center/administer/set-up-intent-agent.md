@@ -79,12 +79,10 @@ To use Customer Intent Agent, you need to connect your Copilot agent to a knowle
 
 1. In your existing topic flow, where you want to use Customer Intent Agent, add the following node:
  - **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**.
- - For a default agent, add this node to the **Conversational boosting** system topic that triggers the **Unknown** topic.
-1. To add the behavior after intent determination and interview completion: 
- - Select **Add a condition**, and set it to **Global.IntentInterviewComplete is equal to true**,  **Or**,  **Global.IntentInterviewIncomplete is equal to true**.
-1. If there isn't an output variable node, add a node under the **Condition** in step 2, and then go to **Advanced** > **Create generative answers** and select **SolutionQuery** for **Input**. Adding a **SolutionQuery** helps generate information from the determined intent and answered questions to search knowledge sources for a solution response.
-1. To add logic to complete the conversation flow after providing an answer, add another node: **Topic management** > **Go to another topic** > **End of Conversation**.
-1. Under **All other conditions**, add a node for **Topic management** > **Transfer conversation** to ensure that when an intent isn't detected, or if there was an error with intent detection, the conversation is escalated to a support representative.
+ - For a default agent, add this node to either the **Conversational boosting** or **Fallback** system topic that triggers from the **On Unknown Intent** topic.
+1. Add another node below: **Advanced** > **Create generative answers** and select **SolutionQuery for Input**. Adding a **SolutionQuery** helps generate information from the determined intent and answered questions to search knowledge sources for a solution response. Ensure you edit your data sources and check all the sources you want to search against for an answer.
+1. Add another node below: **Add a condition**, and set **Answer** variable to **is not Blank**.
+1. To add logic to complete the conversation flow after providing an answer, add another node: **Topic management** > **Go to another topic** > **End current topic**.
 
 ## Connect to your knowledge base
 

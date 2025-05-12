@@ -78,10 +78,10 @@ You can switch to Copilot author authentication if users connecting to Copilot S
 To use Customer Intent Agent, you need to connect your Copilot agent to a knowledge source in Microsoft Copilot Studio. Learn more in [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot).
 
 1. In your existing topic flow, where you want to use Customer Intent Agent, add the following node:
- - **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**.
- - For a default agent, add this node to either the **Conversational boosting** or **Fallback** system topic that triggers from the **On Unknown Intent** topic.
-1. Add another node below: **Advanced** > **Create generative answers** and select **SolutionQuery for Input**. Adding a **SolutionQuery** helps generate information from the determined intent and answered questions to search knowledge sources for a solution response. Ensure you edit your data sources and check all the sources you want to search against for an answer.
-1. Add another node below: **Add a condition**, and set **Answer** variable to **is not Blank**.
+     - **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**.
+     - For a default agent, add this node to either the **Conversational boosting** or **Fallback** system topic that triggers from the **On Unknown Intent** topic.
+1. Add another node: **Advanced** > **Create generative answers** and select **SolutionQuery for Input**. Adding a **SolutionQuery** helps generate information from the determined intent and answered questions to search knowledge sources for a solution response. Ensure you edit your data sources and check all the sources you want to search against for an answer.
+1. Add another node: **Add a condition**, and set **Answer** variable to **is not Blank**.
 1. To add logic to complete the conversation flow after providing an answer, add another node: **Topic management** > **Go to another topic** > **End current topic**.
 
 ## Connect to your knowledge base

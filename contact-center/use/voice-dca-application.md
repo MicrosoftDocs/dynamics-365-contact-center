@@ -25,7 +25,7 @@ The Desktop companion application is installed on your desktop.
 
 ## Use the Desktop companion application
 
-After you sign in to the agent application in Contact Center or Customer Service and receive a call, you can view the call in the Desktop companion application. Open the application from the Windows toolbar to manage the call in the application and continue the conversation from the web browser. You can also minimize the application which will continue to run in the background.
+After you sign in to the Copilot Service workspace and receive a call, you can view the call in the Desktop companion application. Open the application from the Windows toolbar to manage the call in the application and continue the conversation from the web browser. You can also minimize the application which will continue to run in the background.
 
 Launch the application if you face issues such as network latency, web application freezes or reloads. You can also make sure that your headset and wireless devices stay connected using the application.
 
@@ -45,6 +45,9 @@ You can do the following actions:
    - View the application's version information in **About this app**.
 
    :::image type="content" source="../media/dca-call-screenshot.png" alt-text="Screenshot of desktop companion application with ongoing calls" :::
+
+> [!NOTE]
+> We recommend that you use the Desktop companion application with only one environment at a time. To switch between environments, close the current environment before moving to another.
 
 ## Related information
 

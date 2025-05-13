@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 05/09/2025
+ms.date: 05/13/2025
 ms.custom: bap-template 
 ---
 
@@ -19,9 +19,9 @@ This article provides information about the Copilot features supported across Dy
 | [Filter knowledge articles to generate responses](/dynamics365/customer-service/use/use-copilot-filters) | Yes | No | No | No |
 |[Translate Copilot responses](use-ask-a-question.md#translate-responses) | Yes | Yes | Yes | Yes|
 | [Use auto prompts based on case data](use-ask-a-question.md#use-auto-prompts) | Yes                          | No                                               | Yes                                              | Yes |                            
-| [Use auto prompts based on conversation data](use-ask-a-question.md#use-auto-prompts) | Yes                          | Yes                                               | Yes                                              | No |  
+| [Use auto prompts based on conversation data](use-ask-a-question.md#use-auto-prompts) | Yes                          | Yes                                               | Yes                                              | Yes |  
 | [Use proactive prompts based on case data](use-ask-a-question.md#use-proactive-prompts) | Yes                          | No                                               | Yes                                              | Yes |  
-| [Use proactive prompts based on conversation data](use-ask-a-question.md#use-proactive-prompts) | Yes                          | Yes                                               | Yes                                              | No |  
+| [Use proactive prompts based on conversation data](use-ask-a-question.md#use-proactive-prompts) | Yes                          | Yes                                               | Yes                                              | Yes |  
 | [View case summary inline on cases](/dynamics365/customer-service/use/copilot-use-summary)           | Yes                           | No                                                  | No                                              | No                               |
 | [Customize data Copilot uses for case summaries](/dynamics365/customer-service/administer/copilot-map-custom-fields)          | Yes                           | No                                                  | No                                               | No                             |
 | [Generate conversation summaries](copilot-summarize-conversations.md)   | Yes                           | Yes                                                 | Yes                                               | No                                |

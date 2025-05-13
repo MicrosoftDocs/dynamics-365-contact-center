@@ -280,6 +280,8 @@
             href: overview-customer-intent-agent.md
           - name: Manage Customer Intent Agent
             href: manage-customer-intent-agent.md
+          - name: Configure intent-based routing
+            href: /dynamics365/customer-service/administer/configure-intent-based-routing?context=/dynamics365/contact-center/context/administer-context
           - name: Enable intent-based suggestions for service representatives
             href: enable-intent-for-service-reps.md
           - name: Configure intent-based suggestions for Copilot agents
@@ -289,7 +291,7 @@
         - name: Manage Copilot features
           href: configure-copilot-features.md
         - name: Make Copilot available to agents
-          href: configure-copilot-features.md#make-copilot-available-to-agents
+          href: configure-copilot-features.md#make-copilot-available-to-service-representatives
         - name: Enable summarization of cases and conversations
           href: copilot-enable-summary.md
         - name: Enable Copilot help pane features

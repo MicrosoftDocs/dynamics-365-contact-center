@@ -27,12 +27,12 @@ To enable the agent to detect the customer language and respond in same language
 
 - Configure [Voice-enabled agent](/microsoft-copilot-studio/voice-build-from-template) in Copilot Studio.
 - Configure the languages the voice channel supports as  primary or secondary languages for the Copilot Studio agent. Learn more in [multilingual capabilities](/microsoft-copilot-studio/multilingual). The agent must support all the languages that the voice channel supports.
-- Configure [voice workstream](/dynamics365/customer-service/administer/voice-channel-inbound-calling#set-up-a-voice-workstream?context=/dynamics365/contact-center/context/administer-context) in the Contact Center admin center or Customer Service admin center.
+- Configure [voice workstream](/dynamics365/customer-service/administer/voice-channel-inbound-calling#set-up-a-voice-workstream?context=/dynamics365/contact-center/context/administer-context) in Copilot Service admin center.
 - Define the language-based routing rules. Learn more in [Configure work classification rulesets for unified routing](/dynamics365/customer-service/administer/configure-work-classification?context=/dynamics365/contact-center/context/administer-context).
 
 ## Configure multilingual agents for the workstream
 
-In Contact Center admin center or Customer Service admin center, for a voice channel in a workstream, perform the following steps:
+In Copilot Service admin center, for a voice channel in a workstream, perform the following steps:
 
 1. [Add a phone number to the workstream and configure language settings](/dynamics365/customer-service/administer/voice-channel-inbound-calling#add-a-phone-number-to-the-workstream-and-configure-language-settings?context=/dynamics365/contact-center/context/administer-context). The following actions apply:
   - The language of the voice channel must match either the primary or one of the secondary languages of the agent in Copilot Studio. If the languages don't match, the agent uses its primary language.

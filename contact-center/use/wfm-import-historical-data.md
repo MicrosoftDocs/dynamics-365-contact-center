@@ -42,7 +42,7 @@ The following table header examples outline the format and structure required fo
 
 #### Daily data descriptions
 
-**DateTime**: The date and time for the forecast data point. The format is yyyy-MM-dd HH:mm:ss. For example: 2025-01-25 00:15:00
+**DateTime**: The date and time for the forecast data point. The format is yyyy-MM-dd HH:mm:ss. For example: 2025-01-25 00:15:00  
 **ChannelId**: The channel ID, such as voice, web, or any custom channel. This value is from the system you obtained the data from. If you don't know the value, leave it as 1.  
 **ChannelName**: The name of the channel that corresponds to your host system's ID.  
 **QueueId**: The ID of the queue that the datapoint corresponds to, from your host system. If you don't know the value, leave it as 1.  
@@ -62,7 +62,7 @@ The following table header examples outline the format and structure required fo
 
 #### Intraday data descriptions
 
-**DateTime**: The date and time for the forecast data point. The format is yyyy-MM-dd HH:mm:ss, and should be in 15-minute intervals. For example: 2025-01-25 00:15:00
+**DateTime**: The date and time for the forecast data point. The format is yyyy-MM-dd HH:mm:ss, and should be in 15-minute intervals. For example: 2025-01-25 00:15:00  
 **ChannelId**: The channel ID, such as voice, web, or any custom channel. This value is from the system you obtained the data from. If you don't know the value, leave it as 1.  
 **ChannelName**: The name of the channel that corresponds to your host system's ID.  
 **QueueId**: The ID of the queue that the datapoint corresponds to, from your host system. If you don't know the value, leave it as 1.  

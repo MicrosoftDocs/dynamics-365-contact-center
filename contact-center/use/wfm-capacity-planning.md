@@ -37,8 +37,8 @@ Your administrator has installed the **Workforce Management for Customer Service
      - **Concurrency (#)**: The number of simultaneous interactions per service representative. For voice calls, this value should be set to one. For chats and messaging channels, this value can be set as desired.
 1. On the **Forecast run schedule** card, make sure the toggle for **Auto-extension** is set to **Yes**.
  >[!Note]  
-      > You can have at most 10 forecast scenarios with Auto-extension enabled. 
-1. Select **Save**.
+ > You can have at most 10 forecast scenarios with Auto-extension enabled.   
+6. Select **Save**.
 
 ## View your capacity plans
 

@@ -55,7 +55,7 @@ The following table header examples outline the format and structure required fo
 
 #### Example
 
-The following example illustrates the expected data format for a *Daily data file*
+The following example illustrates the expected data format for a **Daily** data file
 
 |DateTime|ChannelId|ChannelName|QueueId|QueueName|Volume|AHT|Interval|MaxVolumeByHour|AgentCount|
 |:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
@@ -87,7 +87,7 @@ The following example illustrates the expected data format for a *Daily data fil
 
 #### Example
 
-The following example illustrates the expected data format for an *Intra Day data file*.
+The following example illustrates the expected data format for an **Intraday** data file.
 
 |DateTime|ChannelId|ChannelName|QueueId|QueueName|Volume|AHT|Interval|MaxVolumeByHour|
 |:----|:----|:----|:----|:----|:----|:----|:----|:----|

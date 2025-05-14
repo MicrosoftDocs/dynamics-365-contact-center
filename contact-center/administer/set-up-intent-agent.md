@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 05/12/2025
+ms.date: 05/14/2025
 ms.custom: bap-template
 ---
 
@@ -60,8 +60,8 @@ Add connection references for each new organization once, even if you add multip
 1. Sign in to [make.powerapps.com](https://make.powerapps.com) and select your environment.
 1. Go to **Solutions** > **Default Solution** > **Objects** > **Connection References**.
 1. Search for the **IA.Cr.IAPluginDVConnector** connection reference.
-1. Create a connection to **Microsoft Dataverse**. 
-1. Go to Microsoft Copilot Studio and [publish the agent](/microsoft-copilot-studio/publication-fundamentals-publish-channels?tabs=web).
+1. Create a connection to **Microsoft Dataverse**, and ensure that the user has administrator privileges.  
+1. Go to Microsoft Copilot Studio, complete the [user authentication](#user-authentication) setup, and [publish the agent](/microsoft-copilot-studio/publication-fundamentals-publish-channels?tabs=web).
 
 ## User authentication
 
@@ -83,6 +83,8 @@ To use Customer Intent Agent, you need to connect your Copilot agent to a knowle
 1. Add another node: **Advanced** > **Create generative answers** and select **SolutionQuery for Input**. Adding a **SolutionQuery** helps generate information from the determined intent and answered questions to search knowledge sources for a solution response. Ensure you edit your data sources and check all the sources you want to search against for an answer.
 1. Add another node: **Add a condition**, and set **Answer** variable to **is not Blank**.
 1. To add logic to complete the conversation flow after providing an answer, add another node: **Topic management** > **Go to another topic** > **End current topic**.
+
+:::image type="content" source="../media/customer-intent-agent-topic.png" alt-text="Screenshot of intent-based suggestions topic flow.":::
 
 ## Connect to your knowledge base
 

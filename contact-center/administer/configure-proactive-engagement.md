@@ -26,19 +26,6 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-## How it works
-
-Dynamics 365 Contact Center 
-The process begins in Dynamics 365 Contact Center Admin Center, where proactive engagement is configured and the behavior and runtime execution are orchestrated. This is where admins will configure the voice channel (defines the phone number) and outbound workstream (defines the copilot studio agent, phone number, queue and other voice settings). Learn More
-
-Dynamics 365 Customer Insights Journey 
-Next, you will be able to use Dynamics 365 Customer Insights Journey (CIJ) to determine whom to contact and the optimal timing for such interactions. CIJ enhances list-based auto dialing by creating personalized customer-centric journeys. It includes a flowchart detailing a customer journey with various steps and decision points, and a sidebar with attributes and branches for customization. Learn More
-
-CCaaS API Integration
-The CCaaS API is another option that can be used to determine who to call and when. The Dataverse CCaaS API integrates Contact Centers with existing campaign tools and supports callbacks. 
-
-Microsoft Copilot Studio
-Copilot Studio voice agents will be used to speak the dialog to a customer upon them answering an outbound voice call. Learn More
 
 
 
@@ -47,6 +34,15 @@ Outbound workstreams are a new type of workstream that should only be created fo
 1.	Navigate to the workstreams tab and select New workstream 
 2.	Select Outbound as this will be the workstream used for your proactive engagement. 
 3.	Select a name for the outbound workstream and setup the fallback queue.
+4.	Setup the outbound workstream behaviors
+5.	Select the calling number and the caller id number.Only numbers that are available to use will appear here. For more information on buying or bringing in your own phone numbers, please see Manage phone numbers | Microsoft Learn
+6.	Setup the language and outbound behaviors. For more information, please see Set up inbound calling for the voice channel | Microsoft Learn
+7.	Finish setting up your outbound workstream by configuring work distribution, add a bot to the workstream, and configuring agent notifications. For assistance, please see Create and manage workstreams | Microsoft Learn
+8.	Important: For Outbound Workstream, there are new agent notifications available 1) Outbound agent dial and 2) Outbound pre-dial
+9.	Outbound agent dial will be used for preview dial mode calls
+10. Outbound pre-dial will be use for progressive and copilot dial mode calls
+
+5.	Important: When setting up an outbound workstream, routing rules are already pre-configured for you. 
 
 ## Configure settings for proactive engagement
 
@@ -74,7 +70,7 @@ You can navigate to the proactive engagement settings in one of the following wa
    - **Normal**
    - **High**
    - **Critical** 
-1. Select the number of concurrent calls for Copilot Mode. This refers to the maximum number of calls to be made by the bot at the same time. The maximum number you can select is 500 calls.
+1. Select the **Max number of concurrent calls for Copilot Mode**. This refers to the maximum number of calls to be made by the bot at the same time. The maximum number you can select is 500 calls.
 2. Select the max number of calls that can be assigned to the representative in **Maximum calls per representative**. This setting is available forthe progressive dialing mode. This refers to the maximum amount of customer calls to make per available representative. The lower the number, the more balanced a representative’s call volume may be. The max number of calls you can choose is 5.
 1. In **Call order**, select one of the following options:
    - **Earliest Scheduled Date**
@@ -93,7 +89,8 @@ d.	   Open concurrent  escalations (Copilot Mode). This refers to the total numb
 
 1. Select **Next**.
 1. On the **Outcomes** page, select the outcomes that are available for the proactive engagement, and then select **Next**.
-      a.	To add attributes, please add context variables to your outbound workstream Manage context variables | Microsoft Learn
+   a.	To add attributes, please add context variables to your outbound workstream Manage context variables | Microsoft Learn
+   b.  Make sure to add the context variable you created in your Copilot Studio agent using the same naming. https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/context-variables-for-bot#configure-context-variables-for-copilot-agent
 1. The **Summary** page displays the settings that you configured. Review the settings, and then select **Create**.
 
 ## Configure proactive engagement with a journey using Customer Insights
@@ -117,7 +114,7 @@ The dial modes are used to determine how the system will initiate calls to custo
 
 ## Outcomes
 
-_Need information on how to configure outcomes._
+_Need information on how to configure outcomes._ *added it to outcomes section 
 
 ## Runtime experience
 Customer Service Representatives will see the proactive engagement calls based on notitification template created for the outbound workstream. They will see the Name and the Description that is set for the proactive engagement. 

@@ -50,4 +50,4 @@ Perform the steps in [add a matrix visualization](/power-bi/visuals/power-bi-vis
 ### Related information
 
 [Bot dashboard](/dynamics365/customer-service/use/oc-bot-dashboard?context=/dynamics365/contact-center/use-context)  
-[View and understand the bot report in Omnichannel real-time analytics](/dynamics365/customer-service/use/oc-bot-report?context=/dynamics365/contact-center/use-context)  
+[View and understand the bot report in Omnichannel real-time analytics](agent-realtime-dashboard.md)  

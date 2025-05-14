@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 05/12/2025
+ms.date: 05/14/2025
 ms.custom: bap-template
 ---
 
@@ -45,7 +45,7 @@ Before you proceed, make sure you:
 
 ## Set up Copilot agents for intent management
 
-1. In Customer Service admin center, navigate to the **Customer Intent Agent (preview)** page > **Intent-based suggestions** section.
+1. In Copilot Service admin center, navigate to the **Customer Intent Agent (preview)** page > **Intent-based suggestions** section.
 1. Select **Enable for chatbots** and then select **Manage**. The **Bots** page appears.
 1. Select the agent connected to your omnichannel environment for agent transfers.
 1. Select **Add intent-based features**, which takes you to **Manage component collections (preview)** in Microsoft Copilot Studio.
@@ -60,8 +60,8 @@ Add connection references for each new organization once, even if you add multip
 1. Sign in to [make.powerapps.com](https://make.powerapps.com) and select your environment.
 1. Go to **Solutions** > **Default Solution** > **Objects** > **Connection References**.
 1. Search for the **IA.Cr.IAPluginDVConnector** connection reference.
-1. Create a connection to **Microsoft Dataverse**. 
-1. Go to Microsoft Copilot Studio and [publish the agent](/microsoft-copilot-studio/publication-fundamentals-publish-channels?tabs=web).
+1. Create a connection to **Microsoft Dataverse**, and ensure that the user has administrator privileges.  
+1. Go to Microsoft Copilot Studio, complete the [user authentication](#user-authentication) setup, and [publish the agent](/microsoft-copilot-studio/publication-fundamentals-publish-channels?tabs=web).
 
 ## User authentication
 
@@ -78,13 +78,13 @@ You can switch to Copilot author authentication if users connecting to Copilot S
 To use Customer Intent Agent, you need to connect your Copilot agent to a knowledge source in Microsoft Copilot Studio. Learn more in [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot).
 
 1. In your existing topic flow, where you want to use Customer Intent Agent, add the following node:
- - **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**.
- - For a default agent, add this node to the **Conversational boosting** system topic that triggers the **Unknown** topic.
-1. To add the behavior after intent determination and interview completion: 
- - Select **Add a condition**, and set it to **Global.IntentInterviewComplete is equal to true**,  **Or**,  **Global.IntentInterviewIncomplete is equal to true**.
-1. If there isn't an output variable node, add a node under the **Condition** in step 2, and then go to **Advanced** > **Create generative answers** and select **SolutionQuery** for **Input**. Adding a **SolutionQuery** helps generate information from the determined intent and answered questions to search knowledge sources for a solution response.
-1. To add logic to complete the conversation flow after providing an answer, add another node: **Topic management** > **Go to another topic** > **End of Conversation**.
-1. Under **All other conditions**, add a node for **Topic management** > **Transfer conversation** to ensure that when an intent isn't detected, or if there was an error with intent detection, the conversation is escalated to a support representative.
+     - **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**.
+     - For a default agent, add this node to either the **Conversational boosting** or **Fallback** system topic that triggers from the **On Unknown Intent** topic.
+1. Add another node: **Advanced** > **Create generative answers**, and select **SolutionQuery for Input**. Adding a **SolutionQuery** helps generate information from the determined intent and answered questions to search knowledge sources for a solution response. Ensure you edit your data sources and check all the sources you want to search against for an answer.
+1. Add another node: **Add a condition**, and set **Answer** variable to **is not Blank**.
+1. To add logic to complete the conversation flow after providing an answer, add another node: **Topic management** > **Go to another topic** > **End current topic**.
+
+:::image type="content" source="../media/customer-intent-agent-topic.png" alt-text="Screenshot of intent-based suggestions topic flow.":::
 
 ## Connect to your knowledge base
 
@@ -120,7 +120,7 @@ The **Intent-based suggestions - Configuration** is a noncustomizable topic that
 
 To override any of the variables for the intent-based suggestions:
 
-1. Go to the **System**  > **Conversation start** topic.
+1. Go to the **System** > **Conversation start** topic.
 1. Select **Add node (+)** and **Variable management** > **Set a variable value**.
 1. Select the variable that you want to change and update the value.
 1. Save and publish the agent.

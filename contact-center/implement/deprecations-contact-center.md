@@ -4,8 +4,8 @@ description: Use this article to get information about the deprecated features i
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.topic: conceptual
-ms.date: 10/22/2024
+ms.topic: concept-article
+ms.date: 05/15/2025
 ms.custom: bap-template
 ms.collection:
 ---

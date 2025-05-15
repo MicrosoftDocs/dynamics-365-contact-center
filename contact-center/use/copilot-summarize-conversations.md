@@ -1,6 +1,6 @@
 ---
 title: Use Copilot to summarize conversations
-description: Learn how customer service representatives can use Copilot to summarize cases and conversations in Customer Service workspace.
+description: Learn how customer service representatives can use Copilot to summarize cases and conversations in Copilot Service workspace.
 author: gandhamm 
 ms.author: mgandham 
 ms.reviewer: mgandham
@@ -26,12 +26,12 @@ Your administrator enabled the Copilot conversation summary feature.
 
 ## Navigation
 
-- In Customer Service workspace or Contact Center workspace, you can select **Summarize conversation** for an ongoing conversation.
+- In Copilot Service workspace, you can select **Summarize conversation** for an ongoing conversation.
 - When you sign in to a non-Microsoft CRM, and launch the embedded experience, sign in to your Dynamics account and then select **Summarize conversation** from the communication panel when you're in a conversation with a customer.
   
 ## View a conversation summary
 
-Based on your administrator's configuration, you see the following options in Customer Service workspace or Contact Center workspace:
+Based on your administrator's configuration, you see the following options in Copilot Service workspace:
 
 - The Copilot conversation summary generated automatically when you request a consultation with another customer service representative, transfer the conversation, or end the conversation. You can select **Summarize conversation** to generate the summary for an ongoing conversation, based on your administrator's configurations.
 - The summary is displayed in a paragraph format or a structured format.
@@ -43,7 +43,7 @@ Based on your administrator's configuration, you see the following options in Cu
 You can perform the following actions:
 
 - Copy the summary.
-- Select **Create case** to create a case and populate the description with the summary, if your administrator turned on this feature. This is applicable for Customer Service workspace.
+- Select **Create case** to create a case and populate the description with the summary, if your administrator turned on this feature. This is applicable for Copilot Service workspace.
 - Share feedback about the summary.
 - Close the summary card.
 

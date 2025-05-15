@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The Desktop companion application serves as a backup system for the Dynamics 365 Customer Service or Dynamics 365 Contact Center web application. It ensures that customer service representatives (service representatives or representatives) can continue customer conversations without interruption during web application issues.
+The Desktop companion application (DCA) serves as a backup system for the Dynamics 365 Customer Service or Dynamics 365 Contact Center web application. It ensures that customer service representatives (service representatives or representatives) can continue customer conversations without interruption during web application issues.
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -50,11 +50,11 @@ If you encounter issues with the Desktop companion application, you can generate
 
 ## Disable representatives updating the Desktop companion application
 
-To restrict users from manually updating the Desktop Companion Application (DCA), configure a registry entry that blocks this capability.
+To restrict users from manually updating the Desktop companion application, configure a registry entry that blocks this capability.
 
 1. Go to the **Windows Registry** > `HKLM\Software\Microsoft\msdyn-companionapp` key. 
 1. Set the **DisableUserUpdates** value to 1. 
-This registry configuration prevents representatives from selecting update options for the Desktop Companion Application and manually configuring Power Automate for desktop to start automatically. 
+This registry configuration prevents representatives from selecting update options for the Desktop companion application and manually configuring Power Automate for desktop to start automatically. 
 
 ## Related information
 

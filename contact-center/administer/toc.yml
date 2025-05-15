@@ -16,7 +16,7 @@
           href: /dynamics365/customer-service/administer/capacity-profiles?context=/dynamics365/contact-center/context/administer-context
         - name: Manage personas and custom security roles
           href: /dynamics365/customer-service/administer/role-persona-mapping?context=/dynamics365/contact-center/context/administer-context
-        - name: Delete historical data of agent capacity updates
+        - name: Delete historical data of representative capacity updates
           href: /dynamics365/customer-service/administer/manage-historical-data-capacity-updates?context=/dynamics365/contact-center/context/administer-context
       - name: Set up Dynamics 365 Contact center
         items:
@@ -76,17 +76,17 @@
         items:
         - name: Configure connector for Salesforce
           href: configure-salesforce-connector.md
-      - name: Agent experience profiles for Customer Service
+      - name: Experience profiles
         items:
-        - name: Overview of agent experience profiles
+        - name: Overview of experience profiles
           href: /dynamics365/customer-service/administer/overview?context=/dynamics365/contact-center/context/administer-context
         - name: Roles and permissions
           href: /dynamics365/customer-service/administer/security-roles?context=/dynamics365/contact-center/context/administer-context
-        - name: Create and use agent experience profiles
+        - name: Create and use experience profiles
           href: /dynamics365/customer-service/administer/create-agent-experience-profile?context=/dynamics365/contact-center/context/administer-context
-        - name: Add users to agent experience profiles
+        - name: Add users to experience profiles
           href: /dynamics365/customer-service/administer/add-profile-default?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure the inbox for agents
+        - name: Configure the inbox for representatives
           href: /dynamics365/customer-service/administer/configure-inbox?context=/dynamics365/contact-center/context/administer-context
         - name: Templates
           items:
@@ -104,7 +104,7 @@
             href: /dynamics365/customer-service/administer/productivity-tools?context=/dynamics365/contact-center/context/administer-context
           - name: Manage smart assist
             href: /dynamics365/customer-service/administer/smart-assist?context=/dynamics365/contact-center/context/administer-context
-          - name: Manage agent scripts
+          - name: Manage scripts
             href: /dynamics365/customer-service/administer/agent-scripts?context=/dynamics365/contact-center/context/administer-context
           - name: macros
             items:  
@@ -122,7 +122,7 @@
               href: /dynamics365/customer-service/administer/review-macros?context=/dynamics365/contact-center/context/administer-context                                  
           - name: Manage custom productivity tools
             href: /dynamics365/customer-service/administer/manage-custom-productivity-tools?context=/dynamics365/contact-center/context/administer-context
-          - name: FAQ about adding users to agent experience profile
+          - name: FAQ about adding users to experience profile
             href: /dynamics365/customer-service/administer/faq-agent-experience-profile?context=/dynamics365/contact-center/context/administer-context
       - name: Manage your workforce
         items:
@@ -218,7 +218,7 @@
           href: /dynamics365/customer-service/administer/voice-channel-inbound-calling?context=/dynamics365/contact-center/context/administer-context
         - name: Set up outbound calling
           href: /dynamics365/customer-service/administer/voice-channel-outbound-calling?context=/dynamics365/contact-center/context/administer-context
-        - name: Enable agents to search for contacts and open records from outbound dialer (preview)
+        - name: Enable representatives to search for contacts and open records from outbound dialer (preview)
           href: /dynamics365/customer-service/administer/add-outbound-dialer-settings?context=/dynamics365/contact-center/context/administer-context  
         - name: Use Azure Virtual Desktop to access voice channel
           href: configure-voice-avd.md
@@ -280,6 +280,8 @@
             href: overview-customer-intent-agent.md
           - name: Manage Customer Intent Agent
             href: manage-customer-intent-agent.md
+          - name: Configure intent-based routing
+            href: /dynamics365/customer-service/administer/configure-intent-based-routing?context=/dynamics365/contact-center/context/administer-context
           - name: Enable intent-based suggestions for service representatives
             href: enable-intent-for-service-reps.md
           - name: Configure intent-based suggestions for Copilot agents
@@ -289,7 +291,7 @@
         - name: Manage Copilot features
           href: configure-copilot-features.md
         - name: Make Copilot available to agents
-          href: configure-copilot-features.md#make-copilot-available-to-agents
+          href: configure-copilot-features.md#make-copilot-available-to-service-representatives
         - name: Enable summarization of cases and conversations
           href: copilot-enable-summary.md
         - name: Enable Copilot help pane features
@@ -330,7 +332,7 @@
           href: /dynamics365/customer-service/administer/enable-self-service-settings?context=/dynamics365/contact-center/context/administer-context
         - name: Enable download, email of chat transcripts
           href: /dynamics365/customer-service/administer/download-email-chat-transcripts?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure agent display name
+        - name: Configure display name for representatives
           href: /dynamics365/customer-service/administer/agent-display-name?context=/dynamics365/contact-center/context/administer-context
         - name: Configure proactive chat
           href: /dynamics365/customer-service/administer/proactive-chat?context=/dynamics365/contact-center/context/administer-context
@@ -492,7 +494,7 @@
           href: /dynamics365/customer-service/administer/create-manage-categories?context=/dynamics365/contact-center/context/administer-context
         - name: Create knowledge article templates in Power Apps
           href: /power-platform/admin/create-templates-articles
-        - name: Integrate knowledge management in Dynamics 365 with Copilot Studio agents
+        - name: Integrate knowledge management in Dynamics 365 with Copilot agents
           href: /dynamics365/customer-service/administer/integrate-KM-with-PVA?context=/dynamics365/contact-center/context/administer-context
         - name: Configure the origin allowlist for knowledge articles
           href: /dynamics365/customer-service/administer/configure-knowledge-article-origin-allow-list?context=/dynamics365/contact-center/context/administer-context
@@ -516,7 +518,7 @@
           href: /dynamics365/customer-service/administer/configure-rules-based-suggested-contacts?context=/dynamics365/contact-center/context/administer-context
         - name: Configure auto-summarization of conversations
           href: /dynamics365/customer-service/administer/cs-enable-ai-generated-summary?context=/dynamics365/contact-center/context/administer-context
-        - name: Set up Join a Teams call for agents
+        - name: Set up Join a Teams call for representatives
           href: /dynamics365/customer-service/administer/set-up-join-a-teams-call?context=/dynamics365/contact-center/context/administer-context
         - name: Configure customer support swarming
           href: /dynamics365/customer-service/administer/configure-customer-support-swarming?context=/dynamics365/contact-center/context/administer-context
@@ -550,7 +552,7 @@
           href: /dynamics365/customer-service/administer/model-customize-reports?context=/dynamics365/contact-center/context/administer-context
         - name: Configure forecasting
           items:
-          - name: Configure agent forecasting for conversation
+          - name: Configure forecasting for conversation
             href: /dynamics365/customer-service/administer/configure-agent-forecasting-conversation?context=/dynamics365/contact-center/context/administer-context
         - name: Configure real-time customer sentiment
           href: /dynamics365/customer-service/administer/enable-sentiment-analysis?context=/dynamics365/contact-center/context/administer-context

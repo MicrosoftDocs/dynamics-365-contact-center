@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 04/18/2025
+ms.date: 05/12/2025
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -37,22 +37,30 @@ Use the information in this article to manage the intents in Copilot Service adm
 
 ## Manage lines of business
 
-A line of business can be a service, product, product category, or the way your company organizes and supports its business activities. It's used as a partition that represents a specific set of intents and intent groups in a large enterprise.
+A line of business can be a service, product, product category, or the way your company organizes and supports its business activities. It's used as a partition that represents a specific set of intents and intent groups in a large enterprise. You need to add lines of business if you want to enable intent-based routing for a selective set of workstreams and queues. Otherwise, intent-based routing is enabled for the whole organization.
+The following entities are associated with a line of business:
+- Intents and intent groups
+- User groups (A representative can be a part of many user groups that belong to different lines of business)
+- Workstreams
+- Queues
  
 ### Add line of business
 
-1. In the site map of Copilot Service admin center, go to **Intent**, and select **Manage** for **Add Line of business (Optional)**.
+1. In the site map of Copilot Service admin center, go to **Intent**, and then select **Manage** for **Add Line of business (Optional)**.
 1. On the **Manage Lines of business** page, select **Add Line of business**.
 1. Enter the name and description that indicates the line of business.
 1. Select **Add**. The line of business is listed in the **Lines of business** table.
 
 ### Create rules for cases and conversations
 
-For every line of business that you identify, you can create rules for cases and conversations. You can create one rule only (one each for a case and conversation) per line of business.
+For every line of business that you identify, you can create rules for cases and conversations. You can create one rule only (one each for a case and conversation) per line of business. During runtime, for chat and other channels, Copilot and intent-based suggestions must be enabled to determine the intent.
 
 1. On the **Manage Lines of business** page, in **Case Rules**, select **Create rule**.
 1. On the dialog that appears, enter the rule name and select a line of business.
-1. In **Conditions**, define the conditions for the rules to run. In the rules for conversations, we recommend that you configure the same workstream that’s associated with the line of business.
+1. In **Conditions**, define the conditions for the rules to run.
+   > [!IMPORTANT]
+   > Configure the workstream name in the line of business configuration rules for chat workstreams. Because the chat widget is tightly coupled with the line of business, by specifying the line of business, you can make sure that the chat belongs to the same line of business as its workstream. Otherwise, the chat might end up with a different line of business other than its workstream.
+
 1. Optionally, select **Run backfill**. When selected, it’s used to associate past cases with a line of business for intent discovery. The system makes sure that intent discovery works properly by tagging past cases with the appropriate line of business.
 1. Save and close.
 
@@ -126,7 +134,7 @@ You can logically organize the intents into intent groups. The intent group repr
 1. On the **New intent group** dialog, in **Define intent group**, enter a name and select a review status.
 1. Select **Next**.
 1. On the page that appears, select **Add**.
-1. Select the intents in the list that match and select **Add**.
+1. Select the intents in the list that match, and then select **Add**.
 1. Select **Save**. The intent group is displayed in the **All intent groups** view.
  
 ### Related information

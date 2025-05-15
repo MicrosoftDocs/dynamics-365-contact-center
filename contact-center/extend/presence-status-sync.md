@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: 
-ms.date: 11/15/2024
+ms.date: 05/15/2025
 ms.custom: bap-template 
 ---
 
@@ -34,7 +34,7 @@ A webhook allows an external service to start a particular runbook in Azure Auto
       - **Execution Mode**: Synchronous
       - **Deployment**: Server
    > [!NOTE]
-   > If you want to capture only presence changes, we recommend that you set **Filtering attributes** to current presence to improve performance.
+   > If you want to capture presence changes only, we recommend that you set **Filtering attributes** to current presence to improve performance.
 
 
 ## Use the webhook

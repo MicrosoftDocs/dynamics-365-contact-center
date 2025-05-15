@@ -29,7 +29,7 @@ After you sign in to the Copilot Service workspace and receive a call, you can v
 - Open the application from the Windows toolbar to manage the call in the application and continue the conversation from the web browser. You can also minimize the application which will continue to run in the background.
  
  > [!NOTE]
- > If you are unable to see the icon, try to restart your device. If you still can't see the desktop companion application after restarting, contact your administrator.
+ > If you can't see the icon, restart your device. If the desktop companion application doesn't appear after restarting, contact your administrator.
  
 - Launch the application from the browser extension. 
 

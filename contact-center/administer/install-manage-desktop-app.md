@@ -30,7 +30,7 @@ You can install the Desktop companion application on a customer service represen
       1. Download and install the browser extension:
           - Chrome: [Desktop companion app for Dynamics 365 Contact Center Extension (preview)](https://chromewebstore.google.com/detail/desktop-companion-app-for/kejpacmiikcnjccejioofncknckcpcpa?authuser=0&hl=en)
           - Edge: [Desktop companion app for Dynamics 365 Contact Center](https://microsoftedge.microsoft.com/addons/detail/desktop-companion-app-for/ifonlckhhfkfainkbngfbjhodbkeafbg)
-      1. Select the ellipses icon in the browser window and then select **Extensions**. If the extension is already available, select pin to add the extension to the top of the tool bar.
+      1. Select the ellipses in the browser window and then select **Extensions**. If the extension is already available, select pin to add the extension to the top of the tool bar.
       1. Select **Manage Extensions** and then turn on the toggle for **Desktop companion app for Dynamics 365 Contact Center Extension (preview)**.
       1. Close the browser and restart it to apply the changes.
       

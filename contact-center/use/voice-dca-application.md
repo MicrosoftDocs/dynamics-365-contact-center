@@ -46,7 +46,7 @@ You can do the following actions:
 - You can switch between an active call and a call that's on hold.
 - Select **Settings** to do the following actions:
    - Select **Language** to specify the language you want to use.
-   - In the **Device Settings** section, you can view the available microphone and speaker devices and select the device you want to use. To save your headset and microphone preferences, first select devices that aren't your default devices and then switch to your preferred devices. This saves your preferences.
+   - In the **Device Settings** section, you can view the available microphone and speaker devices and select the device you want to use. To save your headset and microphone preferences, temporarily select devices that are different from your default options, then switch back to your preferred devices.
    - Select **Test Call** to ensure that the microphone and speaker are working well.
    - View the application's version information in **About this app**.
 

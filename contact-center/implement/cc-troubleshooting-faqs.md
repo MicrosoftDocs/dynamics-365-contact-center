@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting and FAQs
 description: Learn about how to access the troubleshooting information and FAQ that you might have for Dynamics 365 Contact Center.
-ms.date: 01/16/2025
+ms.date: 05/15/2025
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim

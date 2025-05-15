@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection:
-ms.date: 09/06/2024
+ms.date: 05/15/2025
 ms.custom: bap-template
 ---
 
@@ -42,7 +42,7 @@ Perform the steps in the following sections to import the Power Automate flows f
 1. Follow the steps in [Add a connection](/power-automate/add-manage-connections#add-a-connection) to add a Dataverse connection, and then select **Create**.
 1. In the pop-up window that appears, select your account. A connection is created.
 
-### Download flows from GitHub**
+### Download flows from GitHub
  
 Download all the Power Automate flows from the [Zendesk](https://github.com/microsoft/copilot-for-service/tree/CCaaS-3P-CRM-Connector/flows/Zendesk) repository.
 

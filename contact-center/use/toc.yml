@@ -268,7 +268,7 @@
             href: /dynamics365/customer-service/use/oc-historical-analytics-unified-routing?context=/dynamics365/contact-center/context/use-context
         - name: Use knowledge management analytics
           href: /dynamics365/customer-service/use/knowledge-search-analytics-cs?context=/dynamics365/contact-center/context/use-context
-        - name: View copilot analytics reports
+        - name: View copilot analytics report
           href: copilot-analytics-report.md
         - name: Monitor conversations
           items: 

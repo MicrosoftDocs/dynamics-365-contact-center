@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection:
-ms.date: 08/01/2024
+ms.date: 05/15/2025
 ms.custom: bap-template
 ---
 
@@ -32,9 +32,9 @@ The omnichannel add-in uses data connectors to work with non-Microsoft CRM solut
 ## Configure the data connector
 
 > [!IMPORTANT]
-> After you configure the data connector and sync it from the Salesforce instance, we recommend that you don't make any changes to the synced data in Dataverse, because those changes aren't synced back to Salesforce. If you must update the data, update it only in Salesforce.
+> After you configure the data connector and sync it from the Salesforce instance, we recommend that you don't make any changes to the synced data in Dataverse because those changes aren't synced back to Salesforce. If you must update the data, update it in Salesforce only.
 
-1. In Contact Center admin center, in the site map, under **Agent experience**, go to **Workspaces**. Then, for **Data synchronization from external CRMs**, select **Manage**. Alternatively, on the home page, under **CRM connection wizard**, select **Open**.
+1. In the site map of Copilot Service admin center, under **Support experience**, go to **Workspaces**. Then, for **Data synchronization from external CRMs**, select **Manage**. Alternatively, on the home page, under **CRM connection wizard**, select **Open**.
 1. On the **Data synchronization from external CRMs** page, select **New**.
 1. On the **Create a CRM connector** page, select **Salesforce**, and then select **Next**. If you're connecting to Salesforce for the first time, the **Connection Setup** dialog displays a **Sign in** button. Otherwise, the dialog displays an ellipsis (**&hellip;**) button that you can use to sign in.
 

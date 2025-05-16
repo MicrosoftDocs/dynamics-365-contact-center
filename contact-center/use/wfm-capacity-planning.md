@@ -1,7 +1,7 @@
 ---
 title: Create and manage capacity planning
 description: Learn how to set up capacity plans to help you forecast staffing needs and effectively manage your workforce.
-ms.date: 04/11/2025
+ms.date: 05/15/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan

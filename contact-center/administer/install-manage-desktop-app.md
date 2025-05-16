@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The Desktop companion application (DCA) serves as a backup system for the Dynamics 365 Customer Service or Dynamics 365 Contact Center web application. It ensures that customer service representatives (service representatives or representatives) can continue customer conversations without interruption during web application issues.
+The Desktop companion application serves as a backup system for the Dynamics 365 Customer Service or Dynamics 365 Contact Center web application. It ensures that customer service representatives (service representatives or representatives) can continue customer conversations without interruption during web application issues.
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

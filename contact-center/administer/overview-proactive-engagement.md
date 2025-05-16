@@ -16,29 +16,26 @@ ms.custom: bap-template
 
 Proactively engage with your customers with automated, personalized voice conversations. You can streamline customer outreach, improve agent productivity, and deliver personalized experiences.
 
-## Proactive Outbound Introduction
+## What is proactive engagement?
+
 Today, customer expectations are higher than ever, wanting brands to anticipate their needs, provide personalized engagement, and offer effortless support. Businesses seek automation, increased loyalty, and dependability.
 
-Proactive Engagement is the solution to create AI-driven proactive outbound experiences that enable enterprises to engage with their customers proactively on voice channels. Proactive Engagement integrates Dynamics 365 Contact Center and Customer Insights Journeys to an AI-Empowered multi-channel Proactive engagement. 
+Proactive engagement is the solution to create AI-driven proactive outbound experiences that enable enterprises to engage with their customers proactively on voice channels. You can integrates Dynamics 365 Contact Center and Customer Insights journeys for an AI-empowered multichannel proactive engagement. 
 
-We aim to revolutionize customer engagement by creating an AI-driven proactive outbound experience. Utilizing a blend of bots and agents, we will reach out through phone calling to  empower enterprises to engage consumers in meaningful conversations, leading to quicker transactions, faster case closures, and enhanced customer satisfaction.
+Using a blend of AI agents and customer service representatives, you can reach out through phone calling to engage with your consumers in meaningful conversations, leading to quicker transactions, faster case closures, and enhanced customer satisfaction.
 
-## How it works 
-Dynamics 365 Contact Center 
-The process begins in Dynamics 365 Contact Center Admin Center, where proactive engagement is configured and the behavior and runtime execution are orchestrated. This is where admins will configure the voice channel (defines the phone number) and outbound workstream (defines the copilot studio agent, phone number, queue and other voice settings). Learn More
+## How it works
 
-Dynamics 365 Customer Insights Journey 
-Next, you will be able to use Dynamics 365 Customer Insights Journey (CIJ) to determine whom to contact and the optimal timing for such interactions. CIJ enhances list-based auto dialing by creating personalized customer-centric journeys. It includes a flowchart detailing a customer journey with various steps and decision points, and a sidebar with attributes and branches for customization. Learn More
+1. Configure [proactive engagement](configure-proactive-engagement.md) in Dynamics 365 Contact Center to automate outbound voice calls.
 
-CCaaS API Integration
-The CCaaS API is another option that can be used to determine who to call and when. The Dataverse CCaaS API integrates Contact Centers with existing campaign tools and supports callbacks. 
+1. Optionally, configure journeys using Dynamics 365 Customer Insights to determine contacts and optimal timings for interactions. Journeys enhance list-based auto-dialing by creating personalized customer-centric journeys. A flowchart helps in detailing the customer journey with various steps and decision points, and a sidebar with attributes and branches for customization.
 
-Microsoft Copilot Studio
-Copilot Studio voice agents will be used to speak the dialog to a customer upon them answering an outbound voice call. Learn More
+1. You can also integrate CCaaS API API to determine who to call and when. The Dataverse CCaaS API integrates the contact center with existing campaign tools and supports callbacks.
 
-
-
+1. Configure Copilot IVR agents in progressive and preview modes to handle preliminary tasks, such as gathering information and answering FAQs.
 
 ### Related information
+
+
 
 

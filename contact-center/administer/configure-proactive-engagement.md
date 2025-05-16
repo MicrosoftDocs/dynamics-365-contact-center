@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: 
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 05/19/2025
+ms.date: 05/23/2025
 ms.custom: bap-template
 ---
 
@@ -19,8 +19,8 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 ## Prerequisites
 
 - Voice channel is provisioned and configured. Learn more in [Provision channels](../implement/provision-channels.md) and [Install the voice channel](../implement/install-voice-channel.md).
-- Dynamics 365 Customer Insights if you want to use journey for your customer journey authoring.
-- Microsoft Copilot Studio if you want to use Copilot agents.
+- Dynamics 365 Customer Insights to use journey for your customer journey authoring.
+- Microsoft Copilot Studio to use Copilot agents.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -51,43 +51,57 @@ You can navigate to the proactive engagement settings in one of the following wa
    - **Channel type**: **Voice** is selected by default and not available for edit.
    
    > [!NOTE]
-   > The name and description of the engagement appears on the representative notification. We recommend that you use descriptive information to help them understand the call purpose.
+   > The name and description of the engagement appears on the representative notification. We recommend that you use descriptive information to help them understand the purpose of the call.
 
 1. In **Routing details**, enter the following information:
    - **Primary queue**: Select a queue. 
    - **Fallback queue**: This is prepopulated based on the fallback queue set for the outbound workstream.
    - **Skills**: Select the skills that are required for the proactive engagement.
-1. Select **Next**. The **Dialing modes** page appears.
+1. Select **Next**. The **Dialing modes** page appears. Do the steps in the **Configure dialing modes** section that follows.
+
+### Configure dialing modes
+
+The dialing modes are used to determine how the system can initiate calls to customers. The following dialing modes are available:
+
 1. Select one of the dialing modes as follows:
    - **Copilot**: The system automatically dials the customer and connects the call to the agent when the customer answers. This mode is used for high-volume outbound calls.
    - **Progressive**: The system starts the call with an agent and then adds a representative after the agent actions are complete.
    - **Preview**: The system adds the representative to the call and then dials the customer.
+
 1. Select one of the following priority levels:
    - **Normal**
    - **High**
    - **Critical** 
+
 1. Select the **Max number of concurrent calls for Copilot Mode** that refers to the maximum number of calls the AI agent can make concurrently. The maximum number that you can specify is 500.
+
 1. Select the max number of calls that can be assigned to the representative in **Maximum calls per representative**. This setting is available for the progressive dialing mode that refers to the maximum number of customer calls to make per available representative. A lower number indicates a balanced call volume for the representative. You can specify up to five calls.
+
 1. In **Call order**, select one of the following options:
    - **Earliest Scheduled Date**
    - **Last in First Out**
    - **First in, First Out**
+
 1. Under **Operating hours**, select the checkbox if calls can be made outside of queue hours. This setting is available for Copilot dialing mode only.
+
 1. Select the action for how the call needs to be handled if the AI agent fails during the call.
    - **Stop making calls immediately**: No further calls are made.
    - **Continue making calls**:
      - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
-1. Rules are also available to set for Copilot and progressive mode. These help control the throttling and pacing for the proactive engagement. The following rules are available:
-   - Abandonment rate (Copilot and Progressive Mode). This refers to the percentage of customers who hang up before connecting with a representative.
-   - Average wait time (Copilot and Progressive Mode). This refers to the average amount of time it takes for customers to connect to representatives.
-   - Escalation count (Copilot Mode). This refers to the total number of escalations made from the AI agent.
-   - Open concurrent escalations (Copilot Mode). This refers to the total number of open escalations that haven't been resolved. 
+
+1. For Copilot and progressive modes, set rules for the following parameters that help control the throttling and pacing for the proactive engagement:
+   - **Abandonment rate**: (Copilot and progressive modes). Refers to the percentage of customers who hang up before connecting with a representative.
+   - **Average wait time**: (Copilot and progressive modes). Refers to the average amount of time it takes for customers to connect to representatives.
+   - **Escalation count**: (Copilot mode). Refers to the total number of escalations made from the AI agent.
+   - **Open concurrent escalations**: (Copilot mode). Refers to the total number of open escalations that haven't been resolved. 
 
 1. Select **Next**.
+
 1. On the **Outcomes** page, select the outcomes that are available for the proactive engagement, and then select **Next**.
-   - To add attributes, configure context variables to your outbound workstream Manage context variables | Microsoft Learn
-   - Make sure to add the context variable you created in your Copilot Studio agent using the same naming. https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/context-variables-for-bot#configure-context-variables-for-copilot-agent
-1. The **Summary** page displays the settings that you configured. Review the settings, and then select **Create**.
+   - To add attributes, [configure context variables for the outbound workstream](/dynamics365/customer-service/administer/manage-context-variables).
+   - Make sure that when you add the context variable in Copilot agent, you use the same name with which you created in the workstream. Learn more in [Configure context varables for Copilot agent](/dynamics365/customer-service/administer/context-variables-for-bot#configure-context-variables-for-copilot-agent).
+
+1. Review the settings on the **Summary** page, and then select **Create**.
 
 ## Configure proactive engagement with a journey using Customer Insights
 
@@ -128,3 +142,5 @@ CSR's will also be able to select disposition codes to record the outcome of the
 
 
 ### Related information
+
+[Overview of proactive engagement](overview-proactive-engagement.md)  

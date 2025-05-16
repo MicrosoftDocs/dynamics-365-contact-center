@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes.
-ms.date: 05/08/2025
+ms.date: 05/15/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan

@@ -63,7 +63,7 @@ You can navigate to the proactive engagement settings in one of the following wa
 
 The dialing modes are used to determine how the system can initiate calls to customers. The following dialing modes are available:
 
-1. Select one of the dialing modes as follows:
+1. On the **Create new proactive engagement (preview)** dialog, select one of the dialing modes as follows:
    - **Copilot**: The system automatically dials the customer and connects the call to the agent when the customer answers. This mode is used for high-volume outbound calls.
    - **Progressive**: The system starts the call with an agent and then adds a representative after the agent actions are complete.
    - **Preview**: The system adds the representative to the call and then dials the customer.
@@ -99,7 +99,7 @@ The dialing modes are used to determine how the system can initiate calls to cus
 
 1. On the **Outcomes** page, select the outcomes that are available for the proactive engagement, and then select **Next**.
    - To add attributes, [configure context variables for the outbound workstream](/dynamics365/customer-service/administer/manage-context-variables).
-   - Make sure that when you add the context variable in Copilot agent, you use the same name with which you created in the workstream. Learn more in [Configure context varables for Copilot agent](/dynamics365/customer-service/administer/context-variables-for-bot#configure-context-variables-for-copilot-agent).
+   - Make sure that when you add the context variable in Copilot agent, you use the same name with which you created in the workstream. Learn more in [Configure context variables for Copilot agent](/dynamics365/customer-service/administer/context-variables-for-bot#configure-context-variables-for-copilot-agent).
 
 1. Review the settings on the **Summary** page, and then select **Create**.
 
@@ -133,13 +133,11 @@ _Need information on how to configure outcomes._ *added it to outcomes section
 
 ## Runtime experience
 
-Service representatives view the proactive engagement calls based on the notification template attached to the outbound workstream for preview and progressive calls. The Name and Description that's set for the proactive engagement appears on the notification.
+Service representatives view the proactive engagement calls based on the notification template that's attached to the outbound workstream for preview and progressive calls. The name and description that you specify for the proactive engagement appears on the notification.
+For the preview mode, service representatives can start or reject the calls. 
+For the progressive mode, service representatives can only start the call. 
 
-For preview calls, CSR's will be able to start or reject the call. 
-For progressive calls, CSR's will only be able to start the call. 
-
-CSR's will also be able to select disposition codes to record the outcome of the interaction. For more information https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-disposition-codes
-
+If you configure dispostion codes settings, service representatives can select disposition codes to record the outcome of the interaction. Learn more in [Configure disposition codes](configure-disposition-codes.md)
 
 ### Related information
 

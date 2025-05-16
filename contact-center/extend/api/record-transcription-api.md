@@ -1,6 +1,6 @@
 ---
-title: CCaaS_ModifyAgentPresence
-description: Modify an agent's presence information at runtime.
+title: Pause and Resume Transcription and Recording API 
+description: Use the API to pause and resume transcription and recording.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
@@ -10,7 +10,7 @@ ms.date: 11/15/2024
 ms.custom: bap-template 
 ---
 
-# Pause and Resume Transcription and Recording API 
+# Use Pause, resume transcription and recording API 
 
 The pause and resume transcription and recording API enables you to programmatically control call recording and transcription services during customer interactions. This feature is important when handling sensitive information such as payment details, PII (Personally Identifiable Information), or PHI (Protected Health Information) that shouldn't be captured in recordings for compliance and security reasons.
 

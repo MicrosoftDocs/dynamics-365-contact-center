@@ -32,7 +32,7 @@ Using a blend of AI agents and customer service representatives, you can reach o
 
 1. You can also integrate CCaaS API API to determine who to call and when. The Dataverse CCaaS API integrates the contact center with existing campaign tools and supports callbacks.
 
-1. Configure Copilot IVR agents in progressive and preview modes to handle preliminary tasks, such as gathering information and answering FAQs.
+1. Configure Copilot IVR agents to handle preliminary tasks, such as gathering information and answering FAQs.
 
 ### Related information
 

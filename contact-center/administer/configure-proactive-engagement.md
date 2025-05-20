@@ -1,6 +1,6 @@
 ---
 title: Configure proactive engagement (preview)
-description: Learn how to configure proactive engagement in Dynamics 365 Contact Center.
+description: Learn how to set up proactive engagement, including dialing modes and operational rules for optimized customer service in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim 
 ms.reviewer: 
@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Proactive engagement in Dynamics 365 enables organizations to enhance customer interactions by initiating outbound communications through the voice channel. This feature allows businesses to streamline customer outreach, improve agent productivity, and deliver personalized experiences. This article describes how to configure proactive engagement settings, including dialing modes, routing details, and operational rules to optimize your customer service operations.
+Proactive engagement in Dynamics 365 enables organizations to enhance customer interactions by initiating outbound communications through the voice channel. This feature allows businesses to streamline customer outreach, improve agent productivity, and deliver personalized experiences. The article describes how to configure proactive engagement settings, including dialing modes, routing details, and operational rules to optimize your customer service operations.
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 
 1. Create a workstream by selecting the **Outbound (preview)** option. Learn more in [Create and manage workstreams](/dynamics365/contact-center/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context).
 1.	Set up the outbound workstream behaviors.
-1.	Select the [calling number and caller ID number](/dynamics365/customer-service/administer/voice-channel-outbound-calling#configure-phone-numbers-for-outbound-calling). Numbers available to use only appear.
+1.	Select the [calling number and caller ID number](/dynamics365/customer-service/administer/voice-channel-outbound-calling#configure-phone-numbers-for-outbound-calling). Numbers available to use only are displayed.
 1.	Set up the language and outbound behaviors. Learn more in [Configure the voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?tabs=enhancedvoice#configure-a-voice-channel)
 1.	Finish setting up your outbound workstream by configuring work distribution, add an AI agent to the workstream, and configuring representative notifications. The following notification templates are available out of the box:
     - **Voice call - outbound agent dial - default**: For preview dial mode calls
@@ -55,13 +55,13 @@ You can navigate to the proactive engagement settings in one of the following wa
 
 1. In **Routing details**, enter the following information:
    - **Primary queue**: Select a queue. 
-   - **Fallback queue**: This is prepopulated based on the fallback queue set for the outbound workstream.
+   - **Fallback queue**: The queue is prepopulated based on the fallback queue set for the outbound workstream.
    - **Skills**: Select the skills that are required for the proactive engagement.
 1. Select **Next**. The **Dialing modes** page appears. Do the steps in the **Configure dialing modes** section that follows.
 
 ### Configure dialing modes
 
-The dialing modes are used to determine how the system can initiate calls to customers. The following dialing modes are available:
+The dialing modes are used to determine how the system can make calls to customers. The following dialing modes are available:
 
 1. On the **Create new proactive engagement (preview)** dialog, select one of the dialing modes as follows:
    - **Copilot**: The system automatically dials the customer and connects the call to the agent when the customer answers. This mode is used for high-volume outbound calls.
@@ -99,13 +99,13 @@ The dialing modes are used to determine how the system can initiate calls to cus
 
 1. On the **Outcomes** page, select the outcomes that are available for the proactive engagement, and then select **Next**.
    - To add attributes, [configure context variables for the outbound workstream](/dynamics365/customer-service/administer/manage-context-variables).
-   - Make sure that when you add the context variable in Copilot agent, you use the same name with which you created in the workstream. Learn more in [Configure context variables for Copilot agent](/dynamics365/customer-service/administer/context-variables-for-bot#configure-context-variables-for-copilot-agent).
+   - Make sure that when you add the context variables in Copilot agent, you use the same names that you created in the workstream. Learn more in [Configure context variables for Copilot agent](/dynamics365/customer-service/administer/context-variables-for-bot#configure-context-variables-for-copilot-agent).
 
 1. Review the settings on the **Summary** page, and then select **Create**.
 
 ## Configure proactive engagement with a journey using Customer Insights
 
-To be linked to the Customer Insights documentation.
+
 
 ## Configure proactive engagement with a journey using the API
 
@@ -113,22 +113,22 @@ To configure the proactive engagement with a journey using the API, follow the s
 
 ## Dial modes
 
-The dial modes are used to determine how the system will initiate calls to customers. Important: The use of Copilot and/or Progressive dial modes for non-transactional commercial purposes constitutes a violation of Microsoft's terms of service.
+The dial modes are used to determine how the system makes calls to customers.
 
 > [!IMPORTANT]
 > The use of Copilot and or progressive dial modes for non-transactional commercial purposes constitutes a violation of Microsoft's terms of service.
 
 ### Copilot
 
-Use the Copilot dial mode for making announcements, notifications, or any outbound call that can be handled by an IVR agent. A large number of these calls can be made simultaneously. A few examples are payment reminders, service restoration, and delivery notifications. When a customer picks an outbound call, the agent registered on the workstream engages with the customer. The agent can escalate to a service representative if required. However, the wait times might be similar to if the customer had called into the contact center for assistance.
+Use the Copilot dial mode for making announcements, notifications, or any outbound call that can be handled by an IVR agent. A large number of these calls can be made simultaneously. A few examples are payment reminders, service restoration, and delivery notifications. When a customer picks an outbound call, the agent registered on the workstream engages with the customer. The agent can escalate to a service representative if necessary. However, the wait times might be similar to if the customer had called into the contact center for assistance.
 
 ### Progressive
 
-Use the progressive dial mode to call the customer first. As soon as the customer picks the call, a Copilot agent is added to the call to perform basic tasks like determining if the right person has answered the call and if they are free to talk. Using an AI agent to gather this information saves service representatives from joining calls that don't need them to be on it further maximizing time spent in helping customers. The number of calls made simultaneously is determined by the number of available agents in the queue specified&mdash;a new call is placed for every representative that gets available ensuring that customers get a good experience with minimal wait times.
+Use the progressive dial mode to call the customer first. As soon as the customer picks the call, a Copilot agent is added to the call to do basic tasks like determining if the right person has answered the call and if they're free to talk. Using an AI agent to gather this information saves service representatives from joining calls that don't need them to be on it further maximizing time spent in helping customers. The number of calls made simultaneously is determined by the number of available agents in the queue specified&mdash;a new call is placed for every representative that gets available ensuring that customers get a good experience with minimal wait times.
  
 ### Preview
 
-Use the preview dial mode to identify a service representative from the specified queue and then notify them of the request to make the outbound call. If the representative accepts, then the system places the outbound call to customer with the representative already on the line. Representative gets to speak to the customer if they pick up or leave a voicemail. This dial mode prioritizes customer experience over representative use, and is best suited for scenarios that require a personalized experience. As a result the amount of simultaneous calls made is dependent on number of available representatives.
+Use the preview dial mode to identify a service representative from the specified queue and then notify them of the request to make the outbound call. If the representative accepts, then the system places the outbound call to customer with the representative already on the line. Representative gets to speak to the customer if they pick up or leave a voicemail. This dial mode prioritizes customer experience over representative use, and is best suited for scenarios that require a personalized experience. As a result, the number of simultaneous calls made is dependent on the number of available representatives.
 
 ## Outcomes
 
@@ -140,7 +140,7 @@ Service representatives view the proactive engagement calls based on the notific
 For the preview mode, service representatives can start or reject the calls. 
 For the progressive mode, service representatives can only start the call. 
 
-If you configure dispostion codes settings, service representatives can select disposition codes to record the outcome of the interaction. Learn more in [Configure disposition codes](configure-disposition-codes.md)
+If you configure disposition codes settings, service representatives can select disposition codes to record the outcome of the interaction. Learn more in [Configure disposition codes](configure-disposition-codes.md)
 
 ### Related information
 

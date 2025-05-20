@@ -115,6 +115,9 @@ To configure the proactive engagement with a journey using the API, follow the s
 
 The dial modes are used to determine how the system will initiate calls to customers. Important: The use of Copilot and/or Progressive dial modes for non-transactional commercial purposes constitutes a violation of Microsoft's terms of service.
 
+> [!IMPORTANT]
+> The use of Copilot and or progressive dial modes for non-transactional commercial purposes constitutes a violation of Microsoft's terms of service.
+
 ### Copilot
 
 Use the Copilot dial mode for making announcements, notifications, or any outbound call that can be handled by an IVR agent. A large number of these calls can be made simultaneously. A few examples are payment reminders, service restoration, and delivery notifications. When a customer picks an outbound call, the agent registered on the workstream engages with the customer. The agent can escalate to a service representative if required. However, the wait times might be similar to if the customer had called into the contact center for assistance.

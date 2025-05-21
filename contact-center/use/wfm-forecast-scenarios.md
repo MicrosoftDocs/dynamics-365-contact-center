@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes.
-ms.date: 05/08/2025
+ms.date: 05/15/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -61,6 +61,9 @@ You can create either short-term or long-term forecasts.
       1. **Queues**: Use the search option to find the queue you want or select **New Record** > **Queues** to create one. You can select multiple queues.
 1. On the **Forecast run schedule** card, fill in the following details:
       1. **Auto-extension**: Set the toggle to **Yes** if you want to run the forecast. If you set the toggle to **No**, the forecast schedule remains in draft state and doesn't get created.
+      >[!NOTE]  
+      > You can have up to 10 forecast scenarios with Auto-extension enabled. 
+      
       2. **Day of the week**: Select the day of the week that you want the report to be created on. Use for long-term forecasts only. 
       1. **Run time slot**: For short-term, use the dropdown menu to select the time window you want the system to use when it runs the report. The forecast scenario for short term runs every day. For long-term, select the day.
       1. **Run time zone**: Use the dropdown menu to select the time zone you want the system to use when it runs the report.

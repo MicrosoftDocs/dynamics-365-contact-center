@@ -18,7 +18,7 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 
 ## Prerequisites
 
-- Voice channel is provisioned and configured. Learn more in [Provision channels](../implement/provision-channels.md) and [Install the voice channel](../implement/install-voice-channel.md).
+- Voice channel is provisioned and configured. Learn more in [Provision channels](../implement/provision-channels.md) and [Install the voice channel](/dynamics365/customer-service/administer/install-voice-channel?context=/dynamics365/contact-center/context/administer-context).
 - Dynamics 365 Customer Insights to use journey for your customer journey authoring.
 - Microsoft Copilot Studio to use Copilot agents.
 
@@ -26,7 +26,7 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 
 ## Set up an outbound workstream
 
-1. Create a workstream by selecting the **Outbound (preview)** option. Learn more in [Create and manage workstreams](/dynamics365/contact-center/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context).
+1. Create a workstream by selecting the **Outbound (preview)** option. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context).
 1.	Set up the outbound workstream behaviors.
 1.	Select the [calling number and caller ID number](/dynamics365/customer-service/administer/voice-channel-outbound-calling#configure-phone-numbers-for-outbound-calling). Numbers available to use only are displayed.
 1.	Set up the language and outbound behaviors. Learn more in [Configure the voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?tabs=enhancedvoice#configure-a-voice-channel)
@@ -129,7 +129,6 @@ Use the progressive dial mode to call the customer first. As soon as the custome
 ### Preview
 
 Use the preview dial mode to identify a service representative from the specified queue and then notify them of the request to make the outbound call. If the representative accepts, then the system places the outbound call to customer with the representative already on the line. Representative gets to speak to the customer if they pick up or leave a voicemail. This dial mode prioritizes customer experience over representative use, and is best suited for scenarios that require a personalized experience. As a result, the number of simultaneous calls made is dependent on the number of available representatives.
-
 
 ## Runtime experience
 

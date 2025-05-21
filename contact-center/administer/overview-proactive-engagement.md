@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Proactively engage with your customers with automated, personalized voice conversations. You can streamline customer outreach, improve agent productivity, and deliver personalized experiences.
+Proactively engage with your customers with automated, personalized conversations. You can streamline customer outreach, improve agent productivity, and deliver personalized experiences.
 
 ## What is proactive engagement?
 
@@ -30,9 +30,9 @@ Using a blend of AI agents and customer service representatives, you can reach o
 
 1. Configure [proactive engagement](configure-proactive-engagement.md) in Dynamics 365 Contact Center to automate outbound voice calls.
 
-1. Optionally, configure journeys using Dynamics 365 Customer Insights to determine contacts and optimal timings for interactions. Journeys enhance list-based auto-dialing by creating personalized customer-centric journeys. A flowchart helps in detailing the customer journey with various steps and decision points, and a sidebar with attributes and branches for customization.
+1a. Optionally, configure journeys using Dynamics 365 Customer Insights to determine contacts and optimal timings for interactions. Journeys are a visual, automated workflow that guides how your customer moves through a series of interactions. It orchestrates personalized experiences across channels like voice, email, SMS, push notifications, and more, based on user behavior and business logic.
 
-1. You can also integrate CCaaS API API to determine who to call and when. The Dataverse CCaaS API integrates the contact center with existing campaign tools and supports callbacks.
+1b. Optionally, you can also integrate CCaaS API API to determine who to call and when. The Dataverse CCaaS API integrates the contact center with existing campaign tools and supports callbacks.
 
 1. Configure Copilot IVR agents to handle preliminary tasks, such as gathering information and answering FAQs.
 

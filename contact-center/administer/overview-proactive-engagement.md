@@ -1,6 +1,6 @@
 ---
 title: Overview of proactive engagement (preview)
-description: Learn about proactive engagement in Dynamics 365 Contact Center.
+description: Learn about proactive engagement in Dynamics 365 Contact Center for optimized customer service.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
@@ -23,6 +23,8 @@ Today, customer expectations are higher than ever, wanting brands to anticipate 
 Proactive engagement is the solution to create AI-driven proactive outbound experiences that enable enterprises to engage with their customers proactively on voice channels. You can integrates Dynamics 365 Contact Center and Customer Insights journeys for an AI-empowered multichannel proactive engagement. 
 
 Using a blend of AI agents and customer service representatives, you can reach out through phone calling to engage with your consumers in meaningful conversations, leading to quicker transactions, faster case closures, and enhanced customer satisfaction.
+
+:::image type="content" source="../media/overview-proactive-engagement.png" alt-text="Overview of proactive engagement.":::
 
 ## How it works
 

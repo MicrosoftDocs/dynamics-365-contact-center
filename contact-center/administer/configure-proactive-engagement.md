@@ -130,9 +130,6 @@ Use the progressive dial mode to call the customer first. As soon as the custome
 
 Use the preview dial mode to identify a service representative from the specified queue and then notify them of the request to make the outbound call. If the representative accepts, then the system places the outbound call to customer with the representative already on the line. Representative gets to speak to the customer if they pick up or leave a voicemail. This dial mode prioritizes customer experience over representative use, and is best suited for scenarios that require a personalized experience. As a result, the number of simultaneous calls made is dependent on the number of available representatives.
 
-## Outcomes
-
-_Need information on how to configure outcomes._ *added it to outcomes section 
 
 ## Runtime experience
 
@@ -140,7 +137,7 @@ Service representatives view the proactive engagement calls based on the notific
 For the preview mode, service representatives can start or reject the calls. 
 For the progressive mode, service representatives can only start the call. 
 
-If you configure disposition codes settings, service representatives can select disposition codes to record the outcome of the interaction. Learn more in [Configure disposition codes](configure-disposition-codes.md)
+If you configure disposition codes settings, service representatives can select disposition codes to record the outcome of the interaction. Learn more in [Configure disposition codes].(configure-disposition-codes.md)
 
 ### Related information
 

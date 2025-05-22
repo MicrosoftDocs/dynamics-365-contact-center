@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 05/19/2025
+ms.date: 05/29/2025
 ms.custom: bap-template
 ---
 
@@ -28,11 +28,11 @@ Using a blend of AI agents and customer service representatives, you can reach o
 
 ## How it works
 
-1. Configure [proactive engagement](configure-proactive-engagement.md) in Dynamics 365 Contact Center to automate outbound voice calls.
+1. Configure [proactive engagement](configure-proactive-engagement.md) in Dynamics 365 Contact Center.
 
-1a. Optionally, configure journeys using Dynamics 365 Customer Insights to determine contacts and optimal timings for interactions. Journeys are a visual, automated workflow that guides how your customer moves through a series of interactions. It orchestrates personalized experiences across channels like voice, email, SMS, push notifications, and more, based on user behavior and business logic.
-
-1b. Optionally, you can also integrate CCaaS API API to determine who to call and when. The Dataverse CCaaS API integrates the contact center with existing campaign tools and supports callbacks.
+1. You can initiate the calls using one of the following options:
+   - Configure journeys using Dynamics 365 Customer Insights to determine contacts and optimal timings for interactions. Journeys are a visual, automated workflow that guides how your customer moves through a series of interactions. It orchestrates personalized experiences across channels like voice, email, SMS, push notifications, and more, based on user behavior and business logic.
+   - Integrate CCaaS API to determine whom to call and when. The Dataverse CCaaS API integrates the contact center with existing campaign tools and supports callbacks.
 
 1. Configure Copilot IVR agents to handle preliminary tasks, such as gathering information and answering FAQs.
 

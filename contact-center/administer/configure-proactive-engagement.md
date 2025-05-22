@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: 
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 05/23/2025
+ms.date: 05/29/2025
 ms.custom: bap-template
 ---
 
@@ -96,9 +96,13 @@ The dialing modes are used to determine how the system can make calls to custome
    - **Escalation count**: (Copilot mode). Refers to the total number of escalations made from the AI agent.
    - **Open concurrent escalations**: (Copilot mode). Refers to the total number of open escalations that haven't been resolved. 
 
-1. Select **Next**.
+1. Select **Next** if you want to configure the outcomes.
 
-1. On the **Outcomes** page, select the outcomes that are available for the proactive engagement, and then select **Next**.
+### Configure outcomes
+
+The outcomes are the results of the proactive engagement. The outcomes are used to determine how the system handles the call when a customer answers.
+
+1. On the **Create new proactive engagement (preview)** dialog, on the **Outcomes** page, select the outcomes that are available for the proactive engagement, and then select **Next**.
    - To add attributes, [configure context variables for the outbound workstream](/dynamics365/customer-service/administer/manage-context-variables).
    - Make sure that when you add the context variables in Copilot agent, you use the same names that you created in the workstream. Learn more in [Configure context variables for Copilot agent](/dynamics365/customer-service/administer/context-variables-for-bot#configure-context-variables-for-copilot-agent).
 
@@ -106,7 +110,7 @@ The dialing modes are used to determine how the system can make calls to custome
 
 ## Configure proactive engagement with a journey using Customer Insights
 
-Learn about how to confgure a journey using Dynamics 365 Customer Insights in [Preview: How to](/dynamics365/customer-insights/journeys/proactive-engagement-how-to).
+Learn about how to configure a journey using Dynamics 365 Customer Insights in [Preview: How to](/dynamics365/customer-insights/journeys/proactive-engagement-how-to).
 
 ## Configure proactive engagement with a journey using the API
 
@@ -117,7 +121,7 @@ To configure the proactive engagement with a journey using the API, follow the s
 The dial modes are used to determine how the system makes calls to customers.
 
 > [!IMPORTANT]
-> The use of Copilot and or progressive dial modes for non-transactional commercial purposes constitutes a violation of Microsoft's terms of service.
+> The use of Copilot and or progressive dial modes for non-transactional commercial purposes constitutes a violation of Microsoft terms of service.
 
 ### Copilot
 
@@ -137,7 +141,7 @@ Service representatives view the proactive engagement calls based on the notific
 For the preview mode, service representatives can start or reject the calls. 
 For the progressive mode, service representatives can only start the call. 
 
-If you configure disposition codes settings, service representatives can select disposition codes to record the outcome of the interaction. Learn more in [Configure disposition codes].(configure-disposition-codes.md)
+If you configure disposition codes settings, service representatives can select disposition codes to record the outcome of the interaction. Learn more in [Configure disposition codes](configure-disposition-codes.md).
 
 ### Related information
 

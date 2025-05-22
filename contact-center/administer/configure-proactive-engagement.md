@@ -28,7 +28,8 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 
 1. Create a workstream by selecting the **Outbound (preview)** option. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context).
 1.	Set up the outbound workstream behaviors.
-1.	Select the [calling number and caller ID number](/dynamics365/customer-service/administer/voice-channel-outbound-calling#configure-phone-numbers-for-outbound-calling). Numbers available to use only are displayed.
+   - Select **Setup**, and on the page that appears, select the Caller ID Number in the list. Numbers available to use only are displayed. Learn more in [Configure phone numbers for outbound calling](/dynamics365/customer-service/administer/voice-channel-outbound-calling#configure-phone-numbers-for-outbound-calling).
+   - Select a number in the Shared numbers list. The numbers available to use only are displayed.
 1.	Set up the language and outbound behaviors. Learn more in [Configure the voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?tabs=enhancedvoice#configure-a-voice-channel)
 1.	Finish setting up your outbound workstream by configuring work distribution, add an AI agent to the workstream, and configuring representative notifications. The following notification templates are available out of the box:
     - **Voice call - outbound agent dial - default**: For preview dial mode calls
@@ -105,7 +106,7 @@ The dialing modes are used to determine how the system can make calls to custome
 
 ## Configure proactive engagement with a journey using Customer Insights
 
-
+Learn about how to confgure a journey using Dynamics 365 Customer Insights in [Preview: How to](/dynamics365/customer-insights/journeys/proactive-engagement-how-to).
 
 ## Configure proactive engagement with a journey using the API
 
@@ -141,3 +142,4 @@ If you configure disposition codes settings, service representatives can select 
 ### Related information
 
 [Overview of proactive engagement](overview-proactive-engagement.md)  
+[Overview of conversational journeys](/dynamics365/customer-insights/journeys/conversational-journeys-overview)  

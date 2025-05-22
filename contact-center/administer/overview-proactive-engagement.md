@@ -24,7 +24,7 @@ Proactive engagement is the solution to create AI-driven proactive outbound expe
 
 Using a blend of AI agents and customer service representatives, you can reach out through phone calling to engage with your consumers in meaningful conversations, leading to quicker transactions, faster case closures, and enhanced customer satisfaction.
 
-:::image type="content" source="../media/overview-proactive-engagement.png" alt-text="Overview of proactive engagement.":::
+:::image type="content" source="../media/overview-proactive-engagement.png" alt-text="Overview of proactive engagement." lightbox="../media/overview-proactive-engagement.png":::
 
 ## How it works
 

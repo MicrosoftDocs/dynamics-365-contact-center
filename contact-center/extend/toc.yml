@@ -6,6 +6,20 @@
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
         href: ../implement/overview-contact-center.md?context=/dynamics365/contact-center/context/extend-context
+      - name: Developer tools for Customer Service
+        href: /dynamics365/customer-service/develop/omnichannel-developer?context=/dynamics365/contact-center/context/extend-context
+      - name: Unified routing and assignment
+        items: 
+        - name: Understand how unified routing affects queue items and live work items for routed records
+          href: /dynamics365/customer-service/develop/unified-routing-impact-on-APIs?context=/dynamics365/contact-center/context/extend-context 
+        - name: Add a skill control for routed records
+          href: /dynamics365/customer-service/develop/add-skill-control?context=/dynamics365/contact-center/context/extend-context 
+        - name: Close live work items or deactivate queue items
+          href: /dynamics365/customer-service/develop/deactivate-queue-items?context=/dynamics365/contact-center/context/extend-context 
+        - name: Route noncase records using a plug-in
+          href: /dynamics365/customer-service/develop/trigger-routing-non-case-records?context=/dynamics365/contact-center/context/extend-context 
+        - name: Add multiple preferred agent records
+          href: /dynamics365/customer-service/develop/add-multiple-preferred-agent-records?context=/dynamics365/contact-center/context/extend-context 
       - name: Connectors
         items:
         - name: Configure ServiceNow connector

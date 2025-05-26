@@ -96,8 +96,8 @@
               href: /dynamics365/customer-service/develop/parse-activity-json-to-get-bot-context?context=/dynamics365/contact-center/context/extend-context
           - name: Copilot Studio
             items:
-             - name: Enable context for Copilot agents
-               href: /dynamics365/customer-service/develop/enable-bot-context-pva?context=/dynamics365/contact-center/context/extend-context   
+            - name: Enable context for Copilot agents
+              href: /dynamics365/customer-service/develop/enable-bot-context-pva?context=/dynamics365/contact-center/context/extend-context   
           - name: Code samples for parsing activity JSON 
             href: /dynamics365/customer-service/develop/bot-context-json-samples?context=/dynamics365/contact-center/context/extend-context
         - name: Configure Azure AI agents to escalate and end conversations

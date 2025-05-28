@@ -28,6 +28,10 @@
           href: configure-zendesk-connector.md
         - name: Configure the connector for any CRM solution
           href: configure-custom-connector.md
+      - name: Proactive engagement
+        items:
+        - name: Use CCaaS_CreateProactiveVoiceDelivery API
+          href: api/ccaas_createproactivedelivery.md  
       - name: Chat
         items:
         - name: Develop a custom live chat widget

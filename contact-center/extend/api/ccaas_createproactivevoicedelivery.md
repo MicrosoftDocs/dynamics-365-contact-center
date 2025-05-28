@@ -15,7 +15,7 @@ ms.custom: bap-template
 You can use the `CCaaS_CreateProactiveVoiceDelivery` API to initiate proactive outbound voice calls to customers or allow customers to schedule callbacks through the Proactive Engagement Service.
 
 > [!IMPORTANT]
-> If an organization is using the `CCaaS_CreateProactiveVoiceDelivery` API to initiate an outbound voice call, the organization is responsible for consent management, including the manual updating of 'do not call lists', for setting quiet hours for customer contact. Make sure that the following conditions are met:
+> If an organization is using the `CCaaS_CreateProactiveVoiceDelivery` API to initiate an outbound voice call, the organization is responsible for consent management, including the manual updating of "do not call lists" for setting quiet hours for customer contact. Make sure that the following conditions are met:
 > - Proper consent is obtained before contacting customers
 > - Customers are contacted during permitted hours only.
 

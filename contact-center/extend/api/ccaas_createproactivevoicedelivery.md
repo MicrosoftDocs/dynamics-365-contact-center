@@ -111,7 +111,7 @@ You can use the Proactive Engagement solution to schedule callbacks from various
 - Integrate the schedule callback API with your website.
 
 
-### Create a Power Automate flow from the Copilot Studio agent
+### Create a Power Automate flow from the Copilot agent
 
 You can create a Power Automate flow from the Copilot Studio agent to schedule callbacks. Perform the following steps:
 

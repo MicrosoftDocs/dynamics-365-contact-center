@@ -18,7 +18,7 @@ You can incorporate shift assignments and time-off considerations into the routi
 
 ## Prerequisites
 
-- Your administrator has installed the [Workforce Management for Customer Service package](wfm-package-installation.md).
+- Your administrator installed the [Workforce Management for Customer Service package](wfm-package-installation.md).
 - [Shift-based routing is enabled](wfm-enable-shift-based-routing.md).
 - [Unified routing](/customer-service/administer/provision-unified-routing) is provisioned and set up.
 - [Workstreams](/customer-service/administer/create-workstreams) and [advanced queues](/administer/queues-omnichannel) are set up.
@@ -28,7 +28,7 @@ You can incorporate shift assignments and time-off considerations into the routi
 
 1. In the Copilot Service admin center site map, select **Queues**, and then select **Manage** in the **Advanced queues** area.
 1. Select the queue that you want to configure the assignment rule for, select the [custom assignment](/customer-service/administer/configure-assignment-rules) method, and select **Edit**.
-1. Create a rule or modify an existing rule and do the following:
+1. Create a rule or modify an existing rule, and do the following steps:
     1. In **Conditions**, select **Add row**, and then select **Calendar schedule**. The **Is working** value is automatically selected.
     1. Save and close.
 

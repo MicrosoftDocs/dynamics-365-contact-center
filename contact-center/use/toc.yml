@@ -336,8 +336,6 @@
             href: wfm-representative-shift-bidding.md
           - name: Use shift swapping
             href: wfm-use-shift-swapping.md
-          - name: Use shift-based routing
-            href: wfm-use-shift-based-routing.md
           - name: Use the Schedule Calendar
             href: /dynamics365/customer-service/use/use-agent-calendar?context=/dynamics365/contact-center/context/use-context
         - name: Time-off request management

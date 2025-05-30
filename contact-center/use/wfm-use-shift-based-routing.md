@@ -40,7 +40,7 @@ View the [routing diagnostics record](/dynamics365/customer-service/administer/u
 
 ## How shift-based routing works
 
-The imported schedules from external systems are represented in Dynamics 365 as "bookings". The [bookableresourcebooking](/dynamics365/customer-service/develop/reference/entities/bookableresourcebooking) entity stores this information. Each booking is assigned to a representative. The representative is recorded as a bookable resource and each of them with one or more bookings has a corresponding entry in the [bookableresource](/dynamics365/customer-service/develop/reference/entities/bookableresource) entity.
+The schedules created from shift plans are represented as "bookings". The [bookableresourcebooking](/dynamics365/customer-service/develop/reference/entities/bookableresourcebooking) entity stores this information. Each booking is assigned to a representative. The representative is recorded as a bookable resource and each of them with one or more bookings has a corresponding entry in the [bookableresource](/dynamics365/customer-service/develop/reference/entities/bookableresource) entity.
 
 An automated process synchronizes the representative's imported schedules with the representative's work hour calendar. The following rules apply for the automatic synchronization:
 

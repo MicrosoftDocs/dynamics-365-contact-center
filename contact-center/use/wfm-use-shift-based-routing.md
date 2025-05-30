@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Use shift-based routing for work items
 
-You can use assignment rules to route and assign cases and conversations based on your customer service representatives' (service representative or representative) shift schedules. By verifying representatives' schedules in advance, you can avoid routing tasks to off-duty service representatives, which helps reduce the risk of assignment delays. 
+You can use assignment rules to route and assign cases and conversations based on your customer service representatives' (service representative or representative) shift schedules. By verifying representatives' schedules in advance, you can help reduce the risk of assignment delays by avoiding routing tasks to off-duty service representatives. 
 
 You can incorporate shift assignments and time-off considerations into the routing process to foster an employee-centric approach, and streamline operational workflows for productivity and improved retention rates.
 

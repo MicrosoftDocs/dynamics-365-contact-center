@@ -18,11 +18,11 @@ You can incorporate shift assignments and time-off considerations into the routi
 
 ## Prerequisites
 
-- Your administrator installed the [Workforce Management for Customer Service package](wfm-package-installation.md).
+- Your administrator installed the [Workforce Management for Customer Service package](../administer/wfm-package-installation.md).
 - [Shift-based routing is enabled](wfm-enable-shift-based-routing.md).
-- [Unified routing](/customer-service/administer/provision-unified-routing) is provisioned and set up.
-- [Workstreams](/customer-service/administer/create-workstreams) and [advanced queues](/administer/queues-omnichannel) are set up.
-- [Custom assignment method](/customer-service/administer/configure-assignment-rules) is configured for the queue.
+- [Unified routing](/dynamics365/customer-service/administer/provision-unified-routing) is provisioned and set up.
+- [Workstreams](/customer-service/administer/create-workstreams) and [advanced queues](/dynamics365/customer-service/administer/queues-omnichannel) are set up.
+- [Custom assignment method](/dynamics365/customer-service/administer/configure-assignment-rules) is configured for the queue.
 
 ## Configure an assignment rule
 

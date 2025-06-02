@@ -20,7 +20,7 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 
 ## Prerequisites
 
-- Voice channel is provisioned and configured. Learn more in [Provision channels](../implement/provision-channels.md) and [Install the voice channel](/dynamics365/customer-service/administer/install-voice-channel?context=/dynamics365/contact-center/context/administer-context).
+- Voice channel is provisioned and configured. Learn more in [Provision channels](../implement/provision-channels.md) and [Install the voice channel](/dynamics365/customer-service/administer/voice-channel-install?context=/dynamics365/contact-center/context/administer-context).
 - Dynamics 365 Customer Insights if you want to use journey for your customer journey authoring.
 - Microsoft Copilot Studio to use Copilot agents.
 

@@ -142,7 +142,7 @@
             href: wfm-shift-activity-types.md
           - name: Enable schedule management
             href: wfm-enable-schedule-management.md
-          - name: Enable shift-based routing (preview)
+          - name: Enable shift-based routing
             href: wfm-enable-shift-based-routing.md
         - name: Time management
           items:
@@ -154,6 +154,8 @@
             href: wfm-enable-shift-bids.md
           - name: Enable shift swapping
             href: wfm-enable-shift-swapping.md
+        - name: Configure shift-based routing for work items
+          href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/administer-context
       - name: Email
         items:
         - name: Configure email
@@ -559,7 +561,7 @@
       - name: App configuration
         items:
         - name: Migrate configurations for channels using solutions
-          href: /dynamics365/customer-service/administer/migrate-configurations?context=/dynamics365/contact-center/context/administer-context
+          href: /dynamics365/customer-service/administer/migrate-channel-config-using-solutions?context=/dynamics365/contact-center/context/administer-context
         - name: Best practices for configuration lifecycle management
           href: alm-best-practices.md
       - name: Responsible AI

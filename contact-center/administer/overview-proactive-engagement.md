@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 05/29/2025
+ms.date: 06/02/2025
 ms.custom: bap-template
 ---
 
@@ -36,6 +36,6 @@ By using a blend of AI agents and customer service representatives, you can reac
 
 ### Related information
 
-[Proactive engagement](configure-proactive-engagement.md)  
+[Configure proactive engagement](configure-proactive-engagement.md)  
 
 

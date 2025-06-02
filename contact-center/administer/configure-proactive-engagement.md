@@ -3,7 +3,7 @@ title: Configure proactive engagement (preview)
 description: Learn how to set up proactive engagement, including dialing modes and operational rules for optimized customer service in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim 
-ms.reviewer: 
+ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.date: 06/02/2025
@@ -16,13 +16,13 @@ ms.custom: bap-template
 
 Proactive engagement in Dynamics 365 enables organizations to enhance customer interactions by initiating outbound communications through the voice channel. This feature allows businesses to streamline customer outreach, improve agent productivity, and deliver personalized experiences. The article describes how to configure proactive engagement settings, including dialing modes, routing details, and operational rules to optimize your customer service operations.
 
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 ## Prerequisites
 
 - Voice channel is provisioned and configured. Learn more in [Provision channels](../implement/provision-channels.md) and [Install the voice channel](/dynamics365/customer-service/administer/install-voice-channel?context=/dynamics365/contact-center/context/administer-context).
 - Dynamics 365 Customer Insights if you want to use journey for your customer journey authoring.
 - Microsoft Copilot Studio to use Copilot agents.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Set up an outbound workstream
 
@@ -48,13 +48,13 @@ In the site map of Copilot Service admin center, you can navigate to the proacti
 
 1. On **Create new proactive engagement (preview)**, enter the following details in **Engagement details**:
    - **Name**: A name for the proactive engagement. 
-   - **Description**: A description for the proactive engagement that helps the representative understand the purpose of the call.
+   - **Description**: A description for the proactive engagement that helps the representative understand the purpose of the call for progressive and preview dial modes.
    - **Workstream**: A workstream.
    - **Channel type**: **Voice** is selected by default and not available for edit.
 
 1. In **Routing details**, enter the following information:
    - **Primary queue**: Select a queue. 
-   - **Fallback queue**: The queue is prepopulated based on the fallback queue set for the outbound workstream.
+   - **Fallback queue**: The system populates the queue name based on the fallback queue set for the outbound workstream.
    - **Skills**: Select the skills that are required for the proactive engagement.
 1. Select **Next**. The **Dialing modes** page appears. Do the steps in the **Configure dialing modes** section that follows.
 
@@ -108,7 +108,7 @@ The outcomes are the results of the proactive engagement call. The outcomes are 
 
 ## Configure proactive engagement with a journey using Customer Insights
 
-Learn about how to configure a journey using Dynamics 365 Customer Insights in [Preview: How to](/dynamics365/customer-insights/journeys/proactive-engagement-how-to).
+Learn about how to configure a journey using [Dynamics 365 Customer Insights](/dynamics365/customer-insights/journeys/proactive-engagement-how-to).
 
 ## Configure proactive engagement with a journey using the API
 

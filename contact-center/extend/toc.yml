@@ -32,6 +32,8 @@
         items:
         - name: Use CCaaS_CreateProactiveVoiceDelivery API
           href: api/ccaas_createproactivevoicedelivery.md
+        - name: Use proactive engagement tables for reporting
+          href: proactive-engagement-tables.md
       - name: Chat
         items:
         - name: Develop a custom live chat widget

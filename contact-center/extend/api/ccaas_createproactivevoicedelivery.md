@@ -154,3 +154,7 @@ Integrate the `CCaaS_CreateProactiveVoiceDelivery` API with your website to allo
 }
 
 ```
+
+### Related information
+
+[Use proactive engagement tables for reporting](proactive-engagement-tables.md)

@@ -42,7 +42,7 @@ The `msdyn_proactive_delivery` table contains delivery requests accepted through
 | Conversation Id | msdyn_conversation_id | Text | Identifier that links the delivery record to the conversation record. |
 | Call Id | msdyn_call_id | Text | The `correlationId` of the Azure Communication Services call. This ID is used to track the call. |
 | Proactive Engagement Configuration Id | msdyn_proactive_engagement_config_id | Text | The proactive engagement configuration used. |
-| Journey Id | msdyn_journey_id | Text | The journey id populated if Customer Insights Journey is used to trigger the call. |
+| Journey Id | msdyn_journey_id | Text | The journey ID populated if Customer Insights journey is used to trigger the call. |
 | Journey Run Id | msdyn_journey_run_id | Text | Specific run instance of the journey, if applicable. |
 | Contact Id | msdyn_contact_id | Text | Id of the customer contact in Dynamics. |
 | Channel | msdyn_channel | Text | Communication channel used. Only voice is supported. |

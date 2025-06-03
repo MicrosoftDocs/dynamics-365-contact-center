@@ -1,5 +1,5 @@
 ---
-title: Use CCaaS_CreateProactiveVoiceDelivery API
+title: Use CCaaS_CreateProactiveVoiceDelivery API (preview)
 description: Learn about the CCaaS_CreateProactiveVoiceDelivery API, which enables organizations to initiate proactive outbound voice calls to customers.
 author: gandhamm
 ms.author: mgandham
@@ -10,7 +10,10 @@ ms.collection:
 ms.custom: bap-template 
 ---
 
-# Use CCaaS_CreateProactiveVoiceDelivery API
+# Use CCaaS_CreateProactiveVoiceDelivery API (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 
 You can use the `CCaaS_CreateProactiveVoiceDelivery` API to initiate proactive outbound voice calls to customers or allow customers to schedule callbacks through the Proactive Engagement Service.
 
@@ -18,6 +21,8 @@ You can use the `CCaaS_CreateProactiveVoiceDelivery` API to initiate proactive o
 > If an organization is using the `CCaaS_CreateProactiveVoiceDelivery` API to initiate an outbound voice call, the organization is responsible for consent management, including the manual updating of "do not call lists" for setting quiet hours for customer contact. Make sure that the following conditions are met:
 > - Proper consent is obtained before contacting customers
 > - Customers are contacted during permitted hours only.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

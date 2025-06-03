@@ -1,5 +1,5 @@
 ---
-title: Use proactive engagement tables for reporting
+title: Use proactive engagement tables for reporting (preview)
 description: Learn how to use proactive engagement tables for reporting.
 author: gandhamm
 ms.author: mgandham
@@ -10,7 +10,10 @@ ms.collection:
 ms.custom: bap-template 
 ---
 
-# Use proactive engagement tables for reporting
+# Use proactive engagement tables for reporting (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 
 Proactive engagement allows for customer outreach based on configured engagement scenarios and customer data insights.
 
@@ -19,6 +22,9 @@ The `msdyn_proactive_delivery` and `msdyn_proactive_delivery_attribute` tables s
 - Track delivery success rates and performance metrics
 - Analyze customer engagement patterns and outcomes
 - Monitor queue performance and agent productivity
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 
 ## Prerequisites
 

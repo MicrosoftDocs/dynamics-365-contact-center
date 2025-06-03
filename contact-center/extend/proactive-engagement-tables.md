@@ -45,7 +45,7 @@ The `msdyn_proactive_delivery` table contains delivery requests accepted through
 | Journey Id | msdyn_journey_id | Text | The journey ID populated if Customer Insights journey is used to trigger the call. |
 | Journey Run Id | msdyn_journey_run_id | Text | Specific run instance of the journey, if applicable. |
 | Contact Id | msdyn_contact_id | Text | Id of the customer contact in Dynamics. |
-| Channel | msdyn_channel | Text | Communication channel used. Only voice is supported. |
+| Channel | msdyn_channel | Text | Communication channel used. Supports the voice channel only. |
 | Status | msdyn_status | Text | Current delivery status: **Pending**, **InProcess**, **Complete**, **Expired**, **Cancelled**, or **Error**. |
 | Queue Id | msdyn_queue_id | Text | Identifier for the queue handling the delivery. |
 | Tracking Id | msdyn_tracking_id | Text | Custom tracking identifier.|

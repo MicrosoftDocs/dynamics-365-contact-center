@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 02/19/2025
+ms.date: 06/04/2025
 ms.custom: bap-template 
 ---
 
@@ -20,13 +20,13 @@ Copilot case and conversation summaries help you to quickly understand the conte
 
 [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
-Case summaries help customer service representatives (service representatives or representatives) understand the context of a case, enabling them to resolve customer issues efficiently. Agents get a concise summary of the case with the case title, customer, case subject, product, priority, case type, and case description. Email activity records, notes linked to a case, and conversation summaries are also used to generate the case summary.
+Case summaries help representatives understand the context of a case, enabling them to resolve customer issues efficiently. Agents get a concise summary of the case with the case title, customer, case subject, product, priority, case type, and case description. Email activity records, notes linked to a case, and conversation summaries are also used to generate the case summary.
 
 > [!IMPORTANT]
 > - A minimum of 50 [tokens](https://platform.openai.com/docs/introduction) are required to generate a case summary. 50 tokens translate to approximately 38 words in English, without counting spaces. Therefore, you'll need a minimum of 38 English words specified across the case fields that copilot uses to generate the case summary.
 > - AI agent conversations aren't automatically included in the conversation summary.
  
-1. In Contact Center admin center or Customer Service admin center, select **Ask a question** in **Copilot for questions and emails** for Copilot case summaries to be available.
+1. In Copilot Service admin center, select **Ask a question** in **Copilot for questions and emails** for Copilot case summaries to be available.
 1. Use one of the following navigation options: 
     - **Support Experience** > **Productivity** > **Summaries**
     - **Operations** > **Insights** > **Summaries**
@@ -43,7 +43,7 @@ Perform the steps in [Display case summary on custom case forms](/dynamics365/cu
 
 Conversation summaries enable service representatives to collaborate effectively with other service representatives and contacts, by enabling service representatives to easily recap an ongoing chat or a transcribed voice conversation.
 
-For Copilot to automatically generate a conversation summary for a live conversation, in Contact Center admin center or Customer Service admin center, select the following options on the **Summaries** page:
+For Copilot to automatically generate a conversation summary for a live conversation, in Copilot Service admin center, select the following options on the **Summaries** page:
    - **When a representative joins a conversation**: Generates a summary when a representative joins a conversation. A summary is also generated when the primary representative invites a collaborator and a second representative joins the conversation or when the primary representative transfers a conversation.
    - **When a conversation ends**: Generates a summary when the conversation ends. 
       - Select **Allow customer service representatives to create case with a button in the summary** to allow service representatives to see the **Create case** button in the conversation summary. A new case is created when the service representative selects **Create case**.

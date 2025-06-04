@@ -23,7 +23,7 @@ Having this information ready can help representatives reduce the hold time that
 - Conversation summary
 - Timeline
 
-For active conversations, you can view the **Active Conversation** form on the agent dashboard of the Contact Center workspace app. The **Active Conversation** form doesn't display details of closed conversations. To view closed conversations, use the **Closed work items** section of the agent dashboard. 
+For active conversations, you can view the **Active Conversation** form on the agent dashboard of the Copilot Service workspace app. The **Active Conversation** form doesn't display details of closed conversations. To view closed conversations, use the **Closed work items** section of the agent dashboard. 
 
 You see the following options on the **Active Conversation** page:  
 
@@ -106,4 +106,4 @@ The **Linked records** field shows the record linked to the conversation.
 
 ### Related information
 
-[Use Contact Center workspace](ccw-overview.md)  
+[Use Copilot Service workspace](ccw-overview.md)  

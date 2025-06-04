@@ -90,7 +90,7 @@ If you specify a rating between 1 and 4, the application displays a set of prede
 ## Best practices
 
 - Make sure that you enabled notifications, and audio and video options in the browser.
-- When your shift ends, ensure that you sign out and close your browser through which you access Customer Service workspace or Copilot Service workspace. Doing so helps avoid work items being incorrectly assigned to you.
+- When your shift ends, ensure that you sign out and close your browser through which you access Copilot Service workspace. Doing so helps avoid work items being incorrectly assigned to you.
 - When you face network or hardware issues, the application displays error or warning messages on the communication panel. Use the information in the messages to resolve the problems. More information: [Use diagnostic messages to troubleshoot call issues](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/use-diagnostic-messages-in-call-issues)
 
 ### Related information

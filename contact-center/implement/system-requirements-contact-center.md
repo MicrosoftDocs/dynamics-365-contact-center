@@ -76,7 +76,7 @@ Learn how to enable the omnichannel capabilities in your organization in [Provis
 
 ## Allow access to websites
 
-If your organization uses a URL filter to block a category of websites or URLs, make sure that you allow the following websites as an exception for your users. In this way, you ensure that those users can access the CCopilot Service workspace app in the business portal.
+If your organization uses a URL filter to block a category of websites or URLs, make sure that you allow the following websites as an exception for your users. In this way, you ensure that those users can access the Copilot Service workspace app in the business portal.
 
 - `https://ccaas-embed-prod.azureedge.net`
 - `https://*.communication.azure.com`

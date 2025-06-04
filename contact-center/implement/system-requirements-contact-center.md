@@ -50,7 +50,7 @@ The following table shows the system requirements for using Dynamics 365 Contact
 
 | Area | Requirements |
 |---|---|
-| Contact Center workspace app | Dynamics 365 Contact Center 9.2.21034.00160 or later. |
+| Copilot Service workspace app | Dynamics 365 Contact Center 9.2.21034.00160 or later. |
 | Web browsers | <p>Supported browsers:</p><ul><li>Microsoft&nbsp;Edge ([Chromium based](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)) version 79.0.309.65 or later is required for the desktop notifications feature.</li><li>Google Chrome.</li></ul><p><strong>Important:</strong> Dynamics 365 Contact Center uses third-party cookies for authentication. To ensure that services such as agent or supervisor presence can work correctly, make sure that the cookies aren't blocked in your browser in any mode.</p> |
 | Azure Communication Services | Azure Communication Services is required for first-party voice and text (SMS) in the voice channel in production environments. Learn about requirements that are specific to Azure Communication Services in [Network recommendations](/azure/communication-services/concepts/voice-video-calling/network-requirements). |
 | Hardware | <ul><li>A microphone and speakers are required for the voice experience.</li><li>**Minimum:** 4 gigabytes (GB) of RAM.</li><ul> |
@@ -72,11 +72,11 @@ The customer-facing live chat widget that you show in your portal supports the t
 Learn how to enable the omnichannel capabilities in your organization in [Provision channels](provision-channels.md).
 
 > [!NOTE]
-> For an optimal experience in the Contact Center workspace app, we recommend that you use browsers in normal mode.
+> For an optimal experience in the Copilot Service workspace app, we recommend that you use browsers in normal mode.
 
 ## Allow access to websites
 
-If your organization uses a URL filter to block a category of websites or URLs, make sure that you allow the following websites as an exception for your users. In this way, you ensure that those users can access the Contact Center workspace app in the business portal.
+If your organization uses a URL filter to block a category of websites or URLs, make sure that you allow the following websites as an exception for your users. In this way, you ensure that those users can access the CCopilot Service workspace app in the business portal.
 
 - `https://ccaas-embed-prod.azureedge.net`
 - `https://*.communication.azure.com`
@@ -141,4 +141,4 @@ The following table shows geographic location–specific links that should be ma
 
 ## Related information
 
-[Get started with Contact Center workspace](../use/ccw-overview.md)
+[Get started with Copilot Service workspace](../use/ccw-overview.md)

@@ -20,7 +20,7 @@ The enhanced Active Conversation experience displays the customer details that a
 
 To enable the enhanced Active Conversation form and customize the form, perform the following steps:
 
-1. In Contact Center admin center, go to **Workspaces**.
+1. In Copilot Service admin center, go to **Workspaces**.
 1. Select **Manage** for **Active conversation form settings** in **Workspaces**.
 1. Select the following options:
     - **Enhanced active conversation form** to enable the enhanced Active Conversation experience. The following features are available as a part of the enhanced experience:

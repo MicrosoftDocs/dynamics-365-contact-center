@@ -45,7 +45,7 @@ For your service representatives to write an email inline in the rich text edito
 
 ## Enable write an email in the side pane
 
-To enable your service representatives to write an email in the Copilot side pane, perform the following steps in Contact Center admin center or Customer Service admin center:
+To enable your service representatives to write an email in the Copilot side pane, perform the following steps in Copilot Service admin center:
 
 1. Go to **Copilot for questions and emails** using one of following options:
       - **Agent Experience** > **Productivity** 
@@ -73,7 +73,7 @@ Copilot uses the following out-of-the-box case fields to draft emails:
 - Case Notes
 - Email Content
 
-In Contact Center admin center or Customer Service admin center, go to **Copilot for questions and emails** and then select **Manage data**. The steps to modify the source fields that Copilot uses to draft emails are like the steps to modify the fields used to generate case summaries. Learn more in [modify the fields used to generate case summaries](/dynamics365/customer-service/administer/copilot-map-custom-fields#modify-the-fields-used-to-generate-case-summaries).
+In Copilot Service admin center, go to **Copilot for questions and emails** and then select **Manage data**. The steps to modify the source fields that Copilot uses to draft emails are like the steps to modify the fields used to generate case summaries. Learn more in [modify the fields used to generate case summaries](/dynamics365/customer-service/administer/copilot-map-custom-fields#modify-the-fields-used-to-generate-case-summaries).
 
 > [!NOTE]
 > You can't modify the **Case Notes** and **Email Content** field values that Copilot uses to draft emails.

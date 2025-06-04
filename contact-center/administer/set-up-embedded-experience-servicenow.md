@@ -20,7 +20,7 @@ The embedded conversation widget is a feature of Dynamics 365 Contact Center tha
 - Omnichannel capabilities are enabled in your org. Learn more in [Provision channels](../implement/provision-channels.md).
 - The provisioning user has System Administrator permissions in ServiceNow.
 - The OpenFrame plugin is installed in your Service now instance. To install it, sign in to ServiceNow, and then search for OpenFrame in **System Definition** > **Plugins**.
-- You have the widget URL. To find the embedded widget URL, go to the welcome page of Dynamics 365 Contact Center admin center. Select **Open** under **Your default contact center** and then navigate to the **Conversation widget** tab. The URL is listed under **Integration into third-party systems**.
+- You have the widget URL. To find the embedded widget URL, go to the welcome page of Copilot Service admin center. Select **Open** under **Your default contact center** and then navigate to the **Conversation widget** tab. The URL is listed under **Integration into third-party systems**.
 
 ## Set up the call center in ServiceNow
 

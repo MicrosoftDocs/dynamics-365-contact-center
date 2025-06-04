@@ -32,7 +32,7 @@ The performance of your Copilot is highly correlated to the quality of the knowl
 
 ## Enable knowledge sources configured in Copilot Studio
  
-1. In Contact Center admin center or Customer Service admin center, go to **Productivity** > **Copilot for questions and emails** > **Manage**. 
+1. In Copilot Service admin center, go to **Productivity** > **Copilot for questions and emails** > **Manage**. 
 1. In the **Knowledge sources** section, select the **Use knowledge sources configured in Copilot Studio (preview)** option, which opens Copilot Studio. 
 1. In Copilot Studio, select **Copilot in Dynamics 365 Customer Service**.
 1. On the **Knowledge** page, select **Add knowledge**.

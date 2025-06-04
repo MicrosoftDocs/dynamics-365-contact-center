@@ -6,7 +6,7 @@
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
         href: ../implement/overview-contact-center.md?context=/dynamics365/contact-center/context/administer-context
-      - name: Use Contact Center admin center
+      - name: Use Copilot Service admin center
         href: cc-admin-center.md
       - name: Manage user roles and personas
         items:

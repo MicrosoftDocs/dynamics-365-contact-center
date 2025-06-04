@@ -161,7 +161,7 @@ If you would like to add an additional question and store the data in Dataverse,
 
 You can host surveys on a link other than the default one.
 
-1. In Copilot Service admin center or Customer Service admin center, select the survey that you want to custom host.
+1. In Copilot Service admin center, select the survey that you want to custom host.
 1. Select the survey and select **Edit**.
 1. In **Survey URL**, enter the custom host page URL where you want to display the survey.
 1. Do the following for a seamless hosting experience:

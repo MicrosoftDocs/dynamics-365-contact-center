@@ -1,6 +1,6 @@
 ---
 title: Create and schedule a shift plan
-description: Learn how to create and schedule a shift plan in Dynamics 365 Contact Center workspace to help you more easily manage your staffing needs.
+description: Learn how to create and schedule a shift plan in Copilot Service workspace to help you more easily manage your staffing needs.
 ms.date: 04/11/2025
 ms.topic: how-to
 author: lalexms

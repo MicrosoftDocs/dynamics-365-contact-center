@@ -1,7 +1,7 @@
 ---
 title: Draft a chat response (preview)
 description: Learn how to use the Copilot feature in Dynamics 365 Customer Service to draft chat responses.
-ms.date: 02/19/2025
+ms.date: 06/04/2025
 ms.topic: how-to
 author: neeranelli
 ms.author: nenellim

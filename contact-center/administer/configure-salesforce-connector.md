@@ -53,7 +53,7 @@ The omnichannel add-in uses data connectors to work with non-Microsoft CRM solut
     1. Select **Create**.
 
 1. On the **Add Third party CRM connector** page, select **I agree to share connector permissions**, and then select **Next**.
-1. The **Enable salesforce permissions** page lists steps that you must complete in Salesforce. Sign in to the Salesforce instance that opens on a new tab, and then complete the steps that are listed. When you're finished, go to the setup page in Contact Center admin center, and select the checkbox that indicates that you completed the steps in Salesforce.
+1. The **Enable salesforce permissions** page lists steps that you must complete in Salesforce. Sign in to the Salesforce instance that opens on a new tab, and then complete the steps that are listed. When you're finished, go to the setup page in Copilot Service admin center, and select the checkbox that indicates you completed the steps in Salesforce.
 1. Select **Next**.
 1. On the **Choose tables to sync** page, select the `Contacts` and `Accounts` tables that you want to sync. To maintain the relationship about the linked data between the records, we recommend that you select both tables.
 1. Select **Next**.

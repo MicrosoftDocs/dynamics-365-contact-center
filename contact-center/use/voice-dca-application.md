@@ -1,5 +1,5 @@
 ---
-title: Use the Desktop companion application with the voice channel (preview)
+title: Use the Desktop companion application with the voice channel 
 description: Learn how to use the Desktop companion application with the voice channel.
 ms.date: 03/24/2025
 ms.topic: how-to
@@ -9,14 +9,12 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Use the Desktop companion application with the voice channel (preview)
+# Use the Desktop companion application with the voice channel 
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 
 The Desktop companion application serves as a backup when the Dynamics 365 Customer Service or Dynamics 365 Contact Center web application encounters issues and allows you to continue conversations without interruption.
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -55,6 +53,10 @@ You can do the following actions:
 > [!NOTE]
 > We recommend that you use the Desktop companion application with only one environment at a time. To switch between environments, close the current environment before moving to another.
 
+## Report issues
+
+If you encounter issues with the Desktop companion application, you can generate the support files and send them to Microsoft support. To generate the support files, right-click on the menu and select **Generate Support Files**.
+
 ## Related information
 
-[Install and manage Desktop companion application for voice channel (preview)](../administer/install-manage-desktop-app.md)
+[Install and manage Desktop companion application for voice channel](../administer/install-manage-desktop-app.md)

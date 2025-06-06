@@ -6,7 +6,7 @@
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
         href: ../implement/overview-contact-center.md?context=/dynamics365/contact-center/context/administer-context
-      - name: Use Contact Center admin center
+      - name: Use Copilot Service admin center
         href: cc-admin-center.md
       - name: Manage user roles and personas
         items:
@@ -142,7 +142,7 @@
             href: wfm-shift-activity-types.md
           - name: Enable schedule management
             href: wfm-enable-schedule-management.md
-          - name: Enable shift-based routing (preview)
+          - name: Enable shift-based routing
             href: wfm-enable-shift-based-routing.md
         - name: Time management
           items:
@@ -154,6 +154,8 @@
             href: wfm-enable-shift-bids.md
           - name: Enable shift swapping
             href: wfm-enable-shift-swapping.md
+        - name: Configure shift-based routing for work items
+          href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/administer-context
       - name: Email
         items:
         - name: Configure email
@@ -176,6 +178,18 @@
           href: /dynamics365/customer-service/administer/link-note-to-entity?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ about Activities and the Timeline Wall
           href: /powerapps/user/faq-for-timeline-and-activity
+      - name: Proactive engagement (preview)
+        items:
+        - name: Overview of proactive engagement
+          href: overview-proactive-engagement.md
+        - name: Configure proactive engagement
+          href: configure-proactive-engagement.md
+        - name: References for proactive engagement
+          items:
+          - name: Dial modes
+            href: configure-proactive-engagement.md#dial-modes
+          - name: Outcomes
+            href: configure-proactive-engagement.md#configure-outcomes
       - name: Voice
         items:
         - name: Introduction to the voice channel
@@ -547,7 +561,7 @@
       - name: App configuration
         items:
         - name: Migrate configurations for channels using solutions
-          href: /dynamics365/customer-service/administer/migrate-configurations?context=/dynamics365/contact-center/context/administer-context
+          href: /dynamics365/customer-service/administer/migrate-channel-config-using-solutions?context=/dynamics365/contact-center/context/administer-context
         - name: Best practices for configuration lifecycle management
           href: alm-best-practices.md
       - name: Responsible AI

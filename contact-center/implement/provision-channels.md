@@ -41,7 +41,7 @@ You can provision the following channels:
 
 ## Set up channels
 
-You can set up channels in the Contact Center admin center or Customer Service admin center application.
+You can set up channels in the Copilot Service admin center application.
 
 To set up the channels, perform the following steps:
 

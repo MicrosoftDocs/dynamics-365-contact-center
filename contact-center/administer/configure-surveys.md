@@ -151,9 +151,9 @@ You can edit your survey agents to fulfill your business needs as follows:
 - Add more actions
 - Add extra topic questions
 
-Edit the **Conversation Start** system topic only. All other system topics are disabled and must not be used.
-To add another question and store the data in Dataverse, the response variable name must start with “MCS_”.
-To add another context to pass to the survey agent, make sure that the context variable name is set to "mcs_additionalcontext" and set the value as JSON key value pair.
+Edit the **Conversation Start** system topic only. All other system topics are disabled and must not be used.  
+To add another question and store the data in Dataverse, the response variable name must start with “MCS_”.  
+To add another context to pass to the survey agent, make sure that the context variable name is set to "mcs_additionalcontext" and set the value as JSON key value pair.  
 
 > [!NOTE]
 > We recommend that you don't delete the survey agent from Copilot Studio.

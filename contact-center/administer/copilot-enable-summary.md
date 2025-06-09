@@ -47,6 +47,7 @@ For Copilot to automatically generate a conversation summary for a live conversa
    - **When a representative joins a conversation**: Generates a summary when a representative joins a conversation. A summary is also generated when the primary representative invites a collaborator and a second representative joins the conversation or when the primary representative transfers a conversation.
    - **When a conversation ends**: Generates a summary when the conversation ends. 
       - Select **Allow customer service representatives to create case with a button in the summary** to allow service representatives to see the **Create case** button in the conversation summary. A new case is created when the service representative selects **Create case**.
+      - The conversation summary also appears for the closed conversation in the **Summary** tab of the conversation form. You can access this form for a closed conversation in Copilot Service workspace by selecting **Activities** and then filtering by **Conversations**. 
    - **On demand, by selecting a button to summarize the conversation**: Generate a summary at any point in the conversation, whenever the service representative selects the copilot **Summarize conversation** in the conversation panel.
    - Select [**Manage format**](customize-copilot-conv-summary.md) to  the change the format in which the conversation summary is displayed to service representatives.
 

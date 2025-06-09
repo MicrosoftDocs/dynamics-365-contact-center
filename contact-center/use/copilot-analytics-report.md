@@ -24,7 +24,7 @@ Copilot helps customer service representatives (service representatives or repre
 
 The system stores the copilot interaction data in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteraction), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteractiondata), [msdyn_copilottranscript](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscript), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscriptdata) tables. You can use the information to build custom metrics in reporting and analytics and understand how Copilot is being used in your organization.
 
-To view the Copilot report, select **Copilot analytics** from the menu.
+To view the Copilot report, select **Copilot analytics** from the Copilot Service workspace menu.
 
 > [!NOTE]
 > Case summary isn't available for the Contact Center embedded experience.

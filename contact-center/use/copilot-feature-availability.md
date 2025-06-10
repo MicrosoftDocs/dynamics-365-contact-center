@@ -43,4 +43,4 @@ This article provides information about the Copilot features supported across Dy
 |[Use targeted phrases in Copilot to get responses from plugins (preview)](use-ask-a-question.md#use-targeted-phrases-in-copilot-to-get-responses-from-plugins-preview)| Yes | Yes | No | No |
 | [Use Copilot analytics](copilot-analytics-report.md) | Yes | Yes | No | No|
 | [Draft a chat response(preview)](use-copilot-features.md) | Yes | Yes | No | No|
-| [Filter knowledge articles to generate responses](/dynamics365/customer-service/use/use-copilot-filters) | Yes | No | No | No |
+

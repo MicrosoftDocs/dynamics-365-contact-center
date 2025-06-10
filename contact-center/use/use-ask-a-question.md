@@ -25,22 +25,13 @@ When you sign in to any of the Customer Service customer service representative 
 - Make sure that your administrator has turned on the Copilot features.
 - To use the summarize cases feature, [case summaries through ask a question](/dynamics365/customer-service/administer/enable-ask-summarize-cases) (preview) is enabled.
 
-## Navigation
 
-- In Copilot Service workspace, you can access **Ask a question** from the Copilot help pane once you sign in.
-- When you sign in to a non-Microsoft CRM, you can generate case summary as follows:
-   - Launch the embedded experience and then login to your Dynamics account.
-   - In the Copilot help pane that appears, select **Ask a question**.
 
 ## Draft questions
 
-You can ask free-form questions just as you'd ask your colleague or supervisor who might know the answers.
 
-With Copilot, you can take the following actions:
+[!INCLUDE[cc-ask-question-draft-question](../../shared/cc-ask-question-draft-question.md)]
 
-- **Ask a direct question**: Copilot shows the most relevant answer from the knowledge sources that your organization has provided. Based on the context of the question, Copilot proactively suggests prompts that you can use to ask follow-up questions or get more details.
-- **Ask follow-up turn by turn questions**: If Copilot's response isn't immediately useful, you can ask follow-up questions and guide Copilot in a natural, conversational way.
-- **Ask Copilot to attempt a better response**: Copilot can also rephrase responses based on more guidance such as, "Can you summarize your response?" or "Can you attempt a response providing details for each of the steps you mentioned?"
 
   :::image type="content" source="../media/copilot-ask-question-mini.png" alt-text="Screenshot of the Ask a question tab in Copilot." lightbox="../media/copilot-ask-question.png":::
 
@@ -48,7 +39,8 @@ With Copilot, you can take the following actions:
 
 Based on the app you are using, you can use Copilot to generate case summary and ask about case data from the **Ask a question** tab.
 
-### [Copilot Service workspace](#tab/standaloneapps)
+> [!IMPORTANT]
+> Case summaries and case data are available only in Customer Service. If you are using the Customer Service Hub app, you can use Copilot to ask questions about cases, but not to summarize them.
 
  In the Copilot Service workspace, Copilot enables you to:
 
@@ -68,15 +60,6 @@ You can make the following types of requests:
 - Get the case resolution details for a case.
 - Show cases for owner {owner name}.
 - Show case history.
-
-## [Embedded experience](#tab/embeddedapps)
-
-[!INCLUDE[cc-feature-availability-embed-only](../includes/cc-feature-availability-embed-only.md)]
-
-
-If you are using the embed experience or Microsoft 365 Copilot for Service, in a non-Microsoft CRM, the case summary appears as a card on the **Ask a question** tab in the Copilot help pane. Learn more in [summarize cases](copilot-use-summary.md).
-
----
 
 ## Use auto prompts
 

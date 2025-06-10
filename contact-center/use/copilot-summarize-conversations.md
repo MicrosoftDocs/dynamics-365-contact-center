@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 06/04/2025
+ms.date: 06/10/2025
 ms.custom: bap-template 
 ---
 
@@ -46,6 +46,10 @@ You can perform the following actions:
 - Select **Create case** to create a case and populate the description with the summary, if your administrator turned on this feature. This is applicable for Copilot Service workspace.
 - Share feedback about the summary.
 - Close the summary card.
+
+### View closed conversation summary
+
+You can also view the Copilot generated summary for a closed conversation. In Copilot Service workspace in the **Activities** view, filter by **Conversations** and then select the required conversation. Select the **Summary** tab. The summary for the conversation appears. Learn more in [View conversation transcripts and call recordings](/dynamics365/customer-service/use/voice-channel-call-recordings-transcripts).
 
 ## Next steps
 

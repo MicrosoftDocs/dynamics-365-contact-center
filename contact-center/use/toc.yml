@@ -104,6 +104,8 @@
           href: copilot-use-summary.md  
         - name: Summarize conversations
           href: use-conv-summary.md   
+        - name: Use Copilot to draft an email
+          href: use-write-email-embed.md  
       - name: Unified routing and assignment
         items:
           - name: View historical analytics reports

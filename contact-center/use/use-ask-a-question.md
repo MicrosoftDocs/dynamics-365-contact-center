@@ -64,7 +64,7 @@ You can make the following types of requests:
 
 [!INCLUDE [cc-ask-question-proprompt](../../shared/cc-ask-question-proprompt.md)]
 
-    :::image type="content" source="../media/proactive-prompting.png" alt-text="Screenshot shows options in proactive prompting.":::
+  :::image type="content" source="../media/proactive-prompting.png" alt-text="Screenshot shows options in proactive prompting.":::
 
 ### Use targeted phrases in Copilot to get responses from plugins (preview)
 
@@ -72,10 +72,10 @@ You can make the following types of requests:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-[!INCLUDE [cc-ask-question-copilotprompt](../../shared/cc-ask-question-copilotprompt.md)]
+[!INCLUDE [cc-ask-question-copilotprompt](../../shared/cc-use-ask-copilotprompt.md)]
 
 
-    :::image type="content" source="../media/screenshot-of-prompt-plugin-response-in-copilot.png" alt-text="A screenshot of the Copilot response generated through the prompt plugin.":::
+  :::image type="content" source="../media/screenshot-of-prompt-plugin-response-in-copilot.png" alt-text="A screenshot of the Copilot response generated through the prompt plugin.":::
 
 ### Use the responses
 

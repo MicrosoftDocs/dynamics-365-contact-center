@@ -15,7 +15,9 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-Copilot conversation summaries provide context and relay the steps that you took to solve the issue. You can summarize chat and transcribed voice conversations.
+
+
+[!INCLUDE[cc-conv-summary-intro](../includes/cc-conv-summary-intro.md)]
 
 ## Prerequisites
 
@@ -26,26 +28,25 @@ Your administrator enabled the Copilot conversation summary feature.
 
 ## Navigation
 
-- In Copilot Service workspace, you can select **Summarize conversation** for an ongoing conversation.
-- When you sign in to a non-Microsoft CRM, and launch the embedded experience, sign in to your Dynamics account and then select **Summarize conversation** from the communication panel when you're in a conversation with a customer.
+In Copilot Service workspace, you can select **Summarize conversation** for an ongoing conversation.
   
 ## View a conversation summary
 
 Based on your administrator's configuration, you see the following options in Copilot Service workspace:
 
-- The Copilot conversation summary generated automatically when you request a consultation with another customer service representative, transfer the conversation, or end the conversation. You can select **Summarize conversation** to generate the summary for an ongoing conversation, based on your administrator's configurations.
-- The summary is displayed in a paragraph format or a structured format.
-  - The paragraph format summarizes the conversation in a single paragraph.
+[!INCLUDE[cc-conv-summary-actions](../includes/cc-conv-summary-actions.md)]
+
+- Select **Create case** to create a case and populate the description with the summary, if your administrator turned on this feature.
+  > [!NOTE]
+  > You can see this option only if case management is configured.
+
+### [Paragraph format](#tab/paragraphformat)
+
      :::image type="content" source="../media/copilot-conv-summary.png" alt-text="Screenshot of a Copilot conversation summary.":::
-  - The structured format summarizes and organizes the information in the conversation based on the options your administrator selected. <br>
+
+### [Structured format](#tab/structuredformat)
+
      :::image type="content" source="../media/structured-conv-summary.png" alt-text="Screenshot of a structured Copilot conversation summary.":::
-
-You can perform the following actions:
-
-- Copy the summary.
-- Select **Create case** to create a case and populate the description with the summary, if your administrator turned on this feature. This is applicable for Copilot Service workspace.
-- Share feedback about the summary.
-- Close the summary card.
 
 ### View closed conversation summary
 

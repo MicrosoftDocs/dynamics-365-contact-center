@@ -29,7 +29,7 @@ With survey agents, you can:
 - Allow supervisors to view and review feedback summarized into actionable insights.
 
 > [!NOTE]
-> - The survey agent is generally available for the voice channel.
+> - The survey agent is generally available for the voice channel and in preview for all other channels.
 > - When you copy an environment, while the survey agents are copied, they won't work as expected in the target environment. We recommend that you create new survey agents in the target environment.
 
 ## How it works

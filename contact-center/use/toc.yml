@@ -98,9 +98,12 @@
           href: copilot-chat-customer-service-data.md
       - name: Use Copilot features in non-Microsoft CRMs
         items:  
+        - name: Use ask a question in non-Microsoft CRMs
+          href: embed-ask-a-question.md
         - name: Summarize cases
-          href: copilot-use-summary.md
-        - name:   
+          href: copilot-use-summary.md  
+        - name: Summarize conversations
+          href: use-conv-summary.md   
       - name: Unified routing and assignment
         items:
           - name: View historical analytics reports

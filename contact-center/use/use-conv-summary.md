@@ -12,11 +12,11 @@ ms.custom: bap-template
 
 # Use Copilot to summarize conversations in non-Microsoft CRMs
 
-[!INCLUDE[cc-conv-summary-intro](../includes/cc-conv-summary-intro.md)]
+[!INCLUDE[cc-conv-summary-intro](../../shared/cc-conv-summary-intro.md)]
 
 ## Prerequisites
 
-[!INCLUDE[cc-conv-summary-prereq](../includes/cc-conv-summary-prereq.md)]
+[!INCLUDE[cc-conv-summary-prereq](../../shared/cc-conv-summary-prereq.md)]
 
 ## Navigation
 
@@ -24,4 +24,4 @@ When you sign in to a non-Microsoft CRM, and launch the embedded experience, sig
 
 ## View a conversation summary
 
-[!INCLUDE[cc-conv-summary-actions](../includes/cc-conv-summary-actions.md)]
+[!INCLUDE[cc-conv-summary-actions](../../shared/cc-conv-summary-actions.md)]

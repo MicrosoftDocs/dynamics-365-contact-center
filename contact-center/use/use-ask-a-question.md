@@ -13,7 +13,7 @@ ms.custom: bap-template
 # Ask a question 
 
 
-[!INCLUDE [cc-ask-question-autoprompt](../includes/cc-ask-question-intro.md)]
+[!INCLUDE [cc-ask-question-intro](../../shared/cc-ask-question-intro.md)]
 
 > [!IMPORTANT]
 > The AI-generated content is a suggestion. It's your responsibility to review and edit the suggested content to make sure it's accurate and appropriate before sharing the responses.
@@ -21,7 +21,7 @@ ms.custom: bap-template
 ## Prerequisites
 
 - Make sure that your administrator has turned on the Copilot features.
-- To use the summarize cases feature, [case summaries through ask a question](/dynamics365/customer-service/administer/enable-ask-summarize-cases) (preview) is enabled.
+- To use the summarize cases feature, [case summaries through ask a question](/dynamics365/customer-service/administer/enable-ask-summarize-cases) is enabled.
 
 
 ## Draft questions
@@ -58,11 +58,11 @@ You can make the following types of requests:
 
 ## Use auto prompts
 
-[!INCLUDE [cc-ask-question-autoprompt](../includes/cc-ask-question-autoprompt.md)]
+[!INCLUDE [cc-ask-question-autoprompt](../../shared/cc-ask-question-autoprompt.md)]
 
 ## Use proactive prompts
 
-[!INCLUDE [cc-ask-question-proprompt](../includes/cc-ask-question-proprompt.md)]
+[!INCLUDE [cc-ask-question-proprompt](../../shared/cc-ask-question-proprompt.md)]
 
     :::image type="content" source="../media/proactive-prompting.png" alt-text="Screenshot shows options in proactive prompting.":::
 
@@ -72,18 +72,18 @@ You can make the following types of requests:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-[!INCLUDE [cc-ask-question-copilotprompt](../includes/cc-ask-question-copilotprompt.md)]
+[!INCLUDE [cc-ask-question-copilotprompt](../../shared/cc-ask-question-copilotprompt.md)]
 
 
     :::image type="content" source="../media/screenshot-of-prompt-plugin-response-in-copilot.png" alt-text="A screenshot of the Copilot response generated through the prompt plugin.":::
 
 ### Use the responses
 
-[!INCLUDE [cc-ask-question-responses](../includes/cc-ask-question-responses.md)]
+[!INCLUDE [cc-ask-question-responses](../../shared/cc-ask-question-responses.md)]
 
 ## Translate responses
 
-[!INCLUDE [cc-use-translate-responses](../includes/cc-use-translate-responses.md)]
+[!INCLUDE [cc-use-translate-responses](../../shared/cc-use-translate-responses.md)]
 
 ## Related information
 

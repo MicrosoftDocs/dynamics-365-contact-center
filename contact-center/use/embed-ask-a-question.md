@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Use ask a question in non-Microsoft CRMs
 
-[!INCLUDE [cc-ask-question-autoprompt](../includes/cc-ask-question-intro.md)]
+[!INCLUDE [cc-ask-question-autoprompt](../../shared/cc-ask-question-intro.md)]
  The other features that you can access from this tab are:
 
 - Summarize cases
@@ -34,7 +34,7 @@ You can use the **Ask a question** feature to do the following actions.
 
 ### Use auto prompts
 
-[!INCLUDE [cc-ask-question-autoprompt](../includes/cc-ask-question-autoprompt.md)]
+[!INCLUDE [cc-ask-question-autoprompt](../../shared/cc-ask-question-autoprompt.md)]
 
  
 ### Use targeted phrases in Copilot to get responses from plugins (preview)
@@ -43,15 +43,15 @@ You can use the **Ask a question** feature to do the following actions.
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-[!INCLUDE [cc-ask-question-copilotprompt](../includes/cc-ask-question-copilotprompt.md)]
+[!INCLUDE [cc-ask-question-copilotprompt](../../shared/cc-ask-question-copilotprompt.md)]
 
 ### Use the responses
 
-[!INCLUDE [cc-ask-question-responses](../includes/cc-ask-question-responses.md)]
+[!INCLUDE [cc-ask-question-responses](../../shared/cc-ask-question-responses.md)]
 
 ### Translate responses
 
-[!INCLUDE [cc-use-translate-responses](../includes/cc-use-translate-responses.md)]
+[!INCLUDE [cc-use-translate-responses](../../shared/cc-use-translate-responses.md)]
 
 
 :::image type="content" source="../media/embed-copilot-help-pane-mini.png" alt-text="Screenshot of the Ask a question tab in embedded Copilot." lightbox="../media/embed-copilot-help-pane.png":::

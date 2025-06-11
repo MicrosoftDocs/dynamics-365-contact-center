@@ -43,7 +43,7 @@ You can use the **Ask a question** feature to do the following actions.
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-[!INCLUDE [cc-ask-question-copilotprompt](../../shared/cc-ask-question-copilotprompt.md)]
+[!INCLUDE [cc-ask-question-copilotprompt](../../shared/cc-use-ask-copilotprompt.md)]
 
 ### Use the responses
 

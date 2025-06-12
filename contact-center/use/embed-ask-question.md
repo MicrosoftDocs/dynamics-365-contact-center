@@ -55,7 +55,7 @@ You can use the **Ask a question** feature to do the following actions.
 [!INCLUDE [cc-use-translate-responses](../../shared/cc-use-translate-responses.md)]
 
 
-:::image type="content" source="../media/embed-copilot-help-pane-mini.png" alt-text="Screenshot of the Ask a question tab in embedded Copilot." lightbox="../media/embed-copilot-help-pane.png":::
+ :::image type="content" source="../media/embed-copilot-help-pane-mini.png" alt-text="Screenshot of the Ask a question tab in embedded Copilot." lightbox="../media/embed-copilot-help-pane.png":::
 
 ## Summarize cases
 
@@ -69,4 +69,5 @@ Copilot generates resolution notes based on the case details, emails, and notes 
 1. Select the embedded Copilot. The Copilot help pane appears.
 1. In the **Ask a question** tab, select **Generate resolution notes**. The conversation summary appears as a card in the help pane.
 
-:::image type="content" source="../media/embed-copilot-summary-mini.png" alt-text="Screenshot of in embedded Copilot." lightbox="../media/embed-copilot-summary.png":::
+ :::image type="content" source="../media/embed-copilot-summary-mini.png" alt-text="Screenshot of in embedded Copilot." lightbox="../media/embed-copilot-summary.png":::
+

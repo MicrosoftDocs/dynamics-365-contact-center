@@ -58,3 +58,6 @@ If your administrator enabled knowledge sources, the following actions occur:
 ## Start over
 
 [!INCLUDE [cc-write-email-startover](../../shared/cc-write-email-startover.md)]
+
+
+  :::image type="content" source="../media/embed-copilot-email.png" alt-text="Screenshot shows options to write emails.":::

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: overview
 ms.collection: get-started
-ms.date: 01/16/2025
+ms.date: 05/15/2025
 ms.custom: bap-template
 ---
 
@@ -34,4 +34,4 @@ Here are some of the key capabilities of Dynamics 365 Contact Center:
 
 ## Related information
 
-[Use Contact Center admin center to configure features](../administer/cc-admin-center.md)
+[Use Copilot Service admin center to configure features](../administer/cc-admin-center.md)

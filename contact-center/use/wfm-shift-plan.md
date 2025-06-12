@@ -1,6 +1,6 @@
 ---
 title: Create and schedule a shift plan
-description: Learn how to create and schedule a shift plan in Dynamics 365 Contact Center workspace to help you more easily manage your staffing needs.
+description: Learn how to create and schedule a shift plan in Copilot Service workspace to help you more easily manage your staffing needs.
 ms.date: 04/11/2025
 ms.topic: how-to
 author: lalexms
@@ -61,9 +61,9 @@ Once you define your shift plan, you must schedule your customer service represe
 
 1. In the site map of the Copilot Service workspace app, go to **Workforce management**, and then select **Shift Planning**. The **My Shift Plans** page appears, and includes a list of any shift plans you previously defined.
 
-1. Select the shift plan that you want to schedule by selecting the checkbox next to it, and then select **Schedule people** in the toolbar. The shift scheduler opens.
+1. Select the shift plan that you want to schedule by selecting the checkbox next to it, and then select **Schedule people** in the toolbar. (You might need to select the ellipsis to see the **Schedule people** option.) The shift scheduler opens.
 
-   Alternatively, you can also navigate to the shift plan from the **My Shift Plans** list. On the Shift Plan form, click on **Schedule** button in the toolbar. The shift scheduler opens.
+   Alternatively, you can also navigate to the shift plan from the **My Shift Plans** list. On the Shift Plan form, select **Schedule** on the toolbar. The shift scheduler opens.
 
 1. The scheduler displays all recommended customer service representatives by default, and shows them on the **Matched** tab. Recommended service representatives are those representatives who meet the **Skills** and **Queues** criteria of the shift plan. You can also view all customer service representatives, irrespective of whether they meet the skills or queues criteria, by selecting the **All** tab.
 
@@ -122,7 +122,7 @@ Complete the following steps to publish the schedules.
 
    Customer service representatives receive notifications of their bookings and can view the published bookings on the **My Schedule** calendar.
 
-## See also
+## Related information
 
 [Configure capacity planning](../administer/wfm-configure-capacity-planning.md)
 

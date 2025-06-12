@@ -103,7 +103,7 @@
         - name: Summarize cases
           href: copilot-use-summary.md 
         - name: Generate resolution notes
-          href: embed-ask-a-question.md#generate-resolution-notes   
+          href: embed-ask-question.md#generate-resolution-notes   
         - name: Summarize conversations
           href: use-conversation-summary.md   
         - name: Use Copilot to draft an email

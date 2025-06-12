@@ -6,11 +6,13 @@ ms.author: mgandham
 ms.reviewer: 
 ms.topic: how-to
 ms.collection:
-ms.date: 03/07/2025
+ms.date: 06/13/2025
 ms.custom: bap-template 
 ---
 
 # Ask a question 
+
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability.md)]
 
 
 [!INCLUDE [cc-ask-question-intro](../../shared/cc-ask-question-intro.md)]
@@ -66,9 +68,7 @@ You can make the following types of requests:
 
   :::image type="content" source="../media/proactive-prompting.png" alt-text="Screenshot shows options in proactive prompting.":::
 
-### Use targeted phrases in Copilot to get responses from plugins (preview)
-
-[!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
+## Use targeted phrases in Copilot to get responses from plugins (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -77,7 +77,7 @@ You can make the following types of requests:
 
   :::image type="content" source="../media/screenshot-of-prompt-plugin-response-in-copilot.png" alt-text="A screenshot of the Copilot response generated through the prompt plugin.":::
 
-### Use the responses
+## Use the responses
 
 [!INCLUDE [cc-ask-question-responses](../../shared/cc-ask-question-responses.md)]
 

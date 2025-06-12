@@ -6,11 +6,14 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 06/10/2025
+ms.date: 06/13/2025
 ms.custom: bap-template 
 ---
 
 # Use Copilot to summarize conversations in non-Microsoft CRMs
+
+[!INCLUDE[cc-feature-availability-embed](../includes/cc-feature-availability-embed.md)]
+
 
 [!INCLUDE[cc-conv-summary-intro](../../shared/cc-conv-summary-intro.md)]
 

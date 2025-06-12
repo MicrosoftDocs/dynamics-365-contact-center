@@ -6,11 +6,14 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 05/15/2025
+ms.date: 06/13/2025
 ms.custom: bap-template 
 ---
 
 # Use Copilot to draft an email in non-microsoft CRMs
+
+[!INCLUDE[cc-feature-availability-embed-only](../includes/cc-feature-availability-embed-only.md)]
+
 
 [!INCLUDE [cc-write-email-intro](../../shared/cc-write-email-intro.md)]
 

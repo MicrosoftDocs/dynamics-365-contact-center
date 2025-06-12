@@ -6,16 +6,14 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 06/10/2025
+ms.date: 06/13/2025
 ms.custom: bap-template 
 ---
 
 
 # Use Copilot to summarize conversations
 
-[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
-
-
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability.md)]
 
 [!INCLUDE[cc-conv-summary-intro](../../shared/cc-conv-summary-intro.md)]
 

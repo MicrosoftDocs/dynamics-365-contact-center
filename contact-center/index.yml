@@ -114,7 +114,7 @@ additionalContent:
       links:
       - url: use/use-copilot-features.md
         text: Copilot feature availability across applications
-      - url: copilot-feature-availability.md
+      - url: use/copilot-feature-availability.md
         text: Use Copilot to solve customer issues
       - url: use/copilot-summarize-conversations.md  
         text: Use Copilot to summarize conversations

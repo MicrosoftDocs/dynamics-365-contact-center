@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 05/13/2025
+ms.date: 06/13/2025
 ms.custom: bap-template 
 ---
 
@@ -40,7 +40,7 @@ This article provides information about the Copilot features supported across Dy
 | [Add trusted webpages as sources](../administer/copilot-enable-help-pane.md#enable-ask-a-question)  | Yes                          | Yes                                               | No                                               | No                             |
 | [Use Copilot to generate knowledge drafts from cases (preview)](/dynamics365/customer-service/use/use-copilot-knowledge-from-cases) | Yes | No | No | No |
 |[Ask about case data](use-ask-a-question.md#summarize-cases-and-ask-about-case-data)| Yes | No | No | No|
-|[Use targeted phrases in Copilot to get responses from plugins (preview)](use-ask-a-question.md#use-targeted-phrases-in-copilot-to-get-responses-from-plugins-preview)| Yes | Yes | No | No |
+|[Use targeted phrases in Copilot to get responses from plugins (preview)](use-ask-a-question.md#use-targeted-phrases-in-copilot-to-get-responses-from-plugins-preview)| Yes | Yes | Yes | Yes |
 | [Use Copilot analytics](copilot-analytics-report.md) | Yes | Yes | No | No|
 | [Draft a chat response(preview)](use-copilot-features.md) | Yes | Yes | No | No|
 

@@ -80,7 +80,7 @@
           items:
           - name: Use intent-based suggestions
             href: use-intent-suggestions.md
-      - name: Use Copilot in Dynamics 365 Contact Center
+      - name: Use Copilot features in contact center&mdash;standalone
         items: 
         - name: Copilot feature availability across applications
           href: copilot-feature-availability.md  
@@ -98,10 +98,12 @@
           href: copilot-chat-customer-service-data.md
       - name: Use Copilot features in non-Microsoft CRMs
         items:  
-        - name: Use ask a question in non-Microsoft CRMs
-          href: embed-ask-a-question.md
+        - name: Use ask a question
+          href: embed-ask-a-question.md  
         - name: Summarize cases
-          href: copilot-use-summary.md  
+          href: copilot-use-summary.md 
+        - name: Generate resolution notes
+          href: embed-ask-a-question.md#generate-resolution-notes   
         - name: Summarize conversations
           href: use-conv-summary.md   
         - name: Use Copilot to draft an email

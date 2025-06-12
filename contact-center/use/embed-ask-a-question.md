@@ -6,14 +6,17 @@ ms.author: mgandham
 ms.reviewer: 
 ms.topic: how-to
 ms.collection:
-ms.date: 03/07/2025
+ms.date: 06/13/2025
 ms.custom: bap-template 
 ---
 
 # Use ask a question in non-Microsoft CRMs
 
-[!INCLUDE [cc-ask-question-autoprompt](../../shared/cc-ask-question-intro.md)]
- The other features that you can access from this tab are:
+[!INCLUDE[cc-feature-availability-embed-only](../includes/cc-feature-availability-embed-only.md)]
+
+[!INCLUDE [cc-ask-question-intro](../../shared/cc-ask-question-intro.md)]
+
+The other features that you can access from this tab are:
 
 - Summarize cases
 - Generate resolution notes
@@ -38,8 +41,6 @@ You can use the **Ask a question** feature to do the following actions.
 
  
 ### Use targeted phrases in Copilot to get responses from plugins (preview)
-
-[!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

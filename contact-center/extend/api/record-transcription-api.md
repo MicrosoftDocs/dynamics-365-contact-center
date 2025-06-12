@@ -18,12 +18,12 @@ The [Voice module](https://github.com/microsoft/dynamics-365-contact-center/blob
 
 ## Available methods
 
-**startRecording**: Initiates voice call recording with automatic transcription.
-**pauseRecording**: Temporarily pauses ongoing recording operations.
-**onRecordingOperationCompleted**: Invokes a callback function with event data when the recording operation is completed.
-**startTranscription**: Begins transcription without full recording.
-**pauseTranscription**: Pauses active transcription services.
-**onTranscriptionOperationCompleted**: EInvokes a callback function with event data when the transcription operation is completed.
+- **startRecording**: Initiates voice call recording with automatic transcription.
+- **pauseRecording**: Temporarily pauses ongoing recording operations.
+- **onRecordingOperationCompleted**: Invokes a callback function with event data when the recording operation is completed.
+- **startTranscription**: Begins transcription without full recording.
+- **pauseTranscription**: Pauses active transcription services.
+- **onTranscriptionOperationCompleted**: Invokes a callback function with event data when the transcription operation is completed.
 
 Learn more about the methods in [available methods in voice module](https://github.com/microsoft/dynamics-365-contact-center/blob/main/documentation/Embed%20SDK%20APIs/classes/VoiceModule.md)
 
@@ -35,15 +35,15 @@ The following is a sample code that pauses the recording of a voice or video cal
 // Wait until voiceOrVideoCalling is available (retry up to 10 times)
 async function waitForVoiceOrVideoCalling(retries = 10, delay = 500) {
     for (let i = 0; i < retries; i++) {
-        const vvc = window.Microsoft?.CCaaS?.CCaaSSdk?.voice;
+        const vvc = window.Microsoft.CCaaS.CCaaSSdk.voice;
         if (vvc) {
-            console.log("voiceOrVideoCalling is available.");
+            console.log("voiceCalling is available.");
             return vvc;
         }
-        console.log("Waiting for voiceOrVideoCalling...");
+        console.log("Waiting for voiceCalling...");
         await new Promise((res) => setTimeout(res, delay));
     }
-    console.warn("voiceOrVideoCalling still not available after retrying.");
+    console.warn("voiceCalling still not available after retrying.");
     return null;
 }
  

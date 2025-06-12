@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer:
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 04/18/2025
+ms.date: 06/09/2025
 ms.custom: bap-template
 ---
 
@@ -29,7 +29,7 @@ With survey agents, you can:
 - Allow supervisors to view and review feedback summarized into actionable insights.
 
 > [!NOTE]
-> - The survey agent is generally available for the voice channel.
+> - The survey agent is generally available for the voice channel and in preview for all other channels.
 > - When you copy an environment, while the survey agents are copied, they won't work as expected in the target environment. We recommend that you create new survey agents in the target environment.
 
 ## How it works
@@ -151,8 +151,9 @@ You can edit your survey agents to fulfill your business needs as follows:
 - Add more actions
 - Add extra topic questions
 
-Edit the **Conversation Start** system topic only. All other system topics are disabled and must not be used.
-If you would like to add an additional question and store the data in Dataverse, the response variable name must start with “MCS_”.
+Edit the **Conversation Start** system topic only. All other system topics are disabled and must not be used.  
+To add another question and store the data in Dataverse, the response variable name must start with “MCS_”.  
+To add another context to pass to the survey agent, make sure that the context variable name is set to "mcs_additionalcontext" and set the value as JSON key value pair.  
 
 > [!NOTE]
 > We recommend that you don't delete the survey agent from Copilot Studio.

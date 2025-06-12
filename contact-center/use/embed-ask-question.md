@@ -1,6 +1,6 @@
 ---
-title: Ask a question
-description: Learn how to use the ask a question feature in Copilot within Customer Service customer service representative apps to enhance efficiency.
+title: Use ask a question in non-Microsoft CRMs
+description: Learn how to use the ask a question feature in non-Microsoft CRMs.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: 
@@ -10,82 +10,63 @@ ms.date: 06/13/2025
 ms.custom: bap-template 
 ---
 
-# Ask a question 
+# Use ask a question in non-Microsoft CRMs
 
-[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability.md)]
-
+[!INCLUDE[cc-feature-availability-embed-only](../includes/cc-feature-availability-embed-only.md)]
 
 [!INCLUDE [cc-ask-question-intro](../../shared/cc-ask-question-intro.md)]
 
-> [!IMPORTANT]
-> The AI-generated content is a suggestion. It's your responsibility to review and edit the suggested content to make sure it's accurate and appropriate before sharing the responses.
+The other features that you can access from this tab are:
 
-## Prerequisites
+- Summarize cases
+- Generate resolution notes
 
-- Make sure that your administrator has turned on the Copilot features.
-- To use the summarize cases feature, [case summaries through ask a question](/dynamics365/customer-service/administer/enable-ask-summarize-cases) is enabled.
+## Navigation
 
+- When you sign in to a non-Microsoft CRM, you can generate case summary as follows:
+   - Launch the embedded experience and then login to your Dynamics account.
+   - In the Copilot help pane that appears, select **Ask a question**.
 
-## Draft questions
+## Ask a question
+
+You can use the **Ask a question** feature to do the following actions.
+
+### Draft questions
 
 [!INCLUDE[cc-ask-question-draft-question](../../shared/cc-ask-question-draft-question.md)]
 
-  :::image type="content" source="../media/copilot-ask-question-mini.png" alt-text="Screenshot of the Ask a question tab in Copilot." lightbox="../media/copilot-ask-question.png":::
-
-## Summarize cases and ask about case data
-
-Based on the app you are using, you can use Copilot to generate case summary and ask about case data from the **Ask a question** tab.
-
-> [!IMPORTANT]
-> Case summaries and case data are available only if case management is available. If you are using the Customer Service Hub app, you can use Copilot to ask questions about cases, but not to summarize them.
-
- In Copilot Service workspace, Copilot enables you to:
-
-- **Ask to summarize cases** (preview): Copilot generates case summaries directly within the Ask a question tab, allowing you to access them without disrupting your current workflow. The case summary includes key information such as the case title, customer, priority, case type, and description.
-- **Ask about case data** (preview): Copilot enables you to access and use case data effectively, resulting in improved case management. You can ask questions about your case data to manage case workload in a better way.
-
-You can make the following types of requests:
-
-- Get details on the high-priority cases for a specified date range.
-- Show all high-priority cases.
-- Show active escalated cases.
-- Show cases that are due soon.
-- Show cases due the next day.
-- Show active cases that service representatives own.
-- Show my active cases.
-- Get the case details.
-- Get the case resolution details for a case.
-- Show cases for owner {owner name}.
-- Show case history.
-
-## Use auto prompts
+### Use auto prompts
 
 [!INCLUDE [cc-ask-question-autoprompt](../../shared/cc-ask-question-autoprompt.md)]
 
-## Use proactive prompts
-
-[!INCLUDE [cc-ask-question-proprompt](../../shared/cc-ask-question-proprompt.md)]
-
-  :::image type="content" source="../media/proactive-prompting.png" alt-text="Screenshot shows options in proactive prompting.":::
-
-## Use targeted phrases in Copilot to get responses from plugins (preview)
+ 
+### Use targeted phrases in Copilot to get responses from plugins (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 [!INCLUDE [cc-ask-question-copilotprompt](../../shared/cc-use-ask-copilotprompt.md)]
 
-
-  :::image type="content" source="../media/screenshot-of-prompt-plugin-response-in-copilot.png" alt-text="A screenshot of the Copilot response generated through the prompt plugin.":::
-
-## Use the responses
+### Use the responses
 
 [!INCLUDE [cc-ask-question-responses](../../shared/cc-ask-question-responses.md)]
 
-## Translate responses
+### Translate responses
 
 [!INCLUDE [cc-use-translate-responses](../../shared/cc-use-translate-responses.md)]
 
-## Related information
 
-[Enable features in Copilot pane](../administer/copilot-enable-help-pane.md)
+:::image type="content" source="../media/embed-copilot-help-pane-mini.png" alt-text="Screenshot of the Ask a question tab in embedded Copilot." lightbox="../media/embed-copilot-help-pane.png":::
 
+## Summarize cases
+
+You can also generate case summaries directly within the Ask a question tab. Learn more in [Summarize cases in non-Microsoft CRMs](copilot-use-summary.md).
+
+## Generate resolution notes
+
+Copilot generates resolution notes based on the case details, emails, and notes linked to the case to help you close the case or incident faster. The generated resolution summary includes the issue, root cause, troubleshooting steps, and resolution provided. You can copy the summary, refresh it, and provide feedback.
+
+1. Select the required case.
+1. Select the embedded Copilot. The Copilot help pane appears.
+1. In the **Ask a question** tab, select **Generate resolution notes**. The conversation summary appears as a card in the help pane.
+
+:::image type="content" source="../media/embed-copilot-summary-mini.png" alt-text="Screenshot of in embedded Copilot." lightbox="../media/embed-copilot-summary.png":::

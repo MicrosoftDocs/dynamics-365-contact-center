@@ -1,6 +1,6 @@
 ---
 title: Use Copilot to summarize conversations
-description: Learn how customer service representatives can use Copilot to summarize cases and conversations in Copilot Service workspace.
+description: Learn how customer service representatives can use Copilot to summarize conversations.
 author: gandhamm 
 ms.author: mgandham 
 ms.reviewer: mgandham

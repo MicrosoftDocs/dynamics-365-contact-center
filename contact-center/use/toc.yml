@@ -99,13 +99,13 @@
       - name: Use Copilot features in non-Microsoft CRMs
         items:  
         - name: Use ask a question
-          href: embed-ask-a-question.md  
+          href: embed-ask-question.md  
         - name: Summarize cases
           href: copilot-use-summary.md 
         - name: Generate resolution notes
           href: embed-ask-a-question.md#generate-resolution-notes   
         - name: Summarize conversations
-          href: use-conv-summary.md   
+          href: use-conversation-summary.md   
         - name: Use Copilot to draft an email
           href: use-write-email-embed.md  
       - name: Unified routing and assignment

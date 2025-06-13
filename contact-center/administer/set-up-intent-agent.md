@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 05/14/2025
+ms.date: 06/13/2025
 ms.custom: bap-template
 ---
 
@@ -101,7 +101,7 @@ This section lists the output variables from Customer Intent Agent that provide 
 |Global.IntentInterviewComplete    |  If set to true, ensures that the intent is determined and all the interview questions were answered.       |
 |Global.IntentInterviewIncomplete    |   If set to true, indicates that the intent is determined but not all interview questions were answered. You can still query knowledge based on the information gathered, but you might choose a different behavior.  |
 |Global.IntentUndetected     |    If set to true, indicates that a known intent from the intent library wasn't detected, or was detected but rejected by the customer. |
-|Global.IntentShifted     |   If set to true, indicates that the customer's intent shifted but AllowIntentShift is set to false.     |
+|Global.IntentDetectedWithoutAttributes  |  If set to true, indicates that an intent has been successfully detected, but there are no associated interview questions to ask the user. A solutionQuery is still generated and available for use.  |
 |Global.IntentError    |     If set to true, indicates that there was an error in detecting intent. The issue could be transitory like a time-out, but if it's consistent, we recommend that you disable intent-based suggestions and contact support. | 
 
 ## Variables in the Intent-based suggestions - Configuration topic
@@ -113,7 +113,7 @@ The **Intent-based suggestions - Configuration** is a noncustomizable topic that
 |Global.EnableIntentConfirmation    |    False     |      If enabled, agent asks the customer to confirm the intent before moving on to the intent attributes questions.    |
 |Global.EnableIntentRephrase     |   False      |    If enabled, and if intent can't be determined or intent isn't confirmed by customer, customers are asked to rephrase their issue.      |
 |Global.RephraseCount     |     1    |   Determines the number of times customers are asked to rephrase before giving up.       |
-|Global.AllowIntentShift      |  False       | If enabled, when intent change is detected, the confirmation and interview process starts again for the newly detected intent. If disabled, it ends the loop if a shift in customer intent is detected.         |
+|Global.MaxRepetitionCount    |  2      | Defines the maximum number of times the agent can repeat an interview question that shares the same attributes. If the user doesn't provide a valid response on the first attempt, the agent asks the question one more time. If it still remains unanswered, the agent proceeds to the next question. |
 |Global.EnableAskAllQuestions     |   False       |    If enabled, asks all intent-attribute questions before ending the loop, regardless of whether the customer answers the question in the next turn. If disabled, as soon as the customer doesn’t answer an intent attribute question, ends the loop (a solution query is still generated and generated answers are still initiated).      |
 
 ### Override default variable

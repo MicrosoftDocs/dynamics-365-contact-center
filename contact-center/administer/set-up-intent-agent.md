@@ -112,8 +112,8 @@ The **Intent-based suggestions - Configuration** is a noncustomizable topic that
 |---------|---------|---------|
 |Global.EnableIntentConfirmation    |    False     |      If enabled, agent asks the customer to confirm the intent before moving on to the intent attributes questions.    |
 |Global.EnableIntentRephrase     |   False      |    If enabled, and if intent can't be determined or intent isn't confirmed by customer, customers are asked to rephrase their issue.      |
-|Global.RephraseCount     |     1    |   Determines the number of times customers are asked to rephrase before giving up.       |
-|Global.MaxRepetitionCount    |  2      | Defines the maximum number of times the agent can repeat an interview question that shares the same attributes. If the user doesn't provide a valid response on the first attempt, the agent asks the question one more time. If it still remains unanswered, the agent proceeds to the next question. |
+|Global.RephraseCount     |     1    |   Determines how many times customers are asked to rephrase before they give up.|
+|Global.MaxRepetitionCount    |  2      | Sets the maximum number of times the agent repeats an interview question with the same attributes. If the user doesn't provide a valid response on the first attempt, the agent asks the question again. If the user still doesn't answer, the agent moves to the next question. |
 |Global.EnableAskAllQuestions     |   False       |    If enabled, asks all intent-attribute questions before ending the loop, regardless of whether the customer answers the question in the next turn. If disabled, as soon as the customer doesn’t answer an intent attribute question, ends the loop (a solution query is still generated and generated answers are still initiated).      |
 
 ### Override default variable

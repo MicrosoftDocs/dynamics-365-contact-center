@@ -1,6 +1,6 @@
 ---
 title: Closure options and descriptions
-description: This article provides a list of session closure options.
+description: This article provides a list of session closure options and their descriptions.
 author: neeranelli
 ms.component: pa-user
 ms.topic: reference

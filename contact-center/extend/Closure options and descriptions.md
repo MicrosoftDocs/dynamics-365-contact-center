@@ -13,7 +13,7 @@ ms.assetid:
 
 # Closure options and descriptions
 
-[!INCLUDE[cc-rebrand-bot-agent](../../includes/cc-rebrand-bot-agent.md)]
+[!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 The session closure options and their description is as follows.
 

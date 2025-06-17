@@ -5,7 +5,6 @@ author: neeranelli
 ms.component: pa-user
 ms.topic: reference
 ms.date: 06/17/2025
-ms.subservice: end-user
 ms.author: nenellim
 ms.custom: ""
 ms.reviewer: nenellim
@@ -22,7 +21,7 @@ The session closure options and their description is as follows.
 |-----|-----|-----------|
 |192350000|**Default**|Indicates that no other closure reason is applicable.|
 |192350001|**AgentReject**|Indicates that the customer service representative (service representative or representative) declined the conversation.|
-|192350002|**AgentTimeout**|Indicates that the representative didn't respond to the conversation notification within the allotted time.|Add commentMore actions
+|192350002|**AgentTimeout**|Indicates that the representative didn't respond to the conversation notification within the allotted time.|
 |192350003|**ConversationTimeout**|Indicates that the conversation session ended because of a time out.|
 |192350004|**AgentClosed**|Indicates that the representative ended the session, which means the representative selected the session tab "X".|
 |192350005|**ConversationClosed**|Indicates that the conversation session was closed.|

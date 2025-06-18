@@ -1,5 +1,5 @@
 ---
-title: Session closure options and descriptions
+title: Session closure options with description
 description: Learn about session closure options and their descriptions.
 author: neeranelli
 ms.author: nenellim
@@ -8,9 +8,9 @@ ms.date: 06/18/2025
 ms.reviewer: nenellim
 ---
 
-# Session closure options and descriptions
+# Session closure options with descriptions
 
-When a session in the conversation is closed, the system identifies the reason and populates the value in the `msdyn_ocsession` table. The closure options and their descriptions are as follows.
+When a session in the conversation is closed, the system identifies the reason and populates the value in the `msdyn_ocsession` table. The closure options with their description are as follows.
 
 |Value|Label|Description|
 |-----|-----|-----------|

@@ -1,21 +1,16 @@
 ---
-title: Closure options and descriptions
-description: This article provides a list of session closure options and their descriptions.
+title: Session closure options and descriptions
+description: Learn about session closure options and their descriptions.
 author: neeranelli
-ms.component: pa-user
-ms.topic: reference
-ms.date: 06/17/2025
 ms.author: nenellim
-ms.custom: ""
+ms.topic: reference
+ms.date: 06/18/2025
 ms.reviewer: nenellim
-ms.assetid: 
 ---
 
-# Closure options and descriptions
+# Session closure options and descriptions
 
-[!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
-
-The session closure options and their description is as follows.
+When a session in the conversation is closed, the system identifies the reason and populates the value in the `msdyn_ocsession` table. The closure options and their descriptions are as follows.
 
 |Value|Label|Description|
 |-----|-----|-----------|
@@ -51,3 +46,7 @@ The session closure options and their description is as follows.
 |192350029|**BotCallFailureExternalTransfer**|When agent transfers the call to an external phone number because of some internal failure and conversation ends.|
 |192350030|**BotCallFailurePromptAndEscalate**|When conversation isn't ending as caller hears a prompt, wait music and then sent to the default fallback queue so caller is transferred to a representative or whatever queue behavior is defined.|
 |192350031|**BotCallFailureEscalate**|When conversation isn't ending as caller hears wait music, and is sent to the default fallback queue, so caller is transferred to a representative or whatever queue behavior is defined.|
+
+## Related information
+
+[msdyn_closurereason Choices/Options](/dynamics365/developer/reference/entities/msdyn_ocsession#msdyn_closurereason-choicesoptions)  

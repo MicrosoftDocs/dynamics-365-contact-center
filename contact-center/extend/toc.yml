@@ -128,8 +128,8 @@
         href: /dynamics365/customer-service/develop/extend-omnichannel?context=/dynamics365/contact-center/context/extend-context
       - name: Overview of entity reference
         href: /dynamics365/customer-service/develop/reference/about-entity-reference?context=/dynamics365/contact-center/context/extend-context
-      - name: Closure options and descriptions
-        href: /dynamics365/contact-center/extend
+      - name: Session closure options and descriptions
+        href: closure-options-descriptions.md
     - name: Responsible AI
       items:
       - name: Overview

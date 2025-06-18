@@ -18,7 +18,7 @@ When a session in the conversation is closed, the system identifies the reason a
 |192350001|**AgentReject**|Indicates that the customer service representative (service representative or representative) declined the conversation.|
 |192350002|**AgentTimeout**|Indicates that the representative didn't respond to the conversation notification within the allotted time.|
 |192350003|**ConversationTimeout**|Indicates that the conversation session ended because of a time out.|
-|192350004|**AgentClosed**|Indicates that the representative ended the session, which means the representative selected the "X" icon on the session tab.|
+|192350004|**AgentClosed**|Indicates that the representative ended the session, which means the representative selected the **X** icon on the session tab.|
 |192350005|**ConversationClosed**|Indicates that the conversation session was closed.|
 |192350006|**AgentTransferred**|Indicates that the conversation was transferred to another representative.|
 |192350007|**AgentDisconnected**|Indicates that the representative was disconnected from the conversation.|

@@ -90,9 +90,7 @@ To use Customer Intent Agent, you need to connect your Copilot agent to a knowle
 
 Connect the knowledge articles in your Dynamics 365 instance to your Copilot agent. Learn more in [Integrate knowledge management in Dynamics 365 with Copilot agents](/dynamics365/customer-service/administer/integrate-km-with-pva).
 
-Make sure that you add the new flow, created in Power Automate called **Generate answer from Dataverse knowledge articles for Power Virtual Agent**, to the **Handoff** topic instead of using generative answer. 
-
-Make sure to add the new flow you created in Power Automate, called **Generate answer from Dataverse knowledge articles for Power Virtual Agent**. Follow the steps provided in the [Connect to intent-based suggestions](#connect-to-intent-based-suggestions)section, and replace the **Create generative answers** node with the new flow.
+Make sure that you add the new flow you created in Power Automate, called **Generate answer from Dataverse knowledge articles for Power Virtual Agent**. Follow the steps provided in the [Connect to intent-based suggestions](#connect-to-intent-based-suggestions)section, and replace the **Create generative answers** node with the new flow.
 
 ### Intent-based suggestions output variables
 

@@ -84,15 +84,15 @@
             href: configure-custom-messaging-channel.md
           - name: API endpoints
             items:
-            - name: `/consumer/conversations/create`
+            - name: "/consumer/conversations/create"
               href: api/api-conversation-create.md
-            - name: `/conversation/{id}`
+            - name: "/conversation/{id}
               href: api/api-conversation-conversationid.md
-            - name: `/conversations`
+            - name: "/conversations"
               href: api/api-conversation.md
-            - name: `/conversation/{conversationId}/messages`
+            - name: "/conversation/{conversationId}/messages"
               href: api/api-conversation-messages.md  
-            - name: `/conversation/{conversationId}/contexts`
+            - name: "/conversation/{conversationId}/contexts"
               href: api/api-conversation-context.md            
             - name: Use webhook to receive messages and events
               href: api/api-conversation-webhook.md    

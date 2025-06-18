@@ -1,12 +1,12 @@
 ---
-title: Configure Teams Phone in voice channel (preview)
+title: Configure Teams Phone in voice channel
 description: Learn how to configure Teams Phone in the voice channel to streamline call management and enhance customer support.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: null
-ms.date: 05/05/2025
+ms.date: 06/18/2025
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -14,9 +14,7 @@ ms.custom:
   - ai-seo-date:05/02/2025
 ---
 
-# Configure Teams Phone in voice channel (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Configure Teams Phone in voice channel
 
 Integrate your existing Microsoft Teams Phone with Dynamics 365 Contact Center to simplify your voice call configuration.
 
@@ -27,8 +25,6 @@ The high-level process to configure the Teams Phone is as follows:
 1. Assign a license to the Teams resource account.
 1. Assign a service number to the Teams resource account.
 1. Configure the Teams Phone in the voice channel.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 You need to configure new IVR agents in Copilot Studio because the existing IVR agents might not work with the Teams Phone integration.
 

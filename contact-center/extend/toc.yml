@@ -86,7 +86,7 @@
             items:
             - name: "/consumer/conversations/create"
               href: api/api-conversation-create.md
-            - name: "/conversation/{id}
+            - name: "/conversation/{id}"
               href: api/api-conversation-conversationid.md
             - name: "/conversations"
               href: api/api-conversation.md

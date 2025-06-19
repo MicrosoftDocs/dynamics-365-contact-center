@@ -63,15 +63,9 @@ Learn more about the structure and examples of payloads delivered to your webhoo
 
 ## Add and manage channels
 
-# Add and Manage Messaging API Channels in Dataverse
-
 To enable a custom messaging channel using the Messaging API, you must create a corresponding record in Dataverse. This record defines the key connection settings—such as the Azure app ID and webhook URL—that the system uses to authenticate and communicate with your channel.
 
-You can perform this setup using the browser console in the Contact Center admin center or Customer Service admin center by leveraging the `Xrm.WebApi` JavaScript interface.
-
-## Steps to Add or Update a Messaging API Channel
-
-
+Perform the following steps to create, update, or delete a custom messaging channel record:
 
 1. In your environment Copilot Service admin center navigate to **Customer Service** > **Workstreams**.
 1. Press **F12** to open your browser's developer tools and then select the **Console** tab.
@@ -127,21 +121,23 @@ You can perform this setup using the browser console in the Contact Center admin
         console.log(error.message);
       }
      );
-   ```
+
+       ```
   - **Delete an existing record**
+  
       ```js
 
-      // Delete the record
-      Xrm.WebApi.deleteRecord("msdyn_occustommessagingchannel", "{channel_id}").then(
-      function success(result) {
+        // Delete the record
+         Xrm.WebApi.deleteRecord("msdyn_occustommessagingchannel", "{channel_id}").then(
+         function success(result) {
         console.log("msdyn_occustommessagingchannel deleted");
-      },
-       function (error) {
-        console.log(error.message);
-     }
-    );
+        },
+        function (error) {
+         console.log(error.message);
+        }
+        );
 
-    ```
+      ```
  - **View all the custom messaging channel records that are created in the organization** 
 
      `{org_url}/api/data/v9.2/msdyn_occustommessagingchannels`

@@ -110,7 +110,7 @@ You can perform this setup using the browser console in the Contact Center admin
       Replace `{channel_id}` with the ID of the channel you want to delete. You can find this ID in the URL of the channel record in the admin center or by querying the API. <br>
 
   - **Update an existing record.**
-
+  
       ```js
       // Define the data to update
       var data = {
@@ -128,8 +128,7 @@ You can perform this setup using the browser console in the Contact Center admin
       }
      );
    ```
- - **Delete an existing record**
-
+  - **Delete an existing record**
       ```js
 
       // Delete the record

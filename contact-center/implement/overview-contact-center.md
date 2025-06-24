@@ -26,7 +26,7 @@ Here are some of the key capabilities of Dynamics 365 Contact Center:
 
 :::image type="content" source="../media/contact-center-overview.png" alt-text="Diagram that shows the end-to-end working of Dynamics 365 Contact Center, incorporating functionality and roles for self-service, assisted service, and operations.":::
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1mL7H?maskLevel=0]
+> [!VIDEO 2ccf496a-b963-4c9d-8f07-f05fb9f3e389]
 
 ## Next steps
 

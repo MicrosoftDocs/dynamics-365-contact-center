@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 06/16/2025
+ms.date: 06/18/2025
 ms.custom: bap-template
 ---
 
@@ -90,7 +90,7 @@ To use Customer Intent Agent, you need to connect your Copilot agent to a knowle
 
 Connect the knowledge articles in your Dynamics 365 instance to your Copilot agent. Learn more in [Integrate knowledge management in Dynamics 365 with Copilot agents](/dynamics365/customer-service/administer/integrate-km-with-pva).
 
-Make sure that you add the new flow, created in Power Automate called **Generate answer from Dataverse knowledge articles for Power Virtual Agent**, to the **Handoff** topic instead of using generative answer. 
+Make sure that you add the new flow you created in Power Automate, called **Generate answer from Dataverse knowledge articles for Power Virtual Agent**. Follow the steps provided in the [Connect to intent-based suggestions](#connect-to-intent-based-suggestions) section, and replace the **Create generative answers** node with the new flow.
 
 ### Intent-based suggestions output variables
 
@@ -112,7 +112,7 @@ The **Intent-based suggestions - Configuration** is a noncustomizable topic that
 |---------|---------|---------|
 |Global.EnableIntentConfirmation    |    False     |      If enabled, agent asks the customer to confirm the intent before moving on to the intent attributes questions.    |
 |Global.EnableIntentRephrase     |   False      |    If enabled, and if intent can't be determined or intent isn't confirmed by customer, customers are asked to rephrase their issue.      |
-|Global.RephraseCount     |     1    |   Determines how many times customers are asked to rephrase before they give up.|
+|Global.RephraseCount     |     1    |   Determines how many times customers are asked to rephrase the issue.|
 |Global.MaxRepetitionCount    |  2      | Sets the maximum number of times the agent repeats an interview question with the same attributes. If the user doesn't provide a valid response on the first attempt, the agent asks the question again. If the user still doesn't answer, the agent moves to the next question. |
 |Global.EnableAskAllQuestions     |   False       |    If enabled, asks all intent-attribute questions before ending the loop, regardless of whether the customer answers the question in the next turn. If disabled, as soon as the customer doesn’t answer an intent attribute question, ends the loop (a solution query is still generated and generated answers are still initiated).      |
 

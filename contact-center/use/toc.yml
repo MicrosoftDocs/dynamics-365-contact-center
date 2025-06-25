@@ -105,7 +105,7 @@
         - name: Generate resolution notes
           href: embed-ask-question.md#generate-resolution-notes   
         - name: Summarize conversations
-          href: use-conversation-summary.md   
+          href: copilot-summarize-conversations.md   
         - name: Use Copilot to draft an email
           href: use-write-email-embed.md  
       - name: Unified routing and assignment

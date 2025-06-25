@@ -108,7 +108,7 @@ Filters enable Copilot to generate responses based on a specific set of topics. 
 You can apply the filters in the following sections.
 
 > [!NOTE]
-> - We recommend that the appropriate knowledge content is available for the filters you have set so that service representatives can see the expected responses. 
+> - We recommend that the appropriate knowledge content is available for the filters you set so service representatives can see the expected responses. 
 > - The fields that you appear in the **Manage filters** pane when you add a filter are of the data type **String**, **Whole Number**, **Option Set**, or **Two Options Set**. Fields of other data types aren't supported.
 
 

@@ -19,7 +19,7 @@ ms.custom:
 [!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 
-In some support scenarios, a customer service representative (service representative or representative) needs to transfer a conversation back to an AI agent (agent) after providing personalized support. This transfer can help with basic, repetitive tasks or collect further information, such as in a customer survey.
+In some support scenarios, a customer service representative (service representative or representative) needs to transfer a conversation back to an AI agent (agent) after providing personalized support. This transfer helps with basic, repetitive tasks or collects more information, like in a customer survey.
 
 
 You can facilitate the transfer of a conversation from a service representative back to an AI agent in the following ways:
@@ -29,7 +29,7 @@ You can facilitate the transfer of a conversation from a service representative 
 
 ### Two agents in two queues
 
-In this scenario, an AI agent transferred a conversation to a service representative. The representative transfers the conversation again to another AI agent in another queue.
+In this scenario, an AI agent transfers a conversation to a service representative. The representative then transfers the conversation to another AI agent in a different queue.
 
 1. A customer starts a conversation.
 2. The conversation is routed to Queue 1.

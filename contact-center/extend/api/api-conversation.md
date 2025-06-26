@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 Retrieves a list of all the active conversations created through the custom channel created using the Messaging APIs. Conversations created for other messaging channels aren't retrieved.
 
-Conversations that are in **Wrap-Up** or **Closed** states are not included in the response. If no active conversations exist, the response returns an empty array.
+Conversations that are in **Wrap-Up** or **Closed** states aren't included in the response. If no active conversations exist, the response returns an empty array.
 
 
 
@@ -70,4 +70,4 @@ Query parameters allow you to filter, limit, and paginate the list of active con
 | `conversations`     | `[ ]`            | JSON array of active conversation records                     | `array`    |
 |                     | `conversationid` | Unique ID of the conversation                                 | `GUID`     |
 |                     | `timestamp`      | Creation timestamp in ISO 8601 format                         | `Datetime` |
-| `continuationtoken` |                  | Token used for fetching the next page of results, if required | `GUID`     |
+| `continuationtoken` |                  | Token used for fetching the next page of results, if necessary | `GUID`     |

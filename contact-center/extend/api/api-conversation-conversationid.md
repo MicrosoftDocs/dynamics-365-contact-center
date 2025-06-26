@@ -82,15 +82,15 @@ The payload for this API is a JSON-formatted object that defines the activity be
 | `from`                 |                      | Object containing sender info. Optional.                                   | `object`                  | —                        |
 |                         | `id`                 | ID of the sender. Optional.                                                | `string`                  | 256 characters           |
 |                         | `name`               | Display name of the sender shown to the agent.                             | `string`                  | 256 characters           |
-| `text`                  |                      | Text content of the message. Required if no attachments are present.       | `string`                  | 6000 characters           |
+| `text`                  |                      | Text content of the message. Required if no attachments are present.       | `string`                  | 6,000 characters           |
 | `attachments`           |                      | Array of attachment objects. Required if no `text` is provided.            | `array` of objects        | —                        |
-|                         | `contentType`        | MIME type of the attachment (e.g., `image/png`, `application/pdf`).        | `string`                  | 256 characters           |
+|                         | `contentType`        | MIME type of the attachment (for example, `image/png`, `application/pdf`).        | `string`                  | 256 characters           |
 |                         | `contentUrl`         | URL or embedded base64 content for the file.                               | `string`                  | —                        |
 |                         | `name`               | Name of the file including extension.                                      | `string`                  | 256 characters           |
 | `channelData.messagingapi-oc` | `type`        | Optional. If `"AutomatedMessage"`, marks the message as automated.         | `string`                  | 256 characters           |
 
 > [!NOTE] 
-> Either `text` or `attachments` must be provided. If both are missing, the request will be rejected.
+> Either `text` or `attachments` must be provided. If both are missing, the request is rejected.
 
 ### End of conversation payload
 

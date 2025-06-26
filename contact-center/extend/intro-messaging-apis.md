@@ -13,33 +13,34 @@ ms.custom: bap-template
 
 Messaging APIs in Microsoft Dynamics 365 Customer Service allows developers to build tailored, service-to-service communication experiences by offering direct control over customer conversations. These RESTful APIs enable organizations to integrate a custom messaging channel without relying on client-side SDKs, libraries, or user interfaces. 
 
-Designed specifically for **service-to-service** integrations, messaging APIs are best suited for the following scenarios:
+Messaging APIs are designed specifically for **service-to-service** integrations, and are suited for the following scenarios:
 
-- Full customization of the customer experience is required.
-- Organizations operate in environments with strict network or data compliance needs.
-- There is a need to bring your own custom messaging channel not natively supported in omnichannel.
+- End-to-end customization of the customer experience is required.
+- Environments with strict network or data compliance needs.
+- Bring your own custom messaging channel not natively supported in omnichannel.
 
 Key capabilities of the Messaging APIs include:
 
 - Programmatically start and end conversations.
 - Send messages and attachments on behalf of the customer.
-- Receive real-time activity updates through **webhook subscriptions** (e.g., agent responses, typing indicators, or session closures).
+- Receive real-time activity updates through **webhook subscriptions** (for example, agent responses, typing indicators, or session closures).
 - Manage conversation context dynamically to enrich the agent experience.
 
 > [!NOTE] 
-> Messaging APIs are intended for back-end integrations. They are not recommended for use in mobile or web client applications where APIs are invoked directly from the user’s device. For client-to-service scenarios, we recommend that you use Microsoft’s native SDKs or chat widgets.
+> Messaging APIs are intended for back-end integrations. They aren't recommended for use in mobile or web client applications where APIs are invoked directly from the user’s device. For client-to-service scenarios, we recommend that you use Microsoft’s native SDKs or chat widgets.
 
-## Messaging API and Available Endpoints
+## Introduction to messaging API and available endpoints
 
 The Messaging API offers a set of RESTful endpoints that allow service-to-service integration for initiating, managing, and tracking customer conversations. 
 
-### HTTP Protocol
+### HTTP protocol
 
 All API requests must use **HTTPS**. 
 
-### Host URL Structure
+### Host URL structure
 
-The base URL for making API calls is constructed using the organization ID and environment where your Dynamics 365 Contact Center is deployed. The format is `https://m-{org_id}.{environment}.omnichannelengagementhub.com`.
+The base URL for making API calls is constructed using the organization ID and the geographical region where your Dynamics 365 Contact Center is deployed. The format is `HTTPS://m-{org_id}.{geo}.omnichannelengagementhub.com `.
+
 
 
 ### Supported HTTP methods
@@ -49,7 +50,7 @@ The base URL for making API calls is constructed using the organization ID and e
 
 ### Authentication headers
 
-All API calls must be **authenticated** using a valid Azure AD access token. Each request must include the following headers:
+All API calls must be **authenticated** using a valid Microsoft Entra access token. Each request must include the following headers:
 
 ```http
 Authorization: Bearer {access_token}
@@ -66,7 +67,7 @@ Where
 > [!NOTE] 
 > A `401 Unauthorized` error appears if you don't specify the authentication header when you make a call.
 
-### API Endpoints
+### API endpoints
 
 The following endpoints are available:
 

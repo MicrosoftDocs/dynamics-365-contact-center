@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Use /conversation/{conversationId}/contexts endpoint
 
-Retrieves an array of context variables associated with an ongoing conversation. These context variables help enrich the conversation with additional metadata (e.g., product details, browser info, locale) and are visible to the customer service representative.
+Retrieves an array of context variables associated with an ongoing conversation. These context variables help enrich the conversation with additional metadata (for example, product details, browser info, locale) and are visible to the customer service representative.
 
 If the conversation has no context variables, the API returns an empty array.
 

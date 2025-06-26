@@ -11,9 +11,9 @@ ms.custom: bap-template
 
 # Use webhook to receive messages and events
 
-When a conversation is active, events and messages from the customer service representative are sent to your configured webhook endpoint. This is required for receiving real-time updates in your custom messaging channel.
+When a conversation is active, events and messages from the customer service representative are sent to your configured webhook endpoint. The webhook is required for receiving real-time updates in your custom messaging channel.
 
-The service is retried three times, with a 10 second timeout on each attempt. 
+The service is retried three times, with a 10-second timeout on each attempt. 
 
 ## Endpoint
  
@@ -42,9 +42,9 @@ The service is retried three times, with a 10 second timeout on each attempt.
 
 ## Retry Policy
 
-- The webhook service **retries up to 3 times**.
+- The webhook service **retries up to three times**.
 - Each retry allows a **10-second timeout**.
-- After 3 failed attempts, no further retries are made.
+- After three failed attempts, no further retries are made.
 
 
 
@@ -57,7 +57,7 @@ Payloads follow the [Bot Framework Activity Schema](https://learn.microsoft.com/
 | Tier 1 Key     | Tier 2 Key         | Tier 3 Key       | Description                            | Type                |
 |----------------|--------------------|------------------|----------------------------------------|---------------------|
 | `type`         |                    |                  | Type of activity (`message`, `event`, `typing`) | `string` (max 256)  |
-| `channelId`    |                    |                  | Identifier of the channel (e.g., `"MessagingApi"`) | `string` (max 256)  |
+| `channelId`    |                    |                  | Identifier of the channel (for example, `"MessagingApi"`) | `string` (max 256)  |
 | `from`         |                    |                  | Sender object                          | `object`            |
 |                | `id`               |                  | Sender ID                              | `string` (max 256)  |
 |                | `name`             |                  | Sender display name                    | `string` (max 256)  |
@@ -84,7 +84,7 @@ Payloads follow the [Bot Framework Activity Schema](https://learn.microsoft.com/
 
 ## 📘 Event Activity Names
 
-Below are the values sent in the **name** field of `event` activities:
+The following values are sent in the **name** field of `event` activities:
 
 - `AgentAccepted`
 - `AgentClosed`

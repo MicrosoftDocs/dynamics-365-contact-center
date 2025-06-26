@@ -1,5 +1,5 @@
 ---
-title: Use /consumer/conversations/create endpoin
+title: Use /consumer/conversations/create endpoint
 description: Learn how to use the /consumer/conversations/create endpoint.
 ms.date: 04/30/2025
 ms.topic: how-to

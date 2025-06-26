@@ -79,7 +79,7 @@ If there are no messages for the given conversation ID, the API returns an empty
 | Tier 1 Key          | Tier 2 Key    | Tier 3 Key | Description                                   | Type             |
 | ------------------- | ------------- | ---------- | --------------------------------------------- | ---------------- |
 | `messages`          | `[ ]`         | —          | JSON array of Bot Framework activity objects  | `array`          |
-|                     | `type`        | —          | Type of message (e.g., `message`)             | `string`         |
+|                     | `type`        | —          | Type of message (for example, `message`)             | `string`         |
 |                     | `attachments` | `[ ]`      | Array of attachments (if any)                 | `array`          |
 |                     | `text`        | —          | Message content                               | `string`         |
 |                     | `messageid`   | —          | Unique ID of the message                      | `string`         |

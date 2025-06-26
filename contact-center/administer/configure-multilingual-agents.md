@@ -56,7 +56,7 @@ You have configured a [multilingual voice AI agent](/microsoft-copilot-studio/mu
 You have a workstream, Contoso Coffee Shop, with these settings:
 
  - Two [voice channels](/dynamics365/customer-service/administer/voice-channel-inbound-calling#configure-a-voice-channel) with different phone numbers. One channel has Spanish as the primary language and the other has German.
- - The Contoso Coffee agent is linked to the workstream. The AI agent identifies the customer's language based on the [primary language of the voice channel](/customer-service/administer/voice-channel-inbound-calling?tabs=enhancedvoice#add-a-phone-number-to-the-workstream-and-configure-language-settings).
+ - The Contoso Coffee agent is linked to the workstream. The AI agent identifies the customer's language based on the [primary language of the voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling#add-a-phone-number-to-the-workstream-and-configure-language-settings).
 
 The runtime experience is as follows:
 

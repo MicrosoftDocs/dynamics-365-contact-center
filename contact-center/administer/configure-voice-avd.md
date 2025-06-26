@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: 
-ms.date: 03/03/2025
+ms.date: 06/27/2025
 ms.custom: bap-template 
 ---
 
@@ -16,8 +16,8 @@ You can configure the Remote Desktop client in your customer service representat
 
 ## Prerequisites
 
-- [Connect to Azure Virtual Desktop with the Remote Desktop client for Windows](/azure/virtual-desktop/users/connect-windows?pivots=remote-desktop-msi#download-and-install-the-remote-desktop-client-msi) to ensure that representatives have Virtual Desktop installed on their remote desktop.
-- Ensure that [Insider release](/azure/virtual-desktop/users/client-features-windows?pivots=remote-desktop-msi#enable-insider-releases) is enabled for the remote desktop client.
+- [Connect to Azure Virtual Desktop with the Remote Desktop client for Windows](/azure/virtual-desktop/users/connect-windows#download-and-install-the-remote-desktop-client-msi) to ensure that representatives have Virtual Desktop installed on their remote desktop.
+- Make sure that [Insider release](/previous-versions/remote-desktop-client/client-features-windows-msrdc) is enabled for the remote desktop client.
 - [Install the multimedia redirection extension](/azure/virtual-desktop/multimedia-redirection) on the service representatives' browsers. Supported browsers are Microsoft Edge and Google Chrome.
 
 ### Access remote desktop
@@ -27,11 +27,12 @@ Make sure representatives perform the following steps to access the voice channe
 1. Restart the remote desktop client and the service representative's device.
 1. Ensure that service representatives see **Remote Desktop(Insider)** is displayed on the remote desktop client.
 1. Select the **ellipsis** (…) and then select **Subscribe**. 
-1. Representatives see **SessionDesktop** once they're subscribed. They can sign in the Virtual Desktop to use the voice channel.
 
-## Agent experience when local machine disconnects from Virtual Desktop
+Representatives see **SessionDesktop** once they're subscribed. They can sign in the Virtual Desktop to use the voice channel.
 
-Representatives can communicate with customers on the phone to resolve issues using the voice channel through the Virtual Desktop. The following table describes the scenarios in which the local machine disconnects from the Virtual Desktop instance.
+## Agent experience when local device disconnects from Azure Virtual Desktop
+
+Representatives can communicate with customers on the phone to resolve issues using the voice channel through the Azure Virtual Desktop. The following table describes the scenarios in which the local device disconnects from the virtual desktop instance.
 
 | **Scenario**                                                                 | **Notifications**                                  | **Ongoing phone call**                                                                                                      | **Ongoing non-phone call**                                                                                                 | **Active consult (primary service representative disconnected)**                                                                               | **Active consult (secondary service representative disconnected)**                                                                          | **Transfer**                                                                                      |
 |------------------------------------------------------------------------------|---------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|

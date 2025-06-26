@@ -48,7 +48,7 @@ The following scenarios describe the multilingual AI agent's behavior when linke
 
 **Scenario 1:** 
 
-You have configured a [multilingual voice AI agent](/microsoft-copilot-studio/multilingual), Contoso Coffee agent, in Copilot Studio with the following settings: 
+You have configured a [multilingual voice AI agent](/microsoft-copilot-studio/multilingual) called Contoso Coffee in Copilot Studio with these settings: 
 
 - English is the primary language.
 - Spanish and French are secondary languages.

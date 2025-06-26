@@ -75,7 +75,7 @@
           - name: Test the custom messaging channel
             href: /dynamics365/customer-service/develop/test-custom-channel-sample-html?context=/dynamics365/contact-center/context/extend-context
           - name: Markdown formats in custom channels that use Direct Line
-            href: /dynamics365/customer-service/develop/markdown-formats-dev?context=/dynamics365/contact-center/context/extend-context   
+            href: /dynamics365/customer-service/develop/bring-your-own-channel#markdown-formats-in-custom-channels?context=/dynamics365/contact-center/context/extend-context   
       - name: Copilot in Customer Service
         items:  
         - name: Download Copilot transcripts and interaction data

@@ -99,7 +99,7 @@ When you have an active case or conversation open, Copilot suggests prompts base
 
 Copilot proactively suggests prompts, without you having to type one, that you can use to prioritize cases effectively and solve customer queries quickly.
 
-- You can use the default prompts, such as **Summarize**, **Ask**, and **Discover** to get started with Copilot, with just a single select. For example, you can select the **Summarize** prompt to get a case summary. After you select **Summarize**, enter the case number to view the case details on the help pane, without having to open the case.
+- Use the default prompts, such as **Summarize**, **Ask**, and **Discover** to get started with Copilot, with a single selection. For example, you can select the **Summarize** prompt to get a case summary. After you select **Summarize**, enter the case number to view the case details on the help pane, without having to open the case.
 - You can also save frequently used prompts for quick access.
 - You can select **View prompts** to use one of the following prompts:
    - Default prompts 

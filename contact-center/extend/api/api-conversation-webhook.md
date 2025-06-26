@@ -82,7 +82,7 @@ Payloads follow the [Bot Framework Activity Schema](/javascript/api/botframework
 
 ---
 
-## 📘 Event Activity Names
+## Event Activity Names
 
 The following values are sent in the **name** field of `event` activities:
 

@@ -16,8 +16,8 @@ You can configure the Remote Desktop client in your customer service representat
 
 ## Prerequisites
 
-- [Connect to Azure Virtual Desktop with the Remote Desktop client for Windows](/azure/virtual-desktop/users/connect-windows?pivots=remote-desktop-msi#download-and-install-the-remote-desktop-client-msi) to ensure that representatives have Virtual Desktop installed on their remote desktop.
-- Ensure that [Insider release](/azure/virtual-desktop/users/client-features-windows?pivots=remote-desktop-msi#enable-insider-releases) is enabled for the remote desktop client.
+- [Connect to Azure Virtual Desktop with the Remote Desktop client for Windows](/azure/virtual-desktop/users/connect-windows#download-and-install-the-remote-desktop-client-msi) to ensure that representatives have Virtual Desktop installed on their remote desktop.
+- Ensure that [Insider release](/azure/virtual-desktop/users/client-features-windows#enable-insider-releases) is enabled for the remote desktop client.
 - [Install the multimedia redirection extension](/azure/virtual-desktop/multimedia-redirection) on the service representatives' browsers. Supported browsers are Microsoft Edge and Google Chrome.
 
 ### Access remote desktop

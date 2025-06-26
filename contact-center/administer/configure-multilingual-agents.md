@@ -39,7 +39,7 @@ In Copilot Service admin center, for a voice channel in a workstream, perform th
    -  When transcription is enabled for a voice channel, the transcript appears in the language the AI agent detects. If the AI agent switches to a language that the voice channel doesn't support, the transcript falls back to the channel's primary language. When the AI agent switches between languages, there might be a brief delay before the transcript updates. Some parts of the transcript may still appear in the previous language during this transition.
 1. In the **Bots** section of the workstream, add the agent that you want to use. The application displays a warning message if the languages configured in the voice channel don't match the languages supported by the agent.
 
-The application displays a warning if you add a new language that the agent doesn't support to an existing voice channel.
+A warning message appears if you add a new language that the agent doesn't support to an existing voice channel.
 
 
 ### Examples

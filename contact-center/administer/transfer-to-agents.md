@@ -29,7 +29,7 @@ You can facilitate the transfer of a conversation from a service representative 
 
 ### Two agents in two queues
 
-In this scenario, an AI agent transferred a conversation to a service representative. The representative transfers the conversation again to another AI agent in another queue.
+In this scenario, an AI agent transfers a conversation to a service representative. The representative then transfers the conversation to another AI agent in a different queue.
 
 1. A customer starts a conversation.
 2. The conversation is routed to Queue 1.

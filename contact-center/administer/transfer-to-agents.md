@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection:
-ms.date: 03/03/2025
+ms.date: 06/27/2025
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -19,8 +19,8 @@ ms.custom:
 [!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 
-In some support scenarios, a customer service representative (service representative or representative) may need to transfer a conversation back to an AI agent (agent) after providing personalized support. This transfer can help with basic, repetitive tasks or collect additional data, such as in a customer survey.
-In some support scenarios, a service representative may need to transfer a conversation back to an AI agent after providing personalized support. This transfer can help with basic, repetitive tasks or collect additional data, such as in a customer survey.
+In some support scenarios, a customer service representative (service representative or representative) needs to transfer a conversation back to an AI agent (agent) after providing personalized support. This transfer can help with basic, repetitive tasks or collect further information, such as in a customer survey.
+
 
 You can facilitate the transfer of a conversation from a service representative back to an AI agent in the following ways:
 
@@ -29,15 +29,15 @@ You can facilitate the transfer of a conversation from a service representative 
 
 ### Two agents in two queues
 
-In this scenario, an AI agent has transferred a conversation to a service representative. The representative will transfer the conversation again to another AI agent in another queue.
+In this scenario, an AI agent transferred a conversation to a service representative. The representative transfers the conversation again to another AI agent in another queue.
 
 1. A customer starts a conversation.
 2. The conversation is routed to Queue 1.
-3. The first agent (Agent A) accepts the conversation.
+3. The first AI agent (Agent A) accepts the conversation.
 4. The customer requests to chat with a service representative.
 5. The conversation is transferred to a service representative within Queue 1.
 6. The customer converses with the service representative.
-7. The service representative has finished delivering support and wants to hand off the conversation to a second AI agent, Agent B, which resides in the same queue.
+7. The service representative finishes delivering support and wants to hand off the conversation to a second AI agent, Agent B.
 8. The service representative is disconnected from the conversation.
 9. The conversation routed to Agent B in Queue 2.
 10. The system triggers Agent B to send a greeting message.
@@ -55,7 +55,7 @@ In this scenario, after an AI agent has transferred a conversation to a service 
 6. The service representative has finished delivering support and wants to hand off the conversation to a second agent (Agent B), which resides in the same queue.
 7. The service representative is disconnected from the conversation, and the conversation is routed to Agent B.
 8. Agent B receives the messages in the following order:
-    - A conversation update that the “Agent is added”
+    - A conversation update that the "Agent is added"
     - The Omnichannel Set context event
 9. The system triggers Agent B to send a greeting message.
 10. The customer now chats with Agent B.

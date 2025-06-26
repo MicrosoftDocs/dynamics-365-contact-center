@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: 
-ms.date: 03/03/2025
+ms.date: 06/27/2025
 ms.custom: bap-template 
 ---
 
@@ -27,11 +27,12 @@ Make sure representatives perform the following steps to access the voice channe
 1. Restart the remote desktop client and the service representative's device.
 1. Ensure that service representatives see **Remote Desktop(Insider)** is displayed on the remote desktop client.
 1. Select the **ellipsis** (…) and then select **Subscribe**. 
-1. Representatives see **SessionDesktop** once they're subscribed. They can sign in the Virtual Desktop to use the voice channel.
 
-## Agent experience when local machine disconnects from Virtual Desktop
+Representatives see **SessionDesktop** once they're subscribed. They can sign in the Virtual Desktop to use the voice channel.
 
-Representatives can communicate with customers on the phone to resolve issues using the voice channel through the Virtual Desktop. The following table describes the scenarios in which the local machine disconnects from the Virtual Desktop instance.
+## Agent experience when local device disconnects from Azure Virtual Desktop
+
+Representatives can communicate with customers on the phone to resolve issues using the voice channel through the Azure Virtual Desktop. The following table describes the scenarios in which the local device disconnects from the virtual desktop instance.
 
 | **Scenario**                                                                 | **Notifications**                                  | **Ongoing phone call**                                                                                                      | **Ongoing non-phone call**                                                                                                 | **Active consult (primary service representative disconnected)**                                                                               | **Active consult (secondary service representative disconnected)**                                                                          | **Transfer**                                                                                      |
 |------------------------------------------------------------------------------|---------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|

@@ -15,7 +15,7 @@ ms.custom: bap-template
 [!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
 
 > [!IMPORTANT]
-> - This feature is deprecated and will be removed on July 14, 2025. Learn more in [Deprecations in Dynamics 365 Contact Center](../implement/deprecations-contact-center).
+> - This feature is deprecated and will be removed on July 14, 2025. Learn more in [Deprecations in Dynamics 365 Contact Center](../implement/deprecations-contact-center.md).
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 > - The AI-generated content is a suggestion. It's your responsibility to review and edit the suggested content to make sure it's accurate and appropriate before sharing the responses.

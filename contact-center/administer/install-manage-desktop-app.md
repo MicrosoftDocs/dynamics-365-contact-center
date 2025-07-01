@@ -24,7 +24,7 @@ You can install the Desktop companion application on a customer service represen
   > [!NOTE]
   > [Microsoft Visual C++ Redistributable package](/cpp/windows/latest-supported-vc-redist) must be installed on the desktop. 
 
-3. You must download and install the browser extensions. Perform the following steps:
+3. Download and install the browser extensions by following these steps:
       1. Download and install the browser extension:
           - Chrome: [Desktop companion app for Dynamics 365 Contact Center Extension ](https://chromewebstore.google.com/detail/desktop-companion-app-for/kejpacmiikcnjccejioofncknckcpcpa?authuser=0&hl=en)
           - Edge: [Desktop companion app for Dynamics 365 Contact Center](https://microsoftedge.microsoft.com/addons/detail/desktop-companion-app-for/ifonlckhhfkfainkbngfbjhodbkeafbg)

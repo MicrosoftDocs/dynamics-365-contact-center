@@ -71,6 +71,17 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
  
    :::image type="content" source="../media/draft-an-email-inline.png" alt-text="Screenshot of Copilot recommended email draft in rich text editor."::: 
 
+   **Use line-of-business tagged email templates**
+   
+   Copilot automatically selects the most appropriate email template based on your case's business context, streamlining your email drafting process. If your administrator tagged email templates with line-of-business information, for an email associated to the case, the Copilot performs the following actions to generate a response:
+
+   - Analyzes the case context and identifies the line-of-business.
+   - Selects the appropriate template tagged with the corresponding line-of-business
+   - Generates the email draft using the selected template and displays the template used in the editor.
+   - If no email template exists for your case's line-of-business, Copilot generates a draft without using an email template.
+   
+   You can use the content as-is or edit the content of the email draft as needed. If you want to change the template, you can select **Choose a different template** to open the **Copilot recommended templates** dialog and select a different template.
+   
   **Generate partial email drafts using Copilot**
 
   You can use Copilot inline email assist to generate a partial draft instead of generating a whole email draft. You can use this feature to generate a response to a specific part of the email or to add more details to an existing email draft.

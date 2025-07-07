@@ -1,12 +1,12 @@
 ---
 title: Ask a question
-description: Learn how to use the ask a question feature in Copilot within Customer Service customer service representative apps to enhance efficiency.
+description: Learn how to use ask a question feature in Copilot within customer service representative apps to enhance efficiency.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: 
 ms.topic: how-to
 ms.collection:
-ms.date: 06/13/2025
+ms.date: 06/27/2025
 ms.custom: bap-template 
 ---
 
@@ -34,7 +34,7 @@ ms.custom: bap-template
 
 ## Summarize cases and ask about case data
 
-Based on the app you are using, you can use Copilot to generate case summary and ask about case data from the **Ask a question** tab.
+Based on the app, you're using, you can use Copilot to generate case summary and ask about case data from the **Ask a question** tab.
 
 > [!IMPORTANT]
 > Case summaries and case data are available only if case management is available. If you are using the Customer Service Hub app, you can use Copilot to ask questions about cases, but not to summarize them.

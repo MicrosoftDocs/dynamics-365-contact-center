@@ -355,7 +355,7 @@
       - name: Responsible AI FAQ for Copilot in Customer Service
         href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/use-context
       - name: Responsible AI FAQs for NLUs in AI agents
-        href: ../implement/responsible-ai-faq-nlu.md   
+        href: ../implement/natural-language-ai-faq.md   
     - name: Resources
       items:
       - name: Training

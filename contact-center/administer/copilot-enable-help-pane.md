@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 05/05/2025
+ms.date: 06/25/2025
 ms.custom: bap-template 
 ---
 
@@ -105,10 +105,12 @@ Select **Let representatives translate responses** to allow service representati
 
 Filters enable Copilot to generate responses based on a specific set of topics. You can set up filters for ask a question and draft a response.
 
-> [!NOTE]
-> We recommend that the appropriate knowledge content is available for the filters you have set so that service representatives can see the expected responses. 
-
 You can apply the filters in the following sections.
+
+> [!NOTE]
+> - We recommend that the appropriate knowledge content is available for the filters you set so service representatives can see the expected responses. 
+> - The fields that appear in the **Manage filters** pane when you add a filter are of the data type **String**, **Whole Number**, **Option Set**, or **Two Options Set**. Fields of other data types aren't supported.
+
 
 ### Preset filters
 

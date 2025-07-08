@@ -14,15 +14,15 @@ ms.custom:
 
 # Responsible AI FAQs for NLUs in AI agents
 
-These frequently asked questions (FAQ) describe the AI impact of generative orchestration for agents built in Copilot Studio that are used in Customer Service.
+These frequently asked questions (FAQ) describe the AI impact of generative orchestration for agents built in Microsoft Copilot Studio that are used in Customer Service.
 
 ## What is NLU and how is it used in agents?
 
 Natural Language Understanding (NLU) is the foundation for AI agents to interpret user statements and convert them into meaningful actions. NLU enables AI agents built for Dynamics 365 Contact Center to understand intents, extract meaning, and respond appropriately. NLU is essential for both digital and voice interactions, allowing agents to interpret natural human language, identify key information, and deliver relevant responses. By accurately understanding customer needs, agents using NLU can provide more intelligent, responsive service experiences that enhance customer satisfaction and streamline interactions across channels. Learn more in [NLU overview](/microsoft-copilot-studio/nlu-overview).
 
-## What NLU options are available in Microsoft Copilot Studio?
+## What NLU options are available in Copilot Studio?
 
-Microsoft Copilot Studio offers multiple NLU options to build your agents. You can choose between Generative AI, which moves toward an agentic system, or any of the Classic Orchestrations for more control and fine-tuning. These options can be selected under the Language Understanding section within Copilot Studio.
+Copilot Studio offers multiple NLU options to build your agents. You can choose between Generative AI, which moves toward an agentic system, or any of the classic orchestrations for more control and fine-tuning. These options can be selected under the Language Understanding section within Copilot Studio.
 
 ## How do different NLU options impact my agent's performance?
 
@@ -30,7 +30,7 @@ Each NLU option has different capabilities and limitations that might impact you
 
 ## Where does NLU processing occur for different options?
 
-For Microsoft Copilot Studio NLU, runtime processing happens within Copilot Studio itself. For Microsoft Copilot Studio NLU+, the runtime processing occurs in Dynamics 365 Contact Center. Understanding where processing occurs can help you make informed decisions about performance and integration requirements.
+For NLU, runtime processing happens within Copilot Studio itself. For NLU+, the runtime processing occurs in Dynamics 365 Contact Center. Understanding where processing occurs can help you make informed decisions about performance and integration requirements.
 
 ## What should I consider from a responsible AI perspective when selecting an NLU option?
 

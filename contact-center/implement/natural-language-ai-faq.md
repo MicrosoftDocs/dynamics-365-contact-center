@@ -38,7 +38,7 @@ When selecting an NLU option, make sure you thoroughly review the capabilities a
 
 ## How do the underlying technologies differ between NLU options?
 
-Classic Orchestration NLUs rely on customer-provided training data to create Dynamic Language Models (DLMs) that are used at runtime. Generative AI NLUs leverage pretrained Large Language Models (LLMs), which might offer different capabilities but also different considerations for responsible deployment.
+Classic orchestration NLUs rely on customer-provided training data to create Dynamic Language Models (DLMs) that are used at runtime. Generative AI NLUs leverage pretrained LLMs, which might offer different capabilities but also different considerations for responsible deployment.
 
 ## What transparency considerations should I keep in mind when implementing generative orchestration?
 

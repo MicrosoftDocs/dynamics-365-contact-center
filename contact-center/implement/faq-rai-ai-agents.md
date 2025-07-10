@@ -35,6 +35,16 @@ The Customer Intent Agent uses generative AI to autonomously discover customer i
 
 - **Enhance self-service capabilities**: The agent generates follow-up questions and queries knowledge sources based on collected information, resulting in higher deflection rates and allowing service representatives to focus on complex cases.
 
+Beyond intent discovery, the Customer Intent Agent can autonomously lead conversations using business playbooks, enterprise functions, and knowledge articles linked to each intent:
+
+- **Follows business playbooks**: It operationalizes the step‑by‑step instructions defined by the business to ensure consistent tone, policy compliance, and best‑practice workflows.
+
+- **Invokes enterprise functions**: During a chat or voice session it can call business‑exposed APIs (e.g., order lookup, status update, claim submission) to act on the customer’s behalf.
+
+- **Retrieves and synthesizes knowledge**: The agent pulls in relevant knowledge articles and contextual data so every answer is grounded in accurate, current business content.
+
+With these capabilities the agent not only identifies what a customer wants but also delivers the solution end‑to‑end, freeing service representatives to focus on complex or exceptional cases.
+
 ### Customer Knowledge Management Agent
 
 The Customer Knowledge Management Agent helps create and manage customer knowledge in real time. After a case is closed, the Knowledge Management Agent:

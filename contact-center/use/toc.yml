@@ -107,7 +107,7 @@
         - name: Summarize conversations
           href: email-template-convert.md   
         - name: Use Copilot to draft an email
-          href: draft-email-in-embedded-experience.md  
+          href: draft-email-embedded-experience.md  
       - name: Unified routing and assignment
         items:
           - name: View historical analytics reports

@@ -272,7 +272,7 @@
           href: /dynamics365/customer-service/administer/voice-channel-faqs?context=/dynamics365/contact-center/context/administer-context
       - name: AI hub
         items:
-        - name:Learn guide for AI agents and Copilot features
+        - name: Learn guide for AI agents and Copilot features
           items:
           - name: Trust center for Dynamics 365
             href: trust-center.md

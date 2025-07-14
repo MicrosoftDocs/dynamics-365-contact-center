@@ -36,7 +36,7 @@ Based on your administrator's configuration, you see the following options in Co
 
 - Select **Create case** to create a case and populate the description with the summary, if your administrator turned on this feature.
   > [!NOTE]
-  > You can see this option only if case management is configured.
+  > You can see **Create case** only if case management is configured.
 
 ### [Paragraph format](#tab/paragraphformat)
 

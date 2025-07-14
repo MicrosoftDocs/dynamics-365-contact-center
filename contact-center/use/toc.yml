@@ -80,7 +80,7 @@
           items:
           - name: Use intent-based suggestions
             href: use-intent-suggestions.md
-      - name: Use Copilot features in contact center&mdash;standalone
+      - name: Use Copilot features in contact center-standalone
         items: 
         - name: Copilot feature availability across applications
           href: copilot-feature-availability.md  
@@ -96,7 +96,7 @@
           href: copilot-language-support.md
         - name: Chat with case data in Customer Service (preview)
           href: copilot-chat-customer-service-data.md
-      - name: Use Copilot features in non-Microsoft CRMs
+      - name: Use Copilot features in non-Microsoft systems
         items:  
         - name: Use ask a question
           href: embed-ask-question.md  
@@ -105,9 +105,9 @@
         - name: Generate resolution notes
           href: embed-ask-question.md#generate-resolution-notes   
         - name: Summarize conversations
-          href: copilot-summarize-conversations.md   
+          href: email-template-convert.md   
         - name: Use Copilot to draft an email
-          href: use-write-email-embed.md  
+          href: draft-email-in-embedded-experience.md  
       - name: Unified routing and assignment
         items:
           - name: View historical analytics reports

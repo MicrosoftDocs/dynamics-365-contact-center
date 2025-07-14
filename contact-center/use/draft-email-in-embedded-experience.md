@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 06/13/2025
+ms.date: 07/14/2025
 ms.custom: bap-template 
 ---
 
@@ -26,7 +26,7 @@ ms.custom: bap-template
 When you sign in to a non-Microsoft CRM system, you can access the feature as follows:
    - Launch the embedded experience and then login to your Dynamics account.
    - In the Copilot help pane that appears, select **Write an email**.
-   - Open the email to use the feature.
+   - Open an email to use the feature.
   
 ## Write an email
 
@@ -36,8 +36,8 @@ When you sign in to a non-Microsoft CRM system, you can access the feature as fo
 [!INCLUDE [cc-write-email-prompts](../../shared/cc-write-email-prompts.md)]
 
  > [!NOTE]
- > - If the knowledge base isn't enabled, you will see the **Suggest a call**, **Request more information**, **Empathize with feedback**, and **Custom** prompts only.
- > - If you've left the **Regarding** field empty, you will see the **Suggest a call**, **Empathize with feedback**, and **Custom** prompts only.
+ > - If the knowledge base isn't enabled, you see the **Suggest a call**, **Request more information**, **Empathize with feedback**, and **Custom** prompts only.
+ > - If you've left the **Regarding** field empty, you see the **Suggest a call**, **Empathize with feedback**, and **Custom** prompts only.
 
 ## How Copilot uses knowledge base
 

@@ -12,9 +12,9 @@ ms.custom: bap-template
 
 # Write an email with Copilot
 
-[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability.md)]
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embed.md)]
 
-[!INCLUDE [cc-ask-question-proprompt](../../shared/cc-write-email-intro.md)]
+[!INCLUDE [cc-write-email-intro](../../shared/cc-write-email-intro.md)]
 
 ## Prerequisites
 

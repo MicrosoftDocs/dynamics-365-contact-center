@@ -44,7 +44,7 @@ When you sign in to a non-Microsoft CRM, you can access the feature as follows:
 If your administrator enabled knowledge sources, the following actions occur:
 -  Copilot uses internal knowledge base sources and searches the internal knowledge base to generate email drafts. 
 - The application displays the knowledge sources used to generate the draft when you select **Check sources**.
-- When you use a custom prompt to further refine the response, the application displays the **Use knowledge base** toggle that's set to **On**. You can switch the toggle to **Off** to disable knowledge base sources.
+- When you use a custom prompt to refine the response, the application displays the **Use knowledge base** toggle that's set to **On**. You can switch the toggle to **Off** to disable knowledge base sources.
 
 ## Review suggested replies
 

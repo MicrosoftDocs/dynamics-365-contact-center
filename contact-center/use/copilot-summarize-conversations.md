@@ -48,7 +48,7 @@ Based on your administrator's configuration, you see the following options in Co
 
 ---
 
-### View closed conversation summary
+### View summary for a closed conversation
 
 You can also view the Copilot generated summary for a closed conversation. In Copilot Service workspace in the **Activities** view, filter by **Conversations** and then select the required conversation. Select the **Summary** tab. The summary for the conversation appears. Learn more in [View conversation transcripts and call recordings](/dynamics365/customer-service/use/voice-channel-call-recordings-transcripts).
 

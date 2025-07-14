@@ -23,7 +23,7 @@ ms.custom: bap-template
 
 ## Navigation
 
- In Copilot Service workspace, you can access **Ask a question** from the Copilot help pane once you sign in.
+ In Copilot Service workspace, you can access **Ask a question** from the Copilot help pane after you sign in.
 
 ## Use Copilot to draft an email
 

@@ -58,7 +58,7 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
    - You can select one of the templates recommended by Copilot or manually search for and insert an email template. Learn more in [Enhanced email template selection dialog](/power-apps/user/insert-email-template#enhanced-email-template-selection-dialog).
    - Multi-turn responses and **Use knowledge base** toggle aren't applicable when Copilot generates an email draft using the email template.
  
-    :::image type="content" source="../media/draft-an-email-inline.png" alt-text="Screenshot of Copilot recommended email draft in rich text editor."::: 
+   :::image type="content" source="../media/draft-an-email-inline.png" alt-text="Screenshot of Copilot recommended email draft in rich text editor."::: 
 
   **Generate partial email drafts using Copilot**
 

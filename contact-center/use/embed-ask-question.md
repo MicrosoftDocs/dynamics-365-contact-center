@@ -1,16 +1,16 @@
 ---
-title: Use ask a question in non-Microsoft CRMs
-description: Learn how to use the ask a question feature in non-Microsoft CRMs.
+title: Use ask a question in non-Microsoft CRM systems
+description: Learn how to use the ask a question feature in non-Microsoft CRM systems.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: 
 ms.topic: how-to
 ms.collection:
-ms.date: 06/13/2025
+ms.date: 07/14/2025
 ms.custom: bap-template 
 ---
 
-# Use ask a question in non-Microsoft CRMs
+# Use ask a question in non-Microsoft CRM systems
 
 [!INCLUDE[cc-feature-availability-embed-only](../includes/cc-feature-availability-embed-only.md)]
 
@@ -69,5 +69,5 @@ Copilot generates resolution notes based on the case details, emails, and notes 
 1. Select the embedded Copilot. The Copilot help pane appears.
 1. In the **Ask a question** tab, select **Generate resolution notes**. The conversation summary appears as a card in the help pane.
 
- :::image type="content" source="../media/embed-copilot-summary-mini.png" alt-text="Screenshot of in embedded Copilot." lightbox="../media/embed-copilot-summary.png":::
+  :::image type="content" source="../media/embed-copilot-summary-mini.png" alt-text="Screenshot of in embedded Copilot." lightbox="../media/embed-copilot-summary.png":::
 

@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 06/13/2025
+ms.date: 07/14/2025
 ms.custom: bap-template 
 ---
 
@@ -58,7 +58,7 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
    - You can select one of the templates recommended by Copilot or manually search for and insert an email template. Learn more in [Enhanced email template selection dialog](/power-apps/user/insert-email-template#enhanced-email-template-selection-dialog).
    - Multi-turn responses and **Use knowledge base** toggle aren't applicable when Copilot generates an email draft using the email template.
  
-   :::image type="content" source="../media/draft-an-email-inline.png" alt-text="Screenshot of Copilot recommended email draft in rich text editor."::: 
+    :::image type="content" source="../media/draft-an-email-inline.png" alt-text="Screenshot of Copilot recommended email draft in rich text editor."::: 
 
   **Generate partial email drafts using Copilot**
 
@@ -71,11 +71,11 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
   1. Select **Generate**. Copilot generates the partial draft. You can use it as-is or adjust the draft before adding it to the email.
   1. You can also turn on the **Use knowledge base** toggle to use knowledge base sources to generate the draft. 
 
-   :::image type="content" source="../media/partial-draft-email.png" alt-text="Screenshot of a partial draft an email in rich text editor."::: 
+    :::image type="content" source="../media/partial-draft-email.png" alt-text="Screenshot of a partial draft an email in rich text editor."::: 
 
  **Use follow-up prompts**
 
- If you aren't satisfied with Copilot's response, you can use follow-up custom prompts and guide Copilot in a natural, conversational way. You can use up to five prompts at a time to refine the email draft. If the knowledge base is enabled, Copilot will also use those sources.
+ If you aren't satisfied with Copilot's response, you can use follow-up custom prompts and guide Copilot in a natural, conversational way. You can use up to five prompts at a time to refine the email draft. If the knowledge base is enabled, Copilot also uses those sources.
 
   
 ### [Draft an email in the Copilot help pane](#tab/copilothelppane)
@@ -89,8 +89,8 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
 [!INCLUDE [cc-write-email-prompts](../../shared/cc-write-email-prompts.md)]
 
  > [!NOTE]
- > - If the knowledge base isn't enabled, you will see the **Suggest a call**, **Request more information**, **Empathize with feedback**, and **Custom** prompts only.
- > - If you've left the **Regarding** field empty, you will see the **Suggest a call**, **Empathize with feedback**, and **Custom** prompts only.
+ > - If the knowledge base isn't enabled, you see the **Suggest a call**, **Request more information**, **Empathize with feedback**, and **Custom** prompts only.
+ > - If you've left the **Regarding** field empty, you see the **Suggest a call**, **Empathize with feedback**, and **Custom** prompts only.
 
   :::image type="content" source="../media/copilot-email-sidepane-mini.png" alt-text="Screenshot of draft an email in the side pane." lightbox="../media/copilot-email-sidepane.png":::
 

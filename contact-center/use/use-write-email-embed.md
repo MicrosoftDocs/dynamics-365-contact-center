@@ -23,7 +23,7 @@ ms.custom: bap-template
 
 ## Navigation
 
-When you sign in to a non-Microsoft CRM, you can access the feature as follows:
+When you sign in to a non-Microsoft CRM system, you can access the feature as follows:
    - Launch the embedded experience and then login to your Dynamics account.
    - In the Copilot help pane that appears, select **Write an email**.
    - Open the email to use the feature.

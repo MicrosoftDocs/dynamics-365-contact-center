@@ -18,7 +18,7 @@ This page provides information about the Trust Center for Dynamics 365 Contact C
 
 Find compliance artifacts, request documentation, and view details about the controls we follow.
 
-|  |Control|Status|
+| x  |Control|Status|
 |------|-------|------|
 |Infrastructure security|||
 ||**Restricts access to encryption keys** <br>Copilot features can be enabled or disabled for specific users through role-based access and security configurations within Dynamics 365. |:::image type="content" source="../media/green-checkmark.png" alt-text="Green checkmark indicating success status.":::|

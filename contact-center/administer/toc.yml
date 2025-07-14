@@ -270,24 +270,33 @@
           href: /dynamics365/customer-service/administer/voice-channel-pricing-scenarios?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ about the voice channel
           href: /dynamics365/customer-service/administer/voice-channel-faqs?context=/dynamics365/contact-center/context/administer-context
-      - name: Autonomous service agents (preview)
+      - AI hub
         items:
-        - name: Overview of autonomous service agents
-          href: autonomous-agents-overview.md
-        - name: Manage consumption-based billing, capacity
-          href: /dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context
-        - name: Customer Intent Agent 
+        - name:Learn guide for AI agents and Copilot features
           items:
-          - name: Overview of Customer Intent Agent
-            href: overview-customer-intent-agent.md
-          - name: Manage Customer Intent Agent
-            href: manage-customer-intent-agent.md
-          - name: Configure intent-based routing
-            href: /dynamics365/customer-service/administer/configure-intent-based-routing?context=/dynamics365/contact-center/context/administer-context
-          - name: Enable intent-based suggestions for service representatives
-            href: enable-intent-for-service-reps.md
-          - name: Configure intent-based suggestions for Copilot agents
-            href: set-up-intent-agent.md
+          - name: Trust center for Dynamics 365
+            href: trust-center.md
+        - name: Autonomous service agents (preview)
+          items:
+          - name: Overview of autonomous service agents
+            href: autonomous-agents-overview.md
+          - name: Manage consumption-based billing, capacity
+            href: /dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context
+          - name: Customer Intent Agent 
+            items:
+            - name: Overview of Customer Intent Agent
+              href: overview-customer-intent-agent.md
+            - name: Manage Customer Intent Agent
+              href: manage-customer-intent-agent.md
+            - name: Configure intent-based routing
+              href: /dynamics365/customer-service/administer/configure-intent-based-routing?context=/dynamics365/contact-center/context/administer-context
+            - name: Enable intent-based suggestions for service representatives
+              href: enable-intent-for-service-reps.md
+            - name: Configure intent-based suggestions for Copilot agents
+              href: set-up-intent-agent.md
+        - name: Use rollout manager
+          href: use-rollout manager.md
+        -   
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features

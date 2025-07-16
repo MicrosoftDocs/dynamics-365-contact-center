@@ -22,8 +22,6 @@ Customer Intent Agent uses the determined intent and interview responses to impr
 
 You can configure Copilot agents with Customer Intent Agent to provide updated solutions for customer issues.
 
-Customer Intent Agent for voice agents uses generative AI to autonomously discover intents in your contact center instance. It analyzes past interactions between service representatives  and customers to create an intent library that enhances dynamic conversations. Intent benefits both assisted and self-service scenarios by enabling agents and representatives to quickly understand customer needs, guide conversations with follow-up questions, and provide tailored solutions in real time.
-
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
@@ -32,9 +30,6 @@ Before you proceed, make sure you:
 
 - [Enable Customer Intent Agent](manage-customer-intent-agent.md#enable-customer-intent-agent).
 - [Set up intent discovery and add intents to the intent library](manage-customer-intent-agent.md#manage-intent-discovery-setup).
-- [Intent discovery is set up](manage-customer-intent-agent.md#manage-intent-discovery-setup) and intents are available in the intent library.
-- Playbooks, tools, and knowledge are configured for intents marked for self-service.
-- For voice, new Copilot agents are enabled for voice and connected to your contact center environment.
 - To use intents with Copilot agents, enable the **Use in AI Agents** checkbox for that specific intent.
 - Connect your Copilot agent to knowledge sources and a workstream in omnichannel.
 - Assign the **Environment Maker** role to makers.
@@ -139,34 +134,6 @@ Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variable
 ## Updates to Customer Intent Agent
 
 Customer Intent Agents might receive periodic updates that update the corresponding component collection. To get access and receive these updates, you need to manually publish your Copilot agent.
-
-## Set up Copilot agents for voice
-
-Perform the following steps in Copilot Service admin center.
-
-1. To configure intent for voice agent, on the **AI Agents** page, select a Copilot agent for which the voice status shows as **Connected**.
-
-1. Select **Manage type**. On the **Type** dialog, select **Uses AI-generated intents** and **Voice only**.
-    > [!NOTE]
-    > Configurations in Copilot Studio aren't honored after you set the type "Uses AI-generated intents". The intents in the intent library only are used for the Customer Intent Agent for runtime logic for the voice agent. While you can connect the voice agent as the workstream deflection agent, to integrate the Customer Intent Agent for voice with your current IVR system, you need to place the voice agent in a voice queue and route the calls to it.
-    
-    :::image type="content" source="../media/intent-settings-for-voice-agents.png" alt-text="Screenshot of intent settings for voice agent.":::
-1. Save and close.
-
-## Connect voice agents to voice queues or workstreams
-
-To use Customer Intent Agent for voice, you need to connect your Copilot voice agent to a workstream or queue.
-
-1. Create a voice queue and add the Copilot voice agent to the queue. Learn more in [create a queue](/dynamics365/customer-service/administer/queues-omnichannel).
-
-1. In the existing topic flow for your workstream deflection agent, where you want to use Customer Intent Agent for voice, save a variable (for example va_AgentTransfer=True) and call the transfer to agent action.
-1. In the route-to-queue rules of the voice workstream, route to the queue with your Customer Intent Agent based on the **va_AgentTransfer** variable. The Customer Intent Agent is invoked, and if it can't deflect the customer, it escalates the call and triggers the queue routing again. You should configure the logic to route to a queue with a service representative when the call is routed the second time.
-
-## General behaviors of Customer Intent Agent for voice
-
-- If the customer asks to be escalated to a representative, the agent complies.
-- If the customer query is resolved, the agent ends the call.
-- If the voice agent encounters any error, it escalates to a representative.
 
 ## Related information
 

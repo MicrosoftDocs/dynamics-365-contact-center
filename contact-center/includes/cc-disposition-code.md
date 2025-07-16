@@ -3,5 +3,4 @@
    The disposition code is added to the list of disposition codes. You can add more disposition codes by repeating the previous step.
   > [!NOTE]
   > Even if you delete a disposition code that is associated with a conversation, the conversation still displays the disposition code.   
-
 1. Select **Save**.

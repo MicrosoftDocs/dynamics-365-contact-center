@@ -286,6 +286,8 @@
             href: /dynamics365/customer-service/administer/configure-intent-based-routing?context=/dynamics365/contact-center/context/administer-context
           - name: Enable intent-based suggestions for service representatives
             href: enable-intent-for-service-reps.md
+          - name: Set up voice agents to use intents
+            href: set-up-voice-agents-to-use-intents.md  
           - name: Configure intent-based suggestions for Copilot agents
             href: set-up-intent-agent.md
       - name: Copilot in Contact Center

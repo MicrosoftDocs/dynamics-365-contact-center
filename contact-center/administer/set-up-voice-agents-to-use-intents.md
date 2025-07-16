@@ -40,7 +40,7 @@ Perform the following steps in Copilot Service admin center.
 
 1. Select **Manage type**. On the **Type** dialog, select **Uses AI-generated intents** and **Voice only**.
     > [!NOTE]
-    > Configurations in Copilot Studio aren't honored after you set the type "Uses AI-generated intents". The intents in the intent library only are used for the Customer Intent Agent for runtime logic for the voice agent. While you can connect the voice agent as the workstream deflection agent, to integrate the Customer Intent Agent for voice with your current IVR system, you need to place the voice agent in a voice queue and route the calls to it.
+    > Configurations in Copilot Studio aren't honored after you set the type **Uses AI-generated intents**. The intents in the intent library only are used for the Customer Intent Agent for runtime logic for the voice agent. While you can connect the voice agent as the workstream deflection agent, to integrate the Customer Intent Agent for voice with your current IVR system, you need to place the voice agent in a voice queue and route the calls to it.
     
     :::image type="content" source="../media/intent-settings-for-voice-agents.png" alt-text="Screenshot of intent settings for voice agent.":::
 1. Save and close.

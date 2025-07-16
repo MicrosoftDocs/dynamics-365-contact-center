@@ -39,7 +39,7 @@ In Contact Center admin center or Customer Service admin center, perform the fol
 
      :::image type="content" source="../media/conv-manage-format-mini.png" alt-text="Screenshot of the structured settings for conversation summary" lightbox="../media/conv-manage-format.png":::|
 
- If you selected all the available options, here's how the service rpresentative sees the Copilot conversation summary:
+ If you selected all the available options, here's how the service representative sees the Copilot conversation summary:
 
    :::image type="content" source="../media/conv-summary-format-mini.png" alt-text="Screenshot of the structured data format for conversation summary" lightbox="../media/conv-summary-format.png":::|
 

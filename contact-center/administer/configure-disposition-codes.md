@@ -28,7 +28,7 @@ Disposition codes allow you to categorize and record the outcome of the customer
       - prvDeletemsdyn_conversationdispositioncodemap  
       - prvAppendmsdyn_conversationdispositioncodemap  
       - prvAppendTomsdyn_conversationdispositioncodemap
-    - For administrators to create and manage disposition codes, make sure that the following privileges are assigned:
+    - For administrators to create and manage disposition codes, the following privileges are assigned:
       - prvReadmsdyn_ocdispositioncode
       - prvCreatemsdyn_ocdispositioncode
       - prvWritemsdyn_ocdispositioncode

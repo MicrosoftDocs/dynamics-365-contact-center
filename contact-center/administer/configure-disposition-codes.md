@@ -16,7 +16,7 @@ Disposition codes allow you to categorize and record the outcome of the customer
 
 ## Prerequisites
 
-- You must have the Omnichannel Agent or Omnichannel Administrator security roles to configure and use disposition codes.
+- You have the Omnichannel Agent or Omnichannel Administrator security roles to configure and use disposition codes.
 - If you have custom security roles, make sure that the roles have the following privileges to manage disposition codes. For more information, see [Security roles and privileges](/power-platform/admin/security-roles-privileges).
     - For service representatives to view and use disposition codes during conversations, ensure the following privileges are assigned:
       - prvReadmsdyn_ocdispositioncode  

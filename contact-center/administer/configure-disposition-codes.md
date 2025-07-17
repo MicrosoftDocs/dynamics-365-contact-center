@@ -51,7 +51,7 @@ Disposition codes allow you to categorize and record the outcome of the customer
 ## Enable disposition codes 
 
 1. In the Copilot Service admin center, select **Customer settings** in **Customer support**.
-1. In the **Customer settings** page, select **Manage** for **Disposition code**.
+1. On the **Customer settings** page, select **Manage** for **Disposition code**.
 1. On the **Disposition Code** page, select the **Turn on Disposition Code** checkbox. The **Require disposition code to close session** checkbox appears and is enabled by default. This indicates that the service representative must select a disposition code before closing a session.
 1. In **Max disposition codes allowed**, specify the maximum number of disposition codes a representative can enter per conversation.
 1. Select **New Disposition Code**. The **New Disposition Code** panel appears.

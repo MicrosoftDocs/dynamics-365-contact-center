@@ -64,6 +64,8 @@
           href: voice-channel-agent-experience.md#avoid-call-disconnection
         - name: Use the Desktop companion application
           href: voice-dca-application.md
+        - name: Use Citrix virtual desktop to access voice capabilities
+          href: use-citrix-virtual-desktop-for-voice.md
         - name: Manage voicemails
           href: /dynamics365/customer-service/use/manage-voicemails?context=/dynamics365/contact-center/context/use-context
         - name: Transfer calls and consult with other users

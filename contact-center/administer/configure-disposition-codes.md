@@ -58,7 +58,7 @@ Disposition codes allow you to categorize and record the outcome of the customer
 1. In the **New Disposition Code** panel, specify a name for the disposition code, and then select **Add**.
    The disposition code is added to the list of disposition codes. You can add more disposition codes by repeating the previous step.
   > [!NOTE]
-  > Even if you delete a disposition code that is associated with a conversation, the conversation still displays the disposition code.  
+  > Even if you delete a disposition code that's associated with a conversation, the conversation still displays the disposition code.  
 1. Select **Save**.
 
 ## Add disposition code to workstream

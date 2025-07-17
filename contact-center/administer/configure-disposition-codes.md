@@ -12,7 +12,7 @@ ms.reviewer: mgandham
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-Disposition codes allow you to categorize and record the outcome of the customers interaction with the customer service representative (service representatives or representatives), helping you to assess and improve customer interactions.
+Disposition codes allow you to categorize and record the outcome of the customer interaction with the customer service representative (service representative or representative), and help you assess and improve customer interactions.
 
 ## Prerequisites
 
@@ -59,7 +59,7 @@ Disposition codes allow you to categorize and record the outcome of the customer
    The disposition code is added to the list of disposition codes. You can add more disposition codes by repeating the previous step.
   > [!NOTE]
   > Even if you delete a disposition code that's associated with a conversation, the conversation still displays the disposition code.  
-1. Select **Save**.
+7. Select **Save**.
 
 ## Add disposition code to workstream
 

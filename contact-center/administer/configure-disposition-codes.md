@@ -64,7 +64,7 @@ Disposition codes allow you to categorize and record the outcome of the customer
 ## Add disposition code to workstream
 
 You can add disposition codes to a chat or voice workstream so that service representatives can select workstream specific codes when they close a session.
-1. In the **Workstream** page, select the required workstream.
+1. On the **Workstream** page, select the required workstream.
 1. Turn on the **Use global settings for requiring disposition code** toggle to use the global settings for disposition codes. If you don't turn on the toggle, the system uses the workstream specific settings for disposition codes.
 1. Select the **Require disposition code to close session** checkbox. This indicates that the service representative must select a disposition code before closing a session.
 1. Select **New Disposition Code** and then Perform the steps in **Enable disposition codes** section to add disposition codes to the workstream.

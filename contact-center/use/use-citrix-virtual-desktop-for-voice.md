@@ -1,6 +1,6 @@
 ---
 title: Use Citrix virtual desktop to access voice capabilities
-description: Learn about how your representatives can use Citrix virtual desktop to access voice capabilities in Dynamics 365 Contact Center.
+description: Learn about how your representatives can use Citrix virtual desktop for a better call quality experience and access the voice capabilities in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: 
@@ -12,11 +12,11 @@ ms.custom: bap-template
 
 # Use Citrix virtual desktop to access voice capabilities
 
-You can configure the voice channel to be available to your customer service representatives through the Citrix virtual desktop. Representatives can connect through the Citrix virtual desktop and remotely access the Copilot Service workspace to make and receive calls and interact with your customers.
+For better call quality, you can configure the voice channel to be available to your customer service representatives through the Citrix virtual desktop. Representatives can connect through the Citrix virtual desktop and remotely access the Copilot Service workspace to make and receive calls and interact with your customers.
 
 ## Prerequisites
 
-- The feature is enabled by your administrator in Copilot Service admin center > **Support experience** > **Workspaces** > **Voice call experiences** > **Enable improved call quality for representatives using Citrix virtual desktop**.
+- Your administrator enabled the support in Copilot Service admin center > **Support experience** > **Workspaces** > **Voice call experiences** > **Enable improved call quality for representatives using Citrix virtual desktop**.
 
 - Citrix virtual desktop application 
 - Create registry key as follows:
@@ -33,6 +33,10 @@ The representatives can access the voice channel from the Citrix virtual desktop
 
 1. Connect to the virtual desktop.
 1. Open a browser window and access Copilot Service workspace.
+
+## Experience for representatives when local device disconnects from the virtual desktop 
+
+Learn about the [experience for representatives when their local device disconnects](../administer/configure-voice-avd.md#rdc-disconnects) from the virtual desktop instance. 
 
 ### Related information
 

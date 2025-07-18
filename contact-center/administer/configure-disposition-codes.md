@@ -23,38 +23,38 @@ Disposition codes allow you to categorize and record the outcome of the customer
 
    For service representatives to view and use disposition codes during conversations, the following privileges are assigned:
 
-      - prvReadmsdyn_ocdispositioncode  
-      - prvAppendTomsdyn_ocdispositioncode  
-      - prvReadmsdyn_dispositioncodecategory  
-      - prvReadmsdyn_conversationdispositioncodemap  
-      - prvCreatemsdyn_conversationdispositioncodemap  
-      - prvWritemsdyn_conversationdispositioncodemap  
-      - prvDeletemsdyn_conversationdispositioncodemap  
-      - prvAppendmsdyn_conversationdispositioncodemap  
-      - prvAppendTomsdyn_conversationdispositioncodemap
+    - prvReadmsdyn_ocdispositioncode  
+    - prvAppendTomsdyn_ocdispositioncode  
+    - prvReadmsdyn_dispositioncodecategory  
+    - prvReadmsdyn_conversationdispositioncodemap  
+    - prvCreatemsdyn_conversationdispositioncodemap  
+    - prvWritemsdyn_conversationdispositioncodemap  
+    - prvDeletemsdyn_conversationdispositioncodemap  
+    - prvAppendmsdyn_conversationdispositioncodemap  
+    - prvAppendTomsdyn_conversationdispositioncodemap
 
   ### [Administrators](#tab/administrators)
 
    For administrators to create and manage disposition codes, the following privileges are assigned:
 
-      - prvReadmsdyn_ocdispositioncode
-      - prvCreatemsdyn_ocdispositioncode
-      - prvWritemsdyn_ocdispositioncode
-      - prvDeletemsdyn_ocdispositioncode
-      - prvAppendmsdyn_ocdispositioncode
-      - prvAppendTomsdyn_ocdispositioncode
-      - prvReadmsdyn_dispositioncodecategory
-      - prvCreatemsdyn_dispositioncodecategory
-      - prvWritemsdyn_dispositioncodecategory
-      - prvDeletemsdyn_dispositioncodecategory
-      - prvAppendmsdyn_dispositioncodecategory
-      - prvAppendTomsdyn_dispositioncodecategory
-      - prvReadmsdyn_conversationdispositioncodemap
-      - prvCreatemsdyn_conversationdispositioncodemap
-      - prvWritemsdyn_conversationdispositioncodemap
-      - prvDeletemsdyn_conversationdispositioncodemap
-      - prvAppendmsdyn_conversationdispositioncodemap
-      - prvAppendTomsdyn_conversationdispositioncodemap
+    - prvReadmsdyn_ocdispositioncode
+    - prvCreatemsdyn_ocdispositioncode
+    - prvWritemsdyn_ocdispositioncode
+    - prvDeletemsdyn_ocdispositioncode
+    - prvAppendmsdyn_ocdispositioncode
+    - prvAppendTomsdyn_ocdispositioncode
+    - prvReadmsdyn_dispositioncodecategory
+    - prvCreatemsdyn_dispositioncodecategory
+    - prvWritemsdyn_dispositioncodecategory
+    - prvDeletemsdyn_dispositioncodecategory
+    - prvAppendmsdyn_dispositioncodecategory
+    - prvAppendTomsdyn_dispositioncodecategory
+    - prvReadmsdyn_conversationdispositioncodemap
+    - prvCreatemsdyn_conversationdispositioncodemap
+    - prvWritemsdyn_conversationdispositioncodemap
+    - prvDeletemsdyn_conversationdispositioncodemap
+    - prvAppendmsdyn_conversationdispositioncodemap
+    - prvAppendTomsdyn_conversationdispositioncodemap
     
 ---
 

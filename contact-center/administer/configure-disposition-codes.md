@@ -36,6 +36,7 @@ Disposition codes allow you to categorize and record the outcome of the customer
   ### [Administrators](#tab/administrators)
 
    For administrators to create and manage disposition codes, the following privileges are assigned:
+
       - prvReadmsdyn_ocdispositioncode
       - prvCreatemsdyn_ocdispositioncode
       - prvWritemsdyn_ocdispositioncode
@@ -54,6 +55,8 @@ Disposition codes allow you to categorize and record the outcome of the customer
       - prvDeletemsdyn_conversationdispositioncodemap
       - prvAppendmsdyn_conversationdispositioncodemap
       - prvAppendTomsdyn_conversationdispositioncodemap
+    
+---
 
 ## Enable disposition codes 
 
@@ -88,8 +91,6 @@ You can add disposition codes to a chat or voice workstream so that service repr
  
   > [!NOTE]
   > You can only edit or delete disposition codes associated with this workstream. To edit or delete global disposition codes, perform the steps in the section above in the **Disposition Code** page.
-
-:::image type="content" source="../media/add-disp-codes.png" alt-text="Screenshot of disposition codes" :::
 
 ## Runtime experience
 

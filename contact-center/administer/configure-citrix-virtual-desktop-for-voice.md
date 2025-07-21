@@ -1,6 +1,6 @@
 ---
-title: Configure Citrix virtual desktop for improved call quality
-description: Learn about how your representatives can use Citrix virtual desktop for a better call quality experience and access the voice capabilities in Dynamics 365 Contact Center.
+title: Configure settings for improved call quality over Citrix virtual desktop
+description: Learn about how your representatives can experience better call quality when they use Citrix virtual desktop to access the voice capabilities in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: 
@@ -10,9 +10,9 @@ ms.date: 07/22/2025
 ms.custom: bap-template
 ---
 
-# Configure Citrix virtual desktop for improved call quality
+# Configure settings for improved call quality over Citrix virtual desktop
 
-You can improve the call experience for your representatives through Citrix virtual desktop. Representatives can connect through the Citrix virtual desktop and remotely access the Copilot Service workspace to make and receive calls and interact with your customers.
+You can configure settings to improve the call experience for your representatives when they access the Copilot Service workspace app through Citrix virtual desktop.
 
 ## Prerequisites
 

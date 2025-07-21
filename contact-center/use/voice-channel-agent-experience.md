@@ -74,7 +74,7 @@ You can add notes to help your administrator review and block numbers. After you
 
 ## Use enhanced call quality over Citrix virtual desktop
 
-You can improve the call experience for your representatives who connect to the Copilot Service workspace through Citrix virtual desktop. Learn about it in [Configure Citrix virtual desktop for improved call quality](../administer/configure-citrix-virtual-desktop-for-voice.md).
+You can improve the call experience for your representatives who connect to the Copilot Service workspace through Citrix virtual desktop. Learn about it in [Configure Citrix virtual desktop for improved call quality](../administer/configure-voice-for-citrix-virtual-desktop.md).
 
 ## Use Azure Virtual Desktop to connect to voice channel
 

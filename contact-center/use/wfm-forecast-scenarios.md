@@ -77,6 +77,9 @@ You can create either short-term or long-term forecasts.
 > [!NOTE]  
 > The forecast scenario runs within two hours after setup for the first time. Subsequent runs follow the schedule set on the **Forecast Run Schedule** card.
 
+> [!NOTE]  
+> When forecasting with internal data, accuracy is influenced by the availability of information within the WEM system. Forecasts will still be generated even if some data is missing, though precision may vary depending on the completeness of the input. 
+
 ## View your forecast reports
 
 1. In the site map of Copilot Service workspace, select **Forecast scenarios** under **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.

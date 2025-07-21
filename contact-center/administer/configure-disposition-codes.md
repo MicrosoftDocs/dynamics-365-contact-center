@@ -1,7 +1,7 @@
 ---
 title: Configure disposition codes
 description: Learn how to configure disposition codes for voice and messaging channels.
-ms.date: 03/31/2025
+ms.date: 07/21/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -62,7 +62,7 @@ Disposition codes allow you to categorize and record the outcome of the customer
 
 1. In the Copilot Service admin center, select **Customer settings** in **Customer support**.
 1. On the **Customer settings** page, select **Manage** for **Disposition code**.
-1. On the **Disposition Code** page, select the **Turn on Disposition Code** checkbox. The **Require disposition code to close session** checkbox appears. This toggle is turned off by default. If you switch this toggle to on, service representative must select a disposition code before closing a session. 
+1. On the **Disposition Code** page, turn on the **Turn on Disposition Code** toggle. The **Require disposition code to close session** checkbox appears. If you select **Require disposition code to close session**, service representative must select a disposition code before closing a session. This checkbox is disabled by default. 
 1. In **Max disposition codes allowed**, specify the maximum number of disposition codes a representative can enter per conversation. You can specify upto 12 disposition codes. The default value is 2.
 
 ## Manage disposition codes
@@ -79,7 +79,7 @@ You can add, edit, or delete disposition codes. Perform the following steps in t
   > [!NOTE]
   > Even after you delete a disposition code that's associated with a conversation. it's displayed for the conversation.  
 
-:::image type="content" source="../media/add-disp-codes.png" alt-text="Screenshot of disposition codes" :::
+:::image type="content" source="../media/add-disposition-codes.png" alt-text="Screenshot of disposition codes" :::
 
 ## Add disposition code to workstream
 
@@ -90,7 +90,10 @@ You can add disposition codes to a chat or voice workstream so that service repr
 1. Select **New Disposition Code** and then perform the steps provided in the **Enable disposition codes** section to add disposition codes to the workstream.
  
   > [!NOTE]
-  > You can only edit or delete disposition codes associated with this workstream. To edit or delete global disposition codes, perform the steps in the section above in the **Disposition Code** page.
+  > You can only edit or delete disposition codes associated with a specified workstream. To edit or delete global disposition codes, perform the steps in the [manage disposition code](#manage-disposition-codes) section in the **Disposition Code** page.
+
+
+:::image type="content" source="../media/workstream-disposition-code.png" alt-text="Screenshot of workstream specific disposition codes" :::
 
 ## Runtime experience
 

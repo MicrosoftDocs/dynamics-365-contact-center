@@ -49,4 +49,4 @@ Ensure that the service representatives using the Virtual Desktop have the lates
 
 ### Related information
 
-[Use agent dashboard and call controls in the voice channel](../use/voice-channel-agent-experience.md)  
+[Use representative dashboard and call controls in the voice channel](../use/voice-channel-agent-experience.md)  

@@ -1,5 +1,5 @@
 ---
-title: Use Citrix virtual desktop to access voice capabilities
+title: Configure Citrix virtual desktop for improved call quality
 description: Learn about how your representatives can use Citrix virtual desktop for a better call quality experience and access the voice capabilities in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
@@ -10,13 +10,11 @@ ms.date: 07/22/2025
 ms.custom: bap-template
 ---
 
-# Use Citrix virtual desktop to access voice capabilities
+# Configure Citrix virtual desktop for improved call quality
 
-For better call quality, you can configure the voice channel to be available to your customer service representatives through the Citrix virtual desktop. Representatives can connect through the Citrix virtual desktop and remotely access the Copilot Service workspace to make and receive calls and interact with your customers.
+You can improve the call experience for your representatives through Citrix virtual desktop. Representatives can connect through the Citrix virtual desktop and remotely access the Copilot Service workspace to make and receive calls and interact with your customers.
 
 ## Prerequisites
-
-- Your administrator enabled the support in Copilot Service admin center > **Support experience** > **Workspaces** > **Voice call experiences** > **Enable improved call quality for representatives using Citrix virtual desktop**.
 
 - Citrix virtual desktop application 
 - Create registry key as follows:
@@ -24,6 +22,12 @@ For better call quality, you can configure the voice channel to be available to 
   - **Key Name**: `ProcessWhitelist`
   - **Key Type**: MULTISZ 
   - **Key Value**: msedge.exe chrome.exe
+
+## Enable the improved call quality experience
+
+1. In the site map of Copilot Service admin center, go to **Support experience** > **Workspaces**.
+1. Select **Manage** for **Voice call experiences**.
+1. On the page that appears, turn on the **Enable improved call quality for representatives using Citrix virtual desktop** toggle.
 
 ## Access Citrix virtual desktop
 

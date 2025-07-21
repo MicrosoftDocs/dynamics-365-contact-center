@@ -44,5 +44,5 @@ Learn about the [experience for representatives when their local device disconne
 
 ### Related information
 
-[Use agent dashboard and call controls in the voice channel](voice-channel-agent-experience.md)  
+[Use agent dashboard and call controls in the voice channel](../use/voice-channel-agent-experience.md#usecvd)  
 [Transfer calls and consult with users in the voice channel](/dynamics365/customer-service/use/voice-channel-transfer-consult)  

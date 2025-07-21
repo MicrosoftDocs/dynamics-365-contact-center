@@ -1,7 +1,7 @@
 ---
 title: Use agent dashboard and call controls in the voice channel
 description: Learn how you can use the agent dashboard, call controls, and make and receive customer calls.
-ms.date: 04/04/2025
+ms.date: 07/22/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -70,9 +70,13 @@ To report a phone number as spam, select **Mark spam**.
 
 You can add notes to help your administrator review and block numbers. After you mark a number as spam, it goes into the pending review tab on the **Blocked numbers** page.
 
+## Use Citrix virtual desktop for improved call quality
+
+You can improve the call experience for your representatives through Citrix virtual desktop. Representatives can connect through the Citrix virtual desktop and remotely access Copilot Service workspace to make and receive calls and interact with your customers. Learn about it in [Configure Citrix virtual desktop for improved call quality](../administer/configure-citrix-virtual-desktop-for-voice.md).
+
 ## Use Azure Virtual Desktop to connect to voice channel
 
-You can use the Microsoft Remote Desktop client to connect to the voice channel using Azure Virtual Desktop. You can learn more about the disconnection scenarios at [Agent experience when local machine disconnects from the Azure Virtual Desktop instance](../administer/configure-voice-avd.md)
+You can use the Microsoft Remote Desktop client to connect to the voice channel using Azure Virtual Desktop. You can learn more about the disconnection scenarios at [Agent experience when local machine disconnects from the Azure Virtual Desktop instance](../administer/configure-voice-avd.md).
 
 ## Avoid call disconnection
 

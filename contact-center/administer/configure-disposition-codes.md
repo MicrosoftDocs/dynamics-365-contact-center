@@ -70,7 +70,7 @@ Disposition codes allow you to categorize and record the outcome of the customer
 You can add, edit, or delete disposition codes. Perform the following steps in the **Disposition Code** page.
 
 1. Select **New Disposition Code**. The **New Disposition Code** panel appears.
-1. In the **New Disposition Code** panel, specify a name for the disposition code, category, workstream and then select **Add**.
+1. Specify a name for the disposition code, category, workstream, and then select **Add**.
    The disposition code is added to the list of disposition codes. You can add more disposition codes by repeating the previous step.
 1. To edit a disposition code, do the following:
       - Select the disposition code and then select **Edit**. On the **Edit Disposition Code** panel, make the changes.

@@ -70,6 +70,8 @@ To report a phone number as spam, select **Mark spam**.
 
 You can add notes to help your administrator review and block numbers. After you mark a number as spam, it goes into the pending review tab on the **Blocked numbers** page.
 
+<a name="usecvd"></a>
+
 ## Use Citrix virtual desktop for improved call quality
 
 You can improve the call experience for your representatives through Citrix virtual desktop. Representatives can connect through the Citrix virtual desktop and remotely access Copilot Service workspace to make and receive calls and interact with your customers. Learn about it in [Configure Citrix virtual desktop for improved call quality](../administer/configure-citrix-virtual-desktop-for-voice.md).

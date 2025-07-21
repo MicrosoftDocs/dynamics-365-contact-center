@@ -78,7 +78,7 @@ You can create either short-term or long-term forecasts.
 > The forecast scenario runs within two hours after setup for the first time. Subsequent runs follow the schedule set on the **Forecast Run Schedule** card.
 
 > [!NOTE]  
-> When forecasting with internal data, accuracy is influenced by the availability of information within the WEM system. Forecasts will still be generated even if some data is missing, though precision may vary depending on the completeness of the input. 
+> Forecasts generated using internal data from the WEM system remain available even when data is limited. However, forecast accuracy improves significantly with the volume of data . 
 
 ## View your forecast reports
 

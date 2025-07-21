@@ -90,7 +90,7 @@ You can add disposition codes to a chat or voice workstream so that service repr
 1. Select **New Disposition Code** and then perform the steps provided in the **Enable disposition codes** section to add disposition codes to the workstream.
  
   > [!NOTE]
-  > You can only edit or delete disposition codes associated with a specified workstream. To edit or delete global disposition codes, perform the steps in the [manage disposition code](#manage-disposition-codes) section in the **Disposition Code** page.
+  > You can edit or delete disposition codes associated with a specific workstream only. To edit or delete global disposition codes, perform the steps in the [manage disposition code](#manage-disposition-codes) section in the **Disposition Code** page.
 
 
 :::image type="content" source="../media/workstream-disposition-code.png" alt-text="Screenshot of workstream specific disposition codes" :::

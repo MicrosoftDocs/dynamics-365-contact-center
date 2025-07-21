@@ -77,7 +77,7 @@ You can add, edit, or delete disposition codes. Perform the following steps in t
       - You can also select multiple disposition codes to edit the category and workstream.
 1. To delete a disposition code, select the required disposition code and then select **Delete**. You can also select multiple disposition codes to delete them.
   > [!NOTE]
-  > Even if you delete a disposition code that's associated with a conversation, the conversation still displays the disposition code.  
+  > Even after you delete a disposition code that's associated with a conversation. it's displayed for the conversation.  
 
 :::image type="content" source="../media/add-disp-codes.png" alt-text="Screenshot of disposition codes" :::
 

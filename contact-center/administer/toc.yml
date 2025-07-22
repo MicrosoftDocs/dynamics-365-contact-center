@@ -170,8 +170,6 @@
         items:
         - name: Configure the inbox
           href: /dynamics365/customer-service/administer/configure-inbox?context=/dynamics365/contact-center/context/administer-context
-        - name: Inbox views and filters
-          href: /dynamics365/customer-service/administer/inbox-views-filters?context=/dynamics365/contact-center/context/administer-context
       - name: Timeline
         items:
         - name: Configure timeline

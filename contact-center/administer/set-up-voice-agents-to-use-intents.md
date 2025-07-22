@@ -55,8 +55,9 @@ To use Customer Intent Agent for voice, you need to connect your Copilot voice a
 ## General behaviors of Customer Intent Agent for voice
 
 - If the customer asks to be escalated to a representative, the agent complies.
-- If the customer query is resolved, the agent ends the call.
 - If the voice agent encounters any error, it escalates to a representative.
+- If the customer query is resolved, the agent ends the call.
+- If the customer remains silent, the agent ends the call.
  
 ### Related information
 

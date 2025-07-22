@@ -222,7 +222,7 @@
           href: /dynamics365/customer-service/administer/voice-channel-outbound-calling?context=/dynamics365/contact-center/context/administer-context
         - name: Enable representatives to search for contacts and open records from outbound dialer (preview)
           href: /dynamics365/customer-service/administer/add-outbound-dialer-settings?context=/dynamics365/contact-center/context/administer-context  
-        - name: Configure Citrix virtual desktop for improved call quality
+        - name: Configure setting for improved call quality over Citrix virtual desktop
           href: configure-voice-for-citrix-virtual-desktop.md
         - name: Use Azure Virtual Desktop to access voice channel
           href: configure-voice-avd.md

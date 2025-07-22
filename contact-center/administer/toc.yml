@@ -296,8 +296,8 @@
               href: enable-intent-for-service-reps.md
             - name: Configure intent-based suggestions for Copilot agents
               href: set-up-intent-agent.md
-        - name: Use rollout manager to manage AI agents
-          href: use-rollout-manager.md
+        - name: Create rollout plans to manage AI agents
+          href: create-rollout-plans.md
         - name: Supervise AI agents
           href: supervise-ai-agents.md
       - name: Copilot in Contact Center

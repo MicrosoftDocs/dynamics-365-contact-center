@@ -31,7 +31,7 @@ The Agent hub helps you with answers to some of the FAQs such as follows:
 The Agent hub provides a unified view of the following capabilities:
 
 - **Learn**: Before they enable the AI capabilities, administrators can access guided overviews of AI agents security protocols, compliance impacts, and adoption workflows. This helps demystify AI and empowers decision-makers with the knowledge to act confidently.
-- **Rollout manager**: Helps you manage the rollout of AI agents in your contact center. You can configure the rollout of AI agents to specific users, teams, or queues, and monitor their performance. Learn more in [Use rollout manager to manage AI agents](use-rollout-manager.md).
+- **Rollout manager**: Helps you manage the rollout of AI agents in your contact center. You can configure the rollout of AI agents to specific users, teams, or queues, and monitor their performance. Learn more in [Create rollout plans to manage AI agents](create-rollout-plans.md).
 - **Measure**: Go through the performance of AI agents in your contact center. You can view metrics such as call volume, average handle time, and customer satisfaction scores to understand how AI agents are performing.
 - **Security**: Understand the security measures in place to protect customer data and ensure compliance with regulations.
 - **Architecture**: Get insights into the underlying architecture of AI agents and how they integrate with existing systems.

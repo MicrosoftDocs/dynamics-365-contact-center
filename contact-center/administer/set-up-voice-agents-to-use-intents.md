@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Set up voice agents to use intents (preview)
 
-Customer Intent Agent for voice agents uses generative AI to autonomously discover intents in your contact center instance. It analyzes past interactions between service representatives  and customers to create an intent library that enhances dynamic conversations. Intent benefits both assisted and self-service scenarios by enabling agents and representatives to quickly understand customer needs, guide conversations with follow-up questions, and provide tailored solutions in real time.
+Customer Intent Agent for voice agents uses generative AI to autonomously discover intents in your contact center instance. It analyzes past interactions between service representatives and customers to create an intent library that enhances dynamic conversations. Intent benefits self-service scenarios by enabling agents to quickly understand customer needs, guide conversations with follow-up questions, and provide tailored solutions in real time.
 
 ## Prerequisites
 

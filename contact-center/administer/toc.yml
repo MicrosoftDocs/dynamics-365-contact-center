@@ -274,8 +274,8 @@
         items:
         - name: Learn guide for AI agents and Copilot features
           items:
-          - name: Overview of AI hub
-            href: overview-ai-hub.md
+          - name: Overview of Agent hub
+            href: overview-agent-hub.md
           - name: Trust center for Dynamics 365
             href: trust-center.md
         - name: Autonomous service agents

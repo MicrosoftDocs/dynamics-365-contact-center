@@ -149,11 +149,11 @@
       - name: Inbox
         items:
           - name: Use the inbox
-            href: /dynamics365/customer-service/use/use-inbox?context=/dynamics365/context/contact-center-context            
+            href: /dynamics365/customer-service/use/use-inbox?context=/dynamics365/context/use-context           
           - name: Inbox views and filters
-            href: /dynamics365/customer-service/administer/inbox-views-filters?context=/dynamics365/contact-center/context/administer-context
+            href: /dynamics365/customer-service/administer/inbox-views-filters?context=/dynamics365/contact-center/context/use-context
           - name: Create personalized inbox views
-            href: /dynamics365/customer-service/use/inbox-create-personalized-view?context=/dynamics365/context/contact-center-context            
+            href: /dynamics365/customer-service/use/inbox-create-personalized-view?context=/dynamics365/context/use-context         
       - name: Use messaging channels
         items:
         - name: Introduction to channels

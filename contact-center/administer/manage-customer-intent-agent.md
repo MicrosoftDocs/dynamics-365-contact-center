@@ -147,10 +147,42 @@ You can enable Customer Intent Agent to follow instructions that you set up to h
 > [!NOTE]
 > You can enter upto 4000 characters.
 1. Select **Save**. 
-1. In the **Instructions for intent groups and intents** section, 
-
-
+1. In the **Instructions for intent groups and intents** section, create an instruction for an intent group or intent.
+    1. To create instructions for an intent group, select [Manage intent groups](#manage-intent-groups).
+    1. To create instructions for an intent, select [Manage intents](#manage-intents).
+1. If you select **Manage intent groups**, select an intent group from the **All intent groups** dropdown list.
+1. On the **Intent group** page, **Intent group instructions (optional)** section, select **Add**.
+1. On the **Add Instructions** dialog, add instructions for the intent group. You can enter upto 2000 characters.
+1. To edit the line of business instructions, go to **Manage instructions**.
+1. Select **Save**.
  
+
+### Examples of instructions
+
+Need info.
+ 
+
+
+## Manage connectors for AI agents (optional)
+
+Connectors let systems work together, move data, and let AI agents complete tasks to resolve issues.
+
+1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage connectors for AI agents (optional)**.
+1. On the **Manage custom connectors (preview)** page, select **Add connector**.
+1. On the **Select a connector** dialog, search and select a connector. You can add upto 30 connectors.    
+1. Select **Next**.
+1. On the **Set up the connector** dialog, select a connection from the **Connection** dropdown. You can also create a new connection in Power Platform.
+1. Specify the type of use for connector, **General** or **For specific intents**.
+1. If you select **For specific intents**, you need to add the custom connector as a solution.
+1. Select **Save**.
+
+You can also edit or delete a conector from the **Manage custom connectors (preview)** page.
+ 
+
+## Knowledge sources for intents
+
+You can specify the knowledge base that you want to use for intent management.
+
 ### Related information
 
 [Enable intent for support representatives](enable-intent-for-service-reps.md)    

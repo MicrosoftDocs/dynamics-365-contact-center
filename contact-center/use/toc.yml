@@ -129,7 +129,7 @@
           - name: Send email to multiple recipients
             href: /power-apps/user/direct-email?context=/dynamics365/contact-center/context/use-context
           - name: Resolve an unresolved email recipient
-            href: /power-apps/user/unresolved-email-recipient?context=/dynamics365/contact-center/context/use-context
+            href: /power-apps/user/unresolved-email-recipient?context=/dynamics365/contact-center/context/use-context           
           - name: Email templates
             items: 
             - name: Create an email template
@@ -144,14 +144,16 @@
               href: /power-apps/user/email-template-convert?context=/dynamics365/contact-center/context/use-context
             - name: Create a signature for emails
               href: /power-apps/user/email-signature?context=/dynamics365/contact-center/context/use-context
+          - name: Email FAQ and known issues
+            href: /power-apps/user/activities-known-issues?context=/dynamics365/contact-center/context/use-context               
       - name: Inbox
         items:
           - name: Use the inbox
             href: /dynamics365/customer-service/use/use-inbox?context=/dynamics365/context/contact-center-context            
+          - name: Inbox views and filters
+            href: /dynamics365/customer-service/administer/inbox-views-filters?context=/dynamics365/contact-center/context/administer-context
           - name: Create personalized inbox views
             href: /dynamics365/customer-service/use/inbox-create-personalized-view?context=/dynamics365/context/contact-center-context            
-          - name: Email FAQ and known issues
-            href: /power-apps/user/activities-known-issues?context=/dynamics365/contact-center/context/use-context
       - name: Use messaging channels
         items:
         - name: Introduction to channels

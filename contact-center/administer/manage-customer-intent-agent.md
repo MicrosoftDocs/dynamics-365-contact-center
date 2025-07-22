@@ -136,6 +136,20 @@ You can logically organize the intents into intent groups. The intent group repr
 1. On the page that appears, select **Add**.
 1. Select the intents in the list that match, and then select **Add**.
 1. Select **Save**. The intent group is displayed in the **All intent groups** view.
+
+## Manage instructions (optional)
+
+You can enable Customer Intent Agent to follow instructions that you set up to help resolve intents. 
+
+1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage instructions (optional)**.
+1. On the **Manage instructions (preview)** page, select a line of business from the **Select line of business** dropdown list and then in the **Line of business instructions (optional)** section, select **Add**.
+1. On the **Add instructions** dialog, add the instructions. Select the **View example instructions** dropdown, if you need to refer to examples to create instructions for your line of business.
+> [!NOTE]
+> You can enter upto 4000 characters.
+1. Select **Save**. 
+1. In the **Instructions for intent groups and intents** section, 
+
+
  
 ### Related information
 

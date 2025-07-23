@@ -299,7 +299,7 @@
         - name: Create rollout plans to manage AI agents
           href: create-rollout-plans.md
         - name: View Agent insights
-          href: ../use/agent insights.md
+          href: ../use/agent-insights.md
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features

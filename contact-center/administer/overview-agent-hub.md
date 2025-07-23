@@ -22,9 +22,8 @@ Use the links to the various articles on the **Agent hub** page to learn about t
 
 The Agent hub helps you with answers to some of the FAQs such as follows:
 
-- Which AI agents are running in my contact center?
-- Are they compliant and secure?
-- What business value are they delivering?
+- Which autonomous agents are available.
+- What business value are they delivering.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -32,8 +31,8 @@ The Agent hub provides a unified view of the following capabilities:
 
 - **Learn**: Before they enable the AI capabilities, administrators can access guided overviews of AI agents security protocols, compliance impacts, and adoption workflows. This helps demystify AI and empowers decision-makers with the knowledge to act confidently.
 - **Rollout manager**: Helps you manage the rollout of AI agents in your contact center. You can configure the rollout of AI agents to specific users, teams, or queues, and monitor their performance. Learn more in [Create rollout plans to manage AI agents](create-rollout-plans.md).
-- **Measure**: Go through the performance of AI agents in your contact center. You can view metrics such as call volume, average handle time, and customer satisfaction scores to understand how AI agents are performing.
-- **Security**: Understand the security measures in place to protect customer data and ensure compliance with regulations.
+- **Agent insights**: Go through the performance of AI agents in your contact center. You can view metrics such as total conversations, average handle time, and customer satisfaction scores to understand how AI agents are performing.
+- **Security**: Understand the security measures in place to protect customer data and ensure compliance with regulations. Learn more in 
 - **Architecture**: Get insights into the underlying architecture of AI agents and how they integrate with existing systems.
 - **Privacy and compliance**: Learn about the privacy and compliance considerations for using AI agents in your contact center.
 

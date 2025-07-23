@@ -38,6 +38,7 @@ Find compliance artifacts, request documentation, and view details about the con
 ||**Are system failures or errors detected and addressed** <br> Copilot is part of the broader Dynamics 365 and Power Platform ecosystem, so the same support channels and escalation paths apply. ||
 ||Is a prompt shield implemented to filter or block harmful, misleading, or policy-violating inputs? <br>|Yes|
 ||Is any non-Microsoft data being used? <br> Copilot can be integrated with external data sources, such as SharePoint, websites, or custom knowledge bases, but only if it is explicitly configured. ||
+|Data governance and security|||
 
 ### Related information
 

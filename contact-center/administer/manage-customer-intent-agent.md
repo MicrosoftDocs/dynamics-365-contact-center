@@ -81,7 +81,7 @@ You need to run the AI model on data sources like conversations to identify inte
    - **Record status**: Select **Pending**, **Approved**, or **Discarded** in the list to indicate the default status that you'd like to set for the newly-discovered intents.
 1. If you want to simulate the intent discovery, select **Test**. After the discovery is complete, a simulation of the intent groups is available.
 1. Select **Add into job schedule** to run the intent discovery.
-1. In **Test results**, select the simulation to view the details. The simulation details, such as as status, data source, and intent group granularity are displayed. Simulation uses the last 1000 records to generate intent and intent groups. The simulation helps administrators evaluate the intents and decide on granularity.
+1. In **Test results**, select the simulation to view the details. The simulation details, such as status, data source, and intent group granularity are displayed. Simulation uses the last 1000 records to generate intent and intent groups. The simulation helps administrators evaluate the intents and decide on granularity.
 1. Select the simulation, and then select **Export to Excel** option. The Excel file is downloaded to your local computer.
 1. After you validate and choose the intent group granularity that reflects your business needs, select **Set up intent discovery** to run the intent discovery.
    > [!NOTE]
@@ -144,7 +144,8 @@ You can enable Customer Intent Agent to follow instructions that you set up to h
 > You must have the Intent Manager role to create instructions.
 
 1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage instructions (optional)**.
-1. On the **Manage instructions (preview)** page, select a line of business from the **Select line of business** dropdown list, and then in the **Line of business instructions (optional)** section, select **Add**.
+1. On the **Manage instructions (preview)** page, select a line of business from the **Select line of business** dropdown list.
+1. In the **Line of business instructions (optional)** section, select **Add**.
 1. On the **Add instructions** dialog, add the instructions for the line of business. You can enter upto 4000 characters.
 Select the **View example instructions** dropdown, if you need to refer to examples to create instructions for your line of business.
 1. Select **Save**. 
@@ -191,18 +192,21 @@ You can edit or delete a connector from the **Manage connectors for AI agents (o
 
 You can specify the knowledge base that you want to use for intent management.
 
-1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Knoledge sources for intents**.
-1. On the **Knowledge source for Customer Intent Agent** page, **Select a knowledge source (required)** section, select **Dynamics 365 knowledge** or **Copilot Studio knolwedge (Preview)**.
+1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Knowledge sources for intents**.
+1. On the **Knowledge source for Customer Intent Agent** page, **Select a knowledge source (required)** section, select **Dynamics 365 knowledge** or **Copilot Studio knowledge (Preview)**.
     1. If you select **Dynamics 365 knowledge**, select **Manage filters** to specify knowledge filters for agents.
-        1. On the **Manage knowledge filters for agents** dialog, you can specify the filters that apply to Dynamics 365 knowledge articles. You can modify these default filters as required.
+        1. On the **Manage knowledge filters for agents** dialog, you can specify the filters that apply to Dynamics 365 knowledge articles. You can modify the default filters as required.
         1. Select **Save**.
-1. In the **Map a Dynamics 365 knowledge article to an intent (optional)** section, you can manually add an article to an intent. 
-    1. Select **Go to manage intents**.
-    1. On the **Intent** page, **Solution (optional)** section, select **Dynamics 365 knowledge articles**, and then select **Add**.
-    1. On the **Add a solution** page, select a knowledge article for the intent.
-    1. Select **Save and close**. Once added, the articles appear in the **Solution (Optional)** section.
-    
+   1. If you select **Copilot Studio knowledge (preview)**, do the steps provided in [Enable knowledge sources from Microsoft Copilot Studio (preview)](knowledge-copilot.md#enable-knowledge-sources-from-microsoft-copilot-studio-preview).
+
+You can manually add articles to specific intents.
  
+1. On the **Knowledge source for Customer Intent Agent** page, **Map a Dynamics 365 knowledge article to an intent (optional)** section, select **Go to manage intents**.
+1. From the **All intents** dropdown list, select the intent. 
+1. On the intent page, **Solution (optional)** section, select **Dynamics 365 knowledge articles**, and then select **Add**.
+1. On the **Add a solution** page, select a knowledge article for the intent.
+1. Select **Save and close**. Once added, the articles appear in the **Solution (Optional)** section.
+    
 
 ### Related information
 

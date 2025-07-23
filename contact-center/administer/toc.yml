@@ -298,8 +298,8 @@
               href: set-up-intent-agent.md
         - name: Create rollout plans to manage AI agents
           href: create-rollout-plans.md
-        - name: Supervise AI agents
-          href: supervise-ai-agents.md
+        - name: View Agent insights
+          href: ../use/agent insights.md
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features

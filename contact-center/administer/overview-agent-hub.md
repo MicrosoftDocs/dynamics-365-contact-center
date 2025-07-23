@@ -16,9 +16,9 @@ ms.custom:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Agent hub in Dynamics 365 Contact Center is a one-stop hub that empowers admins and supervisors to safely adopt AI, monitor its impact, and make informed, responsible decisions.
+Agent hub in Dynamics 365 Contact Center and Customer Service is a one-stop hub that empowers admins and supervisors to safely adopt AI, monitor its impact, and make informed, responsible decisions.
 
-Use the links to the various articles on the **Agent hub** page to learn about the AI capabilities offered in Dynamics 365 Contact Center.
+Use the links to the various articles on the **Agent hub** page to learn about the AI capabilities offered in Dynamics 365 Contact Center and Customer Service.
 
 The Agent hub helps you with answers to some of the FAQs such as follows:
 
@@ -30,9 +30,9 @@ The Agent hub helps you with answers to some of the FAQs such as follows:
 The Agent hub provides a unified view of the following capabilities:
 
 - **Learn**: Before they enable the AI capabilities, administrators can access guided overviews of AI agents security protocols, compliance impacts, and adoption workflows. This helps demystify AI and empowers decision-makers with the knowledge to act confidently.
-- **Rollout manager**: Helps you manage the rollout of AI agents in your contact center. You can configure the rollout of AI agents to specific users, teams, or queues, and monitor their performance. Learn more in [Create rollout plans to manage AI agents](create-rollout-plans.md).
-- **Agent insights**: Go through the performance of AI agents in your contact center. You can view metrics such as total conversations, average handle time, and customer satisfaction scores to understand how AI agents are performing.
-- **Security**: Understand the security measures in place to protect customer data and ensure compliance with regulations. Learn more in 
+- **Rollout manager**: Helps you manage the rollout plans for AI agents in your contact center. You can configure the rollout plans for AI agents to specific users, teams, or queues, and monitor their performance. Learn more in [Create rollout plans to manage AI agents](create-rollout-plans.md).
+- **Agent insights**: Go through the performance of AI agents in your contact center. You can view metrics such as total conversations, average handle time, and customer satisfaction scores to understand how AI agents are performing. Learn more in [View Agent insights dashboard](../use/agent-insights.md).
+- **Security**: Understand the security measures in place to protect customer data and ensure compliance with regulations. Learn more in [Trust center for Dynamics 365](trust-center.md).
 - **Architecture**: Get insights into the underlying architecture of AI agents and how they integrate with existing systems.
 - **Privacy and compliance**: Learn about the privacy and compliance considerations for using AI agents in your contact center.
 

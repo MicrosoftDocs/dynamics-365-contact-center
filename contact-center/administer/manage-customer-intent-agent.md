@@ -140,20 +140,21 @@ You can logically organize the intents into intent groups. The intent group repr
 ## Manage instructions (optional)
 
 You can enable Customer Intent Agent to follow instructions that you set up to help resolve intents. 
+> [!NOTE]
+> You must have the Intent Manager role to create instructions.
 
 1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage instructions (optional)**.
-1. On the **Manage instructions (preview)** page, select a line of business from the **Select line of business** dropdown list and then in the **Line of business instructions (optional)** section, select **Add**.
-1. On the **Add instructions** dialog, add the instructions. Select the **View example instructions** dropdown, if you need to refer to examples to create instructions for your line of business.
-> [!NOTE]
-> You can enter upto 4000 characters.
+1. On the **Manage instructions (preview)** page, select a line of business from the **Select line of business** dropdown list, and then in the **Line of business instructions (optional)** section, select **Add**.
+1. On the **Add instructions** dialog, add the instructions for the line of business. You can enter upto 4000 characters.
+Select the **View example instructions** dropdown, if you need to refer to examples to create instructions for your line of business.
 1. Select **Save**. 
-1. In the **Instructions for intent groups and intents** section, create an instruction for an intent group or intent.
+1. In the **Instructions for intent groups and intents** section, create instructions for intent groups or intents for the specific line of business.
     1. To create instructions for an intent group, select [Manage intent groups](#manage-intent-groups).
     1. To create instructions for an intent, select [Manage intents](#manage-intents).
 1. If you select **Manage intent groups**, select an intent group from the **All intent groups** dropdown list.
-1. On the **Intent group** page, **Intent group instructions (optional)** section, select **Add**.
+1. On the selected intent group page, **Intent group instructions (optional)** section, select **Add**.
 1. On the **Add Instructions** dialog, add instructions for the intent group. You can enter upto 2000 characters.
-1. To edit the line of business instructions, go to **Manage instructions**.
+1. To edit the line of business instructions, select **Manage instructions**.
 1. Select **Save**.
  
 
@@ -163,9 +164,9 @@ Need info.
  
 
 
-## Manage connectors for AI agents (optional)
+## Manage custom connectors for AI agents (optional)
 
-Connectors let systems work together, move data, and let AI agents complete tasks to resolve issues.
+Connectors let systems work together, move data, and let AI agents autonomously complete tasks to resolve issues. Learn more in 
 
 1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage connectors for AI agents (optional)**.
 1. On the **Manage custom connectors (preview)** page, select **Add connector**.
@@ -182,6 +183,15 @@ You can also edit or delete a conector from the **Manage custom connectors (prev
 ## Knowledge sources for intents
 
 You can specify the knowledge base that you want to use for intent management.
+
+1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Knoledge sources for intents**.
+1. On the **Knowledge source for Customer Intent Agent** page, **Select a knowledge source (required)** section, select **Dynamics 365 knowledge** or **Copilot Studio knolwedge (Preview)**.
+    1. If you select **Dynamics 365 knowledge**, select **Manage filters** to specify knowledge filters for agents.
+        1. On the **Manage knowledge filters for agents** dialog, you can specify the filters that apply to Dynamics 365 knowledge articles. You can modify these default filters, as required.
+        1. Select **Save**.
+1. In the **Map a Dynamics 365 knowledge article to an intent (optional)** section, you can manually add an article to an intent. 
+    1. Select **Go to manage intents**.
+    1. On the **Intent** page, **Solution (optional)** section, select **Dynamics 365 knowledge articles**, anbd then select **Add**.
 
 ### Related information
 

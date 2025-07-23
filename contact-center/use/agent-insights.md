@@ -23,7 +23,7 @@ The Agent insights dashboard provides insights into the performance of the auton
 The dashboard capabilities include:
 
 - **Filters**: Specify the exact segment of traffic to gather insights through the line of business, intent group, and channel filters.
-- **Conversation vs Case pivot**: Easily pivot between the conversation and case view to gain insights into the complete program picture.
+- **Conversation versus Case pivot**: Easily pivot between the conversation and case view to gain insights into the complete program picture.
 - **Top-level KPIs**: Quickly digest your holistic performance across AI agents and representatives through metrics such as total volume, autonomous rate, and average handling time.
 - **AI agent-level insights**: Quickly assess the impact the AI agents are driving for the program and the areas of opportunity for improvement.
 - **Volume breakdown**: View the volume breakdown by line of business, intent group, or channels to identify the top volume drivers and their autonomous rate per grouping.

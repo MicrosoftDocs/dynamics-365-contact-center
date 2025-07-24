@@ -170,43 +170,22 @@ Need info.
 Connectors let systems work together, move data, and let AI agents autonomously complete tasks to resolve issues. 
 
 1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage connectors for AI agents (optional)**.
-1. On the **Manage custom connectors (preview)** page, select **Add connector**.
+1. On the **Manage custom connectors (preview)** page, select **Add connector**. Learn how to add connector in [Create a custom connector](/connectors/custom-connectors/define-blank).
 1. On the **Select a connector** dialog, search and select a connector. You can add upto 30 connectors.    
 1. Select **Next**.
-1. On the **Set up the connector** dialog, select a connection from the **Connection** dropdown. You can also create a new connection in Power Platform.
+1. On the **Set up the connector** dialog, select a connection from the **Connection** dropdown. You can also create a new connection in Power Platform. Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
 1. Specify the type of use for connector, **General** or **For specific intents**.
 1. If you select **For specific intents**, you need to map the custom connector as a solution.
 1. Select **Save**.
 
-To map a connector to an intent,
+To map a connector to an intent:
 
 1. Select **Manage** for **Manage intents** on the **Customer Intent Agent (preview)** page.
 1. Select the specific intent, and on the intent page, in the **Solution (Optional)** section, select the **Connectors** option, and then select **Add**.
 1. On the **Add a solution** page, search and select a connector for the intent. Only connectors created for use with specific intents are shown.
 1. Select **Save and close**.
- 
 
 You can edit or delete a connector from the **Manage connectors for AI agents (optional)** page. 
-
-## Specify knowledge sources for intents
-
-You can specify the knowledge base that you want to use for intent management.
-
-1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Knowledge sources for intents**.
-1. On the **Knowledge source for Customer Intent Agent** page, **Select a knowledge source (required)** section, select **Dynamics 365 knowledge** or **Copilot Studio knowledge (Preview)**.
-    1. If you select **Dynamics 365 knowledge**, select **Manage filters** to specify knowledge filters for agents.
-        1. On the **Manage knowledge filters for agents** dialog, you can specify the filters that apply to Dynamics 365 knowledge articles. You can modify the default filters as required.
-        1. Select **Save**.
-   1. If you select **Copilot Studio knowledge (preview)**, do the steps provided in [Enable knowledge sources from Microsoft Copilot Studio (preview)](knowledge-copilot.md#enable-knowledge-sources-from-microsoft-copilot-studio-preview).
-
-You can manually add articles to specific intents.
- 
-1. On the **Knowledge source for Customer Intent Agent** page, **Map a Dynamics 365 knowledge article to an intent (optional)** section, select **Go to manage intents**.
-1. From the **All intents** dropdown list, select the intent. 
-1. On the intent page, **Solution (optional)** section, select **Dynamics 365 knowledge articles**, and then select **Add**.
-1. On the **Add a solution** page, select a knowledge article for the intent.
-1. Select **Save and close**. Once added, the articles appear in the **Solution (Optional)** section.
-    
 
 ### Related information
 

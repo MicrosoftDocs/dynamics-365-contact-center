@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 06/18/2025
+ms.date: 07/24/2025
 ms.custom: bap-template
 ---
 
@@ -80,7 +80,6 @@ To use Customer Intent Agent, you need to connect your Copilot agent to a knowle
 1. In your existing topic flow, where you want to use Customer Intent Agent, add the following node:
      - **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**.
      - For a default agent, add this node to either the **Conversational boosting** or **Fallback** system topic that triggers from the **On Unknown Intent** topic.
-1. Add another node: **Advanced** > **Create generative answers**, and select **SolutionQuery for Input**. Adding a **SolutionQuery** helps generate information from the determined intent and answered questions to search knowledge sources for a solution response. Ensure you edit your data sources and check all the sources you want to search against for an answer.
 1. Add another node: **Add a condition**, and set **Answer** variable to **is not Blank**.
 1. To add logic to complete the conversation flow after providing an answer, add another node: **Topic management** > **Go to another topic** > **End current topic**.
 
@@ -92,29 +91,20 @@ Connect the knowledge articles in your Dynamics 365 instance to your Copilot age
 
 Make sure that you add the new flow you created in Power Automate, called **Generate answer from Dataverse knowledge articles for Power Virtual Agent**. Follow the steps provided in the [Connect to intent-based suggestions](#connect-to-intent-based-suggestions) section, and replace the **Create generative answers** node with the new flow.
 
-### Intent-based suggestions output variables
+## Variables for intent-based suggestions
 
-This section lists the output variables from Customer Intent Agent that provide information about the status of intent determination and interview. Depending on your use case, you can customize these variables for specific situations.
 
-|Variable  |Scenario |
-|---------|---------|
-|Global.IntentInterviewComplete    |  If set to true, ensures that the intent is determined and all the interview questions were answered.       |
-|Global.IntentInterviewIncomplete    |   If set to true, indicates that the intent is determined but not all interview questions were answered. You can still query knowledge based on the information gathered, but you might choose a different behavior.  |
-|Global.IntentUndetected     |    If set to true, indicates that a known intent from the intent library wasn't detected, or was detected but rejected by the customer. |
-|Global.IntentDetectedWithoutAttributes  |  If set to true, indicates that an intent has been successfully detected, but there are no associated interview questions to ask the user. A solutionQuery is still generated and available for use.  |
-|Global.IntentError    |     If set to true, indicates that there was an error in detecting intent. The issue could be transitory like a time-out, but if it's consistent, we recommend that you disable intent-based suggestions and contact support. | 
-
-## Variables in the Intent-based suggestions - Configuration topic
-
-The **Intent-based suggestions - Configuration** is a noncustomizable topic that contains a list of variables that can be overwritten to provide the desired behavior. Here's a list of variables in the topic. 
-
-|Variable  |Default |Description  |
+|Variable |Mapped system topic| Description|
 |---------|---------|---------|
-|Global.EnableIntentConfirmation    |    False     |      If enabled, agent asks the customer to confirm the intent before moving on to the intent attributes questions.    |
-|Global.EnableIntentRephrase     |   False      |    If enabled, and if intent can't be determined or intent isn't confirmed by customer, customers are asked to rephrase their issue.      |
-|Global.RephraseCount     |     1    |   Determines how many times customers are asked to rephrase the issue.|
-|Global.MaxRepetitionCount    |  2      | Sets the maximum number of times the agent repeats an interview question with the same attributes. If the user doesn't provide a valid response on the first attempt, the agent asks the question again. If the user still doesn't answer, the agent moves to the next question. |
-|Global.EnableAskAllQuestions     |   False       |    If enabled, asks all intent-attribute questions before ending the loop, regardless of whether the customer answers the question in the next turn. If disabled, as soon as the customer doesn’t answer an intent attribute question, ends the loop (a solution query is still generated and generated answers are still initiated).      |
+|Global.IntentRedirectOnResolutionConfirmation|  EndOfConversation |  Check if the resolution fixed the issue. |
+|Global.IntentRedirectOnUnknownIntent    |  Escalate |  Hand off as no intent is found.|
+|Global.IntentRedirectOnUnableToProceed |Escalate |  Hand off when the conversation is stuck. |
+|Global.IntentRedirectOnEscalate    | Escalate  | Hand off to a representative.|
+|Global.IntentRedirectOnError |  Escalate  |  Hand off due to service error.|
+
+> [!NOTE]
+> If the Copilot agent doesn't have any of the mapped system topics, override them with the correct mapping.
+
 
 ### Override default variable
 

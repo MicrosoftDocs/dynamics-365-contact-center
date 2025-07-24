@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection:
-ms.date: 07/22/2025
+ms.date: 07/24/2025
 ms.custom: bap-template
 ---
 
@@ -44,5 +44,5 @@ Learn about the [experience for representatives when their local device disconne
 
 ### Related information
 
-[Use the call controls in the voice channel](../use/voice-channel-agent-experience.md#usecvd)  
+[Experience enhanced call quality when using voice through Citrix virtual desktop](../use/voice-channel-agent-experience.md#usecvd)  
 [Transfer calls and consult with users in the voice channel](/dynamics365/customer-service/use/voice-channel-transfer-consult)  

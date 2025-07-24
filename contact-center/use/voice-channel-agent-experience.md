@@ -1,7 +1,7 @@
 ---
 title: Use agent dashboard and call controls in the voice channel
 description: Learn how you can use the agent dashboard, call controls, and make and receive customer calls.
-ms.date: 07/22/2025
+ms.date: 07/24/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -72,9 +72,9 @@ You can add notes to help your administrator review and block numbers. After you
 
 <a name="usecvd"></a>
 
-## Use enhanced call quality over Citrix virtual desktop
+## Experience enhanced call quality when using voice through Citrix virtual desktop
 
-You can improve the call experience for your representatives who connect to the Copilot Service workspace through Citrix virtual desktop. Learn about it in [Configure Citrix virtual desktop for improved call quality](../administer/configure-voice-citrix-virtual-desktop.md).
+Your administrator can enable the setting to improve the call experience for you when you connect to the Copilot Service workspace through Citrix virtual desktop. Learn about it in [Configure Citrix virtual desktop for improved call quality](../administer/configure-voice-citrix-virtual-desktop.md).
 
 ## Use Azure Virtual Desktop to connect to voice channel
 

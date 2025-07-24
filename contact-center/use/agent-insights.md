@@ -4,7 +4,7 @@ description: Know how the Agent insights dashboard can help you, as a supervisor
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.topic: how-to
+ms.topic: concept-article
 ms.collection: 
 ms.date: 07/31/2025
 ms.custom: 
@@ -17,6 +17,10 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Autonomous agents are intelligent tools designed to enhance customer service efficiency in Dynamics 365 Contact Center and Dynamics 365 Customer Service. With generative AI, they improve customer intent discovery and real-time knowledge management and support self-service and assisted scenarios.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+## View the the Agent insights dashboard
 
 The Agent insights dashboard provides insights into the performance of the autonomous agents, allowing you to monitor their effectiveness and make data-driven decisions to optimize their use.
 

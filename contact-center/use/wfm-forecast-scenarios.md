@@ -75,10 +75,8 @@ You can create either short-term or long-term forecasts.
 1. Select **Save**.
 
 > [!NOTE]  
-> The forecast scenario runs within two hours after setup for the first time. Subsequent runs follow the schedule set on the **Forecast Run Schedule** card.
-
-> [!NOTE]  
-> Forecasts generated using internal data from the WEM system remain available even when data is limited. However, forecast accuracy improves significantly with the volume of data . 
+> - The forecast scenario runs within two hours after setup for the first time. Subsequent runs follow the schedule set on the **Forecast Run Schedule** card.
+> - Forecasts that are generated using internal data from the managed workforce system remain available when data is limited. However, forecast accuracy improves significantly as the volume of data increases. 
 
 ## View your forecast reports
 

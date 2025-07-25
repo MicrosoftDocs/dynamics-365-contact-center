@@ -1,6 +1,6 @@
 ---
 title: Trust center for Dynamics 365 (preview)
-description: Learn about the trust center for Dynamics 365 Contact Center, a resource for customers to learn about the security, privacy, and compliance of Microsoft products and services.
+description: Learn about the trust center for Dynamics 365 Contact Center and Customer Service, a resource for customers to learn about the security, privacy, and compliance of Microsoft products and services.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: 

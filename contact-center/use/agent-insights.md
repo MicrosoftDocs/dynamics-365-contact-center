@@ -37,7 +37,9 @@ The dashboard capabilities include:
 
 The Conversation performance report displays information about the performance of conversations serviced by autonomous agents. The following metrics are available.
 
-### Top KPIs
+### Top KPIs for conversations
+
+The following metrics are available.
 
 | Metric                   | Definition                                                                                                         |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -52,9 +54,9 @@ The Conversation performance report displays information about the performance o
 
 The Case performance report displays information about the performance of cases serviced by autonomous agents.
 
-### Top KPIs
+### Top KPIs for cases
 
- The following metrics are available.
+The following metrics are available.    
 
 | Metric                | Definition                                                                                                                |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------|

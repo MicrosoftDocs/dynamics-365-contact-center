@@ -76,7 +76,7 @@ You can create either short-term or long-term forecasts.
 
 > [!NOTE]  
 > - The forecast scenario runs within two hours of initial setup. Subsequent runs follow the schedule set on the **Forecast Run Schedule** card.
-> - Forecasts that are generated using internal data from the managed workforce system remain available when data is limited. However, forecast accuracy improves significantly as the volume of data increases. 
+> - Forecasts generated with internal data from the managed workforce system remain available even when data is limited. However, forecast accuracy improves as the volume of data increases. 
 
 ## View your forecast reports
 

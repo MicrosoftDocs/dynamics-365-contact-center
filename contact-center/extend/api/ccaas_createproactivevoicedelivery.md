@@ -63,7 +63,8 @@ This API allows contact centers to reach out to customers at the right time with
 |-------|--------|-----------------------------------------------------------------------------------------------|
 | Start | String | The beginning timestamp for this window. Must be specified in UTC in the `yyyy-MM-ddTHH:mm:ss.fffZ` format.           |
 | End   | String | The end timestamp for this window. Must be specified in UTC in the `yyyy-MM-ddTHH:mm:ss.fffZ` format.                |
-
+> [!IMPORTANT]
+> Some clients require a specific format like the following: "Windows": "[{\"Start\":\"2025-01-30T16:32:45.930Z\",\"End\":\"2025-06-25T16:32:45.930Z\"}]". Please test accordingly with your client.
 
 ### Sample request
 

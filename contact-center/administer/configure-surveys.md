@@ -1,12 +1,12 @@
 ---
 title: Configure feedback surveys using Copilot Studio (preview)
-description: Learn how to configure surveys in your contact center using survey agents in Copilot Studio.
+description: Learn how to configure surveys in Dynamics 365 Contact Center using survey agents in Copilot Studio.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer:
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 06/09/2025
+ms.date: 08/01/2025
 ms.custom: bap-template
 ---
 
@@ -38,6 +38,12 @@ With survey agents, you can:
 1. Edit the survey agent in Copilot Studio.
 1. Add the survey agent to the appropriate channel.
 1. Experience the survey runtime behavior in Copilot Service workspace.
+
+You can obtain customer consent for post-call surveys as follows:
+
+- **Automatic - implicit**: The IVR agent informs the customer about a post-call survey at the end of the call. After the agent disconnects, the call is automatically transferred to a post-call survey agent.
+- **Automatic - explicit**: The IVR agent asks the customer if they want to participate in a post-call survey. The consent is saved in a va_SurveyConsent Boolean variable. If the customer consents, the call is automatically transferred to the post-call survey agent at the end of the call. If the customer says no, the call ends when the agent hangs up.
+- **Agent-initiated**: Towards the end of a call, the agent can ask the customer if they want to take a survey. If the customer says yes, the agent manually transfers the call to the survey agent.
 
 ## Prerequisites
 

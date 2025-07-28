@@ -80,12 +80,10 @@
           items:
           - name: Use intent-based suggestions
             href: use-intent-suggestions.md
-      - name: Use Copilot
+      - name: Use Copilot features in contact center-standalone
         items: 
         - name: Copilot feature availability across applications
           href: copilot-feature-availability.md  
-        - name: Summarize cases
-          href: copilot-use-summary.md
         - name: Summarize conversations
           href: copilot-summarize-conversations.md  
         - name: Ask a question
@@ -98,6 +96,18 @@
           href: copilot-language-support.md
         - name: Chat with case data in Customer Service (preview)
           href: copilot-chat-customer-service-data.md
+      - name: Use Copilot features in non-Microsoft systems
+        items:  
+        - name: Use ask a question
+          href: embed-ask-question.md  
+        - name: Summarize cases
+          href: copilot-use-summary.md 
+        - name: Generate resolution notes
+          href: embed-ask-question.md#generate-resolution-notes   
+        - name: Summarize conversations
+          href: embed-summarize-conversation.md   
+        - name: Use Copilot to draft an email
+          href: draft-email-embedded-experience.md  
       - name: Unified routing and assignment
         items:
           - name: View historical analytics reports
@@ -119,7 +129,7 @@
           - name: Send email to multiple recipients
             href: /power-apps/user/direct-email?context=/dynamics365/contact-center/context/use-context
           - name: Resolve an unresolved email recipient
-            href: /power-apps/user/unresolved-email-recipient?context=/dynamics365/contact-center/context/use-context
+            href: /power-apps/user/unresolved-email-recipient?context=/dynamics365/contact-center/context/use-context           
           - name: Email templates
             items: 
             - name: Create an email template
@@ -135,7 +145,15 @@
             - name: Create a signature for emails
               href: /power-apps/user/email-signature?context=/dynamics365/contact-center/context/use-context
           - name: Email FAQ and known issues
-            href: /power-apps/user/activities-known-issues?context=/dynamics365/contact-center/context/use-context
+            href: /power-apps/user/activities-known-issues?context=/dynamics365/contact-center/context/use-context               
+      - name: Inbox
+        items:
+          - name: Use the inbox
+            href: /dynamics365/customer-service/use/use-inbox?context=/dynamics365/context/use-context           
+          - name: Inbox views and filters
+            href: /dynamics365/customer-service/administer/inbox-views-filters?context=/dynamics365/contact-center/context/use-context
+          - name: Create personalized inbox views
+            href: /dynamics365/customer-service/use/inbox-create-personalized-view?context=/dynamics365/context/use-context         
       - name: Use messaging channels
         items:
         - name: Introduction to channels
@@ -354,6 +372,8 @@
         href: ../implement/faq-rai-ai-agents.md
       - name: Responsible AI FAQ for Copilot in Customer Service
         href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/use-context
+      - name: Responsible AI FAQs for NLUs in AI agents
+        href: ../implement/natural-language-ai-faq.md   
     - name: Resources
       items:
       - name: Training

@@ -224,6 +224,8 @@
           href: /dynamics365/customer-service/administer/add-outbound-dialer-settings?context=/dynamics365/contact-center/context/administer-context  
         - name: Use Azure Virtual Desktop to access voice channel
           href: configure-voice-avd.md
+        - name: Configure settings to improve call quality over Citrix virtual desktop
+          href: configure-voice-citrix-virtual-desktop.md
         - name: Install and manage Desktop companion application 
           href: install-manage-desktop-app.md
         - name: Support emergency calls made by customer service representatives
@@ -572,6 +574,8 @@
           href: ../implement/faq-rai-ai-agents.md
         - name: Responsible AI FAQ for Copilot in Customer Service
           href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/administer-context
+        - name: Responsible AI FAQs for NLUs in AI agents
+          href: ../implement/natural-language-ai-faq.md     
     - name: Implement Dynamics 365 Contact center
       href: ../implement/international-availability.md
     - name: Manage Dynamics 365 Contact Center

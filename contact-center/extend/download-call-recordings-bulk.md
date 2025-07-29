@@ -57,7 +57,7 @@ To download the call recordings, you must retrieve a list of recordings within a
      - **Headers**:
       - Content-Type: application/json
       - Authorization: Bearer token (automatically handled by Dataverse connector)
-  - Add another **Parse JSON** action to extract the SAS URL and filename using this schema:
+  - Add another **Parse JSON** action to extract the SAS URL and file name using this schema:
      ```json
      {
       "type": "object",

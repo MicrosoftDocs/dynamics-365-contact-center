@@ -11,7 +11,7 @@ ms.date: 07/29/2025
 
 # Download call recordings in bulk
 
-You can download call recordings in bulk within a specified date range using Microsoft Dataverse APIs and Power Automate. The recordings are stored in the [msdyn_ocrecordings](/dynamics365/developer/reference/entities/msdyn_ocrecording) table and are accessible through [Shared Access Signature(SAS)](/power-apps/developer/data-platform/webapi/reference/getfilesasurl) URLs.
+You can bulk download call recordings within a specified date range using Microsoft Dataverse APIs and Power Automate. The recordings are stored in the [msdyn_ocrecordings](/dynamics365/developer/reference/entities/msdyn_ocrecording) table and are accessible through [Shared Access Signature(SAS)](/power-apps/developer/data-platform/webapi/reference/getfilesasurl) URLs.
 
 ## Prerequisites
 

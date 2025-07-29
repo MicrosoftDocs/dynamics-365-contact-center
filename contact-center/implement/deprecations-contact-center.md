@@ -21,7 +21,7 @@ Administrators and IT professionals can use this information to prepare for futu
 
 ## Post-call survey setting is deprecated
 
-Effective August 1, 2025, the post-call survey toggle currently found in the voice workstream > **Behavior** tab in Copilot Service admin center is deprecated and removed. We recommend that you configure post-call surveys using the [Configure feedback surveys using Copilot Studio (preview)](../administer/configure-surveys.md).
+Effective August 1, 2025, the post-call survey toggle currently found in the voice workstream > **Language** tab in Copilot Service admin center is deprecated and removed. We recommend that you configure post-call surveys using [Configure feedback surveys using Copilot Studio (preview)](../administer/configure-surveys.md#enable-the-post-call-survey-for-the-voice-channel).
 
 ## Draft a chat response (preview) is deprecated
 

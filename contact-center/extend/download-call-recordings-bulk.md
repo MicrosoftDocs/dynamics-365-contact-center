@@ -1,6 +1,6 @@
 ---
 title: Download call recordings in bulk
-description: Bulk download Dynamics 365 Contact Center voice call recordings using Power Automate. 
+description: Learn how you can download call recordings in bulk in Dynamics 365 Contact Center by using Power Automate. 
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham

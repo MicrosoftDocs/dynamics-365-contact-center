@@ -16,7 +16,7 @@ You can bulk download call recordings within a specified date range using Micros
 ## Prerequisites
 
 -  [Call recording and transcription](/dynamics365/customer-service/administer/voice-channel-configure-transcripts#enable-call-recording-and-transcription-for-voice) is enabled for voice calls.
-- Required security roles to access the `msdyn_ocrecordings` table.
+- Required [security roles](/power-platform/admin/security-roles-privileges) to access the `msdyn_ocrecordings` table.
 - Permissions to create and run Power Automate flows.
 - A designated destination for saving the recordings such as SharePoint, OneDrive, or local storage with adequate storage space.
 

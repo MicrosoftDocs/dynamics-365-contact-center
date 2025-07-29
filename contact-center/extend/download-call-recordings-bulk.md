@@ -72,7 +72,7 @@ To download the call recordings, you must retrieve a list of recordings within a
        }
      }
     ```
-1. You can save the recording files to a destination of your choice, such as SharePoint or OneDrive. Add a **Create file** action for SharePoint or OneDrive with the following configuration settings:
+1. Add a **Create file** action for SharePoint or OneDrive with the following configuration settings:
     - Site address is your SharePoint or OneDrive site URL.
     -  Folder path is the target folder location
     -  File name as `@{body('Parse_JSON_2')?['Result']?['FileName']}`

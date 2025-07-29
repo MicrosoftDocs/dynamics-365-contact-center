@@ -39,12 +39,6 @@ With survey agents, you can:
 1. Add the survey agent to the appropriate channel.
 1. Experience the survey runtime behavior in Copilot Service workspace.
 
-You can obtain customer consent for post-call surveys as follows:
-
-- **Automatic - implicit**: The IVR agent informs the customer about a post-call survey at the end of the call. After the agent disconnects, the call is automatically transferred to a post-call survey agent.
-- **Automatic - explicit**: The IVR agent asks the customer if they want to participate in a post-call survey. The consent is saved in a va_SurveyConsent Boolean variable. If the customer consents, the call is automatically transferred to the post-call survey agent at the end of the call. If the customer says no, the call ends when the agent hangs up.
-- **Agent-initiated**: Towards the end of a call, the agent can ask the customer if they want to take a survey. If the customer says yes, the agent manually transfers the call to the survey agent.
-
 ## Prerequisites
 
 - Copilot Studio and the channels in Dynamics 365 Contact Center or Dynamics 365 Customer Service are available in the same environment.
@@ -214,8 +208,13 @@ You can host surveys on a link other than the default one.
 1. In Copilot Service admin center, go to the voice workstream and select **Edit**. 
 1. On the **Behaviors** tab, scroll to the bottom of the page and enable the toggle for Post-call survey.
 1. In **Customer feedback survey**, select a survey from the list. Only those surveys that you create using the customer feedback option and in published state are displayed for you to select.
-1. Verify that the post-call survey option listed on the **Language** tab of the workstream is disabled. The survey option needs to be disabled for the new experience to work as expected.
 1. Save the changes.
+
+You can obtain customer consent for post-call surveys as follows:
+
+- **Automatic - implicit**: The IVR agent informs the customer about a post-call survey at the end of the call. After the agent disconnects, the call is automatically transferred to a post-call survey agent.
+- **Automatic - explicit**: The IVR agent asks the customer if they want to participate in a post-call survey. The consent is saved in a va_SurveyConsent Boolean variable. If the customer consents, the call is automatically transferred to the post-call survey agent at the end of the call. If the customer says no, the call ends when the agent hangs up.
+- **Agent-initiated**: Towards the end of a call, the agent can ask the customer if they want to take a survey. If the customer says yes, the agent manually transfers the call to the survey agent.
 
 ## View the survey results
 

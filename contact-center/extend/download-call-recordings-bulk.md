@@ -7,6 +7,7 @@ ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.date: 07/29/2025
+ms.update-cycle: 180-days
 ---
 
 # Download call recordings in bulk

@@ -1,5 +1,5 @@
 ---
-title: Overview of Agent hub (preview)
+title: Overview of agent hub (preview)
 description: Learn about the Agent hub in Dynamics 365 Contact Center and how it helps you manage all your autonomous agents in one place.
 author: neeranelli
 ms.author: nenellim
@@ -12,7 +12,7 @@ ms.custom:
   - bap-ai-copilot
 ---
 
-# Overview of Agent hub (preview)
+# Overview of agent hub (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -27,7 +27,7 @@ The Agent hub helps you with answers to some of the FAQs such as follows:
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-The Agent hub provides a unified view of the following capabilities:
+Agent hub provides a unified view of the following capabilities:
 
 - **Learn**: Before enabling the AI capabilities, administrators can access guided overviews of AI agents, security protocols, compliance impacts, and adoption workflows. This helps demystify AI and empowers decision-makers with the knowledge to act confidently.
 - **Rollout manager**: Helps you manage the rollout plans for AI agents in your contact center. You can configure the rollout plans for AI agents to specific intents and targeted workloads, and monitor their performance. Learn more in [Create rollout plans to manage AI agents](create-rollout-plans.md).

@@ -1,6 +1,6 @@
 ---
 title: Create rollout plans to manage AI agents (preview)
-description: Learn how to use the rollout manager in Dynamics 365 Contact Center to create rollout plans and manage the deployment of AI agents.
+description: Learn how to use the rollout manager in Dynamics 365 Contact Center and Customer Service to create rollout plans and manage the deployment of AI agents.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim

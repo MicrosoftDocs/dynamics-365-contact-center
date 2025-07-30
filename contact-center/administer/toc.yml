@@ -438,6 +438,8 @@
           href: /dynamics365/customer-service/administer/record-identification-rule?context=/dynamics365/contact-center/context/administer-context
         - name: Close conversations automatically
           href: /dynamics365/customer-service/administer/auto-close-conversation-powerapps?context=/dynamics365/contact-center/context/administer-context
+        - name: Enable transfer of conversations
+          href: /dynamics365/customer-service/administer/enable-transfer-consult?context=/dynamics365/contact-center/context/administer-context
         - name: Manage authentication settings
           items:
           - name: Configure authentication settings for chat

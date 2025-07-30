@@ -29,10 +29,10 @@ The Agent hub helps you with answers to some of the FAQs such as follows:
 
 The Agent hub provides a unified view of the following capabilities:
 
-- **Learn**: Before they enable the AI capabilities, administrators can access guided overviews of AI agents security protocols, compliance impacts, and adoption workflows. This helps demystify AI and empowers decision-makers with the knowledge to act confidently.
-- **Rollout manager**: Helps you manage the rollout plans for AI agents in your contact center. You can configure the rollout plans for AI agents to specific users, teams, or queues, and monitor their performance. Learn more in [Create rollout plans to manage AI agents](create-rollout-plans.md).
-- **Agent insights**: Go through the performance of AI agents in your contact center. You can view metrics such as total conversations, average handle time, and customer satisfaction scores to understand how AI agents are performing. Learn more in [View Agent insights dashboard](../use/agent-insights.md).
-- **Security**: Understand the security measures in place to protect customer data and ensure compliance with regulations. Learn more in [Trust center for Dynamics 365](trust-center.md).
+- **Learn**: Before enabling the AI capabilities, administrators can access guided overviews of AI agents, security protocols, compliance impacts, and adoption workflows. This helps demystify AI and empowers decision-makers with the knowledge to act confidently.
+- **Rollout manager**: Helps you manage the rollout plans for AI agents in your contact center. You can configure the rollout plans for AI agents to specific intents and targeted workloads, and monitor their performance. Learn more in [Create rollout plans to manage AI agents](create-rollout-plans.md).
+- **Agent insights**:Measure the performance of AI agents in your contact center. You can view metrics such as total conversations, average handle time, and customer satisfaction scores to understand how AI agents are performing. Learn more in [View Agent insights dashboard](../use/agent-insights.md).
+- **Security**: Understand the security measures in place to protect customer data and make sure of regulatory compliance. Learn more in [Trust center for Dynamics 365](trust-center.md).
 - **Architecture**: Get insights into the underlying architecture of AI agents and how they integrate with existing systems.
 - **Privacy and compliance**: Learn about the privacy and compliance considerations for using AI agents in your contact center.
 

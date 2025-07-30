@@ -3,7 +3,7 @@ title: Trust center for Dynamics 365 (preview)
 description: Learn about the trust center for Dynamics 365 Contact Center and Customer Service, a resource for customers to learn about the security, privacy, and compliance of Microsoft products and services.
 author: neeranelli
 ms.author: nenellim
-ms.reviewer: 
+ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: 
 ms.date: 07/31/2025
@@ -15,12 +15,10 @@ ms.custom:
 # Trust center for Dynamics 365 (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
- 
-This page provides information about the Trust Center for Dynamics 365 Contact Center and Dynamics 365 Customer Service.
+
+Find compliance artifacts, request documentation, and view details about the security controls that we follow for Dynamics 365 contact center and customer service.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
-Find compliance artifacts, request documentation, and view details about the controls we follow.
 
 | Category  |Control|Status|
 |------|-------|------|
@@ -42,7 +40,6 @@ Find compliance artifacts, request documentation, and view details about the con
 |Transparency and disclosure|||
 ||**Is there a process to address AI-related complaints or concerns?** <br>**Support Channels**: Customers can raise complaints or concerns through the standard Microsoft Support portal, just like they would for any Dynamics 365 or Power Platform issue. These are triaged and escalated based on severity.<br> **Agent Feedback Loop**: Within Copilot, agents can provide thumbs up/down feedback on AI responses.|:::image type="content" source="../media/green-checkmark.png" alt-text="Green checkmark indicating success status.":::|
 ||**How often will the AI system be reviewed for accuracy and fairness? Which operating unit in the Company will perform these regular reviews?** <br> The AI system is continuously monitored and evaluated by Microsoft to ensure it meets standards for accuracy, fairness, and responsible use.|:::image type="content" source="../media/green-checkmark.png" alt-text="Green checkmark indicating success status.":::|
-
 
 ### Related information
 

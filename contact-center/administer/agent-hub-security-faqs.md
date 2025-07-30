@@ -3,10 +3,10 @@ title: Security FAQs about AI agents
 description: Learn about the security, privacy, and compliance of AI agents in Dynamics 365 Contact Center and Customer Service.
 author: neeranelli
 ms.author: nenellim
-ms.reviewer: 
+ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: 
-ms.date: 07/31/2025
+ms.date: 08/01/2025
 ms.custom: 
 - bap-template
 - bap-ai-copilot
@@ -21,10 +21,6 @@ This FAQ article provides answers to common questions about the security, privac
 ### Do you track any metrics to assess the qualitative aspects of the model output like fluency, coherence, and relevance for summarization and descriptive statistics about input data?
 
 Copilot uses retrieval-augmented generation (RAG) to generate responses based on the sources used to ground its outputs. Agent feedback is captured in the customer Dataverse instance to help assess the qualitative aspects of both the model's output and the input data.
-
-### What types of AI technology does the Use Case employ?
-
-Copilot is built on Microsoft Azure OpenAI Service and runs completely within the Azure cloud. Learn more in [Overview of Azure OpenAI Service](/azure/cognitive-services/openai/overview).
 
 ### Is the AI system rule based, learning based, or both?
 

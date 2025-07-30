@@ -21,7 +21,7 @@ You can configure settings to improve the call experience for your representativ
   - **Path**: HKLM\Software\WOW6432Node\Citrix\WebSocketService
   - **Key Name**: `ProcessWhitelist`
   - **Key Type**: MULTISZ 
-  - **Key Value**: msedge.exe chrome.exe
+  - **Key Value**: msedge.exe
 
 ## Enable the improved call quality experience
 

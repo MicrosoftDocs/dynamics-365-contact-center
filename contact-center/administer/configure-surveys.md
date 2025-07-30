@@ -21,7 +21,7 @@ You can create and manage surveys that go out to the customers after a call or c
 [!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 The survey appears for the customer after the representative ends the conversation or call.
- 
+
 With survey agents, you can:
 - Gather customer feedback and configure contextual actions depending on the feedback.
 - Unify and centralize the process of configuring surveys across digital messaging, voice, and custom channels.
@@ -226,7 +226,8 @@ The CSAT scores are displayed in the Omnichannel historical analytics report.
 
 You can configure the system to send a survey through email after the service representative resolves a case.
 
-Follow these steps to configure post-case resolution surveys in Copilot Service admin center: 
+Follow these steps to configure post-case resolution surveys in Copilot Service admin center:
+
 1. In the site map, under **Customer Support** > **Case settings**, select **Manage** for **Post case resolution survey (preview)**. The post case resolution surveys are triggered through Power Automate flows. The **Enable survey invite flow** dialog appears.
 1. Select **Turn on**. The Power Automate flows page opens on a new tab.
    - Search for and enable the **Send a Microsoft Copilot Survey bot when a case is resolved in Dynamics 365** flow.

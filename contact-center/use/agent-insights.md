@@ -1,12 +1,12 @@
 ---
 title: View Agent insights dashboard (preview)
-description: Know how the Agent insights dashboard can help you, as a supervisor, monitor the performance of the autonomous agents.
+description: Know how the Agent insights dashboard can help you, as a supervisor, monitor the performance of the autonomous agents in Dynamics 365 Contact Center and Customer Service.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: 
-ms.date: 07/31/2025
+ms.date: 08/01/2025
 ms.custom: 
 - bap-template
 - bap-ai-copilot

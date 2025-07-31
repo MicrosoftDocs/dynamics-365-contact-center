@@ -354,10 +354,10 @@
         items:
         - name: Set up SMS channels
           items:
+          - name: Overview of SMS channels
+            href: /dynamics365/customer-service/administer/sms-channel-overview?context=/dynamics365/contact-center/context/administer-context
           - name: Configure an SMS channel using Azure Communication Services
-            href: /dynamics365/customer-service/administer/configure-sms-channel-acs?context=/dynamics365/contact-center/context/administer-context
-          - name: Configure an SMS channel for TeleSign
-            href: /dynamics365/customer-service/administer/configure-sms-channel?context=/dynamics365/contact-center/context/administer-context
+            href: /dynamics365/customer-service/administer/configure-sms-channel-acs?context=/dynamics365/contact-center/context/administer-context          
           - name: Configure an SMS channel for Twilio
             href: /dynamics365/customer-service/administer/configure-sms-channel-twilio?context=/dynamics365/contact-center/context/administer-context
         - name: Set up social channels

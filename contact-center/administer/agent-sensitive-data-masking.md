@@ -13,14 +13,14 @@ ms.custom: bap-template
 
 AI Agents collect sensitive data during interactions, storing it across your organization's tenant. Copilot Studio's sensitive variable flag protects PINs, account numbers, credit card details, and protected health information(PHI) data without affecting productivity. Agent authors can mark variables as sensitive per organizational requirements to improve data security.
 
-# Prerequisites
+## Prerequisites
 
 - [Voice channel is provisioned in Customer Service](/dynamics365/customer-service/administer/voice-channel-install).
 - [Set up inbound calling](/dynamics365/customer-service/administer/voice-channel-inbound-calling).
 - You have a Copilot Studio voice agent added to a workstream.
 - You have the System administrator and Bot author role assigned.
 
-# Configure sensitive data masking
+## Configure sensitive data masking
 
 Perform the following steps:
 
@@ -31,7 +31,7 @@ Perform the following steps:
   > [!NOTE]
   > When a sensitive variable is assigned to a nonsensitive variable, the nonsensitive variable is automatically considered as sensitive. For example, if you have a variable called `CreditCardNumber` and you assign it to a nonsensitive variable called `PaymentInfo`, the `PaymentInfo` variable is also considered sensitive.
 
-# Runtime experience
+## Runtime experience
 
 When the customer’s conversation with the AI agent enters a section where a sensitive-flagged variable is configured, the AI agent displays a message in transcription "Entered a confidential section of the conversation". Recording, transcription, and data logging are paused until the conversation moves on to the nonsensitive section.
 
@@ -41,7 +41,7 @@ If the conversation is escalated to a customer service representative from the A
 
 To match the recording to the call's length, the application inserts silence into the recording.
 
-# Key considerations
+## Key considerations
 
 - AI Agent makers are responsible to mark the variables as sensitive wherever they anticipate sensitive information.
 
@@ -55,7 +55,7 @@ To match the recording to the call's length, the application inserts silence int
 
 - If the customer's response to the first question the voice AI Agent asks is flagged as sensitive, that content might not be redacted, due to a timing issue that affects redaction at the start of the conversation. However, all subsequent responses flagged as sensitive are redacted.
 
-# Supported actions
+## Supported actions
 
 | **Supported Action **                                           | **Data Redacted ** | **Notes **                                                                                                                                             |
 |-----------------------------------------------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|

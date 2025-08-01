@@ -15,9 +15,6 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
-
-
-
 This article explains how the Interactive Voice Response (IVR) or voice agent sample that's created in Microsoft Copilot Studio works when connected with a workstream in Dynamics 365 Contact Center or Dynamics 365 Customer Service. The sample provides a prebuilt template with the following capabilities for managing customer conversations:
 
 - **Intent detection from conversational phrases**: Identifies the caller's intent by analyzing spoken phrases, ensuring inquiries are routed to the appropriate resources or workflows. The template recognizes customer intent to track order status.
@@ -34,13 +31,15 @@ This article explains how the Interactive Voice Response (IVR) or voice agent sa
 
 ## Prerequisites
 
-- Dataverse is provisioned in your environment to store and manage tables.
+- Dataverse is provisioned in your environment to store and manage tables. Learn more in:
+    - [Improve copilot responses from Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-copilot)
+    - [Create low-code plug-ins to use with a copilot (preview)](/power-apps/maker/data-platform/low-code-plugins-copilot-studio)
+    - [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot)
 - [Voice channel is provisioned](../implement/provision-channels.md)
-- [Phone numbers are acquired](/dynamics365/customer-service/administer/voice-channel-manage-phone-numbers?context=/dynamics365/contact-center/context/administer-context)
--  [Workstream is set up and the phone number is linked to a voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?context=/dynamics365/contact-center/context/administer-context). 
+- [Procure phone numbers](/dynamics365/customer-service/administer/voice-channel-manage-phone-numbers?context=/dynamics365/contact-center/context/administer-context)
+- [Workstream is set up and the phone number is linked to a voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?context=/dynamics365/contact-center/context/administer-context). 
 
 ## Import and configure voice agent template
-
 
 1. Download the [sample voice agent zip](https://go.microsoft.com/fwlink/?linkid=2297969) file and save it to your local machine.
 1. In Copilot Studio, perform the steps in [import a solution](/microsoft-copilot-studio/authoring-export-import-copilot-components#import-a-solution-to-add-component-collections-to-an-environment) to import the zip file. The template is displayed on the **Scenarios** page.
@@ -56,7 +55,6 @@ This article explains how the Interactive Voice Response (IVR) or voice agent sa
  > Examples are for illustration only and are fictitious. No real association is intended or inferred.
 
 The voice agent template is intended to help customers track the status of their orders. When you call the the phone number linked to the workstream the agent is added to, the workflow is as follows:
-
 
 1. The agent greets the customer and asks how it can help. The AI agent template has a Dataverse query that replicates an API call which happens at the start of a call. This query returns a holiday sale message for Valentine’s Day. 
    > [!NOTE]

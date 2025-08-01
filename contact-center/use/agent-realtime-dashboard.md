@@ -4,9 +4,9 @@ description: Learn about the bot report in Omnichannel real-time analytics.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
-ms.topic: conceptual 
+ms.topic: concept-article
 ms.collection: 
-ms.date: 02/10/2025
+ms.date: 06/27/2025
 ms.custom: bap-template 
 ---
 
@@ -23,7 +23,7 @@ You can filter the report by selecting **All** to view AI agent performance acro
 
 ## Prerequisites
 
-To view the report in Customer Service worskpace, administrators with the Omnichannel agent role must enable the realtime Bot dashboard in **Customer Service admin center** > **Insights** **Productivity** > **Real-time Analytics**.
+To view the report in Copilot Service worskpace, administrators with the Omnichannel agent role must enable the real-time **Bot** dashboard in **Copilot Service admin center** > **Insights** **Productivity** > **Real-time Analytics**.
 
 ## Key metrics
 

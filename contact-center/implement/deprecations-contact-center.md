@@ -4,8 +4,8 @@ description: Use this article to get information about the deprecated features i
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.topic: conceptual
-ms.date: 10/22/2024
+ms.topic: concept-article
+ms.date: 07/01/2025
 ms.custom: bap-template
 ms.collection:
 ---
@@ -18,6 +18,10 @@ Administrators and IT professionals can use this information to prepare for futu
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability in a major future release. The feature or capability will continue to work and will be fully supported until it's officially removed. This deprecation notification might span a few years. After removal, the feature or capability won't work. We're informing you now to give you enough time to adjust and update your code before the feature or capability is removed.
+
+## Draft a chat response (preview) is deprecated
+
+The draft a chat response (preview) feature is deprecated as of July 01, 2025. The support for the feature will be removed on July 14, 2025.
 
 ## Deprecation of local hosting support for the voice channel
 

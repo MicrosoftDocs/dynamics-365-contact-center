@@ -1,7 +1,7 @@
 ---
 title: Use agent dashboard and call controls in the voice channel
 description: Learn how you can use the agent dashboard, call controls, and make and receive customer calls.
-ms.date: 04/04/2025
+ms.date: 07/24/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -34,7 +34,7 @@ The conversation panel in the service representative dashboard includes the foll
 
 - **Mute**: Mute your microphone so your voice isn't audible to the customer.
 - **Hold**: Puts the customer on hold. The customer hears the hold music. You can keep only one caller on hold at a time. 
-To avoid the recording and transcription of what you say while the customer is on hold, your administrator can enable the **Allow automatic pause and resume when agents hold and un-hold the customer** option. With this option, recording and transcription are paused when you put the customer on hold and resumed when you remove the customer from hold. If the option is disabled, you must manually pause and resume the recording and transcription.
+To avoid the recording and transcription of what you say while the customer is on hold, your administrator can enable the **Allow automatic pause and resume when representative hold and un-hold the customer** option. With this option, recording and transcription are paused when you put the customer on hold and resumed when you remove the customer from hold. If the option is disabled, you must manually pause and resume the recording and transcription.
 - **Consult**: Consult with a participant. You can consult with or bring another representative or supervisor into the call. You can have a *public* consultation, where the customer is actively involved in the conversation. Or you can have a *private* consultation, where you can put the customer on hold before you talk to your peers or supervisor.
 
   > [!NOTE]
@@ -70,9 +70,15 @@ To report a phone number as spam, select **Mark spam**.
 
 You can add notes to help your administrator review and block numbers. After you mark a number as spam, it goes into the pending review tab on the **Blocked numbers** page.
 
+<a name="usecvd"></a>
+
+## Experience enhanced call quality when using voice through Citrix virtual desktop
+
+Your administrator can enable the setting to improve the call experience for you when you connect to the Copilot Service workspace through Citrix virtual desktop. Learn about it in [Configure Citrix virtual desktop for improved call quality](../administer/configure-voice-citrix-virtual-desktop.md).
+
 ## Use Azure Virtual Desktop to connect to voice channel
 
-You can use the Microsoft Remote Desktop client to connect to the voice channel using Azure Virtual Desktop. You can learn more about the disconnection scenarios at [Agent experience when local machine disconnects from the Azure Virtual Desktop instance](../administer/configure-voice-avd.md)
+You can use the Microsoft Remote Desktop client to connect to the voice channel using Azure Virtual Desktop. You can learn more about the disconnection scenarios at [Agent experience when local machine disconnects from the Azure Virtual Desktop instance](../administer/configure-voice-avd.md).
 
 ## Avoid call disconnection
 
@@ -83,14 +89,14 @@ Avoid the following actions to prevent call drops:
 
 ## Share feedback on call quality
 
-When you end a call, if your administrator has enabled the [agent call quality feedback survey](/dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context), the application displays a survey that asks you to rate the call quality on a scale of 1 to 5. The survey can appear after every call or at a frequency set by your administrator. A response of 1 indicates an imperfect call experience and 5 indicates a perfect call.
+When you end a call, if your administrator has enabled the [Customer service representative call quality feedback survey](/dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context), the application displays a survey that asks you to rate the call quality on a scale of 1 to 5. The survey can appear after every call or at a frequency set by your administrator. A response of 1 indicates an imperfect call experience and 5 indicates a perfect call.
 
 If you specify a rating between 1 and 4, the application displays a set of predefined options such as, "I couldn't hear any sound", "Volume was low", or "the call ended unexpectedly",  that you can use to provide additional feedback about the call quality
 
 ## Best practices
 
 - Make sure that you enabled notifications, and audio and video options in the browser.
-- When your shift ends, ensure that you sign out and close your browser through which you access Customer Service workspace or Contact Center workspace. Doing so helps avoid work items being incorrectly assigned to you.
+- When your shift ends, ensure that you sign out and close your browser through which you access Copilot Service workspace. Doing so helps avoid work items being incorrectly assigned to you.
 - When you face network or hardware issues, the application displays error or warning messages on the communication panel. Use the information in the messages to resolve the problems. More information: [Use diagnostic messages to troubleshoot call issues](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/use-diagnostic-messages-in-call-issues)
 
 ### Related information

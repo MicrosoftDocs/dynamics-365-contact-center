@@ -4,9 +4,10 @@ description: Learn about the autonomous agents in Dynamics 365 and how they can 
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.topic: conceptual
+ms.topic: concept-article
 ms.collection: bap-ai-copilot
 ms.date: 04/07/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 

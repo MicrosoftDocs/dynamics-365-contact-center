@@ -1,7 +1,7 @@
 ---
 title: Provision channels in Dynamics 365 Contact Center
 description: Perform the steps in this article to provision and add channels so that you can start using the product.
-ms.date: 03/04/2025
+ms.date: 07/21/2025
 ms.topic: how-to
 author: neeranelli
 ms.author: nenellim
@@ -41,12 +41,13 @@ You can provision the following channels:
 
 ## Set up channels
 
-You can set up channels in the Contact Center admin center or Customer Service admin center application.
+You can set up channels in the Copilot Service admin center application.
 
 To set up the channels, perform the following steps:
 
 1. Select **Channels** in **Customer Support**. 
-1. Select **Manage** for **Manage channels**. The Manage channels page appears. 
+
+1. Select **Manage** for **Manage channels**. The **Manage channels** page appears. 
 1. Select the channels that you want to use. 
     Depending on your licenses, you can view the channels that you can enable. If you don't have the required licenses, the checkboxes for the corresponding channels are disabled. Learn more about licenses in the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
 1. Select **Save**.
@@ -54,6 +55,8 @@ To set up the channels, perform the following steps:
 The setup can take several minutes. The application provisions the channel in the background. You can close the window and check after some time, or refresh it to see if it's complete. When the setup is complete, the enabled channels appear in your environment.
 
 If the provisioning fails, an error message appears that you can select to view the details.
+
+In the trial version of Dynamics 365 Contact Center, all channels are enabled out of the box, and therefore, the channels appear grayed out. 
 
 ### Turn off channels
 

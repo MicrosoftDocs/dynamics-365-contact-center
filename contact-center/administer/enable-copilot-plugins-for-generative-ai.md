@@ -6,7 +6,8 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 02/19/2025
+ms.date: 04/30/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
@@ -14,8 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
 
-
-Your customer service representatives rely on data and information from a wide variety of systems. With plugins, you can reduce the need for customer service representatives to switch to other tabs and tools to do their work and improve resolution time and customer satisfaction.
+Your customer service representatives (service representatives or representatives) rely on data and information from a wide variety of systems. With plugins, you can reduce the need for customer service representatives to switch to other tabs and tools to do their work and improve resolution time and customer satisfaction.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -46,20 +46,20 @@ Use the following information:
 
 ### Configure settings for the prompt plugin
 
-1. In the site map of Customer Service admin center, do one of the following steps to access the plugins:
-   - Select **Productivity** > **Plugins for generative AI (Preview)** under **Agent experience**.
+1. In the site map of Copilot Service admin center, do one of the following steps to access the plugins:
+   - Select **Productivity** > **Plugins for generative AI (Preview)** under **Support experience**.
    - Select **Insights** > **Plugins for generative AI (Preview)** under **Operations**. 
 1. Select **Manage**.
 1. On the **Plugins for generative AI (Preview)** page, select a prompt plugin and then select **Turn on** on the command bar.
    1. On the **Step 1 of 3** screen, in **Select access type**, select one of the following types:
-      - **All agents who have Copilot**: Agents who have Copilot enabled for them through their agent experience profiles.
+      - **All agents who have Copilot**: Representatives who have Copilot enabled for them through their experience profiles.
       - **Specific user roles**: Select the roles in the list.
    1. Select **Next**, and on the **Define inputs(optional)** screen, define the input to improve the answers that Copilot generates.
    1. In **Responses**, select **Don't summarize plugin responses** if you don't want Copilot to interpret the answers and instead present the entire response that's available in the plugin.
 1. Select **Next** and on the **Plugin data** screen, select **Store this plugin's data**. The data is stored in your Dataverse database as part of your service representative interactions with Copilot as chat transcripts. Learn more in [Copilot transcripts and interaction data](/dynamics365/customer-service/develop/download-copilot-transcript-data).
 
     > [!IMPORTANT]
-    > Irrespective of whether you select the checkbox, Copilot Studio saves all the plugin data as part of agent conversation transcripts. Microsoft doesn't have access to this information.
+    > Irrespective of whether you select the checkbox, Copilot Studio saves all the plugin data as part of representative conversation transcripts. Microsoft doesn't have access to this information.
 
 1. Select **Turn on plugin**.
 1. Select **Publish changes** on the alert message at the top of the page, and select **Confirm** on the confirmation dialog that appears. It can take up to 15 minutes for the changes to publish.
@@ -77,7 +77,7 @@ Use the following information:
 
 ### Configure settings for the custom connector
 
-1. In the site map of Contact Center admin center or Customer Service admin center, do one of the following steps to access the plugins:
+1. In the site map of Copilot Service admin center, do one of the following steps to access the plugins:
    - Select **Productivity** > **Plugins for generative AI (Preview)** under **Agent experience**.
    - Select **Insights** > **Plugins for generative AI (Preview)** under **Operations**. 
 1. Select **Manage**.
@@ -87,7 +87,7 @@ Use the following information:
       - **Admin**: Uses admin authentication to give data access to service representatives.
       - **Agent**: Requires service representatives to authenticate themselves at runtime.  This option is recommended if the data is restricted or sensitive.
    1. On the **Manage user access** screen, select one of the following access types:
-      - **All agents who have Copilot**: Agents who have Copilot enabled for them through their agent experience profiles.
+      - **All agents who have Copilot**: Agents who have Copilot enabled for them through their experience profiles.
       - **Specific user roles**: Select the roles in the list.
    1. Select **Next**.
    1. On the **Define inputs(optional)** screen, provide the input to improve the answers that Copilot generates.
@@ -95,7 +95,7 @@ Use the following information:
    1. Select **Next** and on the **Save plugin data in Dynamics 365** screen, select **Save this plugin's data in Dynamics 365 Copilot transcript**. The data is stored in your Dataverse database as part of your service representative interactions with Copilot as chat transcripts. Learn more at [Copilot transcripts and interaction data](/dynamics365/customer-service/develop/download-copilot-transcript-data).
 
       > [!IMPORTANT]
-      > Irrespective of whether you select the checkbox, Copilot Studio saves all the plugin data as part of agent conversation transcripts. Microsoft doesn't have access to this information.
+      > Irrespective of whether you select the checkbox, Copilot Studio saves all the plugin data as part of representative conversation transcripts. Microsoft doesn't have access to this information.
 
    1. Select **Turn on plugin**.
 1. Select **Publish changes** on the alert message at the top of the page, and select **Confirm** on the confirmation dialog that appears. It can take up to 15 minutes for the changes to publish.

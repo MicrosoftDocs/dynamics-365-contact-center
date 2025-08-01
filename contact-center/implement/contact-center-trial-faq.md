@@ -4,9 +4,9 @@ description: Solutions to common questions related to Dynamics 365 Contact Cente
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.topic: conceptual 
+ms.topic: faq
 ms.collection: get-started
-ms.date: 01/10/2025
+ms.date: 05/15/2025
 ms.custom: bap-template
 ---
 
@@ -45,7 +45,7 @@ The environment you receive in trial is a fully functional, Power Platform envir
 - Dynamics 365 Contact Center, with Live chat, digital messaging, and voice channels
   - Chat, voice, and other digital messaging channels
   - Unified routing
-  - Agent Experiences&mdash;Contact Center workspace (standalone) and embedded experience through the embedded widget
+  - Representative experiences&mdash;Copilot Service workspace (standalone) and embedded experience through the embedded widget
 
 ### How do I remove sample data from the trial instance?
 
@@ -78,5 +78,5 @@ The [Language availability](international-availability.md#language-availability)
 ### Related information
 
 [Try Dynamics 365 Contact Center](try-dynamics365-contact-center.md)  
-[Overview of Contact Center workspace](../use/ccw-overview.md)  
+[Overview of Copilot Service workspace](../use/ccw-overview.md)  
  

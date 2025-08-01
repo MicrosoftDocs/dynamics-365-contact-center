@@ -1,13 +1,12 @@
 ---
 title: Configure feedback surveys using Copilot Studio (preview)
-description: Learn how to configure surveys in your contact center using survey agents in Copilot Studio.
+description: Learn how to configure surveys in Dynamics 365 Contact Center using survey agents in Copilot Studio.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer:
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 06/09/2025
-ms.update-cycle: 180-days
+ms.date: 08/01/2025
 ms.custom: bap-template
 ---
 
@@ -22,7 +21,7 @@ You can create and manage surveys that go out to the customers after a call or c
 [!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 The survey appears for the customer after the representative ends the conversation or call.
- 
+
 With survey agents, you can:
 - Gather customer feedback and configure contextual actions depending on the feedback.
 - Unify and centralize the process of configuring surveys across digital messaging, voice, and custom channels.
@@ -209,8 +208,13 @@ You can host surveys on a link other than the default one.
 1. In Copilot Service admin center, go to the voice workstream and select **Edit**. 
 1. On the **Behaviors** tab, scroll to the bottom of the page and enable the toggle for Post-call survey.
 1. In **Customer feedback survey**, select a survey from the list. Only those surveys that you create using the customer feedback option and in published state are displayed for you to select.
-1. Verify that the post-call survey option listed on the **Language** tab of the workstream is disabled. The survey option needs to be disabled for the new experience to work as expected.
 1. Save the changes.
+
+You can obtain customer consent for post-call surveys as follows:
+
+- **Automatic - implicit**: The IVR agent informs the customer about a post-call survey at the end of the call. After the service representative disconnects, the call is automatically transferred to a post-call survey agent.
+- **Automatic - explicit**: The IVR agent asks the customer if they want to participate in a post-call survey. The consent is saved in the `va_SurveyConsent` Boolean variable. If the customer consents, the call is automatically transferred to the post-call survey agent at the end of the call. If the customer says no, the call ends when the service representative hangs up.
+- **Agent-initiated**: Towards the end of a call, the service representative can ask the customer if they want to take a survey. If the customer says yes, the service representative manually transfers the call to the survey agent.
 
 ## View the survey results
 
@@ -222,7 +226,8 @@ The CSAT scores are displayed in the Omnichannel historical analytics report.
 
 You can configure the system to send a survey through email after the service representative resolves a case.
 
-Follow these steps to configure post-case resolution surveys in Copilot Service admin center: 
+Follow these steps to configure post-case resolution surveys in Copilot Service admin center:
+
 1. In the site map, under **Customer Support** > **Case settings**, select **Manage** for **Post case resolution survey (preview)**. The post case resolution surveys are triggered through Power Automate flows. The **Enable survey invite flow** dialog appears.
 1. Select **Turn on**. The Power Automate flows page opens on a new tab.
    - Search for and enable the **Send a Microsoft Copilot Survey bot when a case is resolved in Dynamics 365** flow.

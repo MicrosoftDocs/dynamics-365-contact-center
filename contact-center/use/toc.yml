@@ -358,6 +358,8 @@
             href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/use-context
           - name: Use the Schedule Calendar
             href: /dynamics365/customer-service/use/use-agent-calendar?context=/dynamics365/contact-center/context/use-context
+          - name: Use break distribution to assign breaks
+            href: wfm-use-break-distribution.md
         - name: Time-off request management
           items:
           - name: Manage time-off requests

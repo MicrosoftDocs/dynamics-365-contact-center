@@ -21,7 +21,7 @@ Intent-based suggestions help you handle customer conversations with ease. The i
 
 ## Prerequisites
 
-To use intent-based suggestions, you need the following features enabled by your administrator in Customer Service admin center or Contact Center admin center:
+To use intent-based suggestions, you need the following features enabled by your administrator in Copilot Service admin center:
 
 - Customer Intent Agent is enabled. Learn more in [Manage Customer Intent Agent](../administer/manage-customer-intent-agent.md)
 - The Ask-a-question feature in Copilot help pane is enabled. Learn more in [Enable Copilot assist features](../administer/copilot-enable-help-pane.md).

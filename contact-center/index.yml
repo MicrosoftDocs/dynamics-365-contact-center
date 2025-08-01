@@ -97,7 +97,7 @@ additionalContent:
     - title: Communicate over channels your customers prefer
       links:
       - url: use/ccw-overview.md
-        text: Use Contact Center workspace      
+        text: Use Copilot Service workspace      
       - url: /dynamics365/customer-service/use/channels?context=/dynamics365/contact-center/context/use-context
         text: Communicate over multiple channels
       - url: /dynamics365/customer-service/administer/voice-channel?context=/dynamics365/contact-center/context/administer-context
@@ -113,6 +113,8 @@ additionalContent:
     - title: Use Copilot
       links:
       - url: use/use-copilot-features.md
+        text: Copilot feature availability across applications
+      - url: use/copilot-feature-availability.md
         text: Use Copilot to solve customer issues
       - url: use/copilot-summarize-conversations.md  
         text: Use Copilot to summarize conversations

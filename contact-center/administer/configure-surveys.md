@@ -6,7 +6,8 @@ ms.author: nenellim
 ms.reviewer:
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 03/03/2025
+ms.date: 06/09/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
@@ -14,13 +15,13 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-[!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
+You can create and manage surveys that go out to the customers after a call or conversation ends. When you create a survey in Copilot Service admin center, the application automatically provisions an AI agent (agent) survey that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses.
 
-
-You can create and manage surveys that go out to the customers after a call or conversation ends. When you create a survey in Contact Center admin center or Customer Service admin center, the application automatically provisions an AI agent (agent) survey that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses.
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-The survey appears for the customer after the customer service representative (service representative or representative) ends the conversation or call.
+[!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
+
+The survey appears for the customer after the representative ends the conversation or call.
  
 With survey agents, you can:
 - Gather customer feedback and configure contextual actions depending on the feedback.
@@ -29,14 +30,15 @@ With survey agents, you can:
 - Allow supervisors to view and review feedback summarized into actionable insights.
 
 > [!NOTE]
-> When you copy an environment, while the survey agents are copied, they won't work as expected in the target environment. We recommend that you create new survey agents in the target environment.
+> - The survey agent is generally available for the voice channel and in preview for all other channels.
+> - When you copy an environment, while the survey agents are copied, they won't work as expected in the target environment. We recommend that you create new survey agents in the target environment.
 
 ## How it works
 
-1. Create a survey agent in Contact Center admin center or Customer Service admin center.
+1. Create a survey agent in Copilot Service admin center.
 1. Edit the survey agent in Copilot Studio.
 1. Add the survey agent to the appropriate channel.
-1. Experience the survey runtime behavior in Contact Center workspace or Customer Service workspace.
+1. Experience the survey runtime behavior in Copilot Service workspace.
 
 ## Prerequisites
 
@@ -45,7 +47,7 @@ With survey agents, you can:
 
 ## Create a survey
 
-1. In the site map of Contact Center admin center or Customer Service admin center, go to **Customer settings** in **Customer Support**, and select **Manage** for **Customer feedback (preview)**.
+1. In the site map of Copilot Service admin center, go to **Customer settings** in **Customer Support**, and select **Manage** for **Customer feedback (preview)**.
 1. On the **Customer feedback (preview)** page, select **New**.
 1. On the **Add new customer feedback survey** wizard, select one of the following templates, and then select **Next**:
     - **Customer Satisfaction (CSAT) Survey**: Use to ask questions, such as, “On a scale of 1-5, how would you rate your overall satisfaction with the service you received?”
@@ -54,7 +56,7 @@ With survey agents, you can:
     - **Blank Template**: Use it to start a survey from scratch. 
 1. On the **Properties** page, do the following:
     - **Name**: Enter a name based on the survey template that you selected.
-    - **Language**: Select a language from the supported languages list. The languages that are supported in Copilot Studio only appear.
+    - **Select primary language**: Select a primary language from the supported languages list. The languages that are supported in Copilot Studio only appear.
     - Select the **Enable for Voice Channels** toggle if you want to use the survey for voice conversations.
 1. Select **Next**, and on the page that appears, review your choices.
 1. Select **Save survey**. The **Survey Created** page displays the summary and link to the survey where it's hosted. The application creates a survey agent with the same name as the survey and is hosted at the same link.
@@ -66,7 +68,7 @@ After you create the survey in the admin center, it needs to be published. If yo
 
 1. Select the survey that you created. The survey opens in Copilot Studio page on a new tab. 
 1. Update the survey to suit your business needs. 
-1. Select **Publish**. After a couple of minutes, the survey status is updated as **Ready** on the Contact Center admin center or Customer Service admin center **Customer feedback (preview)** page. For any publishing issues, see the [troubleshooting](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/error-in-conversation-start-topic
+1. Select **Publish**. After a couple of minutes, the survey status is updated as **Ready** on the Copilot Service admin center **Customer feedback (preview)** page. For any publishing issues, see the [troubleshooting](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/error-in-conversation-start-topic
 ) article.
 
 ### Verify the Dataverse connection
@@ -80,6 +82,57 @@ Make sure that the Dataverse connection is established for Copilot Studio so tha
 1. Complete the steps to create a **Microsoft Dataverse** connection and select it in the **Connection** box.
 
 Learn more in [Set up a Dataverse connection](/power-apps/maker/data-platform/create-connection-reference).
+
+### Configure multilingual survey agents
+
+In Dynamics 365 Contact Center, you can set the primary language only for the survey. You can configure multilingual surveys in Copilot Studio. Learn more in [Configure and create multilingual agents](/microsoft-copilot-studio/multilingual)
+
+Multilingual survey agents work only when you set up an IVR agent that identifies the customer language.
+
+### Considerations for multilingual survey agents
+
+- Add all other supported languages as a secondary language with the locale codes that you expect the survey agent to handle.
+
+- In the IVR agent, configure a topic with an **on redirect trigger** and set the following global variable: **va_CustomerLocale**.
+- Set the **Global.va_CustomerLocale** variable in the topic for verifying the customer language.
+- In your survey agent, make sure that the **Global.va_CustomerLocale** variable is set in the **Set Global Variables** topic.
+
+  :::image type="content" source="../media/screenshot-survey-global-variable.png" alt-text="A screenshot of how the global variable needs to be configured in Copilot Studio topic." lightbox="../media/screenshot-survey-global-variable.png":::  
+
+- If you don't see the **User.Language variable** in the **Conversation Start** topic, set it as follows and save and publish.
+  
+```
+    Switch(
+    Lower(Global.va_CustomerLocale), 
+        "en-us", Locale.English, 
+        "en-au", Locale.English_AU, 
+        "en-gb", Locale.English_UK, 
+        "es-es", Locale.Spanish, 
+        "es-us", Locale.Spanish_US, 
+        "tr-tr", Locale.Turkish, 
+        "fr-fr", Locale.French, 
+        "fr-ca", Locale.French_Canada, 
+        "de-de", Locale.German, 
+        "it-it", Locale.Italian, 
+        "pt-pt", Locale.Portuguese_Brazilian, 
+        "zh-cn", Locale.Chinese_Simplified, 
+        "zh-tw", Locale.Chinese_Traditional, 
+        "cs-cz", Locale.Czech, 
+        "da-DK", Locale.Danish, 
+        "fi-fi", Locale.Finnish, 
+        "el-gr", Locale.Greek, 
+        "hi-in", Locale.Hindi, 
+        "id-id", Locale.Indonesian, 
+        "nb-no", Locale.Norwegian, 
+        "pl-pl", Locale.Polish, 
+        "ru-ru", Locale.Russian, 
+        "sv-se", Locale.Swedish, 
+        "th-th", Locale.Thai, 
+        "ja-jp", Locale.Japanese, 
+        "ko-kr", Locale.Korean, 
+        System.User.Language // Default
+    )
+```  
 
 ### Manage the surveys
 
@@ -99,8 +152,9 @@ You can edit your survey agents to fulfill your business needs as follows:
 - Add more actions
 - Add extra topic questions
 
-Edit the **Conversation Start** system topic only. All other system topics are disabled and must not be used.
-If you would like to add an additional question and store the data in Dataverse, the response variable name must start with “MCS_”.
+Edit the **Conversation Start** system topic only. All other system topics are disabled and must not be used.  
+To add another question and store the data in Dataverse, the response variable name must start with “MCS_”.  
+To add another context to pass to the survey agent, make sure that the context variable name is set to "mcs_additionalcontext" and set the value as JSON key value pair.  
 
 > [!NOTE]
 > We recommend that you don't delete the survey agent from Copilot Studio.
@@ -109,7 +163,7 @@ If you would like to add an additional question and store the data in Dataverse,
 
 You can host surveys on a link other than the default one.
 
-1. In Contact Center admin center or Customer Service admin center, select the survey that you want to custom host.
+1. In Copilot Service admin center, select the survey that you want to custom host.
 1. Select the survey and select **Edit**.
 1. In **Survey URL**, enter the custom host page URL where you want to display the survey.
 1. Do the following for a seamless hosting experience:
@@ -152,7 +206,7 @@ You can host surveys on a link other than the default one.
 
 ## Enable the post-call survey for the voice channel
 
-1. In Contact Center admin center or Customer Service admin center, go to the voice workstream and select **Edit**. 
+1. In Copilot Service admin center, go to the voice workstream and select **Edit**. 
 1. On the **Behaviors** tab, scroll to the bottom of the page and enable the toggle for Post-call survey.
 1. In **Customer feedback survey**, select a survey from the list. Only those surveys that you create using the customer feedback option and in published state are displayed for you to select.
 1. Verify that the post-call survey option listed on the **Language** tab of the workstream is disabled. The survey option needs to be disabled for the new experience to work as expected.
@@ -168,7 +222,7 @@ The CSAT scores are displayed in the Omnichannel historical analytics report.
 
 You can configure the system to send a survey through email after the service representative resolves a case.
 
-Follow these steps to configure post-case resolution surveys in Contact Center admin center: 
+Follow these steps to configure post-case resolution surveys in Copilot Service admin center: 
 1. In the site map, under **Customer Support** > **Case settings**, select **Manage** for **Post case resolution survey (preview)**. The post case resolution surveys are triggered through Power Automate flows. The **Enable survey invite flow** dialog appears.
 1. Select **Turn on**. The Power Automate flows page opens on a new tab.
    - Search for and enable the **Send a Microsoft Copilot Survey bot when a case is resolved in Dynamics 365** flow.

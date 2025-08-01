@@ -6,7 +6,8 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 03/28/2025
+ms.date: 05/12/2025
+ms.update-cycle: 180-days
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -37,22 +38,30 @@ Use the information in this article to manage the intents in Copilot Service adm
 
 ## Manage lines of business
 
-A line of business can be a service, product, product category, or the way your company organizes and supports its business activities. It's used as a partition that represents a specific set of intents and intent groups in a large enterprise.
+A line of business can be a service, product, product category, or the way your company organizes and supports its business activities. It's used as a partition that represents a specific set of intents and intent groups in a large enterprise. You need to add lines of business if you want to enable intent-based routing for a selective set of workstreams and queues. Otherwise, intent-based routing is enabled for the whole organization.
+The following entities are associated with a line of business:
+- Intents and intent groups
+- User groups (A representative can be a part of many user groups that belong to different lines of business)
+- Workstreams
+- Queues
  
 ### Add line of business
 
-1. In the site map of Copilot Service admin center, go to **Intent**, and select **Manage** for **Add Line of business (Optional)**.
+1. In the site map of Copilot Service admin center, go to **Intent**, and then select **Manage** for **Add Line of business (Optional)**.
 1. On the **Manage Lines of business** page, select **Add Line of business**.
 1. Enter the name and description that indicates the line of business.
 1. Select **Add**. The line of business is listed in the **Lines of business** table.
 
 ### Create rules for cases and conversations
 
-For every line of business that you identify, you can create rules for cases and conversations. You can create one rule only (one each for a case and conversation) per line of business.
+For every line of business that you identify, you can create rules for cases and conversations. You can create one rule only (one each for a case and conversation) per line of business. During runtime, for chat and other channels, Copilot and intent-based suggestions must be enabled to determine the intent.
 
 1. On the **Manage Lines of business** page, in **Case Rules**, select **Create rule**.
 1. On the dialog that appears, enter the rule name and select a line of business.
-1. In **Conditions**, define the conditions for the rules to run. In the rules for conversations, we recommend that you configure the same workstream that’s associated with the line of business.
+1. In **Conditions**, define the conditions for the rules to run.
+   > [!IMPORTANT]
+   > Configure the workstream name in the line of business configuration rules for chat workstreams. Because the chat widget is tightly coupled with the line of business, by specifying the line of business, you can make sure that the chat belongs to the same line of business as its workstream. Otherwise, the chat might end up with a different line of business other than its workstream.
+
 1. Optionally, select **Run backfill**. When selected, it’s used to associate past cases with a line of business for intent discovery. The system makes sure that intent discovery works properly by tagging past cases with the appropriate line of business.
 1. Save and close.
 
@@ -81,17 +90,34 @@ You need to run the AI model on data sources like conversations to identify inte
 
 After the first run of the intent discovery, the intent groups are listed on the **All intent groups** page.
 
+## Manage intents
+
+1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage intents**.
+1. Select **New**, and enter intent details as follows:
+   - **Name**: Enter a name for the intent. The name should be intuitive and meet your business requirement.
+   - **Intent group**: Select the intent group that you want to associate with the intent.
+   - **Line of business**: Select the line of business that you want to associate with the intent.
+   - **Review status**: Select **Pending**, **Approved**, or **Discarded** in the list to indicate the default status that you'd like to set for the intent.
+   - **Use in AI Agent**: Select **Yes** if you want to use the intent in the AI agent.
+1. Save the information.
+1. On the **Attributes** tab, add the attributes that you want to associate with the intent. The attributes are used to provide additional information about the intent. You can add multiple attributes for an intent.
+1. On the **Knowledge articles** tab, select **Add** to associate the knowledge articles with the intent. The knowledge articles are used to provide additional information about the intent. You can add multiple knowledge articles for an intent.
+
+  :::image type="content" source="../media/create-intent.png" alt-text="Screenshot of create intent page with all details and attributes." lightbox="../media/create-intent.png":::
+
+You can manage the intents to be used in AI agent in bulk. On the **Manage intents** page, select the approved intents, and on the command menu, select **Use in AI agent**. The intents are used in the AI agent.
+ 
 ## Manage intent groups
 
 You can logically organize the intents into intent groups. The intent group represents the business expertise that's needed to solve the intents belonging to the group. The intent groups that the AI model identifies are displayed on the **All intent groups** page. You can manage the intent groups by reviewing, approving, or updating the intents in them.
 
 1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage intent groups and intents**. The **All intent groups** page displays the list of intents that the AI model discovered. If you create a custom intent group, the intent source shows as **Admin edited**. The **Intents** column displays the number of intents in each intent group.
     
-   :::image type="content" source="../media/list-of-intent-groups.png" alt-text="Screenshot of intent groups list.":::
+   :::image type="content" source="../media/list-of-intent-groups.png" alt-text="Screenshot of intent groups list." lightbox="../media/list-of-intent-groups.png":::
 
 1. Select an intent group to manage its intents. The `<intent_group_name>` page displays the details, such as review status and the list of intents in the group.
 
-   :::image type="content" source="../media/manage-intents.png" alt-text="Screenshot of manage intents in intent group.":::
+   :::image type="content" source="../media/manage-intents.png" alt-text="Screenshot of manage intents in intent group." lightbox="../media/manage-intents.png":::
 
 1. Select **Manage intents** to add new intents or remove existing ones.
 1. On the **Manage intents** dialog, you can do the following updates:
@@ -109,7 +135,7 @@ You can logically organize the intents into intent groups. The intent group repr
 1. On the **New intent group** dialog, in **Define intent group**, enter a name and select a review status.
 1. Select **Next**.
 1. On the page that appears, select **Add**.
-1. Select the intents in the list that match and select **Add**.
+1. Select the intents in the list that match, and then select **Add**.
 1. Select **Save**. The intent group is displayed in the **All intent groups** view.
  
 ### Related information

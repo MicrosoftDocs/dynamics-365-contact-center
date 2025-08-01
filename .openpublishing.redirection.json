@@ -5,8 +5,17 @@
       "source_path": "contact-center/administer/bot-connectivity-issues.md",
       "redirect_url": "/dynamics365/customer-service/administer/configure-fallback-actions-ivr-agent",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "contact-center/extend/closure-options-descriptions.md",
+      "redirect_url": "/contact-center/extend/closure-reasons-descriptions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "contact-center/use/wfm-use-shift-based-routing.md",
+      "redirect_url": "/dynamics365/customer-service/administer/configure-routing-on-agent-calendar",
+      "redirect_document_id": "false"
     }
-
   ]
 }
 

@@ -6,7 +6,8 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 03/28/2025
+ms.date: 06/04/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 
@@ -31,8 +32,8 @@ You can create a [custom experience profile](/dynamics365/customer-service/admin
 To add the Copilot features to an experience profile, follow these steps:
 
 1. Go to experience profiles using one of the following navigation options:
-   - **Agent experience** > **Workspaces**
-   - **Customer support**>**Intent** > **Customer Intent Agent (preview)** > **Enable for support representatives**
+   - **Support experience** > **Workspaces**
+   - **Customer support** > **Intent** > **Customer Intent Agent (preview)** > **Enable for support representatives**
 1. Select the required experience profile.
 1. In **Productivity pane**, select **Edit** and then turn on the **Copilot help pane** toggle.
 1. In **Copilot AI features** select **Edit** and then select the following for the representatives to be able to view intent-based suggestions:

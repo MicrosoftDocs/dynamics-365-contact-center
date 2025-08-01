@@ -4,7 +4,7 @@ description: Learn which geographic locations and languages Dynamics 365 Contact
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.topic: conceptual 
+ms.topic: concept-article
 ms.collection:
 ms.date: 03/12/2025
 ms.custom: bap-template

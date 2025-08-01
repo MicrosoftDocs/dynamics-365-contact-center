@@ -281,7 +281,7 @@
           - name: Trust center for Dynamics 365
             href: trust-center.md
           - name: Security FAQs about AI agents
-            href: agent-hub-security-faqs.md  
+            href: copilot-security-faqs.md
         - name: Autonomous service agents
           items:
           - name: Overview of autonomous service agents

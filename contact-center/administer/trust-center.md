@@ -5,11 +5,10 @@ author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
-ms.collection: 
+ms.collection: bap-ai-copilot 
 ms.date: 08/01/2025
 ms.custom: 
 - bap-template
-- bap-ai-copilot
 ---
 
 # Trust center for Dynamics 365 (preview)

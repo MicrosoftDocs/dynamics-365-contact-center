@@ -5,11 +5,10 @@ author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
-ms.collection: 
+ms.collection: bap-ai-copilot 
 ms.date: 08/01/2025
 ms.custom: 
 - bap-template
-- bap-ai-copilot
 ---
 
 # Create rollout plans to manage AI agents (preview)
@@ -19,6 +18,10 @@ ms.custom:
 The rollout manager is a wizard that helps AI administrators and supervisors adopt autonomous AI agents in a phased, guided, and controlled manner. It enables organizations to activate features like Customer Intent Agent and Case Management Agent through structured rollout plans that align with business needs and readiness.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+## Prerequisite
+
+The autonomous agents must be enabled to create a rollout plan.
 
 ## Create rollout plans using rollout manager
 
@@ -33,7 +36,7 @@ The rollout manager guides administrators to existing configurations and enables
    - **Case Management Agent**: This agent helps service representatives by automating case management tasks, such as creating and updating cases.
    - **Customer Knowledge Management Agent**: This agent helps service representatives by providing them with knowledge base articles based on customer queries.
 
-The wizard guides you to customize settings for each autonomous agent, such as select a line of business for Customer Intent Agent, and case update and case closure for Case Management Agent.
+The wizard guides you to customize settings for each autonomous agent, such as select a line of business for Customer Intent Agent, and case update and closure for Case Management Agent.
 
 ### Manage rollout plans
 

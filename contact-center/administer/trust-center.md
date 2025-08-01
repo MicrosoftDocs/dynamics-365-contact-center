@@ -16,7 +16,7 @@ ms.custom:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Find compliance artifacts, request documentation, and view details about the security controls that we follow for Dynamics 365 contact center and customer service.
+Find compliance artifacts, request documentation, and view details about the security controls that we follow for Dynamics 365 Contact Center and Customer Service.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

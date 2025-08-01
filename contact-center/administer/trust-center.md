@@ -38,7 +38,7 @@ Find compliance artifacts, request documentation, and view details about the sec
 || **Uses data encryption at rest** <br> Conducts controlled self assessments <br> Data retention procedures |:::image type="content" source="../media/green-checkmark.png" alt-text="Green checkmark indicating success status.":::|
 |Transparency and disclosure|||
 ||**Uses a process to address AI-related complaints or concerns** <br>**Support Channels**: Customers can raise complaints or concerns through the standard Microsoft Support portal, just like they would for any Dynamics 365 or Power Platform issue. These are triaged and escalated based on severity.<br> **Agent Feedback Loop**: Within Copilot, agents can provide thumbs up/down feedback on AI responses.|:::image type="content" source="../media/green-checkmark.png" alt-text="Green checkmark indicating success status.":::|
-||**How often will the AI system be reviewed for accuracy and fairness? Which operating unit in the Company will perform these regular reviews?** <br> The AI system is continuously monitored and evaluated by Microsoft to ensure it meets standards for accuracy, fairness, and responsible use.|:::image type="content" source="../media/green-checkmark.png" alt-text="Green checkmark indicating success status.":::|
+||**How often will the AI system be reviewed for accuracy and fairness?** <br> The AI system is continuously monitored and evaluated by Microsoft to ensure it meets standards for accuracy, fairness, and responsible use.|:::image type="content" source="../media/green-checkmark.png" alt-text="Green checkmark indicating success status.":::|
 
 ### Related information
 

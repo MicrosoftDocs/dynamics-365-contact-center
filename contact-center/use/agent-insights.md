@@ -64,7 +64,7 @@ The following metrics are available.
 | Unassigned cases      | Total cases awaiting representative assignment (no case owner assigned).                                                   |
 | Incoming cases        | Total cases created during the selected period.                                                                   |
 | Days to close         | Average number of days to close a case for all cases created during the selected period (date closed minus date created). |
-| Cases followed up     | Total cases that are followed up by either service representative or AI agent (status equals "Waiting for details").                              |
+| Cases followed up     | Total cases that are followed up by either service representative or AI agent (status is set to **Waiting for details**).                              |
 
 ## Summary of AI agents performance
 

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 05/12/2025
+ms.date: 01/08/2025
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template
@@ -142,10 +142,12 @@ You can logically organize the intents into intent groups. The intent group repr
 
 You can enable Customer Intent Agent to follow instructions that you set up to help resolve intents. 
 > [!NOTE]
-> You must have the Intent Manager role to create instructions.
+> As an administrator or supervisor, you must have the Intent Manager role to create instructions.
+
+### Add instructions
 
 1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage instructions (optional)**.
-1. On the **Manage instructions (preview)** page, select a line of business from the **Select line of business** dropdown list.
+1. On the **Manage instructions (preview)** page, select a line of business from the **Select line of business** dropdown list. If you don't specify a line of business, the agent follows organizational level instructions.
 1. In the **Line of business instructions (optional)** section, select **Add**.
 1. On the **Add instructions** dialog, add the instructions for the line of business. You can enter upto 4000 characters.
 Select the **View example instructions** dropdown, if you need to refer to examples to create instructions for your line of business.
@@ -158,13 +160,26 @@ Select the **View example instructions** dropdown, if you need to refer to examp
 1. On the **Add Instructions** dialog, add instructions for the intent group. You can enter upto 2000 characters.
 1. To edit the line of business instructions, select **Manage instructions**.
 1. Select **Save**.
- 
 
-### Examples of instructions
 
-Need info.
- 
+### Edit or delete instructions
 
+You can edit or delete a line of business from the **Line of business instructions (optional)** section.
+
+
+### How to write clear instructions
+
+
+|Guidelines  |Why it matters  |Example  |
+|---------|---------|---------|
+|Start with a clear “Role & Purpose” sentence that puts the agent in character.      |    Grounds the assistant in brand voice and scope, helping it choose the right tone.      |    “You are a representative from Contoso Coffee, assisting customers with orders and account questions.”      |
+|Outline the flow in a few simple steps before getting into details.     |    Helps the reader or system follow a consistent sequence without overthinking.      |     1. Clarify the problem > 2. Pick the likely cause > 3. Try one fix at a time”    |
+|Call out required checks or prerequisites early.      |     Ensures nothing is missed before actions or lookups.     |      “If the user reports an issue, first confirm the product model and purchase date.”    |
+|State what is out of scope or prohibited.     |      Prevents unnecessary work or compliance issues.    | “Do not ask for social security numbers or payment card details.”         |
+|Use plain IF > THEN logic for decision points.     | Reduces ambiguity without requiring technical syntax.         | “If the product is under warranty, offer a replacement. Otherwise, provide repair options.”         |
+|Include clear escalation or hand-off triggers.     |   Ensures smooth transition when the process cannot continue.       |   “Hand-off to a support rep if the customer requests a refund over $100 or expresses dissatisfaction.”       |
+|Break down multi-part instructions into smaller steps.      |   Avoids missed details and simplifies hand-offs between people or steps.      |  Instead of “Verify account and reset password,” split into: “1. Verify account. 2. Reset password.”        |
+|Avoid unnecessary technical or system jargon.     |  Keeps instructions readable and usable without requiring technical expertise.        |    Say “Look up the customer’s order in the system” instead of “Execute GET request on Order API.” |
 
 ## Manage connectors for AI agents (optional)
 

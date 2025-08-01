@@ -151,20 +151,31 @@ You can enable Customer Intent Agent to follow instructions that you set up to h
 1. In the **Line of business instructions (optional)** section, select **Add**.
 1. On the **Add instructions** dialog, add the instructions for the line of business. You can enter upto 4000 characters.
 Select the **View example instructions** dropdown, if you need to refer to examples to create instructions for your line of business.
-1. Select **Save**. 
+1. Select **Save**. Once saved, the agent uses these instructions when interacting with the customer immediately.
 1. In the **Instructions for intent groups and intents** section, create instructions for intent groups or intents for the specific line of business.
     1. To create instructions for an intent group, select [Manage intent groups](#manage-intent-groups).
     1. To create instructions for an intent, select [Manage intents](#manage-intents).
 1. If you select **Manage intent groups**, select an intent group from the **All intent groups** dropdown list.
-1. On the selected intent group page, **Intent group instructions (optional)** section, select **Add**.
-1. On the **Add Instructions** dialog, add instructions for the intent group. You can enter upto 2000 characters.
-1. To edit the line of business instructions, select **Manage instructions**.
-1. Select **Save**.
+    1. On the selected intent group page, **Intent group instructions (optional)** section, select **Add**.
+    1. On the **Add Instructions** dialog, add instructions for the intent group. You can enter upto 2000 characters.
+    1. To edit the line of business instructions, select **Manage instructions**.
+    1. Select **Save**.
+1. If you select **Manage intents**, select an intent from the **All intents** dropdown list.
+1. On the selected intent page, **Intent instructions (optional)** section, select **Add**.
+    1. On the **Add Instructions** dialog, add instructions for the intent. You can enter upto 2000 characters.
+    1. Select **Save**.
 
 
 ### Edit or delete instructions
 
 You can edit or delete a line of business from the **Line of business instructions (optional)** section.
+
+1. On the **Manage instructions (preview)** page, select a line of business from the **Select line of business** dropdown list.
+1. Select **Edit**.
+1. On the **Edit instructions** dialog, make changes in the **Line of business instructions** section.
+1. Select **Save**.
+
+Select **Delete** if you want to delete the instructions for the selected line of business. A confirmation message appears once the instructions are deleted
 
 
 ### How to write clear instructions
@@ -172,14 +183,14 @@ You can edit or delete a line of business from the **Line of business instructio
 
 |Guidelines  |Why it matters  |Example  |
 |---------|---------|---------|
-|Start with a clear “Role & Purpose” sentence that puts the agent in character.      |    Grounds the assistant in brand voice and scope, helping it choose the right tone.      |    “You are a representative from Contoso Coffee, assisting customers with orders and account questions.”      |
-|Outline the flow in a few simple steps before getting into details.     |    Helps the reader or system follow a consistent sequence without overthinking.      |     1. Clarify the problem > 2. Pick the likely cause > 3. Try one fix at a time”    |
-|Call out required checks or prerequisites early.      |     Ensures nothing is missed before actions or lookups.     |      “If the user reports an issue, first confirm the product model and purchase date.”    |
-|State what is out of scope or prohibited.     |      Prevents unnecessary work or compliance issues.    | “Do not ask for social security numbers or payment card details.”         |
-|Use plain IF > THEN logic for decision points.     | Reduces ambiguity without requiring technical syntax.         | “If the product is under warranty, offer a replacement. Otherwise, provide repair options.”         |
-|Include clear escalation or hand-off triggers.     |   Ensures smooth transition when the process cannot continue.       |   “Hand-off to a support rep if the customer requests a refund over $100 or expresses dissatisfaction.”       |
-|Break down multi-part instructions into smaller steps.      |   Avoids missed details and simplifies hand-offs between people or steps.      |  Instead of “Verify account and reset password,” split into: “1. Verify account. 2. Reset password.”        |
-|Avoid unnecessary technical or system jargon.     |  Keeps instructions readable and usable without requiring technical expertise.        |    Say “Look up the customer’s order in the system” instead of “Execute GET request on Order API.” |
+|Begin with a clear sentence that defines the agent's role and purpose.    |   Establishes the agent's brand voice and scope, and helps it choose the right tone.      |    "You are a representative from Contoso Coffee, assisting customers with orders and account questions."     |
+|Start with a few simple steps that outline the flow, then add details.  |    Follows a consistent sequence that's easy to understand.   |     "1. Clarify the problem. <br> 2. Pick the likely cause. <br> 3. Try one fix at a time." |
+|List required checks or prerequisites early.    |     Ensures nothing is missed before actions or lookups.    | "If the user reports an issue, first confirm the product model and purchase date."|
+|Explain what's out of scope or not allowed.|     Prevents unnecessary work or compliance issues.   | "Don't ask for social security numbers or payment card details."|
+|Use simple if-then logic for decision points. | Reduces ambiguity without technical syntax.| "If the product is under warranty, offer a replacement. Otherwise, provide repair options."|
+|Define when to escalate issues or hand them off to service representatives. |    Ensures a smooth transition when the process can't continue.       |  "Hand-off to a support rep if the customer requests a refund over $100 or expresses dissatisfaction."|
+|Break multi-part instructions into smaller steps.      |   Avoids missed details and simplifies handoffs between people or steps.|  Instead of "Verify account and reset password', split into: “1. Verify account. 2. Reset password.”        |
+|Don't use unnecessary technical or system jargon. |  Keeps instructions readable and usable without requiring technical expertise.|  For example, use: "Look up the customer’s order in the system", instead of “Execute GET request on Order API.” |
 
 ## Manage connectors for AI agents (optional)
 
@@ -190,6 +201,13 @@ Connectors let systems work together, move data, and let AI agents autonomously 
 1. On the **Select a connector** dialog, search and select a connector. You can add upto 30 connectors.    
 1. Select **Next**.
 1. On the **Set up the connector** dialog, select a connection from the **Connection** dropdown. You can also create a new connection in Power Platform. Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
+    > [!NOTE]
+    > Make sure that the connection you select is shared with one of the following service principals, as per your organization. 
+    - Dynamics 365 Analytics (61d02d70-ab6c-4569-be48-787ea2cda65d) 
+    - Dynamics CCA Data Analytics - PPE (7c58187c-f28c-4cfb-998c-3d6ba580192c) 
+    - Dynamics 365 Analytics - Test (079f5a03-090f-4720-90b9-e03942091e6e) 
+
+    Learn more in [Share a custom connector in your organization](connectors/custom-connectors/share).
 1. Specify the type of use for connector, **General** or **For specific intents**.
 1. If you select **For specific intents**, you need to map the custom connector as a solution.
 1. Select **Save**.
@@ -200,8 +218,19 @@ To map a connector to an intent:
 1. Select the specific intent, and on the intent page, in the **Solution (Optional)** section, select the **Connectors** option, and then select **Add**.
 1. On the **Add a solution** page, search and select a connector for the intent. Only connectors created for use with specific intents are shown.
 1. Select **Save and close**.
+> [!NOTE]
+> To map a connector to an intent, the connector must have one action only. If your connector has multiple actions, you can't execute any actions for that intent.
+
+### Edit or delete connectors
 
 You can edit or delete a connector from the **Manage connectors for AI agents (optional)** page. 
+
+1. On the **Manage custom connectors (preview)** page, select a connector.
+1.  Select **Edit**.
+1. On the **Edit connector** dialog, you can select your connection and specify the type of use for your connector.
+1. Select **Save**.
+
+Select **Delete** if you want to delete the connector. A confirmation message appears once the connector is deleted.
 
 ### Related information
 

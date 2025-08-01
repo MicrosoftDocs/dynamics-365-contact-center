@@ -130,7 +130,7 @@ No.
 
 Copilot features in Customer Service can be enabled or disabled for specific users through role-based access and security configurations within Dynamics 365. Detailed analytics can be enabled, which allows organizations to track and store all Copilot activities directly in Dynamics 365. Learn more in [View Copilot analytics report](/dynamics365/contact-center/use/copilot-analytics-report).
 
-### How will system failures or errors be detected and addressed? 
+### How will system failures or errors be detected and addressed?
 
 Copilot in Customer Service is part of the broader Dynamics 365 and Power Platform ecosystem, so the same support channels and escalation paths apply.
 

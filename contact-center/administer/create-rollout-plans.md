@@ -18,11 +18,11 @@ ms.custom:
 
 The rollout manager is a wizard that helps AI administrators and supervisors adopt autonomous AI agents in a phased, guided, and controlled manner. It enables organizations to activate features like Customer Intent Agent and Case Management Agent through structured rollout plans that align with business needs and readiness.
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Create rollout plans using rollout manager
 
-The rollout manager guides administrators to existing configurations and enables phased adoption without duplicating controls.You can create individual rollout plans for each autonomous agent or a single rollout plan for multiple agents based on your business needs.
+The rollout manager guides administrators to existing configurations and enables phased adoption without duplicating controls. You can create individual rollout plans for each autonomous agent or a single rollout plan for multiple agents based on your business needs.
 
 1. In the site map of Copilot Service admin center, select **Home**, and then select **Open** in **Agent hub (Preview)**.
 
@@ -49,7 +49,7 @@ The following considerations apply:
 
 - The rollout manager uses the existing settings for the AI agent.
 
-- For each autonomous agent, you can configure the settings on the parent page of the AI agent.
+- For each autonomous agent, you can configure the settings on the corresponding administrator settings page of the AI agent.
 - For Customer Intent Agent and Customer Knowledge Management Agent, when you deactivate or delete a rollout plan, the corresponding autonomous agent setting isn't deactivated or deleted.
 - For Case Management Agent only, when you deactivate or delete a rollout plan, the corresponding rules are also deactivated or deleted.
 

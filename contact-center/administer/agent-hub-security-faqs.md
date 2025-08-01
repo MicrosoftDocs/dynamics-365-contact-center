@@ -20,7 +20,11 @@ This FAQ article provides answers to common questions about the security, privac
 
 ### Do you track any metrics to assess the qualitative aspects of the model output like fluency, coherence, and relevance for summarization and descriptive statistics about input data?
 
-Copilot uses retrieval-augmented generation (RAG) to generate responses based on the sources used to ground its outputs. Agent feedback is captured in the customer Dataverse instance to help assess the qualitative aspects of both the model's output and the input data.
+Copilot uses retrieval-augmented generation (RAG) to generate responses based on the sources used to ground its outputs. The service representative feedback is captured in the customer Dataverse instance to help assess the qualitative aspects of both the model's output and the input data.
+
+### Do you provide any dashboard to track model performance metrics?  Or is the business planning to compute KPIs pulling data from the platform?
+
+Generally available Copilot capabilities use proactive incident monitoring and resolution to identify and resolve outages and other issues. Microsoft follows standard incident management operating procedures for customer reported incidents. Learn more in [Support for Microsoft Power Platform and Dynamics 365 apps](/power-platform/admin/support-overview).
 
 ### Is the AI system rule based, learning based, or both?
 
@@ -30,7 +34,11 @@ It's both rule based and learning based. Copilot uses rule-based triggers to act
 
 You can learn about the data interaction in [Copilot in Dynamics 365 Customer Service architecture](/dynamics365/guidance/reference-architectures/dynamics-365-customer-service-copilot-architecture).
 
-### What are the key functionalities of the AI system? 
+### What types of AI technology does the system employ?
+
+Copilot is built on Microsoft Azure OpenAI Service and runs completely within the Azure cloud. Learn more in [What is Azure OpenAI in Azure AI Foundry Models?](/azure/ai-foundry/openai/overview).
+
+### What are the key functionalities of the AI system?
 
 Learn about the system capabilities in [What are the systems' capabilities](/dynamics365/customer-service/implement/faq-responsible-ai-copilot#what-are-the-systems-capabilities).
 
@@ -40,7 +48,7 @@ No.
 
 ### How accurate and reliable is the AI system’s output?
 
-Learn more in [How is Copilot in Customer Service evaluated](/dynamics365/customer-service/implement/faq-responsible-ai-copilot#how-is-copilot-in-customer-service-evaluated-what-metrics-are-used-to-measure-performance).
+Learn in [How is Copilot in Customer Service evaluated](/dynamics365/customer-service/implement/faq-responsible-ai-copilot#how-is-copilot-in-customer-service-evaluated-what-metrics-are-used-to-measure-performance).
 
 ### Is the system designed to operate independently, or does it rely on human input?
 
@@ -48,15 +56,15 @@ The system relies on human input.
 
 ### Are there any known limitations of the AI system?
 
-Learn more in [What are the limitations of the AI system](/dynamics365/customer-service/implement/faq-responsible-ai-copilot#what-are-the-limitations-of-copilot-in-customer-service-how-can-users-minimize-the-impact-of-copilot-limitations).
+Learn about limitations in [What are the limitations of the AI system](/dynamics365/customer-service/implement/faq-responsible-ai-copilot#what-are-the-limitations-of-copilot-in-customer-service-how-can-users-minimize-the-impact-of-copilot-limitations).
 
 ### Is the AI technology developed in-house, by a third party, or a combination?
 
 The AI technology is developed by Microsoft.
 
-### Does the AI system personalize content or services for users? 
+### Does the AI system personalize content or services for users?
 
-Copilot in Customer Service is designed solely for the representative experience, and the data is grounded based on what the user has access to. Also, there are a few features that allow you to tailor the tone and output, such as adjusting the length or style of a drafted email to suit the scenario.
+Copilot in Customer Service is designed solely for the representative experience, and the data is based on what the user has access to. There are a few features that allow you to customize responses, like adjusting email length or tone to fit different situations.
 
 ### Can the AI system override human decisions, or does it require human confirmation?
 
@@ -68,13 +76,13 @@ Yes. Copilot in Customer Service is expected to continuously evolve and expand i
 
 ### Will the AI system process personal data? If yes, list and delineate personal information sensitive personal information.
 
-Microsoft doesn't share your data with a non-Microsoft entity unless you've granted permission. Further, Microsoft doesn't use your customer data to train Copilot or its AI features, unless you provide consent for us to do so. Copilot adheres to existing data permissions and policies, and its responses to you based only on data that you personally can access. Learn more in [What happens to my data when I use Copilot](/power-platform/faqs-copilot-data-security-privacy#what-happens-to-my-data-when-i-use-copilot).
+Microsoft doesn't share your data with a non-Microsoft entity unless you've granted permission. Further, Microsoft doesn't use your customer data to train Copilot or its AI features, unless you provide consent for us to do so. Copilot adheres to existing data permissions and policies, and its responses to you are based only on data that you personally can access. Learn more in [What happens to my data when I use Copilot](/power-platform/faqs-copilot-data-security-privacy#what-happens-to-my-data-when-i-use-copilot).
 
-### Have all of the personal data been identified as necessary and cleansed? 
+### Have all of the personal data been identified as necessary and cleansed?
 
 See the answer in the preceding question.
 
-### Would personal data in existing systems be reused by the AI for purposes that are already considered in the General Privacy Notice of the Company? 
+### Would personal data in existing systems be reused by the AI for purposes that are already considered in the General Privacy Notice of the Company?
 
 Microsoft doesn't share your data with a non-Microsoft entity unless you've granted permission to do so.
 
@@ -86,18 +94,17 @@ The data used to power Copilot in Customer Service primarily relies on structure
 
 Learn in [Copilot in Dynamics 365 Customer Service architecture](/dynamics365/guidance/reference-architectures/dynamics-365-customer-service-copilot-architecture).
 
-###	Will the system process data in real-time or after collection?
+### Will the system process data in real-time or after collection?
 
 Learn in Copilot in Dynamics 365 Customer Service architecture.
-	
-###	Is any third-party data being used?
 
-Copilot in Customer Service can be integrated with external data sources, such as SharePoint, websites, or custom knowledge bases, but only if it's explicitly configured to do so. Learn more in
-[Enable knowledge sources from Microsoft Copilot Studio](/dynamics365/contact-center/administer/knowledge-copilot).
+### Is any third-party data being used?
 
-### Will the affected Data Subjects (whose personal data is processed by the AI system) be informed that AI is processing their data?
- 
-Customer Service Copilot doesn't directly notify customers (data subjects) that their personal data is being processed by AI. Copilot operates within the representative experience, assisting representatives by using customer data that is already stored and accessible in the Dynamics 365 environment. 
+Copilot in Customer Service can be integrated with external data sources, such as SharePoint, websites, or custom knowledge bases, but only if it's explicitly configured to do so. Learn more in [Enable knowledge sources from Microsoft Copilot Studio](/dynamics365/contact-center/administer/knowledge-copilot).
+
+### Will the affected data subjects (whose personal data is processed by the AI system) be informed that AI is processing their data?
+
+Copilot in Customer Service doesn't directly notify customers (data subjects) that their personal data is being processed by AI. Copilot operates within the representative experience, assisting representatives by using customer data that is already stored and accessible in the Dynamics 365 environment. 
 
 ### Will the AI system integrate with existing data processing systems? If yes, which ones?
 
@@ -107,11 +114,11 @@ No.
 
 Not applicable.
 
-###	Does the integration require changes to existing systems or processes?
+### Does the integration require changes to existing systems or processes?
 
 Not applicable.
 
-###	Are there any APIs, middleware, or platforms facilitating integration?
+### Are there any APIs, middleware, or platforms facilitating integration?
 
 Not applicable.
 
@@ -119,11 +126,11 @@ Not applicable.
 
 No.
 
-How will access to the AI system be controlled and monitored? Are there system logs to track AI activities?
+### How will access to the AI system be controlled and monitored? Are there system logs to track AI activities?
 
 Copilot features in Customer Service can be enabled or disabled for specific users through role-based access and security configurations within Dynamics 365. Detailed analytics can be enabled, which allows organizations to track and store all Copilot activities directly in Dynamics 365. Learn more in [View Copilot analytics report](/dynamics365/contact-center/use/copilot-analytics-report).
 
-###	How will system failures or errors be detected and addressed? 
+### How will system failures or errors be detected and addressed? 
 
 Copilot in Customer Service is part of the broader Dynamics 365 and Power Platform ecosystem, so the same support channels and escalation paths apply.
 
@@ -131,11 +138,16 @@ Copilot in Customer Service is part of the broader Dynamics 365 and Power Platfo
 
 For Copilot in Customer Service, the AI system is continuously monitored and evaluated by Microsoft to ensure it meets standards for accuracy, fairness, and responsible use. Learn more in [Responsible AI FAQ for Copilot in Customer Service](/dynamics365/customer-service/implement/faq-responsible-ai-copilot).
 
-###	Is there a process to address AI-related complaints or concerns? 
+### Is there a process to address AI-related complaints or concerns? 
 
-- **Support Channels**: Customers can raise complaints or concerns through the standard Microsoft Support portal, just like they would for any Dynamics 365 or Power Platform issue. These are triaged and escalated based on severity. 
-- **Agent Feedback Loop**: Within Copilot, agents can provide thumbs up/down feedback on AI responses. 
+- **Support channels**: Customers can raise complaints or concerns through the standard Microsoft Support portal, just like they would for any Dynamics 365 or Power Platform issue. These are triaged and escalated based on severity. 
+- **Agent feedback loop**: Within Copilot, service representatives can provide thumbs up/down feedback on AI responses.
 
 ### Is a prompt shield implemented to filter or block harmful, misleading, or policy-violating inputs? If Yes, please answer follow up questions.
 
 Copilot determines whether content is harmful through a severity rating system based on distinct categories of objectionable content. Learn more in [Responsible AI FAQ for Copilot in Customer Service](/dynamics365/customer-service/implement/faq-responsible-ai-copilot#how-does-copilot-determine-whether-content-is-offensive-or-harmful).
+
+### Related information
+
+[Responsible AI FAQ for Copilot in Customer Service](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/implement-context)  
+[Responsible AI FAQ for AI Agents (Preview)](faq-rai-ai-agents.md)  

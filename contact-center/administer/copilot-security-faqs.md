@@ -1,20 +1,19 @@
 ---
-title: Security FAQs about AI agents
-description: Learn about the security, privacy, and compliance of AI agents in Dynamics 365 Contact Center and Customer Service.
+title: Security FAQs about Copilot
+description: Learn about the security, privacy, and compliance of Copilot in Dynamics 365 Contact Center and Customer Service.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
-ms.collection: 
+ms.collection: bap-ai-copilot
 ms.date: 08/01/2025
 ms.custom: 
 - bap-template
-- bap-ai-copilot
 ---
 
-# Security FAQs about AI agents
+# Security FAQs about Copilot
 
-This FAQ article provides answers to common questions about the security, privacy, and compliance of AI agents in Dynamics 365 Contact Center and Customer Service.
+This FAQ article provides answers to common questions about the security, privacy, and compliance of Copilot in Dynamics 365 Contact Center and Customer Service.
 
 ## Security FAQs
 

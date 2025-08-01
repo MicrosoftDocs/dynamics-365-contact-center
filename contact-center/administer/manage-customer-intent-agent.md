@@ -141,7 +141,8 @@ You can logically organize the intents into intent groups. The intent group repr
 ### Related information
 
 [Enable intent for support representatives](enable-intent-for-service-reps.md)    
-[Use intent agents](../use/use-intent-suggestions.md)   
+[Use intent agents](../use/use-intent-suggestions.md)  
+[Create rollout plans](create-rollout-plans.md)  
 
 
 

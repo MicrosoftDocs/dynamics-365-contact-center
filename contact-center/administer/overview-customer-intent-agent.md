@@ -38,4 +38,5 @@ Customer Intent Agent can be used in the following scenarios:
 [Manage Customer Intent Agent](manage-customer-intent-agent.md)  
 [Enable intent for service representatives](enable-intent-for-service-reps.md)  
 [Set up intent agent](set-up-intent-agent.md)  
+[Create rollout plans](create-rollout-plans.md)  
 [Use intent-based suggestions](../use/use-intent-suggestions.md)  

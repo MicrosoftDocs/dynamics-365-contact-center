@@ -5,11 +5,10 @@ author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: overview 
-ms.collection: get-started 
+ms.collection: bap-ai-copilot 
 ms.date: 08/01/2025
 ms.custom: 
   - bap-template
-  - bap-ai-copilot
 ---
 
 # Overview of agent hub (preview)

@@ -175,7 +175,7 @@ You can edit or delete a line of business from the **Line of business instructio
 1. On the **Edit instructions** dialog, make changes in the **Line of business instructions** section.
 1. Select **Save**.
 
-Select **Delete** if you want to delete the instructions for the selected line of business. A confirmation message appears once the instructions are deleted
+Select **Delete** to delete the instructions for the selected line of business. A confirmation message appears once the instructions are deleted.
 
 
 ### How to write clear instructions
@@ -190,7 +190,7 @@ Select **Delete** if you want to delete the instructions for the selected line o
 |Use simple if-then logic for decision points. | Reduces ambiguity without technical syntax.| "If the product is under warranty, offer a replacement. Otherwise, provide repair options."|
 |Define when to escalate issues or hand them off to service representatives. |    Ensures a smooth transition when the process can't continue.       |  "Hand-off to a support rep if the customer requests a refund over $100 or expresses dissatisfaction."|
 |Break multi-part instructions into smaller steps.      |   Avoids missed details and simplifies handoffs between people or steps.|  Instead of "Verify account and reset password', split into: “1. Verify account. 2. Reset password.”        |
-|Don't use unnecessary technical or system jargon. |  Keeps instructions readable and usable without requiring technical expertise.|  For example, use: "Look up the customer’s order in the system", instead of “Execute GET request on Order API.” |
+|Don't use unnecessary technical or system jargon. |  Keeps instructions readable and usable without requiring technical expertise.|  Use "Look up the customer’s order in the system", instead of “Execute GET request on Order API.” |
 
 ## Manage connectors for AI agents (optional)
 
@@ -203,16 +203,16 @@ Connectors let systems work together, move data, and let AI agents autonomously 
 1. On the **Set up the connector** dialog, select a connection from the **Connection** dropdown. You can also create a new connection in Power Platform. Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
     > [!NOTE]
     > Make sure that the connection you select is shared with one of the following service principals, as per your organization. 
-    - Dynamics 365 Analytics (61d02d70-ab6c-4569-be48-787ea2cda65d) 
-    - Dynamics CCA Data Analytics - PPE (7c58187c-f28c-4cfb-998c-3d6ba580192c) 
-    - Dynamics 365 Analytics - Test (079f5a03-090f-4720-90b9-e03942091e6e) 
+    > - Dynamics 365 Analytics (61d02d70-ab6c-4569-be48-787ea2cda65d) 
+    > - Dynamics CCA Data Analytics - PPE (7c58187c-f28c-4cfb-998c-3d6ba580192c) 
+    > - Dynamics 365 Analytics - Test (079f5a03-090f-4720-90b9-e03942091e6e) 
 
-    Learn more in [Share a custom connector in your organization](connectors/custom-connectors/share).
+    Learn more in [Share a custom connector in your organization](https://learn.microsoft.com/en-us/connectors/custom-connectors/share).
 1. Specify the type of use for connector, **General** or **For specific intents**.
 1. If you select **For specific intents**, you need to map the custom connector as a solution.
 1. Select **Save**.
 
-To map a connector to an intent:
+### Map a connector to an intent
 
 1. Select **Manage** for **Manage intents** on the **Customer Intent Agent (preview)** page.
 1. Select the specific intent, and on the intent page, in the **Solution (Optional)** section, select the **Connectors** option, and then select **Add**.
@@ -230,7 +230,7 @@ You can edit or delete a connector from the **Manage connectors for AI agents (o
 1. On the **Edit connector** dialog, you can select your connection and specify the type of use for your connector.
 1. Select **Save**.
 
-Select **Delete** if you want to delete the connector. A confirmation message appears once the connector is deleted.
+Select **Delete** to delete a connector. A confirmation message appears once the connector is deleted.
 
 ### Related information
 

@@ -18,7 +18,10 @@ You can create and manage surveys that go out to the customers after a call or c
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-[!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
+> [!NOTE]
+> - The survey agent is generally available for the voice channel and in preview for all other channels.
+> - When you copy an environment, while the survey agents are copied, they won't work as expected in the target environment. We recommend that you create new survey agents in the target environment.
+> - Copilot Studio bot is renamed as Copilot agent (agent or AI agent). Human agent is now renamed as customer service representative (service representative or representative). You might come across references to the old and new terms while we update the product UI, documentation, and training content.
 
 The survey appears for the customer after the representative ends the conversation or call.
 
@@ -27,10 +30,6 @@ With survey agents, you can:
 - Unify and centralize the process of configuring surveys across digital messaging, voice, and custom channels.
 - Use predefined templates to create surveys.
 - Allow supervisors to view and review feedback summarized into actionable insights.
-
-> [!NOTE]
-> - The survey agent is generally available for the voice channel and in preview for all other channels.
-> - When you copy an environment, while the survey agents are copied, they won't work as expected in the target environment. We recommend that you create new survey agents in the target environment.
 
 ## How it works
 
@@ -135,15 +134,16 @@ Multilingual survey agents work only when you set up an IVR agent that identifie
 
 ### Manage the surveys
 
-The surveys that you create using the **Customer feedback (preview)** option only appear on the **Customer feedback (preview)** page. You can't manage surveys created using other methods, such as Customer Voice.
+The surveys that you create using the **Customer feedback (preview)** option only appear on the **Customer feedback (preview)** page in Copilot Service admin center. You can't manage surveys created using other methods, such as Customer Voice.
 
-Manage your surveys on the **Customer feedback (preview)** page.
+You can manage your surveys on the **Customer feedback (preview)** page as follows:
+
 - **Edit**: Select a survey, and then select **Edit**. You can edit the survey name only.
 - **Demo link**: Select a link to preview the survey and see how it appears in runtime.
 - **Status**: Indicates whether a survey is ready or in progress.
 - **Voice Enabled**: Indicates whether a survey is enabled for the voice channel.
 
-### Manage the survey agents in Copilot Studio
+## Manage the survey agents in Copilot Studio
 
 You can edit your survey agents to fulfill your business needs as follows:
 - Customize agent messages
@@ -151,12 +151,14 @@ You can edit your survey agents to fulfill your business needs as follows:
 - Add more actions
 - Add extra topic questions
 
-Edit the **Conversation Start** system topic only. All other system topics are disabled and must not be used.  
-To add another question and store the data in Dataverse, the response variable name must start with “MCS_”.  
-To add another context to pass to the survey agent, make sure that the context variable name is set to "mcs_additionalcontext" and set the value as JSON key value pair.  
+### Things to consider
 
-> [!NOTE]
-> We recommend that you don't delete the survey agent from Copilot Studio.
+You must consider the following guidelines when you manage the surveys in Copilot Studio.
+
+- Edit the **Conversation Start** system topic only. All other system topics are disabled and must not be used.  
+- To add another question and store the data in Dataverse, the response variable name must start with “MCS_”.  
+- To add another context to pass to the survey agent, make sure that the context variable name is set to "mcs_additionalcontext" and set the value as JSON key value pair.  
+- We recommend that you don't delete the survey agent from Copilot Studio.
 
 ### Set up custom hosting
 

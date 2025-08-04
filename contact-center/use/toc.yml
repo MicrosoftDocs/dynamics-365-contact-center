@@ -288,6 +288,8 @@
           href: /dynamics365/customer-service/use/knowledge-search-analytics-cs?context=/dynamics365/contact-center/context/use-context
         - name: View copilot analytics report
           href: copilot-analytics-report.md
+        - name: View agent insights dashboard
+          href: agent-insights.md
         - name: Monitor conversations
           items: 
             - name: Monitor, assign, transfer, and forcibly end conversations

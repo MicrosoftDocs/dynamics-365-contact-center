@@ -85,7 +85,7 @@ To use Customer Intent Agent, you need to connect your Copilot agent to a knowle
 
 ## Connect to your knowledge base
 
-Connect the knowledge articles in your Dynamics 365 instance to your Copilot agent. Learn more in [Add knowledge to an agent](//microsoft-copilot-studio/knowledge-add-existing-copilot?source=recommendations).
+Connect the knowledge articles in your Dynamics 365 instance to your Copilot agent. Learn more in [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot?source=recommendations).
 
 
 ## Variables for intent-based suggestions

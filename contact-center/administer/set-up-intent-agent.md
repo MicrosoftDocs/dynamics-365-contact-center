@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 07/24/2025
+ms.date: 08/04/2025
 ms.custom: bap-template
 ---
 
@@ -78,18 +78,15 @@ You can switch to Copilot author authentication if users connecting to Copilot S
 To use Customer Intent Agent, you need to connect your Copilot agent to a knowledge source in Microsoft Copilot Studio. Learn more in [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot).
 
 1. In your existing topic flow, where you want to use Customer Intent Agent, add the following node:
-     - **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**.
-     - For a default agent, add this node to either the **Conversational boosting** or **Fallback** system topic that triggers from the **On Unknown Intent** topic.
-1. Add another node: **Add a condition**, and set **Answer** variable to **is not Blank**.
-1. To add logic to complete the conversation flow after providing an answer, add another node: **Topic management** > **Go to another topic** > **End current topic**.
 
-:::image type="content" source="../media/customer-intent-agent-topic.png" alt-text="Screenshot of intent-based suggestions topic flow.":::
+    **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**.
+
+    :::image type="content" source="../media/customer-intent-agent-topic.png" alt-text="Screenshot of intent-based suggestions topic flow.":::
 
 ## Connect to your knowledge base
 
-Connect the knowledge articles in your Dynamics 365 instance to your Copilot agent. Learn more in [Integrate knowledge management in Dynamics 365 with Copilot agents](/dynamics365/customer-service/administer/integrate-km-with-pva).
+Connect the knowledge articles in your Dynamics 365 instance to your Copilot agent. Learn more in [Add knowledge to an agent](//microsoft-copilot-studio/knowledge-add-existing-copilot?source=recommendations).
 
-Make sure that you add the new flow you created in Power Automate, called **Generate answer from Dataverse knowledge articles for Power Virtual Agent**. Follow the steps provided in the [Connect to intent-based suggestions](#connect-to-intent-based-suggestions) section, and replace the **Create generative answers** node with the new flow.
 
 ## Variables for intent-based suggestions
 
@@ -103,7 +100,7 @@ Make sure that you add the new flow you created in Power Automate, called **Gene
 |Global.IntentRedirectOnError |  Escalate  |  Hand off due to service error.|
 
 > [!NOTE]
-> If the Copilot agent doesn't have any of the mapped system topics, override them with the correct mapping.
+> If the Copilot agent doesn't have any of the mapped variables, you can [override the default variable](#override-default-variable).
 
 
 ### Override default variable

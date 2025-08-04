@@ -142,16 +142,16 @@ You can logically organize the intents into intent groups. The intent group repr
 
 You can enable Customer Intent Agent to follow instructions that you set up to help resolve intents. 
 > [!NOTE]
-> As an administrator or supervisor, you must have the Intent Manager role to create instructions.
+> As an administrator, you must have the Intent Manager role to create instructions.
 
 ### Add instructions
 
 1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage instructions (optional)**.
-1. On the **Manage instructions (preview)** page, select a line of business from the **Select line of business** dropdown list. If you don't specify a line of business, the agent follows organizational level instructions.
+1. On the **Manage instructions (preview)** page, select a line of business from the **Select line of business** dropdown list. If you don't specify a line of business, the agent follows organizational-level instructions.
 1. In the **Line of business instructions (optional)** section, select **Add**.
 1. On the **Add instructions** dialog, add the instructions for the line of business. You can enter upto 4000 characters.
 Select the **View example instructions** dropdown, if you need to refer to examples to create instructions for your line of business.
-1. Select **Save**. Once saved, the agent uses these instructions when interacting with the customer immediately.
+1. Select **Save**. After you save the instructions, the agent follows them immediately when it interacts with customers.
 1. In the **Instructions for intent groups and intents** section, create instructions for intent groups or intents for the specific line of business.
     1. To create instructions for an intent group, select [Manage intent groups](#manage-intent-groups).
     1. To create instructions for an intent, select [Manage intents](#manage-intents).
@@ -184,11 +184,11 @@ Select **Delete** to delete the instructions for the selected line of business. 
 |Guidelines  |Why it matters  |Example  |
 |---------|---------|---------|
 |Begin with a clear sentence that defines the agent's role and purpose.    |   Establishes the agent's brand voice and scope, and helps it choose the right tone.      |    "You are a representative from Contoso Coffee, assisting customers with orders and account questions."     |
-|Start with a few simple steps that outline the flow, then add details.  |    Follows a consistent sequence that's easy to understand.   |     "1. Clarify the problem. <br> 2. Pick the likely cause. <br> 3. Try one fix at a time." |
+|Start with a few simple steps that outline the flow, then add details.  |    Follows a consistent sequence that's easy to understand.   | "1. Clarify the problem. <br> 2. Pick the likely cause. <br> 3. Try one fix at a time." |
 |List required checks or prerequisites early.    |     Ensures nothing is missed before actions or lookups.    | "If the user reports an issue, first confirm the product model and purchase date."|
 |Explain what's out of scope or not allowed.|     Prevents unnecessary work or compliance issues.   | "Don't ask for social security numbers or payment card details."|
 |Use simple if-then logic for decision points. | Reduces ambiguity without technical syntax.| "If the product is under warranty, offer a replacement. Otherwise, provide repair options."|
-|Define when to escalate issues or hand them off to service representatives. |    Ensures a smooth transition when the process can't continue.       |  "Hand-off to a support rep if the customer requests a refund over $100 or expresses dissatisfaction."|
+|Define when to escalate issues or hand them off to service representatives. |    Ensures a smooth transition when the process can't continue.       |  "Hand-off to a service representative if the customer requests a refund over $100 or expresses dissatisfaction."|
 |Break multi-part instructions into smaller steps.      |   Avoids missed details and simplifies handoffs between people or steps.|  Instead of "Verify account and reset password', split into: “1. Verify account. 2. Reset password.”        |
 |Don't use unnecessary technical or system jargon. |  Keeps instructions readable and usable without requiring technical expertise.|  Use "Look up the customer’s order in the system", instead of “Execute GET request on Order API.” |
 
@@ -204,11 +204,11 @@ Connectors let systems work together, move data, and let AI agents autonomously 
     > [!NOTE]
     > Make sure that the connection you select is shared with one of the following service principals, as per your organization. 
     > - Dynamics 365 Analytics (61d02d70-ab6c-4569-be48-787ea2cda65d) 
-    > - Dynamics CCA Data Analytics - PPE (7c58187c-f28c-4cfb-998c-3d6ba580192c) 
-    > - Dynamics 365 Analytics - Test (079f5a03-090f-4720-90b9-e03942091e6e) 
+    > - Dynamics CCA Data Analytics (7c58187c-f28c-4cfb-998c-3d6ba580192c) 
+    > - Dynamics 365 Analytics (079f5a03-090f-4720-90b9-e03942091e6e) 
 
     Learn more in [Share a custom connector in your organization](https://learn.microsoft.com/en-us/connectors/custom-connectors/share).
-1. Specify the type of use for connector, **General** or **For specific intents**.
+1. Specify the type of use for the connector, **General** or **For specific intents**.
 1. If you select **For specific intents**, you need to map the custom connector as a solution.
 1. Select **Save**.
 
@@ -223,10 +223,10 @@ Connectors let systems work together, move data, and let AI agents autonomously 
 
 ### Edit or delete connectors
 
-You can edit or delete a connector from the **Manage connectors for AI agents (optional)** page. 
+You can edit or delete a connector from the **Manage custom connectors (preview)** page. 
 
 1. On the **Manage custom connectors (preview)** page, select a connector.
-1.  Select **Edit**.
+1. Select **Edit**.
 1. On the **Edit connector** dialog, you can select your connection and specify the type of use for your connector.
 1. Select **Save**.
 

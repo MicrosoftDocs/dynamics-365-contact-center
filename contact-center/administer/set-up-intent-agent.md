@@ -79,9 +79,9 @@ You can switch to Copilot author authentication if users connecting to Copilot S
 
 To use Customer Intent Agent, you need to connect your Copilot agent to a knowledge source in Microsoft Copilot Studio. Learn more in [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot).
 
-1. In your existing topic flow, where you want to use Customer Intent Agent, add the following node:
+In your existing topic flow, where you want to use Customer Intent Agent, add the following node:
 
-    **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**.
+    **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**
 
     :::image type="content" source="../media/customer-intent-agent-topic.png" alt-text="Screenshot of intent-based suggestions topic flow.":::
 

@@ -1,19 +1,18 @@
 ---
-title: Security FAQs about Copilot
-description: Learn about the security, privacy, and compliance of Copilot in Dynamics 365 Contact Center and Customer Service.
+title: Security FAQs about AI agents
+description: Learn about the security, privacy, and compliance of AI agents in Dynamics 365 Contact Center and Customer Service.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
 ms.date: 08/01/2025
-ms.custom: 
-- bap-template
+ms.custom: bap-template
 ---
 
-# Security FAQs about Copilot
+# Security FAQs about AI agents
 
-This FAQ article provides answers to common questions about the security, privacy, and compliance of Copilot in Dynamics 365 Contact Center and Customer Service.
+This FAQ article provides answers to common questions about the security, privacy, and compliance of AI agents in Dynamics 365 Contact Center and Customer Service.
 
 ## Security FAQs
 
@@ -81,9 +80,9 @@ Microsoft doesn't share your data with a non-Microsoft entity unless you've gran
 
 See the answer in the preceding question.
 
-### Would personal data in existing systems be reused by the AI for purposes that are already considered in the General Privacy Notice of the Company?
+### Would personal data in existing systems be reused by the AI for purposes that are already considered in the privacy notice of Microsoft?
 
-Microsoft doesn't share your data with a non-Microsoft entity unless you've granted permission to do so.
+Microsoft doesn't share your data with a non-Microsoft entity unless you've granted permission to do so. Further, Microsoft doesn't use your customer data to train Copilot or its AI features, unless you provide consent for us to do so. Copilot adheres to existing data permissions and policies, and its responses to you are based on data that you personally only can access. 
 
 ### Is the data structured, like databases or unstructured, like emails and images?
 

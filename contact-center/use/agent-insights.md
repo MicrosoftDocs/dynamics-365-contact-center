@@ -7,8 +7,7 @@ ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot 
 ms.date: 08/01/2025
-ms.custom: 
-- bap-template
+ms.custom: bap-template
 ---
 
 # View Agent insights dashboard (preview)
@@ -30,7 +29,7 @@ The dashboard capabilities include:
 - **Top KPIs**: Gain insights into autonomous agents and customer service representatives' (service representatives or representatives) performance through metrics such as total volume and average handling time.
 - **AI agent-level insights**: Quickly assess the impact the AI agents are driving for the organization and the areas of opportunity for improvement.
 - **Volume breakdown**: View the volume breakdown by line of business, intent group, or channels to identify the top volume drivers and their autonomous rate per grouping if applicable.
-- **Volume funnel**: View and analyze the path of conversations or cases to identify the share of engagements falling out of the autonomous journey.
+- **Volume funnel**: View and analyze the path of conversations or cases to identify the share of engagements that are escalated to service representatives.
 
 ## Conversation performance
 

@@ -249,7 +249,7 @@
         - name: Configure multilingual IVR agents
           href: configure-multilingual-agents.md   
         - name: Configure fallback actions for the IVR agent
-          href: configure-fallback-actions-ivr-agent.md         
+          href: configure-fallback-actions-ivr-agent.md
         - name: View voice calls usage
           href: /dynamics365/customer-service/administer/voice-channel-usage?context=/dynamics365/contact-center/context/administer-context
         - name: Block spam numbers
@@ -281,8 +281,12 @@
           - name: Trust center for Dynamics 365
             href: trust-center.md
           - name: Security FAQs about AI agents
-            href: copilot-security-faqs.md
-        - name: Autonomous service agents
+            href: ai-agents-security-faqs.md
+        - name: Create rollout plans to manage AI agents
+          href: create-rollout-plans.md
+        - name: View Agent insights
+          href: ../use/agent-insights.md
+      - name: Autonomous service agents (preview)
           items:
           - name: Overview of autonomous service agents
             href: autonomous-agents-overview.md
@@ -300,10 +304,6 @@
               href: enable-intent-for-service-reps.md
             - name: Configure intent-based suggestions for Copilot agents
               href: set-up-intent-agent.md
-        - name: Create rollout plans to manage AI agents
-          href: create-rollout-plans.md
-        - name: View Agent insights
-          href: ../use/agent-insights.md
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features

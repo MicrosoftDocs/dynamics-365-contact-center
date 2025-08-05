@@ -52,7 +52,7 @@ Before you proceed, make sure you:
 1. Select the Copilot agent connected to your contact center environment.
 1. Select **Add intent-based features**, which takes you to **Manage component collections (preview)** in Microsoft Copilot Studio.
     1. In **Manage component collections (preview)**, search for and select **Intent-based suggestions (preview)**.
-    1. Select **Add agent**. You can also disconnect a Copilot agent to stop agent transfers for that Copilot agent by selecting Remove from agent.
+    1. Select **Add agent**. You can also disconnect a Copilot agent to stop agent transfers for that Copilot agent by selecting **Remove from agent**.
     1. Select **Publish**. A series of Intent-based suggestions topics are added to your agent.
 
 ## Add connection references

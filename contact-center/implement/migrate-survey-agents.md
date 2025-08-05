@@ -1,13 +1,13 @@
 ---
-title: How-to topic template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: How-to description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: how-to #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+title: Migrate Copilot Studio survey agents configurations
+description: Learn how to migrate Copilot Studio survey agents configurations using Application Lifecycle Management.
+author: gandhamm
+ms.author: mgandham
+ms.reviewer: gandhamm
+ms.topic: how-to 
+ms.collection: 
 ms.date: 07/29/2025
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template 
 ---
 
 
@@ -18,16 +18,14 @@ You can migrate Microsoft Copilot Studio survey agent configurations between Dat
 
 You can migrate the agents in one of the following ways: 
 
-- Migrating standalone survey configurations 
-- complete workstream configurations with integrated surveys. 
+- migrate standalone survey agent configuration.
+- migrate survey agent and the corresponding workstream configurations. 
 
 ## Prerequisites
 
-Before you begin the migration process, ensure you have the following prerequisites in place:
-
-1. Access to both the source and target Dataverse environments.
-2. Appropriate permissions to create and manage solutions in both environments.
-3. Familiarity with the ALM framework and its components.
+- Access to both the source and target Dataverse environments.
+- Appropriate permissions to create and manage solutions in both environments.
+- Familiarity with the ALM framework and its components.
 
 ## Migrate survey agent configurations
 
@@ -41,10 +39,10 @@ Add existing Customer feedback survey** pane appears.
 1. Turn on the **Allow customizations** toggle.
 1. Publish the customizations and then [export the solution](/power-apps/maker/data-platform/export-solutions#export-from-power-apps). A .zip file is downloaded to your local machine.
 1. In the target environment, import the solution you downloaded from the source environment. Learn more in [Import a solution](/power-apps/maker/data-platform/import-update-export-solutions).
-1. Make sure you verify that the imported connection references are connected to Dataverse. If the references are missing, add a new connection to Microsoft Copilot Studio. Learn more in [Use a connection reference in a solution with Microsoft Dataverse](/power-apps/maker/data-platform/create-connection-reference).
+1. In Copilot Service Admin center, verify that the AI agent is available and the status is Ready. Learn more in [Configure feedback surveys using Copilot Studio](../administer/configure-surveys.md). 
+1. In Power Apps, verify that the imported connection references are connected to Dataverse. Make sure the Dataverse connection is present in the destination environment. If the references are missing, add a new connection to Microsoft Copilot Studio. Learn more in [Use a connection reference in a solution with Microsoft Dataverse](/power-apps/maker/data-platform/create-connection-reference).
 1. In Microsoft Copilot Studio, make sure the survey agents are working as expected and that the connection references are properly configured.
 1. Save and publish the agents.
-1. In Copilot Service Admin center, verify that the agent is available and the status of the agent is set to Ready. Learn more in []
 
 ## Migrate chat, voice workstream and survey agent configurations
 
@@ -57,14 +55,13 @@ To migrate chat and voice workstream configurations along with survey agent conf
 5. Turn on the **Allow customizations** toggle.
 6. Publish the customizations and then [export the solution as a managed solution](/power-apps/maker/data-platform/export-solutions#export-from-power-apps). A .zip file is downloaded to your local machine.
 7. In the target environment, import the solution you downloaded from the source environment. Learn more in [Import a solution](/power-apps/maker/data-platform/import-update-export-solutions).
-1. 
-1. Make sure you verify that the imported connection references are connected to Dataverse. If the references are missing, add a new connection to Microsoft Copilot Studio. Learn more in [Use a connection reference in a solution with Microsoft Dataverse](/power-apps/maker/data-platform/create-connection-reference). Make sure the Dataverse connection is present in the target organization.
-1. In Microsoft Copilot Studio, make sure the chat and voice workstream configurations are working as expected and that the connection references are properly configured.
-1. Save and publish the configurations.
 1. In Copilot Service Admin center, verify the following:
     - Chat and voice workstreams are available.
-    -  The survey agent is available with the status set to Ready.
+    - The survey agent is available with the status set to Ready.
+1. In Power Apps, verify that the imported connection references are connected to Dataverse. Make sure the Dataverse connection is present in the destination environment. If the references are missing, add a new connection to Microsoft Copilot Studio. Learn more in [Use a connection reference in a solution with Microsoft Dataverse](/power-apps/maker/data-platform/create-connection-reference).
+1. In Microsoft Copilot Studio, make sure that the survey agent is working as expected and that the connection references are properly configured.
+1. Save and publish the configurations.
+1. In Copilot Service Admin center, verify that the chat and voice workstreams are working as expected. Set up the queue and update the other required settings accordingly
 
-## Next steps
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+

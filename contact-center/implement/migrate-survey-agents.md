@@ -18,7 +18,7 @@ You can migrate Microsoft Copilot Studio survey agent configurations between Dat
 
 You can migrate the agents in one of the following ways: 
 
-- migrate standalone survey agent configuration.
+- migrate the survey agent configuration only.
 - migrate survey agent and the corresponding workstream configurations. 
 
 ## Prerequisites
@@ -27,7 +27,7 @@ You can migrate the agents in one of the following ways:
 - Appropriate permissions to create and manage solutions in both environments.
 - Familiarity with the ALM framework and its components.
 
-## Migrate survey agent configurations
+## Migrate survey agent configuration
 
 To migrate survey agent configurations, perform the following steps:
 
@@ -44,7 +44,7 @@ Add existing Customer feedback survey** pane appears.
 1. In Microsoft Copilot Studio, make sure the survey agents are working as expected and that the connection references are properly configured.
 1. Save and publish the agents.
 
-## Migrate chat, voice workstream and survey agent configurations
+## Migrate chat, voice workstream and survey agent configuration
 
 To migrate chat and voice workstream configurations along with survey agent configurations, perform the following steps. We recommend that you remove all the voice channel settings in the target environment before you start the migration.
 

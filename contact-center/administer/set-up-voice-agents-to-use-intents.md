@@ -22,7 +22,7 @@ Customer Intent Agent for voice uses generative AI to autonomously discover inte
 - New Copilot agents are enabled for voice and connected to your contact center environment.
 
 > [!NOTE]
-> Customer intent agent for voice **only** functions with the default line of business.  If you configure other lines of business, customer intent agent for voice will not function.
+> Customer Intent Agent for voice functions with the default line of business only.  If you configure other lines of business, Customer Intent Agent for voice won't work.
 
 ## How it works
 

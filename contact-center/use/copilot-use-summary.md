@@ -11,11 +11,11 @@ ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 
-# Summarize cases in non-Microsoft CRMs
+# Summarize cases in non-Microsoft CRM systems
 
 [!INCLUDE[cc-feature-availability-embed-only](../includes/cc-feature-availability-embed-only.md)]
 
-Copilot case summaries help you quickly understand the context of a case and resolve customer issues more efficiently. In a non-Microsoft CRM, the case summary appears as a card on the **Ask a question** tab in the Copilot help pane. 
+Copilot case summaries help you quickly understand the context of a case and resolve customer issues more efficiently. In a non-Microsoft CRM system, the case summary appears as a card on the **Ask a question** tab in the Copilot help pane.
 
 > [!IMPORTANT]
 > - Case summary is a preview feature in Microsoft 365 Copilot for Service.
@@ -23,10 +23,11 @@ Copilot case summaries help you quickly understand the context of a case and res
 
 ## Navigation
 
-When you sign in to a non-Microsoft CRM, you can generate case summary as follows:
-   - Launch the embedded experience and then login to your Dynamics account.
-   - In the Copilot help pane that appears, select **Ask a question**.
-   - Select the Copilot icon and then select **Summarize case**.
+When you sign in to a non-Microsoft CRM system, you can generate a case summary as follows:
+
+- Launch the embedded experience and then login to your Dynamics account.
+- In the Copilot help pane that appears, select **Ask a question**.
+- Select the Copilot icon and then select **Summarize case**.
 
 ## Generate case summaries
 
@@ -40,21 +41,21 @@ Copilot generates case summaries based on the following case information for the
 
 **Salesforce**: Copilot generates the case summary based on the case fields and activities associated with the case. The case summary includes the following information:
 
-  - **Case fields**: case ID, description, subject, priority, type, customer name, case URL, email, and product name if the service representative has access.
-  - **Text post**: ID, Title, body, created date
-  - **Comment**: Id, body, created date
-  - **Email**: ID, body, lastmodifieddate, fromaddress, toaddress.
+- **Case fields**: case ID, description, subject, priority, type, customer name, case URL, email, and product name if the service representative has access.
+- **Text post**: ID, Title, body, created date
+- **Comment**: Id, body, created date
+- **Email**: ID, body, lastmodifieddate, fromaddress, toaddress.
 
 **ServiceNow**: Copilot generates the case summary based on the incident data and activities that are attached with the incident. The case summary includes the following information:
 
- - **Incident data** : incident ID, description, short description, priority, type, customer name, incident URL, email, and notes.
- - **Work notes and comments**: ID, TextContext, Created Date.
- - **Email**: Id, Body, Created Date, FromAddress, ToAddress
-
+- **Incident data** : incident ID, description, short description, priority, type, customer name, incident URL, email, and notes.
+- **Work notes and comments**: ID, TextContext, Created Date.
+- **Email**: Id, Body, Created Date, FromAddress, ToAddress
 
 You can copy the summary, refresh it, and provide feedback.
 
-## Next steps
+### Related information
 
-[Use Copilot to solve customer issues](use-copilot-features.md)  
+[FAQ about Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)  
+[Responsible AI FAQ about Copilot features](/dynamics365/customer-service/implement/faq-responsible-ai-copilot)  
 

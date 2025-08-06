@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 07/31/2025
+ms.date: 08/08/2025
 ms.custom: bap-template
 ---
 
@@ -42,7 +42,7 @@ Perform the following steps in Copilot Service admin center.
 1. Select **Manage type**. On the **Type** dialog, select **Uses AI-generated intents** and **Voice only**.
     > [!NOTE]
     > Configurations in Copilot Studio aren't honored after you set the type **Uses AI-generated intents**. The intents in the intent library only are used for the Customer Intent Agent for runtime logic for the voice agent. While you can connect the voice agent as the workstream deflection agent, to integrate the Customer Intent Agent for voice with your current IVR system, you need to place the voice agent in a voice queue and route the calls to it.
-    
+
     :::image type="content" source="../media/intent-settings-for-voice-agents.png" alt-text="Screenshot of intent settings for voice agent.":::
 1. Save and close.
 
@@ -61,8 +61,9 @@ To use Customer Intent Agent for voice, you need to connect your Copilot voice a
 - If the voice agent encounters any error, it escalates to a representative.
 - If the customer query is resolved, the agent ends the call.
 - If the customer remains silent, the agent ends the call.
- 
+
 ### Related information
 
 [Overview of Customer Intent Agent](overview-customer-intent-agent.md)  
 [Configure intent-based routing](/dynamics365/customer-service/administer/configure-intent-based-routing?context=/dynamics365/contact-center/context/administer-context)  
+[Configure intent-based suggestions for Copilot agents (preview)](set-up-intent-agent.md)  

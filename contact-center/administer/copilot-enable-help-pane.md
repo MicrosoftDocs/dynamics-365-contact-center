@@ -112,7 +112,6 @@ You can apply the filters in the following sections.
 > - We recommend that the appropriate knowledge content is available for the filters you set so service representatives can see the expected responses. 
 > - The fields that appear in the **Manage filters** pane when you add a filter are of the data type **String**, **Whole Number**, **Option Set**, or **Two Options Set**. Fields of other data types aren't supported.
 
-
 ### Preset filters
 
 Specify filters that are applied by default in the background to filter knowledge base articles. Representatives can't see these filters. You can set predefined filters for ask a question and draft a response features as follows:
@@ -140,7 +139,7 @@ Specify the filters that are automatically applied. The representatives don't ne
 1. Turn on the **Use untagged content if the field value is null** toggle to view all the content if the field value doesn't match the specified value.
 1. Turn on the **Allow representatives to view or change this filter** toggle for service representatives to see a visual cue that the automated filter is applied and change the filtering options. Based on your setting, the following actions apply: 
    - **On**: The application prompts you to create a corresponding representative filter for the same knowledge attribute in **Representative Filters** Representatives then see the filters on the Copilot help pane.
-   -  **Off**: Representatives can't see the filter on the Copilot help pane. The filters operate in the background without any service representative notifications.
+   - **Off**: Representatives can't see the filter on the Copilot help pane. The filters operate in the background without any service representative notifications.
 1. Select **Finish editing**.
 
 > [!NOTE]
@@ -152,10 +151,11 @@ The following table summarizes the Copilot features supported for a configured k
 
 | Feature | Knowledge base | External web resources | Knowledge sources in Copilot Studio|
 |-------|----------|---------|--------|
-|Ask a question |✔|X| ✔|
-|Write an email | ✔|✔|X|
-|Draft a response |✔|✔|X|
+|Ask a question |Yes|No| Yes|
+|Write an email | Yes|Yes|No|
+|Draft a response |Yes|Yes|No|
 
 ### Related information
 
-[Use Copilot to solve customer issues](../use/use-copilot-features.md)
+[FAQ about Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)  
+[Responsible AI FAQ about copilot features](/dynamics365/customer-service/implement/faq-responsible-ai-copilot)  

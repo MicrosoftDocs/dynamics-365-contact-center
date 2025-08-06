@@ -34,13 +34,13 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
 
   When you use Copilot to draft an email, you can use the following features to help you write a response to a customer.
 
- **Use prompts**
+  ### Use prompts
 
  You can use the predefined prompts to generate email drafts in the **Write an email** tab of the Copilot help pane:
 
 [!INCLUDE [cc-write-email-prompts](../../shared/cc-write-email-prompts.md)]
 
-  **Use Copilot recommended email templates**
+  ### Use Copilot recommended email templates
 
   When you respond to an email linked to a case, in the email editor, the **Draft with Copilot** card appears. In the card, service representatives can specify a prompt with context about the email draft Copilot should generate. For example, a prompt can be “Write an email about documents required for account verification”.
 
@@ -61,7 +61,7 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
  
    :::image type="content" source="../media/draft-an-email-inline.png" alt-text="Screenshot of Copilot recommended email draft in rich text editor."::: 
 
-   **Use line-of-business tagged email templates**
+   ### Use line-of-business tagged email templates
    
    Copilot automatically selects the most appropriate email template based on your case's business context, streamlining your email drafting process. If your administrator tagged email templates with line-of-business information, for an email associated to the case, the Copilot performs the following actions to generate a response:
 
@@ -71,8 +71,8 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
    - If no email template exists for your case's line-of-business, Copilot generates a draft without using an email template.
    
    You can use the content as-is or edit the content of the email draft as needed. If you want to change the template, you can select **Choose a different template** to open the **Copilot recommended templates** dialog and select a different template.
-   
-  **Generate partial email drafts using Copilot**
+
+  ### Generate partial email drafts using Copilot
 
   You can use Copilot inline email assist to generate a partial draft instead of generating a whole email draft. You can use this feature to generate a response to a specific part of the email or to add more details to an existing email draft.
 
@@ -85,7 +85,7 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
 
    :::image type="content" source="../media/partial-draft-email.png" alt-text="Screenshot of a partial draft an email in rich text editor."::: 
 
- **Use follow-up prompts**
+ ### Use follow-up prompts
 
  If you aren't satisfied with Copilot's response, you can use follow-up custom prompts and guide Copilot in a natural, conversational way. You can use up to five prompts at a time to refine the email draft. If the knowledge base is enabled, Copilot also uses those sources.
 

@@ -207,7 +207,7 @@ Connectors let systems work together, move data, and let AI agents autonomously 
     > - Dynamics CCA Data Analytics (7c58187c-f28c-4cfb-998c-3d6ba580192c) 
     > - Dynamics 365 Analytics (079f5a03-090f-4720-90b9-e03942091e6e) 
 
-    Learn more in [Share a custom connector in your organization](https://learn.microsoft.com/en-us/connectors/custom-connectors/share).
+    Learn more in [Share a custom connector in your organization](/connectors/custom-connectors/share).
 1. Specify the type of use for the connector, **General** or **For specific intents**.
 1. If you select **For specific intents**, you need to map the custom connector as a solution.
 1. Select **Save**.

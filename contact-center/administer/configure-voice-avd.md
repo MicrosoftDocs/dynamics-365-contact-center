@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: 
-ms.date: 06/27/2025
+ms.date: 07/24/2025
 ms.custom: bap-template 
 ---
 
@@ -30,9 +30,11 @@ Make sure representatives perform the following steps to access the voice channe
 
 Representatives see **SessionDesktop** once they're subscribed. They can sign in the Virtual Desktop to use the voice channel.
 
-## Agent experience when local device disconnects from Azure Virtual Desktop
+<a name="rdc-disconnects"></a>
 
-Representatives can communicate with customers on the phone to resolve issues using the voice channel through the Azure Virtual Desktop. The following table describes the scenarios in which the local device disconnects from the virtual desktop instance.
+## Representative experience when local device disconnects from the virtual desktop
+
+Representatives can communicate with customers on the phone to resolve issues using the voice channel through the virtual desktop. The following table describes the scenarios in which the local device disconnects from the virtual desktop instance.
 
 | **Scenario**                                                                 | **Notifications**                                  | **Ongoing phone call**                                                                                                      | **Ongoing non-phone call**                                                                                                 | **Active consult (primary service representative disconnected)**                                                                               | **Active consult (secondary service representative disconnected)**                                                                          | **Transfer**                                                                                      |
 |------------------------------------------------------------------------------|---------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -44,3 +46,7 @@ Representatives can communicate with customers on the phone to resolve issues us
 ### Best practices
 
 Ensure that the service representatives using the Virtual Desktop have the latest version of the multimedia redirection extension installed on their browsers. If they don't have the latest version, representatives see error messages whenever they are in a call.
+
+### Related information
+
+[Use representative dashboard and call controls in the voice channel](../use/voice-channel-agent-experience.md)  

@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Set up microphone connection on representative sign-in
 
-You can enable the application to pre-acquire the customer service representative’s (service representatives or representatives) microphone as soon as they sign in to the environment—before any calls begin, reducing latency and improving call connection times, creating a smoother experience for both service representatives and customers.
+You can enable the application to connect the customer service representative’s (service representatives or representatives) microphone as soon as they sign in to the environment—before any calls begin, reducing latency and improving call connection times, creating a smoother experience for both service representatives and customers.
 
 ## Enable microphone to be connected to the app
 

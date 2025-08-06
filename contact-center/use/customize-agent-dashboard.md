@@ -45,10 +45,11 @@ Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi
 
 Customer conversations with AI agents can have multiple sessions based on the topics discussed. Each session records both an outcome and an outcome reason that categorizes how the session ended. The outcome describes the overall result of the session, while the outcome reason provides more specific details about why the session ended a particular way.
 
-For example, a customer contacts support to check the order status. The customer also requests to place a new order. This interaction generates two distinct sessions:
- - Check order status with **Outcome** set to Resolved, **outcomeReason** set to Resolved;
- - Place a new order with **outcome** set Abandoned, **outcomeReason** set to SystemError
- - Since the conversation generated custom topics, the engagement type is classified as "Engaged."
+For example, a customer contacts support to check the order status. The customer also requests to place a new order. This single conversation generates two distinct sessions:
+ - Session 1: Check order status with **Outcome** set to Resolved, **outcomeReason** set to Resolved;
+ - Session 2: Place a new order with **outcome** set Abandoned, **outcomeReason** set to SystemError
+ 
+Since the conversation generated custom topics, the engagement type is classified as "Engaged."
 
 ### Outcome Classification
 

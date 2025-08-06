@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 08/04/2025
+ms.date: 08/06/2025
 ms.custom: bap-template
 ---
 
@@ -18,9 +18,9 @@ Customer Intent Agent discovers intent from historical data and maintains an up-
 
 [!INCLUDE [cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
-Customer Intent Agent uses the determined intent and interview responses to improve the quality of generated answers for both Copilot agents and service representatives.
+Customer Intent Agent uses the determined intent and interview responses to improve the quality of generated answers for both Copilot agents and service representatives. This article describes how you can configure Copilot agents with Customer Intent Agent to provide updated solutions for customer issues through chat.
 
-You can configure Copilot agents with Customer Intent Agent to provide updated solutions for customer issues.
+You can also set up Customer Intent Agent for voice which uses generative AI to autonomously discover intents in your contact center instance. Learn more in [Set up voice agents to use intents (preview)](set-up-voice-agents-to-use-intents.md#set-up-voice-agents-to-use-intents-preview).
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

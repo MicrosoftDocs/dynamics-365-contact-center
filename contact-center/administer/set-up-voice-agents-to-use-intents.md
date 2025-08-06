@@ -33,6 +33,8 @@ Customer Intent Agent for voice uses generative AI to autonomously discover inte
 - The application also uses this conversation to detect any updates and discover new intent attributes that can be used in future interviews.
 - In the next customer interaction with a Copilot agent, the Copilot agent can deal with the customer issue with the newly-generated knowledge and intent, and provide a tailored response without escalating to any representative.
 
+:::image type="content" source="../media/diagram-customer-intent-agent-voice.png" alt-text="Diagram that shows how Customer Intent Agent is integrated with existing voice agents." lightbox="../media/diagram-customer-intent-agent-voice.png":::
+
 ## Configure voice agents
 
 Perform the following steps in Copilot Service admin center.

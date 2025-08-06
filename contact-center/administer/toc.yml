@@ -582,6 +582,10 @@
           href: /dynamics365/customer-service/administer/migrate-channel-config-using-solutions?context=/dynamics365/contact-center/context/administer-context
         - name: Best practices for configuration lifecycle management
           href: alm-best-practices.md
+      - name: Migration solutions    
+        items:
+        - name: Migrate Copilot Studio survey agents configurations
+          href: migrate-survey-agents.md
       - name: Responsible AI
         items:
         - name: Overview

@@ -1,21 +1,22 @@
 ---
 title: Use Copilot to summarize conversations
-description: Learn how customer service representatives can use Copilot to summarize cases and conversations in Copilot Service workspace.
+description: Learn how customer service representatives can use Copilot to summarize conversations.
 author: gandhamm 
 ms.author: mgandham 
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 06/10/2025
+ms.date: 07/14/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 
 
 # Use Copilot to summarize conversations
 
-[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability.md)]
 
-Copilot conversation summaries provide context and relay the steps that you took to solve the issue. You can summarize chat and transcribed voice conversations.
+[!INCLUDE[cc-conv-summary-intro](../../shared/cc-conv-summary-intro.md)]
 
 ## Prerequisites
 
@@ -26,28 +27,29 @@ Your administrator enabled the Copilot conversation summary feature.
 
 ## Navigation
 
-- In Copilot Service workspace, you can select **Summarize conversation** for an ongoing conversation.
-- When you sign in to a non-Microsoft CRM, and launch the embedded experience, sign in to your Dynamics account and then select **Summarize conversation** from the communication panel when you're in a conversation with a customer.
+In Copilot Service workspace, you can select **Summarize conversation** for an ongoing conversation.
   
 ## View a conversation summary
 
 Based on your administrator's configuration, you see the following options in Copilot Service workspace:
 
-- The Copilot conversation summary generated automatically when you request a consultation with another customer service representative, transfer the conversation, or end the conversation. You can select **Summarize conversation** to generate the summary for an ongoing conversation, based on your administrator's configurations.
-- The summary is displayed in a paragraph format or a structured format.
-  - The paragraph format summarizes the conversation in a single paragraph.
-     :::image type="content" source="../media/copilot-conv-summary.png" alt-text="Screenshot of a Copilot conversation summary.":::
-  - The structured format summarizes and organizes the information in the conversation based on the options your administrator selected. <br>
-     :::image type="content" source="../media/structured-conv-summary.png" alt-text="Screenshot of a structured Copilot conversation summary.":::
+[!INCLUDE[cc-conv-summary-actions](../../shared/cc-conv-summary-actions.md)]
 
-You can perform the following actions:
+- Select **Create case** to create a case and populate the description with the summary, if your administrator turned on this feature.
+  > [!NOTE]
+  > You can see **Create case** only if case management is configured.
 
-- Copy the summary.
-- Select **Create case** to create a case and populate the description with the summary, if your administrator turned on this feature. This is applicable for Copilot Service workspace.
-- Share feedback about the summary.
-- Close the summary card.
+### [Paragraph format](#tab/paragraphformat)
 
-### View closed conversation summary
+ :::image type="content" source="../media/copilot-conv-summary.png" alt-text="Screenshot of a Copilot conversation summary.":::
+
+### [Structured format](#tab/structuredformat)
+
+  :::image type="content" source="../media/structured-conv-summary.png" alt-text="Screenshot of a structured Copilot conversation summary.":::
+
+---
+
+### View summary for a closed conversation
 
 You can also view the Copilot generated summary for a closed conversation. In Copilot Service workspace in the **Activities** view, filter by **Conversations** and then select the required conversation. Select the **Summary** tab. The summary for the conversation appears. Learn more in [View conversation transcripts and call recordings](/dynamics365/customer-service/use/voice-channel-call-recordings-transcripts).
 

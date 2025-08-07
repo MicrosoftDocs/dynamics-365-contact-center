@@ -7,6 +7,7 @@ ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.date: 07/14/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 
@@ -52,7 +53,7 @@ Based on your administrator's configuration, you see the following options in Co
 
 You can also view the Copilot generated summary for a closed conversation. In Copilot Service workspace in the **Activities** view, filter by **Conversations** and then select the required conversation. Select the **Summary** tab. The summary for the conversation appears. Learn more in [View conversation transcripts and call recordings](/dynamics365/customer-service/use/voice-channel-call-recordings-transcripts).
 
-## Next steps
+## Related information
 
-[Use Copilot to solve customer issues](use-copilot-features.md)
-
+[FAQ about Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)  
+[Responsible AI FAQ about copilot features](/dynamics365/customer-service/implement/faq-responsible-ai-copilot)  

@@ -7,6 +7,7 @@ ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.date: 07/14/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 
@@ -119,12 +120,8 @@ If your administrator enabled knowledge sources and set up trusted domains, the 
 
 [!INCLUDE [cc-write-email-startover](../../shared/cc-write-email-startover.md)]
 
-
-## Next Step
-
-[Use Copilot to solve customer issues](use-copilot-features.md)
-
 ### Related information
+
 [View, compose and respond to email](/power-apps/user/view-compose-email)  
 [Enable Copilot to draft emails](/dynamics365/customer-service/administer/copilot-email-enable)  
 [FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)   

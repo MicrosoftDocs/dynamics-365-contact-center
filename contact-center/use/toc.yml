@@ -88,8 +88,6 @@
           href: copilot-summarize-conversations.md  
         - name: Ask a question
           href: use-ask-a-question.md  
-        - name: Draft a chat response (preview)
-          href: use-copilot-features.md  
         - name: Write an email with Copilot
           href: use-copilot-email.md  
         - name: Understand how Copilot supports different languages
@@ -288,6 +286,8 @@
           href: /dynamics365/customer-service/use/knowledge-search-analytics-cs?context=/dynamics365/contact-center/context/use-context
         - name: View copilot analytics report
           href: copilot-analytics-report.md
+        - name: View agent insights dashboard
+          href: agent-insights.md
         - name: Monitor conversations
           items: 
             - name: Monitor, assign, transfer, and forcibly end conversations
@@ -358,6 +358,8 @@
             href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/use-context
           - name: Use the Schedule Calendar
             href: /dynamics365/customer-service/use/use-agent-calendar?context=/dynamics365/contact-center/context/use-context
+          - name: Use break distribution to assign breaks
+            href: wfm-use-break-distribution.md
         - name: Time-off request management
           items:
           - name: Manage time-off requests

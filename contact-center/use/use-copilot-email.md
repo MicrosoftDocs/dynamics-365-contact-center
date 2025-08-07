@@ -120,12 +120,8 @@ If your administrator enabled knowledge sources and set up trusted domains, the 
 
 [!INCLUDE [cc-write-email-startover](../../shared/cc-write-email-startover.md)]
 
-
-## Next Step
-
-[Use Copilot to solve customer issues](use-copilot-features.md)
-
 ### Related information
+
 [View, compose and respond to email](/power-apps/user/view-compose-email)  
 [Enable Copilot to draft emails](/dynamics365/customer-service/administer/copilot-email-enable)  
 [FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)   

@@ -33,28 +33,31 @@ Customer Intent Agent for voice uses generative AI to autonomously discover inte
 - The application also uses this conversation to detect any updates and discover new intent attributes that can be used in future interviews.
 - In the next customer interaction with a Copilot agent, the Copilot agent can deal with the customer issue with the newly-generated knowledge and intent, and provide a tailored response without escalating to any representative.
 
-:::image type="content" source="../media/diagram-customer-intent-agent-voice.png" alt-text="Diagram that shows how Customer Intent Agent is integrated with existing voice agents." lightbox="../media/diagram-customer-intent-agent-voice.png":::
+
 
 ## Configure voice agents
 
 Perform the following steps in Copilot Service admin center.
 
-1. To configure intent for voice agent, on the **AI Agents** page, select a Copilot agent for which the voice status shows as **Connected**.
+1. To configure intent for voice agent, on the **AI Agents** page, select a Copilot agent for which the voice status shows as **Connected**.  It is recommended to use a newly provisioned Copilot agent in this step.
 
 1. Select **Manage type**. On the **Type** dialog, select **Uses AI-generated intents** and **Voice only**.
     > [!NOTE]
     > Configurations in Copilot Studio aren't honored after you set the type **Uses AI-generated intents**. The intents in the intent library only are used for the Customer Intent Agent for runtime logic for the voice agent. While you can connect the voice agent as the workstream deflection agent, to integrate the Customer Intent Agent for voice with your current IVR system, you need to place the voice agent in a voice queue and route the calls to it.
 
     :::image type="content" source="../media/intent-settings-for-voice-agents.png" alt-text="Screenshot of intent settings for voice agent.":::
-1. Save and close.
+1. Save and close. Note that the type of the agent is now **Voice - AI Intents**.
 
 ## Connect voice agents to voice queues or workstreams
 
-To use Customer Intent Agent for voice, you need to connect your Copilot voice agent to a workstream or queue.
+To use Customer Intent Agent for voice, you need to connect your Voice - AI Intents type agent to a workstream or queue.  If you connect the Customer Intent Agent for voice to a workstream, it will handle all of your traffice to that workstream. Note that it cannot set context, so routing logic will need to be configured appropriately. If you need granular control over routing logic, it is recommended to connect the Customer Intent Agent for voice to a queue, as shown in the diagram below.  In this configuration a separate Copilot agent will act as the workstream IVR agent, and then escalate to the Customer Intent Agent for voice in a particular queue on desired triggers. 
 
-1. Create a voice queue and add the Copilot voice agent to the queue. Learn more in [create a queue](/dynamics365/customer-service/administer/queues-omnichannel).
+:::image type="content" source="../media/diagram-customer-intent-agent-voice.png" alt-text="Diagram that shows how Customer Intent Agent is integrated with existing voice agents." lightbox="../media/diagram-customer-intent-agent-voice.png":::
 
-1. In the existing topic flow for your workstream deflection agent, where you want to use Customer Intent Agent for voice, save a variable (for example va_AgentTransfer=True) and call the transfer to agent action. Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variables).
+Follow these steps to configure the Copilot IVR agent to escalate to the Customer Intent Agent for voice in a queue:
+
+1. Create a voice queue and add the Customer Intent Agent for voice to the queue. Learn more in [create a queue](/dynamics365/customer-service/administer/queues-omnichannel).
+1. In the existing topic flow for your workstream Copilot IVR agent, where you want to use Customer Intent Agent for voice, save a variable (for example va_AgentTransfer=True) and call the transfer to agent action. Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variables).
 1. In the route-to-queue rules of the voice workstream, route to the queue with your Customer Intent Agent based on the **va_AgentTransfer** variable. The Customer Intent Agent is invoked, and if it can't deflect the customer, it escalates the call and triggers the queue routing again. You should configure the logic to route to a queue with a service representative when the call is routed the second time.
 
 ## General behaviors of Customer Intent Agent for voice

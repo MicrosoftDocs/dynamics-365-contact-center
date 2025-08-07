@@ -18,7 +18,7 @@ Customer Intent Agent for voice uses generative AI to autonomously discover inte
 
 - [Enable Customer Intent Agent](manage-customer-intent-agent.md#enable-customer-intent-agent).
 - [Intent discovery is set up](manage-customer-intent-agent.md#manage-intent-discovery-setup) and intents are available in the intent library.
-- Playbooks, tools, and knowledge are configured for intents marked for self-service.
+- Instructions, tools, and knowledge are configured for intents marked for self-service.
 - New Copilot agents are enabled for voice and connected to your contact center environment.
 
 > [!NOTE]

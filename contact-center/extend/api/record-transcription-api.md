@@ -14,16 +14,16 @@ ms.custom: bap-template
 
 Dynamics 365 Contact Center provides a set of [APIs](https://github.com/microsoft/dynamics-365-contact-center/tree/main/documentation/CCaaS%20SDK%20APIs) to enable seamless integration of several functionalities into both non-Microsoft CRMs and Dynamics environments.
 
-The [Voice module](https://github.com/microsoft/dynamics-365-contact-center/blob/main/documentation/Embed%20SDK%20APIs/classes/VoiceModule.md) has several methods enable you to control call recording and transcription services during customer interactions. These capabilities are essential when handling sensitive information such as payment details, personally identifiable information, or protected health information that shouldn't be captured in recordings for compliance and security reasons.
+The [Voice module](https://github.com/microsoft/dynamics-365-contact-center/blob/main/documentation/Embed%20SDK%20APIs/classes/VoiceModule.md) has several methods to help you control call recording and transcription services during customer interactions. These capabilities are essential when handling sensitive information that shouldn't be captured in recordings for compliance and security reasons, such as payment details, personally identifiable information, or protected health information.
 
 ## Available methods
 
 - **startRecording**: Initiates voice call recording with automatic transcription.
 - **pauseRecording**: Temporarily pauses ongoing recording operations.
-- **onRecordingOperationCompleted**: Invokes a callback function with event data when the recording operation is completed.
+- **onRecordingOperationCompleted**: Invokes a callback function with event data when the recording operation completes.
 - **startTranscription**: Begins transcription without full recording.
 - **pauseTranscription**: Pauses active transcription services.
-- **onTranscriptionOperationCompleted**: Invokes a callback function with event data when the transcription operation is completed.
+- **onTranscriptionOperationCompleted**: Invokes a callback function with event data when the transcription operation completes.
 
 Learn more about the methods in [available methods in voice module](https://github.com/microsoft/dynamics-365-contact-center/blob/main/documentation/Embed%20SDK%20APIs/classes/VoiceModule.md)
 

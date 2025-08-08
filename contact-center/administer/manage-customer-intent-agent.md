@@ -145,7 +145,7 @@ You can logically organize the intents into intent groups. The intent group repr
 
 ## Manage instructions (optional)
 
-You can enable Customer Intent Agent to follow instructions that you set up to help resolve intents. You can add instructions for the line of business, intent groups, and intents.
+Set up instruction streamline Customer Intent Agent behavior. You can add instructions for the line of business, intent groups, and intents.
 
 Do the following steps to add instructions:
 
@@ -171,7 +171,7 @@ You can edit or delete instructions for a line of business, intent groups, or in
 
 |Guidelines  |Why it matters  |Example  |
 |---------|---------|---------|
-|Start with a concise statement that defines the objective of Customer Intent Agent.    |   Establishes the agent's brand voice and scope, and helps it choose the right tone.      |    "You are a representative from Contoso Coffee, assisting customers with orders and account questions."     |
+|Start with a concise statement that defines the objective of Customer Intent Agent.    |   Establishes the brand voice and scope, and helps Customer Intent Agent choose the right tone.      |    "You are a representative from Contoso Coffee, assisting customers with orders and account questions."     |
 |Start with a few simple steps that outline the flow, then add details.  |    Follows a consistent sequence that's easy to understand.   | "1. Clarify the problem. <br> 2. Pick the likely cause. <br> 3. Try one fix at a time." |
 |List required checks or prerequisites early.    |     Ensures nothing is missed before actions or lookups.    | "If the user reports an issue, first confirm the product model and purchase date."|
 |Explain what's out of scope or not allowed.|     Prevents unnecessary work or compliance issues.   | "Don't ask for social security numbers or payment card details."|

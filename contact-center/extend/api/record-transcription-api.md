@@ -10,7 +10,7 @@ ms.date: 08/08/2025
 ms.custom: bap-template 
 ---
 
-# Use APIs to pause, resume transcription and recording 
+# Use APIs to pause and resume transcription and recording 
 
 Dynamics 365 Contact Center provides a set of [APIs](https://github.com/microsoft/dynamics-365-contact-center/tree/main/documentation/CCaaS%20SDK%20APIs) to enable seamless integration of several functionalities into both non-Microsoft CRMs and Dynamics environments.
 

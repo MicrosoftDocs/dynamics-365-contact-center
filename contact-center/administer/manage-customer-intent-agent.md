@@ -145,7 +145,7 @@ You can logically organize the intents into intent groups. The intent group repr
 
 ## Manage instructions (optional)
 
-Set up instruction streamline Customer Intent Agent behavior. You can add instructions for the line of business, intent groups, and intents.
+Set up instructions to streamline Customer Intent Agent behavior. You can add instructions for the line of business, intent groups, and intents.
 
 Do the following steps to add instructions:
 

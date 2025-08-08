@@ -6,16 +6,18 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: 
-ms.date: 03/07/2025
+ms.date: 08/08/2025
 ms.custom: bap-template
 ---
 
 # Compliance certifications for Dynamics 365 Contact Center
 
-Dynamics 365 Contact Center is designed with compliance at its core and is a Core Online Service as defined in the [Microsoft Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms). It's compliant with or covered by: 
+Dynamics 365 Contact Center is designed with compliance at its core and is a Core Online Service as defined in the [Microsoft Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms). It's compliant with or covered by:
 
 - Health Insurance Portability and Accountability Act (HIPAA) coverage
 
+- Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
+- Federal Risk and Authorization Management Program (FedRAMP)
 - System and Organization Controls (SOC)
 - Various International Organization for Standardization (ISO) certifications
 - Payment Card Industry (PCI) Data Security Standard (DSS)

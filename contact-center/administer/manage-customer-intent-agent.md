@@ -161,7 +161,7 @@ Do the following steps to add instructions:
        1. Add instructions for the intent group. You can enter up to 2000 characters.
        1. Save and close.
    - **Manage intents**: In the list of intents page, select an intent.
-       1. On the `<intent_group>` page, in **Intent instructions (optional)** , select **Add**. The **Add instructions** dialog appears.
+       1. On the `<intent_name>` page, in **Intent instructions (optional)** , select **Add**. The **Add instructions** dialog appears.
        1. Add instructions for the intent. You can enter up to 2000 characters.
        1. Save and close.
 

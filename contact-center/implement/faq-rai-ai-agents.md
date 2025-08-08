@@ -38,7 +38,7 @@ Customer Intent Agent uses generative AI to autonomously discover customer inten
 
 Beyond intent discovery, Customer Intent Agent can autonomously lead conversations using business instructions, enterprise functions, and knowledge articles linked to each intent:
 
-- **Follows business instructions**: The instructions defined by the business to sure consistent tone, policy compliance, and best‑practice workflows.
+- **Follows business instructions**: The instructions defined by the business to make sure of consistent tone, policy compliance, and best‑practice workflows.
 
 - **Invokes enterprise functions**: During a chat or voice session, Customer Intent Agent can call business‑exposed APIs, such as, order lookup, status update, and claim submission to act on the customer’s behalf.
 

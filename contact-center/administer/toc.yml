@@ -306,6 +306,8 @@
             href: enable-intent-for-service-reps.md
           - name: Configure intent-based suggestions for Copilot agents
             href: set-up-intent-agent.md
+          - name: Set up voice agents to use intents
+            href: set-up-voice-agents-to-use-intents.md
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features

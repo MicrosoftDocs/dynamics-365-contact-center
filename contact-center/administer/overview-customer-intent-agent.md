@@ -24,15 +24,15 @@ Customer Intent Agent can be used in the following scenarios:
 - **Self service**: You can add the intent to a custom Copilot agent that connects with the intent library and dynamically chats or uses conversations with the customer to:
 
   - Determine customer intent based on discovered intents, such as refund, from the intent library.
-  - Ask follow-up questions based on other attributes, such as error code, product name, and purchase date, discovered from historical conversations.
-  - Understand responses from customers to determine what follow-up questions are answered by the customer.
-  - Generate a query to knowledge base to search for solutions based on gathered information.
+  - Ask follow-up questions based on intent attributes, such as error code, product name, and purchase date, discovered from historical conversations.
+  - Analyze customer responses to identify the follow-up questions that are addressed.
+  - Query the knowledge base to search for solutions based on gathered information.
 
 Learn how to set up Customer Intent Agent for Copilot agents for [chat and messaging](set-up-intent-agent.md) and [voice](set-up-voice-agents-to-use-intents.md).
 
-- **Assisted service**: Significantly reduce issue handling time by continuously detecting updates to intent based on ongoing conversations and provide:
+- **Assisted service**: Significantly reduces issue handling time by continuously detecting intent updates in ongoing conversations and provides:
 
-  - Information that's discovered by Copilot in self service to quickly get the representative up to speed on the intent and collected information.
+  - Information that's discovered by Copilot agent to quickly get the representative up to speed on the intent and collected information.
   - A curated list of questions and suggested solutions as the next response that the representative can send to the customer.
   - The detected intent separately, suggested follow-up questions and responses, and suggested solutions in a holistic view.
 

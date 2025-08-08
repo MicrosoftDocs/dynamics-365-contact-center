@@ -29,7 +29,8 @@ Use the information in this article to manage the intents in Copilot Service adm
 
 ## Prerequisites
 
-[Set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
+- [Set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
+- The Intent Manager role to create instructions.
 
 ## Enable Customer Intent Agent
 
@@ -144,49 +145,33 @@ You can logically organize the intents into intent groups. The intent group repr
 
 ## Manage instructions (optional)
 
-You can enable Customer Intent Agent to follow instructions that you set up to help resolve intents.
+You can enable Customer Intent Agent to follow instructions that you set up to help resolve intents. You can add instructions for the line of business, intent groups, and intents.
 
-### Prerequisite
-
-You must have the Intent Manager role to create instructions.
-
-### Add instructions
+Do the following steps to add instructions:
 
 1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage instructions (optional)**.
 
-1. On the **Manage instructions (preview)** page, select a line of business in **Select line of business**. If you don't specify a line of business, Customer Intent Agent follows organizational-level instructions.
+1. On the **Manage instructions (preview)** page, select a line of business in **Select line of business**. If you don't specify a line of business, Customer Intent Agent follows the default instructions for the organization.
 1. In the **Line of business instructions (optional)** section, select **Add**.
-1. On the **Add instructions** dialog, add the instructions for the line of business. You can enter up to 4000 characters. Select the **View example instructions** dropdown, if you need to refer to examples to create instructions for your line of business.
-1. Select **Save**. After you save the instructions, the agent follows them immediately when it interacts with customers.
-1. In the **Instructions for intent groups and intents** section, create instructions for intent groups or intents for the specific line of business.
-    1. To create instructions for an intent group, select [Manage intent groups](#manage-intent-groups).
-    1. To create instructions for an intent, select [Manage intents](#manage-intents).
-1. If you select **Manage intent groups**, select an intent group from the **All intent groups** dropdown list.
-    1. On the selected intent group page, **Intent group instructions (optional)** section, select **Add**.
-    1. On the **Add Instructions** dialog, add instructions for the intent group. You can enter upto 2000 characters.
-    1. To edit the line of business instructions, select **Manage instructions**.
-    1. Select **Save**.
-1. If you select **Manage intents**, select an intent from the **All intents** dropdown list.
-1. On the selected intent page, **Intent instructions (optional)** section, select **Add**.
-    1. On the **Add Instructions** dialog, add instructions for the intent. You can enter up to 2000 characters.
-    1. Select **Save**.
+1. On the **Add instructions** dialog, add the instructions for the line of business. You can enter up to 4000 characters. Expand **View example instructions** to view sample instructions.
+1. Select **Save**. The instructions are available immediately for use by Customer Intent Agent.
+1. In the **Instructions for intent groups and intents** section, select the following options to create instructions for intent groups and intents.
+   - **Manage Intent groups**: In the list of intent groups page, select an intent group.
+       1. On the `<intent_group_name>` page, in **Intent group instructions (optional)** , select **Add**. The **Add instructions** dialog appears.
+       1. Add instructions for the intent group. You can enter up to 2000 characters.
+       1. Save and close.
+   - **Manage intents**: In the list of intents page, select an intent.
+       1. On the `<intent_group>` page, in **Intent instructions (optional)** , select **Add**. The **Add instructions** dialog appears.
+       1. Add instructions for the intent. You can enter up to 2000 characters.
+       1. Save and close.
 
-### Edit or delete instructions
-
-You can edit or delete a line of business from the **Line of business instructions (optional)** section.
-
-1. On the **Manage instructions (preview)** page, select a line of business from the **Select line of business** dropdown list.
-1. Select **Edit**.
-1. On the **Edit instructions** dialog, make changes in the **Line of business instructions** section.
-1. Select **Save**.
-
-Select **Delete** to delete the instructions for the selected line of business. A confirmation message appears after the instructions are deleted.
+You can edit or delete instructions for a line of business, intent groups, or intents using the **Edit** and **Delete** options in the instructions section of the corresponding pages.
 
 ### How to write clear instructions
 
 |Guidelines  |Why it matters  |Example  |
 |---------|---------|---------|
-|Begin with a clear sentence that defines the agent's role and purpose.    |   Establishes the agent's brand voice and scope, and helps it choose the right tone.      |    "You are a representative from Contoso Coffee, assisting customers with orders and account questions."     |
+|Start with a concise statement that defines the objective of Customer Intent Agent.    |   Establishes the agent's brand voice and scope, and helps it choose the right tone.      |    "You are a representative from Contoso Coffee, assisting customers with orders and account questions."     |
 |Start with a few simple steps that outline the flow, then add details.  |    Follows a consistent sequence that's easy to understand.   | "1. Clarify the problem. <br> 2. Pick the likely cause. <br> 3. Try one fix at a time." |
 |List required checks or prerequisites early.    |     Ensures nothing is missed before actions or lookups.    | "If the user reports an issue, first confirm the product model and purchase date."|
 |Explain what's out of scope or not allowed.|     Prevents unnecessary work or compliance issues.   | "Don't ask for social security numbers or payment card details."|
@@ -197,23 +182,23 @@ Select **Delete** to delete the instructions for the selected line of business. 
 
 ## Manage connectors for AI agents (optional)
 
-Connectors let systems work together, move data, and let AI agents autonomously complete tasks to resolve issues.
+Connectors let systems work together, transfer data, and allow AI agents to automatically handle tasks for issue resolution.
 
 1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage connectors for AI agents (optional)**.
 
-1. On the **Manage custom connectors (preview)** page, select **Add connector**. Learn how to add connector in [Create a custom connector](/connectors/custom-connectors/define-blank).
+1. On the **Manage custom connectors (preview)** page, select **Add connector**. Learn how to add a connector in [Create a custom connector](/connectors/custom-connectors/define-blank).
 1. On the **Select a connector** dialog, search and select a connector. You can add up to 30 connectors.
 1. Select **Next**.
 1. On the **Set up the connector** dialog, select a connection from the **Connection** dropdown. You can also create a new connection in Power Platform. Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
     > [!NOTE]
-    > Make sure that the connection you select is shared with one of the following service principals, as per your organization.
+    > Make sure that the connection you select is shared with one of the following service principals:
     > - Dynamics 365 Analytics (61d02d70-ab6c-4569-be48-787ea2cda65d)
     > - Dynamics CCA Data Analytics (7c58187c-f28c-4cfb-998c-3d6ba580192c)
     > - Dynamics 365 Analytics (079f5a03-090f-4720-90b9-e03942091e6e)
 
     Learn more in [Share a custom connector in your organization](/connectors/custom-connectors/share).
-1. Specify the type of use for the connector, **General** or **For specific intents**.
-1. If you select **For specific intents**, you need to map the custom connector as a solution.
+1. Specify if the type for the connector is **General** or **For specific intents**.
+1. If you select **For specific intents**, you need to map the custom connector as a solution as explained in the section that follows.
 1. Select **Save**.
 
 ### Map a connector to an intent
@@ -221,7 +206,7 @@ Connectors let systems work together, move data, and let AI agents autonomously 
 1. Select **Manage** for **Manage intents** on the **Customer Intent Agent (preview)** page.
 
 1. Select the specific intent, and on the intent page, in the **Solution (Optional)** section, select the **Connectors** option, and then select **Add**.
-1. On the **Add a solution** page, search and select a connector for the intent. Only connectors created for use with specific intents are shown.
+1. On the **Edit solution** page, search and select a connector for the intent. The application displays connectors created for use with specific intents only.
 1. Select **Save and close**.
 
 > [!NOTE]
@@ -229,7 +214,7 @@ Connectors let systems work together, move data, and let AI agents autonomously 
 
 ### Edit or delete connectors
 
-You can edit or delete a connector from the **Manage custom connectors (preview)** page. 
+You can edit or delete a connector from the **Manage custom connectors (preview)** page.
 
 1. On the **Manage custom connectors (preview)** page, select a connector.
 1. Select **Edit**.
@@ -237,6 +222,14 @@ You can edit or delete a connector from the **Manage custom connectors (preview)
 1. Select **Save**.
 
 Select **Delete** to delete a connector. A confirmation message appears after the connector is deleted.
+
+## Add knowledge articles, custom AI agent to an intent
+
+1. Select the intent for which you want to add knowledge articles and custom AI agent.
+1. On the `<intent_name>` page, scroll to the bottom and in **Solution (Optional)**, select **Dynamics 365 knowledge articles**, and then select **Add**. A list of published knowledge articles appears.
+1. Select the articles pertinent to the intent and save and close.
+1. Select **Custom AI agent**, and then select **Add**.
+1. In the list of agents that appears, select an AI agent and save and close.
 
 ### Related information
 

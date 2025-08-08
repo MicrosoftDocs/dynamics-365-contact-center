@@ -172,7 +172,7 @@ You can edit or delete instructions for a line of business, intent groups, or in
 |Guidelines  |Why it matters  |Example  |
 |---------|---------|---------|
 |Start with a concise statement that defines the objective of Customer Intent Agent.    |   Establishes the brand voice and scope, and helps Customer Intent Agent choose the right tone.      |    "You are a representative from Contoso Coffee, assisting customers with orders and account questions."     |
-|Start with a few simple steps that outline the flow, then add details.  |    Follows a consistent sequence that's easy to understand.   | "1. Clarify the problem. <br> 2. Pick the likely cause. <br> 3. Try one fix at a time." |
+|Start with steps that outline the flow and then add details.  |    Creates a logical, easy-to-follow sequence.   | 1. Clarify the problem. <br> 2. Pick the likely cause. <br> 3. Try one fix at a time. |
 |List required checks or prerequisites early.    |     Ensures nothing is missed before actions or lookups.    | "If the user reports an issue, first confirm the product model and purchase date."|
 |Explain what's out of scope or not allowed.|     Prevents unnecessary work or compliance issues.   | "Don't ask for social security numbers or payment card details."|
 |Use simple if-then logic for decision points. | Reduces ambiguity without technical syntax.| "If the product is under warranty, offer a replacement. Otherwise, provide repair options."|

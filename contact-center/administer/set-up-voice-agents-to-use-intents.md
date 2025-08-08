@@ -1,6 +1,6 @@
 ---
 title: Set up voice agents to use intents (preview)
-description: Learn how to configure intent-based suggestions for Copilot agents using Customer Intent Agent to automate and streamline the process.
+description: Learn how to configure intent-based suggestions for Copilot agents enabled for voice using Customer Intent Agent in Dynamics 365 Contant Center to automate and streamline your contact center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
@@ -12,14 +12,14 @@ ms.custom: bap-template
 
 # Set up voice agents to use intents (preview)
 
-Customer Intent Agent for voice uses generative AI to autonomously discover intents in your contact center instance. It analyzes past interactions between customer service representatives (service representatives or representatives) and customers to create an intent library that enhances dynamic conversations. Intent benefits self-service scenarios by enabling agents to quickly understand customer needs, guide conversations with follow-up questions, and provide tailored solutions in real time.
+Customer Intent Agent for voice uses generative AI to autonomously discover intents in your Dynamics 365 Contact Center instance. It analyzes past interactions between customer service representatives (service representatives or representatives) and customers to create an intent library that enhances dynamic conversations. Intent benefits self-service scenarios by enabling agents to quickly understand customer needs, guide conversations with follow-up questions, and provide tailored solutions in real time.
 
 ## Prerequisites
 
 - [Enable Customer Intent Agent](manage-customer-intent-agent.md#enable-customer-intent-agent).
 - [Intent discovery is set up](manage-customer-intent-agent.md#manage-intent-discovery-setup) and intents are available in the intent library.
 - [Instructions](manage-customer-intent-agent.md#manage-instructions-optional), [connectors](manage-customer-intent-agent.md#manage-connectors-for-ai-agents-optional), and knowledge are configured for intents marked for self-service.
-- [New Copilot agents](/dynamics365/customer-service/administer/manage-your-bots?context=/dynamics365/contact-center/context/administer-context) are enabled for voice and connected to your contact center environment. 
+- [New Copilot agents](/dynamics365/customer-service/administer/manage-your-bots?context=/dynamics365/contact-center/context/administer-context) are enabled for voice and connected to your contact center environment.
 
 > [!NOTE]
 > Customer Intent Agent for voice functions with the default line of business only. If you configure other lines of business, Customer Intent Agent for voice won't work.

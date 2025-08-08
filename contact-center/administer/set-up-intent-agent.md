@@ -1,6 +1,6 @@
 ---
 title: Configure intent-based suggestions for Copilot agents (preview)
-description: Learn how to configure intent-based suggestions for Copilot agents using Customer Intent Agent to automate and streamline the process.
+description: Learn how to configure intent-based suggestions for Copilot agents using Customer Intent Agent to automate and streamline the contact center operations.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: Soumyasd27

@@ -35,36 +35,47 @@ Perform the steps in [Add a filter to an entire page](/power-bi/create-reports/p
 
 ## Add fallback action calls
 
+Fallback actions track the number of conversations that were handled by the system when the AI agent encountered system failures, errors, or couldn't process user inputs, preventing conversation breakdown and maintaining user engagement.
+
 Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi-report-add-visualizations-i#add-visualizations-to-the-report) to represent **FactSession : Failed bot conversation** data in a [Single number card](/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#single-number) visual for fallback action calls on the bot dashboard.
 
 | Title |   Definition | Applies to | Channel | Data |
 | --------------- | --------------- |
-| Fallback action calls | The number of conversations initiated by the customer but couldn't be connected to an AI agent due to a system failure. The application registers a call only after the classification rules in the workstream run and the work distribution system routes the call to the AI agent. This data indicates that an AI agent was assigned to the call. Calls that fail before this step don't appear on the dashboard.| Real time and historical| Voice only | FactSession: Failed bot conversation|
+| Fallback action calls | The number of conversations initiated by the customer but couldn't be connected to an AI agent due to a system failure. The application registers a call only after the classification rules in the workstream run and the work distribution system routes the call to the AI agent. This data indicates that an AI agent was assigned to the call. Calls that fail before this step don't appear on the dashboard. The following fallback actions apply: <ul><li>**Prompt and hang-up**: The system plays a [default message](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-automated-message#preconfigured-automated-message-triggers) and ends the call.</li><li>**Prompt and transfer to external number**: The system plays the default message and then transfers the call to an external number that you enter in the **External phone number** field. Use the E.164 format, with a plus sign (+) followed by the country code and phone number.</li><li>**Prompt and escalate**: The system plays the default message and then connects the call to a customer service representative (service representative or representative).</li><li>**Wait Music and Escalate**: The system plays wait music and then connects the call to a service representative.</li></ul>| Real time and historical| Voice only | FactSession: Failed bot conversation|
 
 ## Add bot session level outcome reason
 
 Customer conversations with AI agents can have multiple sessions based on the topics discussed. Each session records both an outcome and an outcome reason that categorizes how the session ended. The outcome describes the overall result of the session, while the outcome reason provides more specific details about why the session ended a particular way.
 
-For example, a customer contacts support to check the order status. The customer also requests to place a new order. This single conversation generates two distinct sessions:
- - Session 1: Check order status with **Outcome** set to Resolved, **outcomeReason** set to Resolved;
- - Session 2: Place a new order with **outcome** set Abandoned, **outcomeReason** set to SystemError
- 
-Since the conversation generated custom topics, the engagement type is classified as "Engaged."
-
-### Outcome Classification
-
 Based on the value of **Type**, the following **Outcome** and **OutcomeReason** are set for the session:
 
-- **Engaged**: The **Outcome** can be **Abandoned**, **Escalated**, **HandOff**, or **Resolved**. The corresponding **OutcomeReason** can be **SystemError**, **UserError**, **Resolved**, **UserExit**, **AgentTransferRequestedByUser**, **AgentTransferFromQuestionMaxAttempts**, or **AgentTransferConfiguredByAuthor**. Learn more in [Measuring agent engagement](/microsoft-copilot-studio/guidance/measuring-engagement#engaged-and-unengaged-analytics-sessions).
-- **Unengaged**: The **Outcome** is **None** and **OutcomeReason** is **NoError**.
+- **Engaged**: 
+ If the session is engaged, the **Outcome** can be set to the following:
+     - **Abandoned**
+     - **HandOff**
+     - **Resolved**. 
+The corresponding **OutcomeReason** can be set to the following:
+   - **SystemError**
+   - **UserError**
+   - **Resolved**
+   - **UserExit**
+   - **AgentTransferRequestedByUser**
+   - **AgentTransferFromQuestionMaxAttempts*
+   - **AgentTransferConfiguredByAuthor**. 
+- **Unengaged**: Sessions begin in unengaged state and remain unengaged till no user input is provided or when the session doesn't enter custom or escalate topic modes. For unengaged sessions the **Outcome** is  set to **None** and **OutcomeReason** is **NoError**.
 
-### Add session level outcome reason to bot dashboard
+Learn more in [Measuring agent engagement](/microsoft-copilot-studio/guidance/measuring-engagement#engaged-and-unengaged-analytics-sessions).
+
+For example, a customer contacts support to check the order status. The customer also requests to place a new order. This single conversation generates two distinct sessions:
+ - Session 1: Check order status with **Outcome** set to Resolved, **outcomeReason** set to Resolved;
+ - Session 2: Place a new order with **outcome** set to Abandoned, **outcomeReason** set to SystemError
+ 
+Since the conversation generated custom topics, the engagement type is classified as "Engaged."
 
 Perform the steps in [add a matrix visualization](/power-bi/visuals/power-bi-visualization-matrix-visual#lets-create-a-matrix-visual) to represent **Session level outcome reason** in a matrix visual to view metrics by outcome reason for AI agents to the report.
 
 
-
-| Session outcome| Engagement type| Outcome Reason                        | Definition                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Applies to  | Channel         | 
+| Session outcome| Engagement type| Outcome Reason                        | Definition                                                                                                              | Applies to  | Channel         | 
 |----------------------------------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-----------------|-
 |Abandoned | Engaged| UserExit                              | The number of conversations that end either because the customer ends the conversation or the session times out while waiting for the customer's response.                                                                                                                                                                                                                                                                                                                                | Historical  | Chat and voice  | 
 |Handoff| Engaged| AgentTransferConfiguredByAuthor        | The number of bot conversations transferred to a service representative or external number based on the AI agent's configuration. For example, an AI agent flow includes "Transfer to an agent". When the user selects "No," the AI agent transfers the conversation without the user requesting escalation, per the AI agent's business rules.                                                                                                    | Historical  | Chat and voice  | 
@@ -73,7 +84,7 @@ Perform the steps in [add a matrix visualization](/power-bi/visuals/power-bi-vis
 | Resolved                              | The number of bot conversations that the AI agent resolved.                                                                                                                                                                                                                                                                                                                                                                                        | Historical  | Chat and voice  |
 |Abandoned| Engaged | UserError                             | The number of bot conversations that ended because of incorrect AI agent design.                                                                                                                                                                                                                                                                                                                                                                   | Historical  | Chat and voice  | 
 |Abandoned| Engaged| SystemError                           | The number of AI agent conversations that ended due to systemic errors within Copilot Studio.                                                                                                                                                                                                                                                                                                                                                      | Historical  | Chat and voice  | 
-| None | Unengaged | NoError                              | The number of bot conversations that didn't have any engagement with the AI agent. This can happen when the customer doesn't respond to the AI agent's greeting or when the AI agent doesn't understand the customer's request.                                                                                                                                                                                                                      | Historical  | Chat and voice  |
+| None | Unengaged | NoError                              | The number of conversations that didn't have any engagement with AI agents. This can happen when the customer doesn't respond to the AI agent's greeting or when the AI agent doesn't enter a custom topic or Escalate topic due to the structure of the conversation flow.                                                                                                                                                                                                                      | Historical  | Chat and voice  |
 
 ### Related information
 

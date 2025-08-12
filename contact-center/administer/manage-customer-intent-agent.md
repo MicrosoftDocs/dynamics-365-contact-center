@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 08/08/2025
+ms.date: 08/12/2025
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template
@@ -174,11 +174,11 @@ You can edit or delete instructions for a line of business, intent groups, or in
 |Start with a concise statement that defines the objective of Customer Intent Agent.    |   Establishes the brand voice and scope, and helps Customer Intent Agent choose the right tone.      |    "You are a representative from Contoso Coffee, assisting customers with orders and account questions."     |
 |Start with steps that outline the flow and then add details.  |    Creates a logical, easy-to-follow sequence.   | 1. Clarify the problem. <br> 2. Pick the likely cause. <br> 3. Try one fix at a time. |
 |List required checks or prerequisites.    |     Ensures that required information isn't missed before the agent takes action or performs lookups.   | If the user reports an issue, first confirm the product model and purchase date.|
-|Explain what's out of scope or not allowed.|     Prevents unnecessary work or compliance issues.   | "Don't ask for social security numbers or payment card details."|
+|Explain what's out of scope or not allowed.|     Prevents unnecessary work or compliance issues.   | Don't ask for social security numbers or payment card details.|
 |Use if-then logic for decision points. | Reduces ambiguity without technical syntax.| If the product is under warranty, offer a replacement. Otherwise, provide repair options.|
-|Define when to escalate issues or hand them off to service representatives. |    Ensures a smooth transition when the process can't continue.       |  "Hand-off to a service representative if the customer requests a refund over $100 or expresses dissatisfaction."|
-|Break multi-part instructions into smaller steps.      |   Avoids missed details and simplifies handoffs between people or steps.|  Instead of "Verify account and reset password', split into: “1. Verify account. 2. Reset password.”        |
-|Don't use unnecessary technical or system jargon. |  Keeps instructions readable and usable without requiring technical expertise.|  Use "Look up the customer’s order in the system", instead of “Execute GET request on Order API.” |
+|Specify when to escalate issues or hand them off to service representatives. |    Ensures a smooth transition when automated resolution isn't possible. |  "Hand-off to a service representative if the customer requests a refund over $100 or expresses dissatisfaction."|
+|Break multi-part instructions into smaller steps.      |   Avoids missed details and simplifies handoffs.|  Instead of Verify account and reset password, split into: 1. Verify account. 2. Reset password.       |
+|Don't use unnecessary technical or system jargon. |  Keeps instructions readable and usable without requiring technical expertise.|  Use Look up the customer’s order in the system, instead of Execute GET request on Order API. |
 
 ## Manage connectors for AI agents (optional)
 
@@ -212,16 +212,8 @@ Connectors let systems work together, transfer data, and allow AI agents to auto
 > [!NOTE]
 > To map a connector to an intent, the connector must have one action only. If your connector has multiple actions, you can't run any actions for that intent.
 
-### Edit or delete connectors
+You can edit or delete a connector after you select the required connector on the **Manage custom connectors (preview)** page. 
 
-You can edit or delete a connector from the **Manage custom connectors (preview)** page.
-
-1. On the **Manage custom connectors (preview)** page, select a connector.
-1. Select **Edit**.
-1. On the **Edit connector** dialog, you can select your connection and specify the type of use for your connector.
-1. Select **Save**.
-
-Select **Delete** to delete a connector. A confirmation message appears after the connector is deleted.
 
 ## Add knowledge articles, custom AI agent to an intent
 

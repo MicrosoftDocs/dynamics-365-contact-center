@@ -622,6 +622,14 @@
           href: /dynamics365/customer-service/administer/migrate-automatic-record-creation-and-sla-agreements?context=/dynamics365/contact-center/context/administer-context
         - name: Strategy for migrating from contracts to entitlements
           href: /dynamics365/customer-service/administer/contract-to-entitlement-migration?context=/dynamics365/contact-center/context/administer-context
+        - name: Migration FAQ
+          items: 
+          - name: FAQ on migration from Customer Service Hub to Copilot Service workspace
+            href: /dynamics365/customer-service/administer/faq-csh-removal?context=/dynamics365/contact-center/context/administer-context
+          - name: FAQ on migration from Omnichannel for Customer Service app
+            href: /dynamics365/customer-service/administer/migrate-oc-faq?context=/dynamics365/contact-center/context/administer-context
+          - name: FAQ on Migration tool for automatic record creation rules and SLAs
+            href: /dynamics365/customer-service/administer/migrate-tool-faqs?context=/dynamics365/contact-center/context/administer-context
       - name: Responsible AI
         items:
         - name: Overview

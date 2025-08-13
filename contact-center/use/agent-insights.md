@@ -72,7 +72,7 @@ The following metrics are available.
 |-----------------|-------|-----------------|
 | Customer Intent Agent |                 | |
 | | Engagement count                      | Total number of conversations where Customer Intent Agent is engaged. |
-| | Solutions attempted (assisted service)| Total number of conversations where a solution was identified for the intent and attempted to use to resolve the conversation (knowledge article, action taken, custom agent). |
+| | Solutions attempted (assisted service)| Total number of conversations where a solution was identified for the intent and attempted to use to resolve the conversation (knowledge article, action taken, custom agent).<br> **NOTE**: In preview, this feature isn't available for IVR or voice agents. |
 | |Autonomous resolutions                 | Total number of conversations that were completed without requiring a service representative to be assigned (handled autonomously by Customer Intent Agent). |
 | Case Management Agent |                 | |
 | | Autonomous case processing volume     | Number of cases with autonomous actions to assist in processing the case. |

@@ -586,6 +586,42 @@
           href: /dynamics365/customer-service/administer/migrate-channel-config-using-solutions?context=/dynamics365/contact-center/context/administer-context
         - name: Best practices for configuration lifecycle management
           href: alm-best-practices.md
+      - name: Migration solutions
+        items:
+        - name: Migrate from removed or deprecated apps to Copilot Service workspace  
+          items:
+          - name: Migrate from deprecated or removed apps to Copilot Service workspace
+            href: /dynamics365/customer-service/administer/migrate-to-csw?context=/dynamics365/contact-center/context/administer-context
+          - name: Enable Omnichannel for Customer Service and disable Copilot Service workspace
+            href: /dynamics365/customer-service/administer/enable-oc-disable-csw?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for records channel using solutions
+          href: /dynamics365/customer-service/administer/migrate-record-routing-config-using-solutions?context=/dynamics365/contact-center/context/administer-context
+        - name: Migration configuration data for channels using solutions
+          href: /dynamics365/customer-service/administer/migrate-channel-config-using-solutions?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for the record channel
+          items:
+          - name: Overview of data migration for records
+            href: /dynamics365/customer-service/administer/migrate-config-data-for-records-overview?context=/dynamics365/contact-center/context/administer-context
+          - name: Use FetchXML query to filter records
+            href: /dynamics365/customer-service/administer/use-fetchxml-filter-records?context=/dynamics365/contact-center/context/administer-context
+          - name: Verify migration of records
+            href: /dynamics365/customer-service/administer/migrate-config-data-verify?context=/dynamics365/contact-center/context/administer-context
+          - name: Troubleshoot migration of records
+            href: /dynamics365/customer-service/administer/migrate-config-data-troubleshoot?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for live chat
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-live-chat?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for the voice channel
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-voice-channel?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for SMS channel
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-sms-channel?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for WhatsApp through Twilio
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-whatsapp-through-twilio?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for custom messaging channel
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-custom-channel?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate automatic record creation rules and SLAs
+          href: /dynamics365/customer-service/administer/migrate-automatic-record-creation-and-sla-agreements?context=/dynamics365/contact-center/context/administer-context
+        - name: Strategy for migrating from contracts to entitlements
+          href: /dynamics365/customer-service/administer/contract-to-entitlement-migration?context=/dynamics365/contact-center/context/administer-context
       - name: Responsible AI
         items:
         - name: Overview

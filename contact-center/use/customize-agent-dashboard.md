@@ -60,7 +60,7 @@ The corresponding **OutcomeReason** can be set to the following:
    - **Resolved**
    - **UserExit**
    - **AgentTransferRequestedByUser**
-   - **AgentTransferFromQuestionMaxAttempts*
+   - **AgentTransferFromQuestionMaxAttempts**
    - **AgentTransferConfiguredByAuthor**. 
 - **Unengaged**: Sessions begin in unengaged state and remain unengaged till no user input is provided or when the session doesn't enter custom or escalate topic modes. For unengaged sessions the **Outcome** is  set to **None** and **OutcomeReason** is **NoError**.
 

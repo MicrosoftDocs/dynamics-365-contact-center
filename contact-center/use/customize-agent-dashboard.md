@@ -45,7 +45,7 @@ Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi
 
 ## Add bot session level outcome reason
 
-Customer conversations with AI agents can have multiple sessions based on the topics discussed. Each session records both an outcome and an outcome reason that categorizes how the session ended. The outcome describes the overall result of the session, while the outcome reason provides more specific details about why the session ended a particular way.
+Customer conversations with AI agents can have multiple sessions based on the topics discussed. Each session records both an outcome and an outcome reason that categorizes how the session ended. The outcome shows the overall result of the session. The outcome reason provides specific details about why the session ended.
 
 Based on the value of **Type**, the following **Outcome** and **OutcomeReason** are set for the session:
 

@@ -30,7 +30,7 @@ Perform the steps in [Add a filter to an entire page](/power-bi/create-reports/p
 | Browser  | Filter by browser to analyze the agent's metrics specifically for the selected browser. | Real time and historical| Chat and voice | FactLiveChatContext: Browser |
 | Device  | Filter by device to analyze the agent's performance specifically for the selected device. | Real time and historical| Chat and voice | FactLiveChatContext: Device |
 
-:::image type="content" source="../media/oc-realtime-dashboard-mini.png" alt-text="Screenshot of real time bot dashboard with filters." lightbox="../media/oc-realtime-dashboard.png"::: 
+:::image type="content" source="../media/realtime-dashboard-mini.png" alt-text="Screenshot of real time bot dashboard with filters." lightbox="../media/oc-realtime-dashboard.png"::: 
 
 
 ## Add fallback action calls

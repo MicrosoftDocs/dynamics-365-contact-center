@@ -62,7 +62,7 @@ The corresponding **OutcomeReason** can be set to the following:
    - **AgentTransferRequestedByUser**
    - **AgentTransferFromQuestionMaxAttempts**
    - **AgentTransferConfiguredByAuthor**. 
-- **Unengaged**: Sessions begin in unengaged state and remain unengaged till no user input is provided or when the session doesn't enter custom or escalate topic modes. For unengaged sessions the **Outcome** is  set to **None** and **OutcomeReason** is **NoError**.
+- **Unengaged**: Sessions start in an unengaged state and stay unengaged until user input is provided or the session enters custom or escalate topic modes. For unengaged sessions, the **Outcome** is  set to **None** and **OutcomeReason** is **NoError**.
 
 Learn more in [Measuring agent engagement](/microsoft-copilot-studio/guidance/measuring-engagement#engaged-and-unengaged-analytics-sessions).
 

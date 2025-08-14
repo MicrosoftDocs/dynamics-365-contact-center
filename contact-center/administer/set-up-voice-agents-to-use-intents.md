@@ -79,6 +79,7 @@ To recreate the IVR workflows, the voice agent needs to access the connectors th
 1. In the site map, select **API Explorer**, and under **Resources available**, expand **servicePrincipals**, and select [**POST**](https://graph.microsoft.com/v1.0/servicePrincipals).
 1. Enter the following JSON in **Request Body**, and select **Run query**:
    { "appId" : "d3e4eed9-fdab-4c55-a667-e4d1ffc8bb85"}
+
    The service principal is created and displayed in **Response preview**.
 
 ### Related information

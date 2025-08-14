@@ -67,7 +67,7 @@ The corresponding **OutcomeReason** can be set to the following:
 Learn more in [Measuring agent engagement](/microsoft-copilot-studio/guidance/measuring-engagement#engaged-and-unengaged-analytics-sessions).
 
 For example, a customer contacts support to check the order status. The customer also requests to place a new order. This single conversation generates two distinct sessions:
- - Session 1: Check order status with **Outcome** set to Resolved, **outcomeReason** set to Resolved;
+ - Session 1: Check order status with **Outcome** set to Resolved, **outcomeReason** set to Resolved
  - Session 2: Place a new order with **outcome** set to Abandoned, **outcomeReason** set to SystemError
  
 Since the conversation generated custom topics, the engagement type is classified as "Engaged."

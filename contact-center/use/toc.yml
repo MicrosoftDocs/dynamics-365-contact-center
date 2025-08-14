@@ -312,6 +312,8 @@
             href: /dynamics365/customer-service/use/use-volume-forecasting?context=/dynamics365/contact-center/context/use-context
         - name: Customize visual display
           href: /dynamics365/customer-service/use/customize-reports?context=/dynamics365/contact-center/context/use-context
+        - name: Customize the bot dashboard
+          href: customize-agent-dashboard.md       
         - name: Customize data models
           items:
           - name: Overview of data model customization
@@ -324,8 +326,6 @@
             href: /dynamics365/customer-service/use/datamapping-realtime?context=/dynamics365/contact-center/context/use-context
           - name: Dataverse entities used in historical and real-time analytics
             href: /dynamics365/customer-service/use/dataverse-entities?context=/dynamics365/contact-center/context/use-context
-          - name: Customize the bot dashboard
-            href: customize-agent-dashboard.md
       - name: Report issues in Dynamics 365 Contact Center
         href: /dynamics365/customer-service/use/report-issues?context=/dynamics365/contact-center/context/use-context
       - name: Share feedback

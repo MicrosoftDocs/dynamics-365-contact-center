@@ -176,7 +176,7 @@ You can edit or delete instructions for a line of business, intent groups, or in
 |List required checks or prerequisites.    |     Ensures that required information isn't missed before the agent takes action or performs lookups.   | If the user reports an issue, first confirm the product model and purchase date.|
 |Explain what's out of scope or not allowed.|     Prevents unnecessary work or compliance issues.   | Don't ask for social security numbers or payment card details.|
 |Use if-then logic for decision points. | Reduces ambiguity without technical syntax.| If the product is under warranty, offer a replacement. Otherwise, provide repair options.|
-|Specify when to escalate issues or hand them off to service representatives. |    Ensures a smooth transition when automated resolution isn't possible. |  "Hand-off to a service representative if the customer requests a refund over $100 or expresses dissatisfaction."|
+|Specify when to escalate issues or hand them off to service representatives. |    Ensures a smooth transition when automated resolution isn't possible. |  Hand-off to a service representative if the customer requests a refund over $100 or expresses dissatisfaction.|
 |Break multi-part instructions into smaller steps.      |   Avoids missed details and simplifies handoffs.|  Instead of Verify account and reset password, split into: 1. Verify account. 2. Reset password.       |
 |Don't use unnecessary technical or system jargon. |  Keeps instructions readable and usable without requiring technical expertise.|  Use Look up the customer’s order in the system, instead of Execute GET request on Order API. |
 

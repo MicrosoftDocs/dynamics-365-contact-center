@@ -35,7 +35,7 @@ Perform the steps in [Add a filter to an entire page](/power-bi/create-reports/p
 
 ## Add fallback action calls
 
-Fallback actions track the number of conversations that were handled by the system when the AI agent encountered system failures, errors, or couldn't process user inputs, preventing conversation breakdown and maintaining user engagement.
+Fallback actions track the number of conversations handled by the system when the AI agent encounters system failures, errors, or can't process user inputs. This prevents conversation breakdown and maintains user engagement.
 
 Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi-report-add-visualizations-i#add-visualizations-to-the-report) to represent **FactSession : Failed bot conversation** data in a [Single number card](/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#single-number) visual for fallback action calls on the bot dashboard.
 

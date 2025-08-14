@@ -53,7 +53,7 @@ Based on the value of **Type**, the following **Outcome** and **OutcomeReason** 
  If the session is engaged, the **Outcome** can be set to the following:
      - **Abandoned**
      - **HandOff**
-     - **Resolved**. 
+ - **Resolved**. 
 The corresponding **OutcomeReason** can be set to the following:
    - **SystemError**
    - **UserError**

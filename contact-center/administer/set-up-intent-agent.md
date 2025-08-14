@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 08/08/2025
+ms.date: 08/12/2025
 ms.custom: bap-template
 ---
 
@@ -47,7 +47,6 @@ Before you proceed, make sure you:
 ## Set up Copilot agents for intent management
 
 1. In Copilot Service admin center, navigate to the **Customer Intent Agent (preview)** page > **Intent-based suggestions** section.
-
 1. Select **Enable for chatbots** and then select **Manage**. The **AI Agents** page appears.
 1. Select the Copilot agent connected to your contact center environment.
 1. Select **Add intent-based features**, which takes you to **Manage component collections (preview)** in Microsoft Copilot Studio.

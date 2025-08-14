@@ -18,7 +18,10 @@ Customer Intent Agent for voice uses generative AI to autonomously discover inte
 
 - [Enable Customer Intent Agent](manage-customer-intent-agent.md#enable-customer-intent-agent).
 - [Intent discovery is set up](manage-customer-intent-agent.md#manage-intent-discovery-setup) and intents are available in the intent library.
+- [Service principal](#create-a-service-principal) for the customer organization is created.
 - [Instructions](manage-customer-intent-agent.md#manage-instructions-optional), [connectors](manage-customer-intent-agent.md#manage-connectors-for-ai-agents-optional), and knowledge are configured for intents marked for self-service.
+  > [!NOTE]
+  > You must share the connection for the custom connector with the following App ID:`d3e4eed9-fdab-4c55-a667-e4d1ffc8bb85`.
 - [New Copilot agents](/dynamics365/customer-service/administer/manage-your-bots?context=/dynamics365/contact-center/context/administer-context) are enabled for voice and connected to your contact center environment.
 
 > [!NOTE]
@@ -67,6 +70,17 @@ Follow these steps to configure the IVR agent to escalate the calls to the Custo
 - If the voice agent encounters any error, it escalates to a representative.
 - If the customer query is resolved, the agent ends the call.
 - If the customer remains silent, the agent ends the call.
+
+### Create a service principal
+
+To recreate the IVR workflows, the voice agent needs to access the connectors through a service principal that you must create for the environment where the customer data is stored.
+
+1. As a user with administrator permissions to access the environment, sign in to [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+1. In the site map, select **API Explorer**, and under **Resources available**, expand **servicePrincipals**, and select [**POST**](https://graph.microsoft.com/v1.0/servicePrincipals).
+1. Enter the following JSON in **Request Body**, and select **Run query**:
+   { "appId" : "d3e4eed9-fdab-4c55-a667-e4d1ffc8bb85"}
+
+   The service principal is created and displayed in **Response preview**.
 
 ### Related information
 

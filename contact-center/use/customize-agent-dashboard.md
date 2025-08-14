@@ -70,7 +70,7 @@ For example, a customer contacts support to check the order status. The customer
  - Session 1: Check order status with **Outcome** set to Resolved, **outcomeReason** set to Resolved
  - Session 2: Place a new order with **outcome** set to Abandoned, **outcomeReason** set to SystemError
  
-Since the conversation generated custom topics, the engagement type is classified as "Engaged."
+Since the conversation generated custom topics, the engagement type is classified as **Engaged.**
 
 Perform the steps in [add a matrix visualization](/power-bi/visuals/power-bi-visualization-matrix-visual#lets-create-a-matrix-visual) to represent **Session level outcome reason** in a matrix visual to view metrics by outcome reason for AI agents to the report.
 

@@ -62,7 +62,7 @@ For every line of business that you identify, you can create rules for cases and
 1. On the dialog that appears, enter the rule name and select a line of business.
 1. In **Conditions**, define the conditions for the rules to run.
    > [!IMPORTANT]
-   > Configure the workstream name in the line of business configuration rules for chat workstreams. Because the chat widget is tightly coupled with the line of business, by specifying the line of business, you can make sure that the chat belongs to the same line of business as its workstream. Otherwise, the chat might end up with a different line of business other than its workstream.
+   > Configure the workstream name in the line of business configuration rules for chat workstreams. Because the system tightly couples the chat widget with the line of business, specifying the line of business helps you make sure that the chat belongs to the same line of business as its workstream. Otherwise, the chat might end up with a different line of business other than its workstream.
 
 1. Optionally, select **Run backfill**. When selected, it’s used to associate past cases with a line of business for intent discovery. The system makes sure that intent discovery works properly by tagging past cases with the appropriate line of business.
 1. Save and close.
@@ -78,14 +78,14 @@ You need to run the AI model on data sources like conversations to identify inte
 1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage intent discovery setup**.
 
 1. On the **Manage intent discovery setup** page, select **Add intent discovery setting**.
-1. In **Intent discovery settings**, enter the following details:
+1. In **Intent discovery settings**, enter the  details:
    - **Name**: An intuitive name that meets your business requirement.
    - **Data source**: Available for conversations only and therefore read-only.
    - **Intent group granularity**: Select **Low**, **Medium**, or **High** in the list. If you select low, fewer intent groups are created, and vice versa happens if you select high. If you select **Medium**, the system creates a balanced number of intent groups between low and high.
    - **Record status**: Select **Pending**, **Approved**, or **Discarded** in the list to indicate the default status that you'd like to set for the newly discovered intents.
 1. If you want to simulate the intent discovery, select **Test**. After the discovery is complete, a simulation of the intent groups is available.
 1. Select **Add into job schedule** to run the intent discovery.
-1. In **Test results**, select the simulation to view the details. The simulation details, such as status, data source, and intent group granularity are displayed. Simulation uses the last 1000 records to generate intent and intent groups. The simulation helps administrators evaluate the intents and decide on granularity.
+1. In **Test results**, select the simulation to view the details. The simulation details, such as status, data source, and intent group granularity are displayed. Simulation uses the last 1,000 records to generate intent and intent groups. The simulation helps administrators evaluate the intents and decide on granularity.
 1. Select the simulation, and then select **Export to Excel** option. The Excel file is downloaded to your local computer.
 1. After you validate and choose the intent group granularity that reflects your business needs, select **Set up intent discovery** to run the intent discovery.
    > [!NOTE]
@@ -124,10 +124,10 @@ You can logically organize the intents into intent groups. The intent group repr
    :::image type="content" source="../media/manage-intents.png" alt-text="Screenshot of manage intents in intent group." lightbox="../media/manage-intents.png":::
 
 1. Select **Manage intents** to add new intents or remove existing ones.
-1. On the **Manage intents** dialog, you can do the following updates:
-   - Select **Add intents** > **Add existing**, and select the intents that you want to add to the group. A message appears stating that changing the intents might affect other processes. 
+1. On the **Manage intents** dialog, you can do the  updates:
+   - Select **Add intents** > **Add existing**, and select the intents that you want to add to the group. A message appears, stating that changing the intents might affect other processes. 
    - Select **Add**. The intents are added to the list.
-   - Select an intent and do the following:
+   - Select an intent, and then do the following actions:
       - Discard an approved intent. The intent doesn't appear for selection in the **Add intents** list of any intent group.
       - Update the intent name. We recommend updating the name to address typos only. If you change the name, it can affect the accuracy of the AI model.
       - Remove an intent from the intent group.
@@ -147,22 +147,22 @@ You can logically organize the intents into intent groups. The intent group repr
 
 Set up instructions to streamline Customer Intent Agent behavior. You can add instructions for the line of business, intent groups, and intents.
 
-Do the following steps to add instructions:
+To add instructions, complete the following steps:
 
 1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage instructions (optional)**.
 
 1. On the **Manage instructions (preview)** page, select a line of business in **Select line of business**. If you don't specify a line of business, Customer Intent Agent follows the default instructions for the organization.
 1. In the **Line of business instructions (optional)** section, select **Add**.
-1. On the **Add instructions** dialog, add the instructions for the line of business. You can enter up to 4000 characters. Expand **View example instructions** to view sample instructions.
+1. On the **Add instructions** dialog, add the instructions for the line of business. You can enter up to 4,000 characters. Expand **View example instructions** to view sample instructions.
 1. Select **Save**. The instructions are available immediately for use by Customer Intent Agent.
 1. In the **Instructions for intent groups and intents** section, select the following options to create instructions for intent groups and intents.
    - **Manage Intent groups**: In the list of intent groups page, select an intent group.
        1. On the `<intent_group_name>` page, in **Intent group instructions (optional)** , select **Add**. The **Add instructions** dialog appears.
-       1. Add instructions for the intent group. You can enter up to 2000 characters.
+       1. Add instructions for the intent group. You can enter up to 2,000 characters.
        1. Save and close.
    - **Manage intents**: In the list of intents page, select an intent.
        1. On the `<intent_name>` page, in **Intent instructions (optional)** , select **Add**. The **Add instructions** dialog appears.
-       1. Add instructions for the intent. You can enter up to 2000 characters.
+       1. Add instructions for the intent. You can enter up to 2,000 characters.
        1. Save and close.
 
 You can edit or delete instructions for a line of business, intent groups, or intents using the **Edit** and **Delete** options in the instructions section of the corresponding pages.

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 08/12/2025
+ms.date: 08/15/2025
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template
@@ -191,11 +191,8 @@ Connectors let systems work together, transfer data, and allow AI agents to auto
 1. Select **Next**.
 1. On the **Set up the connector** dialog, select a connection from the **Connection** dropdown. You can also create a new connection in Power Platform. Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
     > [!NOTE]
-    > Make sure that the connection you select is shared with one of the following service principals:
-    > - Dynamics 365 Analytics (61d02d70-ab6c-4569-be48-787ea2cda65d)
-    > - Dynamics CCA Data Analytics (7c58187c-f28c-4cfb-998c-3d6ba580192c)
-    > - Dynamics 365 Analytics (079f5a03-090f-4720-90b9-e03942091e6e)
-
+    > Make sure that the connection you select is shared with the **Dynamics 365 Analytics** service principal. 
+    
     Learn more in [Share a custom connector in your organization](/connectors/custom-connectors/share).
 1. Specify if the type for the connector is **General** or **For specific intents**.
 1. If you select **For specific intents**, you need to map the custom connector as a solution as explained in the section that follows.

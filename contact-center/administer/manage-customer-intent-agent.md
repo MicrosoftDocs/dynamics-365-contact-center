@@ -82,7 +82,7 @@ You need to run the AI model on data sources like conversations to identify inte
    - **Name**: An intuitive name that meets your business requirement.
    - **Data source**: Available for conversations only and therefore read-only.
    - **Intent group granularity**: Select **Low**, **Medium**, or **High** in the list. If you select low, fewer intent groups are created, and vice versa happens if you select high. If you select **Medium**, the system creates a balanced number of intent groups between low and high.
-   - **Record status**: Select **Pending**, **Approved**, or **Discarded** in the list to indicate the default status that you'd like to set for the newly-discovered intents.
+   - **Record status**: Select **Pending**, **Approved**, or **Discarded** in the list to indicate the default status that you'd like to set for the newly discovered intents.
 1. If you want to simulate the intent discovery, select **Test**. After the discovery is complete, a simulation of the intent groups is available.
 1. Select **Add into job schedule** to run the intent discovery.
 1. In **Test results**, select the simulation to view the details. The simulation details, such as status, data source, and intent group granularity are displayed. Simulation uses the last 1000 records to generate intent and intent groups. The simulation helps administrators evaluate the intents and decide on granularity.
@@ -129,7 +129,7 @@ You can logically organize the intents into intent groups. The intent group repr
    - Select **Add**. The intents are added to the list.
    - Select an intent and do the following:
       - Discard an approved intent. The intent doesn't appear for selection in the **Add intents** list of any intent group.
-      - Update the intent name. We recommend to update the name to address typos only. If you change the name, it can affect the accuracy of the AI model.
+      - Update the intent name. We recommend updating the name to address typos only. If you change the name, it can affect the accuracy of the AI model.
       - Remove an intent from the intent group.
 1. Select **Save**.
 

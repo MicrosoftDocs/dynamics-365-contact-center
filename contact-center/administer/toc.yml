@@ -224,6 +224,10 @@
           href: /dynamics365/customer-service/administer/add-outbound-dialer-settings?context=/dynamics365/contact-center/context/administer-context  
         - name: Use Azure Virtual Desktop to access voice channel
           href: configure-voice-avd.md
+        - name: Set up microphone connection on representative sign-in
+          href: set-up-microphone-connection.md  
+        - name: Configure settings to improve call quality over Citrix virtual desktop
+          href: configure-voice-citrix-virtual-desktop.md
         - name: Install and manage Desktop companion application 
           href: install-manage-desktop-app.md
         - name: Support emergency calls made by customer service representatives
@@ -247,7 +251,7 @@
         - name: Configure multilingual IVR agents
           href: configure-multilingual-agents.md   
         - name: Configure fallback actions for the IVR agent
-          href: configure-fallback-actions-ivr-agent.md         
+          href: configure-fallback-actions-ivr-agent.md
         - name: View voice calls usage
           href: /dynamics365/customer-service/administer/voice-channel-usage?context=/dynamics365/contact-center/context/administer-context
         - name: Block spam numbers
@@ -270,13 +274,27 @@
           href: /dynamics365/customer-service/administer/voice-channel-pricing-scenarios?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ about the voice channel
           href: /dynamics365/customer-service/administer/voice-channel-faqs?context=/dynamics365/contact-center/context/administer-context
+      - name: Agent hub (preview)
+        items:
+        - name: Learn guide for AI agents and Copilot features
+          items:
+          - name: Overview of agent hub
+            href: overview-agent-hub.md
+          - name: Trust center for Dynamics 365
+            href: trust-center.md
+          - name: Security FAQs about AI agents
+            href: ai-agents-security-faqs.md
+        - name: Create rollout plans to manage AI agents
+          href: create-rollout-plans.md
+        - name: View Agent insights
+          href: ../use/agent-insights.md
       - name: Autonomous service agents (preview)
         items:
         - name: Overview of autonomous service agents
           href: autonomous-agents-overview.md
         - name: Manage consumption-based billing, capacity
           href: /dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context
-        - name: Customer Intent Agent 
+        - name: Customer Intent Agent
           items:
           - name: Overview of Customer Intent Agent
             href: overview-customer-intent-agent.md
@@ -288,6 +306,8 @@
             href: enable-intent-for-service-reps.md
           - name: Configure intent-based suggestions for Copilot agents
             href: set-up-intent-agent.md
+          - name: Set up voice agents to use intents
+            href: set-up-voice-agents-to-use-intents.md
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features
@@ -352,10 +372,10 @@
         items:
         - name: Set up SMS channels
           items:
+          - name: Overview of SMS channels
+            href: /dynamics365/customer-service/administer/sms-channel-overview?context=/dynamics365/contact-center/context/administer-context
           - name: Configure an SMS channel using Azure Communication Services
-            href: /dynamics365/customer-service/administer/configure-sms-channel-acs?context=/dynamics365/contact-center/context/administer-context
-          - name: Configure an SMS channel for TeleSign
-            href: /dynamics365/customer-service/administer/configure-sms-channel?context=/dynamics365/contact-center/context/administer-context
+            href: /dynamics365/customer-service/administer/configure-sms-channel-acs?context=/dynamics365/contact-center/context/administer-context          
           - name: Configure an SMS channel for Twilio
             href: /dynamics365/customer-service/administer/configure-sms-channel-twilio?context=/dynamics365/contact-center/context/administer-context
         - name: Set up social channels
@@ -422,6 +442,8 @@
           href: /dynamics365/customer-service/administer/record-identification-rule?context=/dynamics365/contact-center/context/administer-context
         - name: Close conversations automatically
           href: /dynamics365/customer-service/administer/auto-close-conversation-powerapps?context=/dynamics365/contact-center/context/administer-context
+        - name: Enable transfer of conversations
+          href: /dynamics365/customer-service/administer/enable-transfer-consult?context=/dynamics365/contact-center/context/administer-context
         - name: Manage authentication settings
           items:
           - name: Configure authentication settings for chat
@@ -564,6 +586,36 @@
           href: /dynamics365/customer-service/administer/migrate-channel-config-using-solutions?context=/dynamics365/contact-center/context/administer-context
         - name: Best practices for configuration lifecycle management
           href: alm-best-practices.md
+      - name: Migration solutions
+        items:      
+        - name: Migrate configuration data for records channel using solutions
+          href: /dynamics365/customer-service/administer/migrate-record-routing-config-using-solutions?context=/dynamics365/contact-center/context/administer-context
+        - name: Migration configuration data for channels using solutions
+          href: /dynamics365/customer-service/administer/migrate-channel-config-using-solutions?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for the record channel
+          items:
+          - name: Overview of data migration for records
+            href: /dynamics365/customer-service/administer/migrate-config-data-for-records-overview?context=/dynamics365/contact-center/context/administer-context
+          - name: Use FetchXML query to filter records
+            href: /dynamics365/customer-service/administer/use-fetchxml-filter-records?context=/dynamics365/contact-center/context/administer-context
+          - name: Verify migration of records
+            href: /dynamics365/customer-service/administer/migrate-config-data-verify?context=/dynamics365/contact-center/context/administer-context
+          - name: Troubleshoot migration of records
+            href: /dynamics365/customer-service/administer/migrate-config-data-troubleshoot?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for live chat
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-live-chat?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for the voice channel
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-voice-channel?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for SMS channel
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-sms-channel?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for WhatsApp through Twilio
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-whatsapp-through-twilio?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for custom messaging channel
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-custom-channel?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate automatic record creation rules and SLAs
+          href: /dynamics365/customer-service/administer/migrate-automatic-record-creation-and-sla-agreements?context=/dynamics365/contact-center/context/administer-context
+        - name: Strategy for migrating from contracts to entitlements
+          href: /dynamics365/customer-service/administer/contract-to-entitlement-migration?context=/dynamics365/contact-center/context/administer-context
       - name: Responsible AI
         items:
         - name: Overview
@@ -572,6 +624,8 @@
           href: ../implement/faq-rai-ai-agents.md
         - name: Responsible AI FAQ for Copilot in Customer Service
           href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/administer-context
+        - name: Responsible AI FAQs for NLUs in AI agents
+          href: ../implement/natural-language-ai-faq.md     
     - name: Implement Dynamics 365 Contact center
       href: ../implement/international-availability.md
     - name: Manage Dynamics 365 Contact Center

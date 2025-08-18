@@ -1,12 +1,12 @@
 ---
 title: Configure Teams Phone in voice channel
-description: Learn how to configure Teams Phone in the voice channel to streamline call management and enhance customer support.
+description: Learn how to configure Teams Phone in the voice channel to streamline call management and enhance customer support in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: null
-ms.date: 06/18/2025
+ms.date: 08/22/2025
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -21,7 +21,7 @@ Integrate your existing Microsoft Teams Phone with Dynamics 365 Contact Center t
 The high-level process to configure the Teams Phone is as follows:
 
 1. Verify prerequisites.
-1. Create a Teams resource account for the Dynamics 365 application ID and associate the Teams resource account with the Dynamics organization’s Azure Communication Services resource.
+1. Create a Teams resource account for the Dynamics 365 application ID and associate the Teams resource account with the Dynamics 365 organization’s Azure Communication Services resource.
 1. Assign a license to the Teams resource account.
 1. Assign a service number to the Teams resource account.
 1. Configure the Teams Phone in the voice channel.
@@ -31,9 +31,10 @@ You need to configure new IVR agents in Copilot Studio because the existing IVR 
 ## Prerequisites
 
 - Teams tenant with [Teams Phone license](/microsoftteams/teams-phone-licensing#teams-phone-licensing) with Teams Calling Plan, Teams Direct Routing, or Teams Operator Connect [PSTN connectivity](/microsoftteams/pstn-connectivity) options.
+
 - [Service phone number](/microsoftteams/manage-phone-numbers-landing-page#service-numbers).
-    - We recommend that you use a non-production service phone number for testing the Teams Phone.
-    - Create a resource account for the service number when you enable the Dynamics 365 organization for the Teams Phone system.
+  - We recommend that you use a non-production service phone number for testing the Teams Phone.
+  - Create a resource account for the service number when you enable the Dynamics 365 organization for the Teams Phone system.
 - Dynamics 365 Contact Center or Dynamics 365 Customer Service premium license with the [voice channel provisioned](../implement/provision-channels.md#set-up-channels) and [configured](/dynamics365/customer-service/administer/voice-channel-install). An Azure Communication Services resource is provisioned when you provision the voice channel.
 - User with License Administrator role and Teams administrator role.
   - A user with License Administrator, Teams administrator, and Skype for Business Administrator roles is needed. These roles are for creating the Teams resource account and assigning a Teams calling license to the Teams resource account.
@@ -54,6 +55,7 @@ Alternatively, you can run the following PowerShell cmdlets in the specified ord
 As a Teams administrator, run the following Teams PowerShell cmdlets in administrator mode.
 
 1. To sign in.
+
    ```
    Connect-MicrosoftTeams
    ``` 
@@ -96,7 +98,7 @@ If you're assigning a Direct Routing service phone to the Teams resource account
    ```   
    Set-CsPhoneNumberAssignment -Identity <TeamsResourceAccountEmailAddress> -PhoneNumber <OperatorConnectPhoneNumberInE164Format> -PhoneNumberType OperatorConnect
    ```
- 
+
 ## Configure Teams Phone in the voice channel
 
 Complete the following steps to configure inbound calling and sync the Teams service phone numbers.
@@ -109,14 +111,17 @@ Complete the following steps to configure inbound calling and sync the Teams ser
 1. [Create a workstream](/dynamics365/customer-service/administer/create-workstreams).
 1. Add a voice channel to the workstream for the Teams service phone number by performing the steps in [Set up inbound calling](/dynamics365/customer-service/administer/voice-channel-inbound-calling).
 
+> [!NOTE]
+> If you use [Teams Phone extensibility](/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-overview), use the Teams admin center to configure [caller ID](/microsoftteams/caller-id-policies) because the caller ID setting in Copilot Service admin center won't work.
+
 ## How representatives receive and handle the Teams calls
 
 When a customer calls the Teams Phone number to connect with a representative, the representative receives the call notification on both the Copilot Service workspace app and Teams desktop or web app. The representative must accept the call notification on the Copilot Service workspace app. The representative can use the call controls to interact with the customers.
+
+For compliance, when call recording is enabled, an announcement plays to notify participants that the call is being recorded.
 
 ### Related information
 
 [Call recordings and transcripts](/dynamics365/customer-service/administer/voice-channel-configure-transcripts?context=/dynamics365/contact-center/context/administer-context)   
 [Call a customer](/dynamics365/customer-service/use/voice-channel-call-customer?context=/dynamics365/contact-center/context/use-context)  
 [Use call controls and representative desktop for voice](../use/voice-channel-agent-experience.md)   
-
-

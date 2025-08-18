@@ -5,7 +5,7 @@ author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
-ms.date: 01/16/2025
+ms.date: 06/27/2025
 ms.custom: bap-template
 ms.collection:
 ---
@@ -32,7 +32,7 @@ The process for using the Power Automate flow is as follows:
 1. Configure the View-In-CRM functionality
 1. Import Power Automate flows
 1. Configure Incremental Data Sync (Create, Update, and Delete)
-1. Run the power automate flow
+1. Run the Power Automate flow
 
 ## Configure View-In-CRM functionality
 

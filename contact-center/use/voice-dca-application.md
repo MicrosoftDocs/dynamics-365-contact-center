@@ -39,8 +39,8 @@ Launch the application if you face issues such as network latency, web applicati
 You can do the following actions:
 
 - View the environment you're signed in to and your sign-in information.
-- View ongoing calls.
-- On an active call, you can use the call controls to mute, unmute the call, or end the call.
+- View ongoing calls. A message appears in the communication panel indicating that the call is handled by the Desktop companion application. If this message doesn't appear, the application might not be functioning as expected.
+- On an active call, you can use the call controls to mute, unmute, or end the call. 
 - You can switch between an active call and a call that's on hold.
 - Select **Settings** to do the following actions:
    - Select **Language** to specify the language you want to use.

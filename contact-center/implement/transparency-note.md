@@ -17,7 +17,7 @@ An AI system includes not only the technology, but also the people who will use 
 
 Microsoft’s Transparency Notes are part of a broader effort at Microsoft to put our AI Principles into practice. Learn more in [Microsoft AI principles](https://www.microsoft.com/ai/responsible-ai).
 
-## The basics of Constrained Speech Recognition
+## The basics of constrained speech recognition
 
 ### Introduction
 
@@ -117,7 +117,7 @@ following steps:
 
 The Constrained Speech Recognition engine is highly performant compared to alternative modalities of speech recognition, using limited memory when processing requests. Factors within the developers control have more of an impact on the performance than the system itself. The foremost objective for grammar development is to design for optimal recognition accuracy. The next goal is to write for clarity, maintainability, and extensibility. The third goal is to create efficient recognition contexts.
 
-## Best practices for improving system performance 
+## Best practices for improving system performance
 
 Below are grammar characteristics that affect resource usage:
 
@@ -146,7 +146,7 @@ In extreme circumstances, excess latency causes unsuccessful application transac
 
 Make sure to properly test grammars prior to deploying them within a live running system such as running test scenarios with various phrases to be spoken.
 
-## Evaluation of Constrained Speech Recognition
+## Evaluation of constrained speech recognition
 
 ### Evaluation methods
 

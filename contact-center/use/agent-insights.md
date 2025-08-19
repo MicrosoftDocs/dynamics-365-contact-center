@@ -7,8 +7,7 @@ ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot 
 ms.date: 08/01/2025
-ms.custom: 
-- bap-template
+ms.custom: bap-template
 ---
 
 # View Agent insights dashboard (preview)
@@ -30,7 +29,7 @@ The dashboard capabilities include:
 - **Top KPIs**: Gain insights into autonomous agents and customer service representatives' (service representatives or representatives) performance through metrics such as total volume and average handling time.
 - **AI agent-level insights**: Quickly assess the impact the AI agents are driving for the organization and the areas of opportunity for improvement.
 - **Volume breakdown**: View the volume breakdown by line of business, intent group, or channels to identify the top volume drivers and their autonomous rate per grouping if applicable.
-- **Volume funnel**: View and analyze the path of conversations or cases to identify the share of engagements falling out of the autonomous journey.
+- **Volume funnel**: View and analyze the path of conversations or cases to identify the share of engagements that are escalated to service representatives.
 
 ## Conversation performance
 
@@ -73,7 +72,7 @@ The following metrics are available.
 |-----------------|-------|-----------------|
 | Customer Intent Agent |                 | |
 | | Engagement count                      | Total number of conversations where Customer Intent Agent is engaged. |
-| | Solutions attempted (assisted service)| Total number of conversations where a solution was identified for the intent and attempted to use to resolve the conversation (knowledge article, action taken, custom agent). |
+| | Solutions attempted (assisted service)| Total number of conversations where a solution was identified for the intent and attempted to use to resolve the conversation (knowledge article, action taken, custom agent).<br> **NOTE**: In preview, this feature isn't available for IVR or voice agents. |
 | |Autonomous resolutions                 | Total number of conversations that were completed without requiring a service representative to be assigned (handled autonomously by Customer Intent Agent). |
 | Case Management Agent |                 | |
 | | Autonomous case processing volume     | Number of cases with autonomous actions to assist in processing the case. |

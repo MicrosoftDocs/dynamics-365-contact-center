@@ -224,6 +224,8 @@
           href: /dynamics365/customer-service/administer/add-outbound-dialer-settings?context=/dynamics365/contact-center/context/administer-context  
         - name: Use Azure Virtual Desktop to access voice channel
           href: configure-voice-avd.md
+        - name: Set up microphone connection on representative sign-in
+          href: set-up-microphone-connection.md  
         - name: Configure settings to improve call quality over Citrix virtual desktop
           href: configure-voice-citrix-virtual-desktop.md
         - name: Install and manage Desktop companion application 
@@ -249,7 +251,7 @@
         - name: Configure multilingual IVR agents
           href: configure-multilingual-agents.md   
         - name: Configure fallback actions for the IVR agent
-          href: configure-fallback-actions-ivr-agent.md         
+          href: configure-fallback-actions-ivr-agent.md
         - name: View voice calls usage
           href: /dynamics365/customer-service/administer/voice-channel-usage?context=/dynamics365/contact-center/context/administer-context
         - name: Block spam numbers
@@ -281,29 +283,31 @@
           - name: Trust center for Dynamics 365
             href: trust-center.md
           - name: Security FAQs about AI agents
-            href: copilot-security-faqs.md
-        - name: Autonomous service agents
-          items:
-          - name: Overview of autonomous service agents
-            href: autonomous-agents-overview.md
-          - name: Manage consumption-based billing, capacity
-            href: /dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context
-          - name: Customer Intent Agent
-            items:
-            - name: Overview of Customer Intent Agent
-              href: overview-customer-intent-agent.md
-            - name: Manage Customer Intent Agent
-              href: manage-customer-intent-agent.md
-            - name: Configure intent-based routing
-              href: /dynamics365/customer-service/administer/configure-intent-based-routing?context=/dynamics365/contact-center/context/administer-context
-            - name: Enable intent-based suggestions for service representatives
-              href: enable-intent-for-service-reps.md
-            - name: Configure intent-based suggestions for Copilot agents
-              href: set-up-intent-agent.md
+            href: ai-agents-security-faqs.md
         - name: Create rollout plans to manage AI agents
           href: create-rollout-plans.md
         - name: View Agent insights
           href: ../use/agent-insights.md
+      - name: Autonomous service agents (preview)
+        items:
+        - name: Overview of autonomous service agents
+          href: autonomous-agents-overview.md
+        - name: Manage consumption-based billing, capacity
+          href: /dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context
+        - name: Customer Intent Agent
+          items:
+          - name: Overview of Customer Intent Agent
+            href: overview-customer-intent-agent.md
+          - name: Manage Customer Intent Agent
+            href: manage-customer-intent-agent.md
+          - name: Configure intent-based routing
+            href: /dynamics365/customer-service/administer/configure-intent-based-routing?context=/dynamics365/contact-center/context/administer-context
+          - name: Enable intent-based suggestions for service representatives
+            href: enable-intent-for-service-reps.md
+          - name: Configure intent-based suggestions for Copilot agents
+            href: set-up-intent-agent.md
+          - name: Set up voice agents to use intents
+            href: set-up-voice-agents-to-use-intents.md
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features
@@ -582,8 +586,32 @@
           href: /dynamics365/customer-service/administer/migrate-channel-config-using-solutions?context=/dynamics365/contact-center/context/administer-context
         - name: Best practices for configuration lifecycle management
           href: alm-best-practices.md
-      - name: Migration solutions    
-        items:
+      - name: Migration solutions
+        items:      
+        - name: Migrate configuration data for records channel using solutions
+          href: /dynamics365/customer-service/administer/migrate-record-routing-config-using-solutions?context=/dynamics365/contact-center/context/administer-context
+        - name: Migration configuration data for channels using solutions
+          href: /dynamics365/customer-service/administer/migrate-channel-config-using-solutions?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for the record channel
+          items:
+          - name: Overview of data migration for records
+            href: /dynamics365/customer-service/administer/migrate-config-data-for-records-overview?context=/dynamics365/contact-center/context/administer-context
+          - name: Use FetchXML query to filter records
+            href: /dynamics365/customer-service/administer/use-fetchxml-filter-records?context=/dynamics365/contact-center/context/administer-context
+          - name: Verify migration of records
+            href: /dynamics365/customer-service/administer/migrate-config-data-verify?context=/dynamics365/contact-center/context/administer-context
+          - name: Troubleshoot migration of records
+            href: /dynamics365/customer-service/administer/migrate-config-data-troubleshoot?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for live chat
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-live-chat?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for the voice channel
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-voice-channel?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for SMS channel
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-sms-channel?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for WhatsApp through Twilio
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-whatsapp-through-twilio?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configuration data for custom messaging channel
+          href: /dynamics365/customer-service/administer/migrate-config-data-for-custom-channel?context=/dynamics365/contact-center/context/administer-context
         - name: Migrate Copilot Studio survey agents configurations
           href: migrate-survey-agents.md
       - name: Responsible AI

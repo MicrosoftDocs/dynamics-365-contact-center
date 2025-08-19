@@ -30,7 +30,7 @@ You can use one of the following options:
 
 ## Migrate survey agent configuration
 
-1. In Power Apps, create a new solution in the source environment where the survey agents are configured. Learn more in [Create a solution](/power-apps/maker/data-platform/create-solution).
+1. In Power Apps, create a solution in the source environment where the survey agents are configured. Learn more in [Create a solution](/power-apps/maker/data-platform/create-solution).
 1. In the solution, select **Add existing**> **More** > **Other** > **Customer feedback survey**. The **
 Add existing Customer feedback survey** pane appears.
 1. Select the survey agents you want to migrate. You can select multiple agents at once.

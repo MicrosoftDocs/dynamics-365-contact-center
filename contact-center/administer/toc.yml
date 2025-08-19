@@ -612,7 +612,7 @@
           href: /dynamics365/customer-service/administer/migrate-config-data-for-whatsapp-through-twilio?context=/dynamics365/contact-center/context/administer-context
         - name: Migrate configuration data for custom messaging channel
           href: /dynamics365/customer-service/administer/migrate-config-data-for-custom-channel?context=/dynamics365/contact-center/context/administer-context
-        - name: Migrate Copilot Studio survey agents configurations
+        - name: Migrate configurations containing Copilot Studio survey agents
           href: migrate-survey-agents.md
       - name: Responsible AI
         items:

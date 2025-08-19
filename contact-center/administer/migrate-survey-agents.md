@@ -20,7 +20,7 @@ You can migrate Microsoft Copilot Studio survey agent configurations between Dat
 You can use one of the following options: 
 
 - migrate the survey agent configuration only.
-- migrate survey agent and the corresponding workstream configurations. 
+- migrate the survey agent and corresponding workstream configurations. 
 
 ## Prerequisites
 

@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: gandhamm
 ms.topic: how-to 
 ms.collection: 
-ms.date: 07/29/2025
+ms.date: 08/19/2025
 ms.custom: bap-template 
 ---
 
@@ -63,5 +63,6 @@ To migrate chat and voice workstream configurations along with survey agent conf
 1. Save and publish the configurations.
 1. In Copilot Service Admin center, verify that the chat and voice workstreams are working as expected. Set up the queue and update the other required settings accordingly
 
+## Related information
 
-
+[Configure feedback surveys using Copilot Studio (preview)](configure-surveys.md)

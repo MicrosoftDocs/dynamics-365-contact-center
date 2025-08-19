@@ -178,9 +178,9 @@ Please note that this information represents what we know so far about fairness 
 
 ## Learn more about responsible AI
 
-[Microsoft AI principles](https://www.microsoft.com/en-us/ai/responsible-ai)  
-[Microsoft responsible AI resources](https://www.microsoft.com/en-us/ai/responsible-ai-resources)  
-[Microsoft Azure Learning courses on responsible AI](https://docs.microsoft.com/en-us/learn/paths/responsible-ai-business-principles/)  
+[Microsoft AI principles](https://www.microsoft.com/ai/responsible-ai)  
+[Microsoft responsible AI resources](https://www.microsoft.com/ai/responsible-ai-resources)  
+[Microsoft Azure Learning courses on responsible AI](/learn/paths/responsible-ai-business-principles/)  
 
 ## Learn more about Constrained Speech Recognition
 

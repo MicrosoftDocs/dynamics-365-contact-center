@@ -377,9 +377,9 @@
       - name: Responsible AI FAQs for NLUs in AI agents
         href: ../implement/natural-language-ai-faq.md?context=/dynamics365/contact-center/context/use-context
       - name: Constrained speech recognition
-          items:
-          - name: Transparency note
-            href: ../implement/transparency-note.md?context=/dynamics365/contact-center/context/use-context
+        items:
+        - name: Transparency note
+          href: ../implement/transparency-note.md?context=/dynamics365/contact-center/context/use-context
     - name: Resources
       items:
       - name: Training

@@ -29,8 +29,6 @@ You can migrate the agents in one of the following ways:
 
 ## Migrate survey agent configuration
 
-To migrate survey agent configurations, perform the following steps:
-
 1. In Power Apps, create a new solution in the source environment where the survey agents are configured. Learn more in [Create a solution](/power-apps/maker/data-platform/create-solution).
 1. In the solution, select **Add existing**> **More** > **Other** > **Customer feedback survey**. The **
 Add existing Customer feedback survey** pane appears.
@@ -44,7 +42,7 @@ Add existing Customer feedback survey** pane appears.
 1. In Microsoft Copilot Studio, make sure the survey agents are working as expected and that the connection references are properly configured to point to the current organization. Learn more in [Configure and manage connections](/microsoft-copilot-studio/authoring-connections).
 1. Save and publish the agents.
 
-## Migrate chat, voice workstream and survey agent configuration
+## Migrate chat, voice workstream, and survey agent configuration
 
 To migrate chat and voice workstream configurations along with survey agent configurations, perform the following steps. We recommend that you remove all the voice channel settings in the target environment before you start the migration.
 
@@ -55,7 +53,7 @@ To migrate chat and voice workstream configurations along with survey agent conf
 5. Turn on the **Allow customizations** toggle.
 6. Publish the customizations and then [export the solution as a managed solution](/power-apps/maker/data-platform/export-solutions#export-from-power-apps). A .zip file is downloaded to your local machine.
 7. In the target environment, import the solution you downloaded from the source environment. Learn more in [Import a solution](/power-apps/maker/data-platform/import-update-export-solutions).
-1. In Copilot Service Admin center, verify the following:
+1. In Copilot Service Admin center, verify the following information:
     - Chat and voice workstreams are available.
     - The survey agent is available with the status set to Ready.
 1. In Power Apps, verify that the imported connection references are connected to Dataverse. Make sure the Dataverse connection is present in the destination environment. If the references are missing, add a new connection to Microsoft Copilot Studio. Learn more in [Use a connection reference in a solution with Microsoft Dataverse](/power-apps/maker/data-platform/create-connection-reference).

@@ -36,7 +36,7 @@ Add existing Customer feedback survey** pane appears.
 1. Select the survey agents you want to migrate. You can select multiple agents at once.
 1. For the selected agents, select **Properties** for the **Conversation Start** topic. The **Managed Properties** pane appears. 
 1. Turn on the **Allow customizations** toggle.
-1. Publish the customizations and then [export the solution](/power-apps/maker/data-platform/export-solutions#export-from-power-apps). A .zip file is downloaded to your local machine.
+1. Publish the customizations and then [export the solution](/power-apps/maker/data-platform/export-solutions#export-from-power-apps). A .zip file is downloaded to your local computer.
 1. In the target environment, import the solution you downloaded from the source environment. Learn more in [Import a solution](/power-apps/maker/data-platform/import-update-export-solutions).
 1. In Copilot Service Admin center, verify that the AI agent is available and the status is Ready. Learn more in [Configure feedback surveys using Copilot Studio](../administer/configure-surveys.md). 
 1. In Power Apps, verify that the imported connection references are connected to Dataverse. Make sure the Dataverse connection is present in the destination environment. If the references are missing, add a new connection to Microsoft Copilot Studio. Learn more in [Use a connection reference in a solution with Microsoft Dataverse](/power-apps/maker/data-platform/create-connection-reference).

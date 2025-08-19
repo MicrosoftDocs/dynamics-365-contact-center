@@ -5,10 +5,10 @@ author: gandhamm
 ms.author: mgandham
 ms.reviewer: gandhamm
 ms.topic: how-to 
-ms.custom: bap-ai-copilot
+ms.custom: 
 ms.collection: 
 ms.date: 08/19/2025
-ms.custom: bap-template 
+ms.custom: bap-ai-copilot
 ---
 
 

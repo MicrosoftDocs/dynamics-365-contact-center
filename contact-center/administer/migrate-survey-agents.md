@@ -17,7 +17,7 @@ ms.custom: bap-ai-copilot
 
 You can migrate Microsoft Copilot Studio survey agent configurations between Dataverse environments using the Application Lifecycle Management (ALM) framework. The ALM framework allows you to transfer survey agents, connection references, and related components while maintaining functionality across environments
 
-You can migrate the agents in one of the following ways: 
+You can use one of the following options: 
 
 - migrate the survey agent configuration only.
 - migrate survey agent and the corresponding workstream configurations. 

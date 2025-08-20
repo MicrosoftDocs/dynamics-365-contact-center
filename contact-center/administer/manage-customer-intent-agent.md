@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 08/15/2025
+ms.date: 08/20/2025
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template
@@ -207,7 +207,8 @@ Connectors let systems work together, transfer data, and allow AI agents to auto
 1. Select **Save and close**.
 
 > [!NOTE]
-> To map a connector to an intent, the connector must have one action only. If your connector has multiple actions, you can't run any actions for that intent.
+> - To map a connector to an intent, the connector must have one action only. If your connector has multiple actions, you can't run any actions for that intent.
+> - There may be up to a 15-minute delay between when you add the connector and when Customer Intent Agent uses it. This time delay also applies when you remove a connector.
 
 You can edit or delete a connector after you select the required connector on the **Manage custom connectors (preview)** page. 
 

@@ -112,13 +112,21 @@ Complete the following steps to configure inbound calling and sync the Teams ser
 1. Add a voice channel to the workstream for the Teams service phone number by performing the steps in [Set up inbound calling](/dynamics365/customer-service/administer/voice-channel-inbound-calling).
 
 > [!NOTE]
-> If you use [Teams Phone extensibility](/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-overview), use the Teams admin center to configure [caller ID](/microsoftteams/caller-id-policies) because the caller ID setting in Copilot Service admin center won't work.
+>
+> - If you use [Teams Phone extensibility](/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-overview), use the Teams admin center to configure [caller ID](/microsoftteams/caller-id-policies) because the caller ID setting in Copilot Service admin center won't work.
+> - Teams SME (bridged) transfer and Teams SME consult aren't supported.
 
 ## How representatives receive and handle the Teams calls
 
 When a customer calls the Teams Phone number to connect with a representative, the representative receives the call notification on both the Copilot Service workspace app and Teams desktop or web app. The representative must accept the call notification on the Copilot Service workspace app. The representative can use the call controls to interact with the customers.
 
 For compliance, when call recording is enabled, an announcement plays to notify participants that the call is being recorded.
+
+### FAQ
+
+**What should I do if the conversation form fails to load after initiating or connecting an outbound call?**
+
+After the system initiates the outbound call, if issues arise in assigning the outbound conversation, the representative receives an alert that the conversation isn't created. The alert suggests them to initiate the outbound call to the customer again.
 
 ### Related information
 

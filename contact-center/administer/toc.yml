@@ -612,10 +612,8 @@
           href: /dynamics365/customer-service/administer/migrate-config-data-for-whatsapp-through-twilio?context=/dynamics365/contact-center/context/administer-context
         - name: Migrate configuration data for custom messaging channel
           href: /dynamics365/customer-service/administer/migrate-config-data-for-custom-channel?context=/dynamics365/contact-center/context/administer-context
-        - name: Migrate automatic record creation rules and SLAs
-          href: /dynamics365/customer-service/administer/migrate-automatic-record-creation-and-sla-agreements?context=/dynamics365/contact-center/context/administer-context
-        - name: Strategy for migrating from contracts to entitlements
-          href: /dynamics365/customer-service/administer/contract-to-entitlement-migration?context=/dynamics365/contact-center/context/administer-context
+        - name: Migrate configurations containing Copilot Studio survey agents
+          href: migrate-survey-agents.md
       - name: Responsible AI
         items:
         - name: Overview

@@ -221,7 +221,7 @@ You can obtain customer consent for post-call surveys as follows:
 
 The survey results are stored in Dataverse tables. To view the survey responses, in Power Apps, go to **Tables**, and select **Customer feedback survey response**.
 
-The CSAT scores are displayed in the Omnichannel historical analytics report.
+The CSAT scores are displayed in the Omnichannel historical analytics report if the values are stored in numerical format in the MCS_CSAT variable. 
 
 ## Configure case resolution survey
 

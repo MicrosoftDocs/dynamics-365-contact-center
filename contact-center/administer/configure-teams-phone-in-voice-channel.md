@@ -113,7 +113,7 @@ Complete the following steps to configure inbound calling and sync the Teams ser
 
 > [!NOTE]
 >
-> - If you use [Teams Phone extensibility](/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-overview), use the Teams admin center to configure [caller ID](/microsoftteams/caller-id-policies) because the caller ID setting in Copilot Service admin center won't work.
+> - If you use [Teams Phone extensibility](/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-overview), use the Teams admin center to configure the [caller ID](/microsoftteams/caller-id-policies) because the caller ID setting in Copilot Service admin center won't work.
 > - Teams SME (bridged) transfer and Teams SME consult aren't supported.
 
 ## How representatives receive and handle the Teams calls
@@ -126,7 +126,7 @@ For compliance, when call recording is enabled, an announcement plays to notify 
 
 **What should I do if the conversation form fails to load after initiating or connecting an outbound call?**
 
-After the system initiates the outbound call, if issues arise in assigning the outbound conversation, the representative receives an alert that the conversation isn't created. The alert suggests them to initiate the outbound call to the customer again.
+After the system initiates the outbound call, if issues arise in assigning the outbound conversation, the representative receives an alert that the conversation isn't created. The alert suggests that they initiate the outbound call to the customer again.
 
 ### Related information
 

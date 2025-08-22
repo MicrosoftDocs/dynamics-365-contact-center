@@ -4,7 +4,7 @@ description: This transparency note discusses constrained speech recognition and
 author: neeranelli
 ms.author: sambobo
 ms.reviewer: nenellim
-ms.date: 08/22/2025
+ms.date: 08/25/2025
 ms.topic: concept-article
 ms.custom: bap-template
 ---
@@ -160,7 +160,7 @@ Some commonly used metrics for evaluating constrained speech recognition include
 
 - **Latency**: This measures the time it takes for the system to process the spoken input and produce a recognition result. Lower latency is crucial for real-time applications.
 
-- **False Accept / Reject Rate**: this measures false positives and negatives the system experiences. This directly affects caller containment and application success rates for contact center scenarios.
+- **False Accept/Reject Rate**: this measures false positives and negatives the system experiences. This directly affects caller containment and application success rates for contact center scenarios.
 
 ## Fairness considerations
 
@@ -184,4 +184,4 @@ Please note that this information represents what we know so far about fairness 
 
 ## Learn more about constrained speech recognition
 
-{Microsoft Learn Document here}
+[Use external speech grammars](/microsoft-copilot-studio/voice-external-grammars)  

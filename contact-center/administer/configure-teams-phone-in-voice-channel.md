@@ -106,14 +106,14 @@ Complete the following steps to configure inbound calling and sync the Teams ser
 1. In the site map of Copilot Service admin center, select **Channels** in **Customer support**. The **Channels** page appears.
 1. Select **Manage** for **Phone numbers**.
 1. On the **Phone numbers** page, select **Advanced**.
-1. On the **Manage telephony** page, navigate to the **Teams telephony** tab. You’ll see the Azure Communication Service immutable resource ID with a Dynamics 365 Application ID.
+1. On the **Manage telephony** page, navigate to the **Teams telephony** tab. The Azure Communication Service immutable resource ID with a Dynamics 365 Application ID displays.
 1. Select **Sync** to create the phone number record for the Teams service number.
 1. [Create a workstream](/dynamics365/customer-service/administer/create-workstreams).
 1. Add a voice channel to the workstream for the Teams service phone number by performing the steps in [Set up inbound calling](/dynamics365/customer-service/administer/voice-channel-inbound-calling).
 
 > [!NOTE]
 >
-> - If you use [Teams Phone extensibility](/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-overview), use the Teams admin center to configure the [caller ID](/microsoftteams/caller-id-policies) because the caller ID setting in Copilot Service admin center won't work.
+> - If you use [Teams Phone extensibility](/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-overview), use the Teams admin center to configure the [caller ID](/microsoftteams/caller-id-policies) because the caller ID setting in Copilot Service admin center doesn't work.
 > - Teams SME (bridged) transfer and Teams SME consult aren't supported.
 
 ## How representatives receive and handle the Teams calls

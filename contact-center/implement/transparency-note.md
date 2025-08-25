@@ -29,24 +29,24 @@ Constrained speech recognition engines are especially useful for:
 
 - Domain specific large lists (stocks, addresses, names).
 - Small scoped applications that are designed for interactions with a small set of words and phrases to recognize.
-- Directed dialog to assist in navigating a menu tree of items, either used for the first interaction of a caller, or as the basis of the system’s conversational design.
+- Directed dialog to help navigate a menu tree of items, either used for the first interaction of a caller, or as the basis of the system’s conversational design.
 
 ### Key terms
 
 | Term                                            | Definition         |
 |-------------------------------------------------|--------------------|
-| Grammar                                         | A *grammar* is a description of the words and phrases that a speech recognizer will understand and interpret. Grammars are loaded by the recognizer at runtime to convert the user’s spoken responses and commands into information the voice application can use. |
+| Grammar                                         | A *grammar* is a description of the words and phrases that a speech recognizer understands and interprets. The recognizer loads the grammars at runtime to convert the user’s spoken responses and commands into information the voice application can use. |
 | GrXML                                           | The format in which grammars are composed. |
 | Speech Recognition Grammar Specification (SRGS) | The W3C standard for defining grammars.   |
-| Utterance                                       | The spoken words or phrases from a user to a voice AI system that are interpreted by the speech recognition system. |
+| Utterance                                       | The spoken words or phrases from a user to a voice AI system that the speech recognition system interprets. |
 
 ## Capabilities
 
 ### System behavior
 
-Each time the recognizer interprets a user utterance, it compiles a list of the closest possible matches to return to the voice application. This list is called the *n-best list*, since it is made up of a prespecified number *n* of interpretations that best match what the user seems to have said. When the user speaks, the recognizer searches for the best matches among the items defined in the grammars, and adds each matching interpretation to the candidates being considered for the n-best list. During this search, the recognizer uses acoustic models to analyze the audio input, lexical models to determine the most probable sentences in the grammars, and semantic models to determine the most probable meanings of what the caller has said. The recognizer searches until it has found the highest possible interpretations, or until the remaining items couldn't possibly match what was heard.
+Each time the recognizer interprets a user utterance, it compiles a list of the closest possible matches to return to the voice application. This list is called as the *n-best l    ist*, since it's made up of a prespecified number *n* of interpretations that best match what the user seems to have said. When the user speaks, the recognizer searches for the best matches among the items defined in the grammars. The recognizer adds each matching interpretation to the candidates being considered for the n-best list. While searching, the recognizer uses acoustic models to analyze the audio input, lexical models to determine the most probable sentences in the grammars, and semantic models to determine the most probable meanings of what the caller has said. The recognizer searches until it finds the highest possible interpretations, or until the remaining items couldn't possibly match what was heard.
 
-The recognizer assigns a confidence score to each item in the candidate list, and ranks them from highest confidence to lowest. The recognizer re-assesses and fine-tunes these scores as new interpretations are found. If the grammars allow homonyms (words that sound identical but have different meanings), and one is spoken, the recognizer assigns the homonyms to separate interpretations with identical confidence scores. The recognizer refines the candidate list by processing any constraint lists and/or semantic interpretation scripts (ECMAScript) specified in the grammars. The recognizer removes any interpretations that don't meet the target confidence levels configured for the recognition. The recognizer returns the final top n results to the application. This n-best list contains the matched text (for the entire utterance, and for individual slots), confidence scores, and any keys and values set for the utterances.
+The recognizer assigns a confidence score to each item in the candidate list, and ranks them from highest confidence to lowest. The recognizer reassesses and fine-tunes these scores as new interpretations are found. If the grammars allow homonyms (words that sound identical but have different meanings), and one is spoken, the recognizer assigns the homonyms to separate interpretations with identical confidence scores. The recognizer refines the candidate list by processing any constraint lists and/or semantic interpretation scripts (ECMAScript) specified in the grammars. The recognizer removes any interpretations that don't meet the target confidence levels configured for the recognition. The recognizer returns the final top n results to the application. This n-best list contains the matched text (for the entire utterance, and for individual slots), confidence scores, and any keys and values set for the utterances.
 
 ## Use cases
 
@@ -54,7 +54,7 @@ The recognizer assigns a confidence score to each item in the candidate list, an
 
 Constrained speech recognition can be used in multiple scenarios. The system’s intended uses include:
 
-- **Recognize spoken words**: To translate speech into text constrained by the definitive list provided to the system (via a “grammar”) such as alphanumeric license plates and social security numbers input or list-based corporate directory, stock tickers, and addresses.
+- **Recognize spoken words**: To translate speech into text constrained by the definitive list provided to the system via a "grammar". For example, alphanumeric license plates and social security numbers input or list-based corporate directory, stock tickers, and addresses.
 
 - **Validate input**: To validate that what was spoken is intended to be accepted by the system. For example, validating that a credit card number is correct (mathematically).
 
@@ -64,7 +64,7 @@ Constrained speech recognition can be used in multiple scenarios. The system’s
 
 We encourage customers to use constrained speech recognition in their innovative solutions or applications. However, here are some considerations when choosing a use case:
 
-- **Disclosure**: Consistent with any AI-agent creation, always disclose to a caller that the system they are interacting with is AI powered.
+- **Disclosure**: Consistent with any AI-agent creation, always disclose to a caller that the system they're interacting with is AI powered.
 
 - **Unsupported uses**:
 
@@ -72,15 +72,15 @@ We encourage customers to use constrained speech recognition in their innovative
 
   - **Intent interpretation**: Mapping the person's spoken words into an interpreted intent, as opposed to a transcription.
 
-- **Legal and regulatory considerations**: Organizations need to evaluate potential specific legal and regulatory obligations when using any AI services and solutions, which may not be appropriate for use in every industry or scenario. Restrictions may vary based on regional or local regulatory requirements. Additionally, AI services or solutions are not designed for and may not be used in ways prohibited in applicable terms of service and relevant codes of conduct.
+- **Legal and regulatory considerations**: Organizations need to evaluate potential specific legal and regulatory obligations when using any AI services and solutions, which might not be appropriate for use in every industry or scenario. Restrictions might vary based on regional or local regulatory requirements. Additionally, AI services or solutions aren't designed for and might not be used in ways prohibited in applicable terms of service and relevant codes of conduct.
 
 ## Limitations
 
-As stated previously, constrained speech recognition performs exceptionally well against specific use cases such as alphanumeric and list-based recognition tasks where the information is explicit, precise, and limited from the user. By contrast, traditional speech-to-text systems that use semantic based or natural language understanding models are best for recognizing a wide-range of spoken topics, interpreting at or around the model. Explicitly put, any speech input that is outside the definition of the grammar will result in no recognition, thus, it's encouraged for developers building voice-based applications to consider where it's appropriate to use constrained speech versus alternative methods.
+As stated previously, constrained speech recognition performs exceptionally well against specific use cases such as alphanumeric and list-based recognition tasks where the information is explicit, precise, and limited from the user. By contrast, traditional speech-to-text systems that use semantic-based or natural language understanding models are best for recognizing a wide-range of spoken topics, interpreting at or around the model. Explicitly put, any speech input that is outside the definition of the grammar results in no recognition. Thus, t's encouraged for developers building voice-based applications to consider where it's appropriate to use constrained speech versus alternative methods.
 
 ### Technical limitations, operational factors, and ranges
 
-For constrained speech recognition specifically to work accurately, a well-designed grammar must be able to accept many different user responses, and interpret them quickly, accurately, and efficiently. This means that a developer must be able to predict what sort of responses each application prompt will produce, and encode them in a grammar as efficiently as possible. This in turn means that grammars must be designed very much in parallel with the voice application.
+For constrained speech recognition specifically to work accurately, a well-designed grammar must be able to accept many different user responses, and interpret them quickly, accurately, and efficiently. This means that a developer must be able to predict the responses each application prompt will produce, and encode them in a grammar as efficiently as possible. This in turn means that grammars must be designed in parallel with the voice application.
 
 A good grammar balances these goals:
 
@@ -130,7 +130,7 @@ When a caller says a word or phrase that can't be parsed by the grammar, the wor
 
 *Latency* is defined as the elapsed time after the caller stops speaking (including the configured end-of-speech timeout) until a recognition result is returned to the application. When latency is too high, the user experience degrades; the system appears sluggish, which can be frustrating to the user and leads to further user interface complications.
 
-In extreme circumstances, excess latency causes unsuccessful application transactions if user stops speaking without accomplishing the goal of their conversation. Poor recognition response times can have many contributing factors:
+In extreme circumstances, excess latency causes unsuccessful application transactions if the user stops speaking without accomplishing the goal of their conversation. Poor recognition response times can have many contributing factors:
 
 - Use of very large grammars containing hundreds of thousands of items.
 
@@ -148,29 +148,30 @@ Make sure to properly test grammars prior to deploying them within a live runnin
 
 Some commonly used metrics for evaluating constrained speech recognition include:
 
-- **Word Error Rate (WER)**: This measures the percentage of words that are incorrectly recognized. It is calculated as the sum of substitutions, deletions, and insertions divided by the total number of words in the reference.
+- **Word error rate (WER)**: This measures the percentage of words that are incorrectly recognized. It is calculated as the sum of substitutions, deletions, and insertions divided by the total number of words in the reference.
 
-- **N-Best List Accuracy**: This evaluates the accuracy of the top N hypotheses generated by the recognizer. It is useful for understanding how often the correct interpretation is among the top suggestions.
+- **N-best list accuracy**: This evaluates the accuracy of the top N hypotheses generated by the recognizer. It's useful for understanding how often the correct interpretation is among the top suggestions.
 
 - **Coverage**: This metric assesses whether the grammar includes all the necessary phrases and variations that users might say. A grammar with good coverage ensures that the system can handle a wide range of inputs.
 
 - **Latency**: This measures the time it takes for the system to process the spoken input and produce a recognition result. Lower latency is crucial for real-time applications.
 
-- **False Accept/Reject Rate**: this measures false positives and negatives the system experiences. This directly affects caller containment and application success rates for contact center scenarios.
+- **False accept/reject rate**: This measures false positives and negatives the system experiences. This directly affects caller containment and application success rates for contact center scenarios.
 
 ## Fairness considerations
 
-At Microsoft, we strive to empower every person on the planet to do more. An essential part of this goal is working to create technologies and products that are fair and inclusive. Fairness is a multi-dimensional, socio-technical topic and impacts many different aspects of our product development. You can learn more about Microsoft’s approach to fairness here.
+At Microsoft, we strive to empower every person on the planet to do more. An essential part of this goal is working to create technologies and products that are fair and inclusive. Fairness is a multi-dimensional, socio-technical topic and impacts many different aspects of our product development. You can learn more about [Microsoft approach to fairness](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3Aprimaryr6).
 
 One important dimension to consider when using AI systems, including constrained speech recognition, is how well the system performs for different groups of people. Research has shown that without conscious effort focused on improving performance for all groups, AI systems can exhibit varying levels of performance across different demographic factors such as race, ethnicity, gender, and age.
 
-In some cases, there may be remaining performance disparities. It is important to note that these disparities may exceed the target, and we are actively working to address and minimize any potential biases or performance gaps, carefully consider the demographic group choice of the actor, and seek diverse perspectives from a variety of backgrounds.
+In some cases, there may be remaining performance disparities. It is important to note that these disparities might exceed the target, and we are actively working to address and minimize any potential biases or performance gaps, carefully consider the demographic group choice of the actor, and seek diverse perspectives from a variety of backgrounds.
 
 Regarding representational harms, such as stereotyping, demeaning, or erasing outputs, we acknowledge the risks associated with these issues. While our evaluation process aims to mitigate such risks, we encourage users to consider their specific use cases carefully and implement additional mitigations as appropriate. Having a human in the loop can provide an extra layer of oversight to address any potential biases or unintended consequences.
 
 We are committed to continuously improving our fairness evaluations to gain a deeper understanding of the system's performance across various demographic groups and potential fairness concerns. The evaluation process is ongoing, and we are actively working to enhance fairness and inclusivity, and mitigate any identified disparities. We understand the importance of addressing fairness considerations and strive to ensure that constrained speech recognition delivers reliable and equitable speech recognition outputs.
 
-Please note that this information represents what we know so far about fairness evaluations, and we remain dedicated to refining our evaluation methodologies and addressing any fairness concerns that may arise.
+> [!NOTE]
+> This information represents what we know so far about fairness evaluations, and we remain dedicated to refining our evaluation methodologies and addressing any fairness concerns that may arise.
 
 ## Learn more about responsible AI
 

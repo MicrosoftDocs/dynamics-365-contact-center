@@ -5,7 +5,7 @@ author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
-ms.date: 01/16/2025
+ms.date: 08/25/2025
 ms.custom: bap-template 
 ms.collection: bap-ai-copilot
 ---
@@ -24,7 +24,7 @@ Copilot helps agents to complete tasks related to conversations and email more e
 
 The system stores the copilot interaction data in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteraction), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteractiondata), [msdyn_copilottranscript](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscript), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscriptdata) tables. You can use the information to build custom metrics in reporting and analytics and understand how Copilot is being used in your organization.
 
-To view the Copilot report, open Customer Service historical analytics and select the **Copilot** tab.
+To view the Copilot report, open the **Copilot analytics** report.
 
 > [!NOTE]
 > Case summary isn't available for the Contact Center embedded experience.

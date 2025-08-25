@@ -56,7 +56,7 @@ Constrained speech recognition can be used in multiple scenarios. The system’s
 
 - **Recognize spoken words**: To translate speech into text constrained by the definitive list provided to the system (via a “grammar”) such as alphanumeric license plates and social security numbers input or list-based corporate directory, stock tickers, and addresses.
 
-- **Validate input**: To validate that what was spoken is intended to be accepted by the system. For example, validating that a credit card number is a valid one (mathematically).
+- **Validate input**: To validate that what was spoken is intended to be accepted by the system. For example, validating that a credit card number is correct (mathematically).
 
 - **Remove output candidates**: Remove words or phrases from recognition on repeat recognition attempts.
 
@@ -112,7 +112,7 @@ The process of developing a set of grammars generally involves the following ste
 
 ## System performance
 
-The constrained speech recognition engine is highly performant compared to alternative modalities of speech recognition, using limited memory when processing requests. Factors within the developers control have more of an impact on the performance than the system itself. The foremost objective for grammar development is to design for optimal recognition accuracy. The next goal is to write for clarity, maintainability, and extensibility. The third goal is to create efficient recognition contexts.
+The constrained speech recognition engine performs better when compared to alternative modalities of speech recognition, using limited memory when processing requests. Factors within the developers control have more of an impact on the performance than the system itself. The foremost objective for grammar development is to design for optimal recognition accuracy. The next goal is to write for clarity, maintainability, and extensibility. The third goal is to create efficient recognition contexts.
 
 ## Best practices for improving system performance
 
@@ -126,9 +126,9 @@ Below are grammar characteristics that affect resource usage:
 
 - **Keys passed to the application**: You must ensure that key/value pairs are set correctly.
 
-When a caller says a word or phrase that can't be parsed by the grammar, the word or phrase is said to be out-of-grammar. As a rule of thumb, a 5% out-of-grammar rate is considered acceptable. Occasionally, even 10-20% out-of-grammar rates are not uncommon for certain types of recognition tasks. Consider using alternative forms of speech recognition at this latter rate.
+When a caller says a word or phrase that can't be parsed by the grammar, the word or phrase is said to be out-of-grammar. As a rule of thumb, a five percent out-of-grammar rate is considered acceptable. Occasionally, even 10-20 percent out-of-grammar rates aren't uncommon for certain types of recognition tasks. Consider using alternative forms of speech recognition at this latter rate.
 
-*Latency* is defined as the period of elapsed time from after the caller stops speaking (including the configured end-of-speech timeout) until a recognition result is returned to the application. When latency is too high, the user experience degrades; the system appears sluggish, which can be frustrating to the user and leads to further user interface complications.
+*Latency* is defined as the elapsed time after the caller stops speaking (including the configured end-of-speech timeout) until a recognition result is returned to the application. When latency is too high, the user experience degrades; the system appears sluggish, which can be frustrating to the user and leads to further user interface complications.
 
 In extreme circumstances, excess latency causes unsuccessful application transactions if user stops speaking without accomplishing the goal of their conversation. Poor recognition response times can have many contributing factors:
 

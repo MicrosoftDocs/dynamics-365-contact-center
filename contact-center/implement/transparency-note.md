@@ -15,13 +15,13 @@ ms.custom: bap-template
 
 An AI system includes not only the technology, but also the people who will use it, the people who will be affected by it, and the environment in which it is deployed. Creating a system that is fit for its intended purpose requires an understanding of how the technology works, what its capabilities and limitations are, and how to achieve the best performance. Microsoft’s Transparency Notes are intended to help you understand how our AI technology works, the choices system owners can make that influence system performance and behavior, and the importance of thinking about the whole system, including the technology, the people, and the environment. You can use Transparency Notes when developing or deploying your own system, or share them with the people who will use or be affected by your system.
 
-Microsoft’s Transparency Notes are part of a broader effort at Microsoft to put our AI Principles into practice. Learn more in [Microsoft AI principles](https://www.microsoft.com/ai/responsible-ai).
+Microsoft’s Transparency Notes are part of a broader effort at Microsoft to put our AI principles into practice. Learn more in [Microsoft AI principles](https://www.microsoft.com/ai/responsible-ai).
 
 ## The basics of constrained speech recognition
 
 ### Introduction
 
-Speech recognition is a vital function for engaging with voice-enabled AI systems. These systems (frequently known as “speech-to-text” engines) converts a user’s spoken words into text, often producing a confidence score indicative of the probability of correctness of the output. Constrained speech recognition is a specific modality that specifically limits the set of possible words or phrases to recognize by the engine itself. This constraint is done through a Grammar. Grammars are, by definition, the rules-based list of expected words or phrases for the engine to recognize.
+Speech recognition is a vital function for engaging with voice-enabled AI systems. These systems (frequently known as “speech-to-text” engines) convert a user’s spoken words into text, often producing a confidence score indicative of the probability of correctness of the output. Constrained speech recognition is a specific modality that specifically limits the set of possible words or phrases to recognize by the engine itself. This constraint is done through a Grammar. Grammars are, by definition, the rules-based list of expected words or phrases for the engine to recognize.
 
 Constrained speech recognition engines are especially useful for:
 
@@ -35,10 +35,10 @@ Constrained speech recognition engines are especially useful for:
 
 | Term                                            | Definition         |
 |-------------------------------------------------|--------------------|
-| Grammar                                         | A *grammar* is a description of the words and phrases that a speech recognizer will understand and interpret. Grammars are loaded by the recognizer at runtime to convert the user’s spoken responses and commands into information the voice application can use |
-| GrXML                                           | The format in which grammars are composed |
-| Speech Recognition Grammar Specification (SRGS) | The W3C standard for defining grammars   |
-| Utterance                                       | The spoken words or phrases from a user to a voice AI system that are interpreted by the speech recognition system |
+| Grammar                                         | A *grammar* is a description of the words and phrases that a speech recognizer will understand and interpret. Grammars are loaded by the recognizer at runtime to convert the user’s spoken responses and commands into information the voice application can use. |
+| GrXML                                           | The format in which grammars are composed. |
+| Speech Recognition Grammar Specification (SRGS) | The W3C standard for defining grammars.   |
+| Utterance                                       | The spoken words or phrases from a user to a voice AI system that are interpreted by the speech recognition system. |
 
 ## Capabilities
 
@@ -52,27 +52,27 @@ The recognizer assigns a confidence score to each item in the candidate list, an
 
 ### Intended uses
 
-Constrained Speech Recognition can be used in multiple scenarios. The system’s intended uses include:
+Constrained speech recognition can be used in multiple scenarios. The system’s intended uses include:
 
-- **Recognize spoken words:** To translate speech into text constrained by the definitive list provided to the system (via a “Grammar”) such as alphanumeric license plates and social security numbers input or list-based corporate directory, stock tickers, and addresses.
+- **Recognize spoken words**: To translate speech into text constrained by the definitive list provided to the system (via a “grammar”) such as alphanumeric license plates and social security numbers input or list-based corporate directory, stock tickers, and addresses.
 
-- **Validate Input:** To validate that what was spoken is intended to be accepted by the system. For example, validating that a credit card number is a valid one (mathematically).
+- **Validate input**: To validate that what was spoken is intended to be accepted by the system. For example, validating that a credit card number is a valid one (mathematically).
 
-- **Remove Output Candidates:** Remove words or phrases from recognition on repeat recognition attempts.
+- **Remove output candidates**: Remove words or phrases from recognition on repeat recognition attempts.
 
 ### Considerations when choosing other use cases
 
-We encourage customers to leverage Constrained Speech Recognition in their innovative solutions or applications. However, here are some considerations when choosing a use case:
+We encourage customers to use constrained speech recognition in their innovative solutions or applications. However, here are some considerations when choosing a use case:
 
-- **Disclosure:** Consistent with any AI-agent creation, always disclose to a caller that the system they are interacting with is AI powered.
+- **Disclosure**: Consistent with any AI-agent creation, always disclose to a caller that the system they are interacting with is AI powered.
 
-### Unsupported uses
+- **Unsupported uses**:
 
-- **Batch Transcription:** Completely transcribing a persons spoken words into complete textual transcription
+  - **Batch transcription**: Completely transcribing a person's spoken words into complete textual transcription.
 
-- **Intent Interpretation:** Mapping the persons spoken words into an interpreted intent, as opposed to a transcription
+  - **Intent interpretation**: Mapping the person's spoken words into an interpreted intent, as opposed to a transcription.
 
-**Legal and regulatory considerations.** Organizations need to evaluate potential specific legal and regulatory obligations when using any AI services and solutions, which may not be appropriate for use in every industry or scenario. Restrictions may vary based on regional or local regulatory requirements. Additionally, AI services or solutions are not designed for and may not be used in ways prohibited in applicable terms of service and relevant codes of conduct.
+- **Legal and regulatory considerations**: Organizations need to evaluate potential specific legal and regulatory obligations when using any AI services and solutions, which may not be appropriate for use in every industry or scenario. Restrictions may vary based on regional or local regulatory requirements. Additionally, AI services or solutions are not designed for and may not be used in ways prohibited in applicable terms of service and relevant codes of conduct.
 
 ## Limitations
 
@@ -84,31 +84,31 @@ For constrained speech recognition specifically to work accurately, a well-desig
 
 A good grammar balances these goals:
 
-- **Thorough coverage:** The grammar accepts and interprets any reasonable response from users to prior application prompt.
+- **Thorough coverage**: The grammar accepts and interprets any reasonable response from users to prior application prompt.
 
 - **Accuracy**: The grammar correctly recognizes responses so users are not asked to repeat, and grammars do not pass incorrect values to the main application.
 
 - **Speed**: The grammar quickly recognizes responses without delays that frustrate users.
 
-- **Resource use:** The grammar processes efficiently.
+- **Resource use**: The grammar processes efficiently.
 
 Grammar writing is an iterative process. You create an initial grammar based on what you expect callers to say, collect some real data, refine the grammar, gather some more data, refine the grammar again, and so on. As you refine the grammar by adding and removing phrases, it more closely approximates the way callers speak to the application. In practice, no grammar can include all the responses that can occur in your application, because you can't control how people speak.
 
 The process of developing a set of grammars generally involves the following steps:
 
-1. **Identify the information items and define the slots**. What information must the user supply to the application, and is there a particular order in which it must be supplied?
+1. **Identify the information items and define the slots**: What information must the user supply to the application, and is there a particular order in which it must be supplied?
 
-1. **Design the dialog.** Determine the most efficient dialog flow between the user and application.
+1. **Design the dialog**: Determine the most efficient dialog flow between the user and application.
 
-1. **Design the prompts.** Create prompts that elicit the required information.
+1. **Design the prompts**: Create prompts that elicit the required information.
 
-1. **Anticipate the caller responses to the prompts.** Consider the spoken words that the grammar will have to recognize.
+1. **Anticipate the caller responses to the prompts**: Consider the spoken words that the grammar will have to recognize.
 
-1. **Identify the core and filler portions of your grammars.** Identify the key words to look for in the responses.
+1. **Identify the core and filler portions of your grammars**: Identify the key words to look for in the responses.
 
-1. **Plan your grammar strategy.** Determine the best way to meet the requirements for each grammar, and choose a suitable approach or combination of approaches to address them.
+1. **Plan your grammar strategy**: Determine the best way to meet the requirements for each grammar, and choose a suitable approach or combination of approaches to address them.
 
-1. **Adjust and refine the grammars.** Solve any problems and optimize the grammar performance,
+1. **Adjust and refine the grammars**: Solve any problems and optimize the grammar performance,
 
 ## System performance
 

@@ -1,20 +1,20 @@
 ---
-title: Use Contact Center admin center
-description: Learn about the Contact Center admin center and what features you can configure through the admin center.
+title: Use Copilot Service admin center
+description: Learn about the Copilot Service admin center and what features you can configure through the admin center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection:
-ms.date: 02/06/2025
+ms.date: 02/27/2025
 ms.custom: bap-template
 ---
 
-# Use Contact Center admin center
+# Use Copilot Service admin center
 
-Welcome to Contact Center admin center, the app that unifies and simplifies the administration experience of your contact center.
+Welcome to Copilot Service admin center, the app that unifies and simplifies the administration experience of your contact center.
 
-Use the Contact Center admin center app to set up the features in Dynamics 365 Contact Center, such as unified routing, knowledge articles, channels, voice, and agent experience profiles.
+Use the Copilot Service admin center app to set up the features in Dynamics 365 Contact Center, such as unified routing, knowledge articles, channels, voice, and experience profiles.
 
 The features include:
 
@@ -27,13 +27,13 @@ The features include:
 
 ## Prerequisites
 
-You must have the System administrator role.
+- You must have the System administrator role. 
+- You must make sure that the [System requirements for Dynamics 365 Contact Center](../implement/system-requirements-contact-center.md) are met.
 
-## Use Contact Center admin center
+## Use Copilot Service admin center
 
-The app is automatically installed in all the Dynamics 365 Contact Center organizations. You can sign in to Dynamics 365, and on the apps page, select Contact Center admin center.
+The app is automatically installed in all the Dynamics 365 Contact Center organizations. You can sign in to Dynamics 365, and on the apps page, select Copilot Service admin center.
 
 ### Related information
-
-[System requirements for Dynamics 365 Contact Center](../implement/system-requirements-contact-center.md)    
+ 
 [International availability of Dynamics 365 Contact Center](../implement/international-availability.md)  

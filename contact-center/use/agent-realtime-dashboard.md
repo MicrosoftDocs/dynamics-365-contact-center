@@ -4,9 +4,9 @@ description: Learn about the bot report in Omnichannel real-time analytics.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
-ms.topic: conceptual 
+ms.topic: concept-article
 ms.collection: 
-ms.date: 08/25/2025
+ms.date: 06/27/2025
 ms.custom: bap-template 
 ---
 
@@ -21,6 +21,9 @@ Out of the box, the dashboard displays key metrics for the last 24 hours to help
 
 You can filter the report by selecting **All** to view AI agent performance across all channels or by choosing a specific channel. Filters include time, queue, time zone, and conversation status. Learn more in [Overview of Omnichannel real-time analytics dashboards](/dynamics365/customer-service/use/intro-realtime-analytics-dashboard#filter-information-displayed-on-dashboard).
 
+## Prerequisites
+
+To view the report in Copilot Service worskpace, administrators with the Omnichannel agent role must enable the real-time **Bot** dashboard in **Copilot Service admin center** > **Insights** **Productivity** > **Real-time Analytics**.
 
 ## Key metrics
 
@@ -32,7 +35,7 @@ Key performance indicators (KPIs) for AI agents include:
 - **Total bot transferred conversations**: The number of AI agent conversations that are escalated to a customer service representative or an external phone number within the specified duration.
 - **Average conversation duration**: The average time each conversation lasts. The conversation duration is calculated from the time the AI agent is assigned to the conversation until the AI agent escalates the conversation or ends it.
 
-:::image type="content" source="../media/oc-realtime-bot-dashboard.png" alt-text="Screenshot of realtime bot dashboard"::: 
+:::image type="content" source="../media/oc-realtime-bot-dashboard.png" alt-text="Screenshot of realtime bot dashboard" lightbox="../media/oc-realtime-bot-dashboard-mini.png":::
 
 ## Monitor trends
 

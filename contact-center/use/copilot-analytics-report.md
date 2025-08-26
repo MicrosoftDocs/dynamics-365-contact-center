@@ -5,7 +5,8 @@ author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
-ms.date: 08/25/2025
+ms.date: 05/15/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template 
 ms.collection: bap-ai-copilot
 ---
@@ -15,16 +16,15 @@ ms.collection: bap-ai-copilot
 > [!NOTE]
 > The feature availability information is as follows.
 >
-> | Dynamics 365 Contact Center&mdash;embedded | Dynamics 365 Contact Center&mdash;standalone | 
+> | Dynamics 365 Contact Center&mdash;embedded | Dynamics 365 Contact Center&mdash;standalone |
 > |----------|----------|
->  | No  | Yes   | 
+>  | No  | Yes   |
 
-Copilot helps agents to complete tasks related to conversations and email more easily. With the Copilot report, supervisors and customer service managers can identify the effect that Copilot is having across their customer service operation.
-
+Copilot helps customer service representatives (service representatives or representatives) to complete tasks related to conversations and email more easily. With the Copilot report, supervisors and customer service managers can identify the effect that Copilot is having across their customer service operation.
 
 The system stores the copilot interaction data in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteraction), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteractiondata), [msdyn_copilottranscript](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscript), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscriptdata) tables. You can use the information to build custom metrics in reporting and analytics and understand how Copilot is being used in your organization.
 
-To view the Copilot report, open the **Copilot analytics** report.
+To view the Copilot report, select **Copilot analytics** from the Copilot Service workspace menu.
 
 > [!NOTE]
 > Case summary isn't available for the Contact Center embedded experience.
@@ -44,7 +44,7 @@ The Copilot report displays the following metrics.
 
 | Metric | Description |
 |--------|---------|
-| Daily active users | The number of unique agents who used Copilot at least once in the last day |
+| Daily active users | The number of unique service representatives who used Copilot at least once in the last day |
 | Total copilot AI responses | The total number of responses that Copilot provided |
 | Number of responses used | The number of times that text from a copilot response was copied |
 | Percentage of copilot AI responses used | The percentage of responses that were copied |
@@ -53,7 +53,7 @@ The Copilot report displays the following metrics.
 
 | Metric | Description |
 |--------|---------|
-| Total conversations | The total number of conversations in which the agent engaged with the customer at least once while Copilot was available; doesn't include email and voice |
+| Total conversations | The total number of conversations in which the service representative engaged with the customer at least once while Copilot was available; doesn't include email and voice |
 | Number of conversations using copilot AI | The number of engaged conversations that used Copilot; lists only conversations that have ended |
 | Percentage of conversations using copilot AI | The percentage of engaged conversations that used Copilot |
 | Avg conversation handle time | The average time that elapsed after a conversation started until it ended; displays data when Copilot was used and when it wasn't used |
@@ -63,13 +63,12 @@ The Copilot report displays the following metrics.
 
 | Metric | Description |
 | -------|---------|
-| Agent ratings | The number of times agents rated a Copilot response positively or negatively |
+| Agent ratings | The number of times service representatives rated a Copilot response positively or negatively |
 
 ## Next Steps
 
-You can view the [transcripts of interactions]( /dynamics365/customer-service/develop/download-copilot-transcript-data?context=/dynamics365/contact-center/extend-context) between agents and Copilot. 
+You can view the [transcripts of interactions]( /dynamics365/customer-service/develop/download-copilot-transcript-data?context=/dynamics365/contact-center/extend-context) between service representatives and Copilot.
 
 ### Related information
 
-[Use copilot features](use-copilot-features.md)  
 [Configure copilot](../administer/configure-copilot-features.md)  

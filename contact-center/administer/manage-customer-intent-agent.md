@@ -208,7 +208,7 @@ Connectors let systems work together, transfer data, and allow AI agents to auto
 
 > [!NOTE]
 > - To map a connector to an intent, the connector must have one action only. If your connector has multiple actions, you can't run any actions for that intent.
-> - There may be up to a 15-minute delay between when you add the connector and when Customer Intent Agent uses it. This time delay also applies when you remove a connector.
+> - After you add or remove a connector, changes can take up to 15 minutes to appear in the Customer Intent Agent.
 
 You can edit or delete a connector after you select the required connector on the **Manage custom connectors (preview)** page. 
 

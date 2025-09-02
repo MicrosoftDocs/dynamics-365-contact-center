@@ -61,7 +61,7 @@ The URL path the webhook is as follows: `{webhook_url}/v3/conversations/{convers
 
 Once you configure the webhook in the custom messaging channel, the application delivers activity payloads to your webhook as POST requests. These payloads follow the Bot Framework Activity Schema.
 
-Learn more about the structure and examples of payloads delivered to your webhook in [Use webhook to receive messages and events](/api/api-conversation-webhook.md).
+Learn more about the structure and examples of payloads delivered to your webhook in [Use webhook to receive messages and events](./api/api-conversation-webhook.md).
 
 ## Add and manage channels
 
@@ -96,11 +96,11 @@ Perform the following steps to create, update, or delete a custom messaging chan
       );
     ```
      Where you must specify the following parameters: <br>
-    
-      | **Field**              | **Description**                                                                 | **Example Value**                                                  |
+
+      | **Field**              | **Description**   | **Example Value**                                                  |
       |--------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------|----------|
-      | `msdyn_appid`      | The **Application (client) ID** of the Azure AD app used to authenticate Messaging API requests. This is the value you copied in the [Setup authentication](#set-up-authentication) section. | `9f6c021d-1234-4abc-8df7-123456789abc`                         | 
-      | `msdyn_tenantid`   | The **Tenant (Directory) ID** of your organization's Azure Active Directory. | `b5122edb-5678-4def-99e2-abcdef123456`                         | 
+      | `msdyn_appid`      | The **Application (client) ID** of the Azure AD app used to authenticate Messaging API requests. This is the value you copied in the [Setup authentication](#set-up-authentication) section. | `9f6c021d-1234-4abc-8df7-123456789abc` | 
+      | `msdyn_tenantid`   | The **Tenant (Directory) ID** of your organization's Azure Active Directory. | `b5122edb-5678-4def-99e2-abcdef123456`  | 
       | `msdyn_webhookurl` | The **HTTPS endpoint** that receives messages and events from the application. Must use a valid, non-self-signed certificate. This is the value you configured in [Setup webhook](#setup-webhook) section. | `https://contoso-bot.example.com`                              | <br>
 
       Replace `{channel_id}` with the ID of the channel you want to delete. You can find this ID in the URL of the channel record in the admin center or by querying the API. <br>

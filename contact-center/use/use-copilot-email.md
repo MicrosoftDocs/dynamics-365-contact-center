@@ -6,17 +6,16 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 05/15/2025
+ms.date: 07/14/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 
 # Write an email with Copilot
 
-[!INCLUDE[cc-feature-availability-cfs-yes](../includes/cc-feature-availability-cfs-yes.md)]
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embed.md)]
 
-When you draft customer emails, Copilot can offer suggestions to make them clear, concise, and compelling.
-
-*Always review the response* Copilot generates before you send the email to the customer.
+[!INCLUDE [cc-write-email-intro](../../shared/cc-write-email-intro.md)]
 
 ## Prerequisites
 
@@ -25,12 +24,8 @@ When you draft customer emails, Copilot can offer suggestions to make them clear
 
 ## Navigation
 
-- In Copilot Service workspace, you can access **Ask a question** from the Copilot help pane once you sign in.
-- When you sign in to a non-Microsoft CRM, you can access the feature as follows:
-   - Launch the embedded experience and then login to your Dynamics account.
-   - In the Copilot help pane that appears, select **Write an email**.
-   - Open the email to use the feature.
-  
+ In Copilot Service workspace, you can access **Ask a question** from the Copilot help pane after you sign in.
+
 ## Use Copilot to draft an email
 
 You can use Copilot in the email editor or use the predefined prompts in the Copilot help pane to draft an email. 
@@ -39,18 +34,13 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
 
   When you use Copilot to draft an email, you can use the following features to help you write a response to a customer.
 
- **Use prompts**
+  ### Use prompts
 
  You can use the predefined prompts to generate email drafts in the **Write an email** tab of the Copilot help pane:
 
- - **Suggest a call**: Drafts a reply that suggests a call with the customer the same day or the next day.
- - **Request more information**: Drafts a reply that requests more details from the customer to help resolve the problem.
- - **Empathize with feedback**: Drafts a reply that provides an empathetic response to a customer who expresses a complaint.
-  - **Provide product/service details**: Drafts a reply that offers details or answers customer questions about a particular product or service.
- - **Resolve customer's problem**: Drafts a reply that provides a resolution&mdash;and resolution steps, if applicable&mdash;to the customer's problem.
- - **Custom**: Allows you to provide your own prompt for the reply.
+[!INCLUDE [cc-write-email-prompts](../../shared/cc-write-email-prompts.md)]
 
-  **Use Copilot recommended email templates**
+  ### Use Copilot recommended email templates
 
   When you respond to an email linked to a case, in the email editor, the **Draft with Copilot** card appears. In the card, service representatives can specify a prompt with context about the email draft Copilot should generate. For example, a prompt can be “Write an email about documents required for account verification”.
 
@@ -71,7 +61,18 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
  
    :::image type="content" source="../media/draft-an-email-inline.png" alt-text="Screenshot of Copilot recommended email draft in rich text editor."::: 
 
-  **Generate partial email drafts using Copilot**
+   ### Use email templates tagged with line of business
+   
+   Copilot automatically selects the most appropriate email template based on your case's business context, streamlining your email drafting process. If your administrator tagged email templates with line-of-business information, for an email associated to the case, the Copilot performs the following actions to generate a response:
+
+   - Analyzes the case context and identifies the line-of-business.
+   - Selects the appropriate template tagged with the corresponding line-of-business
+   - Generates the email draft using the selected template and displays the template used in the editor.
+   - If no email template exists for your case's line-of-business, Copilot generates a draft without using an email template.
+   
+   You can use the content as-is or edit the content of the email draft as needed. If you want to change the template, you can select **Choose a different template** to open the **Copilot recommended templates** dialog and select a different template.
+
+  ### Generate partial email drafts using Copilot
 
   You can use Copilot inline email assist to generate a partial draft instead of generating a whole email draft. You can use this feature to generate a response to a specific part of the email or to add more details to an existing email draft.
 
@@ -84,9 +85,9 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
 
    :::image type="content" source="../media/partial-draft-email.png" alt-text="Screenshot of a partial draft an email in rich text editor."::: 
 
- **Use follow-up prompts**
+ ### Use follow-up prompts
 
- If you aren't satisfied with Copilot's response, you can use follow-up custom prompts and guide Copilot in a natural, conversational way. You can use up to five prompts at a time to refine the email draft. If the knowledge base is enabled, Copilot will also use those sources.
+ If you aren't satisfied with Copilot's response, you can use follow-up custom prompts and guide Copilot in a natural, conversational way. You can use up to five prompts at a time to refine the email draft. If the knowledge base is enabled, Copilot also uses those sources.
 
   
 ### [Draft an email in the Copilot help pane](#tab/copilothelppane)
@@ -97,16 +98,11 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
 
  You can use the predefined prompts to generate email drafts in the **Write an email** tab of the Copilot help pane:
 
- - **Suggest a call**: Drafts a reply that suggests a call with the customer the same day or the next day.
- - **Request more information**: Drafts a reply that requests more details from the customer to help resolve the problem.
- - **Empathize with feedback**: Drafts a reply that provides an empathetic response to a customer who expresses a complaint.
-  - **Provide product/service details**: Drafts a reply that offers details or answers customer questions about a particular product or service.
- - **Resolve the customer's problem**: Drafts a reply that provides a resolution&mdash;and resolution steps, if applicable&mdash;to the customer's problem.
- - **Custom**: Allows you to provide your own prompt for the reply.
+[!INCLUDE [cc-write-email-prompts](../../shared/cc-write-email-prompts.md)]
 
  > [!NOTE]
- > - If the knowledge base isn't enabled, you will see the **Suggest a call**, **Request more information**, **Empathize with feedback**, and **Custom** prompts only.
- > - If you've left the **Regarding** field empty, you will see the **Suggest a call**, **Empathize with feedback**, and **Custom** prompts only.
+ > - If the knowledge base isn't enabled, you see the **Suggest a call**, **Request more information**, **Empathize with feedback**, and **Custom** prompts only.
+ > - If you've left the **Regarding** field empty, you see the **Suggest a call**, **Empathize with feedback**, and **Custom** prompts only.
 
   :::image type="content" source="../media/copilot-email-sidepane-mini.png" alt-text="Screenshot of draft an email in the side pane." lightbox="../media/copilot-email-sidepane.png":::
 
@@ -121,38 +117,22 @@ If your administrator enabled knowledge sources and set up trusted domains, the 
 
 ### Review suggested replies
 
-When you select one of the predefined prompts, Copilot generates a suggested reply that's displayed on the UI incrementally. You can also see the inline citations that show the knowledge base or website links from which Copilot drew the response. When you hover over the citation, you can see an inline link to the source. You can select **Stop Responding** to stop Copilot from generating the email draft. The application displays the prompts for you to start over. 
+[!INCLUDE [cc-write-email-resources](../../shared/cc-write-email-resources.md)]
 
 ### Refine replies
 
-You can select the Adjust with Copilot icon to change the length and tone of the response in the English language. Do the following: 
-
-**Length**: Select **Short**, **Medium**, or **Long** to condense or expand on your text. <br>
-**Tone**: Select **Friendly**, **Professional**, or **Formal** to adjust the tone of your text.
-
+[!INCLUDE [cc-write-email-tone](../../shared/cc-write-email-tone.md)]
 
 ### Use the responses
 
-To use the draft that Copilot generates, do the following actions:
-- In the rich text editor, select **Keep it**. You'll see the draft in the rich text editor that you can use as-is or further edit before sending it to the customer.
-- In the Copilot pane, you can:
-    - Select **Edit** to further refine the response.
-    - Select **Translate** to translate the response to another language.
-    - Select **Copy** to copy the response and then paste it in the email body.
+[!INCLUDE [cc-write-email-action](../../shared/cc-write-email-action.md)]
 
-### Start over
+## Start over
 
-To return to the prompts, select **Start over** at the bottom of the Copilot pane.
-
-## Translate responses
-
-If translation is enabled, you can select **Translate** and then select your preferred language to translate the response to that language. You can also select **Show original** to translate the response back to the original language.
-
-## Next Step
-
-[Use Copilot to solve customer issues](use-copilot-features.md)
+[!INCLUDE [cc-write-email-startover](../../shared/cc-write-email-startover.md)]
 
 ### Related information
+
 [View, compose and respond to email](/power-apps/user/view-compose-email)  
 [Enable Copilot to draft emails](/dynamics365/customer-service/administer/copilot-email-enable)  
 [FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)   

@@ -98,6 +98,13 @@
               href: api/api-conversation-webhook.md    
           - name: Error handling
             href: error-handling.md                   
+            href: /dynamics365/customer-service/develop/bring-your-own-channel#markdown-formats-in-custom-channels?context=/dynamics365/contact-center/context/extend-context   
+      - name: Voice
+        items: 
+        - name: Download call recordings in bulk
+          href: download-call-recordings-bulk.md
+        - name: Use APIs to pause, resume transcription and recording 
+          href: api/record-transcription-api.md
       - name: Copilot in Customer Service
         items:  
         - name: Download Copilot transcripts and interaction data

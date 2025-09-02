@@ -112,8 +112,8 @@ additionalContent:
         text: Manage conversations and activities on the timeline
     - title: Use Copilot
       links:
-      - url: use/use-copilot-features.md
-        text: Use Copilot to solve customer issues
+      - url: use/copilot-feature-availability.md
+        text: Copilot feature availability across applications      
       - url: use/copilot-summarize-conversations.md  
         text: Use Copilot to summarize conversations
       - url: use/use-ask-a-question.md

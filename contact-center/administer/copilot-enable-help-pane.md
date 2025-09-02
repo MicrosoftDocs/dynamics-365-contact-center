@@ -7,6 +7,7 @@ ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.date: 06/25/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 
@@ -50,14 +51,8 @@ You can enable and configure the prompts that appear in the **Ask a question** t
 1. On the **Manage prompt settings** page, select the following as required:
     - **Suggested prompts**
     - **Proactive insights**
-3.	In the **Prompts from my organization** section, select **Add new prompt** to add the prompts that you would like to use.
-4.	Select **Save and close**.
-
-## Enable draft a response (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
-Select **Suggest a response (preview)** in the **Copilot for questions and email** page of Copilot Service admin center. The one-click response generation button appears on both the communication panel for a conversation and on the **Ask a question** tab on the Copilot help pane in Copilot Service workspace. Copilot retrieves the context and drafts the response based on the knowledge resources configured for your organization.
+1.	In the **Prompts from my organization** section, select **Add new prompt** to add the prompts that you would like to use.
+1.	Select **Save and close**.
 
 ## Configure knowledge sources
 
@@ -66,11 +61,11 @@ You can configure the knowledge base for Copilot to generate responses.
 ### Prerequisites
 
 Make sure that you have [knowledge management](/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search#setup-overview) configured in your environment and your knowledge article parameters are as follows:
-   - Updated with the latest version
-   - The state is set to Published
+- Updated with the latest version
+- The state is set to Published
 
 > [!NOTE]
- > - Copilot uses the content attribute only in the knowledge article table to generate responses for ask a question, write an email, and draft a chat features. You can't customize this behavior.
+> - Copilot uses the content attribute only in the knowledge article table to generate responses for ask a question, write an email, and draft a chat features. You can't customize this behavior.
 > - Copilot uses knowledge articles tagged with the same language as the UI to generate responses.
 
 ### Enable knowledge base
@@ -111,24 +106,25 @@ You can apply the filters in the following sections.
 > - We recommend that the appropriate knowledge content is available for the filters you set so service representatives can see the expected responses. 
 > - The fields that appear in the **Manage filters** pane when you add a filter are of the data type **String**, **Whole Number**, **Option Set**, or **Two Options Set**. Fields of other data types aren't supported.
 
-
 ### Preset filters
 
 Specify filters that are applied by default in the background to filter knowledge base articles. Representatives can't see these filters. You can set predefined filters for ask a question and draft a response features as follows:
- 1. Select **Manage Filters** in **Filters**. The **Manage filters** pane appears.
- 1. Select **Manage rules** in **Preset filters** for the required feature.
- 1. Specify the required conditions for the filter.
- 1. Select **Finish editing**.
+
+1. Select **Manage Filters** in **Filters**. The **Manage filters** pane appears.
+1. Select **Manage rules** in **Preset filters** for the required feature.
+1. Specify the required conditions for the filter.
+1. Select **Finish editing**.
     
 ### Representative Filters
 
  Specify the filters that representatives can apply to further filter and refine Copilot responses. Representatives can see and select or deselect these filters in the Copilot help pane for the ask a question feature. If a filter isn't configured as a representative filter, it operates in the background and isn't visible to representatives.
 
 To configure a representative filter, do the following steps:
+
 1. Select **Add Filter** for **Representative Filters**.
 1. Specify the required knowledge base field that representatives can use. You can also specify the display name and add the values from the field that the representative can select.
 1. Turn on the **Filter status** toggle. This toggle must be turned on for the representative to see the filter.
-1. Select **Finish editing**. 
+1. Select **Finish editing**.
 
 ### Automated filters
 
@@ -139,7 +135,7 @@ Specify the filters that are automatically applied. The representatives don't ne
 1. Turn on the **Use untagged content if the field value is null** toggle to view all the content if the field value doesn't match the specified value.
 1. Turn on the **Allow representatives to view or change this filter** toggle for service representatives to see a visual cue that the automated filter is applied and change the filtering options. Based on your setting, the following actions apply: 
    - **On**: The application prompts you to create a corresponding representative filter for the same knowledge attribute in **Representative Filters** Representatives then see the filters on the Copilot help pane.
-   -  **Off**: Representatives can't see the filter on the Copilot help pane. The filters operate in the background without any service representative notifications.
+   - **Off**: Representatives can't see the filter on the Copilot help pane. The filters operate in the background without any service representative notifications.
 1. Select **Finish editing**.
 
 > [!NOTE]
@@ -151,10 +147,10 @@ The following table summarizes the Copilot features supported for a configured k
 
 | Feature | Knowledge base | External web resources | Knowledge sources in Copilot Studio|
 |-------|----------|---------|--------|
-|Ask a question |✔|X| ✔|
-|Write an email | ✔|✔|X|
-|Draft a response |✔|✔|X|
+|Ask a question |Yes|No| Yes|
+|Write an email | Yes|Yes|No|
 
 ### Related information
 
-[Use Copilot to solve customer issues](../use/use-copilot-features.md)
+[FAQ about Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)  
+[Responsible AI FAQ about copilot features](/dynamics365/customer-service/implement/faq-responsible-ai-copilot)  

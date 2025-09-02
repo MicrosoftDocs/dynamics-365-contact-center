@@ -80,24 +80,32 @@
           items:
           - name: Use intent-based suggestions
             href: use-intent-suggestions.md
-      - name: Use Copilot
+      - name: Use Copilot features in contact center-standalone
         items: 
         - name: Copilot feature availability across applications
           href: copilot-feature-availability.md  
-        - name: Summarize cases
-          href: copilot-use-summary.md
         - name: Summarize conversations
           href: copilot-summarize-conversations.md  
         - name: Ask a question
           href: use-ask-a-question.md  
-        - name: Draft a chat response (preview)
-          href: use-copilot-features.md  
         - name: Write an email with Copilot
           href: use-copilot-email.md  
         - name: Understand how Copilot supports different languages
           href: copilot-language-support.md
         - name: Chat with case data in Customer Service (preview)
           href: copilot-chat-customer-service-data.md
+      - name: Use Copilot features in non-Microsoft systems
+        items:  
+        - name: Use ask a question
+          href: embed-ask-question.md  
+        - name: Summarize cases
+          href: copilot-use-summary.md 
+        - name: Generate resolution notes
+          href: embed-ask-question.md#generate-resolution-notes   
+        - name: Summarize conversations
+          href: embed-summarize-conversation.md   
+        - name: Use Copilot to draft an email
+          href: draft-email-embedded-experience.md  
       - name: Unified routing and assignment
         items:
           - name: View historical analytics reports
@@ -119,7 +127,7 @@
           - name: Send email to multiple recipients
             href: /power-apps/user/direct-email?context=/dynamics365/contact-center/context/use-context
           - name: Resolve an unresolved email recipient
-            href: /power-apps/user/unresolved-email-recipient?context=/dynamics365/contact-center/context/use-context
+            href: /power-apps/user/unresolved-email-recipient?context=/dynamics365/contact-center/context/use-context           
           - name: Email templates
             items: 
             - name: Create an email template
@@ -135,7 +143,15 @@
             - name: Create a signature for emails
               href: /power-apps/user/email-signature?context=/dynamics365/contact-center/context/use-context
           - name: Email FAQ and known issues
-            href: /power-apps/user/activities-known-issues?context=/dynamics365/contact-center/context/use-context
+            href: /power-apps/user/activities-known-issues?context=/dynamics365/contact-center/context/use-context               
+      - name: Inbox
+        items:
+          - name: Use the inbox
+            href: /dynamics365/customer-service/use/use-inbox?context=/dynamics365/context/use-context           
+          - name: Inbox views and filters
+            href: /dynamics365/customer-service/administer/inbox-views-filters?context=/dynamics365/contact-center/context/use-context
+          - name: Create personalized inbox views
+            href: /dynamics365/customer-service/use/inbox-create-personalized-view?context=/dynamics365/context/use-context         
       - name: Use messaging channels
         items:
         - name: Introduction to channels
@@ -270,6 +286,8 @@
           href: /dynamics365/customer-service/use/knowledge-search-analytics-cs?context=/dynamics365/contact-center/context/use-context
         - name: View copilot analytics report
           href: copilot-analytics-report.md
+        - name: View agent insights dashboard
+          href: agent-insights.md
         - name: Monitor conversations
           items: 
             - name: Monitor, assign, transfer, and forcibly end conversations
@@ -294,6 +312,8 @@
             href: /dynamics365/customer-service/use/use-volume-forecasting?context=/dynamics365/contact-center/context/use-context
         - name: Customize visual display
           href: /dynamics365/customer-service/use/customize-reports?context=/dynamics365/contact-center/context/use-context
+        - name: Customize the bot dashboard
+          href: customize-agent-dashboard.md       
         - name: Customize data models
           items:
           - name: Overview of data model customization
@@ -306,8 +326,6 @@
             href: /dynamics365/customer-service/use/datamapping-realtime?context=/dynamics365/contact-center/context/use-context
           - name: Dataverse entities used in historical and real-time analytics
             href: /dynamics365/customer-service/use/dataverse-entities?context=/dynamics365/contact-center/context/use-context
-          - name: Customize the bot dashboard
-            href: customize-agent-dashboard.md
       - name: Report issues in Dynamics 365 Contact Center
         href: /dynamics365/customer-service/use/report-issues?context=/dynamics365/contact-center/context/use-context
       - name: Share feedback
@@ -340,6 +358,8 @@
             href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/use-context
           - name: Use the Schedule Calendar
             href: /dynamics365/customer-service/use/use-agent-calendar?context=/dynamics365/contact-center/context/use-context
+          - name: Use break distribution to assign breaks
+            href: wfm-use-break-distribution.md
         - name: Time-off request management
           items:
           - name: Manage time-off requests
@@ -354,6 +374,8 @@
         href: ../implement/faq-rai-ai-agents.md
       - name: Responsible AI FAQ for Copilot in Customer Service
         href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/use-context
+      - name: Responsible AI FAQs for NLUs in AI agents
+        href: ../implement/natural-language-ai-faq.md   
     - name: Resources
       items:
       - name: Training

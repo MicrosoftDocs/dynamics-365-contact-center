@@ -146,7 +146,7 @@ Perform the following steps to create, update, or delete a custom messaging chan
 
 1. Perform the steps to add the [custom channel](/dynamics365/customer-service/administer/configure-custom-channel) to the workstream. In the **Channel** field, specify the Messaging API channel you created in the **Create a new custom messaging channel** section.
 
-## Setup PPMI for Webhook Authentication
+## Setup managed identity for webhook authentication
 
 To enable webhook authentication using [Power Platforms managed identity](/power-platform/admin/managed-identity-overview), you must create a managed identity record in Dataverse. This record defines the credential settings that generate authentication tokens for webhook requests.
 

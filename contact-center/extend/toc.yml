@@ -98,7 +98,6 @@
               href: api/api-conversation-webhook.md    
           - name: Error handling
             href: error-handling.md                   
-            href: /dynamics365/customer-service/develop/bring-your-own-channel#markdown-formats-in-custom-channels?context=/dynamics365/contact-center/context/extend-context   
       - name: Voice
         items: 
         - name: Download call recordings in bulk

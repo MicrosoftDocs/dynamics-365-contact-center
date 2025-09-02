@@ -24,13 +24,15 @@ You must register your custom messaging channel in Dynamics 365 before it can co
 To enable secure, authenticated access to the Messaging APIs, you must register a **confidential client application** in **Azure Active Directory (AAD)** for your tenant. This app is used to acquire OAuth 2.0 tokens that authorize API requests. Perform the following steps:
 
 1. Go to the [Azure portal](https://portal.azure.com/) and navigate to **Azure Active Directory** > **App registrations**.
-2. Select **New registration** to register a new application (or use an existing one).
+2. You can use an existing app or select **New registration** to register a new application.
 3. Once registered, go to the **Overview** page of your app registration.
 4. Copy the **Application (client) ID**.  
    You use this value in your custom messaging channel record in Dataverse as the value for `msdyn_appid`.
 
+Learn more in [confidential client app registration](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#confidential-client-app-registration).
+
 > [!NOTE] 
-> Creating a new app from the **Power Platform admin center** is optional. You can use an existing Azure AD app if it meets the authentication requirements.
+> Creating a new Entra app registration is optional. You can use an existing Entra app registration if it meets the authentication requirements.
 
 
 Here’s a sample of the code that uses the app registration: [A quick start to Dataverse Web API](https://github.com/microsoft/PowerApps-Samples/tree/master/dataverse/webapi/CSharp-NETx/QuickStart).
@@ -59,7 +61,7 @@ The URL path the webhook is as follows: `{webhook_url}/v3/conversations/{convers
 
 Once you configure the webhook in the custom messaging channel, the application delivers activity payloads to your webhook as POST requests. These payloads follow the Bot Framework Activity Schema.
 
-Learn more about the structure and examples of payloads delivered to your webhook in [Use webhook to receive messages and events](../extend/intro-messaging-apis.md).
+Learn more about the structure and examples of payloads delivered to your webhook in [Use webhook to receive messages and events](/api/api-conversation-webhook.md).
 
 ## Add and manage channels
 
@@ -143,3 +145,83 @@ Perform the following steps to create, update, or delete a custom messaging chan
      `{org_url}/api/data/v9.2/msdyn_occustommessagingchannels`
 
 1. Perform the steps to add the [custom channel](/dynamics365/customer-service/administer/configure-custom-channel) to the workstream. In the **Channel** field, specify the Messaging API channel you created in the **Create a new custom messaging channel** section.
+
+## Setup PPMI for Webhook Authentication
+
+To enable webhook authentication using [Power Platforms managed identity](/power-platform/admin/managed-identity-overview), you must create a managed identity record in Dataverse. This record defines the credential settings that generate authentication tokens for webhook requests.
+
+The setup process involves the following steps:
+
+1. Create the managed identity record. This establishes the authentication configuration in Dataverse.
+2. Link the identity to your messaging channel. Update the custom messaging channel (created in the add and manage channel process) with the new managed identity record ID.
+3. Configure Entra App credentials. Use the [GetComponentManagedIdentityFIC](/power-apps/developer/data-platform/webapi/reference/getcomponentmanagedidentityfic) service to obtain the FICSubject, then update your Entra App registration with the [federated identity credentials](/graph/api/resources/federatedidentitycredentials-overview).
+
+### Create managed identity record
+
+```javascript
+// Define the data to create a record
+var data = {
+    "applicationid": "REPLACE_WITH_app_id",
+    "credentialsource": 2,
+    "subjectscope": 1,
+    "tenantid": "REPLACE_WITH_tenant_id"
+};
+
+// create the record
+Xrm.WebApi.createRecord("managedidentity", data).then(
+    function success(result) {
+        console.log("managedidentity created with ID:" + result.id);
+        // perform operations on record update
+    },
+    function (error) {
+        console.log(error.message);
+        // handle error conditions
+    }
+);
+```
+
+**Parameters**
+
+
+| Field | Description | Example  |
+|-------|-------------|---------------|
+| applicationid | The **Application (client) ID** of the Azure AD app used to authenticate messaging API requests. This is the value you copied in the [Setup authentication](#set-up-authentication) section. | `9f6c021d-1234-4abc-8df7-123456789abc` |
+| credentialsource | The value should always be set to two.| 2 |
+| subjectscope | The value should always be set to one. | 1 |
+| tenantid | The **Tenant (Directory) ID** of your organization's Azure Active Directory | `b5122edb-5678-4def-99e2-abcdef123456` |
+
+### Update custom messaging channel
+
+```javascript
+// define the data to update a msdyn_occustommessagingchannel record
+var data = {
+    "managedidentityid@odata.bind": "/managedidentities(REPLACE_WITH_managed_identity_id)"
+};
+
+// update the record
+Xrm.WebApi.updateRecord("msdyn_occustommessagingchannel", "REPLACE_WITH_custom_channel_id", data).then(
+    function success(result) {
+        console.log("msdyn_occustommessagingchannel updated");
+    },
+    function (error) {
+        console.log(error.message);
+    }
+);
+```
+
+## Obtain FICSubject
+
+Run the following in a new tab in the browser where you are logged into the Copilot Service admin center:
+
+```
+https://{org_url}/api/data/v9.2/GetComponentManagedIdentityFIC(ComponentName='msdyn_occustommessagingchannel',ComponentId={custom_channel_id})
+```
+
+- Copy the FICSubject value. You'll add it as the new credential to the Entra App registration.
+- Navigate to Azure Portal > **Entra ID** > **Manage** > **App Registrations** and select the Entra app registration you created earlier. 
+- Under **Manage**, select **Certificates & secrets** > **Federated credentials** > **Add credential** and specify the following details: 
+
+**Federated credential scenario**: Other issuer
+**Issuer enter:** `https://login.microsoftonline.com/{tenant_id}/v2.0`  
+**Type:** Explicit subject identifier  
+**Value enter:** `{FICSubject}` copied from GetCompoenentManagedIndentiyFIC

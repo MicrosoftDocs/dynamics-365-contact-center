@@ -1,7 +1,7 @@
 ---
 title: Use agent dashboard and call controls in the voice channel
 description: Learn how you can use the agent dashboard, call controls, and make and receive customer calls.
-ms.date: 07/24/2025
+ms.date: 09/08/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -36,6 +36,13 @@ The conversation panel in the service representative dashboard includes the foll
 - **Hold**: Puts the customer on hold. The customer hears the hold music. You can keep only one caller on hold at a time. 
 To avoid the recording and transcription of what you say while the customer is on hold, your administrator can enable the **Allow automatic pause and resume when representative hold and un-hold the customer** option. With this option, recording and transcription are paused when you put the customer on hold and resumed when you remove the customer from hold. If the option is disabled, you must manually pause and resume the recording and transcription.
 - **Consult**: Consult with a participant. You can consult with or bring another representative or supervisor into the call. You can have a *public* consultation, where the customer is actively involved in the conversation. Or you can have a *private* consultation, where you can put the customer on hold before you talk to your peers or supervisor.
+
+The consult feature includes advanced controls for managing multiple participants:
+
+  - **Individual participant management**: When consulting with multiple representatives or supervisors, you can place individual consulting participants on hold using the hold control next to each participant. Participants placed on hold will hear hold music.
+  - **Hold status visibility**: The system provides clear visual indicators showing the hold status of all participants. When the customer is taken off hold, representatives not currently on hold will see the customer's status as "off hold".
+  - **Individual transfer options**: Transfer controls next to each consulting participant allow you to transfer the call to specific representatives within the consult.
+  - **Role promotion**: You can promote a consulting representative to primary status, allowing them to take over as the main contact while you transition to a consulting role or leave the call.
 
   > [!NOTE]
   > - When you initiate a consult, you're the primary service representative and the new participant has a consult role. Select **Transfer** next to the participant to transfer the call to the consulting service representative or supervisor. Once the call is transferred, you're the consulting service representative and can leave the call without ending the call. The consulting service representative becomes the primary service representative. If the primary service representative leaves the call, the call ends for the customer.

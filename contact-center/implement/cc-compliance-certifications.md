@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: 
-ms.date: 08/08/2025
+ms.date: 09/04/2025
 ms.custom: bap-template
 ---
 
@@ -21,6 +21,7 @@ Dynamics 365 Contact Center is designed with compliance at its core and is a Cor
 - System and Organization Controls (SOC)
 - Various International Organization for Standardization (ISO) certifications
 - Payment Card Industry (PCI) Data Security Standard (DSS)
+- Support DORA compliance for the Financial Services Industry (FSI) and Critical Third Party Providers
 - The Cloud Security Alliance (CSA) Security Trust Assurance and Risk (STAR)
 - United Kingdom Government Cloud (G-Cloud) 
 

@@ -40,7 +40,7 @@ The service is retried three times, with a 10-second timeout on each attempt.
 
 ---
 
-## Retry Policy
+## Retry policy
 
 - The webhook service **retries up to three times**.
 - Each retry allows a **10-second timeout**.
@@ -48,7 +48,7 @@ The service is retried three times, with a 10-second timeout on each attempt.
 
 
 
-## Request Payload
+## Request payload
 
 Payloads follow the [Bot Framework Activity Schema](/javascript/api/botframework-schema/activity?view=botbuilder-ts-latest). The structure includes message content, activity type, sender details, and optional attachments.
 
@@ -82,7 +82,7 @@ Payloads follow the [Bot Framework Activity Schema](/javascript/api/botframework
 
 ---
 
-## Event Activity Names
+## Event activity names
 
 The following values are sent in the **name** field of `event` activities:
 

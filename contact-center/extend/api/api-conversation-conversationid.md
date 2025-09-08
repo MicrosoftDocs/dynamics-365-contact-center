@@ -173,7 +173,7 @@ Custom events allow you to send structured data and trigger system processes in 
 | channelData | | | object | — |
 | | customEvent | True when sending event | Boolean | — |
 | | customEventName | Name of the event | string | — |
-| | customEventValue | JSON-encoded string containing variables as objects with key names and values. Use the displayable flag to control whether specific values are visible to service representatives. Learn more in [setcontextprovider](/dynamics365/customer-service/develop/reference/methods/setcontextprovide). | string | — |
+| | customEventValue | JSON-encoded string containing variables as objects with key names and values. Use the displayable flag to control whether specific values are visible to service representatives. Learn more in [setcontextprovider](/dynamics365/customer-service/develop/reference/methods/setcontextprovider). | string | — |
 
 > **Note:** Please see the section on Microsoft CoPilot Events for supporting bi-directional eventing using Microsoft Copilot Studio.
 

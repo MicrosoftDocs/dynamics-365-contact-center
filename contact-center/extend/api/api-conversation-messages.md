@@ -15,7 +15,8 @@ Retrieves a list of all messages exchanged in an active conversation. The respon
 
 If there are no messages for the given conversation ID, the API returns an empty array.
 
----
+> [!NOTE]
+> The conversations endpoint mustn't be used as a polling mechanism. Conversation events are posted to Microsoft and updates posted back to your subscribed webhook.
 
 ## Method
 

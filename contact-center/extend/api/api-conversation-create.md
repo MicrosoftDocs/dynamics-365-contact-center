@@ -32,7 +32,7 @@ The API expects the following in the body of the HTTP POST request. The payload 
 
 {
  "customercontext": {
-    " customerid": "jdoe123",
+    "customerid": "jdoe123",
     "firstname": "John",
     "lastname": "Doe",
     "preferredname": "John Doe", // This will be displayed to the customer service representative
@@ -40,9 +40,15 @@ The API expects the following in the body of the HTTP POST request. The payload 
     "phonenumber": "1234567890"
   },
   "conversationcontext": {
-    "productname": { "isDisplayable": true, "value": “XBox" },
+    "productname": { "isDisplayable": true, "value": "XBox" },
     "issue": { "isDisplayable": true, "value": "installation" }
-   }
+  },
+  "conversationrequestid": "some unique id",
+  "startmessage": {
+    "message": "Some initial message",
+    "displayname": "Sender name"
+  },
+  "skipdeflectionbot": true
 }
 
 ```
@@ -61,6 +67,10 @@ Provides customer identity and other relevant information that can be used for r
 | `preferredname` | Display name for the agent UI            | `string`         | 200 chars  | Optional       |
 | `email`         | Email address (used for record matching) | `string` (email) | 200 chars  | Optional        |
 | `phonenumber`   | Phone number (used for record matching)  | `string`         | 200 chars  | Optional        |
+| `startmessage`   | This message is processed when a new conversation is initialized. The message is sent only to the customer service representative, and isn't shared with the AI agent.  | `string`         | 27 Kb  | Optional        |
+| `skipdeflectionbot`   | When set to True, won't engage an AI agent.  | `boolean`         |   | Optional       |
+
+
 
 ### conversationontext
 
@@ -69,3 +79,23 @@ Provides customer identity and other relevant information that can be used for r
 ## Record identification
 
  Record identification in customer service is based on the email and phone number provided in the request body. If an existing record is identified, but other fields such as first name and last name don't match the values in the body, the application uses the values in the existing identified record and ignores the values in the request body.
+
+## Response
+
+The API returns the following JSON response. 
+
+```json
+{
+  "conversationId": "some unique GUID",
+  "isNew": true/false,
+  "messageId": "1234567890123"
+}
+```
+
+### Field Descriptions
+
+| Field | Description | Type |
+|-------|-------------|------|
+| conversationId | The conversationId is a GUID that should be used for subsequent API calls. | string |
+| isNew | Indicates if the conversation is a new conversation or an existing conversation being continued. | Boolean |
+| messageId | The messageId is a 13-digit string epoch timestamp which can be used for message ordering to match the message order displayed to agent (only when start message is used). | string |

@@ -16,6 +16,8 @@ Retrieves a list of all the active conversations created through the custom chan
 
 Conversations that are in **Wrap-Up** or **Closed** states aren't included in the response. If no active conversations exist, the response returns an empty array.
 
+> [!NOTE]
+> The conversations endpoint mustn't be used as a polling mechanism. Conversation events are posted to Microsoft and updates posted back to your subscribed webhook. 
 
 
 ## Method

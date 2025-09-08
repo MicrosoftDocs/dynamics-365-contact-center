@@ -15,6 +15,9 @@ Retrieves an array of context variables associated with an ongoing conversation.
 
 If the conversation has no context variables, the API returns an empty array.
 
+> [!NOTE]
+> The conversations endpoint mustn't be used as a polling mechanism. Conversation events are posted to Microsoft and updates posted back to your subscribed webhook.
+
 ## Method
 
 `GET`

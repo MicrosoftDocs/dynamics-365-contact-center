@@ -53,7 +53,7 @@ The base URL for making API calls is constructed using the organization ID and t
 All API calls must be **authenticated** using a valid Microsoft Entra access token. Each request must include the following headers:
 
 ```http
-Authorization: Bearer {access_token}
+Authorization: Bearer {token}
 x-ms-channel-id: {custom_channel_id_guid}
 x-ms-organization-id: {org_id_guid}
 ```
@@ -61,8 +61,9 @@ x-ms-organization-id: {org_id_guid}
 Where
 
 - **Authorization**: OAuth 2.0 bearer token.
-- **x-ms-channel-id**: Unique identifier of your Messaging API custom channel.
-- **x-ms-organization-id**: Your organization’s GUID.
+- **channel-id**: Unique identifier of your Messaging API custom channel.
+- **organization-id**: Your organization’s GUID.
+
 
 > [!NOTE] 
 > A `401 Unauthorized` error appears if you don't specify the authentication header when you make a call.

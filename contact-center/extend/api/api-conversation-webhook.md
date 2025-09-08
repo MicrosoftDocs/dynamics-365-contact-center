@@ -32,11 +32,11 @@ The service is retried three times, with a 10-second timeout on each attempt.
 `POST`
 
 
-## Request Headers
+## Request headers
 
 | Header        | Description                                             | 
 |----------------|---------------------------------------------------------|
-| `x-ms-token`   | Authorization token   
+| `Authorization`   | Authorization Bearer token obtained from the registered Entra App.|
 
 ---
 

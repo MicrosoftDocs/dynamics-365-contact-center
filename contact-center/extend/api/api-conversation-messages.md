@@ -27,7 +27,7 @@ If there are no messages for the given conversation ID, the API returns an empty
 `/api/v1.0/consumer/conversation/{conversationId}/messages`
 
 
-##  Route Parameters
+## Request parameters
 
 | Parameter        | Description                   | Type     | Required |
 |------------------|-------------------------------|----------|----------|
@@ -35,7 +35,7 @@ If there are no messages for the given conversation ID, the API returns an empty
 
 ---
 
-## Query Parameters (Optional)
+## Query parameters (Optional)
 
  Query parameters allow you to filter, limit, and paginate the messages returned by the API for more efficient data retrieval.
 
@@ -47,7 +47,7 @@ If there are no messages for the given conversation ID, the API returns an empty
 
 ---
 
-##  Response Payload
+##  Response payload
 
 ```json
 {

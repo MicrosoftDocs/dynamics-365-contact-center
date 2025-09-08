@@ -53,9 +53,11 @@ The API expects the following in the body of the HTTP POST request. The payload 
 
 ```
 
-## Request schema
+### Request schema
 
-### customercontext
+The following sections describe the request schema in detail.
+
+**customercontext**
 
 Provides customer identity and other relevant information that can be used for record identification and to display the information to the customer service representative.
 
@@ -72,11 +74,12 @@ Provides customer identity and other relevant information that can be used for r
 
 
 
-### conversationontext
+**conversationcontext**
 
  The conversationcontext object allows you to pass up to 100 context variables. The variables are objects that contain a key name and object value. You can set the `displayable flag` to indicate if the value appears to the service representative. Learn more in [setcontextprovider](/dynamics365/customer-service/develop/reference/methods/setcontextprovider). 
 
-## Record identification
+
+**Record identification**
 
  Record identification in customer service is based on the email and phone number provided in the request body. If an existing record is identified, but other fields such as first name and last name don't match the values in the body, the application uses the values in the existing identified record and ignores the values in the request body.
 
@@ -92,7 +95,7 @@ The API returns the following JSON response.
 }
 ```
 
-### Field Descriptions
+**Field descriptions**
 
 | Field | Description | Type |
 |-------|-------------|------|

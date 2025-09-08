@@ -143,7 +143,7 @@ https://{org_url}/api/data/v9.2/GetComponentManagedIdentityFIC(ComponentName='ms
 **Type:** Explicit subject identifier  
 **Value enter:** `{FICSubject}` copied from GetCompoenentManagedIndentiyFIC
 
-## Add and manage channels
+## Manage channels
 
 To enable a custom messaging channel using the Messaging API, you must create a corresponding record in Dataverse. This record defines the key connection settings—such as the Azure app ID and webhook URL—that the system uses to authenticate and communicate with your channel.
 
@@ -224,5 +224,5 @@ Perform the following steps to create, update, or delete a custom messaging chan
 
      `{org_url}/api/data/v9.2/msdyn_occustommessagingchannels`
 
-1. Perform the steps to add the [custom channel](/dynamics365/customer-service/administer/configure-custom-channel) to the workstream. In the **Channel** field, specify the Messaging API channel you created in the **Create a new custom messaging channel** section.
+4. Perform the steps to add the [custom channel](/dynamics365/customer-service/administer/configure-custom-channel) to the workstream. In the **Channel** field, specify the Messaging API channel you created in the **Create a new custom messaging channel** section.
 

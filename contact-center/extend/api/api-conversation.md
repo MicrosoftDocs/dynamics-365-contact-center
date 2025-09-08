@@ -41,7 +41,7 @@ Query parameters allow you to filter, limit, and paginate the list of active con
 
 
 
-## Response Payload
+## Response payload
 
 ```json
 {
@@ -65,7 +65,7 @@ Query parameters allow you to filter, limit, and paginate the list of active con
 
 ```
 
-### Response Fields
+### Response fields
 
 | Tier 1 Key          | Tier 2 Key       | Description                                                   | Type       |
 | ------------------- | ---------------- | ------------------------------------------------------------- | ---------- |

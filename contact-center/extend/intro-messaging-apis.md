@@ -54,8 +54,8 @@ All API calls must be **authenticated** using a valid Microsoft Entra access tok
 
 ```http
 Authorization: Bearer {token}
-x-ms-channel-id: {custom_channel_id_guid}
-x-ms-organization-id: {org_id_guid}
+channel-id: {custom_channel_id_guid}
+organization-id: {org_id_guid}
 ```
 
 Where

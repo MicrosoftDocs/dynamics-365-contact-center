@@ -28,7 +28,7 @@ If the conversation has no context variables, the API returns an empty array.
 
 
 
-## Route Parameters
+## Request Parameters
 
 | Parameter        | Description                                             | Type     | Required |
 |------------------|---------------------------------------------------------|----------|----------|

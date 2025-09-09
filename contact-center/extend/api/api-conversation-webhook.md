@@ -55,7 +55,7 @@ The service is retried three times, with a 10-second timeout on each attempt.
 
 ## Request payload
 
-Payloads follow the [Bot Framework Activity Schema](/javascript/api/botframework-schema/activity?view=botbuilder-ts-latest). The structure includes message content, activity type, sender details, and optional attachments.
+Payloads follow the [Bot Framework Activity Schema](/javascript/api/botframework-schema/activity). The structure includes message content, activity type, sender details, and optional attachments.
 
 ### Request Body Fields
 

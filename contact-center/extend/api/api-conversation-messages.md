@@ -1,6 +1,6 @@
 ---
 title: Use /conversation/{conversationId}/messages endpoint
-description: Learn how to retrieve messages from a conversation using the /conversation/{conversationId}/messages endpoint. Includes filtering, pagination, and response details.
+description: Learn how to retrieve messages from a conversation using the /conversation/{conversationId}/messages endpoint in Dynamics 365 Customer Service and Contact Center. Includes filtering, pagination, and response details.
 ms.date: 09/10/2025
 ms.topic: how-to
 author: gandhamm

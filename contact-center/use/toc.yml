@@ -83,9 +83,9 @@
         - name: Customer Knowledge Management Agent
           items:
           - name: Review knowledge articles created by the Customer Knowledge Management Agent
-            href: /dynamics365/customer-service/use/admin-km-agent-review?context=/dynamics365/contact-center/context/use-context
+            href: /dynamics365/customer-service/administer/admin-km-agent-review?toc=/dynamics365/contact-center/administer/toc.json&bc=../../breadcrumb/toc.yml
           - name: Use knowledge insights for Customer Knowledge Management Agent
-            href: /dynamics365/customer-service/use/admin-km-agent-insights?context=/dynamics365/contact-center/context/use-context
+            href: /dynamics365/customer-service/administer/admin-km-agent-insights?toc=/dynamics365/contact-center/administer/toc.json&bc=../../breadcrumb/toc.yml
       - name: Use Copilot features in contact center-standalone
         items: 
         - name: Copilot feature availability across applications

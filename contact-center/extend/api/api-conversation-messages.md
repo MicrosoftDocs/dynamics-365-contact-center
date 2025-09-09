@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Use /conversation/{conversationId}/messages endpoint
 
-Retrieve a list of all messages exchanged in an active conversation. The response is structured using the [Bot Framework Activity Schema](/javascript/api/botframework-schema/activity?view=botbuilder-ts-latest).
+Retrieve a list of all messages exchanged in an active conversation. The response is structured using the [Bot Framework Activity Schema](/javascript/api/botframework-schema/activity).
 
 If there aren't any messages for the given conversation ID, the API returns an empty array.
 

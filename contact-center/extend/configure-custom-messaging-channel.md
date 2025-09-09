@@ -178,13 +178,12 @@ Perform the following steps to create, update, or delete a custom messaging chan
     ```
      You can specify the following parameters in the request body:
 
-      | **Field**              | **Description**   | **Example**    |
+      | Field              | **Description**   | **Example**    |
       |--------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------|
       | `msdyn_appid`      | The **Application (client) ID** of the Microsoft Entra ID app used to authenticate Messaging API requests. This is the value you copied in the [Setup authentication](#set-up-authentication) section. | `9f6c021d-1234-4abc-8df7-123456789abc` | 
       | `msdyn_tenantid`   | The **Tenant (Directory) ID** of your organization's Microsoft Entra ID. | `b5122edb-5678-4def-99e2-abcdef123456`  | 
-      | `msdyn_webhookurl` | The **HTTPS endpoint** that receives messages and events from the application. Must use a valid, non-self-signed certificate. This is the value you configured in [Setup webhook](#set-up-webhook) section. | `https://contoso-bot.example.com`                              | <br>
+      | `msdyn_webhookurl` | The **HTTPS endpoint** that receives messages and events from the application. Must use a valid, non-self-signed certificate. This is the value you configured in [Setup webhook](#set-up-webhook) section. | `https://contoso-bot.example.com`                              | 
 
-      Replace `{channel_id}` with the ID of the channel to delete. Find this ID in the URL of the channel record in the admin center or by querying the API. <br>
 
   - **Update an existing record.**
   
@@ -207,6 +206,7 @@ Perform the following steps to create, update, or delete a custom messaging chan
 
        ```
   - **Delete an existing record**
+    Replace `{channel_id}` with the ID of the channel to delete. Find this ID in the URL of the channel record in the admin center or query the API.  
   
       ```js
 

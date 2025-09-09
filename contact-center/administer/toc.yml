@@ -308,6 +308,12 @@
             href: set-up-intent-agent.md
           - name: Set up voice agents to use intents
             href: set-up-voice-agents-to-use-intents.md
+        - name: Customer Knowledge Management Agent
+          items:
+          - name: Manage Customer Knowledge Management Agent
+            href: /dynamics365/customer-service/administer/admin-km-agent?context=/dynamics365/contact-center/context/administer-context
+          - name: Configure connection references
+            href: /dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features
@@ -325,13 +331,11 @@
         - name: Customize Copilot conversation summaries
           href: customize-copilot-conv-summary.md   
         - name: Enable knowledge sources from Microsoft Copilot Studio (preview)
-          href: knowledge-copilot.md               
+          href: knowledge-copilot.md              
         - name: Languages supported in Copilot
           href: /dynamics365/customer-service/administer/cs-region-availability-service-limits#language-support-for-ai-based-analytics-and-insights-in-customer-service?context=/dynamics365/contact-center/context/administer-context
         - name: Copilot architecture diagram
           href: /digital-contact-center-platform/guidance/dynamics-365-customer-service-copilot-architecture?context=/dynamics365/contact-center/context/administer-context
-        - name: Enable knowledge sources from Microsoft Copilot Studio (preview)
-          href: /dynamics365/customer-service/administer/knowledge-copilot?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ for Copilot in Customer Service
           href: /dynamics365/customer-service/administer/faq-copilot-features?context=/dynamics365/contact-center/context/administer-context
       - name: Chat 

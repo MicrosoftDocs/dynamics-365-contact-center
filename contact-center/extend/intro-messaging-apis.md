@@ -1,8 +1,8 @@
 ---
 title: Overview of messaging APIs
-description: Learn how to use Dynamics 365 Customer Service or Contact Center messaging APIs to build custom service-to-service communication experiences with RESTful endpoints.
+description: Learn how to use Dynamics 365 Customer Service or Dynamics 365 Contact Center messaging APIs to build custom service-to-service communication experiences with RESTful endpoints.
 ms.date: 09/10/2025
-ms.topic: how-to
+ms.topic: reference
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham

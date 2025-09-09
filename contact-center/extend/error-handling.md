@@ -1,6 +1,6 @@
 ---
 title: Error handling in messaging APIs
-description: Learn how error handling in messaging APIs works.
+description: Learn how error handling in Dynamics 365 Customer Service and Dynamics 365 Contact Center messaging APIs works.
 ms.date: 09/10/2025
 ms.topic: how-to
 author: gandhamm

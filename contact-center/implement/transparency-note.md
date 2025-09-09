@@ -4,9 +4,10 @@ description: This transparency note discusses constrained speech recognition and
 author: neeranelli
 ms.author: sambobo
 ms.reviewer: nenellim
-ms.date: 08/25/2025
+ms.date: 09/09/2025
 ms.topic: concept-article
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 ---
 
 # Transparency note: Constrained speech recognition

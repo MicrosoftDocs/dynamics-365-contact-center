@@ -87,7 +87,7 @@
             - name: "/consumer/conversations/create"
               href: api/api-conversation-create.md
             - name: "/conversation/{id}"
-              href: api/api-conversationid.md
+              href: api/api-conversation-endpoint.md
             - name: "/conversations"
               href: api/api-conversation.md
             - name: "/conversation/{conversationId}/messages"

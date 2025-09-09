@@ -1,6 +1,6 @@
 ---
 title: Use webhook to receive messages and events
-description: Learn how to configure a webhook to receive real-time messages and events in your custom messaging channel with retry policies and payload examples.
+description: Learn how to configure a webhook to receive real-time messages and events in custom messaging channel configured in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
 ms.date: 09/10/2025
 ms.topic: how-to
 author: gandhamm

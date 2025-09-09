@@ -37,7 +37,7 @@ The service is retried three times, with a 10-second timeout on each attempt.
 
 | Header        | Description                                             | 
 |----------------|---------------------------------------------------------|
-| `Authorization`   | Authorization Bearer token obtained from the registered Microsoft Entra App.|
+| Authorization  | Authorization Bearer token obtained from the registered Microsoft Entra App.|
 
 ---
 

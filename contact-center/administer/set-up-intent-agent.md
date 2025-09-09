@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 08/12/2025
+ms.date: 08/29/2025
 ms.custom: bap-template
 ---
 
@@ -96,7 +96,7 @@ Connect the knowledge articles in your Dynamics 365 instance to your Copilot age
 |Global.IntentRedirectOnUnknownIntent    |  Escalate |  Hand off as no intent is found.|
 |Global.IntentRedirectOnUnableToProceed |Escalate |  Hand off when the conversation is stuck. |
 |Global.IntentRedirectOnEscalate    | Escalate  | Hand off to a representative.|
-|Global.IntentRedirectOnError |  Escalate  |  Hand off due to service error.|
+|Global.IntentRedirectOnError |  OnError |  Hand off due to service error.|
 
 > [!NOTE]
 > If the Copilot agent doesn't have any of the mapped variables, you can [override the default variable](#override-default-variable).

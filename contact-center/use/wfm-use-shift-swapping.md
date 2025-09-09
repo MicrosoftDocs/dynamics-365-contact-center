@@ -1,7 +1,7 @@
 ---
 title: Use shift swapping
 description: Learn how to set up shift swapping to help you efficiently manage your work schedule.
-ms.date: 04/14/2025
+ms.date: 09/09/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -26,3 +26,7 @@ As a customer service representative, you can use shift swapping to manage your 
       - **Note**: Type a note if desired.
 1. On the **Select shift to swap** card, enter your **Availability date** and **Preferred time range** so that others know when you're available to swap a shift.
 1. If you want the system to notify all representatives who meet your availability criteria, toggle on **Public Post**. If the setting is off, the system lists other representatives' available bookings that can be swapped, and then you can select the shift you want to use and complete the swap.
+
+### Related information
+[Overview of Copilot Service workspace](ccw-overview.md)  
+[Use shift bidding](wfm-use-shift-swapping.md)

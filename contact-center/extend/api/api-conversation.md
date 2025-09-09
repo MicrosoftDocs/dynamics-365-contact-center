@@ -1,7 +1,7 @@
 ---
 title: Use /conversations endpoint
-description: Learn how to use the /conversations endpoint.
-ms.date: 04/30/2025
+description: Learn how to retrieve active conversations using the /conversations endpoint. Filter, paginate, and manage data efficiently with this guide.
+ms.date: 09/09/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -9,35 +9,33 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
+
 # Use /conversations endpoint
 
+Retrieves a list of all active conversations created through the custom channel using the Messaging APIs. Conversations created for other messaging channels aren't retrieved.
 
-Retrieves a list of all the active conversations created through the custom channel created using the Messaging APIs. Conversations created for other messaging channels aren't retrieved.
-
-Conversations that are in **Wrap-Up** or **Closed** states aren't included in the response. If no active conversations exist, the response returns an empty array.
+Conversations in the **Wrap-Up** or **Closed** states aren't included in the response. If no active conversations exist, the response returns an empty array.
 
 > [!NOTE]
-> The conversations endpoint mustn't be used as a polling mechanism. Conversation events are posted to Microsoft and updates posted back to your subscribed webhook. 
-
+> Don't use the conversations endpoint as a polling mechanism. Conversation events are posted to Microsoft, and updates are sent back to your subscribed webhook.
 
 ## Method
 
 `GET`
 
-
 ## URL
 
 `/api/v1.0/consumer/conversations`
 
-## Query parameters 
+## Query parameters
 
 Query parameters allow you to filter, limit, and paginate the list of active conversations returned by the API for more efficient data retrieval.
 
 | Parameter         | Description                                                                 | Type                      |
 |-------------------|-----------------------------------------------------------------------------|---------------------------|
-| `StartTimeStamp`  | Filters conversations created **after** this timestamp (ISO 8601 format).   | `string` (DatetimeOffset) |
-| `PageSize`        | Maximum number of conversations to return. Default: `50`, Max: `250`.       | `integer`                 |
-| `ContinuationToken`| Used for pagination to avoid duplicates in large result sets.             | `GUID` string             |
+| StartTimeStamp    | Filters conversations created **after** this timestamp (ISO 8601 format).   | string (DatetimeOffset)   |
+| PageSize          | Maximum number of conversations to return. Default: 50, Max: 250.       | integer                   |
+| ContinuationToken | Used for pagination to avoid duplicates in large result sets.             | GUID string               |
 
 
 
@@ -69,7 +67,7 @@ Query parameters allow you to filter, limit, and paginate the list of active con
 
 | Tier 1 Key          | Tier 2 Key       | Description                                                   | Type       |
 | ------------------- | ---------------- | ------------------------------------------------------------- | ---------- |
-| `conversations`     | `[ ]`            | JSON array of active conversation records                     | `array`    |
-|                     | `conversationid` | Unique ID of the conversation                                 | `GUID`     |
-|                     | `timestamp`      | Creation timestamp in ISO 8601 format                         | `Datetime` |
-| `continuationtoken` |                  | Token used for fetching the next page of results, if necessary | `GUID`     |
+| conversations     | [ ]            | JSON array of active conversation records                     | array    |
+|                     | conversationid | Unique ID of the conversation                                 | GUID     |
+|                     | timestamp      | Creation timestamp in ISO 8601 format                         | Datetime |
+| continuationtoken   |                  | Token used for fetching the next page of results, if necessary | GUID     |

@@ -1,7 +1,7 @@
 ---
 title: Use /conversation/{id} endpoint
 description: Learn how to use the /conversation/{id} endpoint.
-ms.date: 04/30/2025
+ms.date: 09/10/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -11,9 +11,9 @@ ms.custom: bap-template
 
 # Use /conversation/{id} endpoint
 
-This endpoint allows you to send an activity to an ongoing conversation. The request must follow the [Bot Framework Activity Schema](https://github.com/microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md).
+This endpoint lets you send an activity to an ongoing conversation. The request follows the [Bot Framework Activity Schema](https://github.com/microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md).
 
-You can send various types of activities such as messages, typing indicators, or conversation closure events.
+Send various types of activities, such as messages, typing indicators, or conversation closure events.
 
 ---
 
@@ -27,12 +27,12 @@ You can send various types of activities such as messages, typing indicators, or
 
 ## Supported activity types
 
-- `message`: Send a message (optionally with attachments)
-- `typing`: Indicate the user is typing
-- `endOfConversation`: End the conversation
-- `event`: Custom events are designed to inform the system of an event without needed to send a message, whilst supporting the sending of meta data  
+- `message`: Sends a message (optionally with attachments)
+- `typing`: Indicates the user is typing
+- `endOfConversation`: Ends the conversation
+- `event`: Custom events inform the system of an event without needing to send a message and support sending metadata  
 
-If an unsupported event name is passed in an `event` type, the API returns a 400 error.
+If you pass an unsupported event name in an `event` type, the API returns a 400 error.
 
 ---
 
@@ -41,7 +41,7 @@ If an unsupported event name is passed in an `event` type, the API returns a 400
 The payload for this API is a JSON-formatted object that defines the activity being sent to the conversation—such as a message, typing indicator, or end-of-conversation event—based on the Bot Framework activity schema.
 
 
-### Payload for message, automated message, attachment
+### Payload for message, automated message, and attachment
 
 ```json
 {
@@ -75,23 +75,23 @@ The payload for this API is a JSON-formatted object that defines the activity be
 
 | Tier 1 Key              | Tier 2 Key           | Description                                                                 | Type                      | Max Length              |
 |-------------------------|----------------------|-----------------------------------------------------------------------------|---------------------------|--------------------------|
-| `type`                  |                      | Type of activity being sent. For messages, use `"message"`.                | `string`                  | 256 characters           |
-| `id`                    |                      | Optional identifier for the message.                                       | `string`                  | —                        |
-| `channelId`             |                      | GUID of the messaging channel. Must match the channel used in headers.     | `GUID`                    | —                        |
-| `from`                 |                      | Object containing sender info. Optional.                                   | `object`                  | —                        |
-|                         | `id`                 | ID of the sender. Optional.                                                | `string`                  | 256 characters           |
-|                         | `name`               | Display name of the sender shown to the agent.                             | `string`                  | 256 characters           |
-| `text`                  |                      | Text content of the message. Required if no attachments are present.       | `string`                  | 6,000 characters           |
-| `attachments`           |                      | Array of attachment objects. Required if no `text` is provided. Learn more in [Configure file attachment capability](/dynamics365/customer-service/administer/configure-file-attachment)           | `array` of objects        | —                        |
-|                         | `contentType`        | MIME type of the attachment (for example, `image/png`, `application/pdf`).        | `string`                  | 256 characters           |
-|                         | `contentUrl`         | URL or embedded base64 content for the file.                               | `string`                  | —                        |
-|                         | `name`               | Name of the file including extension.                                      | `string`                  | 256 characters           |
-| `channelData.messagingapi-oc` | `type`        | Optional. If `"AutomatedMessage"`, marks the message as automated.         | `string`                  | 256 characters           |
+| type                  |                      | Type of activity being sent. For messages, use "message".                | string                  | 256 characters           |
+| id                    |                      | An optional identifier for the message.                                       | string                  | —                        |
+| channelId             |                      | The GUID of the messaging channel. It must match the channel used in headers.     | GUID                     | —                        |
+| from                  |                      | Object containing sender info. Optional.                                   | object                   | —                        |
+|                         | id                   | ID of the sender. Optional.                                                | string                   | 256 characters           |
+|                         | name                 | Display name of the sender.                             | string                   | 256 characters           |
+| text                   |                      | Text content of the message. Required if no attachments are present.       | string                   | 6,000 characters           |
+| attachments           |                      | Array of attachment objects. Required if no text is provided. Learn more in [Configure file attachment capability](/dynamics365/customer-service/administer/configure-file-attachment).           | array of objects        | —                        |
+|                         | contentType        | MIME type of the attachment. For example, image/png, application/pdf.        | string                  | 256 characters           |
+|                         | contentUrl         | URL or embedded base64 content for the file.                               | string                  | —                        |
+|                         | name               | Name of the file including extension.                                      | string                  | 256 characters           |
+| channelData.messagingapi-oc | type        | Optional. If "AutomatedMessage", marks the message as automated.         | string                  | 256 characters           |
 
 > [!NOTE] 
 > Either `text` or `attachments` must be provided. If both are missing, the request is rejected.
 
-### End of conversation payload
+### End-of-conversation payload
 
 ```json
 {
@@ -109,14 +109,14 @@ The payload for this API is a JSON-formatted object that defines the activity be
 
 | Key            | Description            | Type     |
 | -------------- | ---------------------- | -------- |
-| `type`         | `"endOfConversation"`  | `string` |
-| `channelId`    | Channel GUID           | `GUID`   |
-| `conversation` | Object containing `id` | `object` |
-| `id`           | Conversation ID        | `GUID`   |
+| type           | endOfConversation  | string |
+| channelId      | Channel GUID           | GUID   |
+| conversation   | Object containing id | object |
+| id             | Conversation ID        | GUID   |
 
 ### Typing indicator
 
-```JSON
+```json
 {
   "type": "typing",
   "channelId": GUID,
@@ -133,14 +133,14 @@ The payload for this API is a JSON-formatted object that defines the activity be
 
 | Key               | Description                | Type     |
 | ----------------- | -------------------------- | -------- |
-| `type`            | `"typing"`                 | `string` |
-| `channelId`       | Channel GUID               | `GUID`   |
-| `from.name`       | Display name of the sender | `string` |
-| `conversation.id` | Conversation ID            | `GUID`   |
+| type            | typing                 | string |
+| channelId       | Channel GUID               | GUID   |
+| from.name       | Display name of the sender | string |
+| conversation.id | Conversation ID            | GUID   |
 
 ## Custom events
 
-Custom events allow you to send structured data and trigger system processes in ongoing conversations without displaying messages to customer service representatives.
+Custom events let you send structured data and trigger system processes in ongoing conversations without showing messages to customer service representatives.
 
 ### Request payload
 
@@ -173,13 +173,14 @@ Custom events allow you to send structured data and trigger system processes in 
 | channelData | | | object | — |
 | | customEvent | True when sending event | Boolean | — |
 | | customEventName | Name of the event | string | — |
-| | customEventValue | JSON-encoded string containing variables as objects with key names and values. Use the displayable flag to control whether specific values are visible to service representatives. Learn more in [setcontextprovider](/dynamics365/customer-service/develop/reference/methods/setcontextprovider). | string | — |
+| | customEventValue | JSON-encoded string containing variables as objects with key names and values. Use the displayable flag to control whether specific values are visible to service representatives. For more information, see [setcontextprovider](/dynamics365/customer-service/develop/reference/methods/setcontextprovider). | string | — |
 
-> **Note:** Please see the section on Microsoft CoPilot Events for supporting bi-directional eventing using Microsoft Copilot Studio.
+> [!NOTE] 
+> Learn more in [Configure Copilot Studio agent custom events](configure-custom-events.md).
 
 ### Response
 
-The API returns the following response.
+The API shows the following response.
 
 ```json
 {
@@ -191,4 +192,4 @@ The API returns the following response.
 
 | Field | Description | Type |
 |-------|-------------|------|
-| messageId | The messageId is a 13-digit string epoch timestamp which can be used for message ordering to match the message order displayed to agent. | string |
+| messageId | The messageId is a 13-digit string epoch timestamp that you can use for message ordering to match the message order. | string |

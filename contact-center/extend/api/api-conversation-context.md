@@ -1,7 +1,7 @@
 ---
 title: Use /conversation/{conversationId}/contexts endpoint
 description: Learn how to use the /conversation/{conversationId}/contexts endpoint.
-ms.date: 04/30/2025
+ms.date: 09/10/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -11,12 +11,12 @@ ms.custom: bap-template
 
 # Use /conversation/{conversationId}/contexts endpoint
 
-Retrieves an array of context variables associated with an ongoing conversation. These context variables help enrich the conversation with additional metadata (for example, product details, browser info, locale) and are visible to the customer service representative.
+Retrieve an array of context variables associated with an ongoing conversation. These context variables enrich the conversation with additional metadata, such as product details, browser info, and locale, and are visible to the customer service representative.
 
 If the conversation has no context variables, the API returns an empty array.
 
 > [!NOTE]
-> The conversations endpoint mustn't be used as a polling mechanism. Conversation events are posted to Microsoft and updates posted back to your subscribed webhook.
+> Don't use the conversations endpoint as a polling mechanism. Conversation events are posted to Microsoft, and updates are posted back to your subscribed webhook.
 
 ## Method
 
@@ -32,7 +32,7 @@ If the conversation has no context variables, the API returns an empty array.
 
 | Parameter        | Description                                             | Type     | Required |
 |------------------|---------------------------------------------------------|----------|----------|
-| `conversationId` | The unique ID of the conversation to retrieve context for | `GUID` string | Yes |
+| conversationId | The unique ID of the conversation to retrieve context for. | GUID string | Yes |
 
 
 
@@ -57,7 +57,7 @@ If the conversation has no context variables, the API returns an empty array.
 
 | Tier 1 Key | Tier 2 Key | Tier 3 Key | Description                           | Type                |
 | ---------- | ---------- | ---------- | ------------------------------------- | ------------------- |
-| `context`  | `[ ]`      | —          | JSON array of context key-value pairs | `array`             |
-|            | `name`     | —          | Name of the context variable          | `string`            |
-|            | `value`    | —          | Value of the context variable         | `string` / `object` |
+| context  | [ ]      | —          | JSON array of context key-value pairs | array             |
+|            | name     | —          | Name of the context variable          | string            |
+|            | value    | —          | Value of the context variable         | string / object |
 

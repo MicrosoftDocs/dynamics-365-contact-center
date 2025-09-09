@@ -1,13 +1,14 @@
 ---
 title: Use webhook to receive messages and events
-description: Learn how to use webhook to receive messages and events.
-ms.date: 04/30/2025
+description: Learn how to configure a webhook to receive real-time messages and events in your custom messaging channel with retry policies and payload examples.
+ms.date: 09/10/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.custom: bap-template
 ---
+
 
 # Use webhook to receive messages and events
 
@@ -36,9 +37,13 @@ The service is retried three times, with a 10-second timeout on each attempt.
 
 | Header        | Description                                             | 
 |----------------|---------------------------------------------------------|
-| `Authorization`   | Authorization Bearer token obtained from the registered Entra App.|
+| `Authorization`   | Authorization Bearer token obtained from the registered Microsoft Entra App.|
 
 ---
+
+
+> [!NOTE]
+> Make sure you configure the [federated identity credentials](/graph/api/resources/federatedidentitycredentials-overview) for this header to be enabled.
 
 ## Retry policy
 
@@ -56,19 +61,19 @@ Payloads follow the [Bot Framework Activity Schema](/javascript/api/botframework
 
 | Tier 1 Key     | Tier 2 Key         | Tier 3 Key       | Description                            | Type                |
 |----------------|--------------------|------------------|----------------------------------------|---------------------|
-| `type`         |                    |                  | Type of activity (`message`, `event`, `typing`) | `string` (max 256)  |
-| `channelId`    |                    |                  | Identifier of the channel (for example, `"MessagingApi"`) | `string` (max 256)  |
-| `from`         |                    |                  | Sender object                          | `object`            |
-|                | `id`               |                  | Sender ID                              | `string` (max 256)  |
-|                | `name`             |                  | Sender display name                    | `string` (max 256)  |
-| `conversation` | `id`               |                  | Conversation ID                        | `string` (max 256)  |
-| `textFormat`   |                    |                  | Format of the message text (`markdown`) | `string` (max 256)  |
-| `attachments`  | `[ ]`              |                  | List of attachments (if any)           | `array`             |
-|                | `contentType`      |                  | MIME type of the attachment            | `string` (max 256)  |
-|                | `contentUrl`       |                  | File URL                               | `string`            |
-|                | `content`          |                  | Typically `null`                       | —                   |
-|                | `name`             |                  | Name of the file                       | `string` (max 256)  |
-|                | `thumbnailUrl`     |                  | Typically `null`                       | —                   |
+| type         |                    |                  | Type of activity (message, event, typing) | string (max 256)  |
+| channelId    |                    |                  | Identifier of the channel (for example, "MessagingApi") | string (max 256)  |
+| from         |                    |                  | Sender object                          | object            |
+|                | id                 |                  | Sender ID                              | string (max 256)  |
+|                | name               |                  | Sender display name                    | string (max 256)  |
+| conversation  | id                 |                  | Conversation ID                        | string (max 256)  |
+| textFormat     |                    |                  | Format of the message text (markdown) | string (max 256)  |
+| attachments    | [ ]              |                  | List of attachments (if any)           | array              |
+|                | contentType       |                  | MIME type of the attachment            | string (max 256)  |
+|                | contentUrl        |                  | File URL                               | string            |
+|                | content          |                  | Typically null                       | —                   |
+|                | name             |                  | Name of the file                       | string (max 256)  |
+|                | thumbnailUrl     |                  | Typically null                       | —                   |
 
 ---
 
@@ -76,27 +81,47 @@ Payloads follow the [Bot Framework Activity Schema](/javascript/api/botframework
 
 | Type            | Description                               |
 |------------------|-------------------------------------------|
-| `message`        | Standard text or rich message from agent  |
-| `typing`         | Indicates the agent is typing             |
-| `event`          | System-level events like join/close       |
+| message        | Standard text or rich message  |
+| typing         | Indicates the agent or customer service representative (service representative or representative) is typing             |
+| event          | System-level events like join/close       |
 
 ---
 
 ## Event activity names
 
-The following values are sent in the **name** field of `event` activities:
+The following values are sent in the **name** field of event activities:
 
-- `AgentAccepted`
-- `AgentClosed`
-- `AgentDisconnected`
-- `AgentEndedSession`
-- `AgentJoinedConversation`
-- `AgentTransferAcceptedSession`
-- `AgentTransferFailed`
-- `ConversationClosed`
-- `OutOfOperatingHoursDueToHoliday`
-- `OutOfOperatingHoursDueToNonWorkingHours`
-- `QueueTransferFailed`
+-	AgentAccepted
+-	AgentEndSession
+-	PrimaryAgentEndConversation
+-	AgentDisconnected
+-	AgentStartSecondaryChannel
+-	AgentRaiseSecondaryChannel
+-	AgentEndSecondaryChannel
+-	ConversationClose
+-	SupervisorForceClosedConversation
+-	ConsultAgentInitiated
+-	ConsultAgentFailed
+-	ConsultAgentAcceptSession
+-	ConsultAgentEndSession
+-	ConsultAgentRejectSession
+-	ConsultAgentSessionTimedOut
+-	ConsultAgentRemoved
+-	TransferToAgentInitiated
+-	TransferToAgentFailed
+-	TransferAgentAcceptSession
+-	TransferAgentRejectSession
+-	TransferAgentTimedOutSession
+-	AgentEndedConsult
+-	AgentJoinedCustomerConversation
+-	ConsultAgentLeftPublicConversation
+-	TransferToQueueInitiated
+-	TransferToQueueFailed
+-	CustomerDisconnected
+-	CustomerDisconnectedAgentWaiting
+-	AgentAssigned
+-	OutOfOperatingHoursDueToNonWorkingHours
+-	OutOfOperatingHoursDueToHoliday
 
 
 
@@ -104,7 +129,7 @@ The following values are sent in the **name** field of `event` activities:
 
 The example payloads represent different types of real-time activities, such as messages, typing indicators, agent events, and attachments that the application sends to your webhook during an active conversation.
 
-### Agent Accepted
+### Agent/Representative accepted
 
 ```json
 {
@@ -119,7 +144,7 @@ The example payloads represent different types of real-time activities, such as 
 
 ```
 
-### Agent Typing
+### Agent/Representative typing
 
 ```json
 
@@ -134,7 +159,7 @@ The example payloads represent different types of real-time activities, such as 
   }
 }
 ```
-### Agent Message
+### Agent/Representative message
 
 ```json
 
@@ -152,7 +177,7 @@ The example payloads represent different types of real-time activities, such as 
   "text": "hello"
 }
 ```
-### Agent Send Attachment
+### Agent/Representative send attachment
 ``` json
 
 {
@@ -178,7 +203,7 @@ The example payloads represent different types of real-time activities, such as 
 }
 ```
 
-### Agent Closed
+### Agent/Representative closed
 ``` json
 
 {
@@ -213,5 +238,5 @@ Edit
 
 ## Response
 
-200 HTTP Code 
+200 HTTP code. Any data posted in the body of request is ignored.
   

@@ -1,7 +1,7 @@
 ---
 title: Configure a custom messaging channel using messaging APIs
-description: Learn how to configure a custom messaging channel using messaging APIs.
-ms.date: 04/30/2025
+description: Learn how to configure a custom messaging channel in Dynamics 365 using Messaging APIs, including authentication, webhook setup, and managed identity configuration.
+ms.date: 09/10/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -9,22 +9,23 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
+
 # Configure a custom messaging channel using messaging APIs
 
-You must register your custom messaging channel in Dynamics 365 before it can communicate with the Omnichannel platform using the Messaging API. This registration links your Microsoft Entra app, tenant, and webhook endpoint to a new channel record that the system can route messages through.
+Register your custom messaging channel in Dynamics 365 so it communicates with the omnichannel platform using the Messaging API. This registration links your Microsoft Entra app, tenant, and webhook endpoint to a new channel record that the system routes messages through.
 
 ## Prerequisites
 
 - The System Administrator role assigned to an account to set up Messaging API.
-- Create a messaging workstream and configure routing rules. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams).
-- An active Azure subscription.
+- Create a messaging workstream and set up routing rules. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams).
+- An active Azure subscription
 
 ## Set up authentication
 
-To enable secure, authenticated access to the Messaging APIs, you must register a **confidential client application** in **Azure Active Directory (AAD)** for your tenant. This app is used to acquire OAuth 2.0 tokens that authorize API requests. Perform the following steps:
+To enable secure, authenticated access to the Messaging APIs, register a **confidential client application** in **Azure Active Directory (AAD)** for your tenant. This app is used to acquire OAuth 2.0 tokens that authorize API requests. Perform the following steps:
 
 1. Go to the [Azure portal](https://portal.azure.com/) and navigate to **Azure Active Directory** > **App registrations**.
-2. You can use an existing app or select **New registration** to register a new application.
+2. Use an existing app or select **New registration** to register a new application.
 3. Once registered, go to the **Overview** page of your app registration.
 4. Copy the **Application (client) ID**.  
    You use this value in your custom messaging channel record in Dataverse as the value for `msdyn_appid`.
@@ -32,16 +33,16 @@ To enable secure, authenticated access to the Messaging APIs, you must register 
 Learn more in [confidential client app registration](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#confidential-client-app-registration).
 
 > [!NOTE] 
-> Creating a new Entra app registration is optional. You can use an existing Entra app registration if it meets the authentication requirements.
+> Creating a new Microsoft Entra app registration is optional. Use an existing Microsoft Entra app registration if it meets the authentication requirements.
 
 
-Here’s a sample of the code that uses the app registration: [A quick start to Dataverse Web API](https://github.com/microsoft/PowerApps-Samples/tree/master/dataverse/webapi/CSharp-NETx/QuickStart).
+Here’s a sample of code that uses the app registration: [A quick start to Dataverse Web API](https://github.com/microsoft/PowerApps-Samples/tree/master/dataverse/webapi/CSharp-NETx/QuickStart).
 
-The scope required for the token is in the format: `https://{organization_id_without_dash}-c.{zone}.dynamics.com /.default.`
+The scope required for the token is in the format: `https://{organization_id_without_dash}-c.{zone}.dynamics.com/.default`.
 
- Zone mapping is based on organization region found in [Datacenter regions](/power-platform/admin/new-datacenter-regions)
+Zone mapping is based on the organization region found in [Datacenter regions](/power-platform/admin/new-datacenter-regions).
 
-**Example of token retrieval using Post request**
+**Example of token retrieval using POST request**
 
 ```
 curl --request POST \
@@ -53,25 +54,25 @@ curl --request POST \
   --data scope=https://{organization_id_without_dash}-c.{zone}.dynamics.com/.default
 ```
 
-## Setup webhook
+## Set up webhook
 
 To receive real-time updates, you must implement and host a secure webhook endpoint. This endpoint receives events such as agent messages, typing indicators, and conversation state changes from the Messaging API channel.
 
-The URL path the webhook is as follows: `{webhook_url}/v3/conversations/{conversationId}/activities`. 
+The URL path for the webhook is: `{webhook_url}/v3/conversations/{conversationId}/activities`. 
 
-Once you configure the webhook in the custom messaging channel, the application delivers activity payloads to your webhook as POST requests. These payloads follow the Bot Framework Activity Schema.
+After you configure the webhook in the custom messaging channel, the application delivers activity payloads to your webhook as POST requests. These payloads follow the Bot Framework Activity Schema.
 
-Learn more about the structure and examples of payloads delivered to your webhook in [Use webhook to receive messages and events](./api/api-conversation-webhook.md).
+Learn more about the structure and examples of payloads delivered to your webhook in [use webhook to receive messages and events](./api/api-conversation-webhook.md).
 
-## Setup managed identity for webhook authentication
+## Set up managed identity for webhook authentication
 
 To enable webhook authentication using [Power Platforms managed identity](/power-platform/admin/managed-identity-overview), you must create a managed identity record in Dataverse. This record defines the credential settings that generate authentication tokens for webhook requests.
 
-The setup process involves the following steps:
+The process involves these steps:
 
-1. Create the managed identity record. This establishes the authentication configuration in Dataverse.
+1. Create the managed identity record to establish the authentication configuration in Dataverse.
 2. Link the identity to your messaging channel. Update the custom messaging channel (created in the add and manage channel process) with the new managed identity record ID.
-3. Configure Entra App credentials. Use the [GetComponentManagedIdentityFIC](/power-apps/developer/data-platform/webapi/reference/getcomponentmanagedidentityfic) service to obtain the FICSubject, then update your Entra App registration with the [federated identity credentials](/graph/api/resources/federatedidentitycredentials-overview).
+3. Configure Microsoft Entra App credentials. Use the [GetComponentManagedIdentityFIC](/power-apps/developer/data-platform/webapi/reference/getcomponentmanagedidentityfic) service to obtain the FICSubject, then update your Microsoft Entra App registration with the [federated identity credentials](/graph/api/resources/federatedidentitycredentials-overview).
 
 ### Create managed identity record
 
@@ -102,10 +103,10 @@ Xrm.WebApi.createRecord("managedidentity", data).then(
 
 | Field | Description | Example  |
 |-------|-------------|---------------|
-| applicationid | The **Application (client) ID** of the Azure AD app used to authenticate messaging API requests. This is the value you copied in the [Setup authentication](#set-up-authentication) section. | `9f6c021d-1234-4abc-8df7-123456789abc` |
+| applicationid | The **Application (client) ID** of the Microsoft Entra app used to authenticate messaging API requests. This is the value you copied in the [Setup authentication](#set-up-authentication) section. | `9f6c021d-1234-4abc-8df7-123456789abc` |
 | credentialsource | The value should always be set to two.| 2 |
 | subjectscope | The value should always be set to one. | 1 |
-| tenantid | The **Tenant (Directory) ID** of your organization's Azure Active Directory | `b5122edb-5678-4def-99e2-abcdef123456` |
+| tenantid | The **Tenant (Directory) ID** of your organization's Microsoft Entra ID | `b5122edb-5678-4def-99e2-abcdef123456` |
 
 ### Update custom messaging channel
 
@@ -128,20 +129,20 @@ Xrm.WebApi.updateRecord("msdyn_occustommessagingchannel", "REPLACE_WITH_custom_c
 
 ### Obtain FICSubject
 
-Run the following in a new tab in the browser where you are logged into the Copilot Service admin center:
+Run the following URL in a new browser tab where you're signed in to the Copilot Service admin center:
 
 ```
 https://{org_url}/api/data/v9.2/GetComponentManagedIdentityFIC(ComponentName='msdyn_occustommessagingchannel',ComponentId={custom_channel_id})
 ```
 
-- Copy the FICSubject value. You'll add it as the new credential to the Entra App registration.
-- Navigate to Azure Portal > **Entra ID** > **Manage** > **App Registrations** and select the Entra app registration you created earlier. 
+- Copy the FICSubject value. You add it as the new credential to the Microsoft Entra App registration.
+- Go to Azure portal > **Entra ID** > **Manage** > **App Registrations**, and select the Microsoft Entra app registration you created earlier. 
 - Under **Manage**, select **Certificates & secrets** > **Federated credentials** > **Add credential** and specify the following details: 
 
 **Federated credential scenario**: Other issuer
-**Issuer enter:** `https://login.microsoftonline.com/{tenant_id}/v2.0`  
-**Type:** Explicit subject identifier  
-**Value enter:** `{FICSubject}` copied from GetCompoenentManagedIndentiyFIC
+**Issuer**: `https://login.microsoftonline.com/{tenant_id}/v2.0`  
+**Type**: Explicit subject identifier  
+**Value**: `{FICSubject}` copied from GetComponentManagedIdentityFIC
 
 ## Manage channels
 
@@ -149,9 +150,9 @@ To enable a custom messaging channel using the Messaging API, you must create a 
 
 Perform the following steps to create, update, or delete a custom messaging channel record:
 
-1. In Copilot Service admin center, navigate to **Customer Service** > **Workstreams**.
-1. Press **F12** to open your browser's developer tools and then select the **Console** tab.
-1. Copy and paste the following code into the browser console to do the following:
+1. In Copilot Service admin center, go to **Customer Service** > **Workstreams**.
+1. Press **F12** to open your browser's developer tools, and then select the **Console** tab.
+1. Copy and paste the following code into the browser console to do the following actions:
 
   - **Create a new custom messaging channel**
      ```js
@@ -175,15 +176,15 @@ Perform the following steps to create, update, or delete a custom messaging chan
        }
       );
     ```
-     Where you must specify the following parameters: <br>
+     You can specify the following parameters in the request body:
 
       | **Field**              | **Description**   | **Example Value**                                                  |
       |--------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------|----------|
-      | `msdyn_appid`      | The **Application (client) ID** of the Azure AD app used to authenticate Messaging API requests. This is the value you copied in the [Setup authentication](#set-up-authentication) section. | `9f6c021d-1234-4abc-8df7-123456789abc` | 
-      | `msdyn_tenantid`   | The **Tenant (Directory) ID** of your organization's Azure Active Directory. | `b5122edb-5678-4def-99e2-abcdef123456`  | 
+      | `msdyn_appid`      | The **Application (client) ID** of the Microsoft Entra ID app used to authenticate Messaging API requests. This is the value you copied in the [Setup authentication](#set-up-authentication) section. | `9f6c021d-1234-4abc-8df7-123456789abc` | 
+      | `msdyn_tenantid`   | The **Tenant (Directory) ID** of your organization's Microsoft Entra ID. | `b5122edb-5678-4def-99e2-abcdef123456`  | 
       | `msdyn_webhookurl` | The **HTTPS endpoint** that receives messages and events from the application. Must use a valid, non-self-signed certificate. This is the value you configured in [Setup webhook](#setup-webhook) section. | `https://contoso-bot.example.com`                              | <br>
 
-      Replace `{channel_id}` with the ID of the channel you want to delete. You can find this ID in the URL of the channel record in the admin center or by querying the API. <br>
+      Replace `{channel_id}` with the ID of the channel to delete. Find this ID in the URL of the channel record in the admin center or by querying the API. <br>
 
   - **Update an existing record.**
   
@@ -224,5 +225,5 @@ Perform the following steps to create, update, or delete a custom messaging chan
 
      `{org_url}/api/data/v9.2/msdyn_occustommessagingchannels`
 
-4. Perform the steps to add the [custom channel](/dynamics365/customer-service/administer/configure-custom-channel) to the workstream. In the **Channel** field, specify the Messaging API channel you created in the **Create a new custom messaging channel** section.
+4. Follow the steps to add the [custom channel](/dynamics365/customer-service/administer/configure-custom-channel) to the workstream. In the **Channel** field, specify the Messaging API channel created in the **Create a new custom messaging channel** section.
 

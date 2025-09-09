@@ -176,7 +176,7 @@ Custom events let you send structured data and trigger system processes in ongoi
 | | customEventValue | JSON-encoded string containing variables as objects with key names and values. Use the displayable flag to control whether specific values are visible to service representatives. For more information, see [setcontextprovider](/dynamics365/customer-service/develop/reference/methods/setcontextprovider). | string | — |
 
 > [!NOTE] 
-> Learn more in [Configure Copilot Studio agent custom events](configure-custom-events.md).
+> Learn more in [Configure Copilot Studio agent custom events](../configure-custom-messaging-channel.md).
 
 ### Response
 

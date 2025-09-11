@@ -31,7 +31,7 @@ Key capabilities of the messaging APIs include:
 
 ## Understand messaging APIs and available endpoints
 
-The Messaging API offers a set of RESTful endpoints that allow service-to-service integration for initiating, managing, and tracking customer conversations. 
+The Messaging API offers a set of RESTful endpoints that allow service-to-service integration to initiate, manage, and track customer conversations. 
 
 ### HTTP protocol
 

@@ -18,7 +18,7 @@ Register your custom messaging channel in Dynamics 365 to communicate with the o
 
 - The System Administrator role assigned to an account to set up Messaging API.
 - A messaging workstream and routing rules. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams).
-- An active Azure subscription
+- An active Azure subscription.
 
 ## Set up authentication
 

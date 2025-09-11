@@ -36,7 +36,7 @@ The Messaging API offers a set of RESTful endpoints that allow service-to-servic
 
 All API requests must use **HTTPS** for secure communication. 
 
-### Host URL
+### Url
 
 The base URL for making API calls uses the organization ID and the geographical region where your Dynamics 365 Contact Center is deployed. The format is `https://m-{org_id}.{geo}.omnichannelengagementhub.com`.
 

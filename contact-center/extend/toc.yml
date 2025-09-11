@@ -76,7 +76,7 @@
             href: /dynamics365/customer-service/develop/test-custom-channel-sample-html?context=/dynamics365/contact-center/context/extend-context
           - name: Markdown formats in custom channels that use Direct Line
             href: /dynamics365/customer-service/develop/markdown-formats-dev?context=/dynamics365/contact-center/context/extend-context   
-        - name: Custom channel using messaging APIs
+        - name: Custom channel using messaging APIs (preview)
           items:
           - name: Overview of messaging APIs
             href: intro-messaging-apis.md

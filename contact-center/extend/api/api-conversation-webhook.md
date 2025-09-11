@@ -1,5 +1,5 @@
 ---
-title: Use webhook to receive messages and events
+title: Use webhook to receive messages and events (preview)
 description: Learn how to configure a webhook to receive real-time messages and events in custom messaging channel configured in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
 ms.date: 09/10/2025
 ms.topic: how-to
@@ -10,11 +10,16 @@ ms.custom: bap-template
 ---
 
 
-# Use webhook to receive messages and events
+# Use webhook to receive messages and events (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 When a conversation is active, events and messages from the customer service representative are sent to your configured webhook endpoint. The webhook is required for receiving real-time updates in your custom messaging channel.
 
 The service is retried three times, with a 10-second timeout on each attempt. 
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 
 ## Endpoint
  
@@ -203,8 +208,6 @@ The example payloads represent different types of real-time activities, such as 
 }
 
 ```
-
-
 ### Conversation closed
 
 ``` json

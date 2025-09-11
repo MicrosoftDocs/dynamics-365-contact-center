@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Configure a custom messaging channel using messaging APIs
 
-Register your custom messaging channel in Dynamics 365 so it communicates with the omnichannel platform using the Messaging API. This registration links your Microsoft Entra app, tenant, and webhook endpoint to a new channel record that the system routes messages through.
+Register your custom messaging channel in Dynamics 365 to communicate with the omnichannel platform using the Messaging API. Registration links your Microsoft Entra app, tenant, and webhook endpoint to a new channel record for message routing.
 
 ## Prerequisites
 

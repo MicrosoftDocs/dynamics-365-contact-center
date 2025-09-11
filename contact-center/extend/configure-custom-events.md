@@ -80,7 +80,7 @@ Send the following payload to `/api/v1.0/consumer/conversation/{conversationId}`
 
 ## Send custom events
 
-You can configure your Copilot Studio agent to send data back to your external systems when certain conditions are met. Use this to trigger actions in your application, update databases, or notify other services based on conversation events.
+Configure your Copilot Studio agent to send data to external systems when specific conditions are met. This lets you trigger application actions, update databases, or notify other services based on conversation events.
 
 Set up the `SendActivity` node in Copilot Studio with the following specifications:
 

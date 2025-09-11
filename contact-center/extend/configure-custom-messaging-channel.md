@@ -33,7 +33,7 @@ To enable secure, authenticated access to the Messaging APIs, register a **confi
 Learn more in [confidential client app registration](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#confidential-client-app-registration).
 
 > [!NOTE] 
-> Creating a new Microsoft Entra app registration is optional. Use an existing Microsoft Entra app registration if it meets the authentication requirements.
+> You can create a new Microsoft Entra app registration or use an existing one that meets the authentication requirements.
 
 
 Here’s a code sample that uses the app registration: [A quick start to Dataverse Web API](https://github.com/microsoft/PowerApps-Samples/tree/master/dataverse/webapi/CSharp-NETx/QuickStart).

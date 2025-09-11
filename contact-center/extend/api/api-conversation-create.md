@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Use /consumer/conversations/create endpoint
 
-The `create` endpoint starts a new customer conversation using the Messaging API. Conversations remain active until a customer service representative ends the conversation, the conversation enters a waiting state, or a timeout rule ends the conversation.
+The `create` endpoint starts a new customer conversation using the Messaging API. Conversations remain active until a customer service representative (service representative or representative) ends the conversation, the conversation enters a waiting state, or a timeout rule ends the conversation.
 
  To end a conversation early, such as when the customer ends it, close the conversation using the `POST /api/v1.0/consumer/conversation/{conversationId}` with the conversation-ending activity. 
 
@@ -34,7 +34,7 @@ The API expects information about the customer and conversation context in the b
     "customerid": "jdoe123",
     "firstname": "John",
     "lastname": "Doe",
-    "preferredname": "John Doe", // This will be displayed to the customer service representative
+    "preferredname": "John Doe", // This is displayed to the service representative
     "email": "john.doe@email.com",
     "phonenumber": "1234567890"
   },
@@ -65,7 +65,7 @@ Provides customer identity and relevant information for record identification an
 | customerid    | Unique ID assigned the customer conversation. If an active conversation already exists with the same ID, the existing conversation ID is returned instead of creating new conversation.      | string         | 200 chars  | Optional        |
 | firstname     | Customer first name                      | string         | 200 chars  | Optional       |
 | lastname      | Customer last name                       | string         | 200 chars  | Optional        |
-| preferredname | Display name for the agent or customer service representative (service representative or representative)           | string         | 200 chars  | Optional        |
+| preferredname | Display name for the agent or service representative.           | string         | 200 chars  | Optional        |
 | email         | Email address (used for record matching) | string (email) | 200 chars  | Optional        |
 | phonenumber   | Phone number (used for record matching)  | string         | 200 chars  | Optional        |
 | startmessage   | This message is processed when a new conversation is initialized. The message is sent only to the service representative and isn't shared with the AI agent.  | string         | 27 Kb  | Optional        |

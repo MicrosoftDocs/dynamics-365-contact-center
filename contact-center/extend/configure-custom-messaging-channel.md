@@ -226,4 +226,4 @@ Perform the following steps to create, update, or delete a custom messaging chan
 ### Related information
 
 [Overview of messaging APIs](intro-messaging-apis.md)   
-[Integrate your own custom channel using Direct Line](dynamics365/customer-service/develop/bring-your-own-channel)
+[Integrate your own custom channel using Direct Line](/dynamics365/customer-service/develop/bring-your-own-channel)

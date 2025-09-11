@@ -69,12 +69,12 @@ The following endpoints are available:
 
 | **Endpoint**                                      | **Description**                           |
 | ------------------------------------------------- | ----------------------------------------- |
-| [`POST /conversation/create`](../api/api-conversation-create.md)                       | Start a new conversation                  |
-| [`POST /conversation/{id}`](../api/api-conversation-endpoint.md)                         | Send message, typing, or end conversation |
-| [`GET /conversations`](../api/api-conversation.md)                              | List active conversations                 |
-| [`GET /conversation/{id}/messages`](../api/api-conversation-messages.md)                 | Retrieve conversation messages            |
-| [`GET /conversation/{id}/context`](../api/api-conversation-context.md)                  | Fetch context data for a conversation     |
-| [`Webhook: POST /v3/conversations/{id}/activities`](../api/api-conversation-webhook.md) | Receive messages/events             |
+| [`POST /conversation/create`](./api/api-conversation-create.md)                       | Start a new conversation                  |
+| [`POST /conversation/{id}`](./api/api-conversation-endpoint.md)                         | Send message, typing, or end conversation |
+| [`GET /conversations`](./api/api-conversation.md)                              | List active conversations                 |
+| [`GET /conversation/{id}/messages`](./api/api-conversation-messages.md)                 | Retrieve conversation messages            |
+| [`GET /conversation/{id}/context`](./api/api-conversation-context.md)                  | Fetch context data for a conversation     |
+| [`Webhook: POST /v3/conversations/{id}/activities`](./api/api-conversation-webhook.md) | Receive messages/events             |
 
 ### Related information
 

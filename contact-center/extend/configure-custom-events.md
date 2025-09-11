@@ -147,4 +147,4 @@ Copilot Studio sends this payload to your webhook:
 
 ### Related information 
 
-[Overview of messaging APIs](../intro-messaging-apis.md)
+[Overview of messaging APIs](./intro-messaging-apis.md)

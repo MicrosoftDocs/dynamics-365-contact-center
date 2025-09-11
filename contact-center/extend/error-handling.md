@@ -66,4 +66,4 @@ Each failed response includes a header, `x-ms-correlation-id: <GUID>`, which uni
 
 ### Related information 
 
-[Overview of messaging APIs](../intro-messaging-apis.md)
+[Overview of messaging APIs](intro-messaging-apis.md)

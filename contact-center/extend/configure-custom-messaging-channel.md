@@ -36,7 +36,7 @@ Learn more in [confidential client app registration](/power-apps/developer/data-
 > Creating a new Microsoft Entra app registration is optional. Use an existing Microsoft Entra app registration if it meets the authentication requirements.
 
 
-Here’s a sample of code that uses the app registration: [A quick start to Dataverse Web API](https://github.com/microsoft/PowerApps-Samples/tree/master/dataverse/webapi/CSharp-NETx/QuickStart).
+Here’s a code sample that uses the app registration: [A quick start to Dataverse Web API](https://github.com/microsoft/PowerApps-Samples/tree/master/dataverse/webapi/CSharp-NETx/QuickStart).
 
 The scope required for the token is in the format: `https://{organization_id_without_dash}-c.{zone}.dynamics.com/.default`.
 

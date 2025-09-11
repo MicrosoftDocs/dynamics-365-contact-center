@@ -1,5 +1,5 @@
 ---
-title: Error handling in messaging APIs
+title: Error handling in messaging APIs (preview)
 description: Learn how error handling in Dynamics 365 Customer Service and Dynamics 365 Contact Center messaging APIs works.
 ms.date: 09/10/2025
 ms.topic: how-to
@@ -9,13 +9,18 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Error handling in messaging APIs
+# Error handling in messaging APIs (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 When you work with the Messaging APIs, it’s important to understand how errors are communicated as it helps you implement proper error handling and debugging in your applications.
 
 The APIs return standard HTTP status codes to indicate success or failure, and includes detailed error messages in the response body. These error responses often follow the [RFC 7807](https://datatracker.ietf.org/doc/html/rfc7807) specification for problem details in HTTP APIs.
 
 In addition to the status code and message, failed requests include a correlation ID in the response headers that you can use for troubleshooting.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 
 ## HTTP Status Codes
 

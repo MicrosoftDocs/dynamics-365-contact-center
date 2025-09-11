@@ -1,5 +1,6 @@
 ---
-title: Overview of messaging APIs
+title: Overview of messaging APIs (preview)
+
 description: Learn how to use Dynamics 365 Customer Service or Dynamics 365 Contact Center messaging APIs to build custom service-to-service communication experiences with RESTful endpoints.
 ms.date: 09/11/2025
 ms.topic: reference
@@ -9,7 +10,9 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Overview of messaging APIs
+# Overview of messaging APIs (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Messaging APIs let developers build tailored, service-to-service communication experiences by giving direct control over customer conversations. These RESTful APIs let organizations integrate a custom messaging channel without relying on client-side SDKs, libraries, or user interfaces. 
 Messaging APIs are designed specifically for **service-to-service** integrations and are suited for the following scenarios:
@@ -27,6 +30,8 @@ Key capabilities of the messaging APIs include:
 
 > [!NOTE] 
 > Messaging APIs are intended for back-end integrations. They're not recommended for use in mobile or web client applications where APIs are invoked directly from the user’s device. For client-to-service scenarios, we recommend that you use Microsoft’s native SDKs or chat widgets.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Understand messaging APIs and available endpoints
 

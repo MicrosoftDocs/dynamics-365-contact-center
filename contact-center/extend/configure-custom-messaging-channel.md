@@ -17,7 +17,7 @@ Register your custom messaging channel in Dynamics 365 to communicate with the o
 ## Prerequisites
 
 - The System Administrator role assigned to an account to set up Messaging API.
-- Create a messaging workstream and set up routing rules. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams).
+- A messaging workstream and routing rules. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams).
 - An active Azure subscription
 
 ## Set up authentication

@@ -23,7 +23,7 @@ Handle inbound events as activities of type **Message** in Copilot Studio. Use t
 
 ### Example of custom event handling
 
-This example shows a Copilot Studio bot agent topic that parses a JSON string from `Activity.ChannelData.customEventValue` and sends a message using the `stringVar` value:
+This example shows a Copilot Studio agent topic that parses a JSON string from `Activity.ChannelData.customEventValue` and sends a message using the `stringVar` value:
 
 ```yaml
 kind: AdaptiveDialog

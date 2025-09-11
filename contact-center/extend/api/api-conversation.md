@@ -1,6 +1,6 @@
 ---
 title: Use /conversations endpoint
-description: Learn how to retrieve active conversations using the /conversations endpoint. Filter, paginate, and manage data efficiently in Dynamics 365 Customer Service and Dynamics 365Contact Center.
+description: Learn how to retrieve active conversations using the /conversations endpoint. Filter, paginate, and manage data efficiently in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
 ms.date: 09/09/2025
 ms.topic: how-to
 author: gandhamm

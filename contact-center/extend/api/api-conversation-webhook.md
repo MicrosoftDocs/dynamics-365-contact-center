@@ -205,7 +205,7 @@ The example payloads represent different types of real-time activities, such as 
 ```
 
 
-### Conversation Closed
+### Conversation closed
 
 ``` json
 

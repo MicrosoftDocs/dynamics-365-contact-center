@@ -22,25 +22,17 @@ The service is retried three times, with a 10-second timeout on each attempt.
 
  Where 
 
- 
 - `{webhook_url}` is the base URL you configured in your custom channel.
 - `{conversationId}` with the GUID of the active conversation.
 
-
-
 ## Method
-
 `POST`
-
 
 ## Request headers
 
 | Header        | Description                                             | 
 |----------------|---------------------------------------------------------|
 | Authorization  | Authorization Bearer token obtained from the registered Microsoft Entra App.|
-
----
-
 
 > [!NOTE]
 > Make sure you configure the [federated identity credentials](/graph/api/resources/federatedidentitycredentials-overview) for this header to be enabled.
@@ -50,8 +42,6 @@ The service is retried three times, with a 10-second timeout on each attempt.
 - The webhook service **retries up to three times**.
 - Each retry allows a **10-second timeout**.
 - After three failed attempts, no further retries are made.
-
-
 
 ## Request payload
 
@@ -75,8 +65,6 @@ Payloads follow the [Bot Framework Activity Schema](/javascript/api/botframework
 |                | name             |                  | Name of the file                       | string (max 256)  |
 |                | thumbnailUrl     |                  | Typically null                       | —                   |
 
----
-
 ## Supported activity types
 
 | Type            | Description                               |
@@ -84,8 +72,6 @@ Payloads follow the [Bot Framework Activity Schema](/javascript/api/botframework
 | message        | Standard text or rich message  |
 | typing         | Indicates the agent or customer service representative (service representative or representative) is typing             |
 | event          | System-level events like join/close       |
-
----
 
 ## Event activity names
 
@@ -123,8 +109,6 @@ The following values are sent in the **name** field of event activities:
 -	OutOfOperatingHoursDueToNonWorkingHours
 -	OutOfOperatingHoursDueToHoliday
 
-
-
 ## Sample payloads
 
 The example payloads represent different types of real-time activities, such as messages, typing indicators, agent events, and attachments that the application sends to your webhook during an active conversation.
@@ -143,7 +127,6 @@ The example payloads represent different types of real-time activities, such as 
 }
 
 ```
-
 ### Agent/Representative typing
 
 ```json
@@ -235,8 +218,10 @@ Edit
   "name": "ConversationClosed"
 }
 ```
-
 ## Response
 
 200 HTTP code. Any data posted in the body of request is ignored.
   
+### Related information 
+
+[Overview of messaging APIs](../intro-messaging-apis.md)

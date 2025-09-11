@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 Use Microsoft Copilot Studio agents to send and receive events containing custom data. These events work independently of standard message flows and don't appear in responses from `/api/v1.0/consumer/conversation/{conversationId}/messages`.
 
-This lets the agent understand what the customer is doing without cluttering the conversation with technical information.
+This helps the agent understand what the customer does without cluttering the conversation with technical details.
 
 ## Receive custom events
 

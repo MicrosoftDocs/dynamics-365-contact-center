@@ -1,7 +1,7 @@
 ---
 title: Use /conversation/{conversationId}/contexts endpoint
 description: Learn how to use the /conversation/{conversationId}/contexts endpoint in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
-ms.date: 09/10/2025
+ms.date: 09/11/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -15,7 +15,7 @@ Retrieve an array of context variables associated with an ongoing conversation. 
 
 If the conversation has no context variables, the API returns an empty array.
 
-[!INCLUDE[cc-polling-note](../includes/cc-polling-note.md)]
+[!INCLUDE[cc-polling-note](../../includes/cc-polling-note.md)]
 
 ## Method
 

@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 Retrieve a list of all messages exchanged in an active conversation. The response is structured using the [Bot Framework Activity Schema](/javascript/api/botframework-schema/activity).
 
-If there aren't any messages for the given conversation ID, the API returns an empty array.
+If there aren't any messages for the conversation ID, the API returns an empty array.
 
 > [!NOTE]
 > Don't use the conversations endpoint as a polling mechanism. Conversation events are posted to Microsoft, and updates are posted back to your subscribed webhook.

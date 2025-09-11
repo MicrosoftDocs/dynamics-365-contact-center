@@ -21,7 +21,7 @@ You can bulk download call recordings within a specified date range using Micros
 - Permissions to create and run Power Automate flows.
 - A designated destination for saving the recordings such as SharePoint, OneDrive, or local storage with adequate storage space.
 
-## Create a Power Automate flows to download call recordings
+## Create Power Automate flow to download call recordings
 
 To download the call recordings, you must retrieve a list of recordings within a specified date range and then generate download links for each recording. When you use this process to download call recordings, the Dataverse recording isn't deleted. Perform the following steps in [Power Automate](https://make.powerautomate.com):
 
@@ -50,7 +50,7 @@ To download the call recordings, you must retrieve a list of recordings within a
        }
       }
      ```
-1. Perform the following steps to loop through each record to generate a unique, time-limited shared access signature URL for each individual file.
+4. Perform the following steps to loop through each record to generate a unique, time-limited shared access signature URL for each individual file.
   - Add the **Apply to each** control and select the output from the Parse JSON action, to process each recording individually to generate downloadable links.
   - Inside the loop, add an **HTTP** action with the following configuration:
      - **Method**: POST
@@ -73,7 +73,7 @@ To download the call recordings, you must retrieve a list of recordings within a
        }
      }
     ```
-1. Add a **Create file** action for SharePoint or OneDrive with the following configuration settings:
+5. Add a **Create file** action for SharePoint or OneDrive with the following configuration settings:
     - Site address is your SharePoint or OneDrive site URL.
     -  Folder path is the target folder location
     -  File name as `@{body('Parse_JSON_2')?['Result']?['FileName']}`

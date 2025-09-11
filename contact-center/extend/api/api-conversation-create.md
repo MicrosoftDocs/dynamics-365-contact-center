@@ -27,7 +27,7 @@ The `create` endpoint starts a new customer conversation using the Messaging API
 
 ## Payload
 
-The API expects the following in the body of the HTTP POST request: information about the customer and the conversation context.
+The API expects information about the customer and conversation context in the body of the HTTP POST request.
 
 ```json
 

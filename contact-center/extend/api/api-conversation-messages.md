@@ -16,7 +16,7 @@ Retrieve a list of all messages exchanged in an active conversation. The respons
 
 If there aren't any messages for the conversation ID, the API returns an empty array.
 
-[!INCLUDE[cc-polling-note](../includes/cc-polling-note.md)]
+[!INCLUDE[cc-polling-note](../../includes/cc-polling-note.md)]
 
 ## Method
 

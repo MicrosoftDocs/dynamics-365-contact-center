@@ -15,7 +15,7 @@ Retrieves a list of all active conversations created through the custom channel 
 
 Conversations in the **Wrap-Up** or **Closed** states aren't included in the response. If no active conversations exist, the response returns an empty array.
 
-[!INCLUDE[cc-polling-note](../includes/cc-polling-note.md)]
+[!INCLUDE[cc-polling-note](../../includes/cc-polling-note.md)]
 
 ## Method
 

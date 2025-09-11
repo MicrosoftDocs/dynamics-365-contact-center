@@ -1,5 +1,5 @@
 ---
-title: Configure a custom messaging channel using messaging APIs
+title: Configure a custom messaging channel using messaging APIs (preview)
 description: Learn how to configure a custom messaging channel in Dynamics 365 Customer Service and Dynamics 365 Contact Center using Messaging APIs, including authentication, webhook setup, and managed identity configuration.
 ms.date: 09/11/2025
 ms.topic: how-to
@@ -9,9 +9,13 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Configure a custom messaging channel using messaging APIs
+# Configure a custom messaging channel using messaging APIs (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Register your custom messaging channel in Dynamics 365 to communicate with the omnichannel platform using the Messaging API. Registration links your Microsoft Entra app, tenant, and webhook endpoint to a new channel record for message routing.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

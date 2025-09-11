@@ -1,5 +1,5 @@
 ---
-title: Configure Copilot Studio agent custom events
+title: Configure Copilot Studio agent custom events (preview)
 description: Learn how to configure custom events for Microsoft Copilot Studio agents to send and receive contextual data without interrupting user conversations.
 ms.date: 09/10/2025
 ms.topic: how-to
@@ -9,11 +9,15 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Configure Copilot Studio agent custom events
+# Configure Copilot Studio agent custom events (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Use Microsoft Copilot Studio agents to send and receive events containing custom data. These events work independently of standard message flows and don't appear in responses from `/api/v1.0/consumer/conversation/{conversationId}/messages`.
 
 This helps the agent understand what the customer does without cluttering the conversation with technical details.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Receive custom events
 

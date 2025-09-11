@@ -75,7 +75,31 @@
           - name: Test the custom messaging channel
             href: /dynamics365/customer-service/develop/test-custom-channel-sample-html?context=/dynamics365/contact-center/context/extend-context
           - name: Markdown formats in custom channels that use Direct Line
-            href: /dynamics365/customer-service/develop/bring-your-own-channel#markdown-formats-in-custom-channels?context=/dynamics365/contact-center/context/extend-context   
+            href: /dynamics365/customer-service/develop/markdown-formats-dev?context=/dynamics365/contact-center/context/extend-context   
+        - name: Custom channel using messaging APIs
+          items:
+          - name: Overview of messaging APIs
+            href: intro-messaging-apis.md
+          - name: Configure a custom messaging channel using messaging APIs
+            href: configure-custom-messaging-channel.md
+          - name: API endpoints
+            items:
+            - name: "/consumer/conversations/create"
+              href: api/api-conversation-create.md
+            - name: "/conversation/{id}"
+              href: api/api-conversation-endpoint.md
+            - name: "/conversations"
+              href: api/api-conversation.md
+            - name: "/conversation/{conversationId}/messages"
+              href: api/api-conversation-messages.md  
+            - name: "/conversation/{conversationId}/contexts"
+              href: api/api-conversation-context.md          
+            - name: Use webhook to receive messages and events
+              href: api/api-conversation-webhook.md    
+            - name: Configure Copilot Studio agent custom events
+              href: configure-custom-events.md                
+          - name: Error handling
+            href: error-handling.md                   
       - name: Voice
         items: 
         - name: Download call recordings in bulk

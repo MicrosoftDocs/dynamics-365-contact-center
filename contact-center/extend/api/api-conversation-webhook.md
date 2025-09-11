@@ -201,10 +201,14 @@ The example payloads represent different types of real-time activities, such as 
   "text": "EventName: **_AgentClosed_**",
   "name": "AgentClosed"
 }
-Conversation Closed
-json
-Copy
-Edit
+
+```
+
+
+### Conversation Closed
+
+``` json
+
 {
   "type": "message",
   "channelId": "<custom channel Id GUID>",

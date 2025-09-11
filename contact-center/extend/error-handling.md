@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Error handling in messaging APIs
 
-When working with the Messaging APIs, it’s important to understand how errors are communicated. This helps you implement proper error handling and debugging in your applications.
+When you work with the Messaging APIs, it’s important to understand how errors are communicated as it helps you implement proper error handling and debugging in your applications.
 
 The APIs return standard HTTP status codes to indicate success or failure, and includes detailed error messages in the response body. These error responses often follow the [RFC 7807](https://datatracker.ietf.org/doc/html/rfc7807) specification for problem details in HTTP APIs.
 

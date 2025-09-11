@@ -9,13 +9,18 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Use /conversations endpoint
+# Use /conversations endpoint (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Retrieves a list of all active conversations created through the custom channel using the Messaging APIs. Conversations created for other messaging channels aren't retrieved.
 
 Conversations in the **Wrap-Up** or **Closed** states aren't included in the response. If no active conversations exist, the response returns an empty array.
 
 [!INCLUDE[cc-polling-note](../../includes/cc-polling-note.md)]
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 
 ## Method
 

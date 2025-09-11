@@ -77,7 +77,7 @@ Provides customer identity and relevant information for record identification an
 
 **conversationcontext**
 
- The `conversationcontext` object lets you pass up to 100 context variables. These variables contain a key name and object value. Set the `displayable flag` to indicate if the value appears to the service representative. Learn more in [setcontextprovider](/dynamics365/customer-service/develop/reference/methods/setcontextprovider). 
+ The `conversationcontext` object lets you pass up to 100 context variables. These variables contain a key name and object value. Set the `displayable flag` to indicate whether the value appears to the service representative. Learn more in [setcontextprovider](/dynamics365/customer-service/develop/reference/methods/setcontextprovider). 
 
 
 **Record identification**

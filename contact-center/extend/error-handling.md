@@ -17,7 +17,6 @@ The APIs return standard HTTP status codes to indicate success or failure, and i
 
 In addition to the status code and message, failed requests include a correlation ID in the response headers that you can use for troubleshooting.
 
-
 ## HTTP Status Codes
 
 | Status Code | Meaning             | Description |
@@ -28,8 +27,6 @@ In addition to the status code and message, failed requests include a correlatio
 | 429       | Too Many Requests    | The request rate limit has exceeded. The `Retry-After` header indicates when you can retry. |
 | 500       | Internal Server Error| The omnichannel service failed to process the request. |
 | 503       | Service Unavailable  | The omnichannel service is temporarily unavailable. |
-
-
 
 ### Sample 400 Error (RFC 7807 Format)
 
@@ -42,7 +39,6 @@ In addition to the status code and message, failed requests include a correlatio
 }
 
 ```
-
 ## Error codes in response body
 
 | Error Code | Error Message                                                               | HTTP Code |
@@ -64,7 +60,10 @@ In addition to the status code and message, failed requests include a correlatio
 | 30015    | The response body wasn't serialized successfully. Contact customer support for help.                               | 500     |
 | 30016    | The message activity has no text or attachments.                                  | 400     |
 
-
 ## Use CorrelationID for troubleshooting
 
 Each failed response includes a header, `x-ms-correlation-id: <GUID>`, which uniquely identifies the transaction within the system. You can save this ID and share it with Microsoft support if you need help with troubleshooting specific failures.
+
+### Related information 
+
+[Overview of messaging APIs](../intro-messaging-apis.md)

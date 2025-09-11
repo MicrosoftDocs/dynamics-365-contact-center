@@ -9,7 +9,6 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-
 # Configure Copilot Studio agent custom events
 
 Use Microsoft Copilot Studio agents to send and receive events containing custom data. These events work independently of standard message flows and don't appear in responses from `/api/v1.0/consumer/conversation/{conversationId}/messages`.
@@ -145,3 +144,7 @@ Copilot Studio sends this payload to your webhook:
   "Name": "CustomTest"
 }
 ```
+
+### Related information 
+
+[Overview of messaging APIs](../intro-messaging-apis.md)

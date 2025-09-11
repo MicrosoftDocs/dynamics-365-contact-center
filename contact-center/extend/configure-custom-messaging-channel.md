@@ -1,14 +1,13 @@
 ---
 title: Configure a custom messaging channel using messaging APIs
 description: Learn how to configure a custom messaging channel in Dynamics 365 Customer Service and Dynamics 365 Contact Center using Messaging APIs, including authentication, webhook setup, and managed identity configuration.
-ms.date: 09/10/2025
+ms.date: 09/11/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.custom: bap-template
 ---
-
 
 # Configure a custom messaging channel using messaging APIs
 
@@ -34,7 +33,6 @@ Learn more in [confidential client app registration](/power-apps/developer/data-
 
 > [!NOTE] 
 > You can create a new Microsoft Entra app registration or use an existing one that meets the authentication requirements.
-
 
 Here’s a code sample that uses the app registration: [A quick start to Dataverse Web API](https://github.com/microsoft/PowerApps-Samples/tree/master/dataverse/webapi/CSharp-NETx/QuickStart).
 
@@ -99,7 +97,6 @@ Xrm.WebApi.createRecord("managedidentity", data).then(
 ```
 
 **Parameters**
-
 
 | Field | Description | Example  |
 |-------|-------------|---------------|
@@ -184,7 +181,6 @@ Perform the following steps to create, update, or delete a custom messaging chan
       | `msdyn_tenantid`   | The **Tenant (Directory) ID** of your organization's Microsoft Entra ID. | `b5122edb-5678-4def-99e2-abcdef123456`  | 
       | `msdyn_webhookurl` | The **HTTPS endpoint** that receives messages and events from the application. Must use a valid, non-self-signed certificate. This is the value you configured in [Setup webhook](#set-up-webhook) section. | `https://contoso-bot.example.com`                              | 
 
-
   - **Update an existing record.**
   
       ```js
@@ -227,3 +223,7 @@ Perform the following steps to create, update, or delete a custom messaging chan
 
 4. Follow the steps to add the [custom channel](/dynamics365/customer-service/administer/configure-custom-channel) to the workstream. In the **Channel** field, specify the Messaging API channel created in the **Create a new custom messaging channel** section.
 
+### Related information
+
+[Overview of messaging APIs](intro-messaging-apis.md)   
+[Integrate your own custom channel using Direct Line](dynamics365/customer-service/develop/bring-your-own-channel)

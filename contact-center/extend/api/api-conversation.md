@@ -9,15 +9,13 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-
 # Use /conversations endpoint
 
 Retrieves a list of all active conversations created through the custom channel using the Messaging APIs. Conversations created for other messaging channels aren't retrieved.
 
 Conversations in the **Wrap-Up** or **Closed** states aren't included in the response. If no active conversations exist, the response returns an empty array.
 
-> [!NOTE]
-> Don't use the conversations endpoint as a polling mechanism. Conversation events are posted to Microsoft, and updates are sent back to your subscribed webhook.
+[!INCLUDE[cc-polling-note](../includes/cc-polling-note.md)]
 
 ## Method
 
@@ -36,8 +34,6 @@ Query parameters allow you to filter, limit, and paginate the list of active con
 | StartTimeStamp    | Filters conversations created **after** this timestamp (ISO 8601 format).   | string (DatetimeOffset)   |
 | PageSize          | Maximum number of conversations to return. Default: 50, Max: 250.       | integer                   |
 | ContinuationToken | Used for pagination to avoid duplicates in large result sets.             | GUID string               |
-
-
 
 ## Response payload
 
@@ -59,8 +55,6 @@ Query parameters allow you to filter, limit, and paginate the list of active con
     ],
     "continuationtoken": "string"
 }
-
-
 ```
 
 ### Response fields
@@ -71,3 +65,8 @@ Query parameters allow you to filter, limit, and paginate the list of active con
 |                     | conversationid | Unique ID of the conversation                                 | GUID     |
 |                     | timestamp      | Creation timestamp in ISO 8601 format                         | Datetime |
 | continuationtoken   |                  | Token used for fetching the next page of results, if necessary | GUID     |
+
+
+### Related information 
+
+[Overview of messaging APIs](../intro-messaging-apis.md)

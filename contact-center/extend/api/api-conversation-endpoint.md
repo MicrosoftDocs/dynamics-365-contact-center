@@ -12,21 +12,13 @@ ms.custom: bap-template
 # Use /conversation/{id} endpoint
 
 This endpoint lets you send an activity to an ongoing conversation. The request follows the [Bot Framework Activity Schema](https://github.com/microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md).
-
 Send various types of activities, such as messages, typing indicators, or conversation closure events.
 
----
-
 ## Method
-
 `POST`
-
 ## URL
-
 `/api/v1.0/consumer/conversation/{conversationId}`
-
 ## Supported activity types
-
 - `message`: Sends a message (optionally with attachments)
 - `typing`: Indicates the user is typing
 - `endOfConversation`: Ends the conversation
@@ -34,15 +26,11 @@ Send various types of activities, such as messages, typing indicators, or conver
 
 If you pass an unsupported event name in an `event` type, the API returns a 400 error.
 
----
-
 ## Message payload
 
-The payload for this API is a JSON-formatted object that defines the activity being sent to the conversation—such as a message, typing indicator, or end-of-conversation event—based on the Bot Framework activity schema.
-
+The payload for this API is a JSON-formatted object that defines the activity being sent to the conversation such as a message, typing indicator, or end-of-conversation event—based on the Bot Framework activity schema.
 
 ### Payload for message, automated message, and attachment
-
 ```json
 {
   "type": "message",
@@ -70,7 +58,6 @@ The payload for this API is a JSON-formatted object that defines the activity be
   }
 }
 ```
-
 ### Message payload field reference
 
 | Tier 1 Key              | Tier 2 Key           | Description                                                                 | Type                      | Max Length              |
@@ -103,9 +90,7 @@ The payload for this API is a JSON-formatted object that defines the activity be
 }
 
 ```
-
 **Payload schema**
-
 
 | Key            | Description            | Type     |
 | -------------- | ---------------------- | -------- |
@@ -158,7 +143,6 @@ Custom events let you send structured data and trigger system processes in ongoi
   "name": "TestEvent"
 }
 ```
-
 **Payload schema**
 
 | Tier 1 Key | Tier 2 Key | Description | Type | Max Length |
@@ -187,9 +171,12 @@ The API shows the following response.
   "messageId": "1234567890123"
 }
 ```
-
 **Field Descriptions**
 
 | Field | Description | Type |
 |-------|-------------|------|
 | messageId | The messageId is a 13-digit string epoch timestamp that you can use for message ordering to match the message order. | string |
+
+### Related information 
+
+[Overview of messaging APIs](../intro-messaging-apis.md)

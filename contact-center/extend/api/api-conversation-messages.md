@@ -16,8 +16,7 @@ Retrieve a list of all messages exchanged in an active conversation. The respons
 
 If there aren't any messages for the conversation ID, the API returns an empty array.
 
-> [!NOTE]
-> Don't use the conversations endpoint as a polling mechanism. Conversation events are posted to Microsoft, and updates are posted back to your subscribed webhook.
+[!INCLUDE[cc-polling-note](../includes/cc-polling-note.md)]
 
 ## Method
 
@@ -27,14 +26,11 @@ If there aren't any messages for the conversation ID, the API returns an empty a
 
 `/api/v1.0/consumer/conversation/{conversationId}/messages`
 
-
 ## Request parameters
 
 | Parameter        | Description                   | Type     | Required |
 |------------------|-------------------------------|----------|----------|
 | conversationId | The unique ID of the conversation to retrieve messages. | GUID string | Yes |
-
----
 
 ## Query parameters (optional)
 
@@ -45,8 +41,6 @@ If there aren't any messages for the conversation ID, the API returns an empty a
 | StartTimeStamp      | Filters messages sent after the given timestamp. The timestamp must be in ISO 8601 format and URL-encoded. | datetimeoffset (ISO 8601) |
 | PageSize            | Specifies the maximum number of messages to return. The default is 50, and the maximum is 100.                | integer                 |
 | ContinuationToken   | Retrieves the next batch of results for pagination. The token must be URL-encoded.     | DatetimeOffset          |
-
----
 
 ## Response payload
 
@@ -89,3 +83,7 @@ If there aren't any messages for the conversation ID, the API returns an empty a
 |                     | from        | —          | Sender metadata                               | object         |
 |                     | channelData | —          | Additional message metadata                   | object         |
 | continuationtoken   | —             | —          | Token for retrieving the next page of results | DatetimeOffset |
+
+### Related information 
+
+[Overview of messaging APIs](../intro-messaging-apis.md)

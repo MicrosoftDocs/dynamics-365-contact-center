@@ -15,8 +15,7 @@ Retrieve an array of context variables associated with an ongoing conversation. 
 
 If the conversation has no context variables, the API returns an empty array.
 
-> [!NOTE]
-> Don't use the conversations endpoint as a polling mechanism. Conversation events are posted to Microsoft, and updates are posted back to your subscribed webhook.
+[!INCLUDE[cc-polling-note](../includes/cc-polling-note.md)]
 
 ## Method
 
@@ -26,15 +25,11 @@ If the conversation has no context variables, the API returns an empty array.
 
 `/api/v1.0/consumer/conversation/{conversationId}/context`
 
-
-
 ## Request Parameters
 
 | Parameter        | Description                                             | Type     | Required |
 |------------------|---------------------------------------------------------|----------|----------|
 | conversationId | The unique ID of the conversation to retrieve context for. | GUID string | Yes |
-
-
 
 ## Response payload
 
@@ -61,3 +56,6 @@ If the conversation has no context variables, the API returns an empty array.
 |            | name     | —          | Name of the context variable          | string            |
 |            | value    | —          | Value of the context variable         | string / object |
 
+### Related information 
+
+[Overview of messaging APIs](../intro-messaging-apis.md)

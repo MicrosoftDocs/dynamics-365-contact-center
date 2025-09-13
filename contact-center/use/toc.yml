@@ -80,6 +80,12 @@
           items:
           - name: Use intent-based suggestions
             href: use-intent-suggestions.md
+        - name: Customer Knowledge Management Agent
+          items:
+          - name: Review knowledge articles created by the Customer Knowledge Management Agent
+            href: /dynamics365/customer-service/use/admin-km-agent-review?context=/dynamics365/contact-center/context/use-context
+          - name: Use knowledge insights for Customer Knowledge Management Agent
+            href: /dynamics365/customer-service/use/admin-km-agent-insights?context=/dynamics365/contact-center/context/use-context
       - name: Use Copilot features in contact center-standalone
         items: 
         - name: Copilot feature availability across applications
@@ -88,8 +94,6 @@
           href: copilot-summarize-conversations.md  
         - name: Ask a question
           href: use-ask-a-question.md  
-        - name: Draft a chat response (preview)
-          href: use-copilot-features.md  
         - name: Write an email with Copilot
           href: use-copilot-email.md  
         - name: Understand how Copilot supports different languages
@@ -282,12 +286,12 @@
             href: /dynamics365/customer-service/use/oc-conversation-topics-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Voicemail dashboard
             href: /dynamics365/customer-service/use/oc-voicemail-dashboard?context=/dynamics365/contact-center/context/use-context
-          - name: Unified routing dashboard
-            href: /dynamics365/customer-service/use/oc-historical-analytics-unified-routing?context=/dynamics365/contact-center/context/use-context
         - name: Use knowledge management analytics
           href: /dynamics365/customer-service/use/knowledge-search-analytics-cs?context=/dynamics365/contact-center/context/use-context
         - name: View copilot analytics report
           href: copilot-analytics-report.md
+        - name: View agent insights dashboard
+          href: agent-insights.md
         - name: Monitor conversations
           items: 
             - name: Monitor, assign, transfer, and forcibly end conversations
@@ -312,6 +316,8 @@
             href: /dynamics365/customer-service/use/use-volume-forecasting?context=/dynamics365/contact-center/context/use-context
         - name: Customize visual display
           href: /dynamics365/customer-service/use/customize-reports?context=/dynamics365/contact-center/context/use-context
+        - name: Customize the bot dashboard
+          href: customize-agent-dashboard.md       
         - name: Customize data models
           items:
           - name: Overview of data model customization
@@ -324,8 +330,6 @@
             href: /dynamics365/customer-service/use/datamapping-realtime?context=/dynamics365/contact-center/context/use-context
           - name: Dataverse entities used in historical and real-time analytics
             href: /dynamics365/customer-service/use/dataverse-entities?context=/dynamics365/contact-center/context/use-context
-          - name: Customize the bot dashboard
-            href: customize-agent-dashboard.md
       - name: Report issues in Dynamics 365 Contact Center
         href: /dynamics365/customer-service/use/report-issues?context=/dynamics365/contact-center/context/use-context
       - name: Share feedback
@@ -358,6 +362,8 @@
             href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/use-context
           - name: Use the Schedule Calendar
             href: /dynamics365/customer-service/use/use-agent-calendar?context=/dynamics365/contact-center/context/use-context
+          - name: Use break distribution to assign breaks
+            href: wfm-use-break-distribution.md
         - name: Time-off request management
           items:
           - name: Manage time-off requests
@@ -373,7 +379,11 @@
       - name: Responsible AI FAQ for Copilot in Customer Service
         href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/use-context
       - name: Responsible AI FAQs for NLUs in AI agents
-        href: ../implement/natural-language-ai-faq.md   
+        href: ../implement/natural-language-ai-faq.md?context=/dynamics365/contact-center/context/use-context
+      - name: Constrained speech recognition
+        items:
+        - name: Transparency note
+          href: ../implement/transparency-note.md?context=/dynamics365/contact-center/context/use-context
     - name: Resources
       items:
       - name: Training

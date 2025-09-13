@@ -5,7 +5,7 @@ author: gandhamm
 ms.author: mgandham
 ms.reviewer: neeranelli
 ms.topic: how-to
-ms.date: 05/07/2025
+ms.date: 09/02/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ms.collection: bap-ai-copilot
@@ -23,7 +23,6 @@ When you enable the Copilot features, service representatives can do the followi
 | Compose an email  | Yes   | Yes   |
 | Summarize a case  | No  | Yes   |
 | Summarize a conversation | Yes   | Yes   |
-| Suggest a response  | Yes  | Yes   |
 
 ## License requirements
 
@@ -107,7 +106,6 @@ Out of the box, users with the Customer Service Representative role only can use
 - msdyn_panetoolconfiguration
 
 More information: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
- 
 
 ## Next steps
 
@@ -115,7 +113,6 @@ More information: [Security roles and privileges](/power-platform/admin/security
 [Enable Copilot help pane](copilot-enable-help-pane.md)  
 
 ### Related information
- 
-[Use Copilot features](../use/use-copilot-features.md)  
+
 [Responsible AI FAQ for copilot features](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/administer-context)  
 [FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features?context=/dynamics365/contact-center/administer-context)  

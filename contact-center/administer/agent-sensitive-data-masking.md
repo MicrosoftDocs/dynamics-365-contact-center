@@ -13,6 +13,9 @@ ms.custom: bap-template
 
 AI Agents collect sensitive data during interactions, storing it across your organization's tenant. Copilot Studio's sensitive variable flag protects PINs, account numbers, credit card details, and protected health information(PHI) data without affecting productivity. Agent authors can mark variables as sensitive per organizational requirements to improve data security.
 
+  > [!NOTE]
+  > If the customer's response to the AI agent’s first question is flagged as sensitive, that content may not be redacted. This is due to a timing issue that affects redaction at the start of the conversation. However, all subsequent responses flagged as sensitive are redacted as described in this documentation. We are working on a fix to ensure sensitive data is consistently redacted from the beginning.
+
 ## Prerequisites
 
 - [Voice channel is provisioned in Customer Service](/dynamics365/customer-service/administer/voice-channel-install).

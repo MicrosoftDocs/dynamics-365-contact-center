@@ -1,7 +1,7 @@
 ---
 title: Use agent dashboard and call controls in the voice channel
 description: Learn how you can use the agent dashboard, call controls, and make and receive customer calls.
-ms.date: 09/08/2025
+ms.date: 09/15/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -42,7 +42,6 @@ The consult feature includes advanced controls for managing multiple participant
   - **Individual participant management**: When consulting with multiple representatives or supervisors, you can place individual consulting participants on hold using the hold control next to each participant. Participants placed on hold will hear hold music.
   - **Hold status visibility**: The system provides clear visual indicators showing the hold status of all participants. When the customer is taken off hold, representatives not currently on hold will see the customer's status as "off hold".
   - **Individual transfer options**: Transfer controls next to each consulting participant allow you to transfer the call to specific representatives within the consult.
-  - **Role promotion**: You can promote a consulting representative to primary status, allowing them to take over as the main contact while you transition to a consulting role or leave the call.
 
   > [!NOTE]
   > - When you initiate a consult, you're the primary service representative and the new participant has a consult role. Select **Transfer** next to the participant to transfer the call to the consulting service representative or supervisor. Once the call is transferred, you're the consulting service representative and can leave the call without ending the call. The consulting service representative becomes the primary service representative. If the primary service representative leaves the call, the call ends for the customer.

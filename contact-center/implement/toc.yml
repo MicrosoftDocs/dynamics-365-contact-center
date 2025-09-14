@@ -61,7 +61,7 @@
         - name: Copy an environment with Dynamics 365 Contact Center
           href: /dynamics365/customer-service/implement/copy-environment-with-omnichannel?context=/dynamics365/contact-center/context/implement-context
         - name: Reset, restore, recover omnichannel environments
-          href: restore-environment.md  
+          href: restore-environment.md
         - name: Uninstall Dynamics 365 Contact Center
           href: /dynamics365/customer-service/implement/remove-omnichannel?context=/dynamics365/contact-center/context/implement-context
         - name: Uninstall solutions
@@ -71,7 +71,7 @@
         - name: Overview of user management
           href: /dynamics365/customer-service/implement/overview-users?context=/dynamics365/contact-center/context/implement-context
         - name: Create users and assign security roles
-          href: /power-platform/admin/create-users-assign-online-security-roles?context=/dynamics365/contact-center/context/implement-context
+          href: /power-platform/admin/create-users?context=/dynamics365/contact-center/context/implement-context
         - name: Assign roles and enable users
           href: /dynamics365/customer-service/implement/add-users-assign-roles?context=/dynamics365/contact-center/context/implement-context
         - name: Personas and privileges
@@ -88,6 +88,10 @@
           href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/implement-context
         - name: Responsible AI FAQs for NLUs in AI agents
           href: natural-language-ai-faq.md
+        - name: Constrained speech recognition
+          items:
+          - name: Transparency note
+            href: transparency-note.md
       - name: Resources
         items:
         - name: Dynamics 365 reference architectures

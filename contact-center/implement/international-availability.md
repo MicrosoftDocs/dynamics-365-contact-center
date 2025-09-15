@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection:
-ms.date: 03/12/2025
+ms.date: 09/15/2025
 ms.custom: bap-template
 ---
 
@@ -29,7 +29,7 @@ The following table shows the channels that're available in the supported geogra
 | France | Yes | No |
 | Germany |	Yes | No |
 | Government Community Cloud High (GCC High) | No | No |
-| Government Community Cloud Moderate (GCC Moderate) | No | No |
+| Government Community Cloud Moderate (GCC Moderate)<sup>**1**</sup> | Yes | Yes |
 | India | Yes | No |
 | Japan | Yes | No |
 | North America | Yes | Yes |
@@ -37,6 +37,8 @@ The following table shows the channels that're available in the supported geogra
 | Switzerland |	Yes | Yes |
 | United Arab Emirates (UAE) | Yes | Yes |
 | United Kingdom | Yes | Yes |
+
+<sup>**1**</sup> Azure Communication Services for the voice channel will continue to run in North America Commercial Cloud.
 
 ## Language availability
 

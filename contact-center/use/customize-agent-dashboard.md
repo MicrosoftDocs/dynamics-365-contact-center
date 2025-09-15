@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: 
-ms.date: 08/14/2025
+ms.date: 09/15/2025
 ms.custom: bap-template 
 ---
 
@@ -50,19 +50,18 @@ Customer conversations with AI agents can have multiple sessions based on the to
 Based on the value of **Type**, the following **Outcome** and **OutcomeReason** are set for the session:
 
 - **Engaged**: 
- - If the session is engaged, the **Outcome** can be set to the following:
-     - **Abandoned**
-     - **HandOff**
-     - **Resolved**
-
- - The corresponding **OutcomeReason** can be set to the following:
-   - **SystemError**
-   - **UserError**
-   - **Resolved**
-   - **UserExit**
-   - **AgentTransferRequestedByUser**
-   - **AgentTransferFromQuestionMaxAttempts**
-   - **AgentTransferConfiguredByAuthor**. 
+   - If the session is engaged, the **Outcome** can be set to the following:
+       - **Abandoned**
+       - **HandOff**
+       - **Resolved**
+   - The corresponding **OutcomeReason** can be set to the following:
+      - **SystemError**
+      - **UserError**
+      - **Resolved**
+      - **UserExit**
+      - **AgentTransferRequestedByUser**
+      - **AgentTransferFromQuestionMaxAttempts**
+      - **AgentTransferConfiguredByAuthor**. 
 - **Unengaged**: Sessions start in an unengaged state and stay unengaged until user input is provided or the session enters custom or escalate topic modes. For unengaged sessions, the **Outcome** is  set to **None** and **OutcomeReason** is **NoError**.
 
 Learn more in [Measuring agent engagement](/microsoft-copilot-studio/guidance/measuring-engagement#engaged-and-unengaged-analytics-sessions).

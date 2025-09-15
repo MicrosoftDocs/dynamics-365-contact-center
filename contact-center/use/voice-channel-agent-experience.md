@@ -54,7 +54,7 @@ The consult feature includes advanced controls for managing multiple participant
 - **Mark spam**: [Report the incoming call as spam](#report-a-phone-number-as-spam). If you happened to accidentally mark a number as spam, you can select the **Unmark as spam** option.
 - **Device settings**: Configure your microphone and speaker settings.
 - **Take notes**:  Make note of important information or specific details from your conversation with the customer. It's in addition to the call recording and transcription that happen during the conversation. See [take notes specific to the conversation](/dynamics365/customer-service/use/oc-take-notes?context=/dynamics365/contact-center/context/use-context).
-- - **Start recording and transcript**: If your administrator enabled the recording and transcription service, you can start recording and transcription of the call.
+- **Start recording and transcript**: If your administrator enabled the recording and transcription service, you can start recording and transcription of the call.
 - **Pause recording and transcription**: If you don't want to capture some details of the conversation—such as bank details, billing, or payment information—you can temporarily pause the transcription and resume it later.
 - **Knowledge Articles**: Get a list of knowledge base articles pertaining to the conversation that you can use to resolve the customer issue.
 - **Link to conversation**: You can link another conversation, case, customer, or knowledge article to the conversation.

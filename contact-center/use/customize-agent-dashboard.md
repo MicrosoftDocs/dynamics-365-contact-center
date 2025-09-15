@@ -40,7 +40,7 @@ Fallback actions track the number of conversations handled by the system when th
 Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi-report-add-visualizations-i#add-visualizations-to-the-report) to represent **FactSession : Failed bot conversation** data in a [Single number card](/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#single-number) visual for fallback action calls on the bot dashboard.
 
 | Title |   Definition | Applies to | Channel | Data |
-| --------------- | --------------- |
+| --------------- | --------------- |--------------- | --------------- |--------------- |
 | Fallback action calls | The number of bot conversations where the bot applies one of the fallback actions in case of failures: <ul><li>**Prompt and hang-up**: The system plays a [default message](/dynamics365/customer-service/administer/configure-automated-message#preconfigured-automated-message-triggers) and ends the call.</li><li>**Prompt and transfer to external number**: The system plays the default message and transfers the call to an external number that you enter in the **External phone number** field. Use the E.164 format, with a plus sign (+) followed by the country code and phone number.</li><li>**Prompt and escalate**: The system plays the default message and connects the call to a service representative.</li><li>**Wait Music and Escalate**: The system plays wait music and connects the call to a service representative.</li></ul> Learn more in [Configure fallback actions for the IVR agent](/dynamics365/contact-center/administer/configure-fallback-actions-ivr-agent)| Real time and historical| Voice only | FactSession: Failed bot conversation|.
 
 ## Add bot session level outcome reason

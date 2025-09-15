@@ -50,11 +50,12 @@ Customer conversations with AI agents can have multiple sessions based on the to
 Based on the value of **Type**, the following **Outcome** and **OutcomeReason** are set for the session:
 
 - **Engaged**: 
- If the session is engaged, the **Outcome** can be set to the following:
+ - If the session is engaged, the **Outcome** can be set to the following:
      - **Abandoned**
      - **HandOff**
- - **Resolved**. 
-The corresponding **OutcomeReason** can be set to the following:
+     - **Resolved**
+
+ - The corresponding **OutcomeReason** can be set to the following:
    - **SystemError**
    - **UserError**
    - **Resolved**

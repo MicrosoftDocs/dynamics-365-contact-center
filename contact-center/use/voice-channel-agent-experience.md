@@ -40,7 +40,7 @@ To avoid the recording and transcription of what you say while the customer is o
 The consult feature includes advanced controls to manage multiple participants:
 
   - **Individual participant management**: When consulting with multiple representatives or supervisors, you can place individual consulting participants on hold using the hold control next to each participant. Participants placed on hold will hear hold music.
-  - **Hold status visibility**: The system provides clear visual indicators showing the hold status of all participants. When the customer is taken off hold, representatives not currently on hold will see the customer's status as "off hold".
+  - **Hold status visibility**: The system provides clear visual indicators showing the hold status of all participants. When the customer is taken off hold, representatives who aren't on hold see the customer's status as off hold.
   - **Individual transfer options**: Transfer controls next to each consulting participant allow you to transfer the call to specific representatives within the consult.
 
   > [!NOTE]

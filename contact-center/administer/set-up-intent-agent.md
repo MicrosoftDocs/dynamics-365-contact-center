@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 09/09/2025
+ms.date: 09/17/2025
 ms.custom: bap-template
 ---
 
@@ -84,7 +84,9 @@ In your existing topic flow, where you want to use Customer Intent Agent, add th
 
 :::image type="content" source="../media/customer-intent-agent-topic.png" alt-text="Screenshot of intent-based suggestions topic flow.":::
 
-## Connect your Copilot agent to knowledge hub
+## Connect Customer Intent Agent to Copilot Studio knowledge
+
+To configure the topic with knowledge hub:
 
 1. In your existing topic flow, where you want to use Customer Intent Agent, add the following node:
     - **Topic management** > **Go to another topic** > **Intent-based suggestions – Main**.

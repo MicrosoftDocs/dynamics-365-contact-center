@@ -214,9 +214,9 @@ You can edit or delete a connector after you select the required connector on th
 
 ## Configure knowledge sources for an intent
 
-### Map an intent to a knowledge article
+### Map an intent to knowledge articles
 
-You can add knowledge sources to an intent directly from the intent page. if the customer lands on an intent , they are only going to see the mapped knowledge articles. 
+You can add knowledge articles to an intent directly from the intent page, so that users see articles specified for the intent only. 
 
 1. Select the intent for which you want to add knowledge articles and custom AI agent.
 1. On the `<intent_name>` page, scroll to the bottom and in **Solution (Optional)**, select **Dynamics 365 knowledge articles**, and then select **Add**. A list of published knowledge articles appears.
@@ -224,9 +224,9 @@ You can add knowledge sources to an intent directly from the intent page. if the
 1. Select **Custom AI agent**, and then select **Add**.
 1. In the list of agents that appears, select an AI agent and save and close.
 
-### Add filters for knowlegde source for Customer intent agent
+### Specify filters for Dynamics 365 knowledge articles for Customer Intent Agent
 
-You can specify knowledge sources for an intent by providing specific instructions from the **Knowledge source for Customer Intent Agent** page.
+You can specify knowledge sources for an intent by providing specific filters.
 
 1. On the **Customer Intent Agent (preview)** page, **Instructions and solutions** section, select **Manage** for **Knowledge sources for intents**.
 1. On the **Knowledge source for Customer Intent Agent** page, select a knowledge source.
@@ -234,9 +234,9 @@ You can specify knowledge sources for an intent by providing specific instructio
     1. On the **Manage knowledge filters for intents** dialog, add or remove the filters, as required. The filters you specify on this dialog, apply only to the Dynamics 365 knowledge articles for intent management and intent-based features.
     1. Select **Save**.
 
-### Add a knowledge hub 
-1. If you select **Copilot Studio knowledge (preview)**, you should have already set up knowledge in Copilot Studio. Learn more in [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot).
-1. Select **Save**.
+### Add knowledge from Copilot Studio
+
+1. If you select **Copilot Studio knowledge (preview)**, you should have already set up knowledge for your agent in Copilot Studio. Learn more in 
 
 
 ### Related information

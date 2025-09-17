@@ -286,8 +286,6 @@
             href: /dynamics365/customer-service/use/oc-conversation-topics-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Voicemail dashboard
             href: /dynamics365/customer-service/use/oc-voicemail-dashboard?context=/dynamics365/contact-center/context/use-context
-          - name: Unified routing dashboard
-            href: /dynamics365/customer-service/use/oc-historical-analytics-unified-routing?context=/dynamics365/contact-center/context/use-context
         - name: Use knowledge management analytics
           href: /dynamics365/customer-service/use/knowledge-search-analytics-cs?context=/dynamics365/contact-center/context/use-context
         - name: View copilot analytics report

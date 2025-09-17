@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 08/28/2025
+ms.date: 09/17/2025
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template
@@ -212,14 +212,26 @@ Connectors let systems work together, transfer data, and allow AI agents to auto
 
 You can edit or delete a connector after you select the required connector on the **Manage custom connectors (preview)** page. 
 
+## Manage knowledge sources for intent
 
-## Add knowledge articles, custom AI agent to an intent
+You can add knowledge sources to an intent directly from the intent page. To do so: 
 
 1. Select the intent for which you want to add knowledge articles and custom AI agent.
 1. On the `<intent_name>` page, scroll to the bottom and in **Solution (Optional)**, select **Dynamics 365 knowledge articles**, and then select **Add**. A list of published knowledge articles appears.
 1. Select the articles pertinent to the intent and save and close.
 1. Select **Custom AI agent**, and then select **Add**.
 1. In the list of agents that appears, select an AI agent and save and close.
+
+You can specify knowledge sources for an intent by providing specific instructions from the **Knowledge source for Customer Intent Agent** page. To do so:
+
+1. On the **Customer Intent Agent (preview)** page, **Instructions and solutions** section, select **Manage** for **Knowledge sources for intents**.
+1. On the **Knowledge source for Customer Intent Agent** page, select a knowledge source.
+ 1. If you select **Dynamics 365 knowledge**, then select **Manage filters** to specify your filters.
+    1. On the **Manage knowledge filters for intents** dialog, add or remove the filters, as required. The filters you specify on this dialog, apply only to the Dynamics 365 knowledge articles for intent management and intent-based features.
+    1. Select **Save**.
+1. If you select **Copilot Studio knowledge (preview)**, you should have already set up knowledge in Copilot Studio. Learn more in [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot).
+1. Select **Save**.
+
 
 ### Related information
 

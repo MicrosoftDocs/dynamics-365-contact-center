@@ -86,25 +86,21 @@ In your existing topic flow, where you want to use Customer Intent Agent, add th
 
 ## Connect Customer Intent Agent to Copilot Studio knowledge
 
-You can configure the topic with knowledge hub from Copilot Studio.
-
-1. In Copilot Studio, select your agent, and then select **Add a topic**.
-1. Provide a name for the topic as required.
+1. In Copilot Studio, select your agent, and then select **Add a topic** and provide a name for the topic as required.
 1. On the **Trigger** topic, select the ellipsis, and then select **A custom client event occurs**.
 1. Select **Edit** for **A custom client event occurs**. 
-    1. On the **On Event Activity properties** dialog that appears, enter the **Event name** as **OnrequestKnowledge** and save it.
-1. Add a node, select **Advanced**, and then select **Generative answers**. The **Create generative answers** node is created.
+1. On the **On Event Activity properties** dialog that appears, enter the **Event name** as **OnrequestKnowledge** and save it.
+1. Add another node and select **Advanced** > **Generative answers**. The **Create generative answers** node is created.
 1. In the **Create generative answers** node: 
-1. For the **Input** field, select the ellipsis. 
-    1. On the **Select a variable** dialog, select **System** and then select **Activity.text**.
-1. Select **Edit** for Data sources.
-    1. In **Knowledge sources**, make sure that the **Search only selected sources** option isn't set to On.
-    1. On the **Create generative answers properties** dialog, select **Advanced**.
-    1. For the **Save bot response as** field, select **Select a variable** and then create a new variable.
-    1. In **Variable properties**, for **Variable name**, enter **Answer**.
+    1. For the **Input** field, select the ellipsis. 
+        1. On the **Select a variable** dialog, select **System** and then select **Activity.text**.
+    1. Select **Edit** for Data sources.
+        1. In **Knowledge sources**, make sure that the **Search only selected sources** option isn't set to On.
+        1. On the **Create generative answers properties** dialog, select **Advanced**.
+        1. For the **Save bot response as** field, select **Select a variable** and then create a new variable.
+        1. In **Variable properties**, for **Variable name**, enter **Answer**.
 1. In the **Condition**node, set **Answer** to **is not Blank**.
 1. Add another node and then select **Topic management** > **End all topics**.
-
 
 ## Connect to your knowledge base
 

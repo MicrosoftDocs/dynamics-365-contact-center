@@ -226,17 +226,21 @@ You can add knowledge articles to an intent directly from the intent page, so th
 
 ### Specify filters for Dynamics 365 knowledge articles for Customer Intent Agent
 
-You can specify knowledge sources for an intent by providing specific filters.
+You can specify knowledge sources for intents by providing specific filters.
 
 1. On the **Customer Intent Agent (preview)** page, **Instructions and solutions** section, select **Manage** for **Knowledge sources for intents**.
 1. On the **Knowledge source for Customer Intent Agent** page, select a knowledge source.
- 1. If you select **Dynamics 365 knowledge**, then select **Manage filters** to specify your filters.
-    1. On the **Manage knowledge filters for intents** dialog, add or remove the filters, as required. The filters you specify on this dialog, apply only to the Dynamics 365 knowledge articles for intent management and intent-based features.
-    1. Select **Save**.
+1. Select **Dynamics 365 knowledge**, then select **Manage filters** to specify your filters.
+   1. On the **Manage knowledge filters for intents** dialog, add or remove the filters, as required. The filters you specify on this dialog, apply only to the Dynamics 365 knowledge articles for intent management and intent-based features.
+   1. Select **Save**.
 
 ### Add knowledge from Copilot Studio
 
-1. If you select **Copilot Studio knowledge (preview)**, you should have already set up knowledge for your agent in Copilot Studio. Learn more in [Connect Customer Intent Agent to Copilot Studio knowledge](set-up-intent-agent.md#connect-customer-intent-agent-to-copilot-studio-knowledge).
+1. On the **Customer Intent Agent (preview)** page, **Instructions and solutions** section, select **Manage** for **Knowledge sources for intents**.
+1. On the **Knowledge source for Customer Intent Agent** page, select **Copilot Studio knowledge (preview)**.
+1. Select **Save**.
+
+You should have already set up knowledge for your agent in Copilot Studio before you enable this option. Learn more in [Connect Customer Intent Agent to Copilot Studio knowledge](set-up-intent-agent.md#connect-customer-intent-agent-to-copilot-studio-knowledge).
 
 
 ### Related information

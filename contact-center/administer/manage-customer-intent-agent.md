@@ -236,7 +236,7 @@ You can specify knowledge sources for an intent by providing specific filters.
 
 ### Add knowledge from Copilot Studio
 
-1. If you select **Copilot Studio knowledge (preview)**, you should have already set up knowledge for your agent in Copilot Studio. Learn more in 
+1. If you select **Copilot Studio knowledge (preview)**, you should have already set up knowledge for your agent in Copilot Studio. Learn more in [Connect Customer Intent Agent to Copilot Studio knowledge](set-up-intent-agent.md#connect-customer-intent-agent-to-copilot-studio-knowledge).
 
 
 ### Related information

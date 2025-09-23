@@ -95,9 +95,7 @@
             - name: "/conversation/{conversationId}/contexts"
               href: api/api-conversation-context.md          
             - name: Use webhook to receive messages and events
-              href: api/api-conversation-webhook.md    
-            - name: Configure Copilot Studio agent custom events
-              href: configure-custom-events.md                
+              href: api/api-conversation-webhook.md           
           - name: Error handling
             href: error-handling.md                   
       - name: Voice

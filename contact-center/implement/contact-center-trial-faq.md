@@ -41,7 +41,9 @@ The following limitations apply for the trial:
 In the trial version, the Copilot Studio agents are available in the English language only.
 
 ### What features are available in the trial?
+
 The environment you receive in trial is a fully functional, Power Platform environment with the following out-of-the-box capabilities:
+
 - Dynamics 365 Contact Center, with Live chat, digital messaging, and voice channels
   - Chat, voice, and other digital messaging channels
   - Unified routing
@@ -79,4 +81,3 @@ The [Language availability](international-availability.md#language-availability)
 
 [Try Dynamics 365 Contact Center](try-dynamics365-contact-center.md)  
 [Overview of Copilot Service workspace](../use/ccw-overview.md)  
- 

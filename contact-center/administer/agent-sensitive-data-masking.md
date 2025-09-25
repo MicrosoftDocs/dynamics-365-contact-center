@@ -1,7 +1,7 @@
 ---
 title: Configure sensitive variable masking for voice agents
 description: Learn how to configure sensitive variable masking for voice agents in Dynamics 365 Contact Center.
-ms.date: 08/08/2025
+ms.date: 09/30/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -14,7 +14,7 @@ ms.custom: bap-template
 AI Agents collect sensitive data during interactions, storing it across your organization's tenant. Copilot Studio's sensitive variable flag protects PINs, account numbers, credit card details, and protected health information(PHI) data without affecting productivity. Agent authors can mark variables as sensitive per organizational requirements to improve data security.
 
   > [!NOTE]
-  > If the customer's response to the AI agent’s first question is flagged as sensitive, that content may not be redacted. This is due to a timing issue that affects redaction at the start of the conversation. However, all subsequent responses flagged as sensitive are redacted as described in this documentation. We are working on a fix to ensure sensitive data is consistently redacted from the beginning.
+  > If the customer's response to the AI agent’s first question is flagged as sensitive, that content might not be redacted. This is due to a timing issue that affects redaction at the start of the conversation. However, all subsequent responses flagged as sensitive are redacted as described in this topic. 
 
 ## Prerequisites
 
@@ -25,8 +25,6 @@ AI Agents collect sensitive data during interactions, storing it across your org
 
 ## Configure sensitive data masking
 
-Perform the following steps:
-
 1. Identify the information in your AI agent’s conversational flow that can contain sensitive data. For example, the input to the agent is a credit card number.
 2. Create a variable in Copilot Studio or in a question node. Learn more in [Use variables](/microsoft-copilot-studio/authoring-variables-bot?tabs=webApp#use-global-variables)
 3. Select **{x}** for the variable. In the **Variable properties** pane, set the **Sensitive data** toggle to **On**.
@@ -36,9 +34,9 @@ Perform the following steps:
 
 ## Runtime experience
 
-When the customer’s conversation with the AI agent enters a section where a sensitive-flagged variable is configured, the AI agent displays a message in transcription "Entered a confidential section of the conversation". Recording, transcription, and data logging are paused until the conversation moves on to the nonsensitive section.
+When the customer’s conversation with the AI agent enters a section where a sensitive-flagged variable is configured, the AI agent displays a message in transcription "Entered a confidential section of the conversation". The system pauses recording, transcription, and data logging until the conversation moves on to the nonsensitive section.
 
-When the conversation moves past the sensitive information collection, the agent displays a message indicating "Exited a confidential section of the conversation" followed by "Recording and transcription resumed". Recording, transcription, and data logging resumes for all nonsensitive portions of the interaction.
+When the conversation moves past the sensitive information collection, the agent displays a message indicating "Exited a confidential section of the conversation" followed by "Recording and transcription resumed". The system resumes recording, transcription, and data logging for all nonsensitive portions of the interaction.
 
 If the conversation is escalated to a customer service representative from the AI agent, the transcript and recording don’t contain any instances of the sensitive information captured by the AI agent.
 

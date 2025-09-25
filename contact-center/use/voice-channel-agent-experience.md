@@ -58,7 +58,7 @@ The consult feature includes advanced controls to manage multiple participants:
 - **Pause recording and transcription**: If you don't want to capture some details of the conversation—such as bank details, billing, or payment information—you can temporarily pause the transcription and resume it later.
 - **Resume recording and transcript**: The system displays this instead of the **Record** button if your administrator set **Start setting** to **Manual** in **Transcription and recording**. This doesn't indicate that the recording was previously started and then paused.
 
-       :::image type="content" source="../media/resume-call-recording.png" alt-text="Screenshot of resume recording and transcript.":::
+    :::image type="content" source="../media/resume-call-recording.png" alt-text="Screenshot of resume recording and transcript.":::
 
  
 - **Knowledge Articles**: Get a list of knowledge base articles pertaining to the conversation that you can use to resolve the customer issue.

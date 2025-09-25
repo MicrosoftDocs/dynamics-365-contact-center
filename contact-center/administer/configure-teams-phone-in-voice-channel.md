@@ -30,7 +30,7 @@ You need to configure new IVR agents in Copilot Studio because the existing IVR 
 
 ## Prerequisites
 
-- Teams tenant with [Teams Phone license](/microsoftteams/teams-phone-licensing#teams-phone-licensing) with Teams Calling Plan, Teams Direct Routing, or Teams Operator Connect [PSTN connectivity](/microsoftteams/pstn-connectivity) options.
+- Teams tenant with [Teams Phone license](/microsoftteams/teams-phone-licensing) with Teams Calling Plan, Teams Direct Routing, or Teams Operator Connect [PSTN connectivity](/microsoftteams/pstn-connectivity) options.
 
 - [Service phone number](/microsoftteams/manage-phone-numbers-landing-page#service-numbers).
   - We recommend that you use a non-production service phone number for testing the Teams Phone.

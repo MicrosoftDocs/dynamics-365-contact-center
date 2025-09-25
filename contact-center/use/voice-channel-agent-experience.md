@@ -56,6 +56,11 @@ The consult feature includes advanced controls to manage multiple participants:
 - **Take notes**:  Make note of important information or specific details from your conversation with the customer. It's in addition to the call recording and transcription that happen during the conversation. See [take notes specific to the conversation](/dynamics365/customer-service/use/oc-take-notes?context=/dynamics365/contact-center/context/use-context).
 - **Start recording and transcript**: If your administrator enabled the recording and transcription service, you can start recording and transcription of the call.
 - **Pause recording and transcription**: If you don't want to capture some details of the conversation—such as bank details, billing, or payment information—you can temporarily pause the transcription and resume it later.
+- **Resume recording and transcript**: The system displays this instead of the **Record** button if your administrator set **Start setting** to **Manual** in **Transcription and recording**. This doesn't indicate that the recording was previously started and then paused.
+
+       :::image type="content" source="../media/resume-call-recording.png" alt-text="Screenshot of resume recording and transcript.":::
+
+ 
 - **Knowledge Articles**: Get a list of knowledge base articles pertaining to the conversation that you can use to resolve the customer issue.
 - **Link to conversation**: You can link another conversation, case, customer, or knowledge article to the conversation.
 

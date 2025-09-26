@@ -118,7 +118,7 @@ Complete the following steps to configure inbound calling and sync the Teams ser
 
 ## How representatives receive and handle the Teams calls
 
-When a customer calls the Teams Phone number to connect with a representative, the representative receives the call notification on both the Copilot Service workspace app and Teams desktop or web app. The representative must accept the call notification on the Copilot Service workspace app. The representative can use the call controls to interact with the customers.
+When a customer calls the Teams Phone number to connect with a representative, the representative receives the call notification on the Copilot Service workspace app. The representative can use the call controls to interact with the customers.
 
 For compliance, when call recording is enabled, an announcement plays to notify participants that the call is being recorded.
 

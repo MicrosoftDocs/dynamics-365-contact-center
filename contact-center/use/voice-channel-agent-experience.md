@@ -1,7 +1,7 @@
 ---
 title: Use agent dashboard and call controls in the voice channel
 description: Learn how you can use the agent dashboard, call controls, and make and receive customer calls.
-ms.date: 07/24/2025
+ms.date: 09/15/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -37,6 +37,12 @@ The conversation panel in the service representative dashboard includes the foll
 To avoid the recording and transcription of what you say while the customer is on hold, your administrator can enable the **Allow automatic pause and resume when representative hold and un-hold the customer** option. With this option, recording and transcription are paused when you put the customer on hold and resumed when you remove the customer from hold. If the option is disabled, you must manually pause and resume the recording and transcription.
 - **Consult**: Consult with a participant. You can consult with or bring another representative or supervisor into the call. You can have a *public* consultation, where the customer is actively involved in the conversation. Or you can have a *private* consultation, where you can put the customer on hold before you talk to your peers or supervisor.
 
+The consult feature includes advanced controls to manage multiple participants:
+
+  - **Individual participant management**: When consulting with multiple representatives or supervisors, you can place individual consulting participants on hold using the hold control next to each participant. Participants placed on hold hears hold music.
+  - **Hold status visibility**: The system provides clear visual indicators showing the hold status of all participants. When the customer is taken off hold, representatives who aren't on hold see the customer's status as off hold.
+  - **Individual transfer options**: Transfer controls next to each consulting participant allow you to transfer the call to specific representatives within the consult.
+
   > [!NOTE]
   > - When you initiate a consult, you're the primary service representative and the new participant has a consult role. Select **Transfer** next to the participant to transfer the call to the consulting service representative or supervisor. Once the call is transferred, you're the consulting service representative and can leave the call without ending the call. The consulting service representative becomes the primary service representative. If the primary service representative leaves the call, the call ends for the customer.
   > - Consulting on a call doesn't affect the collaborating service representative's capacity.
@@ -48,7 +54,7 @@ To avoid the recording and transcription of what you say while the customer is o
 - **Mark spam**: [Report the incoming call as spam](#report-a-phone-number-as-spam). If you happened to accidentally mark a number as spam, you can select the **Unmark as spam** option.
 - **Device settings**: Configure your microphone and speaker settings.
 - **Take notes**:  Make note of important information or specific details from your conversation with the customer. It's in addition to the call recording and transcription that happen during the conversation. See [take notes specific to the conversation](/dynamics365/customer-service/use/oc-take-notes?context=/dynamics365/contact-center/context/use-context).
-- - **Start recording and transcript**: If your administrator enabled the recording and transcription service, you can start recording and transcription of the call.
+- **Start recording and transcript**: If your administrator enabled the recording and transcription service, you can start recording and transcription of the call.
 - **Pause recording and transcription**: If you don't want to capture some details of the conversation—such as bank details, billing, or payment information—you can temporarily pause the transcription and resume it later.
 - **Knowledge Articles**: Get a list of knowledge base articles pertaining to the conversation that you can use to resolve the customer issue.
 - **Link to conversation**: You can link another conversation, case, customer, or knowledge article to the conversation.

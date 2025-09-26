@@ -5,7 +5,7 @@ author: gandhamm
 ms.author: mgandham
 ms.reviewer: neeranelli
 ms.topic: how-to
-ms.date: 05/07/2025
+ms.date: 09/02/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ms.collection: bap-ai-copilot
@@ -23,11 +23,10 @@ When you enable the Copilot features, service representatives can do the followi
 | Compose an email  | Yes   | Yes   |
 | Summarize a case  | No  | Yes   |
 | Summarize a conversation | Yes   | Yes   |
-| Suggest a response  | Yes  | Yes   |
 
 ## License requirements
 
-- Dynamics 365 Contact Center license. See: [Licenses](../implement/system-requirements-contact-center.md#licenses) 
+Specific licensing requirements apply when you use Copilot features in Dynamics 365 Contact Center. Learn more in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 ## Prerequisites
 

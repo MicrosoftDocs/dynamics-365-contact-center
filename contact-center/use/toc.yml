@@ -80,6 +80,12 @@
           items:
           - name: Use intent-based suggestions
             href: use-intent-suggestions.md
+        - name: Customer Knowledge Management Agent
+          items:
+          - name: Review knowledge articles created by the Customer Knowledge Management Agent
+            href: /dynamics365/customer-service/use/admin-km-agent-review?context=/dynamics365/contact-center/context/use-context
+          - name: Use knowledge insights for Customer Knowledge Management Agent
+            href: /dynamics365/customer-service/use/admin-km-agent-insights?context=/dynamics365/contact-center/context/use-context
       - name: Use Copilot features in contact center-standalone
         items: 
         - name: Copilot feature availability across applications
@@ -280,8 +286,6 @@
             href: /dynamics365/customer-service/use/oc-conversation-topics-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Voicemail dashboard
             href: /dynamics365/customer-service/use/oc-voicemail-dashboard?context=/dynamics365/contact-center/context/use-context
-          - name: Unified routing dashboard
-            href: /dynamics365/customer-service/use/oc-historical-analytics-unified-routing?context=/dynamics365/contact-center/context/use-context
         - name: Use knowledge management analytics
           href: /dynamics365/customer-service/use/knowledge-search-analytics-cs?context=/dynamics365/contact-center/context/use-context
         - name: View copilot analytics report
@@ -375,7 +379,11 @@
       - name: Responsible AI FAQ for Copilot in Customer Service
         href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/use-context
       - name: Responsible AI FAQs for NLUs in AI agents
-        href: ../implement/natural-language-ai-faq.md   
+        href: ../implement/natural-language-ai-faq.md?context=/dynamics365/contact-center/context/use-context
+      - name: Constrained speech recognition
+        items:
+        - name: Transparency note
+          href: ../implement/transparency-note.md?context=/dynamics365/contact-center/context/use-context
     - name: Resources
       items:
       - name: Training

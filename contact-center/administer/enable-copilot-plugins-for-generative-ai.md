@@ -25,7 +25,7 @@ Make sure the following prerequisites exist:
 
 - The System Administrator or CCI admin role.
 - A license for Copilot Studio is available. Learn more at:
-    - [Manage Copilot credits and capacity](/microsoft-copilot-studio/requirements-messages-management#copilot-credits-and-events-scenarios)
+    - [Manage Copilot Credits and capacity](/microsoft-copilot-studio/requirements-messages-management#copilot-credits-and-events-scenarios)
     - [View billed sessions](/microsoft-copilot-studio/analytics-billed-sessions)
 - Define a custom connector plugin or prompt plugin.
 - Copilot in Customer Service is enabled.

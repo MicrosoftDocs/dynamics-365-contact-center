@@ -54,7 +54,7 @@ To match the recording to the call's length, the application inserts silence int
 
 - Sensitive information redaction is restricted to Copilot Studio. For any external connections from Copilot Studio to Power Automate or connectors, customers are responsible for assessing redacted data with any relevant regulatory or compliance requirements.
 
-- If the customer's response to the first question the voice AI agent asks is flagged as sensitive, that content might not be redacted due to a timing issue that affects redaction at the start of the conversation. However, all subsequent responses flagged as sensitive are redacted.
+- If the customer's response to the AI agent’s first question is flagged as sensitive, that content might not be redacted. This is due to a timing issue that affects redaction at the start of the conversation. However, all subsequent responses flagged as sensitive are redacted.
 
 ## Supported actions
 

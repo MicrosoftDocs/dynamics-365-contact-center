@@ -11,10 +11,10 @@ ms.custom: bap-template
 
 # Configure sensitive variable masking for voice agents
 
-AI agents collect sensitive data during interactions and store it in your organization's tenant. Copilot Studio uses a sensitive variable flag to protect information such as PINs, account numbers, credit card details, and protected health information (PHI) data, without affecting productivity. Agent authors can mark variables as sensitive per your organizational requirements to improve data security.
+AI agents collect sensitive data during interactions and store it in your organization's tenant. In Copilot Studio, you can use a sensitive variable flag to help protect information such as PINs, account numbers, credit card details, and protected health information (PHI) data, without affecting productivity. Agent authors can mark variables as sensitive per your organizational requirements to improve data security.
 
   > [!NOTE]
-  > If the customer's response to the AI agent’s first question is flagged as sensitive, that content might not be redacted. This is due to a timing issue that affects redaction at the start of the conversation. However, all subsequent responses flagged as sensitive are redacted as described in this article.
+  > [!INCLUDE [cc-sensitive-data-redaction](../includes/cc-sensitive-data-redaction.md)]
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ To match the recording to the call's length, the application inserts silence int
 
 - Sensitive information redaction is restricted to Copilot Studio. For any external connections from Copilot Studio to Power Automate or connectors, customers are responsible for assessing redacted data with any relevant regulatory or compliance requirements.
 
-- If the customer's response to the AI agent’s first question is flagged as sensitive, that content might not be redacted. This is due to a timing issue that affects redaction at the start of the conversation. However, all subsequent responses flagged as sensitive are redacted.
+- [!INCLUDE [cc-sensitive-data-redaction](../includes/cc-sensitive-data-redaction.md)]
 
 ## Supported actions
 

@@ -1,0 +1,1 @@
+If the customer's response to the AI agent’s first question is flagged as sensitive, that content might not be redacted. This is due to a timing issue that affects redaction at the start of the conversation. However, all subsequent responses flagged as sensitive are redacted as described in this article.

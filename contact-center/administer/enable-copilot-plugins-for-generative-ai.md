@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 04/30/2025
+ms.date: 09/29/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -25,7 +25,7 @@ Make sure the following prerequisites exist:
 
 - The System Administrator or CCI admin role.
 - A license for Copilot Studio is available. Learn more at:
-    - [Manage Copilot Studio messages and capacity](/microsoft-copilot-studio/requirements-messages-management)
+    - [Manage Copilot Credits and capacity](/microsoft-copilot-studio/requirements-messages-management#copilot-credits-and-events-scenarios)
     - [View billed sessions](/microsoft-copilot-studio/analytics-billed-sessions)
 - Define a custom connector plugin or prompt plugin.
 - Copilot in Customer Service is enabled.

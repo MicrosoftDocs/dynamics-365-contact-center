@@ -75,10 +75,10 @@ To match the recording to the call's length, the application inserts silence int
 | Receive sensitive information from Power Automate               | No                 | Not redacted.                                                                                                                                          |
 | Pass sensitive information explicitly in transfer nodes        | No                 | Not redacted.                                                                                                                                          |
 | Pass sensitive information to generative AI                            | No                 | Not redacted.                                                                                                                                           |
-| Write sensitive data to AppInsights via a custom log event      | No                 | Not redacted.                                                                                                                                           |
+| Write sensitive data to AppInsights through a custom log event      | No                 | Not redacted.                                                                                                                                           |
 | Conversation logs in Dataverse (ConversationTranscripts table)  | Yes                |                                                                                                                                                        |
 | Copilot Studio agent transcripts passed to Copilot Service workspace                  | Yes                | Only variables flagged as sensitive are redacted.                                                                                                       |
-| Digital/Messaging Channel                                       | No                 | Sensitive data is redacted from the AI agent transcripts, but is visible. in transcripts                               |
+| Digital/messaging channel                                       | No                 | Sensitive data is redacted from the AI agent transcripts, but is visible in Dynamics 365 Contact Center transcripts.                             |
 | Multi-entity                                                    | Yes                | All the entities are flagged as sensitive.                                                                                                             |
 
 ## Related information

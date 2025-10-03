@@ -26,7 +26,14 @@
       "source_path": "contact-center/administer/copilot-security-faqs.md",
       "redirect_url": "/dynamics365/customer-service/administer/ai-agents-security-faqs",
       "redirect_document_id": "false"
+    },
+    {
+    
+      "source_path": "contact-center/extend/configure-custom-events.md",
+      "redirect_url": "/dynamics365/contact-center/extend/intro-messaging-apis",
+      "redirect_document_id": "false"
     }
+
   ]
 }
 

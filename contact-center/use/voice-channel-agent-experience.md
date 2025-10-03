@@ -56,6 +56,11 @@ The consult feature includes advanced controls to manage multiple participants:
 - **Take notes**:  Make note of important information or specific details from your conversation with the customer. It's in addition to the call recording and transcription that happen during the conversation. See [take notes specific to the conversation](/dynamics365/customer-service/use/oc-take-notes?context=/dynamics365/contact-center/context/use-context).
 - **Start recording and transcript**: If your administrator enabled the recording and transcription service, you can start recording and transcription of the call.
 - **Pause recording and transcription**: If you don't want to capture some details of the conversation—such as bank details, billing, or payment information—you can temporarily pause the transcription and resume it later.
+- **Resume recording and transcript**: The system displays this instead of the **Record** button if your administrator set **Start setting** to **Manual** in **Transcription and recording**. This doesn't indicate that the recording was previously started and then paused.
+
+    :::image type="content" source="../media/resume-call-recording.png" alt-text="Screenshot of resume recording and transcript.":::
+
+ 
 - **Knowledge Articles**: Get a list of knowledge base articles pertaining to the conversation that you can use to resolve the customer issue.
 - **Link to conversation**: You can link another conversation, case, customer, or knowledge article to the conversation.
 
@@ -97,7 +102,7 @@ Avoid the following actions to prevent call drops:
 
 When you end a call, if your administrator enabled the [Customer service representative call quality feedback survey](/dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context), the application displays a survey that asks you to rate the call quality on a scale of 1 to 5. The survey can appear after every call or at a frequency set by your administrator. A response of 1 indicates an imperfect call experience and 5 indicates a perfect call.
 
-If you specify a rating between 1 and 4, the application displays a set of predefined options such as, "I couldn't hear any sound", "Volume was low", or "the call ended unexpectedly", that you can use to provide more feedback about the call quality
+If you specify a rating between 1 and 4, the application displays a set of predefined options such as, "I couldn't hear any sound", "Volume was low", or "the call ended unexpectedly", that you can use to provide more feedback about the call quality.
 
 ## Best practices
 

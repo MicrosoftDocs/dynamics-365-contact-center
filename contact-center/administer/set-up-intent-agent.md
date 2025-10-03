@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 09/17/2025
+ms.date: 10/03/2025
 ms.custom: bap-template
 ---
 
@@ -110,11 +110,11 @@ Connect the knowledge articles in your Dynamics 365 instance to your Copilot age
 
 |Variable |Mapped system topic| Description|
 |---------|---------|---------|
-|Global.IntentRedirectOnResolutionConfirmation|  EndOfConversation |  Check if the resolution fixed the issue. |
-|Global.IntentRedirectOnUnknownIntent    |  Escalate |  Hand off as no intent is found.|
-|Global.IntentRedirectOnUnableToProceed |Escalate |  Hand off when the conversation is stuck. |
-|Global.IntentRedirectOnEscalate    | Escalate  | Hand off to a representative.|
-|Global.IntentRedirectOnError |  OnError |  Hand off due to service error.|
+|Global.IntentRedirectOnResolutionConfirmation|  EndOfConversation |  Handoff happens when the customer confirms that their issue has been resolved. |
+|Global.IntentRedirectOnUnknownIntent    |  Escalate |  Handoff happens when the customer doesn't provide an intent after multiple retries.|
+|Global.IntentRedirectOnUnableToProceed |Escalate |  Handoff happens when the customer's issue isn't resolved. Common reasons include insufficient information to answer the customer's question, lack of access to the necessary tools to perform the requested action, or uncooperative behavior from the customer.|
+|Global.IntentRedirectOnEscalate    | Escalate  | Handoff happens when the customer explicitly states that they want to escalate or talk to a representative.|
+|Global.IntentRedirectOnError |  OnError | Handoff occurs when there’s a service error. The error could be an issue with the service itself, or an error while querying knowledge or performing an action.|
 
 > [!NOTE]
 > If the Copilot agent doesn't have any of the mapped variables, you can [override the default variable](#override-default-variable).

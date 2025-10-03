@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 09/17/2025
+ms.date: 10/03/2025
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template
@@ -234,7 +234,9 @@ You can specify knowledge sources for intents by providing specific filters.
    1. On the **Manage knowledge filters for intents** dialog, add or remove the filters, as required. The filters you specify on this dialog, apply only to the Dynamics 365 knowledge articles for intent management and intent-based features.
    1. Select **Save**.
 
-### Add knowledge from Copilot Studio
+You can specify filters for representatives as well. Learn more in [Set up filters](copilot-enable-help-pane.md#set-up-filters).
+
+### Use knowledge from Copilot Studio
 
 1. On the **Customer Intent Agent (preview)** page, **Instructions and solutions** section, select **Manage** for **Knowledge sources for intents**.
 1. On the **Knowledge source for Customer Intent Agent** page, select **Copilot Studio knowledge (preview)**.

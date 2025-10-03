@@ -30,7 +30,7 @@ You need to configure new IVR agents in Copilot Studio because the existing IVR 
 
 ## Prerequisites
 
-- Teams tenant with [Teams Phone license](/microsoftteams/teams-phone-licensing#teams-phone-licensing) with Teams Calling Plan, Teams Direct Routing, or Teams Operator Connect [PSTN connectivity](/microsoftteams/pstn-connectivity) options.
+- Teams tenant with [Teams Phone license](/microsoftteams/teams-phone-licensing) with Teams Calling Plan, Teams Direct Routing, or Teams Operator Connect [PSTN connectivity](/microsoftteams/pstn-connectivity) options.
 
 - [Service phone number](/microsoftteams/manage-phone-numbers-landing-page#service-numbers).
   - We recommend that you use a non-production service phone number for testing the Teams Phone.
@@ -118,7 +118,7 @@ Complete the following steps to configure inbound calling and sync the Teams ser
 
 ## How representatives receive and handle the Teams calls
 
-When a customer calls the Teams Phone number to connect with a representative, the representative receives the call notification on both the Copilot Service workspace app and Teams desktop or web app. The representative must accept the call notification on the Copilot Service workspace app. The representative can use the call controls to interact with the customers.
+When a customer calls the Teams Phone number to connect with a representative, the representative receives the call notification on the Copilot Service workspace app. The representative can use the call controls to interact with the customers.
 
 For compliance, when call recording is enabled, an announcement plays to notify participants that the call is being recorded.
 

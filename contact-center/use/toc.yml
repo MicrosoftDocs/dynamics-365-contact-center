@@ -282,8 +282,6 @@
             href: /dynamics365/customer-service/use/agent-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Bot dashboard
             href: /dynamics365/customer-service/use/oc-bot-dashboard?context=/dynamics365/contact-center/context/use-context
-          - name: Conversation topic dashboard
-            href: /dynamics365/customer-service/use/oc-conversation-topics-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Voicemail dashboard
             href: /dynamics365/customer-service/use/oc-voicemail-dashboard?context=/dynamics365/contact-center/context/use-context
         - name: Use knowledge management analytics

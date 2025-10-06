@@ -29,8 +29,9 @@ AI agents collect sensitive data during interactions and store it in your organi
 2. Create a variable in Copilot Studio or in a question node. Learn more in [Use variables](/microsoft-copilot-studio/authoring-variables-bot?tabs=webApp#use-global-variables)
 3. Select **{x}** for the variable. In the **Variable properties** pane, set the **Sensitive data** toggle to **On**.
 
-  > [!NOTE]
-  > When a sensitive variable is assigned to a nonsensitive variable, the nonsensitive variable is automatically considered as sensitive. For example, if you have a variable called `CreditCardNumber` and you assign it to a nonsensitive variable called `PaymentInfo`, the `PaymentInfo` variable is also considered sensitive.
+> [!NOTE]
+> - When a sensitive variable is assigned to a nonsensitive variable, the nonsensitive variable is automatically considered as sensitive. For example, if you have a variable called `CreditCardNumber` and you assign it to a nonsensitive variable called `PaymentInfo`, the `PaymentInfo` variable is also considered sensitive.
+> - If logging to Application Insights is enabled, make sure that the **Log sensitive activity properties** toggle is turned off. Enabling this setting results in sensitive data being recorded in Application Insights, which may compromise data privacy. Learn more in [Connect your Copilot Studio agent to Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry).
 
 ## Runtime experience
 

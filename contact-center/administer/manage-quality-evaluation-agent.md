@@ -17,7 +17,7 @@ ms.custom: bap-template
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and should not be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements.
 
-> Customers are solely responsible for using Dynamics 365, this feature, and any associated feature or service in compliance with all applicable laws, including laws that are related to accessing individual employee analytics, and monitoring, recording, and storing communications with users. As part of this compliance, customers must adequately notify users that their communications with customer service representatives (service representatives or representatives) might be monitored, recorded, or stored. As required by applicable laws, customers must also obtain consent from users before they use this feature with them. In addition, customers are encouraged to have a mechanism in place to inform their service representatives that their communications with users might be monitored, recorded, or stored.
+Customers are solely responsible for using Dynamics 365, this feature, and any associated feature or service in compliance with all applicable laws, including laws that are related to accessing individual employee analytics, and monitoring, recording, and storing communications with users. As part of this compliance, customers must adequately notify users that their communications with customer service representatives (service representatives or representatives) might be monitored, recorded, or stored. As required by applicable laws, customers must also obtain consent from users before they use this feature with them. In addition, customers are encouraged to have a mechanism in place to inform their service representatives that their communications with users might be monitored, recorded, or stored.
 
 The Quality Evaluation Agent is an AI agent that assesses customer engagement using an evaluation framework defined by supervisors. The Quality Evaluation Agent autonomously scores cases and conversations, providing insights to help supervisors enhance the quality of case and conversation interactions.
 
@@ -80,7 +80,7 @@ Select **Save**.
 
 ### Use the out-of-the-box evaluation criteria
 
-> As a quality evaluation supervisor, you can use the default evaluation criteria, copy the default evaluation criteria, or create a new evaluation criteria to evaluate your cases and conversations. 
+As a quality evaluation supervisor, you can use the default evaluation criteria, copy the default evaluation criteria, or create a new evaluation criteria to evaluate your cases and conversations. 
 
 Use the **Support quality** evaluation criteria for both cases and conversations. Use the **Closed Conversations Default Criteria** for conversations only.
 
@@ -91,9 +91,9 @@ Use the **Support quality** evaluation criteria for both cases and conversations
 
 1.  On the **Evaluation criteria** page, depending on your record type, select the default evaluation criteria, as required.
 
-### Extend evaluation criteria
+### Extend your evaluation criteria
 
-> After you create a baseline criteria for your business unit, you can extend it to fit your organizational requirements. Updates to the baseline criteria automatically appear in all extended criteria. Select any custom evaluation criteria in the **Published** state as source criteria to extend it further.
+After you create a baseline criteria for your business unit, you can extend it to fit your organizational requirements. Updates to the baseline criteria automatically appear in all extended criteria. Select any custom evaluation criteria in the **Published** state as source criteria to extend it further.
 
 1.  Select a criteria and then select **Extend criteria**. The <*new extended*> evaluation criteria page appears.
 
@@ -116,12 +116,12 @@ Use the **Support quality** evaluation criteria for both cases and conversations
 
 1.  Select **Save** and then select **Publish**.
 
-> [!NOTE]
-> The **Source criteria details** in the **Extended criteria details** page isn’t editable. However, if you make updates to the source criteria, the extended criteria is updated as well.
+    > [!NOTE]
+    > - The **Source criteria details** in the **Extended criteria details** page isn’t editable. However, if you make updates to the source criteria, the extended criteria is updated as well.
 
-- The **Criteria scoring** reflects the selection you made in the source criteria.
+    > - The **Criteria scoring** reflects the selection you made in the source criteria.
 
-- You can’t extend an out-of-the-box criteria, for example, **Support quality**.
+    > - You can’t extend an out-of-the-box criteria, for example, **Support quality**.
 
 ### Copy the default quality evaluation criteria for cases and conversations
 
@@ -180,7 +180,7 @@ Use the **Support quality** evaluation criteria for both cases and conversations
 
 ## Evaluation plan
 
-> The evaluation plan lets supervisors define the frequency, conditions, criteria, and methods for evaluation. This plan helps ensure that evaluations are systematic and consistent. The three evaluation methods are AI agent, AI-assisted, and manual.
+The evaluation plan lets supervisors define the frequency, conditions, criteria, and methods for evaluation. This plan helps ensure that evaluations are systematic and consistent. The three evaluation methods are AI agent, AI-assisted, and manual.
 
 ### Create and activate evaluation plan for conversations
 
@@ -242,13 +242,13 @@ Use the **Support quality** evaluation criteria for both cases and conversations
 
 ## On-demand evaluation
 
-> The on-demand evaluation feature allows users to request evaluations for specific cases.
+The on-demand evaluation feature allows users to request evaluations for specific cases.
 
 To request evaluations for multiple cases from the case grid:
 
-    1. Select the required records.
+1. Select the required records.
     
-    1.  Select **Request evaluation**.
+1.  Select **Request evaluation**.
 
 > [!NOTE]
 > You can select up to 20 records for evaluation. 
@@ -278,16 +278,15 @@ To request evaluation for a particular case:
 
 The **Evaluations** side pane shows evaluations for cases and closed conversations.
 
-- **Evaluation Summary:** Highlights evaluation results and suggests actions for improvement, like coaching opportunities for
-  representatives or specific activities to bring a case back on track. The Quality Manager and Quality Reviewer base these actions on evaluation results to improve the overall quality.
+- **Evaluation Summary:** Highlights evaluation results and suggests actions for improvement, like coaching opportunities for  representatives or specific activities to bring a case back on track. The Quality Manager and Quality Reviewer base these actions on evaluation results to improve the overall quality.
 
-> You can view specific data by using filters such as **Evaluation method**, **AI agent status**, **Evaluator status**, **Evaluator due date**, **Evaluator Completion date**.
-
-1.  In Copilot Service workspace, go to **Evaluations**. The **All evaluations** data grid appears.
-
-2.  Select the required case or conversation record type.
-
-3.  The case or conversation appears with the **Evaluation Summary** and **Suggested actions.**
+    You can view specific data by using filters such as **Evaluation method**, **AI agent status**, **Evaluator status**, **Evaluator due date**, **Evaluator Completion date**.
+    
+    1.  In Copilot Service workspace, go to **Evaluations**. The **All evaluations** data grid appears.
+    
+    2.  Select the required case or conversation record type.
+    
+    3.  The case or conversation appears with the **Evaluation Summary** and **Suggested actions.**
 
 - **Scoring overview:** You see this overview if you have extended your evaluation criteria. Shows the **Overall evaluation score**, **Compliance score**, and the **Quality and compliance score**, including the **Total score** and **Scoring ratio**.
 

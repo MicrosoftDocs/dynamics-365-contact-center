@@ -10,45 +10,21 @@ ms.topic: how-to
 
 # Quality Evaluation Agent
 
-## Important
 
-> This feature is intended to help customer service managers or
-> supervisors enhance their team's performance and improve customer
-> satisfaction. It isn't intended to be used, and should not be used, to
-> make decisions that affect the employment of an employee or group of
-> employees, including compensation, rewards, seniority, or other rights
-> or entitlements.
+> [!IMPORTANT]
+> This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and should not be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements.
 >
-> Customers are solely responsible for using Dynamics 365, this feature,
-> and any associated feature or service in compliance with all
-> applicable laws, including laws that are related to accessing
-> individual employee analytics, and monitoring, recording, and storing
-> communications with users. As part of this compliance, customers must
-> adequately notify users that their communications with customer
-> service representatives (service representatives or representatives)
-> might be monitored, recorded, or stored. As required by applicable
-> laws, customers must also obtain consent from users before they use
-> this feature with them. In addition, customers are encouraged to have
-> a mechanism in place to inform their service representatives that
-> their communications with users might be monitored, recorded, or
-> stored.
+> Customers are solely responsible for using Dynamics 365, this feature, and any associated feature or service in compliance with all applicable laws, including laws that are related to accessing individual employee analytics, and monitoring, recording, and storing communications with users. As part of this compliance, customers must adequately notify users that their communications with customer service representatives (service representatives or representatives) might be monitored, recorded, or stored. As required by applicable laws, customers must also obtain consent from users before they use this feature with them. In addition, customers are encouraged to have a mechanism in place to inform their service representatives that their communications with users might be monitored, recorded, or stored.
+
 
 ## Introduction
 
-> The Quality Evaluation Agent is an AI agent that assesses customer
-> engagement using an evaluation framework defined by supervisors. The
-> Quality Evaluation Agent autonomously scores cases and conversations,
-> providing insights to help supervisors enhance the quality of case and
-> conversation interactions.
+> [!NOTE]
+> The Quality Evaluation Agent is an AI agent that assesses customer engagement using an evaluation framework defined by supervisors. The Quality Evaluation Agent autonomously scores cases and conversations, providing insights to help supervisors enhance the quality of case and conversation interactions.
 >
-> The Quality Evaluation Agent evaluates cases and closed conversations
-> to check if representatives follow required standards. If standards
-> aren't met, the Quality Evaluation Agent provides coaching
-> recommendations or actions to help representatives improve.
+> The Quality Evaluation Agent evaluates cases and closed conversations to check if representatives follow required standards. If standards aren't met, the Quality Evaluation Agent provides coaching recommendations or actions to help representatives improve.
 >
-> The Quality Evaluation Agent includes the evaluation criteria,
-> evaluation plan, and evaluations. These components are essential for
-> the Quality Evaluation Agent to work.
+> The Quality Evaluation Agent includes the evaluation criteria, evaluation plan, and evaluations. These components are essential for the Quality Evaluation Agent to work.
 
 ###### Evaluation Criteria:
 
@@ -82,44 +58,12 @@ ms.topic: how-to
 
 ## Role and Privileges
 
-<table>
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 13%" />
-<col style="width: 69%" />
-</colgroup>
-<thead>
-<tr>
-<th><strong>Persona</strong></th>
-<th><strong>Role</strong></th>
-<th><strong>Privileges</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Administrator</td>
-<td>Quality Admin</td>
-<td><ul>
-<li><p>Configure Quality Evaluation Agent</p></li>
-<li><p>Create evaluation criteria, evaluation plan</p></li>
-<li><p>Complete or assign an evaluation.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td>Supervisor</td>
-<td>Quality Manager</td>
-<td><ul>
-<li><p>Create evaluation criteria, evaluation plan</p></li>
-<li><p>Complete or assign an evaluation</p></li>
-</ul></td>
-</tr>
-<tr>
-<td>Supervisor</td>
-<td>Quality Evaluator</td>
-<td>Complete or assign an evaluation.</td>
-</tr>
-</tbody>
-</table>
+
+| Persona      | Role            | Privileges                                                                 |
+|--------------|-----------------|---------------------------------------------------------------------------|
+| Administrator| Quality Admin   | Configure Quality Evaluation Agent<br>Create evaluation criteria, evaluation plan<br>Complete or assign an evaluation. |
+| Supervisor   | Quality Manager | Create evaluation criteria, evaluation plan<br>Complete or assign an evaluation |
+| Supervisor   | Quality Evaluator| Complete or assign an evaluation.                                         |
 
 ## Configure connection references
 
@@ -541,43 +485,14 @@ ms.topic: how-to
 
 ###### Evaluator status:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr>
-<th><strong>State</strong></th>
-<th><strong>What it indicates</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Pending</strong></td>
-<td>The evaluation hasn’t started.</td>
-</tr>
-<tr>
-<td><strong>In-progress</strong></td>
-<td>The evaluator is filling in the evaluation</td>
-</tr>
-<tr>
-<td><strong>Completed</strong></td>
-<td>The evaluator has finished and submitted the evaluation.</td>
-</tr>
-<tr>
-<td><strong>Expired</strong></td>
-<td>The due date provided in the evaluation criteria has expired, and
-the evaluator can no longer open the evaluation.</td>
-</tr>
-<tr>
-<td><strong>Not applicable</strong></td>
-<td><p>The AI agent is in <strong>Error</strong> status, and therefore
-the</p>
-<p>evaluator can’t evaluate.</p></td>
-</tr>
-</tbody>
-</table>
+
+| State           | What it indicates                                                                 |
+|-----------------|----------------------------------------------------------------------------------|
+| Pending         | The evaluation hasn’t started.                                                    |
+| In-progress     | The evaluator is filling in the evaluation                                        |
+| Completed       | The evaluator has finished and submitted the evaluation.                          |
+| Expired         | The due date provided in the evaluation criteria has expired, and the evaluator can no longer open the evaluation. |
+| Not applicable  | The AI agent is in Error status, and therefore the evaluator can’t evaluate.      |
 
 #### AI agent status:
 

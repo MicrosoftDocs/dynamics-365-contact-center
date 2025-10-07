@@ -313,7 +313,11 @@
           - name: Enable Customer Knowledge Management Agent
             href: /dynamics365/customer-service/administer/admin-km-agent?context=/dynamics365/contact-center/context/administer-context
           - name: Configure connection references
-            href: /dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context   
+            href: /dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context
+        - name: Quality Evaluation Agent
+          items: 
+          - name: Manage Quality Evaluation Agent
+            href: manage-quality-evaluation-agent.md
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features

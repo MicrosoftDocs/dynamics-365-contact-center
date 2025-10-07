@@ -48,7 +48,7 @@ To restrict users from manually updating the Desktop companion application, conf
 
 1. Go to the **Windows Registry** > `HKLM\Software\Microsoft\msdyn-companionapp` key. 
 1. Set the **DisableUserUpdates** value to 1. 
-This registry configuration prevents representatives from selecting update options for the Desktop companion application and manually configuring Power Automate for desktop to start automatically. 
+This registry configuration prevents representatives from selecting update options for the Desktop companion application and representatives will stop getting notifications about new versions. 
 
 ## Related information
 

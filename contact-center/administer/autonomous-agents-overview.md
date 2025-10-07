@@ -32,7 +32,7 @@ The Case Management Agent helps automate case lifecyle&mdash;create, update, res
 
 ## Customer Knowledge Management Agent
 
-The Customer Knowledge Management Agent helps extract knowledge from cases and manage customer knowledge in real time. After a case is closed, the Knowledge Management Agent analyzes case details, fills knowledge gaps, and makes sure of compliance. Learn more in [Manage Customer Knowledge Management Agent](/dynamics365/customer-service/use/admin-km-agent) and [Review knowledge articles created by Customer Knowledge Management Agent](/dynamics365/customer-service/use/admin-km-agent-review).
+Customer Knowledge Management Agent helps extract knowledge from cases and manage customer knowledge in real time. After a case is closed, the Knowledge Management Agent analyzes case details, fills knowledge gaps, and makes sure of compliance. Learn more in [Manage Customer Knowledge Management Agent](/dynamics365/customer-service/use/admin-km-agent) and [Review knowledge articles created by Customer Knowledge Management Agent](/dynamics365/customer-service/use/admin-km-agent-review).
 
 ### Related information
 

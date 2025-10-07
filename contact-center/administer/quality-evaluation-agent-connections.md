@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-> Configure connection references for the Quality Evaluation Agent flow. You need to set the following connection references:
+Configure connection references for the Quality Evaluation Agent flow. You need to set the following connection references:
 
 - **QEA On Demand Evaluation Case** for cases.
 
@@ -54,8 +54,7 @@ Learn more in [Add connection references to a solution.](/power-apps/maker/data-
 
 In [make.powerapps.com](https://make.powerapps.com) from **Solutions** > **Default Solution** > **Objects** > **Cloud flows**, select **QEA On Demand Evaluation Case** and **AI Evaluation > Flow for Conversation**, and then select **Turn on**.
 
-> Alternatively, in [Power Automate](https://powerautomate.microsoft.com), search for **QEA On Demand Evaluation Case** and the **AI Evaluation Flow for Conversation** in **Cloud flows**, and turn these on. Learn more in [Power
-> Automate](/power-automate/overview-cloud#find-your-flows-easily).
+Alternatively, in [Power Automate](https://powerautomate.microsoft.com), search for **QEA On Demand Evaluation Case** and the **AI Evaluation Flow for Conversation** in **Cloud flows**, and turn these on. Learn more in [Power Automate](/power-automate/overview-cloud#find-your-flows-easily).
 
 ## Publish the Microsoft Copilot Studio agent
 

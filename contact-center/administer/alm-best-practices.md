@@ -4,9 +4,9 @@ description: Learn about the best practices for application lifecycle management
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.topic: conceptual
+ms.topic: best-practice
 ms.collection: 
-ms.date: 08/27/2024
+ms.date: 05/15/2025
 ms.custom: bap-template
 ---
 

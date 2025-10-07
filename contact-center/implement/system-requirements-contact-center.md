@@ -5,7 +5,7 @@ ms.date: 02/05/2025
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.topic: conceptual
+ms.topic: concept-article
 ms.collection:
 ms.custom: bap-template
 ---
@@ -24,21 +24,7 @@ Make sure that Dynamics 365 Contact Center is available in your region. Learn mo
 
 ### Licenses
 
-Before you can use Dynamics 365 Contact Center with the customer relationship management (CRM) solution of your choice, each channel user must have one or more active subscriptions for the following standalone licenses.
-
-| Capability | License |
-|---|---|
-| Voice, chat, and digital messaging | Dynamics 365 Contact Center |
-| Chat and digital messaging | Dynamics 365 Contact Center Digital |
-| Voice | Dynamics 365 Contact Center Voice |
-
-Before you can use Dynamics 365 Contact Center with Dynamics 365 Customer Service Enterprise, each channel user must have one or more active subscriptions for the following add-on licenses.
-
-| Capability | License |
-|---|---|
-| Voice, chat, and digital messaging | Dynamics 365 Contact Center Add-on for Customer Service Enterprise |
-| Chat and digital messaging | Dynamics 365 Contact Center Digital Add-on for Customer Service Enterprise |
-| Voice | Dynamics 365 Contact Center Voice Add-on for Customer Service Enterprise |
+Specific licensing requirements apply for each channel user to use voice, chat, and digital messaging in Dynamics 365 Contact Center with Dynamics 365 Customer Service or with the customer relationship management (CRM) solution of your choice. Learn more in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 Learn how to purchase add-ins in [Buy an add-on](/microsoft-365/commerce/buy-or-edit-an-add-on?view=o365-worldwide#buy-an-add-on&preserve-view=true).
 
@@ -50,7 +36,7 @@ The following table shows the system requirements for using Dynamics 365 Contact
 
 | Area | Requirements |
 |---|---|
-| Contact Center workspace app | Dynamics 365 Contact Center 9.2.21034.00160 or later. |
+| Copilot Service workspace app | Dynamics 365 Contact Center 9.2.21034.00160 or later. |
 | Web browsers | <p>Supported browsers:</p><ul><li>Microsoft&nbsp;Edge ([Chromium based](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)) version 79.0.309.65 or later is required for the desktop notifications feature.</li><li>Google Chrome.</li></ul><p><strong>Important:</strong> Dynamics 365 Contact Center uses third-party cookies for authentication. To ensure that services such as agent or supervisor presence can work correctly, make sure that the cookies aren't blocked in your browser in any mode.</p> |
 | Azure Communication Services | Azure Communication Services is required for first-party voice and text (SMS) in the voice channel in production environments. Learn about requirements that are specific to Azure Communication Services in [Network recommendations](/azure/communication-services/concepts/voice-video-calling/network-requirements). |
 | Hardware | <ul><li>A microphone and speakers are required for the voice experience.</li><li>**Minimum:** 4 gigabytes (GB) of RAM.</li><ul> |
@@ -72,11 +58,11 @@ The customer-facing live chat widget that you show in your portal supports the t
 Learn how to enable the omnichannel capabilities in your organization in [Provision channels](provision-channels.md).
 
 > [!NOTE]
-> For an optimal experience in the Contact Center workspace app, we recommend that you use browsers in normal mode.
+> For an optimal experience in the Copilot Service workspace app, we recommend that you use browsers in normal mode.
 
 ## Allow access to websites
 
-If your organization uses a URL filter to block a category of websites or URLs, make sure that you allow the following websites as an exception for your users. In this way, you ensure that those users can access the Contact Center workspace app in the business portal.
+If your organization uses a URL filter to block a category of websites or URLs, make sure that you allow the following websites as an exception for your users. In this way, you ensure that those users can access the Copilot Service workspace app in the business portal.
 
 - `https://ccaas-embed-prod.azureedge.net`
 - `https://*.communication.azure.com`
@@ -141,4 +127,4 @@ The following table shows geographic location–specific links that should be ma
 
 ## Related information
 
-[Get started with Contact Center workspace](../use/ccw-overview.md)
+[Get started with Copilot Service workspace](../use/ccw-overview.md)

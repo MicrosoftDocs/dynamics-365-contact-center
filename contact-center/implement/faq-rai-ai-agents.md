@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 06/04/2025
+ms.date: 10/08/2025
 ms.update-cycle: 180-days
 ms.custom: 
 - bap-template
@@ -48,7 +48,7 @@ With these capabilities the agent not only identifies what a customer wants but 
 
 ### Customer Knowledge Management Agent
 
-The Customer Knowledge Management Agent helps create and manage customer knowledge in real time. After a case is closed, the Knowledge Management Agent:
+Customer Knowledge Management Agent helps create and manage customer knowledge in real time. After a case is closed, the Knowledge Management Agent:
 
 - **Analyzes case details and related information**: Includes notes, conversations, and emails to draft a knowledge article.
 
@@ -69,6 +69,14 @@ The capabilities of the Case Management Agent include:
 
 - **Automated follow-up and closure**: Sends follow-up emails and resolves cases based on predefined rules, streamlining the case closure process.
 
+### Quality Evaluation Agent
+
+Quality Evaluation Agent helps organizations ensure that every customer engagement with support—whether handled by service representatives or AI agents—is compliant, ethical, and aligned with brand values.
+ 
+**Customized criteria**: Supervisors set up evaluation criteria, including questionnaires, scoring logic, and instructions, to define quality. The AI agent uses these criteria to assess customer engagements across different channels and generate scores.
+ 
+**Actionable insights that drive improvement**: The AI agent provides evaluation summaries, quality scores, and coaching recommendations to help supervisors find gaps, guide representative development, and improve service standards.
+
 ## What is the system’s intended use?
 
 These AI agents are designed to:
@@ -78,10 +86,12 @@ These AI agents are designed to:
 - By leveraging autonomously managed and updated intent library and knowledge base, organizations can address customer inquiries more effectively and provide accurate, timely solutions, enhancing both service representative efficiency and self-help resolution rates.
 
 - Automatically extract and populate the relevant case and related entity fields from customer emails and chats to reduce manual data entry for customer service representatives. This ensures that the case information is complete right from case creation.
+ 
+- Evaluate customer support interactions using your organization’s evaluation criteria.
 
 ## How is AI agent evaluated? What metrics are used to measure performance?
 
-Performance is evaluated using Microsoft's internal support data and through ongoing pilots within Microsoft Customer Service and Support (CSS). The Customer Intent Agent is assessed based on the accuracy of extracted intents against manually identified ground truth derived from internal support data. Similarly, the Knowledge Management Agent is evaluated for the quality and relevance of its generated knowledge articles, to make sure that they align with the established ground truth and avoid duplication. The Case Management Agent is evaluated based on the quality and relevance of its predictions for the configured fields, generated from the specified context sources.
+Performance is evaluated using Microsoft's internal support data and through ongoing pilots within Microsoft Customer Service and Support (CSS). The Customer Intent Agent is assessed based on the accuracy of extracted intents against manually identified ground truth derived from internal support data. Similarly, the Knowledge Management Agent is evaluated for the quality and relevance of its generated knowledge articles, to make sure that they align with the established ground truth and avoid duplication. The Case Management Agent is evaluated based on the quality and relevance of its predictions for the configured fields, generated from the specified context sources. Quality Evaluation Agent is evaluated for accuracy, quality, and relevance of its outputs. Key factors include how well customer engagement evaluation outcomes match defined criteria, how clear and useful generated summaries are, and how effective recommendations are for improving support.
 
 Additionally, evaluation datasets are run to assess performance against potential personally identifiable information (PII) leaks, reflecting Microsoft's commitment to protecting customer privacy. Privacy and compliance is a critical focus of these evaluations.
 
@@ -93,13 +103,15 @@ AI agents have the following limitations:
 
 - **Usage limits**: This capability might be subject to usage limits or capacity throttling.
 
-- **Dependence on data quality**: The effectiveness of the system relies on the quality and completeness of CRM data. A more diverse range of conversations around different intents help create a more complete and accurate intent library.
+- **Dependence on data quality**: The effectiveness of the system relies on the quality and completeness of CRM data. 
+   - A more diverse range of conversations around different intents help create a more complete and accurate intent library.
+  - Write clear, specific instructions for evaluation questionnaires. Give guidance that’s direct and relevant to the context to help evaluators make accurate decisions.
 
 - **Customization requirements**: Users need to actively review the AI-generated intent library and knowledge articles to make sure of accuracy. Customization efforts, such as overrides and tweaks, are necessary to refine and align the output with business needs.
 
 ## What data do AI agents collect? How is the data used?
 
-The AI agents generate intents and knowledge articles based on the data that already exists in your Dataverse instance. They do not collect any additional data beyond basic telemetry and any feedback you provide. The data within your CRM system is analyzed to create intent libraries and draft knowledge articles.
+The AI agents generate intents and knowledge articles based on the data that already exists in your Dataverse instance. They do not collect any additional data beyond basic telemetry and any feedback you provide. The data within your CRM system is analyzed to create intent libraries and draft knowledge articles, and and execute quality evaluations.
 
 ## What operational factors and settings allow for effective and responsible use of the system?
 
@@ -108,6 +120,8 @@ The AI agents generate intents and knowledge articles based on the data that alr
 - Administrators have the ability to remove or discard generated intents and knowledge articles as needed, supporting the creation of a well-curated intent library and knowledge base.
 
 - AI agents also apply content moderation policies on all generative AI requests to protect users against offensive or harmful content. These content moderation policies also extend to malicious attempts at jailbreaking, prompt injection, prompt exfiltration, and copyright infringement.
+
+- Supervisors can conduct quality evaluations in two modes: fully autonomous mode, where the AI agent completes all evaluations without manual intervention, and AI-assisted mode, where the AI agent performs evaluations and the supervisor reviews the results to check accuracy and compliance. This flexibility lets supervisors choose complete automation for efficiency or a more controlled approach for oversight and quality assurance.
 
 - As a best practice, users are encouraged to inform all stakeholders who have been exposed to the AI system that they have interacted with an AI system.
 

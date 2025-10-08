@@ -31,7 +31,7 @@ AI agents collect sensitive data during interactions and store it in your organi
 
 > [!NOTE]
 > - When a sensitive variable is assigned to a nonsensitive variable, the nonsensitive variable is automatically considered as sensitive. For example, if you have a variable called `CreditCardNumber` and you assign it to a nonsensitive variable called `PaymentInfo`, the `PaymentInfo` variable is also considered sensitive.
-> - If logging to Application Insights is enabled, make sure that the **Log sensitive activity properties** toggle is turned off. Enabling this setting results in sensitive data being recorded in Application Insights, which may compromise data privacy. Learn more in [Connect your Copilot Studio agent to Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry).
+> - To protect sensitive information, don't enable the **Log sensitive activity properties** toggle when logging to Application Insights.  If this setting is turned on, any sensitive data variables configured within the application will be captured in telemetry logs, which may result in unintended data leakage.  Learn more in[Connect your Copilot Studio agent to Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry).
 
 ## Runtime experience
 

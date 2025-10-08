@@ -48,7 +48,7 @@ With these capabilities the agent not only identifies what a customer wants but 
 
 ### Customer Knowledge Management Agent
 
-Customer Knowledge Management Agent helps create and manage customer knowledge in real time. After a case is closed, the Knowledge Management Agent:
+Customer Knowledge Management Agent helps create and manage customer knowledge in real time. After a case is closed, the Customer Knowledge Management Agent:
 
 - **Analyzes case details and related information**: Includes notes, conversations, and emails to draft a knowledge article.
 
@@ -91,7 +91,7 @@ These AI agents are designed to:
 
 ## How is AI agent evaluated? What metrics are used to measure performance?
 
-Performance is evaluated using Microsoft's internal support data and through ongoing pilots within Microsoft Customer Service and Support (CSS). The Customer Intent Agent is assessed based on the accuracy of extracted intents against manually identified ground truth derived from internal support data. Similarly, the Knowledge Management Agent is evaluated for the quality and relevance of its generated knowledge articles, to make sure that they align with the established ground truth and avoid duplication. The Case Management Agent is evaluated based on the quality and relevance of its predictions for the configured fields, generated from the specified context sources. Quality Evaluation Agent is evaluated for accuracy, quality, and relevance of its outputs. Key factors include how well customer engagement evaluation outcomes match defined criteria, how clear and useful generated summaries are, and how effective recommendations are for improving support.
+Performance is evaluated using Microsoft's internal support data and through ongoing pilots within Microsoft Customer Service and Support (CSS). The Customer Intent Agent is assessed based on the accuracy of extracted intents against manually identified ground truth derived from internal support data. Similarly, the Customer Knowledge Management Agent is evaluated for the quality and relevance of its generated knowledge articles, to make sure that they align with the established ground truth and avoid duplication. The Case Management Agent is evaluated based on the quality and relevance of its predictions for the configured fields, generated from the specified context sources. Quality Evaluation Agent is evaluated for accuracy, quality, and relevance of its outputs. Key factors include how well customer engagement evaluation outcomes match defined criteria, how clear and useful generated summaries are, and how effective recommendations are for improving support.
 
 Additionally, evaluation datasets are run to assess performance against potential personally identifiable information (PII) leaks, reflecting Microsoft's commitment to protecting customer privacy. Privacy and compliance is a critical focus of these evaluations.
 

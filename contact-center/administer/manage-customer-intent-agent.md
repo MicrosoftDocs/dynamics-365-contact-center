@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 10/03/2025
+ms.date: 10/10/2025
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template
@@ -218,11 +218,9 @@ You can edit or delete a connector after you select the required connector on th
 
 You can add knowledge articles to an intent directly from the intent page, so that users see articles specified for the intent only. 
 
-1. Select the intent for which you want to add knowledge articles and custom AI agent.
+1. Select the intent for which you want to add knowledge articles.
 1. On the `<intent_name>` page, scroll to the bottom and in **Solution (Optional)**, select **Dynamics 365 knowledge articles**, and then select **Add**. A list of published knowledge articles appears.
 1. Select the articles pertinent to the intent and save and close.
-1. Select **Custom AI agent**, and then select **Add**.
-1. In the list of agents that appears, select an AI agent and save and close.
 
 ### Specify filters for Dynamics 365 knowledge articles for Customer Intent Agent
 

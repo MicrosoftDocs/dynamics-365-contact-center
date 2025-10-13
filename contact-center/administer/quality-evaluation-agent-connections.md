@@ -12,8 +12,6 @@ ms.custom: bap-template
 
 # Configure connection references for Quality Evaluation Agent flow (preview)
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
 Configure connection references for the Quality Evaluation Agent flow. You need to set the following connection references:
 
 - **QEA On Demand Evaluation Case** for cases.
@@ -21,8 +19,6 @@ Configure connection references for the Quality Evaluation Agent flow. You need 
 - **AI Evaluation Flow for Conversation** for conversations.
 
 Learn more in [Add connection references to a solution.](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Set connection references for Quality Evaluation Agent flow
 

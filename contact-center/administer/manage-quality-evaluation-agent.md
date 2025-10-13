@@ -41,8 +41,17 @@ The Quality Evaluation Agent summarizes case and conversation evaluations in cus
 ## Prerequisites
 
 - You have the Quality Manager, Quality Evaluator, and the Quality Admin role.
-- You have configured the co
-- You provided consent for potential data movement across regions. Learn more in [FAQ.](#faq)
+- You have configured the [Configure connection references for Quality Evaluation Agent flow (preview)](quality-evaluation-agent-connections.md#configure-connection-references-for-quality-evaluation-agent-flow-preview).
+- You have [set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
+- You provided consent for potential [data movement across regions](#data-movement-across-regions).
+
+## Data movement across regions
+
+To ensure optimal performance, service calls may be routed outside the customer's regional boundary if local capacity is temporarily unavailable. To participate, customers are kindly requested to provide consent for potential data movement across regions. This enables us to deliver a seamless experience leveraging the full capabilities of Copilot and generative AI features within the Power Platform.
+
+If a customer prefers to keep data strictly within their region, we respect that choice and recommend waiting for broader availability before enabling the preview.
+
+Learn more in [Move data across regions for Copilots and generative AI features – Power Platform](/power-platform/admin/geographical-availability-copilot?utm_source=chatgpt.com&tabs=new).
 
 ## Role and Privileges
 
@@ -89,6 +98,17 @@ Use the **Support quality** evaluation criteria for both cases and conversations
 1.  In Copilot Service workspace, go to Evaluation **criteria.**
 
 1.  On the **Evaluation criteria** page, depending on your record type, select the default evaluation criteria, as required.
+
+### Edit your published evaluation criteria
+
+You can edit your published evaluation criteria. You can't edit the record type of an evaluation plan.
+
+1.  In Copilot Service workspace, go to Evaluation **criteria.**
+
+1.  On the **Evaluation criteria** page, depending on your record type, select the default evaluation criteria, as required.
+1. Select **Edit**.
+
+Any evaluation plan that's still running continues to use the existing criteria. After you publish the edited evaluation criteria, evaluation plans use the latest criteria in the next run.
 
 ### Extend your evaluation criteria
 
@@ -179,7 +199,7 @@ After you create a baseline criteria for your business unit, you can extend it t
 
 The evaluation plan lets supervisors define the frequency, conditions, criteria, and methods for evaluation. This plan helps ensure that evaluations are systematic and consistent. The three evaluation methods are AI agent, AI-assisted, and manual.
 
-### Create and activate evaluation plan for conversations
+### Create and activate evaluation plan for cases and conversations
 
 > [!NOTE]
 > You can use conversation evaluations for voice and live chat channels only.
@@ -196,22 +216,29 @@ The evaluation plan lets supervisors define the frequency, conditions, criteria,
 
         1.  **Description**: Enter description.
 
-        1.  **Record type**: Select **record type** as
-            **Conversations.**
+        1.  **Record type**: Select **record type** as **Conversations** or **Cases**.
 
-    1.  In the **Frequency** section,
+    1.  If you select **Conversations**, then in the **Frequency** section, select the following:
 
         1.  **Frequency type:** Select **Trigger,** and then provide the following:
 
-            1.  **Event**: If you have frequency type as **Trigger**,
-                then select **Closed conversation**.
+            1.  **Occurence**: If you have frequency type as **Trigger**, then select **Closed conversation**.
+
+            1.  **Start date**: Provide a start date.
+
+            1.  **End date**: Provide an end date.
+            
+    1. If you select **Cases**, then in the **Frequency** section, select the following:
+
+        1.  **Frequency type:** Select **Recurring,** and then provide the following:
+            
+            1. **Occurence**: Select **Daily**.
 
             1.  **Start date**: Provide a start date.
 
             1.  **End date**: Provide an end date.
 
-    1.  In the **Conditions** section, select **Add** to add conditions
-        to your evaluation plan. For example, Add **Conversation status**> **Equals** > **Closed** or add **Channel type >     Contains data > Live chat.**
+    1.  In the **Conditions** section, select **Add** to add conditions to your evaluation plan. For example, Add **Conversation status**> **Equals** > **Closed** or add **Channel type > Contains data > Live chat.**
 
     1.  In the **Assign evaluation** section, provide the following:
 
@@ -225,19 +252,18 @@ The evaluation plan lets supervisors define the frequency, conditions, criteria,
 
 1.  Select **Save**.
 
-1.  Select **Activate plan**. The A**ctivate plan** dialog appears.
-    Select **Activate plan**. On successful activation, a success
-    message appears.
+1.  Select **Activate plan**. The **Activate plan** dialog appears.
+1.  Select **Activate plan**. On successful activation, a success message appears.
 
-## Activate, pause, or delete the evaluation plan in bulk
+## Activate, pause, or delete an evaluation plan
 
 1.  In Customer Service workspace, go to **Evaluation plans**.
 
-1. On the **Evaluation Plans** page, select the evaluation plans that you would like to activate or pause in bulk.
+1. On the **Evaluation Plans** page, select the evaluation plans that you would like to activate, delete, resume, or pause.
 
-1.  Select **Activate plan, Pause plan,** or **Delete**. On the respective dialog box, confirm the action and save.
+1.  Select **Activate plan, Pause plan,** **Resume plan**, or **Delete**. On the respective dialog box, confirm the action and save.
 
-## On-demand evaluation
+## On-demand evaluation for cases
 
 The on-demand evaluation feature allows users to request evaluations for specific cases.
 
@@ -270,6 +296,15 @@ To request evaluation for a particular case:
 4.  Once the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Copilot.
 
 5.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
+
+## Enable bulk evaluation for cases
+
+1. On the **Quality Evaluation Agent** page, in the **Enablement by record type** section, select **Case**, and then select **Enable bulk evaluation**. The bulk evaluation provisioning starts.
+
+1. Select **Activate**. The plan gets activated only after the data transfer is complete. You can create and save your plan as draft in the meantime.
+
+> [!NOTE]
+> You can evaluate up to 10,000 entity records in a single batch run. A single batch run might take upto four hours to complete.
 
 ## Evaluations
 
@@ -315,17 +350,3 @@ You see the following evaluator and AI agent states on the grid.
 | Completed| Evaluation is complete. |
 | Error | AI agent shows errors due to issues. |
 | Not applicable| Evaluation isn’t using an AI agent and a manual review is performed. |
-
-## FAQ
-
-**Q: What does private preview offer in terms of participation and data
-movement guidance?**
-
-**Ans:** As part of the private preview for quality management solutions, we are excited to offer early access to its innovative
-capabilities. To ensure optimal performance, service calls may be routed outside the customer's regional boundary if local capacity is temporarily unavailable.
-
-To participate, customers are kindly requested to provide consent for potential data movement across regions. This enables us to deliver a seamless experience leveraging the full capabilities of Copilot and generative AI features within the Power Platform.
-
-If a customer prefers to keep data strictly within their region, we respect that choice and recommend waiting for broader availability before enabling the preview.
-
-Learn more in [Move data across regions for Copilots and generative AI features – Power Platform](/power-platform/admin/geographical-availability-copilot?utm_source=chatgpt.com&tabs=new).

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 10/07/2025
+ms.date: 10/13/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -33,6 +33,10 @@ The Case Management Agent helps automate case lifecyle&mdash;create, update, res
 ## Customer Knowledge Management Agent
 
 Customer Knowledge Management Agent helps extract knowledge from cases and manage customer knowledge in real time. After a case is closed, the Customer Knowledge Management Agent analyzes case details, fills knowledge gaps, and makes sure of compliance. Learn more in [Manage Customer Knowledge Management Agent](/dynamics365/customer-service/administer/admin-km-agent) and [Review knowledge articles created by Customer Knowledge Management Agent](/dynamics365/customer-service/use/admin-km-agent-review).
+
+## Quality Evaluation Agent
+
+Quality Evaluation Agent lets you assess customer interactions across channels—cases, conversations, emails, and surveys—using autonomous and AI-assisted methods. AI supervisors can set business quality standards for customer service representatives and AI agents with detailed evaluation criteria. The quality evaluation framework automatically checks customer interactions based on specific conditions using evaluation plans. Learn more in [Manage Quality Evaluation Agent (preview)](manage-quality-evaluation-agent.md#manage-quality-evaluation-agent-preview).
 
 ### Related information
 

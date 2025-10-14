@@ -10,7 +10,7 @@ ms.date: 10/14/2025
 ms.custom: bap-template
 ---
 
-## Use evaluations
+# Use evaluations
 
 Use evaluations to assess and improve the quality of cases and conversations. This article explains how to access evaluation results, understand scoring and compliance details, and interpret evaluation states.
 

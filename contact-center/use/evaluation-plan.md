@@ -10,7 +10,7 @@ ms.date: 10/14/2025
 ms.custom: bap-template
 ---
 
-## Use evaluation plan
+# Use evaluation plan
 
 Evaluation plans help supervisors ensure consistent and objective reviews of cases and conversations. By defining criteria, methods, and conditions, evaluation plans support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, request on-demand evaluations, and enable bulk evaluations to streamline your review process.
 

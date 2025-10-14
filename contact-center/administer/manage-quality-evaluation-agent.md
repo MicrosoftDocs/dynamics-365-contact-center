@@ -16,6 +16,8 @@ ms.custom: bap-template
 > This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and should not be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. <br> 
 > Customers are solely responsible for using Dynamics 365, this feature, and any associated feature or service in compliance with all applicable laws, including laws that are related to accessing individual employee analytics, and monitoring, recording, and storing communications with users. As part of this compliance, customers must adequately notify users that their communications with customer service representatives (service representatives or representatives) might be monitored, recorded, or stored. As required by applicable laws, customers must also obtain consent from users before they use this feature with them. In addition, customers are encouraged to have a mechanism in place to inform their service representatives that their communications with users might be monitored, recorded, or stored.
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 The Quality Evaluation Agent is an AI agent that assesses customer engagement using an evaluation framework defined by supervisors. The Quality Evaluation Agent autonomously scores cases and conversations, providing insights to help supervisors enhance the quality of case and conversation interactions.
 
 The Quality Evaluation Agent evaluates cases and closed conversations to check if representatives follow required standards. If standards aren't met, the Quality Evaluation Agent provides coaching recommendations or actions to help representatives improve.
@@ -36,7 +38,7 @@ The Quality Evaluation Agent summarizes case and conversation evaluations in cus
 
 ## Prerequisites
 
-- You have the Quality Manager, Quality Evaluator, and the Quality Admin role.
+- You have the Quality Manager, Quality Evaluator, and the Quality Administrator role.
 - You have configured the [Configure connection references for Quality Evaluation Agent flow (preview)](quality-evaluation-agent-connections.md#configure-connection-references-for-quality-evaluation-agent-flow-preview).
 - You have [set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - You provided consent for potential [data movement across regions](#data-movement-across-regions).
@@ -67,18 +69,18 @@ As an administrator, you need to enable Quality Evaluation Agent for your superv
 1. Select **Manage** for **Quality Evaluation Agent (preview)**. The **Quality Evaluation Agent (preview) page** appears.
 1. In the **Enablement by record type** section:
 
- 1. Select the **Case** checkbox for case evaluation.
-    1. In **Specify data**, you see the default entities that have been added. 
-    1. Select **Manage data** if you want to:
+ 1. Select the **Case** checkbox for case evaluation or the **Conversation** checkbox for a conversation evaluation.
+    1. In **Specify data** section, you can see the default entities that have been added. 
+    1. Select **Manage data** to go to the **Specify data** dialog, where you can:
         1. Delete data types or uncheck a row to temporarily exclude the data type from being summarized.
-        1. Add more data type fields for Quality Evaluation Agent input configuration. Select **Add data** in the **Specify data** dialog box, and then select **Save.**
-
- 1. Select the **Conversation** checkbox for a conversation evaluation.
+        1. Add more data type fields for Quality Evaluation Agent input configuration. Select **Add data**.
+    1. Select **Add data**, to add more data on the **Specify data** dialog.
+        1. Select **Save** after you have specified the data fields.
+ 
  1. In the **Evaluation criteria score** section, select the **Enable scoring for criteria** checkbox. The **Evaluation criteria scoring turned on** dialog appears.
  1. Select **Turn on**. Once turned on, it can’t be turned off.
- 1.  From the **Set threshold value out of 100** dropdown list, select a
-    threshold value.
-Select **Save**.
+ 1. From the **Set threshold value out of 100** dropdown list, select a threshold value.
+ 1. Select **Save**.
 
 ## Evaluation criteria
 
@@ -110,7 +112,7 @@ Any evaluation plan that's still running continues to use the existing criteria.
 
 After you create a baseline criteria for your business unit, you can extend it to fit your organizational requirements. Updates to the baseline criteria automatically appear in all extended criteria. Select any custom evaluation criteria in the **Published** state as source criteria to extend it further.
 
-1.  Select a criteria and then select **Extend criteria**. The <*new extended*> evaluation criteria page appears.
+1.  Select a criteria and then select **Extend criteria**. The **New extended evaluation criteria** page appears.
 
 1.  In the **Extended criteria details** section, enter the following details:
 
@@ -292,6 +294,34 @@ To request evaluation for a particular case:
 4.  Once the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Copilot.
 
 5.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
+
+## On-demand evaluation for conversations (preview)
+
+> [!NOTE]
+> On-demand evaluation for conversations is in preview and is available on Dynamics 365 Contact Center only.
+
+To request evaluation for closed conversations:
+
+1. Go to **Activities** > **Closed Conversations**.
+
+1. Select a closed conversation, and then on the specific conversation, select **Request evaluation**.
+
+1. On the **Request evaluation** dialog, select the following:
+
+    1.  **Evaluation criteria:** Search and select an evaluation criteria from the list of criteria.
+    
+    1.  **Evaluation method:** Select an evaluation method: **AI assisted**, **Manual**, or **AI agent**. If you select **AI agent**, the **Assigned to:** and **Evaluation due date:** is turned off.
+    
+    1.  **Assigned to:** Select the user.
+    
+    1.  **Evaluation due date:** Select a due date for the evaluation.
+    
+1.  Select **Request**. 
+
+1. Once the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Copilot.
+
+1.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
+
 
 ## Enable bulk evaluation for cases
 

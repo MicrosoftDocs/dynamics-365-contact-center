@@ -319,9 +319,7 @@
           - name: Manage Quality Evaluation Agent
             href: manage-quality-evaluation-agent.md
           - name: Configure connection references
-            href: quality-evaluation-agent-connections.md
-          - name: Evaluate closed conversations with Quality Evaluation Agent
-            href: evaluate-conversations.md
+            href: quality-evaluation-agent-connections.md          
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features

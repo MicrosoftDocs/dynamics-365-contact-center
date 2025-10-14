@@ -86,6 +86,14 @@
             href: /dynamics365/customer-service/use/admin-km-agent-review?context=/dynamics365/contact-center/context/use-context
           - name: Use knowledge insights for Customer Knowledge Management Agent
             href: /dynamics365/customer-service/use/admin-km-agent-insights?context=/dynamics365/contact-center/context/use-context
+      - name: Quality Evaluation Agent
+        items:
+        - name: Use evaluation plan
+          href: evaluation-plan.md
+        - name: Use evaluation criteria
+          href: evaluation-criteria.md
+        - name: Use evaluations
+          href: use-evaluations.md
       - name: Use Copilot features in contact center-standalone
         items: 
         - name: Copilot feature availability across applications

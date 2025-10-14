@@ -6,17 +6,15 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: 
-ms.date: 10/07/2025
+ms.date: 10/14/2025
 ms.custom: bap-template
 ---
 
-# Manage Quality Evaluation Agent (preview)
+# Manage Quality Evaluation Agent
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and should not be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. <br> 
 > Customers are solely responsible for using Dynamics 365, this feature, and any associated feature or service in compliance with all applicable laws, including laws that are related to accessing individual employee analytics, and monitoring, recording, and storing communications with users. As part of this compliance, customers must adequately notify users that their communications with customer service representatives (service representatives or representatives) might be monitored, recorded, or stored. As required by applicable laws, customers must also obtain consent from users before they use this feature with them. In addition, customers are encouraged to have a mechanism in place to inform their service representatives that their communications with users might be monitored, recorded, or stored.
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The Quality Evaluation Agent is an AI agent that assesses customer engagement using an evaluation framework defined by supervisors. The Quality Evaluation Agent autonomously scores cases and conversations, providing insights to help supervisors enhance the quality of case and conversation interactions.
 
@@ -63,17 +61,20 @@ Learn more in [Move data across regions for Copilots and generative AI features 
 
 ## Enable Quality Evaluation Agent
 
+> [!NOTE]
+> Conversations evaluation is in preview and is available on Dynamics 365 Contact Center only.
+
 As an administrator, you need to enable Quality Evaluation Agent for your supervisors from the Copilot Service admin center. You can select cases or conversations record type, as required. You can also set a scoring and a threshold value. Each criteria and question in the evaluation is scored out of 100 points. You can set thresholds to define good and poor-quality metrics.
 
-1. In the Copilot Service admin center application, go to **Customer Support** > **Quality Management.** The **Quality management** page appears.
-1. Select **Manage** for **Quality Evaluation Agent (preview)**. The **Quality Evaluation Agent (preview) page** appears.
+1. In the Copilot Service admin center application, go to **Customer Support** > **Quality management.** The **Quality management** page appears.
+1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears.
 1. In the **Enablement by record type** section:
 
  1. Select the **Case** checkbox for case evaluation or the **Conversation** checkbox for a conversation evaluation.
     1. In **Specify data** section, you can see the default entities that have been added. 
     1. Select **Manage data** to go to the **Specify data** dialog, where you can:
-        1. Delete data types or uncheck a row to temporarily exclude the data type from being summarized.
-        1. Add more data type fields for Quality Evaluation Agent input configuration. Select **Add data**.
+        - Delete data types or uncheck a row to temporarily exclude the data type from being summarized.
+        - Add more data type fields for Quality Evaluation Agent input configuration.
     1. Select **Add data**, to add more data on the **Specify data** dialog.
         1. Select **Save** after you have specified the data fields.
  
@@ -86,27 +87,34 @@ As an administrator, you need to enable Quality Evaluation Agent for your superv
 
 ### Use the out-of-the-box evaluation criteria
 
-As a quality evaluation supervisor, you can use the default evaluation criteria, copy the default evaluation criteria, or create a new evaluation criteria to evaluate your cases and conversations. 
+As a quality evaluation supervisor, you can use or copy the default evaluation criteria, create a new evaluation criteria, and edit a published evaluation criteria, to evaluate your cases and conversations. 
 
-Use the **Support quality** evaluation criteria for both cases and conversations. Use the **Closed Conversations Default Criteria** for conversations only.
+- Use the **Support quality** evaluation criteria for both cases and conversations. 
+- Use the **Closed Conversations Default Criteria** for conversations only.
 
 > [!NOTE]
 > The default evaluation criteria is pre-filled, published, and read-only.
 
-1.  In Copilot Service workspace, go to Evaluation **criteria.**
+To view an evaluaton criteria:
 
-1.  On the **Evaluation criteria** page, depending on your record type, select the default evaluation criteria, as required.
+1.  In site map of Copilot Service workspace, go to **Evaluation criteria.**
+
+1.  On the **Evaluation criteria** page, depending on your record type, select the default evaluation criteria to view the details.
 
 ### Edit your published evaluation criteria
 
-You can edit your published evaluation criteria. You can't edit the record type of an evaluation plan.
+You can edit your published evaluation criteria.
 
-1.  In Copilot Service workspace, go to Evaluation **criteria.**
+1. In site map of Copilot Service workspace, go to Evaluation **criteria.**
 
-1.  On the **Evaluation criteria** page, depending on your record type, select the default evaluation criteria, as required.
-1. Select **Edit**.
+1. On the **Evaluation criteria** page, select the default evaluation criteria, as required.
+1. On the selected evaluation criteria page, select **Edit**.
+1. Save the changes. The criteria is saved as a draft. You can also revert to the published criteria at this stage.
+1. Publish the changes. 
 
-Any evaluation plan that's still running continues to use the existing criteria. After you publish the edited evaluation criteria, evaluation plans use the latest criteria in the next run.
+> [!NOTE]
+> - You can't modify the scoring toggle at the criteria level, if the criteria is published earlier. 
+> - Any evaluation plan that's still running continues to use the existing criteria. After you publish the edited evaluation criteria, evaluation plans use the latest criteria in the next run.
 
 ### Extend your evaluation criteria
 
@@ -179,7 +187,7 @@ After you create a baseline criteria for your business unit, you can extend it t
 
 1.  Select **Save** and then select **Publish**.
 
-### Best practices
+#### Best practices
 
 - **Criteria-level instructions:** Define instructions that apply to the entire evaluation criteria. Include overarching goals, expectations, and constraints to guide Quality Evaluation Agent behavior across all questions and answers.
 
@@ -195,7 +203,7 @@ After you create a baseline criteria for your business unit, you can extend it t
 
 ## Evaluation plan
 
-The evaluation plan lets supervisors define the frequency, conditions, criteria, and methods for evaluation. This plan helps ensure that evaluations are systematic and consistent. The three evaluation methods are AI agent, AI-assisted, and manual.
+The evaluation plan lets supervisors define the frequency, conditions, criteria, and methods for evaluation. This plan helps ensure that evaluations are systematic and consistent. The three evaluation methods are **AI agent**, **AI-assisted**, and **Manual**.
 
 ### Create and activate evaluation plan for cases and conversations
 
@@ -253,7 +261,7 @@ The evaluation plan lets supervisors define the frequency, conditions, criteria,
 1.  Select **Activate plan**. The **Activate plan** dialog appears.
 1.  Select **Activate plan**. On successful activation, a success message appears.
 
-## Activate, pause, or delete an evaluation plan
+## Activate, pause, resume, or delete an evaluation plan
 
 1.  In Customer Service workspace, go to **Evaluation plans**.
 

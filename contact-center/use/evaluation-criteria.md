@@ -19,7 +19,7 @@ This article explains how to use, edit, and extend evaluation criteria, includin
 - You have enabled [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
 - You have the required [Roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges)
 - You have [set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
-- You provided consent for potential [data movement across regions][Data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
+- You provided consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
 
 ### Use the out-of-the-box evaluation criteria
 

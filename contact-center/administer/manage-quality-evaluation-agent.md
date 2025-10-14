@@ -54,7 +54,7 @@ Learn more in [Move data across regions for Copilots and generative AI features 
 
 | Persona      | Role            | Privileges                                                                 |
 |--------------|-----------------|---------------------------------------------------------------------------|
-| Administrator| Quality Admin   | Configure Quality Evaluation Agent<br>Create evaluation criteria, evaluation plan<br>Complete or assign an evaluation. |
+| Administrator| Quality Administrator   | Configure Quality Evaluation Agent<br>Create evaluation criteria, evaluation plan<br>Complete or assign an evaluation. |
 | Supervisor   | Quality Manager | Create evaluation criteria, evaluation plan<br>Complete or assign an evaluation |
 | Supervisor   | Quality Evaluator| Complete or assign an evaluation.                                         |
 

@@ -62,4 +62,4 @@ Once done, go to the Copilot Service admin center and enable [Enable Quality Eva
 
 ## Related information
 
-[Manage Quality Evaluation Agent (preview)](manage-quality-evaluation-agent.md#manage-quality-evaluation-agent-preview)
+[Manage Quality Evaluation Agent](manage-quality-evaluation-agent.md#manage-quality-evaluation-agent)

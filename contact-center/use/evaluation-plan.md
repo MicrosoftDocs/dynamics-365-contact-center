@@ -87,27 +87,23 @@ Evaluation plans help supervisors ensure consistent and objective reviews of cas
 
 ## On-demand evaluation for cases
 
-The on-demand evaluation feature allows users to request evaluations for specific cases.
+On-demand evaluation allows users to request evaluations for cases.
 
 To request evaluations for multiple cases from the case grid:
 
 1. Select the required records.
     
-1.  Select **Request evaluation**.
-
-> [!NOTE]
-> You can select up to 20 records for evaluation. 
+1.  Select **Request evaluation**. You can select up to 20 records for evaluation. 
 
 To request evaluation for a particular case:
 
-1.  Go to **Cases**, select the required case, and then select **Request
-    evaluation**.
+1.  Go to **Cases**, select the required case, and then select **Request evaluation**.
 
 1.  On the **Request evaluation** dialog, select the following:
 
     1.  **Evaluation criteria:** Search and select an evaluation criteria from the list of criteria.
 
-    1.  **Evaluation method:** Select an evaluation method.
+    1.  **Evaluation method:** Select an evaluation method: **AI assisted**, **Manual**, or **AI agent**.
 
     1.  **Assigned to:** Select the user.
 
@@ -121,8 +117,10 @@ To request evaluation for a particular case:
 
 ## On-demand evaluation for conversations (preview)
 
-> [!NOTE]
-> On-demand evaluation for conversations is in preview and is available on Dynamics 365 Contact Center only.
+> [!IMPORTANT]
+>
+> - On-demand evaluation for conversations is a preview feature and is available on Dynamics 365 Contact Center only. 
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 To request evaluation for closed conversations:
 
@@ -134,7 +132,7 @@ To request evaluation for closed conversations:
 
     1.  **Evaluation criteria:** Search and select an evaluation criteria from the list of criteria.
     
-    1.  **Evaluation method:** Select an evaluation method: **AI assisted**, **Manual**, or **AI agent**. If you select **AI agent**, the **Assigned to:** and **Evaluation due date:** is turned off.
+    1.  **Evaluation method:** Select an evaluation method: **AI assisted**, **Manual**, or **AI agent**. If you select **AI agent**, the **Assigned to** and **Evaluation due date** is turned off.
     
     1.  **Assigned to:** Select the user.
     
@@ -151,7 +149,12 @@ To request evaluation for closed conversations:
 
 1. On the **Quality Evaluation Agent** page, in the **Enablement by record type** section, select **Case**, and then select **Enable bulk evaluation**. The bulk evaluation provisioning starts.
 
-1. Select **Activate**. The plan gets activated only after the data transfer is complete. You can create and save your plan as draft in the meantime.
+1. Select **Activate**. The plan gets activated only after the data transfer is complete. You can create and save your plan as a draft in the meantime.
 
-> [!NOTE]
-> You can evaluate up to 10,000 entity records in a single batch run. A single batch run might take upto four hours to complete.
+You can evaluate up to 10,000 entity records in a single batch run. A single batch run might take up to four hours to complete.
+
+## Related information
+
+[Manage Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent)  
+[Use evaluations](use-evaluations.md#use-evaluations)  
+[Use evaluation criteria](evaluation-criteria.md#use-evaluation-criteria)

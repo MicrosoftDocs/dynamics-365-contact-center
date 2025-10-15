@@ -64,3 +64,9 @@ You see the following evaluator and AI agent states on the grid.
 | Completed| Evaluation is complete. |
 | Error | AI agent shows errors due to issues. |
 | Not applicable| Evaluation isn’t using an AI agent and a manual review is performed. |
+
+## Related information
+
+[Manage Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent)  
+[Use evaluation plan](evaluation-plan.md#use-evaluation-plan) 
+[Use evaluation criteria](evaluation-criteria.md#use-evaluation-criteria)

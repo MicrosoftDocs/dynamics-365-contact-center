@@ -136,3 +136,10 @@ After you create a baseline criteria for your business unit, you can extend it t
 - **Clarity drives accuracy**: Use precise and detailed instructions to improve the accuracy of Quality Evaluation Agent evaluations. Avoid vague language and ensure that all instructions are explicit, contextual, and actionable.
 
 - **Question text**: Define each evaluation question to assess a single, well-defined objective to help ensure clarity and direct alignment with the answer options.
+
+
+## Related information
+
+[Manage Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent)  
+[Use evaluation plan](evaluation-plan.md#use-evaluation-plan)  
+[Use evaluations](use-evaluations.md#use-evaluations)

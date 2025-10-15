@@ -1,7 +1,7 @@
 ---
 title: Configure sensitive variable masking for voice agents
 description: Learn how to configure sensitive variable masking for voice agents in Dynamics 365 Contact Center.
-ms.date: 09/30/2025
+ms.date: 10/15/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -31,7 +31,7 @@ AI agents collect sensitive data during interactions and store it in your organi
 
 > [!NOTE]
 > - When a sensitive variable is assigned to a nonsensitive variable, the nonsensitive variable is automatically considered as sensitive. For example, if you have a variable called `CreditCardNumber` and you assign it to a nonsensitive variable called `PaymentInfo`, the `PaymentInfo` variable is also considered sensitive.
-> - To protect sensitive information, don't enable the **Log sensitive activity properties** toggle when logging to Application Insights.  If this setting is turned on, any sensitive data variables configured within the application will be captured in telemetry logs, which may result in unintended data leakage.  Learn more in[Connect your Copilot Studio agent to Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry).
+> - To protect sensitive information, don't enable the **Log sensitive activity properties** toggle when logging to Application Insights. If this setting is turned on, any sensitive data variables configured within the application are captured in telemetry logs, which might result in unintended data leakage. Learn more in[Connect your Copilot Studio agent to Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry).
 
 ## Runtime experience
 

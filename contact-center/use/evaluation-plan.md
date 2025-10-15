@@ -119,7 +119,7 @@ To request evaluation for a particular case:
 
 > [!IMPORTANT]
 >
-> - On-demand evaluation for conversations is a preview feature and is available on Dynamics 365 Contact Center only. 
+> - On-demand evaluation for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 To request evaluation for closed conversations:

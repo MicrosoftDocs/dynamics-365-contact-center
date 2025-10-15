@@ -12,6 +12,11 @@ ms.custom: bap-template
 
 # Use evaluation criteria
 
+> [!IMPORTANT]
+>
+> - Evaluations for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
+
 This article explains how to use, edit, and extend evaluation criteria, including best practices for creating clear and actionable instructions. Learn how to leverage built-in criteria, customize evaluation plans, and optimize quality assessments for your organization.
 
 ## Prerequisites

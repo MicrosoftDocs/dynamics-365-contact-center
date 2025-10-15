@@ -12,6 +12,11 @@ ms.custom: bap-template
 
 # Use evaluation plan
 
+> [!IMPORTANT]
+>
+> - Evaluations for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
+
 Evaluation plans help supervisors ensure consistent and objective reviews of cases and conversations. By defining criteria, methods, and conditions, evaluation plans support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, request on-demand evaluations, and enable bulk evaluations to streamline your review process.
 
 ## Prerequisites
@@ -115,12 +120,7 @@ To request evaluation for a particular case:
 
 5.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
 
-## On-demand evaluation for conversations (preview)
-
-> [!IMPORTANT]
->
-> - On-demand evaluation for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
-> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
+## On-demand evaluation for conversations
 
 To request evaluation for closed conversations:
 

@@ -20,8 +20,8 @@ You can install the Desktop companion application on a representative desktop as
 1. [Download the Desktop Companion Application for Dynamics 365 Contact Center](https://aka.ms/dca-installer).
 1. Double click the installer file to start the installation process. You can also install the application from the command line. Learn more in [msiexec](/windows-server/administration/windows-commands/msiexec).
 
-  > [!NOTE]
-  > [Microsoft Visual C++ Redistributable package](/cpp/windows/latest-supported-vc-redist) must be installed on the desktop.
+    > [!NOTE]
+    > [Microsoft Visual C++ Redistributable package](/cpp/windows/latest-supported-vc-redist) must be installed on the desktop.
 
 1. Download and install the browser extensions by following these steps:
     - Chrome: [Desktop companion app for Dynamics 365 Contact Center Extension ](https://chromewebstore.google.com/detail/desktop-companion-app-for/kejpacmiikcnjccejioofncknckcpcpa?authuser=0&hl=en)

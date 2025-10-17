@@ -252,6 +252,8 @@
           href: configure-multilingual-agents.md   
         - name: Configure fallback actions for the IVR agent
           href: configure-fallback-actions-ivr-agent.md
+        - name: Configure sensitive variable masking for voice agents
+          href: agent-sensitive-data-masking.md  
         - name: View voice calls usage
           href: /dynamics365/customer-service/administer/voice-channel-usage?context=/dynamics365/contact-center/context/administer-context
         - name: Block spam numbers

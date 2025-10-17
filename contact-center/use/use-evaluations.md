@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: 
-ms.date: 10/15/2025
+ms.date: 10/17/2025
 ms.custom: bap-template
 ---
 
@@ -43,8 +43,6 @@ The **Evaluations** side pane shows evaluations for cases and closed conversatio
 
 - **Compliance:** Shows the **Total score** with a **Scoring breakdown.** For every question, you see a **About this answer** that
   shows you the question-level calculation breakdown.
-
-- **Quality compliance:**
 
 ### Evaluation states
 

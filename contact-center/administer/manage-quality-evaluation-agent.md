@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: 
-ms.date: 10/15/2025
+ms.date: 10/21/2025
 ms.custom: bap-template
 ---
 
@@ -23,7 +23,7 @@ ms.custom: bap-template
 
 The Quality Evaluation Agent is an AI agent that assesses customer engagement using an evaluation framework defined by supervisors. The Quality Evaluation Agent autonomously scores cases and conversations, providing insights to help supervisors enhance the quality of case and conversation interactions.
 
-The Quality Evaluation Agent evaluates cases and closed conversations to check if representatives follow required standards. If standards aren't met, the Quality Evaluation Agent provides coaching recommendations or actions to help representatives improve.
+The Quality Evaluation Agent evaluates cases and closed conversations to check if required standards are followed. If standards aren't met, the Quality Evaluation Agent provides coaching recommendations or actions to help improve the quality of these interactions.
 
 The Quality Evaluation Agent includes the evaluation criteria, evaluation plan, and evaluations. These components are essential for the Quality Evaluation Agent to work.
 

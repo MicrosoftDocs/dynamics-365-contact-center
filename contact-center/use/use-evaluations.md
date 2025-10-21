@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: 
-ms.date: 10/17/2025
+ms.date: 10/21/2025
 ms.custom: bap-template
 ---
 
@@ -27,22 +27,26 @@ Use evaluations to assess and improve the quality of cases and conversations. Th
 - You provided consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
 
 
-The **Evaluations** side pane shows evaluations for cases and closed conversations.
+## Evaluations
+
+To view evaluations for your criteria:
+    
+  1.  In Copilot Service workspace, go to **Evaluations**. The **All evaluations** data grid appears.
+    
+  2.  Select the required **Evaluation**. You can view specific data by using filters such as **Evaluation Name**, **Score**, **Evaluation method**, **AI agent status**, **Evaluator status**, **Evaluation criteria**, **Evaluator expiration date**, and **Evaluator completion date**.
+    
+  3.  The case or conversation that you selected appears with the **Evaluations** side pane.
+
+If you have enabled scoring for your criteria, you see the following:
 
 - **Evaluation Summary:** Highlights evaluation results and suggests actions for improvement, like coaching opportunities for  representatives or specific activities to bring a case back on track. The Quality Manager and Quality Reviewer base these actions on evaluation results to improve the overall quality.
+- **Suggested actions**: Shows if any immediate actions are required or improvements that can be made.
 
-    You can view specific data by using filters such as **Evaluation method**, **AI agent status**, **Evaluator status**, **Evaluator due date**, **Evaluator Completion date**.
-    
-    1.  In Copilot Service workspace, go to **Evaluations**. The **All evaluations** data grid appears.
-    
-    2.  Select the required case or conversation record type.
-    
-    3.  The case or conversation appears with the **Evaluation Summary** and **Suggested actions.**
+- **Scoring overview:** Shows the **Overall evaluation score**, **Compliance score**, and the **Quality and compliance score**, including the **Total score** and **Scoring ratio**.
 
-- **Scoring overview:** You see this overview if you have extended your evaluation criteria. Shows the **Overall evaluation score**, **Compliance score**, and the **Quality and compliance score**, including the **Total score** and **Scoring ratio**.
+If you have extended the evaluation criteria, you see the following:
 
-- **Compliance:** Shows the **Total score** with a **Scoring breakdown.** For every question, you see a **About this answer** that
-  shows you the question-level calculation breakdown.
+- **Source criteria evaluation** and **Extend criteria evaluation** details.
 
 ### Evaluation states
 

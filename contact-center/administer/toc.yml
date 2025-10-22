@@ -290,13 +290,13 @@
           href: create-rollout-plans.md
         - name: View Agent insights
           href: ../use/agent-insights.md
-      - name: Autonomous service agents (preview)
+      - name: Autonomous service agents
         items:
         - name: Overview of autonomous service agents
           href: autonomous-agents-overview.md
         - name: Manage consumption-based billing, capacity
           href: /dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context
-        - name: Customer Intent Agent
+        - name: Customer Intent Agent (preview)
           items:
           - name: Overview of Customer Intent Agent
             href: overview-customer-intent-agent.md

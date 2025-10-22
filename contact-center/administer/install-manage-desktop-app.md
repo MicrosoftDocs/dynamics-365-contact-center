@@ -38,16 +38,16 @@ Microsoft is dedicated to being transparent with customers about the data collec
 
 By default, the Desktop companion application software doesn't collect optional diagnostic data. Learn more about required data and optional data in [Diagnostic data collection](/power-automate/desktop-flows/diagnostic-data?WT.mc_id=powerautomate_inproduct_padconsole#required-data).
 
-## Disable representatives updating the Desktop companion application
+## Restrict users from updating the Desktop companion application
 
-To restrict users from manually updating the Desktop companion application, configure a registry entry that blocks this capability.
+Configure a registry entry that restricts users from manually updating the Desktop companion application.
 
 | Hive | Key | Name | Type |
 | ---- | --- | ---- | ---- |
 | HKLM | Software\Microsoft\msdyn-companionapp | DisableUserUpdates | DWORD |
 
 Value
-1:
+1: To disable users from manually updating the Desktop Companion application.
 
 The registry configuration prevents representatives from selecting update options for the Desktop companion application and manually configuring Power Automate for desktop to start automatically.
 

@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection:
-ms.date: 10/15/2025
+ms.date: 10/22/2025
 ms.custom: bap-template 
 ---
 
@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 > [!IMPORTANT]
 >
-> - Evaluations for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
+> - Evaluation criteria for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 This article explains how to use, edit, and extend evaluation criteria, including best practices for creating clear and actionable instructions. Learn how to leverage built-in criteria, customize evaluation plans, and optimize quality assessments for your organization.
@@ -117,7 +117,7 @@ After you create a baseline criteria for your business unit, you can extend it t
 
     1.  **Form question text**: Enter the form question text.
 
-    1.  **Add question-level instructions**: Provide instructions for the question, if any. Instructions help Quality Evaluation Agent predict answers and improve accuracy.
+    1.  **Add question-level instructions**: Provide instructions for the question, if any. Instructions help Quality Evaluation Agent generate answers and improve accuracy.
 
     1.  Depending on the answer type you select, you can add scoring for the answers by selecting the **Scoring enabled** checkbox.
 

@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: 
-ms.date: 10/21/2025
+ms.date: 10/22/2025
 ms.custom: bap-template
 ---
 
@@ -42,7 +42,7 @@ If you have enabled scoring for your criteria, you see the following:
 - **Evaluation Summary:** Highlights evaluation results and suggests actions for improvement, like coaching opportunities for  representatives or specific activities to bring a case back on track. The Quality Manager and Quality Reviewer base these actions on evaluation results to improve the overall quality.
 - **Suggested actions**: Shows if any immediate actions are required or improvements that can be made.
 
-- **Scoring overview:** Shows the **Overall evaluation score**, **Compliance score**, and the **Quality and compliance score**, including the **Total score** and **Scoring ratio**.
+- **Scoring overview:** Shows the **Overall evaluation score**, including the **Total score** and **Scoring ratio**.
 
 If you have extended the evaluation criteria, you see the following:
 

@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection:
-ms.date: 10/15/2025
+ms.date: 10/22/2025
 ms.custom: bap-template
 ---
 
@@ -51,9 +51,9 @@ Evaluation plans help supervisors ensure consistent and objective reviews of cas
 
             1.  **Occurence**: If you have frequency type as **Trigger**, then select **Closed conversation**.
 
-            1.  **Start date**: Provide a start date.
+            1.  **Start date**: Specify the start date for the plan.
 
-            1.  **End date**: Provide an end date.
+            1.  **End date**: Specify the end date for the plan.
             
     1. If you select **Cases**, then in the **Frequency** section, select the following:
 
@@ -61,9 +61,9 @@ Evaluation plans help supervisors ensure consistent and objective reviews of cas
             
             1. **Occurence**: Select **Daily**.
 
-            1.  **Start date**: Provide a start date.
+            1.  **Start date**: Specify the start date for the plan. 
 
-            1.  **End date**: Provide an end date.
+            1.  **End date**: Specify the end date for the plan.
 
     1.  In the **Conditions** section, select **Add** to add conditions to your evaluation plan. For example, Add **Conversation status**> **Equals** > **Closed** or add **Channel type > Contains data > Live chat.**
 

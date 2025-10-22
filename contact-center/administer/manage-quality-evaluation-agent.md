@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: 
-ms.date: 10/21/2025
+ms.date: 10/22/2025
 ms.custom: bap-template
 ---
 
@@ -29,7 +29,7 @@ The Quality Evaluation Agent includes the evaluation criteria, evaluation plan, 
 
 **Evaluation Criteria**:
 
-Supervisors can create a form with questions, answer choices, scoring metrics, and detailed instructions for the Quality Evaluation Agent. They can use this form to assess interactions. The Quality Evaluation Agent predicts responses and assigns quality scores, giving insights into the overall quality score of the contact center.
+Supervisors can create a form with questions, answer choices, scoring metrics, and detailed instructions for the Quality Evaluation Agent. They can use this form to assess interactions. The Quality Evaluation Agent evaluates interactions using all available data and defined criteria, then generates responses that summarize how the interaction was conducted and whether it adhered to defined standards.
 
 **Evaluation Plan**:
 

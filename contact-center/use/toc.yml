@@ -314,6 +314,8 @@
             href: /dynamics365/customer-service/use/use-volume-forecasting?context=/dynamics365/contact-center/context/use-context
         - name: Customize visual display
           href: /dynamics365/customer-service/use/customize-reports?context=/dynamics365/contact-center/context/use-context
+        - name: Export and import visual customization
+          href: /dynamics365/customer-service/use/export-import-visual-customization?context=/dynamics365/contact-center/context/use-context
         - name: Customize the bot dashboard
           href: customize-agent-dashboard.md       
         - name: Customize data models

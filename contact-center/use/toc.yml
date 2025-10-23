@@ -266,6 +266,8 @@
             href: agent-realtime-dashboard.md
           - name: Ongoing Conversation report
             href: /dynamics365/customer-service/use/realtime-ongoing?context=/dynamics365/contact-center/context/use-context
+          - name: Backlog conversation report
+            href: /dynamics365/customer-service/use/realtime-backlog-conv?context=/dynamics365/contact-center/context/use-context
         - name: Use historical analytics dashboards
           items: 
           - name: Dashboards

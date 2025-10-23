@@ -1,12 +1,12 @@
 ---
-title: Configure connection references for Customer Knowledge Management Agent flow
+title: Configure connection references for Quality Evaluation Agent flow
 description: Configure connection references for cases and conversations in the Quality Evaluation Agent flow. Follow these steps to get started.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: 
-ms.date: 10/15/2025
+ms.date: 10/23/2025
 ms.custom: bap-template
 ---
 

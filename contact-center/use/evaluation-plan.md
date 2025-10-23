@@ -17,7 +17,7 @@ ms.custom: bap-template
 > - Evaluations for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
-Evaluation plans help supervisors ensure consistent and objective reviews of cases and conversations. By defining criteria, methods, and conditions, evaluation plans support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, request on-demand evaluations, and enable bulk evaluations to streamline your review process.
+Evaluation plans help supervisors ensure consistent and objective reviews of cases and conversations. By defining criteria, methods, and conditions, evaluation plans support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and enable bulk evaluations to streamline your review process.
 
 ## Prerequisites
 
@@ -82,68 +82,15 @@ Evaluation plans help supervisors ensure consistent and objective reviews of cas
 1.  Select **Activate plan**. The **Activate plan** dialog appears.
 1.  Select **Activate plan**. On successful activation, a success message appears.
 
+You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases and conversations when needed.
+
 ## Activate, pause, resume, or delete an evaluation plan
 
 1.  In Customer Service workspace, go to **Evaluation plans**.
 
 1. On the **Evaluation Plans** page, select the evaluation plans that you would like to activate, delete, resume, or pause.
 
-1.  Select **Activate plan, Pause plan,** **Resume plan**, or **Delete**. On the respective dialog box, confirm the action and save.
-
-## On-demand evaluation for cases
-
-On-demand evaluation allows users to request evaluations for cases.
-
-To request evaluations for multiple cases from the case grid:
-
-1. Select the required records.
-    
-1.  Select **Request evaluation**. You can select up to 20 records for evaluation. 
-
-To request evaluation for a particular case:
-
-1.  Go to **Cases**, select the required case, and then select **Request evaluation**.
-
-1.  On the **Request evaluation** dialog, select the following:
-
-    1.  **Evaluation criteria:** Search and select an evaluation criteria from the list of criteria.
-
-    1.  **Evaluation method:** Select an evaluation method: **AI assisted**, **Manual**, or **AI agent**.
-
-    1.  **Assigned to:** Select the user.
-
-    1.  **Evaluation due date:** Select a due date for the evaluation.
-
-3.  Select **Request**.
-
-4.  Once the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Copilot.
-
-5.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
-
-## On-demand evaluation for conversations
-
-To request evaluation for closed conversations:
-
-1. Go to **Activities** > **Closed Conversations**.
-
-1. Select a closed conversation, and then on the specific conversation, select **Request evaluation**.
-
-1. On the **Request evaluation** dialog, select the following:
-
-    1.  **Evaluation criteria:** Search and select an evaluation criteria from the list of criteria.
-    
-    1.  **Evaluation method:** Select an evaluation method: **AI assisted**, **Manual**, or **AI agent**. If you select **AI agent**, the **Assigned to** and **Evaluation due date** is turned off.
-    
-    1.  **Assigned to:** Select the user.
-    
-    1.  **Evaluation due date:** Select a due date for the evaluation.
-    
-1.  Select **Request**. 
-
-1. Once the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Copilot.
-
-1.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
-
+1.  Select the action that you want to take. On the respective dialog box, confirm the action and save.
 
 ## Enable bulk evaluation for cases
 
@@ -158,3 +105,4 @@ You can evaluate up to 10,000 entity records in a single batch run. A single bat
 [Manage Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent)  
 [Use evaluations](use-evaluations.md#use-evaluations)  
 [Use evaluation criteria](evaluation-criteria.md#use-evaluation-criteria)
+[Use on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation)

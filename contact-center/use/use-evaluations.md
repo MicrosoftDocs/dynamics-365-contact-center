@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: 
-ms.date: 10/22/2025
+ms.date: 10/23/2025
 ms.custom: bap-template
 ---
 
@@ -31,11 +31,12 @@ Use evaluations to assess and improve the quality of cases and conversations. Th
 
 To view evaluations for your criteria:
     
-  1.  In Copilot Service workspace, go to **Evaluations**. The **All evaluations** data grid appears.
+  1.  In the site map of Copilot Service workspace, go to **Evaluations**. The **All evaluations** data grid appears.
+  You can view specific data by using filters such as **Evaluation Name**, **Score**, **Evaluation method**, **AI agent status**, **Evaluator status**, **Evaluation criteria**, **Evaluator expiration date**, and **Evaluator completion date**.
     
-  2.  Select the required **Evaluation**. You can view specific data by using filters such as **Evaluation Name**, **Score**, **Evaluation method**, **AI agent status**, **Evaluator status**, **Evaluation criteria**, **Evaluator expiration date**, and **Evaluator completion date**.
+  2.  Select the required **Evaluation**. 
     
-  3.  The case or conversation that you selected appears with the **Evaluations** side pane.
+  3.  The evaluation for the case or conversation that you selected appears on the **Evaluations** side pane.
 
 If you have enabled scoring for your criteria, you see the following:
 
@@ -56,11 +57,11 @@ You see the following evaluator and AI agent states on the grid.
 
 | State  | What it indicates  |
 |--------|--------------------|
-| Pending         | The evaluation hasn’t started.                                                    |
-| In-progress     | The evaluator is filling in the evaluation                                        |
-| Completed       | The evaluator has finished and submitted the evaluation.                          |
+| Pending         | The evaluation hasn’t started.  |
+| In-progress     | The evaluator is filling in the evaluation. |
+| Completed       | The evaluator has finished and submitted the evaluation.  |
 | Expired         | The due date provided in the evaluation criteria has expired, and the evaluator can no longer open the evaluation. |
-| Not applicable  | The AI agent is in Error status, and therefore the evaluator can’t evaluate.      |
+| Not applicable  | The AI agent is in **Error** status, and therefore the evaluator can’t evaluate. |
 
 **AI agent status**:
 
@@ -75,5 +76,5 @@ You see the following evaluator and AI agent states on the grid.
 ## Related information
 
 [Manage Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent)  
-[Use evaluation plan](evaluation-plan.md#use-evaluation-plan) 
+[Use evaluation plan](evaluation-plan.md#use-evaluation-plan)  
 [Use evaluation criteria](evaluation-criteria.md#use-evaluation-criteria)

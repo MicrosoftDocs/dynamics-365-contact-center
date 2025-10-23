@@ -1,12 +1,12 @@
 ---
-title: Configure Quality Evaluation Agent in Dynamics 365
+title: Manage Quality Evaluation Agent
 description: Learn how to configure and enable the Quality Evaluation Agent to improve customer engagement and ensure compliance with evaluation standards.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: 
-ms.date: 10/22/2025
+ms.date: 10/23/2025
 ms.custom: bap-template
 ---
 
@@ -21,23 +21,21 @@ ms.custom: bap-template
 > - Evaluations for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
-The Quality Evaluation Agent is an AI agent that assesses customer engagement using an evaluation framework defined by supervisors. The Quality Evaluation Agent autonomously scores cases and conversations, providing insights to help supervisors enhance the quality of case and conversation interactions.
+Quality Evaluation Agent is an AI agent that assesses customer engagement using an evaluation framework defined by supervisors. The quality evaluation framework comprises of an evaluation criteria, evaluation plan, and evaluations that are essential for the AI Agent to work. 
 
-The Quality Evaluation Agent evaluates cases and closed conversations to check if required standards are followed. If standards aren't met, the Quality Evaluation Agent provides coaching recommendations or actions to help improve the quality of these interactions.
-
-The Quality Evaluation Agent includes the evaluation criteria, evaluation plan, and evaluations. These components are essential for the Quality Evaluation Agent to work.
+Quality Evaluation Agent autonomously scores cases and conversations, delivering actionable insights to help supervisors improve interaction quality. It evaluates cases and closed conversations to ensure compliance with required standards. When standards aren't met, the AI Agent recommends actions to enhance future interactions.
 
 **Evaluation Criteria**:
 
-Supervisors can create a form with questions, answer choices, scoring metrics, and detailed instructions for the Quality Evaluation Agent. They can use this form to assess interactions. The Quality Evaluation Agent evaluates interactions using all available data and defined criteria, then generates responses that summarize how the interaction was conducted and whether it adhered to defined standards.
+Create a form with questions, answer choices, scoring metrics, and detailed instructions for the Quality Evaluation Agent. The AI agent uses this form to assess interactions. Quality Evaluation Agent evaluates interactions using all the available data and defined criteria, and then generates responses that summarize how the interaction was conducted and whether it adhered to defined standards.
 
 **Evaluation Plan**:
 
-Supervisors can set up plans to schedule when to evaluate interactions. They can choose interactions based on specific conditions and use the right evaluation criteria to review them systematically.
+Set up plans to schedule when to evaluate interactions. You can select interactions based on specific conditions and use the right evaluation criteria to review interactions systematically. You can create, activate, and manage evaluation plans, request on-demand evaluations, and enable bulk evaluations to streamline your review process.
 
 **Evaluations**:
 
-The Quality Evaluation Agent summarizes case and conversation evaluations in customer service and highlights action plans and recommendations. These insights help AI supervisors improve service quality.
+The Quality Evaluation Agent evaluates case and conversations, provides summaries of the interactions, with insights and recommendations that help improve cutomer interactions.
 
 ## Prerequisites
 
@@ -87,6 +85,7 @@ As an administrator, you need to enable Quality Evaluation Agent for your superv
 
 ## Related information
 
-[Use evaluation plan](../use/evaluation-plan.md#use-evaluation-plan)  
+[Use evaluation plan](../use/evaluation-plan.md#use-evaluation-plan) 
+[Use on-demand evaluation](../use/on-demand-evaluation.md#use-on-demand-evaluation) 
 [Use evaluation criteria](../use/evaluation-criteria.md#use-evaluation-criteria)  
 [Use evaluations](../use/use-evaluations.md#use-evaluations)

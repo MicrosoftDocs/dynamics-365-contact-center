@@ -57,8 +57,8 @@ Learn more in [Move data across regions for Copilots and generative AI features 
 
 | Persona      | Role            | Privileges                                                                 |
 |--------------|-----------------|---------------------------------------------------------------------------|
-| Administrator| Quality Administrator   | Configure Quality Evaluation Agent<br>Create evaluation criteria, evaluation plan<br>Complete or assign an evaluation. |
-| Supervisor   | Quality Manager | Create evaluation criteria, evaluation plan<br>Complete or assign an evaluation |
+| Administrator| Quality Administrator   | - Configure Quality Evaluation Agent.<br> - Create an evaluation criteria and evaluation plan.<br> - Complete or assign an evaluation. |
+| Supervisor   | Quality Manager | - Create an evaluation criteria and evaluation plan.<br> - Complete or assign an evaluation. |
 | Supervisor   | Quality Evaluator| Complete or assign an evaluation.                                         |
 
 
@@ -85,7 +85,7 @@ As an administrator, you need to enable Quality Evaluation Agent for your superv
 
 ## Related information
 
-[Use evaluation plan](../use/evaluation-plan.md#use-evaluation-plan) 
-[Use on-demand evaluation](../use/on-demand-evaluation.md#use-on-demand-evaluation) 
-[Use evaluation criteria](../use/evaluation-criteria.md#use-evaluation-criteria)  
+[Use evaluation plan](../use/evaluation-plan.md#use-evaluation-plan)   
+[Use on-demand evaluation](../use/on-demand-evaluation.md#use-on-demand-evaluation)   
+[Use evaluation criteria](../use/evaluation-criteria.md#use-evaluation-criteria)    
 [Use evaluations](../use/use-evaluations.md#use-evaluations)

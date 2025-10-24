@@ -312,7 +312,7 @@
             href: set-up-voice-agents-to-use-intents.md
         - name: Customer Knowledge Management Agent
           items:
-          - name: Enable Customer Knowledge Management Agent
+          - name: Manage Customer Knowledge Management Agent
             href: /dynamics365/customer-service/administer/admin-km-agent?context=/dynamics365/contact-center/context/administer-context
           - name: Configure connection references
             href: /dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context

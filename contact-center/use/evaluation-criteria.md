@@ -5,19 +5,19 @@ author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
-ms.collection:
-ms.date: 10/23/2025
+ms.collection: bap-ai-copilot
+ms.date: 10/24/2025
 ms.custom: bap-template 
 ---
 
 # Use evaluation criteria
 
+This article explains how to use, edit, and extend evaluation criteria, including best practices to create clear and actionable instructions. Learn how to use built-in criteria, customize evaluation plans, and optimize quality assessments for your organization.
+
 > [!IMPORTANT]
 >
-> - Evaluation criteria for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
+> - Evaluations for conversations is a preview feature. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
-
-This article explains how to use, edit, and extend evaluation criteria, including best practices to create clear and actionable instructions. Learn how to use built-in criteria, customize evaluation plans, and optimize quality assessments for your organization.
 
 ## Prerequisites
 

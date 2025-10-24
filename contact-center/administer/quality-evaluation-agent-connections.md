@@ -1,11 +1,11 @@
 ---
 title: Configure connection references for Quality Evaluation Agent flow
-description: Configure connection references for cases and conversations in the Quality Evaluation Agent flow. Follow these steps to get started.
+description: Set up connection references for cases and conversations in the Quality Evaluation Agent flow for Dynamics 365 Customer Service and Dynamics 365 Contact Center.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
-ms.collection: 
+ms.collection: bap-ai-copilot 
 ms.date: 10/23/2025
 ms.custom: bap-template
 ---

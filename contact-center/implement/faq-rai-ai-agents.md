@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 10/08/2025
+ms.date: 10/24/2025
 ms.update-cycle: 180-days
 ms.custom: 
 - bap-template
@@ -71,8 +71,8 @@ The capabilities of the Case Management Agent include:
 
 ### Quality Evaluation Agent
 
-Quality Evaluation Agent helps organizations ensure that every customer engagement with support—whether handled by service representatives or AI agents—is compliant, ethical, and aligned with brand values.
- 
+Quality Evaluation Agent helps organizations make sure that every customer engagement with support——whether handled by service representatives or AI agents——is compliant, ethical, and aligned with brand values. 
+
 **Customized criteria**: Supervisors set up evaluation criteria, questionnaires, scoring logic, and instructions to define quality. The AI agent uses the criteria to assess customer engagements across different channels and generate scores.
  
 **Actionable insights that drive improvement**: The AI agent provides evaluation summaries, quality scores, and coaching recommendations to help supervisors find gaps, guide representative development, and improve service standards.

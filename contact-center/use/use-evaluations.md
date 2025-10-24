@@ -1,23 +1,23 @@
 ---
 title: Use evaluations
-description: Learn how to use evaluations to assess cases and conversations, access results, and improve quality with actionable insights and scoring details.
+description: Learn how to use evaluations to assess cases and conversations, access results, and improve quality with actionable insights and scoring details in in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
-ms.collection: 
-ms.date: 10/23/2025
+ms.collection: bap-ai-copilot 
+ms.date: 10/24/2025
 ms.custom: bap-template
 ---
 
 # Use evaluations
 
+Use evaluations to assess and improve the quality of cases and conversations. This article explains how to access evaluation results, understand scoring and compliance details, and interpret evaluation states.
+
 > [!IMPORTANT]
 >
-> - Evaluations for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
+> - Evaluations for conversations is a preview feature. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
-
-Use evaluations to assess and improve the quality of cases and conversations. This article explains how to access evaluation results, understand scoring and compliance details, and interpret evaluation states.
 
 ## Prerequisites
 
@@ -34,20 +34,18 @@ To view evaluations for your criteria:
   1.  In the site map of Copilot Service workspace, go to **Evaluations**. The **All evaluations** data grid appears.
   You can view specific data by using filters such as **Evaluation Name**, **Score**, **Evaluation method**, **AI agent status**, **Evaluator status**, **Evaluation criteria**, **Evaluator expiration date**, and **Evaluator completion date**.
     
-  2.  Select the required **Evaluation**. 
+  2.  Select the required **Evaluation**. The evaluation for the case or conversation that you selected appears on the **Evaluations** side pane.
+
+    If you have enabled scoring for your criteria, you see the following:
     
-  3.  The evaluation for the case or conversation that you selected appears on the **Evaluations** side pane.
-
-If you have enabled scoring for your criteria, you see the following:
-
-- **Evaluation Summary:** Highlights evaluation results and suggests actions for improvement, like coaching opportunities for  representatives or specific activities to bring a case back on track. The Quality Manager and Quality Reviewer base these actions on evaluation results to improve the overall quality.
-- **Suggested actions**: Shows if any immediate actions are required or improvements that can be made.
-
-- **Scoring overview:** Shows the **Overall evaluation score**, including the **Total score** and **Scoring ratio**.
-
-If you have extended the evaluation criteria, you see the following:
-
-- **Source criteria evaluation** and **Extend criteria evaluation** details.
+    - **Evaluation Summary:** Highlights evaluation results and suggests actions for improvement, like coaching opportunities for  representatives or specific activities to bring a case back on track. The Quality Manager and Quality Reviewer base these actions on evaluation results to improve the overall quality.
+    - **Suggested actions**: Shows if any immediate actions are required or improvements that can be made.
+    
+    - **Scoring overview:** Shows the **Overall evaluation score**, including the **Total score** and **Scoring ratio**.
+    
+    If you have extended the evaluation criteria, you see the following:
+    
+    - **Source criteria evaluation** and **Extend criteria evaluation** details.
 
 ### Evaluation states
 

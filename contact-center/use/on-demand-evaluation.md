@@ -1,23 +1,23 @@
 ---
 title: Use on-demand evaluation
-description: Learn how to use on-demand evaluation to assess cases and conversations efficiently with AI-assisted, manual, or AI agent methods.
+description: Learn how to use on-demand evaluation in Dynamics 365 Customer Service and Dynamics 365 Contact Center to assess cases and conversations efficiently with AI-assisted, manual, or AI agent methods.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: conceptual
-ms.collection:
-ms.date: 10/23/2025
+ms.collection: bap-ai-copilot
+ms.date: 10/24/2025
 ms.custom: bap-template
 ---
 
 # Use on-demand evaluation
 
+Use on-demand evaluation to check cases and conversations. Request evaluations with AI-assisted, manual, or AI agent methods for flexible quality management. This article explains how to use on-demand evaluation, including prerequisites and step-by-step instructions.
+
 > [!IMPORTANT]
 >
-> - Evaluations for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
+> - Evaluations for conversations is a preview feature. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
-
-Use on-demand evaluation to check cases and conversations. Request evaluations with AI-assisted, manual, or AI agent methods for flexible quality management. This article explains how to use on-demand evaluation, including prerequisites and step-by-step instructions.
 
 ## Prerequisites
 
@@ -41,19 +41,16 @@ To request evaluation for a particular case:
 
 1.  On the **Request evaluation** dialog, select the following:
 
-    1.  **Evaluation criteria:** Search and select an evaluation criteria from the list of criteria.
+    - **Evaluation criteria:** Search and select an evaluation criteria from the list of criteria.
+    - **Evaluation method:** Select an evaluation method: **AI assisted**, **Manual**, or **AI agent**.
+    - **Assigned to:** Select the user.
+    - **Evaluation due date:** Select a due date for the evaluation.
 
-    1.  **Evaluation method:** Select an evaluation method: **AI assisted**, **Manual**, or **AI agent**.
+1.  Select **Request**.
 
-    1.  **Assigned to:** Select the user.
+1.  Once the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Copilot.
 
-    1.  **Evaluation due date:** Select a due date for the evaluation.
-
-3.  Select **Request**.
-
-4.  Once the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Copilot.
-
-5.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
+1.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
 
 ## On-demand evaluation for conversations
 
@@ -65,13 +62,10 @@ To request evaluation for closed conversations:
 
 1. On the **Request evaluation** dialog, select the following:
 
-    1.  **Evaluation criteria:** Search and select an evaluation criteria from the list of criteria.
-    
-    1.  **Evaluation method:** Select an evaluation method: **AI assisted**, **Manual**, or **AI agent**. If you select **AI agent**, the **Assigned to** and **Evaluation due date** is turned off.
-    
-    1.  **Assigned to:** Select the user.
-    
-    1.  **Evaluation due date:** Select a due date for the evaluation.
+   - **Evaluation criteria:** Search and select an evaluation criteria from the list of criteria.
+   - **Evaluation method:** Select an evaluation method: **AI assisted**, **Manual**, or **AI agent**. If you select **AI agent**, the **Assigned to** and **Evaluation due date** is turned off.
+   - **Assigned to:** Select the user.
+   - **Evaluation due date:** Select a due date for the evaluation.
     
 1.  Select **Request**. 
 

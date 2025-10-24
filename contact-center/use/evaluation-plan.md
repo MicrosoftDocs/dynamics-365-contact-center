@@ -5,19 +5,19 @@ author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to 
-ms.collection:
-ms.date: 10/22/2025
+ms.collection: bap-ai-copilot
+ms.date: 10/24/2025
 ms.custom: bap-template
 ---
 
 # Use evaluation plan
 
+Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. By defining criteria, methods, and conditions, evaluation plans support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and enable bulk evaluations to streamline your review process.
+
 > [!IMPORTANT]
 >
-> - Evaluations for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
+> - Evaluations for conversations is a preview feature. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
-
-Evaluation plans help supervisors ensure consistent and objective reviews of cases and conversations. By defining criteria, methods, and conditions, evaluation plans support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and enable bulk evaluations to streamline your review process.
 
 ## Prerequisites
 
@@ -38,32 +38,23 @@ Evaluation plans help supervisors ensure consistent and objective reviews of cas
 1.  On the **New Evaluation Plan** page,
 
     1.  In the **Evaluation plan details** section, provide the following:
-
-        1.  **Plan name**: Enter plan name.
-
-        1.  **Description**: Enter description.
-
-        1.  **Record type**: Select **record type** as **Conversations** or **Cases**.
+        - **Plan name**: Enter plan name.
+        - **Description**: Enter description.
+        - **Record type**: Select **record type** as **Conversations** or **Cases**.
 
     1.  If you select **Conversations**, then in the **Frequency** section, select the following:
 
         1.  **Frequency type:** Select **Trigger,** and then provide the following:
-
-            1.  **Occurence**: If you have frequency type as **Trigger**, then select **Closed conversation**.
-
-            1.  **Start date**: Specify the start date for the plan.
-
-            1.  **End date**: Specify the end date for the plan.
+            - **Occurence**: If you have frequency type as **Trigger**, then select **Closed conversation**.
+            - **Start date**: Specify the start date for the plan.
+            - **End date**: Specify the end date for the plan.
             
     1. If you select **Cases**, then in the **Frequency** section, select the following:
 
         1.  **Frequency type:** Select **Recurring,** and then provide the following:
-            
-            1. **Occurence**: Select **Daily**.
-
-            1.  **Start date**: Specify the start date for the plan. 
-
-            1.  **End date**: Specify the end date for the plan.
+            - **Occurence**: Select **Daily**.
+            - **Start date**: Specify the start date for the plan.
+            - **End date**: Specify the end date for the plan.
 
     1.  In the **Conditions** section, select **Add** to add conditions to your evaluation plan. For example, Add **Conversation status**> **Equals** > **Closed** or add **Channel type > Contains data > Live chat.**
 
@@ -86,11 +77,11 @@ You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-ev
 
 ## Activate, pause, resume, or delete evaluation plans
 
-1.  In Customer Service workspace, go to **Evaluation plans**.
+1. In Customer Service workspace, go to **Evaluation plans**.
 
 1. On the **Evaluation Plans** page, select the evaluation plans that you would like to activate, delete, resume, or pause.
 
-1.  Select the action that you want to take. On the respective dialog box, confirm the action and save.
+1. Select the action that you want to take. On the respective dialog box, confirm the action and save.
 
 ## Enable bulk evaluation for cases
 

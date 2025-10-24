@@ -64,7 +64,7 @@ Learn more in [Move data across regions for Copilots and generative AI features 
 
 ## Enable Quality Evaluation Agent
 
-As an administrator, you need to enable Quality Evaluation Agent for your supervisors from the Copilot Service admin center. You can select cases or conversations record type, as required. You can also set a scoring and a threshold value. Each criteria and question in the evaluation is scored out of 100 points. You can set thresholds to define good and poor-quality metrics.
+You need to enable Quality Evaluation Agent for your supervisors in Copilot Service admin center. You can select cases or conversations record type. You can also set a scoring and threshold value. Each criteria and question in the evaluation is scored out of 100 points. You can set thresholds to define good and poor-quality metrics.
 
 1. In the Copilot Service admin center application, go to **Customer Support** > **Quality management.** The **Quality management** page appears.
 1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears.

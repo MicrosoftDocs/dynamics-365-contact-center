@@ -73,7 +73,7 @@ You need to enable Quality Evaluation Agent for your supervisors in Copilot Serv
 1. Select **Case** for case evaluation or **Conversation** for conversation evaluation.
       In **Specify data**, you can see the default entities that are added. 
     1. Select **Manage data** to go to the **Specify data** dialog, where you can:
-        - Delete data types or uncheck a row to temporarily exclude the data type from being summarized.
+        - Delete data types or clear a row to temporarily exclude the data type from being summarized.
         - Add more data type fields for Quality Evaluation Agent input configuration.
     1. Select **Add data**, to add more data on the **Specify data** dialog.
         1. Select **Save** after you have specified the data fields.

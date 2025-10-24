@@ -38,7 +38,7 @@ The Quality Evaluation Agent evaluates case and conversations, provides summarie
 
 - You have the Quality Manager, Quality Evaluator, and Quality Administrator role.
 - You have configured the [Connection references for Quality Evaluation Agent flow](quality-evaluation-agent-connections.md#configure-connection-references-for-quality-evaluation-agent-flow).
-- You have [set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
+- You have [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - You provided consent for potential [data movement across regions](#data-movement-across-regions).
 
 ## Data movement across regions
@@ -67,7 +67,8 @@ You need to enable Quality Evaluation Agent for your supervisors in Copilot Serv
 1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears.
 1. In the **Enablement by record type** section:
 
-1. Select **Case** for case evaluation or **Conversation** for conversation evaluation.
+1. Select **Case** for case evaluation or **Conversation** for conversation evaluation. 
+1. Select the **Enable bulk evaluations (preview)** checkbox to perform bulk evaluation for cases.
       In **Specify data**, you can see the default entities that are added. 
     1. Select **Manage data** to go to the **Specify data** dialog, where you can:
         - Delete data types or clear a row to temporarily exclude the data type from being summarized.

@@ -12,21 +12,27 @@ ms.custom: bap-template
 
 # Use evaluation plan
 
+**Conversations**: [!INCLUDE[cc-feature-availability-cc-only](../../includes/cc-feature-availability-cc-only.md)]
+**Cases**: [!INCLUDE[cc-feature-availability-cs-only](../../includes/cc-feature-availability-cs-only.md)]
+
+
 Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. By defining criteria, methods, and conditions, evaluation plans support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and enable bulk evaluations to streamline your review process.
 
 > [!IMPORTANT]
 >
-> - Evaluations for conversations is a preview feature. 
+> - Evaluations for conversations and bulk evaluations for cases are preview features. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Prerequisites
 
 - You have enabled [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
 - You have the required [Roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges)
-- You have [set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
+- You have [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - You provided consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
 
-### Create and activate evaluation plan for cases and conversations
+### Create and activate evaluation plan for cases and closed conversations
+
+You must enable the **Enable bulk evaluations (preview)** checkbox in Customer Service admin center before you create and activate an evaluation plan for cases. Learn more in [Enable Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#enable-quality-evaluation-agent).
 
 > [!NOTE]
 > You can use conversation evaluations for voice and live chat channels only.
@@ -83,11 +89,15 @@ You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-ev
 
 1. Select the action that you want to take. On the respective dialog box, confirm the action and save.
 
-## Enable bulk evaluation for cases
+When you pause a plan, it finishes the current batch and then stops before the next run. When you resume, the plan starts at its next scheduled time.
 
-1. On the **Quality Evaluation Agent** page, in the **Enablement by record type** section, select **Case**, and then select **Enable bulk evaluation**. The bulk evaluation provisioning starts.
+## Enable bulk evaluation for cases (preview)
 
-1. Select **Activate**. The plan gets activated only after the data transfer is complete. You can create and save your plan as a draft in the meantime.
+1. In Customer Service workspace, go to **Evaluation plans**.
+
+1. On the **Evaluation plans** page, select the evaluation plans.
+
+1. Select **Activate**. The plans gets activated only after the data transfer is complete.
 
 You can evaluate up to 10,000 entity records in a single batch run. A single batch run might take up to four hours to complete.
 

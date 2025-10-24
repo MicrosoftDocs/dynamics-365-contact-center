@@ -23,31 +23,68 @@ This article explains how to use, edit, and extend evaluation criteria, includin
 
 - You have enabled [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
 - You have the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges).
-- You have [set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
+- You have [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - You provided consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
 
 ## Use the out-of-the-box evaluation criteria
 
-As a Quality Evaluator, you can use or copy the default evaluation criteria; create a new evaluation criteria; and edit a published evaluation criteria. 
+As a Quality Evaluator, you can use or copy the out-of-the-box evaluation criteria; create a new evaluation criteria; and edit a published evaluation criteria. 
 
-- Use the **Support quality** default evaluation criteria for both cases and conversations. 
-- Use the **Closed Conversations Default Criteria** for conversations only.
+- Use the **Support quality** or the **Closed Conversations Default Criteria**.
 
 > [!NOTE]
-> The default evaluation criteria is pre-filled, published, and read-only.
+> The out-of-the-box evaluation criteria is pre-filled, published, and read-only.
 
 To view an evaluaton criteria:
 
 1. In site map of Copilot Service workspace, go to **Evaluation criteria.**
 
-1. On the **Evaluation criteria** page, depending on your record type, select the default evaluation criteria to view the details.
+1. On the **Evaluation criteria** page, select the out-of-the-box evaluation criteria to view the details.
+
+## Create evaluation criteria
+
+Refer to the [best practices](#best-practices-to-create-evaluation-criteria) when you create evaluation criteria.
+
+1.  On the **Evaluation criteria** page, select **New**.
+
+1.  On the **New evaluation criteria** page, in the **Criteria details** section, provide the **Criteria name** and **Description**.
+
+1.  In the **Add form level instructions**, provide instructions, if any.
+
+1.  In **Section 1**, enter the following details:
+
+    1.  **Section name**: Provide a name.
+
+    1.  **Description**: Provide a description.
+
+    1.  **Section weight (%)**: Provide a weightage for the evaluation criteria. The weight % across sections should add up to 100.
+
+1.  Select **Add question,** if you want to add a question.
+
+    For every question,
+
+    1.  **Select answer type**: Select from the options, **Yes/No**, **Multiple choice**, **Choose from list**, or **Text selection**.
+
+    1.  **Form question text**: Enter the form question text.
+
+    1.  **Add question-level instructions**: Provide instructions for the question, if any. Instructions help Quality Evaluation Agent generate answers and improve accuracy.
+
+    1.  Depending on the answer type you select, you can add scoring for the answers by selecting the **Scoring enabled** checkbox. You can turn off the Scoring toggle if you don't want to create a criteria with scoring.
+
+1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required. 
+
+    You can delete or duplicate a section or question, as required.
+
+1.  Select **Save**, and then select **Publish**.
 
 ## Edit your published evaluation criteria
+
+You can't edit an out-of-the-box evaluation criteria. You can [copy the out-of-the-box evaluation criteria](#copy-the-out-of-the-box-evaluation-criteria-for-cases-and-conversations) or create new evaluation criteria and then make edits.
 
 To edit your published evaluation criteria:
 
 1. In site map of Copilot Service workspace, go to **Evaluation criteria.**
-1. On the **Evaluation criteria** page, select the required default evaluation criteria.
+1. On the **Evaluation criteria** page, select the required evaluation criteria.
 1. On the selected evaluation criteria page, select **Edit**.
 1. Save the changes. The criteria is saved as a draft. You can also revert to the published criteria at this stage.
 1. Publish the changes. 
@@ -86,45 +123,11 @@ After you create a baseline criteria for your business unit, you can extend the 
     > - The **Criteria scoring** reflects the selection you made in the source criteria.
     > - You can’t extend an out-of-the-box criteria, for example, **Support quality**.
 
-## Copy default quality evaluation criteria for cases and conversations
+## Copy the out-of-the-box evaluation criteria for cases and conversations
 
-1. Select the checkbox for the default criteria and then select **Copy**. A copy of the prefilled default criteria form is provided to you as the source. You can make edits as needed.
+1. Select the checkbox for the out-of-the-box criteria and then select **Copy**. A copy of the prefilled out-of-the-box criteria form is provided to you as the source. You can make edits as needed.
 
 1. Select **Save**, once you are done making edits.
-
-## Create scoring evaluation criteria
-
-1.  On the **Evaluation criteria** page, select **New**.
-
-1.  On the **New evaluation criteria** page, in the **Criteria details** section, provide the **Criteria name** and **Description**.
-
-1.  In the **Add form level instructions**, provide instructions, if any.
-
-1.  In **Section 1**, enter the following details:
-
-    1.  **Section name**: Provide a name.
-
-    1.  **Description**: Provide a description.
-
-    1.  **Section weight (%)**: Provide a weightage for the evaluation criteria. The weight % across sections should add up to 100.
-
-1.  Select **Add question,** if you want to add a question.
-
-    For every question,
-
-    1.  **Select answer type**: Select from the options, **Yes/No**, **Multiple choice**, **Choose from list**, or **Text selection**.
-
-    1.  **Form question text**: Enter the form question text.
-
-    1.  **Add question-level instructions**: Provide instructions for the question, if any. Instructions help Quality Evaluation Agent generate answers and improve accuracy.
-
-    1.  Depending on the answer type you select, you can add scoring for the answers by selecting the **Scoring enabled** checkbox.
-
-1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required.
-
-    You can delete or duplicate a section or question, as required.
-
-1.  Select **Save**, and then select **Publish**.
 
 ## Best practices to create evaluation criteria
 

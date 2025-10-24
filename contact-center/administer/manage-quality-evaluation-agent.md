@@ -12,6 +12,10 @@ ms.custom: bap-template
 
 # Manage Quality Evaluation Agent
 
+**Conversations**: [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
+
+**Cases**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
+
 Quality Evaluation Agent is an AI agent that assesses customer engagement using an evaluation framework defined by supervisors. The quality evaluation framework comprises evaluation criteria, evaluation plan, and evaluations that are essential for the AI Agent to work. 
 
 Quality Evaluation Agent autonomously scores cases and conversations, delivering actionable insights to help supervisors improve interaction quality. It evaluates cases and closed conversations to make sure they comply with required standards. When standards aren't met, the AI Agent recommends actions to enhance future interactions.

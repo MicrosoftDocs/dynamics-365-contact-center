@@ -12,6 +12,10 @@ ms.custom: bap-template
 
 # Use evaluations
 
+**Conversations**: [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
+
+**Cases**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
+
 Use evaluations to assess and improve the quality of cases and conversations. This article explains how to access evaluation results, understand scoring and compliance details, and interpret evaluation states.
 
 > [!IMPORTANT]
@@ -35,12 +39,19 @@ To view evaluations for your criteria:
   You can view specific data by using filters such as **Evaluation Name**, **Score**, **Evaluation method**, **AI agent status**, **Evaluator status**, **Evaluation criteria**, **Evaluator expiration date**, and **Evaluator completion date**.
     
   2.  Select the required **Evaluation**. The evaluation for the case or conversation that you selected appears on the **Evaluations** side pane.
-  If you have enabled scoring for your criteria, you see the following:    
-    - **Evaluation Summary**: Highlights evaluation results and suggests actions for improvement, like coaching opportunities for  representatives or specific activities to bring a case back on track. The Quality Manager and Quality Reviewer base these actions on evaluation results to improve the overall quality.
-    - **Suggested actions**: Shows if any immediate actions are required or improvements that can be made.
-    - **Scoring overview**: Shows the **Overall evaluation score**, including the **Total score** and **Scoring ratio**.
+  
+
+  If you have enabled scoring for your criteria, you see the following:
+    
+  - **Evaluation Summary**: Highlights evaluation results and suggests actions for improvement, like coaching opportunities for  representatives or specific activities to bring a case back on track. The Quality Manager and Quality Reviewer base these actions on evaluation results to improve the overall quality.
+  
+  - **Suggested actions**: Shows if any immediate actions are required or improvements that can be made.
+  
+  - **Scoring overview**: Shows the **Overall evaluation score**, including the **Total score** and **Scoring ratio**.
+  
   If you have extended the evaluation criteria, you see the following:
-    - **Source criteria evaluation** and **Extend criteria evaluation** details.
+
+  - **Source criteria evaluation** and **Extend criteria evaluation** details.
 
 ### Evaluation states
 

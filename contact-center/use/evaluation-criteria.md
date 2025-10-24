@@ -86,7 +86,7 @@ After you create a baseline criteria for your business unit, you can extend the 
     > - The **Criteria scoring** reflects the selection you made in the source criteria.
     > - You can’t extend an out-of-the-box criteria, for example, **Support quality**.
 
-## Copy the default quality evaluation criteria for cases and conversations
+## Copy default quality evaluation criteria for cases and conversations
 
 1. Select the checkbox for the default criteria and then select **Copy**. A copy of the prefilled default criteria form is provided to you as the source. You can make edits as needed.
 

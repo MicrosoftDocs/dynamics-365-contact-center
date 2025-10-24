@@ -12,8 +12,8 @@ ms.custom: bap-template
 
 # Use evaluation plan
 
-**Conversations**: [!INCLUDE[cc-feature-availability-cc-only](../../includes/cc-feature-availability-cc-only.md)]
-**Cases**: [!INCLUDE[cc-feature-availability-cs-only](../../includes/cc-feature-availability-cs-only.md)]
+**Conversations**: [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
+**Cases**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
 
 Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. By defining criteria, methods, and conditions, evaluation plans support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and enable bulk evaluations to streamline your review process.

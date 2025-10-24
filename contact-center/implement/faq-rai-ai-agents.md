@@ -111,7 +111,7 @@ AI agents have the following limitations:
 
 ## What data do AI agents collect? How is the data used?
 
-The AI agents generate intents and knowledge articles based on the data that already exists in your Dataverse instance. They do not collect any additional data beyond basic telemetry and any feedback you provide. The data within your CRM system is analyzed to create intent libraries and draft knowledge articles, and execute quality evaluations.
+The AI agents generate intents and knowledge articles based on the data that already exists in your Dataverse instance. They do not collect any additional data beyond basic telemetry and any feedback you provide. The data within your CRM system is analyzed to create intent libraries and draft knowledge articles, and run quality evaluations.
 
 ## What operational factors and settings allow for effective and responsible use of the system?
 

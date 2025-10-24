@@ -29,7 +29,7 @@ Quality Evaluation Agent autonomously scores cases and conversations, delivering
 
 Create a form with questions, answer choices, scoring metrics, and detailed instructions for the Quality Evaluation Agent. The AI agent uses this form to assess interactions. 
 
-**Evaluation Plan**:
+**Evaluation plan**:
 
 Set up plans to schedule when to evaluate interactions. You can select interactions based on specific conditions and use the right evaluation criteria to review interactions systematically. You can create, activate, and manage evaluation plans, request on-demand evaluations, and enable bulk evaluations to streamline your review process.
 

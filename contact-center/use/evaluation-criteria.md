@@ -92,7 +92,7 @@ After you create a baseline criteria for your business unit, you can extend the 
 
 1. Select **Save**, once you are done making edits.
 
-## Create a scoring evaluation criteria
+## Create scoring evaluation criteria
 
 1.  On the **Evaluation criteria** page, select **New**.
 

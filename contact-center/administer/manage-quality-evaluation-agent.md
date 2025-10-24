@@ -78,7 +78,7 @@ You need to enable Quality Evaluation Agent for your supervisors in Copilot Serv
     1. Select **Add data**, to add more data on the **Specify data** dialog.
         1. Select **Save** after you have specified the data fields.
  
- 1. In the **Evaluation criteria score** section, select the **Enable scoring for criteria** checkbox. The **Evaluation criteria scoring turned on** dialog appears.
+ 1. In the **Evaluation criteria score** section, select **Enable scoring for criteria**. The **Evaluation criteria scoring turned on** dialog appears.
  1. Select **Turn on**. Once turned on, it can’t be turned off.
  1. From the **Set threshold value out of 100** dropdown list, select a threshold value.
  1. Select **Save**.

@@ -1,6 +1,6 @@
 ---
 title: Use evaluation plan 
-description: Create and manage evaluation plans in Dynamics 365 to ensure consistent reviews for cases and conversations. Learn how to activate and optimize evaluations.
+description: Create and manage evaluation plans in Dynamics 365 Customer Service and Dynamics 365 Contact Center for consistent reviews of cases and conversations. Learn how to activate and optimize evaluations.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas

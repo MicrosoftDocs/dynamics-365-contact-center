@@ -25,7 +25,7 @@ Quality Evaluation Agent is an AI agent that assesses customer engagement using 
 
 Quality Evaluation Agent autonomously scores cases and conversations, delivering actionable insights to help supervisors improve interaction quality. It evaluates cases and closed conversations to ensure compliance with required standards. When standards aren't met, the AI Agent recommends actions to enhance future interactions.
 
-**Evaluation Criteria**:
+**Evaluation criteria**:
 
 Create a form with questions, answer choices, scoring metrics, and detailed instructions for the Quality Evaluation Agent. The AI agent uses this form to assess interactions. Quality Evaluation Agent evaluates interactions using all the available data and defined criteria, and then generates responses that summarize how the interaction was conducted and whether it adhered to defined standards.
 

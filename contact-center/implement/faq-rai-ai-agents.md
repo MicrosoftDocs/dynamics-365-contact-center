@@ -73,7 +73,7 @@ The capabilities of the Case Management Agent include:
 
 Quality Evaluation Agent helps organizations ensure that every customer engagement with support—whether handled by service representatives or AI agents—is compliant, ethical, and aligned with brand values.
  
-**Customized criteria**: Supervisors set up evaluation criteria, including questionnaires, scoring logic, and instructions, to define quality. The AI agent uses these criteria to assess customer engagements across different channels and generate scores.
+**Customized criteria**: Supervisors set up evaluation criteria, questionnaires, scoring logic, and instructions to define quality. The AI agent uses the criteria to assess customer engagements across different channels and generate scores.
  
 **Actionable insights that drive improvement**: The AI agent provides evaluation summaries, quality scores, and coaching recommendations to help supervisors find gaps, guide representative development, and improve service standards.
 
@@ -111,7 +111,7 @@ AI agents have the following limitations:
 
 ## What data do AI agents collect? How is the data used?
 
-The AI agents generate intents and knowledge articles based on the data that already exists in your Dataverse instance. They do not collect any additional data beyond basic telemetry and any feedback you provide. The data within your CRM system is analyzed to create intent libraries and draft knowledge articles, and execute quality evaluations.
+The AI agents generate intents and knowledge articles based on the data that already exists in your Dataverse instance. They do not collect any additional data beyond basic telemetry and any feedback you provide. The data within your CRM system is analyzed to create intent libraries and draft knowledge articles, and run quality evaluations.
 
 ## What operational factors and settings allow for effective and responsible use of the system?
 

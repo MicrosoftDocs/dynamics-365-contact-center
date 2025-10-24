@@ -1,6 +1,6 @@
 ---
 title: Use evaluation criteria
-description: Learn how to use, edit, and extend evaluation criteria to assess cases and conversations effectively in Dynamics 365 Customer Service.
+description: Learn how to use, edit, and extend evaluation criteria to assess cases and conversations effectively in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
@@ -22,7 +22,7 @@ This article explains how to use, edit, and extend evaluation criteria, includin
 ## Prerequisites
 
 - You have enabled [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
-- You have the required [Roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges)
+- You have the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges).
 - You have [set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - You provided consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
 
@@ -86,13 +86,13 @@ After you create a baseline criteria for your business unit, you can extend the 
     > - The **Criteria scoring** reflects the selection you made in the source criteria.
     > - You can’t extend an out-of-the-box criteria, for example, **Support quality**.
 
-## Copy the default quality evaluation criteria for cases and conversations
+## Copy default quality evaluation criteria for cases and conversations
 
 1. Select the checkbox for the default criteria and then select **Copy**. A copy of the prefilled default criteria form is provided to you as the source. You can make edits as needed.
 
 1. Select **Save**, once you are done making edits.
 
-## Create a scoring evaluation criteria
+## Create scoring evaluation criteria
 
 1.  On the **Evaluation criteria** page, select **New**.
 
@@ -126,7 +126,7 @@ After you create a baseline criteria for your business unit, you can extend the 
 
 1.  Select **Save**, and then select **Publish**.
 
-## Best practices to create an evaluation criteria
+## Best practices to create evaluation criteria
 
 - **Criteria-level instructions:** Define instructions that apply to the entire evaluation criteria. Include comprehensive goals, expectations, and constraints to guide the behavior of the Quality Evaluation Agent across all questions and answers.
 

@@ -21,15 +21,15 @@ ms.custom: bap-template
 > - Evaluations for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
-Quality Evaluation Agent is an AI agent that assesses customer engagement using an evaluation framework defined by supervisors. The quality evaluation framework comprises of an evaluation criteria, evaluation plan, and evaluations that are essential for the AI Agent to work. 
+Quality Evaluation Agent is an AI agent that assesses customer engagement using an evaluation framework defined by supervisors. The quality evaluation framework comprises an evaluation criteria, evaluation plan, and evaluations that are essential for the AI Agent to work. 
 
 Quality Evaluation Agent autonomously scores cases and conversations, delivering actionable insights to help supervisors improve interaction quality. It evaluates cases and closed conversations to ensure compliance with required standards. When standards aren't met, the AI Agent recommends actions to enhance future interactions.
 
-**Evaluation Criteria**:
+**Evaluation criteria**:
 
-Create a form with questions, answer choices, scoring metrics, and detailed instructions for the Quality Evaluation Agent. The AI agent uses this form to assess interactions. Quality Evaluation Agent evaluates interactions using all the available data and defined criteria, and then generates responses that summarize how the interaction was conducted and whether it adhered to defined standards.
+Create a form with questions, answer choices, scoring metrics, and detailed instructions for the Quality Evaluation Agent. The AI agent uses this form to assess interactions. 
 
-**Evaluation Plan**:
+**Evaluation plan**:
 
 Set up plans to schedule when to evaluate interactions. You can select interactions based on specific conditions and use the right evaluation criteria to review interactions systematically. You can create, activate, and manage evaluation plans, request on-demand evaluations, and enable bulk evaluations to streamline your review process.
 
@@ -39,7 +39,7 @@ The Quality Evaluation Agent evaluates case and conversations, provides summarie
 
 ## Prerequisites
 
-- You have the Quality Manager, Quality Evaluator, and the Quality Administrator role.
+- You have the Quality Manager, Quality Evaluator, and Quality Administrator role.
 - You have configured the [Connection references for Quality Evaluation Agent flow](quality-evaluation-agent-connections.md#configure-connection-references-for-quality-evaluation-agent-flow).
 - You have [set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - You provided consent for potential [data movement across regions](#data-movement-across-regions).
@@ -48,7 +48,7 @@ The Quality Evaluation Agent evaluates case and conversations, provides summarie
 
 To ensure optimal performance, service calls may be routed outside the customer's regional boundary if local capacity is temporarily unavailable. To participate, customers are kindly requested to provide consent for potential data movement across regions. This enables us to deliver a seamless experience leveraging the full capabilities of Copilot and generative AI features within the Power Platform.
 
-If a customer prefers to keep data strictly within their region, we respect that choice and recommend waiting for broader availability before enabling the preview.
+If a customer prefers to keep data strictly within their region, we recommend waiting for broader availability before enabling the preview.
 
 Learn more in [Move data across regions for Copilots and generative AI features – Power Platform](/power-platform/admin/geographical-availability-copilot?utm_source=chatgpt.com&tabs=new).
 
@@ -64,21 +64,21 @@ Learn more in [Move data across regions for Copilots and generative AI features 
 
 ## Enable Quality Evaluation Agent
 
-As an administrator, you need to enable Quality Evaluation Agent for your supervisors from the Copilot Service admin center. You can select cases or conversations record type, as required. You can also set a scoring and a threshold value. Each criteria and question in the evaluation is scored out of 100 points. You can set thresholds to define good and poor-quality metrics.
+You need to enable Quality Evaluation Agent for your supervisors in Copilot Service admin center. You can select cases or conversations record type. You can also set a scoring and threshold value. Each criteria and question in the evaluation is scored out of 100 points. You can set thresholds to define good and poor-quality metrics.
 
-1. In the Copilot Service admin center application, go to **Customer Support** > **Quality management.** The **Quality management** page appears.
+1. In Copilot Service admin center, go to **Customer Support** > **Quality management.** The **Quality management** page appears.
 1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears.
 1. In the **Enablement by record type** section:
 
- 1. Select the **Case** checkbox for case evaluation or the **Conversation** checkbox for a conversation evaluation.
-    1. In **Specify data** section, you can see the default entities that have been added. 
+1. Select **Case** for case evaluation or **Conversation** for conversation evaluation.
+      In **Specify data**, you can see the default entities that are added. 
     1. Select **Manage data** to go to the **Specify data** dialog, where you can:
-        - Delete data types or uncheck a row to temporarily exclude the data type from being summarized.
+        - Delete data types or clear a row to temporarily exclude the data type from being summarized.
         - Add more data type fields for Quality Evaluation Agent input configuration.
     1. Select **Add data**, to add more data on the **Specify data** dialog.
         1. Select **Save** after you have specified the data fields.
  
- 1. In the **Evaluation criteria score** section, select the **Enable scoring for criteria** checkbox. The **Evaluation criteria scoring turned on** dialog appears.
+ 1. In the **Evaluation criteria score** section, select **Enable scoring for criteria**. The **Evaluation criteria scoring turned on** dialog appears.
  1. Select **Turn on**. Once turned on, it can’t be turned off.
  1. From the **Set threshold value out of 100** dropdown list, select a threshold value.
  1. Select **Save**.

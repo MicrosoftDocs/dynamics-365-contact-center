@@ -17,12 +17,12 @@ ms.custom: bap-template
 > - Evaluations for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
-Use on-demand evaluation to check cases and conversations when needed. Request evaluations with AI-assisted, manual, or AI agent methods for flexible quality management. This article explains how to use on-demand evaluation, including prerequisites and step-by-step instructions.
+Use on-demand evaluation to check cases and conversations. Request evaluations with AI-assisted, manual, or AI agent methods for flexible quality management. This article explains how to use on-demand evaluation, including prerequisites and step-by-step instructions.
 
 ## Prerequisites
 
 - You have enabled [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
-- You have the required [Roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges)
+- You have the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges)
 - You have [set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - You provided consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
 

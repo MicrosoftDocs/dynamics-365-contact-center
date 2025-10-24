@@ -27,7 +27,7 @@ Quality Evaluation Agent autonomously scores cases and conversations, delivering
 
 **Evaluation criteria**:
 
-Create a form with questions, answer choices, scoring metrics, and detailed instructions for the Quality Evaluation Agent. The AI agent uses this form to assess interactions. Quality Evaluation Agent evaluates interactions using all the available data and defined criteria, and then generates responses that summarize how the interaction was conducted and whether it adhered to defined standards.
+Create a form with questions, answer choices, scoring metrics, and detailed instructions for the Quality Evaluation Agent. The AI agent uses this form to assess interactions. 
 
 **Evaluation Plan**:
 

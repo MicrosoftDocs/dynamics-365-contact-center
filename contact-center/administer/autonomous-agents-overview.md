@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 10/23/2025
+ms.date: 10/24/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---

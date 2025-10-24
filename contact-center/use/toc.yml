@@ -80,7 +80,7 @@
           items:
           - name: Use intent-based suggestions
             href: use-intent-suggestions.md
-        - name: Customer Knowledge Management Agent
+        - name: Customer Knowledge Management Agent 
           items:
           - name: Review knowledge articles created by the Customer Knowledge Management Agent
             href: /dynamics365/customer-service/use/admin-km-agent-review?context=/dynamics365/contact-center/context/use-context

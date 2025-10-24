@@ -126,7 +126,7 @@ After you create a baseline criteria for your business unit, you can extend the 
 
 1.  Select **Save**, and then select **Publish**.
 
-## Best practices to create an evaluation criteria
+## Best practices to create evaluation criteria
 
 - **Criteria-level instructions:** Define instructions that apply to the entire evaluation criteria. Include comprehensive goals, expectations, and constraints to guide the behavior of the Quality Evaluation Agent across all questions and answers.
 

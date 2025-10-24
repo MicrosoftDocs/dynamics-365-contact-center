@@ -13,6 +13,7 @@ ms.custom: bap-template
 # Use evaluation plan
 
 **Conversations**: [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
+
 **Cases**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
 

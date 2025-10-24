@@ -84,7 +84,7 @@ Evaluation plans help supervisors ensure consistent and objective reviews of cas
 
 You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases and conversations when needed.
 
-## Activate, pause, resume, or delete an evaluation plan
+## Activate, pause, resume, or delete evaluation plans
 
 1.  In Customer Service workspace, go to **Evaluation plans**.
 

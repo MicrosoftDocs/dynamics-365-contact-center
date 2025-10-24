@@ -72,15 +72,15 @@
           href: /dynamics365/customer-service/use/voice-channel-transfer-consult?context=/dynamics365/contact-center/context/use-context
         - name: Monitor voice calls
           href: /dynamics365/customer-service/use/voice-channel-monitor-calls?context=/dynamics365/contact-center/context/use-context
-      - name: Use autonomous service agents (preview)
+      - name: Use autonomous service agents
         items:
         - name: Overview of autonomous service agents
           href: ../administer/autonomous-agents-overview.md?context=/dynamics365/contact-center/context/use-context
-        - name: Customer Intent Agent
+        - name: Customer Intent Agent (preview)
           items:
           - name: Use intent-based suggestions
             href: use-intent-suggestions.md
-        - name: Customer Knowledge Management Agent
+        - name: Customer Knowledge Management Agent 
           items:
           - name: Review knowledge articles created by the Customer Knowledge Management Agent
             href: /dynamics365/customer-service/use/admin-km-agent-review?context=/dynamics365/contact-center/context/use-context

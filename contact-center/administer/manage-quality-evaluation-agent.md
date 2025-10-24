@@ -48,7 +48,7 @@ The Quality Evaluation Agent evaluates case and conversations, provides summarie
 
 To ensure optimal performance, service calls may be routed outside the customer's regional boundary if local capacity is temporarily unavailable. To participate, customers are kindly requested to provide consent for potential data movement across regions. This enables us to deliver a seamless experience leveraging the full capabilities of Copilot and generative AI features within the Power Platform.
 
-If a customer prefers to keep data strictly within their region, we respect that choice and recommend waiting for broader availability before enabling the preview.
+If a customer prefers to keep data strictly within their region, we recommend waiting for broader availability before enabling the preview.
 
 Learn more in [Move data across regions for Copilots and generative AI features – Power Platform](/power-platform/admin/geographical-availability-copilot?utm_source=chatgpt.com&tabs=new).
 

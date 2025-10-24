@@ -21,7 +21,7 @@ ms.custom: bap-template
 > - Evaluations for conversations is a preview feature and is available in Dynamics 365 Contact Center only. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
-Quality Evaluation Agent is an AI agent that assesses customer engagement using an evaluation framework defined by supervisors. The quality evaluation framework comprises of an evaluation criteria, evaluation plan, and evaluations that are essential for the AI Agent to work. 
+Quality Evaluation Agent is an AI agent that assesses customer engagement using an evaluation framework defined by supervisors. The quality evaluation framework comprises an evaluation criteria, evaluation plan, and evaluations that are essential for the AI Agent to work. 
 
 Quality Evaluation Agent autonomously scores cases and conversations, delivering actionable insights to help supervisors improve interaction quality. It evaluates cases and closed conversations to ensure compliance with required standards. When standards aren't met, the AI Agent recommends actions to enhance future interactions.
 

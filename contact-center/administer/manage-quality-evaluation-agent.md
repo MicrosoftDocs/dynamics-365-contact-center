@@ -40,7 +40,7 @@ The Quality Evaluation Agent evaluates case and conversations, provides summarie
 
 ## Configure connection references
 
-You need to configure connection references for Quality Evaluation Agent to integrate with Microsoft services. These connections link flows to essential data sources such as Microsoft Dataverse and Copilot Studio, ensuring smooth operation and enhanced functionality. Learn how to configure connection references for [Quality Evaluation Agent](/dynamics365/customer-service/administer/admin-km-agent-connections.md?context=/dynamics365/contact-center/context/administer-context). 
+You need to configure connection references for Quality Evaluation Agent flow to integrate with Microsoft services. These connections link flows to essential data sources such as Microsoft Dataverse and Copilot Studio, ensuring smooth operation and enhanced functionality. Learn how to configure connection references for [Quality Evaluation Agent](/dynamics365/customer-service/administer/admin-km-agent-connections.md?context=/dynamics365/contact-center/context/administer-context). 
 
 ## Prerequisites
 
@@ -88,7 +88,7 @@ You need to enable Quality Evaluation Agent for your supervisors in Copilot Serv
 
 ## Related information
 
-[Use evaluation plan](../use/evaluation-plan.md#use-evaluation-plan)   
-[Use on-demand evaluation](../use/on-demand-evaluation.md#use-on-demand-evaluation)   
-[Use evaluation criteria](../use/evaluation-criteria.md#use-evaluation-criteria)    
-[Use evaluations](../use/use-evaluations.md#use-evaluations)
+[Use evaluation plan](../use/evaluation-plan.md)   
+[Use on-demand evaluation](../use/on-demand-evaluation.md)   
+[Use evaluation criteria](../use/evaluation-criteria.md)    
+[Use evaluations](../use/use-evaluations.md)

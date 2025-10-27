@@ -83,7 +83,7 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
 ## Edit your published evaluation criteria
 
-You can't edit an out-of-the-box evaluation criteria. You can [copy the out-of-the-box evaluation criteria](#copy-the-out-of-the-box-evaluation-criteria-for-cases-and-conversations) or create new evaluation criteria and then make edits.
+You can [copy the out-of-the-box evaluation criteria](#copy-the-out-of-the-box-evaluation-criteria-for-cases-and-conversations) or create new evaluation criteria and then make edits.
 
 To edit your published evaluation criteria:
 
@@ -150,6 +150,6 @@ After you create a baseline criteria for your business unit, you can extend the 
 
 ## Related information
 
-[Manage Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent)  
-[Use evaluation plan](evaluation-plan.md#use-evaluation-plan)  
-[Use evaluations](use-evaluations.md#use-evaluations)
+[Manage Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md)  
+[Use evaluation plan](evaluation-plan.md)  
+[Use evaluations](use-evaluations.md)

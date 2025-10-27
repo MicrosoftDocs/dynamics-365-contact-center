@@ -17,7 +17,7 @@ ms.custom: bap-template
 **Cases**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
 
-Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. By defining criteria, methods, and conditions, evaluation plans support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and enable bulk evaluations to streamline your review process.
+Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. You can define criteria methods, conditions, and evaluation plans to support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and enable bulk evaluations to streamline your review process.
 
 > [!IMPORTANT]
 >
@@ -104,7 +104,7 @@ You can evaluate up to 10,000 entity records in a single batch run. A single bat
 
 ## Related information
 
-[Manage Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent)  
-[Use evaluations](use-evaluations.md#use-evaluations)  
-[Use evaluation criteria](evaluation-criteria.md#use-evaluation-criteria)
-[Use on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation)
+[Manage Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md)  
+[Use evaluations](use-evaluations.md)  
+[Use evaluation criteria](evaluation-criteria.md)  
+[Use on-demand evaluation](on-demand-evaluation.md)

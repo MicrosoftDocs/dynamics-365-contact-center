@@ -26,10 +26,10 @@ Evaluation plans help supervisors perform consistent and objective reviews of ca
 
 ## Prerequisites
 
-- [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent) is enabled.
-- Required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges) are assigned.
-- [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context) is set up.
-- Consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions) is provided.
+- Enable [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
+- Assign the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges).
+- Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
+- Provide consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
 
 ### Create and activate evaluation plan for cases and closed conversations
 

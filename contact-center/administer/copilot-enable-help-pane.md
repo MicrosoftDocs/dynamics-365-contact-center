@@ -20,9 +20,9 @@ The Copilot help pane allows customer service representatives (service represent
 ## Prerequisites
 
 - You have the System Administrator role.
-- If you aren't in the North America region and you want to use the web search powered by Bing feature, you must enable data movement across regions and Bing search in Power Platform admin center. See [Enable data movement across regions](/power-platform/admin/geographical-availability-copilot).
+- If you aren't in the North America region and you want to use the web search powered by Bing feature, then you must enable data movement across regions and Bing search in Power Platform admin center. Learn more in [Enable data movement across regions](/power-platform/admin/geographical-availability-copilot).
 
-   :::image type="content" source="../media/ppac-gen-ai-features.png" alt-text="Power Platform Admin center bing chat.":::
+   :::image type="content" source="../media/ppac-gen-ai-features.png" alt-text="Power Platform Admin center Bing chat.":::
 
 ## Enable Copilot assist features
 
@@ -64,14 +64,14 @@ Make sure that you have [knowledge management](/dynamics365/customer-service/adm
 - The state is set to Published
 
 > [!NOTE]
-> - Copilot uses the content attribute only in the knowledge article table to generate responses for ask a question, write an email, and draft a chat features. You can't customize this behavior.
+> - Copilot uses the content attribute only in the knowledge article table to generate responses for the ask a question, write an email, and draft a chat features. You can't customize this behavior.
 > - Copilot uses knowledge articles tagged with the same language as the UI to generate responses.
 
 ### Enable knowledge base
 
-Select **Knowledge base** to allow Copilot to use internal knowledge base resources for generating responses. Then information is used for the ask a question and draft an email in the Copilot help pane and rich text editor. By default, this option is disabled.
+Select **Knowledge base** to allow Copilot to use internal knowledge base resources for generating responses. Then, the information is used for the ask a question and draft an email features in the Copilot help pane and rich text editor. By default, this option is not turned on.
 
-If you've disabled the knowledge base option, representatives can use Copilot to draft an email using the **Suggest a call**, **Request more information**, **Empathize with feedback** and **Custom** prompts.
+If you turned off the knowledge base option, representatives can use Copilot to draft an email using the **Suggest a call**, **Request more information**, **Empathize with feedback** and **Custom** prompts.
 
 ### Enable knowledge sources configured in Copilot Studio (preview)
 
@@ -83,12 +83,12 @@ You can enable customers to integrate various knowledge sources without having t
 
 [!INCLUDE [cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-You can select **Add web address** in **Web resources** to add trusted domains. You can add up to five trusted web domains for Copilot to search and generate responses from. Copilot searches for information up to two levels down from the configured domain. You must enable the Bing Search in Power Platform admin center to add trusted web sources. See [Enable data across geographic locations](/microsoft-copilot-studio/manage-data-movement-outside-us#enable-data-across-geographic-locations).
+You can select **Add web address** in **Web resources** to add trusted domains. You can add up to five trusted web domains for Copilot to search and generate responses from. Copilot searches for information up to two levels down from the configured domain. You must enable the Bing Search in Power Platform admin center to add trusted web sources. Learn more in [Enable data across geographic locations](/microsoft-copilot-studio/manage-data-movement-outside-us#enable-data-across-geographic-locations).
 
 Copilot uses articles that are two nodes down the configured domain.
 
 > [!NOTE]
-> - The knowledge base content is refreshed every day.
+> - The system refreshes the knowledge base content every day.
 > - External websites are used by Copilot to draft emails and chat replies only.
 
 ## Enable translation
@@ -97,17 +97,17 @@ Select **Let representatives translate responses** to allow service representati
 
 ## Set up filters
 
-Filters enable Copilot to generate responses based on a specific set of topics. You can set up filters for ask a question and draft a response.
+Filters enable Copilot to generate responses based on a specific set of topics. You can set up filters for the ask a question and draft a response features.
 
 You can apply the filters in the following sections.
 
 > [!NOTE]
-> - We recommend that the appropriate knowledge content is available for the filters you set so service representatives can see the expected responses. 
+> - We recommend that the appropriate knowledge content is available for the filters you set so service representatives can view the expected responses. 
 > - The fields that appear in the **Manage filters** pane when you add a filter are of the data type **String**, **Whole Number**, **Option Set**, or **Two Options Set**. Fields of other data types aren't supported.
 
 ### Preset filters
 
-Specify filters that are applied by default in the background to filter knowledge base articles. Representatives can't see these filters. You can set predefined filters for ask a question and draft a response features as follows:
+Specify filters that are applied by default in the background to filter knowledge base articles. Representatives can't view these filters. You can set predefined filters for the ask a question and draft a response features as follows:
 
 1. Select **Manage Filters** in **Filters**. The **Manage filters** pane appears.
 1. Select **Manage rules** in **Preset filters** for the required feature.
@@ -116,13 +116,13 @@ Specify filters that are applied by default in the background to filter knowledg
     
 ### Representative Filters
 
- Specify the filters that representatives can apply to further filter and refine Copilot responses. Representatives can see and select or deselect these filters in the Copilot help pane for the ask a question feature. If a filter isn't configured as a representative filter, it operates in the background and isn't visible to representatives.
+Specify the filters that representatives can apply to further filter and refine Copilot responses. Representatives can view and select or deselect these filters in the Copilot help pane for the ask a question feature. If a filter isn't configured as a representative filter, it operates in the background and isn't visible to representatives.
 
 To configure a representative filter, do the following steps:
 
 1. Select **Add Filter** for **Representative Filters**.
 1. Specify the required knowledge base field that representatives can use. You can also specify the display name and add the values from the field that the representative can select.
-1. Turn on the **Filter status** toggle. This toggle must be turned on for the representative to see the filter.
+1. Turn on the **Filter status** toggle. This toggle must be turned on for the representative to view the filter.
 1. Select **Finish editing**.
 
 ### Automated filters
@@ -132,9 +132,9 @@ Specify the filters that are automatically applied. The representatives don't ne
 1. Select **Add Filter** for **Automated Filters**.
 1. Specify the required knowledge base field and the rules that correspond to the field's value. The filter rule is applied only on the record type the representative is currently working on.
 1. Turn on the **Use untagged content if the field value is null** toggle to view all the content if the field value doesn't match the specified value.
-1. Turn on the **Allow representatives to view or change this filter** toggle for service representatives to see a visual cue that the automated filter is applied and change the filtering options. Based on your setting, the following actions apply: 
-   - **On**: The application prompts you to create a corresponding representative filter for the same knowledge attribute in **Representative Filters** Representatives then see the filters on the Copilot help pane.
-   - **Off**: Representatives can't see the filter on the Copilot help pane. The filters operate in the background without any service representative notifications.
+1. Turn on the **Allow representatives to view or change this filter** toggle for service representatives to view a visual cue that the automated filter is applied and change the filtering options. Based on your setting, the following actions apply: 
+   - **On**: The application prompts you to create a corresponding representative filter for the same knowledge attribute in **Representative Filters**. Then, representatives can view the filter on the Copilot help pane.
+   - **Off**: Representatives can't view the filter on the Copilot help pane. The filters operate in the background without any service representative notifications.
 1. Select **Finish editing**.
 
 > [!NOTE]

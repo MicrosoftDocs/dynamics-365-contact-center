@@ -34,7 +34,7 @@ This article explains how to use, edit, and extend evaluation criteria, includin
 
 As a Quality Evaluator, you can use or copy the out-of-the-box evaluation criteria; create a new evaluation criteria; and edit a published evaluation criteria. 
 
-- Use the **Support quality** or the **Closed Conversations Default Criteria**.
+- Use the **Support quality** or **Closed Conversations Default Criteria**.
 
 > [!NOTE]
 > The out-of-the-box evaluation criteria is pre-filled, published, and read-only.

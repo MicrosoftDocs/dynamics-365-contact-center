@@ -38,10 +38,14 @@ The Quality Evaluation Agent evaluates case and conversations, provides summarie
 > - Evaluations for conversations is a preview feature. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
+## Configure connection references
+
+You need to configure connection references for Quality Evaluation Agent to integrate with Microsoft services. These connections link flows to essential data sources such as Microsoft Dataverse and Copilot Studio, ensuring smooth operation and enhanced functionality. Learn how to configure connection references for [Quality Evaluation Agent](/dynamics365/customer-service/administer/admin-km-agent-connections.md?context=/dynamics365/contact-center/context/administer-context). 
+
 ## Prerequisites
 
 - You have the Quality Manager, Quality Evaluator, and Quality Administrator role.
-- You have configured the [Connection references for Quality Evaluation Agent flow](quality-evaluation-agent-connections.md#configure-connection-references-for-quality-evaluation-agent-flow).
+- You have configured the [connection references for Quality Evaluation Agent flow](/dynamics365/customer-service/administer/admin-km-agent-connections.md?context=/dynamics365/contact-center/context/administer-context).
 - You have [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - You provided consent for potential [data movement across regions](#data-movement-across-regions).
 

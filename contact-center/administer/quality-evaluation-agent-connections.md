@@ -54,7 +54,7 @@ Alternatively, in [Power Automate](https://powerautomate.microsoft.com), search 
 
 ## Publish the Microsoft Copilot Studio agent
 
-1.  In [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/), select your environment, and then search for the **Quality Evaluation Agent - Incident** case agent and the **QualityEvaluationAgentForConversation** conversation agent.
+1. In [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/), select your environment, and then search for the **Quality Evaluation Agent - Incident** case agent and **QualityEvaluationAgentForConversation** conversation agent.
 
 2. [Publish the agent](/microsoft-copilot-studio/publication-fundamentals-publish-channels?tabs=web)
 

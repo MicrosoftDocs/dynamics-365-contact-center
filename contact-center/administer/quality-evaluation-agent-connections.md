@@ -62,4 +62,4 @@ Alternatively, in [Power Automate](https://powerautomate.microsoft.com), search 
 
 ## Related information
 
-[Manage Quality Evaluation Agent](manage-quality-evaluation-agent.md#manage-quality-evaluation-agent)
+[Manage Quality Evaluation Agent](manage-quality-evaluation-agent.md)

@@ -44,10 +44,10 @@ You need to configure connection references for Quality Evaluation Agent flow to
 
 ## Prerequisites
 
-- You have the Quality Manager, Quality Evaluator, and Quality Administrator role.
-- You have configured the [connection references for Quality Evaluation Agent flow](/dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context).
-- You have [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
-- You provided consent for potential [data movement across regions](#data-movement-across-regions).
+- Assign the Quality Manager, Quality Evaluator, and the Quality Administrator roles.
+- Configure [connection references for Quality Evaluation Agent flow](/dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context).
+- Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
+- Provide consent for potential [data movement across regions](#data-movement-across-regions).
 
 ## Data movement across regions
 

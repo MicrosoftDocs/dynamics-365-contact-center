@@ -58,7 +58,7 @@ Alternatively, in [Power Automate](https://powerautomate.microsoft.com), search 
 
 2. [Publish the agent](/microsoft-copilot-studio/publication-fundamentals-publish-channels?tabs=web)
 
-Once done, go to the Copilot Service admin center and enable [Enable Quality Evaluation Agent](manage-quality-evaluation-agent.md#enable-quality-evaluation-agent).
+1. Go to the Copilot Service admin center and enable [Enable Quality Evaluation Agent](manage-quality-evaluation-agent.md#enable-quality-evaluation-agent).
 
 ## Related information
 

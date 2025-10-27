@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 10/24/2025
+ms.date: 10/27/2025
 ms.custom: bap-template
 ---
 
@@ -26,10 +26,10 @@ Evaluation plans help supervisors perform consistent and objective reviews of ca
 
 ## Prerequisites
 
-- You have enabled [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
-- You have the required [Roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges)
-- You have [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
-- You provided consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
+- [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent) is enabled.
+- Required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges) are assigned.
+- [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context) is set up.
+- Consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions) is provided.
 
 ### Create and activate evaluation plan for cases and closed conversations
 

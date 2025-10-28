@@ -49,7 +49,7 @@ Configure a registry entry that restricts users from manually updating the Deskt
 Value
 1: To disable users from manually updating the Desktop Companion application.
 
-The registry configuration prevents representatives from selecting update options for the Desktop companion application and manually configuring to start automatically.
+The registry configuration prevents representatives from selecting update options and manually configuring the Desktop companion application to start automatically.
 
 ## Related information
 

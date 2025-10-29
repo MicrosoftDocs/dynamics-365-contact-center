@@ -1,35 +1,33 @@
 ---
-title: View Agent insights dashboard (preview)
+title: View Agent insights dashboard
 description: Know how the Agent insights dashboard can help you, as a supervisor, monitor the performance of the autonomous agents in Dynamics 365 Contact Center and Customer Service.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot 
-ms.date: 08/01/2025
+ms.date: 10/31/2025
 ms.custom: bap-template
 ---
 
-# View Agent insights dashboard (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# View Agent insights dashboard
 
 Autonomous agents are intelligent tools designed to enhance customer service efficiency in Dynamics 365 Contact Center and Dynamics 365 Customer Service. With generative AI, they improve customer intent discovery and real-time knowledge management and support self-service and assisted scenarios.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+## Use the Agent insights dashboard
 
-## View the Agent insights dashboard
-
-The Agent insights dashboard provides insights into the performance of the autonomous agents, allowing you to monitor their effectiveness and make data-driven decisions to optimize their use.
+The Agent insights dashboard equips supervisors with real-time visibility into key performance indicators and operational trends regarding their AI agents, enabling confident, data-driven decision making throughout their autonomous transformation journey.
 
 The dashboard capabilities include:
 
 - **Filters**: Specify the exact segment of traffic to gather insights through the line of business, intent group, and channel filters.
 - **Conversation and Case pivot**: Pivot between the conversation and case view to gain insights into the complete program picture.
-- **Top KPIs**: Gain insights into autonomous agents and customer service representatives' (service representatives or representatives) performance through metrics such as total volume and average handling time.
-- **AI agent-level insights**: Quickly assess the impact the AI agents are driving for the organization and the areas of opportunity for improvement.
+- **Top KPIs**: Gain insights into autonomous agents and customer service representatives' (service representatives or representatives) performance through metrics such as total volume, autonomous rate, and quality score.
+- **Goal setting capabilities for top KPIs**: Define goals for your top KPIs across your organization.
+- **AI agent-level insights**: Quickly assess the impact the AI agents are driving for the organization and the areas of opportunity for improvement with easy access to deeper-level insights.
 - **Volume breakdown**: View the volume breakdown by line of business, intent group, or channels to identify the top volume drivers and their autonomous rate per grouping if applicable.
 - **Volume funnel**: View and analyze the path of conversations or cases to identify the share of engagements that are escalated to service representatives.
+
 
 ## Conversation performance
 

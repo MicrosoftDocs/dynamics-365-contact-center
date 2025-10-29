@@ -14,6 +14,10 @@ ms.custom: bap-template
 
 Autonomous agents are intelligent tools designed to enhance customer service efficiency in Dynamics 365 Contact Center and Dynamics 365 Customer Service. With generative AI, they improve customer intent discovery and real-time knowledge management and support self-service and assisted scenarios.
 
+## Prerequisite
+
+Administrator enabled the [Agent insights dashboard](../administer/enable-agent-insights.md).
+
 ## Use the Agent insights dashboard
 
 The Agent insights dashboard equips supervisors with real-time visibility into key performance indicators and operational trends regarding their AI agents, enabling confident, data-driven decision making throughout their autonomous transformation journey.
@@ -28,10 +32,11 @@ The dashboard capabilities include:
 - **Volume breakdown**: View the volume breakdown by line of business, intent group, or channels to identify the top volume drivers and their autonomous rate per grouping if applicable.
 - **Volume funnel**: View and analyze the path of conversations or cases to identify the share of engagements that are escalated to service representatives.
 
-
 ## Conversation performance
 
-The Conversation performance report displays information on the conversations serviced by autonomous agents. The following metrics are available.
+The Conversation performance report displays information on the conversations serviced by autonomous agents.
+
+:::image type="content" source="../media/agent-insights-conversations-performance.png" alt-text="Screenshot of conversations performance pivot." lightbox="../media/agent-insights-conversations-performance.png":::
 
 ### Top KPIs for conversations
 
@@ -39,16 +44,17 @@ The following metrics are available.
 
 | Metric                   | Definition                                                                                                         |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Total conversations      | Total conversations conducted with representatives or AI agents.                                                   |
-| Autonomous rate          | The percentage of conversations that were engaged and by AI agents only and weren't routed to a representative.        |
-| Average handle time      | The time spent from conversation assignment to conversation close including representative and AI agent conversations. |
-| Ongoing conversations    | Total conversations that are currently in active or open state for both representatives and AI agents.              |
-| Abandon rate             | Total conversations where the conversation is abandoned and not handled or resolved by an AI agent or service representative. |
-| Unassigned conversations | Total conversations that are awaiting in the queue to be assigned to a service representative.                      |
+| Active conversations     | Total number of conversations that're active.                                                   |
+| Closed conversations     | Total number of conversations that were closed or abandoned. |
+| Autonomous rate          | The percentage of conversations that were engaged by AI agents only and weren't routed to a representative.        |
+| Quality score            | Score that evaluates how well a conversation met defined quality standards.|
+| Sentiment score          | Machine learning generated customer sentiment of the communication between the user and the customer. | 
 
 ## Case performance
 
 The Case performance report displays information on the cases serviced by autonomous agents.
+
+:::image type="content" source="../media/agent-insights-cases-performance.png" alt-text="Screenshot of cases performance pivot." lightbox="../media/agent-insights-cases-performance.png":::
 
 ### Top KPIs for cases
 
@@ -57,10 +63,9 @@ The following metrics are available.
 | Metric                | Definition                                                                                                                |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------|
 | Active cases          | Total number of cases that are active in real time.                                                                       |
-| Unassigned cases      | Total cases awaiting representative assignment (no case owner assigned).                                                   |
-| Incoming cases        | Total cases created during the selected period.                                                                   |
+| Closed cases          | Total number of cases that were closed or abandoned |
+| Quality score         | Score that evaluates how well a case met defined quality standards. |
 | Days to close         | Average number of days to close a case for all cases created during the selected period (date closed minus date created). |
-| Cases followed up     | Total cases that are followed up by either service representative or AI agent (status is set to **Waiting for details**).                              |
 
 ## Summary of AI agents performance
 
@@ -70,16 +75,37 @@ The following metrics are available.
 |-----------------|-------|-----------------|
 | Customer Intent Agent |                 | |
 | | Engagement count                      | Total number of conversations where Customer Intent Agent is engaged. |
+| | Conversation count                    | The total number of conversations that the Customer Intent Agent was automatically connected to or added to after the conversation started. |
+| | Solutions generated by AI             | The total number of solutions generated by AI at the request of a customer service representative.|
 | | Solutions attempted (assisted service)| Total number of conversations where a solution was identified for the intent and attempted to use to resolve the conversation (knowledge article, action taken, custom agent).<br> **NOTE**: In preview, this feature isn't available for IVR or voice agents. |
 | |Autonomous resolutions                 | Total number of conversations that were completed without requiring a service representative to be assigned (handled autonomously by Customer Intent Agent). |
 | Case Management Agent |                 | |
 | | Autonomous case processing volume     | Number of cases with autonomous actions to assist in processing the case. |
 | | Autonomous case enrichment volume     | Number of cases that were enriched autonomously by the Case Management Agent. |
 | | Emails sent or drafted by AI agent    | Number of emails sent by the Case Management Agent, including fully autonomous and human-approved emails. |
+| Quality Evaluation Agent    | | |
+| | Quality evaluations                    | Total number of evaluations where evaluations were performed. |
+|| Quality score                            | Score that indicates how well the defined quality standards were met. |
+|| Evaluations below quality thresholds     | Number of evaluations below the target evaluation threshold.|
 | Customer Knowledge Management Agent |   | |
 | | Total evaluations performed           | Total number of evaluations performed across cases and conversations. |
 | | AI Agent articles drafted       | Number of articles drafted by AI agent.|
 | | Autonomously generated articles published | Number of articles that were autonomously published for AI agent or service representatives use. |
+
+## FAQ
+
+### How can I set goals for my top KPIs?
+
+Learn about how to set goals in [Configure KPI goals](../administer/enable-agent-insights.md#configure-kpi-goals)
+
+### Can I use this dashboard when some AI agents only are enabled?
+
+Yes, the dashboard dynamically displays metrics for those AI agents only that're enabled.
+
+### I don't see insights for a case or conversation pivot or line of business?
+
+The dashboard displays insights for enabled AI agents only. Currently, insights for line of business and intent level aren't available.
+
 
 ### Related information
 

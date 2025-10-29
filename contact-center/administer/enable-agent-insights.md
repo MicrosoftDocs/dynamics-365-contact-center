@@ -12,14 +12,33 @@ ms.custom: bap-template
 
 # Enable agent insights dashboard
 
-The agent insights dashboard in Dynamics 365 Contact Center provides a comprehensive view of AI agent performance, allowing you to monitor key metrics and make informed decisions. Follow these steps to enable the agent insights dashboard:
+The agent insights dashboard in Dynamics 365 Contact Center provides a comprehensive view of AI agent performance, allowing you to monitor key metrics and make informed decisions.
 
-    
-1. Sign in to Copilot Service admin center.
-2. Navigate to the **Insights** section.
-3. Select **Agent insights dashboard**.
-4.Select **Enable** to activate the dashboard.
-5. Configure the dashboard settings according to your preferences.
-6. Save your changes.
+## Enable the dashboard
 
-Once enabled, you can access the agent insights dashboard to view real-time performance data and analytics for your AI agents.
+After you enable the agent insights dashboard, you can access it in Copilot Service workspace to view real-time performance data and analytics for your AI agents.
+
+1. In Copilot Service admin center, go to **Insights** under **Operations**.
+
+1. Under **AI feature settings**, select **Manage** for **Agent insights**.
+1. On the page **Agent insights** that appears, turn on the **Enable Agent insights** toggle.
+1. Save the changes.
+
+## Configure KPI goals
+
+Set the KPI goals on the **Agent insights** page.
+
+**For conversations**: Turn on the toggle for the following KPIs:
+
+- **Autonomous rate**: Enter a value to indicate percentage of conversations that AI agents close without routing them to a customer service representative (service representative or representative).
+- **Quality score**: Set a score to evaluate the conversation. You can also set the score on the Quality Evaluation Agent settings page.
+
+**For cases**:
+
+- **Autonomous rate**: Enter a value to indicate percentage of cases that AI agents close without routing them to a representative.
+- **Days to close**: Average number of days within which the cases should be closed.
+- **Quality score**: Turn on the toggle to set a score to evaluate the case.
+
+### Related information
+
+[View Agent insights dashboard](../use/agent-insights.md)  

@@ -40,7 +40,7 @@ The following metrics are available.
 | Metric                   | Definition                                                                                                         |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------|
 | Total conversations      | Total conversations conducted with representatives or AI agents.                                                   |
-| Autonomous rate          | The percentage of conversations that were engaged by AI agents only and weren't routed to a representative.        |
+| Autonomous rate          | The percentage of conversations that were engaged and by AI agents only and weren't routed to a representative.        |
 | Average handle time      | The time spent from conversation assignment to conversation close including representative and AI agent conversations. |
 | Ongoing conversations    | Total conversations that are currently in active or open state for both representatives and AI agents.              |
 | Abandon rate             | Total conversations where the conversation is abandoned and not handled or resolved by an AI agent or service representative. |

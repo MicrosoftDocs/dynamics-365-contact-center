@@ -1,6 +1,6 @@
 ---
-title: Enable agent insights dashboard
-description: Learn how to enable the agent insights dashboard in Dynamics 365 Contact Center to monitor AI agent performance.
+title: Enable agent insights dashboard and KPI goals
+description: Learn how to enable the agent insights dashboard and KPI goals in Dynamics 365 Contact Center to monitor AI agents performance.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
@@ -10,7 +10,7 @@ ms.date: 10/31/2025
 ms.custom: bap-template
 ---
 
-# Enable agent insights dashboard
+# Enable agent insights dashboard and KPI goals
 
 The agent insights dashboard in Dynamics 365 Contact Center provides a comprehensive view of AI agent performance, allowing you to monitor key metrics and make informed decisions.
 

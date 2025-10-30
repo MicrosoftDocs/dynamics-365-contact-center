@@ -67,8 +67,8 @@ The capabilities of the Case Management Agent include:
 
 - **Autonomous case creation and update**: Creates and updates cases from live chats and updates cases from emails automatically. The agent uses AI to predict and populate relevant fields.
 
-- **Automated follow-up and closure**: Sends follow-up emails and resolves cases based on predefined rules, streamlining the case closure process.
 - **Autonomous case resolution**: Drafts and sends emails based on determined intent from customer queries, leveraging knowledge and custom workflows.
+- **Automated follow-up and closure**: Sends follow-up emails and resolves cases based on predefined rules, streamlining the case closure process.
 
 ### Quality Evaluation Agent
 

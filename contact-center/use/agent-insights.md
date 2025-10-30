@@ -106,7 +106,6 @@ Yes, the dashboard dynamically displays metrics for those AI agents only that're
 
 The dashboard displays insights for enabled AI agents only. Currently, insights for line of business and intent level aren't available.
 
-
 ### Related information
 
 [Use Case Management Agent to create and update cases (preview)](/dynamics365/customer-service/use/use-case-creation-agent)  

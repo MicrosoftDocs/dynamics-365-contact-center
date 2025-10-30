@@ -79,7 +79,7 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
     You can delete or duplicate a section or question, as required.
 
-1. If you need to enable scoring per criteria, switch the **Crieria scoring** toggle to on.
+1. To enable scoring per criteria, switch the **Criteria scoring** toggle to on.
 
 1.  Select **Save**, and then select **Publish**.
 

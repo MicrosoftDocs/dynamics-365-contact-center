@@ -37,9 +37,9 @@ As a Quality Evaluator, you can use or copy the out-of-the-box evaluation criter
 - Use the **Support quality** or **Closed Conversations Default Criteria**.
 
 > [!NOTE]
-> The out-of-the-box evaluation criteria is pre-filled, published, and read-only.
+> The out-of-the-box evaluation criteria is prefilled, published, and read-only.
 
-To view an evaluaton criteria:
+To view an evaluation criteria:
 
 1. In site map of Copilot Service workspace, go to **Evaluation criteria.**
 
@@ -133,7 +133,7 @@ After you create a baseline criteria for your business unit, you can extend the 
 
 1. Select the checkbox for the out-of-the-box criteria and then select **Copy**. A copy of the prefilled out-of-the-box criteria form is provided to you as the source. You can make edits as needed.
 
-1. Select **Save**, once you are done making edits.
+1. Select **Save**, once you're done making edits.
 
 ## Best practices to create evaluation criteria
 

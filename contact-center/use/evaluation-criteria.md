@@ -77,9 +77,9 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
 1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required.
 
-1. Switch the **Crieria scoring** toggle to on, if you need to enbale scoring per criteria.
-
     You can delete or duplicate a section or question, as required.
+
+1. If you need to enable scoring per criteria, switch the **Crieria scoring** toggle to on.
 
 1.  Select **Save**, and then select **Publish**.
 

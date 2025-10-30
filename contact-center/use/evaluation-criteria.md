@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 10/27/2025
+ms.date: 10/30/2025
 ms.custom: bap-template 
 ---
 
@@ -37,9 +37,9 @@ As a Quality Evaluator, you can use or copy the out-of-the-box evaluation criter
 - Use the **Support quality** or **Closed Conversations Default Criteria**.
 
 > [!NOTE]
-> The out-of-the-box evaluation criteria is pre-filled, published, and read-only.
+> The out-of-the-box evaluation criteria is prefilled, published, and read-only.
 
-To view an evaluaton criteria:
+To view an evaluation criteria:
 
 1. In site map of Copilot Service workspace, go to **Evaluation criteria.**
 
@@ -75,9 +75,11 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
     1.  Depending on the answer type you select, you can add scoring for the answers by selecting the **Scoring enabled** checkbox. You can turn off the Scoring toggle if you don't want to create a criteria with scoring.
 
-1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required. 
+1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required.
 
     You can delete or duplicate a section or question, as required.
+
+1. To enable scoring per criteria, switch the **Criteria scoring** toggle to on.
 
 1.  Select **Save**, and then select **Publish**.
 
@@ -131,7 +133,7 @@ After you create a baseline criteria for your business unit, you can extend the 
 
 1. Select the checkbox for the out-of-the-box criteria and then select **Copy**. A copy of the prefilled out-of-the-box criteria form is provided to you as the source. You can make edits as needed.
 
-1. Select **Save**, once you are done making edits.
+1. Select **Save**, once you're done making edits.
 
 ## Best practices to create evaluation criteria
 

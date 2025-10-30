@@ -21,7 +21,7 @@ After you enable the agent insights dashboard, you can access it in Copilot Serv
 1. In Copilot Service admin center, go to **Insights** under **Operations**.
 
 1. Under **AI feature settings**, select **Manage** for **Agent insights**.
-1. On the page **Agent insights** that appears, turn on the **Enable Agent insights** toggle.
+1. On the **Agent insights** page that appears, turn on the **Enable Agent insights** toggle.
 1. Save the changes.
 
 ## Configure KPI goals
@@ -30,14 +30,14 @@ Set the KPI goals on the **Agent insights** page.
 
 **For conversations**: Turn on the toggle for the following KPIs:
 
-- **Autonomous rate**: Enter a value to indicate percentage of conversations that AI agents close without routing them to a customer service representative (service representative or representative).
-- **Quality score**: Set a score to evaluate the conversation. You can also set the score on the Quality Evaluation Agent settings page.
+- **Autonomous rate**: Enter a value for the goal that should be achieved.
+- **Quality score**: Indicates the score that's set on the Quality Evaluation Agent settings page.
 
 **For cases**:
 
-- **Autonomous rate**: Enter a value to indicate percentage of cases that AI agents close without routing them to a representative.
+- **Autonomous rate**: Enter a value for the goal that should be achieved.
 - **Days to close**: Average number of days within which the cases should be closed.
-- **Quality score**: Turn on the toggle to set a score to evaluate the case.
+- **Quality score**: Indicates the score that's set on the Quality Evaluation Agent settings page.
 
 ### Related information
 

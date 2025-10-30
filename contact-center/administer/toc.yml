@@ -566,6 +566,8 @@
           href: /dynamics365/customer-service/administer/cs-region-availability-service-limits?context=/dynamics365/contact-center/context/administer-context
         - name: Service limits for analytics and insights
           href: /dynamics365/customer-service/administer/ana-ser-limits?context=/dynamics365/contact-center/context/administer-context
+        - name: Enable Agent insights dashboard, KPI goals
+          href: enable-agent-insights.md
         - name: Configure analytics and insights dashboards
           href: /dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh?context=/dynamics365/contact-center/context/administer-context
         - name: Manage real-time analytics dashboards

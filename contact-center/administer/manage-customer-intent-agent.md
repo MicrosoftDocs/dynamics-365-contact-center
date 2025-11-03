@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 10/10/2025
+ms.date: 11/03/2025
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template
@@ -194,19 +194,20 @@ Connectors let systems work together, transfer data, and allow AI agents to auto
 1. If you select **For specific intents**, you need to map the custom connector as a solution as explained in the section that follows.
 1. Select **Save**.
 
-### Map a connector to an intent
+### Map a tool to an intent
+
+Tools help systems connect and enable data flow or actions. Customer Intent Agent currently supports custom connectors as tools. When you specify a connector to be used for specific intents, you can add the different actions within that connector to be a tool Customer Intent Agent uses to resolve those intents.
 
 1. Select **Manage** for **Manage intents** on the **Customer Intent Agent** page.
-
-1. Select the specific intent, and on the intent page, in the **Solution (Optional)** section, select the **Connectors** option, and then select **Add**.
-1. On the **Edit solution** page, search and select a connector for the intent. The application displays connectors created for use with specific intents only.
+1. Select the specific intent, and on the intent page, in the **Resource (Optional)** section, select the **Tools** option, and then select **Add**.
+1. On the **Add a resource** page, search and select a connector for the intent. The application displays connectors created for use with specific intents only.
 1. Select **Save and close**.
 
 > [!NOTE]
 > - To map a connector to an intent, the connector must have one action only. If your connector has multiple actions, you can't run any actions for that intent.
 > - After you add or remove a connector, changes can take up to 15 minutes to appear in the Customer Intent Agent.
 
-You can edit or delete a connector after you select the required connector on the **Manage custom connectors** page. 
+You can edit or delete a connector after you select the required connector on the **Manage custom connectors** page. You can also view which intents are using the connector when you edit the connector.
 
 ## Configure knowledge sources for an intent
 
@@ -215,7 +216,7 @@ You can edit or delete a connector after you select the required connector on th
 You can add knowledge articles to an intent directly from the intent page, so that users see articles specified for the intent only. 
 
 1. Select the intent for which you want to add knowledge articles.
-1. On the `<intent_name>` page, scroll to the bottom and in **Solution (Optional)**, select **Dynamics 365 knowledge articles**, and then select **Add**. A list of published knowledge articles appears.
+1. On the `<intent_name>` page, scroll to the bottom and in **Resource (Optional)**, select **Dynamics 365 knowledge articles**, and then select **Add**. A list of published knowledge articles appears.
 1. Select the articles pertinent to the intent and save and close.
 
 ### Specify filters for Dynamics 365 knowledge articles for Customer Intent Agent

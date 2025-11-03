@@ -16,7 +16,7 @@ ms.custom:
 
 [!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
 
-This FAQ article describe the AI impact of AI agents in Customer Service and Dynamics 365 Contact Center.
+This FAQ article describes the AI impact of AI agents in Customer Service and Dynamics 365 Contact Center.
 
 ## What are AI agents?
 

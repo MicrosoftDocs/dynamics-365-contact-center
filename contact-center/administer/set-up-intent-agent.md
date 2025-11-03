@@ -1,18 +1,16 @@
 ---
-title: Configure intent-based suggestions for Copilot agents (preview)
+title: Configure intent-based suggestions for Copilot agents
 description: Learn how to configure intent-based suggestions for Copilot agents using Customer Intent Agent to automate and streamline the contact center operations.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 10/10/2025
+ms.date: 11/03/2025
 ms.custom: bap-template
 ---
 
-# Configure intent-based suggestions for Copilot agents (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Configure intent-based suggestions for Copilot agents
 
 Customer Intent Agent discovers intent from historical data and maintains an up-to-date intent library, with attributes to support intent determination, interview, and fulfillment, leading to higher deflection rates.
 
@@ -20,9 +18,7 @@ Customer Intent Agent discovers intent from historical data and maintains an up-
 
 Customer Intent Agent uses the determined intent and interview responses to improve the quality of generated answers for both Copilot agents and service representatives. This article describes how you can configure Copilot agents with Customer Intent Agent to provide updated solutions for customer issues that come through chat and messaging channels.
 
-You can also set up Customer Intent Agent for voice agents that uses generative AI to autonomously discover intents in your contact center instance. Learn more in [Set up voice agents to use intents (preview)](set-up-voice-agents-to-use-intents.md#set-up-voice-agents-to-use-intents-preview).
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+You can also set up Customer Intent Agent for voice agents that uses generative AI to autonomously discover intents in your contact center instance. Learn more in [Set up voice agents to use intents](set-up-voice-agents-to-use-intents.md).
 
 ## Prerequisites
 
@@ -46,11 +42,11 @@ Before you proceed, make sure you:
 
 ## Set up Copilot agents for intent management
 
-1. In Copilot Service admin center, navigate to the **Customer Intent Agent (preview)** page > **Intent-based suggestions** section.
+1. In Copilot Service admin center, navigate to the **Customer Intent Agent** page > **Intent-based suggestions** section.
 1. Select **Enable for chatbots** and then select **Manage**. The **AI Agents** page appears.
 1. Select the Copilot agent connected to your contact center environment.
-1. Select **Add intent-based features**, which takes you to **Manage component collections (preview)** in Microsoft Copilot Studio.
-    1. In **Manage component collections (preview)**, search for and select **Intent-based suggestions (preview)**.
+1. Select **Add intent-based features**, which takes you to **Manage component collections** in Microsoft Copilot Studio.
+    1. In **Manage component collections**, search for and select **Intent-based suggestions**.
     1. Select **Add agent**. You can also disconnect a Copilot agent to stop agent transfers for that Copilot agent by selecting **Remove from agent**.
     1. Select **Publish**. A series of Intent-based suggestions topics are added to your agent.
 

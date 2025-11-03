@@ -22,6 +22,8 @@
           href: /dynamics365/customer-service/use/oc-notifications?context=/dynamics365/contact-center/context/use-context
         - name: View communication panel
           href: /dynamics365/customer-service/use/oc-conversation-control?context=/dynamics365/contact-center/context/use-context
+        - name: View conversation transcripts and call recordings
+          href: /dynamics365/customer-service/use/voice-channel-call-recordings-transcripts?context=/dynamics365/contact-center/context/use-context          
         - name: View active conversations
           href: ../use/oc-active-conv.md
         - name: Create a record
@@ -68,24 +70,32 @@
           href: /dynamics365/customer-service/use/manage-voicemails?context=/dynamics365/contact-center/context/use-context
         - name: Transfer calls and consult with other users
           href: /dynamics365/customer-service/use/voice-channel-transfer-consult?context=/dynamics365/contact-center/context/use-context
-        - name: View call recordings and transcripts
-          href: /dynamics365/customer-service/use/voice-channel-call-recordings-transcripts?context=/dynamics365/contact-center/context/use-context
         - name: Monitor voice calls
           href: /dynamics365/customer-service/use/voice-channel-monitor-calls?context=/dynamics365/contact-center/context/use-context
-      - name: Use autonomous service agents (preview)
+      - name: Use autonomous service agents
         items:
         - name: Overview of autonomous service agents
           href: ../administer/autonomous-agents-overview.md?context=/dynamics365/contact-center/context/use-context
-        - name: Customer Intent Agent
+        - name: Customer Intent Agent (preview)
           items:
           - name: Use intent-based suggestions
             href: use-intent-suggestions.md
-        - name: Customer Knowledge Management Agent
+        - name: Customer Knowledge Management Agent 
           items:
           - name: Review knowledge articles created by the Customer Knowledge Management Agent
             href: /dynamics365/customer-service/use/admin-km-agent-review?context=/dynamics365/contact-center/context/use-context
           - name: Use knowledge insights for Customer Knowledge Management Agent
             href: /dynamics365/customer-service/use/admin-km-agent-insights?context=/dynamics365/contact-center/context/use-context
+        - name: Quality Evaluation Agent
+          items:
+          - name: Use evaluation criteria
+            href: evaluation-criteria.md
+          - name: Use evaluation plan
+            href: evaluation-plan.md
+          - name: Use on-demand evaluation
+            href: on-demand-evaluation.md
+          - name: Use evaluations
+            href: use-evaluations.md
       - name: Use Copilot features in contact center-standalone
         items: 
         - name: Copilot feature availability across applications
@@ -372,7 +382,7 @@
       items:
       - name: Overview
         href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/use-context
-      - name: Responsible AI FAQ for AI Agents (Preview)
+      - name: Responsible AI FAQ for AI Agents
         href: ../implement/faq-rai-ai-agents.md
       - name: Responsible AI FAQ for Copilot in Customer Service
         href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/use-context

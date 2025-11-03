@@ -21,7 +21,7 @@ The success of social media customer service, like all other customer services, 
 ## Prerequisites
 
 - Channels are provisioned in your environment. Learn more in [provision channels](../implement/provision-channels.md).
-- You have an Azure account with an active subscription. Make sure that the Azure subscription and Dynamics 365 account are in the same tenant. Learn more in [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account).
+- You have an Azure account with an active subscription. Make sure that the Azure subscription and Dynamics 365 account are in the same tenant. Learn more in [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
    - Create or use an existing Azure Communication Services resource. Learn more in [Create and manage Communication Services resources](/azure/communication-services/quickstarts/create-communication-resource).
     - Obtain a phone number that can send and receive SMS. You have several options:
        - Purchase a phone number or import one from Azure Communication Services. Learn more in [Get and manage phone number](/azure/communication-services/quickstarts/telephony/get-phone-number) or [import phone numbers](/dynamics365/customer-service/administer/voice-channel-sync-from-acs?context=/dynamics365/contact-center/context/administer-context).

@@ -1,5 +1,5 @@
 ---
-title: Responsible AI FAQ for AI agents (preview)
+title: Responsible AI FAQ for AI agents
 description: This FAQ provides information about the AI agents in Dynamics 365 Contact Center and Dynamics 365 Customer Service. This FAQ also includes key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
 author: neeranelli
 ms.author: nenellim
@@ -12,11 +12,9 @@ ms.custom:
 - bap-template
 - responsible-ai-faq
 ---
-# Responsible AI FAQ for AI agents (preview)
+# Responsible AI FAQ for AI agents
 
 [!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This FAQ article describe the AI impact of AI agents in Customer Service and Dynamics 365 Contact Center.
 
@@ -26,7 +24,7 @@ AI agents are intelligent tools designed to enhance customer service efficiency 
 
 ## What are the systems capabilities of AI agents?
 
-### Customer Intent Agent
+### Customer Intent Agent (preview)
 
 Customer Intent Agent uses generative AI to autonomously discover customer intents by analyzing past interactions in your customer relationship management (CRM) system. It builds an intent library to:
 
@@ -72,7 +70,7 @@ The capabilities of the Case Management Agent include:
 
 ### Quality Evaluation Agent
 
-Quality Evaluation Agent helps organizations make sure that every customer engagement with support&mdash;whether handled by service representatives or AI agents&mdash;is compliant, ethical, and aligned with brand values. 
+Quality Evaluation Agent helps organizations make sure that every customer engagement with support&mdash;whether handled by service representatives or AI agents&mdash;is compliant, ethical, and aligned with brand values.
 
 **Customized criteria**: Supervisors set up evaluation criteria, questionnaires, scoring logic, and instructions to define quality. The AI agent uses the criteria to assess customer engagements across different channels and generate scores.
 
@@ -87,7 +85,7 @@ These AI agents are designed to:
 - By leveraging autonomously managed and updated intent library and knowledge base, organizations can address customer inquiries more effectively and provide accurate, timely solutions, enhancing both service representative efficiency and self-help resolution rates.
 
 - Automatically extract and populate the relevant case and related entity fields from customer emails and chats to reduce manual data entry for customer service representatives. This ensures that the case information is complete right from case creation.
- 
+
 - Evaluate customer support interactions using your organization’s evaluation criteria.
 
 ## How is AI agent evaluated? What metrics are used to measure performance?
@@ -105,8 +103,8 @@ AI agents have the following limitations:
 - **Usage limits**: This capability might be subject to usage limits or capacity throttling.
 
 - **Dependence on data quality**: The effectiveness of the system relies on the quality and completeness of CRM data. 
-   - A more diverse range of conversations around different intents help create a more complete and accurate intent library.
-  - Write clear, specific instructions for evaluation questionnaires. Give guidance that’s direct and relevant to the context to help evaluators make accurate decisions.
+    - A more diverse range of conversations around different intents help create a more complete and accurate intent library.
+    - Write clear, specific instructions for evaluation questionnaires. Give guidance that’s direct and relevant to the context to help evaluators make accurate decisions.
 
 - **Customization requirements**: Users need to actively review the AI-generated intent library and knowledge articles to make sure of accuracy. Customization efforts, such as overrides and tweaks, are necessary to refine and align the output with business needs.
 
@@ -129,3 +127,4 @@ The AI agents generate intents and knowledge articles based on the data that alr
 ### Related information
 
 [Responsible AI FAQ for Copilot in Customer Service](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/implement-context)  
+[Overview of Customer Intent Agent](../administer/overview-customer-intent-agent.md)  

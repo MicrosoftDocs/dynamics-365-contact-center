@@ -85,11 +85,13 @@ You can use context variables from the conversation and configure your voice age
 
 1. Author your instructions with replacement slugs to consume the context variables. Within instructions, use the syntax `{@<variable name>}`, for example: “The customer’s name is `{@Customer_Name}`.”
 
+**Example**
+
 1. In your context variables, configure a variable like Customer_Name to capture the customer’s name.
 1. Set up your workstream with an agent from Copilot Studio, and add the intent agent to a queue.
 1. In the Copilot Studio agent conversation session, capture the customer’s name and set it into a global variable `Customer_Name`. This is handed off to the contact center when you escalate to the intent agent.
 1. In your intent instructions, insert the variable placeholder slug where appropriate. Example: The customer's name is {@Customer_Name}. Make sure to refer to the customer by name throughout the conversation.
-1. Make sure to follow best practices when authoring your instructions.
+1. Make sure to follow [best practices](manage-customer-intent-agent.md#how-to-write-clear-instructions) when authoring your instructions.
 
    > [!NOTE]
    > The intent agent can only read context variables. It can't set context variables.

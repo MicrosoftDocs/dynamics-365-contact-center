@@ -130,9 +130,9 @@ Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variable
 
 Enrichment Context lets Copilot agents use information collected before the intent is identified, so customers don’t have to repeat details. For example, a pre-chat survey can send data like contact info or account numbers to the Customer Intent Agent through the Global.EnrichmentContext parameter. This ensures key details are available at the beginning, helping with intent classification, interview flows, and fulfillment. By reducing repeated questions, Enrichment Context improves customer experience and speeds up issue resolution.
 
-Make sure you have [enabled Customer Intent Agent](manage-customer-intent-agent.md#enable-customer-intent-agent) and configured intent-based suggestions for Copilot agents.
+Make sure you have [enabled Customer Intent Agent](manage-customer-intent-agent.md#enable-customer-intent-agent) and [configured intent-based suggestions for Copilot agents](#connect-to-intent-based-suggestions).
 
-## How it works
+### How it works
 
 - For each new conversation, administrators can configure EnrichmentContext to pass pre-collected details into the Customer Intent Agent. 
 - This is done by setting the global parameter **Global.EnrichmentContext** in the Microsoft Copilot Studio bot. The payload includes key-value pairs with descriptions of each attribute. 

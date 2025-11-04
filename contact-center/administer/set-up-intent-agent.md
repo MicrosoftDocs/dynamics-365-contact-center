@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 11/03/2025
+ms.date: 11/04/2025
 ms.custom: bap-template
 ---
 
@@ -128,14 +128,14 @@ Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variable
 
 ## Configure variable enrichment from other sources
 
-The Enrichment Context feature enables Copilot agents to reuse information that has already been collected prior to the intent determination process. Instead of asking customers to repeat details, deterministic interview methods such as a pre-chat survey can pass attributes directly to the Customer Intent Agent through the global parameter Global.EnrichmentContext. This ensures that relevant customer data, such as contact information or account numbers, is available at the start of the interaction and can be applied immediately to support intent classification, interview flows, and fulfillment. By reducing the need for repeated questions, Enrichment Context improves the customer experience and helps agents resolve issues more efficiently.
+Enrichment Context lets Copilot agents use information collected before the intent is identified, so customers don’t have to repeat details. For example, a pre-chat survey can send data like contact info or account numbers to the Customer Intent Agent through the Global.EnrichmentContext parameter. This ensures key details are available at the beginning, helping with intent classification, interview flows, and fulfillment. By reducing repeated questions, Enrichment Context improves customer experience and speeds up issue resolution.
 
 Make sure you have [enabled Customer Intent Agent](manage-customer-intent-agent.md#enable-customer-intent-agent) and configured intent-based suggestions for Copilot agents.
 
 ## How it works
 
-- For each new conversation, administrators can configure the EnrichmentContext to pass pre-collected information into the Customer Intent Agent. 
-- This is done by setting the global parameter Global.EnrichmentContext in the MCS bot with a payload structure that contains key-value pairs and descriptions of the attributes. 
+- For each new conversation, administrators can configure EnrichmentContext to pass pre-collected details into the Customer Intent Agent. 
+- This is done by setting the global parameter **Global.EnrichmentContext** in the Microsoft Copilot Studio bot. The payload includes key-value pairs with descriptions of each attribute. 
 - For example, a book-ordering scenario might include details such as the book title and author: 
   {
     AdditionalInformation: [
@@ -152,22 +152,20 @@ Make sure you have [enabled Customer Intent Agent](manage-customer-intent-agent.
     ]
 }
 
-- When configured, the bot can use this pre-chat context at the start of the interaction, reducing the need to re-ask questions that have already been answered. 
-- This ensures that intent determination and fulfillment begin with richer context, helping the bot deliver more accurate and efficient responses. 
+- When configured, the bot can use this pre-chat context at the start of the interaction, avoiding repeated questions to the customer. 
+- This ensures intent determination and fulfillment begin with richer context, enabling more accurate and efficient responses. 
 
 Here's an example.
 
-One common example of using EnrichmentContext is with a pre-chat survey. By configuring deterministic survey inputs and integrating them with intent-based suggestions, you can avoid re-interviewing customers for the same details.
+A common use case for EnrichmentContext is integrating it with a pre-chat survey. This approach ensures customers aren’t asked for the same details twice.
 
 To configure EnrichmentContext with a pre-chat survey:
 
-1. Set up a pre-chat survey by following the steps in [Configure a preconversation survey](/dynamics365/customer-service/administer/configure-pre-chat-survey).
-1. Ensure global variables exist for each pre-chat survey question within your Microsoft Copilot Studio bot.
-1. Append the global variables to the Global.EnrichmentContext variable.
-    1. Validate that the question variables contain valid values and are in the correct format before passing them to the enrichment context. Make sure that each passed EnrichmentContext variable has some validation. In this case, there would be two different conditions for Global.PhoneNumber and Global.AccountNumber.
-    1. Test the configuration in your live chat widget to confirm that the pre-chat survey inputs are passed correctly and that the customer is not re-interviewed for the same information.
-
-
+1. [Configure a preconversation survey](/dynamics365/customer-service/administer/configure-pre-chat-survey).
+1. Make sure your Microsoft Copilot Studio bot has global variables for each survey question.
+1. Append the global variables to the **Global.EnrichmentContext** variable.
+    1. Validate that each variable contains correct values and is properly formatted before adding it to the enrichment context. Make sure that every EnrichmentContext variable includes proper validation. For example, apply separate validation rules for **Global.PhoneNumber** and **Global.AccountNumber**.
+    1. Test the live chat widget to make sure that pre-chat survey inputs are passed correctly and customers aren’t asked for the same information again.
 
 ## Updates to Customer Intent Agent
 

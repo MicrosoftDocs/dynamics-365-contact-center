@@ -1,16 +1,16 @@
 ---
-title: Set up voice agents to use intents (preview)
+title: Set up voice agents to use intents
 description: Learn how to configure intent-based suggestions for Copilot agents enabled for voice using Customer Intent Agent in Dynamics 365 Contant Center to automate and streamline your contact center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 08/08/2025
+ms.date: 11/07/2025
 ms.custom: bap-template
 ---
 
-# Set up voice agents to use intents (preview)
+# Set up voice agents to use intents
 
 Customer Intent Agent for voice uses generative AI to autonomously discover intents in your Dynamics 365 Contact Center instance. It analyzes past interactions between customer service representatives (service representatives or representatives) and customers to create an intent library that enhances dynamic conversations. Intent benefits self-service scenarios by enabling agents to quickly understand customer needs, guide conversations with follow-up questions, and provide tailored solutions in real time.
 
@@ -51,6 +51,19 @@ Perform the following steps in Copilot Service admin center.
 
 1. Save and close. The type of the agent changes to **Voice - AI Intents**.
 
+## Configure voice agents to use line of business
+
+Your intent agent might be set up to use multiple lines of businesses. If you are using lines of business, make sure that you’ve set the line of business in conversation context before the intent agent is added to the conversation. This sets the scope for intents and instructions that your intent agent follows during the rest of the conversation.
+
+To set the line of business during the conversation, make sure you set the context variable “va_LineOfBusiness” to the globally unique identifier of the corresponding line of business you want the intent agent to recognize. Make sure your Customer Intent Agent is on a queue and a Copilot agent is the first to answer the call. When escalating to the Customer Intent Agent, make sure your Copilot Agents sets a variable “va_LineOfBusiness” to the value of the target line of business.
+
+Learn about finding the unique ID of the line of business in [Discover line of business unique IDs](manage-customer-intent-agent.md#discover-line-of-business-unique-ids).
+
+:::image type="content" source="../media/context-variable-for-lob.png" alt-text="Screenshot of context variable va_LineOfBusiness configuration.":::
+
+> [!IMPORTANT]
+> If you’ve configured lines of business, but don't set the value during the conversation, the voice agent using intent falls back to the first line of business, ordered alphabetically, in your environment.
+
 ## Connect voice agents to voice queues or workstreams
 
 To use Customer Intent Agent for voice, you need to connect your **Voice - AI Intents** type agent to a queue or workstream.  If you connect the Customer Intent Agent for voice to a workstream, it handles all the traffic to that workstream. However, it can't set context, and you need to configure the routing logic appropriately. If you need granular control over routing logic, we recommended that you connect the Customer Intent Agent for voice to a queue as shown in the following diagram.  In this configuration, a separate Copilot agent acts as the workstream IVR agent, and then escalates calls to the Customer Intent Agent for voice in a particular queue for the required triggers.
@@ -63,6 +76,23 @@ Follow these steps to configure the IVR agent to escalate the calls to the Custo
 
 1. In the existing topic flow for your workstream Copilot IVR agent, where you want to use Customer Intent Agent for voice, save a variable (for example va_AgentTransfer=True) and call the transfer to agent action. Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variables).
 1. In the route-to-queue rules of the voice workstream, route to the queue with your Customer Intent Agent based on the **va_AgentTransfer** variable. The Customer Intent Agent is invoked, and if it can't resolve the customer issue, it escalates the call and triggers the queue routing again. When the call is routed the second time, make sure that you configure the rules to route to a queue with a service representative.
+
+## Configure instructions to use custom context for voice agents
+
+You can use context variables from the conversation and configure your voice agent to deliver a very dynamic and personalized experience. You can use variables in your intent agent instructions to do this. The key steps are as follows:
+
+1. Set any [context variables](/dynamics365/customer-service/administer/manage) you want to use prior to engaging the intent agent. For example, the global variables that are created in Copilot Studio are [passed to Dynamics 365 Contact Center](/microsoft-copilot-studio/advanced-hand-off#context-variables-available-upon-handoff) when a conversation is escalated.
+
+1. Author your instructions with replacement slugs to consume the context variables. Within instructions, usethe syntax {@<variable name>}, for example: “The customer’s name is {@Customer_Name}.”
+Example: use the customer’s name.
+1. In your context variables, configure a variable like Customer_Name to capture the customer’s name
+1. Set up your workstream with a Copilot Studio agent, and add the intent agent to a queue.
+1. During the Copilot agent conversation, capture the customer’s name and set it into a global variable Customer_Name. This is handed off to the contact center when you escalate to the intent agent.
+1. In your intent instructions, insert the variable placeholder slug where appropriate. Example: The customer's name is {@Customer_Name}. Make sure to refer to the customer by name 	throughout the conversation.
+1. Make sure to follow best practices when authoring your instructions.
+
+   > [!NOTE]
+   > The intent agent can only read context variables. It can't set context variables.
 
 ## General behaviors of Customer Intent Agent for voice
 
@@ -86,4 +116,4 @@ To recreate the IVR workflows, the voice agent needs to access the connectors th
 
 [Overview of Customer Intent Agent](overview-customer-intent-agent.md)  
 [Configure intent-based routing](/dynamics365/customer-service/administer/configure-intent-based-routing?context=/dynamics365/contact-center/context/administer-context)  
-[Configure intent-based suggestions for Copilot agents (preview)](set-up-intent-agent.md)  
+[Configure intent-based suggestions for Copilot agents](set-up-intent-agent.md)  

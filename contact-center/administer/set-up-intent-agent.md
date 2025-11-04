@@ -1,18 +1,16 @@
 ---
-title: Configure intent-based suggestions for Copilot agents (preview)
+title: Configure intent-based suggestions for Copilot agents
 description: Learn how to configure intent-based suggestions for Copilot agents using Customer Intent Agent to automate and streamline the contact center operations.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 08/29/2025
+ms.date: 11/04/2025
 ms.custom: bap-template
 ---
 
-# Configure intent-based suggestions for Copilot agents (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Configure intent-based suggestions for Copilot agents
 
 Customer Intent Agent discovers intent from historical data and maintains an up-to-date intent library, with attributes to support intent determination, interview, and fulfillment, leading to higher deflection rates.
 
@@ -20,9 +18,7 @@ Customer Intent Agent discovers intent from historical data and maintains an up-
 
 Customer Intent Agent uses the determined intent and interview responses to improve the quality of generated answers for both Copilot agents and service representatives. This article describes how you can configure Copilot agents with Customer Intent Agent to provide updated solutions for customer issues that come through chat and messaging channels.
 
-You can also set up Customer Intent Agent for voice agents that uses generative AI to autonomously discover intents in your contact center instance. Learn more in [Set up voice agents to use intents (preview)](set-up-voice-agents-to-use-intents.md#set-up-voice-agents-to-use-intents-preview).
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+You can also set up Customer Intent Agent for voice agents that uses generative AI to autonomously discover intents in your contact center instance. Learn more in [Set up voice agents to use intents](set-up-voice-agents-to-use-intents.md).
 
 ## Prerequisites
 
@@ -46,11 +42,11 @@ Before you proceed, make sure you:
 
 ## Set up Copilot agents for intent management
 
-1. In Copilot Service admin center, navigate to the **Customer Intent Agent (preview)** page > **Intent-based suggestions** section.
+1. In Copilot Service admin center, navigate to the **Customer Intent Agent** page > **Intent-based suggestions** section.
 1. Select **Enable for chatbots** and then select **Manage**. The **AI Agents** page appears.
 1. Select the Copilot agent connected to your contact center environment.
-1. Select **Add intent-based features**, which takes you to **Manage component collections (preview)** in Microsoft Copilot Studio.
-    1. In **Manage component collections (preview)**, search for and select **Intent-based suggestions (preview)**.
+1. Select **Add intent-based features**, which takes you to **Manage component collections** in Microsoft Copilot Studio.
+    1. In **Manage component collections**, search for and select **Intent-based suggestions**.
     1. Select **Add agent**. You can also disconnect a Copilot agent to stop agent transfers for that Copilot agent by selecting **Remove from agent**.
     1. Select **Publish**. A series of Intent-based suggestions topics are added to your agent.
 
@@ -84,6 +80,24 @@ In your existing topic flow, where you want to use Customer Intent Agent, add th
 
 :::image type="content" source="../media/customer-intent-agent-topic.png" alt-text="Screenshot of intent-based suggestions topic flow.":::
 
+## Connect Customer Intent Agent to Copilot Studio knowledge
+
+1. In Copilot Studio, select your agent, and then select **Add a topic** and provide a name for the topic as required.
+1. On the **Trigger** topic, select the ellipsis, and then select **A custom client event occurs**.
+1. Select **Edit** for **A custom client event occurs**. 
+1. On the **On Event Activity properties** dialog that appears, enter the **Event name** as **OnrequestKnowledge** and save it.
+1. Add another node and select **Advanced** > **Generative answers**. The **Create generative answers** node is created.
+1. In the **Create generative answers** node: 
+    1. For the **Input** field, select the ellipsis. 
+        1. On the **Select a variable** dialog, select **System** and then select **Activity.text**.
+    1. Select **Edit** for Data sources.
+        1. In **Knowledge sources**, make sure that the **Search only selected sources** option isn't set to On.
+        1. On the **Create generative answers properties** dialog, select **Advanced**.
+        1. For the **Save bot response as** field, select **Select a variable** and then create a new variable.
+        1. In **Variable properties**, for **Variable name**, enter **Answer**.
+1. In the **Condition**node, set **Answer** to **is not Blank**.
+1. Add another node and then select **Topic management** > **End all topics**.
+
 ## Connect to your knowledge base
 
 Connect the knowledge articles in your Dynamics 365 instance to your Copilot agent. Learn more in [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot?source=recommendations).
@@ -92,11 +106,11 @@ Connect the knowledge articles in your Dynamics 365 instance to your Copilot age
 
 |Variable |Mapped system topic| Description|
 |---------|---------|---------|
-|Global.IntentRedirectOnResolutionConfirmation|  EndOfConversation |  Check if the resolution fixed the issue. |
-|Global.IntentRedirectOnUnknownIntent    |  Escalate |  Hand off as no intent is found.|
-|Global.IntentRedirectOnUnableToProceed |Escalate |  Hand off when the conversation is stuck. |
-|Global.IntentRedirectOnEscalate    | Escalate  | Hand off to a representative.|
-|Global.IntentRedirectOnError |  OnError |  Hand off due to service error.|
+|Global.IntentRedirectOnResolutionConfirmation|  EndOfConversation |  Handoff happens when the customer confirms that their issue has been resolved. |
+|Global.IntentRedirectOnUnknownIntent    |  Escalate |  Handoff happens when the customer doesn't provide an intent after multiple retries.|
+|Global.IntentRedirectOnUnableToProceed |Escalate |  Handoff happens when the customer's issue isn't resolved. Common reasons include insufficient information to answer the customer's question, lack of access to the necessary tools to perform the requested action, or uncooperative behavior from the customer.|
+|Global.IntentRedirectOnEscalate    | Escalate  | Handoff happens when the customer explicitly states that they want to escalate or talk to a representative.|
+|Global.IntentRedirectOnError |  OnError | Handoff occurs when there’s a service error. The error could be an issue with the service itself, or an error while querying knowledge or performing an action.|
 
 > [!NOTE]
 > If the Copilot agent doesn't have any of the mapped variables, you can [override the default variable](#override-default-variable).
@@ -111,6 +125,47 @@ To override any of the variables in Copilot Studio for the intent-based suggesti
 1. Save and publish the agent.
 
 Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variables?tabs=webApp).
+
+## Configure variable enrichment from other sources
+
+Enrichment Context lets Copilot agents use information collected before the intent is identified, so customers don’t have to repeat details. For example, a pre-chat survey can send data like contact info or account numbers to the Customer Intent Agent through the Global.EnrichmentContext parameter. This ensures key details are available at the beginning, helping with intent classification, interview flows, and fulfillment. By reducing repeated questions, Enrichment Context improves customer experience and speeds up issue resolution.
+
+Make sure you have [enabled Customer Intent Agent](manage-customer-intent-agent.md#enable-customer-intent-agent) and [configured intent-based suggestions for Copilot agents](#connect-to-intent-based-suggestions).
+
+### How it works
+
+- For each new conversation, administrators can configure EnrichmentContext to pass pre-collected details into the Customer Intent Agent. 
+- This is done by setting the global parameter **Global.EnrichmentContext** in the Microsoft Copilot Studio bot. The payload includes key-value pairs with descriptions of each attribute. 
+- For example, a book-ordering scenario might include details such as the book title and author: 
+  {
+    AdditionalInformation: [
+        {
+            Key: "Book Title",
+            Value: Global.BookTitle,
+            KeyDescription: "Information about the desired book order"
+        },
+        {
+            Key: "Book Author",
+            Value: Global.BookAuthor,
+            KeyDescription: "Information about the desired book author"
+        }                
+    ]
+}
+
+- When configured, the bot can use this pre-chat context at the start of the interaction, avoiding repeated questions to the customer. 
+- This ensures intent determination and fulfillment begin with richer context, enabling more accurate and efficient responses. 
+
+Here's an example.
+
+A common use case for EnrichmentContext is integrating it with a pre-chat survey. This approach ensures customers aren’t asked for the same details twice.
+
+To configure EnrichmentContext with a pre-chat survey:
+
+1. [Configure a preconversation survey](/dynamics365/customer-service/administer/configure-pre-chat-survey).
+1. Make sure your Microsoft Copilot Studio bot has global variables for each survey question.
+1. Append the global variables to the **Global.EnrichmentContext** variable.
+    1. Validate that each variable contains correct values and is properly formatted before adding it to the enrichment context. Make sure that every EnrichmentContext variable includes proper validation. For example, apply separate validation rules for **Global.PhoneNumber** and **Global.AccountNumber**.
+    1. Test the live chat widget to make sure that pre-chat survey inputs are passed correctly and customers aren’t asked for the same information again.
 
 ## Updates to Customer Intent Agent
 

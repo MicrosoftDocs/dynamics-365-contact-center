@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 08/28/2025
+ms.date: 11/04/2025
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template
@@ -198,27 +198,51 @@ Connectors let systems work together, transfer data, and allow AI agents to auto
 1. If you select **For specific intents**, you need to map the custom connector as a solution as explained in the section that follows.
 1. Select **Save**.
 
-### Map a connector to an intent
+### Map a tool to an intent
+
+Tools help systems connect and enable data flow or actions. Customer Intent Agent currently supports custom connectors as tools. When you specify a connector to be used for specific intents, you can add the different actions within that connector to be a tool Customer Intent Agent uses to resolve those intents.
 
 1. Select **Manage** for **Manage intents** on the **Customer Intent Agent** page.
-
-1. Select the specific intent, and on the intent page, in the **Solution (Optional)** section, select the **Connectors** option, and then select **Add**.
-1. On the **Edit solution** page, search and select a connector for the intent. The application displays connectors created for use with specific intents only.
+1. Select the specific intent, and on the intent page, in the **Resource (Optional)** section, select the **Tools** option, and then select **Add**.
+1. On the **Add a resource** page, search and select a connector for the intent. The application displays connectors created for use with specific intents only.
 1. Select **Save and close**.
 
 > [!NOTE]
 > - To map a connector to an intent, the connector must have one action only. If your connector has multiple actions, you can't run any actions for that intent.
 > - After you add or remove a connector, changes can take up to 15 minutes to appear in the Customer Intent Agent.
 
-You can edit or delete a connector after you select the required connector on the **Manage custom connectors** page. 
+You can edit or delete a connector after you select the required connector on the **Manage custom connectors** page. You can also view which intents are using the connector when you edit the connector.
 
-## Add knowledge articles, custom AI agent to an intent
+## Configure knowledge sources for an intent
 
-1. Select the intent for which you want to add knowledge articles and custom AI agent.
-1. On the `<intent_name>` page, scroll to the bottom and in **Solution (Optional)**, select **Dynamics 365 knowledge articles**, and then select **Add**. A list of published knowledge articles appears.
+### Map an intent to knowledge articles
+
+You can add knowledge articles to an intent directly from the intent page, so that users see articles specified for the intent only. 
+
+1. Select the intent for which you want to add knowledge articles.
+1. On the `<intent_name>` page, scroll to the bottom and in **Resource (Optional)**, select **Dynamics 365 knowledge articles**, and then select **Add**. A list of published knowledge articles appears.
 1. Select the articles pertinent to the intent and save and close.
-1. Select **Custom AI agent**, and then select **Add**.
-1. In the list of agents that appears, select an AI agent and save and close.
+
+### Specify filters for Dynamics 365 knowledge articles for Customer Intent Agent
+
+You can specify knowledge sources for intents by providing specific filters.
+
+1. On the **Customer Intent Agent** page, **Instructions and solutions** section, select **Manage** for **Knowledge sources for intents**.
+1. On the **Knowledge source for Customer Intent Agent** page, select a knowledge source.
+1. Select **Dynamics 365 knowledge**, then select **Manage filters** to specify your filters.
+   1. On the **Manage knowledge filters for intents** dialog, add or remove the filters, as required. The filters you specify on this dialog, apply only to the Dynamics 365 knowledge articles for intent management and intent-based features.
+   1. Select **Save**.
+
+You can specify filters for representatives as well. Learn more in [Set up filters](copilot-enable-help-pane.md#set-up-filters).
+
+### Use knowledge from Copilot Studio
+
+1. On the **Customer Intent Agent** page, **Instructions and solutions** section, select **Manage** for **Knowledge sources for intents**.
+1. On the **Knowledge source for Customer Intent Agent** page, select **Copilot Studio knowledge**.
+1. Select **Save**.
+
+You should have already set up knowledge for your agent in Copilot Studio before you enable this option. Learn more in [Connect Customer Intent Agent to Copilot Studio knowledge](set-up-intent-agent.md#connect-customer-intent-agent-to-copilot-studio-knowledge).
+
 
 ### Related information
 

@@ -1,5 +1,5 @@
 ---
-title: Manage Ongoing conversations
+title: Manage ongoing conversations
 description: Learn how to resolve customer queries faster with the All Ongoing Conversations view. Perform bulk actions, notify representatives, and track updates.
 author: Soumyasd27
 ms.author: sdas
@@ -10,9 +10,9 @@ ms.date: 11/04/2025
 ms.custom: bap-template
 ---
 
-# Manage Ongoing conversations
+# Manage ongoing conversations
 
-The Ongoing Conversations view helps supervisors monitor, manage, and optimize customer conversations across digital messaging, voice, and records channels. Use the view to filter conversations, run bulk actions, and work with your team. This article shows how to use the view to resolve queries quickly, notify representatives, and track updates.
+The Ongoing Conversations view helps supervisors monitor, manage, and optimize customer conversations across digital messaging, voice, and record channels. Use the view to filter conversations, run bulk actions, and work with your team. This article shows how to use the view to resolve queries quickly, notify representatives, and track updates.
 
 In the site map of Copilot Service workspace, go to **Conversations**. The **All ongoing conversations** view appears by default.
 
@@ -23,7 +23,7 @@ In the site map of Copilot Service workspace, go to **Conversations**. The **All
 - **Advanced filtering and saved views**: Filter conversations by agent, queue, channel, or sentiment, and save or share custom views to enhance team coordination.
 - **Bulk management**: Efficiently manage large volumes of conversations with multi-conversation actions for persistent interactions.
 
-## Prerequisites:
+## Prerequisites
 
 - You have the Omnichannel supervisor role. 
 

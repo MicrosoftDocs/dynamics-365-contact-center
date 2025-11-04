@@ -1,5 +1,5 @@
 ---
-title: Manage Customer Intent Agent (Preview)
+title: Manage Customer Intent Agent
 description: Learn how to manage Customer Intent Agent in Dynamics 365. Enable intent discovery, manage intent groups, and improve customer service efficiency.
 author: neeranelli
 ms.author: nenellim
@@ -15,15 +15,11 @@ ms.custom:
   - ai-seo-date:03/25/2025
 ---
 
-# Manage Customer Intent Agent (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Manage Customer Intent Agent
 
 Customer Intent Agent uses generative AI to autonomously discover intents from your customer service instance, analyzing past interactions to create an intent library that enhances dynamic conversations. The customer service representatives (service representatives or representatives) use the information to quickly understand customer needs, guide conversations with follow-up questions, and provide tailored solutions in real time.
 
 The AI agent presents a curated list of questions and suggested solutions in the chat response box, which enhances efficiency by reducing manual typing. For self-service, the agent generates relevant follow-up questions and uses the information to query the knowledge source, leading to higher deflection rates and allowing representatives to focus on cases that require manual intervention.  
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Use the information in this article to manage the intents in Copilot Service admin center.
 
@@ -35,11 +31,12 @@ Use the information in this article to manage the intents in Copilot Service adm
 ## Enable Customer Intent Agent
 
 1. In the site map of Copilot Service admin center, select **Intent** under **Customer support**.
-1. On the **Customer Intent Agent (preview)** page that appears, enable the **Turn on Customer Intent Agent** toggle.
+1. On the **Customer Intent Agent** page that appears, enable the **Turn on Customer Intent Agent** toggle.
 
 ## Manage lines of business
 
 A line of business can be a service, product, product category, or the way your company organizes and supports its business activities. It's used as a partition that represents a specific set of intents and intent groups in a large enterprise. You need to add lines of business if you want to enable intent-based routing for a selective set of workstreams and queues. Otherwise, intent-based routing is enabled for the whole organization.
+
 The following entities are associated with a line of business:
 
 - Intents and intent groups
@@ -53,6 +50,9 @@ The following entities are associated with a line of business:
 1. On the **Manage Lines of business** page, select **Add Line of business**.
 1. Enter the name and description that indicates the line of business.
 1. Select **Add**. The line of business is listed in the **Lines of business** table.
+
+### Discover line of business unique ID
+
 
 ### Create rules for cases and conversations
 
@@ -75,7 +75,7 @@ You can enable Customer Intent Agent to analyze past conversations within the Cu
 
 You need to run the AI model on data sources like conversations to identify intent groups and related intents.
 
-1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage intent discovery setup**.
+1. On the **Customer Intent Agent** page, select **Manage** for **Manage intent discovery setup**.
 
 1. On the **Manage intent discovery setup** page, select **Add intent discovery setting**.
 1. In **Intent discovery settings**, enter the  details:
@@ -95,7 +95,7 @@ After the first run of the intent discovery, the intent groups are listed on the
 
 ## Manage intents
 
-1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage intents**.
+1. On the **Customer Intent Agent** page, select **Manage** for **Manage intents**.
 
 1. Select **New**, and enter intent details as follows:
    - **Name**: Enter a name for the intent. The name should be intuitive and meet your business requirement.
@@ -115,7 +115,7 @@ You can manage the intents to be used in AI agent in bulk. On the **Manage inten
 
 You can logically organize the intents into intent groups. The intent group represents the business expertise that's needed to solve the intents belonging to the group. The intent groups that the AI model identifies are displayed on the **All intent groups** page. You can manage the intent groups by reviewing, approving, or updating the intents in them.
 
-1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage intent groups and intents**. The **All intent groups** page displays the list of intents that the AI model discovered. If you create a custom intent group, the intent source shows as **Admin edited**. The **Intents** column displays the number of intents in each intent group.
+1. On the **Customer Intent Agent** page, select **Manage** for **Manage intent groups and intents**. The **All intent groups** page displays the list of intents that the AI model discovered. If you create a custom intent group, the intent source shows as **Admin edited**. The **Intents** column displays the number of intents in each intent group.
 
    :::image type="content" source="../media/list-of-intent-groups.png" alt-text="Screenshot of intent groups list." lightbox="../media/list-of-intent-groups.png":::
 
@@ -149,9 +149,9 @@ Set up instructions to streamline Customer Intent Agent behavior. You can add in
 
 To add instructions, complete the following steps:
 
-1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage instructions (optional)**.
+1. On the **Customer Intent Agent** page, select **Manage** for **Manage instructions (optional)**.
 
-1. On the **Manage instructions (preview)** page, select a line of business in **Select line of business**. If you don't specify a line of business, Customer Intent Agent follows the default instructions for the organization.
+1. On the **Manage instructions** page, select a line of business in **Select line of business**. If you don't specify a line of business, Customer Intent Agent follows the default instructions for the organization.
 1. In the **Line of business instructions (optional)** section, select **Add**.
 1. On the **Add instructions** dialog, add the instructions for the line of business. You can enter up to 4,000 characters. Expand **View example instructions** to view sample instructions.
 1. Select **Save**. The instructions are available immediately for use by Customer Intent Agent.
@@ -184,9 +184,9 @@ You can edit or delete instructions for a line of business, intent groups, or in
 
 Connectors let systems work together, transfer data, and allow AI agents to automatically handle tasks for issue resolution.
 
-1. On the **Customer Intent Agent (preview)** page, select **Manage** for **Manage connectors for AI agents (optional)**.
+1. On the **Customer Intent Agent** page, select **Manage** for **Manage connectors for AI agents (optional)**.
 
-1. On the **Manage custom connectors (preview)** page, select **Add connector**. Learn how to add a connector in [Create a custom connector](/connectors/custom-connectors/define-blank).
+1. On the **Manage custom connectors** page, select **Add connector**. Learn how to add a connector in [Create a custom connector](/connectors/custom-connectors/define-blank).
 1. On the **Select a connector** dialog, search and select a connector. You can add up to 30 connectors.
 1. Select **Next**.
 1. On the **Set up the connector** dialog, select a connection from the **Connection** dropdown. You can also create a new connection in Power Platform. Learn more in [Add connection references to a solution](/power-apps/maker/data-platform/create-connection-reference#add-connection-references-to-a-solution).
@@ -200,7 +200,7 @@ Connectors let systems work together, transfer data, and allow AI agents to auto
 
 ### Map a connector to an intent
 
-1. Select **Manage** for **Manage intents** on the **Customer Intent Agent (preview)** page.
+1. Select **Manage** for **Manage intents** on the **Customer Intent Agent** page.
 
 1. Select the specific intent, and on the intent page, in the **Solution (Optional)** section, select the **Connectors** option, and then select **Add**.
 1. On the **Edit solution** page, search and select a connector for the intent. The application displays connectors created for use with specific intents only.
@@ -210,8 +210,7 @@ Connectors let systems work together, transfer data, and allow AI agents to auto
 > - To map a connector to an intent, the connector must have one action only. If your connector has multiple actions, you can't run any actions for that intent.
 > - After you add or remove a connector, changes can take up to 15 minutes to appear in the Customer Intent Agent.
 
-You can edit or delete a connector after you select the required connector on the **Manage custom connectors (preview)** page. 
-
+You can edit or delete a connector after you select the required connector on the **Manage custom connectors** page. 
 
 ## Add knowledge articles, custom AI agent to an intent
 

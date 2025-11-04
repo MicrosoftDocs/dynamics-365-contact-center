@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 11/04/2025
+ms.date: 11/07/2025
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template
@@ -51,8 +51,11 @@ The following entities are associated with a line of business:
 1. Enter the name and description that indicates the line of business.
 1. Select **Add**. The line of business is listed in the **Lines of business** table.
 
-### Discover line of business unique ID
+### Discover line of business unique IDs
 
+You might need to find the unique ID for your line of business when building use cases for your Customer Intent Agent. For example, you might want to set the line of business to integrate a [Copilot voice agent](set-up-voice-agents-to-use-intents.md) or [Copilot agent](set-up-intent-agent.md).
+
+You can find the unique IDs for your line of business by using OData queries on the entity msdyn_intentfamilies table and finding the msdyn_intentfamilyid field. For example, https://[Organization domain]/api/data/v9.2/msdyn_intentfamilies?$select=msdyn_intentfamilyid,msdyn_name.
 
 ### Create rules for cases and conversations
 
@@ -242,7 +245,6 @@ You can specify filters for representatives as well. Learn more in [Set up filte
 1. Select **Save**.
 
 You should have already set up knowledge for your agent in Copilot Studio before you enable this option. Learn more in [Connect Customer Intent Agent to Copilot Studio knowledge](set-up-intent-agent.md#connect-customer-intent-agent-to-copilot-studio-knowledge).
-
 
 ### Related information
 

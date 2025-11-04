@@ -1,5 +1,5 @@
 ---
-title: Configure feedback surveys using Copilot Studio (preview)
+title: Configure feedback surveys using Copilot Studio
 description: Learn how to configure surveys in Dynamics 365 Contact Center using survey agents in Copilot Studio.
 author: neeranelli
 ms.author: nenellim
@@ -10,16 +10,11 @@ ms.date: 08/01/2025
 ms.custom: bap-template
 ---
 
-# Configure feedback surveys using Copilot Studio (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Configure feedback surveys using Copilot Studio
 
 You can create and manage surveys that go out to the customers after a call or conversation ends. When you create a survey in Copilot Service admin center, the application automatically provisions an AI agent (agent) survey that can be used to collect customer feedback. Contact centers can improve their quality of service based on the survey responses.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 > [!NOTE]
-> - The survey agent is generally available for the voice channel and in preview for all other channels.
 > - When you copy an environment, while the survey agents are copied, they won't work as expected in the target environment. We recommend that you create new survey agents in the target environment.
 > - Copilot Studio bot is renamed as Copilot agent (agent or AI agent). Human agent is now renamed as customer service representative (service representative or representative). You might come across references to the old and new terms while we update the product UI, documentation, and training content.
 
@@ -45,7 +40,7 @@ With survey agents, you can:
 
 ## Create a survey
 
-1. In the site map of Copilot Service admin center, go to **Customer settings** in **Customer Support**, and select **Manage** for **Customer feedback (preview)**.
+1. In the site map of Copilot Service admin center, go to **Customer settings** in **Customer Support**, and select **Manage** for **Customer feedback**.
 1. On the **Customer feedback (preview)** page, select **New**.
 1. On the **Add new customer feedback survey** wizard, select one of the following templates, and then select **Next**:
     - **Customer Satisfaction (CSAT) Survey**: Use to ask questions, such as, “On a scale of 1-5, how would you rate your overall satisfaction with the service you received?”
@@ -58,7 +53,7 @@ With survey agents, you can:
     - Select the **Enable for Voice Channels** toggle if you want to use the survey for voice conversations.
 1. Select **Next**, and on the page that appears, review your choices.
 1. Select **Save survey**. The **Survey Created** page displays the summary and link to the survey where it's hosted. The application creates a survey agent with the same name as the survey and is hosted at the same link.
-1. Select **Close**. The survey is listed on the **Customer feedback (preview)** page and its status displays as **In Progress**.
+1. Select **Close**. The survey is listed on the **Customer feedback** page and its status displays as **In Progress**.
 
 ### Complete the configuration in Copilot Studio
 
@@ -66,7 +61,7 @@ After you create the survey in the admin center, it needs to be published. If yo
 
 1. Select the survey that you created. The survey opens in Copilot Studio page on a new tab. 
 1. Update the survey to suit your business needs. 
-1. Select **Publish**. After a couple of minutes, the survey status is updated as **Ready** on the Copilot Service admin center **Customer feedback (preview)** page. For any publishing issues, see the [troubleshooting](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/error-in-conversation-start-topic
+1. Select **Publish**. After a couple of minutes, the survey status is updated as **Ready** on the Copilot Service admin center **Customer feedback** page. For any publishing issues, see the [troubleshooting](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/error-in-conversation-start-topic
 ) article.
 
 ### Verify the Dataverse connection
@@ -134,9 +129,9 @@ Multilingual survey agents work only when you set up an IVR agent that identifie
 
 ### Manage the surveys
 
-The surveys that you create using the **Customer feedback (preview)** option only appear on the **Customer feedback (preview)** page in Copilot Service admin center. You can't manage surveys created using other methods, such as Customer Voice.
+The surveys that you create using the **Customer feedback** option only appear on the **Customer feedback** page in Copilot Service admin center. You can't manage surveys created using other methods, such as Customer Voice.
 
-You can manage your surveys on the **Customer feedback (preview)** page as follows:
+You can manage your surveys on the **Customer feedback** page as follows:
 
 - **Edit**: Select a survey, and then select **Edit**. You can edit the survey name only.
 - **Demo link**: Select a link to preview the survey and see how it appears in runtime.
@@ -202,7 +197,7 @@ You can host surveys on a link other than the default one.
 ## Enable the post-conversation survey for digital messaging channels
 
 1. Perform the steps 1 through 3 in [Configure the post-conversation survey](/dynamics365/customer-service/administer/configure-post-conversation-survey#configure-the-post-conversation-survey).
-1. Select **Powered by Microsoft Copilot Studio (preview)**. Select a survey from the list. Only those surveys that you create using the customer feedback option and in published state are displayed for you to select.
+1. Select **Powered by Microsoft Copilot Studio**. Select a survey from the list. Only those surveys that you create using the customer feedback option and in published state are displayed for you to select.
 1. Perform the rest of the steps in **Configure the post-conversation survey**.
 
 ## Enable the post-call survey for the voice channel

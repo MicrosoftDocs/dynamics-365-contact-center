@@ -24,9 +24,6 @@ Customer Intent Agent for voice uses generative AI to autonomously discover inte
   > You must share the connection for the custom connector with the following App ID:`d3e4eed9-fdab-4c55-a667-e4d1ffc8bb85`.
 - [New Copilot agents](/dynamics365/customer-service/administer/manage-your-bots?context=/dynamics365/contact-center/context/administer-context) are enabled for voice and connected to your contact center environment.
 
-> [!NOTE]
-> Customer Intent Agent for voice functions with the default line of business only. If you configure other lines of business, Customer Intent Agent for voice won't work.
-
 ## How it works
 
 - An administrator sets up intent, uses historical data to build the intent library, and enables the library for Copilot agents.

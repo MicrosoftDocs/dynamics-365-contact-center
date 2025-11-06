@@ -18,11 +18,6 @@ ms.custom:
 
 Integrate your existing Microsoft Teams Phone with Dynamics 365 Contact Center to simplify your voice call configuration.
 
-The high-level process to configure the Teams Phone is as follows:
-
-1. Verify prerequisites.
-1. Make sure you have the appropriate licenses for configuring the feature and for customer service representatives (service representatives or representatives) to handle calls effectively.
-
 ## Prerequisites
 
 - Dynamics 365 Contact Center or Dynamics 365 Customer Service premium license with the [voice channel provisioned](../implement/provision-channels.md#set-up-channels) and [configured](/dynamics365/customer-service/administer/voice-channel-install). An Azure Communication Services resource is provisioned when you provision the voice channel.

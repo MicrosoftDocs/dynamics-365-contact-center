@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to
 ms.collection:
-ms.date: 11/04/2025
+ms.date: 11/07/2025
 ms.custom: bap-template
 ---
 
@@ -116,22 +116,23 @@ Make sure you have [enabled Customer Intent Agent](manage-customer-intent-agent.
 - This is done by setting the global parameter **Global.EnrichmentContext** in the Microsoft Copilot Studio bot. The payload includes key-value pairs with descriptions of each attribute. 
 - For example, a book-ordering scenario might include details such as the book title and author:
 
-``
-  {
-    AdditionalInformation: [
-        {
-            Key: "Book Title",
-            Value: Global.BookTitle,
-            KeyDescription: "Information about the desired book order"
-        },
-        {
-            Key: "Book Author",
-            Value: Global.BookAuthor,
-            KeyDescription: "Information about the desired book author"
-        }                
-    ]
-} 
-``
+    ``
+      {
+        AdditionalInformation: [
+            {
+                Key: "Book Title",
+                Value: Global.BookTitle,
+                KeyDescription: "Information about the desired book order"
+            },
+            {
+                Key: "Book Author",
+                Value: Global.BookAuthor,
+                KeyDescription: "Information about the desired book author"
+            }                
+        ]
+    }
+    
+    ``
 
 - When configured, the bot can use this pre-chat context at the start of the interaction, avoiding repeated questions to the customer. 
 - This ensures intent determination and fulfillment begin with richer context, enabling more accurate and efficient responses. 

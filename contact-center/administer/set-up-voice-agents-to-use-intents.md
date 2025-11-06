@@ -1,6 +1,6 @@
 ---
 title: Set up voice agents to use intents
-description: Learn how to configure intent-based suggestions for Copilot agents enabled for voice using Customer Intent Agent in Dynamics 365 Contant Center to automate and streamline your contact center.
+description: Learn how to configure intent-based suggestions for Copilot agents enabled for voice using Customer Intent Agent in Dynamics 365 Contact Center to automate and streamline your contact center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim

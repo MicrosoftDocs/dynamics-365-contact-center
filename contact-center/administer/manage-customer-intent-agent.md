@@ -170,7 +170,7 @@ To add instructions, complete the following steps:
 
 You can edit or delete instructions for a line of business, intent groups, or intents using the **Edit** and **Delete** options in the instructions section of the corresponding pages.
 
-### Use channel-specific, self-service or assisted-service instructions
+### Use channel-specific, self-service, or assisted-service instructions
 
 Tag instructions with specific syntax to apply them in certain channels, or for self-service (unsupervised) or assisted-service (supervised) scenarios. Tags work for organizational, intent group, and intent instructions.
 

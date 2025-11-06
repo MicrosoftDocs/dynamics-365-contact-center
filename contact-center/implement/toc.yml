@@ -80,30 +80,30 @@
         href: /dynamics365/guidance/reference-architectures/dynamics-365-customer-service-copilot-architecture?context=/dynamics365/contact-center/context/implement-context
       - name: Known issues in Customer Service and Dynamics 365 Contact Center
         href: https://go.microsoft.com/fwlink/p/?linkid=2165393
-      - name: Responsible AI
-        items:
-        - name: Overview
-          href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/implement-context
-        - name: Responsible AI FAQ for AI Agents
-          href: faq-rai-ai-agents.md
-        - name: Responsible AI FAQ for Copilot in Customer Service
-          href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/implement-context
-        - name: Responsible AI FAQs for NLUs in AI agents
+    - name: Responsible AI
+      items:
+      - name: Overview
+        href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/implement-context
+      - name: Responsible AI FAQ for AI Agents
+        href: faq-rai-ai-agents.md
+      - name: Responsible AI FAQ for Copilot in Customer Service
+        href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/implement-context
+      - name: Responsible AI FAQs for NLUs in AI agents
           href: natural-language-ai-faq.md
         - name: Constrained speech recognition
           items:
           - name: Transparency note
             href: transparency-note.md
-      - name: Resources
-        items:
-        - name: Dynamics 365 reference architectures
-          href: /dynamics365/guidance/reference-architectures/
-        - name: Support
-          href: /dynamics365/get-started/support/
-        - name: Blog
-          href: https://cloudblogs.microsoft.com/dynamics365
-        - name: Community
-          href: https://community.dynamics.com/
+    - name: Resources
+      items:
+      - name: Dynamics 365 reference architectures
+        href: /dynamics365/guidance/reference-architectures/
+      - name: Support
+        href: /dynamics365/get-started/support/
+      - name: Blog
+        href: https://cloudblogs.microsoft.com/dynamics365
+      - name: Community
+        href: https://community.dynamics.com/
     - name: Administer Dynamics 365 Contact Center
       href: ../administer/cc-admin-center.md
     - name: Manage Dynamics 365 Contact Center

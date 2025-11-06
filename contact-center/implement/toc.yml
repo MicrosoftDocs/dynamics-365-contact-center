@@ -89,11 +89,11 @@
       - name: Responsible AI FAQ for Copilot in Customer Service
         href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/implement-context
       - name: Responsible AI FAQs for NLUs in AI agents
-          href: natural-language-ai-faq.md
-        - name: Constrained speech recognition
-          items:
-          - name: Transparency note
-            href: transparency-note.md
+        href: natural-language-ai-faq.md
+      - name: Constrained speech recognition
+        items:
+        - name: Transparency note
+          href: transparency-note.md
     - name: Resources
       items:
       - name: Dynamics 365 reference architectures

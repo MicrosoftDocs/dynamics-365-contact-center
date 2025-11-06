@@ -158,6 +158,8 @@
         href: /dynamics365/customer-service/develop/reference/about-entity-reference?context=/dynamics365/contact-center/context/extend-context
       - name: Session closure reasons
         href: closure-reasons-descriptions.md
+      - name: Known issues in Customer Service and Dynamics 365 Contact Center
+        href: https://go.microsoft.com/fwlink/p/?linkid=2165393  
     - name: Responsible AI
       items:
       - name: Overview

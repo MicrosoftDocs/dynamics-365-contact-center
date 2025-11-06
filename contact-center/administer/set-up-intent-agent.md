@@ -131,7 +131,6 @@ Make sure you have [enabled Customer Intent Agent](manage-customer-intent-agent.
             }                
         ]
     }
-    
     ``
 
 - When configured, the bot can use this pre-chat context at the start of the interaction, avoiding repeated questions to the customer. 

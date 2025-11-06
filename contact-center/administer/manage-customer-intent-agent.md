@@ -161,14 +161,28 @@ To add instructions, complete the following steps:
 1. In the **Instructions for intent groups and intents** section, select the following options to create instructions for intent groups and intents.
    - **Manage Intent groups**: In the list of intent groups page, select an intent group.
        1. On the `<intent_group_name>` page, in **Intent group instructions (optional)** , select **Add**. The **Add instructions** dialog appears.
-       1. Add instructions for the intent group. You can enter up to 2,000 characters.
+       1. Add instructions for the intent group. You can enter up to 4,000 characters.
        1. Save and close.
    - **Manage intents**: In the list of intents page, select an intent.
        1. On the `<intent_name>` page, in **Intent instructions (optional)** , select **Add**. The **Add instructions** dialog appears.
-       1. Add instructions for the intent. You can enter up to 2,000 characters.
+       1. Add instructions for the intent. You can enter up to 4,000 characters.
        1. Save and close.
 
 You can edit or delete instructions for a line of business, intent groups, or intents using the **Edit** and **Delete** options in the instructions section of the corresponding pages.
+
+### Use channel-specific, self-service or assisted-service instructions
+
+Tag instructions with specific syntax to apply them in certain channels, or for self-service (unsupervised) or assisted-service (supervised) scenarios. This tag works for organizational, intent group, and intent instructions.
+
+
+|Tag |Definition |
+|---------|---------|
+|{{text}} instruction 1 {{/text}}     |    Instruction applied to text channel for both self-service and assisted service.     |
+|{{voice}} instruction 2 {{/voice}}    |  Instruction applied to voice channel for both self-service and assisted service.       |
+|{{email}} instruction 3 {{/email}}     |  Instruction applied to email channel for both self-service and assisted service.       |
+|{{supervised}} instruction 4 {{/supervised}}     |   Instruction applied to all channels for self-service only.     |
+|{{unsupervised}} instruction 5 {{/unsupervised}}    |     Instruction applied to all channels for assisted service only.    |
+
 
 ### How to write clear instructions
 

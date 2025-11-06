@@ -80,28 +80,6 @@ In your existing topic flow, where you want to use Customer Intent Agent, add th
 
 :::image type="content" source="../media/customer-intent-agent-topic.png" alt-text="Screenshot of intent-based suggestions topic flow.":::
 
-## Connect Customer Intent Agent to Copilot Studio knowledge
-
-1. In Copilot Studio, select your agent, and then select **Add a topic** and provide a name for the topic as required.
-1. On the **Trigger** topic, select the ellipsis, and then select **A custom client event occurs**.
-1. Select **Edit** for **A custom client event occurs**. 
-1. On the **On Event Activity properties** dialog that appears, enter the **Event name** as **OnrequestKnowledge** and save it.
-1. Add another node and select **Advanced** > **Generative answers**. The **Create generative answers** node is created.
-1. In the **Create generative answers** node: 
-    1. For the **Input** field, select the ellipsis. 
-        1. On the **Select a variable** dialog, select **System** and then select **Activity.text**.
-    1. Select **Edit** for Data sources.
-        1. In **Knowledge sources**, make sure that the **Search only selected sources** option isn't set to On.
-        1. On the **Create generative answers properties** dialog, select **Advanced**.
-        1. For the **Save bot response as** field, select **Select a variable** and then create a new variable.
-        1. In **Variable properties**, for **Variable name**, enter **Answer**.
-1. In the **Condition**node, set **Answer** to **is not Blank**.
-1. Add another node and then select **Topic management** > **End all topics**.
-
-## Connect to your knowledge base
-
-Connect the knowledge articles in your Dynamics 365 instance to your Copilot agent. Learn more in [Add knowledge to an agent](/microsoft-copilot-studio/knowledge-add-existing-copilot?source=recommendations).
-
 ## Variables for intent-based suggestions
 
 |Variable |Mapped system topic| Description|
@@ -136,7 +114,9 @@ Make sure you have [enabled Customer Intent Agent](manage-customer-intent-agent.
 
 - For each new conversation, administrators can configure EnrichmentContext to pass pre-collected details into the Customer Intent Agent. 
 - This is done by setting the global parameter **Global.EnrichmentContext** in the Microsoft Copilot Studio bot. The payload includes key-value pairs with descriptions of each attribute. 
-- For example, a book-ordering scenario might include details such as the book title and author: 
+- For example, a book-ordering scenario might include details such as the book title and author:
+
+``
   {
     AdditionalInformation: [
         {
@@ -150,7 +130,8 @@ Make sure you have [enabled Customer Intent Agent](manage-customer-intent-agent.
             KeyDescription: "Information about the desired book author"
         }                
     ]
-}
+} 
+``
 
 - When configured, the bot can use this pre-chat context at the start of the interaction, avoiding repeated questions to the customer. 
 - This ensures intent determination and fulfillment begin with richer context, enabling more accurate and efficient responses. 

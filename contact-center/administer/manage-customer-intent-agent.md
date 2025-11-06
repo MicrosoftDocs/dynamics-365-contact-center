@@ -161,11 +161,11 @@ To add instructions, complete the following steps:
 1. In the **Instructions for intent groups and intents** section, select the following options to create instructions for intent groups and intents.
    - **Manage Intent groups**: In the list of intent groups page, select an intent group.
        1. On the `<intent_group_name>` page, in **Intent group instructions (optional)** , select **Add**. The **Add instructions** dialog appears.
-       1. Add instructions for the intent group. You can enter up to 2,000 characters.
+       1. Add instructions for the intent group. You can enter up to 4,000 characters.
        1. Save and close.
    - **Manage intents**: In the list of intents page, select an intent.
        1. On the `<intent_name>` page, in **Intent instructions (optional)** , select **Add**. The **Add instructions** dialog appears.
-       1. Add instructions for the intent. You can enter up to 2,000 characters.
+       1. Add instructions for the intent. You can enter up to 4,000 characters.
        1. Save and close.
 
 You can edit or delete instructions for a line of business, intent groups, or intents using the **Edit** and **Delete** options in the instructions section of the corresponding pages.
@@ -211,7 +211,7 @@ Tools help systems connect and enable data flow or actions. Customer Intent Agen
 1. Select **Save and close**.
 
 > [!NOTE]
->  After you add or remove a connector, changes can take up to 15 minutes to appear in the Customer Intent Agent.
+> After you add or remove a connector, changes can take up to 15 minutes to appear in the Customer Intent Agent.
 
 You can edit or delete a connector after you select the required connector on the **Manage custom connectors** page. You can also view which intents are using the connector when you edit the connector.
 

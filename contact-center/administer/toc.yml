@@ -496,7 +496,7 @@
             href: /dynamics365/customer-service/administer/configure-bot-azure?context=/dynamics365/contact-center/context/administer-context
       - name: Feedback surveys
         items:
-        - name: Configure feedback surveys using Copilot Studio (preview)
+        - name: Configure feedback surveys using Copilot Studio
           href: configure-surveys.md
         - name: Enable feedback on voice call quality
           href: /dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context

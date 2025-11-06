@@ -172,7 +172,7 @@ You can edit or delete instructions for a line of business, intent groups, or in
 
 ### Use channel-specific, self-service or assisted-service instructions
 
-Tag instructions with specific syntax to apply them in certain channels, or for self-service (unsupervised) or assisted-service (supervised) scenarios. This tag works for organizational, intent group, and intent instructions.
+Tag instructions with specific syntax to apply them in certain channels, or for self-service (unsupervised) or assisted-service (supervised) scenarios. Tags work for organizational, intent group, and intent instructions.
 
 
 |Tag |Definition |

@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: gandhamm
 ms.topic: how-to 
 ms.custom: 
-ms.date: 08/19/2025
+ms.date: 11/05/2025
 ms.collection: bap-ai-copilot
 ---
 
@@ -62,4 +62,4 @@ To migrate chat and voice workstream configurations along with survey agent conf
 
 ## Related information
 
-[Configure feedback surveys using Copilot Studio (preview)](configure-surveys.md)
+[Configure feedback surveys using Copilot Studio](configure-surveys.md)

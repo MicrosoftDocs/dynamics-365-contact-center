@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: conceptual
 ms.collection:
-ms.date: 11/04/2025
+ms.date: 11/06/2025
 ms.custom: bap-template
 ---
 
@@ -25,7 +25,7 @@ In the site map of Copilot Service workspace, go to **Conversations**. The **All
 
 ## Prerequisites
 
-- You have the Omnichannel supervisor role. 
+- You have the Omnichannel Supervisor role. Learn more in [Assign roles and enable users](/dynamics365/customer-service/implement/add-users-assign-roles).
 
 ## Perform bulk actions
 
@@ -81,4 +81,4 @@ Track the status of bulk actions performed on conversations. All bulk actions ar
 
 ## Related information
 
-[Customize visual display](/dynamics365/customer-service/use/customize-reports?context=/dynamics365/contact-center/context/use-context)
+[Assign roles and enable users](/dynamics365/customer-service/implement/add-users-assign-roles)

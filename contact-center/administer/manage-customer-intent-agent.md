@@ -180,8 +180,8 @@ Tag instructions with specific syntax to apply them in certain channels, or for 
 |{{text}} instruction 1 {{/text}}     |    Instruction applied to text channel for both self-service and assisted service.     |
 |{{voice}} instruction 2 {{/voice}}    |  Instruction applied to voice channel for both self-service and assisted service.       |
 |{{email}} instruction 3 {{/email}}     |  Instruction applied to email channel for both self-service and assisted service.       |
-|{{supervised}} instruction 4 {{/supervised}}     |   Instruction applied to all channels for self-service only.     |
-|{{unsupervised}} instruction 5 {{/unsupervised}}    |     Instruction applied to all channels for assisted service only.    |
+|{{supervised}} instruction 4 {{/supervised}}     |   Instruction applied to all channels for assisted service only.     |
+|{{unsupervised}} instruction 5 {{/unsupervised}}    |     Instruction applied to all channels for self-service only.    |
 
 
 ### How to write clear instructions

@@ -76,7 +76,7 @@
         items:
         - name: Overview of autonomous service agents
           href: ../administer/autonomous-agents-overview.md?context=/dynamics365/contact-center/context/use-context
-        - name: Customer Intent Agent (preview)
+        - name: Customer Intent Agent
           items:
           - name: Use intent-based suggestions
             href: use-intent-suggestions.md

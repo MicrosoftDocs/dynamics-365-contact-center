@@ -69,7 +69,7 @@ Notify representatives engaged in persistent and live chat conversations with re
 
 - Select **Notify CSR** to send notification to agents, such as alerts about ongoing issues.
 
-    :::image type="content" source="../media/notify-representative.png" alt-text="Screenshot of Send notification to representatives dialog." lightbox="../media/notify-csr.png":::
+    :::image type="content" source="../media/notify-representative.png" alt-text="Screenshot of Send notification to representatives dialog." lightbox="../media/notify-representative.png":::
 
 ### Track the status of bulk actions
 

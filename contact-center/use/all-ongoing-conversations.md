@@ -49,7 +49,7 @@ Assign conversations to the appropriate queue, based on agent skills or availabi
 
 Close multiple conversations at once and easily manage inactive threads. Applicable to persistent and live chat conversations in **Open**, **Active**, **Wrap-up**, and **Waiting**. You can clear multiple test conversations at once for both persistent and live chat.
 
-- Select the required conversations, and then select **Force Close** to close  multiple conversations. Confirm your action on the confirmation message.
+- Select the conversations, and then select **Force Close**.
 
 ### Message Customer
 

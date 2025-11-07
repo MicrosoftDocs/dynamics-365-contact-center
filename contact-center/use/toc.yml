@@ -294,7 +294,7 @@
             href: /dynamics365/customer-service/use/oc-bot-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Voicemail dashboard
             href: /dynamics365/customer-service/use/oc-voicemail-dashboard?context=/dynamics365/contact-center/context/use-context
-        - name: Manage Ongoing conversations
+        - name: Manage ongoing conversations
           href: all-ongoing-conversations.md
         - name: Use knowledge management analytics
           href: /dynamics365/customer-service/use/knowledge-search-analytics-cs?context=/dynamics365/contact-center/context/use-context

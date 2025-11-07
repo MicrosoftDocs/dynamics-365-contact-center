@@ -32,13 +32,13 @@ Customer Intent Agent for voice uses generative AI to autonomously discover inte
 - Copilot agent detects customer intent, asks follow-up questions related to the intent, and provides a solution from the configured resources.
 - If the conversation is escalated, it's transferred to representatives.
 - The application also uses this conversation to detect any updates and discover new intent attributes that can be used in future interviews.
-- In the next customer interaction, the Copilot agent can address the issue using the newly-generated knowledge and intent, providing a tailored response without escalating to a representative.
+- In the next customer interaction, the Copilot agent can address the issue using the newly generated knowledge and intent, providing a tailored response without escalating to a representative.
 
 ## Configure voice agents
 
 Perform the following steps in Copilot Service admin center.
 
-1. To configure intent for voice agent, on the **AI Agents** page, select a Copilot agent for which the voice status shows as **Connected**.  We recommend that you use a newly-provisioned Copilot agent in this step.
+1. To configure intent for voice agent, on the **AI Agents** page, select a Copilot agent for which the voice status shows as **Connected**.  We recommend that you use a newly provisioned Copilot agent in this step.
 
 1. Select **Manage type**. On the **Type** dialog, select **Uses AI-generated intents** and **Voice only**.
     > [!NOTE]
@@ -52,14 +52,14 @@ Perform the following steps in Copilot Service admin center.
 
 Your intent agent might be set up to use multiple lines of businesses. If you're using lines of business, make sure that you set the line of business in conversation context before the intent agent is added to the conversation. This sets the scope for intents and instructions that your intent agent follows during the rest of the conversation.
 
-To set the line of business during the conversation, make sure you set the context variable “va_LineOfBusiness” to the globally unique identifier of the corresponding line of business you want the intent agent to recognize. Make sure your Customer Intent Agent is on a queue and a Copilot agent is the first to answer the call. When escalating to the Customer Intent Agent, make sure your Copilot Agents sets a variable “va_LineOfBusiness” to the value of the target line of business.
+To set the line of business during the conversation, make sure you set the context variable “va_LineOfBusiness” to the globally unique identifier of the corresponding line of business you want the intent agent to recognize. Make sure your Customer Intent Agent is on a queue and a Copilot agent is the first to answer the call. When escalating to the Customer Intent Agent, make sure your Copilot agent sets a variable “va_LineOfBusiness” to the value of the target line of business.
 
 Learn about finding the unique ID of the line of business in [Discover line of business unique IDs](manage-customer-intent-agent.md#discover-line-of-business-unique-ids).
 
 :::image type="content" source="../media/context-variable-for-lob.png" alt-text="Screenshot of context variable va_LineOfBusiness configuration.":::
 
 > [!IMPORTANT]
-> If you’ve configured lines of business, but don't set the value during the conversation, the voice agent using intent falls back to the first line of business, ordered alphabetically, in your environment.
+> If you’ve configured lines of business, but don’t set a value during the conversation, the voice agent using intent falls back to the first line of business in your environment, ordered alphabetically.
 
 ## Connect voice agents to voice queues or workstreams
 

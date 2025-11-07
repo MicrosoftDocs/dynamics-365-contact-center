@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Manage ongoing conversations
 
-The **All ongoing Conversations** view helps supervisors monitor, manage, and optimize customer conversations across digital messaging, voice, and record channels. Use the view to filter conversations, run bulk actions, and work with your team to track updates. 
+The **All ongoing conversations** view helps supervisors monitor, manage, and optimize customer conversations across digital messaging, voice, and record channels. Use the view to filter conversations, run bulk actions, and work with your team to track updates. 
 
 **Key capabilities**
 
@@ -26,7 +26,7 @@ The **All ongoing Conversations** view helps supervisors monitor, manage, and op
 - You have the Omnichannel Supervisor role. Learn more in [Assign roles and enable users](/dynamics365/customer-service/implement/add-users-assign-roles). 
 
 
-## Access the ongoing conversations view
+## Access the All ongoing conversations view
 
 In the site map of Copilot Service workspace, go to **Conversations**. The **All ongoing conversations** view appears by default.
 
@@ -39,7 +39,7 @@ Select multiple conversations to view and perform bulk actions on the **All ongo
 
 :::image type="content" source="../media/all-ongoing-conversations-view.png" alt-text="Screenshot of All ongoing conversations with bulk actions enabled.":::
 
-You can perform the following actions:
+You can perform the following actions.
 
 ### Assign conversations
 
@@ -67,7 +67,7 @@ Broadcast messages to customers to provide resolution and closure outside the co
 
 Notify representatives engaged in persistent and live chat conversations with real-time updates or guidance related to specific issues. After notification, the status updates are visible in the **Action History** section. 
 
-- Select **Notify CSR** to send notification to agents, such as alerts about ongoing issues.
+- Select **Notify CSR** to send notification to representatives, such as alerts about ongoing issues.
 
     :::image type="content" source="../media/notify-representative.png" alt-text="Screenshot of Send notification to representatives dialog." lightbox="../media/notify-representative.png":::
 

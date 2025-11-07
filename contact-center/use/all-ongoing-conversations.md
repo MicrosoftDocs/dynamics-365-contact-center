@@ -59,7 +59,7 @@ Send broadcast messages to customers to provide resolution and closure outside t
 
 ### Notify representative
 
-Notify customer service representatives with real-time updates or guidance related to specific conversations. Applicable to active, persistent, and live chat conversations currently assigned to representatives. Upon notification, status updates are visible in **Action History** section. 
+Notify representatives engaged in persistent and live chat conversations with real-time updates or guidance related to specific issues. After notification, the status updates are visible in the **Action History** section. 
 
 - Select **Notify CSR** to send notification to agents, such as alerts about ongoing issues.
 

@@ -28,9 +28,10 @@ The rollout manager guides administrators to existing configurations and enables
 1. On the **Agent hub** page, select **Create a rollout plan**. The **Rollout manager** page appears.
 1. Select **Create**.
 1. Use the guided steps to create a rollout plan for the following autonomous agents:
-   - **Customer Intent Agent**: This agent helps service representatives by providing them with suggested responses based on customer intent.
-   - **Case Management Agent**: This agent helps service representatives by automating case management tasks, such as creating and updating cases.
-   - **Customer Knowledge Management Agent**: This agent helps service representatives by providing them with knowledge base articles based on customer queries.
+   - **Customer Intent Agent**: Helps service representatives by providing them with suggested responses based on customer intent.
+   - **Case Management Agent**: Helps service representatives by automating case management tasks, such as creating and updating cases.
+   - **Customer Knowledge Management Agent**: Helps service representatives by providing them with knowledge base articles based on customer queries.
+   - **Quality Evaluation Agent**: Helps organizations make sure that every customer engagement with support&mdash;whether handled by service representatives or AI agents&mdash;is compliant, ethical, and aligned with brand values.
 
 The wizard guides you to customize settings for each autonomous agent, such as select a line of business for Customer Intent Agent, and case update and closure for Case Management Agent.
 

@@ -24,7 +24,7 @@ AI agents are intelligent tools designed to enhance customer service efficiency 
 
 ## What are the systems capabilities of AI agents?
 
-### Customer Intent Agent (preview)
+### Customer Intent Agent
 
 Customer Intent Agent uses generative AI to autonomously discover customer intents by analyzing past interactions in your customer relationship management (CRM) system. It builds an intent library to:
 

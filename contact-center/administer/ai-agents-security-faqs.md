@@ -148,4 +148,4 @@ Copilot determines whether content is harmful through a severity rating system b
 ### Related information
 
 [Responsible AI FAQ for Copilot in Customer Service](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/implement-context)  
-[Responsible AI FAQ for AI Agents (Preview)](../implement/faq-rai-ai-agents.md) 
+[Responsible AI FAQ for AI Agents](../implement/faq-rai-ai-agents.md)  

@@ -76,7 +76,7 @@ Follow these steps to configure the IVR agent to escalate the calls to the Custo
 
 ## Configure instructions to use custom context for voice agents
 
-You can use context variables from the conversation and configure your voice agent to deliver a very dynamic and personalized experience. You can use variables in your intent agent instructions to do this. The key steps are as follows:
+Configure your voice agent to use context variables from the conversation and deliver a dynamic, personalized experience. You’ll include these variables in your intent agent instructions. The key steps are as follows:
 
 1. Set any [context variables](/dynamics365/customer-service/administer/manage-context-variables) you want to use prior to engaging the intent agent. For example, the global variables that are created in Copilot Studio are [passed to Dynamics 365 Contact Center](/microsoft-copilot-studio/advanced-hand-off#context-variables-available-upon-handoff) when a conversation is escalated.
 

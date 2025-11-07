@@ -276,7 +276,7 @@
           href: /dynamics365/customer-service/administer/voice-channel-pricing-scenarios?context=/dynamics365/contact-center/context/administer-context
         - name: FAQ about the voice channel
           href: /dynamics365/customer-service/administer/voice-channel-faqs?context=/dynamics365/contact-center/context/administer-context
-      - name: Agent hub (preview)
+      - name: Agent hub
         items:
         - name: Learn guide for AI agents and Copilot features
           items:

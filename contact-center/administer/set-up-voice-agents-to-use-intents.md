@@ -50,7 +50,7 @@ Perform the following steps in Copilot Service admin center.
 
 ## Configure voice agents to use line of business
 
-Your intent agent might be set up to use multiple lines of businesses. If you are using lines of business, make sure that you’ve set the line of business in conversation context before the intent agent is added to the conversation. This sets the scope for intents and instructions that your intent agent follows during the rest of the conversation.
+Your intent agent might be set up to use multiple lines of businesses. If you're using lines of business, make sure that you set the line of business in conversation context before the intent agent is added to the conversation. This sets the scope for intents and instructions that your intent agent follows during the rest of the conversation.
 
 To set the line of business during the conversation, make sure you set the context variable “va_LineOfBusiness” to the globally unique identifier of the corresponding line of business you want the intent agent to recognize. Make sure your Customer Intent Agent is on a queue and a Copilot agent is the first to answer the call. When escalating to the Customer Intent Agent, make sure your Copilot Agents sets a variable “va_LineOfBusiness” to the value of the target line of business.
 

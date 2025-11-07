@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Manage ongoing conversations
 
-The Ongoing Conversations view helps supervisors monitor, manage, and optimize customer conversations across digital messaging, voice, and record channels. Use the view to filter conversations, run bulk actions, and work with your team. This article shows how to use the view to resolve queries quickly, notify representatives, and track updates.
+The **All ongoing Conversations** view helps supervisors monitor, manage, and optimize customer conversations across digital messaging, voice, and record channels. Use the view to filter conversations, run bulk actions, and work with your team to track updates. 
 
 In the site map of Copilot Service workspace, go to **Conversations**. The **All ongoing conversations** view appears by default.
 

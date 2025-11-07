@@ -55,7 +55,7 @@ The following entities are associated with a line of business:
 
 You might need to find the unique ID for your line of business when building use cases for your Customer Intent Agent. For example, you might want to set the line of business to integrate a [Copilot voice agent](set-up-voice-agents-to-use-intents.md) or [Copilot agent](set-up-intent-agent.md).
 
-You can find the unique IDs for your line of business by using OData queries on the entity msdyn_intentfamilies table and finding the msdyn_intentfamilyid field. For example, https://[Organization domain]/api/data/v9.2/msdyn_intentfamilies?$select=msdyn_intentfamilyid,msdyn_name.
+You can find the unique IDs for your line of business by using Open Data Protocol (OData) queries on the entity msdyn_intentfamilies table and finding the msdyn_intentfamilyid field. For example, https://[Organization domain]/api/data/v9.2/msdyn_intentfamilies?$select=msdyn_intentfamilyid,msdyn_name.
 
 ### Create rules for cases and conversations
 

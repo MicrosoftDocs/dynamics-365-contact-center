@@ -53,7 +53,7 @@ Close multiple conversations pertaining to persistent and live chat that are in 
 
 ### Message Customer
 
-Send broadcast messages to customers to provide resolution and closure outside the conversation channel. You can send messages to multiple customers at once. Available to persistent chat conversations in **Open** status. Once the message is sent, the conversations move to **Waiting** status.
+Broadcast messages to customers to provide resolution and closure outside the conversation channel. After you broadcast to persistent chat conversations in **Open** status, the conversations move to **Waiting** status.
 
 - Select the required conversations, and then select **Message Customer** to directly chat with the customers.
 

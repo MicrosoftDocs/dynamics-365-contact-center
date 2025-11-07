@@ -39,7 +39,7 @@ You can perform the following actions:
 
 ### Assign
 
-Assign conversations to the appropriate queue, based on agent skills or availability. Applicable to persistent and live chat conversations in **Open** status.
+Assign live and persistent chat conversations in open status to an appropriate queue based on agent skills and their availability.
 
 - Select the required conversations, and then select **Assign** to transfer selected conversations to that queue.
  

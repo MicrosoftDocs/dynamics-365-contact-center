@@ -117,7 +117,7 @@
         - name: Summarize cases
           href: copilot-use-summary.md 
         - name: Generate resolution notes
-          href: embed-ask-question.md#generate-resolution-notes   
+          href: embed-ask-question.md#generate-resolution-notes
         - name: Summarize conversations
           href: embed-summarize-conversation.md   
         - name: Use Copilot to draft an email
@@ -384,6 +384,8 @@
             href: wfm-view-time-off-requests.md
           - name: Create a time-off request
             href: wfm-create-time-off-request.md
+    - name: Known issues in Customer Service and Dynamics 365 Contact Center
+      href: https://go.microsoft.com/fwlink/p/?linkid=2165393
     - name: Responsible AI
       items:
       - name: Overview

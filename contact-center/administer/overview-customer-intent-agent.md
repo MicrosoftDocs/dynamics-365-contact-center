@@ -1,23 +1,19 @@
 ---
-title: Overview of Customer Intent Agent (preview)
+title: Overview of Customer Intent Agent
 description: Learn about Customer Intent Agent and how it works in Dynamics 365 Contact Center and Dynamics 365 Customer Service.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: 
 ms.topic: overview
 ms.collection: bap-ai-copilot
-ms.date: 08/08/2025
+ms.date: 11/07/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
-# Overview of Customer Intent Agent (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Overview of Customer Intent Agent
 
 Customer Intent Agent uses generative AI to autonomously discover intents in your contact center instance. It analyzes past interactions between customer service representatives (service representatives or representatives) and customers to create an intent library that enhances dynamic conversations. Intent benefits both assisted and self-service scenarios by enabling agents and representatives to quickly understand customer needs, guide conversations with follow-up questions, and provide tailored solutions in real time.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Customer Intent Agent can be used in the following scenarios:
 
@@ -41,6 +37,6 @@ Learn how to set up Customer Intent Agent for Copilot agents for [chat and messa
 [Manage Customer Intent Agent](manage-customer-intent-agent.md)  
 [Enable intent for service representatives](enable-intent-for-service-reps.md)  
 [Set up intent agent](set-up-intent-agent.md)  
-[Set up voice agents to use intents](set-up-voice-agents-to-use-intents.md)   
+[Set up voice agents to use intents](set-up-voice-agents-to-use-intents.md)  
 [Create rollout plans](create-rollout-plans.md)  
 [Use intent-based suggestions](../use/use-intent-suggestions.md)  

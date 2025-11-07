@@ -217,7 +217,7 @@ Connectors let systems work together, transfer data, and allow AI agents to auto
 
 ### Map a tool to an intent
 
-Tools help systems connect and enable data flow or actions. Customer Intent Agent currently supports custom connectors as tools. When you specify a connector to be used for specific intents, you can add the different actions within that connector to be a tool Customer Intent Agent uses to resolve those intents.
+Tools help systems connect and enable data flow or actions. Customer Intent Agent currently supports custom connectors as tools. When you specify a connector for specific intents, you can add its actions as tools that the Customer Intent Agent uses to resolve those intents.
 
 1. Select **Manage** for **Manage intents** on the **Customer Intent Agent** page.
 1. Select the specific intent, and on the intent page, in the **Resource (Optional)** section, select the **Tools** option, and then select **Add**.

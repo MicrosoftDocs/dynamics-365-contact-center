@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Manage ongoing conversations
 
-The **All ongoing conversations** view helps supervisors monitor, manage, and optimize customer conversations across digital messaging, voice, and record channels. Use the view to filter conversations, run bulk actions, and work with your team. This article shows how to use the view to resolve queries quickly, notify representatives, and track updates.
+The **All ongoing Conversations** view helps supervisors monitor, manage, and optimize customer conversations across digital messaging, voice, and record channels. Use the view to filter conversations, run bulk actions, and work with your team to track updates. 
 
 **Key capabilities**
 
@@ -43,27 +43,29 @@ You can perform the following actions:
 
 ### Assign conversations
 
-Assign persistent and live chat conversations from specific queues to a new queue, as required.
+Assign live and persistent chat conversations in open status from specific queues to a new queue, as required.
 
-- Select the required conversations from the**All ongoing conversations** view, and then select **Assign** to transfer selected conversations to a new queue.
+1. Select the required conversations from the **All ongoing conversations** view. 
+1. On the **Assign work item** dialog, go to the **Find a queue** tab.
+1. Select the specific queue and then select **Assign** to transfer the selected conversations to the queue.
  
     :::image type="content" source="../media/bulk-assign.png" alt-text="Screenshot of assign to a queue or agent dialog." lightbox="../media/bulk-assign.png":::
 
 ### Close multiple conversations
 
-Close multiple conversations at once and easily manage inactive threads. Applicable to persistent and live chat conversations in **Open**, **Active**, **Wrap-up**, and **Waiting**. You can clear multiple test conversations at once for both persistent and live chat.
+Close multiple conversations pertaining to persistent and live chat that are in open, active, wrap-up, and waiting state.
 
-- Select the required conversations, and then select **Force Close** to close  multiple conversations. Confirm your action on the confirmation message.
+- Select the conversations, and then select **Force Close**.
 
 ### Message customer
 
-Send broadcast messages to customers to provide resolution and closure outside the conversation channel. You can send messages to multiple customers at once. Available to persistent chat conversations in **Open** status. Once the message is sent, the conversations move to **Waiting** status.
+Broadcast messages to customers to provide resolution and closure outside the conversation channel. After you broadcast to persistent chat conversations in **Open** status, the conversations move to **Waiting** status.
 
 - Select the required conversations, and then select **Message Customer** to directly chat with the customers.
 
 ### Notify representatives
 
-Notify customer service representatives with real-time updates or guidance related to specific conversations. Applicable to active, persistent, and live chat conversations currently assigned to representatives. Upon notification, status updates are visible in **Action History** section. 
+Notify representatives engaged in persistent and live chat conversations with real-time updates or guidance related to specific issues. After notification, the status updates are visible in the **Action History** section. 
 
 - Select **Notify CSR** to send notification to agents, such as alerts about ongoing issues.
 

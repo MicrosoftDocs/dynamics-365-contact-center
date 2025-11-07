@@ -47,7 +47,7 @@ Assign live and persistent chat conversations in open status to an appropriate q
 
 ### Force Close
 
-Close multiple conversations at once and easily manage inactive threads. Applicable to persistent and live chat conversations in **Open**, **Active**, **Wrap-up**, and **Waiting**. You can clear multiple test conversations at once for both persistent and live chat.
+Close multiple conversations pertaining to persistent and live chat that are in open, active, wrap-up, and waiting state.
 
 - Select the conversations, and then select **Force Close**.
 

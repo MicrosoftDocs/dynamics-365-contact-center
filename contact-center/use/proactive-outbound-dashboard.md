@@ -20,7 +20,7 @@ The Proactive Outbound dashboard in Omnichannel historical analytics tracks conv
 
 You can access the dashboard from the Customer service workspace. Learn more in [Access the dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights?#access-the-dashboardscontext=/dynamics365/contact-center/context/use-context).
 
-You need to enable the the Proactive Outbound dashboard from Customer Service admin center. Learn more in [Enable omnichannel historical analytics for proactive outbound](/customer-service/administer/oc-historical-analytics-reports.md)
+You need to enable the the Proactive Outbound dashboard from Customer Service admin center. Learn more in [Enable omnichannel historical analytics for proactive outbound](/dynamics365/customer-service/administer/oc-historical-analytics-reports.md).
 
 :::image type="content" source="../media/proactive-outbound-report.png" alt-text="Screenshot of proactive outbound dashboard." lightbox="../media/proactive-outbound-report.png":::
 
@@ -39,7 +39,7 @@ The dashboard is prefiltered by the default panel filters **Conversation type** 
 ## Related information
 
 [Omnichannel for Customer Service dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights?context=/dynamics365/contact-center/context/use-context)  
-[Enable historical analytics for proactive outbound engagements](/dynamics365/customer-service/use/oc-historical-analytics-reports?context=/dynamics365/contact-center/context/use-context)
+[Enable historical analytics for proactive outbound engagements](/dynamics365/customer-service/administer/oc-historical-analytics-reports.md)
 
 
                                                                                                                                         

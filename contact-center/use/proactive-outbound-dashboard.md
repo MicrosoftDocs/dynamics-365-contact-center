@@ -26,19 +26,22 @@ You need to enable the the Proactive Outbound dashboard from Customer Service ad
 
 :::image type="content" source="../media/proactive-outbound-report.png" alt-text="Screenshot of proactive outbound dashboard." lightbox="../media/proactive-outbound-report.png":::
 
-## Interactive charts
+## Interactive charts and tables
 
-Visualizations provide clear insights:
+Visualizations provide clear insights. 
+Charts:
 
-- The **Total deliveries by status** bar chart displays (completed, expired, and others).
-- The **Processed deliveries by result** pie chart shows Live Answer, Answering Machine, Expired. 
-- The **Processed deliveries by dial mode** pie chart breaks down processed deliveries by dial mode (Copilot and Progressive), including new predictive dialing.
+- **Total deliveries by status** bar chart displays (completed, expired, and others).
+- **Processed deliveries by result** pie chart shows Live Answer, Answering Machine, Expired. 
+- **Processed deliveries by dial mode** pie chart breaks down processed deliveries by dial mode (Copilot and Progressive), including new predictive dialing.
+
+Tables:
  
-Additionally, **Delivery metrics by Proactive Engagement Configuration** table lists each configuration, its status, priority, total deliveries, and processed deliveries, helping teams track which setups drive results.
+- **Delivery metrics by Proactive Engagement Configuration** table lists each configuration, its status, priority, total deliveries, and processed deliveries, helping teams track which setups drive results.
 
-**Delivery metrics by queue** table shows delivery and processing metrics per queue, supporting operational workload management.
+- **Delivery metrics by queue** table shows delivery and processing metrics per queue, supporting operational workload management.
 
-**Delivery metrics by date** table shows a daily breakdown of total and processed deliveries for trend analysis.
+- **Delivery metrics by date** table shows a daily breakdown of total and processed deliveries for trend analysis.
 
 ## Panel filters
 

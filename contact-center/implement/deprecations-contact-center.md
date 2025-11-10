@@ -21,7 +21,7 @@ Administrators and IT professionals can use this information to prepare for futu
 
 ## Post-call survey setting on Language tab of voice workstream is deprecated
 
-Effective August 01, 2025, the post-call survey toggle currently found in the voice workstream > **Language** tab in Copilot Service admin center is deprecated and removed. We recommend that you configure post-call surveys using [Configure feedback surveys using Copilot Studio (preview)](../administer/configure-surveys.md#enable-the-post-call-survey-for-the-voice-channel).
+Effective August 01, 2025, the post-call survey toggle currently found in the voice workstream > **Language** tab in Copilot Service admin center is deprecated and removed. We recommend that you configure post-call surveys using [Configure feedback surveys using Copilot Studio](../administer/configure-surveys.md#enable-the-post-call-survey-for-the-voice-channel).
 
 ## Draft a chat response (preview) is deprecated
 
@@ -32,7 +32,7 @@ The draft a chat response (preview) feature is deprecated as of July 01, 2025. T
 The deprecation schedule of the local hosting capabilities for the legacy voice channel is as follows: 
 
 - **Switzerland**: Effective October 31, 2024
-- **India and Japan**: Effective September 09, 2024 
+- **India and Japan**: Effective September 09, 2024
 
 For the existing legacy voice installations, the deprecation is the first step toward transitioning to the enhanced voice experience. To continue using the voice channel, you should explore the global cloud deployment option in the nearest geographic location, subject to your country or region laws for using the voice channel in Dynamics 365 Contact Center. Learn more in [Supported cloud locations for voice channel](/dynamics365/customer-service/administer/voice-channel-region-availability).
 

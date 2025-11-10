@@ -76,7 +76,7 @@
         items:
         - name: Overview of autonomous service agents
           href: ../administer/autonomous-agents-overview.md?context=/dynamics365/contact-center/context/use-context
-        - name: Customer Intent Agent (preview)
+        - name: Customer Intent Agent
           items:
           - name: Use intent-based suggestions
             href: use-intent-suggestions.md
@@ -117,7 +117,7 @@
         - name: Summarize cases
           href: copilot-use-summary.md 
         - name: Generate resolution notes
-          href: embed-ask-question.md#generate-resolution-notes   
+          href: embed-ask-question.md#generate-resolution-notes
         - name: Summarize conversations
           href: embed-summarize-conversation.md   
         - name: Use Copilot to draft an email
@@ -276,6 +276,8 @@
             href: agent-realtime-dashboard.md
           - name: Ongoing Conversation report
             href: /dynamics365/customer-service/use/realtime-ongoing?context=/dynamics365/contact-center/context/use-context
+          - name: Backlog conversation report
+            href: /dynamics365/customer-service/use/realtime-backlog-conv?context=/dynamics365/contact-center/context/use-context
         - name: Use historical analytics dashboards
           items: 
           - name: Dashboards
@@ -294,6 +296,8 @@
             href: /dynamics365/customer-service/use/oc-bot-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Voicemail dashboard
             href: /dynamics365/customer-service/use/oc-voicemail-dashboard?context=/dynamics365/contact-center/context/use-context
+        - name: Manage ongoing conversations
+          href: all-ongoing-conversations.md
         - name: Use knowledge management analytics
           href: /dynamics365/customer-service/use/knowledge-search-analytics-cs?context=/dynamics365/contact-center/context/use-context
         - name: View copilot analytics report
@@ -322,8 +326,12 @@
           items:
           - name: Forecast agent, case, and conversation volumes
             href: /dynamics365/customer-service/use/use-volume-forecasting?context=/dynamics365/contact-center/context/use-context
-        - name: Customize visual display
-          href: /dynamics365/customer-service/use/customize-reports?context=/dynamics365/contact-center/context/use-context
+        - name: Manage report visuals
+          items:
+          - name: Customize visual display
+            href: /dynamics365/customer-service/use/customize-reports?context=/dynamics365/contact-center/context/use-context
+          - name: Export and import visual customizations
+            href: /dynamics365/customer-service/use/export-import-visual-customization?context=/dynamics365/contact-center/context/use-context
         - name: Customize the bot dashboard
           href: customize-agent-dashboard.md       
         - name: Customize data models
@@ -378,11 +386,13 @@
             href: wfm-view-time-off-requests.md
           - name: Create a time-off request
             href: wfm-create-time-off-request.md
+    - name: Known issues in Customer Service and Dynamics 365 Contact Center
+      href: https://go.microsoft.com/fwlink/p/?linkid=2165393
     - name: Responsible AI
       items:
       - name: Overview
         href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/use-context
-      - name: Responsible AI FAQ for AI Agents (Preview)
+      - name: Responsible AI FAQ for AI Agents
         href: ../implement/faq-rai-ai-agents.md
       - name: Responsible AI FAQ for Copilot in Customer Service
         href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/use-context

@@ -14,26 +14,32 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
 
-The Proactive Outbound dashboard in Omnichannel historical analytics tracks conversation metrics and monitors ongoing conversations, sliced by conversation direction (incoming or outgoing) and conversation type. The dashboard provides organizations with detailed insights into outbound customer engagements initiated through proactive outreach. The dashboard is designed to help teams monitor, analyze, and optimize outbound conversation strategies, ensuring higher delivery rates and improved customer experiences. The dashboard shows delivery status, result, and dial mode, enabling quick identification of trends and bottlenecks. Delivery metrics are segmented by Proactive Engagement Configuration, queue, and date, allowing for granular analysis and targeted improvements.
+The Proactive Outbound dashboard in Omnichannel historical analytics tracks conversation metrics and monitors ongoing conversations, through conversation direction (incoming or outgoing) and conversation type. The dashboard provides organizations with detailed insights into outbound customer engagements initiated through proactive outreach. The dashboard is designed to help teams monitor, analyze, and optimize outbound conversation strategies, ensuring higher delivery rates and improved customer experiences. The dashboard shows delivery status, result, and dial mode, enabling quick identification of trends and bottlenecks. Delivery metrics are segmented by proactive engagement configuration, queue, and date, allowing for granular analysis and targeted improvements.
 
-The Proactive Outbound dashboard is enabled by default for organizations with Proactive Engagement Services active.
+## Access the dashboard
 
-## Key Features
+You can access the dashboard from the Customer service workspace. Learn more in [Access the dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights?#access-the-dashboardscontext=/dynamics365/contact-center/context/use-context).
 
-- Identify successful strategies and areas needing attention by analyzing results across different dial modes and configurations. - Use the dashboard to inform operational decisions, improve agent training, and refine outbound engagement tactics.
-- Use additional panel filters:
-  - **Result**: Track the outcome of outbound attempts.
-  - **Dial mode**: Analyze performance by dialing method.
-  - **Status**: Monitor the current state of outbound deliveries.
+You need to enable the the Proactive Outbound dashboard from Customer Service admin center. Learn more in [Enable omnichannel historical analytics for proactive outbound](/customer-service/administer/oc-historical-analytics-reports.md)
 
 :::image type="content" source="../media/proactive-outbound-report.png" alt-text="Screenshot of proactive outbound dashboard." lightbox="../media/proactive-outbound-report.png":::
 
-## Filters
+## Interactive charts
 
-The dashboard is prefiltered by the default panel filters **Conversation type** and **Conversation direction** to show inbound and outbound interactions. You don't need any permissions to view panel filters. Additionally, you can also view  **Result**, **Dial mode**, and **Status** filters.
+ Users can apply out-of-box filters, such as duration, channel, queue, proactive engagement configuration, and time zone, to refine data for targeted analysis. 
+ 
+ Visualizations provide clear insights: a bar chart displays total deliveries by status (completed, expired, and others), a donut chart shows processed deliveries by result (for example, Live Answer, Answering Machine, Expired), and a pie chart breaks down processed deliveries by dial mode, including new predictive dialing. 
+ 
+ Additionally, delivery metrics tables offer detailed views by engagement configuration, queue, and date, enabling teams to track performance, manage workloads, and analyze trends effectively.
+
+## Panel filters
+
+The dashboard is prefiltered by the default panel filters **Conversation type** and **Conversation direction** to show outbound  interactions only. Additionally, you can check the default panel filters applied under **Dial mode**, **Delivery Status**, **Delivery Result**. You don't need any permissions to view panel filters. 
 
 ## Related information
 
-[Omnichannel for Customer Service dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights?context=/dynamics365/contact-center/context/use-context)
+[Omnichannel for Customer Service dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights?context=/dynamics365/contact-center/context/use-context)  
+[Enable historical analytics for proactive outbound engagements](/dynamics365/customer-service/use/oc-historical-analytics-reports?context=/dynamics365/contact-center/context/use-context)
+
 
                                                                                                                                         

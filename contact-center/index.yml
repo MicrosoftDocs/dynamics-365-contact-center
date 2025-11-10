@@ -82,7 +82,9 @@ additionalContent:
       - url: administer/configure-copilot-features.md
         text: Manage Copilot features
       - url: /dynamics365/customer-service/administer/configure-bot-virtual-agent?context=/dynamics365/contact-center/context/administer-context
-        text: Integrate a Copilot Studio bot  
+        text: Integrate a Copilot Studio agent
+      - url: administer/manage-customer-intent-agent.md
+        text: Configure Customer Intent Agent   
     - title: Develop
       links:
       - url: /dynamics365/customer-service/develop/reference/about-entity-reference?context=/dynamics365/contact-center/context/extend-context

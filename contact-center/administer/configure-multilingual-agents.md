@@ -1,20 +1,18 @@
 ---
 title: Configure multilingual voice agents
-description: Learn how to configure multilingual Copilot Studio voice agent.
+description: Learn how to configure multilingual Copilot Studio voice agent in Dynamics 365 Contact Center.
 author: gandhamm
 ms.author: mgandham 
 ms.reviewer: mgandham
 ms.topic: how-to 
-ms.collection: 
-ms.date: 06/27/2025
+ms.collection: bap-ai-copilot
+ms.date: 11/10/2025
 ms.custom: bap-template 
 ---
-
 
 # Configure multilingual voice agents
 
 [!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
-
 
 You can configure a single voice agent to communicate with customers in different languages, reducing the overhead of creating and maintaining multiple AI agents (agents) in a copilot.
 
@@ -40,7 +38,6 @@ In Copilot Service admin center, for a voice channel in a workstream, perform th
 1. In the **Bots** section of the workstream, add the agent that you want to use. The application displays a warning message if the languages configured in the voice channel don't match the languages supported by the agent.
 
 A warning message appears if you add a new language that the agent doesn't support to an existing voice channel.
-
 
 ### Examples
 
@@ -85,3 +82,7 @@ For the example in **Scenario 1** or **Scenario 2**, to route the call to a lang
 ## View metrics for multilingual agents
 
 You can see how your multilingual agents perform by using [Omnichannel historical](/dynamics365/customer-service/use/oc-bot-dashboard?context=/dynamics365/contact-center/context/use-context) report. You can filter by Last Language to see metrics for agents based on the language they've used to communicate with the customer. The **Last Language** filter isn't available on the dashboard by default. To add the filter, perform the steps in [customize bot dashboards](../use/customize-agent-dashboard.md).
+
+### Related information
+
+[Integrate a Copilot agent](/dynamics365/customer-service/administer/configure-bot-virtual-agent)  

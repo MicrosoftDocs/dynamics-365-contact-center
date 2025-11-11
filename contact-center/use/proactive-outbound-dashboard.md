@@ -1,6 +1,6 @@
 ---
 title: Proactive Outbound dashboard
-description: 
+description: Learn how to use the Proactive Outbound dashboard to track outbound interactions, identify bottlenecks, and enhance customer engagement outcomes in Dynamics 365 Contact Center.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas

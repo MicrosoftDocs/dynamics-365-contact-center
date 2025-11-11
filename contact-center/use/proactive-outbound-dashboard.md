@@ -20,9 +20,9 @@ Users can apply out-of-box filters, such as duration, channel, queue, proactive 
 
 ## Access the dashboard
 
-You can access the dashboard from the Customer Wervice workspace. Learn more in [Access the dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights).
+You can access the dashboard from the Customer Service workspace. Learn more in [Access the dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights).
 
-You need to enable the the Proactive Outbound dashboard from Customer Service admin center. Learn more in [Enable omnichannel historical analytics for proactive outbound](/dynamics365/customer-service/administer/oc-historical-analytics-reports).
+You need to enable the Proactive Outbound dashboard from Customer Service admin center. Learn more in [Enable omnichannel historical analytics for proactive outbound](/dynamics365/customer-service/administer/oc-historical-analytics-reports).
 
 :::image type="content" source="../media/proactive-outbound-report.png" alt-text="Screenshot of proactive outbound dashboard." lightbox="../media/proactive-outbound-report.png":::
 

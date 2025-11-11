@@ -20,9 +20,9 @@ Users can apply out-of-box filters, such as duration, channel, queue, proactive 
 
 ## Access the dashboard
 
-You can access the dashboard from the Customer service workspace. Learn more in [Access the dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights?context=/dynamics365/contact-center/context/use-context).
+You can access the dashboard from the Customer service workspace. Learn more in [Access the dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights).
 
-You need to enable the the Proactive Outbound dashboard from Customer Service admin center. Learn more in [Enable omnichannel historical analytics for proactive outbound](/dynamics365/customer-service/administer/oc-historical-analytics-reports.md).
+You need to enable the the Proactive Outbound dashboard from Customer Service admin center. Learn more in [Enable omnichannel historical analytics for proactive outbound](/dynamics365/customer-service/administer/oc-historical-analytics-reports).
 
 :::image type="content" source="../media/proactive-outbound-report.png" alt-text="Screenshot of proactive outbound dashboard." lightbox="../media/proactive-outbound-report.png":::
 
@@ -50,8 +50,8 @@ The dashboard is prefiltered by the default panel filters **Conversation type** 
 
 ## Related information
 
-[Omnichannel for Customer Service dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights?context=/dynamics365/contact-center/context/use-context)  
-[Enable historical analytics for proactive outbound engagements](/dynamics365/customer-service/use/oc-historical-analytics-reports?context=/dynamics365/contact-center/context/use-context)
+[Omnichannel for Customer Service dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights)    
+[Enable historical analytics for proactive outbound engagements](/dynamics365/customer-service/use/oc-historical-analytics-reports)
 
 
                                                                                                                                         

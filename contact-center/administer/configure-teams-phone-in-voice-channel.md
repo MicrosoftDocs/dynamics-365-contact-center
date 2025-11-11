@@ -5,7 +5,7 @@ author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
-ms.collection: null
+ms.collection:
 ms.date: 11/06/2025
 ms.custom:
   - bap-template

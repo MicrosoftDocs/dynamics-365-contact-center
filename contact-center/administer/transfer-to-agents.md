@@ -18,9 +18,7 @@ ms.custom:
 
 [!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
-
 In some support scenarios, a customer service representative (service representative or representative) needs to transfer a conversation back to an AI agent (agent) after providing personalized support. This transfer helps with basic, repetitive tasks or collects more information, like in a customer survey.
-
 
 You can facilitate the transfer of a conversation from a service representative back to an AI agent in the following ways:
 
@@ -59,3 +57,7 @@ In this scenario, after an AI agent has transferred a conversation to a service 
     - The Omnichannel Set context event
 9. The system triggers Agent B to send a greeting message.
 10. The customer now chats with Agent B.
+
+### Related information
+
+[Integrate a Copilot agent](/dynamics365/customer-service/administer/configure-bot-virtual-agent)  

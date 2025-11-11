@@ -51,7 +51,4 @@ The dashboard is prefiltered by the default panel filters **Conversation type** 
 ## Related information
 
 [Omnichannel for Customer Service dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights)    
-[Enable historical analytics for proactive outbound engagements](/dynamics365/customer-service/use/oc-historical-analytics-reports)
-
-
-                                                                                                                                        
+[Enable historical analytics for proactive outbound engagements](/dynamics365/customer-service/administer/oc-historical-analytics-reports)

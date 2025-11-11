@@ -96,7 +96,7 @@ The following metrics are available.
 
 ### How can I set goals for my top KPIs?
 
-Learn about how to set goals in [Configure KPI goals](../administer/enable-agent-insights.md#configure-kpi-goals)
+Learn how to set goals in [Configure KPI goals](../administer/enable-agent-insights.md#configure-kpi-goals)
 
 ### Can I use this dashboard when some AI agents only are enabled?
 

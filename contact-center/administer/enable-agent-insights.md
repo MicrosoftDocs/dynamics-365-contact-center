@@ -30,14 +30,14 @@ Set the KPI goals on the **Agent insights** page.
 
 **For conversations**: Turn on the toggle for the following KPIs:
 
-- **Autonomous rate**: Enter a value for the goal that should be achieved.
-- **Quality score**: Indicates the score that's set on the Quality Evaluation Agent settings page.
+- **Autonomous rate**: Set a goal for your AI agent's autonomous rate that tracks the percentage of conversations closed by AI agents without being routed to a representative.
+- **Quality score**: Turn on the toggle to use the quality score goal that's set on your Quality Evaluation Agent settings page.
 
 **For cases**:
 
-- **Autonomous rate**: Enter a value for the goal that should be achieved.
-- **Days to close**: Average number of days within which the cases should be closed.
-- **Quality score**: Indicates the score that's set on the Quality Evaluation Agent settings page.
+- **Autonomous rate**: Set a goal for your AI agent autonomous rate that tracks the percentage of cases closed by AI agents without being routed to a representative.
+- **Days to close**: Set a goal to reach for the average number of days to close a case.
+- **Quality score**: Turn on the toggle to use the quality score goal that's set on your Quality Evaluation Agent settings page.
 
 ### Related information
 

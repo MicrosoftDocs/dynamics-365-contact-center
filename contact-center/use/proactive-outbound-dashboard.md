@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: conceptual
 ms.collection:
-ms.date: 11/10/2025
+ms.date: 11/11/2025
 ms.custom: bap-template
 ---
 
@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
 
-The Proactive Outbound dashboard in Omnichannel historical analytics tracks conversation metrics and monitors ongoing conversations, through conversation direction (incoming or outgoing) and conversation type. The dashboard provides organizations with detailed insights into outbound customer engagements initiated through proactive outreach. The dashboard is designed to help teams monitor, analyze, and optimize outbound conversation strategies, ensuring higher delivery rates and improved customer experiences. The dashboard shows delivery status, result, and dial mode, enabling quick identification of trends and bottlenecks. Delivery metrics are segmented by proactive engagement configuration, queue, and date, allowing for granular analysis and targeted improvements.
+The Proactive Outbound dashboard in Omnichannel historical analytics tracks conversation metrics and monitors ongoing conversations by conversation direction (incoming or outgoing) and conversation type. It provides detailed insights into outbound customer engagements initiated through proactive outreach, helping teams monitor, analyze, and optimize strategies for higher delivery rates and improved customer experiences. The dashboard displays delivery status, result, and dial mode, enabling quick identification of trends and bottlenecks. Delivery metrics are segmented by proactive engagement configuration, queue, and date for granular analysis and targeted improvements.
 
 Users can apply out-of-box filters, such as duration, channel, queue, proactive engagement configuration, and time zone, to refine data for targeted analysis. 
 
@@ -28,11 +28,12 @@ You need to enable the the Proactive Outbound dashboard from Customer Service ad
 
 ## Interactive charts and tables
 
-Visualizations provide clear insights. 
+The dashboard displays these charts and tables for quick analysis.
+
 Charts:
 
 - **Total deliveries by status** bar chart displays (completed, expired, and others).
-- **Processed deliveries by result** pie chart shows Live Answer, Answering Machine, Expired. 
+- **Processed deliveries by result** donut chart shows call outcomes. For example, call ended, call failed. 
 - **Processed deliveries by dial mode** pie chart breaks down processed deliveries by dial mode (Copilot and Progressive), including new predictive dialing.
 
 Tables:

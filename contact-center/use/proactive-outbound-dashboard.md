@@ -20,7 +20,7 @@ Users can apply out-of-box filters, such as duration, channel, queue, proactive 
 
 ## Access the dashboard
 
-You can access the dashboard from the Customer service workspace. Learn more in [Access the dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights).
+You can access the dashboard from the Customer Wervice workspace. Learn more in [Access the dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights).
 
 You need to enable the the Proactive Outbound dashboard from Customer Service admin center. Learn more in [Enable omnichannel historical analytics for proactive outbound](/dynamics365/customer-service/administer/oc-historical-analytics-reports).
 
@@ -46,7 +46,7 @@ Tables:
 
 ## Panel filters
 
-The dashboard is prefiltered by the default panel filters **Conversation type** and **Conversation direction** to show outbound  interactions only. Additionally, you can check the default panel filters applied under **Dial mode**, **Delivery Status**, **Delivery Result**. You don't need any permissions to view panel filters. 
+The dashboard is prefiltered by the default panel filters **Conversation type** and **Conversation direction** to show outbound interactions only. You can also check the default panel filters applied under **Dial mode**, **Delivery Status**, **Delivery Result**. You don't need any permissions to view panel filters. 
 
 ## Related information
 

@@ -302,6 +302,10 @@
             href: all-ongoing-conversations.md
           - name: Manage ongoing record conversations
             href: manage-ongoing-record-conversations.md
+          - name: Proactive outbound dashboard
+            href: proactive-outbound-dashboard.md
+        - name: Manage ongoing conversations
+          href: all-ongoing-conversations.md
         - name: Use knowledge management analytics
           href: /dynamics365/customer-service/use/knowledge-search-analytics-cs?context=/dynamics365/contact-center/context/use-context
         - name: View copilot analytics report

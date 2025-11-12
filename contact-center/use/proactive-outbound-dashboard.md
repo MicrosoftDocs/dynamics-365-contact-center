@@ -33,7 +33,9 @@ The dashboard displays these charts and tables for quick analysis.
 Charts:
 
 - **Total deliveries by status** bar chart displays (completed, expired, and others).
-- **Processed deliveries by result** donut chart shows call outcomes. For example, call ended, call failed. 
+
+- **Processed deliveries by result** donut chart shows call outcomes. For example, call ended, call failed.
+
 - **Processed deliveries by dial mode** pie chart breaks down processed deliveries by dial mode (Copilot and Progressive), including new predictive dialing.
 
 Tables:

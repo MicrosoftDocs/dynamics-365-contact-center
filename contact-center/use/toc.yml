@@ -296,8 +296,14 @@
             href: /dynamics365/customer-service/use/oc-bot-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Voicemail dashboard
             href: /dynamics365/customer-service/use/oc-voicemail-dashboard?context=/dynamics365/contact-center/context/use-context
-          - name: Proactive outbound dashboard
+          - name: Proactive Outbound dashboard
             href: proactive-outbound-dashboard.md
+        - name: Use conversations
+          items:
+          - name: Manage all ongoing conversations
+            href: all-ongoing-conversations.md
+          - name: Manage ongoing record conversations
+            href: manage-ongoing-record-conversations.md
         - name: Manage ongoing conversations
           href: all-ongoing-conversations.md
         - name: Use knowledge management analytics

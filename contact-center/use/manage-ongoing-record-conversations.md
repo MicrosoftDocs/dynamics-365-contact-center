@@ -60,7 +60,7 @@ The conversation becomes available for other representatives in the queue to pic
 
 ### Remove a conversation
 
-Remove a conversation from the queue entirely.
+To remove a conversation from the queue entirely, select it, and then select **Remove**. Confirm the removal in the pop-up notification.
 
 1. Select the conversation you wish to remove and select **Remove** to confirm the removal in the pop-up notification.
 

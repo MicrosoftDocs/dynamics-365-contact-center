@@ -278,12 +278,10 @@
             href: /dynamics365/customer-service/use/realtime-ongoing?context=/dynamics365/contact-center/context/use-context
           - name: Backlog conversation report
             href: /dynamics365/customer-service/use/realtime-backlog-conv?context=/dynamics365/contact-center/context/use-context
-          - name: Backlog conversation report
-            href: /dynamics365/customer-service/use/realtime-backlog-conv?context=/dynamics365/contact-center/context/use-context
-          - name: Intent report
-            href: realtime-intent-group-report
-          - name: Agent group
-            href: realtime-agent-group-report
+          - name: Intent group report
+            href: realtime-intent-group-report.md
+          - name: Agent group report
+            href: realtime-agent-group-report.md
         - name: Use historical analytics dashboards
           items: 
           - name: Dashboards

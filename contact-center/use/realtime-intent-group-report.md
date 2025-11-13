@@ -1,5 +1,5 @@
 ---
-title: View and understand real-time analytics for record routing in the Intent group report.
+title: View and understand real-time analytics in the Intent group report.
 description: Use the Intent group report to drill down into metrics by intent and representative in Dynamics 365 Customer Service, enabling better insights and operational improvements.
 author: Soumyasd27
 ms.author: sdas
@@ -10,7 +10,7 @@ ms.date: 11/13/2025
 ms.custom: bap-template
 ---
 
-# View and understand real-time analytics for record routing in the Intent group report (preview)
+# View and understand real-time analytics in the Intent group report (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -18,11 +18,10 @@ Organizations set up intents and intent groups for the contact center to handle.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-:::image type="content" source="../media/intent-group-record-routing.png" alt-text="Screenshot of the Intent Group for record routing":::
 
 You can filter this report by **Duration**, **Line of Business**, **Agent group**, **Intent group**, **Work item status**, and **Time**.
 
-As part of visual customization, all record routing dashboards including **Summary**, **Backlog work items**, **Ongoing work items**, **Queue**, and **Agent** reports can be filtered by Intent group, intent and Line of Business by using the **IntentFamilyName** in **DimIntent** dimension. Learn more in [visual customization](customize-reports.md). You can search for the data measures for intent to select specific intent-based filters.
+As part of visual customization, all realtime dashboards including **Summary**, **Voice**, **Bot**, **Agent**, **Ongoing Conversation**, and **Backlog conversation** reports can be filtered by Intent group, intent and Line of Business by using the **IntentFamilyName** in **DimIntent** dimension. Learn more in [visual customization](/dynamics365/customer-service/use/customize-reports). You can search for the data measures for intent to select specific intent-based filters.
 
 ## Prerequisites
 
@@ -54,6 +53,6 @@ You can drilldown on the **Metrics by intent group**. Select **Detailed view** t
 
 ## Related information
 
-[Manage real-time analytics for record routing](../administer/enable-record-routing.md#manage-real-time-analytics-for-record-routing)  
-[Overview of real-time analytics for record routing](rr-overview.md#overview-of-real-time-analytics-for-record-routing)  
-[Record routing in the Agent group report](record-routing-agent-group.md#view-and-understand-real-time-analytics-for-record-routing-in-the-agent-group-report)
+[Manage real-time analytics reports](/dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator)  
+[Overview of Omnichannel real-time analytics dashboard](/dynamics365/customer-service/use/intro-realtime-analytics-dashboard) 
+[Agent group report (preview)](realtime-agent-group-report.md)

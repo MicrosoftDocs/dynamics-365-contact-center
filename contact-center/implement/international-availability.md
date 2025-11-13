@@ -4,9 +4,9 @@ description: Learn which geographic locations and languages Dynamics 365 Contact
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.topic: conceptual 
+ms.topic: concept-article
 ms.collection:
-ms.date: 11/27/2024
+ms.date: 11/06/2025
 ms.custom: bap-template
 ---
 
@@ -16,9 +16,9 @@ This article provides information about the geographic location and language ava
 
 ## Geographic location availability
 
-Your Microsoft 365 tenant must be co-located in one of the following geographic locations where Dynamics 365 Contact Center is available. These geographic locations refer only to your Microsoft 365 tenant, not to the data center where your Microsoft Power Platform environment or organization instance resides.
+Your Microsoft 365 tenant must be colocated in one of the geographic regions where Dynamics 365 Contact Center services are available. These geographic locations refer to your Microsoft 365 tenant only, and not to the data center where your Microsoft Power Platform environment or organization instance resides. The following table shows the channels that are available in the supported geographical regions.
 
-The following table shows which channels are available in the supported geographical regions.
+While voice channels aren't yet available in some regions, you can still connect to a Dynamics 365 Contact Center environment hosted in a supported region to use the service.
 
 | Region | Digital | Voice |
 |---|---|---|
@@ -29,27 +29,29 @@ The following table shows which channels are available in the supported geograph
 | France | Yes | No |
 | Germany |	Yes | No |
 | Government Community Cloud High (GCC High) | No | No |
-| Government Community Cloud Moderate (GCC Moderate) | No | No |
+| Government Community Cloud Moderate (GCC Moderate)<sup>**1**</sup> | Yes | Yes |
 | India | Yes | No |
 | Japan | Yes | No |
 | North America | Yes | Yes |
 | South America | Yes | No |
-| Switzerland |	Yes | No |
+| Switzerland |	Yes | Yes |
 | United Arab Emirates (UAE) | Yes | Yes |
 | United Kingdom | Yes | Yes |
 
+<sup>**1**</sup> Azure Communication Services for the voice channel continue to run in North America Commercial Cloud.
+
 ## Language availability
 
-The following table shows which languages the different features in Dynamics 365 Contact Center support.
+The following table shows the languages that the different features in Dynamics 365 Contact Center support.
 
 | Language | Language code | Digital | Voice |
 |---|---|---|---|
-| Arabic - Saudi Arabia | ar-SA | Yes | No |
+| Arabic - Saudi Arabia | ar-SA | Yes | Yes |
 | Bulgarian | bg-BGC | Yes | Yes |
 | Catalan | ca-ES | Yes | Yes |
 | Chinese - China - Mandarin | zh-CN | Yes | Yes |
 | Chinese - HK SAR - Cantonese | zh-HK | Yes | Yes |
-| Chinese - Taiwan - Traditional | zh-TW | Yes | Yes 
+| Chinese - Taiwan - Traditional | zh-TW | Yes | Yes |
 | Croatian - Croatia | hr-HR | Yes | Yes |
 | Czech - Czech Republic | cs-CZ | Yes | Yes |
 | Danish - Denmark | da-DK | Yes | Yes |
@@ -64,7 +66,7 @@ The following table shows which languages the different features in Dynamics 365
 | Finnish - Finland | fi-FI | Yes | Yes |
 | French - Canada | fr-CA | Yes | Yes |
 | French - France | fr-FR | Yes | Yes |
-| German - Germany | de-DE | Yes | Yes 
+| German - Germany | de-DE | Yes | Yes|
 | Greek - Greece | el-GR | Yes | Yes |
 | Hebrew - Israel | he-IL | Yes | Yes |
 | Hindi - India | hi-IN | Yes | Yes |
@@ -94,7 +96,7 @@ The following table shows which languages the different features in Dynamics 365
 | Ukrainian - Ukraine | uk-UA | Yes | No |
 | Vietnamese - Vietnam | vi-VN | Yes | Yes |
 
-## Related information
+### Related information
 
 [Languages supported in voice-enabled copilots](/microsoft-copilot-studio/voice-supported-languages)  
 [Languages supported in Copilot features](/dynamics365/customer-service/administer/cs-region-availability-service-limits#language-support-for-ai-based-analytics-and-insights-in-customer-service)  

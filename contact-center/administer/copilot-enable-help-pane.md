@@ -1,65 +1,155 @@
 ---
 title: Enable features in Copilot pane
-description: Learn how to enable features that appear in the Copilot help pane to increase agent productivity.
+description: Learn how to enable features that appear in the Copilot help pane to increase customer service representative productivity.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 01/16/2025
+ms.date: 10/27/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 
-# Enable Copilot assist
+# Enable features in Copilot pane
 
-The Copilot allows agents to use Copilot features such as respond to questions, suggest a response, and compose an email.
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
+
+The Copilot help pane allows customer service representatives (service representatives or representatives) to use Copilot features such as respond to questions, compose an email, and draft a chat response in Copilot Service workspace.
 
 ## Prerequisites
 
- You have the System Administrator role.
+- You have the System Administrator role.
+- If you aren't in the North America region and you want to use the web search powered by Bing feature, then you must enable data movement across regions and Bing search in Power Platform admin center. Learn more in [Enable data movement across regions](/power-platform/admin/geographical-availability-copilot).
+
+   :::image type="content" source="../media/ppac-gen-ai-features.png" alt-text="Power Platform Admin center Bing chat.":::
 
 ## Enable Copilot assist features
 
-Perform the following steps to enable the Copilot features in Contact Center admin center:
+Perform the following steps to enable the Copilot features in Copilot Service admin center:
+
 1. Use one of the following navigation options:
-      - Select **Manage** in **Agent Experience** > **Productivity** > **Copilot for questions and emails**.
-      - Select **Manage** in **Operations** > **Insights** > **Copilot for questions and emails**
-1. The **Copilot for questions and emails** page appears. You can select the Copilot features you'd like to enable for agents on this page.
-  - **Ask a question**: The **Ask a question** tab appears when agents sign in to the application. Agents can ask questions conversationally, and Copilot answers the questions based on the internal knowledge base sources.
-  - **Help pane - write an email**: The **Write an email** tab appears when agents sign in to the application. Agents can use Copilot to make emails clearer, concise, and compelling. 
+      - **Support Experience** > **Productivity** > **Copilot for questions and email**
+      - **Operations** > **Insights** > **Copilot for questions and email**
+1. Select **Manage** in **Copilot for questions and email**. The **Copilot for questions and email* page appears. You can select the Copilot features you'd like to enable for service representatives on this page.
+
+     :::image type="content" source="../media/copilot-admin-email-mini.png" alt-text="Screenshot of ask a question in Copilot pane." lightbox="../media/copilot-admin-email.png":::
+
+## Enable ask a question
+
+Select **Make Copilot available to representatives** in the **Copilot for questions and email** page of Copilot Service admin center. The **Ask a question** tab on the **Copilot for questions and email** appears when service representatives sign in to Copilot Service workspace. Representatives can ask questions conversationally, and Copilot answers the questions based on the internal knowledge base sources.
+
+## Enable proactive prompts in ask a question
+
+Proactive prompting enables service representatives to discover and prompt Copilot effortlessly, without the need for manual typing. This saves the service representative’s time and improves the quality of their overall experience.
+
+You can enable and configure the prompts that appear in the **Ask a question** tab. You can configure the following prompts in Copilot Service admin center:
+
+1.	Go to **Support Experience** > **Productivity** >, and select **Manage** for **Copilot for questions and emails**.
+1.	On the **Copilot for questions and emails** page, select **Ask a question**.
+1. On the **Manage prompt settings** page, select the following as required:
+    - **Suggested prompts**
+    - **Proactive insights**
+1.	In the **Prompts from my organization** section, select **Add new prompt** to add the prompts that you would like to use.
+1.	Select **Save and close**.
+
 ## Configure knowledge sources
 
 You can configure the knowledge base for Copilot to generate responses.
 
 ### Prerequisites
 
-Make sure that you have [knowledge management](/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search#set-up-knowledge-management?context=/dynamics365/contact-center/administer-context) configured in your environment and your knowledge article parameters are as follows:
-   - Updated with the latest version
-   - The state is set to Published
+Make sure that you have [knowledge management](/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search#setup-overview) configured in your environment and your knowledge article parameters are as follows:
+- Updated with the latest version
+- The state is set to Published
 
 > [!NOTE]
- > Copilot uses the content attribute only in the knowledge article table to generate responses for ask a question, write an email, and draft a chat features. You can't customize the behavior.
+> - Copilot uses the content attribute only in the knowledge article table to generate responses for the ask a question, write an email, and draft a chat features. You can't customize this behavior.
+> - Copilot uses knowledge articles tagged with the same language as the UI to generate responses.
 
 ### Enable knowledge base
 
-Select **Knowledge base** to allow Copilot to utilize internal knowledge base resources for generating responses. Copilot uses the resources for the ask a question and draft an email features, both in the Copilot help pane and the rich text editor. By default, the option is disabled.
+Select **Knowledge base** to allow Copilot to use internal knowledge base resources for generating responses. Then, the information is used for the ask a question and draft an email features in the Copilot help pane and rich text editor. By default, this option isn't turned on.
 
-If you disable the knowledge base option, agents use Copilot to draft an email using the **Suggest a call**, **Request more information**, **Empathize with feedback** and **Custom** prompts.
+If you turned off the knowledge base option, representatives can use Copilot to draft an email using the **Suggest a call**, **Request more information**, **Empathize with feedback** and **Custom** prompts.
+
+### Enable knowledge sources configured in Copilot Studio (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+You can enable customers to integrate various knowledge sources without having to add the content directly into the Dynamics 365 knowledge base. When knowledge sources are added, Copilot can use enterprise data from Power Platform, Dynamics 365 data, websites, and external systems. Knowledge sources allow your representatives to provide relevant information and insights for your customers. Learn more in [Enable knowledge sources from Microsoft Copilot Studio (preview)](knowledge-copilot.md).
 
 ### Add trusted webpages as sources
 
-You can select **Add web address** in **Web resources** to add trusted domains. You can add up to five trusted web domains for Copilot to search and generate responses from. Copilot searches for information up to two levels down from the configured domain. 
+[!INCLUDE [cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
+
+You can select **Add web address** in **Web resources** to add trusted domains. You can add up to five trusted web domains for Copilot to search and generate responses from. Copilot searches for information up to two levels down from the configured domain. You must enable the Bing Search in Power Platform admin center to add trusted web sources. Learn more in [Enable data across geographic locations](/microsoft-copilot-studio/manage-data-movement-outside-us#enable-data-across-geographic-locations).
+
 Copilot uses articles that are two nodes down the configured domain.
 
 > [!NOTE]
-> - The knowledge base content is refreshed every day.
+> - The system refreshes the knowledge base content every day.
 > - External websites are used by Copilot to draft emails and chat replies only.
 
 ## Enable translation
 
-Select **Let agents translate responses** to allow agents to translate responses generated by Copilot to their preferred language. Agents can choose from a list of languages that your organization has added to Dynamics 365 Contact Center.
+Select **Let representatives translate responses** to allow service representatives to translate responses generated by Copilot to their preferred language. Representatives can choose from a list of languages that your organization has added to Dynamics 365 Customer Service.
 
+## Set up filters
+
+Filters enable Copilot to generate responses based on a specific set of topics. You can set up filters for the ask a question and draft a response features.
+
+You can apply the filters in the following sections.
+
+> [!NOTE]
+> - We recommend that the appropriate knowledge content is available for the filters you set so service representatives can view the expected responses. 
+> - The fields that appear in the **Manage filters** pane when you add a filter are of the data type **String**, **Whole Number**, **Option Set**, or **Two Options Set**. Fields of other data types aren't supported.
+
+### Preset filters
+
+Specify filters that are applied by default in the background to filter knowledge base articles. Representatives can't view these filters. You can set predefined filters for the ask a question and draft a response features as follows:
+
+1. Select **Manage Filters** in **Filters**. The **Manage filters** pane appears.
+1. Select **Manage rules** in **Preset filters** for the required feature.
+1. Specify the required conditions for the filter.
+1. Select **Finish editing**.
+    
+### Representative Filters
+
+Specify the filters that representatives can apply to further filter and refine Copilot responses. Representatives can view and select or deselect these filters in the Copilot help pane for the ask a question feature. If a filter isn't configured as a representative filter, it operates in the background and isn't visible to representatives.
+
+To configure a representative filter, do the following steps:
+
+1. Select **Add Filter** for **Representative Filters**.
+1. Specify the required knowledge base field that representatives can use. You can also specify the display name and add the values from the field that the representative can select.
+1. Turn on the **Filter status** toggle. This toggle must be turned on for the representative to view the filter.
+1. Select **Finish editing**.
+
+### Automated filters
+
+Specify the filters that are automatically applied. The representatives don't need to explicitly set them in the Copilot help pane. To configure automated filters, do the following steps:
+
+1. Select **Add Filter** for **Automated Filters**.
+1. Specify the required knowledge base field and the rules that correspond to the field's value. The filter rule is applied only on the record type the representative is currently working on.
+1. Turn on the **Use untagged content if the field value is null** toggle to view all the content if the field value doesn't match the specified value.
+1. Turn on the **Allow representatives to view or change this filter** toggle for service representatives to view a visual cue that the automated filter is applied and change the filtering options. Based on your setting, the following actions apply: 
+   - **On**: The application prompts you to create a corresponding representative filter for the same knowledge attribute in **Representative Filters**. Then, representatives can view the filter on the Copilot help pane.
+   - **Off**: Representatives can't view the filter on the Copilot help pane. The filters operate in the background without any service representative notifications.
+1. Select **Finish editing**.
+
+> [!NOTE]
+> You can add up to five filters per category.
+
+### Features supported with different knowledge sources
+
+The following table summarizes the Copilot features supported for a configured knowledge source.
+
+| Feature | Knowledge base | External web resources | Knowledge sources in Copilot Studio|
+|-------|----------|---------|--------|
+|Ask a question |Yes|No| Yes|
+|Write an email | Yes|Yes|No|
 
 ### Related information
 
-[Use Copilot to solve customer issues](../use/use-copilot-features.md)  
+[FAQ about Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)  
+[Responsible AI FAQ about copilot features](/dynamics365/customer-service/implement/faq-responsible-ai-copilot)  

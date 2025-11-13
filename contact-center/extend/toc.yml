@@ -6,6 +6,20 @@
         href: ../index.yml
       - name: Welcome to Dynamics 365 Contact Center
         href: ../implement/overview-contact-center.md?context=/dynamics365/contact-center/context/extend-context
+      - name: Developer tools for Customer Service
+        href: /dynamics365/customer-service/develop/omnichannel-developer?context=/dynamics365/contact-center/context/extend-context
+      - name: Unified routing and assignment
+        items: 
+        - name: Understand how unified routing affects queue items and live work items for routed records
+          href: /dynamics365/customer-service/develop/unified-routing-impact-on-APIs?context=/dynamics365/contact-center/context/extend-context 
+        - name: Add a skill control for routed records
+          href: /dynamics365/customer-service/develop/add-skill-control?context=/dynamics365/contact-center/context/extend-context 
+        - name: Close live work items or deactivate queue items
+          href: /dynamics365/customer-service/develop/deactivate-queue-items?context=/dynamics365/contact-center/context/extend-context 
+        - name: Route noncase records using a plug-in
+          href: /dynamics365/customer-service/develop/trigger-routing-non-case-records?context=/dynamics365/contact-center/context/extend-context 
+        - name: Add multiple preferred agent records
+          href: /dynamics365/customer-service/develop/add-multiple-preferred-agent-records?context=/dynamics365/contact-center/context/extend-context 
       - name: Connectors
         items:
         - name: Configure ServiceNow connector
@@ -14,6 +28,12 @@
           href: configure-zendesk-connector.md
         - name: Configure the connector for any CRM solution
           href: configure-custom-connector.md
+      - name: Proactive engagement (preview)
+        items:
+        - name: Use CCaaS_CreateProactiveVoiceDelivery API
+          href: api/ccaas_createproactivevoicedelivery.md
+        - name: Use proactive engagement tables for reporting
+          href: proactive-engagement-tables.md
       - name: Chat
         items:
         - name: Develop a custom live chat widget
@@ -56,6 +76,34 @@
             href: /dynamics365/customer-service/develop/test-custom-channel-sample-html?context=/dynamics365/contact-center/context/extend-context
           - name: Markdown formats in custom channels that use Direct Line
             href: /dynamics365/customer-service/develop/markdown-formats-dev?context=/dynamics365/contact-center/context/extend-context   
+        - name: Custom channel using messaging APIs (preview)
+          items:
+          - name: Overview of messaging APIs
+            href: intro-messaging-apis.md
+          - name: Configure a custom messaging channel using messaging APIs
+            href: configure-custom-messaging-channel.md
+          - name: API endpoints
+            items:
+            - name: "/consumer/conversations/create"
+              href: api/api-conversation-create.md
+            - name: "/conversation/{id}"
+              href: api/api-conversation-endpoint.md
+            - name: "/conversations"
+              href: api/api-conversation.md
+            - name: "/conversation/{conversationId}/messages"
+              href: api/api-conversation-messages.md  
+            - name: "/conversation/{conversationId}/contexts"
+              href: api/api-conversation-context.md          
+            - name: Use webhook to receive messages and events
+              href: api/api-conversation-webhook.md           
+          - name: Error handling
+            href: error-handling.md                   
+      - name: Voice
+        items: 
+        - name: Download call recordings in bulk
+          href: download-call-recordings-bulk.md
+        - name: Use APIs to pause, resume transcription and recording 
+          href: api/record-transcription-api.md
       - name: Copilot in Customer Service
         items:  
         - name: Download Copilot transcripts and interaction data
@@ -107,7 +155,11 @@
       - name: Extend Omnichannel for Customer Service
         href: /dynamics365/customer-service/develop/extend-omnichannel?context=/dynamics365/contact-center/context/extend-context
       - name: Overview of entity reference
-        href: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=/dynamics365/contact-center/context/extend-context
+        href: /dynamics365/customer-service/develop/reference/about-entity-reference?context=/dynamics365/contact-center/context/extend-context
+      - name: Session closure reasons
+        href: closure-reasons-descriptions.md
+      - name: Known issues in Customer Service and Dynamics 365 Contact Center
+        href: https://go.microsoft.com/fwlink/p/?linkid=2165393  
     - name: Responsible AI
       items:
       - name: Overview

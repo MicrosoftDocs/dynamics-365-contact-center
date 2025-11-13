@@ -1,45 +1,45 @@
 ---
-title: Synchronize agent presence status across multiple systems
-description: How-to synchronize agent presence status across multiple systems.
+title: Synchronize service representative presence status across multiple systems
+description: How-to synchronize service representative presence status across multiple systems.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: 
-ms.date: 11/15/2024
+ms.date: 05/15/2025
 ms.custom: bap-template 
 ---
 
-# Synchronize agent presence status across multiple systems
+# Synchronize service representative presence status across multiple systems
 
- Presence APIs provide methods to access and update agent availability information across multiple systems. You can synchronize agents' presence status to avoid overbooking and ensure synchronization across platforms.
+ Presence APIs provide methods to access and update customer service representative (service representative or representative) availability information across multiple systems. You can synchronize service representatives' presence status to avoid overbooking and ensure synchronization across platforms.
 
 ## Prerequisites
 
 Before you start, make sure you have the following:
 
 - A license for Dynamics 365 Contact Center.
-- Omnichannel agent or Omnichannel Supervisor role for the agents whose presence status you want to sync.
+- Omnichannel agent or Omnichannel Supervisor role for the service representatives whose presence status you want to sync.
 - A third-party application that you want to integrate with, such as Teams. The application must be allowlisted in Dataverse to access APIs and entities.
 - A middleware system that can pass messages between Dynamics 365 Contact Center, Dynamics 365 Customer Service and the other application.
-- An agent dictionary in the middleware that maps the agents' IDs in both systems.
+- A service representative dictionary in the middleware that maps the service representatives' IDs in both systems.
 
-## Set up a webhook for agent presence changes
+## Set up a webhook for representative presence changes
 
-A webhook allows an external service to start a particular runbook in Azure Automation through a single HTTP request. To get notified of agent presence changes or new agents, you can set up a webhook for the **msdyn_agentstatus** entity, which stores the agent's status updates.
+A webhook allows an external service to start a particular runbook in Azure Automation through a single HTTP request. To get notified of service representative presence changes or new service representatives, you can set up a webhook for the **msdyn_agentstatus** entity, which stores the service representative's status updates.
 
 1. [Create and register a webhook](/power-apps/developer/data-platform/register-web-hook) using the plug-in registration tool.
-1. [Register a step for the WebHook](/power-apps/developer/data-platform/register-web-hook#register-a-step-for-a-webhook) for updating an agent's presence status or adding a new agent with the following parameters: 
+1. [Register a step for the WebHook](/power-apps/developer/data-platform/register-web-hook#register-a-step-for-a-webhook) for updating a service representative's presence status or adding a new service representative with the following parameters: 
       - **Primary Entity**: msdyn_agentstatus
       - **Execution Mode**: Synchronous
       - **Deployment**: Server
    > [!NOTE]
-   > If you want to capture only presence changes, we recommend that you set **Filtering attributes** to current presence to improve performance.
+   > If you want to capture presence changes only, we recommend that you set **Filtering attributes** to current presence to improve performance.
 
 
 ## Use the webhook
 
-When the agent's presence status changes or a new agent is added in the application, the webhook sends a notification to the external service with the updated information. You can use this information to sync the agent's presence status in the other system. From the webhook response, you can get the **msdyn_agentid** for which the presence changed to **msdyn_currentpresenceid**.
+When the service representative's presence status changes or a new service representative is added in the application, the webhook sends a notification to the external service with the updated information. You can use this information to sync the service representative's presence status in the other system. From the webhook response, you can get the **msdyn_agentid** for which the presence changed to **msdyn_currentpresenceid**.
 
 By default, the out-of-the-box presence statuses mapped to the following presence id.
 
@@ -51,10 +51,10 @@ By default, the out-of-the-box presence statuses mapped to the following presenc
 | Offline         | 70139190-c07a-e811-8162-000d3aa11f50 |
 | Away            | 3dacae76-c07a-e811-8162-000d3aa11f50 |
 
-The following sections provide examples of the JSON payload for when the agent presence is modified and when a new agent is added. 
+The following sections provide examples of the JSON payload for when the service representative presence is modified and when a new service representative is added. 
 
 
- ### [Modify agent presence](#tab/modifyagentpresence)
+ ### [Modify service representative presence](#tab/modifyagentpresence)
 
 ```json
 {
@@ -784,11 +784,11 @@ The following sections provide examples of the JSON payload for when the agent p
 
 ## Use APIs to get or modify presence status
 
- You can use custom APIs to get or modify the agent's presence status. Do the following steps to use these APIs:
+ You can use custom APIs to get or modify the service representative's presence status. Do the following steps to use these APIs:
 
 1. Generate tokens using in certificate based authentication using your application ID. Learn more in [Use OAuth authentication with Microsoft Dataverse](/power-apps/developer/data-platform/authenticate-oauth).
 1. Assign impersonation privileges to the application. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
 1. Perform the required API calls as follows:
-     - [CCaaS_GetPresence](api/ccaas_getpresence.md) to get the agent's presence status.
-     - [CCaaS_ModifyAgentPresence](api/ccaas_modifyagentpresence.md) to update the agent's presence status.
+     - [CCaaS_GetPresence](api/ccaas_getpresence.md) to get the service representative's presence status.
+     - [CCaaS_ModifyAgentPresence](api/ccaas_modifyagentpresence.md) to update the service representative's presence status.
      

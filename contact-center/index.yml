@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: neeranelli
   ms.author: nenellim
-  ms.date: 02/06/2025
+  ms.date: 11/10/2025
   ms.custom: bap-template
   hide_bc: true
 
@@ -82,10 +82,12 @@ additionalContent:
       - url: administer/configure-copilot-features.md
         text: Manage Copilot features
       - url: /dynamics365/customer-service/administer/configure-bot-virtual-agent?context=/dynamics365/contact-center/context/administer-context
-        text: Integrate a Copilot Studio bot  
+        text: Integrate a Copilot Studio agent
+      - url: administer/manage-customer-intent-agent.md
+        text: Configure Customer Intent Agent   
     - title: Develop
       links:
-      - url: /dynamics365/customer-service/develop/reference/entities/overview-entity-ref?context=/dynamics365/contact-center/context/extend-context
+      - url: /dynamics365/customer-service/develop/reference/about-entity-reference?context=/dynamics365/contact-center/context/extend-context
         text: Dynamics 365 Contact Center entity reference
       - url: /dynamics365/customer-service/develop/omnichannel-reference?context=/dynamics365/contact-center/context/extend-context
         text: Live chat SDK Reference
@@ -97,7 +99,7 @@ additionalContent:
     - title: Communicate over channels your customers prefer
       links:
       - url: use/ccw-overview.md
-        text: Use Contact Center workspace      
+        text: Use Copilot Service workspace      
       - url: /dynamics365/customer-service/use/channels?context=/dynamics365/contact-center/context/use-context
         text: Communicate over multiple channels
       - url: /dynamics365/customer-service/administer/voice-channel?context=/dynamics365/contact-center/context/administer-context
@@ -112,11 +114,11 @@ additionalContent:
         text: Manage conversations and activities on the timeline
     - title: Use Copilot
       links:
-      - url: use/use-copilot-features.md
-        text: Use Copilot to solve customer issues
-      - url: use/copilot-use-summary.md#summarize-conversations
+      - url: use/copilot-feature-availability.md
+        text: Copilot feature availability across applications      
+      - url: use/copilot-summarize-conversations.md  
         text: Use Copilot to summarize conversations
-      - url: use/use-copilot-features.md#ask-a-question
+      - url: use/use-ask-a-question.md
         text: Ask a question in Copilot
     - title: Get insights and analyze contact center operations 
       links:

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection:
-ms.date: 08/01/2024
+ms.date: 05/15/2025
 ms.custom: bap-template
 ---
 
@@ -32,9 +32,9 @@ The omnichannel add-in uses data connectors to work with non-Microsoft CRM solut
 ## Configure the data connector
 
 > [!IMPORTANT]
-> After you configure the data connector and sync it from the Salesforce instance, we recommend that you don't make any changes to the synced data in Dataverse, because those changes aren't synced back to Salesforce. If you must update the data, update it only in Salesforce.
+> After you configure the data connector and sync it from the Salesforce instance, we recommend that you don't make any changes to the synced data in Dataverse because those changes aren't synced back to Salesforce. If you must update the data, update it in Salesforce only.
 
-1. In Contact Center admin center, in the site map, under **Agent experience**, go to **Workspaces**. Then, for **Data synchronization from external CRMs**, select **Manage**. Alternatively, on the home page, under **CRM connection wizard**, select **Open**.
+1. In the site map of Copilot Service admin center, under **Support experience**, go to **Workspaces**. Then, for **Data synchronization from external CRMs**, select **Manage**. Alternatively, on the home page, under **CRM connection wizard**, select **Open**.
 1. On the **Data synchronization from external CRMs** page, select **New**.
 1. On the **Create a CRM connector** page, select **Salesforce**, and then select **Next**. If you're connecting to Salesforce for the first time, the **Connection Setup** dialog displays a **Sign in** button. Otherwise, the dialog displays an ellipsis (**&hellip;**) button that you can use to sign in.
 
@@ -53,7 +53,7 @@ The omnichannel add-in uses data connectors to work with non-Microsoft CRM solut
     1. Select **Create**.
 
 1. On the **Add Third party CRM connector** page, select **I agree to share connector permissions**, and then select **Next**.
-1. The **Enable salesforce permissions** page lists steps that you must complete in Salesforce. Sign in to the Salesforce instance that opens on a new tab, and then complete the steps that are listed. When you're finished, go to the setup page in Contact Center admin center, and select the checkbox that indicates that you completed the steps in Salesforce.
+1. The **Enable salesforce permissions** page lists steps that you must complete in Salesforce. Sign in to the Salesforce instance that opens on a new tab, and then complete the steps that are listed. When you're finished, go to the setup page in Copilot Service admin center, and select the checkbox that indicates you completed the steps in Salesforce.
 1. Select **Next**.
 1. On the **Choose tables to sync** page, select the `Contacts` and `Accounts` tables that you want to sync. To maintain the relationship about the linked data between the records, we recommend that you select both tables.
 1. Select **Next**.

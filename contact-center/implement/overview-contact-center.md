@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: overview
 ms.collection: get-started
-ms.date: 01/16/2025
+ms.date: 05/15/2025
 ms.custom: bap-template
 ---
 
@@ -26,7 +26,7 @@ Here are some of the key capabilities of Dynamics 365 Contact Center:
 
 :::image type="content" source="../media/contact-center-overview.png" alt-text="Diagram that shows the end-to-end working of Dynamics 365 Contact Center, incorporating functionality and roles for self-service, assisted service, and operations.":::
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1mL7H?maskLevel=0]
+> [!VIDEO 2ccf496a-b963-4c9d-8f07-f05fb9f3e389]
 
 ## Next steps
 
@@ -34,4 +34,4 @@ Here are some of the key capabilities of Dynamics 365 Contact Center:
 
 ## Related information
 
-[Use Contact Center admin center to configure features](../administer/cc-admin-center.md)
+[Use Copilot Service admin center to configure features](../administer/cc-admin-center.md)

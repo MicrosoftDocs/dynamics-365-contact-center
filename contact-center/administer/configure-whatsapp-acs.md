@@ -1,7 +1,7 @@
 ---
-title: Configure a WhatsApp channel through Azure Communication Services (preview)
+title: Configure a WhatsApp channel through Azure Communication Services 
 description: Use this article to learn how to configure the WhatsApp channel through Azure Communication Services.
-ms.date: 11/27/2024
+ms.date: 05/05/2025
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -10,25 +10,21 @@ ms.collection:
 ms.custom: bap-template
 ---
 
-# Configure a WhatsApp channel through Azure Communication Services (preview)
+# Configure a WhatsApp channel through Azure Communication Services 
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-> [!IMPORTANT]
-> This is a preview feature.
-> Preview features aren’t meant for production use and might have restricted functionality. To sign up to use this feature, fill out [this](https://forms.office.com/r/xu3K2hDic1) form.
 
-The success of social media customer service, like all other customer services, depends on the quality of customer care provided. Communications from agents should be timely, accurate, sensitive, brief, and friendly, which ultimately improves customer satisfaction and brand loyalty. To enhance customer satisfaction and improve communications, the omnichannel capability in the application enables you to send and receive WhatsApp messages using [Azure Communication Services](/azure/communication-services). You can use the WhatsApp channel feature to engage in conversations with customers for product inquiry and customer service scenarios with those who prefer to communicate using WhatsApp. 
+The success of social media customer service, like all other customer services, depends on the quality of customer care provided. Communications from customer service representatives should be timely, accurate, sensitive, brief, and friendly, which ultimately improves customer satisfaction and brand loyalty. To enhance customer satisfaction and improve communications, the omnichannel capability in the application enables you to send and receive WhatsApp messages using [Azure Communication Services](/azure/communication-services). You can use the WhatsApp channel feature to engage in conversations with customers for product inquiry and customer service scenarios with those who prefer to communicate using WhatsApp. 
 
 
 ## Prerequisites
 
 - Channels are provisioned in your environment. Learn more in [provision channels](../implement/provision-channels.md).
-- You have an Azure account with an active subscription. Make sure that the Azure subscription and Dynamics 365 account are in the same tenant. Learn more at [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account).
+- You have an Azure account with an active subscription. Make sure that the Azure subscription and Dynamics 365 account are in the same tenant. Learn more in [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
    - Create or use an existing Azure Communication Services resource. Learn more in [Create and manage Communication Services resources](/azure/communication-services/quickstarts/create-communication-resource).
     - Obtain a phone number that can send and receive SMS. You have several options:
        - Purchase a phone number or import one from Azure Communication Services. Learn more in [Get and manage phone number](/azure/communication-services/quickstarts/telephony/get-phone-number) or [import phone numbers](/dynamics365/customer-service/administer/voice-channel-sync-from-acs?context=/dynamics365/contact-center/context/administer-context).
-       - Bring a phone number from your provider. Learn more in [Bring your own carrier](/dynamics365/customer-service/administer/voice-channel-bring-your-own-number?context=/dynamics365/contact-center/context/administer-context).
        -    Migrate your existing WhatsApp business accounts with phone number.
    - Set up Advanced Messaging for WhatsApp. Learn more in [Advanced Messaging for WhatsApp in Azure Communication Services](/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview) and [Register WhatsApp business account](/azure/communication-services/quickstarts/advanced-messaging/whatsapp/connect-whatsapp-business-account).
    - Set up Event Grid with Microsoft Entra app authentication. Learn more in [Handle Advanced Messaging events](/azure/communication-services/quickstarts/advanced-messaging/whatsapp/handle-advanced-messaging-events) and [Deliver events to Microsoft Entra protected endpoints](/azure/event-grid/secure-webhook-delivery).
@@ -43,7 +39,7 @@ The success of social media customer service, like all other customer services, 
 
 ## Get Azure Communication Services details
 
-You'll need these details when you create the WhatsApp channel in [the following section](#create-a-whatsapp-channel). You might find it helpful to have the Azure portal and the Contact Center admin center or Customer Service admin center open in separate browser tabs and switch back and forth as required.
+You'll need these details when you create the WhatsApp channel in [the following section](#create-a-whatsapp-channel). You might find it helpful to have the Azure portal and the Copilot Service admin center open in separate browser tabs and switch back and forth as required.
    
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/).
 
@@ -65,7 +61,7 @@ You'll need these details when you create the WhatsApp channel in [the following
 
 ## Create a WhatsApp channel
 
-You can create a WhatsApp channel in either the Contact Center admin center or the Customer Service admin center.
+You can create a WhatsApp channel in Copilot Service admin center.
 
 1. In **Customer support**, select **Channels**.
 
@@ -77,7 +73,7 @@ You can create a WhatsApp channel in either the Contact Center admin center or t
 
 1. Select the data sharing consent message, and then select **Next**.
 
-1. In the **Provider** list, select **Azure Communication Services (Preview)**.
+1. In the **Provider** list, select **Azure Communication Services**.
 
 In the following instructions, you'll provide the information from the Azure portal in [the previous section](#get-azure-communication-services-details).
 

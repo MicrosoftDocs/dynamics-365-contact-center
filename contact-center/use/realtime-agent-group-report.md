@@ -1,12 +1,12 @@
 ---
-title: View and understand real-time analytics for in the Agent  group report
+title: View and understand real-time analytics for in the Agent group report
 description: Learn how to filter and analyze real-time metrics in the Agent group report in Dynamics 365 Contact Center to identify trends and improve agent and customer outcomes.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: conceptual
 ms.collection:
-ms.date: 10/21/2025
+ms.date: 11/14/2025
 ms.custom: bap-template
 ---
 
@@ -20,7 +20,7 @@ Organizations set up intents and intent groups for the contact center. Real-time
 
 You can filter this report by **Duration**, **Line of Business**, **Agent group**, **Intent group**, **Work item status**, and **Time**.
 
-As part of visual customization, all real-time dashboards including **Summary**, **Voice**, **Bot**, **Agent**, **Ongoing Conversation**, and **Backlog conversation** reports can be filtered by Intent group, intent and Line of Business by using the **IntentFamilyName** in **DimIntent** dimension. Learn more in [visual customization](/dynamics365/customer-service/use/customize-reports). You can search for the data measures for intent to select specific intent-based filters.
+As part of visual customization, all real-time dashboards including **Summary**, **Voice**, **Bot**, **Agent**, **Ongoing Conversation**, and **Backlog conversation** reports can be filtered by intent group, intent, and line of business by using the **IntentFamilyName** in **DimIntent** dimension. Learn more in [visual customization](/dynamics365/customer-service/use/customize-reports). You can search for the data measures for intent to select specific intent-based filters.
 
 ## Prerequisites
 
@@ -43,15 +43,15 @@ You see the report after 24 hrs of provisioning. If you don't enable Customer In
 |Session rejection rate     |  Session Rejection Rate (%)= Number of sessions rejected by agents / Total number of sessions assigned to agents *100 |
 |Longest wait time| Longest wait time is a measure of the longest first wait time among unaccepted incoming conversations. |
 |Conversations abandoned rate | Abandoned rate refers to the percentage of incoming conversation requests that are terminated before a representative engages with the customer. |
-|Logged in agents | Logged in service representatives is the number of representatives who are currently logged in and aren't in Offline status. |
+|Logged in agents | Logged in service representatives is the number of representatives who are currently logged in and aren't in **Offline** status. |
 |Agents available | Service representatives who are currently in **Available** status. |
-|Avg. handle time (hh:mm:ss)| It’s the total handle time divided by the number of conversations handled.|
+|Avg. handle time (hh:mm:ss)| The total handle time divided by the number of conversations handled.|
 |Agent availability status| Donut charts showing agent presence status. |
  
 
 ## Drill-down 
 
-Drilldown on the **Metrics by agent group**, and select **Detailed view** to view **Metrics by agent group**.
+Drill down on the **Metrics by agent group**, and then select **Detailed view** to view **Metrics by agent group**.
 
 ## Related information
 

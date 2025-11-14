@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 11/07/2025
+ms.date: 11/14/2025
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template
@@ -186,9 +186,28 @@ Tag instructions with specific syntax to apply them in certain channels, or for 
 
 ### How to write clear instructions
 
+These guidelines define how intent-level, group-level, and organizational-level instructions should be written to ensure clarity, consistency, and alignment with the agent’s goals.
+
+**Organizational or Line of Business instruction guidelines**
+
+|Guidelines |Why it matters   |Example   |
+|---------|---------|---------|
+|Start with a concise statement that defines the objective of Customer Intent Agent.    | Establishes the brand voice and scope, and helps Customer Intent Agent select the right tone.         |   "You're a representative from Contoso Coffee, assisting customers with orders and account questions."       |
+|Tweak overall tone to reflect brand personality. |    Creates a consistent voice across all customer interactions.     |   “Keep language warm, empathetic, and professional. Show understanding without over-apologizing.”      |
+|Define general behavioral boundaries and escalation policies.    |  Ensures compliance and predictable outcomes.       |   “If resolving the issue requires judgement, verification, or policy exceptions, summarize context and hand off to a human agent.”     |
+|Include a glossary of common terms and abbreviations.    | Reduces ambiguity across regions or departments.        |   “SHS’ = Successful Handling Score; ‘PSS’ = Product Support Specialist;”      |
+
+**Intent group instruction guidelines**
+
+|Guidelines  |Why it matters |Example   |
+|---------|---------|---------|
+|Define complex disambiguation logic across related intents.    |   Helps the agent handle overlapping or multi-intent requests effectively.      |   Define complex disambiguation logic across related intents.	Helps the agent handle overlapping or multi-intent requests effectively.	“If a user mentions both ‘cancel order’ and ‘return product,’ prioritize return flow first, then confirm if cancellation is still needed.”      |
+
+
+**Intent instructions guidelines**
+
 |Guidelines  |Why it matters  |Example  |
 |---------|---------|---------|
-|Start with a concise statement that defines the objective of Customer Intent Agent.    |   Establishes the brand voice and scope, and helps Customer Intent Agent choose the right tone.      |    "You're a representative from Contoso Coffee, assisting customers with orders and account questions."     |
 |Start with steps that outline the flow and then add details.  |    Creates a logical, easy-to-follow sequence.   | 1. Clarify the problem. <br> 2. Pick the likely cause. <br> 3. Try one fix at a time. |
 |List required checks or prerequisites.    |     Ensures that required information isn't missed before the agent takes action or performs lookups.   | If the user reports an issue, first confirm the product model and purchase date.|
 |Explain what's out of scope or not allowed.|     Prevents unnecessary work or compliance issues.   | Don't ask for social security numbers or payment card details.|

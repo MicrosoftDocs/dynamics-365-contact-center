@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Organizations set up intents and intent groups for the contact center. Real-time analytics let supervisors monitor conversations and track metrics using intent attributes. Supervisors get immediate insights into customer interactions, identify trends, optimize agent performance, and help resolve customer queries efficiently. By using intent attributes, supervisors better understand customer intent and improve service quality, leading to greater operational efficiency and customer satisfaction.
+Contact centers often organize service representatives into agent groups or user groups dedicated to handling specific intents or intent clusters. Real-time analytics leverage these groupings to monitor conversations, track metrics, and surface actionable insights. Filtering by agent group enables supervisors to quickly identify trends, assess team performance, and resolve issues faster. This structured approach ensures that customer needs are adressed correctly, driving operational efficiency, improving service quality, and boosting customer satisfaction.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

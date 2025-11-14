@@ -21,7 +21,7 @@ Organizations set up intents and intent groups for the contact center to handle.
 
 You can filter this report by **Duration**, **Line of Business**, **Agent group**, **Intent group**, **Work item status**, and **Time**.
 
-As part of visual customization, all real-time dashboards including **Summary**, **Voice**, **Bot**, **Agent**, **Ongoing Conversation**, and **Backlog conversation** reports can be filtered by Intent group, intent and Line of Business by using the **IntentFamilyName** in **DimIntent** dimension. Learn more in [visual customization](/dynamics365/customer-service/use/customize-reports). You can search for the data measures for intent to select specific intent-based filters.
+As part of visual customization, all real-time dashboards including **Summary**, **Voice**, **Bot**, **Agent**, **Ongoing Conversation**, and **Backlog conversation** reports can be filtered by intent group, intent, and line of business by using the **IntentFamilyName** in **DimIntent** dimension. Learn more in [visual customization](/dynamics365/customer-service/use/customize-reports). You can search for the data measures for intent to select specific intent-based filters.
 
 ## Prerequisites
 
@@ -43,13 +43,13 @@ You see the report after 24 hrs of provisioning. If you don't enable Customer In
 |Logged in agents | Logged in service representatives is the number of representatives who are currently logged in and aren't in Offline status. |
 |Agents available | Service representatives who are currently in **Available** status. |
 |Average handle time (hh:mm:ss)| Total handle time divided by the number of conversations handled.|
-|Engaged conversations | conversations handled by the service representative. |
+|Engaged conversations | Conversations handled by the service representative. |
 |Transfer rate | Session transfer rate is the total transfers within a conversation across sessions over the total conversations. |
 
 
 ## Drill-down 
 
-Drilldown on the **Metrics by intent group** and select **Detailed view** to view metrics by intent and agent.
+Drill down on the **Metrics by intent group**, and then select **Detailed view** to view metrics by intent and agent.
 
 ## Related information
 

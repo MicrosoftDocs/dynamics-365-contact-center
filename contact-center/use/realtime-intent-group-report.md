@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: conceptual
 ms.collection:
-ms.date: 11/13/2025
+ms.date: 11/14/2025
 ms.custom: bap-template
 ---
 
@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Organizations set up intents and intent groups for the contact center to handle. Real-time analytics empower contact center supervisors to effectively monitor conversations and track operational metrics using intent attributes. This capability enhances decision-making by providing immediate insights into customer interactions, allowing supervisors to identify trends, optimize agent performance, and ensure that customer queries are resolved efficiently. By using intent attributes, supervisors can gain a deeper understanding of customer intent and improve overall service quality, driving business value through enhanced operational efficiency and customer satisfaction.
+Organizing contact center data by intent, intent groups, and line of business enables supervisors to monitor conversations and track metrics effectively. Real-time analytics powered by these attributes provide immediate insights into customer behavior, helping identify trends, optimize agent performance, and resolve queries faster. This structured approach improves service quality and operational efficiency, driving higher customer satisfaction.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

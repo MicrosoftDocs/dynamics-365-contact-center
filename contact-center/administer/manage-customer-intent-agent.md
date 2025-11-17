@@ -116,7 +116,7 @@ You can manage the intents to be used in AI agent in bulk. On the **Manage inten
 
 ## Manage intent groups
 
-You can logically organize the intents into intent groups. The intent group represents the business expertise that's needed to solve the intents belonging to the group. The intent groups that the AI model identifies are displayed on the **All intent groups** page. You can manage the intent groups by reviewing, approving, or updating the intents in them.
+You can logically organize the intents into intent groups. The intent group represents the business expertise needed to solve the intents belonging to the group. The intent groups that the AI model identifies are displayed on the **All intent groups** page. You can manage the intent groups by reviewing, approving, or updating the intents in them.
 
 1. On the **Customer Intent Agent** page, select **Manage** for **Manage intent groups and intents**. The **All intent groups** page displays the list of intents that the AI model discovered. If you create a custom intent group, the intent source shows as **Admin edited**. The **Intents** column displays the number of intents in each intent group.
 
@@ -193,15 +193,15 @@ These guidelines define how intent-level, group-level, and organizational-level 
 |Guidelines |Why it matters   |Example   |
 |---------|---------|---------|
 |Start with a concise statement that defines the objective of Customer Intent Agent.    | Establishes the brand voice and scope, and helps Customer Intent Agent select the right tone.         |   "You're a representative from Contoso Coffee, assisting customers with orders and account questions."       |
-|Tweak overall tone to reflect brand personality. |    Creates a consistent voice across all customer interactions.     |   “Keep language warm, empathetic, and professional. Show understanding without over-apologizing.”      |
-|Define general behavioral boundaries and escalation policies.    |  Ensures compliance and predictable outcomes.       |   “If resolving the issue requires judgement, verification, or policy exceptions, summarize context and hand off to a human agent.”     |
-|Include a glossary of common terms and abbreviations.    | Reduces ambiguity across regions or departments.        |   “‘SHS’ = Successful Handling Score"; "‘PSS’ = Product Support Specialist;”      |
+|Tweak overall tone to reflect brand personality. |    Creates a consistent voice across all customer interactions.     |   "Keep language warm, empathetic, and professional. Show understanding without over-apologizing."|
+|Define general behavioral boundaries and escalation policies.    |  Ensures compliance and predictable outcomes.       |   "If resolving the issue requires judgement, verification, or policy exceptions, summarize context and hand off to a human agent."     |
+|Include a glossary of common terms and abbreviations.    | Reduces ambiguity across regions or departments.        |   "'SHS' = Successful Handling Score"; "‘PSS’ = Product Support Specialist;"      |
 
 **Intent group instruction guidelines**
 
 |Guidelines  |Why it matters |Example   |
 |---------|---------|---------|
-|Define complex disambiguation logic across related intents.    |   Helps the agent handle overlapping or multi-intent requests effectively.      |   Define complex disambiguation logic across related intents.	Helps the agent handle overlapping or multi-intent requests effectively.	“If a user mentions both ‘cancel order’ and ‘return product,’ prioritize return flow first, then confirm if cancellation is still needed.”      |
+|Define complex disambiguation logic across related intents.    |   Helps the agent handle overlapping or multi-intent requests effectively.      |   Define complex disambiguation logic across related intents.	Helps the agent handle overlapping or multi-intent requests effectively.	"If a user mentions both 'cancel order' and 'return product,' prioritize return flow first, then confirm if cancellation is still needed."      |
 
 
 **Intent instruction guidelines**

@@ -204,7 +204,7 @@ These guidelines define how intent-level, group-level, and organizational-level 
 |Define complex disambiguation logic across related intents.    |   Helps the agent handle overlapping or multi-intent requests effectively.      |   Define complex disambiguation logic across related intents.	Helps the agent handle overlapping or multi-intent requests effectively.	“If a user mentions both ‘cancel order’ and ‘return product,’ prioritize return flow first, then confirm if cancellation is still needed.”      |
 
 
-**Intent instructions guidelines**
+**Intent instruction guidelines**
 
 |Guidelines  |Why it matters  |Example  |
 |---------|---------|---------|

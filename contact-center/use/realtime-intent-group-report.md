@@ -1,12 +1,12 @@
 ---
-title: View and understand real-time analytics in the Intent group report.
-description: Use the Intent group report to drill down into metrics by intent and representative in Dynamics 365 Customer Service, enabling better insights and operational improvements.
+title: View and understand real-time analytics in the Intent group report
+description: Use the Intent group report to drill down into metrics by intent and representative in Dynamics 365 Contact Center, enabling better insights and operational improvements.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: conceptual
 ms.collection:
-ms.date: 11/14/2025
+ms.date: 11/17/2025
 ms.custom: bap-template
 ---
 
@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Organizing contact center data by intent, intent groups, and line of business enables supervisors to monitor conversations and track metrics effectively. Real-time analytics powered by these attributes provide immediate insights into customer behavior, helping identify trends, optimize agent performance, and resolve queries faster. This structured approach improves service quality and operational efficiency, driving higher customer satisfaction.
+As a supervisor, organizing contact center data by intent, intent groups, and line of business lets you monitor conversations and track metrics effectively. Real-time analytics powered by these attributes provide immediate insights into customer behavior, helping identify trends, optimize agent performance, and resolve queries faster. This structured approach improves service quality and operational efficiency, driving higher customer satisfaction.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -53,6 +53,6 @@ Drill down on the **Metrics by intent group**, and then select **Detailed view**
 
 ## Related information
 
-[Manage real-time analytics reports](/dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator)  
-[Overview of Omnichannel real-time analytics dashboard](/dynamics365/customer-service/use/intro-realtime-analytics-dashboard) 
+[Manage real-time analytics reports](/dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator)    
+[Overview of Omnichannel real-time analytics dashboard](/dynamics365/customer-service/use/intro-realtime-analytics-dashboard)   
 [Agent group report (preview)](realtime-agent-group-report.md)

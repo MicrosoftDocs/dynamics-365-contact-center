@@ -195,7 +195,7 @@ These guidelines define how intent-level, group-level, and organizational-level 
 |Start with a concise statement that defines the objective of Customer Intent Agent.    | Establishes the brand voice and scope, and helps Customer Intent Agent select the right tone.         |   "You're a representative from Contoso Coffee, assisting customers with orders and account questions."       |
 |Tweak overall tone to reflect brand personality. |    Creates a consistent voice across all customer interactions.     |   “Keep language warm, empathetic, and professional. Show understanding without over-apologizing.”      |
 |Define general behavioral boundaries and escalation policies.    |  Ensures compliance and predictable outcomes.       |   “If resolving the issue requires judgement, verification, or policy exceptions, summarize context and hand off to a human agent.”     |
-|Include a glossary of common terms and abbreviations.    | Reduces ambiguity across regions or departments.        |   “SHS’ = Successful Handling Score; ‘PSS’ = Product Support Specialist;”      |
+|Include a glossary of common terms and abbreviations.    | Reduces ambiguity across regions or departments.        |   “‘SHS’ = Successful Handling Score"; "‘PSS’ = Product Support Specialist;”      |
 
 **Intent group instruction guidelines**
 

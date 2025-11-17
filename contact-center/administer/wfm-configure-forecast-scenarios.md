@@ -1,7 +1,7 @@
 ---
 title: Enable forecasting
 description: Learn how to enable forecasting features so supervisors can predict case and conversation volumes and representative demand.
-ms.date: 04/16/2025
+ms.date: 11/18/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -38,3 +38,22 @@ Complete the steps in [Set up user management](wfm-user-management.md).
 1.	In **Forecasting**, select **Manage** next to **Forecast volume**.
 1.	On the **Forecast volume** page, set the **Enable forecasting** toggle to **On**.
 1.	Select **Save and Close**.
+
+## Enable AI-based forecasting (preview)
+
+As an admin, you can enable AI-based forecasting for your organization. This feature allows AI to dynamically select the best forecasting method for each scenario. When this feature is enabled, supervisors can choose the AI-based option in their forecast scenario details. 
+
+AI-based forecasts include an **AI Reasoning** tab in the job history to show how the model made its decision. When supervisors use AI-based forecasting, an AI disclaimer appears in the UI.
+
+> [!Note]
+> - Auto-refresh is disabled for AI-based forecasting. Forecasts must be run manually.
+> - AI-based forecasting requires AI credits. Ensure your organization has sufficient credits before enabling this feature.
+
+To enable AI-based forecasting for all forecast scenarios, complete the following steps:
+
+1. In the site map of the Customer Service or Copilot Service admin center, go to **Operations**, and then select **Workforce management**. The **Workforce management** page appears.
+1. In **Forecasting, select **Manage** next to **Forecast volume**.
+1. On the **Forecast volume** page, set the **Enable forecasting** toggle to **On**.
+1. Select the **Allow dynamic forecasting (AI-based)** checkbox.
+1. Select **Save and close**.
+

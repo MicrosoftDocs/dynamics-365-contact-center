@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes.
-ms.date: 05/15/2025
+ms.date: 11/17/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -40,7 +40,11 @@ You can use the forecast reports for case and conversation volumes in the follow
 
 ## Prerequisites
 
-Your administrator assigned a role to you that has **Read** privileges on the **msdyn_dataanalyticsreport_forecast** table. 
+- Your administrator assigned a role to you that has **Read** privileges on the **msdyn_dataanalyticsreport_forecast** table. 
+- Before you use AI-based forecasting (preview), ensure:
+    - Your administrator has enabled AI-based forecasting in the admin setup for forecast scenarios.
+    - You have the necessary AI credits available for your organization.
+    - You understand that auto-refresh is disabled for AI-based forecasting. Forecasts must be run manually.
 
 ## Forecast scenario types
 
@@ -50,6 +54,54 @@ You can create either short-term or long-term forecasts.
 
 - **Long term**: This report displays the actual and predicted case and conversation volumes per day, for a time range of up to six months, depending on how many days of cases or conversations were created in the past.
 
+## AI-based forecasting (preview)
+
+AI-based forecasting is a new capability that uses artificial intelligence to improve forecast accuracy by dynamically selecting the best forecasting method for your organization. Instead of relying on a single static algorithm, AI evaluates historical patterns, seasonality, and available insights to determine the most suitable model for your data.
+
+### Why use AI-based forecasting?
+
+Supervisors can rely on AI to intelligently choose the most accurate forecasting model for their operational data, removing guesswork and reducing manual configuraiton. By analyzing historical and contextual data, the system enhances forecast accuracy, which can help your business in the following ways:
+
+- Optimze staffing levels
+- Reduce operational costs
+- Maintain consistent service levels in dynamic environments
+
+### Key behaviors
+
+- AI automatically selects the best-fit model for your scenario.
+- Auto-refresh is disabled. You must run forecasts manually.
+- A **Run forecast scenario** button lets you trigger forecasts on demand.
+- Job history includes an **AI reasoning** tab that explains why a method was chosen.
+
+> [!Note]
+> - AI-based forecasting requires AI credits.
+
+### Create an AI-based forecast report
+
+To use AI-based forecasting, complete the following steps:
+
+1. Open the forecast scenario details for the scenario you want to configure.
+1. Review refresh settings.
+1. Select **Run forecast scenario** to generate results.
+1. Check **Job history**, and then review the insights on the **AI Reasoning** tab.
+
+### About the AI Reasoning tab
+
+The **AI Reasoning** tab provides transparency into how the system selected the forecasting method. It includes:
+- **Model selection criteria**: Lists the factors considered, such as historical trends, seasonality, and data completeness.
+- **Confidence score**: Indicates the AI’s confidence level in the chosen method.
+- **Key insights**: Explains why the selected model is expected to perform better than alternatives.
+- **Data anomalies**: Highlights any irregularities detected in historical data that influenced the decision.
+
+## Best practices for choosing forecasting options
+
+| Scenario                                      | Recommended option           |
+|----------------------------------------------|-----------------------------|
+| **Stable historical patterns with minimal variability** | Default forecasting – uses a fixed time-series model and supports auto-refresh for predictable environments. |
+| **Dynamic environments with frequent changes in demand** | AI-based forecasting – intelligently selects the most accurate model based on historical and contextual data. |
+| **Need for transparency and insights into model selection** | AI-based forecasting – review the AI Reasoning tab for confidence scores and decision factors. |
+| **Limited time for manual configuration**    | AI-based forecasting – reduces guesswork and minimizes setup effort. |
+
 ## Create a short-term or long-term forecast report
 
 1. In the site map of Copilot Service workspace, select **Forecasting** under **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.
@@ -57,14 +109,14 @@ You can create either short-term or long-term forecasts.
 1. On the **Details** card, fill in the **Name** and **Duration (Days)** fields.
 1. On the **Configuration parameters** card, select the following:
       1. **Forecast entity**: Select either **Conversation** or **Case**.
-      2. **Channels**: Search for and select the channel you want. You can select multiple channels.
+      1. **Channels**: Search for and select the channel you want. You can select multiple channels.
       1. **Queues**: Use the search option to find the queue you want or select **New Record** > **Queues** to create one. You can select multiple queues.
 1. On the **Forecast run schedule** card, fill in the following details:
       1. **Auto-extension**: Set the toggle to **Yes** if you want to run the forecast. If you set the toggle to **No**, the forecast schedule remains in draft state and doesn't get created.
       >[!NOTE]  
       > You can have up to 10 forecast scenarios with Auto-extension enabled. 
       
-      2. **Day of the week**: Select the day of the week that you want the report to be created on. Use for long-term forecasts only. 
+      1. **Day of the week**: Select the day of the week that you want the report to be created on. Use for long-term forecasts only. 
       1. **Run time slot**: For short-term, use the dropdown menu to select the time window you want the system to use when it runs the report. The forecast scenario for short term runs every day. For long-term, select the day.
       1. **Run time zone**: Use the dropdown menu to select the time zone you want the system to use when it runs the report.
 1. On the **Historical data** card, fill in the following details:
@@ -81,7 +133,7 @@ You can create either short-term or long-term forecasts.
 ## View your forecast reports
 
 1. In the site map of Copilot Service workspace, select **Forecast scenarios** under **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.
-2. Select the **Reports** tab. A list of the reports you created appears.
+1. Select the **Reports** tab. A list of the reports you created appears.
 
 The first time you access the dashboard, any scenarios you configured appear in **Draft** status until the first trigger occurs. After that, the scenario shows as **In progress** until it completes. For each scenario, the following details are displayed:
 

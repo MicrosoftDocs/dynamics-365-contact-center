@@ -98,9 +98,9 @@ The following metrics are available.
 
 Learn how to set goals in [Configure KPI goals](../administer/enable-agent-insights.md#configure-kpi-goals)
 
-### Can I use this dashboard when some AI agents only are enabled?
+### Can I use this dashboard if some AI agents only are enabled?
 
-Yes, the dashboard dynamically displays metrics for those AI agents only that are enabled.
+Yes. The dashboard automatically displays metrics for enabled AI agents only.
 
 ### I don't see insights for a case or conversation pivot or line of business?
 

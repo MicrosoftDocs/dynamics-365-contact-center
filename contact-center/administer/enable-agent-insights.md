@@ -1,6 +1,6 @@
 ---
-title: Enable agent insights dashboard and KPI goals
-description: Learn how to enable the agent insights dashboard and KPI goals in Dynamics 365 Contact Center to monitor AI agents performance.
+title: Enable Agent insights dashboard and KPI goals
+description: Learn how to enable the Agent insights dashboard and KPI goals in Dynamics 365 Contact Center to monitor performance of AI agents.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
@@ -10,13 +10,13 @@ ms.date: 11/19/2025
 ms.custom: bap-template
 ---
 
-# Enable agent insights dashboard and KPI goals
+# Enable Agent insights dashboard and KPI goals
 
 The agent insights dashboard in Dynamics 365 Contact Center provides a comprehensive view of AI agent performance, allowing you to monitor key metrics and make informed decisions.
 
 ## Enable the dashboard
 
-After you enable the agent insights dashboard, you can access it in Copilot Service workspace to view real-time performance data and analytics for your AI agents.
+After you enable the Agent insights dashboard, you can access it in Copilot Service workspace to view real-time performance data and analytics for your AI agents.
 
 1. In Copilot Service admin center, go to **Insights** under **Operations**.
 
@@ -31,13 +31,13 @@ Set the KPI goals on the **Agent insights** page.
 **For conversations**: Turn on the toggle for the following KPIs:
 
 - **Autonomous rate**: Set a goal for your AI agent's autonomous rate that tracks the percentage of conversations closed by AI agents without being routed to a representative.
-- **Quality score**: Turn on the toggle to use the quality score goal that's set on your Quality Evaluation Agent settings page.
+- **Quality score**: Turn on the toggle to use the quality score goal set on your Quality Evaluation Agent settings page.
 
 **For cases**:
 
 - **Autonomous rate**: Set a goal for your AI agent autonomous rate that tracks the percentage of cases closed by AI agents without being routed to a representative.
 - **Days to close**: Set a goal to reach for the average number of days to close a case.
-- **Quality score**: Turn on the toggle to use the quality score goal that's set on your Quality Evaluation Agent settings page.
+- **Quality score**: Turn on the toggle to use the quality score goal set on your Quality Evaluation Agent settings page.
 
 ### Related information
 

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot 
-ms.date: 11/14/2025
+ms.date: 11/19/2025
 ms.custom: bap-template
 ---
 
@@ -110,3 +110,7 @@ The dashboard displays insights for enabled AI agents only. Currently, insights 
 
 [Use Case Management Agent to create and update cases (preview)](/dynamics365/customer-service/use/use-case-creation-agent)  
 [Use knowledge insights for Customer Knowledge Management Agent (preview)](/dynamics365/customer-service/use/admin-km-agent-insights)  
+[Use evaluation plan](evaluation-plan.md)  
+[Use on-demand evaluation](on-demand-evaluation.md)  
+[Use evaluation criteria](evaluation-criteria.md)  
+[Use evaluations](use-evaluations.md)  

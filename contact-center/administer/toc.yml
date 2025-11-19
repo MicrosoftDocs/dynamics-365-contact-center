@@ -312,14 +312,10 @@
             href: set-up-intent-agent.md
           - name: Set up voice agents to use intents
             href: set-up-voice-agents-to-use-intents.md
-        - name: Customer Knowledge Management Agent
-          items:
-          - name: Manage Customer Knowledge Management Agent
-            href: /dynamics365/customer-service/administer/admin-km-agent?context=/dynamics365/contact-center/context/administer-context
-        - name: Quality Evaluation Agent
-          items: 
-          - name: Manage Quality Evaluation Agent
-            href: manage-quality-evaluation-agent.md
+        - name: Manage Customer Knowledge Management Agent
+          href: /dynamics365/customer-service/administer/admin-km-agent?context=/dynamics365/contact-center/context/administer-context
+        - name: Manage Quality Evaluation Agent
+          href: manage-quality-evaluation-agent.md
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features

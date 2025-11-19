@@ -1,5 +1,5 @@
 ---
-title: Manage ongoing conversations
+title: Manage all ongoing conversations
 description: Learn how to resolve customer queries faster with the All ongoing conversations view in Dynamics 365 Contact Center. Perform bulk actions, notify representatives, and track updates.
 author: Soumyasd27
 ms.author: sdas
@@ -10,7 +10,7 @@ ms.date: 11/07/2025
 ms.custom: bap-template
 ---
 
-# Manage ongoing conversations
+# Manage all ongoing conversations
 
 The **All ongoing conversations** view helps supervisors monitor, manage, and optimize customer conversations across digital messaging, voice, and record channels. Use the view to filter conversations, run bulk actions, and work with your team to track updates. 
 

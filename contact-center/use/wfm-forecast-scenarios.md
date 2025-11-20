@@ -15,7 +15,7 @@ ms.collection:
 This article describes how to navigate the forecast reports in Copilot Service workspace so that you can successfully meet the staffing demands of your organization.
 
 > [!IMPORTANT]
-> This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. This feature isn't intended for use in making, and you shouldn't use it to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365 Copilot Service workspace, this feature, and any associated feature or service in compliance with all applicable laws. This compliance includes laws that relate to accessing individual employee analytics, and monitoring, recording, and storing communications with end users. This compliance also includes your responsibility to adequately notify end users that their communications with customer service representatives might be monitored, recorded, or stored and, as required by applicable laws, obtaining consent from end users before your organization uses this feature with them. Customers are also encouraged to have a mechanism in place to inform their customer service representatives that their communications with end users might be monitored, recorded, or stored.
+> This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. This feature isn't intended for use in making, and you shouldn't use it to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365 Copilot Service workspace, this feature, and any associated feature or service in compliance with all applicable laws. This compliance includes laws that relate to accessing individual employee analytics, and monitoring, recording, and storing communications with end users. This compliance also includes your responsibility to adequately notify end users that their communications with customer service representatives might be monitored, recorded, or stored and as required by applicable laws, obtaining consent from end users before your organization uses this feature with them. Customers are also encouraged to have a mechanism in place to inform their customer service representatives that their communication with end users might be monitored, recorded, or stored.
 
 ## Overview
 
@@ -32,6 +32,8 @@ You can use the forecast reports for case and conversation volumes in the follow
 - Slice forecasted volumes and service representative demand by channel and queue.
 - View a rollup of actual and forecasted volume on an hourly, daily, weekly, monthly, and yearly basis.
 - Automatically detect seasonality from historical traffic with the settings option to import your holiday calendar. This function helps the forecasting model to predict case or conversation volumes during special, seasonal events.
+- A **Run forecast scenario** button lets you trigger forecasts on demand.
+
 
 > [!NOTE]
 > - Forecast reports aim to provide accurate volume estimates but might not fully account for external factors, such as unexpected trends or sudden business needs.
@@ -60,18 +62,17 @@ AI-based forecasting is a new capability that uses artificial intelligence to im
 
 ### Why use AI-based forecasting?
 
-Supervisors can rely on AI to intelligently choose the most accurate forecasting model for their operational data, removing guesswork and reducing manual configuraiton. By analyzing historical and contextual data, the system enhances forecast accuracy, which can help your business in the following ways:
+Supervisors can rely on AI to intelligently choose the most accurate forecasting model for their operational data, removing guesswork and reducing manual configuration. By analyzing historical and contextual data, the system enhances forecast accuracy, which can help your business in the following ways:
 
-- Optimze staffing levels
-- Reduce operational costs
-- Maintain consistent service levels in dynamic environments
+- Optimize staffing levels.
+- Reduce operational costs.
+- Maintain consistent service levels in dynamic environments.
 
 ### Key behaviors
 
 - AI automatically selects the best-fit model for your scenario.
-- Auto-refresh is disabled. You must run forecasts manually.
-- A **Run forecast scenario** button lets you trigger forecasts on demand.
-- Job history includes an **AI reasoning** tab that explains why a method was chosen.
+- Auto-refresh has been turned off. You must run forecasts manually.
+- Job history includes an **AI reasoning** tab that explains why a method was selected.
 
 > [!Note]
 > - AI-based forecasting requires AI credits.
@@ -89,9 +90,9 @@ To use AI-based forecasting, complete the following steps:
 
 The **AI Reasoning** tab provides transparency into how the system selected the forecasting method. It includes:
 - **Model selection criteria**: Lists the factors considered, such as historical trends, seasonality, and data completeness.
-- **Confidence score**: Indicates the AI’s confidence level in the chosen method.
-- **Key insights**: Explains why the selected model is expected to perform better than alternatives.
-- **Data anomalies**: Highlights any irregularities detected in historical data that influenced the decision.
+- **Confidence score**: Indicates the AI’s confidence level in the selected method.
+- **Key insights**: Explains why the selected model is anticipated to outperform the other options.
+- **Data anomalies**: Notes any irregularities in historical data that affected the decision.
 
 ## Best practices for choosing forecasting options
 
@@ -165,3 +166,8 @@ When you open a report, the following visualizations are available:
    - **Queue**: Displays the actual and forecasted numbers, sliced by each queue.
      
      For all the filters, you can use the drill up and down buttons to drill to specific levels in the hierarchy.
+
+### Run forecasts on demand
+
+You can run a forecast at any time outside of scheduled runs by selecting **Run forecast scenario**.
+

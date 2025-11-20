@@ -1,7 +1,7 @@
 ---
 title: Enable forecasting
 description: Learn how to enable forecasting features so supervisors can predict case and conversation volumes and representative demand.
-ms.date: 11/18/2025
+ms.date: 11/20/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -18,7 +18,7 @@ ms.custom:
 
 Forecasting allows supervisors to predict case and conversation volumes demand based on historical trends.
 
-Key benefits include:
+Key benefits:
 
 - **Long term Forecast:** Predict conversation and case volumes at a daily level for up to six months.
 - **Short term Forecast:** Generate 15-minute interval forecasts for up to six weeks to manage real-time demand fluctuations.
@@ -41,7 +41,15 @@ Complete the steps in [Set up user management](wfm-user-management.md).
 
 ## Enable AI-based forecasting (preview)
 
-As an admin, you can enable AI-based forecasting for your organization. This feature allows AI to dynamically select the best forecasting method for each scenario. When this feature is enabled, supervisors can choose the AI-based option in their forecast scenario details. 
+As an admin, you can enable AI-based forecasting for your organization. This feature allows AI to dynamically select the best forecasting method for each scenario. When this feature is enabled, supervisors can choose the AI-based option in their forecast scenario details.
+
+Key benefits:
+
+- **Ensures the highest forecast accuracy**: Authomatically chooses the model that's best suited to the customer’s historical patterns, seasonality, trends, and data quality.
+- **Eliminates guesswork and manual tuning**: Removes the need for users to understand complex statistical models or test multiple methods themselves.
+- **Adapts to changing business patterns**: Dynamically reevaluates which model performs best as demand, channels, or customer behavior evolve.
+- **Improves operational efficiency**: Enables supervisors to better staff, schedule, and drive budget decisions with more reliable forecasts.
+- **Provides transparency**: Reasoning and confidence scores explain why a specific model was selected, helping build trust in forecast outputs.
 
 AI-based forecasts include an **AI Reasoning** tab in the job history to show how the model made its decision. When supervisors use AI-based forecasting, an AI disclaimer appears in the UI.
 

@@ -41,7 +41,7 @@ You see the report after 24 hrs of provisioning. If you don't enable Customer In
 |Session timeout rate    |  Percentage of incoming sessions that the representative didn't accept or reject before the system's timeout threshold over the total number of assigned sessions. Session Timeout Rate (%) = (Number of timed-out sessions/Total assigned sessions) × 100. |
 |Session rejection rate     |  Percentage of sessions rejected by representatives over the total number of sessions assigned to representatives. Session Rejection Rate (%)= Number of sessions rejected by agents / Total number of sessions assigned to agents *100. |
 
-## Metrics by agent group
+## Metrics by Agent group
 
 |Metrics | Definition  |
 |---------|---------|

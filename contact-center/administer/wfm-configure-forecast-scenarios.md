@@ -1,7 +1,7 @@
 ---
 title: Enable forecasting
 description: Learn how to enable forecasting features so supervisors can predict case and conversation volumes and representative demand.
-ms.date: 11/20/2025
+ms.date: 11/21/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -45,7 +45,7 @@ As an admin, you can enable AI-based forecasting for your organization. This fea
 
 Key benefits:
 
-- **Ensures the highest forecast accuracy**: Authomatically chooses the model that's best suited to the customer’s historical patterns, seasonality, trends, and data quality.
+- **Ensures the highest forecast accuracy**: Automatically chooses the model best suited to the customer’s historical patterns, seasonality, trends, and data quality.
 - **Eliminates guesswork and manual tuning**: Removes the need for users to understand complex statistical models or test multiple methods themselves.
 - **Adapts to changing business patterns**: Dynamically reevaluates which model performs best as demand, channels, or customer behavior evolve.
 - **Improves operational efficiency**: Enables supervisors to better staff, schedule, and drive budget decisions with more reliable forecasts.

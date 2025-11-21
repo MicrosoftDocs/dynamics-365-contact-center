@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes.
-ms.date: 11/20/2025
+ms.date: 11/21/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -44,7 +44,7 @@ You can use the forecast reports for case and conversation volumes in the follow
 
 - Your administrator assigned a role to you that has **Read** privileges on the **msdyn_dataanalyticsreport_forecast** table. 
 - Before you use AI-based forecasting (preview), ensure:
-    - Your administrator has enabled AI-based forecasting in the admin setup for forecast scenarios.
+    - Your administrator enabled AI-based forecasting in the admin setup for forecast scenarios.
     - You have the necessary AI credits available for your organization.
     - You understand that auto-refresh is disabled for AI-based forecasting. Forecasts must be run manually.
 
@@ -62,11 +62,11 @@ AI-based forecasting is a new capability that uses artificial intelligence to im
 
 ### Why use AI-based forecasting?
 
-Supervisors can rely on AI to intelligently choose the most accurate forecasting model for their operational data, removing guesswork and reducing manual configuration. By analyzing historical and contextual data, the system enhances forecast accuracy, which can help your business in the following ways:
+Supervisors can rely on AI to intelligently choose the most accurate forecasting model for their operational data, removing guesswork and reducing manual configuration. The system uses historical and contextual data to improve forecast accuracy. Your business benefits in the following ways:
 
-- Optimize staffing levels.
-- Reduce operational costs.
-- Maintain consistent service levels in dynamic environments.
+- Optimized staffing levels
+- Reduced operational costs
+- Consistent service levels in dynamic environments
 
 ### Key behaviors
 

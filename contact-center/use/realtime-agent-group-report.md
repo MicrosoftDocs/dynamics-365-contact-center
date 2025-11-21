@@ -29,7 +29,7 @@ As part of visual customization, all real-time dashboards including **Summary**,
 - You turned on the toggle for Customer Intent Agent and added the Line of business, Intent groups, and Intents. Learn more in [Customer Intent Agent](/dynamics365/contact-center/administer/manage-customer-intent-agent).
 - You enabled real-time analytics for intent. Learn more in [Enable real-time analytics reports](/dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator).
 
-You see the report after 24 hrs of provisioning. If you don't enable Customer Intent Agent, you might still see data measures related to intent. However, you don't see any conversation or case-related information in the report.             
+You see the report after 24 hrs of provisioning. If you don't enable Customer Intent Agent, you might still see data measures related to intent, but no conversation or case details appear because configuration isn't complete.
 
 ## Metrics
 
@@ -40,8 +40,8 @@ You see the report after 24 hrs of provisioning. If you don't enable Customer In
 |Agents in active conversations    |    Representatives currently handling live conversations in progress and not yet closed excluding wrap-up state. |
 |Agents in wrap-up conversations    |   Service representatives who finished interacting with the customer but are still completing post-conversation tasks before closing the session. |
 | Average  session handle time | Session handle time is the total time a representative spends working on a customer session, including the live interaction and any follow-up or wrap-up activities. Average Session Handle Time = Total handle time across sessions / Number of sessions handled. |
-|Session timeout rate    |  Percentage of incoming sessions that the representative didn't accept or reject before the system's timeout threshold over the total number of assigned sessions. Session Timeout Rate (%) = (Number of timed-out sessions/Total assigned sessions) × 100. |
-|Session rejection rate     |  Percentage of sessions rejected by representatives over the total number of sessions assigned to representatives. Session Rejection Rate (%)= Number of sessions rejected by agents / Total number of sessions assigned to agents *100. |
+|Session timeout rate    |  Percentage of incoming sessions that the representative didn't respond to before the system's timeout threshold over the total number of assigned sessions. Session Timeout Rate (%) = (Number of timed-out sessions / Total assigned sessions) × 100. |
+|Session rejection rate     |  Percentage of sessions rejected by representatives over the total number of sessions assigned to representatives. Session Rejection Rate (%)= (Number of sessions rejected by agents / Total number of sessions assigned to agents) × 100. |
 
 ## Metrics by Agent group
 
@@ -67,8 +67,8 @@ In the **Metrics by agent** section, select **Detailed view** to view metrics by
 |Average handle time|	Total handle time divided by the number of conversations handled. <br> - For Voice: msdyn_sessionparticipant.msdyn_talktime + msdyn_sessionparticipant.msdyn_holdtime + msdyn_sessionparticipant.msdyn_activewrapuptime. <br> - For Chat: msdyn_sessionparticipant.msdyn_activetime + msdyn_sessionparticipant.msdyn_activewrapuptime|
 |Agents availability status|	Representatives based on their current availability status.|
 |Agents in wrap-up conversations| Representatives who finished interacting with the customer but are still completing post-conversation tasks before closing the session per user group.|
-|Session timeout rate|	Percentage of incoming sessions that the representative didn't respond to before the system's timeout threshold over the total number of assigned sessions. |
-|Session rejection rate| Percentage of sessions rejected by representatives over the total number of sessions assigned to representatives.|
+|Session timeout rate|	Percentage of incoming sessions that the representative didn't respond to before the system's timeout threshold over the total number of assigned sessions. Session Timeout Rate (%) = (Number of timed-out sessions/Total assigned sessions) × 100. |
+|Session rejection rate| Percentage of sessions rejected by representatives over the total number of sessions assigned to representatives. Session Rejection Rate (%)= (Number of sessions rejected by agents / Total number of sessions assigned to agents) × 100.|
 
 
 ### Metrics by agent

@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # View and understand real-time analytics in the Intent group report (preview)
 
+[!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
+
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 As a supervisor, organizing contact center data by intent, intent groups, and line of business lets you monitor conversations and track metrics effectively. Real-time analytics powered by these attributes provide immediate insights into customer behavior, helping identify trends, optimize agent performance, and resolve queries faster. This structured approach improves service quality and operational efficiency, driving higher customer satisfaction.

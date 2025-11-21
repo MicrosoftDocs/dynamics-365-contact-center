@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # View and understand real-time analytics in the User group report (preview)
 
+[!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
+
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Contact centers often group service representatives into dedicated teams focused on specific intents or clusters of related intents. Real-time analytics use these groupings to monitor conversations, track metrics, and surface actionable insights. Filtering by agent group enables supervisors to quickly identify trends, assess team performance, and resolve issues faster. This structured approach ensures customer needs are addressed correctly, driving operational efficiency, improving service quality, and enhancing customer satisfaction.

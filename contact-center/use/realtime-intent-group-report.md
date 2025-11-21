@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: conceptual
 ms.collection:
-ms.date: 11/17/2025
+ms.date: 11/21/2025
 ms.custom: bap-template
 ---
 
@@ -19,7 +19,7 @@ As a supervisor, organizing contact center data by intent, intent groups, and li
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 
-You can filter this report by **Duration**, **Line of Business**, **Agent group**, **Intent group**, **Work item status**, and **Time**.
+You can filter this report by **Time**, **Channel**, **Line of Business**, **Intent group**, **Agent group**, **Time zone**, and **Conversation status**.
 
 As part of visual customization, all real-time dashboards including **Summary**, **Voice**, **Bot**, **Agent**, **Ongoing Conversation**, and **Backlog conversation** reports can be filtered by intent group, intent, and line of business by using the **IntentFamilyName** in **DimIntent** dimension. Learn more in [visual customization](/dynamics365/customer-service/use/customize-reports). You can search for the data measures for intent to select specific intent-based filters.
 
@@ -30,26 +30,43 @@ As part of visual customization, all real-time dashboards including **Summary**,
 
 You see the report after 24 hrs of provisioning. If you don't enable Customer Intent Agent, you might still see data measures related to intent. However, you don't see any conversation or case-related information in the report.
 
-## Metrics
+## Metrics by Intent group
 
 |Metrics | Definition  |
 |---------|---------|
-|Conversations in queue    |    Conversations that are currently waiting in queue to be assigned.      |
-|Agents online     |     Number of Agents that are currently online based on the time slicer.     |
-|Agents in wrap-up conversations    |   Service representatives who finished interacting with the customer but are still completing post-conversation tasks before closing the session.        |
-|Average session handle time | Average Session Handle Time = Total handle time across sessions / Number of sessions handled. |
-|Longest wait time| Longest wait time is a measure of the longest first wait time among unaccepted incoming conversations. |
-|Conversations abandoned rate | The abandoned rate refers to the percentage of incoming conversation requests that are terminated before a representative engages with the customer. |
-|Logged in agents | Logged in service representatives is the number of representatives who are currently logged in and aren't in Offline status. |
-|Agents available | Service representatives who are currently in **Available** status. |
-|Average handle time (hh:mm:ss)| Total handle time divided by the number of conversations handled.|
-|Engaged conversations | Conversations handled by the service representative. |
-|Transfer rate | Session transfer rate is the total transfers within a conversation across sessions over the total conversations. |
+|Intent Group Name|	Name of intent group set by the administrator in Customer Service admin center.|
+|Conversations in queue|	Conversations per intent group currently waiting in queue to be assigned to a service representative.|
+|Longest wait time (hh:mm:ss)|	Waiting time until the service representative accepts the conversation per intent group.|
+|Abandoned rate| The percentage of incoming conversations that end before engagement by a representative or AI agent, calculated over the total number of incoming conversations per intent group. Includes: <br> - Customer exits before assignment. <br> - Customer disconnects after assignment but before representative acceptance.|
+|Agents online|	Number of representatives currently online based on the time slicer per intent group.|
+|Agents available|	Service representatives who are currently in **Available** status per intent group.|
+|Agents in wrap-up conversations|	Service representatives who finished interacting with the customer but are still completing post-conversation tasks before closing the session per intent group.|
+|Average handle time (hh:mm:ss)|	Total handle time divided by the number of conversations handled per intent group. <br> - For Voice: msdyn_sessionparticipant.msdyn_talktime + msdyn_sessionparticipant.msdyn_holdtime + msdyn_sessionparticipant.msdyn_activewrapuptime <br> - For Chat: msdyn_sessionparticipant.msdyn_activetime + msdyn_sessionparticipant.msdyn_activewrapuptime.|
 
 
 ## Drill-down 
 
-Drill down on the **Metrics by intent group**, and then select **Detailed view** to view metrics by intent and agent.
+In the **Metrics by intent** section, select **Detailed view** to view metrics by intent.
+
+|Metrics | Definition  |
+|---------|---------|
+|Engaged conversations|	Conversations offered and accepted by the service representative.|
+|Average handle time|	Total handle time divided by the number of conversations handled. <br> - For Voice: msdyn_sessionparticipant.msdyn_talktime + msdyn_sessionparticipant.msdyn_holdtime + msdyn_sessionparticipant.msdyn_activewrapuptime. <br>- For Chat: msdyn_sessionparticipant.msdyn_activetime + msdyn_sessionparticipant.msdyn_activewrapuptime.|
+|Agents online|	Number of representatives currently online based on the time slicer.|
+|Abandoned rate| The percentage of incoming conversations that end before engagement by a representative or AI agent, calculated over the total number of incoming conversations per intent group. Includes: <br> - Customer exits before assignment. <br> - Customer disconnects after assignment but before representative acceptance.|
+|Transfer rate|	Total number of incoming sessions transferred from one representative, agent, or queue to another during the conversation, over the total number of incoming sessions.|
+
+
+### Metrics by Intent
+
+|Metrics | Definition  |
+|---------|---------|
+|Intent Name|	Name of the intent set in in Customer Service admin center.|
+|Engaged conversations|	Conversations offered and accepted by the service representative per intent.|
+|Average handle time (hh:mm:ss)|	Total handle time divided by the number of conversations handled per intent. <br> - For Voice: msdyn_sessionparticipant.msdyn_talktime + msdyn_sessionparticipant.msdyn_holdtime + msdyn_sessionparticipant.msdyn_activewrapuptime. <br> - For Chat: msdyn_sessionparticipant.msdyn_activetime + msdyn_sessionparticipant.msdyn_activewrapuptime.|
+|Abandoned rate|	The percentage of incoming conversations that end before engagement by a representative or AI agent, calculated over the total number of incoming conversations per intent group. Includes: <br> - Customer exits before assignment. <br> - Customer disconnects after assignment but before representative acceptance.|
+|Session transfer rate|	Total number of incoming sessions transferred from one representative, agent, or queue to another during the conversation, over the total number of incoming sessions per intent.|
+
 
 ## Related information
 

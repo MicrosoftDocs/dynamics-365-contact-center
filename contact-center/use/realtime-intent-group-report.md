@@ -57,7 +57,7 @@ In the **Metrics by intent** section, select **Detailed view** to view metrics b
 |Transfer rate|	Total number of incoming sessions transferred from one representative, agent, or queue to another during the conversation, over the total number of incoming sessions.|
 
 
-### Metrics by Intent
+### Metrics by intent
 
 |Metrics | Definition  |
 |---------|---------|

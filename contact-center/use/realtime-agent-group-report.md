@@ -47,7 +47,7 @@ You see the report after 24 hrs of provisioning. If you don't enable Customer In
 
 |Metrics | Definition  |
 |---------|---------|
-|AgentGroupName | Name of the service representative group. |
+|Agent Group Name | Name of the service representative group. |
 |Conversations in queue| Number of conversations waiting in queue to be assigned to a service representative per user group.|
 |Longest wait time (hh:mm:ss)|	Waiting time until the service representative accepts the conversation per user group.|
 |Agents online|	Number of  representatives that are currently online based on the time slicer per user group. |

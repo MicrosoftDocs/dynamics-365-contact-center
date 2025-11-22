@@ -94,7 +94,7 @@ The **AI Reasoning** tab provides transparency into how the system selects the f
 - **Key insights**: Explains why the selected model is anticipated to outperform the other options.
 - **Data anomalies**: Notes any irregularities in historical data that affected the decision.
 
-## Best practices for choosing forecasting options
+## Best practices for selecting forecasting options
 
 | Scenario                                      | Recommended option           |
 |----------------------------------------------|-----------------------------|

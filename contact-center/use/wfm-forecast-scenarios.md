@@ -88,7 +88,7 @@ To use AI-based forecasting:
 
 ### About the AI Reasoning tab
 
-The **AI Reasoning** tab provides transparency into how the system selected the forecasting method. It includes:
+The **AI Reasoning** tab provides transparency into how the system selects the forecasting method. It includes:
 - **Model selection criteria**: Lists the factors considered, such as historical trends, seasonality, and data completeness.
 - **Confidence score**: Indicates the AI’s confidence level in the selected method.
 - **Key insights**: Explains why the selected model is anticipated to outperform the other options.

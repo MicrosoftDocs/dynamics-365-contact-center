@@ -46,7 +46,7 @@ You can use the forecast reports for case and conversation volumes in the follow
 - Before you use AI-based forecasting (preview), ensure:
     - Your administrator enabled AI-based forecasting in the admin setup for forecast scenarios.
     - You have the necessary AI credits available for your organization.
-    - You understand that auto-refresh is disabled for AI-based forecasting. Forecasts must be run manually.
+    - You understand that autorefresh is disabled for AI-based forecasting. Forecasts must be run manually.
 
 ## Forecast scenario types
 

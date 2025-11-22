@@ -62,7 +62,7 @@ AI-based forecasting is a new capability that uses artificial intelligence to im
 
 ### Why use AI-based forecasting?
 
-Supervisors can rely on AI to intelligently choose the most accurate forecasting model for their operational data, removing guesswork and reducing manual configuration. The system uses historical and contextual data to improve forecast accuracy. Your business benefits in the following ways:
+As a supervisor, you can rely on AI to intelligently select the most accurate forecasting model for your operational data, remove guesswork and reduce manual configuration. The system uses historical and contextual data to improve forecast accuracy. Your business benefits in the following ways:
 
 - Optimized staffing levels
 - Reduced operational costs

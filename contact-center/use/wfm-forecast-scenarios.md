@@ -98,7 +98,7 @@ The **AI Reasoning** tab provides transparency into how the system selects the f
 
 | Scenario                                      | Recommended option           |
 |----------------------------------------------|-----------------------------|
-| **Stable historical patterns with minimal variability** | Default forecasting – uses a fixed time-series model and supports auto-refresh for predictable environments. |
+| **Stable historical patterns with minimal variability** | Default forecasting – uses a fixed time-series model and supports autorefresh for predictable environments. |
 | **Dynamic environments with frequent changes in demand** | AI-based forecasting – intelligently selects the most accurate model based on historical and contextual data. |
 | **Need for transparency and insights into model selection** | AI-based forecasting – review the AI Reasoning tab for confidence scores and decision factors. |
 | **Limited time for manual configuration**    | AI-based forecasting – reduces guesswork and minimizes setup effort. |

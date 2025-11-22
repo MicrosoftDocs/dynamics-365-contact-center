@@ -71,7 +71,7 @@ As a supervisor, you can rely on AI to intelligently select the most accurate fo
 ### Key behaviors
 
 - AI automatically selects the best-fit model for your scenario.
-- Auto-refresh has been turned off. You must run forecasts manually.
+- Autorefresh has been turned off. You must run forecasts manually.
 - Job history includes an **AI reasoning** tab that explains why a method was selected.
 
 > [!Note]

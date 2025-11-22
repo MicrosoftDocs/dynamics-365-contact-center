@@ -32,7 +32,7 @@ You can use the forecast reports for case and conversation volumes in the follow
 - Slice forecasted volumes and service representative demand by channel and queue.
 - View a rollup of actual and forecasted volume on an hourly, daily, weekly, monthly, and yearly basis.
 - Automatically detect seasonality from historical traffic with the settings option to import your holiday calendar. This function helps the forecasting model to predict case or conversation volumes during special, seasonal events.
-- A **Run forecast scenario** button lets you trigger forecasts on demand.
+- Trigger forecasts on demand with the **Run forecast scenario** option.
 
 
 > [!NOTE]

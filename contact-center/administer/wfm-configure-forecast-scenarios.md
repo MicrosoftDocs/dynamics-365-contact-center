@@ -59,7 +59,7 @@ AI-based forecasts include an **AI Reasoning** tab in the job history to show ho
 
 To enable AI-based forecasting for all forecast scenarios, complete the following steps:
 
-1. In the site map of the Customer Service or Copilot Service admin center, go to **Operations**, and then select **Workforce management**. The **Workforce management** page appears.
+1. In the site map of Copilot Service admin center, go to **Operations**, and then select **Workforce management**. The **Workforce management** page appears.
 1. In **Forecasting, select **Manage** next to **Forecast volume**.
 1. On the **Forecast volume** page, set the **Enable forecasting** toggle to **On**.
 1. Select the **Allow dynamic forecasting (AI-based)** checkbox.

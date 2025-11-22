@@ -55,7 +55,7 @@ AI-based forecasts include an **AI Reasoning** tab in the job history to show ho
 
 > [!Note]
 > - Auto-refresh is disabled for AI-based forecasting. Forecasts must be run manually.
-> - AI-based forecasting requires AI credits. Ensure your organization has sufficient credits before enabling this feature.
+> - AI-based forecasting requires AI credits. Ensure your organization has sufficient credits before you enable this feature.
 
 To enable AI-based forecasting for all forecast scenarios, complete the following steps:
 

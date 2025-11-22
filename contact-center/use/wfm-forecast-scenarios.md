@@ -169,5 +169,5 @@ When you open a report, the following visualizations are available:
 
 ### Run forecasts on demand
 
-You can run a forecast at any time outside of scheduled runs by selecting **Run forecast scenario**.
+Select **Run forecast scenario** to trigger an on-demand forecast.
 

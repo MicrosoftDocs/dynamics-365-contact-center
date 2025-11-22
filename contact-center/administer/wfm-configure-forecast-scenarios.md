@@ -57,7 +57,7 @@ AI-based forecasts include an **AI Reasoning** tab in the job history to show ho
 > - Auto-refresh is disabled for AI-based forecasting. Forecasts must be run manually.
 > - AI-based forecasting requires AI credits. Ensure your organization has sufficient credits before you enable this feature.
 
-To enable AI-based forecasting for all forecast scenarios, complete the following steps:
+To enable AI-based forecasting for all forecast scenarios:
 
 1. In the site map of Copilot Service admin center, go to **Operations**, and then select **Workforce management**. The **Workforce management** page appears.
 1. In **Forecasting**, select **Manage** next to **Forecast volume**.

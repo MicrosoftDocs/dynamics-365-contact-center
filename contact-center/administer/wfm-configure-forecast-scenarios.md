@@ -41,7 +41,7 @@ Complete the steps in [Set up user management](wfm-user-management.md).
 
 ## Enable AI-based forecasting (preview)
 
-As an admin, you can enable AI-based forecasting for your organization. This feature allows AI to dynamically select the best forecasting method for each scenario. When this feature is enabled, supervisors can choose the AI-based option in their forecast scenario details.
+As an administrator, you can enable AI-based forecasting for your organization. This feature allows AI to dynamically select the best forecasting method for each scenario. When this feature is enabled, supervisors can choose the AI-based option in their forecast scenario details.
 
 Key benefits:
 

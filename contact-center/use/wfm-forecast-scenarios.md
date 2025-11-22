@@ -79,7 +79,7 @@ As a supervisor, you can rely on AI to intelligently select the most accurate fo
 
 ### Create an AI-based forecast report
 
-To use AI-based forecasting, complete the following steps:
+To use AI-based forecasting:
 
 1. Open the forecast scenario details for the scenario you want to configure.
 1. Review refresh settings.

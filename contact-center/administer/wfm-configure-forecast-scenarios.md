@@ -1,7 +1,7 @@
 ---
 title: Enable forecasting
-description: Learn how to enable forecasting features so supervisors can predict case and conversation volumes and representative demand.
-ms.date: 11/21/2025
+description: Learn how to enable forecasting features in Dynamics 365 Customer Service and Dynamics 365 Contact Center to help supervisors predict case and conversation volumes and representative demand.
+ms.date: 11/28/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -20,13 +20,13 @@ Forecasting allows supervisors to predict case and conversation volumes demand b
 
 Key benefits:
 
-- **Long term Forecast:** Predict conversation and case volumes at a daily level for up to six months.
-- **Short term Forecast:** Generate 15-minute interval forecasts for up to six weeks to manage real-time demand fluctuations.
-- **Scenario Forecasting:** Model different business scenarios to assess their impact on workload and staffing.
-- **Data Slicing:** Break down forecasted data by channels and queues for granular insights.
-- **Import External Data:** Incorporate historical data from external systems via file import to enhance forecast accuracy.
-- **Export Forecasts:** Download forecast data into spreadsheets for further analysis.
-- **Visualize Trends:** View daily, weekly, and monthly forecast trends using interactive charts.
+- **Long-term forecast:** Predict conversation and case volumes at a daily level for up to six months.
+- **Short-term forecast:** Generate 15-minute interval forecasts for up to six weeks to manage real-time demand fluctuations.
+- **Scenario forecasting:** Model different business scenarios to assess their impact on workload and staffing.
+- **Data slicing:** Break down forecasted data by channels and queues for granular insights.
+- **Import external data:** Incorporate historical data from external systems via file import to enhance forecast accuracy.
+- **Export forecasts:** Download forecast data into spreadsheets for further analysis.
+- **Visualize trends:** View daily, weekly, and monthly forecast trends using interactive charts.
 
 ## Prerequisites
 

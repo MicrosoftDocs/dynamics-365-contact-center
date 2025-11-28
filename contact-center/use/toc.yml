@@ -98,6 +98,8 @@
             href: use-evaluations.md
       - name: Use Copilot features in contact center-standalone
         items: 
+        - name: Overview of autonomous agents and Copilot features
+          href: overview-ai-agents-copilot-features.md
         - name: Copilot feature availability across applications
           href: copilot-feature-availability.md  
         - name: Summarize conversations
@@ -345,7 +347,7 @@
           - name: Export and import visual customizations
             href: /dynamics365/customer-service/use/export-import-visual-customization?context=/dynamics365/contact-center/context/use-context
         - name: Customize the bot dashboard
-          href: customize-agent-dashboard.md       
+          href: customize-agent-dashboard.md
         - name: Customize data models
           items:
           - name: Overview of data model customization

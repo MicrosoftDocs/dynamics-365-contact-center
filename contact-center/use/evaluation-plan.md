@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 10/27/2025
+ms.date: 11/28/2025
 ms.custom: bap-template
 ---
 
@@ -81,6 +81,39 @@ You must enable the **Enable bulk evaluations (preview)** checkbox in Customer S
 1.  Select **Activate plan**. On successful activation, a success message appears.
 
 You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases and conversations when needed.
+
+## Create and activate a real-time evaluation plan for closed conversations (preview)
+
+You need to switch the **Criteria scoring** toggle to On for your evaluation criteria.
+
+To create a real-time evaluation plan:
+
+1. In Customer Service workspace, go to **Evaluation Plans**.
+
+1. On the **Evaluation plans** page, select **New**.
+
+1.  On the **New Evaluation Plan** page,
+
+1.  In the **Evaluation plan details** section, provide the following:
+        - **Plan name**: Enter plan name.
+        - **Description**: Enter description.
+        - **Record type**: Select **record type** as **Conversations**.
+        - 
+1. In the **Frequency** section, for **Frequency type**, select **Real-Time**.
+1. In the **Conditions** section, add the workstreams for which you want to enable real-time evaluation.
+1. In the **Assign Evaluation** section, for **Evaluation method**, select **AI assisted**.
+1. In the **Notification Configuration** section, select **Enable notifications**, if you need to enable notifications for scoring.
+> [!NOTE]
+> You can enable notifications at either the criteria level or the section level, but not both.
+    1. To enable criteria-level notifications, switch the **Enable criteria-level notification** toggle to **On**.
+        1. For **Critical**, **Warning**, and **Normal**, define the scoring thresholds as required. You can set your scoring between 0-100, with zero as the starting range for **Critical** and 100 as the highest range for **Normal**.
+        1. From the **Recipient** dropdown, select from either **Team**, **User**, **Queue**, or **Supervisor in the current queue**.
+        1. Select the notifications checkbox besides each of the thresholds if you want to receive the notifications.
+    1. To enable section-level notifications, switch the **Enable section-level notification** toggle to **On**.
+        1. From the dropdown, select the section for which notifications must be enabled.
+        1. For the selected section, for **Critical**, **Warning**, and **Normal**, define the scoring thresholds as required. You can set your scoring between 0-100, with zero as the starting range for **Critical** and 100 as the highest range for **Normal**.
+        1. Select the notifications checkbox besides each of the thresholds if you want to receive the notifications.
+    1.  Select **Save**.
 
 ## Activate, pause, resume, or delete evaluation plans
 

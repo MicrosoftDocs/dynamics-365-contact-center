@@ -31,7 +31,7 @@ Evaluation plans help supervisors perform consistent and objective reviews of ca
 - Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - Provide consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
 
-### Create and activate evaluation plan for cases and closed conversations
+## Create and activate evaluation plan for cases and closed conversations
 
 You must enable the **Enable bulk evaluations (preview)** checkbox in Customer Service admin center before you create and activate an evaluation plan for cases. Learn more in [Enable Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#enable-quality-evaluation-agent).
 

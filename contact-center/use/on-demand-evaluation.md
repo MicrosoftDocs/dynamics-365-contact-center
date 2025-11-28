@@ -4,7 +4,7 @@ description: Learn how to use on-demand evaluation in Dynamics 365 Customer Serv
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
-ms.topic: conceptual
+ms.topic: article
 ms.collection: bap-ai-copilot
 ms.date: 10/27/2025
 ms.custom: bap-template

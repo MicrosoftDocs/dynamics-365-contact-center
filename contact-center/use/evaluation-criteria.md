@@ -109,10 +109,8 @@ After you create a baseline criteria for your business unit, you can extend the 
 
     1.  **Criteria name**: Provide a name.
 
-    1.  **Description**: Provide a description. To provide your own
-        instructions, turn off the **Use source instructions** toggle.
-        To use the source instructions, turn on the **Use source
-        instructions** toggle.
+    1.  **Description**: Provide a description. To provide your own instructions, turn off the **Use source instructions** toggle.
+        To use the source instructions, turn on the **Use source instructions** toggle.
 
     1.  **Extended scoring weight**: If the source criteria has scoring
         criteria enabled, provide the extended scoring weight.

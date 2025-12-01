@@ -4,7 +4,7 @@ description: Learn how to use the Proactive Outbound dashboard to track outbound
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
-ms.topic: conceptual
+ms.topic: concept-article
 ms.collection:
 ms.date: 11/11/2025
 ms.custom: bap-template

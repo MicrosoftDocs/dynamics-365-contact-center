@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-As a supervisor, you can effectively oversee ongoing Quality Evaluation Agent conversations to maintain smooth operations and boost customer engagement. The **Ongoing QEA conversations** view provides real-time visibility into active interactions along with their associated scores, helping you analyze customer behavior and guide representatives toward improved performance.
+As a supervisor, you can effectively oversee ongoing Quality Evaluation Agent conversations to maintain smooth operations and boost customer engagement. The **Ongoing QEA conversations** view provides real-time visibility into active interactions along with their associated scores, helping you analyze customer behavior and guide customer service representatives towards improved performance.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

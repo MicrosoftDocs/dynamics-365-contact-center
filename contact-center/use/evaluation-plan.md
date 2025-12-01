@@ -117,6 +117,8 @@ To create a real-time evaluation plan:
  1. Select the notifications checkbox besides each of the thresholds if you want to receive the notifications.
 1.  Select **Save**.
 
+Learn how to view scores for the real-time evaluation plan in 
+
 ## Activate, pause, resume, or delete evaluation plans
 
 1. In Customer Service workspace, go to **Evaluation plans**.

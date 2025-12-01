@@ -308,6 +308,8 @@
             href: all-ongoing-conversations.md
           - name: Manage ongoing record conversations
             href: manage-ongoing-record-conversations.md
+          - name: Manage ongoing Quality Evaluation Agent conversations
+            href: manage-ongoing-qea-conversations.md
         - name: Manage ongoing conversations
           href: all-ongoing-conversations.md
         - name: Use knowledge management analytics

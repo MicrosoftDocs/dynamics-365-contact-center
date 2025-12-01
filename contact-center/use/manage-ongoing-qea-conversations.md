@@ -1,5 +1,5 @@
 ---
-title: Manage ongoing Quality Evaluation Agent conversations
+title: Manage ongoing Quality Evaluation Agent conversations (preview)
 description: Learn how to manage ongoing Quality Evaluation Agent conversations effectively in Dynamics 365 Contact Center.
 author: Soumyasd27
 ms.author: sdas
@@ -10,9 +10,13 @@ ms.date: 12/01/2025
 ms.custom: bap-template
 ---
 
-# Manage ongoing Quality Evaluation Agent conversations
+# Manage ongoing Quality Evaluation Agent conversations (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 As a supervisor, you can effectively oversee ongoing Quality Evaluation Agent conversations to maintain smooth operations and boost customer engagement. The **Ongoing QEA conversations** view provides real-time visibility into active interactions along with their associated scores, helping you analyze customer behavior and guide representatives toward improved performance.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -26,10 +30,10 @@ In the site map of Copilot Service workspace, go to **Conversations** and then s
 
 To view real-time scores, you can either:
 
-- Select a workstream and then choose the **Realtime Score **option, or
+- Select a workstream and then choose the **Realtime Score** option, or
 - Select the score link associated with the workstream. 
 
-A side pane appears that displays the real-time evaluation details, including the overall score and sentiment score for each section-level criterion you have configured.
+A side pane appears that displays the real-time evaluation details, including the overall score and sentiment score for each section-level criterion you configured.
 
 ## Related information
 

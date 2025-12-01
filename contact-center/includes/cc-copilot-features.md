@@ -1,6 +1,7 @@
 The following Copilot features are available out of the box:
 
 - [Use Copilot to ask a question](/dynamics365/contact-center/use/use-ask-a-question)
+
 - [Use auto prompts](/dynamics365/contact-center/use/use-ask-a-question#use-auto-prompts)
 - [Use proactive prompts](/dynamics365/contact-center/use/use-ask-a-question#use-proactive-prompts)
 - [Use Copilot to summarize conversations](/dynamics365/contact-center/use/copilot-summarize-conversations)

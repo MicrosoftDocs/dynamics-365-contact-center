@@ -95,29 +95,39 @@ To create a real-time evaluation plan:
 1.  On the **New Evaluation Plan** page,
 
 1.  In the **Evaluation plan details** section, provide the following:
-        - **Plan name**: Enter plan name.
-        - **Description**: Enter description.
-        - **Record type**: Select **record type** as **Conversations**.
-        - 
+
+    - **Plan name**: Enter plan name.
+    - **Description**: Enter description.
+    - **Record type**: Select **record type** as **Conversations**.
+     
 1. In the **Frequency** section, for **Frequency type**, select **Real-Time**.
+
 1. In the **Conditions** section, add the workstreams for which you want to enable real-time evaluation.
+
 1. In the **Assign Evaluation** section, for **Evaluation method**, select **AI assisted**.
+
 1. In the **Notification Configuration** section, select **Enable notifications**, if you need to enable notifications for scoring.
     > [!NOTE]
-    > You can enable notifications at either the criteria level or the section level, but not both.
+    > Notifications can be configured at either the criteria or the section level, but not simultaneously at both levels.
 
 1. To enable criteria-level notifications, switch the **Enable criteria-level notification** toggle to **On**.
+
     1. For **Critical**, **Warning**, and **Normal**, define the scoring thresholds as required. You can set your scoring between 0-100, with zero as the starting range for **Critical** and 100 as the highest range for **Normal**.
+    
     1. From the **Recipient** dropdown, select from either **Team**, **User**, **Queue**, or **Supervisor in the current queue**.
+    
     1. Select the notifications checkbox besides each of the thresholds if you want to receive the notifications.
+    
 1. To enable section-level notifications, switch the **Enable section-level notification** toggle to **On**.
 
     1. From the dropdown, select the section for which notifications must be enabled.
+    
     1. For the selected section, for **Critical**, **Warning**, and **Normal**, define the scoring thresholds as required. You can set your scoring between 0-100, with zero as the starting range for **Critical** and 100 as the highest range for **Normal**.
- 1. Select the notifications checkbox besides each of the thresholds if you want to receive the notifications.
+    1. Select the notifications checkbox besides each of the thresholds if you want to receive the notifications.
+    
 1.  Select **Save**.
 
-Learn how to view scores for the real-time evaluation plan in 
+Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations](manage-ongoing-qea-conversations.md#manage-ongoing-quality-evaluation-agent-conversations).
 
 ## Activate, pause, resume, or delete evaluation plans
 

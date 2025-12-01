@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Manage ongoing Quality Evaluation Agent conversations
 
-As a supervisor, you can efficiently manage ongoing Quality Evaluation Agent conversations to ensure smooth operations and enhance customer engagement. The **Ongoing QEA conversations** view enables you view active conversations and their associated scores that help syou understand customer behavior and improve representative's behavior with customers.
+As a supervisor, you can effectively oversee ongoing Quality Evaluation Agent conversations to maintain smooth operations and boost customer engagement. The **Ongoing QEA conversations** view provides real-time visibility into active interactions along with their associated scores, helping you analyze customer behavior and guide representatives toward improved performance.
 
 ## Prerequisites
 
@@ -20,14 +20,18 @@ As a supervisor, you can efficiently manage ongoing Quality Evaluation Agent con
 
 ## Access the Ongoing QEA conversations view
 
-In the site map of Copilot Service workspace, go to **Conversations**. Select **Ongoing QEA conversations** from the dropdown.
+In the site map of Copilot Service workspace, go to **Conversations** and then select **Ongoing QEA conversations** from the dropdown.
 
-## Tasks you can perform
+## View real-time scores
 
-You can view scores in real-time, by either selecting a workstream and then selecting **Realtime Score** option, or seelct the score for a workstream. 
+To view real-time scores, you can either:
 
-The side pane appears with details of the real-time evaluation with theoverall score for the sentiment for the section-level criteria that you set.
+- Select a workstream and then choose the **Realtime Score **option, or
+- Select the score link associated with the workstream. 
+
+A side pane appears that displays the real-time evaluation details, including the overall score and sentiment score for each section-level criterion you have configured.
 
 ## Related information
 
-
+[Use evaluation plan](evaluation-plan.md#use-evaluation-plan)  
+[Use evaluation criteria](evaluation-criteria.md#use-evaluation-criteria)

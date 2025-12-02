@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 06/02/2025
+ms.date: 12/05/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -67,6 +67,7 @@ The dialing modes are used to determine how the system can make calls to custome
    - **Copilot**: The system automatically dials the customer and connects the call to the AI agent when the customer answers. This mode is used for high-volume outbound calls.
    - **Progressive**: The system starts the call with the AI agent and then adds a representative after the agent actions are complete.
    - **Preview**: The system adds the representative to the call and then dials the customer.
+   - **Predictive**: The system automatically places phone calls before an agent becomes available, predicting when an agent will be free to take the next call.
 
 1. Select one of the following priority levels:
    - **Normal**
@@ -89,11 +90,12 @@ The dialing modes are used to determine how the system can make calls to custome
    - **Continue making calls**:
      - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
 
-1. For Copilot and progressive modes, select **Use rules** to set rules for the following parameters that help control the throttling and pacing for the proactive engagement:
-   - **Abandonment rate**: (Copilot and progressive modes). The percentage of customers who hang up before connecting with a representative.
-   - **Average wait time**: (Copilot and progressive modes).The average amount of time it takes for customers to connect to representatives.
+1. For Copilot, progressive, and predictive modes, select **Use rules** to set rules for the following parameters that help control the throttling and pacing for the proactive engagement:
+   - **Abandonment rate**: (Copilot, progressive, and predictive modes). The percentage of customers who hang up before connecting with a representative.
+   - **Average wait time**: (Copilot, progressive, and predictive modes).The average amount of time it takes for customers to connect to representatives.
    - **Escalation count**: (Copilot mode). The total number of escalations made from the AI agent.
-   - **Open concurrent escalations**: (Copilot mode). The total number of open escalations that haven't been resolved. 
+   - **Open concurrent escalations**: (Copilot mode). The total number of open escalations that haven't been resolved.
+   - **Percentage of queue**: (Predictive mode) To balance queue capacity, you can set how much percent of the queue you want dedicated to the proactive engagement.
 
 1. Select **Next** if you want to configure the outcomes.
 
@@ -106,6 +108,32 @@ The outcomes are the results of the proactive engagement call. The outcomes are 
    - Make sure that when you add the context variables in Copilot agent, you use the same names that you created in the workstream. Learn more in [Configure context variables for Copilot agent](/dynamics365/customer-service/administer/context-variables-for-bot#configure-context-variables-for-copilot-agent).
 
 1. Review the settings on the **Summary** page, and then select **Create**.
+
+> [!NOTE]
+> If a context variable is created in Copilot Studio and a variable with the same name exists in the workstream, the value is automatically sent to Dynamics 365 in real time, making it available for use in the contact center. These context variables are accessible as disposition codes and for branching logic in Customer Insights Journey, enhancing the ability to automate and customize call handling based on conversational outcomes.
+
+The SIP-based early media outcomes, such as LiveAnswer, AnsweringMachine, Busy, NoAnswer, and others are stored as result values in the proactive delivery entity and can be referenced for call status tracking. With these outcomes, Customer Insights Journey supports more granular branching options out of the box, allowing users to define actions based on specific call results without additional configuration.
+
+The SIP-based outcomes are as follows.
+
+| Result | Description |
+|--------|-------------|
+| LiveAnswer | Answered by someone or something and interacted with Copilot agent or Copilot Studio Agent. |
+| AnsweringMachine | Determined as answering machine. Left message or voicemail if Copilot Bot/MCS Agent has answering machine detection topic enabled and configured to leave a message. |
+| AnsweringMachineHangup | Determined as answering machine, Copilot Bot/MCS Agent hung up as configured in the topic and didn't leave a message or voicemail. |
+| Undetermined | Answered by someone or something but didn't interact or have a conversation with Copilot Bot/MCS Agent. |
+| NotAHandset | Detected as some tone such as SIT or FAX that indicates it's not a service representative or an answering machine. |
+| BotFailed | Copilot Bot/MCS Agent failed to get started or failed during conversation with END CUSTOMER-side where phone went off-hook. |
+| CallEnded | Preview dial mode call where customer phone went off-hook. |
+| Busy | Customer-side returned busy signal, as indicated by SIP Diagnostic Information/Early Media Results from ACS.  END CUSTOMER phone did not go off-hook. |
+| NoAnswer | END CUSTOMER phone dial resulted in NoAnswer, SIP Diagnostic Information/Early Media Results from ACS. END CUSTOMER phone did not go off-hook. |
+| InvalidAddress | END CUSTOMER phone dial resulted in InvalidAddress, as indicated by SIP Diagnostic Information/Early Media Results from ACS. END CUSTOMER phone did not go off-hook. |
+| CallFailed | END CUSTOMER phone did not go off-hook and there was no SIP Diagnostic Information/Early Media Results from ACS. |
+| Terminated | Preview Dial Mode Call where END CUSTOMER was not attempted to be engaged because no agent available/accepted after launching the call and valid window to contact the END CUSTOMER ended by then. |
+| Unknown | END CUSTOMER phone was attempted to be engaged, but there is not enough information available about the attempt due to some error condition. |
+| Cancelled | END CUSTOMER was not attempted to be engaged because there was a request to cancel the delivery. |
+| Expired | There was no more valid time window to engage the END CUSTOMER, or expiration date specified was in the past. END CUSTOMER was not attempted to be engaged. |
+| Error | END CUSTOMER was not attempted to be engaged because there was some invalid configuration / data condition when it was time to engage the END CUSTOMER. | 
 
 ## Configure proactive engagement with a journey using Customer Insights
 
@@ -133,6 +161,25 @@ Use the progressive dial mode to call the customer first. As soon as the custome
 ### Preview
 
 Use the preview dial mode to identify a service representative from the specified queue and then notify them of the request to make the outbound call. The number of simultaneous calls made is dependent on the number of available representatives. If the representative accepts, then the system places the outbound call to customer with the representative already on the line. Representative gets to speak to the customer if they pick up or leave a voicemail. This dial mode prioritizes customer experience over representative use, and is best suited for scenarios that require a personalized experience.
+
+### Predictive
+
+A predictive dialer is an automated outbound calling system designed to boost agent efficiency and streamline customer outreach. It initiates calls ahead of agent availability by forecasting when agents are ready to engage. Using a dynamic algorithm, it calculates the optimal number of simultaneous calls to place based on anticipated agent availability. This algorithm factors in key contact center metrics such as abandonment rate, average wait time, queue targets, and other performance indicators to determine the ideal dialing volume.
+
+## Detect answering machines
+
+Detecting answering machines is a technology used in telecommunication systems to detect whether a call is answered by a human or an answering machine. The following document outlines how you can setup AMD in Copilot Studio to be used when making outbound voice calls.
+
+### Prerequisites
+
+[Voice is enabled in Copilot Studio](/microsoft-copilot-studio/voice-get-started) or you can use voice IVR template to access the answer machine detection system topic.
+
+### Configure answer machine detection system topic
+
+You can choose to enable or disable answering machine detection. When enabled, the system automatically detects answering machines and proceeds with the configured message flow.
+
+Select the system topic, and customize the message that the system needs to play. The system detects answering machines and allows users to record or customize the message before ending the conversation, providing flexibility in handling such calls.
+
 
 ## Runtime experience
 

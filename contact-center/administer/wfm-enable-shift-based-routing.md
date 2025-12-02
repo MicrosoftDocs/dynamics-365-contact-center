@@ -14,9 +14,7 @@ ms.custom:
   - dyn365-customerservice
 ---
 
-# Enable shift-based routing for cases and conversations (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Enable shift-based routing for cases and conversations
 
 You can configure assignment rules to route and assign cases and conversations based on your customer service representatives' (service representative or representative) shift schedules. By verifying representatives' schedules in advance, your organization can reduce the risk of delays from routing tasks to off-duty service representatives.
 

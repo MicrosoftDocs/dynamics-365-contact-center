@@ -1,0 +1,2 @@
+- Your administrator has enabled this feature.
+- You have the required permissions to use Copilot.

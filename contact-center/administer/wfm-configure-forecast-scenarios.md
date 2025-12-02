@@ -1,7 +1,7 @@
 ---
 title: Enable forecasting
 description: Learn how to enable forecasting features in Dynamics 365 Customer Service and Dynamics 365 Contact Center to help supervisors predict case and conversation volumes and representative demand.
-ms.date: 11/28/2025
+ms.date: 12/01/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -51,7 +51,7 @@ Key benefits:
 - **Improves operational efficiency**: Enables supervisors to better staff, schedule, and drive budget decisions with more reliable forecasts.
 - **Provides transparency**: Reasoning and confidence scores explain why a specific model was selected, helping build trust in forecast outputs.
 
-AI-based forecasts include an **AI Reasoning** tab in the job history to show how the model made its decision. When supervisors use AI-based forecasting, an AI disclaimer appears in the UI.
+AI-based forecasts include an **AI Reasoning** tab in the job history to show how the model made its decision. When supervisors use AI-based forecasting, an AI disclaimer appears on the user interface.
 
 > [!Note]
 > - Auto-refresh is disabled for AI-based forecasting. Forecasts must be run manually.

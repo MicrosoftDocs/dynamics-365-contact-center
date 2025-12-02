@@ -1,20 +1,21 @@
 ---
-title: Copilot feature availability across applications
-description: Learn more about Copilot feature availability across applications.
+title: Copilot feature availability across products
+description: Learn about the Copilot features availability across Dynamics 365 Contact Center, Dynamics 365 Customer Service, and Microsoft 365 Copilot for Service.
 author: gandhamm 
 ms.author: mgandham 
 ms.reviewer: mgandham
-ms.topic: how-to 
+ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 05/13/2025
+ms.date: 07/14/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 
-# Copilot feature availability across applications
+# Copilot feature availability across products
 
-This article provides information about the Copilot features supported across Dynamics 365 Customer Service, Dynamics 365 Contact Center - Standalone Experience, Dynamics 365 Contact Center - Embedded Experience, and Microsoft 365 Copilot for Service.
+This article provides information about the Copilot features supported across Customer Service, standalone and embedded experiences in Dynamics 365 Contact Center, and Microsoft 365 Copilot for Service.
 
-| Feature                   | Dynamics 365 Customer Service | Dynamics 365 Contact Center - Standalone Experience | Dynamics 365 Contact Center - Embedded Experience | Microsoft 365 Copilot for Service |
+| Feature                   | Dynamics 365 Customer Service | Dynamics 365 Contact Center&mdash;standalone experience | Dynamics 365 Contact Center&mdash;embedded experience | Microsoft 365 Copilot for Service |
 |---------------------------|-------------------------------|-----------------------------------------------------|---------------------------------------------------|-----------------------------------|
 | [Filter knowledge articles to generate responses](/dynamics365/customer-service/use/use-copilot-filters) | Yes | No | No | No |
 |[Translate Copilot responses](use-ask-a-question.md#translate-responses) | Yes | Yes | Yes | Yes|
@@ -40,7 +41,9 @@ This article provides information about the Copilot features supported across Dy
 | [Add trusted webpages as sources](../administer/copilot-enable-help-pane.md#enable-ask-a-question)  | Yes                          | Yes                                               | No                                               | No                             |
 | [Use Copilot to generate knowledge drafts from cases (preview)](/dynamics365/customer-service/use/use-copilot-knowledge-from-cases) | Yes | No | No | No |
 |[Ask about case data](use-ask-a-question.md#summarize-cases-and-ask-about-case-data)| Yes | No | No | No|
-|[Use targeted phrases in Copilot to get responses from plugins (preview)](use-ask-a-question.md#use-targeted-phrases-in-copilot-to-get-responses-from-plugins-preview)| Yes | Yes | No | No |
+|[Use targeted phrases in Copilot to get responses from plugins (preview)](use-ask-a-question.md#use-targeted-phrases-in-copilot-to-get-responses-from-plugins-preview)| Yes | Yes | Yes | Yes |
 | [Use Copilot analytics](copilot-analytics-report.md) | Yes | Yes | No | No|
-| [Draft a chat response(preview)](use-copilot-features.md) | Yes | Yes | No | No|
-| [Filter knowledge articles to generate responses](/dynamics365/customer-service/use/use-copilot-filters) | Yes | No | No | No |
+
+### Related information
+
+[FAQs about Responsible AI](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/implement-context)  

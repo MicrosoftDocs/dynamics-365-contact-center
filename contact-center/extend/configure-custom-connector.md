@@ -6,13 +6,13 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection:
-ms.date: 01/16/2025
+ms.date: 06/26/2025
 ms.custom: bap-template
 ---
 
 # Configure the connector for any CRM solution
 
-The Microsoft Contact Center&mdash;Power Automate solution for any CRM connector allows organizations to engage with their customers using capabilities such as voice, video, SMS, live chat, and social messaging from their third-party CRM solutions. You can use Power Automate data connectors to sync the contacts and accounts data from the  CRM solution into Dataverse.
+The Microsoft Contact Center&mdash;Power Automate solution for any CRM connector allows organizations to engage with their customers using capabilities such as voice, video, SMS, live chat, and social messaging from their non-Microsoft CRM solutions. You can use Power Automate data connectors to sync the contacts and accounts data from the CRM solution into Dataverse.
 
 ## Prerequisites 
 
@@ -50,7 +50,7 @@ Add a connector in one of the following ways:
 
 **Power Automate**    
 
-1. To find and add the CRM connector, follow the steps in [Add a connection](/power-automate/add-manage-connections#add-a-connection).
+1. Find and add the CRM connector. Follow the steps in [Add a connection](/power-automate/add-manage-connections#add-a-connection).
 1. Specify the required information. A connection is created.
 
 **Add a connector using API calls**      

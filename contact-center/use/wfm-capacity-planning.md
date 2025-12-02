@@ -1,7 +1,7 @@
 ---
 title: Create and manage capacity planning
-description: Learn how to set up capacity plans to help you effectively manage your workforce.
-ms.date: 04/11/2025
+description: Learn how to set up capacity plans to help you forecast staffing needs and effectively manage your workforce.
+ms.date: 05/15/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -16,14 +16,14 @@ Capacity planning ensures you have the right number of customer service represen
 
 You can plan capacity in the following ways:
 
-- **Short-term planning**: Forecast staffing needs in 15 min intervals for up to six weeks, that allow real-time adjustments.
+- **Short-term planning**: Forecast staffing needs 15-minute intervals for up to six weeks with allowance for real-time adjustments.
 - **Long-term planning**: Plan daily staffing requirements for up to six months to support strategic workforce decisions.
 - **Scenario analysis**: Model different workload scenarios to assess the impact of changes in demand.
 - **Data slicing**: View staffing projections by specific channels and queues for insights.
 
 ## Prerequisites
 
-Your administrator has installed the **Workforce Management for Customer Service** package in the Power Platform admin center app and then enabled the feature in Copilot Service admin center.
+Your administrator installed the **Workforce Management for Customer Service** package in the Power Platform admin center app and then enabled the feature in Copilot Service admin center.
 
 ## Create a capacity plan
 
@@ -36,7 +36,9 @@ Your administrator has installed the **Workforce Management for Customer Service
      - **Target Answer Time (Seconds)**: The number of seconds in which you want your service representatives to answer their conversations.
      - **Concurrency (#)**: The number of simultaneous interactions per service representative. For voice calls, this value should be set to one. For chats and messaging channels, this value can be set as desired.
 1. On the **Forecast run schedule** card, make sure the toggle for **Auto-extension** is set to **Yes**.
-1. Select **Save**.
+ > [!Note]  
+ > You can have up to 10 forecast scenarios with Auto-extension enabled.
+6. Select **Save**.
 
 ## View your capacity plans
 

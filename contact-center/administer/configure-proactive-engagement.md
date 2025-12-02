@@ -168,9 +168,9 @@ A predictive dialer is an automated outbound calling system designed to boost ag
 
 ## Detect answering machines
 
-Detecting answering machines is a technology used in telecommunication systems to detect whether a call is answered by a human or an answering machine. The following document outlines how you can setup AMD in Copilot Studio to be used when making outbound voice calls.
+Detection of answering machines is a technology used in telecommunication systems to determine whether a call is answered by a human or an answering machine. You can set up the answering machine detection system topic in Copilot Studio to be used when outbound voice calls are made.
 
-### Prerequisites
+### Prerequisite
 
 [Voice is enabled in Copilot Studio](/microsoft-copilot-studio/voice-get-started) or you can use voice IVR template to access the answer machine detection system topic.
 
@@ -179,7 +179,6 @@ Detecting answering machines is a technology used in telecommunication systems t
 You can choose to enable or disable answering machine detection. When enabled, the system automatically detects answering machines and proceeds with the configured message flow.
 
 Select the system topic, and customize the message that the system needs to play. The system detects answering machines and allows users to record or customize the message before ending the conversation, providing flexibility in handling such calls.
-
 
 ## Runtime experience
 

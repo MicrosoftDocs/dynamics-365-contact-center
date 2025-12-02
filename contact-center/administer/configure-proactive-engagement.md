@@ -125,15 +125,15 @@ The SIP-based outcomes are as follows.
 | NotAHandset | Detected as some tone such as SIT or FAX that indicates it's not a service representative or an answering machine. |
 | BotFailed | Copilot Bot/MCS Agent failed to get started or failed during conversation with END CUSTOMER-side where phone went off-hook. |
 | CallEnded | Preview dial mode call where customer phone went off-hook. |
-| Busy | Customer-side returned busy signal, as indicated by SIP Diagnostic Information/Early Media Results from ACS.  END CUSTOMER phone did not go off-hook. |
-| NoAnswer | END CUSTOMER phone dial resulted in NoAnswer, SIP Diagnostic Information/Early Media Results from ACS. END CUSTOMER phone did not go off-hook. |
-| InvalidAddress | END CUSTOMER phone dial resulted in InvalidAddress, as indicated by SIP Diagnostic Information/Early Media Results from ACS. END CUSTOMER phone did not go off-hook. |
-| CallFailed | END CUSTOMER phone did not go off-hook and there was no SIP Diagnostic Information/Early Media Results from ACS. |
-| Terminated | Preview Dial Mode Call where END CUSTOMER was not attempted to be engaged because no agent available/accepted after launching the call and valid window to contact the END CUSTOMER ended by then. |
-| Unknown | END CUSTOMER phone was attempted to be engaged, but there is not enough information available about the attempt due to some error condition. |
-| Cancelled | END CUSTOMER was not attempted to be engaged because there was a request to cancel the delivery. |
-| Expired | There was no more valid time window to engage the END CUSTOMER, or expiration date specified was in the past. END CUSTOMER was not attempted to be engaged. |
-| Error | END CUSTOMER was not attempted to be engaged because there was some invalid configuration / data condition when it was time to engage the END CUSTOMER. | 
+| Busy | Customer returned busy signal, as indicated by SIP Diagnostic Information/Early Media Results from ACS.  Customer phone didn't go off hook. |
+| NoAnswer | Customer phone dial resulted in no answer, SIP Diagnostic Information/Early Media Results from ACS. Customer phone didn't go off hook. |
+| InvalidAddress | Customer phone dial resulted in invalid address, as indicated by SIP Diagnostic Information/Early Media Results from Azure Communication Services. Customer phone didn't go off hook. |
+| CallFailed | Customer phone didn't go off hook and there was no SIP Diagnostic Information/Early Media Results from Azure Communication Services. |
+| Terminated | Preview Dial Mode Call where END CUSTOMER was not attempted to be engaged because no agent available/accepted after launching the call and valid window to contact the customer ended by then. |
+| Unknown | Customer phone was attempted to be engaged, but there is not enough information available about the attempt due to some error condition. |
+| Cancelled | Customer wasn't attempted to be engaged because there was a request to cancel the delivery. |
+| Expired | There was no more valid time window to engage the customer, or expiration date specified was in the past. Customer was not attempted to be engaged. |
+| Error | Customer was not attempted to be engaged because there was some invalid configuration or data condition when it was time to engage the customer. |
 
 ## Configure proactive engagement with a journey using Customer Insights
 

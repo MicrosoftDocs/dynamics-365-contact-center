@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
-description: Learn how to use forecast scenario reports to predict case and conversation volumes.
-ms.date: 11/21/2025
+description: Learn how to use forecast scenario reports to predict case and conversation volumes in Dynamics 365 Contact Center and Customer Service.
+ms.date: 12/01/2025
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -19,21 +19,18 @@ Learn how to access and interpret forecast reports in Copilot Service workspace 
 
 ## Overview
 
-Forecast scenarios are essential to predict future demand in terms of volume, such as the number of customer interactions, cases, or conversations that are expected within your contact center. When you analyze historical data and identify trends, these scenarios help you anticipate fluctuations in demand, make informed decisions, and prepare for varying levels of service volume.
-
-As a supervisor, you can use the forecast scenario to help plan for expected volume fluctuations, enabling you to prepare for periods of high or low demand. As you analyze different forecast scenarios, you can make data-driven decisions about resource allocation, optimize staffing levels, and ensure that service levels are maintained throughout various periods of activity.
+Forecast scenarios are essential to predict future demand in terms of volume, such as the number of customer interactions, cases, or conversations that are expected within your contact center.
 
 You can use the forecast reports for case and conversation volumes in the following ways:
 
 - Forecast upcoming case and conversation volumes using historical traffic data, whether sourced internally from Dynamics 365 or externally from an imported file upload.
-- For conversation volume forecasting, if your administrator configured AI agents for your conversation channels, the system excludes conversations that AI agents handle without having a service representative join the conversation. This function ensures that you can rely on the predicted conversation volumes for service representative staffing.
+- Rely on predicted conversation volumes for service representative planning if your administrator configured AI agents for your conversation channels. The system excludes conversations that AI agents handle without having a service representative join the conversation.
 - Forecast case and conversation volumes on a daily basis for a time range up to six months for long-term business planning.
-- For short-term staffing and intraday planning, forecast case and conversation volumes at 15-minute intervals for a time range of up to six weeks.
+- Forecast case and conversation volumes at 15-minute intervals for a time range of up to six weeks for short-term staffing and intraday planning.
 - Slice forecasted volumes and service representative demand by channel and queue.
 - View a rollup of actual and forecasted volume on an hourly, daily, weekly, monthly, and yearly basis.
 - Automatically detect seasonality from historical traffic with the settings option to import your holiday calendar. This function helps the forecasting model to predict case or conversation volumes during special, seasonal events.
 - Trigger forecasts on demand with the **Run forecast scenario** option.
-
 
 > [!NOTE]
 > - Forecast reports provide accurate volume estimates but might not fully account for external factors, such as unexpected trends or sudden business needs.
@@ -44,7 +41,7 @@ You can use the forecast reports for case and conversation volumes in the follow
 
 - Your administrator assigned a role to you that has **Read** privileges on the **msdyn_dataanalyticsreport_forecast** table. 
 - Before you use AI-based forecasting (preview), ensure:
-    - Your administrator enabled AI-based forecasting in the admin setup for forecast scenarios.
+    - Your administrator [enabled AI-based forecasting](../administer/wfm-configure-forecast-scenarios.md#enable-ai-based-forecasting-preview) in the admin setup for forecast scenarios.
     - You have the necessary AI credits available for your organization.
     - You understand that autorefresh is disabled for AI-based forecasting. Forecasts must be run manually.
 
@@ -58,24 +55,17 @@ You can create either short-term or long-term forecasts.
 
 ## AI-based forecasting (preview)
 
-AI-based forecasting is a new capability that uses artificial intelligence to improve forecast accuracy by dynamically selecting the best forecasting method for your organization. Instead of relying on a single static algorithm, AI evaluates historical patterns, seasonality, and available insights to determine the most suitable model for your data.
+AI-based forecasting uses artificial intelligence to improve forecast accuracy by dynamically selecting the best forecasting method for your organization. Instead of relying on a single static algorithm, AI evaluates historical patterns, seasonality, and available insights to determine the most suitable model for your data.
 
 ### Why use AI-based forecasting?
 
-As a supervisor, you can rely on AI to intelligently select the most accurate forecasting model for your operational data, remove guesswork and reduce manual configuration. The system uses historical and contextual data to improve forecast accuracy. Your business benefits in the following ways:
-
-- Optimized staffing levels
-- Reduced operational costs
-- Consistent service levels in dynamic environments
+As a supervisor, you can rely on AI to intelligently select the most accurate forecasting model for your operational data, remove guesswork and reduce manual configuration. The system uses historical and contextual data to improve forecast accuracy and provide consistent service levels in dynamic environments. AI-based forecasting can help you optimize your staffing levels and reduce operational costs.
 
 ### Key behaviors
 
 - AI automatically selects the best-fit model for your scenario.
 - Autorefresh has been turned off. You must run forecasts manually.
 - Job history includes an **AI reasoning** tab that explains why a method was selected.
-
-> [!Note]
-> - AI-based forecasting requires AI credits.
 
 ### Create an AI-based forecast report
 
@@ -98,10 +88,10 @@ The **AI Reasoning** tab provides transparency into how the system selects the f
 
 | Scenario                                      | Recommended option           |
 |----------------------------------------------|-----------------------------|
-| **Stable historical patterns with minimal variability** | Default forecasting – uses a fixed time-series model and supports autorefresh for predictable environments. |
-| **Dynamic environments with frequent changes in demand** | AI-based forecasting – intelligently selects the most accurate model based on historical and contextual data. |
-| **Need for transparency and insights into model selection** | AI-based forecasting – reviews the **AI Reasoning** tab for confidence scores and decision factors. |
-| **Limited time for manual configuration**    | AI-based forecasting – reduces guesswork and minimizes setup effort. |
+| Stable historical patterns with minimal variability | Default forecasting – uses a fixed time-series model and supports autorefresh for predictable environments. |
+| Dynamic environments with frequent changes in demand | AI-based forecasting – intelligently selects the most accurate model based on historical and contextual data. |
+| Need for transparency and insights into model selection | AI-based forecasting – reviews the **AI Reasoning** tab for confidence scores and decision factors. |
+| Limited time for manual configuration    | AI-based forecasting – reduces guesswork and minimizes setup effort. |
 
 ## Create a short-term or long-term forecast report
 
@@ -117,7 +107,7 @@ The **AI Reasoning** tab provides transparency into how the system selects the f
       >[!NOTE]  
       > You can have up to 10 forecast scenarios with Auto-extension enabled. 
       
-      1. **Day of the week**: Select the day of the week that you want the report to be created on. Use for long-term forecasts only. 
+      1. **Day of the week**: Select the weekday on which the report should be generated. Use for long-term forecasts only. 
       1. **Run time slot**: For short-term, use the dropdown menu to select the time window you want the system to use when it runs the report. The forecast scenario for short term runs every day. For long-term, select the day.
       1. **Run time zone**: Use the dropdown menu to select the time zone you want the system to use when it runs the report.
 1. On the **Historical data** card, fill in the following details:

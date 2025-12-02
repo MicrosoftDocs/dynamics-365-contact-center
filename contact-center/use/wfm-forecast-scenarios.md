@@ -104,9 +104,8 @@ The **AI Reasoning** tab provides transparency into how the system selects the f
       1. **Queues**: Use the search option to find the queue you want or select **New Record** > **Queues** to create one. You can select multiple queues.
 1. On the **Forecast run schedule** card, fill in the following details:
       1. **Auto-extension**: Set the toggle to **Yes** if you want to run the forecast. If you set the toggle to **No**, the forecast schedule remains in draft state and doesn't get created.
-      >[!NOTE]  
-      > You can have up to 10 forecast scenarios with Auto-extension enabled. 
-      
+         >[!NOTE]  
+         > You can have up to 10 forecast scenarios with Auto-extension enabled. 
       1. **Day of the week**: Select the weekday on which the report should be generated. Use for long-term forecasts only. 
       1. **Run time slot**: For short-term, use the dropdown menu to select the time window you want the system to use when it runs the report. The forecast scenario for short term runs every day. For long-term, select the day.
       1. **Run time zone**: Use the dropdown menu to select the time zone you want the system to use when it runs the report.

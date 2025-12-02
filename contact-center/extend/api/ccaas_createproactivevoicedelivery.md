@@ -189,9 +189,7 @@ HTTP Request Keys
 
 **Sample payload**
 
-KQL
-
-```
+``` KQL
 { 
   "ApiVersion": "1.0", 
   "ProactiveEngagementConfigId": "47089bbe-deb7-ef11-b8e6-000d3a36a6b3", 
@@ -202,6 +200,7 @@ KQL
 **HTTP Response Status**
 
 | HTTP | Status	Remark |
+|---------|-----------|
 | 202 | Accepted |
 | 400 |	Bad Request (Wrong input parameters) |
 | 401	| Unauthorized|

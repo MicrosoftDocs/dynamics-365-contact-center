@@ -1,5 +1,5 @@
 ---
-title: Use CCaaS_CreateProactiveVoiceDelivery API (preview)
+title: Use CCaaS_CreateProactiveVoiceDelivery API
 description: Learn about the CCaaS_CreateProactiveVoiceDelivery API, which enables organizations to initiate proactive outbound voice calls to customers.
 author: gandhamm
 ms.author: mgandham
@@ -10,9 +10,7 @@ ms.collection:
 ms.custom: bap-template 
 ---
 
-# Use CCaaS_CreateProactiveVoiceDelivery API (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Use CCaaS_CreateProactiveVoiceDelivery API
 
 You can use the `CCaaS_CreateProactiveVoiceDelivery` API to initiate proactive outbound voice calls to customers or allow customers to schedule callbacks through the Proactive Engagement Service.
 
@@ -21,12 +19,10 @@ You can use the `CCaaS_CreateProactiveVoiceDelivery` API to initiate proactive o
 > - Proper consent is obtained before contacting customers
 > - Customers are contacted during permitted hours only.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 ## Prerequisites
 
 - You must have the Omnichannel Agent or Omnichannel Supervisor role to call this API.
-- Proactive engagement is configured. Learn more in [Configure proactive engagement (preview)](../../administer/configure-proactive-engagement.md).
+- Proactive engagement is configured. Learn more in [Configure proactive engagement](../../administer/configure-proactive-engagement.md).
 
 ## Initiate proactive outbound calls
 

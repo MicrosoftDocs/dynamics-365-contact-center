@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: reference
 ms.date: 12/05/2025
-ms.collection: 
+ms.collection: bap-ai-copilot
 ms.custom: bap-template 
 ---
 
@@ -206,4 +206,4 @@ HTTP Request Keys
 
 ### Related information
 
-[Use proactive engagement tables for reporting](../proactive-engagement-tables.md)
+[Use proactive engagement tables for reporting](../proactive-engagement-tables.md)  

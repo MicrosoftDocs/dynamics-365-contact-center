@@ -190,3 +190,5 @@ If you configure disposition codes, service representatives can select the dispo
 
 [Overview of proactive engagement](overview-proactive-engagement.md)  
 [Overview of conversational journeys](/dynamics365/customer-insights/journeys/conversational-journeys-overview)  
+[Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md)  
+[Use CCaaS_CreateProactiveVoiceDelivery API](../extend/api/ccaas_createproactivevoicedelivery.md)  

@@ -59,6 +59,6 @@ The dashboard shows outbound interactions using the out-of-the-box filters, **Co
 
 ## Related information
 
-[Configure proactive engagement (preview)](../administer/configure-proactive-engagement.md#configure-proactive-engagement-preview)
+[Configure proactive engagement (preview)](../administer/configure-proactive-engagement.md#configure-proactive-engagement-preview)  
 [Omnichannel for Customer Service dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights)    
 [Enable historical analytics for proactive outbound engagements](/dynamics365/customer-service/administer/oc-historical-analytics-reports)

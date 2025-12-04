@@ -16,11 +16,11 @@ Dynamics 365 Customer Service and Dynamics 365 Contact Center use AI agents and 
 
 Autonomous service agents are AI-powered virtual agents that can handle customer interactions independently, providing quick and efficient responses to common inquiries and issues.
 
-[!INCLUDE[cc-ai-features](../includes/cc-ai-features.md)]
+[!INCLUDE[cc-ai-features](../../shared/cc-ai-features.md)]
 
 Copilot features are AI-powered assistants that help service representatives by providing suggestions, automating tasks, and enhancing productivity during customer interactions.
 
-[!INCLUDE[cc-copilot-features](../includes/cc-copilot-features.md)]
+[!INCLUDE[cc-copilot-features](../../shared/cc-copilot-features.md)]
 
 By leveraging these AI agents and Copilot features, organizations can improve customer satisfaction, reduce response times, and enhance the overall efficiency of their contact center operations.
 

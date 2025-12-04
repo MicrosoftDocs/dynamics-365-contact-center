@@ -24,7 +24,7 @@ Users can apply out-of-box filters, such as duration, channel, queue, proactive 
 
 - You [configured proactive engagement (preview)](../administer/configure-proactive-engagement.md#configure-proactive-engagement-preview).
 
-- You have the System Administrator, Omnichannel Administrator, Omnichannel Supervisor, and CSR Manager role.
+- You have the System Administrator, Omnichannel Administrator, Omnichannel Supervisor, or the CSR Manager role.
 
 ## Access the dashboard
 

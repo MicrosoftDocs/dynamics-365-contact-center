@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
 
-The Proactive Outbound dashboard in Omnichannel Historical Analytics provides visibility into conversation metrics and actively monitors ongoing interactions, categorized by conversation direction (outgoing) and conversation type. It provides detailed insights into outbound customer engagements initiated through proactive outreach, helping teams monitor, analyze, and optimize strategies for higher delivery rates and improved customer experiences. The dashboard displays delivery status, result, and dial mode, enabling quick identification of trends and bottlenecks. Delivery metrics are segmented by proactive engagement configuration, queue, and date for granular analysis and targeted improvements.
+The Proactive Outbound dashboard in Omnichannel Historical Analytics provides visibility into conversation metrics and actively monitors ongoing interactions, categorized by conversation direction (outgoing) and conversation type. It provides detailed insights into outbound customer engagements initiated through proactive outreach, helping teams monitor, analyze, and optimize strategies for higher delivery rates and improved customer experiences. The dashboard displays delivery status, result, and dial mode, enabling quick identification of trends and bottlenecks. Metrics are segmented by engagement configuration, queue, and date for actionable insights.
 
 Users can apply out-of-box filters, such as duration, channel, queue, proactive engagement configuration, and time zone, to refine data for targeted analysis. 
 
@@ -39,7 +39,7 @@ The dashboard displays the proactive engagement metrics in the following charts 
 
 Charts:
 
-- The **Total deliveries by status** bar chart data by the delivery status of calls that were completed, expired, and others..
+- The **Total deliveries by status** bar chart displays data by the delivery status of calls that are completed, expired, and others.
 
 - The **Processed deliveries by result** donut chart displays the data by outcomes, such as call ended and call failed.
 
@@ -47,9 +47,9 @@ Charts:
 
 Tables:
  
-- The **Delivery metrics by Proactive Engagement Configuration** table lists each configuration, its status, priority, total deliveries, and processed deliveries, helping teams track which setups drive results.
+- The **Delivery metrics by Proactive Engagement Configuration** table lists each configuration, its status, priority, total deliveries, and processed deliveries, that helps teams track which setups drive results.
 
-- The **Delivery metrics by queue** table shows delivery and processing metrics per queue, supporting operational workload management.
+- The **Delivery metrics by queue** table shows delivery and processing metrics per queue that supports operational workload management.
 
 - The **Delivery metrics by date** table shows a daily breakdown of total and processed deliveries for trend analysis.
 

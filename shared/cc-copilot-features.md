@@ -1,6 +1,6 @@
 The following Copilot features are available out of the box:
 
-- When you sign in to any of the service representative apps, Copilot opens in the right side panel with the Ask a question tab ready. Copilot acts as your partner, helping to answer questions without you having to search for the information. Learn more in [Use Copilot to ask a question](/dynamics365/contact-center/use/use-ask-a-question).
+- **Ask a question:** Lets you ask a question about your data. When you sign in to any of the service representative apps, Copilot opens in the right side panel with the Ask a question tab ready. Copilot acts as your partner, helping to answer questions without you having to search for the information. Learn more in [Use Copilot to ask a question](/dynamics365/contact-center/use/use-ask-a-question).
 
 - **Auto prompts:** Suggests prompts based on the context of an active case or the conversation. Learn more in [Use auto prompts](/dynamics365/contact-center/use/use-ask-a-question#use-auto-prompts).
 - **Proactive prompts:** Suggests prompts proactively, without you having to type one, that you can use to prioritize cases effectively and solve customer queries quickly. Learn more in [Use proactive prompts](/dynamics365/contact-center/use/use-ask-a-question#use-proactive-prompts).

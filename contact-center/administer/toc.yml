@@ -546,8 +546,6 @@
           href: /dynamics365/customer-service/administer/configure-teams-collaboration?context=/dynamics365/contact-center/context/administer-context
         - name: Configure rules-based suggestions for contacts in Teams
           href: /dynamics365/customer-service/administer/configure-rules-based-suggested-contacts?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure auto-summarization of conversations
-          href: /dynamics365/customer-service/administer/cs-enable-ai-generated-summary?context=/dynamics365/contact-center/context/administer-context
         - name: Set up Join a Teams call for representatives
           href: /dynamics365/customer-service/administer/set-up-join-a-teams-call?context=/dynamics365/contact-center/context/administer-context
         - name: Configure customer support swarming

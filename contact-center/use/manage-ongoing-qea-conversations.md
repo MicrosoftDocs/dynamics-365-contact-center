@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection:
-ms.date: 12/01/2025
+ms.date: 12/08/2025
 ms.custom: bap-template
 ---
 
@@ -30,8 +30,8 @@ In the site map of Copilot Service workspace, go to **Conversations** and then s
 
 To view real-time scores, you can either:
 
-- Select a workstream and then choose the **Realtime Score** option, or
-- Select the score link associated with the workstream. 
+- Select a conversation and then choose the **Realtime Score** option, or
+- Select the score link associated with the conversation. 
 
 A side pane appears that displays the real-time evaluation details, including the overall score and sentiment score for each section-level criterion you configured.
 

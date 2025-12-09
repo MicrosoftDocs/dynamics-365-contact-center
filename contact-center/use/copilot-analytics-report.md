@@ -26,7 +26,7 @@ The system stores the Copilot interaction data in the [msdyn_copilotinteraction]
 
 ### Access the report
 
-To view the Copilot analytics report, users must have a security role with Read privileges on the Copilot Analytics entity (msdyn_dataanalyticsreport_copilot). By default, System Administrator and Supervisor roles can access analytics. Administrators can grant access to other users by creating or editing a role in Power Platform admin center and adding Read permissions for the analytics entities. Learn more in [Configure user access to analytics and dashboards](dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh).
+To view the Copilot analytics report, users must have a security role with Read privileges on the Copilot Analytics entity (msdyn_dataanalyticsreport_copilot). By default, System Administrator and Supervisor roles can access analytics. Administrators can grant access to other users by creating or editing a role in Power Platform admin center and adding Read permissions for the analytics entities. Learn more in [Configure user access to analytics and dashboards](/dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh).
 
 Your administrator must enable Copilot analytics in the Copilot Service admin center app. Learn more in [Manage Copilot analytics](/dynamics365/customer-service/administer/copilot-analytics).
 

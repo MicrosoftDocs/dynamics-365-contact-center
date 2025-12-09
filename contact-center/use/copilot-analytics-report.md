@@ -1,5 +1,5 @@
 ---
-title: View the Copilot analytics report
+title: View Copilot analytics report
 description: Learn how to access and interpret the Copilot analytics report in Dynamics 365 Customer Service.
 author: gandhamm 
 ms.author: mgandham

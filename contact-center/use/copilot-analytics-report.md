@@ -20,7 +20,7 @@ ms.collection: bap-ai-copilot
 > |----------|----------|
 >  | No  | Yes   |
 
-Copilot helps customer service representatives (service representatives or representatives) more easily complete tasks related to conversations and email. With the Copilot report, supervisors and customer service managers can identify the effect that Copilot has across their customer service operation.
+Copilot enables customer service representatives (service representatives or representatives) to efficiently complete tasks related to conversations and email. With the Copilot report, supervisors and customer service managers can identify the effect that Copilot has across their customer service operation.
 
 The system stores the Copilot interaction data in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteraction), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteractiondata), [msdyn_copilottranscript](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscript), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscriptdata) tables. You can use the information to build custom metrics in reporting and analytics and understand how your organization is using Copilot.
 

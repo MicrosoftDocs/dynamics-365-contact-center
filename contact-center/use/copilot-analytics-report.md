@@ -77,4 +77,4 @@ You can view the [transcripts of interactions]( /dynamics365/customer-service/de
 
 ### Related information
 
-[Configure Copilot](../administer/configure-copilot-features.md)  
+[Manage Copilot features](../administer/configure-copilot-features.md)  

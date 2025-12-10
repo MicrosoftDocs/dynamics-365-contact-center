@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
 ms.collection:
-ms.date: 12/04/2025
+ms.date: 12/10/2025
 ms.custom: bap-template
 ---
 
@@ -18,13 +18,16 @@ The Proactive Outbound dashboard in Omnichannel Historical Analytics provides vi
 
 Users can apply out-of-box filters, such as duration, channel, queue, proactive engagement configuration, and time zone, to refine data for targeted analysis. 
 
+When a proactive outbound call is initiated, an entry is created in msdyn_proactivedelivery. Based on the provided inputs, the system places the call, updates the delivery status to **Complete** (processed), and creates a corresponding conversation record. Learn more in [CreateProactiveVoiceDelivery](/dynamics365/contact-center/extend/api/ccaas_createproactivevoicedelivery).
+
+
 ## Prerequisites
 
 - You enabled the Proactive Outbound dashboard from Customer Service admin center. Learn more in [Enable omnichannel historical analytics for proactive outbound](/dynamics365/customer-service/administer/oc-historical-analytics-reports#enable-omnichannel-historical-analytics-for-proactive-outbound-engagements).
 
 - You [configured proactive engagement (preview)](../administer/configure-proactive-engagement.md#configure-proactive-engagement-preview).
 
-- You have the System Administrator, Omnichannel Administrator, Omnichannel Supervisor, or the CSR Manager role.
+- You have the Omnichannel Supervisor role.
 
 ## Access the dashboard
 

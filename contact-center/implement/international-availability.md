@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection:
-ms.date: 11/06/2025
+ms.date: 12/10/2025
 ms.custom: bap-template
 ---
 
@@ -33,7 +33,7 @@ While voice channels aren't yet available in some regions, you can still connect
 | India | Yes | No |
 | Japan | Yes | No |
 | North America | Yes | Yes |
-| South America | Yes | No |
+| Brazil | Yes | Yes |
 | Switzerland |	Yes | Yes |
 | United Arab Emirates (UAE) | Yes | Yes |
 | United Kingdom | Yes | Yes |

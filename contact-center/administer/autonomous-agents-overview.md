@@ -24,7 +24,7 @@ The Customer Intent Agent uses generative AI to autonomously discover intents by
 > [!NOTE]
 > Case Management Agent is available in Customer Service only.
 
-The Case Management Agent helps automate case life cyle&mdash;create, update, resolve, and close&mdash;to save time that service representatives would otherwise spend on manually filling case details. Administrators can customize the agent's behavior by configuring rules per the organization's requirements. Learn more in [Use Case Management Agent to create and update cases](/dynamics365/customer-service/use/use-case-creation-agent) and [Use Case Management Agent to follow up and close cases](/dynamics365/customer-service/use/use-case-follow-up-closure). 
+Case Management Agent helps automate case life cycle&mdash;create, update, resolve, and close&mdash;to save time that service representatives would otherwise spend on manually filling case details. Administrators can customize the agent's behavior by configuring rules per the organization's requirements. Learn more in [Use Case Management Agent to create and update cases](/dynamics365/customer-service/use/use-case-creation-agent) and [Use Case Management Agent to follow up and close cases](/dynamics365/customer-service/use/use-case-follow-up-closure). 
 
 ## Customer Knowledge Management Agent
 

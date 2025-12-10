@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 The Proactive Outbound dashboard in Omnichannel Historical Analytics provides visibility into conversation metrics and actively monitors ongoing interactions, categorized by conversation type. It provides detailed insights into outbound customer engagements initiated through proactive outreach, helping teams monitor, analyze, and optimize strategies for higher delivery rates and improved customer experiences. The dashboard displays delivery status, result, and dial mode, enabling quick identification of trends and bottlenecks. Metrics are segmented by engagement configuration, queue, and date for actionable insights.
 
-Users can apply the out-of-box filters, duration, channel, queue, proactive engagement configuration, and time zone, to refine data for targeted analysis. 
+Users can apply the out-of-box filters, duration, channel, queue, proactive engagement configuration, and time zone, to refine data for targeted analysis. Use the Channel filter to filter by voice bot or the botname to filter on the exact bot.
 
 When a proactive outbound call is initiated, an entry is created in msdyn_proactivedelivery. Based on the provided inputs, the system places the call, updates the delivery status to **Complete** (processed), and creates a corresponding conversation record. The corresponding metrics are displayed on the dashboard. Learn more in [CreateProactiveVoiceDelivery](/dynamics365/contact-center/extend/api/ccaas_createproactivevoicedelivery).
 

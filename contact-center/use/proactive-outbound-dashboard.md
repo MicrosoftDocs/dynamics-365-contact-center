@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
 
-The Proactive Outbound dashboard in Omnichannel Historical Analytics provides visibility into conversation metrics and actively monitors ongoing interactions, categorized by conversation direction (outgoing) and conversation type. It provides detailed insights into outbound customer engagements initiated through proactive outreach, helping teams monitor, analyze, and optimize strategies for higher delivery rates and improved customer experiences. The dashboard displays delivery status, result, and dial mode, enabling quick identification of trends and bottlenecks. Metrics are segmented by engagement configuration, queue, and date for actionable insights.
+The Proactive Outbound dashboard in Omnichannel Historical Analytics provides visibility into conversation metrics and actively monitors ongoing interactions, categorized by conversation type. It provides detailed insights into outbound customer engagements initiated through proactive outreach, helping teams monitor, analyze, and optimize strategies for higher delivery rates and improved customer experiences. The dashboard displays delivery status, result, and dial mode, enabling quick identification of trends and bottlenecks. Metrics are segmented by engagement configuration, queue, and date for actionable insights.
 
 Users can apply out-of-box filters, such as duration, channel, queue, proactive engagement configuration, and time zone, to refine data for targeted analysis. 
 

@@ -36,6 +36,8 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 1.	Configure [work distribution](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution), add an [AI agent](/dynamics365/customer-service/administer/create-workstreams#add-an-agent-to-a-workstream) to the workstream, and configure representative notifications. The following notification templates are available out of the box:
     - **Voice call - outbound agent dial - default**: For preview dial mode calls
     - **Voice call - outbound pre-dial - default**: For progressive and copilot dial mode calls
+> [!NOTE]
+For outbound workstreams, if using ACS, only Direct Routing numbers can be leveraged. If using Teams Phone Numbers, you can leverage Direct Routing, Direct Offer, and Operator Connect numbers. 
 
 > [!NOTE]
 > The routing rules are automatically configured based on the proactive engagement settings and appear under the **Auto generated rules (advanced)** section of the workstream.

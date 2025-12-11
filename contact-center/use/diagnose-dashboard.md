@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Diagnose contact center health
 
-Supervisors and contact center operators can identify routing issues and uncover the underlying causes of declining performance metrics—such as a high queue backlog or service representatives not being assigned any work, despite having the available presence.
+Supervisors and contact center operators can identify routing issues and uncover the underlying causes of declining performance metrics, such as a high queue backlog or service representatives not being assigned any work, despite having the required presence.
 
 The system provides visibility into operational challenges that contribute to the degrading metrics and offers actionable recommendations to resolve them. Supervisors can further explore these insights, take immediate corrective actions, and quickly restore degrading contact centre metrics. This empowers them to self-serve and address issues efficiently, enhancing overall contact center responsiveness.
 
@@ -41,112 +41,7 @@ With debug experience, organizations can access diagnostic telemetry for the ful
 
 - The data in the App Insights out-of-the-box dashboards tab might have a delay of up to 15 minutes.
 
-- Diagnostics to view data related to transfer and consult conversations aren’t supported in App Insights OOB dashboards.
-
-## Key scenarios for Analyze
-
-The feature offers the following diagnostics scenarios. The information displayed is dependent on the operational issues that affect the scenario. You might see one or more of the line items explained here.
-
-### How do I reduce queue backlog
-
-This diagnostic scenario enables supervisors identify the top 10 queues that currently have the highest number of conversations awaiting automatic assignment.
-
-By default, the queue with the highest number of unassigned conversations is displayed with the following information:
-
-- **Details**: Displays information, such as conversation metrics and assignment attempts. For the selected queue, the supervisor can view:
-
-  - Conversation details
-
-    - Total conversations in the queue
-
-    - Conversations awaiting automatic assignment
-
-    - Conversations awaiting manual assignment
-
-    - Oldest conversation waiting since
-
-  - Time when latest assignment was attempted
-
-  - Conversations assigned in last 15 minutes
-
-  - Number of members
-
-- **Analysis**: Displays insights into the operational challenges that contribute to the metrics degradation. The supervisor can view the following issues:
-
-  - Number of distinct conversations rejected by service representatives at least once if any out of the total number of conversations awaiting automatic assignments.
-
-  - Number of distinct conversations that aren’t accepted and timed out by representatives at least once if any out of the total number of conversations awaiting automatic assignments.
-
-  - Number of representatives who have presence states like Busy-DND, Away, or offline that aren't allowed and the number of representatives who set themselves to those presence states manually.
-
-  - Number of representatives who currently don’t have any available capacity or are on a blocking capacity.
-
-  - Top 3 capacity profiles needed by the conversations waiting to be automatically assigned in the queue and the number of service representatives who lack the required capacity profiles.
-
-  - Top 3 skills needed by the conversations waiting to be automatically assigned in the queue and the number of service representatives who lack those skills
-
-- **Suggestions**: Supervisors can drill down to know more details about the insights provided with recommended actions to reduce the queue backlog. These include:
-
-  - Representatives who rejected or didn’t accept conversations offered to them and the count of distinct conversations rejected out of total conversations awaiting assignment from the selected queue. Any conversation that was rejected or not accepted at least once and is still awaiting automatic assignment is counted.
-
-  > [!NOTE]
-  > The system doesn’t show the number of times the conversations are rejected or aren’t accepted by the representative.
-
-- Representatives who have marked themselves with presence status like Busy-DND, Away, or Offline that might be preventing work assignments to them. The supervisor can view recommendations to reset their presence status as a corrective action.
-
-- Representatives who don’t have available capacity as follows:
-
-  - Have zero or negative capacity if unit-based capacity is configured for the workstream that's landing the conversations to this queue.
-
-  - Have zero or negative capacity for any of the top 3 identified capacity profiles (if capacity profile is configured for the workstreams landing the conversations to this queue) needed by the conversations awaiting assignment from the queue
-
-  - Name of the blocking capacity profile, if the user is blocked on a capacity profile. For example, the user is on a call and hence their capacity is blocked for new assignments.
-
-- Representatives who don’t have top 3 identified capacity profiles or skills needed by the conversations awaiting assignment. By following the recommended actions, supervisor can work with their business administrators to ensure the relevant capacity profiles or skills are added to the service representatives.
-
-- Representatives whose available capacity isn’t zero (for any of the top 3 capacity profiles needed by the conversations if capacity profile is configured for the workstreams) with their presence details that might be contributing to assignments not happening for those representatives.
-
-- Representatives whose presence status is set to Busy-DND automatically by the system because they have 10 session tabs open and therefore they aren’t receiving assignments. By following recommended actions, supervisors can ensure that the representatives close the wrapped up sessions. Also, if representatives need more than 10 session tabs opened, supervisors can receive in-product guidance to configure Inbox view for them.
-
-### How do I optimize representative’s task assignments
-
-This diagnostic scenario enables supervisors understand why some representatives weren’t assigned any work in a while. Supervisors can filter on time as per their business needs. The duration available for selection in the filter is from more than 5 minutes to up to more than 12 hours. The default duration is set to greater than 30 minutes. When the supervisor selects the option to optimize representative’s task assignments, the system automatically pre-selects the queue that has the highest number of representatives with no assignments for more than 30 minutes. It considers representatives only up till last 24 hours from the current time. Supervisor can change the queue selection. The following information is available:
-
-- **Details**: For the queue that’s selected by default, the supervisor can view the following:
-
-  - Number of service representatives who are a member of the queue.
-
-  - Number of service representatives who haven’t been assigned conversations in the last 30 minutes or more.
-
-  - Number of conversations awaiting automatic assignment in the selected queue.
-
-  - Top 3 capacity profiles or skills needed by the conversations with the number of conversations that need each of them
-
-  - The time stamp when the last automatic assignment was attempted
-
-  - How many conversations are assigned in the last 15 minutes
-
-- **Analysis**: Lists the names of top 10 representatives who haven’t been assigned work items for the last 30 minutes or more with the time passed since the last assignment.
-
-- **Suggestions**: Supervisors can drill down to know more details of:
-
-  - Why a representative wasn't assigned any work in the last 30 minutes or more. They can dive deeper to get insights as follows:
-
-    - The number of times representative rejected or didn’t accept (time out) one or more conversations that were offered
-
-    - Current and default presence of the representative, and how long they are offline/on Busy DND, or away out of the total time for which no conversation was assigned to them.
-
-    - Current available capacity for the top 3 capacity profiles needed by the waiting conversations in the queue
-
-    - Duration when the representative had zero or negative available capacity (for any of the top 3 capacity profiles identified if using capacity profile) out of the total time for which no conversation was assigned to them
-
-    - Duration when the representative was on a blocking capacity profile, out of the total time for which no conversation was assigned to them
-
-    - Current skills of the representative
-
-  - View the list of all representatives who haven’t been assigned any work in the last 30 minutes or more
-
-  - View details of representatives who rejected or didn’t accept conversations, when offered out of the total number of representatives who weren’t assigned any work during the selected time frame
+- Diagnostics to view data related to transfer and consult conversations aren’t supported.
 
 ## Key capabilities for Debug
 
@@ -170,27 +65,11 @@ The Debug experience offers the following diagnostic capabilities:
 
 Supervisor can access this capability from Omnichannel real time analytics dashboard. The **Diagnose** page offers two tabs – *Analyze* that lists the scenarios that supervisors can analyse and get recommendations to resolve issues and *Debug* that presents a visual representation of the conversation lifecycle to debug issues in a particular conversation.
 
-1. Go to Copilot Service workspace and select **Omnichannel real-time analytics**.
+1. In Copilot Service workspace, select **Omnichannel real-time analytics**.
 
-    :::image type="content" source="media/debug-dashboard/image1.png" alt-text="Navigation to Omnichannel real-time analytics":::
+1. On the command bar, select **Diagnose**. A new session tab displays the **Debug** page with conversation lifecycle and other Application Insights data.
 
-1. On the command bar, select **Diagnose**.
-
-    :::image type="content" source="media/debug-dashboard/image2.png" alt-text="":::
-
-    A new session tab opens and the user lands on the **Analyze** tab that displays the following scenarios:
-
-    - **How do I reduce queue backlog**
-
-        :::image type="content" source="media/debug-dashboard/image3.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
-
-    - **How do I optimize representative’s task assignments**
-
-        > :::image type="content" source="media/debug-dashboard/image4.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
-
-1. Select **Debug**. A Visual representation of conversation lifecycle and other Application Insights data is displayed.
-
-    :::image type="content" source="media/debug-dashboard/image5.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
+    :::image type="content" source="../media/debug-dashboard.png" alt-text="A screenshot of the Debug page with conversation lifecycle and Application Insights data.":::
 
 ## Use the Debug tab
 
@@ -198,11 +77,7 @@ Do the following steps for debugging issues:
 
 - Use the top-level filters to select a period for analysis, the channel type, organization ID, and queue name.
 
-    :::image type="content" source="media/debug-dashboard/image19.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
-
-- View the conversations in different states over time. You can use this to look at trends of open conversations over time and select a specific period for further analysis from top-level filters mentioned in the preceding paragraph.
-
-    :::image type="content" source="media/debug-dashboard/image20.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
+- View the conversations in different states over time. You can use this to look at trends of open conversations over time and select a specific period for further analysis from top-level filters.    
 
 - View the **Total processed conversations** and **Assignment time (P95)** for more details on the overall health for routing. The **Total processed conversations** are the number of conversations that are processed by contact center during the selected period. The **Assignment time (P95)** here is P95 of the time taken for first successful assignment of a conversation to service representative.
 
@@ -260,41 +135,3 @@ Do the following steps for debugging issues:
 - The **Assignment event details** view is especially helpful if you want to validate why a particular representative wasn’t eligible during a particular assignment run. There is information around the conversation to help provide the requirements for a conversation in terms of presence, skills and capacity. The Timeline section has a search bar for service representatives. You can enter the representative name in the search bar to view the presence, skills, capacity and capacity profile during the assignment event. You can then compare it with the required capacity, required capacity profile, required skills and allowed presence from the Information section to understand why the representative was not selected during the assignment run.
 
     :::image type="content" source="media/debug-dashboard/image33.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
-
-## FAQs
-
-### I am using an unmanaged environment for Dynamics 365 Customer Service and Dynamics 365 Contact Center. Can I use these out-of-the-box dashboards?
-
-No. To set up the out-of-the-box dashboards for Application Insights, you need a managed environment. Learn more in [Prerequisites](/dynamics365/customer-service/administer/configure-conversation-diagnostics)
-
-### Does my organization need any extra licenses for accessing these dashboards?
-
-Your organization doesn't need any extra licenses for Dynamics 365 Contact Center or Customer Service. However, you need an active Azure Monitor subscription for using the out-of-the-box dashboards. More details: [Pricing](https://learn.microsoft.com/dynamics365/customer-service/administer/configure-conversation-diagnostics#pricing)
-
-### I already have an Omnichannel supervisor role assigned. What extra roles or permissions do I need to access these dashboards?
-
-For accessing the out-of-the-box dashboards, the user must have access to Azure monitoring. More details: [Roles and permissions](https://learn.microsoft.com/azure/azure-monitor/fundamentals/roles-permissions-security)
-
-### How often is the data refreshed?
-
-By default, the data is dashboard is not auto refreshed. However, you can set the auto-refresh interval for your workbook.
-
-:::image type="content" source="media/debug-dashboard/image34.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
-
-### Can I export dashboard data?
-
-You can export the dashboard details as JSON from the Advanced editor option. However, the dashboard data cannot be exported or imported.
-
-### What happens when there is solution update?
-
-You will need to bind the Managed Identity with Plugin Assembly again. Perform **Bind managed identity with plugin assembly** step from this document.
-
-Open newly created 3P app from App registration  
-Click **Certificates and secrets  
-  **
-
-8.  **Create Managed Identity record:  **
-    Logged into the Dynamics organization.  
-    Go to the **Copilot Service Workspace** (CSW)  
-    **Click on**
-

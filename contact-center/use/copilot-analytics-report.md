@@ -1,17 +1,17 @@
 ---
-title: View copilot analytics report
-description: Learn how to view and understand Copilot metrics.
+title: View Copilot analytics report
+description: Learn how to access and interpret the Copilot analytics report in Dynamics 365 Customer Service.
 author: gandhamm 
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
-ms.date: 05/15/2025
+ms.date: 12/09/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ms.collection: bap-ai-copilot
 ---
 
-# View copilot analytics report
+# View Copilot analytics report
 
 > [!NOTE]
 > The feature availability information is as follows.
@@ -20,16 +20,24 @@ ms.collection: bap-ai-copilot
 > |----------|----------|
 >  | No  | Yes   |
 
-Copilot helps customer service representatives (service representatives or representatives) to complete tasks related to conversations and email more easily. With the Copilot report, supervisors and customer service managers can identify the effect that Copilot is having across their customer service operation.
+Copilot enables customer service representatives (service representatives or representatives) to efficiently complete tasks related to conversations and email. With the Copilot report, supervisors and customer service managers can identify the effect that Copilot has across their customer service operation.
 
-The system stores the copilot interaction data in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteraction), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteractiondata), [msdyn_copilottranscript](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscript), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscriptdata) tables. You can use the information to build custom metrics in reporting and analytics and understand how Copilot is being used in your organization.
+The system stores the Copilot interaction data in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteraction), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteractiondata), [msdyn_copilottranscript](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscript), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscriptdata) tables. You can use the information to build custom metrics in reporting and analytics and understand how your organization uses Copilot.
 
-To view the Copilot report, select **Copilot analytics** from the Copilot Service workspace menu.
+## Prerequisites
+
+- By default, System Administrator and Supervisor roles can access analytics. Other users must have a security role with Read privileges on the Copilot Analytics entity (msdyn_dataanalyticsreport_copilot). Administrators can grant access to other users by creating or editing a role in Power Platform admin center and adding Read permissions for the analytics entities. Learn more in [Configure user access to analytics and dashboards](/dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh).
+
+- Your administrator must enable Copilot analytics in the Copilot Service admin center app. Learn more in [Manage Copilot analytics](/dynamics365/customer-service/administer/copilot-analytics).
+
+## Access the report
+
+To view the Copilot analytics report, select **Copilot analytics** from the Copilot Service workspace menu.
 
 > [!NOTE]
 > Case summary isn't available for the Contact Center embedded experience.
 
-## Copilot report
+## Copilot report filters and metrics
 
 You can use filters to focus on the information that's important to you:
 
@@ -44,26 +52,26 @@ The Copilot report displays the following metrics.
 
 | Metric | Description |
 |--------|---------|
-| Daily active users | The number of unique service representatives who used Copilot at least once in the last day |
-| Total copilot AI responses | The total number of responses that Copilot provided |
-| Number of responses used | The number of times that text from a copilot response was copied |
-| Percentage of copilot AI responses used | The percentage of responses that were copied |
+| Daily active users | The number of unique service representatives who used Copilot at least once in the last day. |
+| Total Copilot AI responses | The total number of responses that Copilot provided. |
+| Number of responses used | The number of times that text from a Copilot response was copied. |
+| Percentage of Copilot AI responses used | The percentage of responses that were copied. |
 
 ### Productivity: Conversations
 
 | Metric | Description |
 |--------|---------|
-| Total conversations | The total number of conversations in which the service representative engaged with the customer at least once while Copilot was available; doesn't include email and voice |
-| Number of conversations using copilot AI | The number of engaged conversations that used Copilot; lists only conversations that have ended |
-| Percentage of conversations using copilot AI | The percentage of engaged conversations that used Copilot |
-| Avg conversation handle time | The average time that elapsed after a conversation started until it ended; displays data when Copilot was used and when it wasn't used |
-| Conversation throughput | The number of conversations, excluding email and voice, completed on average per day; displays data when Copilot was used and when it wasn't used |
+| Total conversations | The total number of conversations in which the service representative engaged with the customer at least once while Copilot was available; doesn't include email and voice. |
+| Number of conversations using Copilot AI | The number of engaged conversations that used Copilot; lists only conversations that have ended. |
+| Percentage of conversations using Copilot AI | The percentage of engaged conversations that used Copilot. |
+| Avg conversation handle time | The average time that elapsed after a conversation started until it ended. Displays data about when Copilot was used and when it wasn't used. |
+| Conversation throughput | The number of conversations, excluding email and voice, completed on average per day. Displays data about when Copilot was used and when it wasn't used. |
 
 ### Satisfaction
 
 | Metric | Description |
 | -------|---------|
-| Agent ratings | The number of times service representatives rated a Copilot response positively or negatively |
+| Agent ratings | The number of times service representatives rated a Copilot response positively or negatively. |
 
 ## Next Steps
 
@@ -71,4 +79,4 @@ You can view the [transcripts of interactions]( /dynamics365/customer-service/de
 
 ### Related information
 
-[Configure copilot](../administer/configure-copilot-features.md)  
+[Manage Copilot features](../administer/configure-copilot-features.md)  

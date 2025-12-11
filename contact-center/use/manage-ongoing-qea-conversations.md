@@ -30,12 +30,12 @@ In the site map of Copilot Service workspace, go to **Conversations** and then s
 
 To view real-time scores, you can either:
 
-- Select a conversation and then choose the **Realtime Score** option, or
+- Select a conversation and then choose the **Real-time Score** option, or
 - Select the score link associated with the conversation. 
 
 A side pane appears that displays the real-time evaluation details, including the overall score and sentiment score for each section-level criterion you configured.
 
 ## Related information
 
-[Use evaluation plan](evaluation-plan.md#use-evaluation-plan)  
-[Use evaluation criteria](evaluation-criteria.md#use-evaluation-criteria)
+[Use evaluation plan](evaluation-plan.md)  
+[Use evaluation criteria](evaluation-criteria.md)

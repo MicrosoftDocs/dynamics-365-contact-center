@@ -92,9 +92,7 @@ To create a real-time evaluation plan:
 
 1. On the **Evaluation plans** page, select **New**.
 
-1.  On the **New Evaluation Plan** page,
-
-1.  In the **Evaluation plan details** section, provide the following:
+1.  On the **New Evaluation Plan** page, in the **Evaluation plan details** section, provide the following:
 
     - **Plan name**: Enter plan name.
     - **Description**: Enter description.
@@ -116,18 +114,18 @@ To create a real-time evaluation plan:
     
     1. From the **Recipient** dropdown, select from either **Team**, **User**, **Queue**, or **Supervisor in the current queue**.
     
-    1. Select the notifications checkbox besides each of the thresholds if you want to receive the notifications.
+    1. Select the notifications checkbox beside each of the thresholds if you want to receive the notifications.
     
 1. To enable section-level notifications, switch the **Enable section-level notification** toggle to **On**.
 
     1. From the dropdown, select the section for which notifications must be enabled.
     
     1. For the selected section, for **Critical**, **Warning**, and **Normal**, define the scoring thresholds as required. You can set your scoring between 0-100, with zero as the starting range for **Critical** and 100 as the highest range for **Normal**.
-    1. Select the notifications checkbox besides each of the thresholds if you want to receive the notifications.
+    1. Select the notifications checkbox beside each of the thresholds if you want to receive the notifications.
     
 1.  Select **Save**.
 
-Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations](manage-ongoing-qea-conversations.md#manage-ongoing-quality-evaluation-agent-conversations).
+Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations (preview)](manage-ongoing-qea-conversations.md#manage-ongoing-quality-evaluation-agent-conversations).
 
 ## Activate, pause, resume, or delete evaluation plans
 

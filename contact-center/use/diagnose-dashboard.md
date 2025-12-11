@@ -20,11 +20,11 @@ With debug experience, organizations can access diagnostic telemetry for the ful
 
 ## Prerequisites
 
-- The user must have the **Omnichannel supervisor privileges** to access the Diagnose dashboard. [Learn how to configure user roles to access analytics and dashboards.](https://learn.microsoft.com/en-gb/dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh#configure-user-access-to-analytics-and-dashboards)
+- The user must have the **Omnichannel supervisor privileges** to access the Diagnose dashboard. [Learn how to configure user roles to access analytics and dashboards](dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh#configure-user-access-to-analytics-and-dashboards).
 
 - To access App Insights dashboards embedded in Debug tab:
 
-  - [Conversation diagnostics](https://learn.microsoft.com/dynamics365/customer-service/administer/configure-conversation-diagnostics) must be configured for the environment.
+  - [Conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics) must be configured for the environment.
 
   - Assignment snapshots in conversation diagnostics must be enabled for the environment.
     > [!NOTE]

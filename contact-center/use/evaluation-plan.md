@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 12/08/2025
+ms.date: 12/11/2025
 ms.custom: bap-template
 ---
 

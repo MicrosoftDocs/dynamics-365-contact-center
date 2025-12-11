@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Supervisors can monitor historical trends across intent groups and intents for bot conversations associated with customer intent and agent interactions. The enhanced reporting delivers significant business value by providing supervisors with a dual perspective on performance through queue and intent group metrics. The integration of intent groups into analytics enables segmented analysis, that helps identify improvement opportunities across intent groups and individual intents. This comprehensive approach strengthens tracking and optimization of customer interactions, resulting in higher service quality and improved customer satisfaction. The Bot-Intent report in the Omnichannel Historical dashboard provides comprehensive insights into bot performance and customer interactions. The report supports segmented analytics by intent groups and individual intents, enabling supervisors to identify areas for improvement. 
+The Bot-Intent report in the Omnichannel Historical dashboard provides detailed insights into bot performance and customer engagement, supporting targeted analytics for continuous improvement. Supervisors can track historical trends in bot conversations and agent interactions by analyzing intent groups and individual intents. 
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -58,6 +58,8 @@ You see the report after 24 hrs of provisioning. If you don't enable Customer In
 
 ## Metrics by intent group
 
+:::image type="content" source="../media/bot-intent-metrics-by-intent-group.png" alt-text="Screenshot metrics by intent group drilldown." lightbox="../media/bot-intent-metrics-by-intent-group.png":::
+
 |Metrics | Definition  |
 |---------|---------|
 |Intent Group | Name of intent group set by admin in Copilot Service admin center.|
@@ -70,14 +72,13 @@ You see the report after 24 hrs of provisioning. If you don't enable Customer In
 
 ## Drill-down
  
-In the **Metrics by intent group** section, select **Detailed view** to view metrics by intent.
-
+In the **Metrics by intent group** section, select **Details** to view metrics by intent.
 
 ### Metrics by intent
 
 |Metrics | Definition  |
 |---------|---------|
-| Intent| | List of intents set by administrator in Copilot Service admin center.|
+| Intent| List of intents set by administrator in Copilot Service admin center.|
 | Total conversations| The total number of customer-initiated interactions with a Copilot Studio bot includes conversations fully managed by the bot and those escalated to a representative per intent.|
 |Conversations escalated|Number of bot conversations per intent that are escalated to representative.   |
 |Bot escalation rate| Percentage of bot conversations that are escalated to a representative per intent group over total bot conversations per intent.  |

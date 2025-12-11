@@ -85,11 +85,11 @@ Do the following steps for debugging issues:
 
 - Select **View by time to assign** to understand the distribution of conversations by time for first successful assignment to representative.
 
-    :::image type="content" source="../media/view-by-time-to-assign.png" alt-text="A screenshot of a graph AI-generated content may be incorrect.":::
+    :::image type="content" source="../media/view-by-time-to-assign.png" alt-text="A screenshot of view by time to assign.":::
 
 - Select **View by assignment events** to understand distribution of conversations by total assignment events. An assignment event is defined as an event when the assignment engine tried to assign a conversation to a service representative.
 
-    :::image type="content" source="../media/view-by-assignment-events.png" alt-text="A screenshot of a graph AI-generated content may be incorrect.":::
+    :::image type="content" source="../media/view-by-assignment-events.png" alt-text="A screenshot of view by assignment events.":::
 
 - View **Conversations with non-assignment reasons** to understand why a conversation wasn’t assigned during the assignment flow.
 

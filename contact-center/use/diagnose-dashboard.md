@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot 
-ms.date: 11/19/2025
+ms.date: 12/15/2025
 ms.custom: bap-template
 ---
 
@@ -14,14 +14,16 @@ ms.custom: bap-template
 
 Supervisors and contact center operators can identify routing issues and uncover the underlying causes of declining performance metrics, such as a high queue backlog or service representatives not being assigned any work, despite having the required presence.
 
-The system provides visibility into operational challenges that contribute to the degrading metrics and offers actionable recommendations to resolve them. Supervisors can further explore these insights, take immediate corrective actions, and quickly restore degrading contact centre metrics. This empowers them to self-serve and address issues efficiently, enhancing overall contact center responsiveness.
-
 With debug experience, organizations can access diagnostic telemetry for the full lifecycle of a conversation via Application Insights to effectively troubleshoot runtime issues. This end-to-end data empowers teams to identify problems quickly, apply mitigations, and maintain seamless contact center operations.
+
+> [!IMPORTANT]
+> This feature is intended to help customer service managers or supervisors enhance their team’s performance and improve customer satisfaction. This feature is not intended for use in making—and should not be used to make—decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365, this feature, and any associated feature or service in compliance with all applicable laws, including laws relating to accessing individual employee analytics and monitoring, recording, and storing communications with end users. This also includes adequately notifying end users that their communications with representatives may be monitored, recorded, or stored and, as required by applicable laws, obtaining consent from end users before using the feature with them. Customers are also encouraged to have a mechanism in place to inform their representatives that their communications with end users may be monitored, recorded, or stored.
 
 ## Prerequisites
 
-- The user must have the **Omnichannel supervisor privileges** to access the Diagnose dashboard. [Learn how to configure user roles to access analytics and dashboards](dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh#configure-user-access-to-analytics-and-dashboards).
+- The user must have the **Omnichannel supervisor privileges** to access the Diagnose dashboard. [Learn how to configure user roles to access analytics and dashboards](/dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh#configure-user-access-to-analytics-and-dashboards).
 
+- Omnichannel real-time dashboards are enabled. Learn more in [Manage real-time analytics reports](/dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator)
 - To access App Insights dashboards embedded in Debug tab:
 
   - [Conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics) must be configured for the environment.
@@ -29,9 +31,6 @@ With debug experience, organizations can access diagnostic telemetry for the ful
   - Assignment snapshots in conversation diagnostics must be enabled for the environment.
     > [!NOTE]
     > It takes approximately 24 hours to sync the data completely.
-
-> [!IMPORTANT]
-> This feature is intended to help customer service managers or supervisors enhance their team’s performance and improve customer satisfaction. This feature is not intended for use in making—and should not be used to make—decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365, this feature, and any associated feature or service in compliance with all applicable laws, including laws relating to accessing individual employee analytics and monitoring, recording, and storing communications with end users. This also includes adequately notifying end users that their communications with representatives may be monitored, recorded, or stored and, as required by applicable laws, obtaining consent from end users before using the feature with them. Customers are also encouraged to have a mechanism in place to inform their representatives that their communications with end users may be monitored, recorded, or stored.
 
 ## Things to keep in mind
 

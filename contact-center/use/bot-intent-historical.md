@@ -1,6 +1,6 @@
 ---
-title: View and understand real-time analytics in the Bot-Intent group report
-description: Use the Bot-Intent group report to drill down into metrics by intent and representative in Dynamics 365 Contact Center, enabling better insights and operational improvements.
+title: Bot-Intent dashboard
+description: Leverage the Bot-Intent dashboard to identify patterns in bot interactions and refine your customer service strategies in Dynamics 365 Contact Center.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
@@ -10,17 +10,17 @@ ms.date: 12/11/2025
 ms.custom: bap-template
 ---
 
-# View and understand real-time analytics in the Bot-Intent report (preview)
+# Bot-Intent dashboard (preview)
 
 [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The Bot-Intent report in the Omnichannel Historical dashboard provides detailed insights into bot performance and customer engagement, supporting targeted analytics for continuous improvement. Supervisors can track historical trends in bot conversations and agent interactions by analyzing intent groups and individual intents. 
+The Bot-Intent dashboard in the Omnichannel Historical dashboard provides detailed insights into bot performance and customer engagement, supporting targeted analytics for continuous improvement. Supervisors can track historical trends in bot conversations and agent interactions by analyzing intent groups and individual intents. 
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-You can filter this report by **Intent group**, **Duration**, **Channel**, **Queue**, **Bot Name**, **Conversation Status**, and **Time zone**.
+You can filter this dashboard by **Intent group**, **Duration**, **Channel**, **Queue**, **Bot Name**, **Conversation Status**, and **Time zone**.
 
 :::image type="content" source="../media/bot-intent-dashboard.png" alt-text="Screenshot of bot-intent dashboard" lightbox="../media/bot-intent-dashboard.png":::
 
@@ -29,7 +29,7 @@ You can filter this report by **Intent group**, **Duration**, **Channel**, **Que
 - You turned on the toggle for Customer Intent Agent and added the Line of business, Intent groups, and Intents. Learn more in [Customer Intent Agent](/dynamics365/contact-center/administer/manage-customer-intent-agent).
 - You enabled historical analytics for intent. Learn more in [Enable real-time analytics reports](/dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator).
 
-You see the report after 24 hrs of provisioning. If you don't enable Customer Intent Agent, you might still see data measures related to intent, but no conversation details appear because configuration isn't complete.
+You see the dashboard after 24 hrs of provisioning. If you don't enable Customer Intent Agent, you might still see data measures related to intent, but no conversation details appear because configuration isn't complete.
 
 ## Key metrics
 

@@ -203,26 +203,23 @@ Supervisor can access this capability from Omnichannel real time analytics dashb
     2.  Search for Application insights, if not already created create new one.  
         After creation you will be able to see the details like:
 
-> :::image type="content" source="media/debug-dashboard/image6.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
 
 3.  Get the **Application insights app id**, which is appended at the end of the connection string:
 
 > InstrumentationKey=18c052c7-25g2-6a38-9b81-efadc26ed188;IngestionEndpoint=https://westus2-2.in.applicationinsights.azure.com/;LiveEndpoint=https://test.livediagnostics.monitor.azure.com/;ApplicationId=80ddd645-54e4-4014-ba39-29c9bb549c68  
-> :::image type="content" source="media/debug-dashboard/image7.png" alt-text="A close up of a text AI-generated content may be incorrect.":::
+
 
 2.  **Enter AppInsights Id when importing the solution:**
 
-> When importing the solution, you will get new field to enter AppInsights id in environment variable.
->
-> Enter an Id of AppInsights app from the previous step and import the solution. :::image type="content" source="media/debug-dashboard/image8.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
->
-> If it’s not available, you can skip and add it later from environment variables screen.
+When importing the solution, you will get new field to enter AppInsights id in environment variable.
+
+Enter an Id of AppInsights app from the previous step and import the solution. 
+
+If it’s not available, you can skip and add it later from environment variables screen.
 
 3.  Select the variable name, enter your application insights id and save it.
 
-> :::image type="content" source="media/debug-dashboard/image9.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
->
-> :::image type="content" source="media/debug-dashboard/image10.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
+
 
 4.  **Create 3P app in your tenant**
 
@@ -230,7 +227,7 @@ Supervisor can access this capability from Omnichannel real time analytics dashb
 
     2.  Go to **App registrations**.
 
-> :::image type="content" source="media/debug-dashboard/image11.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
+
 
 3.  Select **New registration.**
 
@@ -238,14 +235,14 @@ Supervisor can access this capability from Omnichannel real time analytics dashb
 
 5.  Select **Register**.
 
-> :::image type="content" source="media/debug-dashboard/image12.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
+
 
 6.  Open newly created app from App registration
 
 7.  Copy the **Application (Client) ID** and **Directory (Tenant) ID**, and save them in a secure location (e.g., a Notepad file) for future references.
 
 8.  Select **Certificates and secrets  **
-    :::image type="content" source="media/debug-dashboard/image13.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
+
 
 9.  Select **Federated credentials**
 
@@ -271,8 +268,7 @@ Supervisor can access this capability from Omnichannel real time analytics dashb
     Click on “+ Add” button.  
     Search for “Monitoring Reader” role, click on it.  
     then select your 3P app name from search box and click Add.  
-    You should see an entry for your app like:  
-    :::image type="content" source="media/debug-dashboard/image15.png" alt-text="":::
+   
 
 6.  **PATCH Managed** **Identity record**
 
@@ -335,74 +331,6 @@ console.log('PATCH error!');
       
     **Done!**
 
-## Use the Debug tab
-
-After you have enabled the debug tab, use the following steps for debugging issues:
-
-- Use the top-level filters to select a period for analysis, the channel type, the organization ID, and queue name.
-
-> :::image type="content" source="media/debug-dashboard/image19.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
-
-- View the conversations in different states over time. You can use this to look at trends of open conversations over time and select a specific period for further analysis from top-level filters mentioned in the preceding paragraph.
-
-> :::image type="content" source="media/debug-dashboard/image20.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
-
-- View the **Total processed conversations** and **Assignment time (P95)** for more details on the overall health for routing. The **Total processed conversations** are the number of conversations that were processed by contact center during the selected period. The **Assignment time (P95)** here is P95 of the time taken for first successful assignment of a conversation to service representative.
-
-> :::image type="content" source="media/debug-dashboard/image21.png" alt-text="A close up of text AI-generated content may be incorrect.":::
-
-- Select **View by time to assign** to understand the distribution of conversations by time for first successful assignment to representative.
-
-> :::image type="content" source="media/debug-dashboard/image22.png" alt-text="A screenshot of a graph AI-generated content may be incorrect.":::
-
-- Select **View by assignment events** to understand distribution of conversations by total assignment events. An assignment event is defined as an event when the assignment engine tried to assign a conversation to a service representative.
-
-> :::image type="content" source="media/debug-dashboard/image23.png" alt-text="A screenshot of a graph AI-generated content may be incorrect.":::
-
-- View **Conversations with non-assignment reasons** to understand why a conversation wasn’t assigned during the assignment flow.
-
-> **Note**: During a conversation assignment, if the conversation was rejected by the service representative and the next time the assignment engine didn’t find any eligible service representatives for the conversation, it will be counted in both **No eligible CSRs found** and **CSR reject**.
->
-> :::image type="content" source="media/debug-dashboard/image24.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
-
-- Use the **All Conversation**s table to get details on the conversation state, Time to assign the conversation, number of assignment events, when the conversation was initiated and the queue and workstream that conversation was routed to, for different conversations during a defined time period. You can also use the filters for **Assignment events**, **Conversation state** and **Time to assign** to select precise conversations for analysis.
-
-> :::image type="content" source="media/debug-dashboard/image25.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
-
-- Select an individual conversation to go to the **Conversation details** view. Use this page to view the conversation details including the conversation ID, assignment duration, the channel name, the required capacity, presence and skills for the selected conversation at a single place. You can also view the conversation timeline to understand all the events that occurred for a conversation in a chronological order.
-
-> :::image type="content" source="media/debug-dashboard/image26.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
-
-- For a detailed analysis of individual events, select the **View all events** link in the Information section.
-
-> The **View all events** link provides details on each conversation stage with the full details of the stage.
->
-> :::image type="content" source="media/debug-dashboard/image27.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
-
-- Select **Custom Dimensions** to get details on the individual conversation event. This is helpful when you want to view the output and other details for a conversation event. For example, for Route To Queue event, you can view what rulesets or rules were applied for a conversation, the conditions defined in the rules and what is the final queue that the conversation was routed to.
-
-> :::image type="content" source="media/debug-dashboard/image28.png" alt-text="":::
-
-- For analysis of assignment related issues, you can go to **All conversations** list and select an individual assignment event to get details on the assignment event. You can also sort the list based on Assignment events to view the conversations that involved the assignment engine multiple times. You can also sort the list on **Time to assign** to view the conversations that have taken the maximum time to be assigned to service representative.
-
-> :::image type="content" source="media/debug-dashboard/image29.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
-
-- The **Assignment events** page for a conversation has details on conversation with information specific to the assignment, assignment method used, and ruleset information for the assignment step. The **Timeline** section has details on different assignment events, the run result, representative name, and other details like presence, available capacity, and capacity profiles after the assignment event that are sorted in a chronological order for easier readability.
-
-> :::image type="content" source="media/debug-dashboard/image30.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
-
-- Select a representative name to go to the CSR details view. The CSR details view shows information like service representative name, ID, capacity units, capacity profiles assigned to service representative, skills assigned to service representative, and queues that service representative is part of. The **Timeline** section shows events from +/- 2 hours from the assignment event and has details on the individual conversations that service representative interacted with, the action and result and the change in capacity, presence and capacity profile for the service representative due to the action.
-
-> :::image type="content" source="media/debug-dashboard/image31.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
->
-> If the assignment engine is unable to find any eligible service representative, the CSR column shows **No eligible CSR found**. Select **No eligible CSR found** that takes you to **Assignment event** **details**.
->
-> :::image type="content" source="media/debug-dashboard/image32.png" alt-text="A screenshot of a computer screen AI-generated content may be incorrect.":::
-
-- The **Assignment event details** view is especially helpful if you want to validate why a particular representative wasn’t eligible during a particular assignment run. There is information around the conversation to help provide the requirements for a conversation in terms of presence, skills and capacity. The Timeline section has a search bar for service representatives. You can enter the representative name in the search bar to view the presence, skills, capacity and capacity profile during the assignment event. You can then compare it with the required capacity, required capacity profile, required skills and allowed presence from the Information section to understand why the representative was not selected during the assignment run.
-
-> :::image type="content" source="media/debug-dashboard/image33.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
-
 ## FAQs
 
 ### I am using an unmanaged environment for Dynamics 365 Customer Service and Dynamics 365 Contact Center. Can I use these out-of-the-box dashboards?
@@ -419,9 +347,7 @@ For accessing the out-of-the-box dashboards, the user must have access to Azure 
 
 ### How often is the data refreshed?
 
-By default, the data is dashboard is not auto refreshed. However, you can set the auto-refresh interval for your workbook.
-
-:::image type="content" source="media/debug-dashboard/image34.png" alt-text="A screenshot of a computer AI-generated content may be incorrect.":::
+By default, the data is dashboard isn't auto refreshed. However, you can set the auto-refresh interval for your workbook in Application Insights.
 
 ### Can I export dashboard data?
 

@@ -29,7 +29,7 @@ You can filter this dashboard by **Intent group**, **Duration**, **Channel**, **
 - You turned on the toggle for Customer Intent Agent and added the Line of business, Intent groups, and Intents. Learn more in [Customer Intent Agent](/dynamics365/contact-center/administer/manage-customer-intent-agent).
 - You enabled historical analytics for intent. Learn more in [Enable real-time analytics reports](/dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator).
 
-You see the dashboard after 24 hrs of provisioning. If you don't enable Customer Intent Agent, you might still see data measures related to intent, but no conversation details appear because configuration isn't complete.
+You see the dashboard after 24 hours of provisioning. If you don't enable Customer Intent Agent, you might still see data measures related to intent, but no conversation details appear because the configuration isn't complete.
 
 ## Key metrics
 

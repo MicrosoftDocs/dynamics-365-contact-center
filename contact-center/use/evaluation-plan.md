@@ -104,7 +104,7 @@ To create a real-time evaluation plan:
 
 1. In the **Assign Evaluation** section, for **Evaluation method**, select **AI assisted**.
 
-1. In the **Notification Configuration** section, select **Enable notifications**, if you need to enable notifications for scoring.
+1. If you need to enable notifications for scoring, then in the **Notification Configuration** section, select **Enable notifications**.
     > [!NOTE]
     > Notifications can be configured at either the criteria or the section level, but not simultaneously at both levels.
 

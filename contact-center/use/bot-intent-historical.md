@@ -37,7 +37,7 @@ You see the dashboard after 24 hours of provisioning. If you don't enable Custom
 |---------|---------|
 |Total bot conversations| The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those escalated to a service representative. Both the number of conversations deflected and those escalated are counted in this total. |
 |Bot escalation rate | Percentage of conversations the Copilot Studio bot escalated to a service representative out of all bot conversations. |
-|Avg. escalation time (hh:mm:ss) |Average conversation duration to escalate to a service representative in hh:mm:ss format |
+|Avg. escalation time (hh:mm:ss) |Average conversation duration to escalate to a service representative in hh:mm:ss format. |
 |Bot deflection rate |Percentage of conversations the Copilot Studio bot deflected out of all bot conversations. Here, the conversation can either be resolved by the Copilot Studio bot or abandoned by the user before resolution. |
 |Avg. deflection time (hh:mm:ss) | Average bot conversation duration that deflects within the bot in hh:mm:ss format. |
 |Total bot conversations over time |The total number of customer-initiated interactions with a Copilot Studio bot includes conversations fully managed by the bot and those escalated to a service representative over a selected time period.| 

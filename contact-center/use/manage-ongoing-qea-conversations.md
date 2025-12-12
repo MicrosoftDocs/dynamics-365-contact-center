@@ -24,7 +24,7 @@ As a supervisor, you can effectively oversee ongoing Quality Evaluation Agent co
 
 ## Access the Ongoing QEA conversations view
 
-In the site map of Copilot Service workspace, go to **Conversations** and then select **Ongoing QEA conversations** from the dropdown.
+In the site map of Copilot Service workspace, go to **Conversations**, and then select **Ongoing QEA conversations** from the dropdown.
 
 ## View real-time scores
 

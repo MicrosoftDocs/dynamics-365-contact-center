@@ -84,7 +84,7 @@ You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-ev
 
 ## Create and activate a real-time evaluation plan for ongoing conversations (preview)
 
-You need to turn on the **Criteria scoring** toggle for your evaluation criteria.
+You need to turn on the **Criteria scoring** toggle for your evaluation criteria. Learn more in [Create evaluation criteria](evaluation-criteria.md#create-evaluation-criteria).
 
 To create a real-time evaluation plan:
 
@@ -125,7 +125,7 @@ To create a real-time evaluation plan:
     
 1.  Select **Save**.
 
-Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations (preview)](manage-ongoing-qea-conversations.md#manage-ongoing-quality-evaluation-agent-conversations).
+Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations (preview)](manage-ongoing-qea-conversations.md).
 
 ## Activate, pause, resume, or delete evaluation plans
 

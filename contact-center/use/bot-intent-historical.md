@@ -53,7 +53,7 @@ You see the dashboard after 24 hours of provisioning. If you don't enable Custom
 |Conversations escalated| Number of bot conversations that are escalated to representative.|  
 |Bot escalation rate  | Percentage of bot conversations that are escalated to a representative over total bot conversations. |
 |Conversations deflected  | Number of bot conversations that are deflected by the AI agent either due to resolution or user abandoning the conversation.|
-| Bot Deflection rate | Percentage of bot conversations that are deflected by bot over total bot conversations.  |
+| Bot deflection rate | Percentage of bot conversations that are deflected by bot over total bot conversations.  |
 |Avg bot time (hh:mm:ss) | Average bot conversation duration in hh:mm:ss format that are either escalated or deflected.  |
 
 ## Metrics by intent group

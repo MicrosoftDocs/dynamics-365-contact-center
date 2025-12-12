@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The Bot-Intent dashboard in the Omnichannel Historical dashboard provides detailed insights about bot performance and customer engagement, supporting targeted analytics for continuous improvement. Supervisors can track historical trends in bot conversations and agent interactions by analyzing intent groups and individual intents. 
+The Bot-Intent dashboard provides detailed insights about bot performance and customer engagement, supporting targeted analytics for continuous improvement. Supervisors can track historical trends in bot conversations and agent interactions by analyzing intent groups and individual intents. 
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -35,7 +35,7 @@ You see the dashboard after 24 hours of provisioning. If you don't enable Custom
 
 |Metrics | Definition  |
 |---------|---------|
-|Total bot conversations| The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those escalated to a service representative. Both the number of conversations deflected and those escalated are counted in this total. |
+|Total bot conversations| The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those escalated to a service representative. The total includes both deflected and escalated conversations. |
 |Bot escalation rate | Percentage of conversations the Copilot Studio bot escalated to a service representative out of all bot conversations. |
 |Avg. escalation time (hh:mm:ss) |Average conversation duration to escalate to a service representative in hh:mm:ss format. |
 |Bot deflection rate |Percentage of conversations the Copilot Studio bot deflected out of all bot conversations. Here, the conversation can either be resolved by the Copilot Studio bot or abandoned by the user before resolution. |
@@ -49,7 +49,7 @@ You see the dashboard after 24 hours of provisioning. If you don't enable Custom
 |Metrics | Definition  |
 |---------|---------|
 |Bot name | Name of all the bots or AI agents available with conversations that include the intent agent.| 
-|Total conversations | The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those escalated to a service representative. Both the number of conversations deflected and those escalated are counted in this total. |
+|Total conversations | The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those escalated to a service representative. The total includes both deflected and escalated conversations. |
 |Conversations escalated| Number of bot conversations that are escalated to representative.|  
 |Bot escalation rate  | Percentage of bot conversations that are escalated to a representative over total bot conversations. |
 |Conversations deflected  | Number of bot conversations that are deflected by the AI agent either due to resolution or user abandoning the conversation.|

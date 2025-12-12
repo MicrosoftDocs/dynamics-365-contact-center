@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The Bot-Intent dashboard in the Omnichannel Historical dashboard provides detailed insights into bot performance and customer engagement, supporting targeted analytics for continuous improvement. Supervisors can track historical trends in bot conversations and agent interactions by analyzing intent groups and individual intents. 
+The Bot-Intent dashboard in the Omnichannel Historical dashboard provides detailed insights about bot performance and customer engagement, supporting targeted analytics for continuous improvement. Supervisors can track historical trends in bot conversations and agent interactions by analyzing intent groups and individual intents. 
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

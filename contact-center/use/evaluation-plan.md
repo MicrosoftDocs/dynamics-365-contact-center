@@ -92,7 +92,7 @@ To create a real-time evaluation plan:
 
 1. On the **Evaluation plans** page, select **New**.
 
-1.  On the **New Evaluation Plan** page, in the **Evaluation plan details** section, provide the following:
+1.  On the **New Evaluation Plan** page, in the **Evaluation plan details** section, provide the following information:
 
     - **Plan name**: Enter plan name.
     - **Description**: Enter description.

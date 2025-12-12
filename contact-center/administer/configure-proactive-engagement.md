@@ -139,6 +139,20 @@ Learn about how to configure a journey using [Dynamics 365 Customer Insights](/d
 
 To configure the proactive engagement with a journey using the API, follow the steps in [Initiate proactive outbound call using API](../extend/api/ccaas_createproactivevoicedelivery.md).
 
+## Detect answering machines
+
+Detection of answering machines is a technology used in telecommunication systems to determine whether a call is answered by a human or an answering machine. You can set up the answering machine detection system topic in Copilot Studio to be used when outbound voice calls are made.
+
+### Prerequisite
+
+[Voice is enabled in Copilot Studio](/microsoft-copilot-studio/voice-get-started) or you can use voice IVR template to access the answer machine detection system topic.
+
+### Configure answer machine detection system topic
+
+You can choose to enable or disable answering machine detection. When enabled, the system automatically detects answering machines and proceeds with the configured message flow.
+
+Select the system topic, and customize the message that the system needs to play. The system detects answering machines and allows users to record or customize the message before ending the conversation, providing flexibility in handling such calls.
+
 ## Dial modes
 
 The dial modes are used to determine how the system makes calls to customers.
@@ -162,27 +176,14 @@ Use the preview dial mode to identify a service representative from the specifie
 
 A predictive dialer is an automated outbound calling system designed to boost agent efficiency and streamline customer outreach. It initiates calls ahead of agent availability by forecasting when agents are ready to engage. Using a dynamic algorithm, it calculates the optimal number of simultaneous calls to place based on anticipated agent availability. This algorithm factors in key contact center metrics such as abandonment rate, average wait time, queue targets, and other performance indicators to determine the ideal dialing volume.
 
-## Detect answering machines
 
-Detection of answering machines is a technology used in telecommunication systems to determine whether a call is answered by a human or an answering machine. You can set up the answering machine detection system topic in Copilot Studio to be used when outbound voice calls are made.
+## Proactive Engagement Runtime experience
 
-### Prerequisite
-
-[Voice is enabled in Copilot Studio](/microsoft-copilot-studio/voice-get-started) or you can use voice IVR template to access the answer machine detection system topic.
-
-### Configure answer machine detection system topic
-
-You can choose to enable or disable answering machine detection. When enabled, the system automatically detects answering machines and proceeds with the configured message flow.
-
-Select the system topic, and customize the message that the system needs to play. The system detects answering machines and allows users to record or customize the message before ending the conversation, providing flexibility in handling such calls.
-
-## Runtime experience
-
-Service representatives view the proactive engagement calls based on the notification template that's attached to the outbound workstream for preview and progressive modes. The name and description that you specify for the proactive engagement appears on the notification.
+Service representatives view the proactive engagement calls based on the notification template that's attached to the outbound workstream for preview, progressive, and predictive modes. The name and description that you specify for the proactive engagement appears on the notification.
 
 For the preview mode, service representatives can accept or reject the calls.
 
-For the progressive mode, service representatives can only start the call.
+For the progressive and predictive mode, service representatives can only start the call.
 
 If you configure disposition codes, service representatives can select the disposition codes to record the outcome of the interaction. Learn more in [Configure disposition codes](configure-disposition-codes.md).
 

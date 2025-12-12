@@ -33,7 +33,7 @@ To view real-time scores, you can either:
 - Select a conversation and then choose the **Real-time Score** option, or
 - Select the score link associated with the conversation. 
 
-A side pane appears that displays the real-time evaluation details, including the overall score and sentiment score for each section-level criterion you configured.
+A side pane appears and displays the real-time evaluation details, including the overall score and sentiment score for each section-level criterion you configured.
 
 ## Related information
 

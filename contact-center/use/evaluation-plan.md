@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 12/11/2025
+ms.date: 12/15/2025
 ms.custom: bap-template
 ---
 
@@ -125,7 +125,7 @@ To create a real-time evaluation plan:
     
 1.  Select **Save**.
 
-Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations (preview)](manage-ongoing-qea-conversations.md).
+Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations (preview)](ongoing-quality-evaluation-agent-conversations.md).
 
 ## Activate, pause, resume, or delete evaluation plans
 

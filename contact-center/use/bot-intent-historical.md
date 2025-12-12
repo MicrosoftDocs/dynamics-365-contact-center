@@ -49,7 +49,7 @@ You see the dashboard after 24 hours of provisioning. If you don't enable Custom
 |Metrics | Definition  |
 |---------|---------|
 |Bot name | Name of all the bots or AI agents available with conversations including the intent agent.| 
-|Total conversations | The total number of customer-initiated interactions with a Copilot Studio bot; includes conversations fully managed by the bot and those escalated to a service representative. The number of conversations deflected and escalated adds up to the total number of bot conversations. |
+|Total conversations | The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those escalated to a service representative. Both the number of conversations deflected and those escalated are counted in this total. |
 |Conversations escalated| Number of bot conversations that are escalated to representative.|  
 |Bot Escalation rate  | Percentage of bot conversations that are escalated to a representative over total bot conversations. |
 |Conversations deflected  | Number of bot conversations that are deflected by the AI agent either due to resolution or user abandoning the conversation.|

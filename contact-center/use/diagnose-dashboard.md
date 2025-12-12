@@ -21,12 +21,13 @@ With debug experience, organizations can access diagnostic telemetry for the ful
 
 ## Prerequisites
 
-- The user must have the **Omnichannel supervisor privileges** to access the Diagnose dashboard. [Learn how to configure user roles to access analytics and dashboards](/dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh#configure-user-access-to-analytics-and-dashboards).
+- The user must have the **Omnichannel supervisor privileges** to access the diagnostics dashboard. [Learn how to configure user roles to access analytics and dashboards](/dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh#configure-user-access-to-analytics-and-dashboards).
 
 - Omnichannel real-time dashboards are enabled. Learn more in [Manage real-time analytics reports](/dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator)
 - To access App Insights dashboards embedded in Debug tab:
+    - Application Insights instance is created in Azure portal. Learn more in [Create and configure Application Insights resources](/azure/azure-monitor/app/create-workspace-resource?tabs=portal)
 
-  - [Conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics) must be configured for the environment.
+  - [Conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics) is configured for the environment. Learn more in [](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights)
 
   - Assignment snapshots in conversation diagnostics must be enabled for the environment.
     > [!NOTE]

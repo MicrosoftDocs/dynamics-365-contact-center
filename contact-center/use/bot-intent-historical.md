@@ -62,7 +62,7 @@ You see the dashboard after 24 hours of provisioning. If you don't enable Custom
 
 |Metrics | Definition  |
 |---------|---------|
-|Intent Group | Name of intent group set by admin in Copilot Service admin center.|
+|Intent group | Name of intent group set by admin in Copilot Service admin center.|
 |Total conversations| The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those escalated to a service representative per intent group. |
 |Conversations escalated | Number of bot conversations per intent group that are escalated to representative.|
 |Bot Escalation rate  | Percentage of bot conversations that are escalated to a representative per intent group over total bot conversations per intent group. |

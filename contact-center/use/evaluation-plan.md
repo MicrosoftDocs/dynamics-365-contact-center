@@ -121,7 +121,7 @@ To create a real-time evaluation plan:
     1. From the dropdown, select the section for which notifications must be enabled.
     
     1. For the selected section, for **Critical**, **Warning**, and **Normal**, define the scoring thresholds as required. You can set your scoring between 0-100, with zero as the starting range for **Critical** and 100 as the highest range for **Normal**.
-    1. Select the notifications checkbox beside each of the thresholds if you want to receive the notifications.
+    1. If you want to receive notifications, select the notifications checkbox beside each of the thresholds.
     
 1.  Select **Save**.
 

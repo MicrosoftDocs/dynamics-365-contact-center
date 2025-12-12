@@ -84,7 +84,7 @@ You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-ev
 
 ## Create and activate a real-time evaluation plan for ongoing conversations (preview)
 
-You need to switch the **Criteria scoring** toggle to On for your evaluation criteria.
+You need to turn on the **Criteria scoring** toggle for your evaluation criteria.
 
 To create a real-time evaluation plan:
 

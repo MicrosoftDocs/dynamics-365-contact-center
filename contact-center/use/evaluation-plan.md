@@ -92,7 +92,7 @@ To create a real-time evaluation plan:
 
 1. On the **Evaluation plans** page, select **New**.
 
-1.  On the **New Evaluation Plan** page, in the **Evaluation plan details** section, provide the following information:
+1. On the **New Evaluation Plan** page, in the **Evaluation plan details** section, provide the following information:
 
     - **Plan name**: Enter plan name.
     - **Description**: Enter description.
@@ -103,25 +103,6 @@ To create a real-time evaluation plan:
 1. In the **Conditions** section, add the workstreams for which you want to enable real-time evaluation.
 
 1. In the **Assign Evaluation** section, for **Evaluation method**, select **AI assisted**.
-
-1. If you need to enable notifications for scoring, then in the **Notification Configuration** section, select **Enable notifications**.
-    > [!NOTE]
-    > Notifications can be configured at either the criteria or the section level, but not simultaneously at both levels.
-
-1. To enable criteria-level notifications, switch the **Enable criteria-level notification** toggle to **On**.
-
-    1. For **Critical**, **Warning**, and **Normal**, define the scoring thresholds as required. You can set your scoring between 0-100, with zero as the starting range for **Critical** and 100 as the highest range for **Normal**.
-    
-    1. From the **Recipient** dropdown, select from either **Team**, **User**, **Queue**, or **Supervisor in the current queue**.
-    
-    1. Select the notifications checkbox beside each of the thresholds if you want to receive the notifications.
-    
-1. To enable section-level notifications, switch the **Enable section-level notification** toggle to **On**.
-
-    1. From the dropdown, select the section for which notifications must be enabled.
-    
-    1. For the selected section, for **Critical**, **Warning**, and **Normal**, define the scoring thresholds as required. You can set your scoring between 0-100, with zero as the starting range for **Critical** and 100 as the highest range for **Normal**.
-    1. If you want to receive notifications, select the notifications checkbox beside each of the thresholds.
     
 1.  Select **Save**.
 

@@ -21,7 +21,7 @@ As a supervisor, you can efficiently manage ongoing record conversations to ensu
 
 ## Access the Ongoing record conversations view
 
-In the site map of Copilot Service workspace, go to **Conversations**. Select **Ongoing record conversations** from the dropdown.
+In the site map of Copilot Service workspace, go to **Conversations** and then select **Ongoing record conversations** from the dropdown.
 
 ## Tasks you can perform
 

@@ -49,7 +49,7 @@ You see the dashboard after 24 hours of provisioning. If you don't enable Custom
 |Metrics | Definition  |
 |---------|---------|
 |Bot name | Name of all the bots or AI agents available with conversations that include the intent agent.| 
-|Total conversations | The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those escalated to a service representative. The total includes both deflected and escalated conversations. |
+|Total conversations | The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those that escalated to a service representative. The total includes both deflected and escalated conversations. |
 |Conversations escalated| Number of bot conversations that are escalated to representative.|  
 |Bot escalation rate  | Percentage of bot conversations that are escalated to a representative over total bot conversations. |
 |Conversations deflected  | Number of bot conversations that the AI agent deflected due to resolution or the user abandoning the conversation.|
@@ -63,7 +63,7 @@ You see the dashboard after 24 hours of provisioning. If you don't enable Custom
 |Metrics | Definition  |
 |---------|---------|
 |Intent group | Name of intent group set by admin in Copilot Service admin center.|
-|Total conversations| The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those escalated to a service representative per intent group. |
+|Total conversations| The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those that escalated to a service representative per intent group. |
 |Conversations escalated | Number of bot conversations per intent group that are escalated to representative.|
 |Bot escalation rate  | Percentage of bot conversations that are escalated to a representative per intent group over total bot conversations per intent group. |
 |Conversations deflected  | Number of bot conversations per intent group that the AI agent deflected due to resolution or the user abandoning the conversation. |
@@ -79,7 +79,7 @@ In the **Metrics by intent group** section, select **Details** to view metrics b
 |Metrics | Definition  |
 |---------|---------|
 | Intent| List of intents set by the administrator in Copilot Service admin center.|
-| Total conversations| The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those escalated to a representative per intent.|
+| Total conversations| The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those that escalated to a representative per intent.|
 |Conversations escalated| Number of bot conversations per intent that are escalated to representative.   |
 |Bot escalation rate| Percentage of bot conversations that are escalated to a representative per intent group over total bot conversations per intent.  |
 |Conversations deflected| Number of bot conversations per intent that the AI agent deflected either due to resolution or the user abandoning the conversation. |

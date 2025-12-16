@@ -66,8 +66,8 @@ You see the dashboard after 24 hours of provisioning. If you don't enable Custom
 |Total conversations| The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those escalated to a service representative per intent group. |
 |Conversations escalated | Number of bot conversations per intent group that are escalated to representative.|
 |Bot escalation rate  | Percentage of bot conversations that are escalated to a representative per intent group over total bot conversations per intent group. |
-|Conversations deflected  | Number of bot conversations per intent group that are deflected by the AI agent either due to resolution or user abandoning the conversation. |
-| Bot deflection rate | Percentage of bot conversations that are deflected by bot per intent group over total bot conversations per intent group. |
+|Conversations deflected  | Number of bot conversations per intent group that the AI agent deflected due to resolution or the user abandoning the conversation. |
+| Bot deflection rate | Percentage of bot conversations that the bot deflected per intent group over the total bot conversations per intent group. |
 |Avg bot time (hh:mm:ss) | Average bot conversation duration, in hh:mm:ss format, that is either escalated or deflected per intent group.|
 
 ## Drill-down
@@ -82,8 +82,8 @@ In the **Metrics by intent group** section, select **Details** to view metrics b
 | Total conversations| The total number of customer-initiated interactions with a Copilot Studio bot. Includes conversations fully managed by the bot and those escalated to a representative per intent.|
 |Conversations escalated| Number of bot conversations per intent that are escalated to representative.   |
 |Bot escalation rate| Percentage of bot conversations that are escalated to a representative per intent group over total bot conversations per intent.  |
-|Conversations deflected| Number of bot conversations per intent that are deflected by the AI agent either due to resolution or user abandoning the conversation. |
-| Bot deflection rate|Percentage of bot conversations that are deflected by bot per intent over total bot conversations per intent group.  |
+|Conversations deflected| Number of bot conversations per intent that the AI agent deflected either due to resolution or the user abandoning the conversation. |
+| Bot deflection rate|Percentage of bot conversations that are the bot deflected per intent over total bot conversations per intent group.  |
 |Avg. bot time (hh:mm:ss)| Average bot conversation duration in hh:mm:ss format that were either escalated or deflected per intent.|
 
 ## Related information

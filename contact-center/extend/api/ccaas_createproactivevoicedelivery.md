@@ -5,7 +5,7 @@ author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: reference
-ms.date: 12/05/2025
+ms.date: 12/17/2025
 ms.collection: bap-ai-copilot
 ms.custom: bap-template 
 ---

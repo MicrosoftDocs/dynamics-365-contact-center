@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 12/05/2025
+ms.date: 12/17/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -138,20 +138,6 @@ Learn about how to configure a journey using [Dynamics 365 Customer Insights](/d
 ## Configure proactive engagement with a journey using the API
 
 To configure the proactive engagement with a journey using the API, follow the steps in [Initiate proactive outbound call using API](../extend/api/ccaas_createproactivevoicedelivery.md).
-
-## Detect answering machines
-
-Detection of answering machines is a technology used in telecommunication systems to determine whether a call is answered by a human or an answering machine. You can set up the answering machine detection system topic in Copilot Studio to be used when outbound voice calls are made.
-
-### Prerequisite
-
-[Voice is enabled in Copilot Studio](/microsoft-copilot-studio/voice-get-started) or you can use voice IVR template to access the answer machine detection system topic.
-
-### Configure answer machine detection system topic
-
-You can choose to enable or disable answering machine detection. When enabled, the system automatically detects answering machines and proceeds with the configured message flow.
-
-Select the system topic, and customize the message that the system needs to play. The system detects answering machines and allows users to record or customize the message before ending the conversation, providing flexibility in handling such calls.
 
 ## Dial modes
 

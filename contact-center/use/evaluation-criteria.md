@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 10/30/2025
+ms.date: 12/15/2025
 ms.custom: bap-template 
 ---
 
@@ -72,8 +72,10 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
     1.  **Form question text**: Enter the form question text.
 
     1.  **Add question-level instructions**: Provide instructions for the question, if any. Instructions help Quality Evaluation Agent generate answers and improve accuracy.
+    
+    1. Select the **AI response enabled** checkbox if you want AI to predict an answer for a question. If unselected, the answer is left blank for the reviewer to submit.
 
-    1.  Depending on the answer type you select, you can add scoring for the answers by selecting the **Scoring enabled** checkbox. You can turn off the Scoring toggle if you don't want to create a criteria with scoring.
+    1.  Depending on the answer type you select, you can add scoring for the answers by selecting the **Scoring enabled** checkbox. You can turn off the scoring toggle if you don't want to create a criteria with scoring.
 
 1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required.
 
@@ -109,10 +111,8 @@ After you create a baseline criteria for your business unit, you can extend the 
 
     1.  **Criteria name**: Provide a name.
 
-    1.  **Description**: Provide a description. To provide your own
-        instructions, turn off the **Use source instructions** toggle.
-        To use the source instructions, turn on the **Use source
-        instructions** toggle.
+    1.  **Description**: Provide a description. To provide your own instructions, turn off the **Use source instructions** toggle.
+        To use the source instructions, turn on the **Use source instructions** toggle.
 
     1.  **Extended scoring weight**: If the source criteria has scoring
         criteria enabled, provide the extended scoring weight.

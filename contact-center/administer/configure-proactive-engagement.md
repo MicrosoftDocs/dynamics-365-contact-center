@@ -163,13 +163,13 @@ Use the preview dial mode to identify a service representative from the specifie
 
 A predictive dialer is an automated outbound calling system designed to boost agent efficiency and streamline customer outreach. It initiates calls ahead of agent availability by forecasting when agents are ready to engage. Using a dynamic algorithm, it calculates the optimal number of simultaneous calls to place based on anticipated agent availability. This algorithm factors in key contact center metrics such as abandonment rate, average wait time, queue targets, and other performance indicators to determine the ideal dialing volume.
 
-## Proactive Engagement Runtime experience
+## Runtime experience of proactive engagement
 
 Service representatives view the proactive engagement calls based on the notification template that's attached to the outbound workstream for preview, progressive, and predictive modes. The name and description that you specify for the proactive engagement appears on the notification.
 
 For the preview mode, service representatives can accept or reject the calls.
 
-For the progressive and predictive mode, service representatives can only start the call.
+For the progressive and predictive modes, service representatives only can start the call.
 
 If you configure disposition codes, service representatives can select the disposition codes to record the outcome of the interaction. Learn more in [Configure disposition codes](configure-disposition-codes.md).
 

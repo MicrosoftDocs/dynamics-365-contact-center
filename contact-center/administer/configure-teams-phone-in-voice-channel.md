@@ -18,14 +18,21 @@ ms.custom:
 
 Integrate your existing Microsoft Teams Phone with Dynamics 365 Contact Center to simplify your voice call configuration.
 
+The high-level process to configure the Teams Phone is as follows:
+
+1. Verify prerequisites.
+
+1. Make sure you have the appropriate licenses are in place for the configuration and for the customer service representatives (service representatives or representatives) to handle calls effectively.
+
 ## Prerequisites
 
-- Dynamics 365 Contact Center or Dynamics 365 Customer Service premium license with the [voice channel provisioned](../implement/provision-channels.md#set-up-channels) and [configured](/dynamics365/customer-service/administer/voice-channel-install). An Azure Communication Services resource is provisioned when you provision the voice channel.
+To configure the Teams environment extensionsibility, you must enable the following settings:
 
-- Fulfill the [prerequisites to provision the Teams environment for Teams Phone extensibility](/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-overview#prerequisites).
-- The Teams Phone in Dynamics 365 Contact Center voice channel also requires the latest Microsoft Teams PowerShell module installed on the user’s machine.
-    - [Install Microsoft Teams PowerShell module](/microsoftteams/teams-powershell-install#installing-using-the-powershellgallery) in the user’s system if it isn't yet installed.
-    - [Update the Microsoft Teams PowerShell module](/microsoftteams/teams-powershell-install#update-teams-powershell-module) if it's already installed.
+- Voice channel in Dynamics 365 Contact Center.
+
+- Assign the required licenses to the service representatives and [Microsoft Teams Phone Resource Account licenses](/microsoftteams/teams-add-on-licensing/virtual-user) for the designated Teams resource account.
+- Enterprise Voice as mentioned in [Teams Phone features](/azure/communication-services/concepts/pricing/teams-interop-pricing#teams-phone-features).
+- [PSTN connectivity](/microsoftteams/pstn-connectivity) through Teams Calling Plan (service numbers only are supported), Operator Connect, or Direct Routing.
 - To synchronize the phone number, you need the [Teams Administrator or Teams Telephony Administrator role](/entra/identity-platform/quickstart-configure-app-access-web-apis) and [TeamsResourceAccount.Read.All Graph permission](/graph/permissions-reference).
 - At runtime, the service representatives assigned to the voice queue need a Teams calling license.
     > [!NOTE] 

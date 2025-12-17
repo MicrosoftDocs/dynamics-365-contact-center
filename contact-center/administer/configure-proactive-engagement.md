@@ -44,8 +44,8 @@ In the site map of Copilot Service admin center, navigate to the settings in one
 - Select **Productivity** under **Support experience**. Select **Manage** for **Proactive engagements**, and then select **New**.
 - Select **Workstreams** under **Customer support**, select an outbound workstream for voice, and on the workstream page, select **New proactive engagement**.
 
-1. On **Create new proactive engagement**, enter the following details in **Engagement details**:
-   - **Name**: A name for the proactive engagement. 
+1. In the **Create new proactive engagement** pane, enter the following details in **Engagement details**:
+   - **Name**: A name for the proactive engagement.
    - **Description**: A description for the proactive engagement that helps the representative understand the purpose of the call for progressive and preview dial modes.
    - **Workstream**: A workstream.
    - **Channel type**: **Voice** is selected by default and not available for edit.
@@ -60,7 +60,7 @@ In the site map of Copilot Service admin center, navigate to the settings in one
 
 The dialing modes are used to determine how the system can make calls to customers. The following dialing modes are available:
 
-1. On the **Create new proactive engagement** dialog, select one of the dialing modes as follows:
+1. In the **Create new proactive engagement** pane, select one of the dialing modes as follows:
    - **Copilot**: The system automatically dials the customer and connects the call to the AI agent when the customer answers. This mode is used for high-volume outbound calls.
    - **Progressive**: The system starts the call with the AI agent and then adds a representative after the agent actions are complete.
    - **Preview**: The system adds the representative to the call and then dials the customer.
@@ -100,7 +100,7 @@ The dialing modes are used to determine how the system can make calls to custome
 
 The outcomes are the results of the proactive engagement call. The outcomes are used to determine how the system handles the call when a customer answers.
 
-1. On the **Create new proactive engagement** dialog, on the **Outcomes** page, select the outcomes that are available for the proactive engagement, and then select **Next**.
+1. In the **Create new proactive engagement** pane, on the **Outcomes** page, select the outcomes that are available for the proactive engagement, and then select **Next**.
    - To add attributes, [configure context variables for the outbound workstream](/dynamics365/customer-service/administer/manage-context-variables).
    - Make sure that when you add the context variables in Copilot agent, you use the same names that you created in the workstream. Learn more in [Configure context variables for Copilot agent](/dynamics365/customer-service/administer/context-variables-for-bot#configure-context-variables-for-copilot-agent).
 
@@ -116,21 +116,21 @@ The SIP-based outcomes are as follows.
 | Result | Description |
 |--------|-------------|
 | LiveAnswer | Answered by someone or something and interacted with Copilot agent or Copilot Studio Agent. |
-| AnsweringMachine | Determined as answering machine. Left message or voicemail if Copilot Bot/MCS Agent has answering machine detection topic enabled and configured to leave a message. |
-| AnsweringMachineHangup | Determined as answering machine, Copilot Bot/MCS Agent hung up as configured in the topic and didn't leave a message or voicemail. |
-| Undetermined | Answered by someone or something but didn't interact or have a conversation with Copilot Bot/MCS Agent. |
+| AnsweringMachine | Determined as answering machine. Left message or voicemail if Copilot agent or Copilot Studio agent has answering machine detection topic enabled and configured to leave a message. |
+| AnsweringMachineHangup | Determined as answering machine, Copilot agent or Copilot Studio agent hung up as configured in the topic and didn't leave a message or voicemail. |
+| Undetermined | Answered by someone or something but didn't interact or have a conversation with Copilot agent or Copilot Studio agent. |
 | NotAHandset | Detected as some tone such as SIT or FAX that indicates it's not a service representative or an answering machine. |
-| BotFailed | Copilot Bot/MCS Agent failed to get started or failed during conversation with END CUSTOMER-side where phone went off-hook. |
+| BotFailed | Copilot agent or Copilot Studio agent failed to get started or failed during conversation with customer where phone went off-hook. |
 | CallEnded | Preview dial mode call where customer phone went off-hook. |
-| Busy | Customer returned busy signal, as indicated by SIP Diagnostic Information/Early Media Results from ACS.  Customer phone didn't go off hook. |
-| NoAnswer | Customer phone dial resulted in no answer, SIP Diagnostic Information/Early Media Results from ACS. Customer phone didn't go off hook. |
-| InvalidAddress | Customer phone dial resulted in invalid address, as indicated by SIP Diagnostic Information/Early Media Results from Azure Communication Services. Customer phone didn't go off hook. |
-| CallFailed | Customer phone didn't go off hook and there was no SIP Diagnostic Information/Early Media Results from Azure Communication Services. |
-| Terminated | Preview Dial Mode Call where END CUSTOMER was not attempted to be engaged because no agent available/accepted after launching the call and valid window to contact the customer ended by then. |
-| Unknown | Customer phone was attempted to be engaged, but there is not enough information available about the attempt due to some error condition. |
+| Busy | Customer returned busy signal, as indicated by SIP diagnostic information or early media results from Azure Communication Services.  Customer phone didn't go off the hook. |
+| NoAnswer | Customer phone dial resulted in no answer, SIP diagnostic information or early media results from Azure Communication Services. Customer phone didn't go off the hook. |
+| InvalidAddress | Customer phone dial resulted in invalid address, as indicated by diagnostic information or early media results from Azure Communication Services. Customer phone didn't go off the hook. |
+| CallFailed | Customer phone didn't go off the hook and there was no SIP diagnostic information or early media results from Azure Communication Services. |
+| Terminated | Preview dial mode call where customer wasn't attempted to be engaged because no agent was available  or accepted after launching the call and valid window to contact the customer ended by then. |
+| Unknown | Customer phone was attempted to be engaged, but there isn't enough information available about the attempt due to some error condition. |
 | Cancelled | Customer wasn't attempted to be engaged because there was a request to cancel the delivery. |
-| Expired | There was no more valid time window to engage the customer, or expiration date specified was in the past. Customer was not attempted to be engaged. |
-| Error | Customer was not attempted to be engaged because there was some invalid configuration or data condition when it was time to engage the customer. |
+| Expired | There was no more valid time window to engage the customer, or expiration date specified was in the past. Customer wasn't attempted to be engaged. |
+| Error | Customer wasn't attempted to be engaged because there was some invalid configuration or data condition when it was time to engage the customer. |
 
 ## Configure proactive engagement with a journey using Customer Insights
 
@@ -165,7 +165,7 @@ A predictive dialer is an automated outbound calling system designed to boost ag
 
 ## Runtime experience of proactive engagement
 
-Service representatives view the proactive engagement calls based on the notification template that's attached to the outbound workstream for preview, progressive, and predictive modes. The name and description that you specify for the proactive engagement appears on the notification.
+Service representatives view the proactive engagement calls based on the notification template that's attached to the outbound workstream for preview, progressive, and predictive modes. The name and description that you specify for the proactive engagement appear on the notification.
 
 For the preview mode, service representatives can accept or reject the calls.
 

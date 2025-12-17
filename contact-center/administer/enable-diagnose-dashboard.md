@@ -24,8 +24,47 @@ With the debug experience, organizations can access diagnostic telemetry for the
 - The System administrator role.
 
 - Application Insights is configured.
-- [Conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics) is configured for the environment. Learn more in [](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights)
+- [Conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics) is configured for the environment. Learn how to set up a connection in [Set up a connection with Azure Application Insights](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights).
 - Assignment snapshots in conversation diagnostics is enabled for the environment.
+- Update Application insights ID in the Default Value and Current Value fields of the environment variable. Learn more in [Environment variables for Power Platform](/power-apps/maker/data-platform/environmentvariables).
+- Create and register an app for your tenant. Learn more in [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).
+- [Configure federated identity credentials](/power-platform/admin/set-up-managed-identity#configure-federated-identity-credentials) with the following details:
+    - **Issuer**: `https://login.microsoftonline.com/{tenant_id}/v2.0`. Replace {tenant_id} with your Tenant ID.
+    - **Type**: Explicit subject identifier
+    - **Value**: `/eid1/c/pub/t/urwIj5vn7Eq6VeRuc0PF9Q/a/CQSGf3JJtEi27nY2ePL7UQ/n/plugin/e/137c15c0-84b4-ec8f-9666-012432c11550/i/Microsoft Code Signing PCA 2011/s/Microsoft Corporation`. You'll update the value in a subsequent step.
+    - **Name**: App name
+    - **Audience**: `api://AzureADTokenExchange`
+- Assign **Monitoring Reader** role to your app to access App insights data. Learn about assigning roles in [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal) and about roles in [Roles, permissions, and security in Azure Monitor](/azure/azure-monitor/fundamentals/roles-permissions-security#monitoring-reader).
+- Patch managed identity record. Run the following script in your browser console while you are signed into your Dynamics 365 environment.
+
+    ```
+   var globalContext = Xrm.Utility.getGlobalContext();
+   var OrgURL = globalContext.getClientUrl();
+   var ocConfigAPIURL = OrgURL + "/api/data/v9.0/managedidentities(c9c8f1ca-075c-4ffa-92ce-f4bc1a8a7101)";     
+   fetch(ocConfigAPIURL, {
+    method: 'PATCH',
+    body: JSON.stringify({
+        "applicationid": "Cx 3P app id", // Replace with actual Application ID
+        "tenantid": "Cx 3P tenant id"    // Replace with actual Tenant ID
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8'
+      }
+    })
+    .then(res => {
+        if (res.status === 204) {
+            console.log('PATCH successful!');
+        } else {
+            console.log('PATCH error!');
+        }
+    });
+    ```
+
+- Fix FIC path.
+    1. In Copilot Service workspace, open the browser console, go to the **Network** tab, search for `msdyn_GetAppInsightsTelemetry`, and select a failed request call.
+    1. Select the **Debug** tab on the **Diagnose** dashboard.
+    1. On the **Network** tab, go to **Preview**, copy the message contents and paste in a Notepad.
+    1. Check for any missing configuration value. Paste the value in the federated credentials > **Value** field. Make sure that there are no special characters or spaces in the value.
 
 ## Pricing
 
@@ -56,7 +95,7 @@ For accessing the out-of-the-box dashboards, the user must have access to Azure 
 
 ### How often is the data refreshed?
 
-By default, the data in the dashboard isn't auto refreshed. However, you can set the auto-refresh interval for your workbook in Application Insights.
+By default, the data in the dashboard isn't auto refreshed. Use the **Refresh** button for a manual refresh.
 
 ### Can I export dashboard data?
 

@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
 ms.collection:
-ms.date: 11/21/2025
+ms.date: 12/18/2025
 ms.custom: bap-template
 ---
 
@@ -24,6 +24,8 @@ As a supervisor, organizing contact center data by intent, intent groups, and li
 You can filter this report by **Time**, **Channel**, **Line of Business**, **Intent group**, **Agent group**, **Time zone**, and **Conversation status**.
 
 As part of visual customization, all real-time dashboards including **Summary**, **Voice**, **Bot**, **Agent**, **Ongoing Conversation**, and **Backlog conversation** reports can be filtered by intent group, intent, and line of business by using the **IntentFamilyName** in **DimIntent** dimension. Learn more in [visual customization](/dynamics365/customer-service/use/customize-reports). You can search for the data measures for intent to select specific intent-based filters.
+
+:::image type="content" source="../media/realtime-intent-group.png" alt-text="Screenshot of real-time intent group report." lightbox="../media/realtime-intent-group.png":::
 
 ## Prerequisites
 
@@ -48,7 +50,9 @@ You see the report after 24 hrs of provisioning. If you don't enable Customer In
 
 ## Drill-down 
 
-In the **Metrics by intent** section, select **Detailed view** to view metrics by intent.
+In the **Metrics by intent group** section, select **Detailed view** to view metrics by intent.
+
+:::image type="content" source="../media/realtime-intent-group-drilldown.png" alt-text="Screenshot of intent group drilldown." lightbox="../media/realtime-intent-group-drilldown.png":::
 
 |Metrics | Definition  |
 |---------|---------|
@@ -63,10 +67,10 @@ In the **Metrics by intent** section, select **Detailed view** to view metrics b
 
 |Metrics | Definition  |
 |---------|---------|
-|Intent Name|	Name of the intent set in in Customer Service admin center.|
+|Intent name|	Name of the intent set in in Customer Service admin center.|
 |Engaged conversations|	Conversations offered and accepted by the service representative per intent.|
 |Average handle time (hh:mm:ss)|	Total handle time divided by the number of conversations handled per intent. <br> - For Voice: msdyn_sessionparticipant.msdyn_talktime + msdyn_sessionparticipant.msdyn_holdtime + msdyn_sessionparticipant.msdyn_activewrapuptime. <br> - For Chat: msdyn_sessionparticipant.msdyn_activetime + msdyn_sessionparticipant.msdyn_activewrapuptime.|
-|Abandoned rate|	The percentage of incoming conversations that end before engagement by a representative or AI agent, calculated over the total number of incoming conversations per intent group. Includes: <br> - Customer exits before assignment. <br> - Customer disconnects after assignment but before representative acceptance.|
+|Conversations abandoned rate|	The percentage of incoming conversations that end before engagement by a representative or AI agent, calculated over the total number of incoming conversations per intent group. Includes: <br> - Customer exits before assignment. <br> - Customer disconnects after assignment but before representative acceptance.|
 |Session transfer rate|	Total number of incoming sessions transferred from one representative, agent, or queue to another during the conversation, over the total number of incoming sessions per intent.|
 
 

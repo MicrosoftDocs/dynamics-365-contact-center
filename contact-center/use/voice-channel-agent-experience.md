@@ -21,7 +21,7 @@ The voice channel is integrated directly with Dynamics 365 by way of the agent d
 
 Call a customer by using the phone dialer on the **Active Conversation** page or the **Launch dialer** button on the menu. Learn more in [Call a customer](/dynamics365/customer-service/use/voice-channel-call-customer?context=/dynamics365/contact-center/context/use-context).
 
-When a customer calls your business, an AI agent receives the incoming call. The agent gathers basic information about the customer issue and then transfers the call to you for further action. You receive a notification about the incoming call on your service representative desktop so you can accept it. The following section describes the call controls and other features you can use during your conversation.
+When a customer calls your business, an AI agent receives the incoming call. The agent gathers basic information about the customer issue and then transfers the call to you for further action. You receive a notification about the incoming call on your service representative desktop, where you can accept it. The following section describes the call controls and other features you can use during your conversation.
 
 ## Call controls
 

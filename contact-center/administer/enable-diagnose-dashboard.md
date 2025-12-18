@@ -25,7 +25,6 @@ With the debug experience, organizations can access diagnostic telemetry for the
 
 - Application Insights is configured.
 - [Conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics) is configured for the environment. Learn how to set up a connection in [Set up a connection with Azure Application Insights](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights).
-- Assignment snapshots in conversation diagnostics is enabled for the environment.
 - Update Application insights ID in the Default Value and Current Value fields of the environment variable. Learn more in [Environment variables for Power Platform](/power-apps/maker/data-platform/environmentvariables).
 - Create and register an app for your tenant. Learn more in [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).
 - [Configure federated identity credentials](/power-platform/admin/set-up-managed-identity#configure-federated-identity-credentials) with the following details:
@@ -69,6 +68,7 @@ With the debug experience, organizations can access diagnostic telemetry for the
 ## Pricing
 
 The conversation diagnostics data is stored in Azure Application Insights database. For details on pricing for data storage, refer [Pricing](/dynamics365/customer-service/administer/configure-conversation-diagnostics#pricing).
+
 There’s no additional cost for using Azure workbooks.
 
 ## Enable Debug tab experience

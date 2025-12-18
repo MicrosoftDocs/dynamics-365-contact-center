@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
 ms.collection:
-ms.date: 12/17/2025
+ms.date: 12/18/2025
 ms.custom: bap-template
 ---
 
@@ -25,7 +25,7 @@ You can filter this report by **Time**, **Channel**, **Line of Business**, **Int
 
 As part of visual customization, all real-time dashboards including **Summary**, **Voice**, **Bot**, **Agent**, **Ongoing Conversation**, and **Backlog conversation** reports can be filtered by intent group, intent, and line of business by using the **IntentFamilyName** in **DimIntent** dimension. Learn more in [visual customization](/dynamics365/customer-service/use/customize-reports). You can search for the data measures for intent to select specific intent-based filters.
 
-:::image type="content" source="../media/realtime-intent-group.png" alt-text="Screenshot of omnichannel realtime intent group report." lightbox="../media/realtime-intent-group.png":::
+:::image type="content" source="../media/realtime-intent-group.png" alt-text="Screenshot of real-time intent group report." lightbox="../media/realtime-intent-group.png":::
 
 ## Prerequisites
 

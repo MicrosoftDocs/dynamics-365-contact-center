@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
 ms.collection:
-ms.date: 12/17/2025
+ms.date: 12/18/2025
 ms.custom: bap-template
 ---
 
@@ -23,8 +23,6 @@ Contact centers often group service representatives into dedicated teams focused
 You can filter this report by **Time**, **Channel**, **Line of Business**, **Intent group**, **Agent group**, **Time zone**, and **Conversation status**.
 
 As part of visual customization, all real-time dashboards including **Summary**, **Voice**, **Bot**, **Agent**, **Ongoing Conversation**, and **Backlog conversation** reports can be filtered by intent group, intent, and line of business by using the **IntentFamilyName** in **DimIntent** dimension. Learn more in [visual customization](/dynamics365/customer-service/use/customize-reports). You can search for the data measures for intent to select specific intent-based filters.
-
-:::image type="content" source="../media/realtime-user-group.png" alt-text="Screenshot of omnichannel realtime user group report." lightbox="../media/realtime-user-group.png":::
 
 ## Prerequisites
 
@@ -61,8 +59,6 @@ You see the report after 24 hrs of provisioning. If you don't enable Customer In
 
 In the **Metrics by agent** section, select **Detailed view** to view metrics by agent.
 
-:::image type="content" source="../media/realtime-user-group-drilldown.png" alt-text="Screenshot of realtime user group drilldown.":::
-
 |Metrics | Definition  |
 |---------|---------|
 |Conversations in queue|	Number of conversations waiting in queue to be assigned to a service representative.|
@@ -75,11 +71,11 @@ In the **Metrics by agent** section, select **Detailed view** to view metrics by
 |Session rejection rate| Percentage of sessions rejected by representatives over the total number of sessions assigned to representatives. Session Rejection Rate (%)= (Number of sessions rejected by agents / Total number of sessions assigned to agents) × 100.|
 
 
-### Metrics by user group
+### Metrics by agent
 
 |Metrics | Definition  |
 |---------|---------|
-|User group name|	Name of the service representative group.|
+|Agent name|	Name of the service representative group.|
 |Conversation status|	Current status of service representative.|
 |Time in presence (hh:mm:ss)|	The duration for which the service representative is in the current status.|
 |Active sessions|	Number of sessions that are currently in **Active** status.|

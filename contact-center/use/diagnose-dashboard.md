@@ -23,9 +23,9 @@ With debug experience, organizations can access diagnostic telemetry for the ful
 
 - The user must have the **Omnichannel supervisor privileges** to access the diagnostics dashboard. [Learn how to configure user roles to access analytics and dashboards](/dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh#configure-user-access-to-analytics-and-dashboards).
 
-- Omnichannel real-time dashboards are enabled. Learn more in [Manage real-time analytics reports](/dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator)
+- [Omnichannel real-time dashboards are enabled](/dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator).
 
-- Application Insights is configured. Learn more in [Create and configure Application Insights resources](/azure/azure-monitor/app/create-workspace-resource?tabs=portal)
+- [Application Insights](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource) is configured.
 
     > [!NOTE]
     > It takes approximately 24 hours to sync the data completely.

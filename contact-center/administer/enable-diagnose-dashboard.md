@@ -23,10 +23,11 @@ With the debug experience, organizations can access diagnostic telemetry for the
 
 - The System administrator role.
 
-- Application Insights is configured.
+- [Application Insights](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource) is configured.
 - [Conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics) is configured for the environment. Learn how to set up a connection in [Set up a connection with Azure Application Insights](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights).
-- Update Application insights ID in the Default Value and Current Value fields of the environment variable. Learn more in [Environment variables for Power Platform](/power-apps/maker/data-platform/environmentvariables).
+- Update Application insights ID in the Default Value and Current Value fields of the environment variable. Learn more in [Environment variables for Power Platform](/power-apps/maker/data-platform/environmentvariables#manually-create-an-environment-variable-in-a-solution).
 - Create and register an app for your tenant. Learn more in [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).
+    - Copy the **Application (client) ID** and **Directory (tenant) ID**, and save them in a secure location like a Notepad file for future references.
 - [Configure federated identity credentials](/power-platform/admin/set-up-managed-identity#configure-federated-identity-credentials) with the following details:
     - **Issuer**: `https://login.microsoftonline.com/{tenant_id}/v2.0`. Replace {tenant_id} with your Tenant ID.
     - **Type**: Explicit subject identifier
@@ -34,17 +35,18 @@ With the debug experience, organizations can access diagnostic telemetry for the
     - **Name**: App name
     - **Audience**: `api://AzureADTokenExchange`
 - Assign **Monitoring Reader** role to your app to access App insights data. Learn about assigning roles in [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal) and about roles in [Roles, permissions, and security in Azure Monitor](/azure/azure-monitor/fundamentals/roles-permissions-security#monitoring-reader).
-- Patch managed identity record. Run the following script in your browser console while you are signed into your Dynamics 365 environment.
 
-    ```
+- Update managed identity record. Run the following script in your browser console while you are signed into your Dynamics 365 environment.
+
+   ```
    var globalContext = Xrm.Utility.getGlobalContext();
    var OrgURL = globalContext.getClientUrl();
    var ocConfigAPIURL = OrgURL + "/api/data/v9.0/managedidentities(c9c8f1ca-075c-4ffa-92ce-f4bc1a8a7101)";     
    fetch(ocConfigAPIURL, {
     method: 'PATCH',
     body: JSON.stringify({
-        "applicationid": "Cx 3P app id", // Replace with actual Application ID
-        "tenantid": "Cx 3P tenant id"    // Replace with actual Tenant ID
+        "applicationid": "Cx 3P app id", // Replace with actual Application ID that you copied when you registered the app.
+        "tenantid": "Cx 3P tenant id"    // Replace with actual Tenant ID that you copied that you copied when you registered the app.
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8'
@@ -59,7 +61,7 @@ With the debug experience, organizations can access diagnostic telemetry for the
     });
     ```
 
-- Fix FIC path.
+- Fix federated identity credentials path.
     1. In Copilot Service workspace, open the browser console, go to the **Network** tab, search for `msdyn_GetAppInsightsTelemetry`, and select a failed request call.
     1. Select the **Debug** tab on the **Diagnose** dashboard.
     1. On the **Network** tab, go to **Preview**, copy the message contents and paste in a Notepad.
@@ -89,17 +91,9 @@ No. To set up the out-of-the-box dashboards for Application Insights, you need a
 
 Your organization doesn't need any extra licenses for Dynamics 365 Contact Center or Customer Service. However, you need an active Azure Monitor subscription for using the out-of-the-box dashboards. learn more in **Pricing**.
 
-### I already have an Omnichannel Supervisor role assigned. What extra roles or permissions do I need to access these dashboards?
-
-For accessing the out-of-the-box dashboards, the user must have access to Azure monitoring. Learn more in [Roles and permissions](/azure/azure-monitor/fundamentals/roles-permissions-security).
-
 ### How often is the data refreshed?
 
 By default, the data in the dashboard isn't auto refreshed. Use the **Refresh** button for a manual refresh.
-
-### Can I export dashboard data?
-
-You can export the dashboard details as JSON from the **Advanced editor** option. However, the dashboard data can't be exported or imported.
 
 ### Related information
 

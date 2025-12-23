@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 07/14/2025
+ms.date: 12/23/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
@@ -37,8 +37,7 @@ When you sign in to a non-Microsoft CRM system, you can access the feature as fo
 [!INCLUDE [cc-write-email-prompts](../../shared/cc-write-email-prompts.md)]
 
  > [!NOTE]
- > - If the knowledge base isn't enabled, you see the **Suggest a call**, **Request more information**, **Empathize with feedback**, and **Custom** prompts only.
- > - If you've left the **Regarding** field empty, you see the **Suggest a call**, **Empathize with feedback**, and **Custom** prompts only.
+ > If the knowledge base isn’t enabled or if the **Regarding** field is left blank, you see the **Suggest a call**, **Request more information**, **Empathize with feedback**, and **Custom** prompt options only.
 
 ## How Copilot uses knowledge base
 

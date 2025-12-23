@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 12/15/2025
+ms.date: 12/23/2025
 ms.custom: bap-template
 ---
 
@@ -21,7 +21,7 @@ Evaluation plans help supervisors perform consistent and objective reviews of ca
 
 > [!IMPORTANT]
 >
-> - Evaluations for conversations and bulk evaluations for cases are preview features. 
+> - Bulk evaluations for cases is a preview feature. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Prerequisites
@@ -82,7 +82,7 @@ You must enable the **Enable bulk evaluations (preview)** checkbox in Customer S
 
 You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases and conversations when needed.
 
-## Create and activate a real-time evaluation plan for ongoing conversations (preview)
+## Create and activate a real-time evaluation plan for ongoing conversations
 
 You need to turn on the **Criteria scoring** toggle for your evaluation criteria. Learn more in [Create evaluation criteria](evaluation-criteria.md#create-evaluation-criteria).
 

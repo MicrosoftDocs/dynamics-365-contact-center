@@ -39,8 +39,9 @@ Update the Application insights ID in the **Default Value** and **Current Value*
 
 ### Create and register an app
 
-Create and register an app for your tenant. Learn more in [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).
-- Copy the **Application (client) ID** and **Directory (tenant) ID**, and save them in a secure location like a Notepad file for future references.
+1. Create and register an app for your tenant. Learn more in [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).
+
+1. Copy the **Application (client) ID** and **Directory (tenant) ID**, and save them in a secure location like a Notepad file for future references.
 
 ### Configure federated identity credentials
 

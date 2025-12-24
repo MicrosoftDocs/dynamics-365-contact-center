@@ -1,17 +1,17 @@
 ---
-title: Use Copilot to draft an email in non-microsoft CRMs
+title: Use Copilot to draft an email in non-Microsoft CRMs
 description: Learn how customer service representatives can use Copilot to draft emails in non-Microsoft CRMs to increase productivity.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 07/14/2025
+ms.date: 12/24/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 
-# Use Copilot to draft an email in non-microsoft CRMs
+# Use Copilot to draft an email in non-Microsoft CRMs
 
 [!INCLUDE[cc-feature-availability-embed-only](../includes/cc-feature-availability-embed-only.md)]
 
@@ -37,8 +37,7 @@ When you sign in to a non-Microsoft CRM system, you can access the feature as fo
 [!INCLUDE [cc-write-email-prompts](../../shared/cc-write-email-prompts.md)]
 
  > [!NOTE]
- > - If the knowledge base isn't enabled, you see the **Suggest a call**, **Request more information**, **Empathize with feedback**, and **Custom** prompts only.
- > - If you've left the **Regarding** field empty, you see the **Suggest a call**, **Empathize with feedback**, and **Custom** prompts only.
+ > If the knowledge base isn’t enabled or if the **Regarding** field is left blank, you see the **Suggest a call**, **Request more information**, **Empathize with feedback**, and **Custom** prompt options only.
 
 ## How Copilot uses knowledge base
 
@@ -65,3 +64,7 @@ If your administrator enabled knowledge sources, the following actions occur:
 
 
   :::image type="content" source="../media/embed-copilot-email.png" alt-text="Screenshot shows options to write emails.":::
+
+## Related information
+
+[Enable Copilot to draft emails](../administer/copilot-email-enable.md#enable-copilot-to-draft-emails)

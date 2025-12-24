@@ -23,9 +23,15 @@ With the debug experience, organizations can access diagnostic telemetry for the
 
 - The System administrator role.
 
-- [Application Insights](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource) is configured.
-- [Conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics) is configured for the environment. Learn how to set up a connection in [Set up a connection with Azure Application Insights](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights).
-- Configure the other prerequisite settings mentioned in the subsections.
+- Configure the prerequisite settings mentioned in the subsections.
+
+### Configure Application Insights
+
+Configure an [application insights resource](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource).
+
+### Configure conversation diagnostics and connection
+
+Configure [conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics) for the environment and [set up a connection with Azure Application Insights](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights).
 
 ### Update Application Insights ID in environment variable
 

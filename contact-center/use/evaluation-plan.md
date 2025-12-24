@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 12/23/2025
+ms.date: 12/24/2025
 ms.custom: bap-template
 ---
 
@@ -33,12 +33,12 @@ Evaluation plans help supervisors perform consistent and objective reviews of ca
 
 ## Create and activate evaluation plan for cases and closed conversations
 
-You must enable the **Enable bulk evaluations (preview)** checkbox in Customer Service admin center before you create and activate an evaluation plan for cases. Learn more in [Enable Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#enable-quality-evaluation-agent).
+You must enable the **Enable bulk evaluations (preview)** checkbox in Copilot Service admin center before you create and activate an evaluation plan for cases. Learn more in [Enable Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#enable-quality-evaluation-agent).
 
 > [!NOTE]
 > You can use conversation evaluations for voice and live chat channels only.
 
-1.  In Customer Service workspace, go to **Evaluation Plans**.
+1.  In Copilot Service workspace, go to **Evaluation Plans**.
 
 1.  On the **Evaluation plans** page, select **New**.
 
@@ -88,7 +88,7 @@ You need to turn on the **Criteria scoring** toggle for your evaluation criteria
 
 To create a real-time evaluation plan:
 
-1. In Customer Service workspace, go to **Evaluation Plans**.
+1. In Copilot Service workspace, go to **Evaluation Plans**.
 
 1. On the **Evaluation plans** page, select **New**.
 
@@ -106,11 +106,11 @@ To create a real-time evaluation plan:
     
 1.  Select **Save**.
 
-Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations (preview)](ongoing-quality-evaluation-agent-conversations.md).
+Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations](ongoing-quality-evaluation-agent-conversations.md).
 
 ## Activate, pause, resume, or delete evaluation plans
 
-1. In Customer Service workspace, go to **Evaluation plans**.
+1. In Copilot Service workspace, go to **Evaluation plans**.
 
 1. On the **Evaluation Plans** page, select the evaluation plans that you would like to activate, delete, resume, or pause.
 
@@ -120,7 +120,7 @@ When you pause a plan, it finishes the current batch and then stops before the n
 
 ## Enable bulk evaluation for cases (preview)
 
-1. In Customer Service workspace, go to **Evaluation plans**.
+1. In Copilot Service workspace, go to **Evaluation plans**.
 
 1. On the **Evaluation plans** page, select the evaluation plans.
 

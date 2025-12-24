@@ -55,28 +55,28 @@ Assign the **Monitoring Reader** role to your app to access App insights data. L
 
 Run the following script in your browser console after you sign in to your Dynamics 365 environment.
 
-    ```javascript
-    var globalContext = Xrm.Utility.getGlobalContext();
-    var OrgURL = globalContext.getClientUrl();
-    var ocConfigAPIURL = OrgURL + "/api/data/v9.0/managedidentities(c9c8f1ca-075c-4ffa-92ce-f4bc1a8a7101)";     
-    fetch(ocConfigAPIURL, {
-        method: 'PATCH',
-        body: JSON.stringify({
-            "applicationid": "Cx 3P app id", // Replace with actual Application ID that you copied when you registered the app.
-            "tenantid": "Cx 3P tenant id"    // Replace with actual Tenant ID that you copied when you registered the app.
-        }),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8'
-        }
-    })
-    .then(res => {
-        if (res.status === 204) {
-            console.log('PATCH successful!');
-        } else {
-            console.log('PATCH error!');
-        }
-    });
-    ```
+```javascript
+var globalContext = Xrm.Utility.getGlobalContext();
+var OrgURL = globalContext.getClientUrl();
+var ocConfigAPIURL = OrgURL + "/api/data/v9.0/managedidentities(c9c8f1ca-075c-4ffa-92ce-f4bc1a8a7101)";     
+fetch(ocConfigAPIURL, {
+    method: 'PATCH',
+    body: JSON.stringify({
+        "applicationid": "Cx 3P app id", // Replace with actual Application ID that you copied when you registered the app.
+        "tenantid": "Cx 3P tenant id"    // Replace with actual Tenant ID that you copied when you registered the app.
+    }),
+    headers: {
+       'Content-type': 'application/json; charset=UTF-8'
+    }
+})
+.then(res => {
+    if (res.status === 204) {
+        console.log('PATCH successful!');
+    } else {
+        console.log('PATCH error!');
+    }
+});
+```
 
 ### Fix federated identity credentials path
 

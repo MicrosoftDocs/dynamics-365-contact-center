@@ -1,5 +1,5 @@
 ---
-title: Use Copilot to draft an email in non-microsoft CRMs
+title: Use Copilot to draft an email in non-Microsoft CRMs
 description: Learn how customer service representatives can use Copilot to draft emails in non-Microsoft CRMs to increase productivity.
 author: gandhamm
 ms.author: mgandham
@@ -11,7 +11,7 @@ ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 
-# Use Copilot to draft an email in non-microsoft CRMs
+# Use Copilot to draft an email in non-Microsoft CRMs
 
 [!INCLUDE[cc-feature-availability-embed-only](../includes/cc-feature-availability-embed-only.md)]
 
@@ -64,3 +64,7 @@ If your administrator enabled knowledge sources, the following actions occur:
 
 
   :::image type="content" source="../media/embed-copilot-email.png" alt-text="Screenshot shows options to write emails.":::
+
+## Related information
+
+[Enable Copilot to draft emails](../administer/copilot-email-enable.md#enable-copilot-to-draft-emails)

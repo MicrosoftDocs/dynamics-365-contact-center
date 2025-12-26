@@ -27,23 +27,23 @@ With the debug experience, organizations can access diagnostic telemetry for the
 
 ### Configure Application Insights
 
-Configure an [application insights resource](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource).
+Configure an [Application Insights resource](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource) where the Dynamics 365 Contact Center telemetry data can be saved.
 
 ### Configure conversation diagnostics and connection
 
-Configure [conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics) for the environment and [set up a connection with Azure Application Insights](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights).
+Configure [conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics) for the environment and [set up a connection with Azure Application Insights](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights). This connection is used by Dynamics 365 Contact Center to connect with the Application Insights instance.
 
 ### Update Application Insights ID in environment variable
 
-Update the Application insights ID in the **Default Value** and **Current Value** fields of the environment variable. Learn more in [Environment variables for Power Platform](/power-apps/maker/data-platform/environmentvariables#manually-create-an-environment-variable-in-a-solution).
+Update the Application insights ID in the **Default Value** and **Current Value** fields of the environment variable. This is required by Dataverse to access the Dynamics 365 Contact Center telemetry data from the Application Insights instance. Learn more in [Environment variables for Power Platform](/power-apps/maker/data-platform/environmentvariables#manually-create-an-environment-variable-in-a-solution).
 
 ### Create and register an app
 
-1. Create and register an app for your tenant. Learn more in [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).
+1. Create and register an app for your tenant. The app is required to authorize Dataverse to access the telemetry data in Application Insights. Learn more in [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).
 
-1. Copy the **Application (client) ID** and **Directory (tenant) ID**, and save them in a secure location like a Notepad file for future references.
+1. Copy the **Application (client) ID** and **Directory (tenant) ID**, and save them in a secure location like a Notepad file to update the managed identity record.
 
-### Configure federated identity credentials
+**Configure federated identity credentials**
 
 [Configure federated identity credentials](/power-platform/admin/set-up-managed-identity#configure-federated-identity-credentials) with the following details:
 
@@ -54,11 +54,11 @@ Update the Application insights ID in the **Default Value** and **Current Value*
 - **Name**: App name
 - **Audience**: `api://AzureADTokenExchange`
 
-### Assign Monitoring Reader role
+**Assign Monitoring Reader role**
 
 Assign the **Monitoring Reader** role to your app to access App insights data. Learn about assigning roles in [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal) and about roles in [Roles, permissions, and security in Azure Monitor](/azure/azure-monitor/fundamentals/roles-permissions-security#monitoring-reader).
 
-### Update managed identity record
+**Update managed identity record**
 
 Run the following script in your browser console after you sign in to your Dynamics 365 environment.
 
@@ -85,7 +85,7 @@ fetch(ocConfigAPIURL, {
 });
 ```
 
-### Fix federated identity credentials path
+**Fix federated identity credentials path**
 
 1. In Copilot Service workspace, open the browser console, go to the **Network** tab, search for `msdyn_GetAppInsightsTelemetry`, and select a failed request call.
 

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 06/02/2025
+ms.date: 12/12/2025
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -38,11 +38,12 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
     - **Voice call - outbound pre-dial - default**: For progressive and copilot dial mode calls
 
 > [!NOTE]
-> The routing rules are automatically configured based on the proactive engagement settings and appear under the **Auto generated rules (advanced)** section of the workstream.
+> - With Azure Communication Services, you can use Direct Routing numbers only. With Teams Phone numbers, you can use Direct Routing, Direct Offer, and Operator Connect numbers.
+> - The routing rules are automatically configured based on the proactive engagement settings and appear under the **Auto generated rules (advanced)** section of the workstream.
 
 ## Configure settings to engage proactively with customers
 
-In the site map of Copilot Service admin center, you can navigate to the proactive engagement settings in one of the following ways and then create a proactive engagement setting.
+In the site map of Copilot Service admin center, navigate to the settings in one of the following ways and then create a proactive engagement setting.
 
 - Select **Productivity** under **Support experience**. Select **Manage** for **Proactive engagements (preview)**, and then select **New**.
 - Select **Workstreams** under **Customer support**, select an outbound workstream for voice, and on the workstream page, select **New proactive engagement**.
@@ -146,3 +147,5 @@ If you configure disposition codes, service representatives can select the dispo
 
 [Overview of proactive engagement](overview-proactive-engagement.md)  
 [Overview of conversational journeys](/dynamics365/customer-insights/journeys/conversational-journeys-overview)  
+[Proactive Outbound dashboard](../use/proactive-outbound-dashboard.md#proactive-outbound-dashboard)
+  

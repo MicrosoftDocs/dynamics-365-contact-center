@@ -256,8 +256,6 @@
           href: /dynamics365/customer-service/use/teams-use-suggested-contacts?context=/dynamics365/contact-center/context/use-context
         - name: Use Teams meetings
           href: /dynamics365/customer-service/use/use-teams-meetings?context=/dynamics365/contact-center/context/use-context
-        - name: Use auto-summarization for ongoing conversations
-          href: /dynamics365/customer-service/use/cs-ai-generated-summary?context=/dynamics365/contact-center/context/use-context
         - name: Use Join a Teams call to enhance customer conversations
           href: /dynamics365/customer-service/use/join-a-teams-call?context=/dynamics365/contact-center/context/use-context
       - name: Analytics dashboards and insights
@@ -278,6 +276,10 @@
             href: /dynamics365/customer-service/use/realtime-ongoing?context=/dynamics365/contact-center/context/use-context
           - name: Backlog conversation report
             href: /dynamics365/customer-service/use/realtime-backlog-conv?context=/dynamics365/contact-center/context/use-context
+          - name: Intent group report
+            href: realtime-intent-group-report.md
+          - name: User group report
+            href: realtime-agent-group-report.md
         - name: Use historical analytics dashboards
           items: 
           - name: Dashboards
@@ -298,12 +300,16 @@
             href: /dynamics365/customer-service/use/oc-voicemail-dashboard?context=/dynamics365/contact-center/context/use-context
           - name: Proactive Outbound dashboard
             href: proactive-outbound-dashboard.md
+          - name: Bot-Intent dashboard
+            href: bot-intent-historical.md
         - name: Use conversations
           items:
           - name: Manage all ongoing conversations
             href: all-ongoing-conversations.md
           - name: Manage ongoing record conversations
             href: manage-ongoing-record-conversations.md
+          - name: Manage ongoing Quality Evaluation Agent conversations
+            href: ongoing-quality-evaluation-agent-conversations.md
         - name: Manage ongoing conversations
           href: all-ongoing-conversations.md
         - name: Use knowledge management analytics

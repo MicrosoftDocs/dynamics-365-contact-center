@@ -21,7 +21,7 @@ You can reset, restore, or recover your omnichannel environments. After you rese
 
 ## Reset organization
 
-This operation restores the environment to its original state. It can be used to create a new project, free up storage space, and remove an environment containing personal data. In Power Platform admin center, follow the steps in [Reset environment](/power-platform/admin/reset-environment) to reset the environment. 
+This operation restores the environment to its original state. It can be used to create a new project, free up storage space, and remove an environment containing personal data. In Power Platform admin center, follow the steps in [Reset environment](/power-platform/admin/reset-environment) to reset the environment.
 
 ## Restore organization
 
@@ -33,5 +33,4 @@ You can retrieve a recently deleted omnichannel environment and restore it to it
 
 ### Related information
 
-[Copy environment with omnichannel capabilities](copy-environment-with-omnichannel.md)  
-
+[Copy environment with omnichannel capabilities](/dynamics365/customer-service/implement/copy-environment-with-omnichannel)  

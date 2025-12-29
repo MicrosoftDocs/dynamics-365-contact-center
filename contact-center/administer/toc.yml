@@ -546,8 +546,6 @@
           href: /dynamics365/customer-service/administer/configure-teams-collaboration?context=/dynamics365/contact-center/context/administer-context
         - name: Configure rules-based suggestions for contacts in Teams
           href: /dynamics365/customer-service/administer/configure-rules-based-suggested-contacts?context=/dynamics365/contact-center/context/administer-context
-        - name: Configure auto-summarization of conversations
-          href: /dynamics365/customer-service/administer/cs-enable-ai-generated-summary?context=/dynamics365/contact-center/context/administer-context
         - name: Set up Join a Teams call for representatives
           href: /dynamics365/customer-service/administer/set-up-join-a-teams-call?context=/dynamics365/contact-center/context/administer-context
         - name: Configure customer support swarming
@@ -562,6 +560,8 @@
           href: /dynamics365/customer-service/administer/cs-region-availability-service-limits?context=/dynamics365/contact-center/context/administer-context
         - name: Service limits for analytics and insights
           href: /dynamics365/customer-service/administer/ana-ser-limits?context=/dynamics365/contact-center/context/administer-context
+        - name: Enable Agent insights dashboard, KPI goals
+          href: enable-agent-insights.md
         - name: Configure analytics and insights dashboards
           href: /dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh?context=/dynamics365/contact-center/context/administer-context
         - name: Manage real-time analytics dashboards

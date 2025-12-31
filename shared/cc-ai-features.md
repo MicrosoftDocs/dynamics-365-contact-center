@@ -1,5 +1,5 @@
 
-| Feature | Description | Learn more |
+| AI agent | Description | Learn more |
 |---------|-------------|------------|
 | **Case Management Agent** | Helps automate case lifecycle—create, update, resolve, and close—to save time that service representatives otherwise spend on manually filling case details. | - [Use Case Management Agent to create and update cases](/dynamics365/customer-service/use/use-case-creation-agent)<br>- [Use Case Management Agent to resolve cases](/dynamics365/customer-service/use/use-case-resolution-agent)<br>- [Use autonomous agent to follow up and close cases](/dynamics365/customer-service/use/use-case-follow-up-closure) |
 | **Customer Knowledge Management Agent** | Helps extract knowledge from cases and manage customer knowledge in real time. After a case is closed, the Customer Knowledge Management Agent analyzes case details, fills knowledge gaps, and makes sure of compliance. | [Use Customer Knowledge Management Agent to create and manage knowledge articles](/dynamics365/customer-service/administer/admin-km-agent) |

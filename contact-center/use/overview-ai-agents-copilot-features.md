@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 11/07/2025
+ms.date: 12/31/2025
 ms.custom: bap-template
 ---
 
@@ -24,3 +24,6 @@ Copilot features are AI-powered assistants that help service representatives by 
 
 By leveraging these AI agents and Copilot features, organizations can improve customer satisfaction, reduce response times, and enhance the overall efficiency of their contact center operations.
 
+### Related information
+
+[Responsbile AI FAQ for AI agents](../implement/faq-rai-ai-agents.md)  

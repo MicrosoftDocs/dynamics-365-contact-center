@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot 
-ms.date: 12/15/2025
+ms.date: 01/15/2026
 ms.custom: bap-template
 ---
 
@@ -31,7 +31,7 @@ Configure an [Application Insights resource](/azure/azure-monitor/app/create-wor
 
 ### Configure conversation diagnostics and connection
 
-Configure [conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics) for the environment and [set up a connection with Azure Application Insights](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights). This connection is used by Dynamics 365 Contact Center to connect with the Application Insights instance.
+Configure [conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics) for the environment and [set up a connection with Azure Application Insights](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights). This connection is used by Dynamics 365 Contact Center to connect with the Application Insights instance and push data from the Dynamics instance into Application Insights.
 
 ### Update Application Insights ID in environment variable
 

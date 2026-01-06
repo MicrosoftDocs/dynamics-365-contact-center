@@ -17,11 +17,11 @@ ms.custom: bap-template
 
 In your omnichannel environments, you can manage various events and operations that are essential to maintain and oversee your organization's environments within specific platforms or systems.
 
-You can reset, restore, or recover your omnichannel environments. After you reset the environment, you must [provision the channels](provision-channels.md) or [enable unified routing](/dynamics365/customer-service/administer/provision-unified-routing) again to use omnichannel capabilities.
+You can reset, restore, or recover your omnichannel environments. After you reset or restore the environment, you must [provision the channels](provision-channels.md) or [enable unified routing](/dynamics365/customer-service/administer/provision-unified-routing) again to use omnichannel capabilities.
 
 ## Reset organization
 
-This operation restores the environment to its original state. It can be used to create a new project, free up storage space, and remove an environment containing personal data. In Power Platform admin center, follow the steps in [Reset environment](/power-platform/admin/reset-environment) to reset the environment. 
+This operation restores the environment to its original state. It can be used to create a new project, free up storage space, and remove an environment containing personal data. In Power Platform admin center, follow the steps in [Reset environment](/power-platform/admin/reset-environment) to reset the environment.
 
 ## Restore organization
 
@@ -33,5 +33,4 @@ You can retrieve a recently deleted omnichannel environment and restore it to it
 
 ### Related information
 
-[Copy environment with omnichannel capabilities](copy-environment-with-omnichannel.md)  
-
+[Copy environment with omnichannel capabilities](/dynamics365/customer-service/implement/copy-environment-with-omnichannel)  

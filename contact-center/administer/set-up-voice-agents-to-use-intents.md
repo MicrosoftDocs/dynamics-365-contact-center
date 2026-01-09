@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 11/07/2025
+ms.date: 01/07/2026
 ms.custom: bap-template
 ---
 
@@ -105,7 +105,8 @@ Configure your voice agent to use context variables from the conversation and de
 To recreate the IVR workflows, the voice agent needs to access the connectors through a service principal that you must create for the environment where the customer data is stored.
 
 1. As a user with administrator permissions to access the environment, sign in to [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
-1. In the site map, select **API Explorer**, and under **Resources available**, expand **servicePrincipals**, and select [**POST**](https://graph.microsoft.com/v1.0/servicePrincipals).
+
+1. In the site map, select **API Explorer**, and under **Resources available**, expand **servicePrincipals**, and select **POST**.
 1. Enter the following JSON in **Request Body**, and select **Run query**:
    { "appId" : "d3e4eed9-fdab-4c55-a667-e4d1ffc8bb85"}
 

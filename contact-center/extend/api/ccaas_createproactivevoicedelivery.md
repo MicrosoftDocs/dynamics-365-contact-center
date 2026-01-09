@@ -1,19 +1,16 @@
 ---
-title: Use CCaaS_CreateProactiveVoiceDelivery API (preview)
+title: Use CCaaS_CreateProactiveVoiceDelivery API
 description: Learn about the CCaaS_CreateProactiveVoiceDelivery API, which enables organizations to initiate proactive outbound voice calls to customers.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: reference
-ms.date: 06/02/2025
-ms.collection: 
+ms.date: 01/08/2026
+ms.collection: bap-ai-copilot
 ms.custom: bap-template 
 ---
 
-# Use CCaaS_CreateProactiveVoiceDelivery API (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
+# Use CCaaS_CreateProactiveVoiceDelivery API
 
 You can use the `CCaaS_CreateProactiveVoiceDelivery` API to initiate proactive outbound voice calls to customers or allow customers to schedule callbacks through the Proactive Engagement Service.
 
@@ -21,8 +18,6 @@ You can use the `CCaaS_CreateProactiveVoiceDelivery` API to initiate proactive o
 > If an organization is using the `CCaaS_CreateProactiveVoiceDelivery` API to initiate an outbound voice call, the organization is responsible for consent management, including the manual updating of "do not call lists" for setting quiet hours for customer contact. Make sure that the following conditions are met:
 > - Proper consent is obtained before contacting customers
 > - Customers are contacted during permitted hours only.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -33,7 +28,7 @@ You can use the `CCaaS_CreateProactiveVoiceDelivery` API to initiate proactive o
 
 Proactive engagement enables organizations to enhance customer interactions by initiating outbound communications through the voice channel. You can configure proactive engagement using a Customer Insights journey or the `CCaaS_CreateProactiveVoiceDelivery`.
 
- The `CCaaS_CreateProactiveVoiceDelivery` API enables organizations to initiate proactive outbound voice calls to customers through the Proactive Engagement Service. The API triggers outbound voice calls through the Voice Runtime system. Calls are placed according to the configured dial mode either immediately (if no time windows are specified) or during the designated time windows you provide.
+The `CCaaS_CreateProactiveVoiceDelivery` API enables organizations to initiate proactive outbound voice calls to customers through the Proactive Engagement Service. The API triggers outbound voice calls through the Voice Runtime system. Calls are placed according to the configured dial mode either immediately (if no time windows are specified) or during the designated time windows you provide.
 
 This API allows contact centers to reach out to customers at the right time with relevant information, reminders, or notifications, enhancing customer experience while optimizing operational efficiency.
 
@@ -161,6 +156,54 @@ Integrate the `CCaaS_CreateProactiveVoiceDelivery` API with your website to allo
 
 ```
 
+### CCaaS_CreateOperation
+
+Suspend, resume and cancel.
+
+Implementation Status: In Development
+
+|  API                   | CCaaS_CreateOperation                       |
+|------------------------|---------------------------------------------|
+| Description            | Request a cancel, suspend or resume operation on PES |
+| URL                    | https://\<orgurl\>/api/data/v9.2/CaaS_CreateOperation|
+| Version                | 1.0                                          |
+| OData Operation        | Action                                       |
+| OData Type             | Bounded                                      |
+| HTTP Verb              | POST                                         |
+| HTTP Request Headers   | Authorization: \<mandatory, Bearer token from Azure AD for the API caller user in CCaaS instance's tenant.\> |
+| Sample Scenarios       |                                              |
+| Privilege(s) Required  |                                              |
+
+HTTP Request Keys
+
+|Key |	Type |	Required  |	Description  |
+|-----|------|------------|--------------|
+| ApiVersion |	string |	yes |	must be set to "1.0"|
+| ProactiveEngagementConfigId	| string	|no	| the proactive engagement id |
+| DeliveryId |	string |	no |	if Cancel, the delivery to be cancelled|
+|Operation |	string |	yes |	Suspend, Resume, or Cancel|
+
+**Sample payload**
+
+``` KQL
+{ 
+  "ApiVersion": "1.0", 
+  "ProactiveEngagementConfigId": "47089bbe-deb7-ef11-b8e6-000d3a36a6b3", 
+  "Operation ": "Resume"
+}
+```
+
+**HTTP Response Status**
+
+| HTTP | Status	Remark |
+|---------|-----------|
+| 202 | Accepted |
+| 400 |	Bad Request (Wrong input parameters) |
+| 401	| Unauthorized|
+| 404 |  Resource not found |
+| 429 |	Rate limit (Too many requests) |
+| 405 |	API not allowed |
+
 ### Related information
 
-[Use proactive engagement tables for reporting](../proactive-engagement-tables.md)
+[Use proactive engagement tables for reporting](../proactive-engagement-tables.md)  

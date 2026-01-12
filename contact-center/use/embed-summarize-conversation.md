@@ -1,5 +1,5 @@
 ---
-title: Use Copilot to summarize conversations in non-Microsoft CRM sytems
+title: Use Copilot to summarize conversations in non-Microsoft CRM systems
 description: Learn how customer service representatives can use Copilot to summarize cases and conversations in Copilot Service workspace.
 author: gandhamm 
 ms.author: mgandham 

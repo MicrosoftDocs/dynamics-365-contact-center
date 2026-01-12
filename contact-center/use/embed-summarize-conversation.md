@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 07/14/2025
+ms.date: 01/13/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
@@ -14,7 +14,6 @@ ms.custom: bap-template
 # Use Copilot to summarize conversations in non-Microsoft CRM systems
 
 [!INCLUDE[cc-feature-availability-embed](../includes/cc-feature-availability-embed.md)]
-
 
 [!INCLUDE[cc-conv-summary-intro](../../shared/cc-conv-summary-intro.md)]
 

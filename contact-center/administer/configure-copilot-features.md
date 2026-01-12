@@ -5,7 +5,7 @@ author: gandhamm
 ms.author: mgandham
 ms.reviewer: neeranelli
 ms.topic: how-to
-ms.date: 09/02/2025
+ms.date: 01/13/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ms.collection: bap-ai-copilot
@@ -40,7 +40,6 @@ The respond to questions, compose an email, and summarize cases and conversation
 
 To learn about supported languages for Copilot, see [Language support for AI-based analytics and insights]( /dynamics365/customer-service/administer/cs-region-availability-service-limits#language-support-for-ai-based-analytics-and-insights-in-customer-service?context=/dynamics365/contact-center/context/administer-context).
 
-
 ## Opt in to continue with Copilot setup
 
 In Copilot Service admin center, the [**Copilot for questions and emails**](copilot-enable-help-pane.md) or [**Summaries**](copilot-enable-summary.md) page, when you enable the copilot features, you must opt in to continue with the setup. The opt-in page displays a link to review the terms and conditions. You can select **Opt in** to continue with the setup.  
@@ -65,7 +64,7 @@ Perform the following steps to add the Copilot features to an experience profile
 
    :::image type="content" source="../media/copilot-help-pane-enable-mini.png" alt-text="Screenshot of the Productivity panel in experience profile." lightbox="../media/copilot-help-pane-enable.png":::|
 
-1.  In the **Copilot AI features** section, select edit and then select  the required features **Ask a question**, **Write an email**, **Case summary**, **Live conversation summary**, you want to enable for that profile.  
+1. In the **Copilot AI features** section, select edit and then select  the required features **Ask a question**, **Write an email**, **Case summary**, **Live conversation summary**, you want to enable for that profile.  
 
 ## Record service representatives interactions with Copilot
 
@@ -105,7 +104,7 @@ Out of the box, users with the Customer Service Representative role only can use
 - msdyn_appconfiguration
 - msdyn_panetoolconfiguration
 
-More information: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
+Learn more in [Security roles and privileges](/power-platform/admin/security-roles-privileges).
 
 ## Next steps
 

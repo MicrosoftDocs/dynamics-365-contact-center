@@ -80,7 +80,7 @@ Learn more in [Set up a Dataverse connection](/power-apps/maker/data-platform/cr
 
 In Dynamics 365 Contact Center, you can set the primary language only for the survey. You can configure multilingual surveys in Copilot Studio. Learn more in [Configure and create multilingual agents](/microsoft-copilot-studio/multilingual)
 
-Multilingual survey agents work only when you set up an IVR agent that identifies the customer language.
+Multilingual survey agents require an IVR agent that first detects the customers language. They are supported only on the voice channel and in-line chat surveys; link‑mode surveys do not support multilingual survey scenarios.
 
 ### Considerations for multilingual survey agents
 

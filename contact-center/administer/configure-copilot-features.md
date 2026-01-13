@@ -1,6 +1,6 @@
 ---
 title: Enable Copilot features 
-description: Learn how to enable the various Copilot features
+description: Learn how to enable the various Copilot features in Dynamics 365 Contact Center.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: neeranelli
@@ -50,21 +50,22 @@ In Copilot Service admin center, opt out from the copilot features on the **Copi
 
 ## Make Copilot available to service representatives
 
-For service representatives to be able to use the copilot features, you need to enable the copilot features in [experience profiles](/dynamics365/customer-service/administer/add-profile-default?context=/dynamics365/contact-center/administer-context). By default, service representatives added to the out-of-the-box experience profiles can use the Copilot features.
+For service representatives to use the copilot features, enable the copilot features in [experience profiles](/dynamics365/customer-service/administer/add-profile-default?context=/dynamics365/contact-center/administer-context). By default, service representatives added to the out-of-the-box experience profiles can use the Copilot features.
 
-You can create a custom experience profile and enable the required features to limit the features service representatives can use. You can then [assign the custom profile to the service representatives](/dynamics365/customer-service/administer/add-profile-default?context=/dynamics365/contact-center/administer-context).
+To limit the copilot features that the representative can use, create or edit a custom profile and enable specific copilot features for the profile. You can then [assign the custom profile to the service representatives](/dynamics365/customer-service/administer/add-profile-default?context=/dynamics365/contact-center/administer-context).
 
-Perform the following steps to add the Copilot features to an experience profile:
+Perform the following steps to add the Copilot features to the custom experience profile:
 
-1. Go to [**Experience profiles**](/dynamics365/customer-service/administer/create-agent-experience-profile?context=/dynamics365/contact-center/administer-context) using one of the following navigation options:
+1. In Copilot Service admin center, go to [**Experience profiles**](/dynamics365/customer-service/administer/create-agent-experience-profile?context=/dynamics365/contact-center/administer-context) using one of the following navigation options:
    - **Support experience** > **Workspaces**
    - **Copilot for questions and emails** > **Agent access** > **Experience profiles**
 1. Select the required experience profile.
-1. On the **Productivity Pane**, turn on the **Copilot for questions and emails* toggle so that service representatives can use the Copilot features such suggest a response, ask a question, and write an email on the productivity pane.
+1. On the **Productivity Pane**, turn on the **Copilot for questions and emails* toggle.
 
    :::image type="content" source="../media/copilot-help-pane-enable-mini.png" alt-text="Screenshot of the Productivity panel in experience profile." lightbox="../media/copilot-help-pane-enable.png":::|
 
-1. In the **Copilot AI features** section, select edit and then select  the required features **Ask a question**, **Write an email**, **Case summary**, **Live conversation summary**, you want to enable for that profile.  
+1. In the **Copilot AI features** section, select edit and then select the features, such as **Ask a question**, **Write an email**, **Case summary**, **Live conversation summary** to enable for the profile.  
+1. Save the changes.
 
 ## Record service representatives interactions with Copilot
 
@@ -72,7 +73,7 @@ In the **Summaries** and **Copilot for questions and emails** configuration page
 
 ## Assign roles and privileges
 
-Out of the box, users with the Customer Service Representative role only can use the copilot features. Therefore, make sure that users with custom roles have the following privileges: 
+Out of the box, users with the Customer Service Representative role only can use the copilot features. Therefore, make sure that users with custom roles have the following privileges:
 
 - prvCreatemsdyn_copilotinteraction 
 - prvAppendmsdyn_copilotinteraction 

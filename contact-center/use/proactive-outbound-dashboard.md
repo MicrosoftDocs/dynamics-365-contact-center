@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
 ms.collection:
-ms.date: 12/10/2025
+ms.date: 01/14/2026
 ms.custom: bap-template
 ---
 
@@ -25,7 +25,7 @@ When a proactive outbound call is initiated, an entry is created in msdyn_proact
 
 - You enabled the Proactive Outbound dashboard from Customer Service admin center. Learn more in [Enable omnichannel historical analytics for proactive outbound](/dynamics365/customer-service/administer/oc-historical-analytics-reports#enable-omnichannel-historical-analytics-for-proactive-outbound-engagements).
 
-- You [configured proactive engagement (preview)](../administer/configure-proactive-engagement.md#configure-proactive-engagement-preview).
+- You [configured proactive engagement](../administer/configure-proactive-engagement.md).
 
 - You have the Omnichannel Supervisor role.
 
@@ -62,6 +62,6 @@ The dashboard shows ongoing interactions using the out-of-the-box filters, **Con
 
 ## Related information
 
-[Configure proactive engagement (preview)](../administer/configure-proactive-engagement.md#configure-proactive-engagement-preview)  
+[Configure proactive engagement](../administer/configure-proactive-engagement.md)  
 [Omnichannel for Customer Service dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights)    
 [Enable historical analytics for proactive outbound engagements](/dynamics365/customer-service/administer/oc-historical-analytics-reports)

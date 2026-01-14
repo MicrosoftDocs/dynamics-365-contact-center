@@ -1,23 +1,19 @@
 ---
-title: Configure proactive engagement (preview)
+title: Configure proactive engagement
 description: Learn how to set up proactive engagement, including dialing modes and operational rules for optimized customer service in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim 
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 12/12/2025
+ms.date: 01/14/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
-# Configure proactive engagement (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Configure proactive engagement
 
 Proactive engagement in Dynamics 365 enables organizations to enhance customer interactions by initiating outbound communications through the voice channel. This feature allows businesses to streamline customer outreach, improve agent productivity, and deliver personalized experiences. The article describes how to configure proactive engagement settings, including dialing modes, routing details, and operational rules to optimize your customer service operations.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -27,7 +23,7 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 
 ## Set up an outbound workstream
 
-1. Create a workstream by selecting the **Outbound (preview)** option. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context).
+1. Create a workstream by selecting the **Outbound** option. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context).
 1.	Set up the outbound workstream behaviors in the **Setup Behaviors** section of the workstream as follows:
    
     - Select **Setup**, and on the page that appears, select the **Caller ID Number** in the list. Numbers available to use only are displayed. Learn more in [Configure phone numbers for outbound calling](/dynamics365/customer-service/administer/voice-channel-outbound-calling#configure-phone-numbers-for-outbound-calling).
@@ -45,11 +41,11 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 
 In the site map of Copilot Service admin center, navigate to the settings in one of the following ways and then create a proactive engagement setting.
 
-- Select **Productivity** under **Support experience**. Select **Manage** for **Proactive engagements (preview)**, and then select **New**.
+- Select **Productivity** under **Support experience**. Select **Manage** for **Proactive engagements**, and then select **New**.
 - Select **Workstreams** under **Customer support**, select an outbound workstream for voice, and on the workstream page, select **New proactive engagement**.
 
-1. On **Create new proactive engagement (preview)**, enter the following details in **Engagement details**:
-   - **Name**: A name for the proactive engagement. 
+1. In the **Create new proactive engagement** pane, enter the following details in **Engagement details**:
+   - **Name**: A name for the proactive engagement.
    - **Description**: A description for the proactive engagement that helps the representative understand the purpose of the call for progressive and preview dial modes.
    - **Workstream**: A workstream.
    - **Channel type**: **Voice** is selected by default and not available for edit.
@@ -64,15 +60,16 @@ In the site map of Copilot Service admin center, navigate to the settings in one
 
 The dialing modes are used to determine how the system can make calls to customers. The following dialing modes are available:
 
-1. On the **Create new proactive engagement (preview)** dialog, select one of the dialing modes as follows:
+1. In the **Create new proactive engagement** pane, select one of the dialing modes as follows:
    - **Copilot**: The system automatically dials the customer and connects the call to the AI agent when the customer answers. This mode is used for high-volume outbound calls.
    - **Progressive**: The system starts the call with the AI agent and then adds a representative after the agent actions are complete.
    - **Preview**: The system adds the representative to the call and then dials the customer.
+   - **Predictive**: The system automatically places phone calls before an agent becomes available, predicting when an agent will be free to take the next call.
 
 1. Select one of the following priority levels:
    - **Normal**
    - **High**
-   - **Critical** 
+   - **Critical**
 
 1. Select the **Max number of concurrent calls for Copilot Mode** that refers to the maximum number of calls the AI agent can make concurrently. The maximum number that you can specify is 500.
 
@@ -90,11 +87,12 @@ The dialing modes are used to determine how the system can make calls to custome
    - **Continue making calls**:
      - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
 
-1. For Copilot and progressive modes, select **Use rules** to set rules for the following parameters that help control the throttling and pacing for the proactive engagement:
-   - **Abandonment rate**: (Copilot and progressive modes). The percentage of customers who hang up before connecting with a representative.
-   - **Average wait time**: (Copilot and progressive modes).The average amount of time it takes for customers to connect to representatives.
+1. For Copilot, progressive, and predictive modes, select **Use rules** to set rules for the following parameters that help control the throttling and pacing for the proactive engagement:
+   - **Abandonment rate**: (Copilot, progressive, and predictive modes). The percentage of customers who hang up before connecting with a representative.
+   - **Average wait time**: (Copilot, progressive, and predictive modes).The average amount of time it takes for customers to connect to representatives.
    - **Escalation count**: (Copilot mode). The total number of escalations made from the AI agent.
-   - **Open concurrent escalations**: (Copilot mode). The total number of open escalations that haven't been resolved. 
+   - **Open concurrent escalations**: (Copilot mode). The total number of open escalations that haven't been resolved.
+   - **Percentage of queue**: (Predictive mode) To balance queue capacity, you can set how much percent of the queue you want dedicated to the proactive engagement.
 
 1. Select **Next** if you want to configure the outcomes.
 
@@ -102,11 +100,37 @@ The dialing modes are used to determine how the system can make calls to custome
 
 The outcomes are the results of the proactive engagement call. The outcomes are used to determine how the system handles the call when a customer answers.
 
-1. On the **Create new proactive engagement (preview)** dialog, on the **Outcomes** page, select the outcomes that are available for the proactive engagement, and then select **Next**.
+1. In the **Create new proactive engagement** pane, on the **Outcomes** page, select the outcomes that are available for the proactive engagement, and then select **Next**.
    - To add attributes, [configure context variables for the outbound workstream](/dynamics365/customer-service/administer/manage-context-variables).
    - Make sure that when you add the context variables in Copilot agent, you use the same names that you created in the workstream. Learn more in [Configure context variables for Copilot agent](/dynamics365/customer-service/administer/context-variables-for-bot#configure-context-variables-for-copilot-agent).
 
 1. Review the settings on the **Summary** page, and then select **Create**.
+
+> [!NOTE]
+> If a context variable is created in Copilot Studio and a variable with the same name exists in the workstream, the value is automatically sent to Dynamics 365 in real time, making it available for use in the contact center. These context variables are accessible as disposition codes and for branching logic in Customer Insights Journey, enhancing the ability to automate and customize call handling based on conversational outcomes.
+
+The SIP-based early media outcomes, such as LiveAnswer, AnsweringMachine, Busy, NoAnswer, and others are stored as result values in the proactive delivery entity and can be referenced for call status tracking. With these outcomes, Customer Insights Journey supports more granular branching options out of the box, allowing users to define actions based on specific call results without additional configuration.
+
+The SIP-based outcomes are as follows.
+
+| Result | Description |
+|--------|-------------|
+| LiveAnswer | Answered by someone or something and interacted with Copilot agent or Copilot Studio Agent. |
+| AnsweringMachine | Determined as answering machine. Left message or voicemail if Copilot agent or Copilot Studio agent has answering machine detection topic enabled and configured to leave a message. |
+| AnsweringMachineHangup | Determined as answering machine, Copilot agent or Copilot Studio agent hung up as configured in the topic and didn't leave a message or voicemail. |
+| Undetermined | Answered by someone or something but didn't interact or have a conversation with Copilot agent or Copilot Studio agent. |
+| NotAHandset | Detected as some tone such as SIT or FAX that indicates it's not a service representative or an answering machine. |
+| BotFailed | Copilot agent or Copilot Studio agent failed to get started or failed during conversation with customer where phone went off-hook. |
+| CallEnded | Preview dial mode call where customer phone went off-hook. |
+| Busy | Customer returned busy signal, as indicated by SIP diagnostic information or early media results from Azure Communication Services.  Customer phone didn't go off the hook. |
+| NoAnswer | Customer phone dial resulted in no answer, SIP diagnostic information or early media results from Azure Communication Services. Customer phone didn't go off the hook. |
+| InvalidAddress | Customer phone dial resulted in invalid address, as indicated by diagnostic information or early media results from Azure Communication Services. Customer phone didn't go off the hook. |
+| CallFailed | Customer phone didn't go off the hook and there was no SIP diagnostic information or early media results from Azure Communication Services. |
+| Terminated | Preview dial mode call where customer wasn't attempted to be engaged because no agent was available  or accepted after launching the call and valid window to contact the customer ended by then. |
+| Unknown | Customer phone was attempted to be engaged, but there isn't enough information available about the attempt due to some error condition. |
+| Cancelled | Customer wasn't attempted to be engaged because there was a request to cancel the delivery. |
+| Expired | There was no more valid time window to engage the customer, or expiration date specified was in the past. Customer wasn't attempted to be engaged. |
+| Error | Customer wasn't attempted to be engaged because there was some invalid configuration or data condition when it was time to engage the customer. |
 
 ## Configure proactive engagement with a journey using Customer Insights
 
@@ -135,11 +159,17 @@ Use the progressive dial mode to call the customer first. As soon as the custome
 
 Use the preview dial mode to identify a service representative from the specified queue and then notify them of the request to make the outbound call. The number of simultaneous calls made is dependent on the number of available representatives. If the representative accepts, then the system places the outbound call to customer with the representative already on the line. Representative gets to speak to the customer if they pick up or leave a voicemail. This dial mode prioritizes customer experience over representative use, and is best suited for scenarios that require a personalized experience.
 
-## Runtime experience
+### Predictive
 
-Service representatives view the proactive engagement calls based on the notification template that's attached to the outbound workstream for preview and progressive modes. The name and description that you specify for the proactive engagement appears on the notification.
-For the preview mode, service representatives can accept or reject the calls. 
-For the progressive mode, service representatives can only start the call. 
+A predictive dialer is an automated outbound calling system designed to boost agent efficiency and streamline customer outreach. It initiates calls ahead of agent availability by forecasting when agents are ready to engage. Using a dynamic algorithm, it calculates the optimal number of simultaneous calls to place based on anticipated agent availability. This algorithm factors in key contact center metrics such as abandonment rate, average wait time, queue targets, and other performance indicators to determine the ideal dialing volume.
+
+## Runtime experience of proactive engagement
+
+Service representatives view the proactive engagement calls based on the notification template that's attached to the outbound workstream for preview, progressive, and predictive modes. The name and description that you specify for the proactive engagement appear on the notification.
+
+For the preview mode, service representatives can accept or reject the calls.
+
+For the progressive and predictive modes, service representatives only can start the call.
 
 If you configure disposition codes, service representatives can select the disposition codes to record the outcome of the interaction. Learn more in [Configure disposition codes](configure-disposition-codes.md).
 
@@ -147,5 +177,7 @@ If you configure disposition codes, service representatives can select the dispo
 
 [Overview of proactive engagement](overview-proactive-engagement.md)  
 [Overview of conversational journeys](/dynamics365/customer-insights/journeys/conversational-journeys-overview)  
-[Proactive Outbound dashboard](../use/proactive-outbound-dashboard.md#proactive-outbound-dashboard)
+[Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md)  
+[Use CCaaS_CreateProactiveVoiceDelivery API](../extend/api/ccaas_createproactivevoicedelivery.md)  
+[Proactive Outbound dashboard](../use/proactive-outbound-dashboard.md#proactive-outbound-dashboard)  
   

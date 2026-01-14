@@ -22,7 +22,7 @@ You can use the `CCaaS_CreateProactiveVoiceDelivery` API to initiate proactive o
 ## Prerequisites
 
 - You must have the Omnichannel Agent or Omnichannel Supervisor role to call this API.
-- Proactive engagement is configured. Learn more in [Configure proactive engagement (preview)](../../administer/configure-proactive-engagement.md).
+- Proactive engagement is configured. Learn more in [Configure proactive engagement](../../administer/configure-proactive-engagement.md).
 
 ## Initiate proactive outbound calls
 

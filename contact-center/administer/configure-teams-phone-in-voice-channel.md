@@ -54,9 +54,9 @@ As a Teams administrator, run the following Teams PowerShell cmdlets in administ
 
 1. Associate the organization's Azure Communication Services resource with the Teams resource account.
    ```
-   Set-CsOnlineApplicationInstance -Identity <TeamsResourceAccountObjectId> -ApplicationId "4b8f0dce-d7d5-47a3-a27c-1764b90505e2" -AcsResourceId "<OrganizationAzureCommunicationServiceImmutableResourceID>"
+   Set-CsOnlineApplicationInstance -Identity <TeamsResourceAccountObjectId> -ApplicationId "GUID" -AcsResourceId "<OrganizationAzureCommunicationServiceImmutableResourceID>"
    
-   Sync-CsOnlineApplicationInstance -ObjectId <TeamsResourceAccountObjectId> -ApplicationId "4b8f0dce-d7d5-47a3-a27c-1764b90505e2" -AcsResourceId "<OrganizationAzureCommunicationServiceImmutableResourceID >"
+   Sync-CsOnlineApplicationInstance -ObjectId <TeamsResourceAccountObjectId> -ApplicationId "GUID" -AcsResourceId "<OrganizationAzureCommunicationServiceImmutableResourceID >"
    ```
 
 ## Assign license to Teams resource account

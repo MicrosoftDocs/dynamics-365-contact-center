@@ -1,6 +1,6 @@
 ---
-title: Diagnose contact center health using Application Insights dashboard
-description: Know how the Diagnose dashboard can help you, as a supervisor, why the automatic routing assignments are failing or high queue backlogs are affecting service SLAs in Dynamics 365 Contact Center and Customer Service.
+title: Diagnose contact center health with the Application Insights dashboard
+description: Know how the Diagnose dashboard can help you, as a supervisor, and why the automatic routing assignments are failing or high queue backlogs are affecting service SLAs in Dynamics 365 Contact Center and Customer Service.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
@@ -21,7 +21,7 @@ With debug experience, organizations can access diagnostic telemetry for the ful
 
 ## Prerequisites
 
-- The user must have the **Omnichannel supervisor privileges** to access the diagnostics dashboard. [Learn how to configure user roles to access analytics and dashboards](/dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh#configure-user-access-to-analytics-and-dashboards).
+- You have the **Omnichannel supervisor privileges** to access the diagnostics dashboard. [Learn how to configure user roles to access analytics and dashboards](/dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh#configure-user-access-to-analytics-and-dashboards).
 
 - [Omnichannel real-time dashboards are enabled](/dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator).
 
@@ -34,11 +34,11 @@ With debug experience, organizations can access diagnostic telemetry for the ful
 
 - Diagnostics insights is supported for out-of-the-box assignment methods only and considers presence, capacity, and skills check to diagnose the assignment issues.
 
-- The data in the App Insights out-of-the-box dashboards tab might have a delay of up to 15 minutes.
+- The data in the Application Insights out-of-the-box dashboards tab might have a delay of up to 15 minutes.
 
 - Diagnostics to view data related to transfer and consult conversations aren’t supported.
 
-## Key capabilities for debug
+## Key debug capabilities
 
 The debug experience offers the following diagnostic capabilities:
 
@@ -54,11 +54,11 @@ The debug experience offers the following diagnostic capabilities:
 
 - **Raw event access**: Access raw conversation telemetry from Application Insights for deep-dive analysis of specific work items.
 
-- **Assignment events**: Analyze the work item and service representative view for an assignment event. Details on each assignment event for a work item like why a representative wasn't found during an assignment run.
+- **Assignment events**: Analyze the work item and service representative view for an assignment event. Event‑level details that explain why a representative was or wasn’t identified during an assignment run.
 
 ## Access the Diagnose dashboard
 
-Supervisor can access the **Diagnose** dashboard in Omnichannel real time analytics dashboard.
+Supervisors can access the **Diagnose** dashboard in Omnichannel real-time analytics dashboard.
 
 1. In the site map of Copilot Service workspace, select **Omnichannel Realtime analytics**.
 
@@ -68,7 +68,7 @@ Supervisor can access the **Diagnose** dashboard in Omnichannel real time analyt
 
 ## Use the Debug tab to view assignment data
 
-Do the following steps for debugging issues:
+Perform the following steps to debug issues:
 
 - Use the top-level filters to select a period for analysis, the channel type, organization ID, and queue name.
 
@@ -83,7 +83,7 @@ Do the following steps for debugging issues:
 
     :::image type="content" source="../media/view-by-time-to-assign.png" alt-text="A screenshot of view by time to assign.":::
 
-- Select **View by assignment events** to understand distribution of conversations by total assignment events. An assignment event is defined as an event when the assignment engine tried to assign a conversation to a service representative.
+- Select **View by assignment events** to understand distribution of conversations by total assignment events. An assignment event is defined as an event when the assignment engine tries to assign a conversation to a service representative.
 
     :::image type="content" source="../media/view-by-assignment-events.png" alt-text="A screenshot of view by assignment events.":::
 
@@ -102,7 +102,7 @@ Do the following steps for debugging issues:
 
     :::image type="content" source="../media/debug-conversation-details.png" alt-text="A screenshot of details of a conversation.":::
 
-- For a detailed analysis of individual events, select the **View all events** link in the Information section.
+- For a detailed analysis of individual events, select the **View all events** link in the **Information** section.
 
   The **View all events** link provides details on each conversation stage with the full details of the stage.
 
@@ -120,7 +120,7 @@ Do the following steps for debugging issues:
 
   If the assignment engine is unable to find any eligible service representative, the CSR column shows **No eligible CSR found**. Select **No eligible CSR found** that takes you to **Assignment event details**.
 
-- The **Assignment event details** view is helpful if you want to validate why a representative wasn’t eligible during a particular assignment run. There is information around the conversation to help provide the requirements for a conversation in terms of presence, skills and capacity. The Timeline section has a search bar for service representatives. You can enter the representative name in the search bar to view the presence, skills, capacity and capacity profile during the assignment event. You can then compare it with the required capacity, required capacity profile, required skills and allowed presence from the Information section to understand why the representative was not selected during the assignment run.
+- The **Assignment event details** view is helpful if you want to validate why a representative wasn’t eligible during a particular assignment run. There is information around the conversation to help provide the requirements for a conversation in terms of presence, skills and capacity. The **Timeline** section has a search bar for service representatives. You can search for the representative to view the presence, skills, capacity and capacity profile during the assignment event. You can then compare it with the required capacity, required capacity profile, required skills and allowed presence from the **Information** section to understand why the representative wasn't selected during the assignment run.
 
 ### Related information
 

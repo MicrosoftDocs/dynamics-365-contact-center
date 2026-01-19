@@ -95,11 +95,11 @@ fetch(ocConfigAPIURL, {
 
 ## Pricing
 
-The conversation diagnostics data is stored in Azure Application Insights database. For details on pricing for data storage, refer [Pricing](/dynamics365/customer-service/administer/configure-conversation-diagnostics#pricing).
+The conversation diagnostics data is stored in Azure Application Insights database. Learn more about pricing for data storage in [Pricing](/dynamics365/customer-service/administer/configure-conversation-diagnostics#pricing).
 
 There’s no additional cost for using Azure workbooks.
 
-## Enable Debug tab experience for Diagnose dashboard
+## Enable Debug tab for Diagnose dashboard
 
 1. In Power Apps, go to the Default Solution or the solution in which you want to enable the dashboard.
 1. In **Objects**, go to **Setting** > **Setting definition**.

@@ -52,7 +52,7 @@ The debug experience offers the following diagnostic capabilities:
 
 - **Service representative details**: Get detailed service representative view including configured parameters like skills, capacity, presence and all conversations handled by the service representative.
 
-- **Raw event access**: Access raw conversation telemetry from Application Insights for deep-dive analysis of specific work items.
+- **Raw event access**: Access conversation telemetry from Application Insights for an in‑depth analysis of specific work items.
 
 - **Assignment events**: Analyze the work item and service representative view for an assignment event. Event‑level details that explain why a representative was or wasn’t identified during an assignment run.
 
@@ -110,7 +110,7 @@ Perform the following steps to debug issues:
 
 - For analysis of assignment related issues, you can go to **All conversations** list and select an individual assignment event to get details on the assignment event. You can also sort the list based on Assignment events to view the conversations that involved the assignment engine multiple times. You can also sort the list on **Time to assign** to view the conversations that have taken the maximum time to be assigned to service representative.
 
-- The **Assignment events** page for a conversation has details on conversation with information specific to the assignment, assignment method used, and ruleset information for the assignment step. The **Timeline** section has details on different assignment events, the run result, representative name, and other details like presence, available capacity, and capacity profiles they had during the assignment event are sorted in a chronological order for easier readability.
+- The **Assignment events** page for a conversation has details on conversation with information specific to the assignment, assignment method used, and ruleset information for the assignment step. The **Timeline** section has details on different assignment events, the run result, representative name, and other details like presence, available capacity, and capacity profiles the representatives had during the assignment event sorted in a chronological order for easier readability.
 
     :::image type="content" source="../media/assignment-events.png" alt-text="A screenshot of the assignment events.":::
 

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot 
-ms.date: 01/15/2026
+ms.date: 01/19/2026
 ms.custom: bap-template
 ---
 

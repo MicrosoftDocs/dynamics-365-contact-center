@@ -1,12 +1,12 @@
 ---
 title: Configure proactive engagement
-description: Learn how to set up proactive engagement, including dialing modes and operational rules for optimized customer service in Dynamics 365 Contact Center.
+description: Learn how to set up proactive engagement, including dial modes and operational rules for optimized customer service in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim 
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 01/14/2026
+ms.date: 01/19/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -24,12 +24,12 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 ## Set up an outbound workstream
 
 1. Create a workstream by selecting the **Outbound** option. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context).
-1.	Set up the outbound workstream behaviors in the **Setup Behaviors** section of the workstream as follows:
-   
+1. Set up the outbound workstream behaviors in the **Setup Behaviors** section of the workstream as follows:
+
     - Select **Setup**, and on the page that appears, select the **Caller ID Number** in the list. Numbers available to use only are displayed. Learn more in [Configure phone numbers for outbound calling](/dynamics365/customer-service/administer/voice-channel-outbound-calling#configure-phone-numbers-for-outbound-calling).
     - Select a number in the **Shared numbers** list. The numbers available to use only are displayed.
-1.	Set up the language and outbound behaviors. Learn more in [Configure the voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?tabs=enhancedvoice#configure-a-voice-channel)
-1.	Configure [work distribution](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution), add an [AI agent](/dynamics365/customer-service/administer/create-workstreams#add-an-agent-to-a-workstream) to the workstream, and configure representative notifications. The following notification templates are available out of the box:
+1. Set up the language and outbound behaviors. Learn more in [Configure the voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?tabs=enhancedvoice#configure-a-voice-channel)
+1. Configure [work distribution](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution), add an [AI agent](/dynamics365/customer-service/administer/create-workstreams#add-an-agent-to-a-workstream) to the workstream, and configure representative notifications. The following notification templates are available out of the box:
     - **Voice call - outbound agent dial - default**: For preview dial mode calls
     - **Voice call - outbound pre-dial - default**: For progressive and copilot dial mode calls
 
@@ -56,15 +56,15 @@ In the site map of Copilot Service admin center, navigate to the settings in one
    - **Skills**: Select the skills that are required for the proactive engagement.
 1. Select **Next**. The **Dialing modes** page appears. Do the steps in the **Configure dialing modes** section that follows.
 
-### Configure dialing modes
+### Configure dial modes
 
-The dialing modes are used to determine how the system can make calls to customers. The following dialing modes are available:
+The dial modes are used to determine how the system can make calls to customers. The following dial modes are available:
 
-1. In the **Create new proactive engagement** pane, select one of the dialing modes as follows:
+1. In the **Create new proactive engagement** pane, select one of the dial modes as follows:
    - **Copilot**: The system automatically dials the customer and connects the call to the AI agent when the customer answers. This mode is used for high-volume outbound calls.
    - **Progressive**: The system starts the call with the AI agent and then adds a representative after the agent actions are complete.
    - **Preview**: The system adds the representative to the call and then dials the customer.
-   - **Predictive**: The system automatically places phone calls before an agent becomes available, predicting when an agent will be free to take the next call.
+   - **Predictive**: The system automatically places phone calls before an agent becomes available, predicting when an agent might be free to take the next call.
 
 1. Select one of the following priority levels:
    - **Normal**
@@ -73,14 +73,14 @@ The dialing modes are used to determine how the system can make calls to custome
 
 1. Select the **Max number of concurrent calls for Copilot Mode** that refers to the maximum number of calls the AI agent can make concurrently. The maximum number that you can specify is 500.
 
-1. Select the max number of calls that can be assigned to the representative in **Maximum calls per representative**. This setting is available for the progressive dialing mode. A lower number indicates a balanced call volume for the representative. You can specify up to five calls.
+1. Select the max number of calls that can be assigned to the representative in **Maximum calls per representative**. This setting is available for the progressive dial mode. A lower number indicates a balanced call volume for the representative. You can specify up to five calls.
 
 1. In **Call order**, select one of the following options:
    - **Earliest Scheduled Date**
    - **Last in First Out**
    - **First in, First Out**
 
-1. Under **Operating hours**, select the checkbox if calls can be made outside of queue hours. This setting is available for Copilot dialing mode only.
+1. Under **Operating hours**, select the checkbox if calls can be made outside of queue hours. This setting is available for Copilot dial mode only.
 
 1. Select the action for how the call needs to be handled if the AI agent fails during the call.
    - **Stop making calls immediately**: No further calls are made.
@@ -140,6 +140,20 @@ Learn about how to configure a journey using [Dynamics 365 Customer Insights](/d
 
 To configure the proactive engagement with a journey using the API, follow the steps in [Initiate proactive outbound call using API](../extend/api/ccaas_createproactivevoicedelivery.md).
 
+## Detect answering machines
+
+Detection of answering machines is a technology used in telecommunication systems to determine whether a call is answered by a human or an answering machine. You can set up the answering machine detection system topic in Copilot Studio to be used when outbound voice calls are made.
+
+### Prerequisite
+
+[Voice is enabled in Copilot Studio](/microsoft-copilot-studio/voice-get-started) or you can use the voice IVR template to access the answer machine detection system topic.
+
+### Configure answer machine detection system topic
+
+You can choose to enable or disable detection of the answering machine. When enabled, the system automatically detects answering machines and proceeds with the configured message flow.
+
+Select the system topic, and customize the message that the system needs to play. The system detects answering machines and allows users to record or customize the message before ending the conversation, providing flexibility in handling such calls.
+
 ## Dial modes
 
 The dial modes are used to determine how the system makes calls to customers.
@@ -161,7 +175,7 @@ Use the preview dial mode to identify a service representative from the specifie
 
 ### Predictive
 
-A predictive dialer is an automated outbound calling system designed to boost agent efficiency and streamline customer outreach. It initiates calls ahead of agent availability by forecasting when agents are ready to engage. Using a dynamic algorithm, it calculates the optimal number of simultaneous calls to place based on anticipated agent availability. This algorithm factors in key contact center metrics such as abandonment rate, average wait time, queue targets, and other performance indicators to determine the ideal dialing volume.
+A predictive dialer is an automated outbound calling system designed to boost agent efficiency and streamline customer outreach. It initiates calls ahead of agent availability by forecasting when agents are ready to engage. Using a dynamic algorithm, it calculates the optimal number of simultaneous calls to place based on anticipated agent availability. This algorithm factors in key contact center metrics such as abandonment rate, average wait time, queue targets, and other performance indicators to determine the ideal dial volume.
 
 ## Runtime experience of proactive engagement
 

@@ -280,6 +280,8 @@
             href: realtime-intent-group-report.md
           - name: User group report
             href: realtime-agent-group-report.md
+          - name: Diagnose contact center health
+            href: diagnose-dashboard.md 
         - name: Use historical analytics dashboards
           items: 
           - name: Dashboards

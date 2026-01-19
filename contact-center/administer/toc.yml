@@ -570,6 +570,8 @@
             href: /dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator?context=/dynamics365/contact-center/context/administer-context
           - name: Manage access to Ongoing Conversations dashboard
             href: /dynamics365/customer-service/administer/configure-ongoing-conversations-dashbaord?context=/dynamics365/contact-center/context/administer-context
+        - name: Enable Diagnose dashboard
+          href: enable-diagnose-dashboard.md
         - name: Enable supervisor access to manage conversations
           href: /dynamics365/customer-service/administer/enable-monitor-assign-transfer-conv?context=/dynamics365/contact-center/context/administer-context
         - name: Manage historical analytics dashboards

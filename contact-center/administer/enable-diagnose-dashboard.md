@@ -107,21 +107,8 @@ There’s no additional cost for using Azure workbooks.
 1. Select **Yes** in the **Default value** and **Setting environment value** fields.
 1. Save and close.
 
-## FAQ
-
-### I am using an unmanaged environment for Dynamics 365 Customer Service and Dynamics 365 Contact Center. Can I use these out-of-the-box dashboards?
-
-No. To set up the out-of-the-box dashboards for Application Insights, you need a managed environment. Learn more in [Prerequisites](/dynamics365/customer-service/administer/configure-conversation-diagnostics)
-
-### Does my organization need any extra licenses for accessing these dashboards?
-
-Your organization doesn't need any extra licenses for Dynamics 365 Contact Center or Customer Service. However, you need an active Azure Monitor subscription for using the out-of-the-box dashboards. learn more in **Pricing**.
-
-### How often is the data refreshed?
-
-By default, the data in the dashboard isn't auto refreshed. Use the **Refresh** button for a manual refresh.
-
 ### Related information
 
 [Diagnose contact center health](../use/diagnose-dashboard.md)  
 [Configure conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics)  
+[FAQ about conversation diagnostics](/dynamics365/customer-service/administer/unified-routing-faqs)  

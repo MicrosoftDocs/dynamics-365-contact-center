@@ -75,7 +75,7 @@ Do the following steps for debugging issues:
 - View the conversations in different states over time. You can use this to look at trends of open conversations and select a specific period for further analysis from top-level filters.
 
     - **Total processed conversations**: The number of conversations processed by the contact center during the selected period.
-    - **Assignment time (P95)**: P95 of the time taken for first successful assignment of a conversation to a service representative.
+    - **Assignment time (P95)**: The time taken for first successful assignment of a conversation to a service representative.
 
         :::image type="content" source="../media/debug-metrics.png" alt-text="A screenshot of assignment time and total processed conversations metrics.":::
 

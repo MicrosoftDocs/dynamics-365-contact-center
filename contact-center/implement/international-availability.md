@@ -24,17 +24,17 @@ While voice channels aren't yet available in some regions, you can still connect
 |---|---|---|
 | Asia Pacific | Yes | Yes |
 | Australia | Yes | Yes |
+| Brazil | Yes | Yes |
 | Canada | Yes | Yes |
 | Europe | Yes | Yes |
 | France | Yes | No |
-| Germany |	Yes | No |
+| Germany | Yes | No |
 | Government Community Cloud High (GCC High) | No | No |
 | Government Community Cloud Moderate (GCC Moderate)<sup>**1**</sup> | Yes | Yes |
 | India | Yes | No |
 | Japan | Yes | No |
 | North America | Yes | Yes |
-| Brazil | Yes | Yes |
-| Switzerland |	Yes | Yes |
+| Switzerland | Yes | Yes |
 | United Arab Emirates (UAE) | Yes | Yes |
 | United Kingdom | Yes | Yes |
 

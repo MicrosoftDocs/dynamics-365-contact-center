@@ -1,19 +1,16 @@
 ---
-title: Use proactive engagement tables for reporting (preview)
+title: Use proactive engagement tables for reporting
 description: Learn how to use proactive engagement tables for reporting.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: reference
-ms.date: 06/03/2025
-ms.collection: 
+ms.date: 01/13/2026
+ms.collection: bap-ai-copilot
 ms.custom: bap-template 
 ---
 
-# Use proactive engagement tables for reporting (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
+# Use proactive engagement tables for reporting
 
 Proactive engagement allows for customer outreach based on configured engagement scenarios and customer data insights.
 
@@ -23,13 +20,9 @@ The `msdyn_proactive_delivery` and `msdyn_proactive_delivery_attribute` tables s
 - Analyze customer engagement patterns and outcomes
 - Monitor queue performance and agent productivity
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
-
 ## Prerequisites
 
-Proactive engagement is configured. Learn more in [Configure proactive engagement (preview)](../administer/configure-proactive-engagement.md).
-
+Proactive engagement is configured. Learn more in [Configure proactive engagement](../administer/configure-proactive-engagement.md).
 
 ## msdyn_proactive_delivery
 
@@ -71,7 +64,6 @@ The `msdyn_proactive_delivery_attribute` table contains name-value pairs associa
 | Value | msdyn_value | Text | Value associated with the keyword. |
 | Type | msdyn_type | Choice | Indicates whether the record corresponds to an input or result attribute. |
 
-
 ### Related information
 
-[Use CCaaS_CreateProactiveVoiceDelivery API](api/ccaas_createproactivevoicedelivery.md)
+[Use CCaaS_CreateProactiveVoiceDelivery API](api/ccaas_createproactivevoicedelivery.md)  

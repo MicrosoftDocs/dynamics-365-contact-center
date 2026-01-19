@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 Dynamics 365 Contact Center provides a set of [APIs](https://github.com/microsoft/dynamics-365-contact-center/tree/main/documentation/CCaaS%20SDK%20APIs) that enable the seamless integration of several functionalities into both non-Microsoft CRMs and Dynamics environments.
 
-The [Voice module](https://github.com/microsoft/dynamics-365-contact-center/blob/main/documentation/Embed%20SDK%20APIs/classes/VoiceModule.md) has several methods to help you control call recording and transcription services during customer interactions. These capabilities are essential when handling sensitive information that shouldn't be captured in recordings for compliance and security reasons. Sensitive information might include payment details, personal data, or protected health information.
+The voice module has several methods to help you control call recording and transcription services during customer interactions. These capabilities are essential when handling sensitive information that shouldn't be captured in recordings for compliance and security reasons. Sensitive information might include payment details, personal data, or protected health information.
 
 ## Available methods
 
@@ -25,5 +25,5 @@ The [Voice module](https://github.com/microsoft/dynamics-365-contact-center/blob
 - **pauseTranscription**: Pauses active transcription services.
 - **onTranscriptionOperationCompleted**: Invokes a callback function with event data when the transcription operation completes.
 
-Learn more about the methods in [available methods in voice module](https://github.com/microsoft/dynamics-365-contact-center/blob/main/documentation/Embed%20SDK%20APIs/classes/VoiceModule.md)
+Learn more about the methods in [available methods in voice module](https://github.com/microsoft/dynamics-365-contact-center/blob/main/documentation/CCaaS%20SDK%20APIs/classes/VoiceModule.md)
 

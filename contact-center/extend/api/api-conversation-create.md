@@ -1,6 +1,6 @@
 ---
-title: Use /consumer/conversations/create endpoint (preview)
-description: Learn how to use the /consumer/conversations/create endpoint in Dynamics 365 Customer Service and Dynamics 365 Contact Center to start customer conversations with messaging APIs.
+title: Use /consumer/conversation/create endpoint (preview)
+description: Learn how to use the /consumer/conversation/create endpoint in Dynamics 365 Customer Service and Dynamics 365 Contact Center to start customer conversations with messaging APIs.
 ms.date: 09/10/2025
 ms.topic: how-to
 author: gandhamm
@@ -9,7 +9,7 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Use /consumer/conversations/create endpoint (preview)
+# Use /consumer/conversation/create endpoint (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -26,7 +26,7 @@ The `create` endpoint starts a new customer conversation using the Messaging API
 
 ## Url
 
-`/api/v1.0/consumer/conversations/create`
+`/api/v1.0/consumer/conversation/create`
 
 ## Payload
 

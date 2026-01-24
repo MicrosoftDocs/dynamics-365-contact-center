@@ -137,13 +137,17 @@ https://{org_url}/api/data/v9.2/GetComponentManagedIdentityFIC(ComponentName='ms
 ```
 
 - Copy the FICSubject value. You add it as the new credential to the Microsoft Entra App registration.
-- Go to Azure portal > **Entra ID** > **Manage** > **App Registrations**, and select the Microsoft Entra app registration you created earlier. 
+- Go to Azure portal > **Entra ID** > **Manage** > **App Registrations**, and select the Microsoft Entra app registration you created earlier.
+- Under **Manage**, select **Expose an API** and enter the Application ID URI
 - Under **Manage**, select **Certificates & secrets** > **Federated credentials** > **Add credential** and specify the following details: 
+   * **Federated credential scenario**: Other issuer
+   * **Issuer**: `https://login.microsoftonline.com/{tenant_id}/v2.0`
+   * **Type**: Explicit subject identifier
+   * **Value**: `{FICSubject}` copied from GetComponentManagedIdentityFIC
 
-**Federated credential scenario**: Other issuer
-**Issuer**: `https://login.microsoftonline.com/{tenant_id}/v2.0`  
-**Type**: Explicit subject identifier  
-**Value**: `{FICSubject}` copied from GetComponentManagedIdentityFIC
+> [!CAUTION]
+Any change in your webhook configuration will generate a new FIC, so be sure to always update the Azure configuration
+
 
 ## Manage channels
 

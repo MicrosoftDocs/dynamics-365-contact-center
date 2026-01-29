@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 06/04/2025
+ms.date: 01/13/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
@@ -22,16 +22,13 @@ Customer Service representatives (service representatives or representatives) ca
 - [Enable data movement across regions](/power-platform/admin/geographical-availability-copilot#enable-data-movement-across-regions) in Power Platform admin center if your environment doesn't have United States, India, Australia, and United Kingdom as the geography for data processing and storage.
 - [Opt in to AI terms to continue with Copilot setup](configure-copilot-features.md#opt-in-to-continue-with-copilot-setup) in Customer Service admin center.
 
-
 ## Enable knowledge sources for Copilot to draft emails
 
 By default, the option to use knowledge sources to draft emails is disabled. If you want Copilot to use knowledge articles or trusted websites to draft emails, you must [enable knowledge sources for Copilot](copilot-enable-help-pane.md#enable-knowledge-base).
 
-
 ## Enable draft an email in the rich text editor
 
 [!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
-
 
 For your service representatives to write an email inline in the rich text editor, do the following steps:
 

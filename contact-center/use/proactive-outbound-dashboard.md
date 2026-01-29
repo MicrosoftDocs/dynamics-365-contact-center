@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
 ms.collection:
-ms.date: 11/11/2025
+ms.date: 01/14/2026
 ms.custom: bap-template
 ---
 
@@ -14,43 +14,54 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
 
-The Proactive Outbound dashboard in Omnichannel historical analytics tracks conversation metrics and monitors ongoing conversations by conversation direction (incoming or outgoing) and conversation type. It provides detailed insights into outbound customer engagements initiated through proactive outreach, helping teams monitor, analyze, and optimize strategies for higher delivery rates and improved customer experiences. The dashboard displays delivery status, result, and dial mode, enabling quick identification of trends and bottlenecks. Delivery metrics are segmented by proactive engagement configuration, queue, and date for granular analysis and targeted improvements.
+The Proactive Outbound dashboard in Omnichannel Historical Analytics provides visibility into conversation metrics and actively monitors ongoing interactions, categorized by conversation type. It provides detailed insights into outbound customer engagements initiated through proactive outreach, helping teams monitor, analyze, and optimize strategies for higher delivery rates and improved customer experiences. The dashboard displays delivery status, result, and dial mode, enabling quick identification of trends and bottlenecks. Metrics are segmented by engagement configuration, queue, and date for actionable insights.
 
-Users can apply out-of-box filters, such as duration, channel, queue, proactive engagement configuration, and time zone, to refine data for targeted analysis. 
+Users can apply the out-of-box filters, duration, channel, queue, proactive engagement configuration, and time zone, to refine data for targeted analysis. Use the Channel filter to filter by voice bot or the botname to filter on the exact bot.
+
+When a proactive outbound call is initiated, an entry is created in msdyn_proactivedelivery. Based on the provided inputs, the system places the call, updates the delivery status to **Complete** (processed), and creates a corresponding conversation record. The corresponding metrics are displayed on the dashboard. Learn more in [CreateProactiveVoiceDelivery](/dynamics365/contact-center/extend/api/ccaas_createproactivevoicedelivery).
+
+
+## Prerequisites
+
+- You enabled the Proactive Outbound dashboard from Customer Service admin center. Learn more in [Enable omnichannel historical analytics for proactive outbound](/dynamics365/customer-service/administer/oc-historical-analytics-reports#enable-omnichannel-historical-analytics-for-proactive-outbound-engagements).
+
+- You [configured proactive engagement](../administer/configure-proactive-engagement.md).
+
+- You have the Omnichannel Supervisor role.
 
 ## Access the dashboard
 
 You can access the dashboard from the Customer Service workspace. Learn more in [Access the dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights).
 
-You need to enable the Proactive Outbound dashboard from Customer Service admin center. Learn more in [Enable omnichannel historical analytics for proactive outbound](/dynamics365/customer-service/administer/oc-historical-analytics-reports).
 
 :::image type="content" source="../media/proactive-outbound-report.png" alt-text="Screenshot of proactive outbound dashboard." lightbox="../media/proactive-outbound-report.png":::
 
 ## Interactive charts and tables
 
-The dashboard displays these charts and tables for quick analysis.
+The dashboard displays the proactive engagement metrics in the following charts and tables.
 
 Charts:
 
-- **Total deliveries by status** bar chart displays (completed, expired, and others).
+- The **Total deliveries by status** bar chart displays data by the delivery status of calls that are completed, expired, and others.
 
-- **Processed deliveries by result** donut chart shows call outcomes. For example, call ended, call failed.
+- The **Processed deliveries by result** donut chart displays the data by outcomes, such as call ended and call failed.
 
-- **Processed deliveries by dial mode** pie chart breaks down processed deliveries by dial mode (Copilot and Progressive), including new predictive dialing.
+- The **Processed deliveries by dial mode** pie chart breaks down processed deliveries by dial mode (Copilot and Progressive), including new predictive dialing.
 
 Tables:
  
-- **Delivery metrics by Proactive Engagement Configuration** table lists each configuration, its status, priority, total deliveries, and processed deliveries, helping teams track which setups drive results.
+- The **Delivery metrics by Proactive Engagement Configuration** table lists each configuration, its status, priority, total deliveries, and processed deliveries, that helps teams track which setups drive results.
 
-- **Delivery metrics by queue** table shows delivery and processing metrics per queue, supporting operational workload management.
+- The **Delivery metrics by queue** table shows delivery and processing metrics per queue that supports operational workload management.
 
-- **Delivery metrics by date** table shows a daily breakdown of total and processed deliveries for trend analysis.
+- The **Delivery metrics by date** table shows a daily breakdown of total and processed deliveries for trend analysis.
 
 ## Panel filters
 
-The dashboard is prefiltered by the default panel filters **Conversation type** and **Conversation direction** to show outbound interactions only. You can also check the default panel filters applied under **Dial mode**, **Delivery Status**, **Delivery Result**. You don't need any permissions to view panel filters. 
+The dashboard shows ongoing interactions using the out-of-the-box filters, **Conversation Type** and **Conversation Direction**. You can also check the default panel filters applied under **Dial mode**, **Delivery Status**, **Delivery Result**. You don't need any permissions to view panel filters.
 
 ## Related information
 
+[Configure proactive engagement](../administer/configure-proactive-engagement.md)  
 [Omnichannel for Customer Service dashboards](/dynamics365/customer-service/use/omnichannel-analytics-insights)    
 [Enable historical analytics for proactive outbound engagements](/dynamics365/customer-service/administer/oc-historical-analytics-reports)

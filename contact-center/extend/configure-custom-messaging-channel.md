@@ -146,7 +146,7 @@ https://{org_url}/api/data/v9.2/GetComponentManagedIdentityFIC(ComponentName='ms
    * **Value**: `{FICSubject}` copied from GetComponentManagedIdentityFIC
 
 > [!IMPORTANT]
-Any change in your webhook configuration will generate a new FIC, so be sure to always update the Azure configuration
+Any change in your webhook configuration generates a new FIC, therefore make sure to always update the Azure configuration.
 
 
 ## Manage channels

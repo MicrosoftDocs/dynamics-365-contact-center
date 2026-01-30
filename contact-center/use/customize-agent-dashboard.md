@@ -56,7 +56,7 @@ Additionally, you can analyze exit patterns from question nodes and identify roo
 
 Here's an example. Variables like msdyn_rvSelfServiceStart and msdyn_rvFinalIntent can be configured in Microsoft Copilot Studio Canvas. Based on the conversation flow, the final value of these variables is processed and displayed in the Omnichannel Historical dashboard for visual and data model customization. This helps create custom reports on intent determination and self-service process status.
 
-:::image type="content" source="variables.png" alt-text="Screenshot of global variables setup.":::
+:::image type="content" source="../media/variables.png" alt-text="Screenshot of global variables setup." lightbox="../media/variables.png":::
 
 ### Best practices for custom variables
 
@@ -70,7 +70,7 @@ To analyze conversation fallout patterns, it’s essential to identify the exact
 
 Administrators in Microsoft Copilot Studio must enable the option to log node-level details into the conversationTranscript JSON file. This file is stored in Dataverse and supports visual customization and data measures on the Omnichannel Historical Bot dashboard. 
 
-:::image type="content" source="../media/node-level-detail-for-custom-variables.png" alt-text="Screenshot of node-level detail configuration.":::
+:::image type="content" source="../media/node-level-detail-for-custom-variables.png" alt-text="Screenshot of node-level detail configuration." lightbox="../media/node-level-detail-for-custom-variables.png":::
 
 ### Steps to create custom reports for conversation fallouts
 

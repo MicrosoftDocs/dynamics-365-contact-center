@@ -77,7 +77,7 @@ Administrators in Microsoft Copilot Studio must enable the option to log node-le
 1. In Copilot Service workspace, go to **Omnichannel historical analytics** > **Bot**.
 1. Select **Edit report**. This opens the full report where you can view available data measures, tables, and filters.
 1. At the bottom of the report’s page list, select the **PVA Topic Detail** tab to work with topic and node‑level data.
-1. In the **Data** pane, find the table named **FactBotSessionNodedetail**. This table contains [node-level metrics](/dynamics365/customer-service/use/oob-data-models) that track outcomes at each node in the conversation flow.
+1. In the **Data** pane, find the table named **FactBotSessionNodedetail**. This table contains [node-level metrics](/dynamics365/customer-service/use/oob-data-models#data-dictionary-4) that track outcomes at each node in the conversation flow.
 1. Review available fields such as **NodeName**, **AbandonedCount**, and **SuccessCount**.
 1. Add a new **Table** visual or select an existing one.
 1. Drag **NodeName** to the **Rows** field.

@@ -90,10 +90,6 @@ Administrators in Microsoft Copilot Studio must enable the option to log node-le
 - Create custom visualization to show question nodes and their corresponding outcomes, success, or failure.
 - To accurately report success and failure rates for question nodes, rename the default question node in Microsoft Copilot Studio Canvas. Use clear and meaningful names to ensure that dashboards display actionable insights and make it easier to track where breakdowns occur in the conversation flow. This practice supports performance improvements and a better user experience. Examples of effective names include Confirm Order Status, Repeat Account Number, or Repeat Main Menu Options. If the node isn’t renamed, default ambiguous names like Question_eQt5ye appear, making reports harder to interpret.
 
-### Customize bot dashboard
-
-For Copilot agents, you can edit the report to add the more metrics and filters to the AI agent. To customize the bot dashboard, see [customize visual display](/dynamics365/contact-center/use/customize-agent-dashboard?toc=/dynamics365/customer-service/use/toc.json&bc=../../breadcrumb/toc.yml). 
-
 ### Related information
 
 [Bot dashboard](/dynamics365/customer-service/use/oc-bot-dashboard?context=/dynamics365/contact-center/use-context)   

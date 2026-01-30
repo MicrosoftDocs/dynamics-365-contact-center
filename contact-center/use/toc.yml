@@ -126,8 +126,6 @@
           href: draft-email-embedded-experience.md  
       - name: Unified routing and assignment
         items:
-          - name: View historical analytics reports
-            href: /dynamics365/customer-service/use/supervisor-historical-analytics?context=/dynamics365/contact-center/context/use-context
           - name: Manage skills
             href: /dynamics365/customer-service/use/manage-skills?context=/dynamics365/context/contact-center-context
       - name: Email

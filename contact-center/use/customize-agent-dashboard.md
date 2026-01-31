@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: 
-ms.date: 10/29/2025
+ms.date: 01/30/2026
 ms.custom: bap-template 
 ---
 
@@ -46,7 +46,7 @@ Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi
 
  ## Use custom reporting variables
 
-This feature works with classic Copilot Studio bots that require custom variables to tag conversations. Add reporting variables configured in Microsoft Copilot Studio Canvas to enable organized tracking and analysis across key organizational dimensions such as line of business, division, product line, and other custom-defined attributes. Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variables?tabs=webApp). The variables are linked to certain topics and flows, and their use depends on instructions already prepared in the Microsoft Copilot Studio Canvas.
+This feature works with classic Copilot Studio bots that require custom variables to tag conversations. Add reporting variables configured in Microsoft Copilot Studio Canvas to enable organized tracking and analysis across key organizational dimensions such as line of business, division, product line, and other custom-defined attributes. Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variables?tabs=webApp). The variables are linked to certain topics and flows, and their use depends on how topics and flows are configured in the Microsoft Copilot Studio Canvas.
 
 You need to [enable advanced historical analytics for voice and chat Copilot agents](/dynamics365/customer-service/administer/oc-historical-analytics-reports#enable-advanced-historical-analytics-for-voice-and-chat-copilot-agents). You can add up to 15 variables across all voice and chat agents used in your organization. 
 
@@ -54,9 +54,9 @@ Once configured, the Omnichannel Historical Bot dashboard can be customized with
 
 Additionally, you can analyze exit patterns from question nodes and identify root causes of escalations originating from those nodes, providing advanced troubleshooting and diagnostic insights. 
 
-Here's an example. Variables like msdyn_rvSelfServiceStart and msdyn_rvFinalIntent can be configured in Microsoft Copilot Studio Canvas. Based on the conversation flow, the final value of these variables is processed and displayed in the Omnichannel Historical dashboard for visual and data model customization. This helps create custom reports on intent determination and self-service process status.
+The following example shows how reporting variables are processed and sufaced in analytics. Variables like msdyn_rvSelfServiceStart and msdyn_rvFinalIntent can be configured in Microsoft Copilot Studio Canvas. Based on the conversation flow, the final value of these variables is processed and displayed in the Omnichannel Historical dashboard for visual and data model customization. This information helps create custom reports on intent determination and self-service process status.
 
-:::image type="content" source="../media/variables.png" alt-text="Screenshot of global variables setup." lightbox="../media/variables.png":::
+:::image type="content" source="../media/variables.png" alt-text="Screenshot showing global reporting variables configured in Microsoft Copilot Studio Canvas." lightbox="../media/variables.png":::
 
 ### Best practices for custom variables
 
@@ -66,11 +66,11 @@ Here's an example. Variables like msdyn_rvSelfServiceStart and msdyn_rvFinalInte
 
 ## Analyze conversation fallout patterns
 
-To analyze conversation fallout patterns, it’s essential to identify the exact point in the dialogue where the fallout occurred. For example, whether after intent identification or before resolution. More details such as topic, node, speech recognition confidence score, and input mode should also be logged in the conversation transcript stored in Dataverse.
+To analyze conversation fallout patterns, it’s essential to identify the exact point in the dialogue where the fallout occurred. For example, whether it was after intent identification or before the resolution. More details, such as topic, node, speech recognition confidence score, and input mode, should also be logged in the conversation transcript stored in Dataverse.
 
 Administrators in Microsoft Copilot Studio must enable the option to log node-level details into the conversationTranscript JSON file. This file is stored in Dataverse and supports visual customization and data measures on the Omnichannel Historical Bot dashboard. 
 
-:::image type="content" source="../media/node-level-detail-for-custom-variables.png" alt-text="Screenshot of node-level detail configuration." lightbox="../media/node-level-detail-for-custom-variables.png":::
+:::image type="content" source="../media/node-level-detail-for-custom-variables.png" alt-text="Screenshot showing node-level detail logging enabled for conversation transcripts." lightbox="../media/node-level-detail-for-custom-variables.png":::
 
 ### Steps to create custom reports for conversation fallouts
 
@@ -87,7 +87,7 @@ Administrators in Microsoft Copilot Studio must enable the option to log node-le
 
 #### Best practices for using question nodes
 
-- Create custom visualization to show question nodes and their corresponding outcomes, success, or failure.
+- Create custom visualization to show question nodes and their corresponding outcomes, successes, or failures.
 - To accurately report success and failure rates for question nodes, rename the default question node in Microsoft Copilot Studio Canvas. Use clear and meaningful names to ensure that dashboards display actionable insights and make it easier to track where breakdowns occur in the conversation flow. This practice supports performance improvements and a better user experience. Examples of effective names include Confirm Order Status, Repeat Account Number, or Repeat Main Menu Options. If the node isn’t renamed, default ambiguous names like Question_eQt5ye appear, making reports harder to interpret.
 
 ### Related information

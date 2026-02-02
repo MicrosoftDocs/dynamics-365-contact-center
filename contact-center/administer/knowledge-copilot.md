@@ -5,8 +5,9 @@ author: Soumyasd27
 ms.author: sdas
 ms.reviewer: Soumyasd27
 ms.topic: how-to 
-ms.collection: 
-ms.date: 02/19/2025
+ms.collection: bap-ai-copilot
+ms.update-cycle: 180-days 
+ms.date: 01/28/2026
 ms.custom: bap-template
 ---
 

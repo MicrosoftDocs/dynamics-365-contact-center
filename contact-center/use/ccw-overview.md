@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: 
-ms.date: 01/16/2025
+ms.date: 01/30/2026
 ms.custom: bap-template
 ---
 
@@ -25,9 +25,11 @@ The app is automatically installed in all the Dynamics 365 Contact Center organi
 ## Copilot Service workspace sessions and tabs
 
 Copilot Service workspace allows agents to work on multiple sessions at a time in a single app while keeping the work organized.
+
 - Agents can work on up to nine sessions and within a session, they can open up to 10 tabs.
--  A new session starts when an agent opens a case from the **Home** session or accepts an incoming conversation.
--  If the agent opens the customer record from a session, a new tab opens in the same session. 
+
+- A new session starts when an agent opens a case from the **Home** session or accepts an incoming conversation.
+- If the agent opens the customer record from a session, a new tab opens in the same session. 
 - Agents can select the hamburger icon to access the site map. 
 - When an agent opens a page from the site map, the page loads in the current focused session.
 
@@ -47,12 +49,12 @@ Copilot Service workspace allows agents to work on multiple sessions at a time i
 | Open a view from the Sitemap | View opens in a new tab in the focused session |
 | Open a dashboard from the Sitemap | Dashboard opens in a new tab in the focused session|
 
-
 ## Use Copilot Service workspace
 
 Use the resources in the following articles to learn how to use Copilot Service workspace.
 
 - [Introduction to the agent interface](/dynamics365/customer-service/use/oc-introduction-agent-interface?context=/dynamics365/contact-center/context/use-context)
+
 - [Manage sessions](/dynamics365/customer-service/use/oc-manage-sessions?context=/dynamics365/contact-center/context/use-context)
 - [Manage applications](/dynamics365/customer-service/use/oc-manage-applications?context=/dynamics365/contact-center/context/use-context)
 - [Understand conversation states](/dynamics365/customer-service/use/oc-conversation-state?context=/dynamics365/contact-center/context/use-context)
@@ -63,7 +65,3 @@ Use the resources in the following articles to learn how to use Copilot Service 
 ## Next steps
 
 [View communication panel](/dynamics365/customer-service/use/oc-conversation-control?context=/dynamics365/contact-center/context/use-context)  
-
-
-
-

@@ -98,6 +98,8 @@
             href: use-evaluations.md
       - name: Use Copilot features in contact center-standalone
         items: 
+        - name: Overview of autonomous agents and Copilot features
+          href: overview-ai-agents-copilot-features.md
         - name: Copilot feature availability across applications
           href: copilot-feature-availability.md  
         - name: Summarize conversations
@@ -124,8 +126,6 @@
           href: draft-email-embedded-experience.md  
       - name: Unified routing and assignment
         items:
-          - name: View historical analytics reports
-            href: /dynamics365/customer-service/use/supervisor-historical-analytics?context=/dynamics365/contact-center/context/use-context
           - name: Manage skills
             href: /dynamics365/customer-service/use/manage-skills?context=/dynamics365/context/contact-center-context
       - name: Email
@@ -280,6 +280,8 @@
             href: realtime-intent-group-report.md
           - name: User group report
             href: realtime-agent-group-report.md
+          - name: Diagnose contact center health
+            href: diagnose-dashboard.md 
         - name: Use historical analytics dashboards
           items: 
           - name: Dashboards
@@ -347,7 +349,7 @@
           - name: Export and import visual customizations
             href: /dynamics365/customer-service/use/export-import-visual-customization?context=/dynamics365/contact-center/context/use-context
         - name: Customize the bot dashboard
-          href: customize-agent-dashboard.md       
+          href: customize-agent-dashboard.md
         - name: Customize data models
           items:
           - name: Overview of data model customization

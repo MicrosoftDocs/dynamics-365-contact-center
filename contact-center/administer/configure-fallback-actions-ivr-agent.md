@@ -5,7 +5,7 @@ description: Learn how to configure and manage fallback actions for the IVR agen
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
-ms.date: 06/27/2025
+ms.date: 01/13/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.custom: bap-template

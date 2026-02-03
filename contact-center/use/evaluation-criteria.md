@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 01/28/2026
+ms.date: 02/03/2026
 ms.custom: bap-template 
 ---
 
@@ -100,7 +100,13 @@ To edit your published evaluation criteria:
 
 > [!NOTE]
 > - You can't change the scoring toggle at the criteria level after the criteria is published.
-> - Any evaluation plan that's still running continues to use the existing criteria. After you publish the edited evaluation criteria, evaluation plans use the latest criteria in the next run.
+> - Any evaluation plan that's still running continues to use the existing criteria. After you publish the edited evaluation criteria, evaluation plans use the latest criteria in the next run. 
+
+## Manage evaluation criteria versions
+
+Each edit and publish action increments the version, and the latest version is always used for new evaluations. Users can restore previous versions, which also increments the version number. The version column can be added to the evaluation grid for tracking.  
+
+Only draft versions can be discarded. Published versions remain unchanged. Restoring a previous version discards the current draft and republishes the selected version as the latest.  
 
 ## Extend your evaluation criteria
 

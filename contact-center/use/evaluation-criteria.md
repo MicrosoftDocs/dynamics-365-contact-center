@@ -104,9 +104,13 @@ To edit your published evaluation criteria:
 
 ## Manage evaluation criteria versions
 
-Each edit and publish action increments the version, and the latest version is always used for new evaluations. Users can restore previous versions, which also increments the version number. The version column can be added to the evaluation grid for tracking.  
+Each edit and publish action increments the evaluation criteria version, and the latest version is always used for new evaluations. Supervisors can review prior versions, restore any version to make it the current one, or discard draft changes as needed.
 
-Only draft versions can be discarded. Published versions remain unchanged. Restoring a previous version discards the current draft and republishes the selected version as the latest.  
+1. Select the required source criteria and go to the **Versioning History** tab. You can see the criteria version and the version number along with the latest data that might have been added to the criteria.
+1. Select **Record** to go a specific version and view the details in read-only.
+1. Select **Restore/Publish** to republish the selected version as the latest. This discards the current drfat and increments the version number of the published criteria.
+
+You can also add the **Version** column to the evaluation grid to track versions.
 
 ## Extend your evaluation criteria
 

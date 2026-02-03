@@ -138,7 +138,7 @@ You can also view the simulation details from the **Simulation Run** tab of your
 - Select a simulation record that's in **Completed** state.
 - From the simulation record page, select the **Simulation Results** tab and then select the required simulation result to view the prediction done by the Quality Evaluation Agent on the side pane.
 
-Supervisors can view simulation results. The results don’t affect records or quality metrics, so you can validate and refine criteria before publishing. Each simulation consumes [Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go).
+Supervisors can view simulation results. The results don’t affect records or quality metrics, so you can validate and refine criteria before publishing. Each simulation consumes [[Microsoft Copilot credits]](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 
 ## Extend your evaluation criteria
 

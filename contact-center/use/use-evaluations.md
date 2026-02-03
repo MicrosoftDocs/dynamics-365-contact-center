@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days 
-ms.date: 01/28/2026
+ms.date: 02/03/2026
 ms.custom: bap-template
 ---
 
@@ -53,6 +53,8 @@ To view evaluations for your criteria:
   If you have extended the evaluation criteria, you see the following:
 
   - **Source criteria evaluation** and **Extend criteria evaluation** details.
+
+  If you’ve edited and published an evaluation plan and added the **Version** column to the grid, you can view the details of each version.
 
 ### Evaluation states
 

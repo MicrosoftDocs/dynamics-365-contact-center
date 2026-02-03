@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 01/28/2026
+ms.date: 02/03/2026
 ms.custom: bap-template
 ---
 
@@ -83,6 +83,12 @@ You must enable the **Enable bulk evaluations (preview)** checkbox in Customer S
 
 You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases and conversations when needed.
 
+### View run history for a plan
+
+When you run an evaluation plan, it generates a run‑history record that captures the plan name, execution timestamp, total number of records processed, and the final status. This record provides structured visibility into batch runs and their outcomes.
+
+Select **Run history** on your evaluation plan to view the details.
+
 ## Create and activate a real-time evaluation plan for ongoing conversations (preview)
 
 You need to turn on the **Criteria scoring** toggle for your evaluation criteria. Learn more in [Create evaluation criteria](evaluation-criteria.md#create-evaluation-criteria).
@@ -118,6 +124,14 @@ Learn how to view scores for the real-time evaluation plan in [Manage ongoing Qu
 1. Select the action that you want to take. On the respective dialog box, confirm the action and save.
 
 When you pause a plan, it finishes the current batch and then stops before the next run. When you resume, the plan starts at its next scheduled time.
+
+## Edit evaluation plans
+
+You can't edit active evaluation plans. You can't modify the existing record type for a plan.
+
+1. On the **Evaluation Plans** page, select the evaluation plans that you would like edit, and then select **Edit**.
+1. Save after you have modified the plan.
+1. Select **Activate plan**.
 
 ## Enable bulk evaluation for cases (preview)
 

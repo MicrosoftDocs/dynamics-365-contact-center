@@ -1,7 +1,7 @@
 ---
 title: Configure disposition codes
 description: Learn how to configure disposition codes for voice and messaging channels.
-ms.date: 02/04/2026
+ms.date: 02/06/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -56,16 +56,15 @@ Disposition codes allow you to categorize and record the outcome of the customer
     - prvAppendmsdyn_conversationdispositioncodemap  
     - prvAppendTomsdyn_conversationdispositioncodemap
 
-   
 ---
 
-## Enable disposition codes 
+## Enable disposition codes
 
 1. In the Copilot Service admin center, select **Customer settings** in **Customer support**.
 1. On the **Customer settings** page, select **Manage** for **Disposition code**.
 1. On the **Disposition Code** page, enable the **Turn on Disposition Code** toggle. The **Require disposition code to close session** checkbox appears. 
 1. If you select **Require disposition code to close session**, service representative must select a disposition code before closing a session. This checkbox isn't selected by default. 
-1. In **Max disposition codes allowed**, specify the maximum number of disposition codes a representative can enter per conversation. You can specify upto 12 disposition codes. The default value is 2. In transfer scenarios, the maximum number of disposition codes allowed is applicable to all representatives involved in the conversation.
+1. In **Max disposition codes allowed**, specify the maximum number of disposition codes a representative can enter per conversation. You can specify up to 12 disposition codes. The default value is two. In transfer scenarios, the maximum number of disposition codes allowed is applicable per primary representative involved in the conversation journey.
 
 ## Manage disposition codes
 
@@ -82,9 +81,9 @@ You can add, edit, or delete disposition codes that are available globally. Do t
 
 :::image type="content" source="../media/add-disposition-codes.png" alt-text="Screenshot of disposition codes" :::
 
-## Add disposition code to workstream
+## Add disposition code to workstreams
 
-You can add disposition codes to a chat or voice workstream so that service representatives can select workstream specific codes when they close a session.
+You can add disposition codes to a chat or voice workstream so that service representatives can select workstream-specific codes when they close a session.
 1. On the **Workstream** page, select the required workstream, and expand **Advanced settings**. You can turn on one of the following settings for disposition codes at the workstream level.
 
     -  **Use global settings for requiring disposition code**: When enabled, the system uses the disposition codes defined at the global level. If you turn off the toggle, the system uses the disposition codes defined at the workstream level.

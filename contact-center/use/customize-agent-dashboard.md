@@ -54,7 +54,7 @@ Once configured, the Omnichannel Historical Bot dashboard can be customized with
 
 Additionally, you can analyze exit patterns from question nodes and identify root causes of escalations originating from those nodes, providing advanced troubleshooting and diagnostic insights. 
 
-The following example shows how reporting variables are processed and sufaced in analytics. Variables like msdyn_rvSelfServiceStart and msdyn_rvFinalIntent can be configured in Microsoft Copilot Studio Canvas. Based on the conversation flow, the final value of these variables is processed and displayed in the Omnichannel Historical dashboard for visual and data model customization. This information helps create custom reports on intent determination and self-service process status.
+The following example shows how reporting variables are processed and surfaced in analytics. Variables like msdyn_rvSelfServiceStart and msdyn_rvFinalIntent can be configured in Microsoft Copilot Studio Canvas. Based on the conversation flow, the final value of these variables is processed and displayed in the Omnichannel Historical dashboard for visual and data model customization. This information helps create custom reports on intent determination and self-service process status.
 
 :::image type="content" source="../media/variables.png" alt-text="Screenshot showing global reporting variables configured in Microsoft Copilot Studio Canvas." lightbox="../media/variables.png":::
 
@@ -77,7 +77,7 @@ Administrators in Microsoft Copilot Studio must enable the option to log node-le
 1. In Copilot Service workspace, go to **Omnichannel historical analytics** > **Bot**.
 1. Select **Edit report**. This opens the full report where you can view available data measures, tables, and filters.
 1. At the bottom of the report’s page list, select the **PVA Topic Detail** tab to work with topic and node‑level data.
-1. In the **Data** pane, find the table named **FactBotSessionNodedetail**. This table contains [node-level metrics](/dynamics365/customer-service/use/oob-data-models#data-dictionary-4) that track outcomes at each node in the conversation flow.
+1. In the **Data** pane, find the table named **FactBotSessionNodedetail**. This table contains [Question node-level metrics](/dynamics365/customer-service/use/oob-data-models#data-dictionary-4) that track outcomes at each node in the conversation flow. Currently, only question nodes support fallout patterns.
 1. Review available fields such as **NodeName**, **AbandonedCount**, and **SuccessCount**.
 1. Add a new **Table** visual or select an existing one.
 1. Drag **NodeName** to the **Rows** field.

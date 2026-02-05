@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 02/03/2026
+ms.date: 02/06/2026
 ms.custom: bap-template
 ---
 
@@ -53,14 +53,14 @@ You must enable the **Enable bulk evaluations (preview)** checkbox in Customer S
     1.  If you select **Conversations**, then in the **Frequency** section, select the following:
 
         1.  **Frequency type:** Select **Trigger,** and then provide the following:
-            - **Occurence**: If you have frequency type as **Trigger**, then select **Closed conversation**.
+            - **Occurrence**: If you have frequency type as **Trigger**, then select **Closed conversation**.
             - **Start date**: Specify the start date for the plan.
             - **End date**: Specify the end date for the plan.
             
     1. If you select **Cases**, then in the **Frequency** section, select the following:
 
         1.  **Frequency type:** Select **Recurring,** and then provide the following:
-            - **Occurence**: Select **Daily**.
+            - **Occurrence**: Select **Daily**.
             - **Start date**: Specify the start date for the plan.
             - **End date**: Specify the end date for the plan.
 
@@ -127,10 +127,12 @@ When you pause a plan, it finishes the current batch and then stops before the n
 
 ## Edit evaluation plans
 
-You can't edit active evaluation plans. You can't modify the existing record type for a plan.
+You can't edit active evaluation plans or modify the existing record type for a plan.
 
-1. On the **Evaluation Plans** page, select the evaluation plans that you would like edit, and then select **Edit**.
-1. Save after you have modified the plan.
+1. On the **Evaluation Plans** page, select the evaluation plans that you want to edit, and then select **Edit**.
+
+1. Save the changes.
+
 1. Select **Activate plan**.
 
 ## Enable bulk evaluation for cases (preview)
@@ -139,7 +141,7 @@ You can't edit active evaluation plans. You can't modify the existing record typ
 
 1. On the **Evaluation plans** page, select the evaluation plans.
 
-1. Select **Activate**. The plans gets activated only after the data transfer is complete.
+1. Select **Activate**. The plans get activated only after the data transfer is complete.
 
 You can evaluate up to 10,000 entity records in a single batch run. A single batch run might take up to four hours to complete.
 

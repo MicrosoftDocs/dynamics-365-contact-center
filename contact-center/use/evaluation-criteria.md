@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 02/03/2026
+ms.date: 02/06/2026
 ms.custom: bap-template 
 ---
 
@@ -21,7 +21,7 @@ This article explains how to use, edit, and extend evaluation criteria, includin
 
 > [!IMPORTANT]
 >
-> - Evaluations for conversations is a preview feature. 
+> - Evaluation for conversations is a preview feature. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Prerequisites
@@ -104,19 +104,19 @@ To edit your published evaluation criteria:
 
 ## Manage evaluation criteria versions
 
-Each edit and publish action increments the evaluation criteria version, and the latest version is always used for new evaluations. Supervisors can review prior versions, restore any version to make it the current one, or discard draft changes as needed.
+Each edit and publish action increments the evaluation criteria version, and the latest published version is always used for new evaluations. Supervisors can review prior versions, restore any version to make it the current one, or discard draft changes as needed.
 
 1. Select the required source criteria and go to the **Versioning History** tab. You can see the criteria version and the version number along with the latest data that might have been added to the criteria.
 1. Select **Record** to go a specific version and view the details in read-only.
-1. Select **Restore/Publish** to republish the selected version as the latest. This discards the current drfat and increments the version number of the published criteria.
+1. Select **Restore/Publish** to republish the selected version as the latest. This discards the current draft and increments the version number of the published criteria.
 
-You can also add the **Version** column to the evaluation grid to track versions.
+You can also add the **Version** column to the evaluation grid to track versions. Learn more in [Evaluations](use-evaluations.md#evaluations).
 
 ## Create and run simulation
 
-You need enable the **QEA Simulation** flow before you run a simulation. Learn more in [Configure connection references](/dynamics365/customer-service/administer/admin-km-agent-connections).
+You need to enable the **QEA Simulation** flow before you run a simulation. Learn more in [Configure connection references](/dynamics365/customer-service/administer/admin-km-agent-connections).
 
-Supervisors can select any criteria in **Draft** or **Published** state and run a simulation test with real case data to preview Quality Evaluation Agent prediction outcomes.
+Supervisors can select any criteria in **Draft** or **Published** state and run a simulation test with real case and conversation data to preview Quality Evaluation Agent prediction outcomes.
 
 > [!NOTE]
 > You can’t include attachments for case data.
@@ -127,7 +127,7 @@ To create and run a simulation:
 1. On the **New Criteria Simulation** page, **General** tab, **Simulation overview** section, provide the following information:
     1. **Criteria Name**: Provide a name.
     1. **Record Type**: Select **Case** or **Conversation**.
-    1. **Criteria Version**: Select the version of the published criteria. You won't see a verison for a criteria that is in draft state.
+    1. **Criteria Version**: Select the version of the published criteria. There is no version assigned to a criteria that's in **Draft** state.
 1. **Conditions**: Select the conditions to run a simulation.
 By default, simulation runs on the 25 most recent records that match the selected conditions.
 1. Save the changes.
@@ -135,10 +135,10 @@ By default, simulation runs on the 25 most recent records that match the selecte
 1. Select the **Simulation Results** tab to view the simulation results.
 
 You can also view the simulation details from the **Simulation Run** tab of your criteria. You can view details such as **Evaluation Criteria version**, **Record Type**, **Status**, and **Created On** data. 
-- Select a simulation record that's in **Completed** state.
-- From the simulation record page, select the **Simulation Results** tab and then select the required simulation result to view the prediction done by the Quality Evaluation Agent on the side pane.
+1. Select a simulation record that's in **Completed** state.
+2. From the simulation record page, select the **Simulation Results** tab and then select the required simulation result to view the prediction done by the Quality Evaluation Agent on the side pane.
 
-Supervisors can view simulation results. The results don’t affect records or quality metrics, so you can validate and refine criteria before publishing. Each simulation consumes [[Microsoft Copilot credits]](/dynamics365/customer-service/administer/setup-pay-as-you-go).
+Supervisors can view simulation results. The results don’t affect records or quality metrics, so you can validate and refine criteria before publishing. Each simulation consumes [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 
 ## Extend your evaluation criteria
 

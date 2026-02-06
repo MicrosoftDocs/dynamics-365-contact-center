@@ -124,7 +124,7 @@ To create and run a simulation:
     1. **Record Type**: Select **Case** or **Conversation**.
     1. **Criteria Version**: Select the version of the published criteria. Criteria in **Draft** state don't have a version assigned.
 1. **Conditions**: Select the conditions to run a simulation.
-By default, simulation runs on the 25 most recent records that match the selected conditions.
+By default, the simulation runs on the 25 most recent records that match the selected conditions.
 1. Save the changes.
 1. Select **Run Simulation**. Your criteria simulation record is created. 
 1. Select the **Simulation Results** tab to view the simulation results.

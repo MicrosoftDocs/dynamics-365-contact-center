@@ -39,7 +39,7 @@ To view evaluations for your criteria:
 
   If you enabled scoring for your criteria, you see the following details:
     
-  - **Evaluation Summary**: Highlights evaluation results and suggests actions for improvement, like coaching opportunities for  representatives or specific activities to bring a case back on track. The Quality Manager and Quality Reviewer base these actions on evaluation results to improve the overall quality.
+  - **Evaluation Summary**: Highlights evaluation results and suggests actions for improvement, like coaching opportunities for representatives or specific activities to bring a case back on track. The Quality Manager and Quality Reviewer base these actions on evaluation results to improve the overall quality.
   
   - **Suggested actions**: Shows if any immediate actions are required or improvements that can be made.
   

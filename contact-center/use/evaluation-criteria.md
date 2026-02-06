@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 01/28/2026
+ms.date: 02/06/2026
 ms.custom: bap-template 
 ---
 
@@ -18,11 +18,6 @@ ms.custom: bap-template
 **Cases**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
 This article explains how to use, edit, and extend evaluation criteria, including best practices to create clear and actionable instructions. Learn how to use built-in criteria, customize evaluation plans, and optimize quality assessments for your organization.
-
-> [!IMPORTANT]
->
-> - Evaluations for conversations is a preview feature. 
-> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Prerequisites
 
@@ -38,7 +33,7 @@ As a Quality Evaluator, you can use or copy the out-of-the-box evaluation criter
 - Use the **Support quality** or **Closed Conversations Default Criteria**.
 
 > [!NOTE]
-> The out-of-the-box evaluation criteria is prefilled, published, and read-only.
+> The out-of-the-box evaluation criteria are prefilled, published, and read-only.
 
 To view an evaluation criteria:
 
@@ -62,7 +57,7 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
     1.  **Description**: Provide a description.
 
-    1.  **Section weight (%)**: Provide a weightage for the evaluation criteria. The weight % across sections should add up to 100.
+    1.  **Section weight (%)**: Provide a weight for the evaluation criteria. The weight % across sections should add up to 100.
 
 1.  Select **Add question,** if you want to add a question.
 
@@ -99,8 +94,46 @@ To edit your published evaluation criteria:
 1. Publish the changes. 
 
 > [!NOTE]
-> - You can't change the scoring toggle at the criteria level after the criteria is published.
-> - Any evaluation plan that's still running continues to use the existing criteria. After you publish the edited evaluation criteria, evaluation plans use the latest criteria in the next run.
+> - You can't change the scoring toggle at the criteria level after the criteria publishes.
+> - Any evaluation plan that's still running continues to use the existing criteria. After you publish the edited evaluation criteria, evaluation plans use the latest criteria in the next run. 
+
+## Manage evaluation criteria versions
+
+Each edit and publish action increments the evaluation criteria version, and the latest published version is always used for new evaluations. Supervisors can review prior versions, restore any version to make it the current one, or discard draft changes as needed.
+
+1. Select the required source criteria and go to the **Versioning History** tab. You can see the criteria version and the version number along with the latest data that might have been added to the criteria.
+1. Select **Record** to go a specific version and view the details in read-only.
+1. Select **Restore/Publish** to republish the selected version as the latest. This discards the current draft and increments the version number of the published criteria.
+
+You can also add the **Version** column to the evaluation grid to track versions. Learn more in [Evaluations](use-evaluations.md#evaluations).
+
+## Create and run simulation
+
+You need to enable the **QEA Simulation** flow before you run a simulation. Learn more in [Configure connection references](/dynamics365/customer-service/administer/admin-km-agent-connections).
+
+Supervisors can select any criteria in **Draft** or **Published** state and run a simulation test with real case and conversation data to preview Quality Evaluation Agent prediction outcomes.
+
+> [!NOTE]
+> You can’t include attachments for case data.
+
+To create and run a simulation:
+
+1. Select the criteria, and then select **Create Simulation**.
+1. On the **New Criteria Simulation** page, **General** tab, **Simulation overview** section, provide the following information:
+    1. **Criteria Name**: Provide a name.
+    1. **Record Type**: Select **Case** or **Conversation**.
+    1. **Criteria Version**: Select the version of the published criteria. Criteria in **Draft** state don't have a version assigned.
+1. **Conditions**: Select the conditions to run a simulation.
+By default, the simulation runs on the 25 most recent records that match the selected conditions.
+1. Save the changes.
+1. Select **Run Simulation**. Your criteria simulation record is created. 
+1. Select the **Simulation Results** tab to view the simulation results.
+
+You can also view the simulation details from the **Simulation Run** tab of your criteria. You can view details such as **Evaluation Criteria version**, **Record Type**, **Status**, and **Created On** data. 
+1. Select a simulation record that's in **Completed** state.
+2. From the simulation record page, select the **Simulation Results** tab and then select the required simulation result to view the prediction done by the Quality Evaluation Agent on the side pane.
+
+Supervisors can view simulation results. The results don’t affect records or quality metrics, so you can validate and refine criteria before publishing. Each simulation consumes [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 
 ## Extend your evaluation criteria
 

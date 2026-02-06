@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 01/28/2026
+ms.date: 02/06/2026
 ms.custom: bap-template 
 ---
 
@@ -18,11 +18,6 @@ ms.custom: bap-template
 **Cases**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
 This article explains how to use, edit, and extend evaluation criteria, including best practices to create clear and actionable instructions. Learn how to use built-in criteria, customize evaluation plans, and optimize quality assessments for your organization.
-
-> [!IMPORTANT]
->
-> - Evaluations for conversations is a preview feature. 
-> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Prerequisites
 

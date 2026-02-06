@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 01/28/2026
+ms.date: 02/06/2026
 ms.custom: bap-template
 ---
 
@@ -22,7 +22,7 @@ Evaluation plans help supervisors perform consistent and objective reviews of ca
 
 > [!IMPORTANT]
 >
-> - Evaluations for conversations and bulk evaluations for cases are preview features. 
+> - Bulk evaluations for cases is a preview feature. 
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Prerequisites
@@ -34,12 +34,12 @@ Evaluation plans help supervisors perform consistent and objective reviews of ca
 
 ## Create and activate evaluation plan for cases and closed conversations
 
-You must enable the **Enable bulk evaluations (preview)** checkbox in Customer Service admin center before you create and activate an evaluation plan for cases. Learn more in [Enable Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#enable-quality-evaluation-agent).
+You must enable the **Enable bulk evaluations (preview)** checkbox in Copilot Service admin center before you create and activate an evaluation plan for cases. Learn more in [Enable Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#enable-quality-evaluation-agent).
 
 > [!NOTE]
 > You can use conversation evaluations for voice and live chat channels only.
 
-1.  In Customer Service workspace, go to **Evaluation Plans**.
+1.  In Copilot Service workspace, go to **Evaluation Plans**.
 
 1.  On the **Evaluation plans** page, select **New**.
 
@@ -83,13 +83,13 @@ You must enable the **Enable bulk evaluations (preview)** checkbox in Customer S
 
 You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases and conversations when needed.
 
-## Create and activate a real-time evaluation plan for ongoing conversations (preview)
+## Create and activate a real-time evaluation plan for ongoing conversations
 
 You need to turn on the **Criteria scoring** toggle for your evaluation criteria. Learn more in [Create evaluation criteria](evaluation-criteria.md#create-evaluation-criteria).
 
 To create a real-time evaluation plan:
 
-1. In Customer Service workspace, go to **Evaluation Plans**.
+1. In Copilot Service workspace, go to **Evaluation Plans**.
 
 1. On the **Evaluation plans** page, select **New**.
 
@@ -107,11 +107,11 @@ To create a real-time evaluation plan:
     
 1.  Select **Save**.
 
-Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations (preview)](ongoing-quality-evaluation-agent-conversations.md).
+Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations](ongoing-quality-evaluation-agent-conversations.md).
 
 ## Activate, pause, resume, or delete evaluation plans
 
-1. In Customer Service workspace, go to **Evaluation plans**.
+1. In Copilot Service workspace, go to **Evaluation plans**.
 
 1. On the **Evaluation Plans** page, select the evaluation plans that you would like to activate, delete, resume, or pause.
 
@@ -121,7 +121,7 @@ When you pause a plan, it finishes the current batch and then stops before the n
 
 ## Enable bulk evaluation for cases (preview)
 
-1. In Customer Service workspace, go to **Evaluation plans**.
+1. In Copilot Service workspace, go to **Evaluation plans**.
 
 1. On the **Evaluation plans** page, select the evaluation plans.
 

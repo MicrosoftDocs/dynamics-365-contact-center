@@ -50,17 +50,17 @@ You must enable the **Enable bulk evaluations (preview)** checkbox in Copilot Se
         - **Description**: Enter description.
         - **Record type**: Select **record type** as **Conversations** or **Cases**.
 
-    1.  If you select **Conversations**, then in the **Frequency** section, select the following:
+    1.  If you select **Conversations**, then in the **Frequency** section, select the following options:
 
         1.  **Frequency type:** Select **Trigger,** and then provide the following:
-            - **Occurence**: If you have frequency type as **Trigger**, then select **Closed conversation**.
+            - **Occurrence**: If you have frequency type as **Trigger**, then select **Closed conversation**.
             - **Start date**: Specify the start date for the plan.
             - **End date**: Specify the end date for the plan.
             
     1. If you select **Cases**, then in the **Frequency** section, select the following:
 
         1.  **Frequency type:** Select **Recurring,** and then provide the following:
-            - **Occurence**: Select **Daily**.
+            - **Occurrence**: Select **Daily**.
             - **Start date**: Specify the start date for the plan.
             - **End date**: Specify the end date for the plan.
 
@@ -82,6 +82,12 @@ You must enable the **Enable bulk evaluations (preview)** checkbox in Copilot Se
 1.  Select **Activate plan**. On successful activation, a success message appears.
 
 You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases and conversations when needed.
+
+### View run history for a plan
+
+When you run an evaluation plan, it generates a run‑history record that captures the plan name, execution timestamp, total number of records processed, and the final status. This record provides structured visibility into batch runs and their outcomes.
+
+Select **Run history** on your evaluation plan to view the details.
 
 ## Create and activate a real-time evaluation plan for ongoing conversations
 
@@ -119,13 +125,23 @@ Learn how to view scores for the real-time evaluation plan in [Manage ongoing Qu
 
 When you pause a plan, it finishes the current batch and then stops before the next run. When you resume, the plan starts at its next scheduled time.
 
+## Edit evaluation plans
+
+You can't edit active evaluation plans or modify the existing record type for a plan.
+
+1. On the **Evaluation Plans** page, select the evaluation plans that you want to edit, and then select **Edit**.
+
+1. Save the changes.
+
+1. Select **Activate plan**.
+
 ## Enable bulk evaluation for cases (preview)
 
 1. In Copilot Service workspace, go to **Evaluation plans**.
 
 1. On the **Evaluation plans** page, select the evaluation plans.
 
-1. Select **Activate**. The plans gets activated only after the data transfer is complete.
+1. Select **Activate**. The plans are activated only after the data transfer is complete.
 
 You can evaluate up to 10,000 entity records in a single batch run. A single batch run might take up to four hours to complete.
 

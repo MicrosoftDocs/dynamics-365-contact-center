@@ -50,7 +50,7 @@ You must enable the **Enable bulk evaluations (preview)** checkbox in Copilot Se
         - **Description**: Enter description.
         - **Record type**: Select **record type** as **Conversations** or **Cases**.
 
-    1.  If you select **Conversations**, then in the **Frequency** section, select the following:
+    1.  If you select **Conversations**, then in the **Frequency** section, select the following options:
 
         1.  **Frequency type:** Select **Trigger,** and then provide the following:
             - **Occurrence**: If you have frequency type as **Trigger**, then select **Closed conversation**.

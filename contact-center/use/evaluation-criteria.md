@@ -118,7 +118,7 @@ Supervisors can select any criteria in **Draft** or **Published** state and run 
 
 To create and run a simulation:
 
-1. Select a criteria and then select **Create Simulation**.
+1. Select the criteria, and then select **Create Simulation**.
 1. On the **New Criteria Simulation** page, **General** tab, **Simulation overview** section, provide the following information:
     1. **Criteria Name**: Provide a name.
     1. **Record Type**: Select **Case** or **Conversation**.

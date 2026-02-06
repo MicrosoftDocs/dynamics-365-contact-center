@@ -33,7 +33,7 @@ As a Quality Evaluator, you can use or copy the out-of-the-box evaluation criter
 - Use the **Support quality** or **Closed Conversations Default Criteria**.
 
 > [!NOTE]
-> The out-of-the-box evaluation criteria is prefilled, published, and read-only.
+> The out-of-the-box evaluation criteria are prefilled, published, and read-only.
 
 To view an evaluation criteria:
 

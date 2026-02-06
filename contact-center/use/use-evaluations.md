@@ -37,7 +37,7 @@ To view evaluations for your criteria:
   2.  Select the required **Evaluation**. The evaluation for the case or conversation that you selected appears on the **Evaluations** side pane.
   
 
-  If you enabled scoring for your criteria, you see the following details:
+If you enabled scoring for your criteria, you see the following details:
     
   - **Evaluation Summary**: Highlights evaluation results and suggests actions for improvement, like coaching opportunities for representatives or specific activities to bring a case back on track. The Quality Manager and Quality Reviewer base these actions on evaluation results to improve the overall quality.
   
@@ -45,11 +45,9 @@ To view evaluations for your criteria:
   
   - **Scoring overview**: Shows the **Overall evaluation score**, including the **Total score** and **Scoring ratio**.
   
-  If you extended the evaluation criteria, you see the following information:
+If you extended the evaluation criteria, you see **Source criteria evaluation** and **Extend criteria evaluation** details.
 
-  - **Source criteria evaluation** and **Extend criteria evaluation** details.
-
-  If you edited and published an evaluation plan and added the **Version** column to the grid, you can view the details of each version.
+If you edited and published an evaluation plan and added the **Version** column to the grid, you see the details of each version.
 
 ### Evaluation states
 
@@ -59,17 +57,17 @@ You see the following evaluator and AI agent states on the grid.
 
 | State  | What it indicates  |
 |--------|--------------------|
-| Pending         | The evaluation hasn’t started.  |
-| In-progress     | The evaluator is filling in the evaluation. |
-| Completed       | The evaluator finished and submitted the evaluation.  |
-| Expired         | The due date provided in the evaluation criteria expired, and the evaluator can no longer open the evaluation. |
-| Not applicable  | The AI agent is in **Error** status, and therefore the evaluator can’t evaluate. |
+| Pending         | Evaluation hasn’t started.  |
+| In-progress     | Evaluator is filling in the evaluation. |
+| Completed       | Evaluator finished and submitted the evaluation.  |
+| Expired         | Due date provided in the evaluation criteria expired, and the evaluator can no longer open the evaluation. |
+| Not applicable  | AI agent is in **Error** status, and therefore the evaluator can’t evaluate. |
 
 **AI agent status**:
 
 |State | What it indicates|
 |-------|-----------------|
-| Pending| The evaluation hasn’t started. |
+| Pending| Evaluation hasn’t started. |
 | In-progress | Evaluation is in progress |
 | Completed| Evaluation is complete. |
 | Error | AI agent shows errors due to issues. |

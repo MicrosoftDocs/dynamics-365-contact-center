@@ -141,7 +141,7 @@ You can't edit active evaluation plans or modify the existing record type for a 
 
 1. On the **Evaluation plans** page, select the evaluation plans.
 
-1. Select **Activate**. The plans get activated only after the data transfer is complete.
+1. Select **Activate**. The plans are activated only after the data transfer is complete.
 
 You can evaluate up to 10,000 entity records in a single batch run. A single batch run might take up to four hours to complete.
 

@@ -57,7 +57,7 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
     1.  **Description**: Provide a description.
 
-    1.  **Section weight (%)**: Provide a weightage for the evaluation criteria. The weight % across sections should add up to 100.
+    1.  **Section weight (%)**: Provide a weight for the evaluation criteria. The weight % across sections should add up to 100.
 
 1.  Select **Add question,** if you want to add a question.
 

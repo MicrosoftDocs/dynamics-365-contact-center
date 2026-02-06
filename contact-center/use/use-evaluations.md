@@ -1,6 +1,6 @@
 ---
 title: Use evaluations
-description: Learn how to use evaluations to assess cases and conversations, access results, and improve quality with actionable insights and scoring details in in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
+description: Learn how to use evaluations to assess cases and conversations, access results, and improve quality with actionable insights and scoring details in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas

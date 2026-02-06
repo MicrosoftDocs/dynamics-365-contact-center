@@ -45,7 +45,7 @@ To view evaluations for your criteria:
   
   - **Scoring overview**: Shows the **Overall evaluation score**, including the **Total score** and **Scoring ratio**.
   
-  If you have extended the evaluation criteria, you see the following:
+  If you extended the evaluation criteria, you see the following information:
 
   - **Source criteria evaluation** and **Extend criteria evaluation** details.
 

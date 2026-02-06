@@ -49,7 +49,7 @@ To view evaluations for your criteria:
 
   - **Source criteria evaluation** and **Extend criteria evaluation** details.
 
-  If you’ve edited and published an evaluation plan and added the **Version** column to the grid, you can view the details of each version.
+  If you edited and published an evaluation plan and added the **Version** column to the grid, you can view the details of each version.
 
 ### Evaluation states
 

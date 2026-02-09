@@ -1,7 +1,7 @@
 ---
 title: Configure disposition codes
 description: Learn how to configure disposition codes for voice and messaging channels.
-ms.date: 02/04/2026
+ms.date: 02/09/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham

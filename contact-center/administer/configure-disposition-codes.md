@@ -77,9 +77,9 @@ You can add, edit, or delete disposition codes that are available globally. Do t
       - You can also select multiple disposition codes to edit the category and workstream.
 1. To delete a disposition code, select the disposition code, and then select **Delete**. You can also select multiple disposition codes to delete.
   > [!NOTE]
-  > Even after you delete a disposition code that's associated with a conversation. it's displayed for the conversation.  
+  > After you use a disposition code for a conversation, it's displayed for the conversation even if you delete the disposition code.
 
-:::image type="content" source="../media/add-disposition-codes.png" alt-text="Screenshot of disposition codes" :::
+  :::image type="content" source="../media/add-disposition-codes.png" alt-text="Screenshot of disposition codes" :::
 
 ## Add disposition code to workstreams
 

@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: 
-ms.date: 01/30/2026
+ms.date: 02/11/2026
 ms.custom: bap-template 
 ---
 
@@ -15,9 +15,9 @@ ms.custom: bap-template
 [!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 
-You can customize the out-of-the-box real-time and historical bot dashboards with more filters and metrics to effectively visualize your bot metrics. Learn more in [customize visual display](/dynamics365/customer-service/use/customize-reports).
+You can customize the out-of-the-box real-time and historical bot dashboards with more filters and metrics to effectively visualize your bot metrics. For example, perform the steps in [customize visual display](/dynamics365/customer-service/use/customize-reports) to represent **FactSessiontable** data in a visual to show transferred bot conversations.
 
- The table describes the filters and metrics that you can add to the bot dashboards to help visualize key performance indicators (KPI).
+The table describes the filters and metrics that you can add to the bot dashboards to help visualize key performance indicators (KPI).
 
 ## Add filters
 
@@ -37,32 +37,12 @@ Perform the steps in [Add a filter to an entire page](/power-bi/create-reports/p
 
 Fallback actions track the number of conversations handled by the system when the AI agent encounters system failures, errors, or can't process user inputs. This prevents conversation breakdown and maintains user engagement.
 
-Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi-report-add-visualizations-i#add-visualizations-to-the-report) to represent **FactSession : Failed bot conversation** data in a [Single number card](/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#single-number) visual for fallback action calls on the bot dashboard.
+Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi-report-add-visualizations-i#add-visualizations-to-the-report) to represent **FactSession: Failed bot conversation** data in a [Single number card](/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#single-number) visual for fallback action calls on the bot dashboard.
 
 
 | Title | Definition | Applies to | Channel | Data |
 |-------|------------|------------|---------|------|
 | Fallback action calls | The number of bot conversations where the bot applies one of the fallback actions in case of failures:<br><br>• **Prompt and hang-up**: The system plays a [default message](/dynamics365/customer-service/administer/configure-automated-message#preconfigured-automated-message-triggers) and ends the call.<br><br>• **Prompt and transfer to external number**: The system plays the default message and transfers the call to an external number that you enter in the **External phone number** field. Use the E.164 format, with a plus sign (+) followed by the country code and phone number.<br><br>• **Prompt and escalate**: The system plays the default message and connects the call to a service representative.<br><br>• **Wait Music and Escalate**: The system plays wait music and connects the call to a service representative.<br><br>Learn more in [Configure fallback actions for the IVR agent](/dynamics365/contact-center/administer/configure-fallback-actions-ivr-agent) | Real time and historical | Voice only | FactSession: Failed bot conversation |
-
- ## Use custom reporting variables
-
-This feature works with classic Copilot Studio bots that require custom variables to tag conversations. Add reporting variables configured in Microsoft Copilot Studio Canvas to enable organized tracking and analysis across key organizational dimensions such as line of business, division, product line, and other custom-defined attributes. Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variables?tabs=webApp). The variables are linked to certain topics and flows, and their use depends on how topics and flows are configured in the Microsoft Copilot Studio Canvas.
-
-You need to [enable advanced historical analytics for voice and chat Copilot agents](/dynamics365/customer-service/administer/oc-historical-analytics-reports#enable-advanced-historical-analytics-for-voice-and-chat-copilot-agents). You can add up to 15 variables across all voice and chat agents used in your organization. 
-
-Once configured, the Omnichannel Historical Bot dashboard can be customized with these user-defined dimensions and metrics, enabling granular analysis of key indicators such as deflection, escalation rate, and containment. This flexibility aligns reporting with organizational goals and eliminates manual parsing of conversation data.
-
-Additionally, you can analyze exit patterns from question nodes and identify root causes of escalations originating from those nodes, providing advanced troubleshooting and diagnostic insights. 
-
-The following example shows how reporting variables are processed and surfaced in analytics. Variables like msdyn_rvSelfServiceStart and msdyn_rvFinalIntent can be configured in Microsoft Copilot Studio Canvas. Based on the conversation flow, the final value of these variables is processed and displayed in the Omnichannel Historical dashboard for visual and data model customization. This information helps create custom reports on intent determination and self-service process status.
-
-:::image type="content" source="../media/variables.png" alt-text="Screenshot showing global reporting variables configured in Microsoft Copilot Studio Canvas." lightbox="../media/variables.png":::
-
-### Best practices for custom variables
-
-- Use the same custom variable name defined in Microsoft Copilot Studio when configuring the Omnichannel Historical Bot dashboard.
-- Limit variable values to one or two words. Avoid long descriptive text, as it can impact dashboard performance.
--  For scenarios like business units, use a single variable name. For example, Contoso_Business_Units. The variable can hold multiple values. When a conversation flow passes through a topic related to one of these units, then the variable is assigned or updated. If applied multiple times, only the final value is captured and displayed in the Omnichannel Historical dashboard through visuals or data model customization.
 
 ## Analyze conversation fallout patterns
 
@@ -89,6 +69,26 @@ Administrators in Microsoft Copilot Studio must enable the option to log node-le
 
 - Create custom visualization to show question nodes and their corresponding outcomes, successes, or failures.
 - To accurately report success and failure rates for question nodes, rename the default question node in Microsoft Copilot Studio Canvas. Use clear and meaningful names to ensure that dashboards display actionable insights and make it easier to track where breakdowns occur in the conversation flow. This practice supports performance improvements and a better user experience. Examples of effective names include Confirm Order Status, Repeat Account Number, or Repeat Main Menu Options. If the node isn’t renamed, default ambiguous names like Question_eQt5ye appear, making reports harder to interpret.
+
+## Use custom reporting variables
+
+This feature works with classic Copilot Studio bots that require custom variables to tag conversations. Add reporting variables configured in Microsoft Copilot Studio Canvas to enable organized tracking and analysis across key organizational dimensions such as line of business, division, product line, and other custom-defined attributes. Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variables?tabs=webApp). The variables are linked to certain topics and flows, and their use depends on how topics and flows are configured in the Microsoft Copilot Studio Canvas.
+
+You need to [enable advanced historical analytics for voice and chat Copilot agents](/dynamics365/customer-service/administer/oc-historical-analytics-reports#enable-advanced-historical-analytics-for-voice-and-chat-copilot-agents). You can add up to 15 variables across all voice and chat agents used in your organization. 
+
+Once configured, the Omnichannel Historical Bot dashboard can be customized with these user-defined dimensions and metrics, enabling granular analysis of key indicators such as deflection, escalation rate, and containment. This flexibility aligns reporting with organizational goals and eliminates manual parsing of conversation data.
+
+Additionally, you can analyze exit patterns from question nodes and identify root causes of escalations originating from those nodes, providing advanced troubleshooting and diagnostic insights. 
+
+The following example shows how reporting variables are processed and surfaced in analytics. Variables like msdyn_rvSelfServiceStart and msdyn_rvFinalIntent can be configured in Microsoft Copilot Studio Canvas. Based on the conversation flow, the final value of these variables is processed and displayed in the Omnichannel Historical dashboard for visual and data model customization. This information helps create custom reports on intent determination and self-service process status.
+
+:::image type="content" source="../media/variables.png" alt-text="Screenshot showing global reporting variables configured in Microsoft Copilot Studio Canvas." lightbox="../media/variables.png":::
+
+### Best practices for custom variables
+
+- Use the same custom variable name defined in Microsoft Copilot Studio when configuring the Omnichannel Historical Bot dashboard.
+- Limit variable values to one or two words. Avoid long descriptive text, as it can impact dashboard performance.
+-  For scenarios like business units, use a single variable name. For example, Contoso_Business_Units. The variable can hold multiple values. When a conversation flow passes through a topic related to one of these units, then the variable is assigned or updated. If applied multiple times, only the final value is captured and displayed in the Omnichannel Historical dashboard through visuals or data model customization.
 
 ### Related information
 

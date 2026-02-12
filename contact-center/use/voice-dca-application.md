@@ -1,7 +1,7 @@
 ---
-title: Use the Desktop companion application with the voice channel 
+title: Use the desktop companion application with the voice channel 
 description: Learn how to use the Desktop companion application with the voice channel.
-ms.date: 03/24/2025
+ms.date: 02/13/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -9,22 +9,21 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Use the Desktop companion application with the voice channel 
+# Use desktop companion application with voice channel 
 
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-
-The Desktop companion application serves as a backup when the Dynamics 365 Customer Service or Dynamics 365 Contact Center web application encounters issues and allows you to continue conversations without interruption.
-
+The desktop companion application serves as a backup and allows you to continue conversations without interruption when the Copilot Service workspace web application faces issues.
 
 ## Prerequisites
 
-The Desktop companion application is installed on your desktop or the browser extension is installed.
+The desktop companion application is installed on your desktop or the browser extension is installed.
 
-## Use the Desktop companion application
+## Use the desktop companion application
 
-After you sign in to the Copilot Service workspace and receive a call, you can view the call in the Desktop companion application. Perform one of the following actions to launch the application:
+After you sign in to the Copilot Service workspace and receive a call, you can view the call in the desktop companion application. Perform one of the following actions to launch the application:
 
-- Open the application from the Windows toolbar to manage the call in the application and continue the conversation from the web browser. You can also minimize the application which will continue to run in the background.
+- Open the application from the Windows toolbar to manage the call in the application and continue the conversation from the web browser. You can also minimize the application that continues to run in the background.
  
  > [!NOTE]
  > If you can't see the icon, restart your device. If the desktop companion application doesn't appear after restarting, contact your administrator.
@@ -35,12 +34,11 @@ Launch the application if you face issues such as network latency, web applicati
 
 :::image type="content" source="../media/dca-screenshot.png" alt-text="Screenshot of desktop companion application" :::
 
-
 You can do the following actions:
 
 - View the environment you're signed in to and your sign-in information.
-- View ongoing calls. A message appears in the communication panel indicating that the call is handled by the Desktop companion application. If this message doesn't appear, the application might not be functioning as expected.
-- On an active call, you can use the call controls to mute, unmute, or end the call. 
+- View ongoing calls. A message appears in the communication panel indicating that the call is handled by the desktop companion application. If this message doesn't appear, the application might not be functioning as expected.
+- On an active call, you can use the call controls to mute, unmute, or end the call.
 - You can switch between an active call and a call that's on hold.
 - Select **Settings** to do the following actions:
    - Select **Language** to specify the language you want to use.
@@ -51,12 +49,12 @@ You can do the following actions:
    :::image type="content" source="../media/dca-call-screenshot.png" alt-text="Screenshot of desktop companion application with ongoing calls" :::
 
 > [!NOTE]
-> We recommend that you use the Desktop companion application with only one environment at a time. To switch between environments, close the current environment before moving to another.
+> We recommend that you use the desktop companion application at a time with one environment only. To switch between environments, close the current environment before moving to another.
 
 ## Report issues
 
-If you encounter issues with the Desktop companion application, you can generate the support files and send them to Microsoft support. To generate the support files, right-click on the menu and select **Generate Support Files**.
+If you face issues with the desktop companion application, generate the support files with a right-click on the menu, select **Generate Support Files**, and send them to Microsoft support.
 
 ## Related information
 
-[Install and manage Desktop companion application for voice channel](../administer/install-manage-desktop-app.md)
+[Install and manage desktop companion application for voice channel](../administer/install-manage-desktop-app.md)

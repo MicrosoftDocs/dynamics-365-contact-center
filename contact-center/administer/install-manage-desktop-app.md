@@ -1,7 +1,7 @@
 ---
-title: Install and manage Desktop companion application for voice channel 
-description: Learn how to install the Desktop companion application for the voice channel in Dynamics 365 Contact Center.
-ms.date: 10/16/2025
+title: Install and manage desktop companion application for voice channel 
+description: Learn how to install the desktop companion application for the voice channel in Dynamics 365 Contact Center.
+ms.date: 02/13/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -9,13 +9,15 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Install and manage Desktop companion application for voice channel 
+# Install and manage desktop companion application for voice channel
+
+[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
 The Desktop companion application serves as a backup system for the web application for Dynamics 365 Contact Center. The application makes sure that customer service representatives (service representatives or representatives) can continue customer conversations without interruption during web application issues.
 
-## Install the Desktop companion application
+## Install the desktop companion application
 
-You can install the Desktop companion application on a representative desktop as follows:
+You can install the desktop companion application on a representative desktop as follows:
 
 1. [Download the Desktop Companion Application for Dynamics 365 Contact Center](https://aka.ms/dca-installer).
 1. Double click the installer file to start the installation process. You can also install the application from the command line. Learn more in [msiexec](/windows-server/administration/windows-commands/msiexec).
@@ -32,15 +34,15 @@ You can install the Desktop companion application on a representative desktop as
 
 ## Manage diagnostic data collection
 
-The diagnostic data collected from Desktop companion application is used to keep the application secure and up-to-date; to detect, diagnose, and fix problems; and to make product improvements. This data doesn't include a user name or email address, the content of the user files, or information about apps unrelated to the product.
+The diagnostic data collected from the desktop companion application is used to keep the application secure and up-to-date; to detect, diagnose, and fix problems; and to make product improvements. This data doesn't include a user name or email address, the content of the user files, or information about apps unrelated to the product.
 
 Microsoft is dedicated to being transparent with customers about the data collected from client software and providing them with control over their data. Diagnostic data collected from applications as service representatives use their devices is classified as either *Required* or *Optional*. This classification makes it easier for you to make informed choices about their privacy.
 
-By default, the Desktop companion application software doesn't collect optional diagnostic data. Learn more about required data and optional data in [Diagnostic data collection](/power-automate/desktop-flows/diagnostic-data?WT.mc_id=powerautomate_inproduct_padconsole#required-data).
+By default, the desktop companion application software doesn't collect optional diagnostic data. Learn more about required data and optional data in [Diagnostic data collection](/power-automate/desktop-flows/diagnostic-data?WT.mc_id=powerautomate_inproduct_padconsole#required-data).
 
-## Restrict users from updating the Desktop companion application
+## Restrict users from updating the desktop companion application
 
-Configure a registry entry that restricts users from manually updating the Desktop companion application.
+Configure a registry entry that restricts users from manually updating the desktop companion application.
 
 | Hive | Key | Name | Type |
 | ---- | --- | ---- | ---- |
@@ -49,8 +51,8 @@ Configure a registry entry that restricts users from manually updating the Deskt
 Value
 1: To disable users from manually updating the Desktop Companion application.
 
-The registry configuration prevents representatives from selecting update options and manually configuring the Desktop companion application to start automatically.
+The registry configuration prevents representatives from selecting update options and manually configuring the desktop companion application to start automatically.
 
 ## Related information
 
-[Use the Desktop companion application with the voice channel](../use/voice-dca-application.md)  
+[Use the desktop companion application with the voice channel](../use/voice-dca-application.md)  

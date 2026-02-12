@@ -22,20 +22,21 @@ Integrate your existing Microsoft Teams Phone with Dynamics 365 Contact Center t
 
 The prerequisites to configure the Teams environment extensibility are as follows:
 
-- Voice channel is configured in Dynamics 365 Contact Center.
+- Voice channel is configured in Dynamics 365 Contact Center. Learn more in [Provision channels](../implement/provision-channels.md).
 
 - Specific licenses are applicable for both configuring the feature and handling of calls effectively by the representatives. Learn more in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 - Enterprise Voice as described in [Teams Phone features](/azure/communication-services/concepts/pricing/teams-interop-pricing#teams-phone-features).
 
-- [PSTN connectivity](/microsoftteams/pstn-connectivity): Teams Calling Plan (service numbers only are supported), Operator Connect, or Direct Routing.
+- [**PSTN connectivity**](/microsoftteams/pstn-connectivity): Teams Calling Plan (service numbers only are supported), Operator Connect, or Direct Routing.
 - To synchronize the phone number, you need the [Teams Administrator or Teams Telephony Administrator role](/entra/identity-platform/quickstart-configure-app-access-web-apis) and [TeamsResourceAccount.Read.All Graph permission](/graph/permissions-reference).
-   - TeamsResourceAccount.Read.All:(delegated) This permission allows the app to read all Teams resource accounts within the tenant. It is required for the sync operation to access and transfer phone number data from Teams Resource Account to Dynamics 365 Contact Center.
+   - **TeamsResourceAccount.Read.All**:(delegated) This permission allows the app to read all Teams resource accounts within the tenant. It is required for the sync operation to access and transfer phone number data from Teams Resource Account to Dynamics 365 Contact Center.
    - Any app registered under the tenant must be granted this delegated permission. Admin consent must be provided in Entra ID to enable the app to act on behalf of the user for resource account access.
-   - [Register a new app](/entra/identity-platform/quickstart-register-app#register-an-application) or select an existing one and configure permissions. Under API permissions, add TeamsResourceAccount.Read.All and TeamsResourceAccount.Read (delegated). 
-   - Request and grant admin consent for the delegated permission to ensure compliance and operational capability. 
-    > [!NOTE] 
-    > If you are using a Teams Calling Plan, [service numbers](/microsoftteams/manage-phone-numbers-landing-page) only are supported.
+   - [Register a new app](/entra/identity-platform/quickstart-register-app#register-an-application) or select an existing one and configure permissions. Under API permissions, add **TeamsResourceAccount.Read.All** and **TeamsResourceAccount.Read** (delegated).
+   - Request and grant admin consent for the delegated permission to ensure compliance and operational capability.
+    
+     > [!NOTE]
+     > If you are using a Teams Calling Plan, [service numbers](/microsoftteams/manage-phone-numbers-landing-page) only are supported.
    - 
 
 ## Create a Teams resource account

@@ -228,7 +228,7 @@
           href: set-up-microphone-connection.md  
         - name: Configure settings to improve call quality over Citrix virtual desktop
           href: configure-voice-citrix-virtual-desktop.md
-        - name: Install and manage Desktop companion application 
+        - name: Install and manage desktop companion application 
           href: install-manage-desktop-app.md
         - name: Support emergency calls made by customer service representatives
           href: /dynamics365/customer-service/administer/voice-channel-emergency-calling?context=/dynamics365/contact-center/context/administer-context

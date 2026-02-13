@@ -646,3 +646,5 @@
       href: ../extend/configure-servicenow-connector.md
     - name: Dynamics 365 Customer Service documentation
       href: /dynamics365/customer-service/
+    - name: Contribute to documentation
+      href: /dynamics365/get-started/contribute?context=/dynamics365/contact-center/context/administer-context

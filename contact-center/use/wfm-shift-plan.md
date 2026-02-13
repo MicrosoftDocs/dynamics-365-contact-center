@@ -1,7 +1,7 @@
 ---
 title: Create and schedule a shift plan
 description: Learn how to create and schedule a shift plan in Copilot Service workspace to help you more easily manage your staffing needs.
-ms.date: 04/11/2025
+ms.date: 02/13/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -93,7 +93,22 @@ Complete the following steps to add extra bookings for a service representative.
 > [!NOTE]
 > If the booking was already **Committed**, then editing the booking moves it to **Unpublished** state. You must publish the shift plan again to publish the booking.
 
-To edit existing bookings for a service representative, complete the following steps.
+You can edit service representative bookings by using the drag-and-drop feature or by manually editing a booking.
+
+**Use drag and drop to edit a booking**
+
+You can update bookings directly in the **Schedule People** view by using drag and drop functionality. Editing using drag and drop lets you schedule changes without opening edit dialogs or navigating multiple fields.
+
+Drag and drop simiplies the process when you want to move bookings across time slots during shift planning or intraday scheduling. It also lets you quickly adjust bookings within the same service representative's shift or move bookings to different service representatives.
+
+To use drag and drop, complete the following steps.
+
+**Manually edit a booking**
+
+To manually edit existing bookings for a service representative, complete the following steps.
+
+1. Open the **Schedule People** view on the dashboard.
+2. Select the booking you want to edit, and then drag and drop it to the desired time slot.
 
 1. Use the date selector on top of the schedule board to navigate to the date that contains the booking that you want to edit.
 

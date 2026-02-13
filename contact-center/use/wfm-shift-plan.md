@@ -99,7 +99,7 @@ You can edit service representative bookings by using the drag-and-drop feature 
 
 You can update bookings directly in the **Schedule People** view by using drag and drop functionality. Editing using drag and drop lets you schedule changes without opening edit dialogs or navigating multiple fields.
 
-Drag and drop simiplies the process when you want to move bookings across time slots during shift planning or intraday scheduling. It also lets you quickly adjust bookings within the same service representative's shift or move bookings to different service representatives.
+Drag and drop simplifies the process when you want to move bookings across time slots during shift planning or intraday scheduling. It also lets you quickly adjust bookings within the same service representative's shift or move bookings to different service representatives.
 
 To use drag and drop, complete the following steps.
 

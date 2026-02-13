@@ -103,12 +103,13 @@ Drag and drop simiplies the process when you want to move bookings across time s
 
 To use drag and drop, complete the following steps.
 
+1. Open the **Schedule People** view on the dashboard.
+
+1. Select the booking you want to edit, and then drag and drop it to the desired time slot.
+
 **Manually edit a booking**
 
 To manually edit existing bookings for a service representative, complete the following steps.
-
-1. Open the **Schedule People** view on the dashboard.
-2. Select the booking you want to edit, and then drag and drop it to the desired time slot.
 
 1. Use the date selector on top of the schedule board to navigate to the date that contains the booking that you want to edit.
 

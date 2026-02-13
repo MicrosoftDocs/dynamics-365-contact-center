@@ -49,7 +49,7 @@ You can do the following actions:
    :::image type="content" source="../media/dca-call-screenshot.png" alt-text="Screenshot of desktop companion application with ongoing calls" :::
 
 > [!NOTE]
-> We recommend that you use the desktop companion application at a time with one environment only. To switch between environments, close the current environment before moving to another.
+> We recommend that you use the desktop companion application with one environment at a time. To switch between environments, close the current environment before moving to another.
 
 ## Report issues
 

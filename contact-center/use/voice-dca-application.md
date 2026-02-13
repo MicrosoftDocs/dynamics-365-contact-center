@@ -9,7 +9,7 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Use desktop companion application with voice channel 
+# Use desktop companion application with voice channel
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
@@ -17,7 +17,7 @@ The desktop companion application serves as a backup and allows you to continue 
 
 ## Prerequisites
 
-The desktop companion application is installed on your desktop or the browser extension is installed.
+Either the desktop companion application is installed on your desktop or the browser extension is installed.
 
 ## Use the desktop companion application
 

@@ -9,11 +9,7 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Install and manage desktop companion application for voice channel
-
-[!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
-
-The Desktop companion application serves as a backup system for the web application for Dynamics 365 Contact Center. The application makes sure that customer service representatives (service representatives or representatives) can continue customer conversations without interruption during web application issues.
+The desktop companion application serves as a backup system for the web application for Dynamics 365 Contact Center. The application makes sure that customer service representatives (service representatives or representatives) can continue customer conversations without interruption during web application issues.
 
 ## Install the desktop companion application
 

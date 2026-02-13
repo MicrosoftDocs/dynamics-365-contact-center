@@ -12,7 +12,7 @@ ms.collection:
 
 # Create and schedule a shift plan
 
-As a customer service supervisor, you need to be able to manage and schedule agents based on availability, skill sets, and business needs. Being able to manage and schedule your customer service representatives (service representatives or representatives) helps you ensure that your contact center has adequate coverage for all of your customer service operations.
+As a customer service supervisor, you need to be able to manage and schedule agents based on availability, skill set, and business needs. Being able to manage and schedule your customer service representatives (service representatives or representatives) helps you ensure that your contact center has adequate coverage for all of your customer service operations.
 
 As a supervisor, you can use shift plans to effectively plan and schedule your customer service representatives.
 

@@ -1,7 +1,7 @@
 ---
 title: Import historical data
 description: Learn how to import historical data to use in your case and conversation forecast scenarios.
-ms.date: 05/15/2025
+ms.date: 01/30/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -70,8 +70,8 @@ The following example illustrates the expected data format for a **Daily** data 
 
 #### Data format
 
- **DateTime** | **ChannelId** | **ChannelName** | **QueueId** | **QueueName** | **Volume** | **AHT** | **Interval** | **MaxVolumeByHour** 
---------------|---------------|-----------------|-------------|---------------|------------|---------|--------------|---------------------
+ **DateTime** | **ChannelId** | **ChannelName** | **QueueId** | **QueueName** | **Volume** | **AHT** | **Interval** | **MaxVolumeByHour** | **AgentCount** |
+--------------|---------------|-----------------|-------------|---------------|------------|---------|--------------|---------------------|----------------|
 
 #### Intraday data descriptions
 
@@ -83,18 +83,19 @@ The following example illustrates the expected data format for a **Daily** data 
 **Volume**: The number of incidents or conversations for the day with the combination of queue and channel. The value should be a whole number.  
 **AHT**: The average handling time for one incident or conversation interaction, in minutes. The value should be a whole number.  
 **Interval**: 15-minute intervals.  
-**MaxVolumeByHour**: The maximum number of interactions or conversations, per day. The value should be a whole number. 
+**MaxVolumeByHour**: The maximum number of interactions or conversations, per day. The value should be a whole number.  
+**AgentCount**: The number of agents required.
 
 #### Example
 
 The following example illustrates the expected data format for an **Intraday** data file.
 
-|DateTime|ChannelId|ChannelName|QueueId|QueueName|Volume|AHT|Interval|MaxVolumeByHour|
-|:----|:----|:----|:----|:----|:----|:----|:----|:----|
-|20-01-2025 00:15|3|CHName3|3|Q3|59|114|15 mins|28|
-|20-01-2025 03:00|2|CHName2|2|Q2|67|110|15 mins|25|
-|20-01-2025 06:30|2|CHName2|2|Q2|75|108|15 mins|32|
-|20-01-2025 07:45|1|CHName1|1|Q1|52|119|15 mins|46|
+|DateTime|ChannelId|ChannelName|QueueId|QueueName|Volume|AHT|Interval|MaxVolumeByHour|AgentCount|
+|:----|:----|:----|:----|:----|:----|:----|:----|:----|:---|
+|20-01-2025 00:15|3|CHName3|3|Q3|59|114|15 mins|28|15|
+|20-01-2025 03:00|2|CHName2|2|Q2|67|110|15 mins|25|20|
+|20-01-2025 06:30|2|CHName2|2|Q2|75|108|15 mins|32|25|
+|20-01-2025 07:45|1|CHName1|1|Q1|52|119|15 mins|46|35|
 
 ### Related information
 

@@ -23,10 +23,10 @@ A shift plan includes the following key components:
 - **Start time**: The time the shift plan starts each day, as defined by the weekly recurrence.
 - **End time**: The time that the shift plan ends, as defined by the Weekly recurrence.
 - **Capacity plan**: The number of service representatives required during the shift.
-- **Skills**: The preferred skills a service representative must thave to work the shift.
-- **Queues**: The support queues that service representatives are expected to be assigned to during the shift.
+- **Skills**: The preferred skills a service representative must have to work the shift.
+- **Queues**: The support queues that service representatives are assigned to during the shift.
 - **Calendar**: The operational settings for the shift plan, including the time zone, weekly recurrence, and any holiday calendars observed by the contact center.
-- **Shift activities**: The operational and non-operational activities that occur during the shift, such as work time, training, and breaks. These activities repeat for each day of the shift.
+- **Shift activities**: The operational and nonoperational activities that occur during the shift, such as work time, training, and breaks. These activities repeat for each day of the shift.
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ Before you can work with shift plans, your administrator must enable the feature
 ## Schedule customer service representatives
 
 > [!IMPORTANT]
-> You can only schedule or create ad hoc bookings within the start and end time of the shift plan. Scheduling or creating bookings outside of the shift plan time window isn't supported.
+> You can only schedule or create improvised bookings within the start and end time of the shift plan. Scheduling or creating bookings outside of the shift plan time window isn't supported.
 
 Once you define your shift plan, you must schedule your customer service representatives for the shift. This step creates the necessary bookings for the service representatives that corresponds to the activities defined in the shift plan. To schedule your representatives, complete the following steps.
 
@@ -123,8 +123,7 @@ To manually edit existing bookings for a service representative, complete the fo
 
 Once you schedule the necessary service representatives, you must publish the schedules. Publishing the schedule moves the shift plan to the **Published** state. Additionally, the bookings are moved to the **Committed** state. Customer service representatives then receive notifications of their bookings via email and in the app, and can view their bookings on the **My Schedule** calendar.
 
-
-Complete the following steps to publish the schedules.
+To publish the schedules, complete the following steps.
 
 1. On the schedule board for the shift plan, select **Publish**. The **Select month for publishing** dialog is displayed.
 

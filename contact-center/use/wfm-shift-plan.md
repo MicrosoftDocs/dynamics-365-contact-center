@@ -127,7 +127,7 @@ To publish the schedules, complete the following steps.
 
 1. On the schedule board for the shift plan, select **Publish**. The **Select month for publishing** dialog is displayed.
 
-1. Select the month that you want to publish the schedules for. You can only publish schedules for one month at a time. When you select the month, the dialog shows the number of bookings that will publish.
+1. Select the month that you want to publish the schedules for. You can only publish schedules for one month at a time. When you select the month, the dialog shows the number of bookings planned to publish.
 
 1. Select **Continue**. The bookings are published.
 

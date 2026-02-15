@@ -1,7 +1,7 @@
 ---
 title: Create and schedule a shift plan
 description: Learn how to create and schedule a shift plan in Copilot Service workspace to help you more easily manage your staffing needs.
-ms.date: 02/13/2026
+ms.date: 02/15/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -12,23 +12,21 @@ ms.collection:
 
 # Create and schedule a shift plan
 
-As a customer service supervisor, you need to be able to manage and schedule agents based on availability, skill set, and business needs. Being able to manage and schedule your customer service representatives (service representatives or representatives) helps you ensure that your contact center has adequate coverage for all of your customer service operations.
+As a customer service supervisor, you use shift plans to plan and schedule customer service representatives (service representatives, representatives) based on availability, skills, and business requirements. Shift plans help ensure your contact center has the appropriate coverage to support daily operations.
 
-As a supervisor, you can use shift plans to effectively plan and schedule your customer service representatives.
-
-A shift plan is a predefined template you create that details the structure and characteristics of a specific shift, along with the staffing requirements. It allows you to establish your organization’s shift structure and plan for your staffing needs in advance. This preparation helps ensure you have the right service representatives available at the right time to support your business operations.
+A shift plan is a predefined template that defines the structure of a shift and its staffing requirements. By creating shift plans in advance, you can standardize shift patterns and ensure the right service representatives are available at the right time.
 
 A shift plan includes the following key components: 
 
-- **Start date**: Specifies the date that the shift plan begins. This date is in the time zone that's set for the shift plan.
-- **End date**: Specifies the date that the shift plan ends. This date is in the time zone that has been set for the shift plan.
-- **Start time**: Specifies the time that the shift starts. The shift starts on this time for each day of the week, as defined by the *Weekly recurrence*.
-- **End time**:  Specifies the time that the shift ends. The shift ends on this time for each day of the week, as defined by the *Weekly recurrence*.
-- **Capacity plan**: Specifies the required number of customer service representatives needed for seamless operations during the shift defined by the plan.
-- **Skills**: Specifies the preferred skills that a customer service representative needs to have to work the shift.
-- **Queues**: Specifies the preferred support queues that a customer service representative has to be part of for the shift.
-- **Calendar**: Defines the operational parameters of the shift plan, including any holiday calendars your contact center observes, the days of the week that the shift plan is operational (weekly recurrence), and the time zone of the shift plan.
-- **Shift activities**: Specifies the customer service representative tasks and non-operational activities within a shift, such as work, training, lunch breaks, and so forth. These activities repeat for each day of the shift.
+- **Start date**: The date that the shift plan begins, based on the time zone defined for the plan.
+- **End date**: The date on which the shift plan ends, based on the time zone defined for the plan.
+- **Start time**: The time the shift plan starts each day, as defined by the weekly recurrence.
+- **End time**: The time that the shift plan ends, as defined by the Weekly recurrence.
+- **Capacity plan**: The number of service representatives required during the shift.
+- **Skills**: The preferred skills a service representative must thave to work the shift.
+- **Queues**: The support queues that service representatives are expected to be assigned to during the shift.
+- **Calendar**: The operational settings for the shift plan, including the time zone, weekly recurrence, and any holiday calendars observed by the contact center.
+- **Shift activities**: The operational and non-operational activities that occur during the shift, such as work time, training, and breaks. These activities repeat for each day of the shift.
 
 ## Prerequisites
 

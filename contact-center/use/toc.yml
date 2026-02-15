@@ -366,7 +366,7 @@
         href: /dynamics365/customer-service/use/report-issues?context=/dynamics365/contact-center/context/use-context
       - name: Share feedback
         href: /dynamics365/customer-service/use/cs-share-feedback?context=/dynamics365/contact-center/context/use-context
-      - name: Manage workforce
+      - name: Workforce management
         items:
         - name: Adherence Tracker
           href: wfm-adherence-tracker.md

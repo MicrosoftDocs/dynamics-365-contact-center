@@ -1,7 +1,7 @@
 ---
 title: Create and schedule a shift plan
 description: Learn how to create and schedule a shift plan in Copilot Service workspace to help you more easily manage your staffing needs.
-ms.date: 04/11/2025
+ms.date: 02/15/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -12,23 +12,21 @@ ms.collection:
 
 # Create and schedule a shift plan
 
-As a customer service supervisor, you need to be able to manage and schedule agents based on availability, skill sets, and business needs. Being able to manage and schedule your customer service representatives (service representatives or representatives) helps you ensure that your contact center has adequate coverage for all of your customer service operations.
+As a customer service supervisor, you use shift plans to plan and schedule customer service representatives (service representatives, representatives) based on availability, skills, and business requirements. Shift plans help ensure your contact center has the appropriate coverage to support daily operations.
 
-As a supervisor, you can use shift plans to effectively plan and schedule your customer service representatives.
-
-A shift plan is a predefined template you create that details the structure and characteristics of a specific shift, along with the staffing requirements. It allows you to establish your organization’s shift structure and plan for your staffing needs in advance. This preparation helps ensure you have the right service representatives available at the right time to support your business operations.
+A shift plan is a predefined template that defines the structure of a shift and its staffing requirements. By creating shift plans in advance, you can standardize shift patterns and ensure the right service representatives are available at the right time.
 
 A shift plan includes the following key components: 
 
-- **Start date**: Specifies the date that the shift plan begins. This date is in the time zone that's set for the shift plan.
-- **End date**: Specifies the date that the shift plan ends. This date is in the time zone that has been set for the shift plan.
-- **Start time**: Specifies the time that the shift starts. The shift starts on this time for each day of the week, as defined by the *Weekly recurrence*.
-- **End time**:  Specifies the time that the shift ends. The shift ends on this time for each day of the week, as defined by the *Weekly recurrence*.
-- **Capacity plan**: Specifies the required number of customer service representatives needed for seamless operations during the shift defined by the plan.
-- **Skills**: Specifies the preferred skills that a customer service representative needs to have to work the shift.
-- **Queues**: Specifies the preferred support queues that a customer service representative has to be part of for the shift.
-- **Calendar**: Defines the operational parameters of the shift plan, including any holiday calendars your contact center observes, the days of the week that the shift plan is operational (weekly recurrence), and the time zone of the shift plan.
-- **Shift activities**: Specifies the customer service representative tasks and non-operational activities within a shift, such as work, training, lunch breaks, and so forth. These activities repeat for each day of the shift.
+- **Start date**: The date that the shift plan begins, based on the time zone defined for the plan.
+- **End date**: The date on which the shift plan ends, based on the time zone defined for the plan.
+- **Start time**: The time the shift plan starts each day, as defined by the weekly recurrence.
+- **End time**: The time that the shift plan ends, as defined by the Weekly recurrence.
+- **Capacity plan**: The number of service representatives required during the shift.
+- **Skills**: The preferred skills a service representative must have to work the shift.
+- **Queues**: The support queues that service representatives are assigned to during the shift.
+- **Calendar**: The operational settings for the shift plan, including the time zone, weekly recurrence, and any holiday calendars observed by the contact center.
+- **Shift activities**: The operational and nonoperational activities that occur during the shift, such as work time, training, and breaks. These activities repeat for each day of the shift.
 
 ## Prerequisites
 
@@ -55,7 +53,7 @@ Before you can work with shift plans, your administrator must enable the feature
 ## Schedule customer service representatives
 
 > [!IMPORTANT]
-> You can only schedule or create ad hoc bookings within the start and end time of the shift plan. Scheduling or creating bookings outside of the shift plan time window isn't supported.
+> You can only schedule or create improvised bookings within the start and end time of the shift plan. Scheduling or creating bookings outside of the shift plan time window isn't supported.
 
 Once you define your shift plan, you must schedule your customer service representatives for the shift. This step creates the necessary bookings for the service representatives that corresponds to the activities defined in the shift plan. To schedule your representatives, complete the following steps.
 
@@ -93,7 +91,23 @@ Complete the following steps to add extra bookings for a service representative.
 > [!NOTE]
 > If the booking was already **Committed**, then editing the booking moves it to **Unpublished** state. You must publish the shift plan again to publish the booking.
 
-To edit existing bookings for a service representative, complete the following steps.
+You can edit service representative bookings by using the drag-and-drop feature or by manually editing a booking.
+
+**Use drag and drop to edit a booking**
+
+You can update bookings directly in the **Schedule People** view by using drag and drop functionality. Editing using drag and drop lets you schedule changes without opening edit dialogs or navigating multiple fields.
+
+Drag and drop simplifies the process when you want to move bookings across time slots during shift planning or intraday scheduling. It also lets you quickly adjust bookings within the same service representative's shift or move bookings to different service representatives.
+
+To use drag and drop, complete the following steps.
+
+1. Open the **Schedule People** view on the dashboard.
+
+1. Select the booking you want to edit, and then drag and drop it to the desired time slot.
+
+**Manually edit a booking**
+
+To manually edit existing bookings for a service representative, complete the following steps.
 
 1. Use the date selector on top of the schedule board to navigate to the date that contains the booking that you want to edit.
 
@@ -109,12 +123,11 @@ To edit existing bookings for a service representative, complete the following s
 
 Once you schedule the necessary service representatives, you must publish the schedules. Publishing the schedule moves the shift plan to the **Published** state. Additionally, the bookings are moved to the **Committed** state. Customer service representatives then receive notifications of their bookings via email and in the app, and can view their bookings on the **My Schedule** calendar.
 
-
-Complete the following steps to publish the schedules.
+To publish the schedules, complete the following steps.
 
 1. On the schedule board for the shift plan, select **Publish**. The **Select month for publishing** dialog is displayed.
 
-1. Select the month that you want to publish the schedules for. You can only publish schedules for one month at a time. When you select the month, the dialog shows the number of bookings that will publish.
+1. Select the month that you want to publish the schedules for. You can only publish schedules for one month at a time. When you select the month, the dialog shows the number of bookings planned to publish.
 
 1. Select **Continue**. The bookings are published.
 

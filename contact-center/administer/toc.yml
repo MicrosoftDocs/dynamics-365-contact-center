@@ -124,7 +124,7 @@
             href: /dynamics365/customer-service/administer/manage-custom-productivity-tools?context=/dynamics365/contact-center/context/administer-context
           - name: FAQ about adding users to experience profile
             href: /dynamics365/customer-service/administer/faq-agent-experience-profile?context=/dynamics365/contact-center/context/administer-context
-      - name: Manage your workforce
+      - name: Workforce management
         items:
         - name: Install the package
           href: wfm-package-installation.md

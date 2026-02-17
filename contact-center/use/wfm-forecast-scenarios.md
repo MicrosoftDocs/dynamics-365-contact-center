@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes in Dynamics 365 Contact Center and Customer Service.
-ms.date: 12/01/2025
+ms.date: 02/17/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -125,7 +125,7 @@ The **AI Reasoning** tab provides transparency into how the system selects the f
 1. In the site map of Copilot Service workspace, select **Forecast scenarios** under **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.
 1. Select the **Reports** tab. A list of the reports you created appears.
 
-The first time you access the dashboard, any scenarios you configured appear in **Draft** status until the first trigger occurs. After that, the scenario shows as **In progress** until it completes. For each scenario, the following details are displayed:
+The first time you access the dashboard, scenarios you configured appear in **Draft** status until the first run occurs. After that, the scenario shows as **In progress** until it completes. For each scenario, the following details are displayed:
 
 - **Name**: The name of you gave the scenario.
 - **Current Status**: The state of the scenario. This status can be **Draft**, **Completed**.
@@ -158,5 +158,15 @@ When you open a report, the following visualizations are available:
 
 ### Run forecasts on demand
 
-Select **Run forecast scenario** to trigger an on-demand forecast.
+As a supervisor, you can manually trigger a forecast run for a scenario by selecting **Run forecast scenario**. This capability supports planning and operational analysis scenarios where you need refreshed forecast results without waiting for the next scheduled run.
+
+All users who have access to the **Workforce Management Schedule People** view can use this feature.
+
+When you run a forecast scenario on demand, the following actions occur:
+
+- The system starts a background job to generate the forecast for the current scenario.
+- Forecast generation runs asynchronously and can take varying amounts of time depending on data volume and scenario configuration.
+- Supervisors can monitor progress and status in Job history.
+- After the background job completes, updated forecast outputs are available in forecast reports and views.
+- Completion of the forecast run also triggers a capacity planning job to refresh staffing requirements based on the latest forecast output.
 

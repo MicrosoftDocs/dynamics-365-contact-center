@@ -6,7 +6,7 @@ ms.author: gopalyuvaraj
 ms.reviewer: laalexan
 ms.topic: how-to 
 ms.collection: 
-ms.date: 05/01/2025
+ms.date: 02/19/2026
 ms.custom: bap-template
 ---
 
@@ -20,7 +20,7 @@ Use the Adherence Tracker to ensure that service representatives are where they 
 
 ## Prerequisites
 
-Your administrator installed the Workforce Management for Customer Service package in the Power Platform admin center app, and then enabled the feature in Copilot Service admin center.
+Your administrator installed the [Workforce Management for Customer Service package](../administer/wfm-package-installation.md) in the Power Platform admin center app, and then enabled the feature in Copilot Service admin center.
 
 ## Access the real-time adherence tracker
 

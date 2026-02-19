@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes in Dynamics 365 Contact Center and Customer Service.
-ms.date: 02/17/2026
+ms.date: 02/19/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -159,8 +159,6 @@ When you open a report, the following visualizations are available:
 ### Run forecasts on demand
 
 As a supervisor, you can manually trigger a forecast run for a scenario by selecting **Run forecast scenario**. This capability supports planning and operational analysis scenarios where you need refreshed forecast results without waiting for the next scheduled run.
-
-All users who have access to the **Workforce Management Schedule People** view can use this feature.
 
 When you run a forecast scenario on demand, the following actions occur:
 

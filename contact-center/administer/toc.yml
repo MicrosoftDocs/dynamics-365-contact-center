@@ -124,7 +124,7 @@
             href: /dynamics365/customer-service/administer/manage-custom-productivity-tools?context=/dynamics365/contact-center/context/administer-context
           - name: FAQ about adding users to experience profile
             href: /dynamics365/customer-service/administer/faq-agent-experience-profile?context=/dynamics365/contact-center/context/administer-context
-      - name: Manage your workforce
+      - name: Workforce management
         items:
         - name: Install the package
           href: wfm-package-installation.md
@@ -228,7 +228,7 @@
           href: set-up-microphone-connection.md  
         - name: Configure settings to improve call quality over Citrix virtual desktop
           href: configure-voice-citrix-virtual-desktop.md
-        - name: Install and manage Desktop companion application 
+        - name: Install and manage desktop companion application 
           href: install-manage-desktop-app.md
         - name: Support emergency calls made by customer service representatives
           href: /dynamics365/customer-service/administer/voice-channel-emergency-calling?context=/dynamics365/contact-center/context/administer-context
@@ -646,3 +646,5 @@
       href: ../extend/configure-servicenow-connector.md
     - name: Dynamics 365 Customer Service documentation
       href: /dynamics365/customer-service/
+    - name: Contribute to documentation
+      href: /dynamics365/get-started/contribute?context=/dynamics365/contact-center/context/administer-context

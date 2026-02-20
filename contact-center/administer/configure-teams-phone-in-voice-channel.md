@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection:
-ms.date: 02/06/2026
+ms.date: 02/20/2026
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -25,9 +25,8 @@ The prerequisites to configure the Teams environment extensibility are as follow
 - Voice channel is configured in Dynamics 365 Contact Center. Learn more in [Provision channels](../implement/provision-channels.md).
 
 - Specific licenses are applicable for both configuring the feature and handling of calls effectively by the representatives. Learn more in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
-
 - Enterprise Voice as described in [Teams Phone features](/azure/communication-services/concepts/pricing/teams-interop-pricing#teams-phone-features).
-
+- Outbound calling prerequisites are applicable. Learn more at [Outbound calling prerequisites](/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-connectivity-cost#outbound-calling-prerequisites).
 - [**PSTN connectivity**](/microsoftteams/pstn-connectivity): Teams Calling Plan (service numbers only are supported), Operator Connect, or Direct Routing.
 - To synchronize the phone number, you need the [Teams Administrator or Teams Telephony Administrator role](/entra/identity-platform/quickstart-configure-app-access-web-apis) and [TeamsResourceAccount.Read.All Graph permission](/graph/permissions-reference).
    - **TeamsResourceAccount.Read.All**:(delegated) This permission allows the app to read all Teams resource accounts within the tenant. It is required for the sync operation to access and transfer phone number data from Teams Resource Account to Dynamics 365 Contact Center.
@@ -37,7 +36,6 @@ The prerequisites to configure the Teams environment extensibility are as follow
     
      > [!NOTE]
      > If you are using a Teams Calling Plan, [service numbers](/microsoftteams/manage-phone-numbers-landing-page) only are supported.
-   - 
 
 ## Create a Teams resource account
 

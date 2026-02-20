@@ -64,7 +64,7 @@
           href: voice-channel-agent-experience.md
         - name: How to avoid call disconnection
           href: voice-channel-agent-experience.md#avoid-call-disconnection
-        - name: Use the Desktop companion application
+        - name: Use the desktop companion application
           href: voice-dca-application.md
         - name: Manage voicemails
           href: /dynamics365/customer-service/use/manage-voicemails?context=/dynamics365/contact-center/context/use-context
@@ -366,7 +366,7 @@
         href: /dynamics365/customer-service/use/report-issues?context=/dynamics365/contact-center/context/use-context
       - name: Share feedback
         href: /dynamics365/customer-service/use/cs-share-feedback?context=/dynamics365/contact-center/context/use-context
-      - name: Manage workforce
+      - name: Workforce management
         items:
         - name: Adherence Tracker
           href: wfm-adherence-tracker.md
@@ -436,3 +436,5 @@
       href: ../extend/configure-servicenow-connector.md
     - name: Dynamics 365 Customer Service documentation
       href: /dynamics365/customer-service/
+    - name: Contribute to documentation
+      href: /dynamics365/get-started/contribute?context=/dynamics365/contact-center/context/use-context

@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: 
-ms.date: 02/11/2026
+ms.date: 02/20/2026
 ms.custom: bap-template 
 ---
 
@@ -29,6 +29,7 @@ Perform the steps in [Add a filter to an entire page](/power-bi/create-reports/p
 | Language  | Filter and view bot metrics by the last language used.<br> This metric helps you understand your callers' language preferences and optimize multilingual support.<br> For example, a conversation can start in English before the customer switches to Spanish or a conversation begins and ends in Spanish. If you select Spanish as the last language, the report displays the metrics for all conversations that ended in Spanish. In our example, the dashboard displays metrics for both the conversations.<br>**Note**: In the real-time bot dashboard, setting the Last language filter displays metrics for conversations that were escalated to an agent or an external number and are in the closed state. The metrics aren't updated when the bot conversation is ongoing. | Real time and historical| Chat and voice | DimLanguage: Language |
 | Browser  | Filter by browser to analyze the agent's metrics specifically for the selected browser. | Real time and historical| Chat and voice | FactLiveChatContext: Browser |
 | Device  | Filter by device to analyze the agent's performance specifically for the selected device. | Real time and historical| Chat and voice | FactLiveChatContext: Device |
+| External escalations| Count of escalations done from the MCS agent externally to CSRs outside of D365 contact center. Note: if the contact center is associated with external escalations, then escalation rate metric tracks both internal and external escalations. Else escalation rate will only show internal escalations to CSRs within D365 contact center	| Real time and historical| Chat and voice| FactSession table ; Number of bot transfers requests to external agents column Realtime data schema : FactSession table : Transferred bot conversations|
 
 :::image type="content" source="../media/realtime-dashboard-mini.png" alt-text="Screenshot of real time bot dashboard with filters." lightbox="../media/oc-realtime-dashboard.png"::: 
 
@@ -62,8 +63,7 @@ Administrators in Microsoft Copilot Studio must enable the option to log node-le
 1. Add a new **Table** visual or select an existing one.
 1. Drag **NodeName** to the **Rows** field.
 1. Drag metrics such as **AbandonedCount** or **SuccessCount** into the **Columns** or **Values** field, depending on your preferred view.
-1. Select **Save**. Wait 1–2 minutes for changes to sync.
-1. Select **Publish** to make the report available to viewers.
+1. Select **Save**, and then select **Publish** to make the report available to viewers.
 
 #### Best practices for using question nodes
 

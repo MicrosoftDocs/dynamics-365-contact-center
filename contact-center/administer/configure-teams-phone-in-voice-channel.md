@@ -24,12 +24,12 @@ The prerequisites to configure the Teams environment extensibility are as follow
 
 - Voice channel is configured in Dynamics 365 Contact Center. Learn more in [Provision channels](../implement/provision-channels.md).
 
-- Specific licenses are applicable for both configuring the feature and handling of calls effectively by the representatives. Learn more in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
-- Enterprise Voice as described in [Teams Phone features](/azure/communication-services/concepts/pricing/teams-interop-pricing#teams-phone-features).
+- Specific licensing requirements are applicable for both configuring the feature and handling of calls by the representatives. Learn more in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+- Enterprise Voice is available as described in [Teams Phone features](/azure/communication-services/concepts/pricing/teams-interop-pricing#teams-phone-features).
 - Outbound calling prerequisites are applicable. Learn more at [Outbound calling prerequisites](/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-connectivity-cost#outbound-calling-prerequisites).
 - [**PSTN connectivity**](/microsoftteams/pstn-connectivity): Teams Calling Plan (service numbers only are supported), Operator Connect, or Direct Routing.
 - To synchronize the phone number, you need the [Teams Administrator or Teams Telephony Administrator role](/entra/identity-platform/quickstart-configure-app-access-web-apis) and [TeamsResourceAccount.Read.All Graph permission](/graph/permissions-reference).
-   - **TeamsResourceAccount.Read.All**:(delegated) This permission allows the app to read all Teams resource accounts within the tenant. It is required for the sync operation to access and transfer phone number data from Teams Resource Account to Dynamics 365 Contact Center.
+   - **TeamsResourceAccount.Read.All** (delegated): This permission allows the app to read all Teams resource accounts within the tenant. It is required for the sync operation to access and transfer phone number data from Teams Resource Account to Dynamics 365 Contact Center.
    - Any app registered under the tenant must be granted this delegated permission. Admin consent must be provided in Entra ID to enable the app to act on behalf of the user for resource account access.
    - [Register a new app](/entra/identity-platform/quickstart-register-app#register-an-application) or select an existing one and configure permissions. Under API permissions, add **TeamsResourceAccount.Read.All** and **TeamsResourceAccount.Read** (delegated).
    - Request and grant admin consent for the delegated permission to ensure compliance and operational capability.
@@ -97,6 +97,7 @@ If you're assigning a Direct Routing service phone to the Teams resource account
 Complete the following steps to configure inbound calling and sync the Teams service phone numbers.
 
 1. In the site map of Copilot Service admin center, select **Channels** in **Customer support**. The **Channels** page appears.
+
 1. Select **Manage** for **Phone numbers**.
 1. On the **Phone numbers** page, select **Advanced**.
 1. On the **Manage telephony** page, navigate to the **Teams phone system** tab. The **Azure Communication Services resource ID** and **Dynamics App ID** appear.
@@ -123,4 +124,4 @@ After the system initiates the outbound call, if issues arise in assigning the o
 
 [Call recordings and transcripts](/dynamics365/customer-service/administer/voice-channel-configure-transcripts?context=/dynamics365/contact-center/context/administer-context)   
 [Call a customer](/dynamics365/customer-service/use/voice-channel-call-customer?context=/dynamics365/contact-center/context/use-context)  
-[Use call controls and representative desktop for voice](../use/voice-channel-agent-experience.md)   
+[Use call controls and representative desktop for voice](../use/voice-channel-agent-experience.md)  

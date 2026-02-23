@@ -15,7 +15,7 @@ ms.custom: bap-template
 [!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 
-You can customize the out-of-the-box real-time and historical bot dashboards with more filters and metrics to effectively visualize your bot metrics. For example, perform the steps in [customize visual display](/dynamics365/customer-service/use/customize-reports) to represent **FactSessiontable** data in a visual to show transferred bot conversations.
+You can customize the out-of-the-box real-time and historical bot dashboards with more filters and metrics to effectively visualize your bot metrics. Learn more in [customize visual display](/dynamics365/customer-service/use/customize-reports).
 
 The table describes the filters and metrics that you can add to the bot dashboards to help visualize key performance indicators (KPI).
 
@@ -65,7 +65,7 @@ Administrators in Microsoft Copilot Studio must enable the option to log node-le
 1. Drag metrics such as **AbandonedCount** or **SuccessCount** into the **Columns** or **Values** field, depending on your preferred view.
 1. Select **Save**, and then select **Publish** to make the report available to viewers.
 
-#### Best practices for using question nodes
+#### Best practices for question nodes
 
 - Create custom visualization to show question nodes and their corresponding outcomes, successes, or failures.
 - To accurately report success and failure rates for question nodes, rename the default question node in Microsoft Copilot Studio Canvas. Use clear and meaningful names to ensure that dashboards display actionable insights and make it easier to track where breakdowns occur in the conversation flow. This practice supports performance improvements and a better user experience. Examples of effective names include Confirm Order Status, Repeat Account Number, or Repeat Main Menu Options. If the node isn’t renamed, default ambiguous names like Question_eQt5ye appear, making reports harder to interpret.

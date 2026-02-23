@@ -47,7 +47,7 @@ Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi
 
 ## Analyze conversation fallout patterns
 
-To analyze conversation fallout patterns, it’s essential to identify the exact point in the dialogue where the fallout occurred. For example, whether it was after intent identification or before the resolution. More details, such as topic, node, speech recognition confidence score, and input mode, should also be logged in the conversation transcript stored in Dataverse.
+To analyze conversation fallout patterns, identify the exact point in the conversation where the fallout occurred. For example, whether it was after intent identification or before the resolution. More details, such as topic, node, speech recognition confidence score, and input mode, should also be logged in the conversation transcript stored in Dataverse.
 
 Administrators in Microsoft Copilot Studio must enable the option to log node-level details into the conversationTranscript JSON file. This file is stored in Dataverse and supports visual customization and data measures on the Omnichannel Historical Bot dashboard. 
 

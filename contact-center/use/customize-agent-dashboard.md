@@ -67,7 +67,7 @@ Administrators in Microsoft Copilot Studio must enable the option to log node-le
 
 #### Best practices for question nodes
 
-- Create custom visualization to show question nodes and their corresponding outcomes, successes, or failures.
+- Create custom visualizations to show question nodes and their corresponding outcomes, successes, or failures.
 - To accurately report success and failure rates for question nodes, rename the default question node in Microsoft Copilot Studio Canvas. Use clear and meaningful names to ensure that dashboards display actionable insights and make it easier to track where breakdowns occur in the conversation flow. This practice supports performance improvements and a better user experience. Examples of effective names include Confirm Order Status, Repeat Account Number, or Repeat Main Menu Options. If the node isn’t renamed, default ambiguous names like Question_eQt5ye appear, making reports harder to interpret.
 
 ## Use custom reporting variables

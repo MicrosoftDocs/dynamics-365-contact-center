@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days 
-ms.date: 02/06/2026
+ms.date: 02/24/2026
 ms.custom: bap-template
 ---
 
@@ -34,7 +34,7 @@ To view evaluations for your criteria:
   1.  In the site map of Copilot Service workspace, go to **Evaluations**. The **All evaluations** data grid appears.
   You can view specific data by using filters such as **Evaluation Name**, **Score**, **Evaluation method**, **AI agent status**, **Evaluator status**, **Evaluation criteria**, **Evaluator expiration date**, and **Evaluator completion date**.
     
-  2.  Select the required **Evaluation**. The evaluation for the case or conversation that you selected appears on the **Evaluations** side pane.
+  2.  Select the required **Evaluation**. The evaluation for the case or conversation that you selected appears on the **Evaluations** side pane. Evaluations results appear in the language you had selected for the criteria.
   
 
 If you enabled scoring for your criteria, you see the following details:

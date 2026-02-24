@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 02/06/2026
+ms.date: 02/24/2026
 ms.custom: bap-template 
 ---
 
@@ -49,6 +49,10 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
 1.  On the **New evaluation criteria** page, in the **Criteria details** section, provide the **Criteria name** and **Description**.
 
+1. To enable scoring per criteria, switch the **Criteria scoring** toggle to on.
+
+1. Select your language from the **Language** dropdown list. By default, all existing criteria are in the English language. You can’t modify the language after you save a criteria, even in the Draft state. Evaluations return results in the same language.
+
 1.  In the **Add form level instructions**, provide instructions, if any.
 
 1.  In **Section 1**, enter the following details:
@@ -76,8 +80,6 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required.
 
     You can delete or duplicate a section or question, as required.
-
-1. To enable scoring per criteria, switch the **Criteria scoring** toggle to on.
 
 1.  Select **Save**, and then select **Publish**.
 

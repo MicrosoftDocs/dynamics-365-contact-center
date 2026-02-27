@@ -57,7 +57,7 @@ You see the following evaluator and AI agent states on the grid.
 
 | State  | What it indicates  |
 |--------|--------------------|
-| Pending         | Evaluation hasn’t started.  |
+| Pending         | The evaluation hasn’t started.  |
 | In-progress     | Evaluator is completing the evaluation. |
 | Completed       | Evaluator finished and submitted the evaluation.  |
 | Expired         | Due date provided in the evaluation criteria expired, and the evaluator can no longer open the evaluation. |

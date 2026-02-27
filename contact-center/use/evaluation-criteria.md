@@ -87,7 +87,7 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
 You can [copy the out-of-the-box evaluation criteria](#copy-the-out-of-the-box-evaluation-criteria-for-cases-and-conversations) or create new evaluation criteria and then make edits.
 
-To edit your published evaluation criteria:
+To edit your published evaluation criteria, complete the following steps:
 
 1. In site map of Copilot Service workspace, go to **Evaluation criteria.**
 1. On the **Evaluation criteria** page, select the required evaluation criteria.

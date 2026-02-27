@@ -61,7 +61,7 @@ You see the following evaluator and AI agent states on the grid.
 | In-progress     | Evaluator is completing the evaluation. |
 | Completed       | The evaluator finished and submitted the evaluation.  |
 | Expired         | The due date provided in the evaluation criteria expired, and the evaluator can no longer open the evaluation. |
-| Not applicable  | AI agent is in **Error** status, and therefore the evaluator can’t evaluate. |
+| Not applicable  | The AI agent is in **Error** status, so the evaluator can’t complete the evaluation. |
 
 **AI agent status**:
 

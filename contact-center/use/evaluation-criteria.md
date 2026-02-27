@@ -37,7 +37,7 @@ As a Quality Evaluator, you can use or copy the out-of-the-box evaluation criter
 
 To view evaluation criteria, complete the following steps:
 
-1. In site map of Copilot Service workspace, go to **Evaluation criteria.**
+1. In the site map of Copilot Service workspace, go to **Evaluation criteria.**
 
 1. On the **Evaluation criteria** page, select the out-of-the-box evaluation criteria to view the details.
 

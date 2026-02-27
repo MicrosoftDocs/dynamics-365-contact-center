@@ -103,7 +103,7 @@ To edit your published evaluation criteria, complete the following steps:
 
 Each edit and publish action increments the evaluation criteria version, and the latest published version is always used for new evaluations. Supervisors can review prior versions, restore any version to make it the current one, or discard draft changes as needed.
 
-1. Select the required source criteria and go to the **Versioning History** tab. You can see the criteria version and the version number along with the latest data that might have been added to the criteria.
+1. Select the source criteria and go to the **Versioning History** tab to view versions and version numbers along with the latest data that might have been added to the criteria.
 1. Select **Record** to go a specific version and view the details in read-only.
 1. Select **Restore/Publish** to republish the selected version as the latest. This discards the current draft and increments the version number of the published criteria.
 

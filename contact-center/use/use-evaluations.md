@@ -71,7 +71,7 @@ You see the following evaluator and AI agent states on the grid.
 | In-progress | Evaluation is in progress |
 | Completed| Evaluation is complete. |
 | Error | AI agent shows errors due to issues. |
-| Not applicable| Evaluation isn’t using an AI agent and a manual review is performed. |
+| Not applicable| The evaluation doesn't use an AI agent and is completed manually. |
 
 ## Related information
 

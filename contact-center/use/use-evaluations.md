@@ -34,7 +34,7 @@ To view evaluations for your criteria:
   1.  In the site map of Copilot Service workspace, go to **Evaluations**. The **All evaluations** data grid appears.
   You can view specific data by using filters such as **Evaluation Name**, **Score**, **Evaluation method**, **AI agent status**, **Evaluator status**, **Evaluation criteria**, **Evaluator expiration date**, and **Evaluator completion date**.
     
-  2.  Select the required **Evaluation**. The evaluation for the case or conversation that you selected appears on the **Evaluations** side pane. Evaluations return results in the language in which the criteria was created.
+  2.  Select the required **Evaluation**. The evaluation for the selected case or conversation appears in the **Evaluations** side pane. Evaluations return results in the language in which the criteria were created.
   
 
 If you enabled scoring for your criteria, you see the following details:

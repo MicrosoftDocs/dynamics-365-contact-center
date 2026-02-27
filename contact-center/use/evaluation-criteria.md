@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 02/06/2026
+ms.date: 02/27/2026
 ms.custom: bap-template 
 ---
 
@@ -28,16 +28,16 @@ This article explains how to use, edit, and extend evaluation criteria, includin
 
 ## Use the out-of-the-box evaluation criteria
 
-As a Quality Evaluator, you can use or copy the out-of-the-box evaluation criteria; create a new evaluation criteria; and edit a published evaluation criteria. 
+As a Quality Evaluator, you can use or copy the out-of-the-box evaluation criteria, create a new evaluation criteria, and edit published evaluation criteria. 
 
 - Use the **Support quality** or **Closed Conversations Default Criteria**.
 
 > [!NOTE]
 > The out-of-the-box evaluation criteria are prefilled, published, and read-only.
 
-To view an evaluation criteria:
+To view evaluation criteria, complete the following steps:
 
-1. In site map of Copilot Service workspace, go to **Evaluation criteria.**
+1. In the site map of Copilot Service workspace, go to **Evaluation criteria.**
 
 1. On the **Evaluation criteria** page, select the out-of-the-box evaluation criteria to view the details.
 
@@ -49,7 +49,11 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
 1.  On the **New evaluation criteria** page, in the **Criteria details** section, provide the **Criteria name** and **Description**.
 
-1.  In the **Add form level instructions**, provide instructions, if any.
+1. To enable scoring per criteria, switch the **Criteria scoring** toggle to on.
+
+1. Select your language from the **Language** dropdown list. Learn more about supported languages in [Generative answers and orchestration, and user language](/microsoft-copilot-studio/authoring-language-support#supported-languages). By default, all existing criteria are in English. You can’t modify the language after you save a criteria, even in the **Draft** state. Evaluation results are returned in the same language. 
+
+1.  In the **Add form level instructions** section, provide instructions, if any.
 
 1.  In **Section 1**, enter the following details:
 
@@ -57,11 +61,11 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
     1.  **Description**: Provide a description.
 
-    1.  **Section weight (%)**: Provide a weight for the evaluation criteria. The weight % across sections should add up to 100.
+    1.  **Section weight (%)**: Assign a weight to the evaluation criteria. The total weight across sections must equal 100%.
 
 1.  Select **Add question,** if you want to add a question.
 
-    For every question,
+    For each question, provide the following details:
 
     1.  **Select answer type**: Select from the options, **Yes/No**, **Multiple choice**, **Choose from list**, or **Text selection**.
 
@@ -71,13 +75,11 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
     
     1. Select the **AI response enabled** checkbox if you want AI to predict an answer for a question. If unselected, the answer is left blank for the reviewer to submit.
 
-    1.  Depending on the answer type you select, you can add scoring for the answers by selecting the **Scoring enabled** checkbox. You can turn off the scoring toggle if you don't want to create a criteria with scoring.
+    1.  Depending on the answer type, select **Scoring enabled** to add scoring. Turn off the scoring toggle if you don't want to create a criteria with scoring.
 
 1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required.
 
     You can delete or duplicate a section or question, as required.
-
-1. To enable scoring per criteria, switch the **Criteria scoring** toggle to on.
 
 1.  Select **Save**, and then select **Publish**.
 
@@ -85,29 +87,29 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
 You can [copy the out-of-the-box evaluation criteria](#copy-the-out-of-the-box-evaluation-criteria-for-cases-and-conversations) or create new evaluation criteria and then make edits.
 
-To edit your published evaluation criteria:
+To edit your published evaluation criteria, complete the following steps:
 
 1. In site map of Copilot Service workspace, go to **Evaluation criteria.**
 1. On the **Evaluation criteria** page, select the required evaluation criteria.
 1. On the selected evaluation criteria page, select **Edit**.
-1. Save the changes. The criteria is saved as a draft. You can also revert to the published criteria at this stage.
+1. Save the changes. The criteria gets saved as a draft. You can also revert to the published criteria at this stage.
 1. Publish the changes. 
 
 > [!NOTE]
-> - You can't change the scoring toggle at the criteria level after the criteria publishes.
-> - Any evaluation plan that's still running continues to use the existing criteria. After you publish the edited evaluation criteria, evaluation plans use the latest criteria in the next run. 
+> - You can't change the scoring toggle at the criteria level after the criteria is published.
+> - Evaluation plans that are already running continue to use the existing criteria. After you publish the updated criteria, evaluation plans use the latest criteria in the next run. 
 
 ## Manage evaluation criteria versions
 
 Each edit and publish action increments the evaluation criteria version, and the latest published version is always used for new evaluations. Supervisors can review prior versions, restore any version to make it the current one, or discard draft changes as needed.
 
-1. Select the required source criteria and go to the **Versioning History** tab. You can see the criteria version and the version number along with the latest data that might have been added to the criteria.
+1. Select the source criteria and go to the **Versioning History** tab to view versions and version numbers along with the latest data that might have been added to the criteria.
 1. Select **Record** to go a specific version and view the details in read-only.
 1. Select **Restore/Publish** to republish the selected version as the latest. This discards the current draft and increments the version number of the published criteria.
 
 You can also add the **Version** column to the evaluation grid to track versions. Learn more in [Evaluations](use-evaluations.md#evaluations).
 
-## Create and run simulation
+## Create and run a simulation
 
 You need to enable the **QEA Simulation** flow before you run a simulation. Learn more in [Configure connection references](/dynamics365/customer-service/administer/admin-km-agent-connections).
 
@@ -137,9 +139,9 @@ Supervisors can view simulation results. The results don’t affect records or q
 
 ## Extend your evaluation criteria
 
-After you create a baseline criteria for your business unit, you can extend the criteria to suit your organizational requirements. Updates to the baseline criteria automatically appear in all extended criteria. Select any custom evaluation criteria in the **Published** state as source criteria to extend it further.
+After you create a source criteria for your business unit, you can extend the criteria to suit your organizational requirements. Updates to the source criteria automatically appear in all the extended criteria. Select any custom evaluation criteria in the **Published** state as source criteria to extend it further.
 
-1.  Select a criteria, and then select **Extend criteria**. The **New extended evaluation criteria** page appears.
+1.  Select the criteria, and then select **Extend criteria**. The **New extended evaluation criteria** page appears.
 
 1.  In the **Extended criteria details** section, enter the following details:
 
@@ -148,11 +150,9 @@ After you create a baseline criteria for your business unit, you can extend the 
     1.  **Description**: Provide a description. To provide your own instructions, turn off the **Use source instructions** toggle.
         To use the source instructions, turn on the **Use source instructions** toggle.
 
-    1.  **Extended scoring weight**: If the source criteria has scoring
-        criteria enabled, provide the extended scoring weight.
+    1.  **Extended scoring weight**: If the source criteria has scoring criteria enabled, provide the extended scoring weight.
 
-    1.  **Source scoring weight**: Gets auto calculated, depending on
-        the extended scoring criteria.
+    1.  **Source scoring weight**: Gets auto calculated, depending on the extended scoring criteria.
 
 1.  Select **Add question** to add questions to the extended criteria.
 

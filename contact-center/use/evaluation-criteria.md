@@ -141,7 +141,7 @@ Supervisors can view simulation results. The results don’t affect records or q
 
 After you create a baseline criteria for your business unit, you can extend the criteria to suit your organizational requirements. Updates to the baseline criteria automatically appear in all extended criteria. Select any custom evaluation criteria in the **Published** state as source criteria to extend it further.
 
-1.  Select a criteria, and then select **Extend criteria**. The **New extended evaluation criteria** page appears.
+1.  Select the criteria, and then select **Extend criteria**. The **New extended evaluation criteria** page appears.
 
 1.  In the **Extended criteria details** section, enter the following details:
 

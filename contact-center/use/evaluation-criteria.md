@@ -28,7 +28,7 @@ This article explains how to use, edit, and extend evaluation criteria, includin
 
 ## Use the out-of-the-box evaluation criteria
 
-As a Quality Evaluator, you can use or copy the out-of-the-box evaluation criteria; create a new evaluation criteria; and edit a published evaluation criteria. 
+As a Quality Evaluator, you can use or copy the out-of-the-box evaluation criteria, create a new evaluation criteria, and edit published evaluation criteria. 
 
 - Use the **Support quality** or **Closed Conversations Default Criteria**.
 

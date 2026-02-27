@@ -37,7 +37,7 @@ To view evaluations for your criteria:
   2.  Select the required **Evaluation**. The evaluation for the selected case or conversation appears in the **Evaluations** side pane. Evaluations return results in the language in which the criteria were created.
   
 
-If you enabled scoring for your criteria, you see the following details:
+If scoring is enabled for your criteria, the following details appear:
     
   - **Evaluation Summary**: Highlights evaluation results and suggests actions for improvement, like coaching opportunities for representatives or specific activities to bring a case back on track. The Quality Manager and Quality Reviewer use these insights to improve the overall quality.
   

@@ -51,7 +51,7 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
 1. To enable scoring per criteria, switch the **Criteria scoring** toggle to on.
 
-1. Select your language from the **Language** dropdown list. By default, all existing criteria are in English. You can’t modify the language after you save a criteria, even in the Draft state. Evaluation results are returned in the same language.
+1. Select your language from the **Language** dropdown list. By default, all existing criteria are in English. You can’t modify the language after you save a criteria, even in the **Draft** state. Evaluation results are returned in the same language. 
 
 1.  In the **Add form level instructions** section, provide instructions, if any.
 

@@ -51,9 +51,9 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
 1. To enable scoring per criteria, switch the **Criteria scoring** toggle to on.
 
-1. Select your language from the **Language** dropdown list. By default, all existing criteria are in the English language. You can’t modify the language after you save a criteria, even in the Draft state. Evaluations return results in the same language.
+1. Select your language from the **Language** dropdown list. By default, all existing criteria are in English. You can’t modify the language after you save a criteria, even in the Draft state. Evaluation results are returned in the same language.
 
-1.  In the **Add form level instructions**, provide instructions, if any.
+1.  In the **Add form level instructions** section, provide instructions, if any.
 
 1.  In **Section 1**, enter the following details:
 
@@ -61,7 +61,7 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
     1.  **Description**: Provide a description.
 
-    1.  **Section weight (%)**: Provide a weight for the evaluation criteria. The weight % across sections should add up to 100.
+    1.  **Section weight (%)**: Assign a weight to the evaluation criteria. The total weight across sections must equal 100%.
 
 1.  Select **Add question,** if you want to add a question.
 
@@ -75,7 +75,7 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
     
     1. Select the **AI response enabled** checkbox if you want AI to predict an answer for a question. If unselected, the answer is left blank for the reviewer to submit.
 
-    1.  Depending on the answer type you select, you can add scoring for the answers by selecting the **Scoring enabled** checkbox. You can turn off the scoring toggle if you don't want to create a criteria with scoring.
+    1.  Depending on the answer type, select **Scoring enabled** to add scoring. Turn off the scoring toggle if you don't want to create a criteria with scoring.
 
 1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required.
 
@@ -92,11 +92,11 @@ To edit your published evaluation criteria, complete the following steps:
 1. In site map of Copilot Service workspace, go to **Evaluation criteria.**
 1. On the **Evaluation criteria** page, select the required evaluation criteria.
 1. On the selected evaluation criteria page, select **Edit**.
-1. Save the changes. The criteria is saved as a draft. You can also revert to the published criteria at this stage.
+1. Save the changes. The criteria gets saved as a draft. You can also revert to the published criteria at this stage.
 1. Publish the changes. 
 
 > [!NOTE]
-> - You can't change the scoring toggle at the criteria level after the criteria are published.
+> - You can't change the scoring toggle at the criteria level after the criteria is published.
 > - Evaluation plans that are already running continue to use the existing criteria. After you publish the updated criteria, evaluation plans use the latest criteria in the next run. 
 
 ## Manage evaluation criteria versions
@@ -139,7 +139,7 @@ Supervisors can view simulation results. The results don’t affect records or q
 
 ## Extend your evaluation criteria
 
-After you create a baseline criteria for your business unit, you can extend the criteria to suit your organizational requirements. Updates to the baseline criteria automatically appear in all extended criteria. Select any custom evaluation criteria in the **Published** state as source criteria to extend it further.
+After you create a source criteria for your business unit, you can extend the criteria to suit your organizational requirements. Updates to the source criteria automatically appear in all the extended criteria. Select any custom evaluation criteria in the **Published** state as source criteria to extend it further.
 
 1.  Select the criteria, and then select **Extend criteria**. The **New extended evaluation criteria** page appears.
 
@@ -150,11 +150,9 @@ After you create a baseline criteria for your business unit, you can extend the 
     1.  **Description**: Provide a description. To provide your own instructions, turn off the **Use source instructions** toggle.
         To use the source instructions, turn on the **Use source instructions** toggle.
 
-    1.  **Extended scoring weight**: If the source criteria has scoring
-        criteria enabled, provide the extended scoring weight.
+    1.  **Extended scoring weight**: If the source criteria has scoring criteria enabled, provide the extended scoring weight.
 
-    1.  **Source scoring weight**: Gets auto calculated, depending on
-        the extended scoring criteria.
+    1.  **Source scoring weight**: Gets auto calculated, depending on the extended scoring criteria.
 
 1.  Select **Add question** to add questions to the extended criteria.
 

@@ -109,7 +109,7 @@ Each edit and publish action increments the evaluation criteria version, and the
 
 You can also add the **Version** column to the evaluation grid to track versions. Learn more in [Evaluations](use-evaluations.md#evaluations).
 
-## Create and run simulation
+## Create and run a simulation
 
 You need to enable the **QEA Simulation** flow before you run a simulation. Learn more in [Configure connection references](/dynamics365/customer-service/administer/admin-km-agent-connections).
 

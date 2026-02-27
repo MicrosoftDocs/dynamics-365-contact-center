@@ -35,7 +35,7 @@ As a Quality Evaluator, you can use or copy the out-of-the-box evaluation criter
 > [!NOTE]
 > The out-of-the-box evaluation criteria are prefilled, published, and read-only.
 
-To view an evaluation criteria:
+To view evaluation criteria, complete the following steps:
 
 1. In site map of Copilot Service workspace, go to **Evaluation criteria.**
 

@@ -96,7 +96,7 @@ To edit your published evaluation criteria, complete the following steps:
 1. Publish the changes. 
 
 > [!NOTE]
-> - You can't change the scoring toggle at the criteria level after the criteria publishes.
+> - You can't change the scoring toggle at the criteria level after the criteria are published.
 > - Any evaluation plan that's still running continues to use the existing criteria. After you publish the edited evaluation criteria, evaluation plans use the latest criteria in the next run. 
 
 ## Manage evaluation criteria versions

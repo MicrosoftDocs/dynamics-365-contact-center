@@ -65,7 +65,7 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
 1.  Select **Add question,** if you want to add a question.
 
-    For every question,
+    For each question, provide the following details:
 
     1.  **Select answer type**: Select from the options, **Yes/No**, **Multiple choice**, **Choose from list**, or **Text selection**.
 

@@ -70,7 +70,7 @@ You see the following evaluator and AI agent states on the grid.
 | Pending| The evaluation hasn’t started. |
 | In-progress | The evaluation is in progress. |
 | Completed| The evaluation is complete. |
-| Error | AI agent shows errors due to issues. |
+| Error | The AI agent encountered an error during the evaluation. |
 | Not applicable| The evaluation doesn't use an AI agent and is completed manually. |
 
 ## Related information

@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes in Dynamics 365 Contact Center and Customer Service.
-ms.date: 02/19/2026
+ms.date: 02/27/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan

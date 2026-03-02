@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection:
-ms.date: 11/07/2025
+ms.date: 03/02/2025
 ms.custom: bap-template
 ---
 
@@ -23,7 +23,8 @@ The **All ongoing conversations** view helps supervisors monitor, manage, and op
 
 ## Prerequisites
 
-- You have the Omnichannel Supervisor role. Learn more in [Assign roles and enable users](/dynamics365/customer-service/implement/add-users-assign-roles). 
+- You have the **Omnichannel Supervisor** role with the **prvSendAppNotification** privilege at the Organization level. Learn more in [Assign roles and enable users](/dynamics365/customer-service/implement/add-users-assign-roles).
+- Representatives have the **Omnichannel agent** role with the **prvReadAppNotification** privilege and **read** access.
 
 
 ## Access the All ongoing conversations view

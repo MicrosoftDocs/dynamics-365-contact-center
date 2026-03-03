@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: reference
 ms.collection:
-ms.date: 01/16/2025
+ms.date: 02/04/2026
 ms.custom: bap-template 
 ---
 
@@ -106,7 +106,7 @@ In the Dynamics 365 instance, check the record identification rules for the voic
 		</entity>
 	</fetch>
 	<ContextKey name=\"msdyn_incident_msdyn_ocliveworkitem\"/>
-</RecordIdentificationRule>undefined</RecordIdentificationRuleSet> 
+</RecordIdentificationRule></RecordIdentificationRuleSet> 
 “}), headers: { 'Content-type': 'application/json; charset=UTF-8' } }) .then() 
 ```
 ### Related information

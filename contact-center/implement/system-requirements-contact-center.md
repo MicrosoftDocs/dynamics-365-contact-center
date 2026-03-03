@@ -1,7 +1,7 @@
 ---
 title: System requirements for Dynamics 365 Contact Center
 description: Learn about the prerequisites, system requirements, and accessible websites for deploying and using Dynamics 365 Contact Center.
-ms.date: 02/05/2025
+ms.date: 01/30/2026
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
@@ -24,21 +24,7 @@ Make sure that Dynamics 365 Contact Center is available in your region. Learn mo
 
 ### Licenses
 
-Before you can use Dynamics 365 Contact Center with the customer relationship management (CRM) solution of your choice, each channel user must have one or more active subscriptions for the following standalone licenses.
-
-| Capability | License |
-|---|---|
-| Voice, chat, and digital messaging | Dynamics 365 Contact Center |
-| Chat and digital messaging | Dynamics 365 Contact Center Digital |
-| Voice | Dynamics 365 Contact Center Voice |
-
-Before you can use Dynamics 365 Contact Center with Dynamics 365 Customer Service Enterprise, each channel user must have one or more active subscriptions for the following add-on licenses.
-
-| Capability | License |
-|---|---|
-| Voice, chat, and digital messaging | Dynamics 365 Contact Center Add-on for Customer Service Enterprise |
-| Chat and digital messaging | Dynamics 365 Contact Center Digital Add-on for Customer Service Enterprise |
-| Voice | Dynamics 365 Contact Center Voice Add-on for Customer Service Enterprise |
+Specific licensing requirements apply for each channel user to use voice, chat, and digital messaging in Dynamics 365 Contact Center with Dynamics 365 Customer Service or with the customer relationship management (CRM) solution of your choice. Learn more in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 Learn how to purchase add-ins in [Buy an add-on](/microsoft-365/commerce/buy-or-edit-an-add-on?view=o365-worldwide#buy-an-add-on&preserve-view=true).
 
@@ -141,4 +127,4 @@ The following table shows geographic location–specific links that should be ma
 
 ## Related information
 
-[Get started with Copilot Service workspace](../use/ccw-overview.md)
+[Get started with Copilot Service workspace](../use/ccw-overview.md)  

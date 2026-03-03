@@ -1,27 +1,23 @@
 ---
-title: Overview of agent hub (preview)
+title: Overview of agent hub
 description: Learn about the Agent hub in Dynamics 365 Contact Center and how it helps you manage all your autonomous agents in one place.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: overview 
 ms.collection: bap-ai-copilot 
-ms.date: 08/01/2025
+ms.date: 11/07/2025
 ms.custom: 
   - bap-template
 ---
 
-# Overview of agent hub (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Overview of agent hub
 
 Agent hub in Dynamics 365 Contact Center and Customer Service is a one-stop hub that empowers admins and supervisors to safely adopt autonomous AI agents, monitor impact, and make informed, responsible decisions.
 
 Use the links to the various articles on the **Agent hub** page to learn about the AI capabilities offered in Dynamics 365 Contact Center and Customer Service.
 
 The agent hub helps you navigate to the available autonomous agents and answers questions on the business values they provide.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Agent hub provides a unified view of the following capabilities:
 

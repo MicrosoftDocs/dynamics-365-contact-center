@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: concept-article
 ms.collection: 
-ms.date: 08/26/2025
+ms.date: 10/31/2025
 ms.custom: bap-template 
 ---
 
@@ -15,15 +15,15 @@ ms.custom: bap-template
 [!INCLUDE[cc-rebrand-bot-agent](../includes/cc-rebrand-bot-agent.md)]
 
 
-The **Bot** report provides insights into key metrics for all the Copilot agents used in your contact center. It allows you to monitor the volumes of in-progress and completed AI agent conversations.
+The **Bot** report provides insights into key metrics for all the Copilot agents used in your contact center. It allows you to monitor the volumes of in-progress and completed AI agent conversations. [Learn how to access the report](/dynamics365/customer-service/use/intro-realtime-analytics-dashboard#access-reports).
 
-Out of the box, the dashboard displays key metrics for the last 24 hours to help you understand AI agent usage and optimize performance in real time.
+Out of the box, the dashboard displays key metrics for the last 2 hours to help you understand AI agent usage and optimize performance in real time.
 
 You can filter the report by selecting **All** to view AI agent performance across all channels or by choosing a specific channel. Filters include time, queue, time zone, and conversation status. Learn more in [Overview of Omnichannel real-time analytics dashboards](/dynamics365/customer-service/use/intro-realtime-analytics-dashboard#filter-information-displayed-on-dashboard).
 
 ## Prerequisites
 
-To view the report in Copilot Service worskpace, administrators with the Omnichannel agent role must enable the real-time **Bot** dashboard in **Copilot Service admin center** > **Insights** **Productivity** > **Real-time Analytics**.
+To view the report in Copilot Service workspace, administrators with the Omnichannel agent role must enable the real-time **Bot** dashboard in **Copilot Service admin center** > **Insights** **Productivity** > **Real-time Analytics**.
 
 ## Key metrics
 

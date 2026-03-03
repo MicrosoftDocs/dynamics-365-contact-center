@@ -1,7 +1,7 @@
 ---
 title: Chat with case data in Customer Service (preview)
 description: Learn how to use Copilot for Microsoft 365 to chat with service data and ask questions in natural language.
-ms.date: 07/30/2025
+ms.date: 01/13/2026
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template

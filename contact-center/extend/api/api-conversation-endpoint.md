@@ -1,5 +1,5 @@
 ---
-title: Use /conversation/{id} endpoint (preview)
+title: Use /conversation/{id} endpoint
 description: Learn how to use the /conversation/{id} endpoint in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
 ms.date: 09/10/2025
 ms.topic: how-to

@@ -179,4 +179,4 @@ The API shows the following response.
 
 ### Related information 
 
-[Overview of messaging APIs](../intro-messaging-apis.md)
+[Overview of messaging APIs](../intro-messaging-apis.md)  

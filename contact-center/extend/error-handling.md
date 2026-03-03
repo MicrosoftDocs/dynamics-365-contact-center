@@ -1,5 +1,5 @@
 ---
-title: Error handling in messaging APIs (preview)
+title: Error handling in messaging APIs
 description: Learn how error handling in Dynamics 365 Customer Service and Dynamics 365 Contact Center messaging APIs works.
 ms.date: 09/10/2025
 ms.topic: how-to
@@ -10,8 +10,6 @@ ms.custom: bap-template
 ---
 
 # Error handling in messaging APIs
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 When you work with the Messaging APIs, it’s important to understand how errors are communicated as it helps you implement proper error handling and debugging in your applications.
 
@@ -68,4 +66,4 @@ Each failed response includes a header, `x-ms-correlation-id: <GUID>`, which uni
 
 ### Related information 
 
-[Overview of messaging APIs](intro-messaging-apis.md)
+[Overview of messaging APIs](intro-messaging-apis.md)  

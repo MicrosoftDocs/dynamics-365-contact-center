@@ -1,5 +1,5 @@
 ---
-title: Use /conversation/{conversationId}/messages endpoint (preview)
+title: Use /conversation/{conversationId}/messages endpoint
 description: Learn how to retrieve messages from a conversation using the /conversation/{conversationId}/messages endpoint in Dynamics 365 Customer Service and Dynamics 365 Contact Center. 
 ms.date: 09/10/2025
 ms.topic: how-to
@@ -86,4 +86,4 @@ If there aren't any messages for the conversation ID, the API returns an empty a
 
 ### Related information 
 
-[Overview of messaging APIs](../intro-messaging-apis.md)
+[Overview of messaging APIs](../intro-messaging-apis.md)  

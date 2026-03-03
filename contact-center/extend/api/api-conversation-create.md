@@ -9,16 +9,11 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Use /consumer/conversations/create endpoint (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Use /consumer/conversations/create endpoint
 
 The `create` endpoint starts a new customer conversation using the Messaging API. Conversations remain active until a customer service representative (service representative or representative) ends the conversation, the conversation enters a waiting state, or a timeout rule ends the conversation.
 
  To end a conversation early, such as when the customer ends it, close the conversation using the `POST /api/v1.0/consumer/conversation/{conversationId}` with the conversation-ending activity. 
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 
 ## Method
 

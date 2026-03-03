@@ -69,4 +69,4 @@ Query parameters allow you to filter, limit, and paginate the list of active con
 
 ### Related information 
 
-[Overview of messaging APIs](../intro-messaging-apis.md)
+[Overview of messaging APIs](../intro-messaging-apis.md)  

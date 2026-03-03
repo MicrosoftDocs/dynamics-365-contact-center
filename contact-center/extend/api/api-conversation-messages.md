@@ -1,5 +1,5 @@
 ---
-title: Use /conversation/{conversationId}/messages endpoint (preview)
+title: Use /conversation/{conversationId}/messages endpoint
 description: Learn how to retrieve messages from a conversation using the /conversation/{conversationId}/messages endpoint in Dynamics 365 Customer Service and Dynamics 365 Contact Center. 
 ms.date: 09/10/2025
 ms.topic: how-to
@@ -10,17 +10,13 @@ ms.custom: bap-template
 ---
 
 
-# Use /conversation/{conversationId}/messages endpoint (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Use /conversation/{conversationId}/messages endpoint
 
 Retrieve a list of all messages exchanged in an active conversation. The response is structured using the [Bot Framework Activity Schema](/javascript/api/botframework-schema/activity).
 
 If there aren't any messages for the conversation ID, the API returns an empty array.
 
 [!INCLUDE[cc-polling-note](../../includes/cc-polling-note.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Method
 
@@ -90,4 +86,4 @@ If there aren't any messages for the conversation ID, the API returns an empty a
 
 ### Related information 
 
-[Overview of messaging APIs](../intro-messaging-apis.md)
+[Overview of messaging APIs](../intro-messaging-apis.md)  

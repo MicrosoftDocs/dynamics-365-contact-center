@@ -10,15 +10,11 @@ ms.custom: bap-template
 ---
 
 
-# Use webhook to receive messages and events (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Use webhook to receive messages and events
 
 When a conversation is active, events and messages from the customer service representative are sent to your configured webhook endpoint. The webhook is required for receiving real-time updates in your custom messaging channel.
 
 The service is retried three times, with a 10-second timeout on each attempt. 
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 
 ## Endpoint

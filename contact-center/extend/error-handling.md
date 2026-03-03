@@ -9,7 +9,7 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Error handling in messaging APIs (preview)
+# Error handling in messaging APIs
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -18,9 +18,6 @@ When you work with the Messaging APIs, it’s important to understand how errors
 The APIs return standard HTTP status codes to indicate success or failure, and includes detailed error messages in the response body. These error responses often follow the [RFC 7807](https://datatracker.ietf.org/doc/html/rfc7807) specification for problem details in HTTP APIs.
 
 In addition to the status code and message, failed requests include a correlation ID in the response headers that you can use for troubleshooting.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 
 ## HTTP Status Codes
 

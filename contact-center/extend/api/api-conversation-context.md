@@ -9,19 +9,13 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Use /conversation/{conversationId}/contexts endpoint (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
+# Use /conversation/{conversationId}/contexts endpoint
 
 Retrieve an array of context variables associated with an ongoing conversation. These context variables enrich the conversation with additional metadata, such as product details, browser information, and locale, and are visible to the customer service representative (service representative or representative).
 
 If the conversation has no context variables, the API returns an empty array.
 
 [!INCLUDE[cc-polling-note](../../includes/cc-polling-note.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 
 ## Method
 

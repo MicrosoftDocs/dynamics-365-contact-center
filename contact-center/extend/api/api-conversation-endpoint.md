@@ -9,15 +9,10 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Use /conversation/{id} endpoint (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Use /conversation/{id} endpoint
 
 This endpoint lets you send an activity to an ongoing conversation. The request follows the [Bot Framework Activity Schema](https://github.com/microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md).
 Send various types of activities, such as messages, typing indicators, or conversation closure events.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 
 ## Method
 `POST`

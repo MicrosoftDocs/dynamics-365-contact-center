@@ -36,7 +36,7 @@ In the site map of Copilot Service workspace, go to **Conversations**. The **All
 
 ## Perform bulk actions
 
-As a supervisor, managing multiple items individually can be time-consuming and error-prone. Bulk actions enables supervisors to perform operations on multiple records simultaneously, reducing repetitive tasks and improving efficiency. Batch processing helps reduce errors and keeps updates consistent across selected records.
+As a supervisor, managing multiple items individually can be time-consuming and error-prone. The bulk actions feature enables supervisors to perform operations on multiple records simultaneously, reducing repetitive tasks and improving efficiency. Batch processing helps reduce errors and keeps updates consistent across selected records.
 
 Select multiple conversations to view and perform bulk actions on the **All ongoing conversations** view. 
 
@@ -76,15 +76,15 @@ Notify representatives engaged in persistent and live chat conversations with re
 
 ### Track the status of bulk actions
 
-Track the status of bulk actions performed on conversations. All bulk actions are recorded in **Action History**, such as **Action type**, **Title**, **Created by**, **Recipients**, **Start and End time**, **Status**, and **Action status details**. You can also view the action history by selecting the **Bulk action status** option, that appears once you have taken any action on conversations.
+Track the status of bulk actions performed on conversations. All bulk actions are recorded in **Action History**, such as **Action type**, **Title**, **Created by**, **Recipients**, **Start and End time**, **Status**, and **Action status details**. You can also view the action history by selecting the **Bulk action status** option, that appears once you take any action on conversations.
  
-- Select **Action History** to check the status of the action that you have taken for conversations.
+- Select **Action History** to check the status of the action that you took for conversations.
 
     :::image type="content" source="../media/bulk-action-history.png" alt-text="Screenshot shows bulk action history details." lightbox="../media/bulk-action-history.png":::
 
 ## Limitations
 
-- Bulk actions require supervisor approval and can only be performed by users with the Omnichannel Supervisor role. Only administrators have permission to delete items.
+- Only users with the Omnichannel Supervisor role can perform bulk actions, and those actions require supervisor approval.  Only administrators have permission to delete items.
 - Bulk actions can be performed on up to 1,000 conversations simultaneously. 
 - Message fields to send messages to customers or notify representatives are limited to 1,000 characters. 
 

@@ -36,7 +36,7 @@ In the site map of Copilot Service workspace, go to **Conversations**. The **All
 
 ## Perform bulk actions
 
-As a supervisor, managing multiple items individually can be time-consuming and error-prone. The bulk actions feature enables supervisors to perform operations on multiple records simultaneously, reducing repetitive tasks and improving efficiency. Batch processing helps reduce errors and keeps updates consistent across selected records.
+As a supervisor, managing multiple items individually can be time-consuming and error-prone. The bulk actions feature lets supervisors perform operations on multiple records at once, reducing repetitive work and improving efficiency. Batch processing helps reduce errors and keeps updates consistent across selected records.
 
 Select multiple conversations to view and perform bulk actions on the **All ongoing conversations** view. 
 
@@ -76,7 +76,7 @@ Notify representatives engaged in persistent and live chat conversations with re
 
 ### Track the status of bulk actions
 
-Track the status of bulk actions performed on conversations. All bulk actions are recorded in **Action History**, such as **Action type**, **Title**, **Created by**, **Recipients**, **Start and End time**, **Status**, and **Action status details**. You can also view the action history by selecting the **Bulk action status** option, that appears once you take any action on conversations.
+Track the status of bulk actions performed on conversations. All bulk actions are recorded in **Action History**, such as **Action type**, **Title**, **Created by**, **Recipients**, **Start and End time**, **Status**, and **Action status details**. You can also view the action history by selecting the **Bulk action status** option that appears when you take any action on conversations.
  
 - Select **Action History** to check the status of the action that you took for conversations.
 

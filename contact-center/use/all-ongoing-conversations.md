@@ -84,7 +84,7 @@ Track the status of bulk actions performed on conversations. All bulk actions ar
 
 ## Limitations
 
-- Only users with the Omnichannel Supervisor role can perform bulk actions, and those actions require supervisor approval.  Only administrators have permission to delete items.
+- Only users with the Omnichannel Supervisor role can perform bulk actions, and those actions require supervisor approval. Only administrators have permission to delete items.
 - Bulk actions can be performed on up to 1,000 conversations simultaneously. 
 - Message fields to send messages to customers or notify representatives are limited to 1,000 characters. 
 

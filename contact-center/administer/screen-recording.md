@@ -40,7 +40,7 @@ When desktop companion application is used, screen recordings are saved locally 
 
 ## Enable screen recording for representatives
 
-1. [Create experience profiles](create-agent-experience-profile.md).
+1. [Create experience profiles](/dynamics365/customer-service/administer/create-agent-experience-profile). 
 1. Select the screen recording option. The screen recording button appears in the productivity pane.
 
 

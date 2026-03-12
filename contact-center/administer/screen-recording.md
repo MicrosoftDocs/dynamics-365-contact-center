@@ -17,7 +17,7 @@ Screen recording captures a customer service representative (service representat
 It helps organizations support quality, compliance, training, and operational insights by allowing authorized users to review how work is handled in real workflows.
 
 > [!IMPORTANT]
-> - This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and should not be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. <br> 
+> - This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and shouldn't be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. <br> 
 > Customers are solely responsible for using Dynamics 365, this feature, and any associated feature or service in compliance with all applicable laws, including laws that are related to accessing individual employee analytics, and monitoring, recording, and storing communications with users. As part of this compliance, customers must adequately notify users that their communications with customer service representatives (service representatives or representatives) might be monitored, recorded, or stored. As required by applicable laws, customers must also obtain consent from users before they use this feature with them. In addition, customers are encouraged to have a mechanism in place to inform their service representatives that their communications with users might be monitored, recorded, or stored.
 
 ## Prerequisites
@@ -34,7 +34,7 @@ Before you can use screen recording, make sure the following requirements are me
 
 ## How screen recording works
 
-Screen recording captures a representative’s on-screen actions while the representative is handling customer interactions. This can include navigation across applications, data entry, and workflow steps performed during a support session. 
+Screen recording captures a representative’s on-screen actions while the representative is handling customer interactions. The actions can include navigation across applications, data entry, and workflow steps performed during a support session. 
 
 Recordings are typically associated with customer interactions such as conversations, chats, and cases, and they’re available to authorized roles for review and analysis.
 
@@ -42,19 +42,19 @@ When desktop companion application is used, screen recordings are saved locally 
 
 ## Enable screen recording for representatives
 
-1. [Create experience profiles](create-agent-experience-profile.md#create-experience-profiles).
-1. Select the screen srecording option. The screen recording button appears in the productivity pane.
+1. [Create experience profiles](create-agent-experience-profile.md).
+1. Select the screen recording option. The screen recording button appears in the productivity pane.
 
 
 ## Recording types
 
 ### Automated call recording
 
-Automated screen recording starts when the CSR accepts a voice call and stops when the voice call ends. If the CSR switches to a video call, a system notification is shown to the end customer indicating that the video in the call might be recorded for quality and training purposes.
+Automated screen recording starts when the representative accepts a voice call and stops when the voice call ends. If the  representative switches to a video call, a system notification is shown to the end customer indicating that the video in the call might be recorded for quality and training purposes.
 
 ### Manual screen recording
 
-Manual screen recording is continuous and can’t be paused by the CSR. Recordings are capped at two hours. When the limit is reached, the current recording is saved and uploaded securely to Dataverse.
+Manual screen recording is continuous and representatives can't pause the recording. Recordings are capped at two hours. When the limit is reached, the current recording is saved and uploaded securely to Dataverse.
 
 ## Review screen recordings
 
@@ -72,5 +72,6 @@ Learn how you can configure retention periods for call recordings and Omnichanne
 Learn more about long-term data retention with Dataverse in [Dataverse long term data retention overview](/power-apps/maker/data-platform/data-retention-overview).
 
 
-
 ## Related information
+
+[Dataverse long term data retention FAQ](/power-apps/maker/data-platform/data-retention-faq)

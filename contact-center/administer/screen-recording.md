@@ -61,7 +61,7 @@ Only authorized users can review recordings to understand how customer interacti
 1. Sign in with either the **Screen Recording Supervisor** or **Screen Recording Administrator** role.
 1. Search for recordings by agent, date, or recording type. 
 1. Review the list of recordings that match your search criteria. 
-1. If you need to download a recording file, use an account that has the Screen Recording Admin role.
+1. You can also download a recording, as required.
 
 ## Manage your screen recordings
 

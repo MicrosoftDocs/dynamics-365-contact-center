@@ -28,9 +28,7 @@ Before you can use screen recording, make sure the following requirements are me
     - Representatives have the **Screen Recorder** role to use the screen recording.
     - You have the **Screen Recording Supervisor** role that allows you to view a list of recordings, but not download the recording file to a local machine.
     - You have the **Screen Recording Administrator** role, that allows you to view a list of screen recordings in the web app and download recording files for review.
-- The representative's local machine has the desktop companion application installed and running. Learn more in [Install and manage desktop companion application for voice channel](/dynamics365/contact-center/administer/install-manage-desktop-app)
-- Screen recording is enabled for the representative. Learn more in [Security roles and privileges for Dataverse](/power-platform/admin/security-roles-privileges)
-- You have configured the representative's experience profile in Customer Service admin center.
+- The representative's local machine has the desktop companion application installed and running. Learn more in [Install and manage desktop companion application for voice channel](/dynamics365/contact-center/administer/install-manage-desktop-app).
 
 ## How screen recording works
 
@@ -46,13 +44,13 @@ When desktop companion application is used, screen recordings are saved locally 
 1. Select the screen recording option. The screen recording button appears in the productivity pane.
 
 
-## Screen recording types
+## Types of screen recording
 
-### Automated screen recording
+### Automated
 
 Automated screen recording starts when the representative accepts a voice call and stops when the voice call ends. If the  representative switches to a video call, a system notification is shown to the end customer indicating that the video in the call might be recorded for quality and training purposes.
 
-### Manual screen recording
+### Manual
 
 Manual screen recording is continuous and representatives can't pause the recording. Recordings are capped at two hours. When the limit is reached, the current recording is saved and uploaded securely to Dataverse.
 

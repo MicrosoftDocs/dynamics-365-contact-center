@@ -74,7 +74,7 @@ You need to enable Quality Evaluation Agent for your supervisors in Copilot Serv
 1. In the **Enablement by record type** section:
 
 1. Select **Case** for case evaluation or **Conversation** for conversation evaluation. 
-1. Select the **Enable bulk evaluations (preview)** checkbox to perform bulk evaluation for cases.
+1. Select the **Enable bulk evaluations** checkbox to perform bulk evaluation for cases.
       In **Specify data**, you can see the default entities that are added. 
     1. Select **Manage data** to go to the **Specify data** dialog, where you can:
         - Delete data types or clear a row to temporarily exclude the data type from being summarized.

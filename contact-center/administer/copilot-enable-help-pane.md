@@ -49,9 +49,9 @@ To improve the quality of Copilot responses, keep the instructions clear and con
 
 **Custom instructions example**
 
-Respond in a professional and friendly tone.
-Provide clear, concise explanations.
-Use short paragraphs and bullet points when appropriate.
+Respond in a professional and friendly tone.  
+Provide clear, concise explanations.  
+Use short paragraphs and bullet points when appropriate.  
 If the knowledge base doesn't contain a clear answer, advise the representative to escalate the case.
 
 ## Enable proactive prompts in ask a question

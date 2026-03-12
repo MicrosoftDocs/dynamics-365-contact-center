@@ -46,9 +46,9 @@ When desktop companion application is used, screen recordings are saved locally 
 1. Select the screen recording option. The screen recording button appears in the productivity pane.
 
 
-## Recording types
+## Screen recording types
 
-### Automated call recording
+### Automated screen recording
 
 Automated screen recording starts when the representative accepts a voice call and stops when the voice call ends. If the  representative switches to a video call, a system notification is shown to the end customer indicating that the video in the call might be recorded for quality and training purposes.
 

@@ -20,11 +20,6 @@ ms.custom: bap-template
 
 Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. You can define criteria methods, conditions, and evaluation plans to support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and enable bulk evaluations to streamline your review process.
 
-> [!IMPORTANT]
->
-> - Bulk evaluations for cases is a preview feature. 
-> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
-
 ## Prerequisites
 
 - Enable [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
@@ -34,7 +29,7 @@ Evaluation plans help supervisors perform consistent and objective reviews of ca
 
 ## Create and activate evaluation plan for cases and closed conversations
 
-You must enable the **Enable bulk evaluations (preview)** checkbox in Copilot Service admin center before you create and activate an evaluation plan for cases. Learn more in [Enable Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#enable-quality-evaluation-agent).
+You must enable the **Enable bulk evaluations** checkbox in Copilot Service admin center before you create and activate an evaluation plan for cases. Learn more in [Enable Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#enable-quality-evaluation-agent).
 
 > [!NOTE]
 > You can use conversation evaluations for voice and live chat channels only.
@@ -135,7 +130,7 @@ You can't edit active evaluation plans or modify the existing record type for a 
 
 1. Select **Activate plan**.
 
-## Enable bulk evaluation for cases (preview)
+## Enable bulk evaluation for cases
 
 1. In Copilot Service workspace, go to **Evaluation plans**.
 

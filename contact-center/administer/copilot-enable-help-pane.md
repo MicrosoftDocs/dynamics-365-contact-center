@@ -75,7 +75,7 @@ You can configure the knowledge base for Copilot to generate responses.
 ### Prerequisites
 
 Make sure that you have [knowledge management](/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search#setup-overview) configured in your environment and your knowledge article parameters are as follows:
-- It's updated to the latest version.
+- It was updated to the latest version.
 - The state is set to Published.
 
 > [!NOTE]

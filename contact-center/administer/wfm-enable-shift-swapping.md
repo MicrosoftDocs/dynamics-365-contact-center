@@ -1,5 +1,5 @@
 ---
-title: Enable swift swapping
+title: Enable shift swapping
 description: Learn how to enable shift swapping so customer service representatives can swap shifts with other representatives.
 ms.date: 04/14/2025
 ms.topic: how-to

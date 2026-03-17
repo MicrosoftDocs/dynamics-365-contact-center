@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 07/14/2025
+ms.date: 01/13/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
@@ -28,7 +28,7 @@ ms.custom: bap-template
 
 ## Use Copilot to draft an email
 
-You can use Copilot in the email editor or use the predefined prompts in the Copilot help pane to draft an email. 
+You can use Copilot in the email editor or use the predefined prompts in the Copilot help pane to draft an email.
 
   ### [Draft an email in the rich text editor](#tab/richtexteditor)
 
@@ -89,7 +89,6 @@ You can use Copilot in the email editor or use the predefined prompts in the Cop
 
  If you aren't satisfied with Copilot's response, you can use follow-up custom prompts and guide Copilot in a natural, conversational way. You can use up to five prompts at a time to refine the email draft. If the knowledge base is enabled, Copilot also uses those sources.
 
-  
 ### [Draft an email in the Copilot help pane](#tab/copilothelppane)
 
   You can select **Filters** to choose the relevant knowledge articles only that Copilot must use to generate the response.

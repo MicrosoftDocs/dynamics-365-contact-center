@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 07/14/2025
+ms.date: 01/13/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
@@ -21,9 +21,6 @@ ms.custom: bap-template
 ## Prerequisites
 
 Your administrator enabled the Copilot conversation summary feature.
-
-> [!NOTE]
-> If your administrator enabled auto-summarization for ongoing conversations, you get an AI-generated summary of the conversation along with the Copilot-generated conversation summary. The two summaries can be slightly different. [Learn more about auto-summarized conversations](/dynamics365/customer-service/use/cs-ai-generated-summary).
 
 ## Navigation
 

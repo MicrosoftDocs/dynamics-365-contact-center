@@ -1,7 +1,7 @@
 ---
-title: Use /consumer/conversations/create endpoint (preview)
-description: Learn how to use the /consumer/conversations/create endpoint in Dynamics 365 Customer Service and Dynamics 365 Contact Center to start customer conversations with messaging APIs.
-ms.date: 09/10/2025
+title: Use /consumer/conversation/create endpoint
+description: Learn how to use the /consumer/conversation/create endpoint in Dynamics 365 Customer Service and Dynamics 365 Contact Center to start customer conversations with messaging APIs.
+ms.date: 01/29/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -9,16 +9,11 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Use /consumer/conversations/create endpoint (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Use /consumer/conversations/create endpoint
 
 The `create` endpoint starts a new customer conversation using the Messaging API. Conversations remain active until a customer service representative (service representative or representative) ends the conversation, the conversation enters a waiting state, or a timeout rule ends the conversation.
 
  To end a conversation early, such as when the customer ends it, close the conversation using the `POST /api/v1.0/consumer/conversation/{conversationId}` with the conversation-ending activity. 
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 
 ## Method
 
@@ -26,7 +21,7 @@ The `create` endpoint starts a new customer conversation using the Messaging API
 
 ## Url
 
-`/api/v1.0/consumer/conversations/create`
+`/api/v1.0/consumer/conversation/create`
 
 ## Payload
 
@@ -103,4 +98,4 @@ The API returns the following JSON response.
 
 ### Related information 
 
-[Overview of messaging APIs](../intro-messaging-apis.md)
+[Overview of messaging APIs](../intro-messaging-apis.md)  

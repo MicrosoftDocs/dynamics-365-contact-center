@@ -338,21 +338,6 @@ Select the system topic, and then configure the behavior when an answering machi
 
 Service representatives can use disposition codes to tag calls where the answering machine detection result was incorrect (false positive or false negative). Learn more in [Configure disposition codes](configure-disposition-codes.md).
 
-## Runtime experience of proactive engagement
-
-Service representatives view the proactive engagement calls based on the notification template that's attached to the outbound workstream for preview, progressive, and predictive modes. The name and description that you specify for the proactive engagement appear on the notification.
-
-For the preview mode, service representatives can accept or reject the calls. After accepting a call:
-
-- If the proactive engagement is configured for **Automatic** call start, a countdown timer shows the time remaining before the call is placed. The representative can start the call early by selecting **Start call**, or cancel it by selecting **Cancel** before the timer expires. A cancelled call is marked as **Cancelled** and no further attempts are made for that delivery.
-- If the proactive engagement is configured for **Manual** call start, the representative reviews customer details and selects **Start call** when ready. The representative can also select which phone number to call the customer on—mobile, business, or home. The default number is based on the calling order configured in the proactive engagement.
-
-For the progressive and predictive modes, service representatives only can start the call.
-
-Service representatives on a connected call can reschedule the call to a different date and time if needed. A rescheduled call is treated as a new request and all retry counters are reset.
-
-If you configure disposition codes, service representatives can select the disposition codes to record the outcome of the interaction. An **Answering machine** disposition code is available by default for all calls. Learn more in [Configure disposition codes](configure-disposition-codes.md).
-
 ### Related information
 
 [Overview of proactive engagement](overview-proactive-engagement.md)

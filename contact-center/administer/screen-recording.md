@@ -6,11 +6,13 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: 
-ms.date: 03/12/2026
+ms.date: 03/18/2026
 ms.custom: bap-template 
 ---
 
 # Configure screen recording with desktop companion application
+
+[!INCLUDE [cc-feature-availability](../includes/cc-feature-availability.md)]
 
 Screen recording captures a customer service representative (service representative or representative) on-screen activity during customer interactions.
 
@@ -40,7 +42,8 @@ When desktop companion application is used, screen recordings are saved locally 
 
 ## Enable screen recording for representatives
 
-1. [Create experience profiles](/dynamics365/customer-service/administer/create-agent-experience-profile). 
+1. In Copilot Service admin center, go to **Workspaces**.
+1. [Create a new experience profile](/dynamics365/customer-service/administer/create-agent-experience-profile). 
 1. Select the screen recording option. The screen recording button appears in the productivity pane.
 
 
@@ -58,10 +61,11 @@ Manual screen recording is continuous and representatives can't pause the record
 
 Only authorized users can review recordings to understand how customer interactions were handled. Representatives can’t access or view their own screen recordings.
 
-1. Sign in with either the **Screen Recording Supervisor** or **Screen Recording Administrator** role.
-1. Search for recordings by agent, date, or recording type. 
+1. Sign in to Copilot Service admin center with either the **Screen Recording Supervisor** or **Screen Recording Administrator** role.
+1. Go to **Screen recordings**.
+1. Search for recordings by using filters such as agent, date, or recording type. 
 1. Review the list of recordings that match your search criteria. 
-1. You can also download a recording, as required.
+1. You can also select and download a recording, as required.
 
 ## Manage your screen recordings
 

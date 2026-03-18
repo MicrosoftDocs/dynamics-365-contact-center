@@ -250,10 +250,35 @@ Review all settings on the **Summary** page. To make changes, select **Back** to
 
 When ready, select **Create**. If you selected **Upload a file** as the intake method, the **File upload** step appears next where you can upload your contact list.
 
+**Supported file formats:** CSV (.csv) and Excel (.xlsx) only.
+
 **File upload constraints:**
 
 - Maximum file size: 10 MB
-- The file must include required columns; additional columns are optional
+- The file must include all required columns; additional columns are optional
+
+**Required columns:**
+
+- **UniqueIdentifier**: The value used to identify and upsert the contact record. Must correspond to the **Contact unique identifier** attribute selected in the **Details** step.
+- **MobilePhoneNumber**, **BusinessPhoneNumber**, or **HomePhoneNumber**: At least one phone number column is required. Multiple phone number columns can be included.
+
+**Optional named fields:**
+
+Named fields are columns whose names correspond to attributes on the Contact table. Values in these columns are used to create or update the contact record during processing. Any additional columns that do not match a Contact attribute are treated as pass-through data and are made available on the agent desktop during the call.
+
+Data entered in the **Priority** column is used for custom prioritization when the call order is set to **Custom priority ascending** or **Custom priority descending**.
+
+To download a sample file that contains the required columns and formatting, select **Download sample**.
+
+**Processing behavior:**
+Records are processed immediately when the file upload begins.
+
+> [!NOTE]
+> The uploaded file is not stored in any form and cannot be downloaded after upload. To access delivery results and records, query the relevant tables in Microsoft Dataverse directly. Learn more in [Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md).
+
+**Upload a file to an existing engagement:**
+
+To add a new file to an engagement that has already been created, navigate to **Copilot Service admin center** > **Productivity** > **Proactive engagements**. Select the engagement, and then select **Run from file**. The new file is added to the existing pending deliveries.
 
 Learn more about available outcomes and SIP-based result values in [Outcomes for proactive engagement](proactive-engagement-outcomes.md).
 

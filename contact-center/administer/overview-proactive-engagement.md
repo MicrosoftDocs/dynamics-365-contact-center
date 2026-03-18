@@ -48,7 +48,7 @@ This can be configured and run natively within D365 Contact Center.
 
 A multi-channel, multi-step journey orchestrates multiple sequential or conditional actions across one or more channels, with branching logic based on customer responses, behaviors, or outcomes. Journeys can span multiple days or weeks and support cross-channel orchestration across voice, email, SMS, and push notifications.
 
-This requires Dynamics 365 Customer Insights in addition to Dynamics 365 Contact Center.
+This requires Dynamics 365 Customer Insights in addition to Dynamics 365 Contact Center. Learn about how to configure a journey using [Dynamics 365 Customer Insights](/dynamics365/customer-insights/journeys/proactive-engagement-how-to).
 
 ### Related information
 

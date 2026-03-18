@@ -128,33 +128,34 @@ The dial modes determine how the system places outbound calls to customers. Lear
       - **Continue making calls**:
          - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
    
-   For the preview dial mode, configure the **Call start settings**:
-   - **Automatic**: The system initiates the call after a countdown timer expires. The time starts from the time a CSR accepts the invite.  
-   Specify the duration in seconds for the timer. Service representatives can start the call early or cancel it before the timer expires.
-   - **Manual**: The service representative must manually start the call after reviewing customer details.
-   > [!NOTE]
-   > Timer and delayed start functionality is available only on Teams Phone Extensibilty. If you are leveraging ACS, preview calls will start automatically once the CSR accepts the invite.
-
-   For AI agent led Predictive, configure the **Call start settings**:
-   - Select the action for how the call needs to be handled if the AI agent fails during the call.
-      - **Stop making calls immediately**: No further calls are made.
-      - **Continue making calls**:
-         - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
-
-   For AI agent led Progessive, configure the **Call start settings**:
-   - Select the max number of calls that can be assigned to the representative in **Maximum calls per representative**. This setting is available for the progressive dial mode. A lower number indicates a balanced call volume for the representative. You can specify up to five calls.
-   - Select the action for how the call needs to be handled if the AI agent fails during the call.
-      - **Stop making calls immediately**: No further calls are made.
-      - **Continue making calls**:
-         - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
-
-   For representative-led progressive and predictive modes,
-      - Select the action if answering machine is detected
-         - **End call immediately** ends the call if a voicemail or answering machine is detected
-         - **Leave a voicemail** plays the text in the Voicemail Prompt at the appropriate time, at the end of the greeting
-      - Specify the **Call is abandoned after** — the duration after which a call is considered abandoned if no service representative is connected after the customer answers. Specify the **abandoned message** - the message that needs to be played to the customer waiting on line if the calls is abandoned before the call is ended.
-   > [!NOTE]
-   > For AI agent led engagements, 
+       For the preview dial mode, configure the **Call start settings**:
+       - **Automatic**: The system initiates the call after a countdown timer expires. The time starts from the time a CSR accepts the invite.  
+       Specify the duration in seconds for the timer. Service representatives can start the call early or cancel it before the timer expires.
+       - **Manual**: The service representative must manually start the call after reviewing customer details.
+       > [!NOTE]
+       > Timer and delayed start functionality is available only on Teams Phone Extensibilty. If you are leveraging ACS, preview calls will start automatically once the CSR accepts the invite.
+    
+       For AI agent led Predictive, configure the **Call start settings**:
+       - Select the action for how the call needs to be handled if the AI agent fails during the call.
+          - **Stop making calls immediately**: No further calls are made.
+          - **Continue making calls**:
+             - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
+    
+       For AI agent led Progessive, configure the **Call start settings**:
+       - Select the max number of calls that can be assigned to the representative in **Maximum calls per representative**. This setting is available for the progressive dial mode. A lower number indicates a balanced call volume for the representative. You can specify up to five calls.
+       - Select the action for how the call needs to be handled if the AI agent fails during the call.
+          - **Stop making calls immediately**: No further calls are made.
+          - **Continue making calls**:
+             - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
+       > [!NOTE]
+       > For AI agent led engagements, answering machine detection is configured in the Copoilot IVR agents. 
+       
+       For representative-led progressive and predictive modes,
+          - Select the action if answering machine is detected
+             - **End call immediately** ends the call if a voicemail or answering machine is detected
+             - **Leave a voicemail** plays the text in the Voicemail Prompt at the appropriate time, at the end of the greeting
+          - Specify the **Call is abandoned after** — the duration after which a call is considered abandoned if no service representative is connected after the customer answers. Specify the **abandoned message** - the message that needs to be played to the customer waiting on line if the calls is abandoned                 before the call is ended.
+       [!IMPORTANT] The call connection time for service representative-led progressive and predictive dial modes is not compliant with the Telephone Consumer Protection Act (TCPA). Review applicable telecommunications regulations before using service representative-led modes.
 
 5. For AI agent led engagements select **Use rules** to set rules for the following parameters that help control the throttling and pacing for the proactive engagement:
    - **Abandonment rate**: (Copilot, progressive, and predictive modes). The percentage of customers who hang up before connecting with a representative.
@@ -280,63 +281,6 @@ Records are processed immediately when the file upload begins.
 To add a new file to an engagement that has already been created, navigate to **Copilot Service admin center** > **Productivity** > **Proactive engagements**. Select the engagement, and then select **Run from file**. The new file is added to the existing pending deliveries.
 
 Learn more about available outcomes and SIP-based result values in [Outcomes for proactive engagement](proactive-engagement-outcomes.md).
-
-
-## Configure contact chaining
-
-Contact chaining lets you group related contacts—such as members of the same household or account—and treat them as a single unit for engagement purposes.
-
-- You can group up to five contacts when uploading a file or submitting requests through the API.
-- All contacts in the chain are considered for every attempt. The system dials contacts in the order they appear in the file or API array.
-- If all phone numbers across all chained contacts are exhausted on an attempt, the system waits for the configured retry interval before starting the next attempt and cycles through all contacts again.
-
-## Configure call cancellation and suppression
-
-You can cancel pending calls and optionally suppress future calls that match defined criteria.
-
-1. In the site map, select **Proactive engagements**, select the proactive engagement, and then select **Cancel calls**.
-
-1. Specify filter criteria using any combination of the following in AND conditions:
-   - Proactive engagement configuration ID
-   - Customer zip code
-   - Customer state
-   - Customer first name
-   - Customer last name
-   - Customer phone number
-
-1. Optionally, specify a **Suppression duration**. Contacts matching the criteria won't be processed for new calls during the specified period.
-
-1. Optionally, enter a **Cancellation reason**. Cancelled calls are marked in the delivery tables with the reason to support reporting.
-
-> [!NOTE]
-> Cancellation applies only to queued calls and all intake sources. You can also trigger cancellation and suppression through the CCaaS API. Learn more in [Use CCaaS_CreateProactiveVoiceDelivery API](../extend/api/ccaas_createproactivevoicedelivery.md).
-
-## Configure proactive engagement with a journey using Customer Insights
-
-Learn about how to configure a journey using [Dynamics 365 Customer Insights](/dynamics365/customer-insights/journeys/proactive-engagement-how-to).
-
-## Configure proactive engagement with a journey using the API
-
-To configure the proactive engagement with a journey using the API, follow the steps in [Initiate proactive outbound call using API](../extend/api/ccaas_createproactivevoicedelivery.md).
-
-## Detect answering machines
-
-Detection of answering machines is a technology used in telecommunication systems to determine whether a call is answered by a human or an answering machine. You can set up the answering machine detection system topic in Copilot Studio to be used when outbound voice calls are made.
-
-### Prerequisite
-
-[Voice is enabled in Copilot Studio](/microsoft-copilot-studio/voice-get-started) or you can use the voice IVR template to access the answer machine detection system topic.
-
-### Configure answer machine detection system topic
-
-You can choose to enable or disable detection of the answering machine. When enabled, the system automatically detects answering machines and proceeds with the configured message flow.
-
-Select the system topic, and then configure the behavior when an answering machine is detected:
-
-- **Hang up**: The system ends the call without leaving a message.
-- **Leave a message**: The system plays a recorded message. Specify the message to be played. The message is played in the language configured for the workstream.
-
-Service representatives can use disposition codes to tag calls where the answering machine detection result was incorrect (false positive or false negative). Learn more in [Configure disposition codes](configure-disposition-codes.md).
 
 ### Related information
 

@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 02/06/2026
+ms.date: 03/19/2026
 ms.custom: bap-template
 ---
 
@@ -19,6 +19,8 @@ ms.custom: bap-template
 
 
 Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. You can define criteria methods, conditions, and evaluation plans to support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and enable bulk evaluations to streamline your review process.
+
+You can also create an on-demand evaluation to check cases and conversations when needed.
 
 ## Prerequisites
 
@@ -75,6 +77,8 @@ You must enable the **Enable bulk evaluations** checkbox in Copilot Service admi
 
 1.  Select **Activate plan**. The **Activate plan** dialog appears.
 1.  Select **Activate plan**. On successful activation, a success message appears.
+
+## Use on-demand evaluation
 
 You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases and conversations when needed.
 

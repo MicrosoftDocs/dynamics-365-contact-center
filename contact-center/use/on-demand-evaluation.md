@@ -78,7 +78,7 @@ To request evaluation for closed conversations:
 
 1.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
 
-To view the evaluation record, in the site map of Copilot Service workspace :
+To view the evaluation record, in the site map of Copilot Service workspace:
 
 - Go to **Conversations** and then select a conversation. Go to **Related** > **Evaluations** to view the evaluation records.
 - Go to **Evaluations**. The **All evaluations** data grid appears. Select the required evaluation record. The evaluation for the selected conversation appears in the **Evaluations** side pane. 

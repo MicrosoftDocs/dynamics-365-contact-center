@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days 
-ms.date: 02/06/2026
+ms.date: 03/19/2026
 ms.custom: bap-template
 ---
 
@@ -47,6 +47,7 @@ You need to configure connection references for Quality Evaluation Agent flow to
 - Assign the Quality Manager, Quality Evaluator, and the Quality Administrator roles.
 - Configure [connection references for Quality Evaluation Agent flow](/dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context).
 - Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
+- Turn on **Enable AI agents** for your Dynamics 365 environment in Power platform admin center. Learn more in [Copilot adoption in the Power Platform](/power-platform/admin/copilot/copilot-hub).
 - Provide consent for potential [data movement across regions](#data-movement-across-regions).
 
 ## Data movement across regions

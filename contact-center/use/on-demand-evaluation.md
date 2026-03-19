@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 02/06/2026
+ms.date: 03/19/2026
 ms.custom: bap-template
 ---
 
@@ -52,6 +52,11 @@ To request evaluation for a particular case:
 
 1.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
 
+To view the evaluation record, in site map of Copilot Service workspace:
+
+- Go to **Cases** and then select a case. Go to **Related** > **Evaluations** to view the evaluation records.
+- Go to **Evaluations**. The **All evaluations** data grid appears. Select the required evaluation record. The evaluation for the selected case appears in the **Evaluations** side pane. 
+
 ## On-demand evaluation for conversations
 
 To request evaluation for closed conversations:
@@ -73,6 +78,10 @@ To request evaluation for closed conversations:
 
 1.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
 
+To view the evaluation record, in the site map of Copilot Service workspace :
+
+- Go to **Conversations** and then select a conversation. Go to **Related** > **Evaluations** to view the evaluation records.
+- Go to **Evaluations**. The **All evaluations** data grid appears. Select the required evaluation record. The evaluation for the selected conversation appears in the **Evaluations** side pane. 
 
 ## Related information
 

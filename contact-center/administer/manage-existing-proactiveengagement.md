@@ -1,6 +1,6 @@
 ---
-title: Configure proactive engagement
-description: Learn how to set up proactive engagement, including dial modes and operational rules for optimized customer service in Dynamics 365 Contact Center.
+title: Configure multiparty engagements
+description: Learn how to set up multiparty engagements, including dial modes and operational rules for optimized customer service in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim

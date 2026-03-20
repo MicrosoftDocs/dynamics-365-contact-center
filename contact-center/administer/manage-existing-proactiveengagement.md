@@ -26,7 +26,7 @@ You can cancel pending calls and optionally suppress future calls that match def
 1. In the site map, select **Proactive engagements**, select the proactive engagement settings, and then select **Add a cancellation policy**.
 2. Specify filter criteria using any combination of the following in AND conditions:
    - Proactive engagement configuration ID
-   - Country
+   - Country/Region
    - State
    - Postal code
    

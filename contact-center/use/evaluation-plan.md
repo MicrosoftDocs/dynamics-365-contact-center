@@ -48,11 +48,11 @@ You must enable the **Enable bulk evaluations** checkbox in Copilot Service admi
     1.  If you select **Conversations**, then in the **Frequency** section, select the following options:
 
         1.  **Frequency type:** Select **Trigger,** and then provide the following:
-            - **Occurrence**: If you have frequency type as **Trigger**, then select **Closed conversation**.
+            - **Occurrence**: Select **Closed conversations**.
             - **Start date**: Specify the start date for the plan.
             - **End date**: Specify the end date for the plan.
             
-    1. If you select **Cases**, then in the **Frequency** section, select the following:
+    1. If you select **Cases**, then in the **Frequency** section, select the following options:
 
         1.  **Frequency type:** Select **Recurring,** and then provide the following:
             - **Occurrence**: Select **Daily**.
@@ -83,7 +83,14 @@ When you run an evaluation plan, it generates a run‑history record that captur
 Select **Run history** on your evaluation plan to view the details.
 
 ## Use on-demand evaluation
-You can also use on-demand evaluation to check cases and conversations when needed.
+
+You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases and conversations when needed.
+
+## Configure trigger-based evaluation plans for resolved cases
+
+You can create trigger-based evaluation plans for resolved cases only. Trigger-based evaluations run automatically when a case gets resolved and specific conditions are met.
+
+Select the **Frequency type** as **Trigger** and **Evaluation Trigger Config** as **Default Trigger Config for Resolved Cases**, when you [create and activate an evaluation plan](#create-and-activate-evaluation-plan-for-cases-and-closed-conversations) from the **Evaluation plans** page. 
 
 ## Create and activate a real-time evaluation plan for ongoing conversations
 

@@ -76,13 +76,14 @@ You must enable the **Enable bulk evaluations** checkbox in Copilot Service admi
 1.  Select **Activate plan**. The **Activate plan** dialog appears.
 1.  Select **Activate plan**. On successful activation, a success message appears.
 
-You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases and conversations when needed.
-
 ### View run history for a plan
 
 When you run an evaluation plan, it generates a run‑history record that captures the plan name, execution timestamp, total number of records processed, and the final status. This record provides structured visibility into batch runs and their outcomes.
 
 Select **Run history** on your evaluation plan to view the details.
+
+## Use on-demand evaluation
+You can also use on-demand evaluation to check cases and conversations when needed.
 
 ## Create and activate a real-time evaluation plan for ongoing conversations
 

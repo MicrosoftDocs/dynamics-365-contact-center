@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 02/06/2026
+ms.date: 03/23/2026
 ms.custom: bap-template
 ---
 
@@ -58,6 +58,7 @@ You must enable the **Enable bulk evaluations** checkbox in Copilot Service admi
             - **Occurrence**: Select **Daily**.
             - **Start date**: Specify the start date for the plan.
             - **End date**: Specify the end date for the plan.
+        1. If you select the **Frequency type** as **Trigger**, then select the **Evaluation Trigger Config** as **Default Trigger Config for Resolved Cases**. This selection creates trigger-based evaluations for resolved cases only.
 
     1.  In the **Conditions** section, select **Add** to add conditions to your evaluation plan. For example, Add **Conversation status**> **Equals** > **Closed** or add **Channel type > Contains data > Live chat.**
 
@@ -88,9 +89,13 @@ You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-ev
 
 ## Configure trigger-based evaluation plans for resolved cases
 
-You can create trigger-based evaluation plans for resolved cases only. Trigger-based evaluations run automatically when a case gets resolved and specific conditions are met.
+You can create and activate trigger-based evaluation plans for resolved cases only. Trigger-based evaluations run automatically when a case gets resolved and specific conditions are met.
 
 Select the **Frequency type** as **Trigger** and **Evaluation Trigger Config** as **Default Trigger Config for Resolved Cases**, when you [create and activate an evaluation plan](#create-and-activate-evaluation-plan-for-cases-and-closed-conversations) from the **Evaluation plans** page. 
+
+When a case is resolved, one evaluation is created for each plan that matches the specified conditions. Multiple evaluations can be created for the same case. 
+
+To view the evaluations, go to the **Evaluations** page. Once the **AI agent status** appears as **Completed** for the evaluations, select the required **Evaluation**. On the **Evaluation associated view**, you can review the **Evaluation Summary** provided by Copilot.
 
 ## Create and activate a real-time evaluation plan for ongoing conversations
 

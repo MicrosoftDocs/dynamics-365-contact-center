@@ -71,9 +71,7 @@ Only authorized users can review recordings to understand how customer interacti
 
 Learn how you can configure retention periods for screen recordings and transcripts.
 
-Learn more about long-term data retention with Dataverse in [Dataverse long term data retention overview](/power-apps/maker/data-platform/data-retention-overview). 
-
-## Set retention rules for screen recordings and transcripts
+### Set retention rules for screen recordings and transcripts
 
 You can configure retention rules for screen recordings and transcripts by using **Bulk Record Deletion** jobs. Setting appropriate retention periods helps organizations comply with regulatory requirements and manage storage efficiently.
 
@@ -104,7 +102,9 @@ Deleted screen recordings can’t be recovered. Verify your criteria carefully b
 
 To configure retention for transcripts, repeat the same steps used for screen recordings except for the following:
 
-In the **Look for **list, select **Transcripts* *instead of **Screen Recordings**.
+In the **Look for** list, select **Transcripts* *instead of **Screen Recordings**.
+
+Learn more about long-term data retention with Dataverse in [Dataverse long term data retention overview](/power-apps/maker/data-platform/data-retention-overview). 
 
 ## Related information
 

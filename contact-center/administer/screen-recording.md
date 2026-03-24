@@ -77,7 +77,7 @@ You can configure retention rules for screen recordings and transcripts by using
 
 By default, screen recordings and transcripts are retained indefinitely. Microsoft Copilot Studio transcripts are retained for 30 days.
 
-## Set retention period for screen recordings
+### Set retention period for screen recordings
 
 1. Sign in to your Dynamics 365 environment.
 1. In your browser, go to the following URL:

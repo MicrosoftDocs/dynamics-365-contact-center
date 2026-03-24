@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: 
-ms.date: 03/18/2026
+ms.date: 03/24/2026
 ms.custom: bap-template 
 ---
 
@@ -75,7 +75,7 @@ Learn more about long-term data retention with Dataverse in [Dataverse long term
 
 ## Set retention rules for screen recordings and transcripts
 
-Administrators can configure retention rules for screen recordings and transcripts in Dynamics 365 Contact Center by using **Bulk Record Deletion** jobs. Setting appropriate retention periods helps organizations comply with regulatory requirements and manage storage efficiently.
+You can configure retention rules for screen recordings and transcripts by using **Bulk Record Deletion** jobs. Setting appropriate retention periods helps organizations comply with regulatory requirements and manage storage efficiently.
 
 By default, screen recordings and transcripts are retained indefinitely. Microsoft Copilot Studio transcripts are retained for 30 days.
 

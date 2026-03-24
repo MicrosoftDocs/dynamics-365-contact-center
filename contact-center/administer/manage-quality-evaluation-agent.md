@@ -31,7 +31,7 @@ Set up plans to schedule when to evaluate interactions. You can select interacti
 
 **Evaluations**:
 
-The Quality Evaluation Agent evaluates case and conversations, provides summaries of the interactions, with insights and recommendations that help improve customer interactions. You can use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases, conversations, and emails when needed.
+The Quality Evaluation Agent evaluates case and conversations, provides summaries of the interactions, with insights and recommendations that help improve customer interactions. You can use [on-demand evaluation](on-demand-evaluation.md) to check cases, conversations, and emails when needed.
 
 > [!IMPORTANT]
 > - This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and shouldn't be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. <br> 

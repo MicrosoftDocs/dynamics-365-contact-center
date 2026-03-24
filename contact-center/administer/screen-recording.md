@@ -81,7 +81,7 @@ By default, screen recordings and transcripts are retained indefinitely. Microso
 
 1. Sign in to your Dynamics 365 environment.
 1. In your browser, go to the following URL:
-https://yourURL.crm.dynamics.com/tools/bulkdelete/home_bulkDeletionJobs.aspx and replace yourURL with your organization’s Dynamics 365 URL.
+`https://yourURL.crm.dynamics.com/tools/bulkdelete/home_bulkDeletionJobs.aspx` and replace yourURL with your organization’s Dynamics 365 URL.
 1. On the **Bulk Record Deletion** page, select **New** to start a new bulk delete job.
 1. In **Bulk Deletion Wizard**, select **Next**.
 1. In **Define search criteria**, in the **Look for** dropdown, select **Screen recordings**.

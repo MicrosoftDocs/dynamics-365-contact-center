@@ -1,7 +1,7 @@
 ---
 title: Install and manage desktop companion application for voice channel 
 description: Learn how to install the desktop companion application for the voice channel in Dynamics 365 Contact Center.
-ms.date: 03/24/2026
+ms.date: 02/13/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham

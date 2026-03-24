@@ -49,11 +49,11 @@ When desktop companion application is used, screen recordings are saved locally 
 
 ## Types of screen recording
 
-### Automated
+**Automated**
 
 Automated screen recording starts when the representative accepts a voice call and stops when the voice call ends. If the  representative switches to a video call, a system notification is shown to the end customer indicating that the video in the call might be recorded for quality and training purposes.
 
-### Manual
+**Manual**
 
 Manual screen recording is continuous and representatives can't pause the recording. Recordings are capped at two hours. When the limit is reached, the current recording is saved and uploaded securely to Dataverse.
 

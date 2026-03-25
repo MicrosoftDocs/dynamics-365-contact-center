@@ -18,7 +18,7 @@ ms.custom: bap-template
 **Cases**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
 
-Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. You can define criteria methods, conditions, and evaluation plans to support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and enable bulk evaluations to streamline your review process.
+Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. You can define criteria methods, conditions, and evaluation plans to support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and how to enable bulk evaluations to streamline your review process.
 
 ## Prerequisites
 
@@ -137,13 +137,17 @@ When you pause a plan, it finishes the current batch and then stops before the n
 
 You can't edit active evaluation plans or modify the existing record type for a plan.
 
-1. On the **Evaluation Plans** page, select the evaluation plans that you want to edit, and then select **Edit**.
+1. On the **Evaluation Plans** page, select the evaluation plans that you want to edit, and then select **Pause plan**.
+
+1. Select **Edit**. All the fields become editable except for **Record type** and **Evaluation criteria**.
 
 1. Save the changes.
 
-1. Select **Activate plan**.
+1. Select **Activate plan** to activate the plan.
 
 ## Enable bulk evaluation for cases
+
+Bulk evaluations enable automatic evaluations on large sets of records using recurring evaluation plans. To perform bulk evaluations, make sure that bulk evaluations are turned on for cases in the Copilot Service admin center, evaluation plans for cases are created and activated, and the frequency for the plans is set to recurring.
 
 1. In Copilot Service workspace, go to **Evaluation plans**.
 
@@ -152,6 +156,9 @@ You can't edit active evaluation plans or modify the existing record type for a 
 1. Select **Activate**. The plans are activated only after the data transfer is complete.
 
 You can evaluate up to 10,000 entity records in a single batch run. A single batch run might take up to four hours to complete.
+
+- Run history tab of an evaluation plan. The status will show as completed 
+- Go to Evaluations grid to see the status.
 
 ## Related information
 

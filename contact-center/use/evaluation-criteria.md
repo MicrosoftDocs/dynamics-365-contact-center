@@ -79,7 +79,7 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
     1. Select **Mark as critical question** if you want the question to be marked as critical.
 
-1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required. If you have marked the question as critical, you must select the **Mark as fail** option for an answer to avoid errors.
+1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required. If you marked the question as critical, you must select the **Mark as fail** option for an answer to avoid errors.
 
     You can delete or duplicate a section or question, as required.
 
@@ -87,16 +87,16 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
 ## Mark a question as critical
 
-Turn on **Mark as critical question** to designate a question as critical within a criteria. Critical questions highlight mandatory requirements such as compliance, safety, or manadatory process steps that must not be missed.
+Turn on **Mark as critical question** to designate a question as critical within a criteria. Critical questions highlight mandatory requirements such as compliance, safety, or mandatory process steps that must not be missed.
 
 If a critical question is answered with a fail option, the entire evaluation or simulation is marked as failed due to that question. You can mark multiple questions as critical within a criterion; however, each critical question must have at least one fail option configured. If not, an error is displayed.
 
-During simulations and evaluations, results indicate whether the failure was caused by a critical question. This information is shown at both in the **Evalaution Summary** level and at the individual question level in the side panel. Additionally, the evaluations grid also includes a column that identifies evaluations that failed due to a critical question.
+During simulations and evaluations, results indicate whether the failure is caused by a critical question. This information is shown at both in the **Evaluation Summary** level and at the individual question level in the side panel. Additionally, the evaluations grid also includes a column that identifies evaluations that failed due to a critical question.
 
 Here are a few examples of questions where a failure should immediately fail the entire evaluation.
 
-- Did the agent follow mandatory data privacy guidelines?
-(Fail if sensitive information was disclosed or mishandled.)
+- Did the agent select the correct action when prompted with a compliance checkpoint?
+(Fail if an incorrect action was chosen.)
 
 - Was customer consent obtained before recording the call?
 (Fail if consent wasn't explicitly confirmed.)
@@ -121,7 +121,7 @@ To edit your published evaluation criteria, complete the following steps:
 
 Each edit and publish action increments the evaluation criteria version, and the latest published version is always used for new evaluations. Supervisors can review prior versions, restore any version to make it the current one, or discard draft changes as needed.
 
-1. Select the source criteria and go to the **Versioning History** tab to view versions and version numbers along with the latest data that might have been added to the criteria.
+1. Select the source criteria and go to the **Versioning History** tab to view versions and version numbers along with the latest data that might be added to the criteria.
 1. Select **Record** to go a specific version and view the details in read-only.
 1. Select **Restore/Publish** to republish the selected version as the latest. This discards the current draft and increments the version number of the published criteria.
 

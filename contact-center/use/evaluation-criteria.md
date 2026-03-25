@@ -77,11 +77,29 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
     1.  Depending on the answer type, select **Scoring enabled** to add scoring. Turn off the scoring toggle if you don't want to create a criteria with scoring.
 
-1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required.
+    1. Select **Mark as critical question** if you want the question to be marked as critical.
+
+1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required. If you have marked the question as critical, you must select the **Mark as fail** option for an answer to avoid errors.
 
     You can delete or duplicate a section or question, as required.
 
 1.  Select **Save**, and then select **Publish**.
+
+## Mark a question as critical
+
+Turn on **Mark as critical question** to designate a question as critical within a criteria. Critical questions highlight mandatory requirements such as compliance, safety, or manadatory process steps that must not be missed.
+
+If a critical question is answered with a fail option, the entire evaluation or simulation is marked as failed due to that question. You can mark multiple questions as critical within a criterion; however, each critical question must have at least one fail option configured. If not, an error is displayed.
+
+During simulations and evaluations, results indicate whether the failure was caused by a critical question. This information is shown at both in the **Evalaution Summary** level and at the individual question level in the side panel. Additionally, the evaluations grid also includes a column that identifies evaluations that failed due to a critical question.
+
+Here are a few examples of questions where a failure should immediately fail the entire evaluation.
+
+- Did the agent follow mandatory data privacy guidelines?
+(Fail if sensitive information was disclosed or mishandled.)
+
+- Was customer consent obtained before recording the call?
+(Fail if consent wasn't explicitly confirmed.)
 
 ## Edit your published evaluation criteria
 

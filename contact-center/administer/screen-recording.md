@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: 
-ms.date: 03/24/2026
+ms.date: 03/25/2026
 ms.custom: bap-template 
 ---
 
@@ -102,7 +102,7 @@ Deleted screen recordings can’t be recovered. Verify your criteria carefully b
 
 To configure retention for transcripts, repeat the same steps used for screen recordings except for the following:
 
-In the **Look for** list, select **Transcripts* *instead of **Screen Recordings**.
+In the **Look for** list, select **Transcripts** instead of **Screen Recordings**.
 
 Learn more about long-term data retention with Dataverse in [Dataverse long term data retention overview](/power-apps/maker/data-platform/data-retention-overview). 
 

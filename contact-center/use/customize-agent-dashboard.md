@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: 
-ms.date: 02/23/2026
+ms.date: 03/25/2026
 ms.custom: bap-template 
 ---
 
@@ -80,7 +80,9 @@ Once configured, the Omnichannel Historical Bot dashboard can be customized with
 
 Additionally, you can analyze exit patterns from question nodes and identify root causes of escalations originating from those nodes, providing advanced troubleshooting and diagnostic insights. 
 
-The following example shows how reporting variables are processed and surfaced in analytics. Variables like msdyn_rvSelfServiceStart and msdyn_rvFinalIntent can be configured in Microsoft Copilot Studio Canvas. Based on the conversation flow, the final value of these variables is processed and displayed in the Omnichannel Historical dashboard for visual and data model customization. This information helps create custom reports on intent determination and self-service process status.
+The following example shows how reporting variables are processed and surfaced in analytics. Variables like `msdyn_rvSelfServiceStart` and `msdyn_rvFinalIntent` can be configured in Microsoft Copilot Studio Canvas. Based on the conversation flow, the final value of these variables is processed and available under the FactBotReportingVariableDetail.Value column in the semantic model. You can view these columns while editing the report and adding corresponding FactBotReportingVariableDetail.Name and FactBotReportingVariableDetail.Value as tabular format on the Power BI dashboard for visual customization.
+
+For example, FactBotReportingVariableDetail.Name = msdyn_rvSelfServiceStart; the name of the custom variable set in Contact Center admin center and FactBotReportingVariableDetail.Value = True/False. Learn more in [Omnichannel AI agent analytics](/dynamics365/customer-service/use/oob-data-models?branch=ss-42902-overflow-conditions#data-dictionary-4).
 
 :::image type="content" source="../media/variables.png" alt-text="Screenshot showing global reporting variables configured in Microsoft Copilot Studio Canvas." lightbox="../media/variables.png":::
 

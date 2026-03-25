@@ -135,7 +135,7 @@ When you pause a plan, it finishes the current batch and then stops before the n
 
 ## Edit evaluation plans
 
-You can't edit active evaluation plans or modify the existing record type for a plan.
+You can't edit active evaluation plans, or modify the existing record type or evaluation criteria for a plan.
 
 1. On the **Evaluation Plans** page, select the evaluation plans that you want to edit, and then select **Pause plan**.
 
@@ -157,8 +157,10 @@ Bulk evaluations enable automatic evaluations on large sets of records using rec
 
 You can evaluate up to 10,000 entity records in a single batch run. A single batch run might take up to four hours to complete.
 
-- Run history tab of an evaluation plan. The status will show as completed 
-- Go to Evaluations grid to see the status.
+You can view the results in the following ways:
+
+- From the **Run history** tab of an evaluation plan. The status show as Completed, if the run is successful.
+- From the **Evaluations** grid, when you select **Evaluations** in Copilot Service workspace.
 
 ## Related information
 

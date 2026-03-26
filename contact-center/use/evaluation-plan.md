@@ -162,6 +162,27 @@ You can view the results in the following ways:
 - From the **Run history** tab of an evaluation plan. The status show as Completed, if the run is successful.
 - From the **Evaluations** grid, when you select **Evaluations** in Copilot Service workspace.
 
+## Use sampling in recurring evaluation plans
+
+Sampling lets you evaluate a subset of records instead of all records identified by an evaluation plan. For example, you can run evaluations on 10% of 100 records.  The Sampling** section appears when the record type is **Case** and frequency is set to **Recurring** only.
+
+1. In the **Sampling** section of the **Evaluation Plans** page, provide the following information:
+1. In the **Sampling mode** dropdown, select either **Absolute number** or **Percentage**.
+    1. If you select **Absolute number**, then provide the following information:
+        1. **Sampling value**: Enter a value of 1 or more. If the value is less than 1, you'll receive an error message stating that the sampling value must be at least 1 when the sampling mode is set to absolute number.
+        1. **Selection strategy**: Select **Top** or **Bottom**. Based on the absolute number you specified, the system selects records from the top or bottom of the list. 
+        1. **Filter data type**: Select a filter data type, such as **Created On** or **Modified On**.
+
+Once you activate a plan with sampling, the sampling fields become non-editable. To edit the sampling settings, you must first pause the plan.
+
+The Run history tab displays the outcomes of each evaluation run. It includes the following columns:
+
+- **Records identified by condition**: The total number of records that meet the evaluation plan's conditions.
+- **Records identified by sampling**: The number of records selected based on your sampling settings.
+- **Records eligible for evaluation**: The final number of records evaluated, calculated as the minimum of the values in the **Records identified by condition** and **Records identified by sampling** columns.
+
+A maximum of 50,000 records can be evaluated per run. 
+
 ## Related information
 
 [Manage Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md)  

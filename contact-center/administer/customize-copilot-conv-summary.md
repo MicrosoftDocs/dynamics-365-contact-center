@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-To make sure that the conversation summaries meet your organization needs, customize the fields that Copilot uses to generate them. Customer service representatives (service representatives or representatives) spend less time editing the summaries and increase productivity.
+To make sure that the conversation summaries meet your business needs, customize the fields that Copilot uses to generate them. Customer service representatives (service representatives or representatives) spend less time editing the summaries and increase productivity.
 
 ## Set conversation summary format
 

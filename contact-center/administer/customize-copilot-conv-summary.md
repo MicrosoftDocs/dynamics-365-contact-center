@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 01/13/2026
+ms.date: 03/26/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-You can customize the fields that Copilot uses to generate conversation summaries. This ensures that the summaries meet your organization's requirements, reducing the time customer service representatives (service representatives or representatives) spend editing them and increasing productivity.
+To make sure that the conversation summaries meet your business needs, customize the fields that Copilot uses to generate them. Customer service representatives (service representatives or representatives) spend less time editing the summaries and increase productivity.
 
 ## Set conversation summary format
 
@@ -27,23 +27,21 @@ In Copilot Service admin center, perform the following steps:
 1. In **Summaries**, for **Live conversation summaries**, select the **Manage format** link. The **Manage format** pane shows the formats that the conversation summary is generated. You can select one of the following options: 
    - **Paragraph**:  Generates the summary in a single paragraph.
    - **Structured**: Generates the summary based on the information you selected.
-1. If you select **Structured**, Copilot organizes conversation summary based on the options you specified. You can select the following options:
+1. If you select **Structured**, Copilot organizes conversation summary based on the options you specified. You can also arrange the order of the information in the summary by moving the information to the required location. You can select the following options:
    - **Root Cause**
    - **Customer Issue**
    - **Troubleshooting steps**
    - **Outcome**
    - **Error codes**
-   > [!NOTE]
-   > The error codes you specify are samples for Copilot to find in the conversation. Copilot finds similar error codes in the conversation and includes them in the summary.
-   You can also arrange the order of the information in the summary by dragging the information to the required location.
-1. Select the **Remove information from the summary that can't be found** toggle to not display the information that can't be found in the conversation. For example, if the customer doesn't provide an error code, the error code isn't included in the summary. 
+     > [!NOTE]
+     > The error codes you specify are samples for Copilot to find in the conversation. Copilot finds similar error codes in the conversation and includes them in the summary.
+1. Select the **Remove information from the summary that can't be found** toggle. Information that can't be found in the conversation isn't displayed. For example, if the customer doesn't provide an error code, the error code isn't included in the summary. 
 
      :::image type="content" source="../media/conv-manage-format-mini.png" alt-text="Screenshot of the structured settings for conversation summary" lightbox="../media/conv-manage-format.png":::|
 
- If you selected all the available options, here's how the service rpresentative sees the Copilot conversation summary:
+ If you select all the available options, here's how the service representative sees the Copilot conversation summary.
 
    :::image type="content" source="../media/conv-summary-format-mini.png" alt-text="Screenshot of the structured data format for conversation summary" lightbox="../media/conv-summary-format.png":::|
-
 
 ## Next steps
 

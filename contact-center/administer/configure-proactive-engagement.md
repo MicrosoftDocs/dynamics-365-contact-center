@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 01/19/2026
+ms.date: 03/31/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -27,7 +27,7 @@ Proactive engagement in Dynamics 365 enables organizations to enhance customer i
 2. Set up the outbound workstream behaviors in the **Setup Behaviors** section of the workstream as follows:
 
     - Select **Setup**, and on the page that appears, select the **Caller ID Number** in the list. Numbers available to use only are displayed. Learn more in [Configure phone numbers for outbound calling](/dynamics365/customer-service/administer/voice-channel-outbound-calling#configure-phone-numbers-for-outbound-calling).
-    - Select a number in the **Shared numbers** list. A number can only be used either of an outbound profile (for CSR dialing from Customer service workspace) and outbound workstream.   
+    - Select a number in the **Shared numbers** list. A number can only be used either of an outbound profile (for CSR dialing from Customer service workspace) and outbound workstream.
 3. Set up the language and outbound behaviors. Learn more in [Configure the voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?tabs=enhancedvoice#configure-a-voice-channel)
 4. Configure [work distribution](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution), add optionally add an [AI agent](/dynamics365/customer-service/administer/create-workstreams#add-an-agent-to-a-workstream) to the workstream, and configure representative notifications. The following notification templates are available out of the box:
     - **Voice call - outbound agent dial - default**: For preview dial mode calls
@@ -206,7 +206,7 @@ On the **Reattempts** page, configure retry behavior for contacts who were not r
    - **Failed**
    - **Answering Machine**
 
-   This list of systemic outcomes is fixed. You cannot add custom values to it.
+   This list of systemic outcomes is fixed. You can't add custom values to it.
 
 2. In **Disposition codes**, select any disposition codes that should also trigger a reattempt. These are business outcomes set by service representatives during or after a call. To make a code available for reattempt selection, create it under the category **Not right party**. The same disposition codes also appear on the representative's screen during the call. Learn more in [Configure disposition codes](configure-disposition-codes.md).
 
@@ -244,25 +244,26 @@ On the **Frequency limits** page, configure how often contacts can be reached an
 4. Select **Next**.
 
 ### Summary
+
 Review all settings on the **Summary** page. To make changes, select **Back** to return to the relevant step.
 
 ### File upload
 
 When ready, select **Create**. If you selected **Upload a file** as the intake method, the **File upload** step appears next where you can upload your contact list.
 
-**Supported file formats:** CSV (.csv) and Excel (.xlsx) only.
+**Supported file formats**: CSV (.csv) and Excel (.xlsx) only.
 
-**File upload constraints:**
+**File upload constraints**:
 
 - Maximum file size: 10 MB
 - The file must include all required columns; additional columns are optional
 
-**Required columns:**
+**Required columns**:
 
 - **UniqueIdentifier**: The value used to identify and upsert the contact record. Must correspond to the **Contact unique identifier** attribute selected in the **Details** step.
 - **MobilePhoneNumber**, **BusinessPhoneNumber**, or **HomePhoneNumber**: At least one phone number column is required. Multiple phone number columns can be included.
 
-**Optional named fields:**
+**Optional named fields**:
 
 Named fields are columns whose names correspond to attributes on the Contact table. Values in these columns are used to create or update the contact record during processing. Any additional columns that do not match a Contact attribute are treated as pass-through data and are made available on the agent desktop during the call.
 
@@ -270,11 +271,11 @@ Data entered in the **Priority** column is used for custom prioritization when t
 
 To download a sample file that contains the required columns and formatting, select **Download sample**.
 
-**Processing behavior:**
+**Processing behavior**:
 Records are processed immediately when the file upload begins.
 
 > [!NOTE]
-> The uploaded file is not stored in any form and cannot be downloaded after upload. To access delivery results and records, query the relevant tables in Microsoft Dataverse directly. Learn more in [Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md).
+> The uploaded file isn't stored in any form and can't be downloaded after upload. To access delivery results and records, query the relevant tables in Microsoft Dataverse directly. Learn more in [Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md).
 
 **Upload a file to an existing engagement:**
 
@@ -284,11 +285,11 @@ Learn more about available outcomes and SIP-based result values in [Outcomes for
 
 ### Related information
 
-[Overview of proactive engagement](overview-proactive-engagement.md)
-[Dial modes for proactive engagement](dial-modes-proactive-engagement.md)
-[Outcomes for proactive engagement](proactive-engagement-outcomes.md)
-[Best practices for proactive engagement campaigns](best-practices-proactive-engagement.md)
-[Overview of conversational journeys](/dynamics365/customer-insights/journeys/conversational-journeys-overview)
-[Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md)
-[Use CCaaS_CreateProactiveVoiceDelivery API](../extend/api/ccaas_createproactivevoicedelivery.md)
+[Overview of proactive engagement](overview-proactive-engagement.md)  
+[Dial modes for proactive engagement](dial-modes-proactive-engagement.md)  
+[Outcomes for proactive engagement](proactive-engagement-outcomes.md)  
+[Best practices for proactive engagement campaigns](best-practices-proactive-engagement.md)  
+[Overview of conversational journeys](/dynamics365/customer-insights/journeys/conversational-journeys-overview)  
+[Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md)  
+[Use CCaaS_CreateProactiveVoiceDelivery API](../extend/api/ccaas_createproactivevoicedelivery.md)  
 [Proactive Outbound dashboard](../use/proactive-outbound-dashboard.md#proactive-outbound-dashboard)

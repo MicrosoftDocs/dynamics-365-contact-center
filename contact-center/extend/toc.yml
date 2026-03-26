@@ -30,6 +30,10 @@
           href: configure-custom-connector.md
       - name: Proactive engagement
         items:
+        - name: Use CCaaS_CreateOperation API
+          href: api/ccaas_createoperation.md
+        - name: Use CCaaS_CreateProactiveDelivery API
+          href: api/ccaas_createproactivedelivery.md 
         - name: Use CCaaS_CreateProactiveVoiceDelivery API
           href: api/ccaas_createproactivevoicedelivery.md
         - name: Use proactive engagement tables for reporting

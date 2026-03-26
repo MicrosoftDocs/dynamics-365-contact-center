@@ -23,7 +23,7 @@ Regulations governing the use of AI in outbound voice calls vary by country and 
 
 Use the Copilot dial mode for making announcements, notifications, or any outbound call that can be handled by an IVR agent. A large number of these calls can be made simultaneously. A few examples are payment reminders, service restoration, and delivery notifications.
 
- When a customer picks an outbound call, the AI agent registered on the workstream engages with the customer. The agent can escalate to a service representative if necessary. However, the escalated calls might have wait times similar to calls made by the customer directly to the contact center for assistance.
+When a customer picks an outbound call, the AI agent registered on the workstream engages with the customer. The agent can escalate to a service representative if necessary. However, the escalated calls might have wait times similar to calls made by the customer directly to the contact center for assistance.
 
 ## Progressive
 
@@ -55,6 +55,6 @@ Use the preview dial mode to identify a service representative from the specifie
 
 ### Related information
 
-[Configure proactive engagement](configure-proactive-engagement.md)
-[Outcomes for proactive engagement](proactive-engagement-outcomes.md)
-[Overview of proactive engagement](overview-proactive-engagement.md)
+[Configure proactive engagement](configure-proactive-engagement.md)  
+[Outcomes for proactive engagement](proactive-engagement-outcomes.md)  
+[Overview of proactive engagement](overview-proactive-engagement.md)  

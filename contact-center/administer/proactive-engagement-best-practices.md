@@ -4,7 +4,7 @@ description: Recommendations for running effective and compliant proactive engag
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.topic: best-practice
+ms.topic: concept-article
 ms.collection: bap-ai-copilot
 ms.date: 01/19/2026
 ms.update-cycle: 180-days
@@ -54,10 +54,9 @@ Customers are less likely to answer calls from numbers they don't recognize or t
 - Work with your telephony provider or a third-party vendor that specializes in caller ID reputation management to monitor how your numbers are classified and to address flagging issues promptly. Considering using a branding service to appropriately brand your calls to increase answer rate. 
 - Avoid placing a disproportionately high volume of calls from a single phone number in a short period, as this can trigger carrier spam detection.
 
-
 ### Related information
 
-[Configure proactive engagement](configure-proactive-engagement.md)
-[Dial modes for proactive engagement](dial-modes-proactive-engagement.md)
-[Outcomes for proactive engagement](proactive-engagement-outcomes.md)
-[Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md)
+[Configure proactive engagement](configure-proactive-engagement.md)  
+[Dial modes for proactive engagement](proactive-engagement-dial-modes.md)  
+[Outcomes for proactive engagement](proactive-engagement-outcomes.md)  
+[Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md)  

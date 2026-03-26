@@ -42,6 +42,6 @@ SIP-based early media outcomes such as LiveAnswer, AnsweringMachine, Busy, and N
 
 ### Related information
 
-[Configure proactive engagement](configure-proactive-engagement.md)
-[Dial modes for proactive engagement](dial-modes-proactive-engagement.md)
-[Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md)
+[Configure proactive engagement](configure-proactive-engagement.md)  
+[Dial modes for proactive engagement](proactive-engagement-dial-modes.md)  
+[Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md)  

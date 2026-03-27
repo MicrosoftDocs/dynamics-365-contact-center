@@ -73,7 +73,12 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
     1.  **Add question-level instructions**: Provide instructions for the question, if any. Instructions help Quality Evaluation Agent generate answers and improve accuracy.
     
-    1. Select the **AI response enabled** checkbox if you want AI to predict an answer for a question. If unselected, the answer is left blank for the reviewer to submit.
+    1. Select **AI response enabled** to allow AI to predict an answer for this question. If not selected, AI doesn't process or return an answer. Evaluation creation fails if the criteria lacks AI-enabled questions for the selected mode in an evaluation plan, as shown below:
+
+    - **AI agent mode**: All questions must be AI-enabled (manual editing isn't allowed).
+    - **AI assisted mode**: At least one question must be AI-enabled.
+    
+    This applies to both on-demand evaluations and evaluation plans.
 
     1.  Depending on the answer type, select **Scoring enabled** to add scoring. Turn off the scoring toggle if you don't want to create a criteria with scoring.
 
@@ -91,7 +96,7 @@ Turn on **Mark as critical question** to designate a question as critical within
 
 If a critical question is answered with a fail option, the entire evaluation or simulation is marked as failed due to that question. You can mark multiple questions as critical within a criterion; however, each critical question must have at least one fail option configured. If not, an error is displayed.
 
-During simulations and evaluations, results indicate whether the failure is caused by a critical question. This information is shown at both in the **Evaluation Summary** level and at the individual question level in the side panel. Additionally, the evaluations grid also includes a column that identifies evaluations that failed due to a critical question.
+During simulations and evaluations, results indicate whether a critical question caused the failure. The critical question information is shown at both in the **Evaluation Summary** level and at the individual question level in the side panel. Additionally, the evaluations grid also includes a column that identifies evaluations that failed due to a critical question.
 
 Here are a few examples of questions where a failure should immediately fail the entire evaluation.
 

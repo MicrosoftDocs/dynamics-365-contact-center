@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days 
-ms.date: 02/06/2026
+ms.date: 03/27/2026
 ms.custom: bap-template
 ---
 
@@ -78,7 +78,9 @@ You need to enable Quality Evaluation Agent for your supervisors in Copilot Serv
       In **Specify data**, you can see the default entities that are added. 
     1. Select **Manage data** to go to the **Specify data** dialog, where you can:
         - Delete data types or clear a row to temporarily exclude the data type from being summarized.
-        - Add more data type fields for Quality Evaluation Agent input configuration by selecting **Add data**.   
+        - Add more data type fields for Quality Evaluation Agent input configuration by selecting **Add data**.
+          > [!NOTE]
+          > You can add up to 10 one-to-one data types and six one-to-many data types in addition to the ones available by default.
  1. In the **Evaluation criteria score** section, select **Enable scoring for criteria**. The **Evaluation criteria scoring turned on** dialog appears.
  1. Select **Turn on**. Once turned on, it can’t be turned off.
  1. From the **Set threshold value out of 100** dropdown list, select a threshold value.

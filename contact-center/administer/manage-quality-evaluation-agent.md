@@ -61,7 +61,7 @@ Learn more in [Move data across regions for Copilots and generative AI features 
 
 ## Configure connection references
 
-When you navigate to the Quality Evaluation Agent page in Copilot Service admin center, a **Prerequisites** section appears at the top of the page that indicates whether connection references are set up. You need to configure connection references for Quality Evaluation Agent flow to integrate with Microsoft services. These connections link flows to essential data sources such as Microsoft Dataverse and Copilot Studio, ensuring smooth operation and enhanced functionality.
+When you navigate to the Quality Evaluation Agent page in Copilot Service admin center, a **Prerequisites** section appears at the top of the page that indicates whether connection references are set up. You need to configure connection references for Quality Evaluation Agent flow to integrate with Microsoft services. These connections link flow to essential data sources such as Microsoft Dataverse and Copilot Studio, ensuring smooth operation and enhanced functionality.
 
 1. In Copilot Service admin center, go to **Customer Support** > **Quality management.** The **Quality management** page appears.
 1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears.
@@ -70,6 +70,8 @@ When you navigate to the Quality Evaluation Agent page in Copilot Service admin 
     1. In the **Configure Connections** dialog, select **Update connection references to use your connector** to complete connection references.
     1. In **Step 2: Power Automate Flows**, if a flow is turned off, use the navigation link to open the flow in Power Automate and enable it.
     1. Once all tiles show as **Ready**, select **Publish** in **Step 3: Copilot Studio Agent** to complete the setup.
+
+After completing the configuration, you may need to perform a hard refresh to see the updated status.
 
 In case you have issues configuring connection references from the **Quality Evaluation Agent** page, you can do a manual setup by following the steps provided in [Connection references for Quality Evaluation Agent flow](/dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context).
 

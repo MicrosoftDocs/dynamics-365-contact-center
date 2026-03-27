@@ -63,7 +63,7 @@ To request evaluation for closed conversations:
 1. On the **Request evaluation** dialog, select the following:
 
    - **Evaluation criteria:** Search and select an evaluation criteria from the list of criteria.
-   - **Evaluation method:** Select an evaluation method: **AI assisted**, **Manual**, or **AI agent**. If you select **AI agent**, the **Assigned to** and **Evaluation due date** is turned off.
+   - **Evaluation method:** Select an evaluation method: **AI assisted**, **Manual**, or **AI agent**.
    - **Assigned to:** Select the user.
    - **Evaluation due date:** Select a due date for the evaluation.
     
@@ -72,6 +72,11 @@ To request evaluation for closed conversations:
 1. Once the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Copilot.
 
 1.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
+
+> [!NOTE]
+> If you select the **AI assisted** or **AI agent** evaluation method, make sure that **AI response enabled** is selected for your questions in the criteria, as shown below:
+- For **AI agent** mode: All questions must be AI-enabled (manual editing isn't allowed).
+- For **AI assisted** mode: At least one question must be AI-enabled.
 
 
 ## Related information

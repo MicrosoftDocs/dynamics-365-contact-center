@@ -67,6 +67,10 @@ You must enable the **Enable bulk evaluations** checkbox in Copilot Service admi
         1.  **Evaluation criteria:** Select the criteria from the dropdown. Example, select **Closed Conversations Default Criteria**.
 
         1.  **Evaluation method:** Select from **AI assisted, AI agent**, or **Manual.**
+        > [!NOTE]
+        > If you select the **AI assisted** or **AI agent** evaluation method, make sure that **AI response enabled** is selected for your questions in the criteria, as shown below:
+        - For **AI agent** mode: All questions must be AI-enabled (manual editing isn't allowed).
+        - For **AI assisted** mode: At least one question must be AI-enabled.
 
         1.  If you select the **AI assisted** option, from the **Assigned To** dropdown list, you need to select **Team** or **User**.
 
@@ -164,16 +168,16 @@ You can view the results in the following ways:
 
 ## Use sampling in recurring evaluation plans
 
-Sampling lets you evaluate a subset of records instead of all records identified by an evaluation plan. For example, you can run evaluations on 10% of 100 records.  The Sampling** section appears when the record type is **Case** and frequency is set to **Recurring** only.
+Sampling lets you evaluate a subset of records instead of all records identified by an evaluation plan. For example, you can run evaluations on 10% of 100 records. The **Sampling** section appears when the record type is **Case** and frequency is set to **Recurring** only.
 
 1. In the **Sampling** section of the **Evaluation Plans** page, provide the following information:
 1. In the **Sampling mode** dropdown, select either **Absolute number** or **Percentage**.
     1. If you select **Absolute number**, then provide the following information:
-        1. **Sampling value**: Enter a value of 1 or more. If the value is less than 1, you'll receive an error message stating that the sampling value must be at least 1 when the sampling mode is set to absolute number.
+        1. **Sampling value**: Enter a value of 1 or more. If the value is less than 1, you receive an error message stating that the sampling value must be at least 1 when the sampling mode is set to absolute number.
         1. **Selection strategy**: Select **Top** or **Bottom**. Based on the absolute number you specified, the system selects records from the top or bottom of the list. 
         1. **Filter data type**: Select a filter data type, such as **Created On** or **Modified On**.
 
-Once you activate a plan with sampling, the sampling fields become non-editable. To edit the sampling settings, you must first pause the plan.
+Once you activate a plan with sampling, the sampling fields become noneditable. To edit the sampling settings, you must first pause the plan.
 
 The Run history tab displays the outcomes of each evaluation run. It includes the following columns:
 

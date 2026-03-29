@@ -209,6 +209,7 @@ Copilot uses articles that are two nodes down the configured domain.
 You can use the **Prompts** tab to control which predefined prompts are available to service representatives when they use the Copilot immersive experience. Prompts help representatives perform common tasks, such as summarizing case activity or drafting emails, without manually typing complex instructions.
 
 **Prompts from my organization**
+
 The following settings are available in the **Prompts from my organization** section:
 
 **Select attribute for filtering prompts**: Use this dropdown to filter the list of prompts based on a specific prompt attribute. Filtering helps you quickly locate prompts that meet certain criteria, such as review status or version. 
@@ -221,22 +222,28 @@ The following are the available attributes:
 
 Changing the selected attribute updates the prompt list to show only prompts that match the selected filter.
 
-**Prompt Text**: Displays the text of the prompt as it appears to service representatives in Copilot. This is the instruction Copilot runs when the representative selects the prompt.
-Use the checkbox next to a prompt to enable or disable its availability.
-**In Guide**: Indicates whether the prompt appears as a guided option in Copilot. Guided prompts help representatives discover commonly used actions without needing to know the exact wording.
-**Alias**: Defines an alternate name or shorthand for the prompt. Aliases allow Copilot to recognize different phrasings that map to the same prompt behavior.
-**Filter**: Specifies any conditions that must be met for the prompt to be available. Filters are evaluated at runtime to determine whether the prompt applies to the current context. If no filter is specified, the prompt is available in all applicable contexts.
-**Entity**: Specifies the record type the prompt applies to, such as Case. Prompts are available only when a representative is working with the selected entity type.
-**Scope**: Specifies where the prompt is available. For the Customer Support agent, prompts can be scoped to Copilot immersive, ensuring they appear only in the immersive Copilot experience.
-**Instructions for Copilot**: Provides optional, prompt‑specific guidance that Copilot follows when generating a response. These instructions let you refine how Copilot executes the prompt—for example, by controlling tone, output structure, or level of detail.
-This field supports up to 10,000 characters.
+**Add or remove prompts**
 
-**Add, remove, and save prompts**
 To manage prompts, perform the following steps:
+
 1. On the **Prompts tab** command bar, select from the following options:
-   - **Add new prompt**: Create a new organizational prompt that representatives can use in Copilot.
-   - **Remove prompt**: Remove a selected prompt from the list.
+   - **Add new prompt**: Create a new organizational prompt that representatives can use in Copilot. Learn more in [Prompt settings](#prompt-settings).
+   - **Remove prompt**: Select the checkbox next to the prompt you want to remove, and then select **Remove prompt** to delete it from the list.
 1. Select **Save**.
+
+**Prompt settings**
+
+Configure the prompt settings as described in the following table:
+
+|Prompt setting | Description |
+|--------|--------------|
+|Prompt Text | Displays the text of the prompt as it appears to service representatives in Copilot. This is the instruction Copilot runs when the representative selects the prompt. |
+|In Guide | Indicates whether the prompt appears as a guided option in Copilot. Guided prompts help representatives discover commonly used actions without needing to know the exact wording. |
+|Alias | Defines an alternate name or shorthand for the prompt. Aliases allow Copilot to recognize different phrasings that map to the same prompt behavior.
+| Filter | Specifies any conditions that must be met for the prompt to be available. Filters are evaluated at runtime to determine whether the prompt applies to the current context. If no filter is specified, the prompt is available in all applicable contexts. |
+| Entity | Specifies the record type the prompt applies to, such as Case. Prompts are available only when a representative is working with the selected entity type. |
+| Scope | Specifies where the prompt is available. For the Customer Support agent, prompts can be scoped to Copilot immersive, ensuring they appear only in the immersive Copilot experience. |
+|Instructions for Copilot | Provides optional, prompt‑specific guidance that Copilot follows when generating a response. These instructions let you refine how Copilot executes the prompt—for example, by controlling tone, output structure, or level of detail. <br> This field supports up to 10,000 characters.|
 
 ## Admin Management agent (preview)
 
@@ -254,7 +261,7 @@ To define **Admin Management** settings, perform the following steps:
 
 The **Overview** tab for the Admin Management agent provides access to agent‑specific tools and knowledge configuration.
 
-Use the **Copilot Studio** link to manage the tools and knowledge sources associated with the Admin Management agent. Tool configuration and knowledge source management for this agent are handled in Copilot Studio.
+Use the **Copilot Studio** link to manage the tools and knowledge sources associated with the Admin Management agent.
 
 ### Prompts tab
 
@@ -264,25 +271,24 @@ Use the **Prompts** tab to control which prompts are available when Copilot uses
 
 The following columns are available in the **Prompts from my organization** grid:
 
-- **Prompt text**: Displays the text of the prompt that Copilot uses to generate a response.
-
-- **In guide**: Indicates whether the prompt appears as a guided option in Copilot. Guided prompts help users discover common actions without typing the full prompt.
-
-- **Alias**: Provides an optional alternate label for the prompt. Aliases are useful when the full prompt text is long and you want a shorter display name in the prompt guide.
-
-- **Entity**: Specifies the record type that the prompt applies to, such as **Case**. Prompts are available only when the selected entity context applies.
-
-- **Scope**: Specifies where the prompt is available. For the Admin Management agent, prompts can be scoped to the **Copilot side pane**.
-
-- **Instructions for Copilot**: Provides optional, prompt‑specific guidance that Copilot follows when generating a response. Use this field to refine tone, output structure, or response behavior. This field supports up to 10,000 characters.
+|Column |Description |
+|------|--------------|
+|Prompt text | Displays the text of the prompt that Copilot uses to generate a response. |
+|In guide | Indicates whether the prompt appears as a guided option in Copilot. Guided prompts help users discover common actions without typing the full prompt. |
+|Alias | Provides an optional alternate label for the prompt. Aliases are useful when the full prompt text is long and you want a shorter display name in the prompt guide. |
+|Entity | Specifies the record type that the prompt applies to, such as **Case**. Prompts are available only when the selected entity context applies. |
+|Scope | Specifies where the prompt is available. For the Admin Management agent, prompts can be scoped to the **Copilot side pane**. |
+|Instructions for Copilot | Provides optional, prompt‑specific guidance that Copilot follows when generating a response. Use this field to refine tone, output structure, or response behavior.<br>This field supports up to 10,000 characters.|
 
 Built‑in prompts are read‑only. You can enable or disable them, but you can’t edit their content.
 
-**Add, remove, and save prompts**
+**Add or remove prompts**
+
 To manage prompts, perform the following steps:
+
 1. On the **Prompts tab** command bar, select from the following options:
-   - **Add new prompt**: Create a new organizational prompt that users can use in Copilot.
-   - **Remove prompt**: Remove a selected prompt from the list.
+   - **Add new prompt**: Create a new organizational prompt that users can use in Copilot. Learn more in [Prompts from my organization](#prompts-from-my-organization).
+   - **Remove prompt**: Select the checkbox next to the prompt you want to remove, and then select **Remove prompt** to delete it from the list.
 1. Select **Save**.
 
 #### User access tab
@@ -295,7 +301,6 @@ Select one of the following options:
 - **Specific user roles**: Restricts access to users who are assigned the selected security roles.
 
 Changes to user access take effect after you save the settings.
-
 
 ### Related information
 

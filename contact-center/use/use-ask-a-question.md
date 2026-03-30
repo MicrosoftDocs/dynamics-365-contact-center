@@ -1,12 +1,12 @@
 ---
 title: Ask a question
-description: Learn how to use ask a question feature in Copilot within customer service representative apps to enhance efficiency.
+description: Learn how to use the ask a question feature in Copilot within customer service representative apps to enhance efficiency.
 author: gandhamm
 ms.author: mgandham
-ms.reviewer: 
+ms.reviewer: mgandham
 ms.topic: how-to
-ms.collection:
-ms.date: 07/14/2025
+ms.collection: bap-ai-copilot
+ms.date: 03/31/2026
 ms.custom: bap-template 
 ---
 

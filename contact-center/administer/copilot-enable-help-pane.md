@@ -227,7 +227,7 @@ Changing the selected attribute updates the prompt list to show only prompts tha
 To manage prompts, perform the following steps:
 
 1. On the **Prompts tab** command bar, select from the following options:
-   - **Add new prompt**: Create a new organizational prompt that representatives can use in Copilot. Learn more in [Prompt settings](#prompt-settings).
+   - **Add new prompt**: Create a new organizational prompt that representatives can use in Copilot.
    - **Remove prompt**: Select the checkbox next to the prompt you want to remove, and then select **Remove prompt** to delete it from the list.
 1. Select **Save**.
 
@@ -287,7 +287,7 @@ Built‑in prompts are read‑only. You can enable or disable them, but you can�
 To manage prompts, perform the following steps:
 
 1. On the **Prompts tab** command bar, select from the following options:
-   - **Add new prompt**: Create a new organizational prompt that users can use in Copilot. Learn more in [Prompts from my organization](#prompts-from-my-organization).
+   - **Add new prompt**: Create a new organizational prompt that users can use in Copilot.
    - **Remove prompt**: Select the checkbox next to the prompt you want to remove, and then select **Remove prompt** to delete it from the list.
 1. Select **Save**.
 

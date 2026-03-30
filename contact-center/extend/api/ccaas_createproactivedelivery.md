@@ -16,13 +16,13 @@ You can use the `CCaaS_CreateProactiveDelivery` API to initiate proactive outbou
 
 > [!IMPORTANT]
 >
-> - If an organization is using the `CCaaS_CreateProactiveDelivery` API to initiate an outbound voice call, the organization is responsible for consent management, including the manual updating of "do not call lists" for setting quiet hours for customer contact. Make sure that the following conditions are met:
-> - Consent is obtained before contacting customers.
-> - Customers are contacted during permitted hours only.
+> - If an organization is using the `CCaaS_CreateProactiveDelivery` API to initiate an outbound voice call, the organization is responsible for consent management, including the manual updating of "don't call lists" for setting quiet hours for customer contact. Make sure that the following conditions are met:
+>   - Consent is obtained before contacting customers.
+>   - Customers are contacted during permitted hours only.
 
 ## Prerequisites
 
-- You must have the Omnichannel Agent or Omnichannel Supervisor role to call this API.
+- You must have the Omnichannel agent or Omnichannel supervisor role to call this API.
 - Proactive engagement is configured. Learn more in [Configure proactive engagement](../../administer/configure-proactive-engagement.md).
 
 ## Request details
@@ -32,18 +32,18 @@ You can use the `CCaaS_CreateProactiveDelivery` API to initiate proactive outbou
 - **Version**: 1.0
 - **OData Operation**: Action
 - **OData Type**: Unbounded
-- **Request Authorization**: Required. Must contain a valid Azure AD Bearer token for the user making the API call. This token must be issued from the same Azure AD tenant as the Customer Service instance.
+- **Request Authorization**: Required. Must contain a valid Microsoft Entra ID Bearer token for the user making the API call. This token must be issued from the same Microsoft Entra ID tenant as the Customer Service instance.
 
 ## Request headers
 
 | Key | Type | Description |
 |-----|------|-------------|
 | ApiVersion | String | The CCaaS API version. |
-| ProactiveEngagementConfigId | String | ID of the Proactive Engagement Configuration to use. This specifies the dial mode type, workstream, and outbound profile to use. To get this ID, do the following: <ol><li>Go to [Power Apps](https://make.preview.powerapps.com) and select the required environment.</li><li>Select **Tables** > **Proactive Engagement Configuration**.</li><li>Select the ID of the required record.</li></ol> |
+| ProactiveEngagementConfigId | String | ID of the Proactive Engagement Configuration to use. It also specifies the dial mode type, workstream, and outbound profile to use. To get this ID, do the following steps: <ol><li>Go to [Power Apps](https://make.preview.powerapps.com) and select the required environment.</li><li>Select **Tables** > **Proactive Engagement Configuration**.</li><li>Select the ID of the required record.</li></ol> |
 | RequestId | String | Optional. Attribute to pass to track the request from a source system. |
 | Priority | String | Optional. Defines the priority value of the request. |
 | Contacts | JSON array of Contact objects | Specifies one or more contacts (up to 5) on this request. At least one phone number per contact is required. |
-| Windows | JSON array of Window objects | Specifies the valid time periods when the outbound call may be placed. If not provided, the system defaults to a 24-hour window starting immediately (from current time until 24 hours later). |
+| Windows | JSON array of Window objects | Specifies the valid time periods when the outbound call can be placed. If not provided, the system defaults to a 24-hour window starting immediately (from current time until 24 hours later). |
 
 ## Contact object
 
@@ -56,12 +56,12 @@ You can use the `CCaaS_CreateProactiveDelivery` API to initiate proactive outbou
 | businessPhoneNumber | String | Business phone number of the contact. |
 | homePhoneNumber | String | Home phone number of the contact. |
 | email | String | Optional. Email address of the contact. |
-| postalcode | String | Optional. Postal code of the contact. |
+| `postalcode` | String | Optional. Postal code of the contact. |
 | state | String | Optional. State of the contact. |
-| country | String | Optional. Country of the contact. |
-| addressline | String | Optional. Address line of the contact. |
+| `country` | String | Optional. Country/Region of the contact. |
+| `addressline` | String | Optional. Address line of the contact. |
 | city | String | Optional. City of the contact. |
-| timezone | String | Optional. Time zone of the contact. Must be a value from the Dynamics-approved list. |
+| timezone | String | Optional. Time zone of the contact. Must be a value from the Dynamics 365-approved list. |
 | inputAttributes | JSON object of key-value strings | Optional. Variables that can be referenced within Copilot agent flows to customize behavior, drive conditional logic, or retrieve personalized information from Dataverse records. |
 | windows | JSON array of Window objects | Optional. Contact-level time windows that override the top-level Windows for this specific contact. |
 

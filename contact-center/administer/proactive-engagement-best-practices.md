@@ -17,7 +17,7 @@ This article provides recommendations to help you run proactive engagement campa
 
 ## Understand and comply with local regulations
 
-Outbound calling is subject to telecommunications regulations that vary by country, region, and industry. Before running any campaign, review the regulations that apply to your organization and your customers' locations.
+Outbound calling is subject to telecommunications regulations that vary by country/region, and industry. Before you run any campaign, review the regulations that apply to your organization and your customers' locations.
 
 Key regulatory frameworks to be aware of include:
 
@@ -30,9 +30,9 @@ Key regulatory frameworks to be aware of include:
 
 ## Keep customer data accurate
 
-The quality of your contact list directly affects campaign performance and compliance. Calling invalid, reassigned, or opted-out numbers wastes capacity and can expose your organization to regulatory risk.
+The quality of your contact list directly affects campaign performance and compliance. Calls to invalid, reassigned, or opted-out numbers wastes capacity and can expose your organization to regulatory risk.
 
-- Validate contact records before each campaign. Remove invalid, disconnected, or ported numbers.
+- Verify contact records before each campaign. Remove invalid, disconnected, or ported numbers.
 - Suppress contacts against applicable national and regional do-not-call registries before every campaign run.
 - Maintain an internal do-not-call list and apply it across all campaigns. Honor opt-out requests promptly and retain records for the period required by applicable law.
 - Verify that the phone number on record belongs to the intended contact before using automated or AI-led dial modes.
@@ -41,18 +41,18 @@ The quality of your contact list directly affects campaign performance and compl
 
 Contacting customers at the wrong time or too frequently damages trust and increases opt-out rates.
 
-- **Calling hours**: Place calls only during hours that are permissible under applicable law and that reflect your customers' preferences. Federal law in the United States prohibits calls to residential numbers before 8:00 a.m. or after 9:00 p.m. local time at the called party's location. Many states and countries have stricter restrictions.
-- **Frequency capping**: Set limits on how often a contact can be called within a given period. Calling the same contact repeatedly in a short time period increases the likelihood of opt-outs and complaints.
+- **Calling hours**: Place calls during hours that are permissible under applicable law and reflect your customers' preferences. Federal law in the United States prohibits calls to residential numbers before 8:00 A.M. or after 9:00 P.M. local time at the called party's location. Many states and countries/regions have stricter restrictions.
+- **Frequency capping**: Set limits on how often a contact can be called within a period. Calling the same contact repeatedly in a short time period increases the likelihood of opt-outs and complaints.
 - **Retry intervals**: Space retry attempts across different times of day rather than calling at the same time repeatedly. Apply a cooling-off period between attempts.
-- **Channel preferences**: If a contact has not responded after several voice attempts, consider whether an alternate channel such as SMS or email is more appropriate before making further calls.
+- **Channel preferences**: If a contact hasn't responded after several voice attempts, consider whether an alternate channel such as SMS or email is more appropriate before making further calls.
 
 ## Register and protect your caller identity
 
 Customers are less likely to answer calls from numbers they don't recognize or that are labeled as spam.
 
-- Register your outbound phone numbers with caller ID reputation registries to reduce the risk of calls being labeled "Spam Likely" or blocked by carriers.
-- Work with your telephony provider or a third-party vendor that specializes in caller ID reputation management to monitor how your numbers are classified and to address flagging issues promptly. Considering using a branding service to appropriately brand your calls to increase answer rate. 
-- Avoid placing a disproportionately high volume of calls from a single phone number in a short period, as this can trigger carrier spam detection.
+- Register your outbound phone numbers with caller ID reputation registries to reduce the risk of calls being labeled "Spam likely" or blocked by carriers.
+- Work with your telephony provider or a third-party vendor that specializes in caller ID reputation management to monitor how your numbers are classified and to address flagging issues promptly. Consider using a branding service to appropriately brand your calls to increase answer rate. 
+- Avoid placing a disproportionately high volume of calls from a single phone number in a short period to avoid triggering carrier spam detection.
 
 ### Related information
 

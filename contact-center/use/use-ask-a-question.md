@@ -81,6 +81,29 @@ You can make the following types of requests:
 
 [!INCLUDE [cc-ask-question-responses](../../shared/cc-ask-question-responses.md)]
 
+## Review responses from knowledge articles (preview)
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
+When Copilot answers a question using knowledge content, the response might be returned directly from a knowledge article.
+
+If the knowledge content is configured to be returned verbatim, Copilot displays the approved wording without rewriting or summarizing it. This behavior helps ensure accuracy and compliance when exact language is required.
+
+When a verbatim response is returned:
+
+- The response indicates that the information is provided directly from a knowledge document.
+- The content isn’t rewritten or summarized.
+- The most relevant section of the knowledge article is surfaced automatically.
+
+To review the full source content, select **Check sources** in the Copilot pane. The linked knowledge article opens in view-only mode, and the content used in the response is highlighted so that you can easily identify it.
+
+If multiple knowledge articles are available, you can use the source navigation controls to switch between articles and review alternate responses.
+
+Always review Copilot responses before sharing them with customers, especially when the response is based on knowledge content.
+
 ## Translate responses
 
 [!INCLUDE [cc-use-translate-responses](../../shared/cc-use-translate-responses.md)]

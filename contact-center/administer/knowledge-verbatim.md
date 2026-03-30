@@ -19,8 +19,6 @@ ms.custom: bap-template
 
 In some scenarios, service representatives must share information with customers using approved, exact wording, such as legal text, regulatory guidance, or standardized procedures. To support these scenarios, Copilot can return verbatim responses from knowledge articles without rewriting or summarizing the content when service representatives use the **Ask a question** experience. Verbatim responses help ensure accuracy and compliance while allowing Copilot to assist service representatives efficiently during customer interactions.
 
-Verbatim responses are controlled at the knowledge article level, not through Copilot settings. Knowledge managers configure which content must be returned verbatim by tagging knowledge articles or specific article sections.
-
 > [!IMPORTANT]
 >
 > - This is a preview feature.
@@ -38,7 +36,9 @@ Verbatim responses apply to the **Ask a question** capability. Other Copilot fea
 
 ## Mark knowledge content for verbatim responses
 
-Knowledge managers can configure verbatim behavior by tagging knowledge content directly in the knowledge article editor. You can mark an entire article or specific sections as verbatim.
+Verbatim responses are controlled at the knowledge article level, not through Copilot settings. Knowledge managers can configure verbatim behavior by tagging knowledge content directly in the knowledge article editor. 
+
+You can mark an entire article or specific sections as verbatim.
 
 ### Mark an entire knowledge article as verbatim
 

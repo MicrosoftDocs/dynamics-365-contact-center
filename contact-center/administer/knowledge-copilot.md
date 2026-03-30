@@ -54,5 +54,5 @@ If you made any unpublished modifications to the Copilot plugins, you see a **De
 
 ## Related information
 
-[Knowledge sources overview](/microsoft-copilot-studio/knowledge-copilot-studio)
+[Knowledge sources overview](/microsoft-copilot-studio/knowledge-copilot-studio)  
 [Configure verbatim responses in knowledge articles for Copilot](knowledge-verbatim.md)

@@ -1,6 +1,6 @@
 ---
-title: Enable knowledge sources from Microsoft Copilot Studio (preview)
-description: Learn how to enable knowledge sources from Microsoft Copilot Studio.
+title: Configure knowledge articles for verbatim responses in Copilot (preview)
+description: Learn how to mark entire knowledge articles or specific sections of knowledge articles so Microsoft Copilot can return verbatim responses.
 author: lalexms
 ms.author: laalexan
 ms.reviewer: laalexan
@@ -11,7 +11,7 @@ ms.date: 03/31/2026
 ms.custom: bap-template
 ---
 
-# Configure knowledge articles for verbatim responses in Copilot
+# Configure knowledge articles for verbatim responses in Copilot (preview)
 
 [!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
 

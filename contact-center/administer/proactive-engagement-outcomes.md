@@ -13,13 +13,13 @@ ms.custom: bap-template
 
 # Outcomes for proactive engagement
 
-Outcomes represent the result of a proactive engagement call. The system stores outcomes as result values in the proactive delivery entity, which you can reference for call status tracking. Customer Insights Journey uses outcomes to support granular branching options, allowing you to define follow-up actions based on specific call results without additional configuration.
+Outcomes represent the result of a proactive engagement call. The system stores outcomes as result values in the proactive delivery entity, which you can reference for call status tracking. Customer Insights Journey uses outcomes to support granular branching options, so that you can define follow-up actions based on specific call results without extra configuration.
 
-Context variables created in Copilot Studio that match a variable name in the workstream are automatically sent to Dynamics 365 in real time. These variables are accessible as disposition codes and for branching logic in Customer Insights Journey.
+Copilot Studio automatically sends context variables that match a variable name in the workstream to Dynamics 365 in real time. Customer Insights Journey can access these variables as disposition codes and for branching logic.
 
 ## SIP-based outcomes
 
-SIP-based early media outcomes such as LiveAnswer, AnsweringMachine, Busy, and NoAnswer are returned by Azure Communication Services and stored as result values in the proactive delivery entity.
+Azure Communication Services returns SIP-based early media outcomes, such as LiveAnswer, AnsweringMachine, Busy, and NoAnswer. The system stores these outcomes as result values in the proactive delivery entity.
 
 | Result | Description |
 |--------|-------------|
@@ -31,7 +31,7 @@ SIP-based early media outcomes such as LiveAnswer, AnsweringMachine, Busy, and N
 | BotFailed | Copilot agent or Copilot Studio agent failed to get started or failed during conversation with customer where phone went off-hook. |
 | CallEnded | Preview dial mode call where customer phone went off-hook. |
 | Busy | Customer returned busy signal, as indicated by SIP diagnostic information or early media results from Azure Communication Services. Customer phone didn't go off the hook. |
-| NoAnswer | Customer phone dial resulted in no answer, SIP diagnostic information or early media results from Azure Communication Services. Customer phone didn't go off the hook. |
+| NoAnswer | Customer phone dial resulted in no answer, SIP diagnostic information, or early media results from Azure Communication Services. Customer phone didn't go off the hook. |
 | InvalidAddress | Customer phone dial resulted in invalid address, as indicated by diagnostic information or early media results from Azure Communication Services. Customer phone didn't go off the hook. |
 | CallFailed | Customer phone didn't go off the hook and there was no SIP diagnostic information or early media results from Azure Communication Services. |
 | Terminated | Preview dial mode call where customer wasn't attempted to be engaged because no agent was available or accepted after launching the call and valid window to contact the customer ended by then. |

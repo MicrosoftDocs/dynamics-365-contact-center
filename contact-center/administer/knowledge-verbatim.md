@@ -38,7 +38,7 @@ Verbatim responses apply to the **Ask a question** capability. Other Copilot fea
 
 ## Mark knowledge content for verbatim responses
 
-Knowledge managers configure verbatim behavior by tagging knowledge content directly in the knowledge article editor.
+Knowledge managers can configure verbatim behavior by tagging knowledge content directly in the knowledge article editor. You can mark an entire article or specific sections as verbatim.
 
 ### Mark an entire knowledge article as verbatim
 
@@ -56,7 +56,7 @@ When only part of an article must be returned verbatim, mark individual sections
 
 1. Open the knowledge article in the editor.
 1. Select the subsection that must be returned verbatim.
-1. Use the **verbatim** icon on the editor toolbar to add a verbatim comment to the selected content.
+1. Use the **Verbatim** icon on the editor toolbar to add a verbatim comment to the selected content.
 1. Save and publish the article.
 
 Only the marked subsection is returned verbatim when Copilot retrieves the article. Other parts of the article continue to follow standard response behavior.

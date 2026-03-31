@@ -52,7 +52,7 @@ When Copilot retrieves this article, the content is returned verbatim, and a lin
 
 ### Mark specific sections of an article as verbatim
 
-When only part of an article must be returned verbatim, mark individual sections:
+Mark individual sections when only specific parts require verbatim responses.
 
 1. Open the knowledge article in the editor.
 1. Select the subsection that must be returned verbatim.

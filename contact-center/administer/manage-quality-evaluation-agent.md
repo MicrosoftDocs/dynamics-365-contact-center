@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days 
-ms.date: 03/27/2026
+ms.date: 03/31/2026
 ms.custom: bap-template
 ---
 
@@ -51,7 +51,7 @@ You need to configure connection references for Quality Evaluation Agent flow to
 
 ## Data movement across regions
 
-For optimal performance, service calls might be routed outside the customer's regional boundary if local capacity is temporarily unavailable. To participate, customers are requested to provide consent for potential data movement across regions. This enables us to deliver a seamless experience leveraging the full capabilities of Copilot and generative AI features within the Power Platform.
+For optimal performance, service calls might be routed outside the customer's regional boundary if local capacity is temporarily unavailable. To participate, customers are requested to provide consent for potential data movement across regions. This consent enables us to deliver a seamless experience by using the full capabilities of Copilot and generative AI features within Power Platform.
 
 Learn more in [Move data across regions for Copilots and generative AI features – Power Platform](/power-platform/admin/geographical-availability-copilot?utm_source=chatgpt.com&tabs=new).
 
@@ -82,7 +82,7 @@ You need to enable Quality Evaluation Agent for your supervisors in Copilot Serv
           > [!NOTE]
           > You can add up to 10 one-to-one data types and six one-to-many data types in addition to the ones available by default.
  1. In the **Evaluation criteria score** section, select **Enable scoring for criteria**. The **Evaluation criteria scoring turned on** dialog appears.
- 1. Select **Turn on**. Once turned on, it can’t be turned off.
+ 1. Select **Turn on**. You can't turn off this feature after you enable it.
  1. From the **Set threshold value out of 100** dropdown list, select a threshold value.
  1. Select **Save**.
 

@@ -68,7 +68,7 @@ You must enable the **Enable bulk evaluations** checkbox in Copilot Service admi
 
         1.  **Evaluation method:** Select from **AI assisted, AI agent**, or **Manual.**
         > [!NOTE]
-        > If you select the **AI assisted** or **AI agent** evaluation method, make sure that **AI response enabled** is selected for your questions in the criteria, as shown below:
+        > If you select the **AI assisted** or **AI agent** evaluation method, make sure that **AI response enabled** is selected for your questions in the criteria, as follows:
         > - For **AI agent** mode: All questions must be AI-enabled (manual editing isn't allowed).
         > - For **AI assisted** mode: At least one question must be AI-enabled.
 
@@ -99,7 +99,7 @@ Select the **Frequency type** as **Trigger** and **Evaluation Trigger Config** a
 
 When a case is resolved, one evaluation is created for each plan that matches the specified conditions. Multiple evaluations can be created for the same case. 
 
-To view the evaluations, go to the **Evaluations** page. Once the **AI agent status** appears as **Completed** for the evaluations, select the required **Evaluation**. On the **Evaluation associated view**, you can review the **Evaluation Summary** provided by Copilot.
+To view the evaluations, go to the **Evaluations** page. Once the **AI agent status** appears as **Completed** for the evaluations, select the required evaluation. Review the **Evaluation Summary** provided by Quality Evaluation Agent.
 
 ## Create and activate a real-time evaluation plan for ongoing conversations
 
@@ -159,7 +159,7 @@ Bulk evaluations enable automatic evaluations on large sets of records using rec
 
 1. Select **Activate**. The plans are activated only after the data transfer is complete.
 
-You can evaluate up to 10,000 entity records in a single batch run. A single batch run might take up to four hours to complete.
+Each batch run supports a maximum of 20,000 records.
 
 You can view the results in the following ways:
 
@@ -185,7 +185,7 @@ The Run history tab displays the outcomes of each evaluation run. It includes th
 - **Records identified by sampling**: The number of records selected based on your sampling settings.
 - **Records eligible for evaluation**: The final number of records evaluated, calculated as the minimum of the values in the **Records identified by condition** and **Records identified by sampling** columns.
 
-A maximum of 50,000 records can be evaluated per run. 
+Each batch run supports a maximum of 20,000 records.
 
 ## Related information
 

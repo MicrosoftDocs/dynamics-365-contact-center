@@ -1,6 +1,6 @@
 ---
 title: Manage Quality Evaluation Agent
-description: Learn how to configure and enable Quality Evaluation Agent in Dynamics 365 Customer Service and Dynamics 365 Contact Center to improve customer engagement and meet evaluation standards.
+description: Learn how to configure and enable Quality Evaluation Agent in Dynamics 365 Customer Service and Dynamics 365 Contact Center. Use agent evaluations to improve customer engagement and assess interactions against quality standards.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas

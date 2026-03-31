@@ -1,13 +1,13 @@
 ---
 title: Manage Quality Evaluation Agent
-description: Learn how to configure and enable Quality Evaluation Agent in Dynamics 365 Customer Service and Dynamics 365 Contact Center to improve customer engagement and meet evaluation standards.
+description: Learn how to configure and enable Quality Evaluation Agent in Dynamics 365 Customer Service and Dynamics 365 Contact Center. Use agent evaluations to improve customer engagement and assess interactions against quality standards.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days 
-ms.date: 03/24/2026
+ms.date: 03/31/2026
 ms.custom: bap-template
 ---
 
@@ -46,7 +46,7 @@ The Quality Evaluation Agent evaluates case and conversations, provides summarie
 
 ## Data movement across regions
 
-For optimal performance, service calls might be routed outside the customer's regional boundary if local capacity is temporarily unavailable. To participate, customers are requested to provide consent for potential data movement across regions. This enables us to deliver a seamless experience using the full capabilities of Copilot and generative AI features within the Power Platform.
+For optimal performance, service calls might be routed outside the customer's regional boundary if local capacity is temporarily unavailable. To participate, customers are requested to provide consent for potential data movement across regions. This consent enables us to deliver a seamless experience by using the full capabilities of Copilot and generative AI features within Power Platform.
 
 Learn more in [Move data across regions for Copilots and generative AI features – Power Platform](/power-platform/admin/geographical-availability-copilot?utm_source=chatgpt.com&tabs=new).
 
@@ -84,12 +84,14 @@ You need to enable Quality Evaluation Agent for your supervisors in Copilot Serv
 1. In the **Enablement by record type** section:
 1. Select **Case**, **Conversation**, or **Email** and save.
     1. If you select **Case** and need to perform bulk evaluation for cases, select the **Enable bulk evaluations** option.
-1. For each record type, in **Specify data**, you can see the default entities that are added. 
+1. For each record type, in **Specify data**, you can see the default entities that are added. For **Email** record type, you need to add the **Description** in the **Data field** and save it. 
     1. Select **Manage data** to go to the **Specify data** dialog, where you can:
         - Delete data types or clear a row to temporarily exclude the data type from being summarized.
-        - Add more data type fields for Quality Evaluation Agent input configuration by selecting **Add data**. For **Email** record type, you need to add the **Description** in the **Data field** and save it.  
+        - Add more data type fields for Quality Evaluation Agent input configuration by selecting **Add data**.
+          > [!NOTE]
+          > You can add up to 10 one-to-one data types and six one-to-many data types in addition to the ones available by default.
  1. In the **Evaluation criteria score** section, select **Enable scoring for criteria**. The **Evaluation criteria scoring turned on** dialog appears.
- 1. Select **Turn on**. Once turned on, you can't turn off the option.
+ 1. Select **Turn on**. You can't turn off this feature after you enable it.
  1. From the **Set threshold value out of 100** dropdown list, select a threshold value.
  1. Select **Save**.
 

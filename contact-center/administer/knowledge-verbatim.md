@@ -17,7 +17,7 @@ ms.custom: bap-template
 
 [This article is prerelease documentation and is subject to change.]
 
-In some scenarios, service representatives must share information with customers using approved, exact wording, such as legal text, regulatory guidance, or standardized procedures. To support these scenarios, Copilot can return verbatim responses from knowledge articles without rewriting or summarizing the content when service representatives use the **Ask a question** experience. Verbatim responses help ensure accuracy and compliance while allowing Copilot to assist service representatives efficiently during customer interactions.
+Customer service representatives (service representatives or representatives) must sometimes share information using approved, exact wording for legal text, regulatory guidance, or standardized procedures. To support these scenarios, Copilot can return verbatim responses from knowledge articles without having to rewrite or summarize the content when representatives use the **Ask a question** experience. Use verbatim responses to maintain accuracy and compliance while Copilot efficiently supports customer interactions.
 
 > [!IMPORTANT]
 >

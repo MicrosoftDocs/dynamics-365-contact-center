@@ -42,7 +42,7 @@ You can mark an entire article or specific sections as verbatim.
 
 ### Mark an entire knowledge article as verbatim
 
-When the full article must always be returned without modification:
+For articles that must be delivered verbatim in full:
 
 1. Open the knowledge article in the knowledge authoring experience.
 1. Add the **doNotSummarize** keyword to the article.

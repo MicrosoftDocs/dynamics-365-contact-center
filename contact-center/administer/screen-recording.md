@@ -6,7 +6,7 @@ ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: 
-ms.date: 03/25/2026
+ms.date: 04/01/2026
 ms.custom: bap-template 
 ---
 
@@ -44,7 +44,7 @@ When desktop companion application is used, screen recordings are saved locally 
 
 1. In Copilot Service admin center, go to **Workspaces**.
 1. [Create a new experience profile](/dynamics365/customer-service/administer/create-agent-experience-profile) or add to an existing profile.
-1. In **Productivity pane**, edit and turn on screen recording. The screen recording button appears in the productivity pane.
+1. In **Productivity pane**, edit and turn on screen recording. The screen recording icon appears in the productivity pane.
 
 ## Types of screen recording
 

@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes in Dynamics 365 Contact Center and Customer Service.
-ms.date: 12/01/2025
+ms.date: 02/27/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -59,12 +59,12 @@ AI-based forecasting uses artificial intelligence to improve forecast accuracy b
 
 ### Why use AI-based forecasting?
 
-As a supervisor, you can rely on AI to intelligently select the most accurate forecasting model for your operational data, remove guesswork and reduce manual configuration. The system uses historical and contextual data to improve forecast accuracy and provide consistent service levels in dynamic environments. AI-based forecasting can help you optimize your staffing levels and reduce operational costs.
+As a supervisor, you can rely on AI to intelligently select the most accurate forecasting model for your operational data, remove guesswork, and reduce manual configuration. The system uses historical and contextual data to improve forecast accuracy and provide consistent service levels in dynamic environments. AI-based forecasting can help you optimize your staffing levels and reduce operational costs.
 
 ### Key behaviors
 
 - AI automatically selects the best-fit model for your scenario.
-- Autorefresh has been turned off. You must run forecasts manually.
+- Autorefresh is turned off. You must run forecasts manually.
 - Job history includes an **AI reasoning** tab that explains why a method was selected.
 
 ### Create an AI-based forecast report
@@ -74,7 +74,7 @@ To use AI-based forecasting:
 1. Open the forecast scenario details for the scenario you want to configure.
 1. Review refresh settings.
 1. Select **Run forecast scenario** to generate results.
-1. Check **Job history**, and then review the insights on the **AI Reasoning** tab.
+1. Check ****, and then review the insights on the **AI Reasoning** tab.
 
 ### About the AI Reasoning tab
 
@@ -125,7 +125,7 @@ The **AI Reasoning** tab provides transparency into how the system selects the f
 1. In the site map of Copilot Service workspace, select **Forecast scenarios** under **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.
 1. Select the **Reports** tab. A list of the reports you created appears.
 
-The first time you access the dashboard, any scenarios you configured appear in **Draft** status until the first trigger occurs. After that, the scenario shows as **In progress** until it completes. For each scenario, the following details are displayed:
+The first time you access the dashboard, scenarios you configured appear in **Draft** status until the first run occurs. After that, the scenario shows as **In progress** until it completes. For each scenario, the following details are displayed:
 
 - **Name**: The name of you gave the scenario.
 - **Current Status**: The state of the scenario. This status can be **Draft**, **Completed**.
@@ -158,5 +158,13 @@ When you open a report, the following visualizations are available:
 
 ### Run forecasts on demand
 
-Select **Run forecast scenario** to trigger an on-demand forecast.
+As a supervisor, you can manually trigger a forecast run for a scenario by selecting **Run forecast scenario**. This capability supports planning and operational analysis scenarios where you need refreshed forecast results without waiting for the next scheduled run.
+
+When you run a forecast scenario on demand, the following actions occur:
+
+- The system starts a background job to generate the forecast for the current scenario.
+- Forecast generation runs asynchronously and can take varying amounts of time depending on data volume and scenario configuration.
+- Supervisors can monitor progress and status in the job history.
+- After the background job completes, updated forecast outputs are available in forecast reports and views.
+- Completion of the forecast run also triggers a capacity planning job to refresh staffing requirements based on the latest forecast output.
 

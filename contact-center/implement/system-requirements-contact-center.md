@@ -1,7 +1,7 @@
 ---
 title: System requirements for Dynamics 365 Contact Center
 description: Learn about the prerequisites, system requirements, and accessible websites for deploying and using Dynamics 365 Contact Center.
-ms.date: 02/05/2025
+ms.date: 01/30/2026
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
@@ -127,4 +127,4 @@ The following table shows geographic location–specific links that should be ma
 
 ## Related information
 
-[Get started with Copilot Service workspace](../use/ccw-overview.md)
+[Get started with Copilot Service workspace](../use/ccw-overview.md)  

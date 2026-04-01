@@ -69,6 +69,8 @@ additionalContent:
         text: Set up embedded experience
       - url: /dynamics365/customer-service/administer/voice-channel-install?context=/dynamics365/contact-center/context/administer-context
         text: Configure the voice channel
+      - url: administer/create-rollout-plans.md
+        text: Create rollout plans to manage AI agents
     - title: Configure connectors
       links:
       - url: administer/configure-salesforce-connector.md

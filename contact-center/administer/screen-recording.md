@@ -44,8 +44,7 @@ When desktop companion application is used, screen recordings are saved locally 
 
 1. In Copilot Service admin center, go to **Workspaces**.
 1. [Create a new experience profile](/dynamics365/customer-service/administer/create-agent-experience-profile) or add to an existing profile.
-1. Select the **screen recording** option. The screen recording button appears in the productivity pane.
-
+1. In **Productivity pane**, edit and turn on screen recording. The screen recording button appears in the productivity pane.
 
 ## Types of screen recording
 
@@ -61,11 +60,11 @@ Manual screen recording is continuous and representatives can't pause the record
 
 Only authorized users can review recordings to understand how customer interactions were handled. Representatives can’t access or view their own screen recordings.
 
-1. Sign in to Copilot Service admin center with either the **Screen Recording Supervisor** or **Screen Recording Administrator** role.
-1. Go to **Screen recordings**.
-1. Search for recordings by using filters such as agent, date, or recording type. 
+1. Sign in to Copilot Service workspace with either the **Screen Recording Supervisor** or **Screen Recording Administrator** role.
+1. Go to **Screen Recordings**.
+1. On the **Active Screen Recordings** page, search for recordings by using filters such as name, agent, session type, or created on. 
 1. Review the list of recordings that match your search criteria. 
-1. You can also select and download a recording, as required.
+1. Select a recording to view the recording details download the file, if required.
 
 ## Manage your screen recordings
 
@@ -81,16 +80,16 @@ By default, screen recordings and transcripts are retained indefinitely. Microso
 
 1. Sign in to your Dynamics 365 environment.
 1. In your browser, go to the following URL:
-`https://yourURL.crm.dynamics.com/tools/bulkdelete/home_bulkDeletionJobs.aspx` and replace yourURL with your organization’s Dynamics 365 URL.
+`https://yourURL.crm.dynamics.com/tools/bulkdelete/home_bulkDeletionJobs.aspx` and replace your URL with your organization’s Dynamics 365 URL.
 1. On the **Bulk Record Deletion** page, select **New** to start a new bulk delete job.
 1. In **Bulk Deletion Wizard**, select **Next**.
-1. In **Define search criteria**, in the **Look for** dropdown, select **Screen recordings**.
+1. In **Define search criteria**, in the **Look for** dropdown, select **Screen Recordings**.
 1. Select the **Select** hyperlink and then select **Created On**.
-1. Set the condition to **Older Than X Days**. Enter the retention period in days (for example, 365 for one year) in the **Choose Date** text box. 
+1. Set the **Equals** to **Older Than X Days**. Enter the retention period in days (for example, 365 for one year) in the **Choose Date** text box. 
 1. Select **Next**.
 1. Enter a name for the job, such as **Bulk Delete Screen Recordings Older Than 1 Year**.
-1. Schedule the job during a low-activity period (for example, 3:00 AM).
-1. Set the job recurrence (daily or every few days). Optionally, enable email notifications for job completion.
+1. Schedule the job time for a low-activity period (for example, 3:00 AM).
+1. Set the job recurrence (daily or every few days). Optionally, enable email notifications after job completion.
 1. Select **Next**.
 1. In **Review and Submit Bulk Deletion Details**, review your configuration.
 1. Select **Submit** to create the bulk delete job.

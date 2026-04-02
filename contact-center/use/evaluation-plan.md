@@ -177,7 +177,7 @@ Sampling lets you evaluate a subset of records instead of all records identified
         1. **Selection strategy**: Select **Top** or **Bottom**. Based on the absolute number you specified, the system selects records from the top or bottom of the list. 
         1. **Filter data type**: Select a filter data type, such as **Created On** or **Modified On**.
 
-Once you activate a plan with sampling, the sampling fields become noneditable. To edit the sampling settings, you must first pause the plan.
+After you activate a plan with sampling, the sampling fields become noneditable. To edit the sampling settings, you must first pause the plan.
 
 The **Run history** tab displays the outcomes of each evaluation run. It includes the following columns:
 

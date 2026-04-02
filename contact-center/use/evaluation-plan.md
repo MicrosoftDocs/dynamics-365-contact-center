@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 03/19/2026
+ms.date: 04/02/2026
 ms.custom: bap-template
 ---
 
@@ -17,10 +17,14 @@ ms.custom: bap-template
 
 **Cases**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
+**Email**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
-Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. You can define criteria methods, conditions, and evaluation plans to support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and enable bulk evaluations to streamline your review process.
+Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. You can define criteria methods, conditions, and evaluation plans to support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and how to enable bulk evaluations to streamline your review process.
 
-You can also create an on-demand evaluation to check cases and conversations when needed.
+> [!IMPORTANT]
+>
+> - Evaluation for emails is a preview feature. 
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Prerequisites
 
@@ -42,7 +46,7 @@ You must enable the **Enable bulk evaluations** checkbox in Copilot Service admi
 
 1.  On the **New Evaluation Plan** page,
 
-    1.  In the **Evaluation plan details** section, provide the following:
+    1.  In the **Evaluation plan details** section, provide the following information:
         - **Plan name**: Enter plan name.
         - **Description**: Enter description.
         - **Record type**: Select **record type** as **Conversations** or **Cases**.
@@ -50,16 +54,17 @@ You must enable the **Enable bulk evaluations** checkbox in Copilot Service admi
     1.  If you select **Conversations**, then in the **Frequency** section, select the following options:
 
         1.  **Frequency type:** Select **Trigger,** and then provide the following:
-            - **Occurrence**: If you have frequency type as **Trigger**, then select **Closed conversation**.
+            - **Occurrence**: Select **Closed conversations**.
             - **Start date**: Specify the start date for the plan.
             - **End date**: Specify the end date for the plan.
             
-    1. If you select **Cases**, then in the **Frequency** section, select the following:
+    1. If you select **Cases**, then in the **Frequency** section, select the following options:
 
-        1.  **Frequency type:** Select **Recurring,** and then provide the following:
+        1.  **Frequency type:** Select **Recurring,** and then provide the following information:
             - **Occurrence**: Select **Daily**.
             - **Start date**: Specify the start date for the plan.
             - **End date**: Specify the end date for the plan.
+        1. If you select the **Frequency type** as **Trigger**, then select the **Evaluation Trigger Config** as **Default Trigger Config for Resolved Cases**. This selection creates trigger-based evaluations for resolved cases only.
 
     1.  In the **Conditions** section, select **Add** to add conditions to your evaluation plan. For example, Add **Conversation status**> **Equals** > **Closed** or add **Channel type > Contains data > Live chat.**
 
@@ -68,6 +73,10 @@ You must enable the **Enable bulk evaluations** checkbox in Copilot Service admi
         1.  **Evaluation criteria:** Select the criteria from the dropdown. Example, select **Closed Conversations Default Criteria**.
 
         1.  **Evaluation method:** Select from **AI assisted, AI agent**, or **Manual.**
+        > [!NOTE]
+        > If you select the **AI assisted** or **AI agent** evaluation method, make sure that **AI response enabled** is selected for your questions in the criteria, as follows:
+        > - For **AI agent** mode: All questions must be AI-enabled (manual editing isn't allowed).
+        > - For **AI assisted** mode: At least one question must be AI-enabled.
 
         1.  If you select the **AI assisted** option, from the **Assigned To** dropdown list, you need to select **Team** or **User**.
 
@@ -78,6 +87,8 @@ You must enable the **Enable bulk evaluations** checkbox in Copilot Service admi
 1.  Select **Activate plan**. The **Activate plan** dialog appears.
 1.  Select **Activate plan**. On successful activation, a success message appears.
 
+You can use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases, conversations, and emails when needed.
+
 ### View run history for a plan
 
 When you run an evaluation plan, it generates a run‑history record that captures the plan name, execution timestamp, total number of records processed, and the final status. This record provides structured visibility into batch runs and their outcomes.
@@ -87,6 +98,16 @@ Select **Run history** on your evaluation plan to view the details.
 ## Use on-demand evaluation
 
 You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases and conversations when needed.
+
+## Configure trigger-based evaluation plans for resolved cases
+
+You can create and activate trigger-based evaluation plans for resolved cases only. Trigger-based evaluations run automatically when a case is resolved and specific conditions are met.
+
+When you [create and activate an evaluation plan](#create-and-activate-evaluation-plan-for-cases-and-closed-conversations) from the **Evaluation plans** page, select the **Frequency type** as **Trigger** and **Evaluation Trigger Config** as **Default Trigger Config for Resolved Cases**. 
+
+When a case is resolved, the system creates one evaluation for each plan that matches the specified conditions. Multiple evaluations can be created for the same case. 
+
+To view the evaluations, go to the **Evaluations** page. When the **AI agent status** shows as **Completed**, select the required evaluation and review the **Evaluation Summary** provided by Quality Evaluation Agent.
 
 ## Create and activate a real-time evaluation plan for ongoing conversations
 
@@ -126,15 +147,19 @@ When you pause a plan, it finishes the current batch and then stops before the n
 
 ## Edit evaluation plans
 
-You can't edit active evaluation plans or modify the existing record type for a plan.
+You can't edit active evaluation plans, or modify the existing record type or evaluation criteria for a plan.
 
-1. On the **Evaluation Plans** page, select the evaluation plans that you want to edit, and then select **Edit**.
+1. On the **Evaluation Plans** page, select the evaluation plans that you want to edit, and then select **Pause plan**.
+
+1. Select **Edit**. All the fields become editable except for **Record type** and **Evaluation criteria**.
 
 1. Save the changes.
 
-1. Select **Activate plan**.
+1. Select **Activate plan** to activate the plan.
 
 ## Enable bulk evaluation for cases
+
+Bulk evaluations enable automatic evaluations on large sets of records using recurring evaluation plans. To perform bulk evaluations, make sure that bulk evaluations are turned on for cases in the Copilot Service admin center, evaluation plans for cases are created and activated, and the frequency for the plans is set to recurring.
 
 1. In Copilot Service workspace, go to **Evaluation plans**.
 
@@ -142,7 +167,33 @@ You can't edit active evaluation plans or modify the existing record type for a 
 
 1. Select **Activate**. The plans are activated only after the data transfer is complete.
 
-You can evaluate up to 10,000 entity records in a single batch run. A single batch run might take up to four hours to complete.
+Each batch run supports a maximum of 20,000 records.
+
+You can view the evaluation results in the following ways:
+
+- From the **Run history** tab of an evaluation plan. The status show as **Completed** when the run is successful.
+- From the **Evaluations** grid, when you select **Evaluations** in Copilot Service workspace.
+
+## Use sampling in recurring evaluation plans
+
+Sampling lets you evaluate a subset of records instead of all records identified by an evaluation plan. For example, you can run evaluations on 10 percent of 100 records. The **Sampling** section appears when the record type is **Case** and frequency is set to **Recurring** only.
+
+1. In the **Sampling** section of the **Evaluation Plans** page, provide the following information:
+1. In the **Sampling mode** dropdown, select either **Absolute number** or **Percentage**.
+    1. If you select **Absolute number**, then provide the following information:
+        1. **Sampling value**: Enter a value of 1 or more. If the value is less than 1, you receive an error message stating that the sampling value must be at least 1 when the sampling mode is set to absolute number.
+        1. **Selection strategy**: Select **Top** or **Bottom**. Based on the absolute number you specified, the system selects records from the top or bottom of the list. 
+        1. **Filter data type**: Select a filter data type, such as **Created On** or **Modified On**.
+
+After you activate a plan with sampling, the sampling fields become noneditable. To edit the sampling settings, you must first pause the plan.
+
+The **Run history** tab displays the outcomes of each evaluation run. It includes the following columns:
+
+- **Records identified by condition**: The total number of records that meet the evaluation plan's conditions.
+- **Records identified by sampling**: The number of records selected based on your sampling settings.
+- **Records eligible for evaluation**: The final number of records evaluated, calculated as the minimum of the values in the **Records identified by condition** and **Records identified by sampling** columns.
+
+Each batch run supports a maximum of 20,000 records.
 
 ## Related information
 

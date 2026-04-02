@@ -82,7 +82,7 @@ You need to enable Quality Evaluation Agent for your supervisors in Copilot Serv
 1. In Copilot Service admin center, go to **Customer Support** > **Quality management.** The **Quality management** page appears.
 1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears.
 1. In the **Enablement by record type** section:
-1. Select **Case**, **Conversation**, or **Email** and save.
+1. Select **Case**, **Conversation**, or **Email** and then select **Save**.
     1. If you select **Case** and need to perform bulk evaluation for cases, select the **Enable bulk evaluations** option.
 1. For each record type, in **Specify data**, you can see the default entities that are added. For **Email** record type, you need to add the **Description** in the **Data field** and save it. 
     1. Select **Manage data** to go to the **Specify data** dialog, where you can:

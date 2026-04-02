@@ -73,7 +73,7 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
     1.  **Add question-level instructions**: Provide instructions for the question, if any. Instructions help Quality Evaluation Agent generate answers and improve accuracy.
     
-    1. Select **AI response enabled** to allow AI to predict an answer for this question. If not selected, AI doesn't process or return an answer. Evaluation creation fails if the criteria lacks AI-enabled questions for the selected mode in an evaluation plan, as shown below:
+    1. Select **AI response enabled** to allow AI to predict an answer for this question. If you don't select this option, AI doesn't process the input or return an answer. Evaluation creation fails if the criteria lacks AI-enabled questions for the selected mode in an evaluation plan, as follows:
 
     - **AI agent mode**: All questions must be AI-enabled (manual editing isn't allowed).
     - **AI assisted mode**: At least one question must be AI-enabled.

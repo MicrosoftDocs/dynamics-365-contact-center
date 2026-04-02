@@ -40,7 +40,7 @@ To request evaluations for multiple cases from the case grid:
 
 1. Select the required records.
     
-1.  Select **Request evaluation**. You can select up to 20 records for evaluation. 
+1. Select **Request evaluation**. You can select up to 20 records for evaluation. 
 
 To request evaluation for a particular case:
 
@@ -55,9 +55,14 @@ To request evaluation for a particular case:
 
 1.  Select **Request**.
 
+1.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**. 
+
 When the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Quality Evaluation Agent.
 
-1.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
+To view the evaluation record, in site map of Copilot Service workspace:
+
+- Go to **Cases** and then select a case. Go to **Related** > **Evaluations** to view the evaluation records.
+- Go to **Evaluations**. The **All evaluations** data grid appears. Select the required evaluation record. The evaluation for the selected case appears in the **Evaluations** side pane.
 
 ## On-demand evaluation for conversations
 
@@ -76,14 +81,14 @@ To request evaluation for closed conversations:
     
 1.  Select **Request**. 
 
-When the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Quality Evaluation Agent.
-
 1.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
 
-> [!NOTE]
-> If you select the **AI assisted** or **AI agent** evaluation method, make sure that **AI response enabled** is selected for your questions in the criteria, as follows:
->- For **AI agent** mode: All questions must be AI-enabled. Manual editing isn't allowed.
->- For **AI assisted** mode: At least one question must be AI-enabled.
+When the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Quality Evaluation Agent.
+
+To view the evaluation record, in the site map of Copilot Service workspace:
+
+- Go to **Conversations** and then select a conversation. Go to **Related** > **Evaluations** to view the evaluation records.
+- Go to **Evaluations**. The **All evaluations** data grid appears. Select the required evaluation record. The evaluation for the selected conversation appears in the **Evaluations** side pane.
 
 ## On-demand evaluation for email (preview)
 
@@ -98,11 +103,16 @@ To request evaluation for emails:
    - **Assigned to:** Select the user.
    - **Evaluation due date:** Select a due date for the evaluation.
 
-1. Select **Request**. 
+1. Select **Request**.
 
 When the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation Summary** provided by Quality Evaluation Agent.
 
 You can also request an evaluation for an individual email record from the **Evaluation** tab within every email record.
+
+> [!NOTE]
+> If you select the **AI assisted** or **AI agent** evaluation method, make sure that **AI response enabled** is selected for your questions in the criteria, as follows:
+>- For **AI agent** mode: All questions must be AI-enabled. Manual editing isn't allowed.
+>- For **AI assisted** mode: At least one question must be AI-enabled.
 
 
 ## Related information

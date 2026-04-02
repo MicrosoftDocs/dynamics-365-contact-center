@@ -107,7 +107,7 @@
           - name: Manage scripts
             href: /dynamics365/customer-service/administer/agent-scripts?context=/dynamics365/contact-center/context/administer-context
           - name: Configure screen recording
-            href: screen-recording.md
+            href: configure-screen-recording.md
           - name: macros
             items:  
             - name: Manage macros

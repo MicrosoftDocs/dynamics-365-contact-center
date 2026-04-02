@@ -28,7 +28,7 @@ Screen recording helps organizations support quality, compliance, training, and 
 - Security roles
     - Representatives have the **Screen Recorder** role to record their screen.
     - You have the **Screen Recording Supervisor** role that allows you to view a list of recordings, but not download the recording file to a local machine.
-    - You have the **Screen Recording Administrator** role, that allows you to view a list of screen recordings in the web app and download recording files for review.
+    - You have the **Screen Recording Admin** role that allows you to view a list of screen recordings in the web app and download recording files for review.
 - The representative's local computer has the desktop companion application installed and running. Learn more in [Install and manage desktop companion application for voice channel](/dynamics365/contact-center/administer/install-manage-desktop-app).
 
 ## How screen recording works

@@ -95,7 +95,7 @@ You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-ev
 
 You can create and activate trigger-based evaluation plans for resolved cases only. Trigger-based evaluations run automatically when a case gets resolved and specific conditions are met.
 
-Select the **Frequency type** as **Trigger** and **Evaluation Trigger Config** as **Default Trigger Config for Resolved Cases**, when you [create and activate an evaluation plan](#create-and-activate-evaluation-plan-for-cases-and-closed-conversations) from the **Evaluation plans** page. 
+When you [create and activate an evaluation plan](#create-and-activate-evaluation-plan-for-cases-and-closed-conversations) from the **Evaluation plans** page, select the **Frequency type** as **Trigger** and **Evaluation Trigger Config** as **Default Trigger Config for Resolved Cases**. 
 
 When a case is resolved, one evaluation is created for each plan that matches the specified conditions. Multiple evaluations can be created for the same case. 
 

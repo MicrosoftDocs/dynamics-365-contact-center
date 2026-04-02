@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 03/23/2026
+ms.date: 04/02/2026
 ms.custom: bap-template
 ---
 
@@ -99,7 +99,7 @@ When you [create and activate an evaluation plan](#create-and-activate-evaluatio
 
 When a case is resolved, one evaluation is created for each plan that matches the specified conditions. Multiple evaluations can be created for the same case. 
 
-To view the evaluations, go to the **Evaluations** page. Once the **AI agent status** appears as **Completed** for the evaluations, select the required evaluation. Review the **Evaluation Summary** provided by Quality Evaluation Agent.
+To view the evaluations, go to the **Evaluations** page. When the **AI agent status** shows as **Completed**, select the required evaluation and review the **Evaluation Summary** provided by Quality Evaluation Agent.
 
 ## Create and activate a real-time evaluation plan for ongoing conversations
 

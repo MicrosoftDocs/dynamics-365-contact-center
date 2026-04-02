@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 02/27/2026
+ms.date: 04/02/2026
 ms.custom: bap-template 
 ---
 
@@ -94,11 +94,11 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
 Turn on **Mark as critical question** to designate a question as critical within a criteria. Critical questions highlight mandatory requirements such as compliance, safety, or mandatory process steps that must not be missed.
 
-If a critical question is answered with a fail option, the entire evaluation or simulation is marked as failed due to that question. You can mark multiple questions as critical within a criterion; however, each critical question must have at least one fail option configured. If not, an error is displayed. Scoring remains unaffected when critical questions or evaluations fail.
+If a critical question is answered with a fail option, the entire evaluation or simulation fails. You can mark multiple questions as critical within a criteria, but each critical question must have at least one fail option configured. If not, an error appears. Scoring doesn't change when a critical question causes an evaluation to fail.
 
-During simulations and evaluations, results indicate whether a critical question caused the failure. The critical question information is shown at both in the **Evaluation Summary** level and at the individual question level in the side panel. Additionally, the evaluations grid also includes a column that identifies evaluations that failed due to a critical question.
+During simulations and evaluations, the results indicate whether a critical question caused the failure. The critical question information is shown at both in the **Evaluation Summary** level and at the individual question level in the side panel. Additionally, the evaluations grid also includes a column that identifies evaluations that failed due to a critical question.
 
-Here are a few examples of questions where a failure should immediately fail the entire evaluation.
+The following examples show questions where a failure should immediately fail the entire evaluation:
 
 - Did the agent select the correct action when prompted with a compliance checkpoint?
 (Fail if an incorrect action was chosen.)

@@ -17,8 +17,14 @@ ms.custom: bap-template
 
 **Cases**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
+**Email**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
 Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. You can define criteria methods, conditions, and evaluation plans to support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and how to enable bulk evaluations to streamline your review process.
+
+> [!IMPORTANT]
+>
+> - Evaluation for emails is a preview feature. 
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Prerequisites
 
@@ -40,7 +46,7 @@ You must enable the **Enable bulk evaluations** checkbox in Copilot Service admi
 
 1.  On the **New Evaluation Plan** page,
 
-    1.  In the **Evaluation plan details** section, provide the following:
+    1.  In the **Evaluation plan details** section, provide the following information:
         - **Plan name**: Enter plan name.
         - **Description**: Enter description.
         - **Record type**: Select **record type** as **Conversations** or **Cases**.
@@ -54,7 +60,7 @@ You must enable the **Enable bulk evaluations** checkbox in Copilot Service admi
             
     1. If you select **Cases**, then in the **Frequency** section, select the following options:
 
-        1.  **Frequency type:** Select **Recurring,** and then provide the following:
+        1.  **Frequency type:** Select **Recurring,** and then provide the following information:
             - **Occurrence**: Select **Daily**.
             - **Start date**: Specify the start date for the plan.
             - **End date**: Specify the end date for the plan.
@@ -80,6 +86,8 @@ You must enable the **Enable bulk evaluations** checkbox in Copilot Service admi
 
 1.  Select **Activate plan**. The **Activate plan** dialog appears.
 1.  Select **Activate plan**. On successful activation, a success message appears.
+
+You can use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases, conversations, and emails when needed.
 
 ### View run history for a plan
 

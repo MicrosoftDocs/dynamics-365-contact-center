@@ -1,6 +1,6 @@
 ---
 title: Use on-demand evaluation
-description: Learn how to use on-demand evaluation in Dynamics 365 Customer Service and Dynamics 365 Contact Center to assess cases and conversations efficiently with AI-assisted, manual, or AI agent methods.
+description: Learn how to use on-demand evaluation in Dynamics 365 Customer Service and Dynamics 365 Contact Center to assess cases, conversations, and emails efficiently with AI-assisted, manual, or AI agent methods.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
@@ -17,7 +17,14 @@ ms.custom: bap-template
 
 **Cases**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
+**Email**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
+
 Use on-demand evaluation to check cases and conversations. Request evaluations with AI-assisted, manual, or AI agent methods for flexible quality management. This article explains how to use on-demand evaluation, including prerequisites and step-by-step instructions.
+
+> [!IMPORTANT]
+>
+> - Evaluation for emails is a preview feature. 
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Prerequisites
 
@@ -48,7 +55,7 @@ To request evaluation for a particular case:
 
 1.  Select **Request**.
 
-1.  Once the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Copilot.
+When the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Quality Evaluation Agent.
 
 1.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
 
@@ -62,21 +69,40 @@ To request evaluation for closed conversations:
 
 1. On the **Request evaluation** dialog, select the following:
 
-   - **Evaluation criteria:** Search and select an evaluation criteria from the list of criteria.
+   - **Evaluation criteria:** Search and select an evaluation criteria.
    - **Evaluation method:** Select an evaluation method: **AI assisted**, **Manual**, or **AI agent**.
    - **Assigned to:** Select the user.
    - **Evaluation due date:** Select a due date for the evaluation.
     
 1.  Select **Request**. 
 
-1. Once the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Copilot.
+When the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Quality Evaluation Agent.
 
 1.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
 
 > [!NOTE]
-> If you select the **AI assisted** or **AI agent** evaluation method, make sure that **AI response enabled** is selected for your questions in the criteria, as shown below:
+> If you select the **AI assisted** or **AI agent** evaluation method, make sure that **AI response enabled** is selected for your questions in the criteria, as follows:
 >- For **AI agent** mode: All questions must be AI-enabled. Manual editing isn't allowed.
 >- For **AI assisted** mode: At least one question must be AI-enabled.
+
+## On-demand evaluation for email (preview)
+
+To request evaluation for emails:
+
+1. Go to **Activities** and select the **Email** record type.
+1. Select **Request evaluation**.
+1. On the **Request evaluation** dialog, select the following:
+
+   - **Evaluation criteria:** Search and select an evaluation criteria.
+   - **Evaluation method:** Select an evaluation method: **AI assisted**, **AI agent**, or **Manual**.
+   - **Assigned to:** Select the user.
+   - **Evaluation due date:** Select a due date for the evaluation.
+
+1. Select **Request**. 
+
+When the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation Summary** provided by Quality Evaluation Agent.
+
+You can also request an evaluation for an individual email record from the **Evaluation** tab within every email record.
 
 
 ## Related information

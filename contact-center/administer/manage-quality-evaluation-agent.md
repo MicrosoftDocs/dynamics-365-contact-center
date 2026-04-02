@@ -17,9 +17,16 @@ ms.custom: bap-template
 
 **Cases**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
+**Emails**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
+
 Quality Evaluation Agent is an AI agent that assesses customer engagement using an evaluation framework defined by supervisors. The quality evaluation framework comprises evaluation criteria, evaluation plan, and evaluations that are essential for the AI Agent to work. 
 
 Quality Evaluation Agent autonomously scores cases and conversations, delivering actionable insights to help supervisors improve interaction quality. It evaluates cases and closed conversations to make sure they comply with required standards. When standards aren't met, the AI Agent recommends actions to enhance future interactions.
+
+> [!IMPORTANT]
+>
+> - Evaluation for emails is a preview feature. 
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 **Evaluation criteria**:
 
@@ -31,7 +38,7 @@ Set up plans to schedule when to evaluate interactions. You can select interacti
 
 **Evaluations**:
 
-The Quality Evaluation Agent evaluates case and conversations, provides summaries of the interactions, with insights and recommendations that help improve customer interactions. You can use [on-demand evaluation](on-demand-evaluation.md) to check cases, conversations, and emails when needed.
+The Quality Evaluation Agent evaluates case and conversations and provides summaries of the interactions, with insights and recommendations that help improve customer interactions. You can [use on-demand evaluation](../use/on-demand-evaluation.md#use-on-demand-evaluation) to check cases, conversations, and emails when needed.
 
 > [!IMPORTANT]
 > - This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and shouldn't be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. <br> 
@@ -82,7 +89,7 @@ You need to enable Quality Evaluation Agent for your supervisors in Copilot Serv
 1. In Copilot Service admin center, go to **Customer Support** > **Quality management.** The **Quality management** page appears.
 1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears.
 1. In the **Enablement by record type** section:
-1. Select **Case**, **Conversation**, or **Email** and then select **Save**.
+1. Select **Case**, **Conversation**, or **Email** and save.
     1. If you select **Case** and need to perform bulk evaluation for cases, select the **Enable bulk evaluations** option.
 1. For each record type, in **Specify data**, you can see the default entities that are added. For **Email** record type, you need to add the **Description** in the **Data field** and save it. 
     1. Select **Manage data** to go to the **Specify data** dialog, where you can:

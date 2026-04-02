@@ -179,7 +179,7 @@ Sampling lets you evaluate a subset of records instead of all records identified
 
 Once you activate a plan with sampling, the sampling fields become noneditable. To edit the sampling settings, you must first pause the plan.
 
-The Run history tab displays the outcomes of each evaluation run. It includes the following columns:
+The **Run history** tab displays the outcomes of each evaluation run. It includes the following columns:
 
 - **Records identified by condition**: The total number of records that meet the evaluation plan's conditions.
 - **Records identified by sampling**: The number of records selected based on your sampling settings.

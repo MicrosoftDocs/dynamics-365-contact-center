@@ -75,7 +75,7 @@ To request evaluation for closed conversations:
 
 > [!NOTE]
 > If you select the **AI assisted** or **AI agent** evaluation method, make sure that **AI response enabled** is selected for your questions in the criteria, as shown below:
->- For **AI agent** mode: All questions must be AI-enabled (manual editing isn't allowed).
+>- For **AI agent** mode: All questions must be AI-enabled. Manual editing isn't allowed.
 >- For **AI assisted** mode: At least one question must be AI-enabled.
 
 

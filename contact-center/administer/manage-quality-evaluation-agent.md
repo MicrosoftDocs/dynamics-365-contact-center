@@ -73,7 +73,7 @@ When you navigate to the Quality Evaluation Agent page in Copilot Service admin 
 
 After completing the configuration, you might need to perform a hard refresh to see the updated status.
 
-In case you have issues configuring connection references from the **Quality Evaluation Agent** page, you can do a manual setup by following the steps provided in [Connection references for Quality Evaluation Agent flow](/dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context).
+If you have issues configuring connection references from the **Quality Evaluation Agent** page, you can do a manual setup. Follow the steps provided in [Connection references for Quality Evaluation Agent flow](/dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context).
 
 ## Enable Quality Evaluation Agent
 

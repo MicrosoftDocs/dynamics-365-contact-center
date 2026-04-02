@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 02/27/2026
+ms.date: 04/02/2026
 ms.custom: bap-template 
 ---
 
@@ -73,15 +73,38 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
 
     1.  **Add question-level instructions**: Provide instructions for the question, if any. Instructions help Quality Evaluation Agent generate answers and improve accuracy.
     
-    1. Select the **AI response enabled** checkbox if you want AI to predict an answer for a question. If unselected, the answer is left blank for the reviewer to submit.
+    1. Select **AI response enabled** to allow AI to predict an answer for this question. If you don't select this option, AI doesn't process the input or return an answer. Evaluation creation fails if the criteria lacks AI-enabled questions for the selected mode in an evaluation plan, as follows:
+
+    - **AI agent mode**: All questions must be AI-enabled (manual editing isn't allowed).
+    - **AI assisted mode**: At least one question must be AI-enabled.
+    
+    This applies to both on-demand evaluations and evaluation plans.
 
     1.  Depending on the answer type, select **Scoring enabled** to add scoring. Turn off the scoring toggle if you don't want to create a criteria with scoring.
 
-1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required.
+    1. Select **Mark as critical question** if you want the question to be marked as critical.
+
+1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required. If you marked the question as critical, you must select the **Mark as fail** option for an answer to avoid errors.
 
     You can delete or duplicate a section or question, as required.
 
 1.  Select **Save**, and then select **Publish**.
+
+## Mark a question as critical
+
+Turn on **Mark as critical question** to designate a question as critical within a criteria. Critical questions highlight mandatory requirements such as compliance, safety, or mandatory process steps that must not be missed.
+
+If a critical question is answered with a fail option, the entire evaluation or simulation fails. You can mark multiple questions as critical within a criteria, but each critical question must have at least one fail option configured. If not, an error appears. Scoring doesn't change when a critical question causes an evaluation to fail.
+
+During simulations and evaluations, the results indicate whether a critical question caused the failure. The critical question information is shown at both in the **Evaluation Summary** level and at the individual question level in the side panel. Additionally, the evaluations grid also includes a column that identifies evaluations that failed due to a critical question.
+
+The following examples show questions where a failure should immediately fail the entire evaluation:
+
+- Did the agent select the correct action when prompted with a compliance checkpoint?
+(Fail if an incorrect action was chosen.)
+
+- Was customer consent obtained before recording the call?
+(Fail if consent wasn't explicitly confirmed.)
 
 ## Edit your published evaluation criteria
 
@@ -103,7 +126,7 @@ To edit your published evaluation criteria, complete the following steps:
 
 Each edit and publish action increments the evaluation criteria version, and the latest published version is always used for new evaluations. Supervisors can review prior versions, restore any version to make it the current one, or discard draft changes as needed.
 
-1. Select the source criteria and go to the **Versioning History** tab to view versions and version numbers along with the latest data that might have been added to the criteria.
+1. Select the source criteria and go to the **Versioning History** tab to view versions and version numbers along with the latest data that might be added to the criteria.
 1. Select **Record** to go a specific version and view the details in read-only.
 1. Select **Restore/Publish** to republish the selected version as the latest. This discards the current draft and increments the version number of the published criteria.
 

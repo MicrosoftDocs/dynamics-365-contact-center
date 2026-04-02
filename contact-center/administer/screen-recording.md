@@ -71,7 +71,7 @@ Learn how you can configure retention periods for screen recordings and transcri
 
 ### Set retention rules for screen recordings and transcripts
 
-You can configure retention rules for screen recordings and transcripts by using **Bulk Record Deletion** jobs. Setting appropriate retention periods helps organizations comply with regulatory requirements and manage storage efficiently. You need to delete the records for the **msdyn_ScreenRecording** and **msdyn_ScreenRecordingLink** entities through the job.
+Define retention periods for screen recordings and transcripts to help your organization comply with regularoty requirements and manage storage efficiently. By default, screen recordings and transcripts are retained indefinitely. Copilot Studio transcripts are retained for 30 days. Configure retention rules by using **Bulk Record Deletion** jobs. Delete the records for the **msdyn_ScreenRecording** and **msdyn_ScreenRecordingLink** entities through the job.
 
 By default, screen recordings and transcripts are retained indefinitely. Microsoft Copilot Studio transcripts are retained for 30 days.
 

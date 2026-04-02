@@ -1,12 +1,11 @@
 ---
 title: Configure screen recording with desktop companion application
-description: Learn how screen recording captures customer service representative activity during customer interactions and how authorized users can review recordings.
+description: Learn how to enable and review screen recordings in Dynamics 365 Contact Center and Dynamics 365 Customer Service to improve agent performance and ensure compliance.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
-ms.collection: 
-ms.date: 04/01/2026
+ms.date: 04/02/2026
 ms.custom: bap-template 
 ---
 
@@ -35,9 +34,9 @@ Screen recording helps organizations support quality, compliance, training, and 
 
 Screen recording captures a representative’s on-screen actions while the representative is handling customer interactions. The actions can include navigation across applications, data entry, and workflow steps performed during a support session. 
 
-Recordings are typically associated with customer interactions such as conversations, chats, and cases, and they’re available to authorized roles for review and analysis.
+Recordings typically capture customer interactions such as conversations, chats, and cases. Authorized roles can access these recordings for review and analysis.
 
-When desktop companion application is used, screen recordings are saved locally before they’re uploaded securely to the organization’s Dataverse environment. After the file is uploaded successfully, the local recording file is deleted automatically. To make sure the file uploads securely to Dataverse, keep the desktop companion application running in the background.
+When agents use the desktop companion application, the system first saves screen recordings locally and then securely uploads them to the organization’s Dataverse environment. After a successful upload, the application automatically deletes the local recording file. To ensure secure upload to Dataverse, keep the desktop companion application running in the background
 
 ## Enable screen recording for representatives
 
@@ -95,7 +94,7 @@ Define retention periods for screen recordings and transcripts to help your orga
 [!WARNING]
 Deleted screen recordings can’t be recovered. Verify your criteria carefully before submitting the job.
 
-## Set retention for transcripts
+### Set retention for transcripts
 
 To configure retention for transcripts, repeat the same steps used for screen recordings except for the following:
 

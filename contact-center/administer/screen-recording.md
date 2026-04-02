@@ -24,7 +24,6 @@ Screen recording helps organizations support quality, compliance, training, and 
 
 ## Prerequisites
 
-Before you can use screen recording, make sure the following requirements are met:
 
 - Security roles
     - Representatives have the **Screen Recorder** role to use the screen recording.

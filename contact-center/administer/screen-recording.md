@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 Screen recording captures a customer service representative (service representative or representative) on-screen activity during customer interactions.
 
-It helps organizations support quality, compliance, training, and operational insights by allowing authorized users to review how work is handled in real workflows.
+Screen recording helps organizations support quality, compliance, training, and operational insights by allowing authorized users to review how work is handled in real workflows.
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and shouldn't be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. <br> 

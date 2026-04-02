@@ -26,6 +26,7 @@ Screen recording helps organizations support quality, compliance, training, and 
 
 - Security roles
     - Representatives have the **Screen Recorder** role to record their screen.
+    - Representatives have the permission to save files to a local machine.
     - You have the **Screen Recording Supervisor** role that allows you to view a list of recordings, but not download the recording file to a local machine.
     - You have the **Screen Recording Admin** role that allows you to view a list of screen recordings in the web app and download recording files for review.
 - The representative's local computer has the desktop companion application installed and running. Learn more in [Install and manage desktop companion application for voice channel](/dynamics365/contact-center/administer/install-manage-desktop-app).
@@ -46,13 +47,11 @@ When agents use the desktop companion application, the system first saves screen
 
 ## Types of screen recording
 
-**Automated**
+**Automated**: Automated screen recording starts when the representative accepts a voice call and stops when the voice call ends.
 
-Automated screen recording starts when the representative accepts a voice call and stops when the voice call ends. If the  representative switches to a video call, a system notification is shown to the end customer indicating that the video in the call might be recorded for quality and training purposes.
+**Manual**: Manual screen recording is continuous and representatives can't pause the recording.
 
-**Manual**
-
-Manual screen recording is continuous and representatives can't pause the recording. Recordings are capped at two hours. When the limit is reached, the current recording is saved and uploaded securely to Dataverse.
+Recordings are capped at two hours. When the limit is reached, the current recording is saved and uploaded securely to Dataverse.
 
 ## Review screen recordings
 

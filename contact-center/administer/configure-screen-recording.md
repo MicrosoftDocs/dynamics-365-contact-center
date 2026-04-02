@@ -1,5 +1,5 @@
 ---
-title: Configure screen recording with desktop companion application
+title: Configure screen recording with desktop companion application in Dynamics 365 Contact Center and Dynamics 365 Customer Service
 description: Learn how to enable and review screen recordings in Dynamics 365 Contact Center and Dynamics 365 Customer Service to improve agent performance and ensure compliance.
 author: Soumyasd27
 ms.author: sdas

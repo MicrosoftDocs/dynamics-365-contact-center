@@ -163,7 +163,7 @@ Each batch run supports a maximum of 20,000 records.
 
 You can view the evaluation results in the following ways:
 
-- From the **Run history** tab of an evaluation plan. The status show as Completed, if the run is successful.
+- From the **Run history** tab of an evaluation plan. The status show as **Completed** when the run is successful.
 - From the **Evaluations** grid, when you select **Evaluations** in Copilot Service workspace.
 
 ## Use sampling in recurring evaluation plans

@@ -168,7 +168,7 @@ You can view the evaluation results in the following ways:
 
 ## Use sampling in recurring evaluation plans
 
-Sampling lets you evaluate a subset of records instead of all records identified by an evaluation plan. For example, you can run evaluations on 10% of 100 records. The **Sampling** section appears when the record type is **Case** and frequency is set to **Recurring** only.
+Sampling lets you evaluate a subset of records instead of all records identified by an evaluation plan. For example, you can run evaluations on 10 percent of 100 records. The **Sampling** section appears when the record type is **Case** and frequency is set to **Recurring** only.
 
 1. In the **Sampling** section of the **Evaluation Plans** page, provide the following information:
 1. In the **Sampling mode** dropdown, select either **Absolute number** or **Percentage**.

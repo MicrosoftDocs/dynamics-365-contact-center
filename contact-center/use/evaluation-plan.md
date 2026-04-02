@@ -97,7 +97,7 @@ You can create and activate trigger-based evaluation plans for resolved cases on
 
 When you [create and activate an evaluation plan](#create-and-activate-evaluation-plan-for-cases-and-closed-conversations) from the **Evaluation plans** page, select the **Frequency type** as **Trigger** and **Evaluation Trigger Config** as **Default Trigger Config for Resolved Cases**. 
 
-When a case is resolved, one evaluation is created for each plan that matches the specified conditions. Multiple evaluations can be created for the same case. 
+When a case is resolved, the system creates one evaluation for each plan that matches the specified conditions. Multiple evaluations can be created for the same case. 
 
 To view the evaluations, go to the **Evaluations** page. When the **AI agent status** shows as **Completed**, select the required evaluation and review the **Evaluation Summary** provided by Quality Evaluation Agent.
 

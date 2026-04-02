@@ -104,6 +104,6 @@ In the **Look for** list, select **Transcripts** instead of **Screen Recordings*
 
 Learn more about long-term data retention with Dataverse in [Dataverse long term data retention overview](/power-apps/maker/data-platform/data-retention-overview). 
 
-## Related information
+### Related information
 
 [Dataverse long term data retention FAQ](/power-apps/maker/data-platform/data-retention-faq)

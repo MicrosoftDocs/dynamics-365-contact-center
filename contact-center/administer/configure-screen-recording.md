@@ -57,11 +57,10 @@ Recordings are capped at two hours. When the limit is reached, the current recor
 
 Authorized users only can review recordings to understand how customer interactions were handled. Representatives can’t access or view their own screen recordings.
 
-1. Sign in to Copilot Service workspace with either the **Screen Recording Supervisor** or **Screen Recording Administrator** role.
-1. Go to **Screen Recordings**.
+1. In the site map of Copilot Service workspace, go to **Screen Recordings**.
 1. On the **Active Screen Recordings** page, search for recordings by using filters such as name, agent, session type, or created on. 
 1. Review the list of recordings that match your search criteria. 
-1. Select a recording to view the recording details download the file, if required.
+1. Select a recording to view the recording details or download the file, if required.
 
 ## Manage your screen recordings
 

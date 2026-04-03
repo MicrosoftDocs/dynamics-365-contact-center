@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: 
-ms.date: 03/25/2026
+ms.date: 04/03/2026
 ms.custom: bap-template 
 ---
 
@@ -53,6 +53,19 @@ Administrators must enable node-level logging in Microsoft Copilot Studio to cap
 
 :::image type="content" source="../media/node-level-detail-for-custom-variables.png" alt-text="Screenshot showing node-level detail logging enabled for conversation transcripts." lightbox="../media/node-level-detail-for-custom-variables.png":::
 
+#### Prerequisites 
+
+**For question nodes**:
+
+- Create custom visualizations to show question nodes and their corresponding outcomes, successes, or failures.
+- To accurately report success and failure rates for question nodes, rename the default question node in Microsoft Copilot Studio Canvas. Use clear and meaningful names to ensure that dashboards display actionable insights and make it easier to track where breakdowns occur in the conversation flow. This practice supports performance improvements and a better user experience. Examples of effective names include Confirm Order Status, Repeat Account Number, or Repeat Main Menu Options. If the node isn’t renamed, default ambiguous names like Question_eQt5ye appear, making reports harder to interpret.
+
+**For custom variables**:
+
+- Use the same custom variable name defined in Microsoft Copilot Studio when configuring the Omnichannel Historical Bot dashboard.
+- Limit variable values to one or two words. Avoid long descriptive text, as it can impact dashboard performance.
+-  For scenarios like business units, use a single variable name. For example, Contoso_Business_Units. The variable can hold multiple values. When a conversation flow passes through a topic related to one of these units, then the variable is assigned or updated. If applied multiple times, only the final value is captured and displayed in the Omnichannel Historical dashboard through visuals or data model customization.
+
 ### Steps to create custom reports for conversation fallouts
 
 1. In Copilot Service workspace, go to **Omnichannel historical analytics** > **Bot**.
@@ -65,10 +78,15 @@ Administrators must enable node-level logging in Microsoft Copilot Studio to cap
 1. Drag metrics such as **AbandonedCount** or **SuccessCount** into the **Columns** or **Values** field, depending on your preferred view.
 1. Select **Save**, and then select **Publish** to make the report available to viewers.
 
-#### Best practices for question nodes
+The following table lists more metrics that aare available at each Question node for customization. You must enable the Advanced historical checkbox to be enabled in Admin Center.
 
-- Create custom visualizations to show question nodes and their corresponding outcomes, successes, or failures.
-- To accurately report success and failure rates for question nodes, rename the default question node in Microsoft Copilot Studio Canvas. Use clear and meaningful names to ensure that dashboards display actionable insights and make it easier to track where breakdowns occur in the conversation flow. This practice supports performance improvements and a better user experience. Examples of effective names include Confirm Order Status, Repeat Account Number, or Repeat Main Menu Options. If the node isn’t renamed, default ambiguous names like Question_eQt5ye appear, making reports harder to interpret.
+
+|Metric Name  | Description  |Channel| Data Schema   |
+|---------|---------|---------|---------|
+|Number of Turns     |  Number of conversational turns taken within this node.        |    Voice      |   FactBotSessionNodedetail       |
+|Speech Confidence Score     |    Confidence score returned by speech recognition for user input at each question node within a topic.      |     Voice      |     FactBotSessionNodedetail     |
+|Input Mode     |  Mode of user input at the question node. This could be either Voice, text or DTMF        |   Voice and Chat      |     FactBotSessionNodedetail     |
+
 
 ## Use custom reporting variables
 
@@ -86,11 +104,22 @@ For example, FactBotReportingVariableDetail.Name = msdyn_rvSelfServiceStart; the
 
 :::image type="content" source="../media/variables.png" alt-text="Screenshot showing global reporting variables configured in Microsoft Copilot Studio Canvas." lightbox="../media/variables.png":::
 
-### Best practices for custom variables
+### Steps to create custom reports for custom variables
 
-- Use the same custom variable name defined in Microsoft Copilot Studio when configuring the Omnichannel Historical Bot dashboard.
-- Limit variable values to one or two words. Avoid long descriptive text, as it can impact dashboard performance.
--  For scenarios like business units, use a single variable name. For example, Contoso_Business_Units. The variable can hold multiple values. When a conversation flow passes through a topic related to one of these units, then the variable is assigned or updated. If applied multiple times, only the final value is captured and displayed in the Omnichannel Historical dashboard through visuals or data model customization.
+1. In Copilot Service workspace, go to **Omnichannel historical analytics** > **Bot**.
+1. Select **Edit report**. This opens the full report where you can view available data measures, tables, and filters.
+1. At the bottom of the report’s page list, select the **Bot Detail** tab to work with bot details.
+1. In the **Data** pane, find the table named **FactBotReportingVariableDetail**. This table contains [ Custom reporting variable schema](/dynamics365/customer-service/use/oob-data-models?#data-dictionary-4) that track ocustom variables in the conversation flow. Currently, the schema contains only final value for each variable name. If needed, you can transform the table using data model customization into multiple custom tables per reporting variable.
+1. Review final value of variables in FactBotReportingVariableDetail.Value column by adding it into a tabular format on the visual pane. You can create a separate visual for each variable name. For example, FactBotReportingVariableDetail.Name = msdyn_rvSelfServiceStart; the name of the custom variable set in Contact Center admin center and FactBotReportingVariableDetail.Value = True/False.  
+1. Add a new **Table** visual or select an existing one.
+1. Drag FactBotReportingVariableDetail.Value, FactBotReportingVariableDetail.ConversationId_FBRVD to the Columns field. FactBotReportingVariableDetail.ConversationId_FBRVD can be renamed to “Conversation Count” column. FactBotReportingVariableDetail.Value can be renamed to “Self Service Status”. In the filter panel drag FactBotReportingVariableDetail.Name and select Name = msdyn_rvSelfServiceStart.
+You see a table like this:
+
+|Self Service Status   |Conversation Count   |
+|---------|---------|
+|TRUE      |   3050      |
+|FALSE      |    650     |
+1. Select **Save**, and then select **Publish** to make the report available to viewers.
 
 ### Related information
 

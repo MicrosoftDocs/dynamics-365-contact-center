@@ -11,9 +11,14 @@ ms.date: 04/03/2026
 ms.custom: bap-template
 ---
 
-# Configure Governance Agent
+# Configure Governance Agent (preview)
 
 Governance Agent enables organizations to enforce compliance, security, and content‑safety standards across customer communications. It evaluates outbound messages, both AI‑generated and human‑authored against configurable guardrails, helping administrators ensure that sensitive, restricted, or non‑compliant content is automatically detected and managed. This feature supports the email channel and extends the safety checks used across other autonomous agents.
+
+> [!IMPORTANT]
+>
+> - This is a preview feature. 
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Prerequisites
 

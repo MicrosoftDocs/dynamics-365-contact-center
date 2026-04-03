@@ -10,11 +10,15 @@ ms.topic: concept-article
 ms.collection: bap-ai-copilot
 ---
 
-# Best practices for selecting real-time voice agents
+# Best practices for real-time voice agents (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This guide walks through the best practices for building real-time agents for chat and voice by using Microsoft technologies. This guide isn't a replacement for Microsoft Copilot Studio or Dynamics 365 Contact Center documentation. It's a practical guide for people who need to **design and build real-time agents (RTA)** and want a simple way to choose the right approach based on customer journey.
 
-In addition to this guide, Microsoft has developed templates based on real-world customer implementations that you can find on [Dynamics 365 Contact Center Forward Deployed Engineering GitHub](https://github.com/microsoft/d365cc-fde).
+Apart from this guide, Microsoft has developed templates based on real-world customer implementations that you can find on [Dynamics 365 Contact Center Forward Deployed Engineering GitHub](https://github.com/microsoft/d365cc-fde).
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Select the orchestration and voice mode
 

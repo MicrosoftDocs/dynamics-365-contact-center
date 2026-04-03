@@ -49,6 +49,7 @@ The Quality Evaluation Agent evaluates case and conversations and provides summa
 - Assign the Quality Manager, Quality Evaluator, and the Quality Administrator roles.
 - Configure [Configure connection references](#configure-connection-references).
 - Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
+- Turn on **Enable AI agents** for your Dynamics 365 environment in Power platform admin center. Learn more in [Copilot adoption in the Power Platform](/power-platform/admin/copilot/copilot-hub).
 - Provide consent for potential [data movement across regions](#data-movement-across-regions).
 
 ## Data movement across regions

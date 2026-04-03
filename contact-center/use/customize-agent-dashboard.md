@@ -112,13 +112,14 @@ For example, FactBotReportingVariableDetail.Name = msdyn_rvSelfServiceStart; the
 1. In the **Data** pane, find the table named **FactBotReportingVariableDetail**. This table contains [ Custom reporting variable schema](/dynamics365/customer-service/use/oob-data-models?#data-dictionary-4) that track ocustom variables in the conversation flow. Currently, the schema contains only final value for each variable name. If needed, you can transform the table using data model customization into multiple custom tables per reporting variable.
 1. Review final value of variables in FactBotReportingVariableDetail.Value column by adding it into a tabular format on the visual pane. You can create a separate visual for each variable name. For example, FactBotReportingVariableDetail.Name = msdyn_rvSelfServiceStart; the name of the custom variable set in Contact Center admin center and FactBotReportingVariableDetail.Value = True/False.  
 1. Add a new **Table** visual or select an existing one.
-1. Drag FactBotReportingVariableDetail.Value, FactBotReportingVariableDetail.ConversationId_FBRVD to the Columns field. FactBotReportingVariableDetail.ConversationId_FBRVD can be renamed to “Conversation Count” column. FactBotReportingVariableDetail.Value can be renamed to “Self Service Status”. In the filter panel drag FactBotReportingVariableDetail.Name and select Name = msdyn_rvSelfServiceStart.
-You see a table like this:
-
-|Self Service Status   |Conversation Count   |
-|---------|---------|
-|TRUE      |   3050      |
-|FALSE      |    650     |
+1. Drag **FactBotReportingVariableDetail.Value**, **FactBotReportingVariableDetail.ConversationId_FBRVD** to the **Columns** field. **FactBotReportingVariableDetail.ConversationId_FBRVD** can be renamed to **Conversation Count** column. **FactBotReportingVariableDetail.Value** can be renamed to **Self Service Status**. In the filter panel, drag **FactBotReportingVariableDetail.Name** and select **Name** = **msdyn_rvSelfServiceStart**.
+    You see a table like this:
+    
+    |Self Service Status   |Conversation Count   |
+    |---------|---------|
+    |TRUE      |   3050      |
+    |FALSE      |    650     |
+    
 1. Select **Save**, and then select **Publish** to make the report available to viewers.
 
 ### Related information

@@ -170,7 +170,7 @@ After you choose conversation control, voice agents need to make another decisio
 
 ## Pattern 1: Basic mode
 
-**Speech → Text → [NLU/NLU +](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-overview) -\> [Classic orchestration](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-overview#classic-orchestration) -\>** **Speech**
+**Speech → Text → [NLU/NLU +](/microsoft-copilot-studio/nlu-overview) -\> [Classic orchestration](/microsoft-copilot-studio/nlu-overview#classic-orchestration) -\>** **Speech**
 
 In this pattern, the caller's speech is transcribed first, then Microsoft Copilot Studio Dialog flow processes the text, and finally, the text is converted back to speech.
 

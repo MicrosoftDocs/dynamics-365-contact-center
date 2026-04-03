@@ -55,7 +55,7 @@ Recordings are capped at two hours. When the limit is reached, the current recor
 
 ## Review screen recordings
 
-Only authorized users can review recordings to understand how customer interactions were handled. Representatives can’t access or view their own screen recordings.
+Authorized users only can review recordings to understand how customer interactions were handled. Representatives can’t access or view their own screen recordings.
 
 1. Sign in to Copilot Service workspace with either the **Screen Recording Supervisor** or **Screen Recording Administrator** role.
 1. Go to **Screen Recordings**.

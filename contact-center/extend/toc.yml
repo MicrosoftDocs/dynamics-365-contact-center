@@ -32,7 +32,7 @@
           href: configure-zendesk-connector.md
         - name: Configure the connector for any CRM solution
           href: configure-custom-connector.md
-      - CCaaS APIs
+      - name: CCaaS APIs
         items:
         - name: Proactive engagement APIs
           items:

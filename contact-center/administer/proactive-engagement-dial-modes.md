@@ -1,12 +1,12 @@
 ---
-title: Dial modes for proactive engagement
+title: Dial modes for proactive engagement in Dynamics 365 Contact Center
 description: Learn about the dial modes available for proactive engagement in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 01/19/2026
+ms.date: 04/06/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -16,8 +16,7 @@ ms.custom: bap-template
 Dial modes determine how the system places outbound calls to customers in a proactive engagement. Each mode balances AI agent involvement, service representative utilization, and customer experience differently.
 
 > [!IMPORTANT]
-> The use of Copilot, predictive and or progressive dial modes for non-transactional commercial purposes constitutes a violation of Microsoft terms of service.
-Regulations governing the use of AI in outbound voice calls vary by country and region. Review applicable regulations based on your organization's and customers' locations before deploying these dial modes.
+> The use of progressive dial mode for service-representative-led calls for commercial marketing or sales purposes constitutes a violation of Microsoft terms of service. Review applicable telecommunications regulations before using service-representative-led modes.
 
 ## Copilot
 

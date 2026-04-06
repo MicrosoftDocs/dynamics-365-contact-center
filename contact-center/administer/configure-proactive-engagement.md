@@ -1,12 +1,12 @@
 ---
-title: Configure proactive engagement
+title: Configure proactive engagement in Dynamics 365 Contact Center
 description: Learn how to set up proactive engagement, including dial modes and operational rules for optimized customer service in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 03/31/2026
+ms.date: 04/06/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -298,7 +298,7 @@ Learn more about available outcomes and SIP-based result values in [Outcomes for
 [Overview of proactive engagement](overview-proactive-engagement.md)  
 [Dial modes for proactive engagement](dial-modes-proactive-engagement.md)  
 [Outcomes for proactive engagement](proactive-engagement-outcomes.md)  
-[Best practices for proactive engagement campaigns](best-practices-proactive-engagement.md)  
+[Best practices for proactive engagement campaigns](proactive-engagement-best-practices.md)  
 [Overview of conversational journeys](/dynamics365/customer-insights/journeys/conversational-journeys-overview)  
 [Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md)  
 [Use CCaaS_CreateProactiveVoiceDelivery API](../extend/api/ccaas_createproactivevoicedelivery.md)  

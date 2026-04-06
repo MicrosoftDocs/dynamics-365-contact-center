@@ -1,12 +1,12 @@
 ---
-title: Best practices for proactive engagement campaigns
+title: Best practices for proactive engagement campaigns in Dynamics 365 Contact Center
 description: Recommendations for running effective and compliant proactive engagement campaigns in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 01/19/2026
+ms.date: 04/06/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -21,9 +21,13 @@ Outbound calling is subject to telecommunications regulations that vary by count
 
 Key regulatory frameworks to be aware of include:
 
-- **TCPA (United States)**: The Telephone Consumer Protection Act governs automated calls and prerecorded messages. It sets restrictions on calling hours, requires prior express written consent for robocalls, limits abandonment rates, and mandates opt-out mechanisms. AI-generated voices are subject to the same requirements as prerecorded messages.
-- **Ofcom (United Kingdom)**: The UK communications regulator sets rules on abandoned call rates, calling line identification, and silent calls. Don't present a false or unavailable caller ID.
-- **GDPR (European Union and United Kingdom)**: Outbound calls involving personal data must have a lawful basis - either explicit consent or a documented legitimate interest. You must be able to demonstrate compliance and honor data subject rights, including the right to object to processing.
+- **TCPA (United States)**: The Telephone Consumer Protection Act governs automated calls and prerecorded messages, including AI-generated voices, regardless of whether the call is for a marketing or informational purpose. It sets restrictions on calling hours, requires prior express written consent to specifically include consent to receive robocalls, limits abandonment rates, and mandates opt-out mechanisms. TCPA is a strict liability regime that provides a private right of action, including class action lawsuits, so compliance should be reviewed closely with legal counsel.
+
+- **UTR (Canada)**: The Unsolicited Telecommunications Rules govern all robocalls, regardless of whether the call is for a marketing or informational purpose, and require registration and screening against do not call lists, restrict calling hours, require prior express written consent for robocalls, and mandate opt-out mechanisms and caller identity.
+- **PECR (United Kingdom)**: The Privacy and Electronic Communications Regulation sets rules on abandoned call rates, calling line identification, silent calls, and require specific prior express consent for autodialed calls. Organizations must not present a false or unavailable caller ID.
+- **ePrivacy Directive (European Union) and GDPR (European Union and United Kingdom)**: The ePrivacy Directive requires prior express consent for direct marketing that uses automated dialing systems without human intervention. Consent must meet the standards established by the GDPR. Organizations must be able to demonstrate compliance and must honor data subject rights including the right to object to processing of their personal data.
+- **EU AI Act (European Union)**: The EU AI Act states that companies must inform users when they are interacting with an AI system.
+- **Asia Pacific and Rest of World**: Many countries in Asia Pacific and rest of world require prior consent and compliance with additional requirements for marketing calls that use automatic dialers and/or artificial/prerecorded voice, such as screening against do not call lists, restricted calling hours, opt-out mechanisms, and caller identity.
 
 > [!IMPORTANT]
 > Regulations change frequently and vary at the state and local level. Consult your legal team or a qualified compliance specialist before launching campaigns, especially in regulated industries such as financial services and healthcare.

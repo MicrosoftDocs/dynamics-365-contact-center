@@ -5,9 +5,9 @@ author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: reference
-ms.date: 03/31/2026
+ms.date: 04/06/2026
 ms.collection: bap-ai-copilot
-ms.custom: bap-template 
+ms.custom: bap-template
 ---
 
 # Use CCaaS_CreateProactiveVoiceDelivery API

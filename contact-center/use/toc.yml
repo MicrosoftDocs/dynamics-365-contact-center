@@ -414,9 +414,11 @@
         href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/use-context
       - name: Responsible AI FAQs for NLUs in AI agents
         href: ../implement/natural-language-ai-faq.md?context=/dynamics365/contact-center/context/use-context
-      - name: Constrained speech recognition
+      - name: Transparency note
         items:
-        - name: Transparency note
+        - name: Real-time voice agents
+          href: ../implement/transparency-note-real-time-voice-agents.md?context=/dynamics365/contact-center/context/use-context
+        - name: Constrained speech recognition
           href: ../implement/transparency-note.md?context=/dynamics365/contact-center/context/use-context
     - name: Resources
       items:

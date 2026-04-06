@@ -36,17 +36,17 @@ The following diagram summarizes the selection choices.
 
 :::image type="content" source="../media/choose-orchestration-model.png" alt-text="Screenshot of orchestration model selection with Classic, Hybrid, and Generative options, plus Basic and Streaming speech mode panels.":::
 
-### Step 1: Choose how to control the conversation
+## Choose how to control the conversation
 
 Conversation control determines who decides the next step: the author or the model.
 
-#### Option A: Classic or deterministic orchestration
+### Option A: Classic or deterministic orchestration
 
-Use this option when the conversation must follow a **fixed**, **auditable path**.
+Use the classic or deterministic option when the conversation must follow a **fixed**, **auditable path**.
 
 In classic orchestration, you design the flow [topic by topic](/microsoft-copilot-studio/guidance/topics-overview). This approach works well for cases where the bot must ask questions in a specific order, validate answers, and follow exact rules. Topics define how the conversation progresses, and classic mode is the non-generative orchestration option. You can still use AI for the [generative Answers as part of a flow within a topic or use generative answers as a fallback.](/microsoft-copilot-studio/nlu-boost-node) When your agent can't find a matching intent (defined in a topic) for the user's query, it uses generative answers to try to answer the question.
 
-**Best for:**
+**Best for**
 
 - Authentication and identity verification
 
@@ -58,27 +58,28 @@ In classic orchestration, you design the flow [topic by topic](/microsoft-copilo
 
 - Regulatory or legal wording
 
-- DTMF menu flows
+- Dual Tone Multi-Frequency (DTMF) menu flows
 
-- Any journey where exact steps matter more than flexibility
+- Any journey where exact steps are more important than flexibility
 
-**Trade‑offs:**
+**Trade‑offs**
 
 - Higher authoring effort
 
 - Less flexibility in natural conversation
 
-**Simple rule:**  
-If the business says, “the bot must follow these exact steps,” start with classic or deterministic logic using topics. You can switch to other modes later.
+**Simple rule**  
+
+If the business says, “the agent must follow these exact steps,” start with classic or deterministic logic using topics. You can switch to other modes later.
 
 > [!NOTE]
-> All new agents use generative orchestration. Follow these steps "**[Turn off generative orchestration for an agent](/microsoft-copilot-studio/advanced-generative-actions#turn-off-generative-orchestration-for-an-agent)**" if you want to use Classic orchestration.
+> All new agents use generative orchestration. Follow the steps in **[Turn off generative orchestration for an agent](/microsoft-copilot-studio/advanced-generative-actions#turn-off-generative-orchestration-for-an-agent)** if you want to use classic orchestration.
 
-#### Option B: Generative orchestration
+### Option B: Generative orchestration
 
-Using [generative AI](/microsoft-copilot-studio/advanced-generative-actions) to determine the *types of actions* to take in the response (tools, knowledge sources, topic invocation) and how your agent responds can make the conversation more natural and fluid for the user. An agent that uses generative AI can also perform actions autonomously.
+Use [generative AI](/microsoft-copilot-studio/advanced-generative-actions) to determine the *types of actions* to take in the response (tools, knowledge sources, topic invocation) and how your agent responds to make the conversation more natural and fluid for the user. An agent that uses generative AI can also perform actions autonomously.
 
-**Use this when callers may:**
+**Use this when callers might**
 
 - Ask questions in many different ways
 
@@ -86,13 +87,13 @@ Using [generative AI](/microsoft-copilot-studio/advanced-generative-actions) to 
 
 - Naturally switch intents during the conversation without requiring explicit conditions for every possible transition
 
-- One step correction for entities
+- One-step correction for entities
 
 - Anaphora
 
 - Combine intents in a single turn
 
-**In [generative orchestration](/microsoft-copilot-studio/advanced-generative-actions), the agent can dynamically select:**
+**In [generative orchestration](/microsoft-copilot-studio/advanced-generative-actions), the agent can dynamically select**
 
 - Topics
 
@@ -104,7 +105,7 @@ Using [generative AI](/microsoft-copilot-studio/advanced-generative-actions) to 
 
 This approach applies even though topics still exist. The difference is that the model decides when and how to use them rather than following a fixed path.
 
-**Generative orchestration reduces manual scripting but raises the bar on:**
+**Generative orchestration reduces manual scripting but raises the bar on**
 
 - Prompt quality
 
@@ -116,7 +117,7 @@ This approach applies even though topics still exist. The difference is that the
 
 [Orchestrate agent behavior with generative AI](/microsoft-copilot-studio/advanced-generative-actions)
 
-**Best for:**
+**Best for**
 
 - FAQ and knowledge-based interactions
 
@@ -128,26 +129,27 @@ This approach applies even though topics still exist. The difference is that the
 
 - Scenarios where callers speak naturally rather than following a menu
 
-**Trade‑offs:**
+**Trade‑offs**
 
 - Requires strong instructions and guardrails
 
 - More testing investment
 
-**Simple rule:**  
+**Simple rule**
+
 If the business says, “customers ask this question in many different ways,” generative orchestration is usually the better fit.
 
-#### Option C: Hybrid design
+### Option C: Hybrid design
 
 Most real enterprise agents shouldn't be fully scripted or fully generative.
 
-**Hybrid control combines:**
+**Hybrid control combines**
 
 - Deterministic logic where risk, compliance, or precision matters
 
 - Generative logic where flexibility improves experience
 
-**Example:**
+**Example**
 
 - Greeting and intent discovery → generative
 
@@ -165,20 +167,21 @@ Most real enterprise agents shouldn't be fully scripted or fully generative.
 
 - Final summary or next step guidance → generative or deterministic depending on risk
 
-**Simple rule:**  
+**Simple rule**
+
 Don't try to make the whole journey either fully scripted or fully generative.
 
-## (Voice only) Step 2: Choose how to handle speech
+## Choose how to handle speech (Voice only)
 
 After you choose conversation control, voice agents need to make another decision: **speech architecture**.
 
-## Pattern 1: Basic mode
+### Pattern 1: Basic mode
 
 **Speech → Text → [NLU/NLU +](/microsoft-copilot-studio/nlu-overview) -\> [Classic orchestration](/microsoft-copilot-studio/nlu-overview#classic-orchestration) -\>** **Speech**
 
 In this pattern, the caller's speech is transcribed first, then Microsoft Copilot Studio Dialog flow processes the text, and finally, the text is converted back to speech.
 
-**Use this** **when:**
+**Use this when**
 
 - You're using a fully classic, deterministic flow.
 
@@ -190,7 +193,7 @@ In this pattern, the caller's speech is transcribed first, then Microsoft Copilo
 
 - You're working with DTMF-heavy flows.
 
-**Tradeoffs:**
+**Tradeoffs**
 
 - Works with classic orchestration only.
 
@@ -198,10 +201,11 @@ In this pattern, the caller's speech is transcribed first, then Microsoft Copilo
 
 - Requires more work for multilingual and mixed-language input support, such as language detection, per-language prompts and grammar, STT locale configuration, and fallback handling.
 
-**Important note:**  
+**Important note** 
+
 Basic mode isn't just a "voice model choice." It fundamentally constrains orchestration.
 
-## Pattern 2: Streaming mode 
+### Pattern 2: Streaming mode
 
 **Speech → AI model → Speech**
 
@@ -213,7 +217,7 @@ This architecture is optimized for ultra low latency, natural conversational flo
 
 - Availability: Initially GA in the US (April 2026), then Australia (June 2026).
 
-**Use this pattern when:**
+**Use this pattern when**
 
 - Conversational naturalness and enhanced prosody are a top priority.
 
@@ -227,7 +231,7 @@ This architecture is optimized for ultra low latency, natural conversational flo
 
 - The team is ready to invest in testing, tuning, evaluation, and guardrails.
 
-**Tradeoffs:**
+**Tradeoffs**
 
 - Fewer customization points.
 
@@ -237,9 +241,9 @@ This architecture is optimized for ultra low latency, natural conversational flo
 
 - Pricing and model choice matter more.
 
-- <span class="mark">Reasoning depth is bounded by the real‑time speech model (less flexibility to use higher‑capacity text LLM orchestration or specialized agents for complex reasoning)</span>.
+- Reasoning depth is bound by the real‑time speech model (less flexibility to use higher‑capacity text language model orchestration or specialized agents for complex reasoning).
 
-- Reasoning depth with the real-time speech model is relatively lower than with text LLM orchestration, as the latter gives you the flexibility to use the strongest model available when needed.
+- Reasoning depth with the real-time speech model is relatively lower than with text language model orchestration, as the latter gives you the flexibility to use the strongest model available when needed.
 
 ## Prompt best practices
 
@@ -266,13 +270,13 @@ Apart from this guidance, the Microsoft Dynamics 365 Contact Center for Forward 
 
 ## Tools, knowledge MCP, and API
 
-In Copilot Studio streaming mode, a single generative AI model (LLM) powers the entire agent. This approach eliminates the need for traditional intent trees, rigid dialog flows, or separate orchestration layers.
+In Copilot Studio streaming mode, a single generative AI model powers the entire agent. This approach eliminates the need for traditional intent trees, rigid dialog flows, or separate orchestration layers.
 
 Instead of stitching together multiple systems, the model acts as the brain of the agent. It dynamically decides how to respond and what actions to take in real time.
 
 **What the generative model actually does**
 
-The LLM handles the full conversational lifecycle:
+The generative AI model handles the complete conversational lifecycle:
 
 - Understanding the user’s request (intent and entities)
 
@@ -336,7 +340,7 @@ In these scenarios, the model retrieves information from configured sources and 
 
 [Knowledge sources summary](/microsoft-copilot-studio/knowledge-copilot-studio)
 
-### How does the agent retrieve current business data, policies, and customer context in real time? 
+### How does the agent retrieve current business data, policies, and customer context in real time?
 
 **Grounded knowledge (static or semi-static)**
 
@@ -350,7 +354,7 @@ The model uses Generative Answers, where it:
 
 - Optionally cites sources.
 
-**Supported sources include:**
+**Supported sources include**
 
 - SharePoint
 
@@ -373,17 +377,17 @@ The model uses Generative Answers, where it:
 
 - Internal procedures
 
-**Example:**
+**Example**
 
 **“What’s your refund policy for online orders?”**
 
 **→ The model retrieves policy content from SharePoint and generates a clear answer.**
 
-## Which tasks require exact validation before execution, such as refunds, cancellations, updates, or account changes? 
+### Which tasks require exact validation before being run? Refunds, cancellations, updates, or account changes?
 
-> Certain actions require strict validation and must never be left to free-form AI decisions.
->
-> **High-Risk Categories**
+Certain actions require strict validation and must never be left to free-form AI decisions.
+
+**High-Risk Categories**
 
 | **Category** | **Examples** | **Why It Matters** |
 |---|---|---|
@@ -392,21 +396,21 @@ The model uses Generative Answers, where it:
 | Identity | Address, phone, SSN updates | Fraud&mdash;compliance |
 | Legal | Consent, opt-outs | Regulatory exposure |
 
-> **The Safe Execution Pattern**
->
-> **AI decides → System validates → AI communicates**
->
-> This principle ensures safe generative orchestration.
->
-> Example: Refund Request
+**The safe run pattern**
 
-1.  Model identifies intent  
+**AI decides → System validates → AI communicates**
+
+This principle ensures safe generative orchestration.
+
+Example: Refund Request
+
+1. Model identifies intent  
     “User wants a refund”
 
-1.  Model gathers required details  
+1. Model gathers required details  
     Order ID, reason, timeframe
 
-1.  API or system of record validates
+1. API or system of record validates
 
     - Checks eligibility
 
@@ -414,7 +418,7 @@ The model uses Generative Answers, where it:
 
     - Confirms approval or rejection
 
-1.  Model communicates the outcome
+1. Model communicates the outcome
 
     - Explains the result clearly
 

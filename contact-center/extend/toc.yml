@@ -20,6 +20,10 @@
           href: /dynamics365/customer-service/develop/trigger-routing-non-case-records?context=/dynamics365/contact-center/context/extend-context 
         - name: Add multiple preferred agent records
           href: /dynamics365/customer-service/develop/add-multiple-preferred-agent-records?context=/dynamics365/contact-center/context/extend-context 
+      - name: Proactive engagement
+        items:
+        - name: Use proactive engagement tables for reporting
+          href: proactive-engagement-tables.md
       - name: Connectors
         items:
         - name: Configure ServiceNow connector
@@ -28,16 +32,22 @@
           href: configure-zendesk-connector.md
         - name: Configure the connector for any CRM solution
           href: configure-custom-connector.md
-      - name: Proactive engagement
+      - CCaaS APIs
         items:
-        - name: Use CCaaS_CreateOperation API
-          href: api/ccaas_createoperation.md
-        - name: Use CCaaS_CreateProactiveDelivery API
-          href: api/ccaas_createproactivedelivery.md 
-        - name: Use CCaaS_CreateProactiveVoiceDelivery API
-          href: api/ccaas_createproactivevoicedelivery.md
-        - name: Use proactive engagement tables for reporting
-          href: proactive-engagement-tables.md
+        - name: Proactive engagement APIs
+          items:
+          - name: Use CCaaS_CreateOperation API
+            href: api/ccaas_createoperation.md
+          - name: Use CCaaS_CreateProactiveDelivery API
+            href: api/ccaas_createproactivedelivery.md 
+          - name: Use CCaaS_CreateProactiveVoiceDelivery API
+            href: api/ccaas_createproactivevoicedelivery.md
+        - name: Presence APIs
+          items:
+          - name: CCaaS_GetPresence
+            href: api/ccaas_getpresence.md
+          - name: CCaaS_ModifyAgentPresence
+            href: api/ccaas_modifyagentpresence.md
       - name: Chat
         items:
         - name: Develop a custom live chat widget
@@ -152,10 +162,6 @@
         items:
         - name: Synchronize presence status across multiple systems for representatives
           href: presence-status-sync.md
-        - name: CCaaS_GetPresence 
-          href: api/ccaas_getpresence.md
-        - name: CCaaS_ModifyAgentPresence
-          href: api/ccaas_modifyagentpresence.md
       - name: Extend Omnichannel for Customer Service
         href: /dynamics365/customer-service/develop/extend-omnichannel?context=/dynamics365/contact-center/context/extend-context
       - name: Overview of entity reference

@@ -1,12 +1,12 @@
 ---
-title: Outcomes for proactive engagement
+title: Outcomes for proactive engagement in Dynamics 365 Contact Center
 description: Learn about the outcomes for proactive engagement calls in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: reference
 ms.collection: bap-ai-copilot
-ms.date: 01/19/2026
+ms.date: 04/06/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -44,4 +44,5 @@ Azure Communication Services returns SIP-based early media outcomes, such as Liv
 
 [Configure proactive engagement](configure-proactive-engagement.md)  
 [Dial modes for proactive engagement](proactive-engagement-dial-modes.md)  
+[Best practices for proactive engagement campaigns](proactive-engagement-best-practices.md)  
 [Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md)  

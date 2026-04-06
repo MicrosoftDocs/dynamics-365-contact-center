@@ -485,8 +485,7 @@
         - name: Configure context variables for agents
           href: /dynamics365/customer-service/administer/context-variables-for-bot?context=/dynamics365/contact-center/context/administer-context              
         - name: Transfer conversations from customer service representatives to agents
-          href: transfer-to-agents.md                    
-        - name: Configure Azure AI agents 
+          href: transfer-to-agents.md
           items:
           - name: AI agent sessions and licensing
             href: /dynamics365/customer-service/administer/bot-session-licensing?context=/dynamics365/contact-center/context/administer-context
@@ -636,9 +635,11 @@
           href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/administer-context
         - name: Responsible AI FAQs for NLUs in AI agents
           href: ../implement/natural-language-ai-faq.md?context=/dynamics365/contact-center/context/administer-context
-        - name: Constrained speech recognition
+        - name: Transparency note
           items:
-          - name: Transparency note
+          - name: Real-time voice agents
+            href: ../implement/transparency-note-real-time-voice-agents.md?context=/dynamics365/contact-center/context/administer-context
+          - name: Constrained speech recognition
             href: ../implement/transparency-note.md?context=/dynamics365/contact-center/context/administer-context
     - name: Implement Dynamics 365 Contact center
       href: ../implement/international-availability.md

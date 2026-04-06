@@ -1,5 +1,5 @@
 ---
-title: Use real-time evaluation plan for ongoing conversations
+title: Use real-time evaluation plans for ongoing conversations
 description:  Learn to create, activate, and manage evaluation plans for ongoing conversations in Dynamics 365 Contact Center. Improve customer experience with real-time insights.
 author: Soumyasd27
 ms.author: sdas
@@ -11,7 +11,7 @@ ms.date: 04/06/2026
 ms.custom: bap-template
 ---
 
-# Use real-time evaluation plan for ongoing conversations
+# Use real-time evaluation plans for ongoing conversations
 
 **Conversations**: [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
 
@@ -32,11 +32,9 @@ Supervisors use the evaluation framework to define the evaluation criteria and c
 
 ## Create an evaluation criteria
 
-Learn how to create an evaluation criteria in [Create evaluation criteria](evaluation-criteria.md#create-evaluation-criteria).
+Refer to the [best practices](evaluation-criteria.md#best-practices-to-create-evaluation-criteria) when you [create an evaluation criteria](evaluation-criteria.md#create-evaluation-criteria).
 
-Refer to the [best practices](evaluation-criteria.md#best-practices-to-create-evaluation-criteria) when you create an evaluation criteria. 
-
-## Create and activate a real-time evaluation plan for ongoing conversations
+## Create a real-time evaluation plan for ongoing conversations
 
 You need to turn on the **Criteria scoring** toggle for your evaluation criteria. Learn more in [Create evaluation criteria](evaluation-criteria.md#create-evaluation-criteria).
 
@@ -68,4 +66,4 @@ Learn more in [Activate, pause, resume, or delete evaluation plans](evaluation-p
 
 ## Edit evaluation plans
 
-[Edit evaluation plans](evaluation-plan.md#edit-evaluation-plans).
+Learn more in [Edit evaluation plans](evaluation-plan.md#edit-evaluation-plans).

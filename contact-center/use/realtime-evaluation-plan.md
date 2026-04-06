@@ -1,5 +1,5 @@
 ---
-title: Use real-time evaluation plans for ongoing conversations
+title: Use real-time evaluation plan for ongoing conversations
 description:  Learn to create, activate, and manage evaluation plans for ongoing conversations in Dynamics 365 Contact Center. Improve customer experience with real-time insights.
 author: Soumyasd27
 ms.author: sdas

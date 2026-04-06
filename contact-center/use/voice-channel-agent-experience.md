@@ -1,7 +1,7 @@
 ---
 title: Use agent dashboard and call controls in the voice channel
 description: Learn how you can use the agent dashboard, call controls, and make and receive customer calls.
-ms.date: 09/15/2025
+ms.date: 01/30/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -18,6 +18,8 @@ ms.custom: bap-template
 The voice channel is integrated directly with Dynamics 365 by way of the agent dashboard. The dashboard offers you a consolidated view of the calling interface, the customer summary, case history, and timeline. The dashboard helps you provide quick, effective, and proactive solutions to customer issues. The customer service representative (service representative or representative) experience in the voice channel is similar to the chat and other channels, which reduces service representative training time and costs.
 
 ## Make and receive customer calls
+
+After you sign in to the Copilot Service workspace, you can make and receive customer calls. You can also use the call controls to manage your calls effectively. If your administrator has enabled the microphone to be connected to the app on sign-in, your microphone is connected immediately after you sign in. The microphone remains active in the background until you sign out or close the browser, which helps reduce the latency during the connection process.
 
 Call a customer by using the phone dialer on the **Active Conversation** page or the **Launch dialer** button on the menu. Learn more in [Call a customer](/dynamics365/customer-service/use/voice-channel-call-customer?context=/dynamics365/contact-center/context/use-context).
 

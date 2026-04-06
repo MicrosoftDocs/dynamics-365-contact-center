@@ -106,6 +106,8 @@
             href: /dynamics365/customer-service/administer/smart-assist?context=/dynamics365/contact-center/context/administer-context
           - name: Manage scripts
             href: /dynamics365/customer-service/administer/agent-scripts?context=/dynamics365/contact-center/context/administer-context
+          - name: Configure screen recording
+            href: configure-screen-recording.md
           - name: macros
             items:  
             - name: Manage macros
@@ -229,7 +231,7 @@
         - name: Use Azure Virtual Desktop to access voice channel
           href: configure-voice-avd.md
         - name: Set up microphone connection on representative sign-in
-          href: set-up-microphone-connection.md  
+          href: /dynamics365/customer-service/administer/configure-voice-call-experiences?context=/dynamics365/contact-center/context/administer-context 
         - name: Configure settings to improve call quality over Citrix virtual desktop
           href: configure-voice-citrix-virtual-desktop.md
         - name: Install and manage desktop companion application 
@@ -499,7 +501,7 @@
         - name: Configure feedback surveys using Copilot Studio
           href: configure-surveys.md
         - name: Enable feedback on voice call quality
-          href: /dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context
+          href: /dynamics365/customer-service/administer/voice-call-experiences.md?context=/dynamics365/contact-center/context/administer-context
         - name: Configure post-call survey
           href: /dynamics365/customer-service/administer/voice-channel-survey?context=/dynamics365/contact-center/context/administer-context
         - name: Configure post-conversation surveys using Customer Voice

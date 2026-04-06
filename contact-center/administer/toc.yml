@@ -476,8 +476,6 @@
         items:
         - name: Overview of AI agents
           href: /dynamics365/customer-service/administer/overview-bots?context=/dynamics365/contact-center/context/administer-context
-        - name: Optimize real-time agent design for customer journeys
-          href: best-practices-real-time-voice-agents.md
         - name: Best practices for configuring AI agents
           href: /dynamics365/customer-service/administer/configure-bot-best-practices?context=/dynamics365/contact-center/context/administer-context
         - name: Manage your AI agents

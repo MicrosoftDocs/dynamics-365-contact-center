@@ -92,10 +92,10 @@
         href: natural-language-ai-faq.md
       - name: Transparency note
         items:
-        - name: Constrained speech recognition
-          href: transparency-note.md
         - name: Real-time voice agents
           href: transparency-note-real-time-voice-agents.md
+        - name: Constrained speech recognition
+          href: transparency-note.md
     - name: Resources
       items:
       - name: Dynamics 365 reference architectures

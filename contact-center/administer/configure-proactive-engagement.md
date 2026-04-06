@@ -104,7 +104,7 @@ On the **Details** page, configure the engagement identity, routing, and busines
 
 ### Dialing modes
 
-The dial modes determine how the system places outbound calls to customers. Learn more in [Dial modes for proactive engagement](dial-modes-proactive-engagement.md).
+The dial modes determine how the system places outbound calls to customers. Learn more in [Dial modes for proactive engagement](proactive-engagement-dial-modes.md).
 
 1. Select one of the following dial modes:
    - **Copilot**: Applies to AI agent led engagements. The system automatically dials the customer and connects the call to the AI agent when the customer answers. Use this mode for high-volume outbound calls.
@@ -293,10 +293,36 @@ To add a new file to an engagement that you already created, go to **Copilot Ser
 
 Learn more about available outcomes and SIP-based result values in [Outcomes for proactive engagement](proactive-engagement-outcomes.md).
 
+## Configure multiparty (account) engagements 
+
+Contact chaining lets you group related contacts, such as members of the same household or account,and treat them as a single unit for engagement purposes.
+
+- You can group up to five contacts when you are uploading a file or submitting requests through the API.
+- All contacts in the chain are considered for every attempt. The system dials contacts in the order they appear in the file or API array.
+- If all phone numbers across all chained contacts are exhausted on an attempt, the system waits for the configured retry interval before starting the next attempt and cycles through all contacts again.
+
+### Configure call cancellation and suppression
+
+You can cancel pending calls and optionally suppress future calls that match defined criteria. 
+
+1. In the site map, select **Proactive engagements**, select the proactive engagement settings, and then select **Add a cancellation policy**.
+
+1. Specify filter criteria using any combination of the following in AND conditions:
+   - Proactive engagement configuration ID
+   - Country/Region
+   - State
+   - Postal code
+   
+1. Optionally, specify an end date **Exectue policy until**. Contacts matching the criteria won't be processed for new calls during the specified period.
+1. Optionally, enter a **Comment**. Cancelled calls are marked in the delivery tables with a reference to the cancellation policy to enable reporting.
+
+> [!NOTE]
+> Cancellation applies to queued calls only. You can also trigger cancellation and suppression through the CCaaS API. Learn more in [Use CCaaS_CreateProactiveVoiceDelivery API](../extend/api/ccaas_createproactivevoicedelivery.md).
+
 ### Related information
 
 [Overview of proactive engagement](overview-proactive-engagement.md)  
-[Dial modes for proactive engagement](dial-modes-proactive-engagement.md)  
+[Dial modes for proactive engagement](proactive-engagement-dial-modes.md)  
 [Outcomes for proactive engagement](proactive-engagement-outcomes.md)  
 [Best practices for proactive engagement campaigns](proactive-engagement-best-practices.md)  
 [Overview of conversational journeys](/dynamics365/customer-insights/journeys/conversational-journeys-overview)  

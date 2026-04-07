@@ -21,7 +21,7 @@ Detection of answering machines is a technology used in telecommunication system
 
 ## Configure answering machine detection system topic
 
-In Copilot Studio, choose to enable or disable detection of the answering machine. When enabled, the system automatically detects answering machines and proceeds with the configured message flow. You can personalize the message based on the context of proactive engagement passed to the IVR agent. If you need to, you can choose to end the call instead of playing the message. Learn more in [](/microsoft-copilot-studio/voice-configuration#detect-answering-machines).
+In Copilot Studio, choose to enable or disable detection of the answering machine. When enabled, the system automatically detects answering machines and proceeds with the configured message flow. You can personalize the message based on the context of proactive engagement passed to the IVR agent. If you need to, you can choose to end the call instead of playing the message. Learn more in [Detect answering machines](/microsoft-copilot-studio/voice-configuration#detect-answering-machines).
 
 ## Pass context to IVR agent
 

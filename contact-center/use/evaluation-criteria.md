@@ -43,7 +43,7 @@ To view evaluation criteria, complete the following steps:
 
 ## Create evaluation criteria
 
-Refer to the [best practices](#best-practices-to-create-evaluation-criteria) when you create evaluation criteria.
+Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [best practices](#best-practices-to-create-evaluation-criteria) when you create evaluation criteria.
 
 1.  On the **Evaluation criteria** page, select **New**.
 
@@ -192,7 +192,7 @@ After you create a source criteria for your business unit, you can extend the cr
 
 1. Select **Save**, once you're done making edits.
 
-## Best practices to create evaluation criteria
+## Best practices for evaluation criteria
 
 - **Criteria-level instructions:** Define instructions that apply to the entire evaluation criteria. Include comprehensive goals, expectations, and constraints to guide the behavior of the Quality Evaluation Agent across all questions and answers.
 
@@ -206,21 +206,20 @@ After you create a source criteria for your business unit, you can extend the cr
 
 - **Question text**: Define each evaluation question to assess a single, well-defined objective to help ensure clarity and direct alignment with the answer options.
 
-## Evaluation criteria size limits and validation
+## Limitations for evaluation criteria
 
 **Question limits**
 
-- By default, a maximum of 50 questions is allowed per evaluation criteria. The limit applies across the entire criteria, not per section.
+- By default, a maximum of 50 questions is allowed per evaluation criteria. The limit applies to the entire criteria, not per section.
 - You can distribute questions across sections in any combination, as long as the total doesn't exceed 50.
 - When the limit is reached:
     - You can’t add or duplicate questions.
-    - You can’t add or duplicate sections that would exceed the limit.
+    - You can’t add or duplicate sections that would cause the total to exceed the limit.
 
 
 **Character limits for criteria content**
 
-The total character count includes the following content and the following per‑field limits apply. 
-These limits apply uniformly to all instruction types, including criteria‑level, question‑level, and option‑level instructions.
+The following per-field character limits apply to all instruction types (criteria-level, question-level, and option-level):
 
 |Field | Limit  |
 |---------|---------|
@@ -230,31 +229,32 @@ These limits apply uniformly to all instruction types, including criteria‑leve
 
 **Character limits by language**
 
-The system evaluates the total size of the criteria and displays a warning when the content exceeds recommended limits. Recommended limits vary by language category:
+The system monitors the total character count and displays a warning when content exceeds the recommended limit for the selected language. Recommended limits vary by language category:
 
 - 90,000 characters for most languages.
-- 60,000 characters for some languages, such as Arabic.
+- 60,000 characters for some languages, for example, Arabic.
 - 30,000 characters for languages with higher token expansion.
 
-The recommended character limit updates dynamically when you change the selected language. For example, switching from English to Arabic reduces the recommended limit from 90,000 to 60,000 characters. The system evaluates limits based on the language selected in the criteria settings
+The recommended character limit updates dynamically when you change the selected language. For example, switching from English to Arabic reduces the limit from 90,000 to 60,000 characters. The system evaluates limits based on the language selected in the criteria settings.
 
-When the recommended limit is exceeded, a warning banner appears at the top of the criteria editor that indicates that evaluation accuracy might be affected. You can still save and use the criteria. 
+When limits are exceeded:
 
-If the content exceeds the limit of 700,000 characters, saving is blocked and a blocking error dialog appears.
+- A warning banner appears, indicating that evaluation accuracy might be affected. You can still save and use the criteria.
+- An error message appears if content exceeds 700,000 characters, that prevents you from saving.
 
 **Extended criteria**
 
 Extended criteria introduces a parent–child relationship between criteria.
 
-- Question limits: Question limits are enforced independently for parent and child criteria, and up to 50 questions for each.
-- Character limits: Recommended character limits (such as 90,000 characters) are calculated by using both parent and child content combined.
+- Question limits: Question limits are enforced independently for parent and child criteria, and up to 50 questions each.
+- Character limits: Recommended character limits (for example, 90,000 characters) are calculated by using both parent and child content combined.
 
-|Limit Type  | behavior  |
+|Limit type  | Behavior  |
 |---------|---------|
-|Question count     |  50 total per criteria (configurable)       |
-|Recommended size    |   Language‑specific soft warning      |
+|Question count     |  50 total per criteria        |
+|Recommended size    |   Language‑specific warning  appears   |
 |Hard size limit    |   Approximately 700,000 characters; saving is blocked      |
-|Instruction limit    |    2,000 characters (configurable through FCS)     |
+|Instruction limit    |    2,000 characters    |
 
 ## Related information
 

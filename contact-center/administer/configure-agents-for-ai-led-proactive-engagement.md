@@ -1,39 +1,33 @@
 ---
-title: Configure agents for AI led proactive engagement
-description: Learn how to configure agents for AI led proactive engagement including answering machine detection in Dynamics 365 Contact Center.
+title: Configure agents for AI-led proactive engagement in Dynamics 365 Contact Center
+description: Learn how to configure agents for AI-led proactive engagement including answering machine detection in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 03/31/2026
+ms.date: 04/07/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
 # Configure agents for AI-led proactive engagement
 
-
-## Detect answering machines
-
 Detection of answering machines is a technology used in telecommunication systems to determine whether a call is answered by a human or an answering machine. Set up the answering machine detection system topic in Copilot Studio to use when you're making outbound voice calls.
 
-### Prerequisite
+## Prerequisite
 
 [Voice is enabled in Copilot Studio](/microsoft-copilot-studio/voice-get-started) or use the voice IVR template to access the answering machine detection system topic.
 
-### Configure answering machine detection system topic
+## Configure answering machine detection system topic
 
-Choose to enable or disable detection of the answering machine. When enabled, the system automatically detects answering machines and proceeds with the configured message flow.
-
-1. Enable the system topic **Answering machine detection**.
-1. Select the system topic, and add the node to play the desired message. You can personalize the message based on the context of proactive engagement passed to the IVR agent. If you need to, you can choose to end the call instead of playing the message.
+In Copilot Studio, choose to enable or disable detection of the answering machine. When enabled, the system automatically detects answering machines and proceeds with the configured message flow. You can personalize the message based on the context of proactive engagement passed to the IVR agent. If you need to, you can choose to end the call instead of playing the message. Learn more in [](/microsoft-copilot-studio/voice-configuration#detect-answering-machines).
 
 ## Pass context to IVR agent
 
 You can pass customer and campaign context to your IVR agent so that it can personalize the conversation. Some data is available out of the box in [context variables for agents in Copilot Studio](/dynamics365/customer-service/administer/context-variables-for-bot#context-variables-for-copilot-agents).
 
-1. Pass the context as input attributes using [CCaaS API](../extend/api/ccaas_createproactivevoicedelivery.md) or as additional columns in a [file upload](configure-proactive-engagement.md#file-upload). All input parameters are added to the conversation context when a delivery is promoted to a conversation.
+1. Pass the context as input attributes using [CCaaS API](../extend/api/ccaas_createproactivevoicedelivery.md) or as extra columns in a [file upload](configure-proactive-engagement.md#file-upload). All input parameters are added to the conversation context when a delivery is promoted to a conversation.
 
 1. Create a context variable on the outbound workstream that matches the attribute name exactly. For example, if you pass an attribute called `CustomerID`, make sure the context variable is named `CustomerID`. Learn more in [Manage context variables](/dynamics365/customer-service/administer/manage-context-variables?context=/dynamics365/contact-center/context/administer-context).
 

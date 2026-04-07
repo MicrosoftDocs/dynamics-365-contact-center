@@ -325,6 +325,7 @@ You can cancel pending calls and optionally suppress future calls that match def
 [Dial modes for proactive engagement](proactive-engagement-dial-modes.md)  
 [Outcomes for proactive engagement](proactive-engagement-outcomes.md)  
 [Best practices for proactive engagement campaigns](proactive-engagement-best-practices.md)  
+[How proactive engagement works](../use/how-proactive-engagement-works.md)  
 [Overview of conversational journeys](/dynamics365/customer-insights/journeys/conversational-journeys-overview)  
 [Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md)  
 [Use CCaaS_CreateProactiveVoiceDelivery API](../extend/api/ccaas_createproactivevoicedelivery.md)  

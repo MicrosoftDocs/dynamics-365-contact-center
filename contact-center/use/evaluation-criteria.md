@@ -206,6 +206,21 @@ After you create a source criteria for your business unit, you can extend the cr
 
 - **Question text**: Define each evaluation question to assess a single, well-defined objective to help ensure clarity and direct alignment with the answer options.
 
+## Evaluation criteria size limits and validation
+
+**Question limits**
+
+- By default, a maximum of 50 questions is allowed per evaluation criteria.
+- The limit applies across the entire criteria, not per section.
+- You can distribute questions across sections in any combination, as long as the total doesn't exceed 50.
+- When the limit is reached:
+    - You can’t add or duplicate questions.
+    - You can’t add or duplicate sections that would exceed the limit.
+
+
+
+
+
 
 ## Related information
 

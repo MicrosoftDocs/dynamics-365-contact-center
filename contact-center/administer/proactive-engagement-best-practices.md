@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 # Best practices for proactive engagement campaigns
 
-This article provides recommendations to help you run proactive engagement campaigns that are effective and compliant with applicable regulations.
+This article provides recommendations to help you run proactive engagement campaigns that are effective and compliant with the applicable regulations.
 
 ## Understand and comply with local regulations
 

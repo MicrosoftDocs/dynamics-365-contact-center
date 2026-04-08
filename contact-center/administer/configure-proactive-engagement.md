@@ -68,8 +68,8 @@ On the **Audience** page, configure how you source customers and lead the engage
 
 1. Under **Engagement type**, select one of the options to determine how the call is handled:
 
-   - **Led by AI**: Let Copilot interact with customers first as they answer the calls, then add representatives at the right moment.
-   - **Led by representatives**: Always connect customers to service representatives.
+      - **Led by representatives**: Always connect customers to service representatives.
+      - **Led by AI**: Let Copilot interact with customers first as they answer the calls, then add representatives at the right moment.
 
    > [!NOTE]
    > A single workstream can run both AI-led and representative-led proactive engagements simultaneously.
@@ -105,21 +105,21 @@ On the **Details** page, configure the engagement identity, routing, and busines
 The dial modes determine how the system places outbound calls to customers. Learn more in [Dial modes for proactive engagement](proactive-engagement-dial-modes.md).
 
 1. Select one of the following dial modes:
-   - **Copilot**: Applies to AI agent led engagements. The system automatically dials the customer and connects the call to the AI agent when the customer answers. Use this mode for high-volume outbound calls.
+   - **Copilot**: Applies to AI agent-led engagements. The system automatically dials the customer and connects the call to the AI agent when the customer answers. Use this mode for high-volume outbound calls.
    - **Preview**: Applies to representative-led engagements. The system notifies a service representative of the outbound call request and after acceptance, places the call to the customer.
-   - **Progressive**: Applies to both representative and AI agent led engagements. The system starts calls equal to the number of available representatives, and on customer answer adds a representative or AI agent based on the engagement type. If type is representative led, service representatives are reserved ahead of time for a good customer experience.
-   - **Predictive**: The system starts calls proportional to the number of available agents, and on customer answer adds a representative or AI agent based on the engagement type. A predictive model considers factors like agent availability, abandonment rate, and answer rate to determine the number of calls to initiate per representative. If type is representative led, representatives are reserved ahead of time to ensure a good customer experience.
+   - **Progressive**: Applies to both representative- and AI agent-led engagements. The system starts calls equal to the number of available representatives, and on customer answer adds a representative or AI agent based on the engagement type. If type is representative led, service representatives are reserved ahead of time for a good customer experience.
+   - **Predictive**: The system starts calls proportional to the number of available agents or representatives, and on customer answer adds a representative or AI agent based on the engagement type. A predictive model considers factors like representative availability, abandonment rate, and answer rate to determine the number of calls to initiate per representative. If type is representative led, representatives are reserved ahead of time to ensure a good customer experience.
 
 1. Priority determines the processing order of the proactive engagement. Select one of the following priority levels:
    - **Normal**
    - **High**
    - **Critical**
    
-     Priority determines which proactive engagement gets priority if two or more are looking for the same representatives (same queue and skill set). If a critical proactive engagement and a normal one are configured to use representatives from the same queue, the critical one is processed first. When there are no pending requests, requests of the normal proactive engagement are processed.
+     Priority determines the processing order when multiple proactive engagements compete for the same representatives (same queue and skill set). Higher-priority engagements are processed first. For example, if a critical and a normal proactive engagement both target the same queue, the system processes the critical engagement first and handles the normal engagement only when no higher-priority requests are pending.
      
-     If two proactive engagements of the same priority are looking for representatives in the same queue, the system processes them in a round robin manner to ensure fair processing.
+     The system processes proactive engagements with same priority in a queue in a round robin manner to ensure fair processing.
 
-1. Processing order defines how the system processes requests within each proactive engagement. In **Call order**, select one of the following options:
+1. In **Call order**, select one of the following options to define how the system processes requests within each proactive engagement:
    - **Earliest Scheduled Date** - Processes records that are close to end of calling window first.
    - **Last in First Out** - Processes most recent records first, in a last in first out manner.
    - **First in, First Out** - Processes older records first, in a first in first out manner.
@@ -127,7 +127,7 @@ The dial modes determine how the system places outbound calls to customers. Lear
    - **Custom priority descending**: Processes records in descending order based on the priority attribute.
       When custom priority is used, if a runtime misconfiguration is detected - such as missing or invalid priority data - the system falls back to first in, first out processing of the misconfigured records.
 
-1. For the copilot dial mode, configure the **Call start settings**:
+1. For Copilot dial mode, configure the **Call settings**:
    - Select the **Max number of concurrent calls for Copilot Mode** that refers to the maximum number of calls the AI agent can make concurrently. The maximum number that you can specify is 500.
    - Under **Operating hours**, select the checkbox if calls can be made outside of queue hours. This setting is available for Copilot dial mode only.
    - Select the action for how the call needs to be handled if the AI agent fails during the call.
@@ -135,46 +135,46 @@ The dial modes determine how the system places outbound calls to customers. Lear
       - **Continue making calls**:
          - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
 
-1. For the preview dial mode, configure the **Call start settings**:
-   - **Automatic**: The system initiates the call after a countdown timer expires. The time starts from the time a CSR accepts the invite. Specify the duration in seconds for the timer. Service representatives can start the call early or cancel it before the timer expires.
+1. For preview dial mode, configure the **Call settings**:
+   - **Automatic**: The system initiates the call after a countdown timer expires. The timer starts when a representative accepts the invite. Specify the duration in seconds for the timer. Service representatives can start the call early or cancel it before the timer expires.
    - **Manual**: The service representative must manually start the call after reviewing customer details.
        > [!NOTE]
-       > Timer and delayed start functionality is available on Teams Phone Extensibility only. If you're using Azure Communication Services, preview calls start automatically after the representative accepts the invite.
+       > Timer and delayed start are available on Teams Phone Extensibility only. If you're using Azure Communication Services, preview calls start automatically after the representative accepts the invite.
 
-1. For AI agent-led predictive dial mode, configure the **Call start settings**:
+1. For AI agent-led predictive dial mode, configure the **Call settings**:
    - Select the action for how the call needs to be handled if the AI agent fails during the call.
       - **Stop making calls immediately**: No further calls are made.
       - **Continue making calls**:
         - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
 
-1. For AI agent-led progressive dial mode, configure the **Call start settings**:
+1. For AI agent-led progressive dial mode, configure the **Call settings**:
    - Select the max number of calls that can be assigned to the representative in **Maximum calls per representative**. This setting is available for the progressive dial mode. A lower number indicates a balanced call volume for the representative. You can specify up to five calls.
    - Select the action for how the call needs to be handled if the AI agent fails during the call.
       - **Stop making calls immediately**: No further calls are made.
       - **Continue making calls**:
         - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
         > [!NOTE]
-        > For AI agent led engagements, answering machine detection is configured in the Copilot IVR agents.
+        > For AI agent-led engagements, answering machine detection is configured in the Copilot IVR agents.
 
 1. For representative-led progressive and predictive dial modes,
-   - Select the action if answering machine is detected
-     - **End call immediately** ends the call if a voicemail or answering machine is detected
-     - **Leave a voicemail** plays the text in the Voicemail Prompt at the appropriate time, at the end of the greeting.
+   - Select the action if answering machine is detected.
+     - **End call immediately** ends the call if a voicemail or answering machine is detected.
+     - **Leave a voicemail** plays the text in **Voicemail prompt** at the appropriate time, at the end of the greeting.
          - **Call is abandoned after**: Enter the duration after which a call is considered abandoned if no service representative connects after the customer answers.
          - **Abandoned message**: Enter the message that plays to the customer waiting on line if the call is abandoned before the call ends.
        > [!IMPORTANT]
        > The call connection time for service representative-led progressive and predictive dial modes isn't compliant with the Telephone Consumer Protection Act (TCPA). Review applicable telecommunications regulations before using service representative-led modes.
 
-1. For AI agent led engagements, select **Use rules** to set rules for the following parameters that help control the throttling and pacing for the proactive engagement:
+1. For AI agent-led engagements, select **Use rules** to set rules for the following parameters that help control the throttling and pacing for the proactive engagement:
    - **Abandonment rate**: (Copilot, progressive, and predictive modes). The percentage of customers who hang up before connecting with a representative.
    - **Average wait time**: (Copilot, progressive, and predictive modes). The average amount of time it takes for customers to connect to representatives.
    - **Escalation count**: (Copilot mode). The total number of escalations made from the AI agent.
    - **Open concurrent escalations**: (Copilot mode). The total number of open escalations that aren't resolved.
    - **Percentage of queue**: (Predictive mode) To balance queue capacity, set how much percent of the queue you want dedicated to the proactive engagement.
 
-   For representative led progressive and predictive dial modes, select **Use rules** to set rules for the following parameters that help control the throttling and pacing for the proactive engagement: 
-      - **Abandonment rate**: The maximum percentage of customers who don't get connected to a CSR before the threshold specified in the specified duration. The proactive engagement pauses if the threshold is reached and requires manual intervention to restart the proactive engagement.
-      - **Percentage of queue**: To balance queue capacity, set how much percent of the queue you want dedicated to the proactive engagement.
+1. For representative-led progressive and predictive dial modes, select **Use rules** to set rules for the following parameters that help control the throttling and pacing for the proactive engagement:
+   - **Abandonment rate**: The maximum percentage of customers who don't get connected to a representative before the threshold mentioned in the duration. The proactive engagement pauses if the threshold is reached and requires manual intervention to restart the proactive engagement.
+   - **Percentage of queue**: To balance queue capacity, set the percent of the queue you want dedicated to the proactive engagement.
 
 1. Select **Next**.
 
@@ -184,7 +184,7 @@ On **Display number configuration**, choose the phone numbers to use for outboun
 
 1. The **Workstream number** is the default display number and you can't change it for the engagement.
 
-1. In **Display numbers**, select one or more additional phone numbers to use as display numbers. You can't use shared numbers for existing workstreams as display numbers.
+1. In **Display numbers**, select one or more phone numbers to use as display numbers. You can't use shared numbers for existing workstreams as display numbers.
 
    > [!NOTE]
    > Calls originate from the display number.
@@ -207,7 +207,7 @@ On **Display number configuration**, choose the phone numbers to use for outboun
 
 On the **Reattempts** page, configure retry behavior for contacts who aren't reached on the first attempt.
 
-1. Under **Reattempt reasons**, select the call outcomes that trigger a reattempt:
+1. Under **Abandonment reasons**, select the call outcomes that trigger a reattempt:
 
    - **No answer**
    - **Busy**
@@ -218,11 +218,12 @@ On the **Reattempts** page, configure retry behavior for contacts who aren't rea
 
 1. In **Disposition codes**, select any disposition codes that trigger a reattempt. These codes represent business outcomes that service representatives set during or after a call. To make a code available for reattempt selection, create it under the category **Not right party**. The same disposition codes also appear on the representative's screen during the call. Learn more in [Configure disposition codes](configure-disposition-codes.md).
 
-1. Under **Reattempts**, specify:
-   - **Retry attempts**: The maximum number of retry attempts.
-   - **Time delay before automatically starting the call**: The wait time between attempts.
+1. Under **Retry settings**, specify **Number of attempts**, **Wait time**, and one of the following **Priority** values:
+   - Same as new deliveries
+   - Higher than new deliveries
+   - Lower than new deliveries
 
-1. Under **Fallback configuration**, optionally select an SMS proactive engagement configuration to use when all retry attempts are exhausted.
+1. Under **Follow up on SMS**, optionally select an SMS proactive engagement configuration to use when all retry attempts are exhausted.
 Select **None** if no fallback is needed.
 
    > [!NOTE]
@@ -268,12 +269,12 @@ When you're ready, select **Create**. If you select **Upload a file** as the int
 
 **Required columns**:
 
-- **UniqueIdentifier**: The value used to identify and upsert the contact record. Must correspond to the **Contact unique identifier** attribute selected in the **Details** step.
+- **UniqueIdentifier**: The value used to identify and update or insert the contact record. Must correspond to the **Contact unique identifier** attribute selected in the **Details** step.
 - **MobilePhoneNumber**, **BusinessPhoneNumber**, or **HomePhoneNumber**: At least one phone number column is required. You can include multiple phone number columns.
 
 **Optional named fields**:
 
-Named fields are columns whose names correspond to attributes on the Contact table. Values in these columns are used to create or update the contact record during processing. Any additional columns that don't match a Contact attribute are treated as pass-through data and are made available on the agent desktop during the call.
+Named fields are columns whose names correspond to attributes on the **Contact** table. Values in these columns are used to create or update the contact record during processing. Any extra columns that don't match a **Contact** attribute are treated as pass-through data and are made available on the agent desktop during the call.
 
 Data entered in the **Priority** column is used for custom prioritization when the call order is set to **Custom priority ascending** or **Custom priority descending**.
 
@@ -291,7 +292,9 @@ To add a new file to an engagement that you already created, go to **Copilot Ser
 
 Learn more about available outcomes and SIP-based result values in [Outcomes for proactive engagement](proactive-engagement-outcomes.md).
 
-## Configure multiparty (account) engagements 
+## Manage proactive engagements
+
+### Configure multiparty (account) engagements
 
 Contact chaining lets you group related contacts, such as members of the same household or account, and treat them as a single unit for engagement purposes.
 
@@ -301,9 +304,11 @@ Contact chaining lets you group related contacts, such as members of the same ho
 
 ### Configure call cancellation and suppression
 
-You can cancel pending calls and optionally suppress future calls that match defined criteria. 
+You can cancel pending calls and optionally suppress future calls that match defined criteria.
 
-1. In the site map, select **Proactive engagements**, select the proactive engagement settings, and then select **Add a cancellation policy**.
+1. In the site map, select **Productivity** under **Support experience**, and select **Manage** for **Proactive engagements**.
+
+1. Select **Go to settings**, and then select **Add a cancellation policy**.
 
 1. Specify filter criteria using any combination of the following in AND conditions:
    - Proactive engagement configuration ID

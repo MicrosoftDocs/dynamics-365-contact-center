@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Use CCaaS_CreateProactiveDelivery API
 
-You can use the `CCaaS_CreateProactiveDelivery` API to initiate proactive outbound voice calls to customers through the Proactive Engagement Service.
+You can use the `CCaaS_CreateProactiveDelivery` API to initiate proactive outbound voice calls to customers through the Proactive Engagement service.
 
 > [!IMPORTANT]
 >

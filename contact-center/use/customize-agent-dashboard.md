@@ -25,7 +25,7 @@ Perform the steps in [Add a filter to an entire page](/power-bi/create-reports/p
 
 | Title |   Definition | Applies to| Channel | Data |
 | --------------- | --------------- |------|---------|---------|
-| Dialed number identification service (DNIS) | Choose a customer-facing phone number from the list to see bot metrics for that number.<br> You can track call volumes for different campaigns or services, analyze marketing effectiveness, customize Interactive Voice Response (IVR) experiences, and generate detailed reports on call patterns, ultimately helping to optimize resource allocation and improve customer service. | Real-time and historical| Voice only | DimPhoneNumber: DNIS |
+| Dialed number identification service (DNIS) | Choose a customer-facing phone number from the list to see bot metrics for that number.<br> You can track call volumes for different campaigns or services and analyze marketing effectiveness. You can also customize Interactive Voice Response (IVR) experiences and generate reports on call patterns. These insights help you optimize resource allocation and improve customer service. | Real-time and historical| Voice only | DimPhoneNumber: DNIS |
 | Language  | Filter and view bot metrics by the last language used.<br> This metric helps you understand your callers' language preferences and optimize multilingual support.<br> For example, a conversation can start in English before the customer switches to Spanish or a conversation begins and ends in Spanish. If you select Spanish as the last language, the report displays the metrics for all conversations that ended in Spanish. In our example, the dashboard displays metrics for both the conversations.<br>**Note**: In the real-time bot dashboard, setting the Last language filter displays metrics for conversations that were escalated to an agent or an external number and are in the closed state. The metrics aren't updated when the bot conversation is ongoing. | Real-time and historical| Chat and voice | DimLanguage: Language |
 | Browser  | Filter by browser to analyze the agent's metrics specifically for the selected browser. | Real-time and historical| Chat and voice | FactLiveChatContext: Browser |
 | Device  | Filter by device to analyze the agent's performance specifically for the selected device. | Real-time and historical| Chat and voice | FactLiveChatContext: Device |
@@ -47,7 +47,7 @@ Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi
 
 ## Analyze conversation fallout patterns
 
-To analyze conversation fallout patterns, identify the exact point in the conversation where the fallout occurred. For example, determine whether the fallout occurs after intent identification or before the resolution. Log additional details in the Dataverse conversation transcript. These details can include the topic, node, speech recognition confidence score, and input mode.
+To analyze conversation fallout patterns, identify the exact point in the conversation where the fallout occurred. For example, determine whether the fallout occurs after intent identification or before the resolution. Log other details in the Dataverse conversation transcript. These details can include the topic, node, speech recognition confidence score, and input mode.
 
 ### Prerequisites
 
@@ -74,7 +74,7 @@ To analyze conversation fallout patterns, identify the exact point in the conver
 1. Drag metrics such as **AbandonedCount** or **SuccessCount** into the **Columns** or **Values** field, depending on your preferred view.
 1. Save and publish to make the report available to viewers.
 
-The following table shows additional metrics you can customize at each question node. 
+The following table shows more metrics you can customize at each question node. 
 
 |Metric Name  | Description  |Channel| Data Schema   |
 |---------|---------|---------|---------|
@@ -112,7 +112,7 @@ For example, FactBotReportingVariableDetail.Name = msdyn_rvSelfServiceStart; the
 ### Steps to create custom reports for custom variables
 
 1. In Copilot Service workspace, go to **Omnichannel historical analytics** > **Bot**.
-1. Select **Edit report**. This opens the full report where you can view available data measures, tables, and filters.
+1. Select **Edit report**. This action opens the full report where you can view available data measures, tables, and filters.
 1. At the bottom of the report’s page list, select the **Bot Detail** tab to work with bot details.
 1. In the **Data** pane, search for **FactBotReportingVariableDetail**. This table contains [ Custom reporting variable schema](/dynamics365/customer-service/use/oob-data-models?#data-dictionary-4) that track custom variables in the conversation flow. Currently, the schema contains final value for each variable name only. You can transform the table using data model customization into multiple custom tables per reporting variable.
 1. Review the final value of variables in the **FactBotReportingVariableDetail.Value** column by adding it into a tabular format on the visual pane. You can create a separate visual for each variable name. For example, **FactBotReportingVariableDetail.Name** = **msdyn_rvSelfServiceStart**; the name of the custom variable set in Copilot Service admin center and **FactBotReportingVariableDetail.Value** = **True/False**.  

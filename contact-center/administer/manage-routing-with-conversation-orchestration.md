@@ -9,21 +9,16 @@ ms.topic: how-to
 ms.collection: bap-ai-copilot
 ---
 
-# Manage routing with conversation orchestrator (preview)
+# Manage routing with conversation orchestration (preview)
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
+Conversation orchestration enables you to create intelligent, AI-driven routing and prioritization policies using natural language. You can define how to prioritize conversations, when to run overflow actions, and how work items are routed&mdash;all through an intuitive playbook-based configuration experience.
 
-Conversation orchestrator enables you to create intelligent, AI-driven routing and prioritization policies using natural language. You can define how conversations are prioritized, when overflow actions trigger, and how work items are routed&mdash;all through an intuitive playbook-based configuration experience.
+> [!IMPORTANT]
+> In preview, conversation orchestration is available for voice and live chat channels only.
 
-## Supported scenarios
-
-In this preview release, conversation orchestrator supports the following scenarios.
-
-| Scenario | Description |
-|----------|-------------|
-| **Dynamic prioritization - wait time** | Automatically increase conversation priority based on how long a customer is waiting in the queue. |
-| **Dynamic prioritization - queue transfer** | Increase priority when a conversation is transferred to a specific queue |
-| **Agent Availability-based overflow** | Configure overflow actions when no agents are available to handle conversations |
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 ## Prerequisites
 
@@ -89,7 +84,7 @@ In Copilot Service admin center, go to **Customer support** > **Conversation Orc
    - For each condition branch, select the context variable values that trigger this condition and set the priority score to increase (0–100,000).
    - Configure the default priority score for conversations that don't match any condition.
 
-   
+
    **For overflow playbooks:**
    - The trigger condition is preset to **Conversation is waiting in queue**.
    - For each condition branch, select the context variable values that trigger this condition and choose the overflow action (transfer to queue, direct callback, voicemail, or end conversation).
@@ -112,21 +107,14 @@ In Copilot Service admin center, go to **Customer support** > **Conversation Orc
    - For draft playbooks: Select **Save** to save your changes, or select **Publish** when ready to activate.
    - For active playbooks: Select **Save & publish** to save and immediately publish your changes. The **Save** button is disabled for active playbooks to prevent unintended changes to live routing. If you cancel, the playbook reverts to the last published version.
 
-### Duplicate a playbook
-
-1. Go to the **Playbook** tab.
-1. Select the actions menu (**...**) for the playbook and then select **Duplicate**.
-1. A copy is created with "(Copy)" appended to the name.
-1. Edit the copy as needed.
-
 ### Delete a playbook
 
 1. Go to the **Playbook** tab.
 1. Select the actions menu (**...**) for the playbook and then select **Delete**.
 1. Confirm the deletion.
 
-> [!WARNING]
-> Deleting an active playbook immediately stops it from routing conversations.
+> [!IMPOrTANT]
+> If you delete an active playbook, it stops routing conversations immediately.
 
 ## Scenario: Dynamic prioritization - Wait time escalation
 
@@ -138,7 +126,7 @@ This scenario automatically increases the priority of conversations based on how
 
 1. When a conversation enters the queue, the playbook evaluates the configured conditions.
 1. Based on matching context variable values, the system increases the priority score at the specified time interval.
-1. The system offers higher priority conversations to agents before lower priority ones.
+1. The system offers higher priority conversations to representatives first than the lower priority ones.
 
 **Example:**
 
@@ -168,16 +156,16 @@ This scenario increases conversation priority when a conversation is transferred
 | Escalation transfers | 30 |
 | All other transfers | 10 |
 
-## Scenario: Agent availability based overflow
+## Scenario: Representative availability based overflow
 
-This scenario triggers overflow actions when no agents are available to handle conversations.
+This scenario triggers overflow actions when no representatives are available to handle conversations.
 
-**Trigger event**: Conversation is waiting in queue AND no agents are available
+**Trigger event**: Conversation is waiting in queue and no representative is available.
 
 **How it works:**
 
-1. When a conversation enters the queue, the system checks agent availability.
-1. If no agents are available (based on presence, capacity, and skills), the overflow action triggers immediately.
+1. When a conversation enters the queue, the system checks for availability of representatives.
+1. If no representatives are available based on presence, capacity, and skills, the overflow action triggers immediately.
 1. You can configure different actions based on customer attributes.
 
 **Available overflow actions:**
@@ -199,7 +187,7 @@ This scenario triggers overflow actions when no agents are available to handle c
 
 ## Validations
 
-Conversation Orchestrator validates your playbook configuration and displays warnings for potential issues.
+Conversation orchestration validates your playbook configuration and displays warnings for potential issues.
 
 | Validation | Description |
 |------------|-------------|
@@ -259,19 +247,7 @@ This means:
 - Priority scores range from 0 to 100,000. The minimum wait time is 30 seconds.
 
 > [!IMPORTANT]
-> Dynamic prioritization playbooks don't apply to queues that have custom prioritization rules configured. If a queue already uses custom prioritization, the dynamic prioritization playbook doesn't take effect for that queue. To use dynamic prioritization, you must first remove the custom prioritization configuration from the queue.
-
-## Limitations
-
-The following limitations apply during public preview:
-
-| Limitation | Value |
-|------------|-------|
-| Maximum customer variables per playbook | 2 |
-| Maximum condition branches per playbook | 12 |
-| Minimum time interval | 30 seconds |
-| Maximum priority score | 100,000 |
-| Supported channels | Voice and Messaging |
+> Dynamic prioritization playbooks aren't applicable to queues configured with custom prioritization rules. To use dynamic prioritization, you must first remove the custom prioritization configuration from the queue.
 
 ## Troubleshooting
 
@@ -283,16 +259,8 @@ The following limitations apply during public preview:
 | Unable to publish playbook due to conflict | Another Active playbook already exists for the same scenario and queue. Edit the existing playbook or modify the queue selection in your new playbook to avoid overlap. |
 | Dynamic prioritization not applying to a queue | The queue might have custom prioritization rules configured. Remove the custom prioritization configuration from the queue settings to enable dynamic prioritization. |
 
-## Related information
+### Related information
 
-- [Set up unified routing](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-routing)
-- [Create and manage queues](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/queues-omnichannel)
-- [Configure context variables](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/context-variables)
-
-### See also
-
-[Overview of unified routing](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/overview-unified-routing)
-
----
-
-[!INCLUDE [preview-note](includes/preview-note.md)]
+[Set up unified routing](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-routing)  
+[Create and manage queues](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/queues-omnichannel)  
+[Configure context variables](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/context-variables)  

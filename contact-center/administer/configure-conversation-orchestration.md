@@ -1,5 +1,5 @@
 ---
-title: Manage routing with conversation orchestrator in Dynamics 365 Contact Center (preview)
+title: Manage routing with conversation orchestration in Dynamics 365 Contact Center (preview)
 description: Learn how to manage intelligent conversation routing with conversation orchestrator. Set up dynamic prioritization and overflow actions to enhance customer service.
 author: neeranelli
 ms.author: nenellim
@@ -57,7 +57,7 @@ In Copilot Service admin center, go to **Customer support** > **Conversation Orc
 
 ### Create a playbook
 
-1. On the **Conversation Orchestration** page, select one of the following prompt template that matches your scenario:
+1. On the **Conversation Orchestration** page, select one of the following prompt templates that matches your scenario:
    - **Escalate priority based on wait time**: For wait time-based prioritization.
    - **Escalate priority based on transfer to queue**: For transfer-based prioritization.
    - **Configure overflow based on agent availability in the queue**: For agent availability overflow.
@@ -72,8 +72,8 @@ In Copilot Service admin center, go to **Customer support** > **Conversation Orc
    1. Select **Save**.
 
 1. Optionally, add context variables to create conditions based on customer or conversation attributes:
-   1. In the **Customer variables** section, select **Add variable**.
-   1. Choose from available context variables such as Customer Tier, Is VIP Customer, Preferred Language, Customer Region, or Account Type.
+   1. In the **Add variables** section, select **Add customer attribute**.
+   1. Choose from available context variables such as CustomerTier, Is VIP Customer, Preferred Language, Customer Region, or Account Type.
    1. Provide a description for how the variable appears in the playbook.
    1. Select the values you want to use in your conditions.
 
@@ -83,17 +83,20 @@ In Copilot Service admin center, go to **Customer support** > **Conversation Orc
 1. Configure conditions and actions based on your selected template:
 
    **For dynamic prioritization playbooks:**
+   - For **Update priority based on transfer to queue** playbook, the trigger event is preset to **Conversation is transferred**.
+   - For **Update priority based on conversation wait time** playbook, the trigger event is preset to **Conversation is waiting in queue**.
    - Set the time interval for priority increases (minimum 30 seconds).
-   - For each condition branch, select the context variable values that trigger this condition and set the priority score to increase (0–10,000).
+   - For each condition branch, select the context variable values that trigger this condition and set the priority score to increase (0–100,000).
    - Configure the default priority score for conversations that don't match any condition.
 
+   
    **For overflow playbooks:**
-   - The trigger condition is preset to "when no agents are available."
+   - The trigger condition is preset to **Conversation is waiting in queue**.
    - For each condition branch, select the context variable values that trigger this condition and choose the overflow action (transfer to queue, direct callback, voicemail, or end conversation).
    - Configure the default action for conversations that don't match any condition.
 
    > [!TIP]
-   > You can add up to 12 condition branches per playbook in preview release.
+   > In the preview release, you can add up to 12 condition branches per playbook.
 
 1. Select **Save**. The playbook is saved as a draft.
 
@@ -101,9 +104,9 @@ In Copilot Service admin center, go to **Customer support** > **Conversation Orc
 
 ### Edit a playbook
 
-1. Go to the **Playbook** tab in Conversation Orchestration.
+1. Go to the **All playbooks** tab in **Conversation Orchestration**.
 1. Find the playbook you want to edit.
-1. Select the actions menu (**...**) and then select **Edit**.
+1. Select the actions menu (**...**), and then select **Edit**.
 1. Make your changes.
 1. Do one of the following:
    - For draft playbooks: Select **Save** to save your changes, or select **Publish** when ready to activate.
@@ -210,9 +213,9 @@ The editor displays warnings with amber styling. You can save a playbook with wa
 
 ### Multiple playbooks for the same queue
 
-When you configure multiple playbooks that apply to the same queue, Conversation Orchestrator handles them differently based on whether they target the same or different scenarios.
+When you configure multiple playbooks that apply to the same queue, Conversation Orchestration handles them differently based on whether they target the same or different scenarios.
 
-#### Same queue, same scenario (Conflict)
+**Same queue, same scenario (Conflict)**
 
 You can't have multiple active playbooks for the same scenario and the same queue. This configuration creates a conflict that prevents publishing.
 
@@ -220,36 +223,36 @@ For example, if you have an active "Escalate priority based on wait time" playbo
 
 When you attempt to publish a playbook that conflicts with an existing active playbook, the system displays the following error:
 
-> **[Exact error message to be provided]**
+_To be written_
 
 To resolve this conflict, either:
 - Modify the queue selection in your new playbook to exclude the conflicting queues
 - Edit or deactivate the existing active playbook before publishing your new one
 
-#### Same queue, different scenarios (Allowed)
+**Same queue, different scenarios (Allowed)**
 
 You can configure different scenarios for the same queue. For example, a single queue can have both a "Dynamic Prioritization - Wait Time" playbook and an "Agent Availability Based Overflow" playbook active simultaneously.
 
 When multiple playbooks with different scenarios are active for the same queue, they execute in a predefined sequence that follows the unified routing order:
 
-| Execution order | Scenario |
+| Run order | Scenario |
 |-----------------|----------|
-| 1 | Agent Availability Based Overflow |
-| 2 | Dynamic Prioritization (Wait Time or Queue Transfer) |
+| 1 | Agent availability-based overflow |
+| 2 | Dynamic prioritization (Wait Time or Queue Transfer) |
 
-This execution order is consistent across all conversations and can't be changed. The system automatically determines which playbook to evaluate first based on the scenario type, ensuring predictable and deterministic behavior for all conversations in the queue.
+This run order is consistent across all conversations and can't be changed. The system automatically determines the playbook to evaluate first based on the scenario type, ensuring predictable and deterministic behavior for all conversations in the queue.
 
 ### Cross-playbook conflict detection
 
 > [!IMPORTANT]
-> Cross-playbook validation occurs only when you publish a playbook, not when you save it as a draft. The system checks your playbook against other published (Active) playbooks only.
+> Cross-playbook validation occurs only when you publish a playbook, not when you save it as a draft. The system checks your playbook against other published active playbooks only.
 
 This means:
 - You can save a playbook as a draft even if it conflicts with an existing active playbook.
 - The system detects and reports conflicts only when you attempt to publish a playbook.
 - If a conflict exists, you must resolve it by modifying either the new playbook or the existing active playbook before publishing.
 
-## Tips
+## Things to consider
 
 - Conversations have a default priority score of 0. Use classification rules to set an initial priority score.
 - Customize the prompt to assign different priority scores based on context variables.

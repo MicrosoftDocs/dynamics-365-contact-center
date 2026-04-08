@@ -1,6 +1,6 @@
 ---
 title: Customize the bot dashboard
-description: Learn more about customizing bot dashboards with filters and metrics to meet your business requirements.
+description: Learn more about customizing bot dashboards by using filters and metrics to meet your business requirements.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
@@ -25,46 +25,47 @@ Perform the steps in [Add a filter to an entire page](/power-bi/create-reports/p
 
 | Title |   Definition | Applies to| Channel | Data |
 | --------------- | --------------- |------|---------|---------|
-| Dialed number identification service (DNIS) | Choose a customer-facing phone number from the list to see bot metrics for that number.<br> You can track call volumes for different campaigns or services, analyze marketing effectiveness, customize Interactive Voice Response (IVR) experiences, and generate detailed reports on call patterns, ultimately helping to optimize resource allocation and improve customer service. | Real time and historical| Voice only | DimPhoneNumber: DNIS |
-| Language  | Filter and view bot metrics by the last language used.<br> This metric helps you understand your callers' language preferences and optimize multilingual support.<br> For example, a conversation can start in English before the customer switches to Spanish or a conversation begins and ends in Spanish. If you select Spanish as the last language, the report displays the metrics for all conversations that ended in Spanish. In our example, the dashboard displays metrics for both the conversations.<br>**Note**: In the real-time bot dashboard, setting the Last language filter displays metrics for conversations that were escalated to an agent or an external number and are in the closed state. The metrics aren't updated when the bot conversation is ongoing. | Real time and historical| Chat and voice | DimLanguage: Language |
-| Browser  | Filter by browser to analyze the agent's metrics specifically for the selected browser. | Real time and historical| Chat and voice | FactLiveChatContext: Browser |
-| Device  | Filter by device to analyze the agent's performance specifically for the selected device. | Real time and historical| Chat and voice | FactLiveChatContext: Device |
-| External escalations| Count of escalations done from the Microsoft Copilot Studio agent externally to representatives outside of Dynamics 365 Contact Center. <br>**Note**: If the contact center is associated with external escalations, then escalation rate metric tracks both internal and external escalations. Otherwise, the escalation rate only shows internal escalations to representatives within Dynamics 365 Contact Center.	| Real time and historical| Chat and voice| Historical data schema; FactSession table:  Number of bot transfers requests to external agents column. Realtime data schema; FactSession table: Transferred bot conversations.|
+| Dialed number identification service (DNIS) | Choose a customer-facing phone number from the list to see bot metrics for that number.<br> You can track call volumes for different campaigns or services, analyze marketing effectiveness, customize Interactive Voice Response (IVR) experiences, and generate detailed reports on call patterns, ultimately helping to optimize resource allocation and improve customer service. | Real-time and historical| Voice only | DimPhoneNumber: DNIS |
+| Language  | Filter and view bot metrics by the last language used.<br> This metric helps you understand your callers' language preferences and optimize multilingual support.<br> For example, a conversation can start in English before the customer switches to Spanish or a conversation begins and ends in Spanish. If you select Spanish as the last language, the report displays the metrics for all conversations that ended in Spanish. In our example, the dashboard displays metrics for both the conversations.<br>**Note**: In the real-time bot dashboard, setting the Last language filter displays metrics for conversations that were escalated to an agent or an external number and are in the closed state. The metrics aren't updated when the bot conversation is ongoing. | Real-time and historical| Chat and voice | DimLanguage: Language |
+| Browser  | Filter by browser to analyze the agent's metrics specifically for the selected browser. | Real-time and historical| Chat and voice | FactLiveChatContext: Browser |
+| Device  | Filter by device to analyze the agent's performance specifically for the selected device. | Real-time and historical| Chat and voice | FactLiveChatContext: Device |
+| External escalations| Count of escalations done from the Microsoft Copilot Studio agent externally to representatives outside of Dynamics 365 Contact Center. <br>**Note**: If the contact center is associated with external escalations, then escalation rate metric tracks both internal and external escalations. Otherwise, the escalation rate only shows internal escalations to representatives within Dynamics 365 Contact Center.	| Real-time and historical| Chat and voice| Historical data schema; FactSession table:  Number of bot transfers requests to external agents column. Realtime data schema; FactSession table: Transferred bot conversations.|
 
-:::image type="content" source="../media/realtime-dashboard-mini.png" alt-text="Screenshot of real time bot dashboard with filters." lightbox="../media/oc-realtime-dashboard.png"::: 
+:::image type="content" source="../media/realtime-dashboard-mini.png" alt-text="Screenshot of real-time bot dashboard with filters." lightbox="../media/oc-realtime-dashboard.png"::: 
 
 
 ## Add fallback action calls
 
-Fallback actions track the number of conversations handled by the system when the AI agent encounters system failures, errors, or can't process user inputs. This prevents conversation breakdown and maintains user engagement.
+Fallback actions track the number of conversations that the system handles when the AI agent encounters system failures, errors, or can't process user input. These actions prevent conversation breakdowns and maintain user engagement.
 
 Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi-report-add-visualizations-i#add-visualizations-to-the-report) to represent **FactSession: Failed bot conversation** data in a [Single number card](/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#single-number) visual for fallback action calls on the bot dashboard.
 
 
 | Title | Definition | Applies to | Channel | Data |
 |-------|------------|------------|---------|------|
-| Fallback action calls | The number of bot conversations where the bot applies one of the fallback actions in case of failures:<br><br>• **Prompt and hang-up**: The system plays a [default message](/dynamics365/customer-service/administer/configure-automated-message#preconfigured-automated-message-triggers) and ends the call.<br><br>• **Prompt and transfer to external number**: The system plays the default message and transfers the call to an external number that you enter in the **External phone number** field. Use the E.164 format, with a plus sign (+) followed by the country code and phone number.<br><br>• **Prompt and escalate**: The system plays the default message and connects the call to a service representative.<br><br>• **Wait Music and Escalate**: The system plays wait music and connects the call to a service representative.<br><br>Learn more in [Configure fallback actions for the IVR agent](/dynamics365/contact-center/administer/configure-fallback-actions-ivr-agent) | Real time and historical | Voice only | FactSession: Failed bot conversation |
+| Fallback action calls | The number of bot conversations in which the bot applies a fallback action when a failure occurs:<br><br>• **Prompt and hang-up**: The system plays a [default message](/dynamics365/customer-service/administer/configure-automated-message#preconfigured-automated-message-triggers) and ends the call.<br><br>• **Prompt and transfer to external number**: The system plays the default message and transfers the call to an external number that you enter in the **External phone number** field. Use the E.164 format, with a plus sign (+) followed by the country code and phone number.<br><br>• **Prompt and escalate**: The system plays the default message and connects the call to a service representative.<br><br>• **Wait Music and Escalate**: The system plays wait music and connects the call to a service representative.<br><br>Learn more in [Configure fallback actions for the IVR agent](/dynamics365/contact-center/administer/configure-fallback-actions-ivr-agent) | Real-time and historical | Voice only | FactSession: Failed bot conversation |
 
 ## Analyze conversation fallout patterns
 
-To analyze conversation fallout patterns, identify the exact point in the conversation where the fallout occurred. For example, whether it was after intent identification or before the resolution. More details, such as topic, node, speech recognition confidence score, and input mode, should also be logged in the conversation transcript stored in Dataverse.
+To analyze conversation fallout patterns, identify the exact point in the conversation where the fallout occurred. For example, determine whether the fallout occurs after intent identification or before the resolution. Log additional details in the Dataverse conversation transcript. These details can include the topic, node, speech recognition confidence score, and input mode.
 
 ### Prerequisites
 
 - [Enable advanced historical analytics for voice and chat Copilot agents](/dynamics365/customer-service/administer/oc-historical-analytics-reports#enable-advanced-historical-analytics-for-voice-and-chat-copilot-agents).
-- Administrators must enable node-level logging in Microsoft Copilot Studio to capture this data in the conversationTranscript JSON file. This file is stored in Dataverse and supports visual customization and data measures on the Omnichannel Historical Bot dashboard. For reporting, only the question node is supported. However, the conversation transcript JSON supports all node types. 
+- Administrators must enable node-level logging in Microsoft Copilot Studio to capture this data in the **conversationTranscript** JSON file. Dataverse stores this file and supports visual customization and data measures on the Omnichannel Historical Bot dashboard. For reporting, only the question node is supported. However, the conversation transcript JSON supports all node types. 
 
 :::image type="content" source="../media/node-level-detail-for-custom-variables.png" alt-text="Screenshot showing node-level detail logging enabled for conversation transcripts." lightbox="../media/node-level-detail-for-custom-variables.png":::
 
 **Best practices**
 
-- To accurately report success and failure rates for question nodes, rename the default question node in Microsoft Copilot Studio Canvas. 
-- Use clear and meaningful names to ensure that dashboards display actionable insights and make it easier to track where breakdowns occur in the conversation flow. This practice supports performance improvements and a better user experience. Examples of effective names include Confirm Order Status, Repeat Account Number, or Repeat Main Menu Options. If the node isn’t renamed, default ambiguous names like Question_eQt5ye appear, making reports harder to interpret.
+- Rename the default question node in Microsoft Copilot Studio Canvas to accurately report success and failure rates. 
+- Use clear and meaningful names to ensure that dashboards display actionable insights. Clear names also make it easier to track where breakdowns occur in the conversation flow. This practice supports performance improvements and a better user experience. Examples of effective names include Confirm Order Status, Repeat Account Number, or Repeat Main Menu Options.
+- If you don't rename the node, default ambiguous names like Question_eQt5ye appear, making reports harder to interpret.
 
 ### Steps to create custom reports for conversation fallouts
 
 1. In Copilot Service workspace, go to **Omnichannel historical analytics** > **Bot**.
-1. Select **Edit report**. This opens the full report where you can view available data measures, tables, and filters.
+1. Select **Edit report**. This action opens the full report where you can view available data measures, tables, and filters.
 1. At the bottom of the report’s page list, select the **PVA Topic Detail** tab to work with topic and node‑level data.
 1. In the **Data** pane, find the table named **FactBotSessionNodedetail**. This table contains [Question node-level metrics](/dynamics365/customer-service/use/oob-data-models#data-dictionary-4) that track outcomes at each node in the conversation flow. Currently, only question nodes support fallout patterns.
 1. Review available fields such as **NodeName**, **AbandonedCount**, and **SuccessCount**.
@@ -79,7 +80,7 @@ The following table shows additional metrics you can customize at each question 
 |---------|---------|---------|---------|
 |Number of Turns     |  Number of conversational turns taken within this node.        |    Voice      |   FactBotSessionNodedetail       |
 |Speech Confidence Score     |    Confidence score returned by speech recognition for user input at each question node within a topic.      |     Voice      |     FactBotSessionNodedetail     |
-|Input Mode     |  Mode of user input at the question node. This could be voice, text or through phone keypad.      |   Voice and Chat      |     FactBotSessionNodedetail     |
+|Input Mode     |  Mode of user input at the question node. This mode could be voice input, text input, or phone keypad input.      |   Voice and Chat      |     FactBotSessionNodedetail     |
 
 
 ## Use custom reporting variables
@@ -90,7 +91,7 @@ Once configured, the Omnichannel Historical Bot dashboard can be customized with
 
 Additionally, you can analyze exit patterns from question nodes and identify root causes of escalations originating from those nodes, providing advanced troubleshooting and diagnostic insights. 
 
-The following example shows how reporting variables are processed and surfaced in analytics. Variables like `msdyn_rvSelfServiceStart` and `msdyn_rvFinalIntent` can be configured in Microsoft Copilot Studio Canvas. Based on the conversation flow, the final value of these variables is processed and available under the FactBotReportingVariableDetail.Value column in the semantic model. You can view these columns while editing the report and adding corresponding FactBotReportingVariableDetail.Name and FactBotReportingVariableDetail.Value as tabular format on the Power BI dashboard for visual customization.
+The following example shows how reporting variables are processed and surfaced in analytics. Variables like `msdyn_rvSelfServiceStart` and `msdyn_rvFinalIntent` can be configured in Microsoft Copilot Studio Canvas. Based on the conversation flow, the system processes the final value of these variables and makes it available under the FactBotReportingVariableDetail.Value column in the semantic model. You can view these columns while editing the report and adding corresponding FactBotReportingVariableDetail.Name and FactBotReportingVariableDetail.Value as tabular format on the Power BI dashboard for visual customization.
 
 For example, FactBotReportingVariableDetail.Name = msdyn_rvSelfServiceStart; the name of the custom variable set in Contact Center admin center and FactBotReportingVariableDetail.Value = True/False. Learn more in [Omnichannel AI agent analytics](/dynamics365/customer-service/use/oob-data-models?branch=ss-42902-overflow-conditions#data-dictionary-4).
 

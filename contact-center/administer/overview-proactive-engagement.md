@@ -28,11 +28,11 @@ By using a blend of AI agents and customer service representatives, you can reac
 Use deterministic proactive engagement to automate workflows that trigger outbound calls based on defined conditions. Examples include case closure notifications, automated data collection, status updates, alerts, and mission-critical engagements. You can trigger these engagements in the following ways:
 
 - **CCaaS API or Power Automate flows**: Available natively with Dynamics 365 Contact Center. Use CCaaS APIs to integrate with non-Microsoft systems, or create a Power Automate flow triggered by changes to Dynamics 365 records such as a case status update.
-- **Customer Insights Journey triggers**: Use journey triggers to initiate calls when a record is created or updated. This option requires Dynamics 365 Customer Insights licenses.
+- **Customer Insights Journey triggers**: Use journey triggers to initiate calls when a record is created or updated. This option requires Dynamics 365 Customer Insights license.
 
 ### AI agents-led proactive engagement
 
-Use AI agents-led proactive engagement to enable AI agents, such as case monitoring agents, fraud monitoring agents, and personal agents, to initiate on-demand customer engagements. The Dynamics 365 Contact Center MCP server (preview) provides tools that allow agents to schedule outbound voice calls and SMS messages (preview) using customer details and time windows, without requiring manual API integrations.
+Use AI agents-led proactive engagement to enable AI agents, such as case monitoring agents, fraud monitoring agents, and personal agents, to initiate on-demand customer engagements. The Dynamics 365 Contact Center MCP server (preview) provides tools that allow agents to schedule outbound voice calls  using customer details and time windows, without requiring manual API integrations.
 
 ### Single-channel, single-step engagements
 

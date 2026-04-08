@@ -85,11 +85,13 @@ The following table shows additional metrics you can customize at each question 
 
 ## Use custom reporting variables
 
-Add reporting variables configured in Microsoft Copilot Studio Canvas to enable organized tracking and analysis across key organizational dimensions such as line of business, division, product line, and other custom-defined attributes. Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variables?tabs=webApp). The variables are linked to certain topics and flows, and their use depends on how topics and flows are configured in the Microsoft Copilot Studio Canvas. This feature works with classic Copilot Studio bots that require custom variables to tag conversations.
+Add reporting variables that you configure in Microsoft Copilot Studio Canvas to organize and track data across key organizational dimensions such as line of business, division, product line, and other custom-defined attributes. Learn more in [Work with variables](/microsoft-copilot-studio/authoring-variables?tabs=webApp). 
 
-Once configured, the Omnichannel Historical Bot dashboard can be customized with these user-defined dimensions and metrics, enabling granular analysis of key indicators such as deflection, escalation rate, and containment. This flexibility aligns reporting with organizational goals and eliminates manual parsing of conversation data.
+These variables link to certain topics and flows. Their usage depends on how you configure the topics and flows in Microsoft Copilot Studio Canvas. This feature applies to classic Copilot Studio bots that require custom variables to tag conversations.
 
-Additionally, you can analyze exit patterns from question nodes and identify root causes of escalations originating from those nodes, providing advanced troubleshooting and diagnostic insights. 
+After you configure the variables, you can customize the Omnichannel Historical Bot dashboard with user-defined dimensions and metrics. You can analyze key indicators such as deflection, escalation rate, and containment without manually parsing conversation data.
+
+You can also analyze exit patterns from question nodes and identify root causes of escalations that originate from those nodes. This information provides advanced troubleshooting and diagnostic insights. 
 
 The following example shows how reporting variables are processed and surfaced in analytics. Variables like `msdyn_rvSelfServiceStart` and `msdyn_rvFinalIntent` can be configured in Microsoft Copilot Studio Canvas. Based on the conversation flow, the system processes the final value of these variables and makes it available under the FactBotReportingVariableDetail.Value column in the semantic model. You can view these columns while editing the report and adding corresponding FactBotReportingVariableDetail.Name and FactBotReportingVariableDetail.Value as tabular format on the Power BI dashboard for visual customization.
 

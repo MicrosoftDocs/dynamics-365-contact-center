@@ -21,7 +21,7 @@ Use the `CCaaS_CreateOperation` API to request a cancel, suspend, or resume oper
 | OData Operation        | Action                                      |
 | OData Type             | Bounded                                     |
 | HTTP Verb              | POST                                        |
-| Authorization          | Required. Must contain a valid Azure AD Bearer token for the user making the API call. |
+| Authorization          | Required. Must contain a valid Microsoft Entra Bearer token for the user making the API call. |
 
 ## Request parameters
 

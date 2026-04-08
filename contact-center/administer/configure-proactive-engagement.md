@@ -106,8 +106,8 @@ The dial modes determine how the system places outbound calls to customers. Lear
 
 1. Select one of the following dial modes:
    - **Copilot**: Applies to AI agent led engagements. The system automatically dials the customer and connects the call to the AI agent when the customer answers. Use this mode for high-volume outbound calls.
-   - **Preview**: Applies to both representative and AI agent led engagements. The system notifies a service representative of the outbound call request and, after acceptance, places the call to the customer.
-   - **Progressive**: The system starts calls equal to the number of available agents, and on customer answer adds a representative or AI agent based on the engagement type. If type is representative led, service representatives are reserved ahead of time to make sure a good customer experience.
+   - **Preview**: Applies to representative-led engagements. The system notifies a service representative of the outbound call request and after acceptance, places the call to the customer.
+   - **Progressive**: Applies to both representative and AI agent led engagements. The system starts calls equal to the number of available representatives, and on customer answer adds a representative or AI agent based on the engagement type. If type is representative led, service representatives are reserved ahead of time for a good customer experience.
    - **Predictive**: The system starts calls proportional to the number of available agents, and on customer answer adds a representative or AI agent based on the engagement type. A predictive model considers factors like agent availability, abandonment rate, and answer rate to determine the number of calls to initiate per representative. If type is representative led, representatives are reserved ahead of time to ensure a good customer experience.
 
 1. Priority determines the processing order of the proactive engagement. Select one of the following priority levels:

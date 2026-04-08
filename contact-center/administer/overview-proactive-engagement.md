@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 # Overview of proactive engagement
 
-Today, customers want brands to anticipate their needs, provide personalized engagement, and offer effortless support. Businesses seek automation, increased loyalty, and dependability. Proactive engagement is the solution to create AI-driven proactive outbound experiences that enable enterprises to engage with their customers proactively on voice channels. You can integrate Dynamics 365 Contact Center and Customer Insights journeys for an AI-empowered conversational journeys.
+Today, customers want brands to anticipate their needs, provide personalized engagement, and offer effortless support. Businesses seek automation, increased loyalty, and dependability. Proactive engagement is the solution to create AI-driven proactive outbound experiences that enable enterprises to engage with their customers proactively on voice channels. You can integrate Dynamics 365 Contact Center and Customer Insights journeys for an AI-empowered conversational journey.
 
 ## What is proactive engagement?
 

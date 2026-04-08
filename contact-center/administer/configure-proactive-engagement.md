@@ -27,9 +27,9 @@ Proactive engagement in Dynamics 365 helps your organization improve customer in
 1. Set up the outbound workstream behaviors in the **Setup Behaviors** section of the workstream as follows:
 
     - Select **Setup**, and on the page that appears, select the **Caller ID Number** in the list. Numbers available to use only are displayed. Learn more in [Configure phone numbers for outbound calling](/dynamics365/customer-service/administer/voice-channel-outbound-calling#configure-phone-numbers-for-outbound-calling).
-        - Select a number in the **Shared numbers** list. You can use a number for an outbound profile (for representative dialing in Copilot service workspace) or outbound workstream only.
-1. Set up the language and outbound behaviors. Learn more in [Configure the voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?tabs=enhancedvoice#configure-a-voice-channel)
-1. Configure [work distribution](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution), optionally add an [AI agent](/dynamics365/customer-service/administer/create-workstreams#add-an-agent-to-a-workstream) to the workstream, and configure representative notifications. The following notification templates are available out of the box:
+        - Select a number in the **Shared numbers** list. You can use a number for an outbound profile (for representative dialing in Copilot Service workspace) or outbound workstream only.
+1. Set up the language and outbound behaviors. Learn more in [Configure the voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?tabs=enhancedvoice#configure-a-voice-channel).
+1. Configure [work distribution](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution). Optionally add an [AI agent](/dynamics365/customer-service/administer/create-workstreams#add-an-agent-to-a-workstream) to the workstream, and configure representative notifications. The following notification templates are available out of the box:
     - **Voice call - outbound agent dial - default**: For preview dial mode calls
     - **Voice call - outbound pre-dial - default**: For predictive, progressive, and copilot dial mode calls
 
@@ -86,19 +86,17 @@ On the **Details** page, configure the engagement identity, routing, and busines
    - **Workstream**: Select the outbound workstream. If you create the proactive engagement from within a workstream, this value is preselected.
    - **Channel type**: The channel used for the proactive engagement.
 
-1. Under **Contact unique identifier**, select the contact attribute to use as the unique identifier. The dropdown lists only those attributes that are marked as unique key eligible on the Contact table. The default is **contactid**.
+1. Under **Contact unique identifier**, select the contact attribute to use as the unique identifier. The dropdown lists only those attributes that are marked as unique key eligible on the Contact table. The default is **contactid**. The system performs an update or insert using this identifier. If an incoming record matches an existing contact, the record is updated. Otherwise, the system creates a new contact. Select the correct identifier to prevent duplicate contact records.
 
-   The system performs an upsert using this identifier. If an incoming record matches an existing contact, the record is updated. Otherwise, the system creates a new contact. Select the correct identifier to prevent duplicate contact records.
-
-   - If Dynamics 365 is your system of record, use **contactid** (the Dynamics 365 contact GUID).
-   - If you use an external system such as a CRM or MDM, create a custom attribute on the Contact table to store your external identifier, and then select the custom attribute. By passing your external system's ID in the input, you can make sure duplicates aren't created and the data in the contact center stays updated.
+   - If Dynamics 365 Contact Center is your system of record, use **contactid** (the Dynamics 365 contact GUID).
+   - If you use an external system such as a CRM or MDM system, create a custom attribute on the **Contact** table to store your external identifier, and then select the custom attribute. By passing your external system's ID in the input, you can make sure duplicates aren't created and the data in the contact center stays updated.
 
 1. In **Routing details**, enter the following details:
    - **Primary queue**: Select a queue.
    - **Fallback queue**: The system populates the queue name based on the fallback queue set for the outbound workstream.
    - **Skills**: Select the skills required for the proactive engagement.
 
-1. The **Business unit** field is automatically set to the business unit of the user creating the engagement. The **Assigned to** field shows the owner that you can change if needed.
+1. The **Business unit** field is automatically set to the business unit of the user creating the engagement. The **Owner** field shows the owner that you can change if needed.
 
 1. Select **Next**.
 

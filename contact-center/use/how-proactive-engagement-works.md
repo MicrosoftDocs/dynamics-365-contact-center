@@ -31,7 +31,7 @@ In representative-led preview dial mode, the representative controls whether to 
 
 In representative-led predictive and progressive modes, the system places calls and connects representatives when a customer answers.
 
-1. A notification appears on the representative desktop with the proactive engagement name and description, letting them know that they're going to be included in a running proactive engagement.
+1. A notification appears on the representative desktop with the proactive engagement name and description, letting them know that they're going to be included in a proactive engagement session.
 1. The system puts the representative on a lobby call to reserve them while outbound calls are in progress. When a representative is in the lobby, they can continue to work on other tabs but aren't assigned any incoming calls.
 1. When a live customer answers, the call connects to the representative session with an audible cue. The desktop refreshes to load the details of the customer that was connected.
 1. If no live customer is reached and if there are no calls to place, the system unreserves the representative.
@@ -44,7 +44,7 @@ In AI agent-led copilot, progressive, and predictive modes, the AI agent initiat
 1. The AI agent engages with the customer first.
 1. When the AI agent determines human assistance is needed, it escalates to a representative. A notification appears on the representative's desktop showing the proactive engagement name and description
 1. The representative can **Accept** or **Reject** the request (in case of Copilot), and the request is **auto accepted** in case of predictive and progressive.
-1. If the representative accepts the call, they are placed on the call to begin engaging with the customer.
+1. If the representative accepts, they are placed on the call to begin engaging with the customer.
 1. If disposition codes are configured, the service representative can select disposition codes to record the interaction outcome. Learn more in [Configure disposition codes](../administer/configure-disposition-codes.md).
 
 ### Do not contact

@@ -1,5 +1,5 @@
 ---
-title: Manage routing with conversation orchestration in Dynamics 365 Contact Center (preview)
+title: Configure conversation orchestration in Dynamics 365 Contact Center (preview)
 description: Learn how to manage intelligent conversation routing with conversation orchestrator. Set up dynamic prioritization and overflow actions to enhance customer service.
 author: neeranelli
 ms.author: nenellim
@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.collection: bap-ai-copilot
 ---
 
-# Manage routing with conversation orchestration (preview)
+# Configure conversation orchestration (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -261,6 +261,6 @@ This means:
 
 ### Related information
 
-[Set up unified routing](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-routing)  
-[Create and manage queues](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/queues-omnichannel)  
-[Configure context variables](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/context-variables)  
+[Set up unified routing](/dynamics365/customer-service/administer/set-up-routing)  
+[Create and manage queues](/dynamics365/customer-service/administer/queues-omnichannel)  
+[Configure context variables](/dynamics365/customer-service/administer/context-variables)  

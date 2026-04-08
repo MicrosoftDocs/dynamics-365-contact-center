@@ -50,8 +50,8 @@
             href: /dynamics365/customer-service/administer/configure-preferred-agent?context=/dynamics365/contact-center/context/administer-context
           - name: Manage overflow of work items in queues
             href: /dynamics365/customer-service/administer/manage-overflow?context=/dynamics365/contact-center/context/administer-context
-          - name: Manage routing with conversation orchestration (preview)
-            href: manage-routing-with-conversation-orchestration.md
+          - name: Configure conversation orchestration (preview)
+            href: Configure-conversation-orchestration.md
         - name: Set up skill-based routing
           items:
           - name: Overview of skill-based routing

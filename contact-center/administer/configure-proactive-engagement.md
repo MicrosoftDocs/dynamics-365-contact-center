@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 04/06/2026
+ms.date: 04/09/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -24,10 +24,8 @@ Proactive engagement in Dynamics 365 helps your organization improve customer in
 ## Set up an outbound workstream
 
 1. Create a workstream by selecting the **Outbound** option. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context).
-1. Set up the outbound workstream behaviors in the **Setup Behaviors** section of the workstream as follows:
-
-    - Select **Setup**, and on the page that appears, select the **Caller ID Number** in the list. Numbers available to use only are displayed. Learn more in [Configure phone numbers for outbound calling](/dynamics365/customer-service/administer/voice-channel-outbound-calling#configure-phone-numbers-for-outbound-calling).
-        - Select a number in the **Shared numbers** list. You can use a number for an outbound profile (for representative dialing in Copilot Service workspace) or outbound workstream only.
+1. In the **Setup Behaviors** section of the workstream, select **Setup**.
+1. On the **Phone number** page, select a number in the **Shared numbers** list. You can use a number configured for an outbound profile (for representative dialing in Copilot Service workspace) or outbound workstream only. Learn more in [Configure phone numbers for outbound calling](/dynamics365/customer-service/administer/voice-channel-outbound-calling#configure-phone-numbers-for-outbound-calling).
 1. Set up the language and outbound behaviors. Learn more in [Configure the voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?tabs=enhancedvoice#configure-a-voice-channel).
 1. Configure [work distribution](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution). Optionally add an [AI agent](/dynamics365/customer-service/administer/create-workstreams#add-an-agent-to-a-workstream) to the workstream, and configure representative notifications. The following notification templates are available out of the box:
     - **Voice call - outbound agent dial - default**: For preview dial mode calls
@@ -332,4 +330,6 @@ You can cancel pending calls and optionally suppress future calls that match def
 [Overview of conversational journeys](/dynamics365/customer-insights/journeys/conversational-journeys-overview)  
 [Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md)  
 [Use CCaaS_CreateProactiveVoiceDelivery API](../extend/api/ccaas_createproactivevoicedelivery.md)  
+[Use CCaaS_CreateOperation API](../extend/api/ccaas_createoperation.md)  
+[Use CCaaS_CreateProactiveDelivery API](../extend/api/ccaas_createproactivedelivery.md)  
 [Proactive Outbound dashboard](../use/proactive-outbound-dashboard.md#proactive-outbound-dashboard)

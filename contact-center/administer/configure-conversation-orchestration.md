@@ -44,7 +44,7 @@ A playbook can have one of the following statuses.
 | **Draft** | The playbook is saved but not active. You can make changes freely. |
 | **Active** | The playbook is published and actively routing conversations. |
 
-## Access conversation orchestrator
+## Access conversation orchestration playbooks
 
 In Copilot Service admin center, go to **Customer support** > **Conversation Orchestration (Preview)**. The conversation orchestration home page displays available playbook templates organized by scenario.
 

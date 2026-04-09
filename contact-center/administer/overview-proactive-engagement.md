@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 01/13/2026
+ms.date: 04/09/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -36,19 +36,17 @@ Use AI agents-led proactive engagement to enable AI agents, such as case monitor
 
 ### Single-channel, single-step engagements
 
-A single-channel, single-step campaign runs one action on a contact segment with optional retry logic. It doesn't branch out based on outcomes or orchestrate follow-up actions across channels. Some examples are as follows:
+A single-channel, single-step campaign runs one action on a contact segment with optional retry logic. It doesn't branch out based on outcomes or orchestrate follow-up actions across channels. You can configure and run these campaigns within Dynamics 365 Contact Center. Some examples are as follows:
 
 - **Appointment reminder calls**: A healthcare clinic reminds patients of upcoming appointments.
 - **Payment reminder messages**: A utility company notifies customers about overdue bills.
 - **Survey outreach**: A bank conducts a customer satisfaction survey by voice.
 
-These campaigns can be configured and run within Dynamics 365 Contact Center.
-
 ### Deterministic multi-channel, multi-step journeys
 
 A multi-channel, multi-step journey orchestrates multiple sequential or conditional actions across one or more channels, with branching logic based on customer responses, behaviors, or outcomes. Journeys can span multiple days or weeks and support cross-channel orchestration across voice, email, SMS, and push notifications.
 
-You require Dynamics 365 Customer Insights apart from Dynamics 365 Contact Center. Learn about how to configure a journey using [Dynamics 365 Customer Insights](/dynamics365/customer-insights/journeys/proactive-engagement-how-to).
+You need Dynamics 365 Customer Insights apart from Dynamics 365 Contact Center. Learn about how to configure a journey using [Dynamics 365 Customer Insights](/dynamics365/customer-insights/journeys/proactive-engagement-how-to).
 
 ### Related information
 

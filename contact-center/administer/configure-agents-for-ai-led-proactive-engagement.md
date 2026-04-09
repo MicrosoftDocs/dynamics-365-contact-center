@@ -6,20 +6,24 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 04/07/2026
+ms.date: 04/09/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
 # Configure agents for AI-led proactive engagement
 
+This article explains how to configure agents to consume proactive engagement context and deliver personalized interactions across outbound voice scenarios.
+
+## Detect answering machines
+
 Detection of answering machines is a technology used in telecommunication systems to determine whether a call is answered by a human or an answering machine. Set up the answering machine detection system topic in Copilot Studio to use when you're making outbound voice calls.
 
-## Prerequisite
+### Prerequisite
 
 [Voice is enabled in Copilot Studio](/microsoft-copilot-studio/voice-get-started) or use the voice IVR template to access the answering machine detection system topic.
 
-## Configure answering machine detection system topic
+### Configure answering machine detection system topic
 
 In Copilot Studio, choose to enable or disable detection of the answering machine. When enabled, the system automatically detects answering machines and proceeds with the configured message flow. You can personalize the message based on the context of proactive engagement passed to the IVR agent. If you need to, you can choose to end the call instead of playing the message. Learn more in [Detect answering machines](/microsoft-copilot-studio/voice-configuration#detect-answering-machines).
 

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 04/07/2026
+ms.date: 04/09/2026
 ms.custom: bap-template
 ---
  
@@ -24,8 +24,8 @@ In representative-led preview dial mode, the representative controls whether to 
 1. The call starts based on configuration:
     - Manual start by the representative, or
     - Automatic start after countdown (when enabled).
-1. If the customer has multiple phone numbers, the representative can select the number to make the call to. The representative can also cancel the call if they determine there's no longer a need to place the call.
-1. During and after the call, the representative can add disposition codes, if enabled, to classify the call outcome.
+1. If the customer has multiple phone numbers, the representative can select the number to make the call. The representative can also cancel the call if they determine there's no longer a need to place the call.
+1. During and after the call, the representative can add disposition codes, if enabled, to classify the call outcome. Learn more in [Configure disposition codes](../administer/configure-disposition-codes.md).
 
 ## Representative-led predictive and progressive dial modes
 
@@ -33,9 +33,9 @@ In representative-led predictive and progressive modes, the system places calls 
 
 1. A notification appears on the representative desktop with the proactive engagement name and description, letting them know that they're going to be included in a proactive engagement session.
 1. The system puts the representative on a lobby call to reserve them while outbound calls are in progress. When a representative is in the lobby, they can continue to work on other tabs but aren't assigned any incoming calls.
-1. When a live customer answers, the call connects to the representative session with an audible cue. The desktop refreshes to load the details of the customer that was connected.
+1. When a live customer answers, the call connects to the representative session with an audible cue. The desktop refreshes to load the details of the customer who connects with the call.
 1. If no live customer is reached and if there are no calls to place, the system unreserves the representative.
-1. The representative handles the connected call and captures disposition codes, if enabled, before closing the session.
+1. The representative handles the connected call and adds disposition codes, if enabled, before closing the session.
 
 ## AI agent-led dial modes
 
@@ -45,7 +45,7 @@ In AI agent-led copilot, progressive, and predictive modes, the AI agent initiat
 1. When the AI agent determines human assistance is needed, it escalates to a representative. A notification appears on the representative's desktop showing the proactive engagement name and description
 1. The representative can **Accept** or **Reject** the request (in case of Copilot), and the request is **auto accepted** in case of predictive and progressive.
 1. If the representative accepts, they are placed on the call to begin engaging with the customer.
-1. If disposition codes are configured, the service representative can select disposition codes to record the interaction outcome. Learn more in [Configure disposition codes](../administer/configure-disposition-codes.md).
+1. If disposition codes are configured, the service representative can select disposition codes to record the interaction outcome.
 
 ### Do not contact
 

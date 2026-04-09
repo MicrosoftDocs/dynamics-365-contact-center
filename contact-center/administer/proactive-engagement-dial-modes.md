@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 04/06/2026
+ms.date: 04/09/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -38,9 +38,9 @@ The progressive dial mode places one call for every service representative who i
 
 The predictive dial mode uses a dynamic algorithm to initiate outbound calls before representatives become available, based on when they're forecasted to be free. The algorithm determines how many simultaneous calls to place by analyzing contact center metrics such as abandonment rate, average wait time, and queue targets. This approach maximizes representative use while minimizing customer wait times. The predictive dial mode supports two engagement types:
 
-- **AI agent led**: As soon as the customer answers the call, a Copilot agent is added to handle preliminary tasks such as verifying that the right person has answered and confirming their availability to talk. Once the preliminary validations are done, the service representative is added to continue the engagement. Using an AI agent to gather this information helps service representatives avoid calls that don't need their presence.
+- **AI agent-led**: As soon as the customer answers the call, a Copilot agent is added to handle preliminary tasks such as verifying that the right person has answered and confirming their availability to talk. Once the preliminary validations are done, the service representative is added to continue the engagement. Using an AI agent to gather this information helps service representatives avoid calls that don't need their presence.
 
-- **Service representative led**: Service representatives are reserved and ready before calls are placed. When the customer answers, the system checks whether the call reached a voicemail. If it did not, the reserved service representative is added to the call.
+- **Service representative-led**: Service representatives are reserved and ready before calls are placed. When the customer answers, the system checks whether the call reached a voicemail. If it did not, the reserved service representative is added to the call.
 
 > [!IMPORTANT]
 > The call connection time for service representative-led progressive and predictive dial modes is not compliant with the Telephone Consumer Protection Act (TCPA). Review applicable telecommunications regulations before using service representative-led modes.
@@ -50,7 +50,7 @@ The predictive dial mode uses a dynamic algorithm to initiate outbound calls bef
 Use the preview dial mode to identify a service representative from the specified queue and then notify them of the request to make the outbound call. The number of simultaneous calls made is dependent on the number of available representatives. If the representative accepts, then the system based on configuration gives the representative time to review the details and place the outbound call to customer when ready. Representative gets to speak to the customer if they pick up or leave a voicemail. This dial mode prioritizes customer experience over representative use, and is best suited for scenarios that require a personalized experience.
 
 > [!NOTE]
-> Timer and early media audio for CSRs for preview calls are available only with Teams Phone Extensibility (TPE) numbers.
+> Timer and early media audio for service representatives for preview calls are available only with Teams Phone Extensibility (TPE) numbers.
 
 ### Related information
 

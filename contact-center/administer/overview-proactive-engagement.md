@@ -6,14 +6,14 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 01/13/2026
+ms.date: 04/09/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
 # Overview of proactive engagement
 
-Today, customers want brands to anticipate their needs, provide personalized engagement, and offer effortless support. Businesses seek automation, increased loyalty, and dependability. Proactive engagement is the solution to create AI-driven proactive outbound experiences that enable enterprises to engage with their customers proactively on voice channels. You can integrate Dynamics 365 Contact Center and Customer Insights journeys for an AI-empowered multichannel proactive engagement.
+Today, customers want brands to anticipate their needs, provide personalized engagement, and offer effortless support. Businesses seek automation, increased loyalty, and dependability. Proactive engagement is the solution to create AI-driven proactive outbound experiences that enable enterprises to engage with their customers proactively on voice channels. You can integrate Dynamics 365 Contact Center and Customer Insights journeys for an AI-empowered conversational journey.
 
 ## What is proactive engagement?
 
@@ -21,15 +21,32 @@ By using a blend of AI agents and customer service representatives, you can reac
 
 :::image type="content" source="../media/overview-proactive-engagement.png" alt-text="Overview of proactive engagement." lightbox="../media/overview-proactive-engagement.png":::
 
-## How it works
+## Use cases
 
-1. Configure [proactive engagement](configure-proactive-engagement.md) in Dynamics 365 Contact Center.
+### CRM system workflows
 
-1. You can initiate the calls using one of the following options:
-   - Configure journeys using Dynamics 365 Customer Insights to determine contacts and optimal timings for interactions. Journeys are a visual, automated workflow that guides how your customer moves through a series of interactions. It orchestrates personalized experiences across channels like voice, email, SMS, push notifications, and more, based on user behavior and business logic.
-   - Integrate CCaaS API to make a call. The Dataverse CCaaS API integrates the contact center with existing campaign tools and supports callbacks.
+Use proactive engagement to automate workflows that trigger outbound calls based on defined conditions. Examples include case closure notifications, automated data collection, status updates, alerts, and mission-critical engagements. You can trigger these engagements in the following ways:
 
-1. Configure Copilot voice agents to handle preliminary tasks, such as gathering information and answering FAQs.
+- **CCaaS API or Power Automate flows**: Available natively with Dynamics 365 Contact Center. Use CCaaS APIs to integrate with non-Microsoft systems, or create a Power Automate flow triggered by changes to Dynamics 365 records such as a case status update.
+- **Customer Insights Journey triggers**: Use journey triggers to initiate calls when a record is created or updated. This option requires Dynamics 365 Customer Insights license.
+
+### AI agents-led proactive engagement
+
+Use AI agents-led proactive engagement to enable AI agents, such as case monitoring agents, fraud monitoring agents, and personal agents, to initiate on-demand customer engagements. The Dynamics 365 Contact Center MCP server (preview) provides tools that allow agents to schedule outbound voice calls  using customer details and time windows, without requiring manual API integrations.
+
+### Single-channel, single-step engagements
+
+A single-channel, single-step campaign runs one action on a contact segment with optional retry logic. It doesn't branch out based on outcomes or orchestrate follow-up actions across channels. You can configure and run these campaigns within Dynamics 365 Contact Center. Some examples are as follows:
+
+- **Appointment reminder calls**: A healthcare clinic reminds patients of upcoming appointments.
+- **Payment reminder messages**: A utility company notifies customers about overdue bills.
+- **Survey outreach**: A bank conducts a customer satisfaction survey by voice.
+
+### Deterministic multi-channel, multi-step journeys
+
+A multi-channel, multi-step journey orchestrates multiple sequential or conditional actions across one or more channels, with branching logic based on customer responses, behaviors, or outcomes. Journeys can span multiple days or weeks and support cross-channel orchestration across voice, email, SMS, and push notifications.
+
+You need Dynamics 365 Customer Insights apart from Dynamics 365 Contact Center. Learn about how to configure a journey using [Dynamics 365 Customer Insights](/dynamics365/customer-insights/journeys/proactive-engagement-how-to).
 
 ### Related information
 

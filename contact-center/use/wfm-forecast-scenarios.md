@@ -121,6 +121,6 @@ When you run a forecast scenario on demand, the following actions occur:
 - The system starts a background job to generate the forecast for the current scenario.
 - Forecast generation runs asynchronously and can take varying amounts of time depending on data volume and scenario configuration.
 - Supervisors can monitor progress and status in the job history.
-- After the background job completes, updated forecast outputs are avlable in forecast reports and views.
+- After the background job completes, updated forecast outputs are available in forecast reports and views.
 - Completion of the forecast run also triggers a capacity planning job to refresh staffing requirements based on the latest forecast output.
 

@@ -43,7 +43,7 @@ To view evaluation criteria, complete the following steps:
 
 ## Create evaluation criteria
 
-Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [best practices](#best-practices-to-create-evaluation-criteria) when you create evaluation criteria.
+Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best practices for evaluation criteria](#best-practices-for-evaluation-criteria) when you create evaluation criteria.
 
 1.  On the **Evaluation criteria** page, select **New**.
 

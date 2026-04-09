@@ -45,9 +45,9 @@ You can use the forecast reports for case and conversation volumes in the follow
 
 You can create either short-term or long-term forecasts.
 
-- **Short term**: This report is typically used for daily forecasts. It displays an intraday view of the actual and predicted case and conversation volumes in intervals of 15 minutes, for a time range of up to six weeks, depending on how many days of cases or conversations were created in the past.
+- **Short term**: This report is typically used for daily forecasts. It shows intraday actual and predicted case and conversation volumes in 15-minute intervals for up to six weeks. The available forecast range depends on how much historical case or conversation data exists.
 
-- **Long term**: This report displays the actual and predicted case and conversation volumes per day, for a time range of up to six months, depending on how many days of cases or conversations were created in the past.
+- **Long term**: This report shows the actual and predicted daily case and conversation volumes for up to six months. The available forecast range depends on how much historical case or conversation data exists.
 
 ## Create a short-term or long-term forecast report
 
@@ -114,7 +114,7 @@ When you open a report, the following visualizations are available:
 
 ### Run forecasts on demand
 
-As a supervisor, you can manually trigger a forecast run for a scenario by selecting **Run forecast scenario**. This capability supports planning and operational analysis scenarios where you need refreshed forecast results without wting for the next scheduled run.
+As a supervisor, you can manually trigger a forecast run for a scenario by selecting **Run forecast scenario**. This capability supports planning and operational analysis scenarios where you need refreshed forecast results without waiting for the next scheduled run.
 
 When you run a forecast scenario on demand, the following actions occur:
 

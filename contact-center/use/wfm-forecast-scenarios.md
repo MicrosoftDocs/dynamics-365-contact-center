@@ -105,7 +105,7 @@ When you open a report, the following visualizations are available:
 
 **Trend chart**: Shows the actual historical volumes from the past to the predicted volume in the future. The forecast is based on actual case and conversation records created in the past.
 
-**Detled view**: You can filter the data in the following ways:
+**Detailed view**: You can filter the data in the following ways:
    - **All**: Displays the actual and forecasted numbers across all channels and queues. 
    - **Channel**: Displays the actual and forecasted numbers, sliced by each channel. 
    - **Queue**: Displays the actual and forecasted numbers, sliced by each queue.

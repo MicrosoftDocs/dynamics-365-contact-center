@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 Outcomes represent the result of a proactive engagement call. The system stores outcomes as values in the proactive delivery entity, which you can reference for call status tracking. Customer Insights Journey uses outcomes to support granular branching options, so that you can define follow-up actions based on specific call results without extra configuration.
 
-Copilot Studio automatically sends context variables that match a variable name in the workstream to Dynamics 365 in real time. Customer Insights Journey can access these variables as disposition codes and for branching logic.
+Copilot Studio automatically sends context variables that match a variable name in the workstream to Dynamics 365 Contact Center in real time. Customer Insights Journey can access these variables as disposition codes and for branching logic.
 
 ## SIP-based outcomes
 

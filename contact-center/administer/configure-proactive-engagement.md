@@ -29,7 +29,7 @@ Proactive engagement in Dynamics 365 helps your organization improve customer in
 1. Set up the language and outbound behaviors. Learn more in [Configure the voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?tabs=enhancedvoice#configure-a-voice-channel).
 1. Configure [work distribution](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution). Optionally add an [AI agent](/dynamics365/customer-service/administer/create-workstreams#add-an-agent-to-a-workstream) to the workstream, and configure representative notifications. The following notification templates are available out of the box:
     - **Voice call - outbound agent dial - default**: For preview dial mode calls
-    - **Voice call - outbound pre-dial - default**: For predictive, progressive, and copilot dial mode calls
+    - **Voice call - outbound pre-dial - default**: For predictive, progressive, and Copilot dial mode calls
 
 > [!NOTE]
 >
@@ -242,7 +242,7 @@ On the **Frequency limits** page, set how often you can reach contacts and durin
    - **Business Phone**
    - **Home Phone**
 
-   If you select more than one number type, set the preferred contact order by dragging the rows. The system respects the quiet hours you set for each number type and doesn't place calls during those windows. You must set quiet hours for every phone number type you select before you can proceed.
+   If you select more than one number type, set the preferred contact order by using the arrows to move the phone numbers up or down. The system respects the quiet hours you set for each number type and doesn't place calls during those windows. You must set quiet hours for every phone number type you select before you can proceed.
 
 1. Under **Time zones**, select how to determine the time zone for each contact:
    - **Use customer's local time zone when available (defaults to UTC if not available)**: The system uses the time zone attribute on each contact record to evaluate quiet hours in that contact's local time. If no time zone is specified on the contact, UTC is used. You must explicitly provide the time zone value in the uploaded file or API payload - the system doesn't auto-detect or geo-infer time zones.

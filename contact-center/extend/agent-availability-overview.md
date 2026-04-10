@@ -60,11 +60,13 @@ The following APIs are available:
 - CCaaS_GetRepresentativeAvailabilityBeforeConversation: get the queue and service representative availability when the conversation with the customer hasn’t started. Learn more in [CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)
 
 
-## Make ca availability APIs Copilot Studio
+## Use availability APIs from Copilot Studio
 
 This procedure describes how to configure a Copilot Studio agent to call the **CCaaS Representative Availability APIs**. These APIs allow the Copilot agent to retrieve availability information from Dynamics 365 Contact Center.
 
 Before configuring the APIs, ensure that the Copilot Studio agent has been assigned the **Omnichannel Administrator** role. This role is required to successfully invoke the CCaaS Representative Availability APIs.
+
+### Setup APIs in Copilot Studio
 
 Do the following the steps in Copilot Studio for the required agent:
 
@@ -76,7 +78,7 @@ Do the following the steps in Copilot Studio for the required agent:
    - Select the authentication type as **OAuth**.
    - Select **Create**.
 1. Set the **Environment** to **Current**.
-2. Select one of the following action names, as required:
+2. Select one of the following APIs:
    - `CCaaS_GetRepresentativeAvailabilityForConversation`
    - `CCaaS_GetRepresentativeAvailabilityBeforeConversation`
 1. After selecting the action, update the **Advanced Parameters** as required.

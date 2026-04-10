@@ -1,40 +1,51 @@
 ---
-title: Use availabilty APIs
-description: Learn how to use the availabilty APIs in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
-ms.date: 09/10/2025
-ms.topic: how-to
+title: Use representative availabilty APIs
+description: Learn how to use the representative availabilty APIs in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
+ms.date: 04/30/2026
+ms.topic: concept
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.custom: bap-template
 ---
-# Use availabilty APIs
+# Use representative availabilty APIs
 
-Use the availability APIs to retrieve information about queue availability and customer service representative availability in Dynamics 365 Contact Center.
+Use the availability APIs to retrieve information about queue and customer service representative availability in Dynamics 365 Contact Center.
+
 You can use these APIs in scenarios such as:
 
-- Escalating ongoing conversations only to queues where service representatives are available.
-- Initiating conversations only when relevant queues are within operating hours or have available representatives
+- When agents have to escalate ongoing conversations only to queues where service representatives are available.
+- You want customers to initiate conversations only when relevant queues are within operating hours or have available representatives.
 
-The Availability APIs are channel‑agnostic and work consistently across all Dynamics 365 Contact Center channels, including voice, live chat, and digital messaging.
+The representative availability APIs are applicable for all channels, including voice, live chat, and digital messaging.
 
 ## Prerequisites
 
-- A license for Dynamics 365 Contact Center.
+- You have the Omnichannel administrator role assigned.
 
-## Setup token for API authorization
+### Setup token for API authorization
 
-Do the following steps to setup a token to authorize API calls from you application to the APIs:
+To interact with Dynamics 365 Contact Center APIs, you must generate an access token. This token acts as a secure credential to authenticate your application's identity and authorize it to access specific service resources.
 
-1. In the Azure portal, [register your application](/entra/identity-platform/quickstart-register-app#register-an-application) or go to **Entra ID** > **App registrations**, and then select your client application. Copy the tenant-id and the appid of the application.
-1. Select **API permissions**, then **Add a permission**. 
-1. In **Request API permissions**, select **Microsoft APIs** tab and then select **Dynamics CRM**.
-1. Select **Delegated permissions**. 
-1. Under **Select permissions**, select `user.impersonation`.
+Do the following steps in the [Azure portal](https://portal.azure.com):
+1. [register your application](/entra/identity-platform/quickstart-register-app#register-an-application) or go to **Entra ID** > **App registrations**, and then select your client application. Copy the following values:
+
+   - **Application (client) ID**
+   - **Directory (tenant) ID** 
+1. In your app registration, select **API permissions** > **Add a permission**.
+2. In **Request API permissions**, select **Microsoft APIs** tab and then select **Dynamics CRM**.
+3. Select **Delegated permissions**, and then select the `user_impersonation` scope.
 1. Select **Add permissions**.
-1. [Add a client secret for your application](/entra/identity-platform/how-to-add-credentials?tabs=client-secret#add-a-credential-to-your-application). Copy the client secret value. The value isn't displayed again once you leave the page.
-1. In Power Platform admin center, [create an application user](/power-platform/admin/manage-application-users?WT.mc_id=ppac_inproduct_settings#create-an-application-user) for your application and assign the Omnichannel administrator role.
-1. Run the following POST request generate a token. where tenant-ID is the Azure tenant-ID, client_id values are the values from the app registration and client secret is the appid that you copy from app registration. orgurl is the dynamics org.
+1. [Add a client secret for your application](/entra/identity-platform/how-to-add-credentials?tabs=client-secret#add-a-credential-to-your-application). 
+ **Important:** Copy the secret **Value** immediately. This value is encrypted and will not be displayed again once you leave the page.
+
+Run the following `POST` request to generate the token. Replace the following values:
+| Parameter | Value | Description |
+| :--- | :--- | :--- |
+| **tenant_id** | `<Your_Client_ID>` | The **Directory (tenant) ID** of the app.|
+| **client_id** | `<Your_Client_ID>` | The Application (client) ID assigned to your app in Microsoft Entra ID. |
+| **client_secret** | `<Your_Client_Secret>` | The secret string generated during app registration. |
+| **scope** | `https://<OrgUrl>/.default` | The URL of your Dynamics 365 environment, defining the requested permissions. |
 
   ```bash
    
@@ -50,43 +61,13 @@ Do the following steps to setup a token to authorize API calls from you applicat
      --form resource={OrgUrl}
 
   ```
-Microsoft Entra ID generates a token that you can use in the APIs.
 
-## Availability APIs
+The response returns a JSON object with the token which you can use in the Authorization Header of your availability API calls as a Bearer token.
+
+## Representative availability APIs
 
 The following APIs are available:
 
-- CCaaS_GetRepresentativeAvailabilityForConversation: Returns the queue and service representative availability during an active omnichannel conversation with a valid conversation ID. Learn more in [CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas_getrepresentativeavailabilityconversation.md)
-- CCaaS_GetRepresentativeAvailabilityBeforeConversation: get the queue and service representative availability when the conversation with the customer hasn’t started. Learn more in [CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)
-
-
-## Use availability APIs from Copilot Studio
-
-This procedure describes how to configure a Copilot Studio agent to call the **CCaaS Representative Availability APIs**. These APIs allow the Copilot agent to retrieve availability information from Dynamics 365 Contact Center.
-
-Before configuring the APIs, ensure that the Copilot Studio agent has been assigned the **Omnichannel Administrator** role. This role is required to successfully invoke the CCaaS Representative Availability APIs.
-
-### Setup APIs in Copilot Studio
-
-Do the following the steps in Copilot Studio for the required agent:
-
-
-1. Go to **Topics** and then select **Escalate** action.
-1. Add a new node to the topic.
-1. Select **Add a tool** and then select **Perform an unbound action in selected environment**. If no connections are available, do the following:
-   - Create a new connection.
-   - Select the authentication type as **OAuth**.
-   - Select **Create**.
-1. Set the **Environment** to **Current**.
-2. Select one of the following APIs:
-   - `CCaaS_GetRepresentativeAvailabilityForConversation`
-   - `CCaaS_GetRepresentativeAvailabilityBeforeConversation`
-1. After selecting the action, update the **Advanced Parameters** as required.
-2. Add the rules for the agent based on the API response.
-1. Save and publish.
-
-
-
-
-
+- **CCaaS_GetRepresentativeAvailabilityForConversation**: Returns the queue and service representative availability during an active omnichannel conversation with a valid conversation ID. Learn more in [CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas_getrepresentativeavailabilityconversation.md)
+- **CCaaS_GetRepresentativeAvailabilityBeforeConversation**: Returns the queue and service representative availability when the conversation with the customer hasn’t started. Learn more in [CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)
 

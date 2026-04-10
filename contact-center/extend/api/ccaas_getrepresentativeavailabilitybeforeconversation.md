@@ -33,7 +33,7 @@ You can also use this API when external systems need to proactively query availa
 
 | **Name** | **Description** |
 |----|----|
-| Authorization | Mandatory. Microsoft Entra ID bearer token for the API caller in the Contact Center instance's tenant. Learn more in []|
+| Authorization | Mandatory. Microsoft Entra ID bearer token for the API caller in the Contact Center instance's tenant. Learn more in [Setup token for API authorization](../agent-availability-overview.md)|
 
 ## Response
 

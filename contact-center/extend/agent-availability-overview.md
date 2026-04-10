@@ -10,17 +10,15 @@ ms.custom: bap-template
 ---
 # Use availabilty APIs
 
-Use the availability APIs, **CCaaS_GetRepresentativeAvailabilityForConversation** and **CCaaS_GetRepresentativeAvailabilityBeforeConversation**, to get information on queue and customer service representative availability.
+Use the availability APIs to retrieve information about queue availability and customer service representative availability in Dynamics 365 Contact Center.
+You can use these APIs in scenarios such as:
 
-You can use these APIs to check availability of queues and customer service representatives (service representatives) in scenarios such as:
+- Escalating ongoing conversations only to queues where service representatives are available.
+- Initiating conversations only when relevant queues are within operating hours or have available representatives
 
-- Escalate ongoing conversations to queues with available representatives
+The Availability APIs are channel‑agnostic and work consistently across all Dynamics 365 Contact Center channels, including voice, live chat, and digital messaging.
 
-- Initiate conversations only when relevant queues are within operating hours or have representatives available
-
-The Availability APIs work with all the Dynamics 365 Contact Center channels, including voice, live chat, and digital messaging.
-
-# Prerequisites
+## Prerequisites
 
 - A license for Dynamics 365 Contact Center.
 
@@ -56,13 +54,13 @@ Microsoft Entra ID generates a token that you can use in the APIs.
 
 ## Availability APIs
 
-CCaaS_GetRepresentativeAvailabilityForConversation: Returns the queue and service representative availability during an active omnichannel conversation with a valid conversation ID. Learn more in []
+The following APIs are available:
 
-CCaaS_GetRepresentativeAvailabilityBeforeConversation: get the queue and service representative availability when the conversation with the customer hasn’t started. Learn more in []
+- CCaaS_GetRepresentativeAvailabilityForConversation: Returns the queue and service representative availability during an active omnichannel conversation with a valid conversation ID. Learn more in [CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas_getrepresentativeavailabilityconversation.md)
+- CCaaS_GetRepresentativeAvailabilityBeforeConversation: get the queue and service representative availability when the conversation with the customer hasn’t started. Learn more in [CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)
 
 
-
-## Configure CCaaS Representative Availability APIs in Copilot Studio
+## Make ca availability APIs Copilot Studio
 
 This procedure describes how to configure a Copilot Studio agent to call the **CCaaS Representative Availability APIs**. These APIs allow the Copilot agent to retrieve availability information from Dynamics 365 Contact Center.
 

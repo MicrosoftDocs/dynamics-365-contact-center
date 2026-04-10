@@ -33,5 +33,5 @@ Do the following steps in Copilot Studio:
    - `CCaaS_GetRepresentativeAvailabilityForConversation`
    - `CCaaS_GetRepresentativeAvailabilityBeforeConversation`
 1. After selecting the action, update the **Advanced Parameters** as required.
-2. Add the rules for the agent based on the API response. you can use the **Outputs** from this node to create conditional branching logic. For example, if the API returns that no agents are available, you can redirect the user to a "Leave a Message" topic instead of escalating the conversation.
+2. Add the rules for the agent based on the API response. you can use the **Outputs** from this node to create conditional branching logic. For example, if the API returns that no service representatives are available, you can redirect the user to a "Leave a Message" topic instead of escalating the conversation.
 1. Save and publish.

@@ -244,7 +244,7 @@ When limits are exceeded:
 
 **Extended criteria**
 
-Extended criteria introduces a parent–child relationship between criteria.
+Creating extended criteria introduces a parent–child relationship between source criteria and extended criteria.
 
 - Question limits: Question limits are enforced independently for parent and child criteria, and up to 50 questions each.
 - Character limits: Recommended character limits (for example, 90,000 characters) are calculated by using both parent and child content combined.

@@ -1,7 +1,7 @@
 ---
 title: Use representative availability APIs from Copilot Studio
 description: Learn how to use the representative availability APIs from Copilot Studio.
-ms.date: 09/10/2025
+ms.date: 04/30/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham

@@ -240,7 +240,7 @@ The recommended character limit updates dynamically when you change the selected
 When limits are exceeded:
 
 - A warning banner appears, indicating that evaluation accuracy might be affected. You can still save and use the criteria.
-- An error message appears if content exceeds 700,000 characters, that prevents you from saving.
+- An error message appears if content exceeds 700,000 characters, which prevents you from saving the criteria.
 
 **Extended criteria**
 

@@ -78,7 +78,7 @@ Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best pra
     - **AI agent mode**: All questions must be AI-enabled (manual editing isn't allowed).
     - **AI assisted mode**: At least one question must be AI-enabled.
     
-    This applies to both on-demand evaluations and evaluation plans.
+    This requirement applies to both on-demand evaluations and evaluation plans.
 
     1.  Depending on the answer type, select **Scoring enabled** to add scoring. Turn off the scoring toggle if you don't want to create a criteria with scoring.
 

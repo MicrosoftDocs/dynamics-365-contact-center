@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes in Dynamics 365 Contact Center and Customer Service.
-ms.date: 02/27/2026
+ms.date: 04/09/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -40,58 +40,14 @@ You can use the forecast reports for case and conversation volumes in the follow
 ## Prerequisites
 
 - Your administrator assigned a role to you that has **Read** privileges on the **msdyn_dataanalyticsreport_forecast** table. 
-- Before you use AI-based forecasting (preview), ensure:
-    - Your administrator [enabled AI-based forecasting](../administer/wfm-configure-forecast-scenarios.md#enable-ai-based-forecasting-preview) in the admin setup for forecast scenarios.
-    - You have the necessary AI credits available for your organization.
-    - You understand that autorefresh is disabled for AI-based forecasting. Forecasts must be run manually.
 
 ## Forecast scenario types
 
 You can create either short-term or long-term forecasts.
 
-- **Short term**: This report is typically used for daily forecasts. It displays an intraday view of the actual and predicted case and conversation volumes in intervals of 15 minutes, for a time range of up to six weeks, depending on how many days of cases or conversations were created in the past.
+- **Short term**: This report is typically used for daily forecasts. It shows intraday actual and predicted case and conversation volumes in 15-minute intervals for up to six weeks. The available forecast range depends on how much historical case or conversation data exists.
 
-- **Long term**: This report displays the actual and predicted case and conversation volumes per day, for a time range of up to six months, depending on how many days of cases or conversations were created in the past.
-
-## AI-based forecasting (preview)
-
-AI-based forecasting uses artificial intelligence to improve forecast accuracy by dynamically selecting the best forecasting method for your organization. Instead of relying on a single static algorithm, AI evaluates historical patterns, seasonality, and available insights to determine the most suitable model for your data.
-
-### Why use AI-based forecasting?
-
-As a supervisor, you can rely on AI to intelligently select the most accurate forecasting model for your operational data, remove guesswork, and reduce manual configuration. The system uses historical and contextual data to improve forecast accuracy and provide consistent service levels in dynamic environments. AI-based forecasting can help you optimize your staffing levels and reduce operational costs.
-
-### Key behaviors
-
-- AI automatically selects the best-fit model for your scenario.
-- Autorefresh is turned off. You must run forecasts manually.
-- Job history includes an **AI reasoning** tab that explains why a method was selected.
-
-### Create an AI-based forecast report
-
-To use AI-based forecasting:
-
-1. Open the forecast scenario details for the scenario you want to configure.
-1. Review refresh settings.
-1. Select **Run forecast scenario** to generate results.
-1. Check ****, and then review the insights on the **AI Reasoning** tab.
-
-### About the AI Reasoning tab
-
-The **AI Reasoning** tab provides transparency into how the system selects the forecasting method. It includes:
-- **Model selection criteria**: Lists the factors considered, such as historical trends, seasonality, and data completeness.
-- **Confidence score**: Indicates the AI’s confidence level in the selected method.
-- **Key insights**: Explains why the selected model is anticipated to outperform the other options.
-- **Data anomalies**: Notes any irregularities in historical data that affected the decision.
-
-## Best practices for selecting forecasting options
-
-| Scenario                                      | Recommended option           |
-|----------------------------------------------|-----------------------------|
-| Stable historical patterns with minimal variability | Default forecasting – uses a fixed time-series model and supports autorefresh for predictable environments. |
-| Dynamic environments with frequent changes in demand | AI-based forecasting – intelligently selects the most accurate model based on historical and contextual data. |
-| Need for transparency and insights into model selection | AI-based forecasting – reviews the **AI Reasoning** tab for confidence scores and decision factors. |
-| Limited time for manual configuration    | AI-based forecasting – reduces guesswork and minimizes setup effort. |
+- **Long term**: This report shows the actual and predicted daily case and conversation volumes for up to six months. The available forecast range depends on how much historical case or conversation data exists.
 
 ## Create a short-term or long-term forecast report
 

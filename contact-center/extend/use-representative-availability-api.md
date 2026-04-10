@@ -9,7 +9,7 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Use Representative Availability APIs in a Copilot Studio Agent
+# Use representative availability APIs in a Copilot Studio agent
 
 You can trigger the representative availability APIs from your Copilot Studio agent to retrieve customer service representative and queue availability information before escalating the conversation to a service representative. By determining availability before escalating, you improve the customer experience and reduce queue abandonment.
 

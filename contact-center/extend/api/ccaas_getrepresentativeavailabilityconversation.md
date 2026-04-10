@@ -26,43 +26,13 @@ For example, when a customer chatting with an IVR or chat agent requests escalat
 ### Version
 1.0
 
-## Request headers
+### Request headers
 
 | **Name** | **Description** |
 |----|----|
 | Authorization | Mandatory. Microsoft Entra ID bearer token for the API caller in the Contact Center instance's tenant. Learn more in [Setup token for API authorization](../agent-availability-overview.md)|
 
-
-## Response
-
-If successful, this method returns a 200 OK response code. The method returns the following status codes:
-
-| **HTTP Status** | **Description**                      |
-|-----------------|--------------------------------------|
-| 400             | Bad Request (Wrong input parameters) |
-| 401             | Unauthorized                         |
-| 404             | Resource not found                   |
-| 429             | Rate limit (Too many requests)       |
-| 405             | API not allowed                      |
-| 500             | Internal Server Error                |
-
-## Response values
-
-| **Name** | **Type** | **Description** |
-|---|---|---|
-| queueId | String | The target queue where the request is routed based on routing rule configuration and input data such as the entity values and context that are part of routing rule. |
-| isQueueAvailable | Boolean | Displays:- TRUE if the queue is within operating hours.- FALSE if the queue is outside operating hours. |
-| StartTimeOfNextOperatingHour | DateTime | The start time (UTC) of operating hours for the queue if it’s currently outside operating hours. Returns 01-01-0001 during operating hours. |
-| EndTimeOfNextOperatingHour | DateTime | The time (UTC) when operating hours end for the queue, if it’s currently outside operating hours. Returns 01-01-0001 during operating hours. |
-| nexttransitiontime | DateTime | The time (UTC) when the queue is operational again if it's outside operating hours. During operating hours, displays when the queue becomes non-operational. |
-| positionInQueue | Number | Position in queue for a customer waiting behind others in the same queue. |
-| isAgentAvailable | Boolean | Displays:- TRUE if service representatives in the queue are currently available to take requests based on the routing and assignment rules for workstream. The API also returns true if an agent is linked to the workstream or queue. We recommend that you don’t use this API when an agent is added to the workstream or queue.- FALSE if service representatives aren't available to take requests. |
-| averageWaitTime | Number | Average wait time in minutes for customers in the target queue. |
-| AverageWaitTimeInSeconds | Numbers | Average wait time in seconds for customers in the target queue. |
-
-
-
-## Sample request body
+### Sample request body
 
 | **Description** | **Sample request** |
 |---|---|
@@ -90,9 +60,38 @@ If successful, this method returns a 200 OK response code. The method returns th
 >   ```
 >
 > - `isDisplayable` indicates if the context item is displayed on the screen. This value is either True or False.
-> - `datatype` can only be Text = 192350000 or Integer = 192350001.
+> - `datatype` can only be Text = 192350000 or Integer = 192350001
 
-## Sample Response Body
+
+## Response
+
+If successful, this method returns a 200 OK response code. The method returns the following status codes:
+
+| **HTTP Status** | **Description**                      |
+|-----------------|--------------------------------------|
+| 400             | Bad Request (Wrong input parameters) |
+| 401             | Unauthorized                         |
+| 404             | Resource not found                   |
+| 429             | Rate limit (Too many requests)       |
+| 405             | API not allowed                      |
+| 500             | Internal Server Error                |
+
+### Response values
+
+| **Name** | **Type** | **Description** |
+|---|---|---|
+| queueId | String | The target queue where the request is routed based on routing rule configuration and input data such as the entity values and context that are part of routing rule. |
+| isQueueAvailable | Boolean | Displays:- TRUE if the queue is within operating hours.- FALSE if the queue is outside operating hours. |
+| StartTimeOfNextOperatingHour | DateTime | The start time (UTC) of operating hours for the queue if it’s currently outside operating hours. Returns 01-01-0001 during operating hours. |
+| EndTimeOfNextOperatingHour | DateTime | The time (UTC) when operating hours end for the queue, if it’s currently outside operating hours. Returns 01-01-0001 during operating hours. |
+| nexttransitiontime | DateTime | The time (UTC) when the queue is operational again if it's outside operating hours. During operating hours, displays when the queue becomes non-operational. |
+| positionInQueue | Number | Position in queue for a customer waiting behind others in the same queue. |
+| isAgentAvailable | Boolean | Displays:- TRUE if service representatives in the queue are currently available to take requests based on the routing and assignment rules for workstream. The API also returns true if an agent is linked to the workstream or queue. We recommend that you don’t use this API when an agent is added to the workstream or queue.- FALSE if service representatives aren't available to take requests. |
+| averageWaitTime | Number | Average wait time in minutes for customers in the target queue. |
+| AverageWaitTimeInSeconds | Numbers | Average wait time in seconds for customers in the target queue. |
+
+
+### Sample response
 
 ```json
 {

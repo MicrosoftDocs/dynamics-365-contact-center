@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 04/02/2026
+ms.date: 04/10/2026
 ms.custom: bap-template 
 ---
 
@@ -43,7 +43,7 @@ To view evaluation criteria, complete the following steps:
 
 ## Create evaluation criteria
 
-Refer to the [best practices](#best-practices-to-create-evaluation-criteria) when you create evaluation criteria.
+Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best practices for evaluation criteria](#best-practices-for-evaluation-criteria) when you create evaluation criteria.
 
 1.  On the **Evaluation criteria** page, select **New**.
 
@@ -78,7 +78,7 @@ Refer to the [best practices](#best-practices-to-create-evaluation-criteria) whe
     - **AI agent mode**: All questions must be AI-enabled (manual editing isn't allowed).
     - **AI assisted mode**: At least one question must be AI-enabled.
     
-    This applies to both on-demand evaluations and evaluation plans.
+    This requirement applies to both on-demand evaluations and evaluation plans.
 
     1.  Depending on the answer type, select **Scoring enabled** to add scoring. Turn off the scoring toggle if you don't want to create a criteria with scoring.
 
@@ -192,7 +192,7 @@ After you create a source criteria for your business unit, you can extend the cr
 
 1. Select **Save**, once you're done making edits.
 
-## Best practices to create evaluation criteria
+## Best practices for evaluation criteria
 
 - **Criteria-level instructions:** Define instructions that apply to the entire evaluation criteria. Include comprehensive goals, expectations, and constraints to guide the behavior of the Quality Evaluation Agent across all questions and answers.
 
@@ -206,6 +206,55 @@ After you create a source criteria for your business unit, you can extend the cr
 
 - **Question text**: Define each evaluation question to assess a single, well-defined objective to help ensure clarity and direct alignment with the answer options.
 
+## Limitations for evaluation criteria
+
+**Question limits**
+
+- By default, a maximum of 50 questions is allowed per evaluation criteria. The limit applies to the entire criteria, not per section.
+- You can distribute questions across sections in any combination, as long as the total doesn't exceed 50.
+- When the limit is reached:
+    - You can’t add or duplicate questions.
+    - You can’t add or duplicate sections that would cause the total to exceed the limit.
+
+
+**Character limits for criteria content**
+
+The following per-field character limits apply to all instruction types (criteria-level, question-level, and option-level):
+
+|Field | Limit  |
+|---------|---------|
+|Instructions     |     2,000 characters     |
+|Question text    |  300 characters       |
+|Option text    |   100 characters      |
+
+**Character limits by language**
+
+The system monitors the total character count and displays a warning when content exceeds the recommended limit for the selected language. Recommended limits vary by language category:
+
+- 90,000 characters for most languages.
+- 60,000 characters for some languages, for example, Arabic.
+- 30,000 characters for languages with higher token expansion.
+
+The recommended character limit updates dynamically when you change the selected language. For example, switching from English to Arabic reduces the limit from 90,000 to 60,000 characters. The system evaluates limits based on the language selected in the criteria settings.
+
+When limits are exceeded:
+
+- A warning banner appears, indicating that evaluation accuracy might be affected. You can still save and use the criteria.
+- An error message appears if content exceeds 700,000 characters, which prevents you from saving the criteria.
+
+**Extended criteria**
+
+Creating extended criteria introduces a parent–child relationship between source criteria and extended criteria.
+
+- Question limits: Question limits are enforced independently for parent and child criteria, and up to 50 questions each.
+- Character limits: Recommended character limits (for example, 90,000 characters) are calculated by using both parent and child content combined.
+
+|Limit type  | Behavior  |
+|---------|---------|
+|Question count     |  50 total per criteria        |
+|Recommended size    |   Language‑specific warning  appears   |
+|Hard size limit    |   Approximately 700,000 characters; saving is blocked      |
+|Instruction limit    |    2,000 characters    |
 
 ## Related information
 

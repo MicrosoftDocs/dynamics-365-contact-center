@@ -40,12 +40,13 @@ Do the following steps in the [Azure portal](https://portal.azure.com):
  **Important:** Copy the secret **Value** immediately. This value is encrypted and will not be displayed again once you leave the page.
 
 Run the following `POST` request to generate the token. Replace the following values:
-| Parameter | Value | Description |
-| :--- | :--- | :--- |
-| **tenant_id** | `<Your_Client_ID>` | The **Directory (tenant) ID** of the app.|
-| **client_id** | `<Your_Client_ID>` | The Application (client) ID assigned to your app in Microsoft Entra ID. |
-| **client_secret** | `<Your_Client_Secret>` | The secret string generated during app registration. |
-| **scope** | `https://<OrgUrl>/.default` | The URL of your Dynamics 365 environment, defining the requested permissions. |
+
+| Value | Description |
+| :--- | :--- |
+| `tenant-Id` | The **Directory (tenant) ID** of the app.|
+| `client_id` | The Application (client) ID assigned to your app in Microsoft Entra ID. |
+| `client_secret` | The secret string generated during app registration. |
+| `resource` | The URL of your Dynamics 365 environment, defining the requested permissions. |
 
   ```bash
    

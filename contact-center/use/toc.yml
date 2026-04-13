@@ -192,6 +192,12 @@
           href: /dynamics365/customer-service/use/oc-conversation-state?context=/dynamics365/contact-center/context/use-context
         - name: View call options and visual engagement in live chat
           href: /dynamics365/customer-service/use/call-options-visual-engagement?context=/dynamics365/contact-center/context/use-context          
+      - name: Proactive engagement
+        items:
+        - name: Overview of proactive engagement
+          href: ../administer/overview-proactive-engagement.md?context=/dynamics365/contact-center/context/use-context
+        - name: How proactive engagement works
+          href: how-proactive-engagement-works.md
       - name: Agent productivity tools
         items: 
         - name: Productivity pane in Copilot Service workspace
@@ -414,9 +420,11 @@
         href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/use-context
       - name: Responsible AI FAQs for NLUs in AI agents
         href: ../implement/natural-language-ai-faq.md?context=/dynamics365/contact-center/context/use-context
-      - name: Constrained speech recognition
+      - name: Transparency note
         items:
-        - name: Transparency note
+        - name: Real-time voice agents
+          href: ../implement/transparency-note-real-time-voice-agents.md?context=/dynamics365/contact-center/context/use-context
+        - name: Constrained speech recognition
           href: ../implement/transparency-note.md?context=/dynamics365/contact-center/context/use-context
     - name: Resources
       items:

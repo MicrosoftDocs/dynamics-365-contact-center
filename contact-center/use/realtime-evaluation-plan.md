@@ -54,7 +54,7 @@ To create a real-time evaluation plan:
 
 1. In the **Conditions** section, add the workstreams for which you want to enable real-time evaluation.
 
-1. In the **Assign Evaluation** section, for **Evaluation method**, select **AI assisted**.
+1. In the **Assign Evaluation** section, for **Evaluation method**, select **AI agent**.
     
 1.  Select **Save**.
 

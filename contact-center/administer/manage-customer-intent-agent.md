@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 11/17/2025
+ms.date: 04/14/2026
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template
@@ -26,7 +26,7 @@ Use the information in this article to manage the intents in Copilot Service adm
 ## Prerequisites
 
 - [Set up a pay-as-you-go plan](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
-- The Intent Manager role to create instructions.
+- The Intent Manager role to create instructions and the CSR Manager role.
 
 ## Enable Customer Intent Agent
 
@@ -174,7 +174,6 @@ You can edit or delete instructions for a line of business, intent groups, or in
 
 Tag instructions with specific syntax to apply them in certain channels, or for self-service (unsupervised) or assisted-service (supervised) scenarios. Tags work for organizational, intent group, and intent instructions.
 
-
 |Tag |Definition |
 |---------|---------|
 |{{text}} instruction 1 {{/text}}     |    Instruction applied to text channel for both self-service and assisted service.     |
@@ -183,12 +182,11 @@ Tag instructions with specific syntax to apply them in certain channels, or for 
 |{{supervised}} instruction 4 {{/supervised}}     |   Instruction applied to all channels for assisted service only.     |
 |{{unsupervised}} instruction 5 {{/unsupervised}}    |     Instruction applied to all channels for self-service only.    |
 
-
 ### How to write clear instructions
 
 These guidelines define how intent-level, group-level, and organizational-level instructions should be written to ensure clarity, consistency, and alignment with the agent’s goals.
 
-**Organizational or Line of Business instruction guidelines**
+**Guidelines for organization or line of business instruction**
 
 |Guidelines |Why it matters   |Example   |
 |---------|---------|---------|
@@ -197,12 +195,11 @@ These guidelines define how intent-level, group-level, and organizational-level 
 |Define general behavioral boundaries and escalation policies.    |  Ensures compliance and predictable outcomes.       |   "If resolving the issue requires judgement, verification, or policy exceptions, summarize context and hand off to a human agent."     |
 |Include a glossary of common terms and abbreviations.    | Reduces ambiguity across regions or departments.        |   "'SHS' = Successful Handling Score"; "‘PSS’ = Product Support Specialist;"      |
 
-**Intent group instruction guidelines**
+**Guidelines for intent group instruction**
 
 |Guidelines  |Why it matters |Example   |
 |---------|---------|---------|
 |Define complex disambiguation logic across related intents.    |   Helps the agent handle overlapping or multi-intent requests effectively.      |   Define complex disambiguation logic across related intents.	Helps the agent handle overlapping or multi-intent requests effectively.	"If a user mentions both 'cancel order' and 'return product,' prioritize return flow first, then confirm if cancellation is still needed."      |
-
 
 **Intent instruction guidelines**
 

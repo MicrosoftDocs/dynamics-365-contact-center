@@ -101,7 +101,7 @@ The following table summarizes the Copilot features supported for a configured k
 
 The **Customer Support** agent settings allow you to define how Copilot interacts with representatives when they use the **Ask a question** capability. **Ask a question** is available to representatives after you enable Copilot and configure instructions, knowledge sources, and prompts for the **Customer Support** agent. Representatives can ask questions conversationally, and Copilot answers the questions based on the internal knowledge base sources.
 
-To define **Customer Support** settings, perform the following steps:
+To configure **Customer Support** settings, perform the following steps:
 1. In the **Agents within Copilot** section, select **Manage** next to **Customer Support**.
 1. Configure the required Copilot features for representatives across the available tabs:
    - **Overview**

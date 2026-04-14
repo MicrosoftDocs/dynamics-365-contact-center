@@ -13,6 +13,8 @@ ms.collection: bap-ai-copilot
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
+Conversation orchestration keeps every conversation actively managed throughout the conversation lifecycle from initiation through resolution. Instead of applying fixed rules at different stages of conversation journey, conversation orchestration monitors each conversation as the conditions evolve&mdash;increase in wait time, filling up of the queues, service representatives going offline&mdash; and responds automatically with the right action. Administrators define the conversation orchestration logic using natural-language playbooks, and conversation orchestration handles the .
+
 Conversation orchestration enables you to create intelligent, AI-driven routing and prioritization policies using natural language. You can define how to prioritize conversations, when to run overflow actions, and how work items are routed&mdash;all through an intuitive playbook-based configuration experience.
 
 > [!IMPORTANT]

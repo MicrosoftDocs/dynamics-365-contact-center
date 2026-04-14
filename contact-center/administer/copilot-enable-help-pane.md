@@ -30,7 +30,7 @@ To enable the Copilot features in Copilot Service admin center, perform the foll
 
 1. In **Support experience**, select **Productivity**.
 1. For **Copilot settings**, select **Manage**.
-1. Select either or both of the following check boxes:
+1. Select one or both of the following options.
    - **Copilot immersive**: Lets representatives use AI in a conversational, focused experience to resolve cases.
    - **Copilot side pane**: Displays Copilot in the side pane so representatives can chat with AI using knowledge sources.
   

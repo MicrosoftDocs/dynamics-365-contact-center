@@ -92,6 +92,8 @@
             href: evaluation-criteria.md
           - name: Use evaluation plan
             href: evaluation-plan.md
+          - name: Use real-time evaluation plan
+            href: realtime-evaluation-plan.md
           - name: Use on-demand evaluation
             href: on-demand-evaluation.md
           - name: Use evaluations

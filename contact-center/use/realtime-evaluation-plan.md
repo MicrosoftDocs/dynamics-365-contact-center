@@ -23,7 +23,7 @@ Supervisors use the evaluation framework to define the evaluation criteria and c
 
 ## Prerequisites
 
-- Assign the Quality Manager, Quality Evaluator, Quality Administrator and the Omnichannel Supervisor roles. Learn more in [Assign roles and enable users](/dynamics365/customer-service/implement/add-users-assign-roles).
+- Assign the Quality Manager, Quality Evaluator, Quality Administrator, and the Omnichannel Supervisor roles. Learn more in [Assign roles and enable users](/dynamics365/customer-service/implement/add-users-assign-roles).
 - Enable [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
 - Assign the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges).
 - Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
@@ -48,7 +48,7 @@ To create a real-time evaluation plan:
 
     - **Plan name**: Enter plan name.
     - **Description**: Enter description.
-    - **Record type**: Select **record type** as **Conversations**.
+    - **Record type**: Select **Conversations**.
      
 1. In the **Frequency** section, for **Frequency type**, select **Real-Time**.
 
@@ -61,7 +61,7 @@ To create a real-time evaluation plan:
 Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations](ongoing-quality-evaluation-agent-conversations.md).
 
 > [!NOTE]
-> Simulation can't' be used with real-time evaluation plan for ongoing conversations when new criteria are created.
+> Simulation can't be used with real-time evaluation plan for ongoing conversations when new criteria are created.
 
 ## Activate, pause, resume, or delete evaluation plans
 

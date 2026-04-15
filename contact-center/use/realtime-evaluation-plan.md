@@ -23,7 +23,7 @@ Supervisors use the evaluation framework to define the evaluation criteria and c
 
 ## Prerequisites
 
-- Assign the Quality Manager, Quality Evaluator, Quality Administrator and the Omnichannel Supervisor roles. Learn more in [Assign roles and enable users](/dynamics365/customer-service/implement/add-users-assign-roles).
+- Assign the Quality Manager, Quality Evaluator, Quality Administrator, and the Omnichannel Supervisor roles. Learn more in [Assign roles and enable users](/dynamics365/customer-service/implement/add-users-assign-roles).
 - Enable [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
 - Assign the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges).
 - Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).

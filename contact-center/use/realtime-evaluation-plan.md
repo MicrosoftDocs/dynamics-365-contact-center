@@ -61,7 +61,7 @@ To create a real-time evaluation plan:
 Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations](ongoing-quality-evaluation-agent-conversations.md).
 
 > [!NOTE]
-> Simulation can't' be used with real-time evaluation plan for ongoing conversations when new criteria are created.
+> Simulation can't be used with real-time evaluation plan for ongoing conversations when new criteria are created.
 
 ## Activate, pause, resume, or delete evaluation plans
 

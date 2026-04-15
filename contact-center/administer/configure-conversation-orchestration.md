@@ -13,29 +13,27 @@ ms.collection: bap-ai-copilot
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Conversation orchestration keeps every conversation actively managed throughout the conversation lifecycle from initiation through resolution. Instead of applying fixed rules at different stages of conversation journey, conversation orchestration monitors each conversation as the conditions evolve&mdash;increase in wait time, filling up of the queues, service representatives going offline&mdash; and responds automatically with the right action. Administrators define the conversation orchestration logic using natural-language playbooks, and conversation orchestration handles the .
+Conversation orchestration keeps every conversation actively managed throughout the conversation lifecycle from initiation through resolution. Instead of applying fixed rules at different stages of conversation journey, conversation orchestration monitors each conversation as the conditions evolve&mdash;increase in wait time, filling up of the queues, service representatives going offline&mdash; and responds automatically with the right action. Administrators define the conversation orchestration logic using natural-language playbooks, and conversation orchestration handles the execution.
 
-Conversation orchestration enables you to create intelligent, AI-driven routing and prioritization policies using natural language. You can define how to prioritize conversations, when to run overflow actions, and how work items are routed&mdash;all through an intuitive playbook-based configuration experience.
+In preview release, conversation orchestration is available for voice and live chat channels only .
 
-> [!IMPORTANT]
-> In preview, conversation orchestration is available for voice and live chat channels only.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
 - Specific licensing requirements apply to configure and use conversation orchestration in Dynamics 365 Contact Center. Learn more in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 - System administrator or Omnichannel administrator role.
 - Unified routing enabled for your environment.
-- At least one queue configured for voice or messaging channels.
+- At least one queue and workstream is configured for voice or messaging channels.
 - A voice or messaging channel is configured.
 
 ## Understand playbooks
 
-A playbook is a set of rules that define how to handle conversations for specific scenarios. Each playbook consists of:
+Configure playbooks per scenario through guided templates that keep instructions focused and reliable. A playbook consists of a trigger event and a set of conditions and actions to run when the trigger event occurs.
 
 - **Queues**: The queues for which the playbook applies.
 - **Trigger event**: The event that initiates the playbook, such as a conversation waiting in queue or conversation transferred.
+- **Channel**: The channel that you select in the **Queues** dialog. The context variables that appear are based on the selected channel. If you update channels for draft playbook, then you have to again update the applicable context variables and the corresponding prompt.
 - **Conditions**: Business rules based on context variables, such as customer tier or country/region.
 - **Actions**: The outcomes when conditions are met, such as increasing priority or transferring to an overflow queue.
 
@@ -48,7 +46,7 @@ A playbook can have one of the following statuses.
 
 ## Access conversation orchestration playbooks
 
-In Copilot Service admin center, go to **Customer support** > **Conversation Orchestration (Preview)**. The conversation orchestration home page displays available playbook templates organized by scenario.
+In Copilot Service admin center, go to **Customer support** > **Conversation Orchestration (Preview)**. The **Conversation orchestration (Preview)** > **New** page displays available playbook templates organized by scenario.
 
 ## Create and manage playbooks
 

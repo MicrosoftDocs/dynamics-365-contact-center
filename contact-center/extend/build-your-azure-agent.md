@@ -4,7 +4,7 @@ description: Learn how to build a custom Azure agent and integrate it with Dynam
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 04/10/2026
+ms.date: 04/15/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ---
@@ -428,15 +428,13 @@ private async Task OnMessageActivityAsync(
 }
 ```
 
-### Test escalation and end conversation scenarios
-
-#### Test escalation
+### Test escalation
 
 1. Start a chat via live chat widget.
 1. Type "I need an agent".
 1. Verify the conversation transfers to a service representative queue.
 
-#### Test end conversation
+### Test end conversation
 
 1. Start a chat.
 1. Type "Bye".

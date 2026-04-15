@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 04/13/2026
+ms.date: 04/15/2026
 ms.custom: bap-template
 ---
 
@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 **Conversations**: [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
 
-Organizations use supervisor monitoring of representatives and AI agents to maintain oversight and brand integrity during AI-driven interactions. Supervisors enable monitoring, conduct real-time consults, and respond to alerts to intervene when necessary. This approach reduces operational load, improves customer experience, and accelerates the journey toward full automation without compromising service quality.
+Supervisors monitor representatives and AI agents to maintain oversight and brand integrity by enabling monitoring, conducting real-time consultations, and responding to alerts to intervene when necessary. This approach minimizes operational effort, improves customer experience, and accelerates the transition to full automation while maintaining service quality.
 
 By combining real-time monitoring with configurable evaluation plans, the real-time Quality Evaluation Agent empowers organizations to enhance customer satisfaction, improve agent performance, and maintain compliance standards across diverse scenarios. 
 
@@ -25,7 +25,6 @@ Supervisors use the evaluation framework to define the evaluation criteria and c
 
 - Assign the Quality Manager, Quality Evaluator, Quality Administrator, and the Omnichannel Supervisor roles. Learn more in [Assign roles and enable users](/dynamics365/customer-service/implement/add-users-assign-roles).
 - Enable [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
-- Assign the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges).
 - Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - Provide consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
 
@@ -61,7 +60,7 @@ To create a real-time evaluation plan:
 Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations](ongoing-quality-evaluation-agent-conversations.md).
 
 > [!NOTE]
-> Simulation can't be used with real-time evaluation plan for ongoing conversations when new criteria are created.
+> You can't use simulation with real-time evaluation plan for ongoing conversations when new criteria are created.
 
 ## Activate, pause, resume, or delete evaluation plans
 

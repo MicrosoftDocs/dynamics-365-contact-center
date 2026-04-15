@@ -31,7 +31,7 @@ Supervisors use the evaluation framework to define the evaluation criteria and c
 
 ## Create an evaluation criteria
 
-Refer to the [best practices](evaluation-criteria.md#best-practices-to-create-evaluation-criteria) when you [create an evaluation criteria](evaluation-criteria.md#create-evaluation-criteria).
+Follow the [best practices](evaluation-criteria.md#best-practices-for-evaluation-criteria) when you [create an evaluation criteria](evaluation-criteria.md#create-evaluation-criteria).
 
 ## Create a real-time evaluation plan for ongoing conversations
 

@@ -92,6 +92,8 @@
             href: evaluation-criteria.md
           - name: Use evaluation plan
             href: evaluation-plan.md
+          - name: Use real-time evaluation plan
+            href: realtime-evaluation-plan.md
           - name: Use on-demand evaluation
             href: on-demand-evaluation.md
           - name: Use evaluations
@@ -192,6 +194,12 @@
           href: /dynamics365/customer-service/use/oc-conversation-state?context=/dynamics365/contact-center/context/use-context
         - name: View call options and visual engagement in live chat
           href: /dynamics365/customer-service/use/call-options-visual-engagement?context=/dynamics365/contact-center/context/use-context          
+      - name: Proactive engagement
+        items:
+        - name: Overview of proactive engagement
+          href: ../administer/overview-proactive-engagement.md?context=/dynamics365/contact-center/context/use-context
+        - name: How proactive engagement works
+          href: how-proactive-engagement-works.md
       - name: Agent productivity tools
         items: 
         - name: Productivity pane in Copilot Service workspace

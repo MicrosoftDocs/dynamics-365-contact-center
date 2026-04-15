@@ -48,7 +48,7 @@ To create a real-time evaluation plan:
 
     - **Plan name**: Enter plan name.
     - **Description**: Enter description.
-    - **Record type**: Select **record type** as **Conversations**.
+    - **Record type**: Select **Conversations**.
      
 1. In the **Frequency** section, for **Frequency type**, select **Real-Time**.
 

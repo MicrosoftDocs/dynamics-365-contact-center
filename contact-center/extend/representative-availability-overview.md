@@ -73,3 +73,7 @@ The following representative availability APIs are available:
 - **CCaaS_GetRepresentativeAvailabilityForConversation**: Returns the queue and service representative availability during an active omnichannel conversation with a valid conversation ID. Learn more in [CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas_getrepresentativeavailabilityconversation.md)
 - **CCaaS_GetRepresentativeAvailabilityBeforeConversation**: Returns the queue and service representative availability when an omnichannel conversation with the customer hasn’t started. Learn more in [CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)
 
+## Related information
+ 
+[CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas_getrepresentativeavailabilityconversation.md)  
+[CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)  

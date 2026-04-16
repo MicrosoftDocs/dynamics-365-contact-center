@@ -20,7 +20,7 @@ You can trigger the representative availability APIs from your Copilot Studio ag
 
 Do the following steps in Copilot Studio:
 
-1. Go to your agent and then select **Topics**.
+1. Go to your AI agent and then select **Topics**.
 2. Select the **System** tab to view the default system topics and then select the **Escalate**.
 1. In the authoring canvas, select **Add** and then select **Add a tool**
 1. In the **Connector** tab, search and select **Perform an unbound action in selected environment**.
@@ -33,5 +33,11 @@ Do the following steps in Copilot Studio:
    - `CCaaS_GetRepresentativeAvailabilityForConversation`
    - `CCaaS_GetRepresentativeAvailabilityBeforeConversation`
 1. After selecting the action, update the **Advanced Parameters** as required.
-2. Add the rules for the agent based on the API response. you can use the **Outputs** from this node to create conditional branching logic. For example, if the API returns that no service representatives are available, you can redirect the user to a "Leave a Message" topic instead of escalating the conversation.
+2. Add the rules for the AI agent based on the API response. you can use the **Outputs** from this node to create conditional branching logic. For example, if the API returns that no service representatives are available, you can redirect the user to a "Leave a Message" topic instead of escalating the conversation.
 1. Save and publish.
+
+
+## Related information
+[Use representative availabilty APIs](representative-availability-overview.md)  
+[CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas_getrepresentativeavailabilityconversation.md)  
+[CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)  

@@ -10,11 +10,11 @@ ms.custom: bap-template
 ---
 # Use representative availabilty APIs
 
-Use the availability APIs to retrieve information about queue and customer service representative availability in Dynamics 365 Contact Center.
+Use the represetative availability APIs to retrieve information about queue and customer service representative availability in Dynamics 365 Contact Center.
 
 You can use these APIs in scenarios such as:
 
-- When agents have to escalate ongoing conversations only to queues where service representatives are available.
+- When AI agents have to escalate ongoing conversations only to queues where service representatives are available.
 - You want customers to initiate conversations only when relevant queues are within operating hours or have available representatives.
 
 The representative availability APIs are applicable for all channels, including voice, live chat, and digital messaging.
@@ -25,10 +25,10 @@ The representative availability APIs are applicable for all channels, including 
 
 ### Setup token for API authorization
 
-To interact with Dynamics 365 Contact Center APIs, you must generate an access token. This token acts as a secure credential to authenticate your application's identity and authorize it to access specific service resources.
+To use the representative availability APIs, you must generate an access token. This token acts as a secure credential to authenticate your application's identity and authorize it to access specific service resources.
 
 Do the following steps in the [Azure portal](https://portal.azure.com):
-1. [register your application](/entra/identity-platform/quickstart-register-app#register-an-application) or go to **Entra ID** > **App registrations**, and then select your client application. Copy the following values:
+1. [Register your application](/entra/identity-platform/quickstart-register-app#register-an-application) or go to **Entra ID** > **App registrations**, and then select your client application. Copy the following values:
 
    - **Application (client) ID**
    - **Directory (tenant) ID** 
@@ -37,7 +37,8 @@ Do the following steps in the [Azure portal](https://portal.azure.com):
 3. Select **Delegated permissions**, and then select the `user_impersonation` scope.
 1. Select **Add permissions**.
 1. [Add a client secret for your application](/entra/identity-platform/how-to-add-credentials?tabs=client-secret#add-a-credential-to-your-application). 
- **Important:** Copy the secret **Value** immediately. This value is encrypted and will not be displayed again once you leave the page.
+ > [!IMPORTANT]
+ > Copy the secret **Value** immediately. This value is encrypted and will not be displayed again once you leave the page.
 
 Run the following `POST` request to generate the token. Replace the following values:
 
@@ -63,12 +64,12 @@ Run the following `POST` request to generate the token. Replace the following va
 
   ```
 
-The response returns a JSON object with the token which you can use in the Authorization Header of your availability API calls as a Bearer token.
+The response returns a JSON object with the token which you can use in the Authorization Header of your representative availability API calls as a Bearer token.
 
 ## Representative availability APIs
 
-The following APIs are available:
+The following representative availability APIs are available:
 
 - **CCaaS_GetRepresentativeAvailabilityForConversation**: Returns the queue and service representative availability during an active omnichannel conversation with a valid conversation ID. Learn more in [CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas_getrepresentativeavailabilityconversation.md)
-- **CCaaS_GetRepresentativeAvailabilityBeforeConversation**: Returns the queue and service representative availability when the conversation with the customer hasn’t started. Learn more in [CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)
+- **CCaaS_GetRepresentativeAvailabilityBeforeConversation**: Returns the queue and service representative availability when an omnichannel conversation with the customer hasn’t started. Learn more in [CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)
 

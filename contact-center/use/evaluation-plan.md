@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 04/02/2026
+ms.date: 04/16/2026
 ms.custom: bap-template
 ---
 
@@ -36,9 +36,6 @@ Evaluation plans help supervisors perform consistent and objective reviews of ca
 ## Create and activate evaluation plan for cases and closed conversations
 
 You must enable the **Enable bulk evaluations** checkbox in Copilot Service admin center before you create and activate an evaluation plan for cases. Learn more in [Enable Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#enable-quality-evaluation-agent).
-
-> [!NOTE]
-> You can use conversation evaluations for voice and live chat channels only.
 
 1.  In Copilot Service workspace, go to **Evaluation Plans**.
 

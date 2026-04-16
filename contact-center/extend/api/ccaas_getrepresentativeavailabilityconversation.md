@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 Use the **CCaaS_GetRepresentativeAvailabilityForConversation** API to get the queue and service representative availability during an active omnichannel conversation with a valid conversation ID.
 
-For example, when a customer chatting with an IVR or chat agent requests escalation to a service representative, the agent can call this API to determine the service representative’s availability and route the conversation appropriately based on the response.
+For example, when a customer chatting with an IVR or AI chat agent requests escalation to a service representative, the AI agent can call this API to determine the service representative’s availability and route the conversation appropriately based on the response.
 
 ## Request details
 
@@ -86,25 +86,25 @@ If successful, this method returns a 200 OK response code. The method returns th
 | EndTimeOfNextOperatingHour | DateTime | The time (UTC) when operating hours end for the queue, if it’s currently outside operating hours. Returns 01-01-0001 during operating hours. |
 | nexttransitiontime | DateTime | The time (UTC) when the queue is operational again if it's outside operating hours. During operating hours, displays when the queue becomes non-operational. |
 | positionInQueue | Number | Position in queue for a customer waiting behind others in the same queue. |
-| isAgentAvailable | Boolean | Displays:- TRUE if service representatives in the queue are currently available to take requests based on the routing and assignment rules for workstream. The API also returns true if an agent is linked to the workstream or queue. We recommend that you don’t use this API when an agent is added to the workstream or queue.- FALSE if service representatives aren't available to take requests. |
+| isAgentAvailable | Boolean | Displays:- TRUE if service representatives in the queue are currently available to take requests based on the routing and assignment rules for workstream. The API also returns true if an AI agent is linked to the workstream or queue. We recommend that you don’t use this API when an AI agent is added to the workstream or queue.- FALSE if service representatives aren't available to take requests. |
 | averageWaitTime | Number | Average wait time in minutes for customers in the target queue. |
 | AverageWaitTimeInSeconds | Numbers | Average wait time in seconds for customers in the target queue. |
+|NumberOfExpertsAvailableInQueue|Numbers|The number of service representatives currently available to accept conversations in the target queue. |
 
 
 ### Sample response
 
 ```json
-{
-  "@odata.context": "https://<OrgUrl>/api/data/v9.2/$metadata#Microsoft.Dynamics.CRM.CCaaS_GetRepresentativeAvailabilityForConversationResponse",
-  "NextTransitionTime": "9999-12-31T23:59:59Z",
-  "AverageWaitTimeInSeconds": 54,
-  "PositionInQueue": 1,
-  "AverageWaitTime": null,
-  "StartTimeOfNextOperatingHour": "0001-01-01T00:00:00Z",
-  "EndTimeOfNextOperatingHour": "0001-01-01T00:00:00Z",
-  "QueueId": "85e55877-f27a-e911-a81a-000d3a1ca610",
-  "IsAgentAvailable": true,
-  "IsQueueAvailable": true
+{  
+"@odata.context": "https://<org-url>/api/data/v9.2/\$metadata#Microsoft.Dynamics.CRM.CCaaS_GetRepresentativeAvailabilityForConversationResponse",  
+"NextTransitionTime": "9999-12-31T23:59:59Z",
+"NumberOfExpertsAvailableInQueue": 5,
+“AverageWaitTimeInSeconds”: 45  
+"PositionInQueue": 1,  
+"AverageWaitTime": null,  
+"StartTimeOfNextOperatingHour": "0001-01-01T00:00:00Z",  
+"EndTimeOfNextOperatingHour": "0001-01-01T00:00:00Z",  
+"QueueId": "85e55877-f27a-e911-a81a-000d3a1ca610",  
+"IsAgentAvailable": true,  
+"IsQueueAvailable": true  
 }
-```
-

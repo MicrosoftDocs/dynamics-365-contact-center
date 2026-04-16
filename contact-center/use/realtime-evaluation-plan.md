@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 **Conversations**: [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
 
-Supervisors monitor representatives and AI agents to maintain oversight and brand integrity by enabling monitoring, conducting real-time consultations, and responding to alerts to intervene when necessary. This approach minimizes operational effort, improves customer experience, and accelerates the transition to full automation while maintaining service quality.
+Supervisors oversee representatives and AI agents to make sure interactions follow company standards. Supervisors monitor, conduct real-time consultations, and respond to alerts when necessary. This approach minimizes operational effort, improves customer experience, and accelerates the transition to full automation while maintaining service quality.
 
 By combining real-time monitoring with configurable evaluation plans, the real-time Quality Evaluation Agent empowers organizations to enhance customer satisfaction, improve agent performance, and maintain compliance standards across diverse scenarios. 
 

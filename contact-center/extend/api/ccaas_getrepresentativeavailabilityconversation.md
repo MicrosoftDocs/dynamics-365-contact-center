@@ -30,7 +30,7 @@ For example, when a customer chatting with an IVR or AI chat agent requests esca
 
 | **Name** | **Description** |
 |----|----|
-| Authorization | Mandatory. Microsoft Entra ID bearer token for the API caller in the Contact Center instance's tenant. Learn more in [Setup token for API authorization](../agent-availability-overview.md)|
+| Authorization | Mandatory. Microsoft Entra ID bearer token for the API caller in the Contact Center instance's tenant. Learn more in [Setup token for API authorization](../representative-availability-overview.md)|
 
 ### Sample request body
 
@@ -112,5 +112,5 @@ If successful, this method returns a 200 OK response code. The method returns th
 
 ## Related information
 
-[Use representative availabilty APIs](representative-availability-overview.md)   
-[CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)  
+[Use representative availabilty APIs](../representative-availability-overview.md)   
+[CCaaS_GetRepresentativeAvailabilityBeforeConversation](ccaas_getrepresentativeavailabilitybeforeconversation.md)  

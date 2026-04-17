@@ -140,7 +140,7 @@ Read events optionally let you indicate to Customer Service Representatives and 
   "channelId": "GUID",
   "name": "MessageRead",
   "value": {
-    "messageId": "GUID"
+    "messageId": "1234567890123"
   }
 }
 ```
@@ -152,7 +152,7 @@ Read events optionally let you indicate to Customer Service Representatives and 
 | type            | event                 | string |
 | channelId       | Channel GUID               | GUID   |
 | name       | Must be MessageRead | string |
-| value.messageId | The ID of the message that was read | GUID |
+| value.messageId | The 13-digit string epoch timestamp for the message that was read | string |
 
 ### Response
 
@@ -166,7 +166,7 @@ The API returns a 200 response code on success.
 ```
 
 > [!NOTE] 
-> Contact Center read indicators are only for Agent messages sent to the user. Contact Center does not support showing the user whether the Agent read a message.
+> Contact Center read indicators are only for Agent messages sent to the user. Contact Center does not support showing the user whether the Agent read a message, or showing read receipts for Automated Messages.
 
 
 ## Custom events

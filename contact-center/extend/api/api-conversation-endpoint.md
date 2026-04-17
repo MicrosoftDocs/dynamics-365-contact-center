@@ -23,7 +23,7 @@ Send various types of activities, such as messages, typing indicators, or conver
 - `typing`: Indicates the user is typing
 - `endOfConversation`: Ends the conversation
 - `event`:
-  - Read events indicate to Customer Service Representatives that the user has read a message
+  - Read events indicate to Customer Service Representatives when the user reads a message
   - Custom events inform the system of an event without needing to send a message and support sending metadata  
 
 If you pass an unsupported event name in an `event` type, the API returns a 400 error.
@@ -127,7 +127,7 @@ The payload for this API is a JSON-formatted object that defines the activity be
 
 ## Read events
 
-Read events optionally let you indicate to Customer Service Representatives and historic transcript readers that a user read a message. You specify a message ID in the event, and Contact Center will indicate that this message - and all preceeding messages - were read by the user.
+Read events optionally let you indicate to Customer Service Representatives and historic transcript readers that a user read a message. You specify a message ID in the event, and Contact Center indicates that this message - and all preceeding messages - were read by the user.
 
 ### Request payload
 
@@ -156,7 +156,7 @@ Read events optionally let you indicate to Customer Service Representatives and 
 
 ### Response
 
-The API will return a 200 response code on success.
+The API returns a 200 response code on success.
 
 ```json
 {
@@ -193,11 +193,11 @@ Custom events let you send structured data and trigger system processes in ongoi
 
 | Tier 1 Key | Tier 2 Key | Description | Type | Max Length |
 |------------|------------|-------------|------|------------|
-| type | | Type of activity being sent. For events, use "event". | string | 256 characters |
+| type | | Type of activity being sent. For events, use "event." | string | 256 characters |
 | id | | Optional identifier for the message. | string | — |
-| channelId | | GUID of the messaging channel. This must match the channel used in headers. | GUID | — |
+| channelId | | GUID of the messaging channel. Must match the channel used in headers. | GUID | — |
 | from | | Object containing sender info. Optional. | object | — |
-| | id | ID of the sender. This is optional. | string | 256 characters |
+| | id | ID of the sender. Optional. | string | 256 characters |
 | | name | Display name of the sender that appears to the service representative. | string | 256 characters |
 | name | | Name of the event | string | 256 characters |
 | channelData | | | object | — |

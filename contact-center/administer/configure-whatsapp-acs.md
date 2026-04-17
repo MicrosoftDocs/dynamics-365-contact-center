@@ -1,7 +1,7 @@
 ---
 title: Configure a WhatsApp channel through Azure Communication Services 
 description: Use this article to learn how to configure the WhatsApp channel through Azure Communication Services.
-ms.date: 05/05/2025
+ms.date: 04/20/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -14,8 +14,9 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-
 The success of social media customer service, like all other customer services, depends on the quality of customer care provided. Communications from customer service representatives should be timely, accurate, sensitive, brief, and friendly, which ultimately improves customer satisfaction and brand loyalty. To enhance customer satisfaction and improve communications, the omnichannel capability in the application enables you to send and receive WhatsApp messages using [Azure Communication Services](/azure/communication-services). You can use the WhatsApp channel feature to engage in conversations with customers for product inquiry and customer service scenarios with those who prefer to communicate using WhatsApp. 
+
+[!INCLUDE[cs-whatsapp-bsuid](~/../includes/cs-whatsapp-bsuid.md)]
 
 
 ## Prerequisites

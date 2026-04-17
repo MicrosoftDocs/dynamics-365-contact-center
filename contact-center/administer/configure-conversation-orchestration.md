@@ -230,6 +230,10 @@ When multiple playbooks with different scenarios are active for the same queue, 
 
 This run order is consistent across all conversations and can't be changed. The system automatically determines the playbook to evaluate first based on the scenario type, ensuring predictable and deterministic behavior for all conversations in the queue.
 
+## View diagnostics using a custom query
+
+To help you monitor and troubleshoot your playbooks, Conversation Orchestration provides diagnostics information for each conversation that is processed by an active playbook. You can view the diagnostics information by using a custom query. Learn more in [Sample queries and dashboards](/dynamics365/guidance/resources/conversation-diagnostics-sample-queries#conversation-orchestration).
+
 ## Troubleshoot issues
 
 | Issue | Resolution |

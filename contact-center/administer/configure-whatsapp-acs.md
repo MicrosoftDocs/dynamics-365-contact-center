@@ -124,7 +124,7 @@ In the following instructions, you provide the information from the Azure portal
 
 To configure routing and work distribution, create a [workstream](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context) with the **Channel** set to **WhatsApp** or select an existing one.
 
-### Set up WhatsApp message templates
+## Set up WhatsApp message templates
 
 WhatsApp uses a 24-hour messaging window. If a WhatsApp user has sent a message, whether it's a communication they initiated or a reply to one of your messages, you have a 24-hour window to send that user messages that don't need to use a template. After the 24-hour window closes, you can only send messages by using an approved template.
 

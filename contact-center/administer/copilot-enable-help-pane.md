@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 03/31/2026
+ms.date: 04/17/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
@@ -104,11 +104,13 @@ The **Customer Support** agent settings allow you to define how Copilot interact
 To configure **Customer Support** settings, perform the following steps:
 1. In the **Agents within Copilot** section, select **Manage** next to **Customer Support**.
 1. Configure the required Copilot features for representatives across the available tabs:
-   - **Overview**
-   - **Immersive settings**
-   - **Email settings**
-   - **Prompts**
-   - **User access**
+   - [**Overview**](#overview-tab)
+   - [**Immersive settings**](#immersive-settings-tab)
+   - [**Email settings**](#email-settings-tab)
+   - [**Prompts**](#prompts-settings-tab)
+   - [**User access**](user-access-tab)
+
+You can use the following tabs to configure Copilot features for representatives.
 
 ### Overview tab
 The following settings are available on the **Overview** tab:

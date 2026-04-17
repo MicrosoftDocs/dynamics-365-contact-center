@@ -22,7 +22,9 @@ Send various types of activities, such as messages, typing indicators, or conver
 - `message`: Sends a message (optionally with attachments)
 - `typing`: Indicates the user is typing
 - `endOfConversation`: Ends the conversation
-- `event`: Custom events inform the system of an event without needing to send a message and support sending metadata  
+- `event`:
+  - Read events indicate to Customer Service Representatives that the user has read a message
+  - Custom events inform the system of an event without needing to send a message and support sending metadata  
 
 If you pass an unsupported event name in an `event` type, the API returns a 400 error.
 
@@ -123,6 +125,50 @@ The payload for this API is a JSON-formatted object that defines the activity be
 | from.name       | Display name of the sender | string |
 | conversation.id | Conversation ID            | GUID   |
 
+## Read events
+
+Read events optionally let you indicate to Customer Service Representatives and historic transcript readers that a user read a message. You specify a message ID in the event, and Contact Center will indicate that this message - and all preceeding messages - were read by the user.
+
+### Request payload
+
+```json
+{
+  "conversation": {
+    "id": "GUID"
+  },
+  "type": "event",
+  "channelId": "GUID",
+  "name": "MessageRead",
+  "value": {
+    "messageId": "GUID"
+  }
+}
+```
+**Payload schema**
+
+| Key               | Description                | Type     |
+| ----------------- | -------------------------- | -------- |
+| conversation.id | Conversation ID            | GUID   |
+| type            | event                 | string |
+| channelId       | Channel GUID               | GUID   |
+| name       | Must be MessageRead | string |
+| value.messageId | The ID of the message that was read | GUID |
+
+### Response
+
+The API will return a 200 response code on success.
+
+```json
+{
+  "messageId": "",
+  "message": null
+}
+```
+
+> [!NOTE] 
+> Contact Center read indicators are only for Agent messages sent to the user. Contact Center does not support showing the user whether the Agent read a message.
+
+
 ## Custom events
 
 Custom events let you send structured data and trigger system processes in ongoing conversations without showing messages to customer service representatives.
@@ -132,7 +178,7 @@ Custom events let you send structured data and trigger system processes in ongoi
 ```json
 {
   "conversation": {
-    "id": "{conversation-id-guid}"
+    "id": "GUID"
   },
   "type": "event",
   "channelData": {
@@ -160,7 +206,8 @@ Custom events let you send structured data and trigger system processes in ongoi
 | | customEventValue | JSON-encoded string containing variables as objects with key names and values. Use the displayable flag to control whether specific values are visible to service representatives. For more information, see [setcontextprovider](/dynamics365/customer-service/develop/reference/methods/setcontextprovider). | string | — |
 
 > [!NOTE] 
-> Learn more in [Configure Copilot Studio agent custom events](../configure-custom-messaging-channel.md).
+> * Learn more in [Configure Copilot Studio agent custom events](../configure-custom-messaging-channel.md).
+> * The name "MessageRead" is reserved for Read Events.
 
 ### Response
 

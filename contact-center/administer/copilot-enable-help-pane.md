@@ -165,11 +165,7 @@ To configure prompts from your organization, select the **Prompts** tab, and the
 
 You can configure Copilot to use internal knowledge base resources for generating responses. Then, the information is used for the **Ask a question** and **Draft an email** features in the Copilot help pane and rich text editor. By default, this option isn't turned on.
 
-Select the **Include a knowledge base or another type of knowledge source** checkbox, and then select any of the following options:
-
-- **Use your organization's knowledge base as knowledge source**: Use the knowledge base set up for your organization as the knowledge source. The system displays the number of articles in use.
-- **Use SharePoint as knowledge source (preview)**: If you set up an active SharePoint provider, you can designate it as your organization's knowledge source.
-- **Use knowledge sources configured in Copilot Studio (preview)**: You can enable customers to integrate various knowledge sources without having to add the content directly into the Dynamics 365 knowledge base. When knowledge sources are added, Copilot can use enterprise data from Power Platform, Dynamics 365 data, websites, and external systems. Knowledge sources allow your representatives to provide relevant information and insights for your customers. Learn more in [Enable knowledge sources from Microsoft Copilot Studio (preview)](knowledge-copilot.md).
+Select the **Include a knowledge base or another type of knowledge source** checkbox, and then select **Use your organization's knowledge base as knowledge source**. The system displays the number of articles in use.
 
 > [!Note]
 > - Copilot uses the content attribute only in the knowledge article table to generate responses for the **Ask a question**, **Write an email**, and **Draft a response** features. You can't customize this behavior.
@@ -245,6 +241,10 @@ Configure the prompt settings as described in the following table:
 | Entity | Specifies the record type the prompt applies to, such as Case. Prompts are available only when a representative is working with the selected entity type. |
 | Scope | Specifies where the prompt is available. For the Customer Support agent, prompts can be scoped to Copilot immersive, ensuring they appear only in the immersive Copilot experience. |
 |Instructions for Copilot | Provides optional, prompt‑specific guidance that Copilot follows when generating a response. These instructions let you refine how Copilot executes the prompt—for example, by controlling tone, output structure, or level of detail. <br> This field supports up to 10,000 characters.|
+
+### Extend agent tab
+
+Turn on **Extend agent with Copilot Studio** to enable extensibility for your agent. When this setting is enabled, you can enhance the agent by using Copilot Studio to add tools, configure knowledge sources, and customize behavior beyond the default capabilities. Learn more in [Extend Copilot in Customer Service with Copilot Studio](extend-copilot-with-copilot-studio.md).
 
 ## Admin Management agent (preview)
 

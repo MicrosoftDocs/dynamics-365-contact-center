@@ -107,8 +107,7 @@ To configure **Customer Support** settings, perform the following steps:
    - [**Overview**](#overview-tab)
    - [**Immersive settings**](#immersive-settings-tab)
    - [**Email settings**](#email-settings-tab)
-   - [**Prompts**](#prompts-settings-tab)
-   - [**User access**](user-access-tab)
+   - [**Prompts**](#prompts-tab)
 
 You can use the following tabs to configure Copilot features for representatives.
 

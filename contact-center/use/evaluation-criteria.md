@@ -75,7 +75,7 @@ Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best pra
     
     1. Select **AI response enabled** to allow AI to predict an answer for this question. If you don't select this option, AI doesn't process the input or return an answer. Evaluation creation fails if the criteria lacks AI-enabled questions for the selected mode in an evaluation plan, as follows:
 
-    - **AI agent mode**: All questions must be AI-enabled (manual editing isn't allowed).
+    - **AI agent mode**: All questions must be AI-enabled. Manual editing isn't allowed.
     - **AI assisted mode**: At least one question must be AI-enabled.
     
     This requirement applies to both on-demand evaluations and evaluation plans.

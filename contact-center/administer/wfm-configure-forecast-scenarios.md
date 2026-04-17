@@ -1,7 +1,7 @@
 ---
 title: Enable forecasting
 description: Learn how to enable forecasting features in Dynamics 365 Customer Service and Dynamics 365 Contact Center to help supervisors predict case and conversation volumes and representative demand.
-ms.date: 12/01/2025
+ms.date: 04/16/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -16,17 +16,17 @@ ms.custom:
 
 # Enable volume forecasting for supervisors
 
-Forecasting allows supervisors to predict case and conversation volumes demand based on historical trends.
+Forecasting allows supervisors to predict case and conversation volume demand based on historical trends.
 
 Key benefits:
 
-- **Long-term forecast:** Predict conversation and case volumes at a daily level for up to six months.
-- **Short-term forecast:** Generate 15-minute interval forecasts for up to six weeks to manage real-time demand fluctuations.
-- **Scenario forecasting:** Model different business scenarios to assess their impact on workload and staffing.
-- **Data slicing:** Break down forecasted data by channels and queues for granular insights.
-- **Import external data:** Incorporate historical data from external systems via file import to enhance forecast accuracy.
-- **Export forecasts:** Download forecast data into spreadsheets for further analysis.
-- **Visualize trends:** View daily, weekly, and monthly forecast trends using interactive charts.
+- **Long-term forecast**: Predict conversation and case volumes at a daily level for up to six months.
+- **Short-term forecast**: Generate 15-minute interval forecasts for up to six weeks to manage real-time demand fluctuations.
+- **Scenario forecasting**: Model different business scenarios to assess their impact on workload and staffing.
+- **Data slicing**: Break down forecasted data by channels and queues for granular insights.
+- **Use forecast scenarios for planning**: Connect forecast scenarios to capacity plans so that forecasted workloads are used as workforce planning inputs.
+- **Export forecast scenarios**: Download forecast scenario data for planning and workforce analysis.
+- **Visualize trends**: View daily, weekly, and monthly forecast trends using interactive charts.
 
 ## Prerequisites
 
@@ -39,29 +39,5 @@ Complete the steps in [Set up user management](wfm-user-management.md).
 1.	On the **Forecast volume** page, set the **Enable forecasting** toggle to **On**.
 1.	Select **Save and Close**.
 
-## Enable AI-based forecasting (preview)
-
-As an administrator, you can enable AI-based forecasting for your organization. This feature allows AI to dynamically select the best forecasting method for each scenario. When this feature is enabled, supervisors can choose the AI-based option in their forecast scenario details.
-
-Key benefits:
-
-- **Ensures the highest forecast accuracy**: Automatically chooses the model best suited to the customer’s historical patterns, seasonality, trends, and data quality.
-- **Eliminates guesswork and manual tuning**: Removes the need for users to understand complex statistical models or test multiple methods themselves.
-- **Adapts to changing business patterns**: Dynamically reevaluates which model performs best as demand, channels, or customer behavior evolve.
-- **Improves operational efficiency**: Enables supervisors to better staff, schedule, and drive budget decisions with more reliable forecasts.
-- **Provides transparency**: Reasoning and confidence scores explain why a specific model was selected, helping build trust in forecast outputs.
-
-AI-based forecasts include an **AI Reasoning** tab in the job history to show how the model made its decision. When supervisors use AI-based forecasting, an AI disclaimer appears on the user interface.
-
-> [!Note]
-> - Auto-refresh is disabled for AI-based forecasting. Forecasts must be run manually.
-> - AI-based forecasting requires AI credits. Ensure your organization has sufficient credits before you enable this feature.
-
-To enable AI-based forecasting for all forecast scenarios:
-
-1. In the site map of Copilot Service admin center, go to **Operations**, and then select **Workforce management**. The **Workforce management** page appears.
-1. In **Forecasting**, select **Manage** next to **Forecast volume**.
-1. On the **Forecast volume** page, set the **Enable forecasting** toggle to **On**.
-1. Select the **Allow dynamic forecasting (AI-based)** checkbox.
-1. Select **Save and close**.
+After forecasting is enabled, forecast scenarios can be connected to capacity plans so that forecasted workloads are used as input for workforce planning.
 

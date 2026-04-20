@@ -81,15 +81,15 @@ Configuration and setup
 
 Queue Management
 
-- What voice queues are available?
+- Which voice queues are available?
 
 - Which queues are not connected to workstreams?
 
 Knowledge and troubleshooting
 
-- Is there an active ACS resource on this org?
+- Is there an active Azure Communication Services resource in this organization?
 
-- List the phone numbers associated with the ACS resource
+- List the phone numbers associated with the Azure Communication Services resource.
 
 - What is my organization ID?
 

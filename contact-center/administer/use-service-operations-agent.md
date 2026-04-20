@@ -55,7 +55,7 @@ Service Operations Agent supports conversational setup of Dataverse tables such 
   - [Application Insights is connected with Dynamics 365 Contact Center](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights)
   - Monitoring Reader role to your app to access Application Insights data.
 
-## Conversational Setup
+## Conversational setup
 
 Use natural language to set up your contact center, and watch your Service Operations Agent run the steps while keeping a human in the loop.
 

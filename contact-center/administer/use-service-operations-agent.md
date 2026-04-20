@@ -10,15 +10,15 @@ ms.topic: how-to
 
 # Use Service Operations Agent (preview)
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Service Operations Agent is a self-service AI agent designed to support Dynamics 365 admin users in Dynamics 365 Contact Center with configuration, validation, and troubleshooting tasks. It helps streamline onboarding and ongoing maintenance, making admin workflows more efficient.
+Service Operations Agent is a self-service AI agent designed to support adminisratpr users in Dynamics 365 Contact Center with configuration, validation, and troubleshooting tasks. It helps streamline onboarding and ongoing maintenance, making administrator workflows more efficient.
 
 Service Operations Agent supports conversational setup of Dataverse tables such as queues and workstreams and builds a fully autonomous contact center for selected industries. It also lets you perform limited simulations.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-## Supported Capabilities
+## Supported capabilities
 
 **Configure channels**
 

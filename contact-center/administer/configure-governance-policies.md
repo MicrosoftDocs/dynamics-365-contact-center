@@ -1,6 +1,6 @@
 ---
-title: Configure governance policies
-description: Learn about governance policies, a rule-based system that ensures AI assistants operate safely and within compliance guidelines.
+title: Configure governance policies (preview)
+description: Governance policies help you enforce compliance, security, and content-safety for customer communications. Learn how to set up and manage effective policies.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
@@ -11,9 +11,9 @@ ms.date: 04/21/2026
 ms.custom: bap-template
 ---
 
-# Configure governance policies
+# Configure governance policies (preview)
 
-Configure governance policies enforce compliance, security, and content‑safety standards across customer communications in your organization. It evaluates outbound messages, both AI‑generated and human‑authored against configurable guardrails, helping administrators ensure that sensitive, restricted, or non‑compliant content is automatically detected and managed. This feature supports the email channel and extends the safety checks used across other autonomous agents.
+Configure governance policies to enforce compliance, security, and content‑safety standards across customer communications in your organization. It evaluates outbound messages, both AI‑generated and human‑authored against configurable policies, helping you ensure that sensitive, restricted, or noncompliant content is automatically detected and managed. This feature supports the email channel and extends the safety checks used across other autonomous agents.
 
 > [!IMPORTANT]
 >
@@ -32,7 +32,7 @@ Configure governance policies enforce compliance, security, and content‑safety
     - msdyn_guardrail_rule
     - msdyn_guardrail_rule_version
     - msdyn_guardrail_scenariotype
-- Setup [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go) or pre-paid.
+- Setup [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go) or prepaid.
 - Provide consent for potential [data movement across regions](manage-quality-evaluation-agent.md#data-movement-across-regions).
 - Enable AI agents for your Dynamics 365 environment in Power platform admin center. Learn more in [Copilot adoption in the Power Platform](/power-platform/admin/copilot/copilot-hub).
 
@@ -44,38 +44,40 @@ Configure governance policies enforce compliance, security, and content‑safety
 
 ## How Governance Agent works
 
-- Runtime evaluation: When a service representative or AI agent drafts an email, the message is passed through the Governance Agent pipeline, where the agent compares content against active guardrails. When a rule violation is detected, the Governance Agent can perform one of the following actions:
+**Runtime evaluation**:
+The system evaluates each email drafted by a service representative or AI agent by validating the message through the governance policy and checking the content against active policies. When it detects a rule violation, the system performs one of the following actions:
 
-    - Block the outgoing message
-    - Log the violation for later review
-    - Route for manual approval workflows
+- Blocks the outgoing message
+- Logs the violation for later review
+- Routes the message for manual approval workflows
 
-- Log and review: Administrators can
+**Log and review**: 
+Administrators can:
 
-    - Review detection logs
-    - Identify repeated risk patterns
-    - Adjust rule descriptions to refine system prompts
+- Review detection logs
+- Identify repeated risk patterns
+- Adjust rule descriptions to refine system prompts
 
 ### Scenario examples
 
 **Prevent agents from sending political content**
 
 Administrator creates a rule: Ensure no political content is included in any customer communications.
-- System generates guardrail prompt
+- System generates a policy prompt
 - All outbound emails are evaluated against this category
 
 **Block competitor comparisons in support responses**
 
 If teams prefer not to mention competitors:
-- Create a guardrail referencing known competitor names
+- Create a policy referencing known competitor names
 - Messages containing such content are automatically blocked
 
 **Enforce compliance for regulated industries**
 
-Healthcare, legal, and finance teams can set guardrails for:
+Healthcare, legal, and finance teams can set policy checks for:
 
 - High‑risk advice
 - Sensitive data leakage
 - Restricted terminology
 
-Governance policies ensures unsafe messages are intercepted before reaching customers. Until the representative updates the email draft to meet policy requirements, the checks continues to block it from being sent. Each failed guardrail check is recorded, allowing the representative to view previous failures for that draft.
+Governance policies ensure unsafe messages are intercepted before reaching customers. Until the representative updates the email draft to meet policy requirements, the checks continue to block it from being sent. Each failed policy check is recorded, allowing the representative to view previous failures for that draft.

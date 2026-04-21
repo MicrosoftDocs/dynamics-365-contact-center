@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 03/31/2026
+ms.date: 04/21/2026
 ms.custom: bap-template 
 ---
 
@@ -24,7 +24,6 @@ ms.custom: bap-template
 
 - Make sure that your administrator has turned on the Copilot features.
 - To use the summarize cases feature, [case summaries through ask a question](/dynamics365/customer-service/administer/enable-ask-summarize-cases) is enabled.
-
 
 ## Draft questions
 
@@ -90,7 +89,7 @@ You can make the following types of requests:
 
 When Copilot answers a question using knowledge content, the response might be returned directly from a knowledge article.
 
-If the knowledge content is configured to be returned verbatim, Copilot displays the approved wording without rewriting or summarizing it. This behavior helps ensure accuracy and compliance when exact language is required.
+If the knowledge content is configured to be returned verbatim, Copilot displays the approved wording without rewriting or summarizing it. This behavior helps ensure accuracy and compliance when exact language is required. Learn more in [Configure knowledge articles for verbatim responses in Copilot (preview)](../administer/knowledge-verbatim.md).
 
 When a verbatim response is returned:
 
@@ -110,5 +109,6 @@ Always review Copilot responses before sharing them with customers, especially w
 
 ## Related information
 
-[Enable features in Copilot pane](../administer/copilot-enable-help-pane.md)
+[Enable features in Copilot pane](../administer/copilot-enable-help-pane.md)  
+[Configure knowledge articles for verbatim responses in Copilot (preview)](../administer/knowledge-verbatim.md)
 

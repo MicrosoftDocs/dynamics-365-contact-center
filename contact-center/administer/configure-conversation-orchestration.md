@@ -34,7 +34,7 @@ Configure playbooks per scenario through guided templates that keep instructions
 - **Queues**: The queues for which the playbook applies.
 - **Trigger event**: The event that initiates the playbook, such as a conversation waiting in queue or conversation transferred.
 - **Channel**: The channel that you select in the **Queues** dialog. The context variables that appear are based on the selected channel. If you update the channel in a draft playbook, then you have to update the applicable context variables and the corresponding prompt.
-- **Conditions**: Business rules based on context variables, such as customer tier or country/region. You can define up to 10 conditions to configure the granularity. These conditions can have more than one context variable.
+- **Conditions**: Business rules based on context variables, such as customer tier or country/region. You can define up to 10 conditions to configure the granularity. These conditions can have up to two context variables.
 - **Actions**: The outcomes when conditions are met, such as increasing priority or transferring to an overflow queue.
 
 A playbook can have one of the following statuses.
@@ -42,7 +42,7 @@ A playbook can have one of the following statuses.
 | Status | Description |
 |--------|-------------|
 | **Draft** | The playbook is saved but not active. You can make changes freely. |
-| **Active** | The playbook is published and actively routing conversations. |
+| **Active** | The playbook is published and actively orchestrates conversations. |
 
 ## Access conversation orchestration playbooks
 
@@ -83,7 +83,7 @@ In Copilot Service admin center, go to **Customer support** > **Conversation Orc
    **For dynamic prioritization playbooks:**
    - For **Update priority based on transfer to queue** playbook, the trigger event is preset to **Conversation is transferred**.
    - For **Update priority based on conversation wait time** playbook, the trigger event is preset to **Conversation is waiting in queue**.
-   - Set the time interval for priority increases (minimum 30 seconds).
+   - Set the time interval for priority increase (minimum 30 seconds).
    - For each condition branch, select the context variable values that trigger this condition and set the priority score to increase (0–100,000).
    - Configure the default priority score for conversations that don't match any condition.
 
@@ -113,7 +113,7 @@ In Copilot Service admin center, go to **Customer support** > **Conversation Orc
 1. Confirm the deletion.
 
 > [!IMPORTANT]
-> If you delete an active playbook, it stops routing conversations immediately.
+> If you delete an active playbook, conversation orchestration stops for the corresponding queue immediately.
 
 ## Scenario: Dynamic prioritization - Wait time escalation
 

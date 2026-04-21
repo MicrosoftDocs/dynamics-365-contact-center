@@ -24,7 +24,7 @@ Customer Service representatives (service representatives or representatives) ca
 
 ## Enable knowledge sources for Copilot to draft emails
 
-By default, the option to use knowledge sources to draft emails is disabled. If you want Copilot to use knowledge articles or trusted websites to draft emails, you must [enable knowledge sources for Copilot](copilot-enable-help-pane.md#enable-knowledge-base).
+By default, the option to use knowledge sources to draft emails is disabled. If you want Copilot to use knowledge articles or trusted websites to draft emails, you must [enable knowledge sources for Copilot](copilot-enable-help-pane.md#customer-support-agent).
 
 ## Enable draft an email in the rich text editor
 

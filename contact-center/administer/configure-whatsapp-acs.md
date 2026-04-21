@@ -1,7 +1,7 @@
 ---
 title: Configure a WhatsApp channel through Azure Communication Services 
 description: Use this article to learn how to configure the WhatsApp channel through Azure Communication Services.
-ms.date: 05/05/2025
+ms.date: 04/17/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -14,9 +14,20 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
+The success of social media customer service, like all other customer services, depends on the quality of customer care provided. Communications from customer service representatives should be timely, accurate, sensitive, brief, and friendly, which ultimately improves customer satisfaction and brand loyalty. 
 
-The success of social media customer service, like all other customer services, depends on the quality of customer care provided. Communications from customer service representatives should be timely, accurate, sensitive, brief, and friendly, which ultimately improves customer satisfaction and brand loyalty. To enhance customer satisfaction and improve communications, the omnichannel capability in the application enables you to send and receive WhatsApp messages using [Azure Communication Services](/azure/communication-services). You can use the WhatsApp channel feature to engage in conversations with customers for product inquiry and customer service scenarios with those who prefer to communicate using WhatsApp. 
+To enhance customer satisfaction and improve communications, the omnichannel capability in the application enables you to send and receive WhatsApp messages using [Azure Communication Services](/azure/communication-services). You can use the WhatsApp channel feature to engage in conversations with customers for product inquiry and customer service scenarios with those who prefer to communicate using WhatsApp. 
 
+> [!IMPORTANT]
+> - From June 2026, usernames and a new customer identifier called the Business-Scoped User ID are being released for WhatsApp. For updates on the timeline for this change, refer to [WhatsApp Business-Scoped User IDs](https://developers.facebook.com/documentation/business-messaging/whatsapp/business-scoped-user-ids/) in the Meta documentation.
+> - A Business-Scoped User ID will be assigned to every WhatsApp user that interacts with your organization. When a user adopts a WhatsApp username, their phone number is no longer be sent, and their Business-Scoped User ID becomes the primary identifier.
+> - With this change, the Contact Book is enabled by default for your business WhatsApp account. By keeping your Contact Book enabled, you preserve your ability to identify customers by phone number even after they adopt a username. If you disable the Contact Book, the phone number is permanently lost as an identifier for the WhatsApp customer.
+> - After a customer’s phone number is no longer available, the system displays their first and last name if linked to a contact record. Otherwise, the customer shows "Visitor."
+> - **What action do I need to take?**
+>   - Review your routing rules. Any custom routing rules that have conditions on phone number patterns like country/region code–based routing don't match Business-Scoped User ID-only conversations. Add a fallback rule to route these conversations correctly. Business-Scoped User ID is prefixed with a two-letter country code and a period, followed by up to 128 alphanumeric characters (for example, US.13491208655302741918).
+>   - Review any integrations or automation workflows, such as like Power Automate flows, that rely on phone numbers for customer identification and update them to handle Business-Scoped User ID. 
+>   - Review context variables in your AI agents. If you use msdyn_CustomerPhoneNumber in your AI agent configuration, update your logic to also handle scenarios where only the Business-Scoped User ID is available.<br>
+> Learn more in [WhatsApp usernames and business-scoped user IDs (BSUID)](/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-username-support-overview).
 
 ## Prerequisites
 
@@ -39,7 +50,7 @@ The success of social media customer service, like all other customer services, 
 
 ## Get Azure Communication Services details
 
-You'll need these details when you create the WhatsApp channel in [the following section](#create-a-whatsapp-channel). You might find it helpful to have the Azure portal and the Copilot Service admin center open in separate browser tabs and switch back and forth as required.
+Gather the following details before you create the WhatsApp channel in [the following section](#create-a-whatsapp-channel). You might find it helpful to have the Azure portal and the Copilot Service admin center open in separate browser tabs.
    
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/).
 
@@ -61,7 +72,7 @@ You'll need these details when you create the WhatsApp channel in [the following
 
 ## Create a WhatsApp channel
 
-You can create a WhatsApp channel in Copilot Service admin center.
+Create a WhatsApp channel in Copilot Service admin center.
 
 1. In **Customer support**, select **Channels**.
 
@@ -75,7 +86,7 @@ You can create a WhatsApp channel in Copilot Service admin center.
 
 1. In the **Provider** list, select **Azure Communication Services**.
 
-In the following instructions, you'll provide the information from the Azure portal in [the previous section](#get-azure-communication-services-details).
+In the following instructions, you provide the information from the Azure portal in [the previous section](#get-azure-communication-services-details).
 
 1. On the **Channel settings** page:
 
@@ -111,11 +122,11 @@ In the following instructions, you'll provide the information from the Azure por
                
 ## Create a workstream for the WhatsApp channel
 
-To configure routing and work distribution, you can create a [workstream](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context) with the **Channel** set to **WhatsApp** or select an existing one.
+To configure routing and work distribution, create a [workstream](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context) with the **Channel** set to **WhatsApp** or select an existing one.
 
-### Set up WhatsApp message templates
+## Set up WhatsApp message templates
 
-WhatsApp has a constraint known as the 24-hour window. If a WhatsApp user has sent a message, whether it's a communication they initiated or a reply to one of your messages, you have a 24-hour window to send that user messages that don't need to use a template. After the 24-hour window closes, your messages must use an approved template.
+WhatsApp uses a 24-hour messaging window. If a WhatsApp user has sent a message, whether it's a communication they initiated or a reply to one of your messages, you have a 24-hour window to send that user messages that don't need to use a template. After the 24-hour window closes, you can only send messages by using an approved template.
 
 You must create WhatsApp message templates before you can add them to your WhatsApp workstream. Learn more in [Send WhatsApp template messages](/azure/communication-services/concepts/advanced-messaging/whatsapp/template-messages). Only text-based message templates can be added to your workstream.
 
@@ -131,7 +142,7 @@ You must create WhatsApp message templates before you can add them to your Whats
 
 1. Select **Save**.
 
-You can create as many templates as you require.
+Create as many templates as you require.
 
 ### Related information
 

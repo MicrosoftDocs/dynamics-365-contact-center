@@ -92,6 +92,8 @@
             href: evaluation-criteria.md
           - name: Use evaluation plan
             href: evaluation-plan.md
+          - name: Use evaluations for real-time conversations
+            href: realtime-evaluation-plan.md
           - name: Use on-demand evaluation
             href: on-demand-evaluation.md
           - name: Use evaluations
@@ -108,6 +110,20 @@
           href: use-ask-a-question.md  
         - name: Write an email with Copilot
           href: use-copilot-email.md  
+        - name: Use Microsoft 365 Copilot
+          href: /dynamics365/customer-service/use/use-microsoft-365-copilot?context=/dynamics365/contact-center/context/use-context
+        - name: Supervise AI agents with agent feed
+          href: /dynamics365/customer-service/use/supervise-agents-with-agent-feed?context=/dynamics365/contact-center/context/use-context
+        - name: Use AI form-fill assistance
+          href: /dynamics365/customer-service/use/form-fill-assistance?context=/dynamics365/contact-center/context/use-context
+        - name: Use natural language to find data with AI in a view
+          href: /dynamics365/customer-service/use/find-data-with-ai?context=/dynamics365/contact-center/context/use-context
+        - name: Visualize data as a chart with Copilot
+          href: /dynamics365/customer-service/use/visualize-data-using-copilot?context=/dynamics365/contact-center/context/use-context
+        - name: View a Copilot-generated row summary
+          href: /dynamics365/customer-service/use/record-summaries?context=/dynamics365/contact-center/context/use-context
+        - name: Use timeline highlights with generative AI
+          href: /dynamics365/customer-service/use/use-timeline-highlights-with-generative-ai?context=/dynamics365/contact-center/context/use-context         
         - name: Understand how Copilot supports different languages
           href: copilot-language-support.md
         - name: Chat with case data in Customer Service (preview)
@@ -127,7 +143,7 @@
       - name: Unified routing and assignment
         items:
           - name: Manage skills
-            href: /dynamics365/customer-service/use/manage-skills?context=/dynamics365/context/contact-center-context
+            href: /dynamics365/customer-service/use/manage-skills?context=/dynamics365/contact-center/use-context
       - name: Email
         items: 
           - name: Use email
@@ -192,6 +208,12 @@
           href: /dynamics365/customer-service/use/oc-conversation-state?context=/dynamics365/contact-center/context/use-context
         - name: View call options and visual engagement in live chat
           href: /dynamics365/customer-service/use/call-options-visual-engagement?context=/dynamics365/contact-center/context/use-context          
+      - name: Proactive engagement
+        items:
+        - name: Overview of proactive engagement
+          href: ../administer/overview-proactive-engagement.md?context=/dynamics365/contact-center/context/use-context
+        - name: How proactive engagement works
+          href: how-proactive-engagement-works.md
       - name: Agent productivity tools
         items: 
         - name: Productivity pane in Copilot Service workspace
@@ -414,9 +436,11 @@
         href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/use-context
       - name: Responsible AI FAQs for NLUs in AI agents
         href: ../implement/natural-language-ai-faq.md?context=/dynamics365/contact-center/context/use-context
-      - name: Constrained speech recognition
+      - name: Transparency note
         items:
-        - name: Transparency note
+        - name: Real-time voice agents
+          href: ../implement/transparency-note-real-time-voice-agents.md?context=/dynamics365/contact-center/context/use-context
+        - name: Constrained speech recognition
           href: ../implement/transparency-note.md?context=/dynamics365/contact-center/context/use-context
     - name: Resources
       items:

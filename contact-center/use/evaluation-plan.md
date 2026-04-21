@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 04/02/2026
+ms.date: 04/16/2026
 ms.custom: bap-template
 ---
 
@@ -36,9 +36,6 @@ Evaluation plans help supervisors perform consistent and objective reviews of ca
 ## Create and activate evaluation plan for cases and closed conversations
 
 You must enable the **Enable bulk evaluations** checkbox in Copilot Service admin center before you create and activate an evaluation plan for cases. Learn more in [Enable Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#enable-quality-evaluation-agent).
-
-> [!NOTE]
-> You can use conversation evaluations for voice and live chat channels only.
 
 1.  In Copilot Service workspace, go to **Evaluation Plans**.
 
@@ -108,32 +105,6 @@ When you [create and activate an evaluation plan](#create-and-activate-evaluatio
 When a case is resolved, the system creates one evaluation for each plan that matches the specified conditions. Multiple evaluations can be created for the same case. 
 
 To view the evaluations, go to the **Evaluations** page. When the **AI agent status** shows as **Completed**, select the required evaluation and review the **Evaluation Summary** provided by Quality Evaluation Agent.
-
-## Create and activate a real-time evaluation plan for ongoing conversations
-
-You need to turn on the **Criteria scoring** toggle for your evaluation criteria. Learn more in [Create evaluation criteria](evaluation-criteria.md#create-evaluation-criteria).
-
-To create a real-time evaluation plan:
-
-1. In Copilot Service workspace, go to **Evaluation Plans**.
-
-1. On the **Evaluation plans** page, select **New**.
-
-1. On the **New Evaluation Plan** page, in the **Evaluation plan details** section, provide the following information:
-
-    - **Plan name**: Enter plan name.
-    - **Description**: Enter description.
-    - **Record type**: Select **record type** as **Conversations**.
-     
-1. In the **Frequency** section, for **Frequency type**, select **Real-Time**.
-
-1. In the **Conditions** section, add the workstreams for which you want to enable real-time evaluation.
-
-1. In the **Assign Evaluation** section, for **Evaluation method**, select **AI assisted**.
-    
-1.  Select **Save**.
-
-Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations](ongoing-quality-evaluation-agent-conversations.md).
 
 ## Activate, pause, resume, or delete evaluation plans
 

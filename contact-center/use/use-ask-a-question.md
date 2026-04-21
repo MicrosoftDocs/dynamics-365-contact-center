@@ -36,7 +36,7 @@ ms.custom: bap-template
 Based on the app, you're using, you can use Copilot to generate case summary and ask about case data from the **Ask a question** tab.
 
 > [!IMPORTANT]
-> Case summaries and case data are available only if case management is available. If you are using the Customer Service Hub app, you can use Copilot to ask questions about cases, but not to summarize them.
+> Case summaries and case data are available only if case management is available. If you're using the Customer Service Hub app, you can use Copilot to ask questions about cases, but not to summarize them.
 
  In Copilot Service workspace, Copilot enables you to:
 

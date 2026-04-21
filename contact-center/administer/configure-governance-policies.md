@@ -33,7 +33,7 @@ Configure governance policies to enforce compliance, security, and content‑saf
     - msdyn_guardrail_rule_version
     - msdyn_guardrail_scenariotype
 - Setup [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go) or prepaid.
-- Provide consent for potential [data movement across regions](manage-quality-evaluation-agent.md#data-movement-across-regions).
+- Provide consent for potential [data movement across regions](/power-platform/admin/geographical-availability-copilot?utm_source=chatgpt.com&tabs=new).
 - Enable AI agents for your Dynamics 365 environment in Power platform admin center. Learn more in [Copilot adoption in the Power Platform](/power-platform/admin/copilot/copilot-hub).
 
 ## Enable governance
@@ -81,3 +81,7 @@ Healthcare, legal, and finance teams can set policy checks for:
 - Restricted terminology
 
 Governance policies ensure unsafe messages are intercepted before reaching customers. Until the representative updates the email draft to meet policy requirements, the checks continue to block it from being sent. Each failed policy check is recorded, allowing the representative to view previous failures for that draft.
+
+## Related information
+
+[Use governance policies (preview)](../use/use-governance-policies.md)

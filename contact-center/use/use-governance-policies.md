@@ -24,7 +24,7 @@ Create and enforce policies to prevent noncompliant customer communications. Gov
 
 ## Prerequisites
 
-- You have the CSR Manager role.
+- The CSR Manager role.
 - Setup [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go) or prepaid.
 - Provide consent for potential [data movement across regions](/power-platform/admin/geographical-availability-copilot?utm_source=chatgpt.com&tabs=new).
 - Enable AI agents for your Dynamics 365 environment in Power platform admin center. Learn more in [Copilot adoption in the Power Platform](/power-platform/admin/copilot/copilot-hub).
@@ -47,7 +47,7 @@ Create and enforce policies to prevent noncompliant customer communications. Gov
 
 ## Manage policies
 
-You can also unpublish to deactivate a policy, delete a policy, or run a simulation for a policy.
+You can deactivate a policy by selecting **Upublish**, delete a policy, or run a simulation for a policy.
 
 ## Run a simulation
 
@@ -66,9 +66,9 @@ You can view the results under the **Simulation result** tab. You can **View** o
 
 ## View detection log
 
-You can view logs under the **Policy flags/blocks log** tab on the **Governance** page. 
-When you select **Log only**, the agent records that the guardrail check was run and failed. While **Log and block**, both blocks the email and logs the failure for audit.
-
+You can view logs under the **Policy flags/blocks log** tab on the **Governance** page. You can also delete or refresh the logs as required.
 
 ## Related information
+
+[Configure governance policies (preview)](../administer/configure-governance-policies.md)
 

@@ -25,7 +25,7 @@ Create and enforce policies to prevent noncompliant customer communications. Gov
 ## Prerequisites
 
 - The CSR Manager role.
-- Setup [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go) or prepaid.
+- Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 - Provide consent for potential [data movement across regions](/power-platform/admin/geographical-availability-copilot?utm_source=chatgpt.com&tabs=new).
 - Enable AI agents for your Dynamics 365 environment in Power platform admin center. Learn more in [Copilot adoption in the Power Platform](/power-platform/admin/copilot/copilot-hub).
 

@@ -60,7 +60,7 @@ Use simulation to validate how efficiently a policy runs.
     1. **Simulation name**: Provide a name.
     1. **Data source**: Select **Excel Upload** or **Organization Records**. 
         1. If you select **Organization Records**, then add the conditions that would be applicable during a simulation run. You can select up to 30 email records.
-        1. If you select **Excel Upload**, select upload your file as per the excel file guidance.
+        1. If you select **Excel Upload**, then upload your file as per the excel file guidance.
     1.**Simulation scenario**: Select the policies to apply.
 1. Select **Run Simulation**. 
 

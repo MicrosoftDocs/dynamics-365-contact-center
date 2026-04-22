@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 11/03/2025
+ms.date: 04/22/2026
 ms.update-cycle: 180-days
 ms.custom: 
 - bap-template
@@ -32,7 +32,7 @@ Customer Intent Agent uses generative AI to autonomously discover customer inten
 
 - **Assist service representatives**: A curated list of questions and suggested solutions appear in the chat response box, enhancing efficiency and reducing typing effort.
 
-- **Enhance self-service capabilities**: The agent generates follow-up questions and queries knowledge sources based on collected information, resulting in higher deflection rates and allowing service representatives to focus on complex cases.
+- **Enhance self-service capabilities**: The agent generates follow-up questions and queries knowledge sources based on collected information. This approach increases deflection rates and lets service representatives focus on complex cases.
 
 Beyond intent discovery, Customer Intent Agent can autonomously lead conversations using business instructions, enterprise functions, and knowledge articles linked to each intent:
 
@@ -42,7 +42,7 @@ Beyond intent discovery, Customer Intent Agent can autonomously lead conversatio
 
 - **Retrieves and synthesizes knowledge**: The agent pulls in relevant knowledge articles and contextual data so every answer is based on accurate and current business content.
 
-With these capabilities the agent not only identifies what a customer wants but also delivers the solution end‑to‑end, freeing service representatives to focus on complex or exceptional cases.
+With these capabilities, the agent identifies what a customer wants and delivers the solution end‑to‑end. This approach frees service representatives to focus on complex or exceptional cases.
 
 ### Customer Knowledge Management Agent
 
@@ -65,7 +65,7 @@ The capabilities of the Case Management Agent include:
 
 - **Autonomous case creation and update**: Creates and updates cases from live chats and updates cases from emails automatically. The agent uses AI to predict and populate relevant fields.
 
-- **Autonomous case resolution**: Drafts and sends emails based on determined intent from customer queries, leveraging knowledge and custom workflows.
+- **Autonomous case resolution**: Drafts and sends emails based on determined intent from customer queries, using knowledge and custom workflows.
 - **Automated follow-up and closure**: Sends follow-up emails and resolves cases based on predefined rules, streamlining the case closure process.
 
 ### Quality Evaluation Agent
@@ -76,23 +76,27 @@ Quality Evaluation Agent helps organizations make sure that every customer engag
 
 **Actionable insights that drive improvement**: The AI agent provides evaluation summaries, quality scores, and coaching recommendations to help supervisors find gaps, guide representative development, and improve service standards.
 
+**Governance policies**: The AI-powered rule-based system acts as a safeguard layer on top of other AI agents and human-authored communications such as email. The system intercepts outbound content and evaluates it against predefined guardrail policies before sending it to the customer. If the output violates a policy, it can log activity or block the message to prevent non-compliant results from reaching end users based on the policy configured.
+
 ## What is the system’s intended use?
 
 These AI agents are designed to:
 
 - Enhance organizational knowledge management by automating the creation and refinement of knowledge articles while ensuring a comprehensive and accurate intent library that aligns with business needs. This system can work autonomously to ensure content is always kept up to date.
 
-- By leveraging autonomously managed and updated intent library and knowledge base, organizations can address customer inquiries more effectively and provide accurate, timely solutions, enhancing both service representative efficiency and self-help resolution rates.
+- By using an autonomously managed and updated intent library and knowledge base, organizations can address customer inquiries more effectively and provide accurate, timely solutions. This approach improves service representative efficiency and self-service resolution rates.
 
-- Automatically extract and populate the relevant case and related entity fields from customer emails and chats to reduce manual data entry for customer service representatives. This ensures that the case information is complete right from case creation.
+- Automatically extract and populate the relevant case and related entity fields from customer emails and chats to reduce manual data entry for customer service representatives. This automation helps ensure that the case information is complete right from case creation.
 
-- Evaluate customer support interactions using your organization’s evaluation criteria.
+- Evaluate customer support interactions using your organization’s evaluation criteria. Governance policies enforce guardrail policies on emails. Supervisors manage these policies. The policies apply to emails sent by the Case Management Agent (autonomous flow) and emails composed by customer service representatives. The capability is available with initial support for the email channel, where compliance risk and brand impact are the highest. 
 
 ## How is AI agent evaluated? What metrics are used to measure performance?
 
-Performance is evaluated using Microsoft's internal support data and through ongoing pilots within Microsoft Customer Service and Support (CSS). The Customer Intent Agent is assessed based on the accuracy of extracted intents against manually identified ground truth derived from internal support data. Similarly, the Customer Knowledge Management Agent is evaluated for the quality and relevance of its generated knowledge articles, to make sure that they align with the established ground truth and avoid duplication. The Case Management Agent is evaluated based on the quality and relevance of its predictions for the configured fields, generated from the specified context sources. Quality Evaluation Agent is evaluated for accuracy, quality, and relevance of its outputs. Key factors include how well customer engagement evaluation outcomes match defined criteria, how clear and useful generated summaries are, and how effective recommendations are for improving support.
+Performance is evaluated using Microsoft's internal support data and through ongoing pilots within Microsoft Customer Service and Support (CSS). Customer Intent Agent is assessed based on the accuracy of extracted intents against manually identified ground truth derived from internal support data. Similarly, Customer Knowledge Management Agent is evaluated for the quality and relevance of generated knowledge articles. It aligns with the established ground truth and avoids duplication. Case Management Agent is evaluated based on the quality and relevance of its predictions for the configured fields, generated from the specified context sources. Quality Evaluation Agent is evaluated for accuracy, quality, and relevance of its outputs. Too complex? Your readers need an average level of clarity.
 
-Additionally, evaluation datasets are run to assess performance against potential personally identifiable information (PII) leaks, reflecting Microsoft's commitment to protecting customer privacy. Privacy and compliance is a critical focus of these evaluations.
+Key factors include how well customer engagement evaluation outcomes match defined criteria, how clear and useful generated summaries are, and how effective recommendations are for improving support. The Governance policy performance is evaluated based on two dimensions: reliability of policy enforcement (correctly validating violations while avoiding unnecessary blocks on compliant content) and operational efficiency (minimizing added latency). Administrators can use flag-only mode to observe policy performance and calibrate thresholds before activating full enforcement.
+
+Additionally, evaluation datasets are run to assess performance against potential Personally Identifiable Information (PII) leaks, reflecting Microsoft's commitment to protecting customer privacy. Privacy and compliance are a critical focus of these evaluations.
 
 ## What are the limitations of AI agent? How can users minimize the impact of agent limitations?
 
@@ -104,25 +108,27 @@ AI agents have the following limitations:
 
 - **Dependence on data quality**: The effectiveness of the system relies on the quality and completeness of CRM data. 
     - A more diverse range of conversations around different intents help create a more complete and accurate intent library.
-    - Write clear, specific instructions for evaluation questionnaires. Give guidance that’s direct and relevant to the context to help evaluators make accurate decisions.
+    - Write clear, specific instructions for evaluation questionnaires. To help evaluators make accurate decisions, give guidance that's direct and relevant to the context.
 
 - **Customization requirements**: Users need to actively review the AI-generated intent library and knowledge articles to make sure of accuracy. Customization efforts, such as overrides and tweaks, are necessary to refine and align the output with business needs.
 
 ## What data do AI agents collect? How is the data used?
 
-The AI agents generate intents and knowledge articles based on the data that already exists in your Dataverse instance. They do not collect any additional data beyond basic telemetry and any feedback you provide. The data within your CRM system is analyzed to create intent libraries and draft knowledge articles, and run quality evaluations.
+The AI agents generate intents and knowledge articles based on the data that already exists in your Dataverse instance. They don't collect any other data beyond basic telemetry and any feedback you provide. The data within your CRM system is analyzed to create intent libraries and draft knowledge articles, and governance policies.
 
 ## What operational factors and settings allow for effective and responsible use of the system?
 
-- AI agents can operate in both autonomous and supervised modes. While the system is designed to function autonomously and ensure it's always kept up to date, administrators can adjust settings to align with organizational requirements. This includes leveraging autonomous management to improve efficiency in customer service activities, such as maintaining an accurate intent library and knowledge base. However, when autonomous approval is enabled, there's a heightened risk of inadvertently exposing unintended information, including PII. Organizations should therefore carefully review and monitor system outputs to minimize these risks and safeguard sensitive data.
+- AI agents can operate in both autonomous and supervised modes. While the system is designed to function autonomously and keep data up to date, administrators can adjust settings to align with organizational requirements. This approach includes using autonomous management to improve efficiency in customer service activities, such as maintaining an accurate intent library and knowledge base. However, when autonomous approval is enabled, there's a heightened risk of inadvertently exposing unintended information, including PII. Organizations should therefore carefully review and monitor system outputs to minimize these risks and safeguard sensitive data.
 
 - Administrators have the ability to remove or discard generated intents and knowledge articles as needed, supporting the creation of a well-curated intent library and knowledge base.
 
 - AI agents also apply content moderation policies on all generative AI requests to protect users against offensive or harmful content. These content moderation policies also extend to malicious attempts at jailbreaking, prompt injection, prompt exfiltration, and copyright infringement.
 
-- Supervisors can conduct quality evaluations in two modes; fully autonomous mode, where the AI agent completes all evaluations without manual intervention, and AI-assisted mode, where the AI agent performs evaluations and the supervisor reviews the results to check accuracy and compliance. This flexibility lets supervisors choose complete automation for efficiency or a more controlled approach for oversight and quality assurance.
+- Supervisors can conduct quality evaluations in two modes: fully autonomous mode, where the AI agent completes evaluations without manual intervention, and AI-assisted mode, where the AI agent performs evaluations and the supervisor reviews the results for accuracy and compliance. This flexibility lets supervisors choose complete automation for efficiency or a more controlled approach for oversight and quality assurance.
 
-- As a best practice, users are encouraged to inform all stakeholders who have been exposed to the AI system that they have interacted with an AI system.
+- Administrators can enable governance with a simple toggle, author policies using natural language, and choose enforcement modes such as flag-only, block to safely observe behavior before full enforcement. Human oversight is preserved through review workflows, detection logs, and the ability for supervisors to refine policies based on observed outcomes. Auditability and resilience are ensured through persistent logging of all policy evaluations and a fail-open design that prevents platform issues from unintentionally blocking customer communications. 
+
+- As a best practice, encourage users to inform all stakeholders who are exposed to the AI system that they have interacted with an AI system.
 
 ### Related information
 

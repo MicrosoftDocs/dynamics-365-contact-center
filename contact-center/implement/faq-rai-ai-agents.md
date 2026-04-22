@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 04/21/2026
+ms.date: 04/22/2026
 ms.update-cycle: 180-days
 ms.custom: 
 - bap-template
@@ -92,7 +92,7 @@ These AI agents are designed to:
 
 ## How is AI agent evaluated? What metrics are used to measure performance?
 
-Performance is evaluated using Microsoft's internal support data and through ongoing pilots within Microsoft Customer Service and Support (CSS). Customer Intent Agent is assessed based on the accuracy of extracted intents against manually identified ground truth derived from internal support data. Similarly, Customer Knowledge Management Agent is evaluated for the quality and relevance of its generated knowledge articles, to make sure that they align with the established ground truth and avoid duplication. Case Management Agent is evaluated based on the quality and relevance of its predictions for the configured fields, generated from the specified context sources. Quality Evaluation Agent is evaluated for accuracy, quality, and relevance of its outputs. Key factors include how well customer engagement evaluation outcomes match defined criteria, how clear and useful generated summaries are, and how effective recommendations are for improving support. The Governance guardrails performance is evaluated based on two dimensions: reliability of policy enforcement (correctly validating violations while avoiding unnecessary blocks on compliant content) and operational efficiency (minimizing added latency). In testing, the system has been tuned to prioritize precision—reducing false positives that could frustrate users while maintaining recall, so that critical policy violations are unlikely to slip through. Administrators can use log-only mode to observe policy performance and calibrate thresholds before activating full enforcement.
+Performance is evaluated using Microsoft's internal support data and through ongoing pilots within Microsoft Customer Service and Support (CSS). Customer Intent Agent is assessed based on the accuracy of extracted intents against manually identified ground truth derived from internal support data. Similarly, Customer Knowledge Management Agent is evaluated for the quality and relevance of its generated knowledge articles, to make sure that they align with the established ground truth and avoid duplication. Case Management Agent is evaluated based on the quality and relevance of its predictions for the configured fields, generated from the specified context sources. Quality Evaluation Agent is evaluated for accuracy, quality, and relevance of its outputs. Key factors include how well customer engagement evaluation outcomes match defined criteria, how clear and useful generated summaries are, and how effective recommendations are for improving support. The Governance policy performance is evaluated based on two dimensions: reliability of policy enforcement (correctly validating violations while avoiding unnecessary blocks on compliant content) and operational efficiency (minimizing added latency). Administrators can use flag-only mode to observe policy performance and calibrate thresholds before activating full enforcement.
 
 Additionally, evaluation datasets are run to assess performance against potential Personally Identifiable Information (PII) leaks, reflecting Microsoft's commitment to protecting customer privacy. Privacy and compliance is a critical focus of these evaluations.
 
@@ -112,7 +112,7 @@ AI agents have the following limitations:
 
 ## What data do AI agents collect? How is the data used?
 
-The AI agents generate intents and knowledge articles based on the data that already exists in your Dataverse instance. They do not collect any additional data beyond basic telemetry and any feedback you provide. The data within your CRM system is analyzed to create intent libraries and draft knowledge articles, and governance guardrails.
+The AI agents generate intents and knowledge articles based on the data that already exists in your Dataverse instance. They do not collect any additional data beyond basic telemetry and any feedback you provide. The data within your CRM system is analyzed to create intent libraries and draft knowledge articles, and governance policies.
 
 ## What operational factors and settings allow for effective and responsible use of the system?
 
@@ -124,7 +124,7 @@ The AI agents generate intents and knowledge articles based on the data that alr
 
 - Supervisors can conduct quality evaluations in two modes; fully autonomous mode, where the AI agent completes all evaluations without manual intervention, and AI-assisted mode, where the AI agent performs evaluations and the supervisor reviews the results to check accuracy and compliance. This flexibility lets supervisors choose complete automation for efficiency or a more controlled approach for oversight and quality assurance.
 
-- Administrators can enable governance with a simple toggle, author policies using natural language, and choose enforcement modes such as log-only, block to safely observe behavior before full enforcement. Human oversight is preserved through review workflows, detection logs, and the ability for supervisors to refine policies based on observed outcomes. Auditability and resilience are ensured through persistent logging of all policy evaluations and a fail-open design that prevents platform issues from unintentionally blocking customer communications. 
+- Administrators can enable governance with a simple toggle, author policies using natural language, and choose enforcement modes such as flag-only, block to safely observe behavior before full enforcement. Human oversight is preserved through review workflows, detection logs, and the ability for supervisors to refine policies based on observed outcomes. Auditability and resilience are ensured through persistent logging of all policy evaluations and a fail-open design that prevents platform issues from unintentionally blocking customer communications. 
 
 - As a best practice, users are encouraged to inform all stakeholders who have been exposed to the AI system that they have interacted with an AI system.
 

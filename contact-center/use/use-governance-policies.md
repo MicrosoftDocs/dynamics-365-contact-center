@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 04/21/2026
+ms.date: 04/22/2026
 ms.custom: bap-template
 ---
 
@@ -33,7 +33,7 @@ Create and enforce policies to prevent noncompliant customer communications. Gov
 
 1. In Copilot Service workspace, go to **Service** > **Governance**. The **Governance** page appears.
 1. Select **New policy** or select any of the default system policies, such as **Email Template Adherence**, **Groundedness**, or **Profanity**.
-1. If you select a system policy, you can edit the given conditions, save, and publish the policy. The policy gets activated again. Select **Unpublish**, if you need to retain it in a draft state after editing the policy.
+1. If you select a system policy, you can edit the given conditions, save, and publish the policy to reactivate the policy. Select **Unpublish**, if you need to retain it in a draft state after editing the policy.
 1. If you select **New policy**, then on the **Add a policy** dialog, provide the following information:
     1. In the **Details** section:
         1. **Policy name**: Provide policy name.
@@ -44,6 +44,8 @@ Create and enforce policies to prevent noncompliant customer communications. Gov
         1. **How strictly to enforce**: Select **Flag noncompliant content** or **Block noncompliant content**.
     1. **Conditions for content**: Add conditions to select a subset of emails that meet the conditions. If you don’t select any conditions, all emails are run through for the check.
 1. Save and publish.
+
+You must review the generated prompt. If you want to make changes, update the instructions to refine prompt. Microsoft Copilot credits are consumed each time a prompt is generated.
 
 ## Manage policies
 

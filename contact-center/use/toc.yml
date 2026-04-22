@@ -98,6 +98,8 @@
             href: on-demand-evaluation.md
           - name: Use evaluations
             href: use-evaluations.md
+          - name: Use governance policies
+            href: use-governance-policies.md
       - name: Use Copilot features in contact center-standalone
         items: 
         - name: Overview of autonomous agents and Copilot features

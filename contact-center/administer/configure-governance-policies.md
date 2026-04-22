@@ -32,7 +32,7 @@ Configure governance policies to enforce compliance, security, and content‑saf
     - msdyn_guardrail_rule
     - msdyn_guardrail_rule_version
     - msdyn_guardrail_scenariotype
-- Setup [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go) or prepaid.
+- Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 - Provide consent for potential [data movement across regions](/power-platform/admin/geographical-availability-copilot?utm_source=chatgpt.com&tabs=new).
 - Enable AI agents for your Dynamics 365 environment in Power platform admin center. Learn more in [Copilot adoption in the Power Platform](/power-platform/admin/copilot/copilot-hub).
 
@@ -42,7 +42,7 @@ Configure governance policies to enforce compliance, security, and content‑saf
 1. On the **Quality management** page, select **Manage** for **Governance (preview)**.
 1. On the **Governance (preview)** page, turn on the toggle for governance.
 
-## How Governance Agent works
+## How a governance policy works
 
 **Runtime evaluation**:
 The system evaluates each email drafted by a service representative or AI agent by validating the message through the governance policy and checking the content against active policies. When it detects a rule violation, the system performs one of the following actions:

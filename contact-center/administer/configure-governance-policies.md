@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 # Configure governance policies (preview)
 
-Configure governance policies to enforce compliance, security, and content‑safety standards across customer communications in your organization. It evaluates outbound messages, both AI‑generated and human‑authored against configurable policies, helping you ensure that sensitive, restricted, or noncompliant content is automatically detected and managed. This feature supports the email channel and extends the safety checks used across other autonomous agents.
+Configure governance policies to enforce compliance, security, and content‑safety standards across customer communications in your organization. The system evaluates outbound messages, both AI‑generated and representative-authored against configurable policies, to automatically detect and manage sensitive, restricted, or noncompliant content. This feature supports the email channel and extends the safety checks used across other autonomous agents.
 
 > [!IMPORTANT]
 >

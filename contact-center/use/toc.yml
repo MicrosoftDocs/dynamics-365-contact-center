@@ -86,7 +86,7 @@
             href: /dynamics365/customer-service/use/admin-km-agent-review?context=/dynamics365/contact-center/context/use-context
           - name: Use knowledge insights for Customer Knowledge Management Agent
             href: /dynamics365/customer-service/use/admin-km-agent-insights?context=/dynamics365/contact-center/context/use-context
-        - name: Quality Evaluation Agent
+        - name: Quality Management
           items:
           - name: Use evaluation criteria
             href: evaluation-criteria.md

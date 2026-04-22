@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 # Configure governance policies (preview)
 
-Configure governance policies to enforce compliance, security, and content‑safety standards across customer communications in your organization. The system evaluates outbound messages, both AI‑generated and representative-authored against configurable policies, to automatically detect and manage sensitive, restricted, or noncompliant content. This feature supports the email channel and extends the safety checks used across other autonomous agents.
+Configure governance policies to enforce compliance, security, and content‑safety standards across customer communications in your organization. The system evaluates outbound messages, both AI‑generated and representative-authored against configurable policies, to automatically detect and manage sensitive, restricted, or noncompliant content. Governance policy supports the email channel and extends the safety checks used across other autonomous agents.
 
 > [!IMPORTANT]
 >
@@ -45,7 +45,7 @@ Configure governance policies to enforce compliance, security, and content‑saf
 ## How a governance policy works
 
 **Runtime evaluation**:
-The system evaluates each email drafted by a service representative or AI agent by validating the message through the governance policy and checking the content against active policies. When it detects a rule violation, the system performs one of the following actions:
+The system evaluates each email drafted by a service representative or an AI agent by validating the content against active policies. When it detects a policy violation, the system performs one of the following actions:
 
 - Blocks the outgoing message
 - Logs the violation for later review
@@ -56,13 +56,13 @@ Administrators can:
 
 - Review detection logs
 - Identify repeated risk patterns
-- Adjust rule descriptions to refine system prompts
+- Adjust policy descriptions to refine system prompts
 
 ### Scenario examples
 
 **Prevent agents from sending political content**
 
-Administrator creates a rule: Ensure no political content is included in any customer communications.
+Administrator creates a governance policy: Ensure no political content is included in any customer communications.
 - System generates a policy prompt
 - All outbound emails are evaluated against this category
 

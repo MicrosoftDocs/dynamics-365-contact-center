@@ -1,6 +1,6 @@
 ---
 title: Use Service Operations Agent in Dynamics 365 Contact Center (preview)
-description: Learn about Service Operations Agent and how you can use it to configure and administer features in Dynamics 365 Contact Center
+description: Learn about Service Operations Agent and how you can use it to configure and administer features in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim

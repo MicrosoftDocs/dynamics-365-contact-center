@@ -40,7 +40,7 @@ Service Operations Agent supports conversational setup of Dataverse tables such 
 
 - Query the agent about contact center capabilities.
 - Questions about the environment.
-- Diagnostics for supported channels
+- Diagnostics for supported channels.
 
 ## Prerequisites
 

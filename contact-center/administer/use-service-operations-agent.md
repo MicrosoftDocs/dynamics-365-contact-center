@@ -19,7 +19,7 @@ Service Operations Agent supports conversational setup of Dataverse tables such 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 > [!NOTE]
-> Service Operations Agent is only available in the United States and in English.
+> Service Operations Agent is available in the United States and in English language only.
 
 ## Supported capabilities
 
@@ -58,15 +58,14 @@ Use natural language to set up your contact center, and watch your Service Opera
 
 In Copilot Service admin center, select **Launch** in the **Conversational Setup** tile. The **Service Operations Agent (Preview)** page appears. As a one-time authorization, it asks you to connect to Dataverse via the MCP server. Select **Allow once**.
 
-### Use example prompts 
-``
+### Use example prompts
 
-We recommend using clear, detailed prompts and explicitly specifying the relevant channel or topic to reduce the risk of inaccurate or unreliable answers. The following are a few examples of prompts.
+Use clear, detailed prompts and explicitly specify the relevant channel or topic to reduce the risk of inaccurate or unreliable answers. A few examples of prompts are as follows.
 
 **Configuration and setup**
 
 - Can you help me create a voice workstream?
-- Please create a voice workstream with the name `<Insert Name>` and use the `<Queue name\>`queue as the default queue.
+- Please create a voice workstream with the name `<WorkstreamName>` and use the `<QueueName>`queue as the default queue.
 
 **Queue management**
 

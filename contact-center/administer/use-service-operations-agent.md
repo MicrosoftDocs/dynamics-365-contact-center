@@ -44,8 +44,8 @@ Service Operations Agent supports conversational setup of Dataverse tables, such
 
 ## Prerequisites
 
-- Omnichannel administrator role: Required for accessing Service Operations Agent.
-- System Administrator role: Required for Power Apps and MCP connection management.
+- Omnichannel administrator role to access Service Operations Agent
+- System Administrator role to manage Power Apps connections and Model Context Protocol (MCP) connections
 - The Power Platform [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview) mandates the use of an Azure subscription that the system charges when the agent runs. Make sure that you [set up consumption-based billing](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 - For Service Operations Agent to troubleshoot issues during setup:
   - [Application Insights is configured](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource)

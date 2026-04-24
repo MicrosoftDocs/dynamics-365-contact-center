@@ -14,9 +14,12 @@ ms.topic: how-to
 
 Service Operations Agent is a self-service AI agent designed to support adminisrator users in Dynamics 365 Contact Center with configuration, validation, and troubleshooting tasks. It helps streamline onboarding and ongoing maintenance, making administrator workflows more efficient.
 
-Service Operations Agent supports conversational setup of Dataverse tables such as queues and workstreams and builds a fully autonomous contact center for selected industries. It also lets you perform limited simulations.
+Service Operations Agent supports conversational setup of Dataverse tables such as queues and workstreams.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+> [!NOTE]
+> Service Operations Agent is only available in the United States.
 
 ## Supported capabilities
 
@@ -38,7 +41,7 @@ Service Operations Agent supports conversational setup of Dataverse tables such 
 
 - Set up operating hours.
 
-**Manage knowledge and troubleshoot issues**
+**Manage knowledge**
 
 - Query the agent about contact center capabilities
 
@@ -49,11 +52,11 @@ Service Operations Agent supports conversational setup of Dataverse tables such 
 ## Prerequisites
 
 - Omnichannel administrator role
+- Service Operations Agent uses the Data Entry Agent in the background. The Power Platform [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview) mandates the usage of an Azure subscription the system charges when the agent runs. Make sure you [Set up consumption-based billing](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 
 - For Service Operations Agent to troubleshooting issues during set up:
   - [Application Insights is configured](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource)
   - [Application Insights is connected with Dynamics 365 Contact Center](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights)
-  - Monitoring Reader role to your app to access Application Insights data.
 
 ## Conversational setup
 
@@ -71,21 +74,25 @@ If you ask the agent to create entities such as queues and workstreams, and the 
 
 1. Find and open the “D365 Contact Center Admin AI Agent” in Microsoft Copilot Studio agent list. On the right panel, we can send test messages to this copilot. Please click the “···”, then enable “Show activity map when testing”. Then on the left panel, we can see the activity map. It shows the details of each activity. If there are any issues, please share the error details from activity map.
 
-1. Providing clear, detailed prompts to the agent helps reduce the risk of inaccurate or unreliable answers. We recommend specifying the relevant channel or topic clearly in the prompt. See examples below.
+1. Providing clear, detailed prompts to the agent helps reduce the risk of inaccurate or unreliable answers. We recommend specifying the relevant channel or topic clearly in the prompt. 
 
-Configuration and setup
+### Examples 
+
+The following are a few examples of prompts.
+
+**Configuration and setup**
 
 - Can you help me create a voice workstream?
 
 - Please create a voice workstream with the name `<Insert Name>` and use the `<Queue name\>`queue as the default queue.
 
-Queue Management
+**Queue Management**
 
 - Which voice queues are available?
 
 - Which queues are not connected to workstreams?
 
-Knowledge and troubleshooting
+**Knowledge and troubleshooting**
 
 - Is there an active Azure Communication Services resource in this organization?
 

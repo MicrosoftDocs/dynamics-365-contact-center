@@ -36,6 +36,6 @@ Learn how to view scores for the real-time evaluation plan in [Manage ongoing 
 
 1. In Copilot Service admin center, in **Get Started**, select **Contact Center Agents**.
 1. On the **Contact Center** page, select **Quality Assurance Agent**. The **Quality Assurance Agent** page appears.
-1. Select **Quality Evaluation** > **Configure in detail**.
+1. Select **Quality Evaluation** > **Configure in detail**. The **Quality Evaluation Agent** page appears.
 
 ## Related information

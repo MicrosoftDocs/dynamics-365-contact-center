@@ -55,10 +55,13 @@ In Copilot Service admin center, go to **Customer support** > **Conversation Orc
 
 ### Create a playbook
 
-1. On the **Conversation Orchestration** page, select one of the following prompt templates that matches your scenario:
-   - **Escalate priority based on wait time**: For wait time-based dynamic or real-time prioritization.
-   - **Escalate priority based on transfer to queue**: For transfer-based prioritization.
-   - **Configure overflow based on support representative availability in the queue**: For representative availability overflow.
+1. On the **Conversation Orchestration** page, select **Prompt gallery**. The pop-up window displays prompt templates for all scenarios by default.
+1. In the drop-down field, select one of the following categories and then a prompt template that matches your scenario:
+   - Dynamic prioritization:
+      - **Escalate priority based on wait time**: For wait time-based dynamic or real-time prioritization.
+      - **Escalate priority based on transfer to queue**: For transfer-based prioritization.
+   - Overflow handling:
+      - **Configure overflow based on support representative availability in the queue**: For representative availability overflow.
 
 1. In the playbook editor, accept the default name or enter a name in **Playbook name**.
 1. Select **Queues** > **Edit** to open the queues pane.
@@ -75,22 +78,7 @@ In Copilot Service admin center, go to **Customer support** > **Conversation Orc
    1. Provide a description for how the variable appears in the playbook.
    1. Select the values you want to use in your conditions.
 
-   > [!NOTE]
-   > In preview, you can add up to two customer variables only per playbook.
-
-1. Configure conditions and actions based on your selected template:
-
-   **For dynamic prioritization playbooks:**
-   - For **Update priority based on transfer to queue** playbook, the trigger event is preset to **Conversation is transferred**.
-   - For **Update priority based on conversation wait time** playbook, the trigger event is preset to **Conversation is waiting in queue**.
-   - Set the time interval for priority increase (minimum 30 seconds).
-   - For each condition branch, select the context variable values that trigger this condition and set the priority score to increase (0–100,000).
-   - Configure the default priority score for conversations that don't match any condition.
-
-   **For overflow playbooks:**
-   - The trigger condition is preset to **Conversation is waiting in queue**.
-   - For each condition branch, select the context variable values that trigger this condition and choose the overflow action (transfer to queue, direct callback, voicemail, or end conversation).
-   - Configure the default action for conversations that don't match any condition.
+1. Configure conditions and actions based on your selected template. See **Tips for this playbook** on the  to optimally configure the conditions.
 
 1. Select **Save**. The playbook is saved as a draft.
 
@@ -139,14 +127,17 @@ For example, if you have an active "Escalate priority based on wait time" playbo
 
 When you attempt to publish a playbook that conflicts with an existing active playbook, the system displays an error message similar to the following one:
 
-"Failed to publish policy: A playbook for "Escalate priority based on wait time" is already published for `queue`. You cannot publish a duplicate policy for the same queue(s). Please modify the existing published policy."
+"Failed to publish policy: A playbook for "Escalate priority based on wait time" is already published for `queue_name`. You cannot publish a duplicate policy for the same queue(s). Please modify the existing published policy."
 
 To resolve this conflict, do one of the following steps:
 
 - Modify the queue selection in your new playbook to exclude the conflicting queues
 - Edit or deactivate the existing active playbook before publishing your new one
 
-You can save a playbook as a draft even if it conflicts with an existing active playbook. Cross-playbook validation occurs only when you publish a playbook, not when you save it as a draft. The system checks your playbook against other published active playbooks only.
+You can save a playbook as a draft even if it conflicts with an existing active playbook.
+
+> [!IMPORTANT]
+> The system performs the **cross-playbook validation** only when you publish a playbook, not when you save it as a draft. The system checks your playbook against other published active playbooks only.
 
 **Same queue, different scenarios (Allowed)**
 
@@ -157,11 +148,11 @@ When multiple playbooks with different scenarios are active for the same queue, 
 | Run order | Scenario |
 |-----------------|----------|
 | 1 | Agent availability-based overflow |
-| 2 | Dynamic prioritization (Wait Time or Queue Transfer) |
+| 2 | Dynamic prioritization (Wait time or queue transfer) |
 
 This run order is consistent across all conversations and can't be changed. The system automatically determines the playbook to evaluate first based on the scenario type, ensuring predictable and deterministic behavior for all conversations in the queue.
 
-## Troubleshoot issues
+## Things to consider
 
 | Issue | Resolution |
 |-------|------------|

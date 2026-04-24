@@ -317,7 +317,9 @@
           - name: Configure intent-based suggestions for Copilot agents
             href: set-up-intent-agent.md
           - name: Set up voice agents to use intents
-            href: set-up-voice-agents-to-use-intents.md
+            href: set-up-voice-agents-to-use-intents.md  
+        - name: Use Service Operations Agent
+          href: use-service-operations-agent.md  
         - name: Manage Customer Knowledge Management Agent
           href: /dynamics365/customer-service/administer/admin-km-agent?context=/dynamics365/contact-center/context/administer-context
         - name: Manage Quality Evaluation Agent
@@ -328,8 +330,6 @@
           href: configure-copilot-features.md
         - name: Make Copilot available to agents
           href: configure-copilot-features.md#make-copilot-available-to-service-representatives
-        - name: Use Service Operations Agent
-          href: use-service-operations-agent.md
         - name: Enable summarization of cases and conversations
           href: copilot-enable-summary.md
         - name: Enable Copilot help pane features

@@ -7,7 +7,7 @@ ms.reviewer: Soumyasd27
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days 
-ms.date: 01/28/2026
+ms.date: 03/31/2026
 ms.custom: bap-template
 ---
 
@@ -54,4 +54,5 @@ If you made any unpublished modifications to the Copilot plugins, you see a **De
 
 ## Related information
 
-[Knowledge sources overview](/microsoft-copilot-studio/knowledge-copilot-studio)
+[Knowledge sources overview](/microsoft-copilot-studio/knowledge-copilot-studio)  
+[Configure verbatim responses in knowledge articles for Copilot](knowledge-verbatim.md)

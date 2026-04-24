@@ -1,12 +1,12 @@
 ---
 title: Ask a question
-description: Learn how to use ask a question feature in Copilot within customer service representative apps to enhance efficiency.
+description: Learn how to use the ask a question feature in Copilot within customer service representative apps to enhance efficiency.
 author: gandhamm
 ms.author: mgandham
-ms.reviewer: 
+ms.reviewer: mgandham
 ms.topic: how-to
-ms.collection:
-ms.date: 07/14/2025
+ms.collection: bap-ai-copilot
+ms.date: 04/21/2026
 ms.custom: bap-template 
 ---
 
@@ -25,7 +25,6 @@ ms.custom: bap-template
 - Make sure that your administrator has turned on the Copilot features.
 - To use the summarize cases feature, [case summaries through ask a question](/dynamics365/customer-service/administer/enable-ask-summarize-cases) is enabled.
 
-
 ## Draft questions
 
 [!INCLUDE[cc-ask-question-draft-question](../../shared/cc-ask-question-draft-question.md)]
@@ -37,7 +36,7 @@ ms.custom: bap-template
 Based on the app, you're using, you can use Copilot to generate case summary and ask about case data from the **Ask a question** tab.
 
 > [!IMPORTANT]
-> Case summaries and case data are available only if case management is available. If you are using the Customer Service Hub app, you can use Copilot to ask questions about cases, but not to summarize them.
+> Case summaries and case data are available only if case management is available. If you're using the Customer Service Hub app, you can use Copilot to ask questions about cases, but not to summarize them.
 
  In Copilot Service workspace, Copilot enables you to:
 
@@ -81,11 +80,35 @@ You can make the following types of requests:
 
 [!INCLUDE [cc-ask-question-responses](../../shared/cc-ask-question-responses.md)]
 
+## Review responses from knowledge articles (preview)
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
+When Copilot answers a question using knowledge content, the response might be returned directly from a knowledge article.
+
+If the knowledge content is configured to be returned verbatim, Copilot displays the approved wording without rewriting or summarizing it. This behavior helps ensure accuracy and compliance when exact language is required. Learn more in [Configure knowledge articles for verbatim responses in Copilot (preview)](../administer/knowledge-verbatim.md).
+
+When a verbatim response is returned:
+
+- The response indicates that the information is provided directly from a knowledge document.
+- The content isn’t rewritten or summarized.
+- The most relevant section of the knowledge article is surfaced automatically.
+
+To review the full source content, select **Check sources** in the Copilot pane. The linked knowledge article opens in view-only mode, and the content used in the response is highlighted so that you can easily identify it.
+
+If multiple knowledge articles are available, you can use the source navigation controls to switch between articles and review alternate responses.
+
+Always review Copilot responses before sharing them with customers, especially when the response is based on knowledge content.
+
 ## Translate responses
 
 [!INCLUDE [cc-use-translate-responses](../../shared/cc-use-translate-responses.md)]
 
 ## Related information
 
-[Enable features in Copilot pane](../administer/copilot-enable-help-pane.md)
+[Enable features in Copilot pane](../administer/copilot-enable-help-pane.md)  
+[Configure knowledge articles for verbatim responses in Copilot (preview)](../administer/knowledge-verbatim.md)
 

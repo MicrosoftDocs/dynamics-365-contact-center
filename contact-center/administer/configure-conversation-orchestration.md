@@ -4,18 +4,18 @@ description: Learn how to manage intelligent conversation routing with conversat
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 04/07/2026
+ms.date: 04/27/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ---
 
-# Configure conversation orchestration (preview)
+# Configure conversation orchestration using AI-powered playbooks (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Conversation orchestration keeps every conversation actively managed throughout the conversation lifecycle from initiation through resolution. Instead of applying fixed rules at different stages of conversation journey, conversation orchestration monitors each conversation as the conditions evolve&mdash;increase in wait time, filling up of the queues, service representatives going offline&mdash; and responds automatically with the right action. Administrators define the conversation orchestration logic using natural-language playbooks, and conversation orchestration handles the execution.
 
-In the preview release, conversation orchestration is available for voice and live chat channels only .
+In the preview release, conversation orchestration is available for voice and live chat channels only.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -55,6 +55,8 @@ In Copilot Service admin center, go to **Customer support** > **Conversation Orc
 
 ### Create a playbook
 
+By default, the conversation orchestration page displays three popular prompts. Use **Prompt gallery** to view prompts for the different scenarios.
+
 1. On the **Conversation Orchestration** page, select **Prompt gallery**. The pop-up window displays prompt templates for all scenarios by default.
 1. In the drop-down field, select one of the following categories and then a prompt template that matches your scenario:
    - Dynamic prioritization:
@@ -78,7 +80,7 @@ In Copilot Service admin center, go to **Customer support** > **Conversation Orc
    1. Provide a description for how the variable appears in the playbook.
    1. Select the values you want to use in your conditions.
 
-1. Configure conditions and actions based on your selected template. See **Tips for this playbook** on the  to optimally configure the conditions.
+1. Configure conditions and actions based on your selected template. See **Tips for this playbook** on the edit playbook page to optimally configure the conditions.
 
 1. Select **Save**. The playbook is saved as a draft.
 
@@ -143,24 +145,52 @@ You can save a playbook as a draft even if it conflicts with an existing active 
 
 You can configure different scenarios for the same queue. For example, a single queue can have both a "Dynamic Prioritization - Wait Time" playbook and an "Agent Availability Based Overflow" playbook active simultaneously.
 
-When multiple playbooks with different scenarios are active for the same queue, they execute in a predefined sequence that follows the unified routing order:
+When multiple playbooks with different scenarios are active for the same queue, they run based on the triggering event.
 
-| Run order | Scenario |
-|-----------------|----------|
-| 1 | Agent availability-based overflow |
-| 2 | Dynamic prioritization (Wait time or queue transfer) |
+**Example: How multiple playbooks for the same queue across different scenarios work**
 
-This run order is consistent across all conversations and can't be changed. The system automatically determines the playbook to evaluate first based on the scenario type, ensuring predictable and deterministic behavior for all conversations in the queue.
+Consider a queue configured with two playbooks, each designed to handle a distinct scenario:
+
+- **Dynamic prioritization playbook**
+  - **Trigger**: Wait time
+  - **Condition**: Customer tier = Gold  and wait time ≥ 30 seconds
+  - **Action**: Increase priority by 1
+
+- **Agent availability overflow playbook**
+  - **Trigger**: Immediate evaluation on queue entry
+  - **Condition**: Customer tier = Gold **and** no agents are available
+  - **Action**: Execute overflow (for example, route to voicemail, transfer to another queue, or redirect to another number)
+
+Although both playbooks target Gold-tier customers, they differ in their triggering condition&mdash;one is based on elapsed wait time, and the other on real-time agent availability.
+
+**How playbooks are run**
+
+**Scenario 1: Agents are available initially**
+
+1. A conversation enters the queue. Agents are available > overflow condition isn't met, so no overflow action runs.
+1. The conversation remains unassigned for 30 seconds.
+1. The dynamic prioritization condition is now met, triggering a priority increase as defined.
+
+**Result**: The system runs the dynamic prioritization playbook only.
+
+**Scenario 2: No agents available at entry**
+
+1. A conversation enters the queue. No agents are available > **overflow condition is met immediately**. The overflow action is triggered (for example, redirect to voicemail or another queue).
+1. If the conversation:
+   - **Leaves the queue or is closed** > no further actions occur.
+   - **Remains in the queue and is still waiting**: On reaching 30 seconds, the action for **dynamic prioritization playbook** runs and increases the priority.
+   - Overflow action runs first based on availability.
+   - Dynamic prioritization runs only if the conversation remains in the queue long enough.
 
 ## Things to consider
 
 | Issue | Resolution |
 |-------|------------|
-| Playbook not routing conversations | Verify the playbook status is Active, check that the correct queues are selected, and ensure the channel matches your conversation type. |
-| Priority not increasing as expected | Confirm the time interval setting, verify context variable values match your conditions, and check that the conversation is in a queue where the playbook is active. Also verify that the queue doesn't have custom prioritization rules configured. |
-| Overflow not triggering | Verify agent availability settings (presence, capacity, skills), check that the "no agents available" condition is being met, and ensure the playbook is active for the correct queue. |
-| Unable to publish playbook due to conflict | Another Active playbook already exists for the same scenario and queue. Edit the existing playbook or modify the queue selection in your new playbook to avoid overlap. |
-| Dynamic prioritization not applying to a queue | The queue might have custom prioritization rules configured. Remove the custom prioritization configuration from the queue settings to enable dynamic prioritization. |
+| Playbook isn't routing conversations | Verify the playbook status is Active, check that the correct queues are selected, and ensure the channel matches your conversation type. |
+| Priority isn't increased as expected | Confirm the time interval setting, verify context variable values match your conditions, and check that the conversation is in a queue where the playbook is active. Also verify that the queue doesn't have custom prioritization rules configured. |
+| Overflow isn't triggered | Verify agent availability settings (presence, capacity, skills), check that the "no agents available" condition is being met, and ensure the playbook is active for the correct queue. |
+| Unable to publish playbook due to conflict | Another active playbook already exists for the same scenario and queue. Edit the existing playbook or modify the queue selection in your new playbook to avoid overlap. |
+| Dynamic prioritization isn't being applied to a queue | The queue might have custom prioritization rules configured. Remove the custom prioritization configuration from the queue settings to enable dynamic prioritization. |
 
 ## View diagnostics using a custom query
 
@@ -171,3 +201,5 @@ To help you monitor and troubleshoot your playbooks, Conversation Orchestration 
 [Set up unified routing](/dynamics365/customer-service/administer/set-up-routing)  
 [Create and manage queues](/dynamics365/customer-service/administer/queues-omnichannel)  
 [Configure context variables](/dynamics365/customer-service/administer/context-variables)  
+[Dynamic prioritization scenarios](/dynamics365/customer-service/administer/assignment-methods)  
+[Overflow scenario](/dynamics365/customer-service/administer/manage-overflow)

@@ -5,7 +5,7 @@ author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
-ms.date: 04/22/2026
+ms.date: 04/24/2026
 ms.custom: bap-template 
 ---
 
@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [cc-feature-availability](../includes/cc-feature-availability.md)]
 
-Screen recording captures a customer service representative (service representative or representative) on-screen activity during customer interactions. When your screen is recorded, the system captures the entire screen, not just Dynamics 365 Customer Service or Dynamics 365 Contact Center screens.
+Screen recording captures a customer service representative (service representative or representative) on-screen activity during customer interactions. When a screen is recorded, the system captures the entire screen, not just Dynamics 365 Customer Service or Dynamics 365 Contact Center screens.
 
 Screen recording helps organizations support quality, compliance, training, and operational insights by allowing authorized users to review how work is handled in real workflows.
 

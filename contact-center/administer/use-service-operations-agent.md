@@ -4,7 +4,7 @@ description: Learn about Service Operations Agent and how you can use it to conf
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 04/20/2026
+ms.date: 04/24/2026
 ms.topic: how-to
 ---
 

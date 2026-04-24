@@ -159,7 +159,7 @@ Consider a queue configured with two playbooks, each designed to handle a distin
 - **Agent availability overflow playbook**
   - **Trigger**: Immediate evaluation on queue entry
   - **Condition**: Customer tier = Gold **and** no agents are available
-  - **Action**: Execute overflow (for example, route to voicemail, transfer to another queue, or redirect to another number)
+  - **Action**: Run overflow (for example, route to voicemail, transfer to another queue, or redirect to another number)
 
 Although both playbooks target Gold-tier customers, they differ in their triggering condition&mdash;one is based on elapsed wait time, and the other on real-time agent availability.
 
@@ -198,8 +198,8 @@ To help you monitor and troubleshoot your playbooks, Conversation Orchestration 
 
 ### Related information
 
-[Set up unified routing](/dynamics365/customer-service/administer/set-up-routing)  
+[Set up unified routing](/dynamics365/customer-service/administer/overview-unified-routing)  
 [Create and manage queues](/dynamics365/customer-service/administer/queues-omnichannel)  
-[Configure context variables](/dynamics365/customer-service/administer/context-variables)  
+[Configure context variables](/dynamics365/customer-service/administer/manage-context-variables)  
 [Dynamic prioritization scenarios](/dynamics365/customer-service/administer/assignment-methods)  
 [Overflow scenario](/dynamics365/customer-service/administer/manage-overflow)

@@ -38,7 +38,7 @@ This article provides information about the Copilot features supported across Cu
 | [Modify the fields used to draft emails](../administer/copilot-email-enable.md#modify-the-fields-used-to-draft-emails-in-copilot-help-pane) | Yes | Yes | No | No|
 | Use an internal knowledge base as a knowledge source  | Yes                          | Yes                                               | Yes                                               | Yes                             |
 | [Enable knowledge sources from Microsoft Copilot Studio (preview)](../administer/knowledge-copilot.md) | Yes                          | Yes                                               | Yes                                              | Yes                            |
-| [Add trusted webpages as sources](../administer/copilot-enable-help-pane.md#enable-ask-a-question)  | Yes                          | Yes                                               | No                                               | No                             |
+| [Add trusted webpages as sources](../administer/copilot-enable-help-pane.md#customer-support-agent)  | Yes                          | Yes                                               | No                                               | No                             |
 | [Use Copilot to generate knowledge drafts from cases (preview)](/dynamics365/customer-service/use/use-copilot-knowledge-from-cases) | Yes | No | No | No |
 |[Ask about case data](use-ask-a-question.md#summarize-cases-and-ask-about-case-data)| Yes | No | No | No|
 |[Use targeted phrases in Copilot to get responses from plugins (preview)](use-ask-a-question.md#use-targeted-phrases-in-copilot-to-get-responses-from-plugins-preview)| Yes | Yes | Yes | Yes |

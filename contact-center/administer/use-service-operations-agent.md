@@ -38,7 +38,7 @@ Service Operations Agent supports conversational setup of Dataverse tables such 
 
 **Query capabilities and troubleshoot issues**
 
-- Query the agent about contact center capabilities
+- Query the agent about contact center capabilities.
 - Questions about the environment
 - Diagnostics for supported channels
 

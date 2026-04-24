@@ -77,7 +77,7 @@ To configure or refresh the connection between Dataverse and the MCP server, per
 
 ### Use example prompts
 
-Use clear, detailed prompts and explicitly specify the relevant channel or topic to reduce the risk of inaccurate or unreliable answers. A few examples of prompts are as follows.
+Use clear, detailed prompts, and explicitly specify the relevant channel or topic to reduce the risk of inaccurate or unreliable answers. A few examples of prompts are as follows.
 
 **Configuration and setup**
 

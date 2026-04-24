@@ -45,7 +45,7 @@ Service Operations Agent supports conversational setup of Dataverse tables such 
 ## Prerequisites
 
 - Omnichannel administrator role
-- The Power Platform [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview) mandates the usage of an Azure subscription the system charges when the agent runs. Make sure you [Set up consumption-based billing](/dynamics365/customer-service/administer/setup-pay-as-you-go).
+- The Power Platform [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview) mandates the use of an Azure subscription that the system charges when the agent runs. Make sure that you [set up consumption-based billing](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 - For Service Operations Agent to troubleshoot issues during setup:
   - [Application Insights is configured](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource)
   - [Application Insights is connected with Dynamics 365 Contact Center](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights)

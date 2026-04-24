@@ -304,6 +304,10 @@
           href: /dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context
         - name: Configure connection references
           href: /dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context  
+        - name: Service Operations Agent (preview)
+          items:
+          - name: Use Service Operations Agent
+            href: use-service-operations-agent.md
         - name: Customer Intent Agent
           items:
           - name: Overview of Customer Intent Agent

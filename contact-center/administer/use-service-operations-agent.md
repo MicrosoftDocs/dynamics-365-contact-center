@@ -70,7 +70,7 @@ We recommend using clear, detailed prompts and explicitly specifying the relevan
 **Queue Management**
 
 - Which voice queues are available?
-- Which queues are not connected to workstreams?
+- Which queues aren't connected to workstreams?
 
 **Knowledge and troubleshooting**
 

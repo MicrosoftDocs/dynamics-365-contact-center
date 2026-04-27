@@ -120,7 +120,7 @@ Conversation orchestration validates your playbook configuration and displays wa
 
 ### Multiple playbooks for the same queue
 
-When you configure multiple playbooks that apply to the same queue, Conversation Orchestration handles them differently based on whether they target the same or different scenarios.
+When you configure multiple playbooks that apply to the same queue, conversation orchestration handles them differently based on whether they target the same or different scenarios.
 
 **Same queue, same scenario (Conflict)**
 
@@ -195,7 +195,7 @@ Although both playbooks target Gold-tier customers, they differ in their trigger
 
 ## View diagnostics using a custom query
 
-To help you monitor and troubleshoot your playbooks, Conversation Orchestration provides diagnostics information for each conversation that is processed by an active playbook. You can view the diagnostics information by using a custom query. Learn more in [Sample queries and dashboards](/dynamics365/guidance/resources/conversation-diagnostics-sample-queries#conversation-orchestration).
+To help you monitor and troubleshoot your playbooks, conversation orchestration provides diagnostics information for each conversation that is processed by an active playbook. You can view the diagnostics information by using a custom query. Learn more in [Sample queries and dashboards](/dynamics365/guidance/resources/conversation-diagnostics-sample-queries#conversation-orchestration).
 
 ### Related information
 

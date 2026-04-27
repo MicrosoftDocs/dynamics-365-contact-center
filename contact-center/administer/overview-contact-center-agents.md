@@ -12,86 +12,41 @@ ms.custom: bap-template
 
 # Overview of contact center agents
 
-Dynamics 365 Contact Center includes AI-powered agents that automate critical operational tasks, enhance quality management, and streamline service operations. These autonomous agents work alongside your team to improve efficiency, reduce manual effort, and deliver better customer experiences.
+Dynamics 365 Contact Center uses a unified architecture where specialized AI agents operate under a single Copilot control pane with human supervision across the contact center lifecycle. These agents work together in a continuous learning loop, combining AI-driven actions with human oversight to continuously improve service operations.
+
+These agents are available in Copilot Service admin center. Each agent serves a distinct role across the contact center lifecycle.
 
 ## Customer Assist Agent
 
-### Real-time voice agents
+Supports customer interactions by combining autonomous self service with real time assistance to service representatives.
 
-Real-time voice agents are AI-powered conversational agents designed to deliver natural, voice-first interactions that go beyond traditional interactive voice response (IVR) systems. Instead of relying on menu-driven inputs or text-based exchanges, these agents enable customers to speak naturally and receive immediate spoken responses, creating fluid, human-like conversations. By using real-time audio processing, real-time voice agents support instant turn-taking, natural pauses, and context-aware responses, making interactions faster, more intuitive, and more engaging for customers.
-
-**Key capabilities**:
-
-- **Natural language understanding**: Understands caller intent without requiring specific phrases or menu selections.
-- **Voice-first design**: Purpose-built for spoken interaction with a natural conversation flow.
-- **Real-time responsiveness**: Minimal latency with instant turn-taking and natural pauses.
-- **Context awareness**: Maintains conversation state and references previous interactions.
-- **Multilingual support**: Understands and responds in multiple languages.
-- **Flexible integration**: Connects with CRMs, knowledge bases, APIs, and Power Automate flows.
-- **Deterministic control**: Combines AI conversation with structured topic flows for compliance and consistency.
-
-**When to use**: Businesses that want to replace or supplement traditional IVR menus with natural-language voice interactions, reduce customer effort, and deliver responsive automated support at scale.
-
-Learn more in [Real-time voice agents](/microsoft-copilot-studio/voice-realtime-voice-agents).
-
-### Proactive engagement
-
-Proactive engagement helps organizations initiate outbound voice interactions at scale by reaching customers with the right message, at the right time, through AI-led or representative-led experiences. It supports campaign-based outreach for scenarios such as reminders, follow-ups, service updates, and other proactive customer communications.
-
-**Key capabilities**:
-
-- **Outbound engagement setup**: Create proactive engagements from outbound workstreams and define the audience, routing, and business context.
-- **AI-led or representative-led calls**: Choose whether calls are handled by Copilot first, by service representatives, or by a combination of both based on the engagement design.
-- **Flexible dialing modes**: Use Copilot, preview, progressive, or predictive dialing modes to balance scale, speed, and service quality.
-- **Operational controls**: Configure display numbers, retry behavior, quiet hours, frequency limits, and pacing rules to align outreach with business and compliance requirements.
-- **Targeted outreach**: Source contacts through file upload, APIs, MCP, or Customer Insights journeys, and prioritize how calls are processed.
-
-**When to use**: Administrators and business teams who need to run structured outbound campaigns, automate customer outreach, and blend AI with representative support for proactive service.
-
-Learn more in [Configure proactive engagement](configure-proactive-engagement.md).
+- Understand customer needs
+- Resolve routine issues
+- Assist representatives during live interactions
+- Persist context across interactions
 
 ## Quality Assurance Agent
 
-Quality Assurance Agent brings AI-powered support to supervisors and quality managers by autonomously monitoring conversations in real time and after completion.
+Delivers quality, compliance, and coaching insights to ensure interactions meet standards.
 
-**Key capabilities**:
+- Evaluate interactions
+- Diagnose quality and compliance gaps
+- Experiment with improvements
+- Optimize service outcomes
 
-- **Real-time quality evaluation**: Automatically reviews conversations as they happen and after completion
-- **Proactive alerts**: Identifies quality issues early so supervisors can intervene when needed
-- **Quality scoring**: Provides automated quality scores without manual review effort
-- **Performance insights**: Helps improve team performance through early issue detection
+## Service Operations Agent
 
-**When to use**: Supervisors and quality managers who need to monitor conversation quality, ensure compliance, and improve representative performance.
+Supports configuration, governance, and optimization of the contact center environment while maintaining full operational control.
 
-## Service Operations Agent (preview)
-
-Service Operations Agent is a self-service AI agent that supports administrators with configuration, validation, and troubleshooting tasks using natural language.
-
-**Key capabilities**:
-
-- **Conversational setup**: Configure channels and workstreams through natural language prompts
-- **Queue management**: Assign users to queues, create skills, and manage operating hours
-- **Channel management**: Sync phone numbers with Azure Communication Services and Teams
-- **Diagnostics and troubleshooting**: Query capabilities and troubleshoot configuration issues
-- **Best practices guidance**: Receive recommendations for contact center configuration
-
-**When to use**: Administrators who need to quickly set up and manage contact center configuration without manual configuration steps.
-
-### Conversation Orchestration with AI-powered playbooks (preview)
-
-Conversation Orchestration keeps conversations actively managed throughout their lifecycle by monitoring conditions in real time and automatically applying the right actions.
-
-**Key capabilities**:
-
-- **Dynamic prioritization**: Automatically escalate priority based on wait time, transfer events, or other conditions
-- **Overflow handling**: Route conversations to alternative resources based on agent availability
-- **Intelligent routing**: Respond automatically to changing conditions without fixed rules
-- **Scenario-based playbooks**: Use guided templates for common scenarios like wait time escalation and overflow
-
-**When to use**: Supervisors and administrators who need to optimize routing efficiency, reduce wait times, and handle overflow intelligently without manual intervention.
+- Provision contact center components
+- Configure settings
+- Validate setups
+- Safeguard operations
 
 ### Related information
 
+[Real-time voice agents](/microsoft-copilot-studio/voice-realtime-voice-agents)  
+[Configure proactive engagement](configure-proactive-engagement.md)  
 [Use Quality Assurance Agent](use-quality-assurance-agent.md)  
 [Use Service Operations Agent](use-service-operations-agent.md)  
-[Configure Conversation Orchestration](configure-conversation-orchestration.md)  
+[Configure conversation orchestration](configure-conversation-orchestration.md)  

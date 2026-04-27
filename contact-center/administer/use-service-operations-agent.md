@@ -14,14 +14,14 @@ ms.topic: how-to
 
 Service Operations Agent in Dynamics 365 Contact Center is a self-service AI agent that supports administrators with configuration, validation, and troubleshooting tasks. The agent helps streamline onboarding and ongoing maintenance, making administrator workflows more efficient.
 
-Service Operations Agent supports conversational setup of Dataverse tables such as queues and workstreams.
+Service Operations Agent supports conversational setup of Dataverse tables, such as queues and workstreams.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Supported capabilities
 
 > [!NOTE]
-> Service Operations Agent is available in the United States and in English language only.
+> Service Operations Agent is available in the United States and in the English language only.
  
 **Configure channels**
 
@@ -44,7 +44,8 @@ Service Operations Agent supports conversational setup of Dataverse tables such 
 
 ## Prerequisites
 
-- Omnichannel administrator role
+- Omnichannel administrator role to access Service Operations Agent
+- System Administrator role to manage Power Apps connections and Model Context Protocol (MCP) connections
 - The Power Platform [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview) mandates the use of an Azure subscription that the system charges when the agent runs. Make sure that you [set up consumption-based billing](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 - For Service Operations Agent to troubleshoot issues during setup:
   - [Application Insights is configured](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource)
@@ -52,20 +53,36 @@ Service Operations Agent supports conversational setup of Dataverse tables such 
 
 ## Conversational setup
 
-Use natural language to set up your contact center, and watch your Service Operations Agent run the steps while keeping a human in the loop.
+Use natural language to set up your contact center and watch Service Operations Agent run the steps while keeping a human in the loop.
 
 ### Steps to access
 
-In Copilot Service admin center, select **Launch** in the **Conversational Setup** tile. The **Service Operations Agent (Preview)** page appears. As a one-time authorization, it asks you to connect to Dataverse via the MCP server. Select **Allow once**.
+Service Operations Agent requires a Dataverse connection through the MCP server. This connection enables the agent to access and manage your environment.
+
+Perform the following steps:
+
+1. In Copilot Service admin center, select **Launch** in the **Conversational Setup** tile. The **Service Operations Agent (Preview)** page appears with a prompt connect to Dataverse via the MCP server.
+1. Select **Allow once**.
+
+If the agent can't perform actions or retrieve information, verify that the connection is configured correctly.
+
+To configure or refresh the connection between Dataverse and the MCP server, perform the following steps:
+
+1. Go to [Power Apps](https://make.powerapps.com).
+1. Select the correct environment in the upper-right corner.
+1. Select **Connections** in the left pane.
+1. Locate **D365 Contact Center MCP Connection**, and then delete it.
+1. In Copilot Service admin center, open **Admin Copilot**, and then start a new conversation.
+1. When the connection card appears, select **Allow** to create a new connection for **D365 Contact Center Admin MCP**.
 
 ### Use example prompts
 
-Use clear, detailed prompts and explicitly specify the relevant channel or topic to reduce the risk of inaccurate or unreliable answers. A few examples of prompts are as follows.
+Use clear, detailed prompts, and explicitly specify the relevant channel or topic to reduce the risk of inaccurate or unreliable answers. A few examples of prompts are as follows.
 
 **Configuration and setup**
 
 - Can you help me create a voice workstream?
-- Please create a voice workstream with the name `<WorkstreamName>` and use the `<QueueName>`queue as the default queue.
+- Please create a voice workstream with the name `<WorkstreamName>` and use the `<QueueName>` queue as the default queue.
 
 **Queue management**
 

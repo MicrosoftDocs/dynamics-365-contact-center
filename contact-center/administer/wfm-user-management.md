@@ -1,7 +1,7 @@
 ---
-title: Set up your workforce
-description: Learn how to set up workforce with the required roles and skills.
-ms.date: 04/14/2025
+title: Set up your workforce with roles and skills
+description: Learn how to set up your workforce by creating users and assigning the appropriate security roles, skills, and proficiency levels to support effective workforce management in your Dynamics 365 contact center.
+ms.date: 04/27/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -16,7 +16,7 @@ ms.custom:
 
 # Set up your workforce with required roles and skills
 
-The first step to managing your workforce is to set up your users with the correct security roles and skills. This ensures that each customer service representative (service representative or representative) is appropriately assigned to their role and equipped with the necessary skill sets to meet the demands of your contact center. 
+The first step to managing your workforce is to set up your users with the correct security roles and skills. This ensures that your customer service representatives (service representatives or representatives) are appropriately assigned to their role and equipped with the necessary skill sets to meet the demands of your contact center. 
 
 This article walks you through the process of creating users and assigning the appropriate security roles and skills to help you enable effective workforce management.
 
@@ -44,8 +44,8 @@ Before assigning tasks and scheduling, you must equip your service representativ
 
 1. In the site map of the Copilot Service admin center app, go to **Operations**, and then select **Workforce management**. The **Workforce management** page appears.
 1. In **User management**, select **Manage** next to **Enhanced user management**.
-1. Select the users for whom you want to assign skills, and then on the **Update user attributes** dropdown menu, select **Update skills**.
-1. Select the relevant skills and proficieny levels to assign to the user(s).
+1. Select the users for whom you want to assign skills, and then on the **Update user attributes** menu, select **Update skills**.
+1. Select the relevant skills and proficiency levels to assign to the user(s).
 1. Select **Save**.
 
 ## Create bookable resources
@@ -53,7 +53,7 @@ Before assigning tasks and scheduling, you must equip your service representativ
 For service representatives to be scheduled for activities, you must create a bookable resource entity for each representative.
 
 1. In the site map of the Copilot Service admin center app, go to **Operations**, and then select **Workforce management**. The **Workforce management** page appears.
-1. In **Workforce setup**, select **View** next to **User management**. The **User managment** page opens.
+1. In **Workforce setup**, select **View** next to **User management**. The **User management** page opens.
 1. Select **Manage** next to **Users**.
 1. Select the user, and then on the page that opens, select the **Details** page. The page refreshes and displays the user's details.
 1. Select the **Omnichannel** tab. 

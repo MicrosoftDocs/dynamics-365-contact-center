@@ -202,4 +202,4 @@ To help you monitor and troubleshoot your playbooks, Conversation Orchestration 
 [Create and manage queues](/dynamics365/customer-service/administer/queues-omnichannel)  
 [Configure context variables](/dynamics365/customer-service/administer/manage-context-variables)  
 [Dynamic prioritization scenarios](/dynamics365/customer-service/administer/assignment-methods#how-dynamic-prioritization-works)  
-[Overflow scenario](/dynamics365/customer-service/administer/manage-overflow)
+[Overflow scenario](/dynamics365/customer-service/administer/manage-overflow#use-ai-powered-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview)  

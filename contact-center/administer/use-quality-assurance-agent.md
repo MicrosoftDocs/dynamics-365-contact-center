@@ -39,3 +39,7 @@ Agent skills help supervisors manage, set up, and use the agent effectively.
 1. Select **Quality Evaluation** > **Configure in detail**. The **Quality Evaluation Agent** page appears.
 
 You can [enable conversations](manage-quality-evaluation-agent.md#enable-quality-evaluation-agent), and then from Copilot Service workspace, use evaluations for real-time conversations and view scores for the real-time evaluation plans.
+
+## Related information
+
+[Manage Quality Evaluation Agent](manage-quality-evaluation-agent.md#manage-quality-evaluation-agent)

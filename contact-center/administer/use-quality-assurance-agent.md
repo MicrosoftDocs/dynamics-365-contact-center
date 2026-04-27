@@ -41,7 +41,9 @@ Through quality evaluation, the agent automatically reviews conversations in rea
 1. In Copilot Service admin center,  go to **Customer Support** > **Quality management**. The **Quality management** page appears.
 1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears.
 
-You can [enable conversations](manage-quality-evaluation-agent.md#enable-quality-evaluation-agent), and then from Copilot Service workspace, use evaluations for real-time conversations and view scores for the real-time evaluation plans.
+You can [enable conversations](manage-quality-evaluation-agent.md#enable-quality-evaluation-agent).
+
+In Copilot Service workspace, you can use evaluations for real-time conversations and view scores for the real-time evaluation plans.
 
 ## Related information
 

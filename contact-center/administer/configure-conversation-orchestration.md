@@ -24,8 +24,9 @@ In the preview release, conversation orchestration is available for voice and li
 
 - Specific licensing requirements apply to configure and use conversation orchestration in Dynamics 365 Contact Center. Learn more in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 - System administrator or Omnichannel administrator role.
+- The Power Platform [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview) mandates the use of an Azure subscription that the system charges when the agent runs. Make sure that you [set up consumption-based billing](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 - Unified routing enabled for your environment.
-- At least one queue and workstream is configured for voice or messaging channels.
+- At least one [queue](/dynamics365/customer-service/administer/queues-omnichannel?context=/dynamics365/contact-center/context/administer-context) and [workstream](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context) is configured for voice or messaging channels.
 - A voice or messaging channel is configured.
 
 ## Understand playbooks
@@ -45,11 +46,9 @@ A playbook can have one of the following statuses.
 | **Draft** | The playbook is saved but not active. You can make changes freely. |
 | **Active** | The playbook is published and actively orchestrates conversations. |
 
-## Access conversation orchestration playbooks
+## Create and manage playbooks
 
 In Copilot Service admin center, go to **Customer support** > **Conversation Orchestration (Preview)**. The **Conversation orchestration (Preview)** > **New** page displays available playbook templates organized by scenario.
-
-## Create and manage playbooks
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team’s performance and improve customer satisfaction. This feature is not intended for use in making&mdash;and should not be used to make&mdash;decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365, this feature, and any associated feature or service in compliance with all applicable laws, including laws relating to accessing individual employee analytics and monitoring, recording, and storing communications with end users. This also includes adequately notifying end users that their communications with representatives may be monitored, recorded, or stored and, as required by applicable laws, obtaining consent from end users before using the feature with them. Customers are also encouraged to have a mechanism in place to inform their representatives that their communications with end users may be monitored, recorded, or stored.
@@ -89,13 +88,13 @@ By default, the conversation orchestration page displays three popular prompts. 
 
 ### Edit a playbook
 
-1. Go to the **All playbooks** tab in **Conversation Orchestration**.
+1. Go to the **All playbooks** tab in **Conversation orchestration**.
 1. Find the playbook you want to edit.
-1. Select the actions menu (**...**), and then select **Edit**.
+1. Select the vertical ellipsis, and then select **Edit**.
 1. Make your changes.
 1. Do one of the following:
-   - For draft playbooks: Select **Save** to save your changes, or select **Publish** when ready to activate.
-   - For active playbooks: Select **Save & publish** to save and immediately publish your changes. The **Save** button is disabled for active playbooks to prevent unintended changes to live routing. If you cancel, the playbook reverts to the last published version.
+   - **For draft playbooks**: Select **Save** to save your changes, or select **Publish** when ready to activate.
+   - **For active playbooks**: Select **Save & publish** to save and immediately publish your changes. The **Save** button is disabled for active playbooks to prevent unintended changes to live routing. If you cancel, the playbook reverts to the last published version.
 
 ### Delete a playbook
 
@@ -122,7 +121,7 @@ Conversation orchestration validates your playbook configuration and displays wa
 
 When you configure multiple playbooks that apply to the same queue, conversation orchestration handles them differently based on whether they target the same or different scenarios.
 
-**Same queue, same scenario (Conflict)**
+**Same queue, same scenario (conflict)**
 
 You can't have multiple active playbooks for the same scenario and the same queue. This configuration creates a conflict that prevents publishing.
 
@@ -140,7 +139,7 @@ To resolve this conflict, do one of the following steps:
 You can save a playbook as a draft even if it conflicts with an existing active playbook.
 
 > [!IMPORTANT]
-> The system performs the **cross-playbook validation** only when you publish a playbook, not when you save it as a draft. The system checks your playbook against other published active playbooks only.
+> The system performs the cross-playbook validation only when you publish a playbook, not when you save it as a draft. The system checks your playbook against other published active playbooks only.
 
 **Same queue, different scenarios (Allowed)**
 
@@ -168,7 +167,7 @@ Although both playbooks target Gold-tier customers, they differ in their trigger
 
 **Scenario 1: Agents are available initially**
 
-1. A conversation enters the queue. Agents are available > overflow condition isn't met, so no overflow action runs.
+1. A conversation enters the queue. Agents are available. The overflow condition isn't met, so no overflow action runs.
 1. The conversation remains unassigned for 30 seconds.
 1. The dynamic prioritization condition is now met, triggering a priority increase as defined.
 
@@ -176,9 +175,9 @@ Although both playbooks target Gold-tier customers, they differ in their trigger
 
 **Scenario 2: No agents available at entry**
 
-1. A conversation enters the queue. No agents are available > **overflow condition is met immediately**. The overflow action is triggered (for example, redirect to voicemail or another queue).
+1. A conversation enters the queue. No agents are available. The overflow condition is met immediately. The overflow action is triggered (for example, redirect to voicemail or another queue).
 1. If the conversation:
-   - **Leaves the queue or is closed** > no further actions occur.
+   - **Leaves the queue or is closed**: No further actions occur.
    - **Remains in the queue and is still waiting**: On reaching 30 seconds, the action for **dynamic prioritization playbook** runs and increases the priority.
    - Overflow action runs first based on availability.
    - Dynamic prioritization runs only if the conversation remains in the queue long enough.
@@ -188,7 +187,7 @@ Although both playbooks target Gold-tier customers, they differ in their trigger
 | Issue | Resolution |
 |-------|------------|
 | Playbook isn't routing conversations | Verify the playbook status is Active, check that the correct queues are selected, and ensure the channel matches your conversation type. |
-| Priority isn't increased as expected | Confirm the time interval setting, verify context variable values match your conditions, and check that the conversation is in a queue where the playbook is active. Also verify that the queue doesn't have custom prioritization rules configured. |
+| Priority hasn't increased as expected | Confirm the time interval setting, verify context variable values match your conditions, and check that the conversation is in a queue where the playbook is active. Also verify that the queue doesn't have custom prioritization rules configured. |
 | Overflow isn't triggered | Verify agent availability settings (presence, capacity, skills), check that the "no agents available" condition is being met, and ensure the playbook is active for the correct queue. |
 | Unable to publish playbook due to conflict | Another active playbook already exists for the same scenario and queue. Edit the existing playbook or modify the queue selection in your new playbook to avoid overlap. |
 | Dynamic prioritization isn't being applied to a queue | The queue might have custom prioritization rules configured. Remove the custom prioritization configuration from the queue settings to enable dynamic prioritization. |

@@ -296,7 +296,7 @@
           href: ../use/agent-insights.md
       - name: Contact center agents
         items:
-        - name: Overview
+        - name: Overview of contact center agents
           href: overview-contact-center-agents.md
         - name: Customer Assist Agent
           items:

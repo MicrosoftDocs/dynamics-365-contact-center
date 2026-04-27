@@ -42,4 +42,6 @@ You can [enable conversations](manage-quality-evaluation-agent.md#enable-quality
 
 ## Related information
 
-[Manage Quality Evaluation Agent](manage-quality-evaluation-agent.md#manage-quality-evaluation-agent)
+[Manage Quality Evaluation Agent](manage-quality-evaluation-agent.md#manage-quality-evaluation-agent)  
+
+[Overview of contact center agents](overview-contact-center-agents.md)

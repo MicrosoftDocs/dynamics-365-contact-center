@@ -189,7 +189,6 @@ Although both playbooks target Gold-tier customers, they differ in their trigger
 | Playbook isn't routing conversations | Verify the playbook status is Active, check that the correct queues are selected, and ensure the channel matches your conversation type. |
 | Priority hasn't increased as expected | Confirm the time interval setting, verify context variable values match your conditions, and check that the conversation is in a queue where the playbook is active. Also verify that the queue doesn't have custom prioritization rules configured. |
 | Overflow isn't triggered | Verify agent availability settings (presence, capacity, skills), check that the "no agents available" condition is being met, and ensure the playbook is active for the correct queue. |
-| Unable to publish playbook due to conflict | Another active playbook already exists for the same scenario and queue. Edit the existing playbook or modify the queue selection in your new playbook to avoid overlap. |
 | Dynamic prioritization isn't being applied to a queue | The queue might have custom prioritization rules configured. Remove the custom prioritization configuration from the queue settings to enable dynamic prioritization. |
 
 ## View diagnostics using a custom query

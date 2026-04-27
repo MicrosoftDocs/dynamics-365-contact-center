@@ -34,9 +34,8 @@ Agent skills help supervisors manage, set up, and use the agent effectively.
 
 ## Configure Quality Assurance Agent
 
-1. In Copilot Service admin center, in **Get Started**, select **Contact Center Agents**.
-1. On the **Contact Center** page, select **Quality Assurance Agent**. The **Quality Assurance Agent** page appears.
-1. Select **Quality Evaluation** > **Configure in detail**. The **Quality Evaluation Agent** page appears.
+1. In Copilot Service admin center,  go to **Customer Support** > **Quality management**. The **Quality management** page appears.
+1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears.
 
 You can [enable conversations](manage-quality-evaluation-agent.md#enable-quality-evaluation-agent), and then from Copilot Service workspace, use evaluations for real-time conversations and view scores for the real-time evaluation plans.
 

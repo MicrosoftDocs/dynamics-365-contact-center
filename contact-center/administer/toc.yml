@@ -298,7 +298,7 @@
         items:
         - name: Overview
           href: overview-contact-center-agents.md
-        - Customer assist agent
+        - name: Customer Assist Agent
           items:
           - name: Real-time voice agents
             href: /microsoft-copilot-studio/voice-realtime-voice-agents?context=/dynamics365/contact-center/context/administer-context

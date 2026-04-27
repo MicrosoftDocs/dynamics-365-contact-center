@@ -20,6 +20,16 @@ Dynamics 365 Contact Center includes AI-powered agents that automate critical op
 
 Real-time voice agents are AI-powered conversational agents designed to deliver natural, voice-first interactions that go beyond traditional interactive voice response (IVR) systems. Instead of relying on menu-driven inputs or text-based exchanges, these agents enable customers to speak naturally and receive immediate spoken responses, creating fluid, human-like conversations. By using real-time audio processing, real-time voice agents support instant turn-taking, natural pauses, and context-aware responses, making interactions faster, more intuitive, and more engaging for customers.
 
+**Key capabilities**:
+
+- **Natural language understanding**: Understands caller intent without requiring specific phrases or menu selections.
+- **Voice-first design**: Purpose-built for spoken interaction with a natural conversation flow.
+- **Real-time responsiveness**: Minimal latency with instant turn-taking and natural pauses.
+- **Context awareness**: Maintains conversation state and references previous interactions.
+- **Multilingual support**: Understands and responds in multiple languages.
+- **Flexible integration**: Connects with CRMs, knowledge bases, APIs, and Power Automate flows.
+- **Deterministic control**: Combines AI conversation with structured topic flows for compliance and consistency.
+
 **When to use**: Businesses that want to replace or supplement traditional IVR menus with natural-language voice interactions, reduce customer effort, and deliver responsive automated support at scale.
 
 Learn more in [Real-time voice agents](/microsoft-copilot-studio/voice-realtime-voice-agents).

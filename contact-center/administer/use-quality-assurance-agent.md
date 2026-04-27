@@ -21,11 +21,15 @@ Quality Assurance Agent brings AI-powered support to contact center supervisors 
 
 Agent skills help supervisors manage, set up, and use the agent effectively.
 
-**Quality evaluation**: Through quality evaluation, the agent automatically reviews conversations in real time and after completion, provides quality scores, and helps supervisors spot issues early and improve performance without manual effort. 
+- **Real-time quality evaluation**: 
+
+Through quality evaluation, the agent automatically reviews conversations in real time and after completion, provides quality scores, and helps supervisors spot issues early and improve performance without manual effort. 
 
 - Learn how to [use evaluations for real-time conversations](../use/realtime-evaluation-plan.md#use-evaluations-for-real-time-conversations).
 
 - Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations](../use/ongoing-quality-evaluation-agent-conversations.md).
+
+- **Quality evaluation for closed conversations**: Define criteria methods, conditions, and manage evaluation plans to support both manual and AI-driven assessments. Learn more in [Use evaluation plan](../use/evaluation-plan.md#use-evaluation-plan).
 
 ## Prerequisites
 

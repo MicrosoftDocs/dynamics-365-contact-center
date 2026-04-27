@@ -32,7 +32,7 @@ Agent skills help supervisors manage, set up, and use the agent effectively.
 - Omnichannel administrator role.
 - The Power Platform [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview) mandates the use of an Azure subscription that the system charges when the agent runs. Make sure that you [set up consumption-based billing](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 
-## Configure Quality Assurance Agent
+## Configure skills for Quality Assurance Agent
 
 1. In Copilot Service admin center, in **Get Started**, select **Contact Center Agents**.
 1. On the **Contact Center** page, select **Quality Assurance Agent**. The **Quality Assurance Agent** page appears.

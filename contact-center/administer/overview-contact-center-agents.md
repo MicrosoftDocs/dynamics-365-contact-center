@@ -20,6 +20,8 @@ Dynamics 365 Contact Center includes AI-powered agents that automate critical op
 
 Real-time voice agents are AI-powered conversational agents designed to deliver natural, voice-first interactions that go beyond traditional interactive voice response (IVR) systems. Instead of relying on menu-driven inputs or text-based exchanges, these agents enable customers to speak naturally and receive immediate spoken responses, creating fluid, human-like conversations. By using real-time audio processing, real-time voice agents support instant turn-taking, natural pauses, and context-aware responses, making interactions faster, more intuitive, and more engaging for customers.
 
+**When to use**: Businesses that want to replace or supplement traditional IVR menus with natural-language voice interactions, reduce customer effort, and deliver responsive automated support at scale.
+
 Learn more in [Real-time voice agents](/microsoft-copilot-studio/voice-realtime-voice-agents).
 
 ### Proactive engagement
@@ -33,6 +35,8 @@ Proactive engagement helps organizations initiate outbound voice interactions at
 - **Flexible dialing modes**: Use Copilot, preview, progressive, or predictive dialing modes to balance scale, speed, and service quality.
 - **Operational controls**: Configure display numbers, retry behavior, quiet hours, frequency limits, and pacing rules to align outreach with business and compliance requirements.
 - **Targeted outreach**: Source contacts through file upload, APIs, MCP, or Customer Insights journeys, and prioritize how calls are processed.
+
+**When to use**: Administrators and business teams who need to run structured outbound campaigns, automate customer outreach, and blend AI with representative support for proactive service.
 
 Learn more in [Configure proactive engagement](configure-proactive-engagement.md).
 

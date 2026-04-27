@@ -20,28 +20,26 @@ These agents are available in Copilot Service admin center. Each agent serves a 
 
 Supports customer interactions by combining autonomous self service with real time assistance to service representatives.
 
-- Understand customer needs
+- Understand customer intents and resolve issues
 - Resolve routine issues
 - Assist representatives during live interactions
-- Persist context across interactions
+- Proactively contact customers
 
 ## Quality Assurance Agent
 
 Delivers quality, compliance, and coaching insights to ensure interactions meet standards.
 
-- Evaluate interactions
-- Diagnose quality and compliance gaps
-- Experiment with improvements
-- Optimize service outcomes
+- Monitor and evaluate conversations for quality issues in the real time
+- Evaluate the net conversation quality after conversation is over
+- Enable supervisors to monitor and act on conversations with denigrating quality through timely alerts
 
 ## Service Operations Agent
 
 Supports configuration, governance, and optimization of the contact center environment while maintaining full operational control.
 
 - Provision contact center components
-- Configure settings
-- Validate setups
-- Safeguard operations
+- Configure settings using natural language
+- Orchestrate conversations in real time
 
 ### Related information
 

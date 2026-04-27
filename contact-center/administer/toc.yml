@@ -294,8 +294,18 @@
           href: create-rollout-plans.md
         - name: View Agent insights
           href: ../use/agent-insights.md
-      - name: Contact Center Agents
+      - name: Contact center agents
         items:
+        - name: Overview
+          href: overview-contact-center-agents.md
+        - Customer assist agent
+          items:
+          - name: Real-time voice agents
+            href: /microsoft-copilot-studio/voice-realtime-voice-agents?context=/dynamics365/contact-center/context/administer-context
+          - name: Overview of proactive engagment
+            href: overview-proactive-engagement.md
+        - name: Quality Assurance Agent
+          href: use-quality-assurance-agent.md 
         - name: Service Operations Agent (preview)
           items:
           - name: Use Service Operations Agent

@@ -5,6 +5,7 @@ author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.date: 04/27/2026
+ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ---

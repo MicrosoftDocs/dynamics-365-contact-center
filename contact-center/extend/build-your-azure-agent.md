@@ -4,7 +4,7 @@ description: Learn how to build a custom Azure agent and integrate it with Dynam
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 04/15/2026
+ms.date: 04/28/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ---

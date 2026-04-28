@@ -2,9 +2,9 @@
 title: Transparency note for constrained speech recognition 
 description: This transparency note discusses constrained speech recognition and the key considerations for making use of this technology responsibly.
 author: neeranelli
-ms.author: sambobo
+ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 01/13/2026
+ms.date: 04/28/2026
 ms.topic: concept-article
 ms.custom: bap-template
 ms.collection: bap-ai-copilot

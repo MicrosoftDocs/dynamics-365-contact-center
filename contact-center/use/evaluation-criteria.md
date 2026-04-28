@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 04/10/2026
+ms.date: 04/17/2026
 ms.custom: bap-template 
 ---
 
@@ -198,13 +198,31 @@ After you create a source criteria for your business unit, you can extend the cr
 
 - **Question-level instructions**: Provide specific instructions for each question to guide the Quality Evaluation Agent’s evaluation. These instructions are scoped to the question only, and don’t influence other parts of the evaluation.
 
+    - **Question text**: Define each evaluation question to assess a single, well-defined objective to help ensure clarity and direct alignment with the answer options.
+
+    - **Keep the question specific**: Vague questions prompt the agent to broaden its scope. For example, 
+    
+        |Avoid |Prefer |
+        |---------|---------|
+        |Did the agent communicate properly?    |     Did the agent fail to send a complete resolution email?    |
+        |Was the case handled correctly?    | Did the agent's response include all required details?  |
+
 - **Answer-level instructions**: Include answer-specific instructions for each answer option to help the Quality Evaluation Agent understand the intent and context of the response.
 
-- **Answer choices**: Clearly define answer options, especially for multi-choice or list-type questions. Ensure that you include fallback options to handle ambiguous or unexpected responses.
+    - **Define answer conditions explicitly**: Avoid double negatives. State conditions as direct truths. Answer Yes, if any of the following conditions is true: 
+    1. [Condition A] 
+    2. [Condition B] 
+    3. [Condition C]
 
-- **Clarity drives accuracy**: Use precise and detailed instructions to improve the accuracy of Quality Evaluation Agent evaluations. Avoid vague language and ensure that all instructions are explicit, contextual, and actionable.
+    - **Answer choices**: Clearly define answer options, especially for multi-choice or list-type questions. Make sure you include fallback options to handle ambiguous or unexpected responses. Answer conditions are explicit with no double negatives.
 
-- **Question text**: Define each evaluation question to assess a single, well-defined objective to help ensure clarity and direct alignment with the answer options.
+- **Clarity drives accuracy**: Use precise and detailed instructions to improve the accuracy of Quality Evaluation Agent evaluations. Avoid vague language and ensure that all instructions are explicit, contextual, and actionable. 
+
+- **Put exclusion rules first**: State what the agent should ignore before stating what it should evaluate. Don't consider [excluded record types] as evidence, even if they mention or describe [relevant information]. 
+
+- **Specify the exact data source**: Name the exact record type. Based only on [specific record type] from [specific actor].
+
+    - **Require evidence from the source**: Make sure that the agent confirms evidence from the actual record, not inferred from excluded sources.
 
 ## Limitations for evaluation criteria
 

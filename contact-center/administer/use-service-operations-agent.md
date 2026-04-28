@@ -1,0 +1,101 @@
+---
+title: Use Service Operations Agent in Dynamics 365 Contact Center (preview)
+description: Learn about Service Operations Agent and how you can use it to configure and administer features in Dynamics 365 Contact Center.
+author: neeranelli
+ms.author: nenellim
+ms.reviewer: nenellim
+ms.date: 04/24/2026
+ms.topic: how-to
+---
+
+# Use Service Operations Agent (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+Service Operations Agent in Dynamics 365 Contact Center is a self-service AI agent that supports administrators with configuration, validation, and troubleshooting tasks. The agent helps streamline onboarding and ongoing maintenance, making administrator workflows more efficient.
+
+Service Operations Agent supports conversational setup of Dataverse tables, such as queues and workstreams.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+## Supported capabilities
+
+> [!NOTE]
+> Service Operations Agent is available in the United States and in the English language only.
+ 
+**Configure channels**
+
+- Help set up channels and workstreams.
+- Sync phone numbers with Azure Communication Services and Teams.
+- Provide guidance on best practices for contact center configuration.
+
+**Manage queues**
+
+- Assign users to specific queues.
+- Create skills and assign them to users.
+- Check queue details.
+- Set up operating hours.
+
+**Query capabilities and troubleshoot issues**
+
+- Query the agent about contact center capabilities.
+- Questions about the environment.
+- Diagnostics for supported channels.
+
+## Prerequisites
+
+- Omnichannel administrator role to access Service Operations Agent
+- System Administrator role to manage Power Apps connections and Model Context Protocol (MCP) connections
+- The Power Platform [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview) mandates the use of an Azure subscription that the system charges when the agent runs. Make sure that you [set up consumption-based billing](/dynamics365/customer-service/administer/setup-pay-as-you-go).
+- For Service Operations Agent to troubleshoot issues during setup:
+  - [Application Insights is configured](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource)
+  - [Application Insights is connected with Dynamics 365 Contact Center](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights)
+
+## Conversational setup
+
+Use natural language to set up your contact center and watch Service Operations Agent run the steps while keeping a human in the loop.
+
+### Steps to access
+
+Service Operations Agent requires a Dataverse connection through the MCP server. This connection enables the agent to access and manage your environment.
+
+Perform the following steps:
+
+1. In Copilot Service admin center, select **Launch** in the **Conversational Setup** tile. The **Service Operations Agent (Preview)** page appears with a prompt connect to Dataverse via the MCP server.
+1. Select **Allow once**.
+
+If the agent can't perform actions or retrieve information, verify that the connection is configured correctly.
+
+To configure or refresh the connection between Dataverse and the MCP server, perform the following steps:
+
+1. Go to [Power Apps](https://make.powerapps.com).
+1. Select the correct environment in the upper-right corner.
+1. Select **Connections** in the left pane.
+1. Locate **D365 Contact Center MCP Connection**, and then delete it.
+1. In Copilot Service admin center, open **Admin Copilot**, and then start a new conversation.
+1. When the connection card appears, select **Allow** to create a new connection for **D365 Contact Center Admin MCP**.
+
+### Use example prompts
+
+Use clear, detailed prompts, and explicitly specify the relevant channel or topic to reduce the risk of inaccurate or unreliable answers. A few examples of prompts are as follows.
+
+**Configuration and setup**
+
+- Can you help me create a voice workstream?
+- Please create a voice workstream with the name `<WorkstreamName>` and use the `<QueueName>` queue as the default queue.
+
+**Queue management**
+
+- Which voice queues are available?
+- Which queues aren't connected to workstreams?
+
+**Knowledge and troubleshooting**
+
+- Is there an active Azure Communication Services resource in this organization?
+- List the phone numbers associated with the Azure Communication Services resource.
+- What is my organization ID?
+
+### Related information
+
+[Overview of autonomous service agents](autonomous-agents-overview.md)   
+[Customer Intent Agent](overview-customer-intent-agent.md)   

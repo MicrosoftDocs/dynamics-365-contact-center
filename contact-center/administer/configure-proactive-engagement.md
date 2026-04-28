@@ -325,11 +325,11 @@ On the **Audience** page, configure how customers are sourced and how the engage
 
 1. Under **Select your audience**, choose how customer contact information is provided:
 
-   - **Contact Center**: Select one of the following the intake methods:
+   - **Contact Center**: If you select this option, then select one of the following the intake methods:
      - **Upload a file**
      - **CCaaS API**
      - **MCP** (preview)
-   - **Conversational Journeys in Customer Insights**: Select this option if you are planning to create conversation journeys in Dynamics 365 Customer Insights. This option is available only if your Dynamics environment has Customer Insights enabled.
+   - **Conversational Journeys in Customer Insights**: Select this option if you are planning to create conversation journeys in Dynamics 365 Customer Insights. This option is available only if your Dynamics 365 environment has Customer Insights enabled.
 
 **Details**
 
@@ -363,14 +363,14 @@ On the **Preferences** page, configure channel behaviors and throttling rules fo
 
 1. Under **Channel behaviors**, configure the following:
 
-   - **First response timeout**: Set the duration (in minutes, hours or days) the system waits for a customer to respond to the initial SMS before the request expires. If the recipient doesn't respond within the timeout period, the request expires and any later reply is treated as a new anonymous inbound conversation, loosing the context. The default is 5 minutes.
+   - **First response timeout**: Set the duration (in minutes, hours, or days) the system waits for a customer to respond to the initial SMS before the request expires. If the recipient doesn't respond within the timeout period, the request expires and any later reply is treated as a new anonymous inbound conversation, losing the context. The default is 5 minutes.
    - **Priority level**: Select the priority for the engagement — **Normal**, **High**, or **Critical**. Priority determines which proactive engagement is processed first when multiple engagements compete for the same queue and skillset.
    - **Message order**: Select how messages within the engagement are processed:
-     - **Earliest Scheduled Date** — Processes records that are close to the end of the messaging window first.
-     - **Last in First Out** — Processes the most recent records first.
-     - **First in, First Out** — Processes older records first.
-     - **Custom priority ascending** — Processes records in ascending order based on a priority attribute specified in the contact list or API payload.
-     - **Custom priority descending** — Processes records in descending order based on the priority attribute.
+     - **Earliest Scheduled Date**: Processes records that are close to the end of the messaging window first.
+     - **Last in First Out**: Processes the most recent records first.
+     - **First in, First Out**: Processes older records first.
+     - **Custom priority ascending**: Processes records in ascending order based on a priority attribute specified in the contact list or API payload.
+     - **Custom priority descending**: Processes records in descending order based on the priority attribute.
 
 1. Under **Rules**, select **Use rules** to set throttling and pacing rules for the engagement. Configure conditions based on the following parameters:
 
@@ -386,7 +386,7 @@ On the **Preferences** page, configure channel behaviors and throttling rules fo
 
 On the **SMS template configuration** page, create and customize the SMS message template for this engagement.
 
-1. Under **Templates**, toggle **Enable message templates for this workflow** to on. This setting is mandatory when using **Upload a file** as the intake method. For **CCaaS API** and **MCP**, this is optional — the message content can be included directly in the payload instead.
+1. Under **Templates**, turn on **Enable message templates for this workflow**. This setting is turned on by default if you select **Upload a file** as the intake method. For **CCaaS API** and **MCP**, this is optional&mdash;the message content can be included directly in the payload instead.
 
 1. In the **Message** field, compose the SMS message to send to customers. Use the personalization menu to insert dynamic fields from the contact record, including:
    - **First Name**
@@ -396,8 +396,9 @@ On the **SMS template configuration** page, create and customize the SMS message
    - **Postal Code**
    - **Country**
    - **City**
+   - **Street**
 
-   The **Preview** pane on the right shows a directional rendering of the message as it would appear on a mobile device. Actual renditions may vary.
+   The **Preview** pane on the right shows a directional rendering of the message as it would appear on a mobile device. Actual renditions might vary.
 
    > [!NOTE]
    > The message field supports up to 1000 characters.
@@ -447,7 +448,7 @@ When ready, select **Create**. If you selected **Upload a file** as the intake m
 
 **Optional named fields**
 
-Named fields are columns whose names correspond to attributes on the Contact table. Values in these columns are used to create or update the contact record during processing. Any additional columns that do not match a Contact attribute are treated as pass-through data and are made available on the agent desktop during the conversation.
+Named fields are columns whose names correspond to attributes on the Contact table. Values in these columns are used to create or update the contact record during processing. Any additional columns that don't match a Contact attribute are treated as pass-through data and are made available on the agent desktop during the conversation.
 
 Data entered in the **Priority** column is used for custom prioritization when the message order is set to **Custom priority ascending** or **Custom priority descending**.
 

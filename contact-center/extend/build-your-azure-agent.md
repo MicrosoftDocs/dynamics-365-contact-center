@@ -177,7 +177,7 @@ Add the following settings:
 }
 ```
 
-Run the app:
+Run the following command: `dotnet run`
 
 ```bash
 dotnet run

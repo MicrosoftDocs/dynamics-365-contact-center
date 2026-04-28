@@ -80,7 +80,7 @@ Proactive engagement in Dynamics 365 helps your organization improve customer in
 
    ### [Voice](#tab/voice)
 
-### Audience
+ **Audience**
 
 On the **Audience** page, configure how you source customers and lead the engagement.
 
@@ -102,7 +102,7 @@ On the **Audience** page, configure how you source customers and lead the engage
 
 1. Select **Next**.
 
-### Details
+**Details**
 
 On the **Details** page, configure the engagement identity, routing, and business unit.
 
@@ -126,7 +126,7 @@ On the **Details** page, configure the engagement identity, routing, and busines
 
 1. Select **Next**.
 
-### Dialing modes
+**Dialing modes**
 
 The dial modes determine how the system places outbound calls to customers. Learn more in [Dial modes for proactive engagement](proactive-engagement-dial-modes.md).
 
@@ -204,7 +204,7 @@ The dial modes determine how the system places outbound calls to customers. Lear
 
 1. Select **Next**.
 
-### Display number configuration
+**Display number configuration**
 
 On **Display number configuration**, choose the phone numbers to use for outbound calls.
 
@@ -229,7 +229,7 @@ On **Display number configuration**, choose the phone numbers to use for outboun
 
 1. Select **Next**.
 
-### Reattempts
+**Reattempts**
 
 On the **Reattempts** page, configure retry behavior for contacts who aren't reached on the first attempt.
 
@@ -257,7 +257,7 @@ Select **None** if no fallback is needed.
 
 1. Select **Next**.
 
-### Frequency limits
+**Frequency limits**
 
 On the **Frequency limits** page, set how often you can reach contacts and during which hours.
 
@@ -278,11 +278,11 @@ On the **Frequency limits** page, set how often you can reach contacts and durin
 
 1. Select **Next**.
 
-### Summary
+**Summary**
 
 Review all settings on the **Summary** page. To make changes, select **Back** to return to the relevant step.
 
-### File upload
+**File upload**
 
 When you're ready, select **Create**. If you select **Upload a file** as the intake method, the **File upload** step appears next where you can upload your contact list.
 
@@ -320,7 +320,7 @@ Learn more about available outcomes and SIP-based result values in [Outcomes for
 
   ### [SMS](#tab/sms)
 
-### Audience
+**Audience**
 
 On the **Audience** page, configure how customers are sourced and how the engagement is led.
 
@@ -332,7 +332,7 @@ On the **Audience** page, configure how customers are sourced and how the engage
      - **MCP** (preview)
    - **Conversational Journeys in Customer Insights**: Select this option if you are planning to create conversation journeys in Dynamics 365 Customer Insights. This option will be available only if your Dynamics environment has Customer Insights enabled.
 
-### Details
+**Details**
 
 On the **Details** page, configure the engagement identity, routing, and business unit.
 
@@ -358,7 +358,7 @@ On the **Details** page, configure the engagement identity, routing, and busines
 
 5. Select **Next**.
 
-### Preferences
+**Preferences**
 
 On the **Preferences** page, configure channel behaviors and throttling rules for the SMS engagement.
 
@@ -383,7 +383,7 @@ On the **Preferences** page, configure channel behaviors and throttling rules fo
 
 3. Select **Next**.
 
-### SMS template configuration
+**SMS template configuration**
 
 On the **SMS template configuration** page, create and customize the SMS message template for this engagement.
 
@@ -405,7 +405,7 @@ On the **SMS template configuration** page, create and customize the SMS message
 
 3. Select **Next**.
 
-### Frequency limits
+**Frequency limits**
 
 On the **Frequency limits** page, configure how often contacts can be reached and during which hours.
 
@@ -426,11 +426,11 @@ On the **Frequency limits** page, configure how often contacts can be reached an
 
 4. Select **Next**.
 
-### Summary
+**Summary**
 
 Review all settings on the **Summary** page. To make changes, select **Back** to return to the relevant step.
 
-### File upload
+**File upload**
 
 When ready, select **Create**. If you selected **Upload a file** as the intake method, the **File upload** step appears next where you can upload your contact list.
 

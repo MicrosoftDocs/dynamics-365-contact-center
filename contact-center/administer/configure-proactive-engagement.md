@@ -17,12 +17,11 @@ Proactive engagement in Dynamics 365 helps your organization improve customer in
 
 ## Prerequisites
 
-  ### [Voice](#tab/voice)
+### [Voice](#tab/voice)
 
 - Voice channel is provisioned and configured. Learn more in [Provision channels](../implement/provision-channels.md) and [Install the voice channel](/dynamics365/customer-service/administer/voice-channel-install?context=/dynamics365/contact-center/context/administer-context).
 
-
-  ### [SMS](#tab/sms)
+### [SMS](#tab/sms)
 
 - SMS channel is provisioned and configured. Learn more in [Provision channels](../implement/provision-channels.md) and [Configure SMS channel](/dynamics365/customer-service/administer/configure-sms-channel?context=/dynamics365/contact-center/context/administer-context).
 

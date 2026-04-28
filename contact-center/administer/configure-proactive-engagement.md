@@ -32,7 +32,7 @@ Proactive engagement in Dynamics 365 helps your organization improve customer in
 
 ## Set up an outbound workstream
 
-  ### [Voice](#tab/voice)
+### [Voice](#tab/voice)
 
 1. Create a workstream by selecting the **Outbound** option. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context).
 
@@ -46,7 +46,7 @@ Proactive engagement in Dynamics 365 helps your organization improve customer in
 > [!NOTE]
 > By using Azure Communication Services, you can use Direct Routing numbers only. By using Teams Phone numbers, you can use Direct Routing, Direct Offer, and Operator Connect numbers.
 
-  ### [SMS](#tab/sms)
+### [SMS](#tab/sms)
 
 1. Create a workstream by selecting the **Outbound** option and setting the type to **Messaging** and channel to **SMS**. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context).
 
@@ -77,7 +77,7 @@ Proactive engagement in Dynamics 365 helps your organization improve customer in
    - **Frequency limits**
    - **Summary**
 
-   ### [Voice](#tab/voice)
+### [Voice](#tab/voice)
 
  **Audience**
 
@@ -317,7 +317,7 @@ To add a new file to an engagement that you already created, go to **Copilot Ser
 
 Learn more about available outcomes and SIP-based result values in [Outcomes for proactive engagement](proactive-engagement-outcomes.md).
 
-  ### [SMS](#tab/sms)
+### [SMS](#tab/sms)
 
 **Audience**
 
@@ -462,8 +462,6 @@ Records are processed immediately when the file upload begins.
 **Upload a file to an existing engagement:**
 
 To add a new file to an engagement that has already been created, navigate to **Copilot Service admin center** > **Productivity** > **Proactive engagements**. Select the engagement, and then select **Run from file**. The new file is added to the existing pending deliveries.
-
-
 
 ---
 

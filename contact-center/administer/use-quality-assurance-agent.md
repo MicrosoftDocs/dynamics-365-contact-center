@@ -36,7 +36,7 @@ Through quality evaluation, the agent automatically reviews conversations in rea
 - Omnichannel administrator role.
 - The Power Platform [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview) mandates the use of an Azure subscription that the system charges when the agent runs. Make sure that you [set up consumption-based billing](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 
-## Configure Quality Assurance Agent
+## Configure skills for Quality Assurance Agent
 
 1. In Copilot Service admin center,  go to **Customer Support** > **Quality management**. The **Quality management** page appears.
 1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears. You can [enable conversations](manage-quality-evaluation-agent.md#enable-quality-evaluation-agent). 

@@ -132,6 +132,8 @@
           href: /dynamics365/customer-service/develop/reference/methods/message-object?context=/dynamics365/contact-center/context/extend-context
       - name: AI agents
         items:
+        - name: Build an Azure agent
+          href: build-your-azure-agent.md
         - name: Configure AI agent context
           items:
           - name: Configure AI agent context

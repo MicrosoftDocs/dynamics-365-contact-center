@@ -21,17 +21,15 @@ Quality Assurance Agent brings AI-powered support to contact center supervisors 
 
 Agent skills help supervisors manage, set up, and use the agent effectively.
 
-**Real-time quality evaluation**: 
+- **Real-time quality evaluation**: 
 
 Through quality evaluation, the agent automatically reviews conversations in real time and after completion, provides quality scores, and helps supervisors spot issues early and improve performance without manual effort. 
 
-  - Learn how to [use evaluations for real-time conversations](../use/realtime-evaluation-plan.md#use-evaluations-for-real-time-conversations).
+- Learn how to [use evaluations for real-time conversations](../use/realtime-evaluation-plan.md#use-evaluations-for-real-time-conversations).
 
-  - Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations](../use/ongoing-quality-evaluation-agent-conversations.md).
+- Learn how to view scores for the real-time evaluation plan in [Manage ongoing Quality Evaluation Agent conversations](../use/ongoing-quality-evaluation-agent-conversations.md).
 
-**Quality evaluation for closed conversations**: 
-
-Define criteria methods, conditions, and manage evaluation plans to support both manual and AI-driven assessments. Learn more in [Use evaluation plans](../use/evaluation-plan.md#use-evaluation-plan).
+- **Quality evaluation for closed conversations**: Define criteria methods, conditions, and manage evaluation plans to support both manual and AI-driven assessments. Learn more in [Use evaluation plan](../use/evaluation-plan.md#use-evaluation-plan).
 
 ## Prerequisites
 
@@ -41,9 +39,9 @@ Define criteria methods, conditions, and manage evaluation plans to support both
 ## Configure Quality Assurance Agent
 
 1. In Copilot Service admin center,  go to **Customer Support** > **Quality management**. The **Quality management** page appears.
-1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears, where you can [enable conversations](manage-quality-evaluation-agent.md#enable-quality-evaluation-agent). 
+1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears. You can [enable conversations](manage-quality-evaluation-agent.md#enable-quality-evaluation-agent). 
 
-Then, from Copilot Service workspace, use evaluations for real-time conversations and view scores for the real-time evaluation plans.
+In Copilot Service workspace, you can use evaluations for real-time conversations and view scores for the real-time evaluation plans.
 
 ## Related information
 

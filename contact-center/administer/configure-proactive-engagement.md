@@ -82,6 +82,7 @@ Proactive engagement in Dynamics 365 helps your organization improve customer in
 ### [Voice](#tab/voice)
 
 [!INCLUDE [proactive-audience](../includes/proactive/cc-proactive-audience.md)]
+
 1. Under **Engagement type**, select one of the options to determine how the call is handled:
 
       - **Led by representatives**: Always connect customers to service representatives.
@@ -93,8 +94,6 @@ Proactive engagement in Dynamics 365 helps your organization improve customer in
 1. Select **Next**.
 
 [!INCLUDE [proactive-details](../includes/proactive/cc-proactive-details.md)]
-
-1. Select **Next**.
 
 **Dialing modes**
 

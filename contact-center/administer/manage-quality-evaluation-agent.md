@@ -19,7 +19,7 @@ ms.custom: bap-template
 
 **Emails**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
-Quality Evaluation Agent is an AI agent that enables organizations to deliver consistent and scalable quality oversight across customer support interactions. The agent uses a supervisor-defined evaluation framework to autonomously score interactions, generate summaries, and surface actionable insights to enhance interaction quality. Quality Evaluation Agent automates quality evaluations across cases, closed and active conversations, and emails (preview). Learn more about supported message channels  in [Overview of channels](/dynamics365/customer-service/use/channels).
+Quality Evaluation Agent is an AI agent that enables organizations to deliver consistent and scalable quality oversight across customer support interactions. The agent uses a supervisor-defined evaluation framework to autonomously score interactions, generate summaries, and surface actionable insights to enhance interaction quality. Quality Evaluation Agent automates quality evaluations across cases, closed and active conversations, and emails (preview). Learn more about supported message channels in [Overview of channels](/dynamics365/customer-service/use/channels).
 
 > [!IMPORTANT]
 >

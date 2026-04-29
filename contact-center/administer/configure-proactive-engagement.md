@@ -71,25 +71,17 @@ Proactive engagement in Dynamics 365 helps your organization improve customer in
    The **Create new proactive engagement** wizard guides you through the steps outlined in the following sections:
    - **Audience**
    - **Details**
-   - **Dialing modes**
-   - **Display number configuration**
-   - **Reattempts**
+   - **Dialing modes** (voice only)
+   - **Display number configuration** (voice only)
+   - **Reattempts** (voice only)
    - **Frequency limits**
+   - **Preferences** (SMS only)
+   - **SMS template configuration** (SMS only)
    - **Summary**
 
 ### [Voice](#tab/voice)
 
- **Audience**
-
-On the **Audience** page, configure how you source customers and lead the engagement.
-
-1. Under **Select your audience**, choose how to provide customer contact information:
-
-   - **Contact Center**: If you select this option, choose one of the following intake methods:
-     - **Upload a file**
-     - **CCaaS API**
-     - **MCP** (preview)
-   - **Conversational Journeys in Customer Insights**: This option is available only if Customer Insights is enabled. Select if you want to create conversation journeys in Customer Insights.
+[!INCLUDE [proactive-audience](../includes/proactive/cc-proactive-audience.md)]
 
 1. Under **Engagement type**, select one of the options to determine how the call is handled:
 
@@ -101,27 +93,7 @@ On the **Audience** page, configure how you source customers and lead the engage
 
 1. Select **Next**.
 
-**Details**
-
-On the **Details** page, configure the engagement identity, routing, and business unit.
-
-1. In **Engagement details**, enter the following information:
-   - **Name**: A name for the proactive engagement. The service representative sees the name on the conversation form.
-   - **Description**: A description that helps service representatives understand the purpose of the call. The name and description are visible to representatives during the call.
-   - **Workstream**: Select the outbound workstream. If you create the proactive engagement from within a workstream, this value is preselected.
-   - **Channel type**: The channel used for the proactive engagement.
-
-1. Under **Contact unique identifier**, select the contact attribute to use as the unique identifier. The dropdown lists only those attributes that are marked as unique key eligible on the Contact table. The default is **contactid**. The system performs an update or insert using this identifier. If an incoming record matches an existing contact, the record is updated. Otherwise, the system creates a new contact. Select the correct identifier to prevent duplicate contact records.
-
-   - If Dynamics 365 Contact Center is your system of record, use **contactid** (the Dynamics 365 contact GUID).
-   - If you use an external system such as a CRM or MDM system, create a custom attribute on the **Contact** table to store your external identifier, and then select the custom attribute. By passing your external system's ID in the input, you can make sure duplicates aren't created and the data in the contact center stays updated.
-
-1. In **Routing details**, enter the following details:
-   - **Primary queue**: Select a queue.
-   - **Fallback queue**: The system populates the queue name based on the fallback queue set for the outbound workstream.
-   - **Skills**: Select the skills required for the proactive engagement.
-
-1. The **Business unit** field is automatically set to the business unit of the user creating the engagement. The **Owner** field shows the owner that you can change if needed.
+[!INCLUDE [proactive-details](../includes/proactive/cc-proactive-details.md)]
 
 1. Select **Next**.
 
@@ -279,83 +251,16 @@ On the **Frequency limits** page, set how often you can reach contacts and durin
 
 **Summary**
 
-Review all settings on the **Summary** page. To make changes, select **Back** to return to the relevant step.
+Review all settings on the **Summary** page, and select **Create**.
 
-**File upload**
-
-When you're ready, select **Create**. If you select **Upload a file** as the intake method, the **File upload** step appears next where you can upload your contact list.
-
-**Supported file formats**: CSV (.csv) and Excel (.xlsx) only.
-
-**File upload constraints**:
-
-- Maximum file size: 10 MB
-- The file must include all required columns; additional columns are optional
-
-**Required columns**:
-
-- **UniqueIdentifier**: The value used to identify and update or insert the contact record. Must correspond to the **Contact unique identifier** attribute selected in the **Details** step.
-- **MobilePhoneNumber**, **BusinessPhoneNumber**, or **HomePhoneNumber**: At least one phone number column is required. You can include multiple phone number columns.
-
-**Optional named fields**:
-
-Named fields are columns whose names correspond to attributes on the **Contact** table. Values in these columns are used to create or update the contact record during processing. Any extra columns that don't match a **Contact** attribute are treated as pass-through data and are made available on the agent desktop during the call.
-
-Data entered in the **Priority** column is used for custom prioritization when the call order is set to **Custom priority ascending** or **Custom priority descending**.
-
-To download a sample file that contains the required columns and formatting, select **Download sample**.
-
-**Processing behavior**:
-Records are processed immediately when the file upload begins.
-
-> [!NOTE]
-> The uploaded file isn't stored in any form and can't be downloaded after upload. To access delivery results and records, query the relevant tables in Microsoft Dataverse directly. Learn more in [Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md).
-
-**Upload a file to an existing engagement**:
-
-To add a new file to an engagement that you already created, go to **Copilot Service admin center** > **Productivity** > **Proactive engagements**. Select the engagement, and then select **Run from file**. The new file is added to the existing pending deliveries.
+[!INCLUDE [proactive-file-upload](../includes/proactive/cc-proactive-file-upload.md)]
 
 Learn more about available outcomes and SIP-based result values in [Outcomes for proactive engagement](proactive-engagement-outcomes.md).
 
 ### [SMS](#tab/sms)
 
-**Audience**
-
-On the **Audience** page, configure how customers are sourced and how the engagement is led.
-
-1. Under **Select your audience**, choose how customer contact information is provided:
-
-   - **Contact Center**: If you select this option, then select one of the following the intake methods:
-     - **Upload a file**
-     - **CCaaS API**
-     - **MCP** (preview)
-   - **Conversational Journeys in Customer Insights**: Select this option if you are planning to create conversation journeys in Dynamics 365 Customer Insights. This option is available only if your Dynamics 365 environment has Customer Insights enabled.
-
-**Details**
-
-On the **Details** page, configure the engagement identity, routing, and business unit.
-
-1. In **Engagement details**, enter the following:
-   - **Name**: A name for the proactive engagement. Shown to service representatives on the conversation form.
-   - **Description**: A description that helps service representatives understand the purpose of the engagement. The name and description are visible to representatives during the conversation.
-   - **Workstream**: Select the outbound SMS workstream. If you are creating the proactive engagement from within a workstream, this is pre-selected.
-   - **Channel type**: The channel used for the proactive engagement.
-
-1. Under **Contact unique identifier**, select the contact attribute to use as the unique identifier. The dropdown lists only attributes that are marked as unique key eligible on the Contact table. The default is **contactid**.
-
-   The system performs an upsert using this identifier: if an incoming record matches an existing contact, the record is updated; otherwise, a new contact is created. Selecting the correct identifier prevents duplicate contact records from being created.
-
-   - If Dynamics 365 is your system of record, use **contactid** (the Dynamics contact GUID).
-   - If you use an external system such as a CRM or MDM, create a custom attribute on the Contact table to store your external identifier, and then select that attribute here. Passing your external system's ID in the input will ensure duplicates aren't created, and the data in Contact Center stays updated.
-
-1. In **Routing details**, enter the following:
-   - **Primary queue**: Select a queue.
-   - **Fallback queue**: The system populates the queue name based on the fallback queue set for the outbound workstream.
-   - **Skills**: Select the skills required for the proactive engagement.
-
-1. In **Business Unit**, the **Business unit** field is automatically set to the business unit of the user creating the engagement. The **Assigned to** field shows the owner and can be changed if needed.
-
-1. Select **Next**.
+[!INCLUDE [proactive-audience](../includes/proactive/cc-proactive-audience.md)]
+[!INCLUDE [proactive-details](../includes/proactive/cc-proactive-details.md)]
 
 **Preferences**
 
@@ -428,41 +333,9 @@ On the **Frequency limits** page, configure how often contacts can be reached an
 
 **Summary**
 
-Review all settings on the **Summary** page. To make changes, select **Back** to return to the relevant step.
+Review all settings on the **Summary** page, and select **Create**.
 
-**File upload**
-
-When ready, select **Create**. If you selected **Upload a file** as the intake method, the **File upload** step appears next where you can upload your contact list.
-
-**Supported file formats:** CSV (.csv) and Excel (.xlsx) only.
-
-**File upload constraints**
-
-- Maximum file size: 10 MB
-- The file must include all required columns; additional columns are optional
-
-**Required columns**
-
-- **UniqueIdentifier**: The value used to identify and upsert the contact record. Must correspond to the **Contact unique identifier** attribute selected in the **Details** step.
-- **MobilePhoneNumber**, **BusinessPhoneNumber**, or **HomePhoneNumber**: At least one phone number column is required. Multiple phone number columns can be included.
-
-**Optional named fields**
-
-Named fields are columns whose names correspond to attributes on the Contact table. Values in these columns are used to create or update the contact record during processing. Any additional columns that don't match a Contact attribute are treated as pass-through data and are made available on the agent desktop during the conversation.
-
-Data entered in the **Priority** column is used for custom prioritization when the message order is set to **Custom priority ascending** or **Custom priority descending**.
-
-To download a sample file that contains the required columns and formatting, select **Download sample**.
-
-**Processing behavior**
-Records are processed immediately when the file upload begins.
-
-> [!NOTE]
-> The uploaded file isn't stored in any form and can't be downloaded after upload. To access delivery results and records, query the relevant tables in Microsoft Dataverse directly. Learn more in [Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md).
-
-**Upload a file to an existing engagement**
-
-To add a new file to an engagement that's already created, go to **Copilot Service admin center** > **Productivity** > **Proactive engagements**. Select the engagement, and then select **Run from file**. The new file is added to the existing pending deliveries.
+[!INCLUDE [proactive-file-upload](../includes/proactive/cc-proactive-file-upload.md)]
 
 ---
 

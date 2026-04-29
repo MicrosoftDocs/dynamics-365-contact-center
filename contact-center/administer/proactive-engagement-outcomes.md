@@ -55,7 +55,7 @@ Azure Communication Services returns SIP-based early media outcomes, such as Liv
 
 ### AI agent outcomes
 
-Applicable to voice and SMS, the outcomes are data values returned from the AI agent. This applies to connected calls and SMS conversations where the AI agent has an active conversation and sets values that are sent back to Dynamics 365 Contact Center.
+Applicable to voice and SMS, the outcomes are data values returned from the AI agent. This applies to connected calls and SMS conversations in which the AI agent is actively engaged and sets values that are sent back to Dynamics 365 Contact Center.
 
 Perform the steps in [Send data back from AI agent to Dynamics 365 Contact Center](configure-agentS-for-ai-led-proactive-engagement.md#send-data-back-from-ai-agent-to-dynamics-365-contact-center) to configure the outcomes.
 
@@ -67,16 +67,16 @@ Perform the steps in [Configure disposition codes](configure-disposition-codes.m
 
 For SMS workstreams, add disposition codes in workstream **Advanced settings** and configure whether workstream-level requirements override global settings.
 
-All three outcome data points are stored centrally in proactive engagement data and can be used together to determine next steps in reporting and orchestration.
+All three outcome data points are stored in proactive engagement data tables and can be used together to determine next steps in reporting and orchestration. Learn more in [Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md).
 
 ### Delivery outcomes
 
-These are fixed, system-defined outcomes that reflect whether the SMS message was successfully delivered to the recipient.
+Applicable to SMS only, delivery outcomes are fixed and system-defined that reflect whether the SMS message was successfully delivered to the recipient.
 
 | Result | Description |
 | ------ | ----------- |
-| Delivered | The SMS message was successfully delivered to the customer's device. |
-| Not delivered | The SMS message could not be delivered to the customer's device. |
+| Delivered | The SMS message was successfully delivered to the customer device. |
+| Not delivered | The SMS message could not be delivered to the customer device. |
 
 ## Timeout settings for proactive engagement SMS
 
@@ -86,11 +86,11 @@ The system enforces timeout mechanisms at two stages of a proactive SMS engageme
 
 Configured on the proactive engagement SMS settings. The timer starts when the outbound SMS is delivered.
 
-- **If customer replies within timeout**: A conversation is created in contact center.
+- **If customer replies within timeout**: A conversation is created.
 - **If customer doesn't reply in time**: The delivery times out and no conversation is created.
-- **Reply received after timeout**: Is treated as a new anonymous inbound SMS and isn't correlated with the original proactive engagement.
+- **Reply received after timeout**: Is treated as a new anonymous inbound SMS and isn't linked to the original proactive engagement.
 
-The **First response timeout** is the authoritative boundary for whether an outbound SMS successfully transitions into an active contact center conversation.
+The **First response timeout** indicates if an outbound SMS successfully transitions into an active contact center conversation.
 
 ### Post-conversation: inactivity and timeout rules
 
@@ -98,11 +98,11 @@ These settings apply only after a conversation is created.
 
 **Auto-close after inactivity**
 
-Configured at the workstream level. Closes a conversation that remains in the waiting state beyond a configured idle threshold. Tune this to avoid premature closure of asynchronous SMS conversations where customers may respond over extended periods. Learn more in [Configure work distribution](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution).
+Configured at the workstream level. Closes a conversation that's in the waiting state beyond a configured idle threshold. Configure the setting to avoid premature closure of asynchronous SMS conversations where customers may respond over extended periods. Learn more in [Configure work distribution](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution).
 
 **Agent inactivity timeout**
 
-When a Copilot Studio agent handles the initial SMS conversation, the agent enforces its own inactivity timeout. Configure this to reflect realistic SMS response patterns and align it with the workstream auto-close setting to prevent inconsistent conversation termination. Learn more in [Manage the session lifecycle](/microsoft-copilot-studio/guidance/deploy-agent-teams#manage-the-session-lifecycle).
+When an agent handles the initial SMS conversation, the agent enforces its own inactivity timeout. Configure the agent inactivity timeout to match the SMS response patterns and align it with the workstream auto-close setting to prevent inconsistent conversation termination. Learn more in [Manage the session lifecycle](/microsoft-copilot-studio/guidance/deploy-agent-teams#manage-the-session-lifecycle).
 
 **Timeout rules**
 

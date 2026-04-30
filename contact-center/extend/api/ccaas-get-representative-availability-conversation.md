@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # CCaaS_GetRepresentativeAvailabilityForConversation
 
-Use the **CCaaS_GetRepresentativeAvailabilityForConversation** API to get the queue and service representative availability during an active omnichannel conversation with a valid conversation ID.
+Use the **CCaaS_GetRepresentativeAvailabilityForConversation** API to get the queue and service representative availability during an active conversation with a valid conversation ID.
 
 For example, when a customer chatting with an IVR or AI chat agent requests escalation to a service representative, the AI agent can call this API to determine service representative’s availability and route the conversation appropriately based on the response.
 

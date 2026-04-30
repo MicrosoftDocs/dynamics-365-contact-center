@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Use CCaaS_GetRepresentativeAvailabilityBeforeConversation
 
-Use the **CCaaS_GetRepresentativeAvailabilityBeforeConversation** to get the queue and service representative availability before an conversation with the customer starts.
+Use the **CCaaS_GetRepresentativeAvailabilityBeforeConversation** to get the queue and service representative availability before the conversation starts.
 
 For example, by calling this API to verify service representative availability, display a chat widget on your website only when relevant queues are within operating hours.
 
@@ -33,7 +33,7 @@ Use this API when external systems need to proactively query service representat
 
 | **Name** | **Description** |
 |----|----|
-| Authorization | Mandatory. Microsoft Entra ID bearer token for the API caller in the Contact Center instance's tenant. Learn more in [Setup token for API authorization](../representative-availability-overview.md)|
+| Authorization | Mandatory. Microsoft Entra ID bearer token for the API caller in the Contact Center instance. Learn more in [Setup token for API authorization](../representative-availability-overview.md)|
 
 ### Sample request 
 

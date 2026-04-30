@@ -65,7 +65,7 @@ For example, when a customer chatting with an IVR or AI chat agent requests esca
 
 ## Response
 
-[!INCLUDE [cc-availability-response](../includes/cc-availability-response.md)]
+[!INCLUDE [cc-availability-response](../../includes/cc-availability-response.md)]
 
 ## Related information
 

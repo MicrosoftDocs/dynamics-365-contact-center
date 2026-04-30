@@ -14,8 +14,8 @@ Use the representative availability APIs to retrieve information about queue and
 
 You can use these APIs in scenarios such as:
 
-- When AI agents have to escalate ongoing conversations only to queues where service representatives are available.
-- You want customers to initiate conversations only when relevant queues are within operating hours or have available representatives.
+- When AI agents need to escalate ongoing conversations to those queues only where service representatives are available.
+- You want customers to initiate conversations only when the queues are within operating hours or have available representatives.
 
 The representative availability APIs are applicable for all channels, including voice, live chat, and digital messaging.
 
@@ -38,9 +38,9 @@ Do the following steps in the [Azure portal](https://portal.azure.com):
 1. Select **Add permissions**.
 1. [Add a client secret for your application](/entra/identity-platform/how-to-add-credentials?tabs=client-secret#add-a-credential-to-your-application). 
  > [!IMPORTANT]
- > Copy the secret **Value** immediately. This value is encrypted and isn't displayed again once you leave the page.
+ > Copy the secret **Value** immediately. This value is encrypted and isn't displayed again after you leave the page.
 
-To generate the token, run the following `POST` request. Replace the following values:
+To generate the token, run the following `POST` request. Replace the following values.
 
 | Value | Description |
 | :--- | :--- |

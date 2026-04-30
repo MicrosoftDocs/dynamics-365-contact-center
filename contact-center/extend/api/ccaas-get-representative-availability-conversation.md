@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 Use the **CCaaS_GetRepresentativeAvailabilityForConversation** API to get the queue and service representative availability during an active conversation with a valid conversation ID.
 
-For example, when a customer chatting with an IVR or AI chat agent requests escalation to a service representative, the AI agent can call this API to determine service representative’s availability and route the conversation appropriately based on the response.
+For example, when a customer who's chatting with an IVR or AI agent requests escalation to a service representative, the AI agent calls this API to determine service representative’s availability and route the conversation based on the response.
 
 ## Request details
 
@@ -30,7 +30,7 @@ For example, when a customer chatting with an IVR or AI chat agent requests esca
 
 | **Name** | **Description** |
 |----|----|
-| Authorization | Mandatory. Microsoft Entra ID bearer token for the API caller in the Contact Center instance's tenant. Learn more in [Setup token for API authorization](../representative-availability-overview.md)|
+| Authorization | Mandatory. Microsoft Entra ID bearer token for the API caller in the Contact Center instance. Learn more in [Setup token for API authorization](../representative-availability-overview.md)|
 
 ### Sample request body
 

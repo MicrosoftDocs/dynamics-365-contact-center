@@ -86,7 +86,7 @@ When you navigate to the Quality Evaluation Agent page in Copilot Service admin 
     1. If **Step 1: Connection References** shows as **In progress** or **Incomplete**, then select **Manage connections**.
     1. In the **Configure Connections** dialog, select **Update connection references to use your connector** to complete connection references.
     1. In **Step 2: Power Automate Flows**, if a flow is turned off, use the navigation link to open the flow in Power Automate and enable it.
-    1. Once all tiles show as **Ready**, select **Publish** in **Step 3: Copilot Studio Agent** to complete the setup.
+    1. When all tiles show as **Ready**, select **Publish** in **Step 3: Copilot Studio Agent** to complete the setup.
 
 After completing the configuration, you might need to perform a hard refresh to see the updated status.
 

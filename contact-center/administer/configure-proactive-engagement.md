@@ -323,7 +323,7 @@ On the **Frequency limits** page, configure how often contacts can be reached an
 
    If you select more than one number type, set the preferred contact order by dragging the rows. The system respects the quiet hours configured for each number type and won't send messages during those windows. You must configure quiet hours for every phone number type you select before you can proceed.
 
-1. Under **Time zones**, select how to determine the time zone for each contact:
+1. Under **Time zones**, select how to determine the time zone for each contact.
    - **Use customer's local time zone when available (defaults to UTC if not available)**: The system uses the time zone attribute on each contact record to evaluate quiet hours in that contact's local time. If no time zone is specified on the contact, UTC is used. The time zone value must be explicitly provided in the uploaded file or API payload—the system does not auto-detect or geo-infer time zones.
    - **Use Coordinated Universal Time (UTC)**: All contacts are evaluated against quiet hours using UTC, regardless of their location.
 

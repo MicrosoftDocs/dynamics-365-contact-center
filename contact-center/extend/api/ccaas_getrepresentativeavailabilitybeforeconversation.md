@@ -82,10 +82,10 @@ If successful, this method returns a 200 OK response code. The method also retur
 
 ### Response values
 
-[!INCLUDE [cc-availability-response](../includes/cc-availability-response.md)]
+[!INCLUDE [cc-availability-response](../../includes/cc-availability-response.md)]
 
 ## Related information
  
-[Use representative availability APIs](representative-availability-overview.md)    
+[Use representative availability APIs](../representative-availability-overview.md)    
 [CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas_getrepresentativeavailabilityconversation.md)  
 

@@ -9,13 +9,13 @@ ms.reviewer: laalexan
 ms.custom: bap-template
 ---
 
-# Install the Workforce Managment for Customer Service package
+# Install the Workforce Management for Customer Service package
 
 Before you can enable the features to manage your workforce, you must install the Workforce Management for Customer Service package.
 
 ## Prerequisite
 
-You must be a system administrator or have equavalent permissions.
+You must be a system administrator or have equivalent permissions.
 
 ## Install the package
 

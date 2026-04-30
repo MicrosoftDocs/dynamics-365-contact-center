@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Use CCaaS_GetRepresentativeAvailabilityBeforeConversation
 
-Use the **CCaaS_GetRepresentativeAvailabilityBeforeConversation** to get the queue and service representative availability before an omnichannel conversation with the customer starts.
+Use the **CCaaS_GetRepresentativeAvailabilityBeforeConversation** to get the queue and service representative availability before an conversation with the customer starts.
 
 For example, you can display a chat widget on your website only when relevant queues are within operating hours by calling this API to verify service representative availability.
 

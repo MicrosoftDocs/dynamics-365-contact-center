@@ -6,13 +6,15 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: reference
 ms.collection:
-ms.date: 02/04/2026
+ms.date: 04/30/2026
 ms.custom: bap-template 
 ---
 
 # Enable fields for identifying customers
 
-You can set a field in Dataverse for Contact and Account tables other than the default fields and identify the customer who contacts over the voice channel.
+Set a field in Dataverse for Contact and Account tables other than the default fields and identify the customer who contacts over the voice channel.
+
+A custom context variable, or attributes under live chat or phone call engagement context can be used in the fetch XML.
 
 For example, if you'd like to use the Dataverse fields listed in the table for identifying a voice caller, perform the steps that follow.
 

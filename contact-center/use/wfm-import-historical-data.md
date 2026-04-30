@@ -11,7 +11,7 @@ ms.collection:
 ---
 # Import historical data
 
-When you create a forecast scenario, you can use historical data as the input source to predict future volume. You can include up to 2 years of historical data from the date when you create the forecast report. 
+When you create a forecast scenario, you can use historical data as the input source to predict future volume. You can include up to two years of historical data from the date when you create the forecast report. 
 
 To configure a forecast scenario to use historical data, upload a data file.
 

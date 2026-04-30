@@ -16,7 +16,7 @@ Use the **CCaaS_GetRepresentativeAvailabilityBeforeConversation** to get the que
 
 For example, by calling this API to verify service representative availability, display a chat widget on your website only when relevant queues are within operating hours.
 
-You can also use this API when external systems need to proactively query service representative availability, helping supervisors make staffing optimization decisions for their queues.
+Use this API when external systems need to proactively query service representative availability and help supervisors make staffing optimization decisions for their queues.
 
 ## Request details
 

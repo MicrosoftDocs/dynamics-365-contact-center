@@ -78,7 +78,7 @@ Learn more in [Move data across regions for Copilots and generative AI features 
 
 ## Configure connection references
 
-When you navigate to the Quality Evaluation Agent page in Copilot Service admin center, a **Prerequisites** section appears at the top of the page that indicates whether connection references are set up. You need to configure connection references for Quality Evaluation Agent flow to integrate with Microsoft services. These connections link flow to essential data sources such as Microsoft Dataverse and Copilot Studio, ensuring smooth operation and enhanced functionality.
+When you navigate to the Quality Evaluation Agent page in Copilot Service admin center, the **Prerequisites** section at the top of the page shows whether connection references are set up. You need to configure connection references for the Quality Evaluation Agent flow to integrate with Microsoft services. These connections link the flow to essential data sources such as Microsoft Dataverse and Copilot Studio, ensuring smooth operation and enhanced functionality.
 
 1. In Copilot Service admin center, go to **Customer Support** > **Quality management.** The **Quality management** page appears.
 1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears.

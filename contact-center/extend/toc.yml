@@ -53,9 +53,9 @@
           - name: Use representative availabilty APIs
             href: representative-availability-overview.md
           - name: CCaaS_GetRepresentativeAvailabilityBeforeConversation
-            href: api/ccaas-getrepresentativeavailabilitybeforeconversation.md
+            href: api/ccaas-get-representative-availability-before-conversation.md
           - name: CCaaS_GetRepresentativeAvailabilityForConversation
-            href: api/ccaas-getrepresentativeavailabilityconversation.md
+            href: api/ccaas-get-representativeavailability-conversation.md
           - name: Use representative availability APIs in a Copilot Studio agent
             href: use-representative-availability-api.md
       - name: Chat

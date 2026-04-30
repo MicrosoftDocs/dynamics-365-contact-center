@@ -75,5 +75,5 @@ The following representative availability APIs are available:
 
 ## Related information
  
-[CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas-getrepresentativeavailabilityconversation.md)  
-[CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas-getrepresentativeavailabilitybeforeconversation.md)  
+[CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas-get-representative-availability-conversation.md)  
+[CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas-get-representative-availability-before-conversation.md)  

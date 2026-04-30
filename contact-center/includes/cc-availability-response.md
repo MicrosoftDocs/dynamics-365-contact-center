@@ -31,7 +31,7 @@ If successful, this method returns a 200 OK response code. The method also retur
 "@odata.context": "https://<org-url>/api/data/v9.2/\$metadata#Microsoft.Dynamics.CRM.CCaaS_GetRepresentativeAvailabilityForConversationResponse",  
 "NextTransitionTime": "9999-12-31T23:59:59Z",
 "NumberOfExpertsAvailableInQueue": 5,
-“AverageWaitTimeInSeconds”: 45  
+"AverageWaitTimeInSeconds": 45  
 "PositionInQueue": 1,  
 "AverageWaitTime": null,  
 "StartTimeOfNextOperatingHour": "0001-01-01T00:00:00Z",  

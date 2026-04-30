@@ -26,7 +26,7 @@ To download a sample file that contains the required columns and formatting, sel
 Records are processed immediately when the file upload begins.
 
 > [!NOTE]
-> The uploaded file isn't stored in any form and can't be downloaded after upload. To access delivery results and records, query the relevant tables in Microsoft Dataverse directly. Learn more in [Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md).
+> The uploaded file isn't stored in any form and can't be downloaded after upload. To access delivery results and records, query the relevant tables in Microsoft Dataverse directly. Learn more in [Use proactive engagement tables for reporting](/dynamics365/contact-center/extend/proactive-engagement-tables.md).
 
 **Upload a file to an existing engagement**:
 

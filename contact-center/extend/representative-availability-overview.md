@@ -1,6 +1,6 @@
 ---
-title: Use service representative availabilty APIs
-description: Learn how to use the representative availabilty APIs in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
+title: Use service representative availability APIs
+description: Learn how to use the representative availability APIs in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
 ms.date: 04/30/2026
 ms.topic: conceptual
 author: gandhamm
@@ -8,9 +8,9 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.custom: bap-template
 ---
-# Use representative availabilty APIs
+# Use representative availability APIs
 
-Use the represetative availability APIs to retrieve information about queue and customer service representative availability in Dynamics 365 Contact Center.
+Use the representative availability APIs to retrieve information about queue and customer service representative availability in Dynamics 365 Contact Center.
 
 You can use these APIs in scenarios such as:
 
@@ -23,7 +23,7 @@ The representative availability APIs are applicable for all channels, including 
 
 - You have the Omnichannel administrator role assigned.
 
-### Setup token for API authorization
+### Set up token for API authorization
 
 To use the representative availability APIs, you must generate an access token. This token acts as a secure credential to authenticate your application's identity and authorize it to access specific service resources.
 
@@ -38,9 +38,9 @@ Do the following steps in the [Azure portal](https://portal.azure.com):
 1. Select **Add permissions**.
 1. [Add a client secret for your application](/entra/identity-platform/how-to-add-credentials?tabs=client-secret#add-a-credential-to-your-application). 
  > [!IMPORTANT]
- > Copy the secret **Value** immediately. This value is encrypted and will not be displayed again once you leave the page.
+ > Copy the secret **Value** immediately. This value is encrypted and isn't displayed again once you leave the page.
 
-Run the following `POST` request to generate the token. Replace the following values:
+To generate the token, run the following `POST` request. Replace the following values:
 
 | Value | Description |
 | :--- | :--- |
@@ -64,14 +64,14 @@ Run the following `POST` request to generate the token. Replace the following va
 
   ```
 
-The response returns a JSON object with the token which you can use in the Authorization Header of your representative availability API calls as a Bearer token.
+The response returns a JSON object with the token that you can use in the Authorization Header of your representative availability API calls as a Bearer token.
 
 ## Representative availability APIs
 
 The following representative availability APIs are available:
 
 - **CCaaS_GetRepresentativeAvailabilityForConversation**: Returns the queue and service representative availability during an active omnichannel conversation with a valid conversation ID. Learn more in [CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas_getrepresentativeavailabilityconversation.md)
-- **CCaaS_GetRepresentativeAvailabilityBeforeConversation**: Returns the queue and service representative availability when an omnichannel conversation with the customer hasn’t started. Learn more in [CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)
+- **CCaaS_GetRepresentativeAvailabilityBeforeConversation**: Returns the queue and service representative availability before an omnichannel conversation with the customer starts. Learn more in [CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)
 
 ## Related information
  

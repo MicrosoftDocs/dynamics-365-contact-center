@@ -1,7 +1,7 @@
 ---
 title: Use CCaaS_GetRepresentativeAvailabilityBeforeConversation
-description: Learn how to use the CCaaS_GetRepresentativeAvailabilityBeforeConversation API in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
-ms.date: 09/10/2025
+description: Learn how to use the CCaaS_GetRepresentativeAvailabilityBeforeConversation API in Dynamics 365 Contact Center.
+ms.date: 04/30/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Use CCaaS_GetRepresentativeAvailabilityBeforeConversation
 
-Use the **CCaaS_GetRepresentativeAvailabilityBeforeConversation** to get the queue and service representative availability when an omnichannel conversation with the customer hasn’t started
+Use the **CCaaS_GetRepresentativeAvailabilityBeforeConversation** to get the queue and service representative availability before an omnichannel conversation with the customer starts.
 
 For example, you can display a chat widget on your website only when relevant queues are within operating hours by calling this API to verify service representative availability.
 
@@ -82,33 +82,10 @@ If successful, this method returns a 200 OK response code. The method also retur
 
 ### Response values
 
-| **Name** | **Type** | **Description** |
-|---|---|---|
-| queueId | String | The target queue where the request is routed based on routing rule configurations and input data such as entity values and context that are part of the routing rule. |
-| isQueueAvailable | Boolean | Displays TRUE if the queue is within operating hours. FALSE if the queue is outside operating hours. |
-| StartTimeOfNextOperatingHour | DateTime | The start time (UTC) of operating hours for the queue if it’s currently outside operating hours. Returns 01-01-0001 during operating hours. |
-| EndTimeOfNextOperatingHour | DateTime | The time (UTC) when operating hours end for the queue, if it’s currently outside operating hours. Returns 01-01-0001 during operating hours. |
-| nexttransitiontime | DateTime | The time (UTC) when the queue is operational again if it's outside operating hours. During operating hours, displays when the queue becomes non-operational. |
-| positionInQueue | Number | Position in queue for a customer waiting behind others in the same queue. |
-| isAgentAvailable | Boolean | Displays TRUE if service representatives in the queue are currently available to take requests based on the routing and assignment rules for workstream. The API also returns true if an AI agent is linked to the workstream or queue. We recommend that you don't use this API when an AI agent is added to the workstream or queue. FALSE if service representatives aren't available to take requests. |
-| averageWaitTime | Number | Average wait time in minutes for customers in the target queue. |
-| AverageWaitTimeInSeconds | Numbers | Average wait time in seconds for customers in the target queue. |
-|NumberOfExpertsAvailableInQueue|Numbers|The number of service representatives currently available to accept conversations in the target queue. |
+[!INCLUDE [cc-availability-response](../includes/cc-availability-response.md)]
 
-### Sample response 
+## Related information
+ 
+[Use representative availability APIs](representative-availability-overview.md)    
+[CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas_getrepresentativeavailabilityconversation.md)  
 
-```JSON
-{  
-"@odata.context": "https://aurorabapenv292a1.crm10.dynamics.com/api/data/v9.2/\$metadata#Microsoft.Dynamics.CRM.CCaaS_GetRepresentativeAvailabilityForConversationResponse",  
-"NextTransitionTime": "9999-12-31T23:59:59Z",
-"NumberOfExpertsAvailableInQueue": 5,
-“AverageWaitTimeInSeconds”: 45  
-"PositionInQueue": 1,  
-"AverageWaitTime": null,  
-"StartTimeOfNextOperatingHour": "0001-01-01T00:00:00Z",  
-"EndTimeOfNextOperatingHour": "0001-01-01T00:00:00Z",  
-"QueueId": "85e55877-f27a-e911-a81a-000d3a1ca610",  
-"IsAgentAvailable": true,  
-"IsQueueAvailable": true  
-}
-```

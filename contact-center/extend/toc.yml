@@ -48,7 +48,7 @@
             href: api/ccaas_getpresence.md
           - name: CCaaS_ModifyAgentPresence
             href: api/ccaas_modifyagentpresence.md
-        - name: Representative Availability APIs
+        - name: Representative availability APIs
           items:
           - name: Use representative availabilty APIs
             href: representative-availability-overview.md

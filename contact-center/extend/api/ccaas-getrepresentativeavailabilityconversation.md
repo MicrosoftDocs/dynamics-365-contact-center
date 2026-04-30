@@ -70,4 +70,4 @@ For example, when a customer chatting with an IVR or AI chat agent requests esca
 ## Related information
 
 [Use representative availability APIs](../representative-availability-overview.md)   
-[CCaaS_GetRepresentativeAvailabilityBeforeConversation](ccaas_getrepresentativeavailabilitybeforeconversation.md)  
+[CCaaS_GetRepresentativeAvailabilityBeforeConversation](ccaas-getrepresentativeavailabilitybeforeconversation.md)  

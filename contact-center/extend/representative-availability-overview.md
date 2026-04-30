@@ -70,10 +70,10 @@ The response returns a JSON object with the token that you can use in the Author
 
 The following representative availability APIs are available:
 
-- **CCaaS_GetRepresentativeAvailabilityForConversation**: Returns the queue and service representative availability during an active omnichannel conversation with a valid conversation ID. Learn more in [CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas_getrepresentativeavailabilityconversation.md)
-- **CCaaS_GetRepresentativeAvailabilityBeforeConversation**: Returns the queue and service representative availability before an omnichannel conversation with the customer starts. Learn more in [CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)
+- **CCaaS_GetRepresentativeAvailabilityForConversation**: Returns the queue and service representative availability during an active omnichannel conversation with a valid conversation ID. Learn more in [CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas-getrepresentativeavailabilityconversation.md)
+- **CCaaS_GetRepresentativeAvailabilityBeforeConversation**: Returns the queue and service representative availability before an omnichannel conversation with the customer starts. Learn more in [CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas-getrepresentativeavailabilitybeforeconversation.md)
 
 ## Related information
  
-[CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas_getrepresentativeavailabilityconversation.md)  
-[CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)  
+[CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas-getrepresentativeavailabilityconversation.md)  
+[CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas-getrepresentativeavailabilitybeforeconversation.md)  

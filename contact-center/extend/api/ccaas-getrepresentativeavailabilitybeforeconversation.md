@@ -87,5 +87,5 @@ If successful, this method returns a 200 OK response code. The method also retur
 ## Related information
  
 [Use representative availability APIs](../representative-availability-overview.md)    
-[CCaaS_GetRepresentativeAvailabilityForConversation](ccaas_getrepresentativeavailabilityconversation.md)  
+[CCaaS_GetRepresentativeAvailabilityForConversation](ccaas-getrepresentativeavailabilityconversation.md)  
 

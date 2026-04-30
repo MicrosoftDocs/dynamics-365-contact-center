@@ -39,5 +39,5 @@ Do the following steps in Copilot Studio:
 
 ## Related information
 [Use representative availability APIs](representative-availability-overview.md)  
-[CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas_getrepresentativeavailabilityconversation.md)  
-[CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas_getrepresentativeavailabilitybeforeconversation.md)  
+[CCaaS_GetRepresentativeAvailabilityForConversation](./api/ccaas-getrepresentativeavailabilityconversation.md)  
+[CCaaS_GetRepresentativeAvailabilityBeforeConversation](./api/ccaas-getrepresentativeavailabilitybeforeconversation.md)  

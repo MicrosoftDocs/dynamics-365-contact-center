@@ -1,7 +1,7 @@
 ---
 title: Use CCaaS_GetRepresentativeAvailabilityForConversation
-description: Learn how to use the CCaaS_GetRepresentativeAvailabilityForConversation API in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
-ms.date: 09/10/2025
+description: Learn how to use the CCaaS_GetRepresentativeAvailabilityForConversation API in Dynamics 365 Contact Center.
+ms.date: 04/30/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 Use the **CCaaS_GetRepresentativeAvailabilityForConversation** API to get the queue and service representative availability during an active omnichannel conversation with a valid conversation ID.
 
-For example, when a customer chatting with an IVR or AI chat agent requests escalation to a service representative, the AI agent can call this API to determine the service representative’s availability and route the conversation appropriately based on the response.
+For example, when a customer chatting with an IVR or AI chat agent requests escalation to a service representative, the AI agent can call this API to determine service representative’s availability and route the conversation appropriately based on the response.
 
 ## Request details
 
@@ -37,8 +37,8 @@ For example, when a customer chatting with an IVR or AI chat agent requests esca
 | **Description** | **Sample request** |
 |---|---|
 | Determines queue and representative availability for an active conversation. | `curl --request POST \ --url https://<org-url>/api/data/v9.2/CCaaS_GetRepresentativeAvailabilityForConversation \ --header 'Authorization: Bearer token' \ --data '{ "ApiVersion": "1.0", "ConversationId": "2f2508bd-b58e-4982-b142-651e36dc8df3" }'` |
-| Determine queue and representative availability for a conversation where the route-to-queue rules need additional context items. | `curl --request POST \ --url https://<org-url>/api/data/v9.2/CCaaS_GetRepresentativeAvailabilityForConversation \ --header 'Authorization: Bearer token' \ --data '{ "ApiVersion": "1.0", "ConversationId": "cf21df54-6d64-4aea-b668-405b8aa42b07", "CustomContextItems": "{\"contextItem1\": {\"value\": \"contextItemValue1\", \"isDisplayable\": true, \"datatype\": \"DataType1\"}, \"contextItem2\": {\"value\": \"contextItemValue2\", \"isDisplayable\": true, \"datatype\": \"DataType2\"}}" }'` |
-| When the rule is on context item Survey (type: Text, value: India) | `curl --request POST \ --url https://<org-url>/api/data/v9.2/CCaaS_GetRepresentativeAvailabilityForConversation \ --header 'Authorization: Bearer <Token>' \ --header 'Content-Type: application/json' \ --data '{ "ApiVersion": "1.0", "ConversationId": "94c002c8-b14e-4a0e-8069-78dcf0d6c208", "CustomContextItems": "{\"Survey\": {\"value\": \"India\", \"isDisplayable\": true, \"datatype\": \"192350000\"}}" }'` |
+| Determine queue and representative availability for a conversation where the route-to-queue rules need more context items. | `curl --request POST \ --url https://<org-url>/api/data/v9.2/CCaaS_GetRepresentativeAvailabilityForConversation \ --header 'Authorization: Bearer token' \ --data '{ "ApiVersion": "1.0", "ConversationId": "cf21df54-6d64-4aea-b668-405b8aa42b07", "CustomContextItems": "{\"contextItem1\": {\"value\": \"contextItemValue1\", \"isDisplayable\": true, \"datatype\": \"DataType1\"}, \"contextItem2\": {\"value\": \"contextItemValue2\", \"isDisplayable\": true, \"datatype\": \"DataType2\"}}" }'` |
+| The rule is on context item Survey (type: Text, value: India) | `curl --request POST \ --url https://<org-url>/api/data/v9.2/CCaaS_GetRepresentativeAvailabilityForConversation \ --header 'Authorization: Bearer <Token>' \ --header 'Content-Type: application/json' \ --data '{ "ApiVersion": "1.0", "ConversationId": "94c002c8-b14e-4a0e-8069-78dcf0d6c208", "CustomContextItems": "{\"Survey\": {\"value\": \"India\", \"isDisplayable\": true, \"datatype\": \"192350000\"}}" }'` |
 
 
 > [!NOTE]
@@ -65,52 +65,9 @@ For example, when a customer chatting with an IVR or AI chat agent requests esca
 
 ## Response
 
-If successful, this method returns a 200 OK response code. The method returns the following status codes:
-
-| **HTTP Status** | **Description**                      |
-|-----------------|--------------------------------------|
-| 400             | Bad Request (Wrong input parameters) |
-| 401             | Unauthorized                         |
-| 404             | Resource not found                   |
-| 429             | Rate limit (Too many requests)       |
-| 405             | API not allowed                      |
-| 500             | Internal Server Error                |
-
-### Response values
-
-| **Name** | **Type** | **Description** |
-|---|---|---|
-| queueId | String | The target queue where the request is routed based on routing rule configuration and input data such as the entity values and context that are part of routing rule. |
-| isQueueAvailable | Boolean | Displays:- TRUE if the queue is within operating hours.- FALSE if the queue is outside operating hours. |
-| StartTimeOfNextOperatingHour | DateTime | The start time (UTC) of operating hours for the queue if it’s currently outside operating hours. Returns 01-01-0001 during operating hours. |
-| EndTimeOfNextOperatingHour | DateTime | The time (UTC) when operating hours end for the queue, if it’s currently outside operating hours. Returns 01-01-0001 during operating hours. |
-| nexttransitiontime | DateTime | The time (UTC) when the queue is operational again if it's outside operating hours. During operating hours, displays when the queue becomes non-operational. |
-| positionInQueue | Number | Position in queue for a customer waiting behind others in the same queue. |
-| isAgentAvailable | Boolean | Displays:- TRUE if service representatives in the queue are currently available to take requests based on the routing and assignment rules for workstream. The API also returns true if an AI agent is linked to the workstream or queue. We recommend that you don’t use this API when an AI agent is added to the workstream or queue.- FALSE if service representatives aren't available to take requests. |
-| averageWaitTime | Number | Average wait time in minutes for customers in the target queue. |
-| AverageWaitTimeInSeconds | Numbers | Average wait time in seconds for customers in the target queue. |
-|NumberOfExpertsAvailableInQueue|Numbers|The number of service representatives currently available to accept conversations in the target queue. |
-
-
-### Sample response
-
-```json
-{  
-"@odata.context": "https://<org-url>/api/data/v9.2/\$metadata#Microsoft.Dynamics.CRM.CCaaS_GetRepresentativeAvailabilityForConversationResponse",  
-"NextTransitionTime": "9999-12-31T23:59:59Z",
-"NumberOfExpertsAvailableInQueue": 5,
-“AverageWaitTimeInSeconds”: 45  
-"PositionInQueue": 1,  
-"AverageWaitTime": null,  
-"StartTimeOfNextOperatingHour": "0001-01-01T00:00:00Z",  
-"EndTimeOfNextOperatingHour": "0001-01-01T00:00:00Z",  
-"QueueId": "85e55877-f27a-e911-a81a-000d3a1ca610",  
-"IsAgentAvailable": true,  
-"IsQueueAvailable": true  
-}
-```
+[!INCLUDE [cc-availability-response](../includes/cc-availability-response.md)]
 
 ## Related information
 
-[Use representative availabilty APIs](../representative-availability-overview.md)   
+[Use representative availability APIs](../representative-availability-overview.md)   
 [CCaaS_GetRepresentativeAvailabilityBeforeConversation](ccaas_getrepresentativeavailabilitybeforeconversation.md)  

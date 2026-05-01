@@ -1,7 +1,7 @@
 ---
 title: Enable shift-based routing
 description: Learn how to enable shift-based routing to route and assign cases and conversations based on representative availability.
-ms.date: 04/14/2025
+ms.date: 04/30/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -16,9 +16,9 @@ ms.custom:
 
 # Enable shift-based routing for cases and conversations
 
-You can configure assignment rules to route and assign cases and conversations based on your customer service representatives' (service representative or representative) shift schedules. By verifying representatives' schedules in advance, your organization can reduce the risk of delays from routing tasks to off-duty service representatives.
+You can configure assignment rules to route and assign cases and conversations based on your customer service representatives' (service representative or representative) shift schedules. By verifying representative schedules in advance, you can reduce delays caused by routing work to off-duty representatives.
 
-Incorporate shift assignments and time-off considerations into the routing process to foster an employee-centric approach and streamline operational workflows for productivity and improved retention rates.
+It also considers shift assignments and time off when routing work.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Complete the steps in [Set up user management](wfm-user-management.md).
     
 ## Enable shift-based routing
 
-1.	In the site map of the Copilot Service admin center app, go to **Operations**, and then select **Workforce management**. The **Workforce management** page appears.
+1.	In the site map of Copilot Service admin center, select **Workforce management** in **Operations**. The **Workforce management** page appears.
 1.	In **Shift & Schedule Management**, select **Manage** next to **Shift-based routing**.
 1.	On the **Shift-based routing** page, set the **Enable routing based on shift bookings** toggle to **On**.
 3.	Select **Save and Close**.

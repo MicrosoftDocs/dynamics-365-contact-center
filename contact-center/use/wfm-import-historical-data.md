@@ -1,7 +1,7 @@
 ---
 title: Import historical data
 description: Learn how to import historical data to use in your case and conversation forecast scenarios.
-ms.date: 01/30/2026
+ms.date: 04/30/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -11,7 +11,9 @@ ms.collection:
 ---
 # Import historical data
 
-When you create a forecast scenario, use historical data as the input source for the forecasting model to predict future volume. Historical data can be tracked up to two years from the date when you create the forecast report. To configure the report to use historical data, you must first upload a historical data file.
+When you create a forecast scenario, you can use historical data as the input source to predict future volume. You can include up to two years of historical data from the date when you create the forecast report. 
+
+To configure a forecast scenario to use historical data, upload a data file.
 
 ## Import a historical data file 
 
@@ -19,12 +21,12 @@ When you create a forecast scenario, use historical data as the input source for
 1. Select **New**. The **New WEM File Upload** page appears.
 
    > [!NOTE]  
-   > You must use the CSV file format and format the headers as explained in [Required data](#required-data).
+   > You must use CSV format and format the headers as described in [Required data](#required-data).
 
-1. For **Name**, enter a name for the file.
+1. Enter a name for the file.
 1. For **File data interval**, select either **Intraday** (short term) or **Daily** (long term).
 1. Select **Save**.
-1. For **File**, select **Choose File**, and then browse and select the required file.
+1. For **File**, select **Choose File**, and then select the required file.
 1. Select **Save**.
 
 You can now use this file as your data source when you [create a new forecast report](wfm-forecast-scenarios.md#create-a-short-term-or-long-term-forecast-report).

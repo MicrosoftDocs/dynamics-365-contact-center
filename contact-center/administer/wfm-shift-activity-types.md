@@ -33,6 +33,6 @@ Complete the steps in [Set up user management](wfm-user-management.md).
      1. **Assignment status**: Select a status.
      1. **Duration**: (optional) Although this field is optional, you must select a value for the activity to be available in the shift plan.
      1. **Owner**: Select an owner for the activity type.
-     1. **Color** (optional): If you want to change the color of how the activity type appears on the activity board bookings, select the color box, and then choose the color you want from the color palette.
+     1. **Color** (optional): If you want to change the color of how the activity type appears on the activity board bookings, select the color box. Then, choose the color you want from the color palette.
      1. **Dark Theme Color** (optional): If you want to change the dark theme color, select the color box, and then choose the color you want from the color palette.
 1. Select **Save and Close**.

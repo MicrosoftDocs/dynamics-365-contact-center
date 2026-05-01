@@ -1,7 +1,7 @@
 ---
-title: Use auto schedule to schedule service representatives
+title: Use auto schedule to schedule representatives
 description: Learn how to use the auto-schedule feature to schedule large volumes of representatives for activities.
-ms.date: 04/14/2025
+ms.date: 04/30/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -10,9 +10,9 @@ ms.custom: bap-template
 ms.collection:
 ---
 
-# Use auto schedule to schedule service representatives
+# Use auto schedule to schedule representatives
 
-If you have many customer service representatives (service representatives or representatives) to schedule activities for, use the auto scheduler on the schedule board to quickly create a shift plan.
+If you have many customer service representatives (service representatives or representatives) to schedule activities for, use auto schedule on the schedule board to quickly create a shift plan.
 
 ## Use auto schedule
 
@@ -22,6 +22,6 @@ If you have many customer service representatives (service representatives or re
 1. For **Duration**, select the start and end dates for the activity.
 1. Set the filters for **Agent availability**, **Match Skills**, and **Match Queue** as required.
 1. Set the **Availability order** to either **Most Available to Least** or **Least Available to Most**.
-1. Select **Schedule**. The schedule board updates and fills the activities for the agents in the activity itinerary.
+1. Select **Schedule**. The schedule board updates with the scheduled activities.
 1. Select **Publish**. The system sends a booking notification to the representatives who are scheduled.
    

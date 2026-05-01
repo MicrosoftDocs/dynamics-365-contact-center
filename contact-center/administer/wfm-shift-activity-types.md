@@ -1,6 +1,6 @@
 ---
 title: Configure shift activity types
-description: Learn how to configure shift activity types to definte work activities and support scheduling and resource planning.
+description: Learn how to configure shift activity types to define work activities and support scheduling and resource planning.
 ms.date: 04/30/2026
 ms.topic: how-to
 author: lalexms
@@ -25,7 +25,7 @@ Complete the steps in [Set up user management](wfm-user-management.md).
 ## Configure a shift activity type
 
 1. In the site map of the Copilot Service admin center app, select **Workforce management** in **Operations**. The **Workforce management** page appears.
-1. In **Shift & Schedule Managment**, select **Manage** next to **Activity types**.
+1. In **Shift & Schedule Management**, select **Manage** next to **Activity types**.
 1. On the **Shift activity types** page, select **New**. The **New Shift Activity Type** page appears.
 1. Enter the following details:
      1. **Name**: The name of your activity type.

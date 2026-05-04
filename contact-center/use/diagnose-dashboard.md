@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot 
-ms.date: 01/19/2026
+ms.date: 05/04/2026
 ms.custom: bap-template
 ---
 
@@ -23,8 +23,7 @@ With debug experience, organizations can access diagnostic telemetry for the ful
 
 - You have the **Omnichannel supervisor privileges** to access the diagnostics dashboard. [Learn how to configure user roles to access analytics and dashboards](/dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh#configure-user-access-to-analytics-and-dashboards).
 
-- [Omnichannel real-time dashboards are enabled](/dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator).
-
+- [Omnichannel real-time dashboards are enabled](/dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator) or [Real-time analytics dashboard for record routing is enabled](/dynamics365/customer-service/administer/enable-record-routing#manage-real-time-analytics-for-record-routing).
 - [Application Insights](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource) is configured.
 
     > [!NOTE]
@@ -60,7 +59,7 @@ The debug experience offers the following diagnostic capabilities:
 
 Supervisors can access the **Diagnose** dashboard in Omnichannel real-time analytics dashboard.
 
-1. In the site map of Copilot Service workspace, select **Omnichannel Realtime analytics**.
+1. In the site map of Copilot Service workspace, select **Omnichannel Realtime analytics** or **Real-time analytics for record routing**.
 
 1. On the command bar, select **Diagnose**. A new session tab displays the **Debug** page with conversation lifecycle and other Application Insights data.
 

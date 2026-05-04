@@ -21,7 +21,7 @@ Make sure that the following prerequisites are met:
 
 - SMS for Infobip is provisioned in Copilot Service admin center. Learn more in [Provision channels](../implement/provision-channels.md).
 - An active Infobip account with a provisioned SMS phone number is available. To request access or acquire a phone number, contact the Infobip account owner.
-- Permissions on the secure columns are configured. Learn more in [Configure permissions to access secure columns](/dynamics365/customer-service/administer/configure-secure-columns).
+- Permissions on the secure columns are configured. Learn more in [Configure permissions to access secure columns](/dynamics365/customer-service/implement/add-users-assign-roles#configure-permissions-to-access-secure-columns).
 
 ## Get Infobip account details
 

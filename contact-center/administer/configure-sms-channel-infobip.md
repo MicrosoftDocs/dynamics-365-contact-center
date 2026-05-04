@@ -74,14 +74,14 @@ To configure the workstream, make sure you perform the steps to create a workstr
       - **Representatives can send file attachments**
    1. Verify the settings on the **Summary** page, and then select **Finish**. The SMS for Infobip channel is configured.
 1. Configure routing rules. Learn more in [Configure work classification](/dynamics365/customer-service/administer/configure-work-classification).
-1. Configure work distribution. Learn more in [Work distribution settings](/dynamics365/customer-service/administer/work-distribution-settings).
-1. Add an AI agent. Learn more in [Configure an agent](/dynamics365/customer-service/administer/configure-bot).
+1. Configure work distribution. Learn more in [Work distribution settings](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution).
+1. Add an AI agent. Learn more in [Configure an agent](/dynamics365/customer-service/administer/create-workstreams#add-an-agent-to-a-workstream).
 1. In **Advanced settings**, configure the following options based on your business needs:
    - Sessions
-   - Agent notifications
-   - Context variables
-   - Smart assist bots
-   - Quick replies
+   - [Representative notifications](/dynamics365/customer-service/administer/notification-templates#out-of-the-box-notification-templates)
+   - [Context variables](/dynamics365/customer-service/administer/manage-context-variables)  
+   - [Smart assist agents](/dynamics365/customer-service/develop/smart-assist-bot)  
+   - [Quick replies](/dynamics365/customer-service/administer/create-quick-replies)
 
 ## Establish a connection between the omnichannel application and Infobip
 

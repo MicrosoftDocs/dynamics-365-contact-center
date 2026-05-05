@@ -84,9 +84,9 @@ For SMS workstreams, add disposition codes in workstream **Advanced settings** a
 
 All three outcome data points are stored in proactive engagement data tables and can be used together to determine next steps in reporting and orchestration. Learn more in [Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md).
 
-## Timeout settings for proactive engagement SMS
+## Timeout settings for proactive SMS engagement
 
-The system enforces timeout mechanisms at two stages of a proactive SMS engagement: before a conversation is created, and after.
+The system enforces timeout mechanisms at two stages of a proactive SMS engagement: before and after a conversation is created.
 
 ### Pre-conversation: First response timeout
 

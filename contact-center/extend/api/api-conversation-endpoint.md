@@ -22,7 +22,9 @@ Send various types of activities, such as messages, typing indicators, or conver
 - `message`: Sends a message (optionally with attachments)
 - `typing`: Indicates the user is typing
 - `endOfConversation`: Ends the conversation
-- `event`: Custom events inform the system of an event without needing to send a message and support sending metadata  
+- `event`:
+  - Read events indicate to the customer service representatives when the user reads a message.
+  - Custom events inform the system of an event without needing to send a message and support sending metadata.
 
 If you pass an unsupported event name in an `event` type, the API returns a 400 error.
 
@@ -123,6 +125,50 @@ The payload for this API is a JSON-formatted object that defines the activity be
 | from.name       | Display name of the sender | string |
 | conversation.id | Conversation ID            | GUID   |
 
+## Read events
+
+Read events optionally let you indicate to customer service representatives and historic transcript readers that a user read a message. When a read event is sent, you include a message ID, and the system marks that message and all preceding messages as read by the user.
+
+### Request payload
+
+```json
+{
+  "conversation": {
+    "id": "GUID"
+  },
+  "type": "event",
+  "channelId": "GUID",
+  "name": "MessageRead",
+  "value": {
+    "messageId": "1234567890123"
+  }
+}
+```
+**Payload schema**
+
+| Key               | Description                | Type     |
+| ----------------- | -------------------------- | -------- |
+| conversation.id | Conversation ID            | GUID   |
+| type            | event                 | string |
+| channelId       | Channel GUID               | GUID   |
+| name       | Must be MessageRead | string |
+| value.messageId | The 13-digit string epoch timestamp for the message that was read | string |
+
+### Response
+
+The API returns a 200 response code on success.
+
+```json
+{
+  "messageId": "",
+  "message": null
+}
+```
+
+> [!NOTE] 
+> Read indicators apply only to messages sent by the agent to the user. The application doesn’t indicate whether an agent has read a user’s message and doesn’t support read receipts for automated messages.
+
+
 ## Custom events
 
 Custom events let you send structured data and trigger system processes in ongoing conversations without showing messages to customer service representatives.
@@ -132,7 +178,7 @@ Custom events let you send structured data and trigger system processes in ongoi
 ```json
 {
   "conversation": {
-    "id": "{conversation-id-guid}"
+    "id": "GUID"
   },
   "type": "event",
   "channelData": {
@@ -147,11 +193,11 @@ Custom events let you send structured data and trigger system processes in ongoi
 
 | Tier 1 Key | Tier 2 Key | Description | Type | Max Length |
 |------------|------------|-------------|------|------------|
-| type | | Type of activity being sent. For events, use "event". | string | 256 characters |
+| type | | Type of activity being sent. For events, use "event." | string | 256 characters |
 | id | | Optional identifier for the message. | string | — |
-| channelId | | GUID of the messaging channel. This must match the channel used in headers. | GUID | — |
+| channelId | | GUID of the messaging channel. Must match the channel used in headers. | GUID | — |
 | from | | Object containing sender info. Optional. | object | — |
-| | id | ID of the sender. This is optional. | string | 256 characters |
+| | id | ID of the sender. Optional. | string | 256 characters |
 | | name | Display name of the sender that appears to the service representative. | string | 256 characters |
 | name | | Name of the event | string | 256 characters |
 | channelData | | | object | — |
@@ -160,7 +206,8 @@ Custom events let you send structured data and trigger system processes in ongoi
 | | customEventValue | JSON-encoded string containing variables as objects with key names and values. Use the displayable flag to control whether specific values are visible to service representatives. For more information, see [setcontextprovider](/dynamics365/customer-service/develop/reference/methods/setcontextprovider). | string | — |
 
 > [!NOTE] 
-> Learn more in [Configure Copilot Studio agent custom events](../configure-custom-messaging-channel.md).
+> -  Learn more in [Configure Copilot Studio agent custom events](../configure-custom-messaging-channel.md).
+> -  "MessageRead" is reserved for Read Events.
 
 ### Response
 

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: reference
 ms.collection: bap-ai-copilot
-ms.date: 04/29/2026
+ms.date: 05/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -25,9 +25,11 @@ For example, in an appointment reminder campaign:
 
 Proactive engagement outcomes for voice and SMS are available from three sources.
 
-### SIP-based outcomes
+### [Voice](#tab/voice)
 
-Applicable to voice only, SIP-based outcomes are fixed, system-defined outcomes from the telephony layer.
+**SIP-based outcomes**
+
+SIP-based outcomes are fixed, system-defined outcomes from the telephony layer.
 
 Azure Communication Services returns SIP-based early media outcomes, such as LiveAnswer, AnsweringMachine, Busy, and NoAnswer. The system stores these outcomes as result values in the proactive delivery entity.
 
@@ -53,13 +55,26 @@ Azure Communication Services returns SIP-based early media outcomes, such as Liv
 | Expired | There was no more valid time window to engage the customer, or expiration date specified was in the past. Customer wasn't attempted to be engaged. |
 | Error | Customer wasn't attempted to be engaged because of invalid configuration or data condition during the valid time window to engage with the customer. |
 
-### AI agent outcomes
+### [SMS](#tab/sms)
+
+**Delivery outcomes**
+
+Applicable to SMS only, delivery outcomes are fixed and system-defined that reflect whether the SMS message was successfully delivered to the recipient.
+
+| Result | Description |
+| ------ | ----------- |
+| Delivered | The SMS message was successfully delivered to the customer device. |
+| Not delivered | The SMS message could not be delivered to the customer device. |
+
+---
+
+**AI agent outcomes**
 
 Applicable to voice and SMS, the outcomes are data values returned from the AI agent. This applies to connected calls and SMS conversations in which the AI agent is actively engaged and sets values that are sent back to Dynamics 365 Contact Center.
 
 Perform the steps in [Send data back from AI agent to Dynamics 365 Contact Center](configure-agentS-for-ai-led-proactive-engagement.md#send-data-back-from-ai-agent-to-dynamics-365-contact-center) to configure the outcomes.
 
-### Representative disposition codes
+**Representative disposition codes**
 
 These outcomes are set by the service representative to classify the result of voice or SMS conversations they handled.
 
@@ -68,15 +83,6 @@ Perform the steps in [Configure disposition codes](configure-disposition-codes.m
 For SMS workstreams, add disposition codes in workstream **Advanced settings** and configure whether workstream-level requirements override global settings.
 
 All three outcome data points are stored in proactive engagement data tables and can be used together to determine next steps in reporting and orchestration. Learn more in [Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md).
-
-### Delivery outcomes
-
-Applicable to SMS only, delivery outcomes are fixed and system-defined that reflect whether the SMS message was successfully delivered to the recipient.
-
-| Result | Description |
-| ------ | ----------- |
-| Delivered | The SMS message was successfully delivered to the customer device. |
-| Not delivered | The SMS message could not be delivered to the customer device. |
 
 ## Timeout settings for proactive engagement SMS
 

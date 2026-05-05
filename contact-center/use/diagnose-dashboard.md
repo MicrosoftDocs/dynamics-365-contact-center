@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Diagnose contact center health using Application Insights dashboard
 
-Supervisors and contact center operators can identify routing issues and understand the causes of declining performance metrics. For example, they can investigate high queue backlogs or why service representatives are not assigned work even when they have the required presence.
+Supervisors and contact center operators can identify routing issues and understand the causes of declining performance metrics. For example, they can investigate high queue backlogs or why service representatives aren't assigned work even when they have the required presence.
 
 With debug experience, organizations can access diagnostic telemetry for the full lifecycle of a conversation via Application Insights to effectively troubleshoot runtime issues. This end-to-end data empowers teams to identify problems quickly, apply mitigations, and maintain seamless contact center operations.
 
@@ -49,7 +49,7 @@ The debug experience offers the following diagnostic capabilities:
 
 - **Conversation timeline**: Inspect the full lifecycle of a conversation, including assignment events.
 
-- **Service representative details**: Get detailed service representative view including configured parameters like skills, capacity, presence and all conversations handled by the service representative.
+- **Service representative details**: Get a detailed service representative view that includes configured parameters like skills, capacity, presence, and all conversations handled by the service representative.
 
 - **Raw event access**: Access conversation telemetry from Application Insights for an in‑depth analysis of specific work items.
 
@@ -89,7 +89,7 @@ Perform the following steps to debug issues:
 - View **Conversations with non-assignment reasons** to understand why a conversation wasn’t assigned during the assignment flow.
 
    > [!NOTE]
-   > During a conversation assignment, a service representative might reject a conversation. If the assignment engine can’t find any eligible service representativein a subsequent attempt, the system counts the case in both **No eligible CSRs found** and **CSR reject**.
+   > During a conversation assignment, a service representative might reject a conversation. If the assignment engine can’t find any eligible service representative in a subsequent attempt, the system counts the case in both **No eligible CSRs found** and **CSR reject**.
 
     :::image type="content" source="../media/conversations-by-non-assignment-reasons.png" alt-text="A screenshot of conversations by non assignment reasons.":::
 

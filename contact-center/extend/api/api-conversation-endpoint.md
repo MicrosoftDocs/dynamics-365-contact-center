@@ -23,8 +23,8 @@ Send various types of activities, such as messages, typing indicators, or conver
 - `typing`: Indicates the user is typing
 - `endOfConversation`: Ends the conversation
 - `event`:
-  - Read events indicate to Customer Service Representatives when the user reads a message
-  - Custom events inform the system of an event without needing to send a message and support sending metadata  
+  - Read events indicate to the customer service representatives when the user reads a message.
+  - Custom events inform the system of an event without needing to send a message and support sending metadata.
 
 If you pass an unsupported event name in an `event` type, the API returns a 400 error.
 
@@ -127,7 +127,7 @@ The payload for this API is a JSON-formatted object that defines the activity be
 
 ## Read events
 
-Read events optionally let you indicate to Customer Service Representatives and historic transcript readers that a user read a message. You specify a message ID in the event, and Contact Center indicates that this message - and all preceeding messages - were read by the user.
+Read events optionally let you indicate to customer service representatives and historic transcript readers that a user read a message. When a read event is sent, you include a message ID, and the system marks that message and all preceding messages as read by the user.
 
 ### Request payload
 
@@ -166,7 +166,7 @@ The API returns a 200 response code on success.
 ```
 
 > [!NOTE] 
-> Contact Center read indicators are only for Agent messages sent to the user. Contact Center does not support showing the user whether the Agent read a message, or showing read receipts for Automated Messages.
+> Read indicators apply only to messages sent by the agent to the user. The application doesn’t indicate whether an agent has read a user’s message and doesn’t support read receipts for automated messages.
 
 
 ## Custom events
@@ -206,8 +206,8 @@ Custom events let you send structured data and trigger system processes in ongoi
 | | customEventValue | JSON-encoded string containing variables as objects with key names and values. Use the displayable flag to control whether specific values are visible to service representatives. For more information, see [setcontextprovider](/dynamics365/customer-service/develop/reference/methods/setcontextprovider). | string | — |
 
 > [!NOTE] 
-> * Learn more in [Configure Copilot Studio agent custom events](../configure-custom-messaging-channel.md).
-> * The name "MessageRead" is reserved for Read Events.
+> -  Learn more in [Configure Copilot Studio agent custom events](../configure-custom-messaging-channel.md).
+> -  "MessageRead" is reserved for Read Events.
 
 ### Response
 

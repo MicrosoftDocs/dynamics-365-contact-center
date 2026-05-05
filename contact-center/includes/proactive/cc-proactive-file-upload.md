@@ -8,8 +8,7 @@ If you select **Upload a file** as the intake method, the **File upload** step a
 
 - Maximum file size: 10 MB
 - The file must include all required columns; extra columns are optional
--  Use the same value for ID column to link contacts in the same account
-
+- Use the same value for ID column to link contacts in the same account
 
 **Required columns**:
 
@@ -28,8 +27,8 @@ To download a sample file that contains the required columns and formatting, sel
 Records are processed immediately when the file upload begins.
 
 > [!NOTE]
-> The uploaded file isn't stored in any form and can't be downloaded after upload. To access delivery results and records, query the relevant tables in Microsoft Dataverse directly. Learn more in [Use proactive engagement tables for reporting](/dynamics365/contact-center/extend/proactive-engagement-tables.md).
+> The uploaded file isn't stored in any form and can't be downloaded. To access delivery results and records, query the relevant tables in Microsoft Dataverse directly. Learn more in [Use proactive engagement tables for reporting](/dynamics365/contact-center/extend/proactive-engagement-tables).
 
 **Upload a file to an existing engagement**:
 
-To add a new file to an engagement that you already created, go to **Copilot Service admin center** > **Productivity** > **Proactive engagements**. Select the engagement, and then select **Run from file**. The new file is added to the existing pending deliveries.
+To add a new file to an engagement that you already created, go to **Copilot Service admin center** > **Productivity** > **Proactive engagements**. Select the engagement, and then select **Run from file**. The system added the new file to the existing pending deliveries.

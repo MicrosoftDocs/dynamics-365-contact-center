@@ -16,7 +16,7 @@ Retrieve an array of context variables associated with an ongoing conversation. 
 If the conversation has no context variables, the API returns an empty array.
 
 > [!WARNING]  
-> The API uses an eventual consistency model because of the distributed nature of our platform, and context may not be available immediately after a conversation is started.
+> The API uses an eventual consistency model because of the distributed nature of our platform. Context may not be available immediately after a conversation starts.
 
 [!INCLUDE[cc-polling-note](../../includes/cc-polling-note.md)]
 

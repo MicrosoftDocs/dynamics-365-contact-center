@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 04/09/2026
+ms.date: 05/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -31,7 +31,7 @@ In Copilot Studio, choose to enable or disable detection of the answering machin
 
 You can pass customer and campaign context to your IVR agent so that it can personalize the conversation. Some data is available out of the box in [context variables for agents in Copilot Studio](/dynamics365/customer-service/administer/context-variables-for-bot#context-variables-for-copilot-agents).
 
-1. Pass the context as input attributes using [CCaaS API](../extend/api/ccaas_createproactivevoicedelivery.md) or as extra columns in a [file upload](configure-proactive-engagement.md#file-upload). All input parameters are added to the conversation context when a delivery is promoted to a conversation.
+1. Pass the context as input attributes using [CCaaS API](../extend/api/ccaas_createproactivevoicedelivery.md) or as extra columns in file upload option. All input parameters are added to the conversation context when a delivery is promoted to a conversation.
 
 1. Create a context variable on the outbound workstream that matches the attribute name exactly. For example, if you pass an attribute called `CustomerID`, make sure the context variable is named `CustomerID`. Learn more in [Manage context variables](/dynamics365/customer-service/administer/manage-context-variables?context=/dynamics365/contact-center/context/administer-context).
 
@@ -49,6 +49,17 @@ You can pass customer and campaign context to your IVR agent so that it can pers
    1. Save and publish the changes.
 
 At runtime, the variable within your Copilot agent is set to the value from Dynamics 365 Contact Center, and you can use it for consumption.
+
+### Send data back from AI agent to Dynamics 365 Contact Center
+
+To send values back from your AI agent to Dynamics 365 Contact Center at the end of the call, configure matching variables in Copilot Studio and the workstream.
+
+1. In Microsoft Copilot Studio, create a [global variable](/microsoft-copilot-studio/authoring-variables-bot?tabs=webApp). In the variable properties, select **External sources can receive the value**.
+
+1. Set the variable value in your topic flow where needed.
+1. Create a [workstream context variable](/dynamics365/customer-service/administer/manage-context-variables?context=/dynamics365/contact-center/context/administer-context) with the same name.
+1. The value is shared with Dynamics 365 Contact Center at the end of the call regardless of how the call disconnects, such as customer hang-up, IVR agent hang-up, or other disconnect outcomes.
+1. This data is made available in the proactive delivery table for export and reporting.
 
 ### Related information
 

@@ -1,7 +1,7 @@
 ---
-title: Use break distribution to schedule breaks for service representatives
+title: Use break distribution to assign breaks for service representatives
 description: Learn how to use the break distribution feature to assign breaks for customer service representatives.
-ms.date: 04/14/2025
+ms.date: 04/30/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -10,9 +10,9 @@ ms.custom: bap-template
 ms.collection:
 ---
 
-# Use break distribution to assign breaks for service representatives
+# Use break distribution to assign breaks
 
-To schedule breaks for your customer service representatives (service representatives or representatives), you can use the shift schedule board to quickly breaks. Representatives are then notified of their breaks via email and in-app notifications.
+To schedule breaks for your customer service representatives (service representatives or representatives), use break distribution on the schedule board to quickly assign breaks. Representatives are notified of their breaks through email and in-app notifications.
 
 ## Use break distribution
 
@@ -23,7 +23,7 @@ To schedule breaks for your customer service representatives (service representa
 1. Select the check box next to any of the break types you want to set for your representatives, and then enter the corresponding times:
      - **Minimum time from shift start**: Earliest break time after the shift starts.
      - **Maximum time from shift start**: Latest break time after the shift starts.
-     - **Minimum time before next break**: The minimum amount of time you want the representative to have in between breaks.
+     - **Minimum time before next break**: Minimum amount of time you want the representative to have in between breaks.
 1. Select **Schedule**. The schedule board updates and displays the breaks for the agents in the activity itinerary.
 1. Select **Publish**. The system sends a booking notification to the representatives who are scheduled for breaks.
    

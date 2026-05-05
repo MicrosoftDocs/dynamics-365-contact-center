@@ -1,6 +1,6 @@
 ---
 title: Diagnose contact center health with the Application Insights dashboard
-description: Know how the Diagnose dashboard can help you, as a supervisor, and why the automatic routing assignments are failing or high queue backlogs are affecting service SLAs in Dynamics 365 Contact Center and Customer Service.
+description: Learn how the Diagnose dashboard helps supervisors identify why automatic routing assignments fail and how high queue backlogs affect service level agreements (SLAs) in Dynamics 365 Contact Center and Customer Service.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Diagnose contact center health using Application Insights dashboard
 
-Supervisors and contact center operators can identify routing issues and uncover the underlying causes of declining performance metrics, such as a high queue backlog or service representatives not being assigned any work, despite having the required presence.
+Supervisors and contact center operators can identify routing issues and understand the causes of declining performance metrics. For example, they can investigate high queue backlogs or why service representatives are not assigned work even when they have the required presence.
 
 With debug experience, organizations can access diagnostic telemetry for the full lifecycle of a conversation via Application Insights to effectively troubleshoot runtime issues. This end-to-end data empowers teams to identify problems quickly, apply mitigations, and maintain seamless contact center operations.
 
@@ -71,7 +71,7 @@ Perform the following steps to debug issues:
 
 - Use the top-level filters to select a period for analysis, the channel type, organization ID, and queue name.
 
-- View the conversations in different states over time. You can use this to look at trends of open conversations and select a specific period for further analysis from top-level filters.
+- View the conversations in different states over time. You can use this view to look at trends of open conversations and select a specific period for further analysis from top-level filters.
 
     - **Total processed conversations**: The number of conversations processed by the contact center during the selected period.
     - **Assignment time (P95)**: The time taken for first successful assignment of a conversation to a service representative.
@@ -89,7 +89,7 @@ Perform the following steps to debug issues:
 - View **Conversations with non-assignment reasons** to understand why a conversation wasn’t assigned during the assignment flow.
 
    > [!NOTE]
-   > During a conversation assignment, if the conversation is rejected by the service representative and the next time the assignment engine doesn’t find any eligible service representatives for the conversation, it's counted in both **No eligible CSRs found** and **CSR reject**.
+   > During a conversation assignment, a service representative might reject a conversation. If the assignment engine can’t find any eligible service representativein a subsequent attempt, the system counts the case in both **No eligible CSRs found** and **CSR reject**.
 
     :::image type="content" source="../media/conversations-by-non-assignment-reasons.png" alt-text="A screenshot of conversations by non assignment reasons.":::
 
@@ -105,21 +105,21 @@ Perform the following steps to debug issues:
 
   The **View all events** link provides details on each conversation stage with the full details of the stage.
 
-- Select **Custom Dimensions** to get details on the individual conversation event. This is helpful when you want to view the output and other details for a conversation event. For example, for Route To Queue event, you can view what rulesets or rules were applied for a conversation, the conditions defined in the rules and what is the final queue that the conversation was routed to.
+- Select **Custom Dimensions** to get details on the individual conversation event. This view is helpful when you want to view the output and other details for a conversation event. For example, for Route To Queue event, you can view the applied rulesets, evaluated conditions, and the final queue selected for the conversation.
 
-- For analysis of assignment related issues, you can go to **All conversations** list and select an individual assignment event to get details on the assignment event. You can also sort the list based on Assignment events to view the conversations that involved the assignment engine multiple times. You can also sort the list on **Time to assign** to view the conversations that have taken the maximum time to be assigned to service representative.
+- For analysis of assignment related issues, you can go to **All conversations** list and select an individual assignment event to get details on the assignment event. You can also sort the list based on Assignment events to view the conversations that involved the assignment engine multiple times. You can also sort the list by **Time to assign** to identify conversations that take the longest time to be assigned to a service representative.
 
 - The **Assignment events** page for a conversation has details on conversation with information specific to the assignment, assignment method used, and ruleset information for the assignment step. The **Timeline** section has details on different assignment events, the run result, representative name, and other details like presence, available capacity, and capacity profiles the representatives had during the assignment event sorted in a chronological order for easier readability.
 
     :::image type="content" source="../media/assignment-events.png" alt-text="A screenshot of the assignment events.":::
 
-- Select a representative name to go to the **CSR details** view. The **CSR details** view shows information like service representative name, ID, capacity units, capacity profiles assigned to service representative, skills assigned to service representative, and queues that service representative is part of. The **Timeline** section shows events from +/- 2 hours from the assignment event and has details on the individual conversations that service representative interacted with, the action and result and the change in capacity, presence and capacity profile for the service representative due to the action.
+- Select a representative name to go to the **CSR details** view. The **CSR details** view shows information like service representative name, ID, capacity units, capacity profiles assigned to service representative, skills assigned to service representative, and queues that service representative is part of. The **Timeline** section shows events from +/- 2 hours from the assignment event and has details on the individual conversations that service representative interacted with, the action and result and the change in capacity, presence, and capacity profile for the service representative due to the action.
 
     :::image type="content" source="../media/csr-details.png" alt-text="A screenshot of the representative details.":::
 
   If the assignment engine is unable to find any eligible service representative, the CSR column shows **No eligible CSR found**. Select **No eligible CSR found** that takes you to **Assignment event details**.
 
-- The **Assignment event details** view is helpful if you want to validate why a representative wasn’t eligible during a particular assignment run. There is information around the conversation to help provide the requirements for a conversation in terms of presence, skills and capacity. The **Timeline** section has a search bar for service representatives. You can search for the representative to view the presence, skills, capacity and capacity profile during the assignment event. You can then compare it with the required capacity, required capacity profile, required skills and allowed presence from the **Information** section to understand why the representative wasn't selected during the assignment run.
+- The **Assignment event details** view is helpful if you want to validate why a representative wasn’t eligible during a particular assignment run. There is information around the conversation to help provide the requirements for a conversation in terms of presence, skills, and capacity. The **Timeline** section has a search bar for service representatives. You can search for the representative to view the presence, skills, capacity, and capacity profile during the assignment event. You can then compare it with the required capacity, required capacity profile, required skills, and allowed presence from the **Information** section to understand why the representative wasn't selected during the assignment run.
 
 ### Related information
 

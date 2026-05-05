@@ -16,7 +16,7 @@ Disposition codes allow you to categorize and record the outcome of the customer
 
 ## Prerequisites
 
-- You have the Omnichannel Administrator security role to configure and use disposition codes. The Omnichannel Agent is required to use disposition codes during conversations.
+- You have the Omnichannel administrator security role to configure and use disposition codes. The Omnichannel agent role is required to use disposition codes during conversations.
 - If you have custom security roles, make sure that the roles have the following privileges to manage disposition codes. Learn more in [Security roles and privileges](/power-platform/admin/security-roles-privileges).
 
   ### [Administrators](#tab/administrators)
@@ -62,7 +62,7 @@ Disposition codes allow you to categorize and record the outcome of the customer
 
 1. In the Copilot Service admin center, select **Customer settings** in **Customer support**.
 1. On the **Customer settings** page, select **Manage** for **Disposition code**.
-1. On the **Disposition Code** page, enable the **Turn on Disposition Code** toggle. The **Require disposition code to close session** checkbox appears. 
+1. On the **Disposition Code** page, enable the **Turn on Disposition Code** toggle. The **Require disposition code to close session** checkbox appears.
 1. If you select **Require disposition code to close session**, service representative must select a disposition code before closing a session. This checkbox isn't selected by default. 
 1. In **Max disposition codes allowed**, specify the maximum number of disposition codes a representative can enter per conversation. You can specify up to 12 disposition codes. The default value is two. In transfer scenarios, the maximum number of disposition codes allowed is applicable per primary representative involved in the conversation journey.
 

@@ -1,7 +1,7 @@
 ---
 title: Use shift bidding to select shifts.
 description: Learn how to use shift bidding to help you manage your work schedule.
-ms.date: 04/14/2025
+ms.date: 04/30/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -12,7 +12,7 @@ ms.collection:
 
 # Use shift bidding to select shifts
 
-Shift bidding allows you to select your shifts through a bidding process. Supervisors release shift plans for bidding, detailing available shifts, and then you can submit bids based on your preferred working hours. Shifts are assigned based on the best match.  Once notified, you can confirm your assigned shifts.
+Shift bidding allows you to select your shifts through a bidding process. Supervisors release shift plans for bidding, detailing available shifts, and then you can submit bids based on your preferred working hours. Shifts are assigned based on the best match. Once notified, you can confirm your assigned shifts.
 
 ## Use shift bidding
 

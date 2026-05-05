@@ -1,7 +1,7 @@
 ---
 title: Enable shift bids
 description: Learn how to enable shift bids so that customer service representatives can use a bidding process to determine their shift selections.
-ms.date: 04/14/2025
+ms.date: 04/30/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -16,19 +16,20 @@ ms.custom:
 
 # Enable shift bids
 
-Enable shift bidding so that your customer service representatives (service representatives or representatives) can participate in their shift selections by using a bidding process. 
+Enable shift bidding so that your customer service representatives (service representatives or representatives) can select shifts through a bidding process.
 
-Key features include:
 
-- Bid for shifts: Service representatives can view available shifts and submit bids directly from the **My Schedule** view or **Request Management**.
-- Select preferred shifts: Representatives can place bids based on their preferred working hours, that helps them choose shifts that fit their personal schedules.
-- Shift release for bidding: Schedulers can release shift plans for bidding, giving service representatives the opportunity to select the shifts they prefer.
-- Bidding management: Schedulers can review and manage shift bidding requests within the shift plan or **Request Management** view to ensure coverage is maintained.
+This feature provides the following capabilities:
+
+- **Bid for shifts**: Service representatives can view available shifts and submit bids from **My schedule** or **Request management**.
+- **Select preferred shifts**: Representatives can place bids based on preferred working hours to choose shifts that fit their schedules.
+- **Release shifts for bidding**: Schedulers can release shift plans for bidding so that representatives can select preferred shifts.
+- **Manage bids**: Schedulers can review and manage shift bidding requests in the shift plan or **Request management** view to ensure coverage.
 
 ## Prerequisites
 
-Complete the steps in [Set up user management](wfm-user-management.md).
-    -	[Manage personas and custom security profiles](/dynamics365/customer-service/role-persona-mapping)
+- Complete the steps in [Set up user management](wfm-user-management.md).
+-	[Manage personas and custom security profiles](/dynamics365/customer-service/role-persona-mapping)
 
 ## Enable shift bidding in your organization
 

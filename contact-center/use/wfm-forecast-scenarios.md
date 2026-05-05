@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes in Dynamics 365 Contact Center and Customer Service.
-ms.date: 04/09/2026
+ms.date: 05/01/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -25,7 +25,7 @@ You can use the forecast reports for case and conversation volumes in the follow
 
 - Forecast upcoming case and conversation volumes using historical traffic data, whether sourced internally from Dynamics 365 or externally from an imported file upload.
 - Rely on predicted conversation volumes for service representative planning if your administrator configured AI agents for your conversation channels. The system excludes conversations that AI agents handle without having a service representative join the conversation.
-- Forecast case and conversation volumes on a daily basis for a time range up to six months for long-term business planning.
+- Forecast case and conversation volumes on a daily basis for a time range up to three years for long-term business planning.
 - Forecast case and conversation volumes at 15-minute intervals for a time range of up to six weeks for short-term staffing and intraday planning.
 - Slice forecasted volumes and service representative demand by channel and queue.
 - View a rollup of actual and forecasted volume on an hourly, daily, weekly, monthly, and yearly basis.
@@ -47,7 +47,7 @@ You can create either short-term or long-term forecasts.
 
 - **Short term**: This report is typically used for daily forecasts. It shows intraday actual and predicted case and conversation volumes in 15-minute intervals for up to six weeks. The available forecast range depends on how much historical case or conversation data exists.
 
-- **Long term**: This report shows the actual and predicted daily case and conversation volumes for up to six months. The available forecast range depends on how much historical case or conversation data exists.
+- **Long term**: This report shows the actual and predicted daily case and conversation volumes for up to three years. The available forecast range depends on how much historical case or conversation data exists.
 
 ## Create a short-term or long-term forecast report
 

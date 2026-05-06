@@ -93,7 +93,7 @@ fetch(ocConfigAPIURL, {
 1. Select **Yes** in the **Default value** and **Setting environment value** fields.
 1. Save and close.
 
-**Fix federated identity credentials path**
+### Fix federated identity credentials path
 
 1. In Copilot Service workspace, open the browser console, go to the **Network** tab, search for `msdyn_GetAppInsightsTelemetry`, and select a failed request call.
 

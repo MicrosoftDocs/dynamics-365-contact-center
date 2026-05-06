@@ -212,6 +212,9 @@ You can obtain customer consent for post-call surveys as follows:
 - **Automatic - implicit**: The IVR agent informs the customer about a post-call survey at the end of the call. After the service representative disconnects, the call is automatically transferred to a post-call survey agent.
 - **Automatic - explicit**: The IVR agent asks the customer if they want to participate in a post-call survey. The consent is saved in the `va_SurveyConsent` Boolean variable. If the customer consents, the call is automatically transferred to the post-call survey agent at the end of the call. If the customer says no, the call ends when the service representative hangs up.
 
+> [!NOTE]
+> When post-call survey is enabled, the system does not play an agent disconnect message when the agent disconnects from the call. 
+
 ## View the survey results
 
 The survey results are stored in Dataverse tables. To view the survey responses, in Power Apps, go to **Tables**, and select **Customer feedback survey response**.

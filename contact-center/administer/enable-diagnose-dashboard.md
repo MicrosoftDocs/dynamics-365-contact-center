@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot 
-ms.date: 01/19/2026
+ms.date: 05/06/2026
 ms.custom: bap-template
 ---
 
@@ -85,6 +85,14 @@ fetch(ocConfigAPIURL, {
 });
 ```
 
+## Enable Debug tab for Diagnose dashboard
+
+1. In Power Apps, go to the Default Solution or the solution in which you want to enable the dashboard.
+1. In **Objects**, go to **Setting** > **Setting definition**.
+1. Search for **Enable Application Insights Dashboard** app setting.
+1. Select **Yes** in the **Default value** and **Setting environment value** fields.
+1. Save and close.
+
 **Fix federated identity credentials path**
 
 1. In Copilot Service workspace, open the browser console, go to the **Network** tab, search for `msdyn_GetAppInsightsTelemetry`, and select a failed request call.
@@ -98,14 +106,6 @@ fetch(ocConfigAPIURL, {
 The conversation diagnostics data is stored in Azure Application Insights database. Learn more about pricing for data storage in [Pricing](/dynamics365/customer-service/administer/configure-conversation-diagnostics#pricing).
 
 There’s no additional cost for using Azure workbooks.
-
-## Enable Debug tab for Diagnose dashboard
-
-1. In Power Apps, go to the Default Solution or the solution in which you want to enable the dashboard.
-1. In **Objects**, go to **Setting** > **Setting definition**.
-1. Search for **Enable Application Insights Dashboard** app setting.
-1. Select **Yes** in the **Default value** and **Setting environment value** fields.
-1. Save and close.
 
 ### Related information
 

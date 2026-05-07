@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: reference 
 ms.collection: 
-ms.date: 11/15/2024
+ms.date: 05/07/2026
 ms.custom: bap-template 
 ---
 
@@ -17,7 +17,7 @@ Modify an agent's [presence](/dynamics365/customer-service/use/oc-manage-presenc
 
 ## Prerequisites
 
-You must have the Omnichannel Agent or Omnichannel Supervisor role to call this API.
+You must have the Omnichannel Supervisor role to call this API.
 
 ## Request details
 - **URL**: `//<orgurl>/api/data/v9.2/CCaaS_ModifyAgentPresence`

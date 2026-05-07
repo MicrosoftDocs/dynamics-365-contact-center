@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 Dynamics 365 Contact Center uses a unified architecture where specialized AI agents are mapped to critical outcomes of the contact center organizations, such as customer self-service and service representative productivity; conversation quality and contact center health; and contact center setup and conversation lifecycle management. These agents work together in a continuous learning loop, combining AI-driven actions with human oversight to continuously improve service operations.
 
-In the site map of Copilot Service admin center, select **Contact Center Agents**, to view the AI agents for your contact center. Each agent serves a distinct role across the contact center lifecycle.
+In the site map of Copilot Service admin center, select **Contact Center Agents**. The **Contact Center Agents** page appears where you can view and manage the AI agents for your contact center. Each agent serves a distinct role across the contact center lifecycle.
 
 ## Customer Assist Agent
 

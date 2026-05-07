@@ -40,10 +40,8 @@ Define criteria methods, conditions, and manage evaluation plans to support both
 
 ## Configure skills for Quality Assurance Agent
 
-1. In the site map of Copilot Service admin center, select **Contact Center Agents**. The **Contact Center Agents** page appears.
-1. Select **Manage** for **Quality Assurance Agent**. The **Quality Assurance Agent** page appears.
-1. Select **Configure in detail** for **Quality Evaluation**. 
-1. The **Quality Evaluation Agent** page appears, where you can [enable conversations](manage-quality-evaluation-agent.md#enable-quality-evaluation-agent). 
+1. In Copilot Service admin center,  go to **Customer Support** > **Quality management**. The **Quality management** page appears.
+1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears, where you can [enable conversations](manage-quality-evaluation-agent.md#enable-quality-evaluation-agent). 
 
 Then, from Copilot Service workspace, you can use evaluations for real-time conversations and view scores for the real-time evaluation plans.
 

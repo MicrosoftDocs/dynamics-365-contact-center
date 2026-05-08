@@ -1,4 +1,4 @@
----
+﻿---
 title: Trial FAQ&mdash;Dynamics 365 Contact Center
 description: Solutions to common questions related to Dynamics 365 Contact Center trial setup and management. Learn how to resolve platform and app-specific issues.
 author: neeranelli
@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: faq
 ms.collection: get-started
-ms.date: 05/15/2025
+ms.date: 05/08/2026
 ms.custom: bap-template
 ---
 
@@ -31,7 +31,7 @@ After you apply for the license to your tenant, you can publish your environment
 The following limitations apply for the trial:
 
 - The trial is available to you for 30 days. After that, you can request an extension for another 30 days, buy a paid license, or sign up for a new trial.
-- The trial expires if there’s no activity on the app for 14 consecutive days. Expired trials can't be reactivated. However, you can start a new trial.
+- The trial expires if there's no activity on the app for 14 consecutive days. Expired trials can't be reactivated. However, you can start a new trial.
 - You can have only one active trial per app at a time. You can sign up again after your current trial for the app ends.
 
 ## Dynamics 365 Contact Center-specific questions

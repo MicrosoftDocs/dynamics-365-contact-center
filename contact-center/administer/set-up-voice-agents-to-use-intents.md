@@ -1,4 +1,4 @@
----
+﻿---
 title: Set up voice agents to use intents
 description: Learn how to configure intent-based suggestions for Copilot agents enabled for voice using Customer Intent Agent in Dynamics 365 Contact Center to automate and streamline your contact center.
 author: neeranelli
@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 01/07/2026
+ms.date: 05/08/2026
 ms.custom: bap-template
 ---
 
@@ -52,14 +52,14 @@ Perform the following steps in Copilot Service admin center.
 
 Your intent agent might be set up to use multiple lines of businesses. If you're using lines of business, make sure that you set the line of business in conversation context before the intent agent is added to the conversation. This sets the scope for intents and instructions that your intent agent follows during the rest of the conversation.
 
-To set the line of business during the conversation, make sure you set the context variable “va_LineOfBusiness” to the globally unique identifier of the corresponding line of business you want the intent agent to recognize. Make sure your Customer Intent Agent is on a queue and a Copilot agent is the first to answer the call. When escalating to the Customer Intent Agent, make sure your Copilot agent sets a variable “va_LineOfBusiness” to the value of the target line of business.
+To set the line of business during the conversation, make sure you set the context variable "va_LineOfBusiness" to the globally unique identifier of the corresponding line of business you want the intent agent to recognize. Make sure your Customer Intent Agent is on a queue and a Copilot agent is the first to answer the call. When escalating to the Customer Intent Agent, make sure your Copilot agent sets a variable "va_LineOfBusiness" to the value of the target line of business.
 
 Learn about finding the unique ID of the line of business in [Discover line of business unique IDs](manage-customer-intent-agent.md#discover-line-of-business-unique-ids).
 
 :::image type="content" source="../media/context-variable-for-lob.png" alt-text="Screenshot of context variable va_LineOfBusiness configuration.":::
 
 > [!IMPORTANT]
-> If you’ve configured lines of business, but don’t set a value during the conversation, the voice agent using intent falls back to the first line of business in your environment, ordered alphabetically.
+> If you've configured lines of business, but don't set a value during the conversation, the voice agent using intent falls back to the first line of business in your environment, ordered alphabetically.
 
 ## Connect voice agents to voice queues or workstreams
 
@@ -76,17 +76,17 @@ Follow these steps to configure the IVR agent to escalate the calls to the Custo
 
 ## Configure instructions to use custom context for voice agents
 
-Configure your voice agent to use context variables from the conversation and deliver a dynamic, personalized experience. You’ll include these variables in your intent agent instructions. The key steps are as follows:
+Configure your voice agent to use context variables from the conversation and deliver a dynamic, personalized experience. You'll include these variables in your intent agent instructions. The key steps are as follows:
 
 1. Set any [context variables](/dynamics365/customer-service/administer/manage-context-variables) you want to use prior to engaging the intent agent. For example, the global variables that are created in Copilot Studio are [passed to Dynamics 365 Contact Center](/microsoft-copilot-studio/advanced-hand-off#context-variables-available-upon-handoff) when a conversation is escalated.
 
-1. Author your instructions with replacement slugs to consume the context variables. Within instructions, use the syntax `{@<variable name>}`, for example: “The customer’s name is `{@Customer_Name}`.”
+1. Author your instructions with replacement slugs to consume the context variables. Within instructions, use the syntax `{@<variable name>}`, for example: "The customer's name is `{@Customer_Name}`."
 
 **Example**
 
-1. In your context variables, configure a variable like Customer_Name to capture the customer’s name.
+1. In your context variables, configure a variable like Customer_Name to capture the customer's name.
 1. Set up your workstream with an agent from Copilot Studio, and add the intent agent to a queue.
-1. In the Copilot Studio agent conversation session, capture the customer’s name and set it into a global variable `Customer_Name`. This is handed off to the contact center when you escalate to the intent agent.
+1. In the Copilot Studio agent conversation session, capture the customer's name and set it into a global variable `Customer_Name`. This is handed off to the contact center when you escalate to the intent agent.
 1. In your intent instructions, insert the variable placeholder slug where appropriate. Example: The customer's name is {@Customer_Name}. Make sure to refer to the customer by name throughout the conversation.
 1. Make sure to follow [best practices](manage-customer-intent-agent.md#how-to-write-clear-instructions) when authoring your instructions.
 

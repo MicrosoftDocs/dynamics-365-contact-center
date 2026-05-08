@@ -6,14 +6,14 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 04/09/2026
+ms.date: 05/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
 # Overview of proactive engagement
 
-Today, customers want brands to anticipate their needs, provide personalized engagement, and offer effortless support. Businesses seek automation, increased loyalty, and dependability. Proactive engagement is the solution to create AI-driven proactive outbound experiences that enable enterprises to engage with their customers proactively on voice channels. You can integrate Dynamics 365 Contact Center and Customer Insights journeys for an AI-empowered conversational journey.
+Today, customers want brands to anticipate their needs, provide personalized engagement, and offer effortless support. Businesses seek automation, increased loyalty, and dependability. Proactive engagement is the solution to create AI-driven proactive engagement experiences that enable enterprises to engage with their customers proactively on voice and SMS channels. You can integrate Dynamics 365 Contact Center and Customer Insights journeys for an AI-empowered conversational journey.
 
 ## What is proactive engagement?
 
@@ -25,10 +25,10 @@ By using a blend of AI agents and customer service representatives, you can reac
 
 ### CRM system workflows
 
-Use proactive engagement to automate workflows that trigger outbound calls based on defined conditions. Examples include case closure notifications, automated data collection, status updates, alerts, and mission-critical engagements. You can trigger these engagements in the following ways:
+Use proactive engagement to automate workflows that trigger outbound calls and messages based on defined conditions. Examples include case closure notifications, automated data collection, status updates, alerts, and mission-critical engagements. You can trigger these engagements in the following ways:
 
 - **CCaaS API or Power Automate flows**: Available natively with Dynamics 365 Contact Center. Use CCaaS APIs to integrate with non-Microsoft systems, or create a Power Automate flow triggered by changes to Dynamics 365 records such as a case status update.
-- **Customer Insights Journey triggers**: Use journey triggers to initiate calls when a record is created or updated. This option requires Dynamics 365 Customer Insights license.
+- **Customer Insights Journey triggers**: Use journey triggers to initiate calls and messages when a record is created or updated. This option requires Dynamics 365 Customer Insights license.
 
 ### AI agents-led proactive engagement
 
@@ -39,8 +39,8 @@ Use AI agents-led proactive engagement to enable AI agents, such as case monitor
 A single-channel, single-step campaign runs one action on a contact segment with optional retry logic. It doesn't branch out based on outcomes or orchestrate follow-up actions across channels. You can configure and run these campaigns within Dynamics 365 Contact Center. Some examples are as follows:
 
 - **Appointment reminder calls**: A healthcare clinic reminds patients of upcoming appointments.
-- **Payment reminder messages**: A utility company notifies customers about overdue bills.
-- **Survey outreach**: A bank conducts a customer satisfaction survey by voice.
+- **Payment reminder messages**: A utility company notifies customers about overdue bills by SMS.
+- **Survey outreach**: A bank conducts a customer satisfaction survey by voice or SMS.
 
 ### Deterministic multi-channel, multi-step journeys
 

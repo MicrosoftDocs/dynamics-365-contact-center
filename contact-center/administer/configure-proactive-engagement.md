@@ -6,35 +6,60 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 04/09/2026
+ms.date: 05/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
 # Configure proactive engagement
 
-Proactive engagement in Dynamics 365 helps your organization improve customer interactions by initiating outbound communications through the voice channel. This feature helps your business streamline customer outreach, boost agent productivity, and deliver personalized experiences. This article explains how to configure proactive engagement settings, including dialing modes, routing details, and operational rules to optimize your customer service operations.
+Proactive engagement in Dynamics 365 helps your organization improve customer interactions by initiating outbound communications through the voice and SMS channels. This feature helps your business streamline customer outreach, boost agent productivity, and deliver personalized experiences. This article explains how to configure proactive engagement settings, including dialing modes, routing details, and operational rules to optimize your customer service operations.
 
 ## Prerequisites
 
+### [Voice](#tab/voice)
+
 - Voice channel is provisioned and configured. Learn more in [Provision channels](../implement/provision-channels.md) and [Install the voice channel](/dynamics365/customer-service/administer/voice-channel-install?context=/dynamics365/contact-center/context/administer-context).
+
+### [SMS](#tab/sms)
+
+- SMS channel is provisioned and configured. Learn more in [Provision channels](../implement/provision-channels.md) and [Configure SMS channel](/dynamics365/customer-service/administer/configure-sms-channel?context=/dynamics365/contact-center/context/administer-context).
+
+---
+
 - Dynamics 365 Customer Insights if you want to use journey for your customer journey authoring.
 - Microsoft Copilot Studio to use Copilot agents.
 
 ## Set up an outbound workstream
 
+### [Voice](#tab/voice)
+
 1. Create a workstream by selecting the **Outbound** option. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context).
+
 1. In the **Setup Behaviors** section of the workstream, select **Setup**.
+
 1. On the **Phone number** page, select a number in the **Shared numbers** list. You can use a number configured for an outbound profile (for representative dialing in Copilot Service workspace) or outbound workstream only. Learn more in [Configure phone numbers for outbound calling](/dynamics365/customer-service/administer/voice-channel-outbound-calling#configure-phone-numbers-for-outbound-calling).
+    > [!NOTE]
+    > By using Azure Communication Services, you can use Direct Routing numbers only. By using Teams Phone numbers, you can use Direct Routing, Direct Offer, and Operator Connect numbers.
+
 1. Set up the language and outbound behaviors. Learn more in [Configure the voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?tabs=enhancedvoice#configure-a-voice-channel).
 1. Configure [work distribution](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution). Optionally add an [AI agent](/dynamics365/customer-service/administer/create-workstreams#add-an-agent-to-a-workstream) to the workstream, and configure representative notifications. The following notification templates are available out of the box:
     - **Voice call - outbound agent dial - default**: For preview dial mode calls
     - **Voice call - outbound pre-dial - default**: For predictive, progressive, and Copilot dial mode calls
 
-> [!NOTE]
->
-> - By using Azure Communication Services, you can use Direct Routing numbers only. By using Teams Phone numbers, you can use Direct Routing, Direct Offer, and Operator Connect numbers.
-> - The system automatically configures the routing rules based on the proactive engagement settings. These rules appear under the **Auto generated rules (advanced)** section of the workstream.
+### [SMS](#tab/sms)
+
+1. Create a workstream by selecting the **Outbound** option and setting the type to **Messaging** and channel to **SMS**. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context).
+
+1. Set up the outbound workstream behaviors in the **Setup up your SMS channel** section of the workstream as follows:
+
+    - Select **Setup**, and on the page that appears, select the **SMS Number** in the list. Numbers available to use only are displayed. Learn more in [Configure SMS channel](/dynamics365/customer-service/administer/configure-sms-channel?context=/dynamics365/contact-center/context/administer-context).
+    - Set up the outbound behaviors. Learn more in [Configure SMS channel](/dynamics365/customer-service/administer/configure-sms-channel?context=/dynamics365/contact-center/context/administer-context).
+1. Configure [work distribution](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution), optionally add an [AI agent](/dynamics365/customer-service/administer/create-workstreams#add-an-agent-to-a-workstream) to the workstream, and configure representative notifications.
+
+---
+
+The system automatically configures the routing rules based on the proactive engagement settings. These rules appear under the **Auto generated rules (advanced)** section of the workstream.
 
 ## Configure settings to engage proactively with customers
 
@@ -46,25 +71,19 @@ Proactive engagement in Dynamics 365 helps your organization improve customer in
    The **Create new proactive engagement** wizard guides you through the steps outlined in the following sections:
    - **Audience**
    - **Details**
-   - **Dialing modes**
-   - **Display number configuration**
-   - **Reattempts**
+   - **Dialing modes** (voice only)
+   - **Display number configuration** (voice only)
+   - **Reattempts** (voice only)
    - **Frequency limits**
+   - **Preferences** (SMS only)
+   - **SMS template configuration** (SMS only)
    - **Summary**
 
-### Audience
+### [Voice](#tab/voice)
 
-On the **Audience** page, configure how you source customers and lead the engagement.
+[!INCLUDE [proactive-audience](../includes/proactive/cc-proactive-audience.md)]
 
-1. Under **Select your audience**, choose how to provide customer contact information:
-
-   - **Contact Center**: If you select this option, choose one of the following intake methods:
-     - **Upload a file**
-     - **CCaaS API**
-     - **MCP** (preview)
-   - **Conversational Journeys in Customer Insights**: This option is available only if Customer Insights is enabled. Select if you want to create conversation journeys in Customer Insights.
-
-1. Under **Engagement type**, select one of the options to determine how the call is handled:
+2. Under **Engagement type**, select one of the options to determine how the call is handled:
 
       - **Led by representatives**: Always connect customers to service representatives.
       - **Led by AI**: Let Copilot interact with customers first as they answer the calls, then add representatives at the right moment.
@@ -72,33 +91,11 @@ On the **Audience** page, configure how you source customers and lead the engage
    > [!NOTE]
    > A single workstream can run both AI-led and representative-led proactive engagements simultaneously.
 
-1. Select **Next**.
+3. Select **Next**.
 
-### Details
+[!INCLUDE [proactive-details](../includes/proactive/cc-proactive-details.md)]
 
-On the **Details** page, configure the engagement identity, routing, and business unit.
-
-1. In **Engagement details**, enter the following information:
-   - **Name**: A name for the proactive engagement. The service representative sees the name on the conversation form.
-   - **Description**: A description that helps service representatives understand the purpose of the call. The name and description are visible to representatives during the call.
-   - **Workstream**: Select the outbound workstream. If you create the proactive engagement from within a workstream, this value is preselected.
-   - **Channel type**: The channel used for the proactive engagement.
-
-1. Under **Contact unique identifier**, select the contact attribute to use as the unique identifier. The dropdown lists only those attributes that are marked as unique key eligible on the Contact table. The default is **contactid**. The system performs an update or insert using this identifier. If an incoming record matches an existing contact, the record is updated. Otherwise, the system creates a new contact. Select the correct identifier to prevent duplicate contact records.
-
-   - If Dynamics 365 Contact Center is your system of record, use **contactid** (the Dynamics 365 contact GUID).
-   - If you use an external system such as a CRM or MDM system, create a custom attribute on the **Contact** table to store your external identifier, and then select the custom attribute. By passing your external system's ID in the input, you can make sure duplicates aren't created and the data in the contact center stays updated.
-
-1. In **Routing details**, enter the following details:
-   - **Primary queue**: Select a queue.
-   - **Fallback queue**: The system populates the queue name based on the fallback queue set for the outbound workstream.
-   - **Skills**: Select the skills required for the proactive engagement.
-
-1. The **Business unit** field is automatically set to the business unit of the user creating the engagement. The **Owner** field shows the owner that you can change if needed.
-
-1. Select **Next**.
-
-### Dialing modes
+**Dialing modes**
 
 The dial modes determine how the system places outbound calls to customers. Learn more in [Dial modes for proactive engagement](proactive-engagement-dial-modes.md).
 
@@ -113,7 +110,7 @@ The dial modes determine how the system places outbound calls to customers. Lear
    - **High**
    - **Critical**
    
-     Priority determines the processing order when multiple proactive engagements compete for the same representatives (same queue and skill set). Higher-priority engagements are processed first. For example, if a critical and a normal proactive engagement both target the same queue, the system processes the critical engagement first and handles the normal engagement only when no higher-priority requests are pending.
+     Priority also determines the processing order when multiple proactive engagements compete for the same representatives (same queue and skill set). Higher-priority engagements are processed first. For example, if a critical and a normal proactive engagement both target the same queue, the system processes the critical engagement first and handles the normal engagement only when no higher-priority requests are pending.
      
      The system processes proactive engagements with same priority in a queue in a round robin manner to ensure fair processing.
 
@@ -176,7 +173,7 @@ The dial modes determine how the system places outbound calls to customers. Lear
 
 1. Select **Next**.
 
-### Display number configuration
+**Display number configuration**
 
 On **Display number configuration**, choose the phone numbers to use for outbound calls.
 
@@ -201,7 +198,7 @@ On **Display number configuration**, choose the phone numbers to use for outboun
 
 1. Select **Next**.
 
-### Reattempts
+**Reattempts**
 
 On the **Reattempts** page, configure retry behavior for contacts who aren't reached on the first attempt.
 
@@ -229,66 +226,78 @@ Select **None** if no fallback is needed.
 
 1. Select **Next**.
 
-### Frequency limits
+[!INCLUDE [proactive-frequency-limits](../includes/proactive/cc-proactive-frequency-limits.md)]
 
-On the **Frequency limits** page, set how often you can reach contacts and during which hours.
+**Summary**
 
-1. Select **Use frequency limits** to turn on frequency controls, and then enter values for:
-   - **Maximum engagements per day**: The maximum number of times you can reach a contact in a day across all channels.
-   - **Maximum engagements per week**: The maximum number of times you can reach a contact in a week across all channels.
+Review all settings on the **Summary** page, and select **Create**.
 
-1. Under **Schedule**, select at least one phone number type and set quiet hours for each:
-   - **Mobile Phone**
-   - **Business Phone**
-   - **Home Phone**
+[!INCLUDE [proactive-file-upload](../includes/proactive/cc-proactive-file-upload.md)]
 
-   If you select more than one number type, set the preferred contact order by using the arrows to move the phone numbers up or down. The system respects the quiet hours you set for each number type and doesn't place calls during those windows. You must set quiet hours for every phone number type you select before you can proceed.
+Learn more about available outcomes and SIP-based result values in [Outcomes for proactive engagement](proactive-engagement-outcomes.md).
 
-1. Under **Time zones**, select how to determine the time zone for each contact:
-   - **Use customer's local time zone when available (defaults to UTC if not available)**: The system uses the time zone attribute on each contact record to evaluate quiet hours in that contact's local time. If no time zone is specified on the contact, UTC is used. You must explicitly provide the time zone value in the uploaded file or API payload - the system doesn't auto-detect or geo-infer time zones.
-   - **Use Coordinated Universal Time (UTC)**: The system evaluates all contacts against quiet hours by using UTC, regardless of their location.
+### [SMS](#tab/sms)
+
+[!INCLUDE [proactive-audience](../includes/proactive/cc-proactive-audience.md)]
+[!INCLUDE [proactive-details](../includes/proactive/cc-proactive-details.md)]
+
+**Preferences**
+
+On the **Preferences** page, configure channel behaviors and throttling rules for the SMS engagement.
+
+1. Under **Channel behaviors**, configure the following:
+
+   - **First response timeout**: Set the duration (in minutes, hours, or days) the system waits for a customer to respond to the initial SMS before the request expires. If the recipient doesn't respond within the timeout period, the request expires and any later reply is treated as a new anonymous inbound conversation, losing the context. The default is 5 minutes.
+   - **Priority level**: Select the priority for the engagement — **Normal**, **High**, or **Critical**. Priority determines which proactive engagement is processed first when multiple engagements compete for the same queue and skillset.
+   - **Message order**: Select how messages within the engagement are processed:
+     - **Earliest Scheduled Date**: Processes records that are close to the end of the messaging window first.
+     - **Last in First Out**: Processes the most recent records first.
+     - **First in, First Out**: Processes older records first.
+     - **Custom priority ascending**: Processes records in ascending order based on a priority attribute specified in the contact list or API payload.
+     - **Custom priority descending**: Processes records in descending order based on the priority attribute.
+
+1. Under **Rules**, select **Use rules** to set throttling and pacing rules for the engagement. Configure conditions based on the following parameters:
+
+   - **Average wait time**: The average amount of time it takes for customers to connect to representatives.
+   - **Escalation count**: The total number of escalations made from the AI agent.
+   - **Open concurrent escalations**: The total number of open escalations that haven't been resolved.
+
+   For each rule, specify the threshold value, the time window (**In the last**), and the **Decrease concurrent calls by** percentage to control pacing when the condition is met.
 
 1. Select **Next**.
 
-### Summary
+**SMS template configuration**
 
-Review all settings on the **Summary** page. To make changes, select **Back** to return to the relevant step.
+On the **SMS template configuration** page, create and customize the SMS message template for this engagement.
 
-### File upload
+1. Under **Templates**, turn on **Enable message templates for this workflow**. This setting is turned on by default if you select **Upload a file** as the intake method. For **CCaaS API** and **MCP**, this is optional&mdash;the message content can be included directly in the payload instead.
 
-When you're ready, select **Create**. If you select **Upload a file** as the intake method, the **File upload** step appears next where you can upload your contact list.
+1. In the **Message** field, compose the SMS message to send to customers. Use the personalization menu to insert dynamic fields from the contact record, including:
+   - **First Name**
+   - **Last Name**
+   - **Phone Number**
+   - **Email**
+   - **Postal Code**
+   - **Country**
+   - **City**
+   - **Street**
 
-**Supported file formats**: CSV (.csv) and Excel (.xlsx) only.
+   The **Preview** pane on the right shows a directional rendering of the message as it would appear on a mobile device. Actual renditions might vary.
 
-**File upload constraints**:
+   > [!NOTE]
+   > The message field supports up to 1000 characters.
 
-- Maximum file size: 10 MB
-- The file must include all required columns; additional columns are optional
+1. Select **Next**.
 
-**Required columns**:
+[!INCLUDE [proactive-frequency-limits](../includes/proactive/cc-proactive-frequency-limits.md)]
 
-- **UniqueIdentifier**: The value used to identify and update or insert the contact record. Must correspond to the **Contact unique identifier** attribute selected in the **Details** step.
-- **MobilePhoneNumber**, **BusinessPhoneNumber**, or **HomePhoneNumber**: At least one phone number column is required. You can include multiple phone number columns.
+**Summary**
 
-**Optional named fields**:
+Review all settings on the **Summary** page, and select **Create**.
 
-Named fields are columns whose names correspond to attributes on the **Contact** table. Values in these columns are used to create or update the contact record during processing. Any extra columns that don't match a **Contact** attribute are treated as pass-through data and are made available on the agent desktop during the call.
+[!INCLUDE [proactive-file-upload](../includes/proactive/cc-proactive-file-upload.md)]
 
-Data entered in the **Priority** column is used for custom prioritization when the call order is set to **Custom priority ascending** or **Custom priority descending**.
-
-To download a sample file that contains the required columns and formatting, select **Download sample**.
-
-**Processing behavior**:
-Records are processed immediately when the file upload begins.
-
-> [!NOTE]
-> The uploaded file isn't stored in any form and can't be downloaded after upload. To access delivery results and records, query the relevant tables in Microsoft Dataverse directly. Learn more in [Use proactive engagement tables for reporting](../extend/proactive-engagement-tables.md).
-
-**Upload a file to an existing engagement**:
-
-To add a new file to an engagement that you already created, go to **Copilot Service admin center** > **Productivity** > **Proactive engagements**. Select the engagement, and then select **Run from file**. The new file is added to the existing pending deliveries.
-
-Learn more about available outcomes and SIP-based result values in [Outcomes for proactive engagement](proactive-engagement-outcomes.md).
+---
 
 ## Manage proactive engagements
 
@@ -313,7 +322,7 @@ You can cancel pending calls and optionally suppress future calls that match def
    - Country/Region
    - State
    - Postal code
-   
+
 1. Optionally, specify an end date in **Execute policy until**. Contacts matching the criteria won't be processed for new calls during the specified period.
 1. Optionally, enter a **Comment**. Cancelled calls are marked in the delivery tables with a reference to the cancellation policy to enable reporting.
 

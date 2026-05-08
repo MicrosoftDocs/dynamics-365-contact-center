@@ -23,7 +23,7 @@ With debug experience, organizations can access diagnostic telemetry for the ful
 
 - [Diagnose dashboard](../administer/enable-diagnose-dashboard.md) is configured.
 
-- You have the **Omnichannel supervisor privileges** to access the diagnostics dashboard. [Learn how to configure user roles to access analytics and dashboards](/dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh#configure-user-access-to-analytics-and-dashboards).
+- You have the **Omnichannel supervisor** or **CSR Manager** role to access the diagnostics dashboard in Omnichannel real-time dashboard and **CSR Manager** role to access Real-time analytics dashboard. [Learn how to configure user roles to access analytics and dashboards](/dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh#configure-user-access-to-analytics-and-dashboards).
 - [Omnichannel real-time dashboard](/dynamics365/customer-service/administer/enable-realtime-analytics-dashboard-administrator) or [Real-time analytics dashboard for record routing](/dynamics365/customer-service/administer/enable-record-routing#manage-real-time-analytics-for-record-routing) is enabled.
 - [Application Insights](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource) is configured.
 

@@ -16,7 +16,7 @@ ms.custom: bap-template
 Dial modes determine how the system places outbound calls to customers in a proactive engagement. Each mode balances AI agent involvement, service representative utilization, and customer experience differently.
 
 > [!IMPORTANT]
-> The use of progressive dial mode for service representative-led calls for commercial marketing or sales purposes constitutes a violation of Microsoft terms of service. Review applicable telecommunications regulations before using service representative-led modes.
+> The use of AI agent-led copilot, progressive, and predictive dial modes or service representative-led progressive and predictive dial modes calls for commercial marketing or sales purposes constitutes a violation of Microsoft terms of service. Review applicable telecommunications regulations before using the dial modes.
 
 ## Copilot
 

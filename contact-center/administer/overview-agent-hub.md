@@ -1,4 +1,4 @@
----
+﻿---
 title: Overview of agent hub
 description: Learn about the Agent hub in Dynamics 365 Contact Center and how it helps you manage all your autonomous agents in one place.
 author: neeranelli
@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: overview 
 ms.collection: bap-ai-copilot 
-ms.date: 11/07/2025
+ms.date: 05/08/2026
 ms.custom: 
   - bap-template
 ---

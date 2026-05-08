@@ -1,4 +1,4 @@
----
+﻿---
 title: Security FAQs about AI agents
 description: Learn about the security, privacy, and compliance of AI agents in Dynamics 365 Contact Center and Customer Service.
 author: neeranelli
@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 01/13/2026
+ms.date: 05/08/2026
 ms.custom: bap-template
 ---
 
@@ -44,7 +44,7 @@ Learn about the system capabilities in [What are the systems' capabilities](/dyn
 
 No.
 
-### How accurate and reliable is the AI system’s output?
+### How accurate and reliable is the AI systemâ€™s output?
 
 Learn in [How is Copilot in Customer Service evaluated](/dynamics365/customer-service/implement/faq-responsible-ai-copilot#how-is-copilot-in-customer-service-evaluated-what-metrics-are-used-to-measure-performance).
 

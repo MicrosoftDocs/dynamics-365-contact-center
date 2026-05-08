@@ -1,4 +1,4 @@
----
+﻿---
 title: Enable Agent insights dashboard and KPI goals
 description: Learn how to enable the Agent insights dashboard and KPI goals in Dynamics 365 Contact Center to monitor performance of AI agents.
 author: neeranelli
@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 11/19/2025
+ms.date: 05/08/2026
 ms.custom: bap-template
 ---
 

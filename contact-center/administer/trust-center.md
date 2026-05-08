@@ -1,4 +1,4 @@
----
+﻿---
 title: Trust center for Dynamics 365
 description: Learn about the trust center for Dynamics 365 Contact Center and Customer Service, a resource for customers to learn about the security, privacy, and compliance of Microsoft products and services.
 author: neeranelli
@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot 
-ms.date: 11/07/2025
+ms.date: 05/08/2026
 ms.custom: 
 - bap-template
 ---

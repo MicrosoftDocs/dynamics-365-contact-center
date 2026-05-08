@@ -52,7 +52,7 @@ Perform the following steps in Copilot Service admin center.
 
 Your intent agent might be set up to use multiple lines of businesses. If you're using lines of business, make sure that you set the line of business in conversation context before the intent agent is added to the conversation. This sets the scope for intents and instructions that your intent agent follows during the rest of the conversation.
 
-To set the line of business during the conversation, make sure you set the context variable 'œva_LineOfBusiness' to the globally unique identifier of the corresponding line of business you want the intent agent to recognize. Make sure your Customer Intent Agent is on a queue and a Copilot agent is the first to answer the call. When escalating to the Customer Intent Agent, make sure your Copilot agent sets a variable 'œva_LineOfBusiness' to the value of the target line of business.
+To set the line of business during the conversation, make sure you set the context variable "va_LineOfBusiness" to the globally unique identifier of the corresponding line of business you want the intent agent to recognize. Make sure your Customer Intent Agent is on a queue and a Copilot agent is the first to answer the call. When escalating to the Customer Intent Agent, make sure your Copilot agent sets a variable "va_LineOfBusiness" to the value of the target line of business.
 
 Learn about finding the unique ID of the line of business in [Discover line of business unique IDs](manage-customer-intent-agent.md#discover-line-of-business-unique-ids).
 
@@ -80,7 +80,7 @@ Configure your voice agent to use context variables from the conversation and de
 
 1. Set any [context variables](/dynamics365/customer-service/administer/manage-context-variables) you want to use prior to engaging the intent agent. For example, the global variables that are created in Copilot Studio are [passed to Dynamics 365 Contact Center](/microsoft-copilot-studio/advanced-hand-off#context-variables-available-upon-handoff) when a conversation is escalated.
 
-1. Author your instructions with replacement slugs to consume the context variables. Within instructions, use the syntax `{@<variable name>}`, for example: 'œThe customer's name is `{@Customer_Name}`.'
+1. Author your instructions with replacement slugs to consume the context variables. Within instructions, use the syntax `{@<variable name>}`, for example: "The customer's name is `{@Customer_Name}`."
 
 **Example**
 

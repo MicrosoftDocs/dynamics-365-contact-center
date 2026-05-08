@@ -1,4 +1,4 @@
----
+﻿---
 title: Autonomous service agents in Dynamics 365
 description: Learn about the autonomous agents in Dynamics 365 and how they can help in running your contact centers efficiently and resolving issues quickly.
 author: neeranelli
@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 11/10/2025
+ms.date: 05/08/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---

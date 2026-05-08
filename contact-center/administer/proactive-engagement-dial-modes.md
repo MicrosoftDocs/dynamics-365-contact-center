@@ -16,7 +16,8 @@ ms.custom: bap-template
 Dial modes determine how the system places outbound calls to customers in a proactive engagement. Each mode balances AI agent involvement, service representative utilization, and customer experience differently.
 
 > [!IMPORTANT]
-> The use of progressive dial mode for service representative-led calls for commercial marketing or sales purposes constitutes a violation of Microsoft terms of service. Review applicable telecommunications regulations before using service representative-led modes.
+> - The use of AI agent-led copilot, progressive, and predictive dial modes or service representative-led progressive and predictive dial modes calls for commercial marketing or sales purposes constitutes a violation of Microsoft terms of service. Review applicable telecommunications regulations before using the dial modes.
+> - The call connection time for service representative-led progressive and predictive dial modes is not compliant with the Telephone Consumer Protection Act (TCPA). Review applicable telecommunications regulations before using service representative-led modes.
 
 ## Copilot
 
@@ -31,9 +32,6 @@ The progressive dial mode places one call for every service representative who i
 - **AI agent-led**: As soon as the customer answers the call, a Copilot agent is added to handle preliminary tasks such as verifying that the right person has answered and confirming their availability to talk. Once the preliminary validations are done, the service representative is added to continue the engagement. Using an AI agent to gather this information helps service representatives avoid calls that don't need their presence.
 - **Service representative-led**: Service representatives are reserved and ready before the call is placed. When the customer answers, the system checks whether the call reached a voicemail. If it didn't, the reserved service representative is immediately added to the call.
 
-> [!IMPORTANT]
-> The call connection time for service representative-led progressive and predictive dial modes is not compliant with the Telephone Consumer Protection Act (TCPA). Review applicable telecommunications regulations before using service representative-led modes.
-
 ## Predictive
 
 The predictive dial mode uses a dynamic algorithm to initiate outbound calls before representatives become available, based on when they're forecasted to be free. The algorithm determines how many simultaneous calls to place by analyzing contact center metrics such as abandonment rate, average wait time, and queue targets. This approach maximizes representative use while minimizing customer wait times. The predictive dial mode supports two engagement types:
@@ -42,15 +40,12 @@ The predictive dial mode uses a dynamic algorithm to initiate outbound calls bef
 
 - **Service representative-led**: Service representatives are reserved and ready before calls are placed. When the customer answers, the system checks whether the call reached a voicemail. If it didn't, the reserved service representative is added to the call.
 
-> [!IMPORTANT]
-> The call connection time for service representative-led progressive and predictive dial modes is not compliant with the Telephone Consumer Protection Act (TCPA). Review applicable telecommunications regulations before using service representative-led modes.
-
 ## Preview
 
 Use the preview dial mode to identify a service representative from the specified queue and then notify them of the request to make the outbound call. The number of simultaneous calls made is dependent on the number of available representatives. If the representative accepts, then the system based on configuration gives the representative time to review the details and place the outbound call to customer when ready. Representative gets to speak to the customer if they pick up or leave a voicemail. This dial mode prioritizes customer experience over representative use, and is best suited for scenarios that require a personalized experience.
 
 > [!NOTE]
-> Timer and early media audio for service representatives for preview calls are available only with Teams Phone Extensibility (TPE) numbers.
+> Timer and early media audio for service representatives for preview calls are available with Teams Phone Extensibility (TPE) numbers only.
 
 ### Related information
 

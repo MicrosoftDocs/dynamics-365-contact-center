@@ -1,4 +1,4 @@
----
+﻿---
 title: Welcome to Dynamics 365 Contact Center
 description: Get an overview of Dynamics 365 Contact Center, which is a Copilot-first, cloud-based contact center.
 author: neeranelli
@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: overview
 ms.collection: get-started
-ms.date: 05/15/2025
+ms.date: 05/08/2026
 ms.custom: bap-template
 ---
 
@@ -16,13 +16,14 @@ Dynamics 365 Contact Center is a Copilot-first, cloud-based product that brings 
 
 Here are some of the key capabilities of Dynamics 365 Contact Center:
 
-- Provide self-service through AI agents.
-- Manage conversations across voice and digital channels.
-- Use unified routing to efficiently route work items.
-- Use AI-driven embedded insights and analytics to improve customer satisfaction.
-- Collaborate with experts in Microsoft Teams.
-- Manage performance and productivity through reports and dashboards.
-- Participate in chats.
+- Deliver self-service with AI and autonomous service agents.
+- Use AI-led proactive engagement to identify and reach customers at the right time.
+- Discover customer intents and improve resolution with Customer Intent Agent.
+- Generate AI-assisted quality evaluations to improve service outcomes.
+- Use Copilot to summarize conversations, draft responses and emails, and surface relevant knowledge.
+- Manage conversations across voice and digital channels with unified routing.
+- Use AI-powered insights, dashboards, and reports to improve satisfaction and productivity.
+- Collaborate with experts in Microsoft Teams during live customer engagements.
 
 :::image type="content" source="../media/contact-center-overview.png" alt-text="Diagram that shows the end-to-end working of Dynamics 365 Contact Center, incorporating functionality and roles for self-service, assisted service, and operations.":::
 

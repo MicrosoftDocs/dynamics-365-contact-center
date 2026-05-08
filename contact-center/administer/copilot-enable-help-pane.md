@@ -244,7 +244,7 @@ Configure the prompt settings as described in the following table:
 
 ### Extend agent tab
 
-Turn on **Extend agent with Copilot Studio** to enable extensibility for your agent. When this setting is enabled, you can enhance the agent by using Copilot Studio to add tools, configure knowledge sources, and customize behavior beyond the default capabilities. Learn more in [Extend Copilot in Customer Service with Copilot Studio](extend-copilot-with-copilot-studio.md).
+Turn on **Extend agent with Copilot Studio** to enable extensibility for your agent. When this setting is enabled, you can enhance the agent by using Copilot Studio to add tools, configure knowledge sources, and customize behavior beyond the default capabilities. Learn more in [Extend Copilot in Customer Service with Copilot Studio](/dynamics365/customer-service/administer/extend-copilot-with-copilot-studio).
 
 ## Admin Management agent (preview)
 

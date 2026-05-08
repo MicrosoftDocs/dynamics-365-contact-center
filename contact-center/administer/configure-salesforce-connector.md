@@ -1,4 +1,4 @@
----
+﻿---
 title: Configure the connector for Salesforce
 description: Learn how to configure the connector for Salesforce in Dynamics 365 Contact Center to bring Salesforce data into Dataverse.
 author: neeranelli
@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection:
-ms.date: 05/15/2025
+ms.date: 05/08/2026
 ms.custom: bap-template
 ---
 

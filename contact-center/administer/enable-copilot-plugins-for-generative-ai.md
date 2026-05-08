@@ -82,7 +82,7 @@ Use the following information:
    - Select **Insights** > **Plugins for generative AI (Preview)** under **Operations**. 
 1. Select **Manage**.
 1. On the **Plugins for generative AI (Preview)** page, select the custom connector plugin, and then select **Turn on** on the command bar.
-   1. On the **Select user authentication** dialog, select the ellipsis (â€¦) button in **Set up a link to the connector**, and then select the required connection. A green check mark indicates that the data source is successfully connected.
+   1. On the **Select user authentication** dialog, select the ellipsis ('¦) button in **Set up a link to the connector**, and then select the required connection. A green check mark indicates that the data source is successfully connected.
    1. In **User authentication**, select one of the following options:
       - **Admin**: Uses admin authentication to give data access to service representatives.
       - **Agent**: Requires service representatives to authenticate themselves at runtime.  This option is recommended if the data is restricted or sensitive.

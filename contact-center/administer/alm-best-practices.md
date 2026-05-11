@@ -1,4 +1,4 @@
----
+﻿---
 title: Best practices for application lifecycle management
 description: Learn about the best practices for application lifecycle management.
 author: neeranelli
@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: best-practice
 ms.collection: 
-ms.date: 05/15/2025
+ms.date: 05/08/2026
 ms.custom: bap-template
 ---
 

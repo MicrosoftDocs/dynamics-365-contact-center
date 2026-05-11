@@ -406,6 +406,8 @@
             href: /dynamics365/customer-service/administer/sms-channel-overview?context=/dynamics365/contact-center/context/administer-context
           - name: Configure an SMS channel using Azure Communication Services
             href: /dynamics365/customer-service/administer/configure-sms-channel-acs?context=/dynamics365/contact-center/context/administer-context          
+          - name: Configure an SMS channel for Infobip
+            href: configure-sms-channel-infobip.md
           - name: Configure an SMS channel for Twilio
             href: /dynamics365/customer-service/administer/configure-sms-channel-twilio?context=/dynamics365/contact-center/context/administer-context
         - name: Set up social channels

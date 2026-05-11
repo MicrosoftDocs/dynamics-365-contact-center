@@ -103,9 +103,9 @@ For an outgoing message sent by the contact center from within the application, 
 
 ### Related information
 
-[Overview of channels](/dynamics365/customer-service/administer/channels-overview)  
+[Overview of SMS channels](/dynamics365/customer-service/administer/sms-channel-overview)  
 [Overview of SMS channels](/dynamics365/customer-service/administer/sms-channel-overview)  
 [Configure an SMS channel using Azure Communication Services](/dynamics365/customer-service/administer/configure-sms-channel-acs)  
 [Infobip messaging API documentation](https://www.infobip.com/docs/api)  
 [Delete a configured channel](/dynamics365/customer-service/administer/delete-channel)  
-[SMS FAQ](/dynamics365/customer-service/administer/sms-faq)  
+[SMS FAQ](/dynamics365/customer-service/administer/faqs#sms)  

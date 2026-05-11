@@ -1,7 +1,7 @@
 ---
 title: Use agent dashboard and call controls in the voice channel
 description: Learn how you can use the agent dashboard, call controls, and make and receive customer calls.
-ms.date: 09/15/2025
+ms.date: 05/11/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham

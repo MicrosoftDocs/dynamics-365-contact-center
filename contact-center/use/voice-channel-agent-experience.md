@@ -32,15 +32,15 @@ When you call or answer phone calls from customers, use the following call contr
 
 :::image type="content" source="../media/voice-channel-call-controls.png" alt-text="Screenshot of call controls in representative dashboard.":::
 
-To avoid the recording and transcription of what you say while the customer is on hold, your administrator can enable the **Allow automatic pause and resume when representative hold and un-hold the customer** option. Recording and transcription services are paused when you put the customer on hold and resumed when you remove the customer from hold. If the option is disabled, you must manually pause and resume the recording and transcription.
+To avoid recording and transcription while the customer is on hold, your administrator can enable the **Allow automatic pause and resume when representative hold and un-hold the customer** option. Recording and transcription services are paused when you put the customer on hold and resumed when you remove the customer from hold. If the option is disabled, you must manually pause and resume the recording and transcription.
 
-- **Consult**: Bring another representative or supervisor into the call to consult with. You can have a *public* consultation, where the customer is actively involved in the conversation. Or you can have a *private* consultation, where you can put the customer on hold before you talk to your peers or supervisor.  
+- **Consult**: To get help, use consult to bring another representative or supervisor into the call. You can have a *public* consultation, where the customer is actively involved in the conversation. Or you can have a *private* consultation, where you can put the customer on hold before you talk to your peers or supervisor.  
  
   The consult feature includes advanced controls for managing multiple participants: 
 
-   **Individual participant management**: When consulting with multiple representatives or supervisors, you can place individual consulting participants on hold using the hold control next to each participant. Participants placed on hold will hear hold music.   
+   **Individual participant management**: When consulting with multiple representatives or supervisors, you can place individual consulting participants on hold using the hold control next to each participant. Participants placed on hold hear hold music.   
 
-  **Hold status visibility**: The system provides clear visual indicators showing the hold status of all participants. When the customer is taken off hold, representatives not currently on hold will see the customer's status as "off hold".  
+  **Hold status visibility**: The system provides clear visual indicators showing the hold status of all participants. When the customer is taken off hold, representatives not currently on hold see the customer's status as "off hold".  
 
   **Individual transfer options**: Transfer controls next to each consulting participant allow you to transfer the call to specific representatives within the consult.  
 
@@ -69,7 +69,7 @@ To avoid the recording and transcription of what you say while the customer is o
 
 - **Pause recording and transcription**: If you don't want to capture some details of the conversation—such as bank details, billing, or payment information—you can temporarily pause the transcription and resume it later.
 
-- **Resume recording and transcript**: The system displays this instead of the **Record** button if your administrator set **Start setting** to **Manual** in **Transcription and recording**. This doesn't indicate that the recording was previously started and then paused.
+- **Resume recording and transcript**: The system displays the **Resume recording and transcript** button instead of the **Record** button if your administrator set **Start setting** to **Manual** in **Transcription and recording**. The **Resume recording and transcript** button doesn't indicate that the recording was previously started and then paused.
 
     :::image type="content" source="../media/resume-call-recording.png" alt-text="Screenshot of resume recording and transcript.":::
 
@@ -97,7 +97,7 @@ You can add notes to help your administrator review and block numbers. After you
 
 <a name="usecvd"></a>
 
-## Experience enhanced call quality when using voice through Citrix virtual desktop
+## Enhance call quality when using voice through Citrix virtual desktop
 
 Your administrator can enable the setting to improve the call experience for you when you connect to the Copilot Service workspace through Citrix virtual desktop. Learn about it in [Configure Citrix virtual desktop for improved call quality](../administer/configure-voice-citrix-virtual-desktop.md).
 
@@ -107,16 +107,16 @@ You can use the Microsoft Remote Desktop client to connect to the voice channel 
 
 ## Avoid call disconnection
 
-Avoid the following actions to prevent call drops:
+To prevent call drops, avoid the following actions:
 
 - Open other apps that need access to the microphone. It results in loss of your audio connection, and the customer can't hear you.
 - Close the session directly to end call. If you do, the conversation moves from active to wrap up. Then if you close the session, the state goes from wrap up to closed. So, we recommend that you go through the conversation status route and select the **End** button and then close the session to take care of the wrap-up activities.
 
 ## Share feedback on call quality
 
-When you end a call, if your administrator enabled the [Customer service representative call quality feedback survey](/dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context), the application displays a survey that asks you to rate the call quality on a scale of 1 to 5. The survey can appear after every call or at a frequency set by your administrator. A response of 1 indicates an imperfect call experience and 5 indicates a perfect call.
+After you end a call, the app prompts you to rate the call on a quality scale of 1 to 5 if your administrator enables the [Customer service representative call quality feedback survey](/dynamics365/customer-service/administer/configure-end-of-call-survey?context=/dynamics365/contact-center/context/administer-context). The survey can appear after every call or at a frequency set by your administrator. A response of 1 indicates an imperfect call experience and 5 indicates a perfect call.
 
-If you specify a rating between 1 and 4, the application displays a set of predefined options such as, "I couldn't hear any sound", "Volume was low", or "the call ended unexpectedly", that you can use to provide more feedback about the call quality.
+If you select a rating from 1 to 4, the app shows predefinted options such as "I couldn't hear any sound", "Volume was low", or "the call ended unexpectedly", to help you provide more feedback.
 
 ## Best practices
 

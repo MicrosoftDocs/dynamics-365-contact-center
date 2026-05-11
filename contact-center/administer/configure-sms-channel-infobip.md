@@ -27,7 +27,7 @@ Make sure that the following prerequisites are met:
 
 An SMS channel is enabled within the application that's integrated with Infobip. This integration uses API Base URL to send and receive text messages.
 
-1. Sign in to the Infobip Portal and note the **API Base URL** and **API Key** values. These are required to create the SMS configuration in Copilot Service admin center.
+1. Sign in to the Infobip Portal and note the **API Base URL** and **API Key** values. These values are required to create the SMS configuration in Copilot Service admin center.
 1. Make sure an SMS phone number is provisioned in your Infobip account and associated with an Infobip application.
 
 > [!NOTE]

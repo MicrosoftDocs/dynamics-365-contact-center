@@ -34,7 +34,17 @@ When you call or answer phone calls from customers, use the following call contr
 
 To avoid the recording and transcription of what you say while the customer is on hold, your administrator can enable the **Allow automatic pause and resume when representative hold and un-hold the customer** option. Recording and transcription services are paused when you put the customer on hold and resumed when you remove the customer from hold. If the option is disabled, you must manually pause and resume the recording and transcription.
 
-- **Consult**: Bring another representative or supervisor into the call to consult with. You can have a *public* consultation, where the customer is actively involved in the conversation. Or you can have a *private* consultation, where you can put the customer on hold before you talk to your peers or supervisor.
+- **Consult**: Bring another representative or supervisor into the call to consult with. You can have a *public* consultation, where the customer is actively involved in the conversation. Or you can have a *private* consultation, where you can put the customer on hold before you talk to your peers or supervisor.  
+ 
+  The consult feature includes advanced controls for managing multiple participants: 
+
+   **Individual participant management**: When consulting with multiple representatives or supervisors, you can place individual consulting participants on hold using the hold control next to each participant. Participants placed on hold will hear hold music.   
+
+  **Hold status visibility**: The system provides clear visual indicators showing the hold status of all participants. When the customer is taken off hold, representatives not currently on hold will see the customer's status as "off hold".  
+
+  **Individual transfer options**: Transfer controls next to each consulting participant allow you to transfer the call to specific representatives within the consult.  
+
+  **Role promotion**: You can promote a consulting representative to primary status, allowing them to take over as the main contact while you transition to a consulting role or leave the call.  
 
   > [!NOTE]
   > - When you initiate a consult, you're the primary service representative and the new participant has a consult role. Select **Transfer** next to the participant to transfer the call to the consulting service representative or supervisor. After the system transfers the call, you're the consulting service representative and can leave the call without ending it. The consulting service representative becomes the primary service representative. If the primary service representative leaves the call, the call ends for the customer.

@@ -1,4 +1,4 @@
----
+﻿---
 title: Set up the embedded experience in Salesforce for Dynamics 365 Contact Center
 description: Learn how to set up the embedded experience in Salesforce for Dynamics 365 Contact Center.
 author: neeranelli
@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection:
-ms.date: 05/21/2025
+ms.date: 05/08/2026
 ms.custom: bap-template
 ---
 

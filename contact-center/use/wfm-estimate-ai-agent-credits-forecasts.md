@@ -83,7 +83,7 @@ These projections help organizations support budgeting, operational planning, an
 
 ## Review estimation results
 
-AI credit estimation provides a unified view of forecasted workload demand and projected AI credit requirements. Organizations can use these insights to validate assumptions, optimize AI usage, and plan workforce capacity more effectively.
+AI credit estimation provides a unified view of forecasted workload demand and projected AI credit requirements. Organizations can use these insights to validate assumptions, optimize AI usage, and plan workforce capacity effectively.
 
 ### Related information
 

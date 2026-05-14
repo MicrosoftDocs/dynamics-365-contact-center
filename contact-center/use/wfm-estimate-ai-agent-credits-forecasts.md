@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 # Estimate AI agent credits from forecasts
 
-AI credit estimation in Dynamics 365 Customer Service and Contact Center helps workforce planners translate forecasted demand into projected AI credit consumption. Organizations can use these estimates to model AI adoption, plan budgets, and understand how forecasted workloads affect AI usage.
+AI credit estimation in Dynamics 365 Customer Service and Dynamics 365 Contact Center helps workforce planners translate forecasted demand into projected AI credit consumption. Organizations can use these estimates to model AI adoption, plan budgets, and understand how forecasted workloads affect AI usage.
 
 AI credit estimation is integrated with Workforce Management forecasting scenarios and supports out-of-the-box AI agents in Customer Service and Contact Center.
 

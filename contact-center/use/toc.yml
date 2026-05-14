@@ -396,7 +396,7 @@
             href: wfm-forecast-scenarios.md
           - name: Import historical data
             href: wfm-import-historical-data.md
-          - name: Estimate AI agent credits using forecast scenarios
+          - name: Estimate AI agent credits from forecasts
             href: wfm-estimate-ai-agent-credits.md
         - name: Capacity planning
           items:

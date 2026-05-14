@@ -29,7 +29,7 @@ AI credit estimation is integrated with Workforce Management forecasting scenari
 
 Before you estimate AI credit consumption, create and run a forecast scenario.
 
-1. In **Copilot Service workspace**, got to **Workforce Management** > **Forecasting**.
+1. In **Copilot Service workspace**, go to **Workforce Management** > **Forecasting**.
 1. Select **New forecast scenario**.
 1. Define the planning horizon.
 1. Select an entity type such as **Case** or **Conversation**.

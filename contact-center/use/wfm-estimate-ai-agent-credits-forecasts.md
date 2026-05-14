@@ -32,7 +32,7 @@ Before you estimate AI credit consumption, create and run a forecast scenario.
 1. In **Copilot Service workspace**, go to **Workforce Management** > **Forecasting**.
 1. Select **New forecast scenario**.
 1. Define the planning horizon.
-1. Select an entity type such as **Case** or **Conversation**.
+1. Select an entity type, such as **Case** or **Conversation**.
 1. Select the queues and channels to include in the forecast.
 1. Run the forecast to generate predicted workload volumes.
 

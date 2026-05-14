@@ -1,7 +1,7 @@
 ---
-title: Estimate AI agent credits using forecast scenarios
+title: Estimate AI agent credits from forecasts
 description: Use AI credit estimation in Dynamics 365 Customer Service and Contact Center to project AI credit consumption based on forecasted demand.
-ms.date: 05/13/2026
+ms.date: 05/14/2026
 author: lalexms
 ms.author: laalexan
 ms.reviewer: laalexan
@@ -11,7 +11,7 @@ ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
-# Estimate AI agent credits using forecast scenarios
+# Estimate AI agent credits from forecasts
 
 AI credit estimation in Dynamics 365 Customer Service and Contact Center helps workforce planners translate forecasted demand into projected AI credit consumption. Organizations can use these estimates to model AI adoption, plan budgets, and understand how forecasted workloads affect AI usage.
 

@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: 
-ms.date: 04/08/2026
+ms.date: 05/19/2026
 ms.custom: bap-template 
 ---
 
@@ -46,6 +46,8 @@ Perform the steps in [Add visualizations to a report](/power-bi/visuals/power-bi
 | Fallback action calls | The number of bot conversations in which the bot applies a fallback action when a failure occurs:<br><br>• **Prompt and hang-up**: The system plays a [default message](/dynamics365/customer-service/administer/configure-automated-message#preconfigured-automated-message-triggers) and ends the call.<br><br>• **Prompt and transfer to external number**: The system plays the default message and transfers the call to an external number that you enter in the **External phone number** field. Use the E.164 format, with a plus sign (+) followed by the country code and phone number.<br><br>• **Prompt and escalate**: The system plays the default message and connects the call to a service representative.<br><br>• **Wait Music and Escalate**: The system plays wait music and connects the call to a service representative.<br><br>Learn more in [Configure fallback actions for the IVR agent](/dynamics365/contact-center/administer/configure-fallback-actions-ivr-agent) | Real-time and historical | Voice only | FactSession: Failed bot conversation |
 
 ## Analyze conversation fallout patterns
+
+Conversation fallout refers to the point in a conversation flow where a customer exits, abandons the interaction, or is unable to successfully complete a step before the issue is resolved.
 
 To analyze conversation fallout patterns, identify the exact point in the conversation where the fallout occurred. For example, determine whether the fallout occurs after intent identification or before the resolution. Log other details in the Dataverse conversation transcript. These details can include the topic, node, speech recognition confidence score, and input mode.
 

@@ -29,4 +29,4 @@ As a customer service representative, you can use shift swapping to manage your 
 
 ### Related information
 [Overview of Copilot Service workspace](ccw-overview.md)  
-[Use shift bidding](wfm-use-shift-swapping.md)
+[Use shift bidding](workforce-management-use-shift-swapping.md)

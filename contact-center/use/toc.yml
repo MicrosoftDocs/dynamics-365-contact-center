@@ -393,39 +393,39 @@
         - name: Forecasting
           items: 
           - name: Create and manage forecast scenarios
-            href: wfm-forecast-scenarios.md
+            href: workforce-management-forecast-scenarios.md
           - name: Import historical data
-            href: wfm-import-historical-data.md
+            href: workforce-managementm-import-historical-data.md
           - name: Estimate AI agent credits from forecasts
             href: workforce-management-credit-estimation.md
         - name: Capacity planning
           items:
           - name: Create and manage capacity plans
-            href: wfm-capacity-planning.md
+            href: workforce-management-capacity-planning.md
         - name: Shift planning and scheduling
           items:
           - name: Create and manage shift plans
-            href: wfm-shift-plan.md
+            href: workforce-management-shift-plan.md
           - name: Use auto schedule to schedule service representatives
-            href: wfm-use-auto-schedule.md
+            href: workforce-management-use-auto-schedule.md
           - name: Use shift bidding
-            href: wfm-representative-shift-bidding.md
+            href: workforce-management-representative-shift-bidding.md
           - name: Use shift swapping
-            href: wfm-use-shift-swapping.md
+            href: workforce-management-use-shift-swapping.md
           - name: Use shift-based routing for work items
             href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/use-context
           - name: Use the Schedule Calendar
             href: /dynamics365/customer-service/use/use-agent-calendar?context=/dynamics365/contact-center/context/use-context
           - name: Use break distribution to assign breaks
-            href: wfm-use-break-distribution.md
+            href: workforce-management-use-break-distribution.md
         - name: Time-off request management
           items:
           - name: Manage time-off requests
-            href: wfm-view-time-off-requests.md
+            href: workforce-management-view-time-off-requests.md
           - name: Create a time-off request
-            href: wfm-create-time-off-request.md
+            href: workforce-management-create-time-off-request.md
         - name: Adherence tracker
-          href: wfm-adherence-tracker.md
+          href: workforce-management-adherence-tracker.md
     - name: Known issues in Customer Service and Dynamics 365 Contact Center
       href: https://go.microsoft.com/fwlink/p/?linkid=2165393
     - name: Responsible AI

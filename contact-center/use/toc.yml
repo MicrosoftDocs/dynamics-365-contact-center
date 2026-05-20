@@ -395,7 +395,7 @@
           - name: Create and manage forecast scenarios
             href: workforce-management-forecast-scenarios.md
           - name: Import historical data
-            href: workforce-managementm-import-historical-data.md
+            href: workforce-management-import-historical-data.md
           - name: Estimate AI agent credits from forecasts
             href: workforce-management-credit-estimation.md
         - name: Capacity planning

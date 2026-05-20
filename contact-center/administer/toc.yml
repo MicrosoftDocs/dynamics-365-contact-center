@@ -127,33 +127,33 @@
       - name: Workforce management
         items:
         - name: Install the package
-          href: wfm-package-installation.md
+          href: workforce-management-package-installation.md
         - name: User management
-          href: wfm-user-management.md
+          href: workforce-management-user-management.md
         - name: Forecasting
           items:
           - name: Enable volume forecasting
-            href: wfm-configure-forecast-scenarios.md
+            href: workforce-management-configure-forecast-scenarios.md
           - name: Enable capacity planning
-            href: wfm-configure-capacity-planning.md
+            href: workforce-management-configure-capacity-planning.md
         - name: Shift and schedule management
           items: 
           - name: Enable shift activity types
-            href: wfm-shift-activity-types.md
+            href: workforce-management-shift-activity-types.md
           - name: Enable schedule management
-            href: wfm-enable-schedule-management.md
+            href: workforce-management-enable-schedule-management.md
           - name: Enable shift-based routing
-            href: wfm-enable-shift-based-routing.md
+            href: workforce-management-enable-shift-based-routing.md
         - name: Time management
           items:
           - name: Enable the representative calendar
-            href: wfm-configure-representative-calendar.md
+            href: workforce-management-configure-representative-calendar.md
           - name: Enable time-off request types
-            href: wfm-time-off-request-types.md
+            href: workforce-management-time-off-request-types.md
           - name: Enable shift bidding
-            href: wfm-enable-shift-bids.md
+            href: workforce-management-enable-shift-bids.md
           - name: Enable shift swapping
-            href: wfm-enable-shift-swapping.md
+            href: workforce-management-enable-shift-swapping.md
         - name: Configure shift-based routing for work items
           href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/administer-context
       - name: Email

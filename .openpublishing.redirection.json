@@ -32,6 +32,138 @@
       "source_path": "contact-center/extend/configure-custom-events.md",
       "redirect_url": "/dynamics365/contact-center/extend/intro-messaging-apis",
       "redirect_document_id": "false"
+    },
+    {
+    
+      "source_path": "contact-center/administer/wfm-configure-capacity-planning.md",
+      "redirect_url": "/contact-center/administer/workforce-management-configure-capacity-planning",
+      "redirect_document_id": "false"
+    },
+    {
+    
+      "source_path": "contact-center/administer/wfm-configure-forecast-scenarios.md",
+      "redirect_url": "/contact-center/administer/workforce-management-configure-forecast-scenarios",
+      "redirect_document_id": "false"
+    },
+    {
+    
+      "source_path": "contact-center/administer/wfm-configure-representative-calendar.md",
+      "redirect_url": "/contact-center/administer/workforce-management-configure-representative-calendar",
+      "redirect_document_id": "false"
+    },
+    {
+    
+      "source_path": "contact-center/administer/wfm-enable-schedule-management.md",
+      "redirect_url": "/contact-center/administer/workforce-management-enable-schedule-management",
+      "redirect_document_id": "false"
+    },
+    {
+    
+      "source_path": "contact-center/administer/wfm-enable-shift-based-routing.md",
+      "redirect_url": "/contact-center/administer/workforce-management-enable-shift-based-routing",
+      "redirect_document_id": "false"
+    },
+     {
+    
+      "source_path": "contact-center/administer/wfm-enable-shift-bids.md",
+      "redirect_url": "/contact-center/administer/workforce-management-enable-shift-bids",
+      "redirect_document_id": "false"
+    },
+     {
+    
+      "source_path": "contact-center/administer/wfm-enable-shift-swapping.md",
+      "redirect_url": "/contact-center/administer/workforce-management-enable-shift-swapping",
+      "redirect_document_id": "false"
+    },
+    {
+    
+      "source_path": "contact-center/administer/wfm-package-installation.md",
+      "redirect_url": "/contact-center/administer/workforce-management-package-installation",
+      "redirect_document_id": "false"
+    },
+    {
+    
+      "source_path": "contact-center/administer/wfm-shift-activity-types.md",
+      "redirect_url": "/contact-center/administer/workforce-management-shift-activity-types",
+      "redirect_document_id": "false"
+    },
+     {
+    
+      "source_path": "contact-center/administer/wfm-time-off-request-types.md",
+      "redirect_url": "/contact-center/administer/workforce-management-time-off-request-types",
+      "redirect_document_id": "false"
+    },
+     {
+    
+      "source_path": "contact-center/administer/wfm-user-management.md",
+      "redirect_url": "/contact-center/administer/workforce-management-user-management",
+      "redirect_document_id": "false"
+    },
+    {
+    
+      "source_path": "contact-center/use/wfm-adherence-tracker.md",
+      "redirect_url": "/contact-center/use/workforce-management-adherence-tracker",
+      "redirect_document_id": "false"
+    },
+     {
+    
+      "source_path": "contact-center/use/wfm-capacity-planning.md",
+      "redirect_url": "/contact-center/use/workforce-management-capacity-planning",
+      "redirect_document_id": "false"
+    },
+     {
+    
+      "source_path": "contact-center/use/wfm-create-time-off-request.md",
+      "redirect_url": "/contact-center/use/workforce-management-create-time-off-request",
+      "redirect_document_id": "false"
+    },
+     {
+    
+      "source_path": "contact-center/use/wfm-forecast-scenarios.md",
+      "redirect_url": "/contact-center/use/workforce-management-forecast-scenarios",
+      "redirect_document_id": "false"
+    },
+     {
+    
+      "source_path": "contact-center/use/wfm-import-historical-data.md",
+      "redirect_url": "/contact-center/use/workforce-management-import-historical-data",
+      "redirect_document_id": "false"
+    },
+    {
+    
+      "source_path": "contact-center/use/wfm-representative-shift-bidding.md",
+      "redirect_url": "/contact-center/use/workforce-management-representative-shift-bidding",
+      "redirect_document_id": "false"
+    },
+    {
+    
+      "source_path": "contact-center/use/wfm-shift-plan.md",
+      "redirect_url": "/contact-center/use/workforce-management-shift-plan",
+      "redirect_document_id": "false"
+    },
+     {
+    
+      "source_path": "contact-center/use/wfm-use-auto-schedule.md",
+      "redirect_url": "/contact-center/use/workforce-management-use-auto-schedule",
+      "redirect_document_id": "false"
+    },
+     {
+    
+      "source_path": "contact-center/use/wfm-use-break-distribution.md",
+      "redirect_url": "/contact-center/use/workforce-management-use-break-distribution",
+      "redirect_document_id": "false"
+    },
+     {
+    
+      "source_path": "contact-center/use/wfm-shift-swapping.md",
+      "redirect_url": "/contact-center/use/workforce-management-shift-swapping",
+      "redirect_document_id": "false"
+    },
+     {
+    
+      "source_path": "contact-center/use/wfm-view-time-off-requests.md",
+      "redirect_url": "/contact-center/use/workforce-management-view-time-off-requests",
+      "redirect_document_id": "false"
     }
 
   ]

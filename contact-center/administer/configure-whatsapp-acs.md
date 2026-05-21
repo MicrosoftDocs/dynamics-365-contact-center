@@ -112,35 +112,25 @@ In the following instructions, you provide the information from the Azure portal
 
 1. Select the **Web Hook** URL, and then select the **Filters** tab.
 
-1. Under **ADVANCED FILTERS**, enter the following information:
+1. Under **ADVANCED FILTERS**, configure the event subscriptions so that the application can receive both inbound WhatsApp messages and outbound delivery-status updates from this channel.    
 
-   The Dynamics 365 webhook needs to receive both inbound messages and outbound delivery-status updates from this WhatsApp channel. Because the ACS Advanced Messaging schema places the channel ID in different fields for each direction, configure two Event Grid event subscriptions on the same Communication Services Event Grid System Topic, both pointing at the same Webhook URL you copied in step 5.
+  Use the same Communication Services Event Grid System Topic and the same Dynamics 365 webhook URL for both subscriptions:
 
-   **9a. Inbound messages subscription**
-Use the existing event subscription you re-pointed at the Dynamics 365 webhook URL in step 7.
-On the Filters tab, under Event Types, select only Microsoft.Communication.AdvancedMessageReceived.
-Under Advanced filters, add:
-Key: data.to
-Operator: String is in
-Value: The Channel ID you copied from the Azure portal.
-Save.
+   - **Inbound messages subscription**   
+      Use the existing event subscription that you updated in step 7. On the **Filters** tab, under **Event Types**, select only **Microsoft.Communication.AdvancedMessageReceived**. Under **Advanced filters**, enter the following information:
+       - **Key**: `data.to`
+       - **Operator**: **String is in**
+       - **Value**: Paste the **Channel ID** from the Azure portal.
 
-   **9b. Outbound delivery-status subscription**
-On the same Event Grid System Topic, select + Event Subscription to create a second subscription.
-Give it a distinct name (for example, whatsapp-<channel-name>-delivery-status).
-Endpoint Type: Web Hook. Paste the same Dynamics 365 Webhook URL you copied in step 5.
-Configure the same Microsoft Entra authentication settings (Application ID/URI and Tenant ID) as the inbound subscription.
-On the Filters tab, under Event Types, select only Microsoft.Communication.AdvancedMessageDeliveryStatusUpdated.
-Under Advanced filters, add:
-Key: data.from
-Operator: String is in
-Value: The Channel ID you copied from the Azure portal.
-Save.
- > [!IMPORTANT]
- >  Both subscriptions must be present. Without 9b, Dynamics 365 never learns when an outbound WhatsApp message reaches, is read by, or fails to deliver to the customer. Agents will not see a "message failed to deliver" notification on the conversation in those cases.
+   - **Outbound delivery-status subscription**  
+     On the same Event Grid System Topic, create a second event subscription and give it a distinct name, such as `whatsapp-<channel-name>-delivery-status`. Use the same webhook URL and Microsoft Entra authentication settings as the inbound subscription. On the **Filters** tab, under **Event Types**, select only **Microsoft.Communication.AdvancedMessageDeliveryStatusUpdated**. Under **Advanced filters**, enter the following information:
+      - **Key**: `data.from`
+      - **Operator**: **String is in**
+      - **Value**: Paste the **Channel ID** from the Azure portal.
 
- >[!NOTE]
- > If your Azure Communication Services resource hosts only a single WhatsApp channel and you don't share it with other channels or workloads, you can omit the Advanced filters in 9a and 9b — the Event Type filter alone is sufficient. The data.to / data.from channel-ID filters are required only when the same ACS resource serves multiple channels or contains channels not connected to Dynamics 365.
+   > [!IMPORTANT]
+   > - Both subscriptions are required. Without the outbound delivery-status subscription, the application won't receive delivery, read, or failure updates for outbound WhatsApp messages, and representatives won't see delivery failure notifications in the conversation.
+   > - If your Azure Communication Services resource contains only one WhatsApp channel that isn't shared with other channels or workloads, you can skip configuring the advanced filters for both subscriptions. You can filter by event type. Use the `data.to` and `data.from` filters only when the same ACS resource is shared across multiple channels or workloads.
 
 10. Select the checkbox to confirm that the WhatsApp channel is set up correctly, and then select **Done**.
                

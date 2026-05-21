@@ -101,4 +101,4 @@ The following example illustrates the expected data format for an **Intraday** d
 
 ### Related information
 
-[Create and manage forecast scenarios](wfm-forecast-scenarios.md)
+[Create and manage forecast scenarios](workforce-management-forecast-scenarios.md)

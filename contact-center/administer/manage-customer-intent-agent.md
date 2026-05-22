@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 04/14/2026
+ms.date: 05/22/2026
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template
@@ -59,7 +59,7 @@ You can find the unique IDs for your line of business by using Open Data Protoco
 
 ### Create rules for cases and conversations
 
-For every line of business that you identify, you can create rules for cases and conversations. You can create one rule only (one each for a case and conversation) per line of business. During runtime, for chat and other channels, Copilot and intent-based suggestions must be enabled to determine the intent.
+For every line of business that you identify, create rules for cases and conversations. You can create one rule only (one each for a case and conversation) per line of business. During runtime, for chat and other channels, Copilot and intent-based suggestions must be enabled to determine the intent.
 
 1. On the **Manage Lines of business** page, in **Case Rules**, select **Create rule**.
 1. On the dialog that appears, enter the rule name and select a line of business.
@@ -67,7 +67,7 @@ For every line of business that you identify, you can create rules for cases and
    > [!IMPORTANT]
    > Configure the workstream name in the line of business configuration rules for chat workstreams. Because the system tightly couples the chat widget with the line of business, specifying the line of business helps you make sure that the chat belongs to the same line of business as its workstream. Otherwise, the chat might end up with a different line of business other than its workstream.
 
-1. Optionally, select **Run backfill**. When selected, it’s used to associate past cases with a line of business for intent discovery. The system makes sure that intent discovery works properly by tagging past cases with the appropriate line of business.
+1. Optionally, select **Apply to historical data**. When selected, it’s used to associate past cases with a line of business for intent discovery. The system makes sure that intent discovery works properly by tagging past cases with the appropriate line of business.
 1. Save and close.
 
 Repeat the steps for creating rules and conditions for conversations for the lines of business you’d like to add.
@@ -105,7 +105,7 @@ After the first run of the intent discovery, the intent groups are listed on the
    - **Intent group**: Select the intent group that you want to associate with the intent.
    - **Line of business**: Select the line of business that you want to associate with the intent.
    - **Review status**: Select **Pending**, **Approved**, or **Discarded** in the list to indicate the default status that you'd like to set for the intent.
-   - **Use in AI Agent**: Select **Yes** if you want to use the intent in the AI agent.
+   - **Autonomous support**: Select **Self-service support** if you want the front door agent to autonomously handle this intent for immediate deflection.
 1. Save the information.
 1. On the **Attributes** tab, add the attributes that you want to associate with the intent. The attributes are used to provide additional information about the intent. You can add multiple attributes for an intent.
 1. On the **Knowledge articles** tab, select **Add** to associate the knowledge articles with the intent. The knowledge articles are used to provide additional information about the intent. You can add multiple knowledge articles for an intent.

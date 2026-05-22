@@ -96,8 +96,6 @@ Perform the following steps to debug issues:
 
 - Use the **All Conversations** table to get details on the conversation state, time to assign the conversation, number of assignment events, when the conversation was initiated and the queue and workstream the conversation was routed to, for different conversations during a defined time period. You can also use the filters for **Assignment events**, **Conversation state**, and **Time to assign** to select precise conversations for analysis.
 
-    :::image type="content" source="../media/debug-all-conversations.png" alt-text="A screenshot of all conversations.":::
-
 - Select an individual conversation to view **Conversation details**. Use this page to view details like the conversation ID, assignment duration,  channel name, required capacity, presence, and skills for the selected conversation. You can also view the conversation timeline to understand all the events that occurred for a conversation in a chronological order.
 
     :::image type="content" source="../media/debug-conversation-details.png" alt-text="A screenshot of details of a conversation.":::

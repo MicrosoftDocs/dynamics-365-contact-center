@@ -1,7 +1,7 @@
 ---
 title: Create and schedule a shift plan
 description: Learn how to create and schedule a shift plan in Copilot Service workspace to help you more easily manage your staffing needs.
-ms.date: 02/15/2026
+ms.date: 05/21/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -30,7 +30,7 @@ A shift plan includes the following key components:
 
 ## Prerequisites
 
-Before you can work with shift plans, your administrator must enable the feature in Copilot Service admin center. More information: [Enable shift and schedule management](../administer/wfm-enable-schedule-management.md).
+Before you can work with shift plans, your administrator must enable the feature in Copilot Service admin center. Learn more in [Enable shift and schedule management](../administer/workforce-management-enable-schedule-management.md).
 
 ## Create a shift plan
 
@@ -137,5 +137,5 @@ To publish the schedules, complete the following steps.
 
 ## Related information
 
-[Configure capacity planning](../administer/wfm-configure-capacity-planning.md)
+[Configure capacity planning](../administer/workforce-management-configure-capacity-planning.md)
 

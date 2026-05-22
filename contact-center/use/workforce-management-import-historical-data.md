@@ -29,7 +29,7 @@ To configure a forecast scenario to use historical data, upload a data file.
 1. For **File**, select **Choose File**, and then select the required file.
 1. Select **Save**.
 
-You can now use this file as your data source when you [create a new forecast report](wfm-forecast-scenarios.md#create-a-short-term-or-long-term-forecast-report).
+You can now use this file as your data source when you [create a new forecast report](workforce-management-forecast-scenarios.md#create-a-short-term-or-long-term-forecast-report).
 
 ## Required data
 
@@ -101,4 +101,4 @@ The following example illustrates the expected data format for an **Intraday** d
 
 ### Related information
 
-[Create and manage forecast scenarios](wfm-forecast-scenarios.md)
+[Create and manage forecast scenarios](workforce-management-forecast-scenarios.md)

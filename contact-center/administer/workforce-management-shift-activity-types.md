@@ -20,7 +20,7 @@ Shift activity types define the type of work performed as part of a booking. The
 
 ## Prerequisites
 
-Complete the steps in [Set up user management](wfm-user-management.md).
+Complete the steps in [Set up user management](workforce-management-user-management.md).
 
 ## Configure a shift activity type
 

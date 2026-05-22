@@ -30,7 +30,7 @@ Key benefits:
 
 ## Prerequisites
 
-Complete the steps in [Set up user management](wfm-user-management.md).
+Complete the steps in [Set up user management](workforce-management-user-management.md).
     
 ## Enable forecasting
 

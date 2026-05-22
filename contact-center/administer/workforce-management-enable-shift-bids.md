@@ -28,7 +28,7 @@ This feature provides the following capabilities:
 
 ## Prerequisites
 
-- Complete the steps in [Set up user management](wfm-user-management.md).
+- Complete the steps in [Set up user management](workforce-management-user-management.md).
 -	[Manage personas and custom security profiles](/dynamics365/customer-service/role-persona-mapping)
 
 ## Enable shift bidding in your organization

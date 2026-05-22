@@ -22,7 +22,7 @@ AI credit estimation is integrated with Workforce Management forecasting scenari
 
 ## Prerequisites
 
-- [Workforce Management](../administer/wfm-package-installation.md) is set up.
+- [Workforce Management](../administer/workforce-management-package-installation.md) is set up.
 - Forecast scenarios are configured with forecasted case or conversation volumes.
 
 ## Create a forecast scenario
@@ -87,5 +87,5 @@ AI credit estimation provides a unified view of forecasted workload demand and p
 
 ### Related information
 
-- [Create and manage forecast scenarios](wfm-forecast-scenarios.md)
-- [Import historical data](wfm-import-historical-data.md)
+- [Create and manage forecast scenarios](workforce-management-forecast-scenarios.md)
+- [Import historical data](workforce-management-import-historical-data.md)

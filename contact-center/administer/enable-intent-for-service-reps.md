@@ -72,7 +72,7 @@ For this scenario, the AI agent might recommend the following actions:
 
 - Follow-up with the customer if additional confirmation is required
 - Review draft of a response generated for the customer
-- Resolve case after confirming the return request is completed
+- Resolves the case after confirming the return request is completed
 
 ## Next steps
 

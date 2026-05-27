@@ -13,9 +13,10 @@ ms.custom: bap-template
 
 # Enable intent-based suggestions for service representatives
 
-Intent-based suggestions and next best actions help customer service representatives (service representatives or representatives) handle customer interactions efficiently by combining real-time guidance with actionable recommendations.
-Intent-based suggestions use AI to analyze customer conversations during chats and calls. Based on the detected intent, the AI agent suggests relevant questions that help service representatives gather the information needed to understand and resolve the issue.
-Next best actions extend this experience into the case workflow. After a case is created or updated, the agent analyzes the case context and recommends appropriate next steps. These actions help service representatives review generated responses, follow up with customers, reuse content, or complete the case without manually determining the next course of action.
+Intent-based suggestions and next best actions help customer service representatives (service representatives or representatives) handle customer interactions efficiently by combining real-time guidance with actionable recommendations.  
+
+Intent-based suggestions use AI to analyze customer conversations during chats and calls. Based on the detected intent, the AI agent suggests relevant questions that help service representatives gather the information needed to understand and resolve the issue.    
+Next best actions extend this experience into the case workflow. After a case is created or updated, the agent analyzes the case context and recommends appropriate next steps. These actions help service representatives review generated responses, follow up with customers, reuse content, or complete the case without manually determining the next course of action.  
 
 For service representatives to use this feature, you need to enable intent-based suggestions in experience profiles. By default, representatives added to the out-of-the-box experience profiles can use the intent-based suggestions.
 

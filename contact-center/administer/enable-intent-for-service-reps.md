@@ -13,27 +13,31 @@ ms.custom: bap-template
 
 # Enable intent-based suggestions for service representatives
 
-Intent-based suggestions help customer service representatives (service representatives or representatives) resolve live chat and persistent chat issues faster and more accurately. For service representatives to use this feature, you need to enable intent-based suggestions in experience profiles. By default, representatives added to the out-of-the-box experience profiles can use the intent-based suggestions.
+Intent-based suggestions and next best actions help customer service representatives (service representatives or representatives) handle customer interactions efficiently by combining real-time guidance with actionable recommendations.
+Intent-based suggestions use AI to analyze customer conversations during chats and calls. Based on the detected intent, the AI agent suggests relevant questions that help service representatives gather the information needed to understand and resolve the issue.
+Next best actions extend this experience into the case workflow. After a case is created or updated, the agent analyzes the case context and recommends appropriate next steps. These actions help service representatives review generated responses, follow up with customers, reuse content, or complete the case without manually determining the next course of action.
+
+For service representatives to use this feature, you need to enable intent-based suggestions in experience profiles. By default, representatives added to the out-of-the-box experience profiles can use the intent-based suggestions.
 
 ## Prerequisites
 
-- Customer Intent Agent is enabled. Learn more in [Manage Customer Intent Agent](manage-customer-intent-agent.md).
+- [Intent](manage-customer-intent-agent.md) or knowledge management is enabled. 
 - The Ask-a-question feature in Copilot help pane is enabled. Learn more in [Enable Copilot assist features](copilot-enable-help-pane.md).
+- Optionally, you can configure connectors for the agent to retrieve relevant information from external knowledge sources. Learn more in [Manage custom connectors](manage-customer-intent-agent.md#manage-connectors-for-ai-agents-optional) 
 
-## Enable intent-based suggestions for service representatives
+## Enable intent-based suggestions and next best actions
 
-You can create a [custom experience profile](/dynamics365/customer-service/administer/create-agent-experience-profile) and enable the required features that representatives can use. You can then assign the custom profile to the representatives. Learn more in [Add users to experience profiles](/dynamics365/customer-service/administer/add-profile-default).
+To enable intent-based suggestions and next best actions, do the following steps in Copilot Service admin center
 
-To add the Copilot features to an experience profile, follow these steps:
+1. Select Productivity in Support experience. The Productivity page appears.
+1. Select **Manage** for Intent-based suggestions. The Intent-based suggestions page appears.
+1. In the **Turn on intent-based suggestions section**, select the following options:
 
-1. Go to experience profiles using one of the following navigation options:
-   - **Support experience** > **Workspaces**
-   - **Customer support** > **Intent** > **Customer Intent Agent** > **Enable for support representatives**
-1. Select the required experience profile.
-1. In **Productivity pane**, select **Edit** and then turn on the **Copilot help pane** toggle.
-1. In **Copilot AI features** select **Edit** and then select the following for the representatives to be able to view intent-based suggestions:
-     1. **Ask a question**
-     1. **Intent-based suggestions**
+   - **Conversation content**: Select this option to enable intent-based suggestions for live conversations. The autonomous agent analyzes conversation transcripts from calls and chats to detect customer intent and generate suggested questions for service representatives.
+   - **Actions**: Enables next best actions for cases, such as drafting emails or resolving the case.
+1. To add the features to a custom experience profile, select **Select experience profiles**.
+     1. On the Select experience profiles, select the required experience profile. 
+     1. Select **Save**.
 
 ## How intent-based suggestions work
 
@@ -56,6 +60,19 @@ For example, the agent maps the customer's issue to the intent group "Coffee mac
 If the agent can't map the context to any known intent group or intent, it shows nothing.
 
 If a customer's intent changes during a conversation, the agent detects the change and updates the suggestions based on the current intent. It also saves the previous intents and suggested questions with the conversation history.
+
+## How next best actions work
+
+For a case, the intent agent analyzes case data such as emails and notes and maps the customer's issue to the available intents.
+
+For example, a service representative creates or updates a case for a customer who wants to return a Contoso CX300 coffee machine. 
+
+Based on the case context, the agent evaluates the information and suggests next best actions in the Copilot pane.
+For this scenario, the AI agent might recommend the following actions:
+
+- Follow-up with the customer if additional confirmation is required
+- Review draft of a response generated for the customer
+- Resolve case after confirming the return request is completed
 
 ## Next steps
 

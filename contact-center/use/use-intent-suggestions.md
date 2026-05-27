@@ -13,11 +13,13 @@ ms.custom: bap-template
 
 # Use intent-based suggestions
 
-Intent-based suggestions help you handle customer conversations with ease. The intent agent analyzes your organization's historical support interactions to provide real-time context and intelligent guidance throughout the chat. You can quickly understand customer needs, ask the right questions, and deliver accurate solutions—all while reducing manual typing and handling time.
+Intent-based suggestions help you handle cases and customer conversations with ease. The intent agent analyzes your organization's historical support interactions to provide real-time context and intelligent guidance throughout the conversation. You can quickly understand customer needs, ask the right questions, and deliver accurate solutions—all while reducing manual typing and handling time.
+
+The agent also provides next best actions in the case experience, allowing you to take recommended actions—such as reviewing a response or resolving a case—directly from the Copilot pane.
 
 ## Prerequisites
 
-To use intent-based suggestions, you need the following features enabled by your administrator in Copilot Service admin center:
+To use intent-based suggestions and next best actions, you need the following features enabled by your administrator in Copilot Service admin center:
 
 - Customer Intent Agent is enabled. Learn more in [Manage Customer Intent Agent](../administer/manage-customer-intent-agent.md)
 - The Ask-a-question feature in Copilot help pane is enabled. Learn more in [Enable Copilot assist features](../administer/copilot-enable-help-pane.md).
@@ -43,7 +45,16 @@ You can do the following actions in **Intent-based suggestions**:
   If the customer's intent changes during a conversation, the agent detects the change and updates the suggestions based on the current intent. The agent also saves previous intents and suggested questions along with the conversation history. This way, if you transfer the conversation to another service representative, they can view historical intents and suggested questions.
 - Select **thumbs-down button** if the agent incorrectly identified the issue. It stops showing that issue and disables the suggested questions.
 
-   :::image type="content" source="../media/intent-mgmt-agent-experience-mini.png" alt-text="Screenshot of the structured settings for conversation summary" lightbox="../media/intent-mgmt-agent-experience.png":::|
+   :::image type="content" source="../media/intent-mgmt-agent-experience-mini.png" alt-text="Screenshot of the structured settings for conversation summary" lightbox="../media/intent-mgmt-agent-experience.png":::
+
+## Use next best actions in a case
+
+When a case is created or updated, the agent analyzes the case and suggests next best actions in the Copilot pane. You can view and select the following next actions that will help you complete the next step in resolving the issue:
+
+- Review the email response generated for the customer, and refine it before sending.
+- Follow up with the customer to gather or confirm additional details.
+- Copy the generated response.
+- Resolve case when the issue is resolved.
 
 ## Related information
 

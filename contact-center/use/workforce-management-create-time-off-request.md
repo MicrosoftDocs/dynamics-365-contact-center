@@ -12,7 +12,7 @@ ms.collection:
 
 # Create a time-off request
 
-As a customer service representative, you can use time-off requests to manage your schedule. When you submit a request, your manager receives a notification for review and approval. Time-off requests help your manager plan shift coverage while you're away.
+As a customer service representative, use time-off requests to manage your schedule. When you submit a request, your manager receives a notification for review and approval. Time-off requests help your manager plan shift coverage while you're away.
 
 ## Create a time-off request
 

@@ -1,7 +1,7 @@
 ---
 title: Create a time-off request
 description: Learn how to create a time-off request to help you efficiently manage your work schedule.
-ms.date: 05/01/2025
+ms.date: 05/28/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -12,7 +12,7 @@ ms.collection:
 
 # Create a time-off request
 
-As a customer service representative, you can use time-off requests to manage your schedule. When you submit a request, your manager receives a notification for review and approval. Time-off requests help your manager plan shift coverage while you are away.
+As a customer service representative, you can use time-off requests to manage your schedule. When you submit a request, your manager receives a notification for review and approval. Time-off requests help your manager plan shift coverage while you're away.
 
 ## Create a time-off request
 
@@ -26,3 +26,7 @@ As a customer service representative, you can use time-off requests to manage yo
       - **Hours**: If you aren't requesting a full day off, the hours field populates automatically based on your **Start** and **End** selections.
       - **Notes**: Enter a note if needed.
 1. Select **Save**. Your manager receives a notification of your request.
+
+### Related information
+
+[View and take action on time-off requests](workforce-management-view-time-off-requests.md)

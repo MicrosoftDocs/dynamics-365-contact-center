@@ -45,17 +45,17 @@ Administrators define these behaviors using natural language playbooks, enabling
 
 The system will be used to author and configure dynamic routing and assignment criteria, using natural language-based playbooks.
 
-## How is conversation orchestration evaluated? What metrics are used to measure performance?
+## How is conversation orchestration evaluated? What metrics were used to measure performance?
 
-- Evaluations are run on the playbook inferences to match the intended routing and assignment criteria, how accurately the playbook was converted into a rule-based json, including the conditions, scope of queues and actions mentioned in the playbooks. Also, functional tests have been done to evaluate the accuracy of runtime reliability of the system.
-- Performance is evaluated using Microsoft internal support data by simulating scale runs close to production level traffic volumes.
+- Evaluations were run on the playbook inferences to match the intended routing and assignment criteria, how accurately the playbook converted into a rule-based JSON, including the conditions, scope of queues, and actions mentioned in the playbooks. Also, functional tests were done to evaluate the accuracy of runtime reliability of the system.
+- Performance was evaluated using Microsoft internal support data by simulating scale runs close to production-level traffic volumes.
 
 ## What are the limitations of conversation orchestration? How can users minimize the impact of conversation orchestration’s limitations when using the system?
 
 The feature has the following limitations:
 
 - **Support English only**: The system currently supports the English language only.
-- **Playbooks**: This capability supports playbooks with editable sections only to select information from drop down lists and edit information according to validations in place. Users can refer to the warning and error messages to update and publish playbooks with relevant information.
+- **Playbooks**: This capability supports playbooks with editable sections only to select information from drop down lists and edit information according to validations in place. Administrators can refer to the warning and error messages to update and publish playbooks with relevant information.
 
 ## What operational factors and settings allow for effective and responsible use of conversation orchestration?
 

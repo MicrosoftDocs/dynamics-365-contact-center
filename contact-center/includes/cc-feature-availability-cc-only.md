@@ -1,2 +1,2 @@
 
-_**Applies to**: Dynamics 365 Contact center only_
+_**Applies to**: Dynamics 365 Contact Center only_

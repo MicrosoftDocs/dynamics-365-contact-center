@@ -46,7 +46,20 @@ A playbook can have one of the following statuses.
 | **Draft** | The playbook is saved but not active. You can make changes freely. |
 | **Active** | The playbook is published and actively orchestrates conversations. |
 
-## Create and manage playbooks
+## Supported scenarios
+
+The scenarios that are supported are categorized as follows:
+
+- **Dynamic prioritization**:
+
+   - Update priority based on transfer to queue
+   - Escalate priority based on conversation wait time
+
+- **Overflow handling**:
+
+   - Overflow based on support representative availability in the queue
+
+## Manage playbooks
 
 In Copilot Service admin center, go to **Customer support** > **Conversation Orchestration (Preview)**. The **Conversation orchestration (Preview)** > **New** page displays available playbook templates organized by scenario.
 

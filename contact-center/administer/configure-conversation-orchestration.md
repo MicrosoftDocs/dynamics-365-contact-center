@@ -4,7 +4,7 @@ description: Learn how to manage intelligent conversation routing with conversat
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 04/27/2026
+ms.date: 05/29/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
@@ -50,14 +50,14 @@ A playbook can have one of the following statuses.
 
 The scenarios that are supported are categorized as follows:
 
-- **Dynamic prioritization**:
+- [**Dynamic prioritization**](/dynamics365/customer-service/administer/assignment-methods#how-dynamic-prioritization-works-preview):
 
-   - Update priority based on transfer to queue
-   - Escalate priority based on conversation wait time
+  - Update priority based on transfer to queue
+  - Escalate priority based on conversation wait time
 
-- **Overflow handling**:
+- [**Overflow handling**](/dynamics365/customer-service/administer/manage-overflow#use-ai-powered-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview):
 
-   - Overflow based on support representative availability in the queue
+  - Overflow based on support representative availability in the queue
 
 ## Manage playbooks
 

@@ -33,15 +33,13 @@ Conversation orchestration in Dynamics 365 Contact Center manages how conversati
 
 - **Condition**: The system evaluates customer context, conversation signals, historical interactions, and real-time operational factors such as capacity, expertise availability, time of day, or service priorities.
 
-- **Action**: Based on this evaluation, conversation orchestration, selects and runs the most appropriate action, including prioritization changes, overflow handling, automated messaging, assignment or reassignment, and escalation strategies.
+- **Action**: Based on this evaluation, conversation orchestration, selects and runs the most appropriate action, including prioritization changes, overflow handling, and escalation strategies.
 
 Administrators define these behaviors using natural language playbooks, enabling outcome driven orchestration that adapts continuously rather than relying on static rules. This allows organizations to manage complex distribution scenarios while maintaining consistent customer experiences as conditions evolve. Some of the key capabilities under conversation orchestration are as follows:
 
-- **Advanced, condition based overflow handling**: Automatically applies intelligent overflow actions, such as offering callbacks or alternate experiences, based on real time conditions including expert availability, time of day, and service priorities. Supports direct inward dialing scenarios to ensure high intent entry points always have a defined outcome.
+- **Overflow handling**: Automatically applies intelligent overflow actions, such as offering callbacks or alternate experiences, based on real-time conditions including expert availability, time of day, and service priorities.
 
 - **Dynamic priority escalation across the conversation lifecycle**: Adjusts conversation priority automatically based on lifecycle events such as increasing wait time or transfer into a new queue, ensuring conversations are continuously re-evaluated and progressed without manual intervention.
-- **Richer, context aware assignment strategies**: Enables advanced assignment decisions including routing to a previous expert, progressive ring expansion, or gradual relaxation of matching constraints to maximize successful expert assignment.
-- **Situation specific automated messaging and experience control**: Delivers adaptive automated messages and music based on customer context, such as wait time, customer tier, or overflow state, coordinated with distribution and overflow actions to maintain transparency and improve perceived wait experience.
 
 ## What is the intended use of conversation orchestration?
 

@@ -48,7 +48,7 @@ A playbook can have one of the following statuses.
 
 ## Supported scenarios
 
-The scenarios that are supported are categorized as follows:
+The supported scenarios are as follows:
 
 - [**Dynamic prioritization**](/dynamics365/customer-service/administer/assignment-methods#how-dynamic-prioritization-works-preview):
 

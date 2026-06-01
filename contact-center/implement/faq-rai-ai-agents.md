@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 04/22/2026
+ms.date: 06/01/2026
 ms.update-cycle: 180-days
 ms.custom: 
 - bap-template
@@ -42,7 +42,7 @@ Beyond intent discovery, Customer Intent Agent can autonomously lead conversatio
 
 - **Retrieves and synthesizes knowledge**: The agent pulls in relevant knowledge articles and contextual data so every answer is based on accurate and current business content.
 
-- **Generates next best actions**: The agent recommends that guide service representatives on the most appropriate next step to take while working on a case.
+- **Generates next best actions**: The agent recommends actions that guide service representatives on the most appropriate next step to take while working on a case.
 
 ### Customer Knowledge Management Agent
 

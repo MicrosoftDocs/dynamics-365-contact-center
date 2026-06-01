@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 Intent-based suggestions help you handle cases and customer conversations with ease. The intent agent analyzes your organization's historical support interactions to provide real-time context and intelligent guidance throughout the conversation. You can quickly understand customer needs, ask the right questions, and deliver accurate solutions - all while reducing manual typing and handling time.
 
-The agent also provides next best actions in the case experience, allowing you to take recommended actions—such as reviewing a response or resolving a case—directly from the Copilot pane.
+The agent also provides next best actions in the case experience, so you can take recommended actions - such as reviewing a response or resolving a case - directly from the Copilot pane.
 
 ## Prerequisites
 
@@ -41,13 +41,13 @@ You can do the following actions:
 
 **Next best actions**
 
-When a case is created or updated, the agent analyzes the case and suggests next best actions in the Copilot pane. You can view and select the following next actions that will help you complete the next step in resolving the issue:
+When you create or update a case, the agent analyzes the case and suggests next best actions in the Copilot pane. You can view and select the following next actions that help you complete the next step in resolving the issue:
 
 - Review the email response generated for the customer, and refine it before sending.
 - Follow up with the customer to gather or confirm additional details.
 - Copy the generated response.
 
-For both intent-based suggestions and next best actions, you can do the following actions:
+For both intent-based suggestions and next best actions, you can take the following actions:
 
 - Select **Tab** to populate the current question in your chat text box. You can send the question as-is or edit the text before you send it to the customer. 
 - Optionally, you can hover over any question and then select **Send to conversation** to fill the chat text box with the question. 

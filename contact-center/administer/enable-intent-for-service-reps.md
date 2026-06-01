@@ -22,7 +22,7 @@ For service representatives to use this feature, you need to enable intent-based
 
 ## Prerequisites
 
-Before setting up the AI agent, ensure the following configurations are in place. If these prerequisites aren't already set up, they will be automatically configured when you save the **Intent-based suggestions** page:
+Before setting up the AI agent, ensure the following configurations are in place. If these prerequisites aren't already set up, they are automatically configured when you save the **Intent-based suggestions** page:
 
   - [Intent](manage-customer-intent-agent.md) or knowledge management is configured.
     > [!NOTE]
@@ -33,16 +33,16 @@ Before setting up the AI agent, ensure the following configurations are in place
 
 ## Enable intent-based suggestions and next best actions
 
-To enable intent-based suggestions and next best actions, do the following steps in Copilot Service admin center
+To enable intent-based suggestions and next best actions, complete the following steps in Copilot Service admin center:
 
-1. Select Productivity in Support experience. The Productivity page appears.
-1. Select **Manage** for Intent-based suggestions. The Intent-based suggestions page appears.
-1. In the **Turn on intent-based suggestions section**, select the following options:
+1. Select **Productivity** in **Support experience**. The **Productivity** page appears.
+1. Select **Manage** for **Intent-based suggestions**. The **Intent-based suggestions** page appears.
+1. In the **Turn on intent-based suggestions** section, select the following options:
 
    - **Conversation content**: Select this option to enable intent-based suggestions for live conversations. The autonomous agent analyzes conversation transcripts from calls and chats to detect customer intent and generate suggested questions for service representatives.
    - **Actions**: Enables next best actions for cases, such as drafting emails or resolving the case.
 1. To add the features to a custom experience profile, select **Select experience profiles**.
-     1. On the Select experience profiles, select the required experience profile. 
+     1. On **Select experience profiles**, select the required experience profile. 
      1. Select **Save**.
 > [!NOTE]
 > Turning off intent-based suggestions or removing an experience profile doesn't revert changes to the Copilot help pane or other shared settings, as these settings are shared across other features.
@@ -78,9 +78,9 @@ For example, a service representative creates or updates a case for a customer w
 Based on the case context, the agent evaluates the information and suggests next best actions in the Copilot pane.
 For this scenario, the AI agent might recommend the following actions:
 
-- Follow-up with the customer if additional confirmation is required
+- Follow up with the customer if additional confirmation is required
 - Review draft of a response generated for the customer
-- Resolves the case after confirming the return request is completed
+- Resolve the case after confirming the return request is completed
 
 ## Next steps
 

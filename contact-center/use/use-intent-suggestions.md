@@ -27,7 +27,7 @@ The agent also provides next best actions in the case experience, so you can tak
 
 **Intent-based suggestions**
 
-You can do the following actions:
+You can take the following actions:
 
 - View the intent identified by the agent. The agent tries to map the context to a specific intent or a general intent group based on your organization's data. You see one of the following suggestions:
    - "Looking for suggestions", when the agent is mapping the context to an intent.

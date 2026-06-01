@@ -2,7 +2,7 @@
 title: Use service representative availability APIs
 description: Learn how to use the representative availability APIs in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
 ms.date: 04/30/2026
-ms.topic: conceptual
+ms.topic: article
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham

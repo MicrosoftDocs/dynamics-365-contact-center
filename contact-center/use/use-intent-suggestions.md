@@ -19,8 +19,6 @@ The agent also provides next best actions in the case experience, so you can tak
 
 ## Prerequisites
 
-To use intent-based suggestions and next best actions, you need the following features enabled by your administrator in Copilot Service admin center:
-
 - Intent-based suggestions is enabled. Learn more in [Enable intent-based suggestions for service representatives
 ](../administer/manage-customer-intent-agent.md)
 - The Ask-a-question feature in Copilot help pane is enabled. Learn more in [Enable Copilot assist features](../administer/copilot-enable-help-pane.md).

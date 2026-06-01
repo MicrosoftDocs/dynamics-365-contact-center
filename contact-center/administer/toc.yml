@@ -653,6 +653,8 @@
         items:
         - name: Overview
           href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/administer-context
+        - name: Responsible AI FAQ for conversation orchestration
+          href: ../implement/conversation-orchestration-rai-faq.md?context=/dynamics365/contact-center/context/administer-context
         - name: Responsible AI FAQ for AI Agents
           href: ../implement/faq-rai-ai-agents.md
         - name: Responsible AI FAQ for Copilot in Customer Service

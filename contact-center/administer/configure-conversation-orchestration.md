@@ -4,7 +4,7 @@ description: Learn how to manage intelligent conversation routing with conversat
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 04/27/2026
+ms.date: 05/29/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
@@ -46,7 +46,20 @@ A playbook can have one of the following statuses.
 | **Draft** | The playbook is saved but not active. You can make changes freely. |
 | **Active** | The playbook is published and actively orchestrates conversations. |
 
-## Create and manage playbooks
+## Supported scenarios
+
+The supported scenarios are as follows:
+
+- [**Dynamic prioritization**](/dynamics365/customer-service/administer/assignment-methods#how-dynamic-prioritization-works-preview):
+
+  - Update priority based on transfer to queue
+  - Escalate priority based on conversation wait time
+
+- [**Overflow handling**](/dynamics365/customer-service/administer/manage-overflow#use-ai-powered-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview):
+
+  - Overflow based on support representative availability in the queue
+
+## Manage playbooks
 
 In Copilot Service admin center, go to **Customer support** > **Conversation Orchestration (Preview)**. The **Conversation orchestration (Preview)** > **New** page displays available playbook templates organized by scenario.
 
@@ -202,3 +215,4 @@ To help you monitor and troubleshoot your playbooks, conversation orchestration 
 [Configure context variables](/dynamics365/customer-service/administer/manage-context-variables)  
 [Dynamic prioritization scenarios](/dynamics365/customer-service/administer/assignment-methods#how-dynamic-prioritization-works)  
 [Overflow scenario](/dynamics365/customer-service/administer/manage-overflow#use-ai-powered-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview)  
+[Conversation orchestration: Responsible AI FAQ ](../implement/conversation-orchestration-rai-faq.md)  

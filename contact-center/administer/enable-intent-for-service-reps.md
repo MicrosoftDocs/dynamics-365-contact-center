@@ -15,14 +15,14 @@ ms.custom: bap-template
 
 Intent-based suggestions and next best actions help customer service representatives (service representatives or representatives) handle customer interactions efficiently by combining real-time guidance with actionable recommendations.  
 
-Intent-based suggestions use AI to analyze customer conversations during live chats and calls. Based on the detected intent, the AI agent suggests relevant questions that help service representatives gather the information needed to understand and resolve the issue.    
+Intent-based suggestions use AI to analyze customer conversations during live chats and calls. Based on the detected intent, the autonomous agent suggests relevant questions that help service representatives gather the information needed to understand and resolve the issue.    
 Next best actions extend this experience into the case workflow. After a case is created or updated, the agent analyzes the case context and recommends appropriate next steps. These actions help service representatives review generated responses, follow up with customers, reuse content, or resolve the case without manually determining the next course of action.  
 
 Enable intent-based suggestions in experience profiles for service representatives to use them.
 
 ## Prerequisites
 
-Before setting up the AI agent, ensure the following configurations are in place. If these prerequisites aren't already set up, they are automatically configured when you enable and save the settings on the **Intent-based suggestions** page:
+Before setting up the autonomous agent, ensure the following configurations are in place. If these prerequisites aren't already set up, they are automatically configured when you enable and save the settings on the **Intent-based suggestions** page:
 
   - [Intent](manage-customer-intent-agent.md) or knowledge management is configured.
     > [!NOTE]
@@ -45,7 +45,7 @@ To enable intent-based suggestions and next best actions, complete the following
      1. On **Select experience profiles**, select the experience profiles. 
      1. Select **Save**.
 > [!NOTE]
-> Turning off intent-based suggestions or removing an experience profile doesn't revert changes to the Copilot help pane or other shared settings, as these settings are shared across other features.
+> If you turn off intent-based suggestion or remove it from an experience profile, it doesn't revert the Copilot or other shared settings.
 
    :::image type="content" source="../media/intent-based-suggestions.png" alt-text="Screenshot for intent based suggestions admin UI.":::
 
@@ -54,7 +54,7 @@ To enable intent-based suggestions and next best actions, complete the following
 
 When a service representative accepts a live chat or persistent chat conversation, the **Intent-based suggestions** card appears in the **Ask a question** tab of Copilot help pane.
 
-The intent agent maps the context of the conversation to a specific intent and displays the relevant intent attributes as questions. The service representative can use these questions to get the necessary information from the customer to resolve the issue.
+The autonomous agent maps the context of the conversation to a specific intent and displays the relevant intent attributes as questions. The service representative can use these questions to get the necessary information from the customer to resolve the issue.
 
 For example, the agent maps the customer's issue to the intent "Returning Contoso CX300 coffee machine". This intent has the following intent attributes:
 
@@ -74,12 +74,12 @@ If a customer's intent changes during a conversation, the agent detects the chan
 
 ## How next best actions work
 
-For a case, the intent agent analyzes case data such as emails and notes and maps the customer's issue to the available intents.
+For a case, the autonomous agent analyzes case data such as emails and notes and maps the customer's issue to the available intents.
 
 For example, a service representative creates or updates a case for a customer who wants to return a Contoso CX300 coffee machine. 
 
 Based on the case context, the agent evaluates the information and suggests next best actions in the Copilot pane.
-For this scenario, the AI agent might recommend the following actions:
+For this scenario, the autonomous agent might recommend the following actions:
 
 - Follow up with the customer if additional confirmation is required
 - Review draft of a response generated for the customer

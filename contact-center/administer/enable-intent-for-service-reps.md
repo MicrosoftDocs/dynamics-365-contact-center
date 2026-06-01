@@ -18,11 +18,11 @@ Intent-based suggestions and next best actions help customer service representat
 Intent-based suggestions use AI to analyze customer conversations during live chats and calls. Based on the detected intent, the AI agent suggests relevant questions that help service representatives gather the information needed to understand and resolve the issue.    
 Next best actions extend this experience into the case workflow. After a case is created or updated, the agent analyzes the case context and recommends appropriate next steps. These actions help service representatives review generated responses, follow up with customers, reuse content, or resolve the case without manually determining the next course of action.  
 
-For service representatives to use this feature, you need to enable intent-based suggestions in experience profiles. 
+Enable intent-based suggestions in experience profiles for service representatives to use them.
 
 ## Prerequisites
 
-Before setting up the AI agent, ensure the following configurations are in place. If these prerequisites aren't already set up, they are automatically configured when you save the **Intent-based suggestions** page:
+Before setting up the AI agent, ensure the following configurations are in place. If these prerequisites aren't already set up, they are automatically configured when you enable and save the settings on the **Intent-based suggestions** page:
 
   - [Intent](manage-customer-intent-agent.md) or knowledge management is configured.
     > [!NOTE]
@@ -40,9 +40,9 @@ To enable intent-based suggestions and next best actions, complete the following
 1. In the **Turn on intent-based suggestions** section, select the following options:
 
    - **Conversation content**
-   - **Actions**: Enables next best actions for cases, such as drafting emails or resolving the case.
-1. To add the features to a custom experience profile, select **Select experience profiles**.
-     1. On **Select experience profiles**, select the required experience profile. 
+   - **Actions**: Select to enable next best actions for cases, such as drafting emails or resolving the case.
+1. In **Enable in experience profiles**, select **Select experience profiles**.
+     1. On **Select experience profiles**, select the experience profiles. 
      1. Select **Save**.
 > [!NOTE]
 > Turning off intent-based suggestions or removing an experience profile doesn't revert changes to the Copilot help pane or other shared settings, as these settings are shared across other features.

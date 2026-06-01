@@ -215,3 +215,4 @@ To help you monitor and troubleshoot your playbooks, conversation orchestration 
 [Configure context variables](/dynamics365/customer-service/administer/manage-context-variables)  
 [Dynamic prioritization scenarios](/dynamics365/customer-service/administer/assignment-methods#how-dynamic-prioritization-works)  
 [Overflow scenario](/dynamics365/customer-service/administer/manage-overflow#use-ai-powered-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview)  
+[Conversation orchestration: Responsible AI FAQ ](../implement/conversation-orchestration-rai-faq.md)  

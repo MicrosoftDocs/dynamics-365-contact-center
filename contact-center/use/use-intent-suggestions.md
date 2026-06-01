@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 # Use intent-based suggestions
 
-Intent-based suggestions help you handle cases and customer conversations with ease. The intent agent analyzes your organization's historical support interactions to provide real-time context and intelligent guidance throughout the conversation. You can quickly understand customer needs, ask the right questions, and deliver accurate solutions&mdash;all while reducing manual typing and handling time.
+Intent-based suggestions help you handle cases and customer conversations with ease. The intent agent analyzes your organization's historical support interactions to provide real-time context and intelligent guidance throughout the conversation. You can quickly understand customer needs, ask the right questions, and deliver accurate solutions - all while reducing manual typing and handling time.
 
 The agent also provides next best actions in the case experience, so you can take recommended actions - such as reviewing a response or resolving a case - directly from the Copilot pane.
 

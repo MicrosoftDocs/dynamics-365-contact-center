@@ -21,20 +21,34 @@ The agent also provides next best actions in the case experience, allowing you t
 
 To use intent-based suggestions and next best actions, you need the following features enabled by your administrator in Copilot Service admin center:
 
-- Customer Intent Agent is enabled. Learn more in [Manage Customer Intent Agent](../administer/manage-customer-intent-agent.md)
+- Intent-based suggestions is enabled. Learn more in [Enable intent-based suggestions for service representatives
+](../administer/manage-customer-intent-agent.md)
 - The Ask-a-question feature in Copilot help pane is enabled. Learn more in [Enable Copilot assist features](../administer/copilot-enable-help-pane.md).
   
-## Use intent-based suggestions
+## Use intent-based suggestions and next best actions
 
-You can do the following actions in **Intent-based suggestions**:
+**Intent-based suggestions**
 
-- View the intent identified by the agent. The agent tries to map the conversation context to a specific intent or a general intent group based on your organization's data. You see one of the following suggestions:
+You can do the following actions:
+
+- View the intent identified by the agent. The agent tries to map the context to a specific intent or a general intent group based on your organization's data. You see one of the following suggestions:
    - "Looking for suggestions", when the agent is mapping the context to an intent.
    - The intent as the issue and relevant questions that you need to ask to resolve the issue.
    - The intent group as the issue along with further questions to clarify the issue.
    - Nothing, if the agent can't map the context to any known intent.
    > [!NOTE]
    > When active conversations aren't there, the agent displays the "Suggestions unavailable" message on the card.
+
+**Next best actions**
+
+When a case is created or updated, the agent analyzes the case and suggests next best actions in the Copilot pane. You can view and select the following next actions that will help you complete the next step in resolving the issue:
+
+- Review the email response generated for the customer, and refine it before sending.
+- Follow up with the customer to gather or confirm additional details.
+- Copy the generated response.
+
+For both intent-based suggestions and next best actions, you can do the following actions:
+
 - Select **Tab** to populate the current question in your chat text box. You can send the question as-is or edit the text before you send it to the customer. 
 - Optionally, you can hover over any question and then select **Send to conversation** to fill the chat text box with the question. 
 - View a visual indicator against each question the customer answers. The customer's responses also appear with the question. If the customer answers the question, the agent marks it as answered and moves on to the next question. 
@@ -45,16 +59,6 @@ You can do the following actions in **Intent-based suggestions**:
   If the customer's intent changes during a conversation, the agent detects the change and updates the suggestions based on the current intent. The agent also saves previous intents and suggested questions along with the conversation history. This way, if you transfer the conversation to another service representative, they can view historical intents and suggested questions.
 - Select **thumbs-down button** if the agent incorrectly identified the issue. It stops showing that issue and disables the suggested questions.
 
-   :::image type="content" source="../media/intent-mgmt-agent-experience-mini.png" alt-text="Screenshot of the structured settings for conversation summary" lightbox="../media/intent-mgmt-agent-experience.png":::
-
-## Use next best actions in a case
-
-When a case is created or updated, the agent analyzes the case and suggests next best actions in the Copilot pane. You can view and select the following next actions that will help you complete the next step in resolving the issue:
-
-- Review the email response generated for the customer, and refine it before sending.
-- Follow up with the customer to gather or confirm additional details.
-- Copy the generated response.
-- Resolve case when the issue is resolved.
 
 ## Related information
 

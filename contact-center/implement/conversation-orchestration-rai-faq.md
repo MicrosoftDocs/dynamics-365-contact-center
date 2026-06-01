@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 05/29/2026
+ms.date: 06/01/2026
 ms.update-cycle: 180-days
 ms.custom: 
 - bap-template
@@ -47,7 +47,7 @@ The system will be used to author and configure dynamic routing and assignment c
 
 ## How is conversation orchestration evaluated? What metrics were used to measure performance?
 
-- Evaluations were run on the playbook inferences to match the intended routing and assignment criteria, how accurately the playbook converted into a rule-based JSON, including the conditions, scope of queues, and actions mentioned in the playbooks. Also, functional tests were done to evaluate the accuracy of runtime reliability of the system.
+- Evaluations were run on the playbook inferences to match the intended routing and assignment criteria, how accurately the playbook was inferred, including the conditions, scope of queues, and actions mentioned in the playbooks. Also, functional tests were done to evaluate the accuracy of runtime reliability of the system.
 - Performance was evaluated using Microsoft internal support data by simulating scale runs close to production-level traffic volumes.
 
 ## What are the limitations of conversation orchestration? How can users minimize the impact of conversation orchestration’s limitations when using the system?

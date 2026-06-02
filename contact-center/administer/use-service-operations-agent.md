@@ -21,7 +21,7 @@ Service Operations Agent supports conversational setup of Dataverse tables, such
 ## Supported capabilities
 
 > [!NOTE]
-> Service Operations Agent is available in the Engligh language only.
+> Service Operations Agent is available in the English language only.
  
 **Configure channels**
 

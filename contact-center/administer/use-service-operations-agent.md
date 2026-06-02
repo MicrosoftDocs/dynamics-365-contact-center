@@ -19,6 +19,9 @@ Service Operations Agent supports conversational setup of Dataverse tables, such
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Supported capabilities
+
+> [!NOTE]
+> Service Operations Agent is available in the Engligh language only.
  
 **Configure channels**
 

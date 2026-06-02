@@ -21,7 +21,7 @@ Service Operations Agent supports conversational setup of Dataverse tables, such
 ## Supported capabilities
 
 > [!NOTE]
-> Service Operations Agent is available in the English language only.
+> Service Operations Agent is available only in English.
  
 **Configure channels**
 
@@ -39,17 +39,17 @@ Service Operations Agent supports conversational setup of Dataverse tables, such
 **Query capabilities and troubleshoot issues**
 
 - Query the agent about contact center capabilities.
-- Questions about the environment.
-- Diagnostics for supported channels.
+- Ask questions about the environment.
+- Provide diagnostics for supported channels.
 
 ## Prerequisites
 
-- Omnichannel administrator role to access Service Operations Agent
-- System Administrator role to manage Power Apps connections and Model Context Protocol (MCP) connections
-- The Power Platform [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview) mandates the use of an Azure subscription that the system charges when the agent runs. Make sure that you [set up consumption-based billing](/dynamics365/customer-service/administer/setup-pay-as-you-go).
+- Omnichannel administrator role to access Service Operations Agent.
+- System Administrator role to manage Power Apps connections and Model Context Protocol (MCP) connections.
+- The Power Platform [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview) requires the use of an Azure subscription that the system charges when the agent runs. Make sure that you [set up consumption-based billing](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 - For Service Operations Agent to troubleshoot issues during setup:
-  - [Application Insights is configured](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource)
-  - [Application Insights is connected with Dynamics 365 Contact Center](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights)
+  - [Application Insights is configured](/azure/azure-monitor/app/create-workspace-resource?tabs=portal#create-an-application-insights-resource).
+  - [Application Insights is connected with Dynamics 365 Contact Center](/power-platform/admin/conversation-diagnostics-application-insights#set-up-a-connection-with-azure-application-insights).
 
 ## Conversational setup
 

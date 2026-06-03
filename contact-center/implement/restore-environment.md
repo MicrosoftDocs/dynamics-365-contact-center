@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: 
-ms.date: 12/29/2025
+ms.date: 06/03/2026
 ms.custom: bap-template
 
 ---
@@ -17,7 +17,7 @@ ms.custom: bap-template
 
 In your omnichannel environments, you can manage various events and operations that are essential to maintain and oversee your organization's environments within specific platforms or systems.
 
-You can reset, restore, or recover your omnichannel environments. After you reset or restore the environment, you must [provision the channels](provision-channels.md) or [enable unified routing](/dynamics365/customer-service/administer/provision-unified-routing) again to use omnichannel capabilities.
+You can reset, restore, or recover your omnichannel environments. After you reset or restore the environment, or perform tenant-to-tenant migration, you must [provision the channels](provision-channels.md) or [enable unified routing](/dynamics365/customer-service/administer/provision-unified-routing) again to use omnichannel capabilities.
 
 ## Reset organization
 
@@ -30,6 +30,10 @@ This process involves returning the environment to a previous state using a back
 ## Recover organization
 
 You can retrieve a recently deleted omnichannel environment and restore it to its previous state. In Power Platform admin center, perform the steps in [Recover environment](/power-platform/admin/recover-environment) to recover the default settings.
+
+## Migrate from one tenant to another tenant
+
+Use [tenant-to-tenant migration](/power-platform/admin/move-environment-tenant) to transfer an environment from one tenant to another.
 
 ### Related information
 

@@ -1,5 +1,5 @@
 ---
-title: Configure knowledge articles for verbatim responses in Copilot (preview)
+title: Configure knowledge articles for verbatim responses in Copilot
 description: Learn how to mark entire knowledge articles or specific sections of knowledge articles so Microsoft Copilot can return verbatim responses.
 author: lalexms
 ms.author: laalexan
@@ -7,22 +7,15 @@ ms.reviewer: laalexan
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days 
-ms.date: 04/21/2026
+ms.date: 06/02/2026
 ms.custom: bap-template
 ---
 
-# Configure knowledge articles for verbatim responses in Copilot (preview)
+# Configure knowledge articles for verbatim responses in Copilot
 
 [!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
 
-[This article is prerelease documentation and is subject to change.]
-
 Customer service representatives (service representatives or representatives) must sometimes share information using approved, exact wording for legal text, regulatory guidance, or standardized procedures. To support these scenarios, Copilot can return verbatim responses from knowledge articles without rewriting or summarizing the content when representatives use the **Ask a question** experience. Use verbatim responses to maintain accuracy and compliance while Copilot efficiently supports customer interactions.
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## How verbatim responses work
 

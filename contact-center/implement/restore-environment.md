@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to
 ms.collection: 
-ms.date: 12/29/2025
+ms.date: 06/03/2026
 ms.custom: bap-template
 
 ---
@@ -31,8 +31,8 @@ This process involves returning the environment to a previous state using a back
 
 You can retrieve a recently deleted omnichannel environment and restore it to its previous state. In Power Platform admin center, perform the steps in [Recover environment](/power-platform/admin/recover-environment) to recover the default settings.
 
-## Tenant to tenant migration 
-The tenant-to-tenant migration feature (https://learn.microsoft.com/en-us/power-platform/admin/move-environment-tenant)  allows you to transfer an environment from one tenant to another. Upon tenant-to-tenant migration you must provision the channels (https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/provision-channels) or enable unified routing (https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/provision-unified-routing) again to use omnichannel capabilities.
+## Migrate from one tenant to another tenant 
+Use [tenant-to-tenant migration](/power-platform/admin/move-environment-tenant) to transfer an environment from one tenant to another. After migration, you must [provision the channels](provision-channels.md) or [enable unified routing](/dynamics365/customer-service/administer/provision-unified-routing) again to use omnichannel capabilities.
 
 ### Related information
 

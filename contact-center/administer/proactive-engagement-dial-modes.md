@@ -59,7 +59,7 @@ The algorithm continuously recalculates how many calls to place based on current
 
 ### Service representative-led predictive algorithm
 
-The service representative-led algorithm uses customer wait duration as its primary metric—the time between when the customer connects to the call and when a service representative joins. The process works as follows:
+The service representative-led algorithm uses customer wait duration as its primary metric - the time between when the customer connects to the call and when a service representative joins. The process works as follows:
 
 1. **Check short-circuit rules**: Before running the full calculation, the system checks two safety conditions. If the exceeded customer wait threshold rate (30-day rolling average) is within 10% of the configured suspend threshold, or if the number of available agents is below a minimum threshold, the system reverts to one call per agent to protect customer experience.
 
@@ -69,7 +69,7 @@ The service representative-led algorithm uses customer wait duration as its prim
 
 1. **Calculate a scale factor**: Based on how far the actual wait time is from the target, the system calculates a scale factor. This factor is constrained between fixed bounds (0.1 to 2.0) to prevent extreme adjustments in either direction.
 
-1. **Calculate the final rate**: The base rate is multiplied by the scale factor to produce a proposed new rate. To ensure smooth transitions, the system limits how much the rate can change from the previous rate within a given interval—no more than 35% increase or decrease. The resulting value is the final dialing rate.
+1. **Calculate the final rate**: The base rate is multiplied by the scale factor to produce a proposed new rate. To ensure smooth transitions, the system limits how much the rate can change from the previous rate within a given interval - no more than 35% increase or decrease. The resulting value is the final dialing rate.
 
 #### Example: Service representative-led rate calculation
 

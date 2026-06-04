@@ -48,12 +48,12 @@ You can manually create, edit, and bulk upload opt-out records from the consent 
 
 ### Edit existing opt-out records
 
-Navigate to the consent management page to view and edit opt-out records that are already created. You can update a customer's consent status—for example, to restore consent when a customer requests to receive proactive engagements again.
+Go to the consent management page to view and edit opt-out records. You can update a customer's consent status, such as restoring consent when a customer requests to receive proactive engagements again.
 
 ### Bulk upload opt-outs
 
-If you're migrating from another system, you can do a bulk upload of opt-out records to import your existing do-not-call list. This ensures that customers who have previously opted out in your current system continue to be honored in Dynamics 365 Contact Center.
+If you're migrating from another system, bulk upload opt-out records to import your existing do-not-call list. This process ensures that customers who previously opted out in your current system continue to be honored in Dynamics 365 Contact Center.
 
 ## How consent is enforced
 
-When a proactive delivery is initiated through any of the proactive engagement APIs, file upload or MCP end points or through a Customer Insights journey, the system checks the customer's consent status before placing the call or sending the SMS message. If the customer has opted out, the delivery isn't initiated and the request is marked accordingly.
+When you initiate a proactive delivery through any of the proactive engagement APIs, file upload or MCP endpoints, or through a Customer Insights journey, the system checks the customer's consent status before placing the call or sending the SMS message. If the customer opts out, the system doesn't initiate the delivery and marks the request accordingly.

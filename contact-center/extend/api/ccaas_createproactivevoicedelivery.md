@@ -5,7 +5,7 @@ author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: reference
-ms.date: 04/09/2026
+ms.date: 06/05/2026
 ms.collection: bap-ai-copilot
 ms.custom: bap-template
 ---
@@ -15,7 +15,7 @@ ms.custom: bap-template
 You can use the `CCaaS_CreateProactiveVoiceDelivery` API to initiate proactive outbound voice calls to customers or allow customers to schedule callbacks through the Proactive Engagement Service.
 
 > [!NOTE]
-> This API doesn't support proactive engagement features like re-attempts, contact windows, custom priority, and frequency capping. Use the [CCaaS_CreateProactiveDelivery](ccaas_createproactivedelivery.md) API if you want to leverage these features.
+> This API doesn't support proactive engagement features like reattempts, contact windows, custom priority, and frequency capping. Use the [CCaaS_CreateProactiveDelivery](ccaas_createproactivedelivery.md) API if you want to leverage these features.
 
 > [!IMPORTANT]
 > If an organization is using the `CCaaS_CreateProactiveVoiceDelivery` API to initiate an outbound voice call, the organization is responsible for consent management, including the manual updating of "do not call lists" for setting quiet hours for customer contact. Make sure that the following conditions are met:

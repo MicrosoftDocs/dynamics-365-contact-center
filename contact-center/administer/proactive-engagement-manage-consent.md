@@ -27,7 +27,7 @@ All consent records created by proactive engagement use the **PES** compliance p
 
 ## Navigate to consent management
 
-1. In the Contact Center admin center, go to **Productivity** > **Proactive engagement**.
+1. In the Copilot Service admin center site map, go to **Productivity** > **Proactive engagement**.
 1. Select **Manage** next to **Consent**.
 
 ## Automatic opt-out
@@ -43,7 +43,7 @@ You can manually create, edit, and bulk upload opt-out records from the consent 
 
 ### Create an opt-out record
 
-1. In the consent management page, select **Voice consent** or **SMS consent** as appropriate.
+1. On the consent management page, select **Voice consent** or **Text consent** as appropriate.
 1. Select the customer and set the opt-out status.
 
 ### Edit existing opt-out records

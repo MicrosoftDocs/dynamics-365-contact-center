@@ -44,7 +44,7 @@ You can use the `CCaaS_CreateProactiveDelivery` API to initiate proactive outbou
 | Priority | String | No | Both | Defines the priority value of the request. |
 | Contacts | JSON array of Contact objects | Yes | Both | Specifies one or more contacts (up to 5) on this request. At least one phone number per contact is required. |
 | Windows | JSON array of Window objects | No | Both | Specifies the valid time periods when the outbound call or SMS can be placed. If not provided, the system defaults to a 24-hour window starting immediately (from current time until 24 hours later). |
-| Message | String | No | SMS | Message content to be delivered to the contacts. Can be used only for SMS proactive configuration. Message is constructed from the template by default. If the parameter is provided, it overrides the template. |
+| Message | String | No | SMS | Message content to be delivered to the contacts. Can be used only for SMS proactive configuration. Message is generated from the template by default. If the parameter is provided, it overrides the template. |
 
 ## Contact object
 

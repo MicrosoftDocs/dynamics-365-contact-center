@@ -45,7 +45,7 @@ The predictive dial mode supports two engagement types:
 
 - **Service representative-led**: Service representatives are reserved and ready before calls are placed. When the customer answers, the system checks whether the call reached a voicemail. If it didn't, the reserved service representative is added to the call.
 
-Each engagement type uses a different algorithm to determine how many calls to place at any given moment. Both algorithms recalculate continuously in real time.
+Each engagement type uses a different algorithm to determine the number of calls to place at any moment. Both algorithms recalculate continuously in real time.
 
 ### AI agent-led predictive algorithm
 

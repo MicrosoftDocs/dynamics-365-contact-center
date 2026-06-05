@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: reference
 ms.collection: bap-ai-copilot
-ms.date: 05/05/2026
+ms.date: 06/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -36,23 +36,24 @@ Azure Communication Services returns SIP-based early media outcomes, such as Liv
 > [!NOTE]
 > In preview dial mode, **AnsweringMachine**, **AnsweringMachineHangup**, and **NotAHandset** outcomes aren't available. In these cases, service representatives must classify whether the call reached an answering machine by using disposition codes.
 
-| Result | Description |
-|--------|-------------|
-| LiveAnswer | Answered by someone or something and interacted with AI agent. |
-| AnsweringMachine | Determined as answering machine. Left message or voicemail if AI agent has answering machine detection topic enabled and configured to leave a message. |
-| AnsweringMachineHangup | Determined as answering machine, AI agent hung up as configured in the topic and didn't leave a message or voicemail. |
-| Undetermined | Answered by someone or something but didn't interact or have a conversation with AI agent. |
-| NotAHandset | Detected as some tone such as SIT or FAX that indicates it's not a service representative or an answering machine. |
-| BotFailed | AI agent failed to get started or failed during conversation with customer where phone went off-hook. |
-| CallEnded | Preview dial mode call where customer phone went off-hook. |
-| Busy | Customer returned busy signal, as indicated by SIP diagnostic information or early media results from Azure Communication Services. Customer phone didn't go off the hook. |
-| NoAnswer | Customer phone dial resulted in no answer, SIP diagnostic information, or early media results from Azure Communication Services. Customer phone didn't go off the hook. |
-| InvalidAddress | Customer phone dial resulted in invalid address, as indicated by diagnostic information or early media results from Azure Communication Services. Customer phone didn't go off the hook. |
-| CallFailed | Customer phone didn't go off the hook and there was no SIP diagnostic information or early media results from Azure Communication Services. |
-| Terminated | Preview dial mode call where customer wasn't attempted to be engaged because no representative was available or accepted after launching the call and valid window to contact the customer ended by then. |
-| Unknown | Customer phone was attempted to be engaged, but there isn't enough information available about the attempt due to some error condition. |
-| Cancelled | Customer wasn't attempted to be engaged because there was a request to cancel the delivery. |
-| Expired | There was no more valid time window to engage the customer, or expiration date specified was in the past. Customer wasn't attempted to be engaged. |
+| Result | Description | SIP codes |
+|--------|-------------|-----------|
+| LiveAnswer | Answered by someone or something and interacted with AI agent. | |
+| AnsweringMachine | Determined as answering machine. Left message or voicemail if AI agent has answering machine detection topic enabled and configured to leave a message. | |
+| AnsweringMachineHangup | Determined as answering machine, AI agent hung up as configured in the topic and didn't leave a message or voicemail. | |
+| Undetermined | Answered by someone or something but didn't interact or have a conversation with AI agent. | |
+| NotAHandset | Detected as some tone such as SIT or FAX that indicates it's not a service representative or an answering machine. | |
+| BotFailed | AI agent failed to get started or failed during conversation with customer where phone went off-hook. | |
+| CallEnded | Preview dial mode call where customer phone went off-hook. | |
+| Busy | Customer returned busy signal, as indicated by SIP diagnostic information or early media results from Azure Communication Services. Customer phone didn't go off the hook. | 486 (Busy Here), 600 (Busy Everywhere) |
+| NoAnswer | Customer phone dial resulted in no answer, SIP diagnostic information, or early media results from Azure Communication Services. Customer phone didn't go off the hook. | 603 (Decline), 607 (Unwanted) |
+| InvalidAddress | Customer phone dial resulted in invalid address, as indicated by diagnostic information or early media results from Azure Communication Services. Customer phone didn't go off the hook. | 404 (Not Found), 410 (Gone), 484 (Address Incomplete), 485 (Ambiguous), 604 (Does Not Exist Anywhere) |
+| CallFailed | Customer phone didn't go off the hook and there was no SIP diagnostic information or early media results from Azure Communication Services. | 408 (Request Timeout), 480 (Temporarily Unavailable), 487 (Request Terminated), 500 (Server Internal Error), 502 (Bad Gateway), 503 (Service Unavailable), 504 (Server Time-out) |
+| NonRetriableError | A permanent error indicating a protocol or configuration issue. No reattempts are made. | 401 (Unauthorized), 405 (Method Not Allowed), 407 (Proxy Authentication Required), 415 (Unsupported Media Type), 488 (Not Acceptable Here), 501 (Not Implemented), 505 (Version Not Supported) |
+| Terminated | Preview dial mode call where customer wasn't attempted to be engaged because no representative was available or accepted after launching the call and valid window to contact the customer ended. | |
+| Unknown | Customer phone was attempted to be engaged, but there isn't enough information available about the attempt due to some error condition. | |
+| Cancelled | Customer wasn't attempted to be engaged because there was a request to cancel the delivery. | |
+| Expired | There was no more valid time window to engage the customer, or expiration date specified was in the past. Customer wasn't attempted to be engaged. | |
 | Error | Customer wasn't attempted to be engaged because of invalid configuration or data condition during the valid time window to engage with the customer. |
 
 ### [SMS](#tab/sms)

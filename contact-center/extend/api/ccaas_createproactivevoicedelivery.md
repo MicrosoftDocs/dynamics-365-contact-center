@@ -5,7 +5,7 @@ author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: reference
-ms.date: 04/09/2026
+ms.date: 06/05/2026
 ms.collection: bap-ai-copilot
 ms.custom: bap-template
 ---
@@ -14,7 +14,8 @@ ms.custom: bap-template
 
 You can use the `CCaaS_CreateProactiveVoiceDelivery` API to initiate proactive outbound voice calls to customers or allow customers to schedule callbacks through the Proactive Engagement Service.
 
-This API doesn't support proactive engagement features like reattempts and frequency capping. Use the [CCaaS_CreateProactiveDelivery](ccaas_createproactivedelivery.md) API for these functionalities.
+> [!NOTE]
+> This API doesn't support proactive engagement features like reattempts, contact windows, custom priority, and frequency capping. Use the [CCaaS_CreateProactiveDelivery](ccaas_createproactivedelivery.md) API if you want to leverage these features.
 
 > [!IMPORTANT]
 > If an organization is using the `CCaaS_CreateProactiveVoiceDelivery` API to initiate an outbound voice call, the organization is responsible for consent management, including the manual updating of "do not call lists" for setting quiet hours for customer contact. Make sure that the following conditions are met:
@@ -25,14 +26,6 @@ This API doesn't support proactive engagement features like reattempts and frequ
 
 - You must have the Omnichannel agent or Omnichannel supervisor role to call this API.
 - Proactive engagement is configured. Learn more in [Configure proactive engagement](../../administer/configure-proactive-engagement.md).
-
-## Initiate proactive outbound calls
-
-Proactive engagement enables organizations to enhance customer interactions by initiating outbound communications through the voice channel. You can configure proactive engagement using a Customer Insights journey or the `CCaaS_CreateProactiveVoiceDelivery`.
-
-The `CCaaS_CreateProactiveVoiceDelivery` API enables organizations to initiate proactive outbound voice calls to customers through the Proactive Engagement Service. The API triggers outbound voice calls through the Voice Runtime system. Calls are placed according to the configured dial mode either immediately (if no time windows are specified) or during the designated time windows you provide.
-
-This API allows contact centers to reach out to customers at the right time with relevant information, reminders, or notifications, enhancing customer experience while optimizing operational efficiency.
 
 ### Request Details
 

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 06/01/2026
+ms.date: 06/05/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -57,3 +57,9 @@ If you're migrating from another system, bulk upload opt-out records to import y
 ## How consent is enforced
 
 When you initiate a proactive delivery through any of the proactive engagement APIs, file upload or MCP endpoints, or through a Customer Insights journey, the system checks the customer's consent status before placing the call or sending the SMS message. If the customer opts out, the system doesn't initiate the delivery and marks the request accordingly.
+
+### Related information
+
+[Overview of proactive engagement](overview-proactive-engagement.md)  
+[Configure proactive engagement](configure-proactive-engagement.md)  
+

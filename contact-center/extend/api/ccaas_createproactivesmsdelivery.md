@@ -16,12 +16,12 @@ You can use the `CCaaS_CreateProactiveSMSDelivery` API to create a proactive out
 
 > [!IMPORTANT]
 >
-> - If an organization is using the `CCaaS_CreateProactiveSMSDelivery` API to initiate an outbound SMS message, the organization is responsible for consent management. Make sure that the following conditions are met:
+> - If an organization uses the `CCaaS_CreateProactiveSMSDelivery` API to initiate an outbound SMS message, your organization is responsible for consent management. Make sure that the following conditions are met:
 >   - Consent is obtained before contacting customers.
 >   - Customers are contacted during permitted hours only.
 
 > [!NOTE]
-> This API doesn't support proactive engagement features like re-attempts, contact windows, custom priority, and frequency capping. Use the [CCaaS_CreateProactiveDelivery](ccaas_createproactivedelivery.md) API if you want to leverage these features.
+> This API doesn't support proactive engagement features like reattempts, contact windows, custom priority, and frequency capping. We recommend the [CCaaS_CreateProactiveDelivery](ccaas_createproactivedelivery.md) API if you want to use these features.
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ You can use the `CCaaS_CreateProactiveSMSDelivery` API to create a proactive out
 | Key | Type | Required | Description |
 |-----|------|----------|-------------|
 | ApiVersion | String | Yes | The Omnichannel CCaaS API version. |
-| ProactiveEngagementConfigId | String | Yes | ID of the Proactive Engagement Configuration to use. This specifies the workstream to use. To get this ID, do the following steps: <ol><li>Go to [Power Apps](https://make.preview.powerapps.com) and select the required environment.</li><li>Select **Tables** > **Proactive Engagement Configuration**.</li><li>Select the ID of the required record.</li></ol> |
+| ProactiveEngagementConfigId | String | Yes | ID of the proactive engagement configuration to use. This specifies the workstream to use. To get this ID, do the following steps: <ol><li>Go to [Power Apps](https://make.preview.powerapps.com) and select the required environment.</li><li>Select **Tables** > **Proactive Engagement Configuration**.</li><li>Select the required record ID.</li></ol> |
 | DestinationPhoneNumber | String | Yes | Phone number of the customer to send the SMS message. |
 | Message | String | Yes | SMS message content to be sent to the recipient. |
 | InputAttributes | JSON object of key-value strings | No | Variables that can be referenced within Copilot agent flows to drive behavior changes or to look up information from Dataverse for personalization purposes. |

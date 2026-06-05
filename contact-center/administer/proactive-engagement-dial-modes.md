@@ -45,7 +45,7 @@ The predictive dial mode supports two engagement types:
 
 - **Service representative-led**: Service representatives are reserved and ready before calls are placed. When the customer answers, the system checks whether the call reached a voicemail. If it didn't, the reserved service representative is added to the call.
 
-Each engagement type uses a different algorithm to determine the number of calls to place at any moment. Both algorithms recalculate continuously in real time.
+Each engagement type uses a different algorithm to determine the number of calls to place at any moment. Both algorithms calculate continuously in real time.
 
 ### AI agent-led predictive algorithm
 
@@ -53,7 +53,7 @@ The algorithm continuously calculates the number of calls to place based on curr
 
 1. **Determine a base dialing rate**. The system estimates the number of calls it needs to place per available agent to produce one successful connection. For example, if only half of all dials result in a transfer to a service representative, the system places two calls per agent to compensate.
 
-1. **Adjust based on performance**. The base rate is scaled up or down depending on how the system is performing against configured thresholds for abandoned rate and customer wait time. If the system is within targets, the rate increases. If thresholds are exceeded, the rate decreases. Built-in limits prevent sudden swings and ensure smooth, gradual changes.
+1. **Adjust based on performance**. The base rate is adjusted depending on how the system is performing against configured thresholds for abandoned rate and customer wait time. If the system is within targets, the rate increases. If thresholds are exceeded, the rate decreases. Built-in limits prevent sudden swings and ensure smooth, gradual changes.
 
 1. **Calculate the number of calls to place**. The adjusted rate is multiplied by the number of available agents and the percentage of agent capacity allocated to the campaign. The result is the number of outbound calls placed at that moment.
 

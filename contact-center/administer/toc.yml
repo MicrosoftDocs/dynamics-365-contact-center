@@ -186,6 +186,8 @@
           href: configure-proactive-engagement.md
         - name: Configure agents for AI-led proactive engagement
           href: configure-agents-for-ai-led-proactive-engagement.md
+        - name: Manage consent for proactive engagement
+          href: proactive-engagement-manage-consent.md
         - name: References for proactive engagement
           items:
           - name: Dial modes
@@ -302,7 +304,7 @@
           items:
           - name: Real-time voice agents
             href: /microsoft-copilot-studio/voice-realtime-voice-agents?context=/dynamics365/contact-center/context/administer-context
-          - name: Overview of proactive engagment
+          - name: Overview of proactive engagement
             href: overview-proactive-engagement.md
         - name: Quality Assurance Agent
           href: use-quality-assurance-agent.md 

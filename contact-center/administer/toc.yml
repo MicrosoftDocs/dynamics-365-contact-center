@@ -307,7 +307,11 @@
           - name: Overview of proactive engagement
             href: overview-proactive-engagement.md
         - name: Quality Assurance Agent
-          href: use-quality-assurance-agent.md 
+          items:
+          - name: Use Quality Assurance Agent
+            href: use-quality-assurance-agent.md
+          - name: Configure quality and coaching skills
+            href: configure-quality-coach.md
         - name: Service Operations Agent (preview)
           items:
           - name: Use Service Operations Agent

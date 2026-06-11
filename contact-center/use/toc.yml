@@ -72,6 +72,14 @@
           href: /dynamics365/customer-service/use/voice-channel-transfer-consult?context=/dynamics365/contact-center/context/use-context
         - name: Monitor voice calls
           href: /dynamics365/customer-service/use/voice-channel-monitor-calls?context=/dynamics365/contact-center/context/use-context
+      - name: Use contact center agents
+        items:
+         - name: Overview of contact center Agents
+           href: ../administer/overview-contact-center-agents.md
+         - name: Quality Assurance Agent
+           items:
+            - name: Use quality and coaching skills
+              href: use-quality-coach.md 
       - name: Use autonomous service agents
         items:
         - name: Overview of autonomous service agents

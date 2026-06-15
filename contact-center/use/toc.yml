@@ -424,7 +424,7 @@
             href: workforce-management-use-shift-swapping.md
           - name: Use shift-based routing for work items
             href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/use-context
-          - name: Use the Schedule Calendar
+          - name: Use the schedule calendar
             href: /dynamics365/customer-service/use/use-agent-calendar?context=/dynamics365/contact-center/context/use-context
           - name: Use break distribution to assign breaks
             href: workforce-management-use-break-distribution.md
@@ -438,7 +438,7 @@
           items:
           - name: Use the adherence tracker
             href: workforce-management-adherence-tracker.md
-          - name: Use the Adherence History report
+          - name: Use the adherence history report
             href: workforce-management-use-adherence-history-report.md
     - name: Known issues in Customer Service and Dynamics 365 Contact Center
       href: https://go.microsoft.com/fwlink/p/?linkid=2165393

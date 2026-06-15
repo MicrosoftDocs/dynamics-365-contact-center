@@ -398,6 +398,8 @@
         href: /dynamics365/customer-service/use/cs-share-feedback?context=/dynamics365/contact-center/context/use-context
       - name: Workforce management
         items:
+        - name: Overview of Workforce Management
+          href: /dynamics365/customer-service/use/workforce-management-overview?context=/dynamics365/contact-center/context/use-context
         - name: Forecasting
           items: 
           - name: Create and manage forecast scenarios
@@ -432,8 +434,12 @@
             href: workforce-management-view-time-off-requests.md
           - name: Create a time-off request
             href: workforce-management-create-time-off-request.md
-        - name: Adherence tracker
-          href: workforce-management-adherence-tracker.md
+        - name: Intraday management
+          items:
+          - name: Use the adherence tracker
+            href: workforce-management-adherence-tracker.md
+          - name: Use the Adherence History report
+            href: workforce-management-use-adherence-history-report.md
     - name: Known issues in Customer Service and Dynamics 365 Contact Center
       href: https://go.microsoft.com/fwlink/p/?linkid=2165393
     - name: Responsible AI

@@ -1,5 +1,5 @@
 ﻿---
-title: Overview of agent hub
+title: Overview of agent hub for administrators
 description: Learn about the Agent hub in Dynamics 365 Contact Center and how it helps you manage all your autonomous agents in one place.
 author: neeranelli
 ms.author: nenellim
@@ -31,4 +31,3 @@ Agent hub provides a unified view of the following capabilities:
 ### Related information
 
 [Learn about autonomous service agents](autonomous-agents-overview.md)  
-

@@ -1,6 +1,6 @@
 ﻿---
 title: Autonomous service agents in Dynamics 365
-description: Learn about the autonomous agents in Dynamics 365 and how they can help in running your contact centers efficiently and resolving issues quickly.
+description: Discover autonomous agents in Dynamics 365 that streamline contact center operations and resolve customer issues faster.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 # Autonomous service agents in Dynamics 365
 
-Autonomous agents are intelligent tools designed to enhance customer service efficiency and effectiveness in Dynamics 365 Contact Center and Dynamics 365 Customer Service. With generative AI, they improve customer intent discovery and real-time knowledge management and support self-service and assisted scenarios.
+Autonomous agents are intelligent tools designed to enhance customer service efficiency and effectiveness in Dynamics 365 Contact Center and Customer Service. With generative AI, they improve customer intent discovery and real-time knowledge management and support self-service and assisted scenarios.
 
 ## Customer Intent Agent
 

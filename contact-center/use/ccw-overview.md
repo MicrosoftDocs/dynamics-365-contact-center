@@ -1,18 +1,18 @@
 ---
 title: Overview of Copilot Service workspace
-description: Learn how to use the Copilot Service workspace app in Dynamics 365 Contact Center.
+description: Learn how to use Copilot Service workspace to manage sessions, tabs, and customer conversations in Dynamics 365 Contact Center. Start using it now.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: 
-ms.date: 01/30/2026
+ms.date: 06/12/2026
 ms.custom: bap-template
 ---
 
 # Use Copilot Service workspace
 
-The Copilot Service workspace application is an agent-facing app in Dynamics 365 Contact Center that provides a powerful agent desktop with Copilot capabilities and collaboration tools across channels like live chat, SMS, voice, Microsoft Teams, and social channels. Copilot Service workspace connects to your organization's customer relationship manager (CRM) solution to provide contextual knowledge and customer data to assist agents in resolving customer queries. As an agent, you can have simultaneous customer sessions within the app without losing the context of each session. You can also use Copilot within Copilot Service workspace to ask questions pertaining to a case, removing the need to manually search across multiple knowledge sources.
+The Copilot Service workspace application is a representative-facing app in Dynamics 365 Contact Center that provides a powerful desktop with Copilot capabilities and collaboration tools across channels like live chat, SMS, voice, Microsoft Teams, and social channels. Copilot Service workspace connects to your organization's customer relationship manager (CRM) solution to provide contextual knowledge and customer data to assist agents in resolving customer queries. As a representative, you can have simultaneous customer sessions within the app without losing the context of each session. You can also use Copilot within Copilot Service workspace to ask questions pertaining to a case, removing the need to manually search across multiple knowledge sources.
 
 ## Prerequisites
 
@@ -24,14 +24,14 @@ The app is automatically installed in all the Dynamics 365 Contact Center organi
 
 ## Copilot Service workspace sessions and tabs
 
-Copilot Service workspace allows agents to work on multiple sessions at a time in a single app while keeping the work organized.
+Copilot Service workspace allows representatives to work on multiple sessions at a time in a single app while keeping the work organized.
 
-- Agents can work on up to nine sessions and within a session, they can open up to 10 tabs.
+- Representatives can work on up to nine sessions and within a session, they can open up to 10 tabs.
 
-- A new session starts when an agent opens a case from the **Home** session or accepts an incoming conversation.
-- If the agent opens the customer record from a session, a new tab opens in the same session. 
-- Agents can select the hamburger icon to access the site map. 
-- When an agent opens a page from the site map, the page loads in the current focused session.
+- A new session starts when a service representative opens a case from the **Home** session or accepts an incoming conversation.
+- If the agent opens the customer record from a session, a new tab opens in the same session.
+- Service representatives can select the hamburger icon to access the site map.
+- When a representative opens a page from the site map, the page loads in the current focused session.
 
 ### Navigate sessions and tabs
 
@@ -53,7 +53,7 @@ Copilot Service workspace allows agents to work on multiple sessions at a time i
 
 Use the resources in the following articles to learn how to use Copilot Service workspace.
 
-- [Introduction to the agent interface](/dynamics365/customer-service/use/oc-introduction-agent-interface?context=/dynamics365/contact-center/context/use-context)
+- [Introduction to the representative interface](/dynamics365/customer-service/use/oc-introduction-agent-interface?context=/dynamics365/contact-center/context/use-context)
 
 - [Manage sessions](/dynamics365/customer-service/use/oc-manage-sessions?context=/dynamics365/contact-center/context/use-context)
 - [Manage applications](/dynamics365/customer-service/use/oc-manage-applications?context=/dynamics365/contact-center/context/use-context)

@@ -6,11 +6,11 @@ brand: dynamics
 
 metadata:
   title: Dynamics 365 Contact Center
-  description: Discover how to make the most of Dynamics 365 Contact Center with training, docs, and videos covering product capabilities and how-to articles. Learn about the suite of capabilities that Dynamics 365 Contact Center provides, and make sure that your business delivers the best contact center experience to your customers.
+  description: Discover Dynamics 365 Contact Center capabilities with training, docs, and videos. Learn how to implement features and best practices for delivering excellent customer service.
   ms.topic: hub-page
   author: neeranelli
   ms.author: nenellim
-  ms.date: 11/10/2025
+  ms.date: 06/15/2026
   ms.custom: bap-template
   hide_bc: true
 
@@ -71,14 +71,16 @@ additionalContent:
         text: Configure the voice channel
       - url: administer/create-rollout-plans.md
         text: Create rollout plans to manage AI agents
-    - title: Configure connectors
-      links:
-      - url: administer/configure-salesforce-connector.md
-        text: Configure the connector for Salesforce     
-      - url: extend/configure-servicenow-connector.md
-        text: Configure the connector for ServiceNow
       - url: extend/configure-custom-connector.md
-        text: Configure a connector for any CRM solution
+        text: Configure a connector for any CRM solution  
+    - title: Use contact center agents
+      links:
+      - url: administer/use-service-operations-agent.md
+        text: Use Service Operations Agent     
+      - url: administer/configure-proactive-engagement.md
+        text: Configure proactive engagement
+      - url: administer/configure-quality-coach.md
+        text: Configure quality and coaching skills  
     - title: Configure AI features
       links:
       - url: administer/configure-copilot-features.md
@@ -124,8 +126,8 @@ additionalContent:
         text: Ask a question in Copilot
     - title: Get insights and analyze contact center operations 
       links:
-      - url: use/copilot-analytics-report.md
-        text: View Copilot analytics report
+      - url: use/diagnose-dashboard.md
+        text: Diagnose contact center health using Application Insights dashboard
       - url: /dynamics365/customer-service/use/realtime-summary-dashboard?context=/dynamics365/contact-center/context/use-context
         text: View summary report in real-time analytics
       - url: /dynamics365/customer-service/use/customize-reports?context=/dynamics365/contact-center/context/use-context

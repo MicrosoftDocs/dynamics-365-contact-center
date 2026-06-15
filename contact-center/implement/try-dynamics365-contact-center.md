@@ -1,6 +1,6 @@
 ---
 title: Sign up for a free trial&mdash;Dynamics 365 Contact Center
-description: Learn how to quickly sign up for and start a free Dynamics 365 Contact Center trial. Explore the app with tours and videos, and find other learning resources.
+description: Start a free Dynamics 365 Contact Center trial in minutes, explore key features with sample data, and use guided resources to get started today.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
@@ -26,7 +26,7 @@ To sign up for the trial:
 
 The trial takes a few moments to load, then you can start using Contact Center.
 
-## What to try?
+## What to try in the Dynamics 365 Contact Center trial
 
 The trial environment includes many of the same features as the paid version. The following links guide you through using some of the key features.
 

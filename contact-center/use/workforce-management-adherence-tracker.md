@@ -6,17 +6,17 @@ ms.author: gopalyuvaraj
 ms.reviewer: laalexan
 ms.topic: how-to 
 ms.collection: 
-ms.date: 02/27/2026
+ms.date: 06/15/2026
 ms.custom: bap-template
 ---
 
-# Use the Adherence Tracker
+# Use the adherence tracker
 
 ## Overview
 
-The Adherence Tracker helps supervisors monitor the activities of customer service representatives (service representatives or representatives) against their scheduled shifts in real time. This tracker enables the early detection of adherence deviations, allowing supervisors to take proactive actions to maintain service levels and operational efficiency.
+The adherence tracker helps supervisors monitor the activities of customer service representatives (service representatives or representatives) against their scheduled shifts in real time. This tracker enables the early detection of adherence deviations, so supervisors can take proactive actions to maintain service levels and operational efficiency.
 
-Use the Adherence Tracker to ensure that service representatives are where they need to be&mdash;whether working queues, on break, or attending training sessions&mdash;according to the planned schedule.
+Use the adherence tracker to ensure that service representatives are where they need to be - whether working queues, on break, or attending training sessions - according to the planned schedule.
 
 ## Prerequisites
 

@@ -136,6 +136,8 @@
             href: workforce-management-configure-forecast-scenarios.md
           - name: Enable capacity planning
             href: workforce-management-configure-capacity-planning.md
+          - name: Enable adherence historical analytics
+            href: workforce-management-enable-adherence-historical-analytics.md
         - name: Shift and schedule management
           items: 
           - name: Enable shift activity types

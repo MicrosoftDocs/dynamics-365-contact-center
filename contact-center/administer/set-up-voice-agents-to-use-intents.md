@@ -115,5 +115,5 @@ To recreate the IVR workflows, the voice agent needs to access the connectors th
 ### Related information
 
 [Overview of Customer Intent Agent](overview-customer-intent-agent.md)  
-[Configure intent-based routing](/dynamics365/customer-service/administer/configure-intent-based-routing?context=/dynamics365/contact-center/context/administer-context)  
+[Configure intent-driven routing](/dynamics365/customer-service/administer/configure-intent-driven-routing?context=/dynamics365/contact-center/context/administer-context)  
 [Configure intent-based suggestions for Copilot agents](set-up-intent-agent.md)  

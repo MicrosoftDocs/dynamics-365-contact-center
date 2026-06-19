@@ -318,7 +318,7 @@
           items:
           - name: Use Service Operations Agent
             href: use-service-operations-agent.md
-          - name: Configure conversation orchestration using AI-powered playbooks
+          - name: Configure conversation orchestration using natural language playbooks
             href: configure-conversation-orchestration.md
       - name: Autonomous service agents
         items:

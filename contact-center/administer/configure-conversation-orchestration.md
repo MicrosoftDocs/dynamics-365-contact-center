@@ -10,15 +10,15 @@ ms.topic: how-to
 ms.collection: bap-ai-copilot
 ---
 
-# Configure conversation orchestration using AI-powered playbooks (preview)
+# Configure conversation orchestration by using natural language playbooks (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Conversation orchestration keeps every conversation actively managed throughout the conversation lifecycle from initiation through resolution. Instead of applying fixed rules at different stages of conversation journey, conversation orchestration monitors each conversation as the conditions evolve&mdash;increase in wait time, filling up of the queues, service representatives going offline&mdash; and responds automatically with the right action. Administrators define the conversation orchestration logic using natural-language playbooks, and conversation orchestration handles the execution.
+Conversation orchestration keeps every conversation actively managed throughout the conversation lifecycle from initiation through resolution. Conversation orchestration monitors each conversation as conditions evolve, such as an increase in wait time, queues filling up, or service representatives going offline, and automatically runs the relevant action in accordance with your configured playbooks. Administrators define the logic by using natural-language playbooks, and conversation orchestration handles the execution. When you publish a playbook, the system converts your natural language playbooks into a structured runtime format.
 
 In the preview release, conversation orchestration is available for voice and live chat channels only.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 ## Prerequisites
 
@@ -29,23 +29,6 @@ In the preview release, conversation orchestration is available for voice and li
 - At least one [queue](/dynamics365/customer-service/administer/queues-omnichannel?context=/dynamics365/contact-center/context/administer-context) and [workstream](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context) is configured for voice or messaging channels.
 - A voice or messaging channel is configured.
 
-## Understand playbooks
-
-Configure playbooks per scenario through guided templates that keep instructions focused and reliable. A playbook consists of a trigger event and a set of conditions and actions to run when the trigger event occurs.
-
-- **Queues**: The queues for which the playbook applies.
-- **Trigger event**: The event that initiates the playbook, such as a conversation waiting in queue or conversation transferred.
-- **Channel**: The channel that you select in the **Queues** dialog. The context variables that appear are based on the selected channel. If you update the channel in a draft playbook, then you have to update the applicable context variables and the corresponding prompt.
-- **Conditions**: Business rules based on context variables, such as customer tier or country/region. You can define up to 10 conditions to configure the granularity. These conditions can have up to two context variables.
-- **Actions**: The outcomes when conditions are met, such as increasing priority or transferring to an overflow queue.
-
-A playbook can have one of the following statuses.
-
-| Status | Description |
-|--------|-------------|
-| **Draft** | The playbook is saved but not active. You can make changes freely. |
-| **Active** | The playbook is published and actively orchestrates conversations. |
-
 ## Supported scenarios
 
 The supported scenarios are as follows:
@@ -55,9 +38,26 @@ The supported scenarios are as follows:
   - Update priority based on transfer to queue
   - Escalate priority based on conversation wait time
 
-- [**Overflow handling**](/dynamics365/customer-service/administer/manage-overflow#use-ai-powered-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview):
+- [**Overflow handling**](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview):
 
-  - Overflow based on support representative availability in the queue
+  - Overflow based on support representative availability in the queue, sign in status, and queue operating hours.
+
+## Understand playbooks
+
+Configure playbooks per scenario through guided templates that keep instructions focused and reliable. A playbook consists of a trigger event and a set of conditions and actions to run when the trigger event occurs.
+
+- **Queues**: The queues for which the playbook applies.
+- **Trigger event**: The event that initiates the playbook, such as a conversation waiting in queue or conversation transferred.
+- **Channel**: The channel that you select in the **Queues** dialog. The context variables that appear are based on the selected channel. If you update the channel in a draft playbook, then you must update the applicable context variables and the corresponding prompt.
+- **Conditions**: Business rules based on context variables, such as customer tier or country/region. You can define up to 10 conditions to configure the granularity. These conditions can have up to two context variables.
+- **Actions**: The outcomes when conditions are met, such as increasing priority or transferring to an overflow queue.
+
+A playbook can have one of the following statuses.
+
+| Status | Description |
+|--------|-------------|
+| **Draft** | The playbook is saved but not active. You can make changes freely. |
+| **Active** | The playbook is published and actively orchestrates conversations. |
 
 ## Manage playbooks
 
@@ -76,6 +76,8 @@ By default, the conversation orchestration page displays three popular prompts. 
       - **Escalate priority based on wait time**: For wait time-based dynamic or real-time prioritization.
       - **Escalate priority based on transfer to queue**: For transfer-based prioritization.
    - Overflow handling:
+      - **Configure overflow when queue goes out of operating hours**: For out of operating hours overflow.
+      - **Configure overflow when all users are logged out**: For all representatives in the queue are signed out overflow.
       - **Configure overflow based on support representative availability in the queue**: For representative availability overflow.
 
 1. In the playbook editor, accept the default name or enter a name in **Playbook name**.
@@ -98,6 +100,9 @@ By default, the conversation orchestration page displays three popular prompts. 
 1. Select **Save**. The playbook is saved as a draft.
 
 1. Review your configuration for any validation warnings, and then select **Publish** to activate the playbook.
+
+> [!NOTE]
+> Administrators configure natural language playbooks. The system uses a language model to convert them to a structured runtime format. The system uses the resulting runtime format to perform playbook actions. Because the system uses a language model to convert playbooks into a structured runtime format, the converted output might not fully capture the intended playbook logic. Any deviations can be identified only during runtime. Administrators should test and monitor runtime behavior and revise the playbook if orchestration doesn't work as intended.
 
 ### Edit a playbook
 
@@ -186,7 +191,7 @@ Although both playbooks target Gold-tier customers, they differ in their trigger
 
 **Result**: The system runs the dynamic prioritization playbook only.
 
-**Scenario 2: No agents available at entry**
+**Scenario 2: No agents available when work item enters the queue**
 
 1. A conversation enters the queue. No agents are available. The overflow condition is met immediately. The overflow action is triggered (for example, redirect to voicemail or another queue).
 1. If the conversation:
@@ -214,5 +219,5 @@ To help you monitor and troubleshoot your playbooks, conversation orchestration 
 [Create and manage queues](/dynamics365/customer-service/administer/queues-omnichannel)  
 [Configure context variables](/dynamics365/customer-service/administer/manage-context-variables)  
 [Dynamic prioritization scenarios](/dynamics365/customer-service/administer/assignment-methods#how-dynamic-prioritization-works)  
-[Overflow scenario](/dynamics365/customer-service/administer/manage-overflow#use-ai-powered-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview)  
-[Conversation orchestration: Responsible AI FAQ ](../implement/conversation-orchestration-rai-faq.md)  
+[Overflow scenario](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview)  
+[Conversation orchestration: Responsible AI FAQ](../implement/conversation-orchestration-rai-faq.md)  

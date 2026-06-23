@@ -290,6 +290,20 @@
           href: /dynamics365/customer-service/use/join-a-teams-call?context=/dynamics365/contact-center/context/use-context
       - name: Analytics dashboards and insights
         items: 
+        - name: Use real-time streaming analytics (preview)
+          items:
+          - name: Overview of real-time streaming analytics
+            href: realtime-streaming.md
+          - name: Monitor real-time metrics with Wallboard View
+            href: realtime-streaming-wallboard.md
+          - name: Use real-time assisted service
+            href: realtime-streaming-assisted-service.md
+          - name: Monitor queue metrics and performance
+            href: realtime-streaming-queues.md
+          - name: Monitor representatives in real time
+            href: realtime-streaming-representatives.md
+          - name: Monitor conversations in real time
+            href: realtime-streaming-conversations.md
         - name: Use real-time analytics dashboards
           items:
           - name: Overview of real-time analytics reports

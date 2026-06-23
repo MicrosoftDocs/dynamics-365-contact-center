@@ -320,6 +320,8 @@
             href: use-service-operations-agent.md
           - name: Configure conversation orchestration using natural language playbooks
             href: configure-conversation-orchestration.md
+          - name: Use AI-generated conversations for agentic simulations
+            href: configure-simulation-agent.md 
       - name: Autonomous service agents
         items:
         - name: Overview of autonomous service agents

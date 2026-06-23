@@ -99,3 +99,4 @@ Use clear, detailed prompts, and explicitly specify the relevant channel or topi
 
 [Overview of autonomous service agents](autonomous-agents-overview.md)   
 [Customer Intent Agent](overview-customer-intent-agent.md)   
+[Use AI-generated conversations for agentic simulations](configure-simulation-agent.md)  

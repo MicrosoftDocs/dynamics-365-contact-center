@@ -43,32 +43,26 @@ Before you use real-time streaming analytics, make sure that the following requi
 
 Sign in to your org. Access the dashboards by using the https://supervisor-preview URL. Depending on your environment type (production or first release) and your organization's region, use one of the following links.
 
-|URL |Environment  |
-|---------|---------|
-|portal.us.fre.contactcenterai.powerplatform.com/experience/supervisor     |    FRE     |
-|portal.eu.fre.contactcenterai.powerplatform.com/experience/supervisor     |    FRE     |
-|portal.ca.fre.contactcenterai.powerplatform.com/experience/supervisor  |    FRE     |
-|portal.au.fre.contactcenterai.powerplatform.com/experience/supervisor     |    FRE     |
-|portal.ae.contactcenterai.powerplatform.com/experience/supervisor    |   PROD      |
-|portal.as.contactcenterai.powerplatform.com/experience/supervisor    |     PROD    |
-|portal.au.contactcenterai.powerplatform.com/experience/supervisor     |   PROD      |
-|portal.br.contactcenterai.powerplatform.com/experience/supervisor    |    PROD     |
-|portal.ca.contactcenterai.powerplatform.com/experience/supervisor    |    PROD     |
-|portal.ch.contactcenterai.powerplatform.com/experience/supervisor     |  PROD       |
-|portal.de.contactcenterai.powerplatform.com/experience/supervisor    |  PROD       |
-|portal.eu.contactcenterai.powerplatform.com/experience/supervisor    |   PROD      |
-|portal.fr.contactcenterai.powerplatform.com/experience/supervisor     |  PROD       |
-|portal.in.contactcenterai.powerplatform.com/experience/supervisor    |    PROD     |
-|portal.it.contactcenterai.powerplatform.com/experience/supervisor     |  PROD       |
-|portal.jp.contactcenterai.powerplatform.com/experience/supervisor    | PROD        |
-|portal.kr.contactcenterai.powerplatform.com/experience/supervisor     |    PROD     |
-|portal.no.contactcenterai.powerplatform.com/experience/supervisor    |    PROD     |
-|portal.pl.contactcenterai.powerplatform.com/experience/supervisor     |    PROD     |
-|portal.se.contactcenterai.powerplatform.com/experience/supervisor    |    PROD     |
-|portal.sg.contactcenterai.powerplatform.com/experience/supervisor     |   PROD      |
-|portal.uk.contactcenterai.powerplatform.com/experience/supervisor     |   PROD      |
-|portal.us.contactcenterai.powerplatform.com/experience/supervisor    | PROD        |
-|portal.za.contactcenterai.powerplatform.com/experience/supervisor    |  PROD       |
+|URL |Environment  |  GEO  |
+|---------|---------|----------|
+|portal.us.fre.contactcenterai.powerplatform.com/experience/supervisor     |    FRE     | United States|
+|portal.eu.fre.contactcenterai.powerplatform.com/experience/supervisor     |    FRE     | Europe|
+|portal.ca.fre.contactcenterai.powerplatform.com/experience/supervisor  |    FRE     | Canada |
+|portal.au.fre.contactcenterai.powerplatform.com/experience/supervisor     |    FRE     | Australia |
+|portal.as.contactcenterai.powerplatform.com/experience/supervisor    |     PROD    | Asia |
+|portal.au.contactcenterai.powerplatform.com/experience/supervisor     |   PROD      | Australia |
+|portal.br.contactcenterai.powerplatform.com/experience/supervisor    |    PROD     | Brazil |
+|portal.ca.contactcenterai.powerplatform.com/experience/supervisor    |    PROD     | Canada |
+|portal.eu.contactcenterai.powerplatform.com/experience/supervisor    |   PROD      | Europe |
+|portal.fr.contactcenterai.powerplatform.com/experience/supervisor     |  PROD       | France |
+|portal.de.contactcenterai.powerplatform.com/experience/supervisor    |  PROD       | Germany|
+|portal.in.contactcenterai.powerplatform.com/experience/supervisor    |    PROD     | India |
+|portal.jp.contactcenterai.powerplatform.com/experience/supervisor    | PROD        | Japan |
+|portal.ch.contactcenterai.powerplatform.com/experience/supervisor     |  PROD       | Switzerland|
+|portal.ae.contactcenterai.powerplatform.com/experience/supervisor    |   PROD      | United Arab States|
+|portal.uk.contactcenterai.powerplatform.com/experience/supervisor     |   PROD      |United Kingdom |
+|portal.us.contactcenterai.powerplatform.com/experience/supervisor    | PROD        | United States |
+
 
 ## Top navigation tabs
 

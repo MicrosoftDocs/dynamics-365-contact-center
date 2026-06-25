@@ -46,7 +46,7 @@
             href: /dynamics365/customer-service/administer/assignment-methods?context=/dynamics365/contact-center/context/administer-context
           - name: Configure assignment methods for queues
             href: /dynamics365/customer-service/administer/configure-assignment-rules?context=/dynamics365/contact-center/context/administer-context
-          - name: Configure routing to preferred agents
+          - name: Configure routing to preferred or previously engaged representatives
             href: /dynamics365/customer-service/administer/configure-preferred-agent?context=/dynamics365/contact-center/context/administer-context
           - name: Manage overflow of work items in queues
             href: /dynamics365/customer-service/administer/manage-overflow?context=/dynamics365/contact-center/context/administer-context

@@ -4,7 +4,7 @@ description: Learn how to manage intelligent conversation routing with conversat
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 05/29/2026
+ms.date: 06/25/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
@@ -41,6 +41,10 @@ The supported scenarios are as follows:
 - [**Overflow handling**](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview):
 
   - Overflow based on support representative availability in the queue, sign in status, and queue operating hours.
+
+- [**Assign to a preferred or previously engaged representative**](/dynamics365/customer-service/administer/configure-preferred-agent#assign-to-a-previously-engaged-or-preferred-expert-by-using-conversation-orchestration-playbooks-preview):
+
+  - Reconnect customers with a preferred or a previously engaged expert for context continuity and optimal service
 
 ## Understand playbooks
 
@@ -79,6 +83,8 @@ By default, the conversation orchestration page displays three popular prompts. 
       - **Configure overflow when queue goes out of operating hours**: For out of operating hours overflow.
       - **Configure overflow when all users are logged out**: For all representatives in the queue are signed out overflow.
       - **Configure overflow based on support representative availability in the queue**: For representative availability overflow.
+   - Assign to a predicted expert:
+      - **Assign to a previous or preferred expert**: For a preferred expert or expert who previously interacted with the customer.
 
 1. In the playbook editor, accept the default name or enter a name in **Playbook name**.
 1. Select **Queues** > **Edit** to open the queues pane.
@@ -208,6 +214,8 @@ Although both playbooks target Gold-tier customers, they differ in their trigger
 | Priority hasn't increased as expected | Confirm the time interval setting, verify context variable values match your conditions, and check that the conversation is in a queue where the playbook is active. Also verify that the queue doesn't have custom prioritization rules configured. |
 | Overflow isn't triggered | Verify agent availability settings (presence, capacity, skills), check that the "no agents available" condition is being met, and ensure the playbook is active for the correct queue. |
 | Dynamic prioritization isn't being applied to a queue | The queue might have custom prioritization rules configured. Remove the custom prioritization configuration from the queue settings to enable dynamic prioritization. |
+| Assignment to a previously interacted representative didn't occur |Verify the queue membership and presence status of the previous representatives and check if their last interactions with the customer was within the configured recency window.|
+| Assignment to a preferred representative didn't occur | Verify the contact for preferred representative mapping in Copilot Service admin center. Check whether the preferred representative is a member of the queue where the new conversation is routed and has an allowed presence status.|
 
 ## View diagnostics using a custom query
 
@@ -219,5 +227,6 @@ To help you monitor and troubleshoot your playbooks, conversation orchestration 
 [Create and manage queues](/dynamics365/customer-service/administer/queues-omnichannel)  
 [Configure context variables](/dynamics365/customer-service/administer/manage-context-variables)  
 [Dynamic prioritization scenarios](/dynamics365/customer-service/administer/assignment-methods#how-dynamic-prioritization-works)  
+[Assign to preferred or previously interacted representatives](/dynamics365/customer-service/administer/configure-preferred-agent)  
 [Overflow scenario](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview)  
 [Conversation orchestration: Responsible AI FAQ](../implement/conversation-orchestration-rai-faq.md)  

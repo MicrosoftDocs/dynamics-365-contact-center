@@ -174,6 +174,18 @@
           href: /dynamics365/customer-service/develop/suggested-actions?context=/dynamics365/contact-center/context/extend-context
         - name: Pass authentication token to AI agent during single sign-on in live chat
           href: /dynamics365/customer-service/develop/pass-auth-token-sso-live-chat?context=/dynamics365/contact-center/context/extend-context
+      - name: Metrics and queries
+        items:
+        - name: Calculate conversation metrics
+          href: /dynamics365/customer-service/develop/calculate-conversation-metrics?context=/dynamics365/contact-center/context/extend-context
+        - name: Calculate session metrics
+          href: /dynamics365/customer-service/develop/calculate-session-metrics?context=/dynamics365/contact-center/context/extend-context
+        - name: Calculate representative metrics
+          href: /dynamics365/customer-service/develop/calculate-representative-metrics?context=/dynamics365/contact-center/context/extend-context
+        - name: Calculate segment-based queue metrics
+          href: calculate-segment-metrics.md
+        - name: Use msdyn_queueextension to calculate segement-based queue metrics
+          href: msdyn-queueextension.md
       - name: Presence
         items:
         - name: Synchronize presence status across multiple systems for representatives

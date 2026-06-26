@@ -164,6 +164,18 @@
       "source_path": "contact-center/use/wfm-view-time-off-requests.md",
       "redirect_url": "/contact-center/use/workforce-management-view-time-off-requests",
       "redirect_document_id": "false"
+    },
+     {
+    
+      "source_path": "contact-center/use/realtime-evaluation-plan.md",
+      "redirect_url": "/contact-center/use/use-quality-coach",
+      "redirect_document_id": "false"
+    },
+     {
+    
+      "source_path": "contact-center/use/ongoing-quality-evaluation-agent-conversations.md",
+      "redirect_url": "/contact-center/use/use-quality-coach",
+      "redirect_document_id": "false"
     }
 
   ]

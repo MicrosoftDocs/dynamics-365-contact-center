@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: overview
 ms.collection: bap-ai-copilot
-ms.date: 05/11/2026
+ms.date: 06/26/2026
 ms.custom: bap-template
 ---
 
@@ -31,6 +31,7 @@ Delivers quality, compliance, and coaching insights to ensure interactions meet 
 - Monitor and evaluate conversations for quality issues in real time
 - Evaluate the net conversation quality after conversation is over
 - Enable supervisors to monitor and act on conversations with quality issues through timely alerts
+- Deliver real-time coaching nudges powered by live quality scoring for immediate improvement in customer experience
 
 ## Service Operations Agent (preview)
 

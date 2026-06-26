@@ -61,8 +61,7 @@ You must enable the **Enable bulk evaluations** checkbox in Copilot Service admi
             - **Occurrence**: Select **Daily**.
             - **Start date**: Specify the start date for the plan.
             - **End date**: Specify the end date for the plan.
-        1. If you select the **Frequency type** as **Trigger**, then select the **Evaluation Trigger Config** as **Default Trigger Config for Resolved Cases**. This selection creates trigger-based evaluations for resolved cases only.
-
+        
     1.  In the **Conditions** section, select **Add** to add conditions to your evaluation plan. For example, Add **Conversation status**> **Equals** > **Closed** or add **Channel type > Contains data > Live chat.**
 
     1.  In the **Assign evaluation** section, provide the following:

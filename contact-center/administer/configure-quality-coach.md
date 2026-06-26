@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 06/09/2026
+ms.date: 06/25/2026
 ms.custom: bap-template
 ai-usage: ai-assisted
 ---
@@ -96,7 +96,7 @@ The **Quality library** lists all quality indicators and guardrails available in
          - Optionally, add instructions for the AI agent to improve evaluation accuracy.
 1. Save the changes. On **Quality and coaching**, activate the quality indicator to use it in evaluation plans.
 
-:::image type="content" source="../media/quality-coaching-quality-indicators.png" alt-text="Screenshot of the quality indicators." lightbox="../media/quality-coaching-quality-indicators.png":::
+   :::image type="content" source="../media/quality-coaching-quality-indicators.png" alt-text="Screenshot of the quality indicators." lightbox="../media/quality-coaching-quality-indicators.png":::
 
 ### Manage a guardrail
 
@@ -111,7 +111,7 @@ The **Quality library** lists all quality indicators and guardrails available in
 
 1. Save the changes. On **Quality and coaching**, activate the guardrail to use it in evaluation plans.
 
-:::image type="content" source="../media/quality-coaching-guardrails.png" alt-text="Screenshot of guardrails." lightbox="../media/quality-coaching-guardrails.png":::
+    :::image type="content" source="../media/quality-coaching-guardrails.png" alt-text="Screenshot of guardrails." lightbox="../media/quality-coaching-guardrails.png":::
 
 ## Best practices
 

@@ -4,7 +4,7 @@ description: Learn how to manage intelligent conversation routing with conversat
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 06/25/2026
+ms.date: 06/30/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
@@ -38,9 +38,10 @@ The supported scenarios are as follows:
   - Update priority based on transfer to queue
   - Escalate priority based on conversation wait time
 
-- [**Overflow handling**](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview):
+- **Overflow handling**:
 
-  - Overflow based on support representative availability in the queue, sign in status, and queue operating hours.
+  - [Overflow based on support representative availability in the queue, sign in status, and queue operating hours](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview)
+  - [Handle overflow for direct inward dialled calls when a representative isn't available](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-direct-inward-dialled-calls-preview)
 
 - [**Assign to a preferred or previously engaged representative**](/dynamics365/customer-service/administer/configure-preferred-agent#assign-to-a-previously-engaged-or-preferred-expert-by-using-conversation-orchestration-playbooks-preview):
 
@@ -83,6 +84,7 @@ By default, the conversation orchestration page displays three popular prompts. 
       - **Configure overflow when queue goes out of operating hours**: For out of operating hours overflow.
       - **Configure overflow when all users are logged out**: For all representatives in the queue are signed out overflow.
       - **Configure overflow based on support representative availability in the queue**: For representative availability overflow.
+      - **Handle overflow for direct inward dialed call**: For overflow conditions when representative isn't available to take a direct inward dialed call.
    - Assign to a predicted expert:
       - **Assign to a previous or preferred expert**: For a preferred expert or expert who previously interacted with the customer.
 

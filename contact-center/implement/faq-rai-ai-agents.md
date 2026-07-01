@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 06/01/2026
+ms.date: 06/30/2026
 ms.update-cycle: 180-days
 ms.custom: 
 - bap-template
@@ -76,7 +76,7 @@ Quality Evaluation Agent helps organizations make sure that every customer engag
 
 **Actionable insights that drive improvement**: The AI agent provides evaluation summaries, quality scores, and coaching recommendations to help supervisors find gaps, guide representative development, and improve service standards.
 
-**Governance policies**: The AI-powered rule-based system acts as a safeguard layer on top of other AI agents and human-authored communications such as email. The system intercepts outbound content and evaluates it against predefined guardrail policies before sending it to the customer. If the output violates a policy, it can log activity or block the message to prevent noncompliant results from reaching end users based on the policy configured.
+**Governance policies**: The AI-powered rule-based system acts as a safeguard layer on top of other AI agents and human-authored communications such as email. The system intercepts outbound email body and attachments, evaluates them against predefined guardrail policies, and then sends the email to the customer if it meets the policy requirements. If the output violates a policy, it can log activity or block the message to prevent noncompliant results from reaching end users based on the policy configured.
 
 ### Quality Assurance Agent
 
@@ -102,7 +102,7 @@ These AI agents are designed to:
 
 - Automatically extract and populate the relevant case and related entity fields from customer emails and chats to reduce manual data entry for customer service representatives. This automation helps ensure that the case information is complete right from case creation.
 
-- Evaluate customer support interactions using your organization’s evaluation criteria. Governance policies enforce guardrail policies on emails. Supervisors manage these policies. The policies apply to emails sent by Case Management Agent (autonomous flow) and emails composed by customer service representatives. The capability is available with initial support for the email channel, where compliance risk and brand impact are the highest.
+- Evaluate customer support interactions using your organization’s evaluation criteria. Governance policies enforce guardrail policies on email body and attachments. Supervisors manage these policies. The policies apply to emails sent by Case Management Agent (autonomous flow) and emails composed by customer service representatives. The capability is available with initial support for the email channel, where compliance risk and brand impact are the highest.
 
 - Support quality and compliance in customer interactions. Quality Assurance Agent enables organizations to monitor conversations, provide real-time feedback to agents during live engagements, enforce organizational and regulatory guardrails, and ultimately improve overall customer service outcomes.
 

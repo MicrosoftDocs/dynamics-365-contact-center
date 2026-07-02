@@ -46,6 +46,14 @@
             href: api/ccaas_canceldeliverytask.md
           - name: Use CCaaS_CreateProactiveSMSDelivery API
             href: api/ccaas_createproactivesmsdelivery.md
+          - name: Use CCaaS_CancelDeliveryTask API
+            href: api/ccaas_canceldeliverytask.md
+          - name: Use CCaaS_CreateProactiveBulkDelivery API
+            href: api/ccaas_createproactivebulkdelivery.md
+          - name: Use CCaaS_CreateSimpleProactiveDelivery API
+            href: api/ccaas_createsimpleproactivedelivery.md
+          - name: Use CCaaS_GetDeliveryTasks API
+            href: api/ccaas_getdeliverytasks.md  
         - name: Presence APIs
           items:
           - name: CCaaS_GetPresence

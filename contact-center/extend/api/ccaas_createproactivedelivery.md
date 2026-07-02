@@ -5,7 +5,7 @@ author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: reference
-ms.date: 06/05/2026
+ms.date: 07/01/2026
 ms.collection: bap-ai-copilot
 ms.custom: bap-template
 ---
@@ -13,6 +13,8 @@ ms.custom: bap-template
 # Use CCaaS_CreateProactiveDelivery API
 
 You can use the `CCaaS_CreateProactiveDelivery` API to initiate proactive outbound voice calls and SMS messages to customers through the Proactive Engagement service.
+
+[!INCLUDE [proactive-api-guidance](../../includes/proactive/cc-proactive-api-guidance.md)]
 
 > [!IMPORTANT]
 >

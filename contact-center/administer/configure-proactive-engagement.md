@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 05/05/2026
+ms.date: 07/01/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -135,6 +135,8 @@ The dial modes determine how the system places outbound calls to customers. Lear
    - **Manual**: The service representative must manually start the call after reviewing customer details.
        > [!NOTE]
        > Timer and delayed start are available on Teams Phone Extensibility only. If you're using Azure Communication Services, preview calls start automatically after the representative accepts the invite.
+
+   - **Skip CSR availability checks**: Select this option if you want preview calls to be added to the routing backlog irrespective of representative availability. By default, proactive engagement queues preview calls proportional to the number of available representatives, accounting for calls that are already in waiting. If selected, specify a **Maximum number of conversations in waiting** value. You can specify up to 50.
 
 1. For AI agent-led predictive dial mode, configure the **Call settings**:
    - Select the action for how the call needs to be handled if the AI agent fails during the call.
@@ -328,6 +330,36 @@ You can cancel pending calls and optionally suppress future calls that match def
 
 > [!NOTE]
 > Cancellation applies to queued calls only. You can also trigger cancellation and suppression through the CCaaS API. Learn more in [Use CCaaS_CreateProactiveVoiceDelivery API](../extend/api/ccaas_createproactivevoicedelivery.md).
+
+## Requirements for direct routing
+
+If your organization uses direct routing for telephony, the following configuration requirements apply to representative-led progressive and predictive dial modes. These requirements ensure that the Session Border Controller (SBC) can handle the call-transfer scenarios that progressive and predictive dialing rely on.
+
+### SBC interoperability requirements
+
+- **RFC 3891 Replaces: header support**: The SBC must accept INVITE messages that contain both the `Require: replaces` header and the `Replaces` header. This capability is essential for the mid-call transfer flows used in progressive and predictive dial modes.
+- **Standard direct routing interoperability**: The SBC must support RFC 3325 handling for `P-Asserted-Identity` with Privacy ID, along with other direct routing SIP requirements relevant to your deployment.
+- **TLS and SIP trust alignment**: The SBC trust store must include all supported root certificate authorities (CAs) for Teams SIP interface certificates. Teams SIP interface client and server certificates can chain to any one of the supported root CAs, so the SBC trust store must include all supported roots.
+
+### Oracle SBC configuration guidance for Replaces
+
+For Oracle SBC deployments, Replaces support is driven by `sip-profile` configuration. Replaces header support is configured by applying a SIP profile to a session-agent, realm, or SIP interface. The `replace-dialogs` parameter is the key control.
+
+Oracle-documented ACLI sequence (core parameter only):
+
+```text
+configure terminal
+session-router
+sip-profile
+  replace-dialogs enabled
+done
+```
+
+> [!NOTE]
+> After enabling `replace-dialogs`, bind the SIP profile to the specific session-agent, realm, or SIP interface used for the Microsoft-facing leg per your Oracle release and deployment model. Oracle's documentation is explicit about where the profile can be applied, but the exact attachment point should match your topology and software version.
+
+> [!IMPORTANT]
+> Oracle documentation states that if the endpoints participating in the Replaces scenario are in the same realm, the realm-config must have `mm-in-realm` enabled. Otherwise, the SBC can't generate the SDP for the 200 OK and the call is unsuccessful.
 
 ### Related information
 

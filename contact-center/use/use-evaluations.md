@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days 
-ms.date: 02/27/2026
+ms.date: 07/02/2026
 ms.custom: bap-template
 ---
 
@@ -25,7 +25,6 @@ Use evaluations to assess and improve the quality of cases and conversations. Th
 - Assign the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges).
 - Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - Provide consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
-
 
 ## Evaluations
 
@@ -48,6 +47,28 @@ If scoring is enabled for your criteria, the following details appear:
 If you extended the evaluation criteria, you see **Source criteria evaluation** and **Extend criteria evaluation** details.
 
 If you edited and published an evaluation plan and added the **Version** column to the grid, you see the details of each version.
+
+## Edit submitted evaluations
+
+Edit evaluations and modify responses in an evaluation after it's submitted. When you submit an evaluation, it initially appears in a read-only view. Select **Edit** to update answers and then submit the changes. Changes don't take effect until you resubmit the evaluation plan.
+
+> [!NOTE]
+> You can't edit evaluations that are in **In progress** status. The **Edit** action remains disabled for nonsubmitted evaluations.
+
+### Prerequisites
+
+Before you edit a submitted evaluation, make sure that you meet the following requirements.
+
+- The evaluation must be **submitted (completed)**.
+- You have the **Quality Admin** or the **Quality Manager** role, or the **Override submitted evaluation** (Miscellaneous privilege) added to your role. In Power Platform admin center, search for the **Evaluation (msdyn_evaluation)** table and the **Miscellaneous privileges** > **Override Submitted evaluation (prvOverrideSubmittedEval)** privilege. Learn more in [User management](/dynamics365/customer-service/implement/overview-users).
+
+To edit:
+
+1. In Copilot Service workspace, go to **Evaluations** in **Service**.
+1. Select and open an evaluation with status as **Completed**. The evaluation opens in a read-only view and indicates that it's submitted.
+1. Select **Edit**. The evaluation switches to **Edit** mode and indicates that you can update responses and submit when ready.
+1. Update the answers as required.
+1. Select **Submit** to apply your changes. Your changes don't take effect until you submit. After you submit, the evaluation returns to the submitted (read-only) state.
 
 ### Evaluation states
 

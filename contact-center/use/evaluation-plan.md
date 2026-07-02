@@ -23,7 +23,7 @@ Evaluation plans help supervisors perform consistent and objective reviews of ca
 
 > [!IMPORTANT]
 >
-> - Evaluation for emails is a preview feature. 
+> - Evaluation for emails is a preview feature.
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Prerequisites
@@ -141,7 +141,7 @@ Each batch run supports a maximum of 20,000 records.
 
 You can view the evaluation results in the following ways:
 
-- From the **Run history** tab of an evaluation plan. The status show as **Completed** when the run is successful.
+- From the **Run history** tab of an evaluation plan. The status shows as **Completed** when the run is successful.
 - From the **Evaluations** grid, when you select **Evaluations** in Copilot Service workspace.
 
 ## Use sampling in recurring evaluation plans

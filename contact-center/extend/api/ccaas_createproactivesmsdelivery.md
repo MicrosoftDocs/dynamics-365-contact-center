@@ -5,7 +5,7 @@ author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: reference
-ms.date: 06/05/2026
+ms.date: 07/01/2026
 ms.collection: bap-ai-copilot
 ms.custom: bap-template
 ---
@@ -13,6 +13,8 @@ ms.custom: bap-template
 # Use CCaaS_CreateProactiveSMSDelivery API
 
 You can use the `CCaaS_CreateProactiveSMSDelivery` API to create a proactive outbound SMS delivery by invoking the appropriate API within the Proactive Engagement service. It initiates an SMS outbound message via Messaging Runtime.
+
+[!INCLUDE [proactive-api-guidance](../../includes/proactive/cc-proactive-api-guidance.md)]
 
 > [!IMPORTANT]
 >

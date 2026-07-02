@@ -323,7 +323,9 @@
           - name: User group report
             href: realtime-agent-group-report.md
           - name: Diagnose contact center health
-            href: diagnose-dashboard.md 
+            href: diagnose-dashboard.md
+          - name: Proactive engagement report
+            href: proactive-engagement-dashboard.md
         - name: Use historical analytics dashboards
           items: 
           - name: Dashboards

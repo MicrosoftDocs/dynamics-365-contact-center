@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 06/26/2026
+ms.date: 07/03/2026
 ms.custom: bap-template 
 ---
 
@@ -67,7 +67,7 @@ Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best pra
 
     For each question, provide the following details:
 
-    1.  **Select answer type**: Select from the options, **Yes/No**, **Multiple choice**, **Choose from list**, or **Text selection**.
+    1.  **Select answer type**: Select from the options, **Yes/No**, **Multi-select**, **Single-select**, or **Descriptive**.
 
     1.  **Form question text**: Enter the form question text.
 

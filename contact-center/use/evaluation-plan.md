@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 06/26/2026
+ms.date: 07/03/2026
 ms.custom: bap-template
 ---
 
@@ -28,14 +28,14 @@ Evaluation plans help supervisors perform consistent and objective reviews of ca
 
 ## Prerequisites
 
-- Enable [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
+- Enable [Quality evaluation](../administer/manage-quality-evaluation-agent.md).
 - Assign the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges).
 - Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - Provide consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
 
 ## Create and activate evaluation plan for cases and closed conversations
 
-You must enable the **Enable bulk evaluations** checkbox in Copilot Service admin center before you create and activate an evaluation plan for cases. Learn more in [Enable Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#enable-quality-evaluation-agent).
+Before you create and activate an evaluation plan for cases, enable the **Enable bulk evaluations** checkbox in Copilot Service admin center. Learn more in [Enable quality evaluation](../administer/manage-quality-evaluation-agent.md).
 
 1.  In Copilot Service workspace, go to **Evaluation Plans**.
 
@@ -103,7 +103,7 @@ When you [create and activate an evaluation plan](#create-and-activate-evaluatio
 
 When a case is resolved, the system creates one evaluation for each plan that matches the specified conditions. Multiple evaluations can be created for the same case. 
 
-To view the evaluations, go to the **Evaluations** page. When the **AI agent status** shows as **Completed**, select the required evaluation and review the **Evaluation Summary** provided by Quality Evaluation Agent.
+To view the evaluations, go to the **Evaluations** page. When the **AI agent status** shows as **Completed**, select the required evaluation and review the **Evaluation Summary**.
 
 ## Activate, pause, resume, or delete evaluation plans
 
@@ -167,7 +167,7 @@ Each batch run supports a maximum of 20,000 records.
 
 ## Related information
 
-[Manage Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md)  
+[Manage quality evaluation](../administer/manage-quality-evaluation-agent.md)  
 [Use evaluations](use-evaluations.md)  
 [Use evaluation criteria](evaluation-criteria.md)  
 [Use on-demand evaluation](on-demand-evaluation.md)

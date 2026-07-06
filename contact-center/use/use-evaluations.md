@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days 
-ms.date: 07/02/2026
+ms.date: 07/03/2026
 ms.custom: bap-template
 ---
 
@@ -21,7 +21,7 @@ Use evaluations to assess and improve the quality of cases and conversations. Th
 
 ## Prerequisites
 
-- Enable [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
+- Enable [quality evaluation](../administer/manage-quality-evaluation-agent.md).
 - Assign the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges).
 - Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - Provide consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
@@ -96,6 +96,6 @@ You see the following evaluator and AI agent states on the grid.
 
 ## Related information
 
-[Manage Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md)  
-[Use evaluation plan](evaluation-plan.md#)  
+[Manage quality evaluation](../administer/manage-quality-evaluation-agent.md)  
+[Use evaluation plan](evaluation-plan.md)  
 [Use evaluation criteria](evaluation-criteria.md)

@@ -94,16 +94,6 @@
             href: /dynamics365/customer-service/use/admin-km-agent-review?context=/dynamics365/contact-center/context/use-context
           - name: Use knowledge insights for Customer Knowledge Management Agent
             href: /dynamics365/customer-service/use/admin-km-agent-insights?context=/dynamics365/contact-center/context/use-context
-        - name: Quality Evaluation Agent
-          items:
-          - name: Use evaluation criteria
-            href: evaluation-criteria.md
-          - name: Use evaluation plan
-            href: evaluation-plan.md
-          - name: Use on-demand evaluation
-            href: on-demand-evaluation.md
-          - name: Use evaluations
-            href: use-evaluations.md
       - name: Use Copilot features in contact center-standalone
         items: 
         - name: Overview of autonomous agents and Copilot features
@@ -452,6 +442,20 @@
             href: workforce-management-adherence-tracker.md
           - name: Use the adherence history report
             href: workforce-management-use-adherence-history-report.md
+      - name: Quality management
+        items:
+        - name: Overview of Quality Management Agent
+          href: overview-quality-management.md
+        - name: Use evaluation criteria
+          href: evaluation-criteria.md
+        - name: Use evaluation plan
+          href: evaluation-plan.md
+        - name: Use evaluations for real-time conversations
+          href: realtime-evaluation-plan.md
+        - name: Use on-demand evaluation
+          href: on-demand-evaluation.md
+        - name: Use evaluations
+          href: use-evaluations.md
     - name: Known issues in Customer Service and Dynamics 365 Contact Center
       href: https://go.microsoft.com/fwlink/p/?linkid=2165393
     - name: Responsible AI

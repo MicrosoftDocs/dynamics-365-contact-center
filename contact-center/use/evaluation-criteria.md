@@ -21,7 +21,7 @@ This article explains how to use, edit, and extend evaluation criteria, includin
 
 ## Prerequisites
 
-- Enable [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
+- Enable [Quality evaluation](../administer/manage-quality-evaluation-agent.md).
 - Assign the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges).
 - Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - Provide consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
@@ -71,7 +71,7 @@ Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best pra
 
     1.  **Form question text**: Enter the form question text.
 
-    1.  **Add question-level instructions**: Provide instructions for the question, if any. Instructions help Quality Evaluation Agent generate answers and improve accuracy.
+    1.  **Add question-level instructions**: Enter instructions for the question, if any. Instructions help generate evaluation answers and improve accuracy.
     
     1. Select **AI response enabled** to allow AI to predict an answer for this question. If you don't select this option, AI doesn't process the input or return an answer. Evaluation creation fails if the criteria lacks AI-enabled questions for the selected mode in an evaluation plan, as follows:
 
@@ -100,7 +100,7 @@ During simulations and evaluations, the results indicate whether a critical ques
 
 The following examples show questions where a failure should immediately fail the entire evaluation:
 
-- Did the agent select the correct action when prompted with a compliance checkpoint?
+- Did the correct action get selected when prompted with a compliance checkpoint?
 (Fail if an incorrect action was chosen.)
 
 - Was customer consent obtained before recording the call?
@@ -136,7 +136,7 @@ You can also add the **Version** column to the evaluation grid to track versions
 
 You need to enable the **QEA Simulation** flow before you run a simulation. Learn more in [Configure connection references](/dynamics365/customer-service/administer/admin-km-agent-connections).
 
-Supervisors can select any criteria in **Draft** or **Published** state and run a simulation test with real case and conversation data to preview Quality Evaluation Agent prediction outcomes.
+Supervisors can select any criteria in **Draft** or **Published** state and run a simulation test with real case and conversation data to preview quality evaluation prediction outcomes.
 
 > [!NOTE]
 > You can’t include attachments for case data.
@@ -156,7 +156,7 @@ By default, the simulation runs on the 25 most recent records that match the sel
 
 You can also view the simulation details from the **Simulation Run** tab of your criteria. You can view details such as **Evaluation Criteria version**, **Record Type**, **Status**, and **Created On** data. 
 1. Select a simulation record that's in **Completed** state.
-2. From the simulation record page, select the **Simulation Results** tab and then select the required simulation result to view the prediction done by the Quality Evaluation Agent on the side pane.
+1. From the simulation record page, select the **Simulation Results** tab and then select the required simulation result to view the prediction done by the quality evaluation on the side pane.
 
 Supervisors can view simulation results. The results don’t affect records or quality metrics, so you can validate and refine criteria before publishing. Each simulation consumes [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 
@@ -194,20 +194,20 @@ After you create a source criteria for your business unit, you can extend the cr
 
 ## Best practices for evaluation criteria
 
-- **Criteria-level instructions:** Define instructions that apply to the entire evaluation criteria. Include comprehensive goals, expectations, and constraints to guide the behavior of the Quality Evaluation Agent across all questions and answers.
+- **Criteria-level instructions:** Define instructions that apply to the entire evaluation criteria. Include comprehensive goals, expectations, and constraints to guide evaluation behavior across all questions and answers.
 
-- **Question-level instructions**: Provide specific instructions for each question to guide the Quality Evaluation Agent’s evaluation. These instructions are scoped to the question only, and don’t influence other parts of the evaluation.
+- **Question-level instructions**: Provide specific instructions for each question to help generate accurate evaluation answers. These instructions are scoped to the question only, and don’t influence other parts of the evaluation.
 
     - **Question text**: Define each evaluation question to assess a single, well-defined objective to help ensure clarity and direct alignment with the answer options.
 
-    - **Keep the question specific**: Vague questions prompt the agent to broaden its scope. For example, 
+    - **Keep the question specific**: Use specific questions to keep evaluations focused and accurate. For example,
     
         |Avoid |Prefer |
         |---------|---------|
-        |Did the agent communicate properly?    |     Did the agent fail to send a complete resolution email?    |
-        |Was the case handled correctly?    | Did the agent's response include all required details?  |
+        |Was communication handled appropriately?    |     Was a complete resolution email sent?    |
+        |Was the case handled correctly?    | Did the response include all required details?  |
 
-- **Answer-level instructions**: Include answer-specific instructions for each answer option to help the Quality Evaluation Agent understand the intent and context of the response.
+- **Answer-level instructions**: Include answer-specific instructions for each answer option to help clarify the intent and context of the response.
 
     - **Define answer conditions explicitly**: Avoid double negatives. State conditions as direct truths. Answer Yes, if any of the following conditions is true: 
     1. [Condition A] 
@@ -216,13 +216,13 @@ After you create a source criteria for your business unit, you can extend the cr
 
     - **Answer choices**: Clearly define answer options, especially for multi-choice or list-type questions. Make sure you include fallback options to handle ambiguous or unexpected responses. Answer conditions are explicit with no double negatives.
 
-- **Clarity drives accuracy**: Use precise and detailed instructions to improve the accuracy of Quality Evaluation Agent evaluations. Avoid vague language and ensure that all instructions are explicit, contextual, and actionable. 
+- **Clarity drives accuracy**: Use precise and detailed instructions to improve evaluation accuracy. Avoid vague language and ensure that all instructions are explicit, contextual, and actionable.
 
-- **Put exclusion rules first**: State what the agent should ignore before stating what it should evaluate. Don't consider [excluded record types] as evidence, even if they mention or describe [relevant information]. 
+- **Put exclusion rules first**: State what is to be ignored before defining what should be evaluated. Don't consider [excluded record types] as evidence, even if they mention or describe [relevant information].
 
 - **Specify the exact data source**: Name the exact record type. Based only on [specific record type] from [specific actor].
 
-    - **Require evidence from the source**: Make sure that the agent confirms evidence from the actual record, not inferred from excluded sources.
+    - **Require evidence from the source**: Ensure that evidence is verified against the actual record rather than inferred from excluded sources.
 
 ## Limitations for evaluation criteria
 
@@ -276,6 +276,6 @@ Creating extended criteria introduces a parent–child relationship between sour
 
 ## Related information
 
-[Manage Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md)  
+[Manage quality evaluation](../administer/manage-quality-evaluation-agent.md)  
 [Use evaluation plan](evaluation-plan.md)  
 [Use evaluations](use-evaluations.md)

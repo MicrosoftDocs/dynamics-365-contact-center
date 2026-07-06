@@ -30,10 +30,6 @@ Case Management Agent helps automate case life cycle&mdash;create, update, resol
 
 Customer Knowledge Management Agent helps extract knowledge from cases and manage customer knowledge in real time. After a case is closed, the Customer Knowledge Management Agent analyzes case details, fills knowledge gaps, and makes sure of compliance. Learn more in [Manage Customer Knowledge Management Agent](/dynamics365/customer-service/administer/admin-km-agent) and [Review knowledge articles created by Customer Knowledge Management Agent](/dynamics365/customer-service/use/admin-km-agent-review).
 
-## Quality Evaluation Agent
-
-Quality Evaluation Agent helps generate autonomous and AI-assisted assessments of customer interactions across cases and conversations using an evaluation framework defined by supervisors. Supervisors can create evaluation criteria and plans and use the evaluations to improve customer interactions. Learn more in [Manage Quality Evaluation Agent](manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
-
 ### Related information
 
 [Enable intent for support representatives](enable-intent-for-service-reps.md)  

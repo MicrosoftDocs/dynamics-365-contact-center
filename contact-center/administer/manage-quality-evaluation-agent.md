@@ -1,17 +1,17 @@
 ---
-title: Manage Quality Evaluation Agent
-description: Learn how to configure and enable Quality Evaluation Agent in Dynamics 365 Customer Service and Dynamics 365 Contact Center. Use agent evaluations to improve customer engagement and assess interactions against quality standards.
+title: Manage quality evaluation
+description: Learn how to configure and enable quality evaluation in Dynamics 365 Customer Service and Dynamics 365 Contact Center. Use agent evaluations to improve customer engagement and assess interactions against quality standards.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days 
-ms.date: 06/26/2026
+ms.date: 07/03/2026
 ms.custom: bap-template
 ---
 
-# Manage Quality Evaluation Agent
+#  Manage quality evaluation
 
 **Conversations**: [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
 
@@ -19,27 +19,27 @@ ms.custom: bap-template
 
 **Emails**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
-Quality Evaluation Agent is an AI agent that enables organizations to deliver consistent and scalable quality oversight across customer support interactions. The agent uses a supervisor-defined evaluation framework to autonomously score interactions, generate summaries, and surface actionable insights to enhance interaction quality. Quality Evaluation Agent automates quality evaluations across cases, closed and active conversations, and emails (preview). Learn more about supported message channels in [Overview of channels](/dynamics365/customer-service/use/channels).
+Quality evaluation enables organizations to deliver consistent and scalable quality oversight across customer support interactions. Quality evaluation uses a supervisor-defined evaluation framework to autonomously score interactions, generate summaries, and surface actionable insights to enhance interaction quality. Quality evaluation automates quality evaluations across cases, closed and active conversations, and emails (preview). Learn more about supported message channels in [Overview of channels](/dynamics365/customer-service/use/channels).
 
 > [!IMPORTANT]
 >
-> - Evaluation for emails is a preview feature. 
+> - Evaluation for emails is a preview feature.
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
-Quality Evaluation Agent empowers supervisors to move beyond manual, time-intensive, and subjective spot-checks by enabling them to:
+Quality evaluation empowers supervisors to move beyond manual, time-intensive, and subjective spot checks by enabling them to:
 
 - Standardize quality assessments: Apply evaluations more consistently and objectively across teams and channels.
 - Increase visibility into trends and outliers: Centralize evaluations to make results easier to review, filter, and analyze.
 - Improve outcomes faster: Convert evaluation results into clear, actionable next steps, such as recommended actions when standards aren't met.
 - Reduce operational overhead: Maintain high-quality customer experiences while minimizing manual effort.
 
-### How Quality Evaluation Agent works
+### How quality evaluation works
 
-Quality Evaluation Agent operates using an evaluation framework that consists of three following key components:
+Quality evaluation uses an evaluation framework that consists of three key components:
 
 **Evaluation criteria**:
 
-The evaluation criteria consist of questions, answer choices, scoring logic, and detailed guidance that define quality for your organization. The AI agent uses these criteria to assess interactions. 
+The evaluation criteria consist of questions, answer choices, scoring logic, and detailed guidance that define quality for your organization. Use these criteria to assess interactions.
 
 **Evaluation plans**:
 
@@ -78,10 +78,10 @@ Learn more in [Move data across regions for Copilots and generative AI features 
 
 ## Configure connection references
 
-When you navigate to the Quality Evaluation Agent page in Copilot Service admin center, the **Prerequisites** section at the top of the page shows whether connection references are set up. You need to configure connection references for the Quality Evaluation Agent flow to integrate with Microsoft services. These connections link the flow to essential data sources such as Microsoft Dataverse and Copilot Studio, ensuring smooth operation and enhanced functionality.
+When you go to the **Quality evaluation** page in Copilot Service admin center, the **Prerequisites** section at the top of the page shows whether connection references are set up. You need to configure connection references for the Quality evaluation flow to integrate with Microsoft services. These connections link the flow to essential data sources such as Microsoft Dataverse and Copilot Studio, ensuring smooth operation and enhanced functionality.
 
 1. In Copilot Service admin center, go to **Customer Support** > **Quality management.** The **Quality management** page appears.
-1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears.
+1. Select **Manage** for **Quality evaluation**. The **Quality evaluation** page appears.
 1. In the **Prerequisites** section, verify if **Step 1: Connection References**, **Step 2: Power Automate Flows**, and **Step 3: Copilot Studio Agent** show as **Ready**.
     1. If **Step 1: Connection References** shows as **In progress** or **Incomplete**, then select **Manage connections**.
     1. In the **Configure Connections** dialog, select **Update connection references to use your connector** to complete connection references.
@@ -90,21 +90,21 @@ When you navigate to the Quality Evaluation Agent page in Copilot Service admin 
 
 After completing the configuration, you might need to perform a hard refresh to see the updated status.
 
-If you have issues configuring connection references from the **Quality Evaluation Agent** page, you can do a manual setup. Follow the steps provided in [Connection references for Quality Evaluation Agent flow](/dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context).
+If you have issues configuring connection references from the **Quality evaluation** page, you can do a manual setup. Follow the steps provided in [Connection references for Quality Evaluation flow](/dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context).
 
-## Enable Quality Evaluation Agent
+## Enable quality evaluation
 
-You need to enable Quality Evaluation Agent for your supervisors in Copilot Service admin center. You can select cases, conversations, or email record type. You can also set a scoring and threshold value. Each criteria and question in the evaluation is scored out of 100 points. You can set thresholds to define good and poor-quality metrics.
+You need to enable quality evaluation for your supervisors in Copilot Service admin center. You can select cases, conversations, or email record type. You can also set a scoring and threshold value. Each criteria and question in the evaluation is scored out of 100 points. You can set thresholds to define good and poor-quality metrics.
 
 1. In Copilot Service admin center, go to **Customer Support** > **Quality management.** The **Quality management** page appears.
-1. Select **Manage** for **Quality Evaluation Agent**. The **Quality Evaluation Agent** page appears.
+1. Select **Manage** for **Quality evaluation**. The **Quality evaluation** page appears.
 1. In the **Enablement by record type** section:
 1. Select **Case**, **Conversation**, or **Email** and save.
     1. If you select **Case** and need to perform bulk evaluation for cases, select the **Enable bulk evaluations** option.
-1. For each record type, in **Specify data**, you can see the default entities that are added. For **Email** record type, you need to add the **Description** in the **Data field** and save it. 
+1. For each record type, in **Specify data**, you can see the default entities that are added. For **Email** record type, you need to add the **Description** in the **Data field** and save it.
     1. Select **Manage data** to go to the **Specify data** dialog, where you can:
         - Delete data types or clear a row to temporarily exclude the data type from being summarized.
-        - Add more data type fields for Quality Evaluation Agent input configuration by selecting **Add data**.
+        - Add more data type fields for quality evaluation input configuration by selecting **Add data**.
           > [!NOTE]
           > You can add up to 10 one-to-one data types and six one-to-many data types in addition to the ones available by default.
  1. In the **Evaluation criteria score** section, select **Enable scoring for criteria**. The **Evaluation criteria scoring turned on** dialog appears.

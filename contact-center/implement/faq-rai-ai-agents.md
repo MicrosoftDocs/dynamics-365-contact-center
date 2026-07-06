@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 06/30/2026
+ms.date: 07/03/2026
 ms.update-cycle: 180-days
 ms.custom: 
 - bap-template
@@ -68,15 +68,15 @@ The capabilities of Case Management Agent include:
 - **Autonomous case resolution**: Drafts and sends emails based on determined intent from customer queries, using knowledge and custom workflows.
 - **Automated follow-up and closure**: Sends follow-up emails and resolves cases based on predefined rules, streamlining the case closure process.
 
-### Quality Evaluation Agent
+### Quality Management Agent
 
-Quality Evaluation Agent helps organizations make sure that every customer engagement with support&mdash;whether handled by service representatives or AI agents&mdash;is compliant, ethical, and aligned with brand values.
+Quality Management Agent in Dynamics 365 provides a unified, AI-powered framework to help organizations define standards, evaluate performance, and improve customer interactions at scale. It brings together the following core skills:
 
-**Customized criteria**: Supervisors set up evaluation criteria, questionnaires, scoring logic, and instructions to define quality. The AI agent uses the criteria to assess customer engagements across different channels and generate scores.
+**Quality evaluation**: Assesses interactions base on criteria that you define and generates insights on how to improve quality.
 
-**Actionable insights that drive improvement**: The AI agent provides evaluation summaries, quality scores, and coaching recommendations to help supervisors find gaps, guide representative development, and improve service standards.
+**Screen and call recording**: Screen recordings capture what representatives did during interactions, providing deeper visibility into workflows and behaviors beyond conversation transcripts.
 
-**Governance policies**: The AI-powered rule-based system acts as a safeguard layer on top of other AI agents and human-authored communications such as email. The system intercepts outbound email body and attachments, evaluates them against predefined guardrail policies, and then sends the email to the customer if it meets the policy requirements. If the output violates a policy, it can log activity or block the message to prevent noncompliant results from reaching end users based on the policy configured.
+**Governance**: The AI-powered rule-based system acts as a safeguard layer on top of other AI agents and human-authored communications such as email. The system intercepts outbound email body and attachments, evaluates them against predefined guardrail policies, and then sends the email to the customer if it meets the policy requirements. If the output violates a policy, it can log activity or block the message to prevent noncompliant results from reaching end users based on the policy configured.
 
 ### Quality Assurance Agent
 
@@ -108,7 +108,8 @@ These AI agents are designed to:
 
 ## How is AI agent evaluated? What metrics are used to measure performance?
 
-Performance is evaluated using Microsoft's internal support data and through ongoing pilots within Microsoft Customer Service and Support (CSS). Customer Intent Agent is assessed based on the accuracy of extracted intents against manually identified ground truth derived from internal support data. Similarly, Customer Knowledge Management Agent is evaluated for the quality and relevance of generated knowledge articles. It aligns with the established ground truth and avoids duplication. Case Management Agent is evaluated based on the quality and relevance of its predictions for the configured fields, generated from the specified context sources. Quality Evaluation Agent is evaluated for accuracy, quality, and relevance of its outputs.
+Microsoft evaluates performance by using internal support data and ongoing pilots within Microsoft Customer Service and Support (CSS). Assess Customer Intent Agent based on the accuracy of extracted intents against manually identified ground truth derived from internal support data. Similarly, evaluate Customer Knowledge Management Agent for the quality and relevance of generated knowledge articles. It aligns with the established ground truth and avoids duplication. Evaluate Case Management Agent based on the quality and relevance of its predictions for the configured fields, generated from the specified context sources.
+
 
 Key factors include how well customer engagement evaluation outcomes match defined criteria, how clear and useful generated summaries are, and how effective recommendations are for improving support. The Governance policy performance is evaluated based on two dimensions: reliability of policy enforcement (correctly validating violations while avoiding unnecessary blocks on compliant content) and operational efficiency (minimizing added latency). Administrators can use flag-only mode to observe policy performance and calibrate thresholds before activating full enforcement.
 

@@ -158,6 +158,14 @@
             href: workforce-management-enable-shift-swapping.md
         - name: Configure shift-based routing for work items
           href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/administer-context
+      - name: Quality management
+        items: 
+        - name: Overview of Quality Management Agent
+          href: ../use/overview-quality-management.md
+        - name: Manage quality evaluation
+          href: manage-quality-evaluation-agent.md
+        - name: Configure screen recording
+          href: configure-screen-recording.md
       - name: Email
         items:
         - name: Configure email
@@ -346,8 +354,6 @@
             href: set-up-voice-agents-to-use-intents.md
         - name: Manage Customer Knowledge Management Agent
           href: /dynamics365/customer-service/administer/admin-km-agent?context=/dynamics365/contact-center/context/administer-context
-        - name: Manage Quality Evaluation Agent
-          href: manage-quality-evaluation-agent.md
       - name: Copilot in Contact Center
         items:
         - name: Manage Copilot features

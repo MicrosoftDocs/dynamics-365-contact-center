@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 06/26/2026
+ms.date: 07/03/2026
 ms.custom: bap-template
 ---
 
@@ -28,7 +28,7 @@ Use on-demand evaluation to check cases, conversations, and emails. Request eval
 
 ## Prerequisites
 
-- Enable [Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md#manage-quality-evaluation-agent).
+- Enable [Quality evaluation](../administer/manage-quality-evaluation-agent.md).
 - Assign the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges).
 - Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - Provide consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
@@ -57,7 +57,7 @@ To request evaluation for a particular case:
 
 1.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**. 
 
-   When the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Quality Evaluation Agent.
+   When the AI agent status appears as **Completed** on the **Evaluation associated view**, you can review the **Evaluation  Summary**.
 
 To view the evaluation record, in the site map of Copilot Service workspace:
 
@@ -79,11 +79,11 @@ To request evaluation for closed conversations:
    - **Assigned to:** Select the user.
    - **Evaluation due date:** Select a due date for the evaluation.
     
-1.  Select **Request**. 
+1.  Select **Request**.
 
 1.  Select **Submit and Close**. The **Evaluator status** appears as **Completed**.
 
-   When the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation    Summary** provided by Quality Evaluation Agent.
+   When the AI agent status appears as **Completed** on the **Evaluation associated view**, you can review the **Evaluation Summary**.
 
 To view the evaluation record, in the site map of Copilot Service workspace:
 
@@ -105,7 +105,7 @@ To request evaluation for emails:
 
 1. Select **Request**.
 
-   When the AI agent status appears as **Completed,** on the **Evaluation associated view**, you can review the **Evaluation Summary** provided by Quality Evaluation Agent.
+   When the AI agent status appears as **Completed**, on the **Evaluation associated view**, you can review the **Evaluation Summary**.
 
 You can also request an evaluation for an individual email record from the **Evaluation** tab within every email record.
 
@@ -120,4 +120,4 @@ You can also request an evaluation for an individual email record from the **Eva
 [Use evaluation plan](evaluation-plan.md)  
 [Use evaluations](use-evaluations.md)  
 [Use evaluation criteria](evaluation-criteria.md)  
-[Manage Quality Evaluation Agent](../administer/manage-quality-evaluation-agent.md)
+[Manage quality evaluation](../administer/manage-quality-evaluation-agent.md)

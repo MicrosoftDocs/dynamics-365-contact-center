@@ -23,7 +23,7 @@ Key skills include:
 - **Quality evaluation**, which assesses customer interactions against defined evaluation criteria and provides insights to support coaching and improvement efforts. Learn more in [Manage quality evaluation](../administer/manage-quality-evaluation-agent.md).
 
 - **Governance**, which helps enforce compliance policies for outgoing customer communications.
-Learn more in [Configure governance policies (preview)](/dynamics365/customer-service/administer/configure-governance-policies) and [Use governance policies (preview)](/dynamics365/customer-service/use/use-governance-policies).
+Learn more in [Configure governance policies](/dynamics365/customer-service/administer/configure-governance-policies) and [Use governance policies](/dynamics365/customer-service/use/use-governance-policies).
     > [!NOTE]
     > This feature is applicable to Dynamics 365 Customer Service only.
 

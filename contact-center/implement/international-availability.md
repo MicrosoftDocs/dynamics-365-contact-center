@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
 ms.collection:
-ms.date: 12/10/2025
+ms.date: 07/09/2026
 ms.custom: bap-template
 ---
 
@@ -32,7 +32,7 @@ While voice channels aren't yet available in some regions, you can still connect
 | Government Community Cloud High (GCC High) | No | No |
 | Government Community Cloud Moderate (GCC Moderate)<sup>**1**</sup> | Yes | Yes |
 | India | Yes | No |
-| Japan | Yes | No |
+| Japan | Yes | Yes |
 | North America | Yes | Yes |
 | Switzerland | Yes | Yes |
 | United Arab Emirates (UAE) | Yes | Yes |

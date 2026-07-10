@@ -84,6 +84,8 @@
       items:
       - name: Overview
         href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/implement-context
+      - name: Responsible AI FAQ for Service Operations Agent
+        href: service-operations-agent-rai-faq.md
       - name: Responsible AI FAQ for conversation orchestration
         href: conversation-orchestration-rai-faq.md
       - name: Responsible AI FAQ for AI Agents

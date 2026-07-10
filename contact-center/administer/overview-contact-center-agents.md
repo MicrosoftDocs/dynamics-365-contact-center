@@ -1,12 +1,12 @@
 ---
 title: Overview of contact center agents in Dynamics 365 Contact Center
-description: Get an overview of contact center agents in Dynamics 365 Contact Center.
+description: Learn how contact center agents in Dynamics 365 Contact Center improve self-service, quality, and operations to boost outcomes. Explore key capabilities.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: overview
 ms.collection: bap-ai-copilot
-ms.date: 06/26/2026
+ms.date: 07/09/2026
 ms.custom: bap-template
 ---
 
@@ -33,18 +33,17 @@ Delivers quality, compliance, and coaching insights to ensure interactions meet 
 - Enable supervisors to monitor and act on conversations with quality issues through timely alerts
 - Deliver real-time coaching nudges powered by live quality scoring for immediate improvement in customer experience
 
-## Service Operations Agent (preview)
+## Service Operations Agent
 
-Supports configuration, governance, and optimization of the contact center environment while maintaining full operational control.
+Supports conversational configuration, operational management, and troubleshooting of issues in contact center through a centralized AI-powered administration experience.
 
-- Provision contact center components
-- Configure settings using natural language
-- Orchestrate conversations in real time
+- Provision and configure contact center components with guided conversational experiences
+- Validate configurations and troubleshoot operational issues across contact center workflows
 
 ### Related information
 
 [Real-time voice agents](/microsoft-copilot-studio/voice-realtime-voice-agents)  
 [Configure proactive engagement](configure-proactive-engagement.md)  
 [Use Quality Assurance Agent](use-quality-assurance-agent.md)  
-[Use Service Operations Agent (preview)](use-service-operations-agent.md)  
+[Use Service Operations Agent](use-service-operations-agent.md)  
 [Configure conversation orchestration (preview)](configure-conversation-orchestration.md)  

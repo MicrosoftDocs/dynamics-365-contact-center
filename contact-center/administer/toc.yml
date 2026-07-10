@@ -322,8 +322,10 @@
             href: use-quality-assurance-agent.md
           - name: Configure quality and coaching skill
             href: configure-quality-coach.md
-        - name: Service Operations Agent (preview)
+        - name: Service Operations Agent
           items:
+          - name: Overview of Service Operations Agent
+            href: overview-service-operations-agent.md
           - name: Use Service Operations Agent
             href: use-service-operations-agent.md
           - name: Configure conversation orchestration using natural language playbooks
@@ -391,9 +393,9 @@
         - name: Configure pre-conversation surveys
           href: /dynamics365/customer-service/administer/configure-pre-chat-survey?context=/dynamics365/contact-center/context/administer-context
         - name: Manage enhanced Active Conversation settings
-          href: active-enh-conv-settings.md    
+          href: active-enh-conv-settings.md
         - name: Configure disposition codes
-          href: configure-disposition-codes.md        
+          href: configure-disposition-codes.md
         - name: Set up visitor location detection
           href: /dynamics365/customer-service/administer/geo-location-provider?context=/dynamics365/contact-center/context/administer-context
         - name: Configure self-service settings for customer actions
@@ -669,6 +671,8 @@
         items:
         - name: Overview
           href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/administer-context
+        - name: Responsible AI FAQ for Service Operations Agent
+          href: ../implement/service-operations-agent-rai-faq.md?context=/dynamics365/contact-center/context/administer-context
         - name: Responsible AI FAQ for conversation orchestration
           href: ../implement/conversation-orchestration-rai-faq.md?context=/dynamics365/contact-center/context/administer-context
         - name: Responsible AI FAQ for AI Agents

@@ -5,11 +5,11 @@ author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
-ms.date: 04/24/2026
+ms.date: 07/10/2026
 ms.custom: bap-template 
 ---
 
-# Configure screen recording with desktop companion application
+# Configure screen and audio recording with desktop companion application
 
 [!INCLUDE [cc-feature-availability](../includes/cc-feature-availability.md)]
 
@@ -23,27 +23,43 @@ Screen recording helps organizations support quality, compliance, training, and 
 
 ## Prerequisites
 
-
 - Security roles
     - Representatives have the **Screen Recorder** role to record their screen.
     - Representatives have the permission to save files to a local machine.
     - You have the **Screen Recording Supervisor** role that allows you to view a list of recordings, but not download the recording file to a local machine.
     - You have the **Screen Recording Admin** role that allows you to view a list of screen recordings in the web app and download recording files for review.
 - The representative's local computer has the desktop companion application installed and running. Learn more in [Install and manage desktop companion application for voice channel](/dynamics365/contact-center/administer/install-manage-desktop-app).
+- Required recording and transcription settings are configured at the workstream level. Learn more in [Configure call recording, transcription, and real-time translation](/dynamics365/customer-service/administer/voice-channel-configure-transcripts).
 
 ## How screen recording works
 
-Screen recording captures a representative’s on-screen actions while the representative is handling customer interactions. The actions can include navigation across applications, data entry, and workflow steps performed during a support session. 
+Screen recording captures a representative’s on-screen actions while the representative handles customer interactions. The actions can include navigation across applications, data entry, and workflow steps performed during a support session.
 
 Recordings typically capture customer interactions such as conversations, chats, and cases. Authorized roles can access these recordings for review and analysis.
 
 When agents use the desktop companion application, the system first saves screen recordings locally and then securely uploads them to the organization’s Dataverse environment. After a successful upload, the application automatically deletes the local recording file. To ensure secure upload to Dataverse, keep the desktop companion application running in the background
 
-## Enable screen recording for representatives
+## Enable screen and audio recording for representatives
 
-1. In Copilot Service admin center, go to **Workspaces**.
+You can configure tenant-level controls for screen recording and audio recording in Copilot Service admin center. You must still configure workstream-level settings before recordings are captured. By default:
+
+- Audio recording is enabled for backward compatibility with existing environments that already rely on workstream-level audio recording settings.
+- Screen recording is disabled until an administrator explicitly enables it.
+
+Perform the following steps:
+
+1. In the site map of Copilot Service admin center, go to **Workspaces**.
 1. [Create a new experience profile](/dynamics365/customer-service/administer/create-agent-experience-profile) or add to an existing profile.
 1. In **Productivity pane**, edit and turn on screen recording. The screen recording icon appears in the productivity pane.
+1. Go to **Quality Management** in the site map. On the **Quality Management** page, select **Manage** for **Enable screen and call recording**.
+1. On the **Screen and audio recording** page, the following settings are available.
+    - **Turn on screen recording**: When you enable the toggle, the following options become available:
+        - **Display red border**: Control whether representatives see a red border during screen recording. A red border indicates that screen recording is active. If disabled, the border isn't displayed.
+        - **Multi-screen capture**: When enabled, representatives can select which monitors are recorded in a multimonitor setup. When disabled, all monitors are recorded by default.
+    - **Turn on audio recording**: Enable the toggle. Disabling audio recording at the tenant level overrides all workstream configurations and prevents audio recording across the organization.
+
+> [!NOTE]
+> Screen recording and audio recording operate independently. Disabling the tenant-level setting prevents feature usage, even if workstream settings remain configured.
 
 ## Types of screen recording
 
@@ -69,7 +85,6 @@ Learn how you can configure retention periods for screen recordings and transcri
 ### Set retention rules for screen recordings and transcripts
 
 Define retention periods for screen recordings and transcripts to help your organization comply with regularoty requirements and manage storage efficiently. By default, screen recordings and transcripts are retained indefinitely. Copilot Studio transcripts are retained for 30 days. Configure retention rules by using **Bulk Record Deletion** jobs. Delete the records for the **msdyn_ScreenRecording** and **msdyn_ScreenRecordingLink** entities through the job.
-
 
 ### Set retention period for screen recordings
 
@@ -98,8 +113,14 @@ To configure retention for transcripts, repeat the same steps used for screen re
 
 In the **Look for** list, select **Transcripts** instead of **Screen Recordings**.
 
-Learn more about long-term data retention with Dataverse in [Dataverse long term data retention overview](/power-apps/maker/data-platform/data-retention-overview). 
+Learn more about long-term data retention with Dataverse in [Dataverse long term data retention overview](/power-apps/maker/data-platform/data-retention-overview).
+
+### Playback of screen recordings
+
+Users with the **Screen Recording Supervisor** or **Screen Recording Admin** role can play back screen recordings within closed conversations. Authorized users can review recordings directly from the Customer Service workspace application.
 
 ### Related information
 
-[Dataverse long term data retention FAQ](/power-apps/maker/data-platform/data-retention-faq)
+[Dataverse long term data retention FAQ](/power-apps/maker/data-platform/data-retention-faq)  
+[Configure call recording, transcription, and real-time translation](/dynamics365/customer-service/administer/voice-channel-configure-transcripts)  
+[Enable screen recording for representatives](/dynamics365/customer-service/use/csw-productivity-pane)

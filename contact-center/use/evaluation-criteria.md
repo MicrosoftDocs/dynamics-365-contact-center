@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 07/03/2026
+ms.date: 07/10/2026
 ms.custom: bap-template 
 ---
 
@@ -22,7 +22,7 @@ This article explains how to use, edit, and extend evaluation criteria, includin
 ## Prerequisites
 
 - Enable [Quality evaluation](../administer/manage-quality-evaluation-agent.md).
-- Assign the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges).
+- Assign the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#roles-and-privileges).
 - Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - Provide consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
 
@@ -47,25 +47,25 @@ Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best pra
 
 1.  On the **Evaluation criteria** page, select **New**.
 
-1.  On the **New evaluation criteria** page, in the **Criteria details** section, provide the **Criteria name** and **Description**.
+1.  On the **New evaluation criteria** page, in the **Criteria details** section, enter the **Criteria name** and **Description**.
 
-1. To enable scoring per criteria, switch the **Criteria scoring** toggle to on.
+1. Turn on the **Criteria scoring** toggle to enable scoring per criteria.
 
-1. Select your language from the **Language** dropdown list. By default, all existing criteria are in English. You can’t modify the language after you save a criteria, even in the **Draft** state. Evaluation results are returned in the same language. 
+1. Select your language from the **Language** dropdown list. By default, all existing criteria are in English. You can't change the language after you save a criteria, even in the **Draft** state. Evaluation results are returned in the same language. 
 
-1.  In the **Add form level instructions** section, provide instructions, if any.
+1.  In the **Add form level instructions** section, enter instructions, if any.
 
 1.  In **Section 1**, enter the following details:
 
-    1.  **Section name**: Provide a name.
+    1.  **Section name**: Enter a name.
 
-    1.  **Description**: Provide a description.
+    1.  **Description**: Enter a description.
 
     1.  **Section weight (%)**: Assign a weight to the evaluation criteria. The total weight across sections must equal 100%.
 
-1.  Select **Add question,** if you want to add a question.
+1.  Select **Add question** if you want to add a question.
 
-    For each question, provide the following details:
+    For each question, enter the following details:
 
     1.  **Select answer type**: Select from the options, **Yes/No**, **Multi-select**, **Single-select**, or **Descriptive**.
 
@@ -84,7 +84,7 @@ Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best pra
 
     1. Select **Mark as critical question** if you want the question to be marked as critical.
 
-1.  For **Answer options,** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required. If you marked the question as critical, you must select the **Mark as fail** option for an answer to avoid errors.
+1.  For **Answer options** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required. If you marked the question as critical, you must select the **Mark as fail** option for an answer to avoid errors.
 
     You can delete or duplicate a section or question, as required.
 
@@ -108,44 +108,44 @@ The following examples show questions where a failure should immediately fail th
 
 ## Edit your published evaluation criteria
 
-You can [copy the out-of-the-box evaluation criteria](#copy-the-out-of-the-box-evaluation-criteria-for-cases-and-conversations) or create new evaluation criteria and then make edits.
+You can [copy the default evaluation criteria](#copy-the-default-evaluation-criteria-for-cases-and-conversations) or create new evaluation criteria and then make edits.
 
 To edit your published evaluation criteria, complete the following steps:
 
-1. In site map of Copilot Service workspace, go to **Evaluation criteria.**
-1. On the **Evaluation criteria** page, select the required evaluation criteria.
+1. In the site map of Copilot Service workspace, go to **Evaluation criteria**.
+1. On the **Evaluation criteria** page, select the evaluation criteria you want.
 1. On the selected evaluation criteria page, select **Edit**.
-1. Save the changes. The criteria gets saved as a draft. You can also revert to the published criteria at this stage.
+1. Save the changes. The criteria is saved as a draft. You can also revert to the published criteria at this stage.
 1. Publish the changes. 
 
 > [!NOTE]
-> - You can't change the scoring toggle at the criteria level after the criteria is published.
+> - You can't change the scoring toggle at the criteria level after you publish the criteria.
 > - Evaluation plans that are already running continue to use the existing criteria. After you publish the updated criteria, evaluation plans use the latest criteria in the next run. 
 
 ## Manage evaluation criteria versions
 
-Each edit and publish action increments the evaluation criteria version, and the latest published version is always used for new evaluations. Supervisors can review prior versions, restore any version to make it the current one, or discard draft changes as needed.
+Each edit and publish action increments the evaluation criteria version. The latest published version is always used for new evaluations. Supervisors can review prior versions, restore any version to make it the current one, or discard draft changes as needed.
 
 1. Select the source criteria and go to the **Versioning History** tab to view versions and version numbers along with the latest data that might be added to the criteria.
-1. Select **Record** to go a specific version and view the details in read-only.
-1. Select **Restore/Publish** to republish the selected version as the latest. This discards the current draft and increments the version number of the published criteria.
+1. Select **Record** to go to a specific version and view the details in read-only.
+1. Select **Restore/Publish** to republish the selected version as the latest. This action discards the current draft and increments the version number of the published criteria.
 
-You can also add the **Version** column to the evaluation grid to track versions. Learn more in [Evaluations](use-evaluations.md#evaluations).
+You can also add the **Version** column to the evaluation grid to track versions. Learn more in [Evaluations](use-evaluations.md).
 
 ## Create and run a simulation
 
-You need to enable the **QEA Simulation** flow before you run a simulation. Learn more in [Configure connection references](/dynamics365/customer-service/administer/admin-km-agent-connections).
+Before running a simulation, you need to enable the **QEA Simulation** flow. Learn more in [Configure connection references](/dynamics365/customer-service/administer/admin-km-agent-connections).
 
 Supervisors can select any criteria in **Draft** or **Published** state and run a simulation test with real case and conversation data to preview quality evaluation prediction outcomes.
 
 > [!NOTE]
-> You can’t include attachments for case data.
+> You can't include attachments for case data.
 
 To create and run a simulation:
 
 1. Select the criteria, and then select **Create Simulation**.
-1. On the **New Criteria Simulation** page, **General** tab, **Simulation overview** section, provide the following information:
-    1. **Criteria Name**: Provide a name.
+1. On the **New Criteria Simulation** page, **General** tab, **Simulation overview** section, enter the following information:
+    1. **Criteria Name**: Enter a name.
     1. **Record Type**: Select **Case** or **Conversation**.
     1. **Criteria Version**: Select the version of the published criteria. Criteria in **Draft** state don't have a version assigned.
 1. **Conditions**: Select the conditions to run a simulation.
@@ -158,17 +158,17 @@ You can also view the simulation details from the **Simulation Run** tab of your
 1. Select a simulation record that's in **Completed** state.
 1. From the simulation record page, select the **Simulation Results** tab and then select the required simulation result to view the prediction done by the quality evaluation on the side pane.
 
-Supervisors can view simulation results. The results don’t affect records or quality metrics, so you can validate and refine criteria before publishing. Each simulation consumes [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go).
+Supervisors can view simulation results. The results don't affect records or quality metrics, so you can validate and refine criteria before publishing. Each simulation consumes [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go).
 
 ## Extend your evaluation criteria
 
-After you create a source criteria for your business unit, you can extend the criteria to suit your organizational requirements. Updates to the source criteria automatically appear in all the extended criteria. Select any custom evaluation criteria in the **Published** state as source criteria to extend it further.
+After you create source criteria for your business unit, you can extend the criteria to suit your organizational requirements. Updates to the source criteria automatically appear in all the extended criteria. Select any custom evaluation criteria in the **Published** state as source criteria to extend.
 
 1.  Select the criteria, and then select **Extend criteria**. The **New extended evaluation criteria** page appears.
 
 1.  In the **Extended criteria details** section, enter the following details:
 
-    1.  **Criteria name**: Provide a name.
+    1.  **Criteria name**: Enter a name.
 
     1.  **Description**: Provide a description. To provide your own instructions, turn off the **Use source instructions** toggle.
         To use the source instructions, turn on the **Use source instructions** toggle.
@@ -182,15 +182,15 @@ After you create a source criteria for your business unit, you can extend the cr
 1.  Select **Save**, and then select **Publish**.
 
     > [!NOTE]
-    > - The **Source criteria details** in the **Extended criteria details** page isn’t editable. However, if you make updates to the source criteria, the extended criteria is updated as well.
+    > - The **Source criteria details** in the **Extended criteria details** page isn't editable. However, if you make updates to the source criteria, the extended criteria is updated as well.
     > - The **Criteria scoring** reflects the selection you made in the source criteria.
-    > - You can’t extend an out-of-the-box criteria, for example, **Support quality**.
+    > - You can't extend an out-of-the-box criteria. For example, **Support quality**.
 
-## Copy the out-of-the-box evaluation criteria for cases and conversations
+## Copy the default evaluation criteria for cases and conversations
 
-1. Select the checkbox for the out-of-the-box criteria and then select **Copy**. A copy of the prefilled out-of-the-box criteria form is provided to you as the source. You can make edits as needed.
+1. Select the checkbox for the default criteria, and then select **Copy**. You receive a copy of the prefilled default criteria form as the source. You can make edits as needed.
 
-1. Select **Save**, once you're done making edits.
+1. Select **Save** when you finish making edits.
 
 ## Best practices for evaluation criteria
 
@@ -228,11 +228,11 @@ After you create a source criteria for your business unit, you can extend the cr
 
 **Question limits**
 
-- By default, a maximum of 50 questions is allowed per evaluation criteria. The limit applies to the entire criteria, not per section.
-- You can distribute questions across sections in any combination, as long as the total doesn't exceed 50.
-- When the limit is reached:
-    - You can’t add or duplicate questions.
-    - You can’t add or duplicate sections that would cause the total to exceed the limit.
+- By default, each evaluation criteria can include up to 50 questions. This limit applies to the entire criteria, not to each section.
+- You can distribute questions across sections in any combination, as long as the total number of questions doesn't exceed 50.
+- When you reach the limit:
+    - You can't add or duplicate questions.
+    - You can't add or duplicate sections if doing so would exceed the limit.
 
 
 **Character limits for criteria content**
@@ -250,12 +250,12 @@ The following per-field character limits apply to all instruction types (criteri
 The system monitors the total character count and displays a warning when content exceeds the recommended limit for the selected language. Recommended limits vary by language category:
 
 - 90,000 characters for most languages.
-- 60,000 characters for some languages, for example, Arabic.
+- 60,000 characters for some languages, such as Arabic.
 - 30,000 characters for languages with higher token expansion.
 
 The recommended character limit updates dynamically when you change the selected language. For example, switching from English to Arabic reduces the limit from 90,000 to 60,000 characters. The system evaluates limits based on the language selected in the criteria settings.
 
-When limits are exceeded:
+When you exceed limits:
 
 - A warning banner appears, indicating that evaluation accuracy might be affected. You can still save and use the criteria.
 - An error message appears if content exceeds 700,000 characters, which prevents you from saving the criteria.
@@ -264,8 +264,8 @@ When limits are exceeded:
 
 Creating extended criteria introduces a parent–child relationship between source criteria and extended criteria.
 
-- Question limits: Question limits are enforced independently for parent and child criteria, and up to 50 questions each.
-- Character limits: Recommended character limits (for example, 90,000 characters) are calculated by using both parent and child content combined.
+- Question limits: The system enforces question limits independently for parent and child criteria, with up to 50 questions each.
+- Character limits: The system calculates recommended character limits (for example, 90,000 characters) by using both parent and child content combined.
 
 |Limit type  | Behavior  |
 |---------|---------|

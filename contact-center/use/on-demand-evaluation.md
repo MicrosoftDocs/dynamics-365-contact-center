@@ -29,7 +29,7 @@ Use on-demand evaluation to check cases, conversations, and emails. Request eval
 ## Prerequisites
 
 - Enable [Quality evaluation](../administer/manage-quality-evaluation-agent.md).
-- Assign the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#role-and-privileges).
+- Assign the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#roles-and-privileges).
 - Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - Provide consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
 

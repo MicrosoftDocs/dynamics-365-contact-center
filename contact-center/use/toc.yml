@@ -418,6 +418,10 @@
           items:
           - name: Create and manage shift plans
             href: workforce-management-shift-plan.md
+          - name: Manage schedules
+            href: workforce-management-schedule-workforce.md
+          - name: Create and manage shift rotation policies
+            href: workforce-management-shift-rotation-policies.md
           - name: Use auto schedule to schedule service representatives
             href: workforce-management-use-auto-schedule.md
           - name: Use shift bidding
@@ -428,8 +432,6 @@
             href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/use-context
           - name: Use the schedule calendar
             href: /dynamics365/customer-service/use/use-agent-calendar?context=/dynamics365/contact-center/context/use-context
-          - name: Use break distribution to assign breaks
-            href: workforce-management-use-break-distribution.md
         - name: Time-off request management
           items:
           - name: Manage time-off requests

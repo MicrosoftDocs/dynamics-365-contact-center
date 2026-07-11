@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days 
-ms.date: 07/03/2026
+ms.date: 07/10/2026
 ms.custom: bap-template
 ---
 
@@ -24,7 +24,7 @@ Quality evaluation enables organizations to deliver consistent and scalable qual
 > [!IMPORTANT]
 >
 > - Evaluation for emails is a preview feature.
-> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
+> - Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520). They're available before an official release so that customers can get early access and provide feedback.
 
 Quality evaluation empowers supervisors to move beyond manual, time-intensive, and subjective spot checks by enabling them to:
 
@@ -63,11 +63,11 @@ Evaluations are the resulting outputs, including scores, summaries, and recommen
 
 ## Data movement across regions
 
-For optimal performance, service calls might be routed outside the customer's regional boundary if local capacity is temporarily unavailable. To participate, customers are requested to provide consent for potential data movement across regions. This consent enables us to deliver a seamless experience by using the full capabilities of Copilot and generative AI features within Power Platform.
+For optimal performance, the system might route service calls outside the customer's regional boundary if local capacity is temporarily unavailable. To participate, customers are requested to provide consent for potential data movement across regions. This consent enables Microsoft to deliver a seamless experience by using the full capabilities of Copilot and generative AI features within Power Platform.
 
 Learn more in [Move data across regions for Copilots and generative AI features – Power Platform](/power-platform/admin/geographical-availability-copilot?utm_source=chatgpt.com&tabs=new).
 
-## Role and privileges
+## Roles and privileges
 
 
 | Persona      | Role            | Privileges                                                                 |
@@ -83,14 +83,14 @@ When you go to the **Quality evaluation** page in Copilot Service admin center, 
 1. In Copilot Service admin center, go to **Customer Support** > **Quality management.** The **Quality management** page appears.
 1. Select **Manage** for **Quality evaluation**. The **Quality evaluation** page appears.
 1. In the **Prerequisites** section, verify if **Step 1: Connection References**, **Step 2: Power Automate Flows**, and **Step 3: Copilot Studio Agent** show as **Ready**.
-    1. If **Step 1: Connection References** shows as **In progress** or **Incomplete**, then select **Manage connections**.
+    1. If **Step 1: Connection References** shows as **In progress** or **Incomplete**, select **Manage connections**.
     1. In the **Configure Connections** dialog, select **Update connection references to use your connector** to complete connection references.
     1. In **Step 2: Power Automate Flows**, if a flow is turned off, use the navigation link to open the flow in Power Automate and enable it.
     1. When all tiles show as **Ready**, select **Publish** in **Step 3: Copilot Studio Agent** to complete the setup.
 
-After completing the configuration, you might need to perform a hard refresh to see the updated status.
+After you complete the configuration, you might need to perform a hard refresh to see the updated status.
 
-If you have issues configuring connection references from the **Quality evaluation** page, you can do a manual setup. Follow the steps provided in [Connection references for Quality Evaluation flow](/dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context).
+If you have problems configuring connection references from the **Quality evaluation** page, you can do a manual setup. Follow the steps provided in [Connection references for Quality Evaluation flow](/dynamics365/customer-service/administer/admin-km-agent-connections?context=/dynamics365/contact-center/context/administer-context).
 
 ## Enable quality evaluation
 
@@ -111,6 +111,19 @@ You need to enable quality evaluation for your supervisors in Copilot Service ad
  1. Select **Turn on**. You can't turn off this feature after you enable it.
  1. From the **Set threshold value out of 100** dropdown list, select a threshold value.
  1. Select **Save**.
+
+## Regenerate evaluation summaries
+
+Enable evaluators to regenerate summaries and action plans after they modify responses and submit evaluations. When an evaluator updates evaluation answers, either to correct AI misinterpretations or refine manual assessments, the system automatically regenerates the evaluation summary upon submission. This process ensures that insights stay aligned with the finalized evaluation. If no changes are made, summary regeneration is skipped to optimize performance and cost.
+
+1. In the site map of **Customer Service admin center**, go to **Quality Management**.
+1. On the **Quality Management** page, select **Manage** for **Quality evaluation**.
+1. In the **Evaluation summary** section, turn on **Regenerate evaluation summary**.
+
+If you disable the option:
+
+- The **Generate Summary** option is hidden from evaluators.
+- Evaluators can't generate summaries for manual evaluations or regenerate summaries for completed AI-assisted and AI agent evaluations.
 
 ## Related information
 

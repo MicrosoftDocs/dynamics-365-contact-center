@@ -47,6 +47,10 @@ The supported scenarios are as follows:
 
   - Reconnect customers with a preferred or a previously engaged expert for context continuity and optimal service
 
+- [**Bullseye routing through user groups**](configure-bullseye-routing.md):
+
+  - Expand the pool of representatives through user groups in the queue based on conversation wait time.
+
 ## Understand playbooks
 
 Configure playbooks per scenario through guided templates that keep instructions focused and reliable. A playbook consists of a trigger event and a set of conditions and actions to run when the trigger event occurs.
@@ -87,6 +91,7 @@ By default, the conversation orchestration page displays three popular prompts. 
       - **Handle overflow for direct inward dialed call**: For overflow conditions when representative isn't available to take a direct inward dialed call.
    - Assign to a predicted expert:
       - **Assign to a previous or preferred expert**: For a preferred expert or expert who previously interacted with the customer.
+   - Bullseye routing with user groups
 
 1. In the playbook editor, accept the default name or enter a name in **Playbook name**.
 1. Select **Queues** > **Edit** to open the queues pane.

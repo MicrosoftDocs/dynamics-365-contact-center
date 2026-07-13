@@ -50,6 +50,8 @@
             href: /dynamics365/customer-service/administer/configure-preferred-agent?context=/dynamics365/contact-center/context/administer-context
           - name: Manage overflow of work items in queues
             href: /dynamics365/customer-service/administer/manage-overflow?context=/dynamics365/contact-center/context/administer-context
+          - name: Configure bullseye routing using conversation orchestration (preview)
+            href: configure-bullseye-routing.md
         - name: Set up skill-based routing
           items:
           - name: Overview of skill-based routing

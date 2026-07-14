@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 05/22/2026
+ms.date: 07/14/2026
 ms.update-cycle: 180-days
 ms.custom:
   - bap-template
@@ -57,9 +57,9 @@ You might need to find the unique ID for your line of business when building use
 
 You can find the unique IDs for your line of business by using Open Data Protocol (OData) queries on the entity msdyn_intentfamilies table and finding the msdyn_intentfamilyid field. For example, https://[Organization domain]/api/data/v9.2/msdyn_intentfamilies?$select=msdyn_intentfamilyid,msdyn_name.
 
-### Create rules for cases and conversations
+### Create rules for cases, conversations, and emails
 
-For every line of business that you identify, create rules for cases and conversations. You can create one rule only (one each for a case and conversation) per line of business. During runtime, for chat and other channels, Copilot and intent-based suggestions must be enabled to determine the intent.
+For every line of business that you identify, create rules for cases, conversations, and emails. You can create only one rule each for a case and conversation per line of business. During runtime, for chat and other channels, Copilot and intent-based suggestions must be enabled to determine the intent.
 
 1. On the **Manage Lines of business** page, in **Case Rules**, select **Create rule**.
 1. On the dialog that appears, enter the rule name and select a line of business.
@@ -67,10 +67,9 @@ For every line of business that you identify, create rules for cases and convers
    > [!IMPORTANT]
    > Configure the workstream name in the line of business configuration rules for chat workstreams. Because the system tightly couples the chat widget with the line of business, specifying the line of business helps you make sure that the chat belongs to the same line of business as its workstream. Otherwise, the chat might end up with a different line of business other than its workstream.
 
-1. Optionally, select **Apply to historical data**. When selected, it’s used to associate past cases with a line of business for intent discovery. The system makes sure that intent discovery works properly by tagging past cases with the appropriate line of business.
 1. Save and close.
 
-Repeat the steps for creating rules and conditions for conversations for the lines of business you’d like to add.
+Repeat the steps for creating rules and conditions for conversations and emails for the lines of business you want to add.
 
 ## Manage intent discovery setup
 
@@ -78,23 +77,29 @@ You can enable Customer Intent Agent to analyze past conversations within the Cu
 
 You need to run the AI model on data sources like conversations to identify intent groups and related intents.
 
-1. On the **Customer Intent Agent** page, select **Manage** for **Manage intent discovery setup**.
+1. On the **Customer Intent Agent** page, select **Manage** for **Manage intent discovery settings (optional)**.
 
-1. On the **Manage intent discovery setup** page, select **Add intent discovery setting**.
-1. In **Intent discovery settings**, enter the  details:
+1. On the **Manage intent discovery setup** page, select **Setup intent discovery for a new LOB**.
+1. In **Add settings for intent discovery**, enter the details:
    - **Name**: An intuitive name that meets your business requirement.
    - **Data source**: Available for conversations only and therefore read-only.
-   - **Intent group granularity**: Select **Low**, **Medium**, or **High** in the list. If you select low, fewer intent groups are created, and vice versa happens if you select high. If you select **Medium**, the system creates a balanced number of intent groups between low and high.
-   - **Record status**: Select **Pending**, **Approved**, or **Discarded** in the list to indicate the default status that you'd like to set for the newly discovered intents.
-1. If you want to simulate the intent discovery, select **Test**. After the discovery is complete, a simulation of the intent groups is available.
-1. Select **Add into job schedule** to run the intent discovery.
-1. In **Test results**, select the simulation to view the details. The simulation details, such as status, data source, and intent group granularity are displayed. Simulation uses the last 1,000 records to generate intent and intent groups. The simulation helps administrators evaluate the intents and decide on granularity.
-1. Select the simulation, and then select **Export to Excel** option. The Excel file is downloaded to your local computer.
-1. After you validate and choose the intent group granularity that reflects your business needs, select **Set up intent discovery** to run the intent discovery.
-   > [!NOTE]
-   > You can view the simulation for successful runs only. The Excel file is empty for failed simulations.
+   - **Data source rules**:  Create a rule for the selected data sources. This step is required. Only cases, conversations, and emails that meet the rules you set are used for intent discovery.
 
-After the first run of the intent discovery, the intent groups are listed on the **All intent groups** page.
+1. If you want to simulate the intent discovery, select **Test**. After the discovery is complete, a simulation of the intent and intent groups is available.
+1. Select **Add into job schedule** to run the intent discovery.
+1. In **Test results**, select the simulation to view the details. The simulation details are displayed. Simulation uses the last 1,000 records to generate intent and intent groups. The simulation helps administrators evaluate the intents and intent groups.
+1. Select the simulation, and then select **View job details** option.
+1. After you validate the intents and intent groups that reflect your business needs, select **Set up intent discovery** to run the intent discovery.
+   > [!NOTE]
+   > You can view the simulation for successful runs only. The simulation job shows a failure message if the simulation is unsuccessful.
+
+### Promote intents to intent library
+
+1. On **Customer Intent Agent**, select **Manage** under **Manage intents**.
+1. On the **Manage intent discovery setup** page, select the discovery job or jobs you want to review and select **View job details**.
+1. In the job details, you see how many new intents and intent groups were generated in this discovery job.
+1. Select the intents or intent groups you want to promote to your intent library and then select **Move to intent library**.
+1. After you review the job, select **Mark jobs** as reviewed. This action lets you and other administrators know the jobs that are pending review.
 
 ## Manage intents
 

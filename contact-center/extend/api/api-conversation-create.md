@@ -9,7 +9,7 @@ ms.reviewer: mgandham
 ms.custom: bap-template
 ---
 
-# Use /consumer/conversations/create endpoint
+# Use /consumer/conversation/create endpoint
 
 The `create` endpoint starts a new customer conversation using the Messaging API. Conversations remain active until a customer service representative (service representative or representative) ends the conversation, the conversation enters a waiting state, or a timeout rule ends the conversation.
 

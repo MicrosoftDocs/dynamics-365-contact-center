@@ -1,508 +1,496 @@
 - name: Dynamics 365 Contact Center
-  items: 
-    - name: Manage your contact center
+  items:
+  - name: Manage your contact center
+    items:
+    - name: Dynamics 365 Contact Center documentation
+      href: ../index.yml
+    - name: Welcome to Dynamics 365 Contact Center
+      href: ../implement/overview-contact-center.md?context=/dynamics365/contact-center/context/use-context
+    - name: Representative experience
       items:
-      - name: Dynamics 365 Contact Center documentation
-        href: ../index.yml
-      - name: Welcome to Dynamics 365 Contact Center
-        href: ../implement/overview-contact-center.md?context=/dynamics365/contact-center/context/use-context
-      - name: Representative experience
+      - name: Overview of Copilot Service workspace
+        href: ccw-overview.md
+      - name: Use the inbox
+        href: /dynamics365/customer-service/use/use-inbox?context=/dynamics365/contact-center/context/use-context
+      - name: Use timeline
+        href: /powerapps/user/add-activities?context=/dynamics365/contact-center/context/use-context
+      - name: Learn about linking timeline notes with table records
+        href: /dynamics365/customer-service/use/link-note-to-entity-task?context=/dynamics365/contact-center/context/use-context
+      - name: View representative dashboard and work items
+        href: /dynamics365/customer-service/use/oc-agent-dashboard?context=/dynamics365/contact-center/context/use-context
+      - name: View notifications
+        href: /dynamics365/customer-service/use/oc-notifications?context=/dynamics365/contact-center/context/use-context
+      - name: View communication panel
+        href: /dynamics365/customer-service/use/oc-conversation-control?context=/dynamics365/contact-center/context/use-context
+      - name: View conversation transcripts and call recordings
+        href: /dynamics365/customer-service/use/voice-channel-call-recordings-transcripts?context=/dynamics365/contact-center/context/use-context
+      - name: View active conversations
+        href: ../use/oc-active-conv.md
+      - name: Create a record
+        href: /dynamics365/customer-service/use/oc-create-record?context=/dynamics365/contact-center/context/use-context
+      - name: Search, link, and unlink a record
+        href: /dynamics365/customer-service/use/oc-search-link-unlink-record?context=/dynamics365/contact-center/context/use-context
+      - name: Take notes for conversation
+        href: /dynamics365/customer-service/use/oc-take-notes?context=/dynamics365/contact-center/context/use-context
+      - name: Monitor real-time customer sentiment
+        href: /dynamics365/customer-service/use/oc-monitor-real-time-customer-sentiment-sessions?context=/dynamics365/contact-center/context/use-context
+      - name: Manage sessions
+        href: /dynamics365/customer-service/use/oc-manage-sessions?context=/dynamics365/contact-center/context/use-context
+      - name: Manage applications
+        href: /dynamics365/customer-service/use/oc-manage-applications?context=/dynamics365/contact-center/context/use-context
+      - name: Personalize sound notifications
+        href: /dynamics365/customer-service/use/oc-personalize-sound-notifications?context=/dynamics365/contact-center/context/use-context
+      - name: Create personal quick replies
+        href: /dynamics365/customer-service/use/create-personal-quick-replies?context=/dynamics365/contact-center/context/use-context
+      - name: Manage presence status
+        href: /dynamics365/customer-service/use/oc-manage-presence-status?context=/dynamics365/contact-center/context/use-context
+      - name: FAQ on representative presence in contact center
+        href: /dynamics365/customer-service/use/presence-faq?context=/dynamics365/contact-center/context/use-context
+      - name: Search for transcripts
+        href: /dynamics365/customer-service/use/oc-search-transcipts?context=/dynamics365/contact-center/context/use-context
+      - name: View conversation and session forms
+        href: /dynamics365/customer-service/use/oc-view-activity-types?context=/dynamics365/contact-center/context/use-context
+      - name: View active conversation for an incoming conversation request
+        href: /dynamics365/customer-service/use/oc-view-customer-summary-incoming-conversation-request?context=/dynamics365/contact-center/context/use-context
+      - name: Real-time language translation of conversations
+        href: /dynamics365/customer-service/use/oc-real-time-translation?context=/dynamics365/contact-center/context/use-context
+      - name: Markdown formats for representatives
+        href: /dynamics365/customer-service/use/markdown-formats-agents?context=/dynamics365/contact-center/context/use-context
+    - name: Voice
+      items:
+      - name: Call a customer
+        href: /dynamics365/customer-service/use/voice-channel-call-customer?context=/dynamics365/contact-center/context/use-context
+      - name: Use call controls and the representative desktop for voice
+        href: voice-channel-agent-experience.md
+      - name: How to avoid call disconnection
+        href: voice-channel-agent-experience.md#avoid-call-disconnection
+      - name: Use the desktop companion application
+        href: voice-dca-application.md
+      - name: Manage voicemails
+        href: /dynamics365/customer-service/use/manage-voicemails?context=/dynamics365/contact-center/context/use-context
+      - name: Transfer calls and consult with other users
+        href: /dynamics365/customer-service/use/voice-channel-transfer-consult?context=/dynamics365/contact-center/context/use-context
+      - name: Monitor voice calls
+        href: /dynamics365/customer-service/use/voice-channel-monitor-calls?context=/dynamics365/contact-center/context/use-context
+    - name: Use contact center agents
+      items:
+      - name: Overview of contact center Agents
+        href: ../administer/overview-contact-center-agents.md
+      - name: Quality Assurance Agent
         items:
-        - name: Overview of Copilot Service workspace
-          href: ccw-overview.md
-        - name: Use the inbox
-          href: /dynamics365/customer-service/use/use-inbox?context=/dynamics365/contact-center/context/use-context
-        - name: Use timeline
-          href: /powerapps/user/add-activities?context=/dynamics365/contact-center/context/use-context
-        - name: Learn about linking timeline notes with table records
-          href: /dynamics365/customer-service/use/link-note-to-entity-task?context=/dynamics365/contact-center/context/use-context          
-        - name: View representative dashboard and work items
-          href: /dynamics365/customer-service/use/oc-agent-dashboard?context=/dynamics365/contact-center/context/use-context
-        - name: View notifications
-          href: /dynamics365/customer-service/use/oc-notifications?context=/dynamics365/contact-center/context/use-context
-        - name: View communication panel
-          href: /dynamics365/customer-service/use/oc-conversation-control?context=/dynamics365/contact-center/context/use-context
-        - name: View conversation transcripts and call recordings
-          href: /dynamics365/customer-service/use/voice-channel-call-recordings-transcripts?context=/dynamics365/contact-center/context/use-context          
-        - name: View active conversations
-          href: ../use/oc-active-conv.md
-        - name: Create a record
-          href: /dynamics365/customer-service/use/oc-create-record?context=/dynamics365/contact-center/context/use-context
-        - name: Search, link, and unlink a record
-          href: /dynamics365/customer-service/use/oc-search-link-unlink-record?context=/dynamics365/contact-center/context/use-context
-        - name: Take notes for conversation
-          href: /dynamics365/customer-service/use/oc-take-notes?context=/dynamics365/contact-center/context/use-context
-        - name: Monitor real-time customer sentiment
-          href: /dynamics365/customer-service/use/oc-monitor-real-time-customer-sentiment-sessions?context=/dynamics365/contact-center/context/use-context
-        - name: Manage sessions
-          href: /dynamics365/customer-service/use/oc-manage-sessions?context=/dynamics365/contact-center/context/use-context
-        - name: Manage applications
-          href: /dynamics365/customer-service/use/oc-manage-applications?context=/dynamics365/contact-center/context/use-context
-        - name: Personalize sound notifications
-          href: /dynamics365/customer-service/use/oc-personalize-sound-notifications?context=/dynamics365/contact-center/context/use-context
-        - name: Create personal quick replies
-          href: /dynamics365/customer-service/use/create-personal-quick-replies?context=/dynamics365/contact-center/context/use-context
-        - name: Manage presence status
-          href: /dynamics365/customer-service/use/oc-manage-presence-status?context=/dynamics365/contact-center/context/use-context
-        - name: FAQ on representative presence in contact center
-          href: /dynamics365/customer-service/use/presence-faq?context=/dynamics365/contact-center/context/use-context
-        - name: Search for transcripts
-          href: /dynamics365/customer-service/use/oc-search-transcipts?context=/dynamics365/contact-center/context/use-context
-        - name: View conversation and session forms
-          href: /dynamics365/customer-service/use/oc-view-activity-types?context=/dynamics365/contact-center/context/use-context
-        - name: View active conversation for an incoming conversation request
-          href: /dynamics365/customer-service/use/oc-view-customer-summary-incoming-conversation-request?context=/dynamics365/contact-center/context/use-context
-        - name: Real-time language translation of conversations
-          href: /dynamics365/customer-service/use/oc-real-time-translation?context=/dynamics365/contact-center/context/use-context
-        - name: Markdown formats for representatives
-          href: /dynamics365/customer-service/use/markdown-formats-agents?context=/dynamics365/contact-center/context/use-context
-      - name: Voice
+        - name: Use quality and coaching skills
+          href: use-quality-coach.md
+    - name: Use autonomous service agents
+      items:
+      - name: Overview of autonomous service agents
+        href: ../administer/autonomous-agents-overview.md?context=/dynamics365/contact-center/context/use-context
+      - name: Customer Intent Agent
         items:
-        - name: Call a customer
-          href: /dynamics365/customer-service/use/voice-channel-call-customer?context=/dynamics365/contact-center/context/use-context
-        - name: Use call controls and the representative desktop for voice
-          href: voice-channel-agent-experience.md
-        - name: How to avoid call disconnection
-          href: voice-channel-agent-experience.md#avoid-call-disconnection
-        - name: Use the desktop companion application
-          href: voice-dca-application.md
-        - name: Manage voicemails
-          href: /dynamics365/customer-service/use/manage-voicemails?context=/dynamics365/contact-center/context/use-context
-        - name: Transfer calls and consult with other users
-          href: /dynamics365/customer-service/use/voice-channel-transfer-consult?context=/dynamics365/contact-center/context/use-context
-        - name: Monitor voice calls
-          href: /dynamics365/customer-service/use/voice-channel-monitor-calls?context=/dynamics365/contact-center/context/use-context
-      - name: Use contact center agents
+        - name: Use intent-based suggestions
+          href: use-intent-suggestions.md
+      - name: Customer Knowledge Management Agent
         items:
-         - name: Overview of contact center Agents
-           href: ../administer/overview-contact-center-agents.md
-         - name: Quality Assurance Agent
-           items:
-            - name: Use quality and coaching skills
-              href: use-quality-coach.md 
-      - name: Use autonomous service agents
+        - name: Review knowledge articles created by the Customer Knowledge Management Agent
+          href: /dynamics365/customer-service/use/admin-km-agent-review?context=/dynamics365/contact-center/context/use-context
+        - name: Use knowledge insights for Customer Knowledge Management Agent
+          href: /dynamics365/customer-service/use/admin-km-agent-insights?context=/dynamics365/contact-center/context/use-context
+    - name: Use Copilot features in contact center-standalone
+      items:
+      - name: Overview of autonomous agents and Copilot features
+        href: overview-ai-agents-copilot-features.md
+      - name: Copilot feature availability across applications
+        href: copilot-feature-availability.md
+      - name: Summarize conversations
+        href: copilot-summarize-conversations.md
+      - name: Ask a question
+        href: use-ask-a-question.md
+      - name: Write an email with Copilot
+        href: use-copilot-email.md
+      - name: Use Microsoft 365 Copilot
+        href: /dynamics365/customer-service/use/use-microsoft-365-copilot?context=/dynamics365/contact-center/context/use-context
+      - name: Supervise AI agents with agent feed
+        href: /dynamics365/customer-service/use/supervise-agents-with-agent-feed?context=/dynamics365/contact-center/context/use-context
+      - name: Use AI form-fill assistance
+        href: /dynamics365/customer-service/use/form-fill-assistance?context=/dynamics365/contact-center/context/use-context
+      - name: Use natural language to find data with AI in a view
+        href: /dynamics365/customer-service/use/find-data-with-ai?context=/dynamics365/contact-center/context/use-context
+      - name: Visualize data as a chart with Copilot
+        href: /dynamics365/customer-service/use/visualize-data-using-copilot?context=/dynamics365/contact-center/context/use-context
+      - name: View a Copilot-generated row summary
+        href: /dynamics365/customer-service/use/record-summaries?context=/dynamics365/contact-center/context/use-context
+      - name: Use timeline highlights with generative AI
+        href: /dynamics365/customer-service/use/use-timeline-highlights-with-generative-ai?context=/dynamics365/contact-center/context/use-context
+      - name: Understand how Copilot supports different languages
+        href: copilot-language-support.md
+      - name: Chat with case data in Customer Service (preview)
+        href: copilot-chat-customer-service-data.md
+    - name: Use Copilot features in non-Microsoft systems
+      items:
+      - name: Use ask a question
+        href: embed-ask-question.md
+      - name: Summarize cases
+        href: copilot-use-summary.md
+      - name: Generate resolution notes
+        href: embed-ask-question.md#generate-resolution-notes
+      - name: Summarize conversations
+        href: embed-summarize-conversation.md
+      - name: Use Copilot to draft an email
+        href: draft-email-embedded-experience.md
+    - name: Unified routing and assignment
+      items:
+      - name: Manage skills
+        href: /dynamics365/customer-service/use/manage-skills?context=/dynamics365/contact-center/use-context
+    - name: Email
+      items:
+      - name: Use email
+        href: /power-apps/user/view-create-email?context=/dynamics365/contact-center/context/use-context
+      - name: View, compose, and respond to emails
+        href: /power-apps/user/view-compose-email?context=/dynamics365/contact-center/context/use-context
+      - name: Use enhanced experience to attach files to emails
+        href: /dynamics365/customer-service/use/enhanced-email-attachment-control?context=/dynamics365/contact-center/context/use-context
+      - name: Attach a file to email
+        href: /power-apps/user/attach-email?context=/dynamics365/contact-center/context/use-context
+      - name: Use the rich text editor toolbar in email
+        href: /power-apps/user/email-rich-text-editor?context=/dynamics365/contact-center/context/use-context
+      - name: Send email to multiple recipients
+        href: /power-apps/user/direct-email?context=/dynamics365/contact-center/context/use-context
+      - name: Resolve an unresolved email recipient
+        href: /power-apps/user/unresolved-email-recipient?context=/dynamics365/contact-center/context/use-context
+      - name: Email templates
         items:
-        - name: Overview of autonomous service agents
-          href: ../administer/autonomous-agents-overview.md?context=/dynamics365/contact-center/context/use-context
-        - name: Customer Intent Agent
-          items:
-          - name: Use intent-based suggestions
-            href: use-intent-suggestions.md
-        - name: Customer Knowledge Management Agent 
-          items:
-          - name: Review knowledge articles created by the Customer Knowledge Management Agent
-            href: /dynamics365/customer-service/use/admin-km-agent-review?context=/dynamics365/contact-center/context/use-context
-          - name: Use knowledge insights for Customer Knowledge Management Agent
-            href: /dynamics365/customer-service/use/admin-km-agent-insights?context=/dynamics365/contact-center/context/use-context
-        - name: Quality Evaluation Agent
-          items:
-          - name: Use evaluation criteria
-            href: evaluation-criteria.md
-          - name: Use evaluation plan
-            href: evaluation-plan.md
-          - name: Use on-demand evaluation
-            href: on-demand-evaluation.md
-          - name: Use evaluations
-            href: use-evaluations.md
-      - name: Use Copilot features in contact center-standalone
-        items: 
-        - name: Overview of autonomous agents and Copilot features
-          href: overview-ai-agents-copilot-features.md
-        - name: Copilot feature availability across applications
-          href: copilot-feature-availability.md  
-        - name: Summarize conversations
-          href: copilot-summarize-conversations.md  
-        - name: Ask a question
-          href: use-ask-a-question.md  
-        - name: Write an email with Copilot
-          href: use-copilot-email.md  
-        - name: Use Microsoft 365 Copilot
-          href: /dynamics365/customer-service/use/use-microsoft-365-copilot?context=/dynamics365/contact-center/context/use-context
-        - name: Supervise AI agents with agent feed
-          href: /dynamics365/customer-service/use/supervise-agents-with-agent-feed?context=/dynamics365/contact-center/context/use-context
-        - name: Use AI form-fill assistance
-          href: /dynamics365/customer-service/use/form-fill-assistance?context=/dynamics365/contact-center/context/use-context
-        - name: Use natural language to find data with AI in a view
-          href: /dynamics365/customer-service/use/find-data-with-ai?context=/dynamics365/contact-center/context/use-context
-        - name: Visualize data as a chart with Copilot
-          href: /dynamics365/customer-service/use/visualize-data-using-copilot?context=/dynamics365/contact-center/context/use-context
-        - name: View a Copilot-generated row summary
-          href: /dynamics365/customer-service/use/record-summaries?context=/dynamics365/contact-center/context/use-context
-        - name: Use timeline highlights with generative AI
-          href: /dynamics365/customer-service/use/use-timeline-highlights-with-generative-ai?context=/dynamics365/contact-center/context/use-context         
-        - name: Understand how Copilot supports different languages
-          href: copilot-language-support.md
-        - name: Chat with case data in Customer Service (preview)
-          href: copilot-chat-customer-service-data.md
-      - name: Use Copilot features in non-Microsoft systems
-        items:  
-        - name: Use ask a question
-          href: embed-ask-question.md  
-        - name: Summarize cases
-          href: copilot-use-summary.md 
-        - name: Generate resolution notes
-          href: embed-ask-question.md#generate-resolution-notes
-        - name: Summarize conversations
-          href: embed-summarize-conversation.md   
-        - name: Use Copilot to draft an email
-          href: draft-email-embedded-experience.md  
-      - name: Unified routing and assignment
+        - name: Create an email template
+          href: /power-apps/user/email-template-create?branch=main&context=/dynamics365/contact-center/context/use-context
+        - name: Insert an email template
+          href: /power-apps/user/insert-email-template?context=/dynamics365/contact-center/context/use-context
+        - name: Personalize emails with dynamic text
+          href: /power-apps/user/email-dynamic-text?context=/dynamics365/contact-center/context/use-context
+        - name: Customize an email template using the template editor
+          href: /power-apps/user/cs-template-options?context=/dynamics365/contact-center/context/use-context
+        - name: Convert an email to a template
+          href: /power-apps/user/email-template-convert?context=/dynamics365/contact-center/context/use-context
+        - name: Create a signature for emails
+          href: /power-apps/user/email-signature?context=/dynamics365/contact-center/context/use-context
+      - name: Email FAQ and known issues
+        href: /power-apps/user/activities-known-issues?context=/dynamics365/contact-center/context/use-context
+    - name: Inbox
+      items:
+      - name: Use the inbox
+        href: /dynamics365/customer-service/use/use-inbox?context=/dynamics365/context/use-context
+      - name: Inbox views and filters
+        href: /dynamics365/customer-service/administer/inbox-views-filters?context=/dynamics365/contact-center/context/use-context
+      - name: Create personalized inbox views
+        href: /dynamics365/customer-service/use/inbox-create-personalized-view?context=/dynamics365/context/use-context
+    - name: Use messaging channels
+      items:
+      - name: Introduction to channels
+        href: /dynamics365/customer-service/use/channels?context=/dynamics365/contact-center/context/use-context
+      - name: Overview of SMS channels
+        href: /dynamics365/customer-service/use/sms-channel-overview?context=/dynamics365/contact-center/context/use-context
+      - name: Use SMS channel
+        href: /dynamics365/customer-service/use/sms-telesign-twilio?context=/dynamics365/contact-center/context/use-context
+      - name: Use Facebook channel
+        href: /dynamics365/customer-service/use/facebook?context=/dynamics365/contact-center/context/use-context
+      - name: Use WhatsApp channel
+        href: /dynamics365/customer-service/use/whatsapp?context=/dynamics365/contact-center/context/use-context
+      - name: Use Microsoft Teams channel
+        href: /dynamics365/customer-service/use/teams-channel?context=/dynamics365/contact-center/context/use-context
+      - name: Use WeChat channel
+        href: /dynamics365/customer-service/use/wechat-channel?context=/dynamics365/contact-center/context/use-context
+      - name: View social profiles
+        href: /dynamics365/customer-service/use/supported-channels-social-profiles?context=/dynamics365/contact-center/context/use-context
+      - name: Understand disconnected chats
+        href: /dynamics365/customer-service/use/oc-conv-state-chat-disconnect?context=/dynamics365/contact-center/context/use-context
+      - name: Understand conversation states
+        href: /dynamics365/customer-service/use/oc-conversation-state?context=/dynamics365/contact-center/context/use-context
+      - name: View call options and visual engagement in live chat
+        href: /dynamics365/customer-service/use/call-options-visual-engagement?context=/dynamics365/contact-center/context/use-context
+    - name: Proactive engagement
+      items:
+      - name: Overview of proactive engagement
+        href: ../administer/overview-proactive-engagement.md?context=/dynamics365/contact-center/context/use-context
+      - name: How proactive engagement works
+        href: how-proactive-engagement-works.md
+    - name: Agent productivity tools
+      items:
+      - name: Productivity pane in Copilot Service workspace
+        href: /dynamics365/customer-service/use/csw-productivity-pane?context=/dynamics365/contact-center/context/use-context
+      - name: View smart assist suggestions for knowledge articles and similar cases
+        href: /dynamics365/customer-service/use/oc-view-ai-suggested-cases-articles?context=/dynamics365/contact-center/context/use-context
+      - name: View smart assist suggestions
+        href: /dynamics365/customer-service/use/oc-smart-assist?context=/dynamics365/contact-center/context/use-context
+      - name: View the representative calendar
+        href: /dynamics365/customer-service/use/use-agent-calendar?context=/dynamics365/contact-center/context/use-context
+      - name: Use representative diagnostics as a self-help tool
+        href: /dynamics365/customer-service/use/use-agent-diagnostics?context=/dynamics365/contact-center/context/use-context
+      - name: Use scripts for customer interactions
+        href: /dynamics365/customer-service/use/oc-agent-scripts?context=/dynamics365/contact-center/context/use-context
+      - name: Rich messages in conversation control
+        href: /dynamics365/customer-service/use/rich-messages-conversation-control?context=/dynamics365/contact-center/context/use-context
+    - name: Knowledge management
+      items:
+      - name: Overview of knowledge management
+        href: /dynamics365/customer-service/use/overview-knowledge-management?context=/dynamics365/contact-center/context/use-context
+      - name: Understand the knowledge article creation process
+        href: /dynamics365/customer-service/use/ka-process?context=/dynamics365/contact-center/context/use-context
+      - name: Create and manage knowledge articles
+        href: /dynamics365/customer-service/use/customer-service-hub-user-guide-knowledge-article?context=/dynamics365/contact-center/context/use-context
+      - name: Configure the knowledge article authoring language
+        href: /dynamics365/customer-service/use/set-knowledge-article-authoring-language?context=/dynamics365/contact-center/context/use-context
+      - name: Review knowledge articles
+        href: /dynamics365/customer-service/use/review-ka?context=/dynamics365/contact-center/context/use-context
+      - name: Publish knowledge articles
+        href: /dynamics365/customer-service/use/publish-ka?context=/dynamics365/contact-center/context/use-context
+      - name: Create and manage article versions
+        href: /dynamics365/customer-service/use/ka-versions?context=/dynamics365/contact-center/context/use-context
+      - name: Translate knowledge articles
+        href: /dynamics365/customer-service/use/translate-ka?context=/dynamics365/contact-center/context/use-context
+      - name: Manage feedback for knowledge articles
+        href: /dynamics365/customer-service/use/feedback-sla?context=/dynamics365/contact-center/context/use-context
+      - name: Create templates for knowledge articles
+        href: /dynamics365/customer-service/use/create-templates-knowledge-article?context=/dynamics365/contact-center/context/use-context
+      - name: Prevent duplicate workflows with knowledge article operations
+        href: /dynamics365/customer-service/use/dup-workflows-ka?context=/dynamics365/contact-center/context/use-context
+      - name: Knowledge article analytics
+        href: /dynamics365/customer-service/use/dashboards-ka?context=/dynamics365/contact-center/context/use-context
+      - name: Search knowledge articles
+        href: /dynamics365/customer-service/use/search-knowledge-articles-csh?context=/dynamics365/contact-center/context/use-context
+      - name: Email a knowledge article
+        href: /dynamics365/customer-service/use/email-articles?context=/dynamics365/contact-center/context/use-context
+      - name: Link and unlink knowledge articles
+        href: /dynamics365/customer-service/use/link-articles?context=/dynamics365/contact-center/context/use-context
+      - name: Filter knowledge articles
+        href: /dynamics365/customer-service/use/filter-articles?context=/dynamics365/contact-center/context/use-context
+      - name: Submit ratings and feedback for knowledge articles
+        href: /dynamics365/customer-service/use/submit-feedback?context=/dynamics365/contact-center/context/use-context
+      - name: Understand how search works in knowledge management
+        href: /dynamics365/customer-service/use/search-operators?context=/dynamics365/contact-center/context/use-context
+      - name: Search the knowledge base on portals
+        href: /dynamics365/customer-service/use/knowledge-base-search-methods?context=/dynamics365/contact-center/context/use-context
+    - name: Microsoft Teams for collaboration
+      items:
+      - name: Use Microsoft Teams chat
+        href: /dynamics365/customer-service/use/use-teams-chat?context=/dynamics365/contact-center/context/use-context
+      - name: Use suggested contacts to collaborate with coworkers
+        href: /dynamics365/customer-service/use/teams-use-suggested-contacts?context=/dynamics365/contact-center/context/use-context
+      - name: Use Teams meetings
+        href: /dynamics365/customer-service/use/use-teams-meetings?context=/dynamics365/contact-center/context/use-context
+      - name: Use Join a Teams call to enhance customer conversations
+        href: /dynamics365/customer-service/use/join-a-teams-call?context=/dynamics365/contact-center/context/use-context
+    - name: Analytics dashboards and insights
+      items:
+      - name: Use real-time streaming analytics (preview)
         items:
-          - name: Manage skills
-            href: /dynamics365/customer-service/use/manage-skills?context=/dynamics365/contact-center/use-context
-      - name: Email
-        items: 
-          - name: Use email
-            href: /power-apps/user/view-create-email?context=/dynamics365/contact-center/context/use-context
-          - name: View, compose, and respond to emails
-            href: /power-apps/user/view-compose-email?context=/dynamics365/contact-center/context/use-context
-          - name: Use enhanced experience to attach files to emails
-            href: /dynamics365/customer-service/use/enhanced-email-attachment-control?context=/dynamics365/contact-center/context/use-context
-          - name: Attach a file to email
-            href: /power-apps/user/attach-email?context=/dynamics365/contact-center/context/use-context
-          - name: Use the rich text editor toolbar in email
-            href: /power-apps/user/email-rich-text-editor?context=/dynamics365/contact-center/context/use-context
-          - name: Send email to multiple recipients
-            href: /power-apps/user/direct-email?context=/dynamics365/contact-center/context/use-context
-          - name: Resolve an unresolved email recipient
-            href: /power-apps/user/unresolved-email-recipient?context=/dynamics365/contact-center/context/use-context           
-          - name: Email templates
-            items: 
-            - name: Create an email template
-              href: /power-apps/user/email-template-create?branch=main&context=/dynamics365/contact-center/context/use-context
-            - name: Insert an email template
-              href: /power-apps/user/insert-email-template?context=/dynamics365/contact-center/context/use-context
-            - name: Personalize emails with dynamic text
-              href: /power-apps/user/email-dynamic-text?context=/dynamics365/contact-center/context/use-context
-            - name: Customize an email template using the template editor
-              href: /power-apps/user/cs-template-options?context=/dynamics365/contact-center/context/use-context
-            - name: Convert an email to a template
-              href: /power-apps/user/email-template-convert?context=/dynamics365/contact-center/context/use-context
-            - name: Create a signature for emails
-              href: /power-apps/user/email-signature?context=/dynamics365/contact-center/context/use-context
-          - name: Email FAQ and known issues
-            href: /power-apps/user/activities-known-issues?context=/dynamics365/contact-center/context/use-context               
-      - name: Inbox
+        - name: Overview of real-time streaming analytics
+          href: realtime-streaming.md
+        - name: Monitor real-time metrics with Wallboard View
+          href: realtime-streaming-wallboard.md
+        - name: Use real-time assisted service
+          href: realtime-streaming-assisted-service.md
+        - name: Monitor queue metrics and performance
+          href: realtime-streaming-queues.md
+        - name: Monitor representatives in real time
+          href: realtime-streaming-representatives.md
+        - name: Monitor conversations in real time
+          href: realtime-streaming-conversations.md
+      - name: Use real-time analytics dashboards
         items:
-          - name: Use the inbox
-            href: /dynamics365/customer-service/use/use-inbox?context=/dynamics365/context/use-context           
-          - name: Inbox views and filters
-            href: /dynamics365/customer-service/administer/inbox-views-filters?context=/dynamics365/contact-center/context/use-context
-          - name: Create personalized inbox views
-            href: /dynamics365/customer-service/use/inbox-create-personalized-view?context=/dynamics365/context/use-context         
-      - name: Use messaging channels
+        - name: Overview of real-time analytics reports
+          href: /dynamics365/customer-service/use/intro-realtime-analytics-dashboard?context=/dynamics365/contact-center/context/use-context
+        - name: Summary report
+          href: /dynamics365/customer-service/use/realtime-summary-dashboard?context=/dynamics365/contact-center/context/use-context
+        - name: Voice report
+          href: /dynamics365/customer-service/use/realtime-voice-dashboard?context=/dynamics365/contact-center/context/use-context
+        - name: Agents report
+          href: /dynamics365/customer-service/use/realtime-agents-analytics?context=/dynamics365/contact-center/context/use-context
+        - name: Bot report
+          href: agent-realtime-dashboard.md
+        - name: Ongoing Conversation report
+          href: /dynamics365/customer-service/use/realtime-ongoing?context=/dynamics365/contact-center/context/use-context
+        - name: Backlog conversation report
+          href: /dynamics365/customer-service/use/realtime-backlog-conv?context=/dynamics365/contact-center/context/use-context
+        - name: Intent group report
+          href: realtime-intent-group-report.md
+        - name: User group report
+          href: realtime-agent-group-report.md
+        - name: Diagnose contact center health
+          href: diagnose-dashboard.md
+        - name: Proactive engagement report
+          href: proactive-engagement-dashboard.md
+      - name: Use historical analytics dashboards
         items:
-        - name: Introduction to channels
-          href: /dynamics365/customer-service/use/channels?context=/dynamics365/contact-center/context/use-context
-        - name: Overview of SMS channels
-          href: /dynamics365/customer-service/use/sms-channel-overview?context=/dynamics365/contact-center/context/use-context
-        - name: Use SMS channel
-          href: /dynamics365/customer-service/use/sms-telesign-twilio?context=/dynamics365/contact-center/context/use-context
-        - name: Use Facebook channel
-          href: /dynamics365/customer-service/use/facebook?context=/dynamics365/contact-center/context/use-context
-        - name: Use WhatsApp channel
-          href: /dynamics365/customer-service/use/whatsapp?context=/dynamics365/contact-center/context/use-context
-        - name: Use Microsoft Teams channel
-          href: /dynamics365/customer-service/use/teams-channel?context=/dynamics365/contact-center/context/use-context
-        - name: Use WeChat channel
-          href: /dynamics365/customer-service/use/wechat-channel?context=/dynamics365/contact-center/context/use-context
-        - name: View social profiles
-          href: /dynamics365/customer-service/use/supported-channels-social-profiles?context=/dynamics365/contact-center/context/use-context
-        - name: Understand disconnected chats
-          href: /dynamics365/customer-service/use/oc-conv-state-chat-disconnect?context=/dynamics365/contact-center/context/use-context
-        - name: Understand conversation states
-          href: /dynamics365/customer-service/use/oc-conversation-state?context=/dynamics365/contact-center/context/use-context
-        - name: View call options and visual engagement in live chat
-          href: /dynamics365/customer-service/use/call-options-visual-engagement?context=/dynamics365/contact-center/context/use-context          
-      - name: Proactive engagement
+        - name: Dashboards
+          href: /dynamics365/customer-service/use/omnichannel-analytics-insights?context=/dynamics365/contact-center/context/use-context
+        - name: Summary dashboard
+          href: /dynamics365/customer-service/use/omnichannel-summary-dashboard?context=/dynamics365/contact-center/context/use-context
+        - name: Conversation dashboard
+          href: /dynamics365/customer-service/use/oc-conversation-dashboard?context=/dynamics365/contact-center/context/use-context
+        - name: Queue dashboard
+          href: /dynamics365/customer-service/use/oc-queue-dashboard?context=/dynamics365/contact-center/context/use-context
+        - name: Voice dashboard
+          href: /dynamics365/customer-service/use/voice-channel-reports-analytics?context=/dynamics365/contact-center/context/use-context
+        - name: Agent dashboard
+          href: /dynamics365/customer-service/use/agent-dashboard?context=/dynamics365/contact-center/context/use-context
+        - name: Bot dashboard
+          href: /dynamics365/customer-service/use/oc-bot-dashboard?context=/dynamics365/contact-center/context/use-context
+        - name: Voicemail dashboard
+          href: /dynamics365/customer-service/use/oc-voicemail-dashboard?context=/dynamics365/contact-center/context/use-context
+        - name: Proactive Outbound dashboard
+          href: proactive-outbound-dashboard.md
+        - name: Bot-Intent dashboard
+          href: bot-intent-historical.md
+      - name: Use conversations
         items:
-        - name: Overview of proactive engagement
-          href: ../administer/overview-proactive-engagement.md?context=/dynamics365/contact-center/context/use-context
-        - name: How proactive engagement works
-          href: how-proactive-engagement-works.md
-      - name: Agent productivity tools
-        items: 
-        - name: Productivity pane in Copilot Service workspace
-          href: /dynamics365/customer-service/use/csw-productivity-pane?context=/dynamics365/contact-center/context/use-context
-        - name: View smart assist suggestions for knowledge articles and similar cases
-          href: /dynamics365/customer-service/use/oc-view-ai-suggested-cases-articles?context=/dynamics365/contact-center/context/use-context
-        - name: View smart assist suggestions
-          href: /dynamics365/customer-service/use/oc-smart-assist?context=/dynamics365/contact-center/context/use-context
-        - name: View the representative calendar
-          href: /dynamics365/customer-service/use/use-agent-calendar?context=/dynamics365/contact-center/context/use-context
-        - name: Use representative diagnostics as a self-help tool
-          href: /dynamics365/customer-service/use/use-agent-diagnostics?context=/dynamics365/contact-center/context/use-context
-        - name: Use scripts for customer interactions
-          href: /dynamics365/customer-service/use/oc-agent-scripts?context=/dynamics365/contact-center/context/use-context
-        - name: Rich messages in conversation control
-          href: /dynamics365/customer-service/use/rich-messages-conversation-control?context=/dynamics365/contact-center/context/use-context
-      - name: Knowledge management
-        items:
-        - name: Overview of knowledge management 
-          href: /dynamics365/customer-service/use/overview-knowledge-management?context=/dynamics365/contact-center/context/use-context
-        - name: Understand the knowledge article creation process
-          href: /dynamics365/customer-service/use/ka-process?context=/dynamics365/contact-center/context/use-context
-        - name: Create and manage knowledge articles 
-          href: /dynamics365/customer-service/use/customer-service-hub-user-guide-knowledge-article?context=/dynamics365/contact-center/context/use-context
-        - name: Configure the knowledge article authoring language
-          href: /dynamics365/customer-service/use/set-knowledge-article-authoring-language?context=/dynamics365/contact-center/context/use-context
-        - name: Review knowledge articles 
-          href: /dynamics365/customer-service/use/review-ka?context=/dynamics365/contact-center/context/use-context
-        - name: Publish knowledge articles 
-          href: /dynamics365/customer-service/use/publish-ka?context=/dynamics365/contact-center/context/use-context
-        - name: Create and manage article versions
-          href: /dynamics365/customer-service/use/ka-versions?context=/dynamics365/contact-center/context/use-context
-        - name: Translate knowledge articles 
-          href: /dynamics365/customer-service/use/translate-ka?context=/dynamics365/contact-center/context/use-context
-        - name: Manage feedback for knowledge articles
-          href: /dynamics365/customer-service/use/feedback-sla?context=/dynamics365/contact-center/context/use-context 
-        - name: Create templates for knowledge articles
-          href: /dynamics365/customer-service/use/create-templates-knowledge-article?context=/dynamics365/contact-center/context/use-context
-        - name: Prevent duplicate workflows with knowledge article operations
-          href: /dynamics365/customer-service/use/dup-workflows-ka?context=/dynamics365/contact-center/context/use-context
-        - name: Knowledge article analytics
-          href: /dynamics365/customer-service/use/dashboards-ka?context=/dynamics365/contact-center/context/use-context
-        - name: Search knowledge articles
-          href: /dynamics365/customer-service/use/search-knowledge-articles-csh?context=/dynamics365/contact-center/context/use-context
-        - name: Email a knowledge article
-          href: /dynamics365/customer-service/use/email-articles?context=/dynamics365/contact-center/context/use-context
-        - name: Link and unlink knowledge articles
-          href: /dynamics365/customer-service/use/link-articles?context=/dynamics365/contact-center/context/use-context
-        - name: Filter knowledge articles
-          href: /dynamics365/customer-service/use/filter-articles?context=/dynamics365/contact-center/context/use-context
-        - name: Submit ratings and feedback for knowledge articles
-          href: /dynamics365/customer-service/use/submit-feedback?context=/dynamics365/contact-center/context/use-context        
-        - name: Understand how search works in knowledge management
-          href: /dynamics365/customer-service/use/search-operators?context=/dynamics365/contact-center/context/use-context
-        - name: Search the knowledge base on portals
-          href: /dynamics365/customer-service/use/knowledge-base-search-methods?context=/dynamics365/contact-center/context/use-context
-      - name: Microsoft Teams for collaboration
-        items:
-        - name: Use Microsoft Teams chat
-          href: /dynamics365/customer-service/use/use-teams-chat?context=/dynamics365/contact-center/context/use-context
-        - name: Use suggested contacts to collaborate with coworkers
-          href: /dynamics365/customer-service/use/teams-use-suggested-contacts?context=/dynamics365/contact-center/context/use-context
-        - name: Use Teams meetings
-          href: /dynamics365/customer-service/use/use-teams-meetings?context=/dynamics365/contact-center/context/use-context
-        - name: Use Join a Teams call to enhance customer conversations
-          href: /dynamics365/customer-service/use/join-a-teams-call?context=/dynamics365/contact-center/context/use-context
-      - name: Analytics dashboards and insights
-        items: 
-        - name: Use real-time streaming analytics (preview)
-          items:
-          - name: Overview of real-time streaming analytics
-            href: realtime-streaming.md
-          - name: Monitor real-time metrics with Wallboard View
-            href: realtime-streaming-wallboard.md
-          - name: Use real-time assisted service
-            href: realtime-streaming-assisted-service.md
-          - name: Monitor queue metrics and performance
-            href: realtime-streaming-queues.md
-          - name: Monitor representatives in real time
-            href: realtime-streaming-representatives.md
-          - name: Monitor conversations in real time
-            href: realtime-streaming-conversations.md
-        - name: Use real-time analytics dashboards
-          items:
-          - name: Overview of real-time analytics reports
-            href: /dynamics365/customer-service/use/intro-realtime-analytics-dashboard?context=/dynamics365/contact-center/context/use-context
-          - name: Summary report
-            href: /dynamics365/customer-service/use/realtime-summary-dashboard?context=/dynamics365/contact-center/context/use-context
-          - name: Voice report
-            href: /dynamics365/customer-service/use/realtime-voice-dashboard?context=/dynamics365/contact-center/context/use-context
-          - name: Agents report
-            href: /dynamics365/customer-service/use/realtime-agents-analytics?context=/dynamics365/contact-center/context/use-context
-          - name: Bot report
-            href: agent-realtime-dashboard.md
-          - name: Ongoing Conversation report
-            href: /dynamics365/customer-service/use/realtime-ongoing?context=/dynamics365/contact-center/context/use-context
-          - name: Backlog conversation report
-            href: /dynamics365/customer-service/use/realtime-backlog-conv?context=/dynamics365/contact-center/context/use-context
-          - name: Intent group report
-            href: realtime-intent-group-report.md
-          - name: User group report
-            href: realtime-agent-group-report.md
-          - name: Diagnose contact center health
-            href: diagnose-dashboard.md
-          - name: Proactive engagement report
-            href: proactive-engagement-dashboard.md
-        - name: Use historical analytics dashboards
-          items: 
-          - name: Dashboards
-            href: /dynamics365/customer-service/use/omnichannel-analytics-insights?context=/dynamics365/contact-center/context/use-context
-          - name: Summary dashboard
-            href: /dynamics365/customer-service/use/omnichannel-summary-dashboard?context=/dynamics365/contact-center/context/use-context
-          - name: Conversation dashboard
-            href: /dynamics365/customer-service/use/oc-conversation-dashboard?context=/dynamics365/contact-center/context/use-context
-          - name: Queue dashboard
-            href: /dynamics365/customer-service/use/oc-queue-dashboard?context=/dynamics365/contact-center/context/use-context
-          - name: Voice dashboard
-            href: /dynamics365/customer-service/use/voice-channel-reports-analytics?context=/dynamics365/contact-center/context/use-context
-          - name: Agent dashboard
-            href: /dynamics365/customer-service/use/agent-dashboard?context=/dynamics365/contact-center/context/use-context
-          - name: Bot dashboard
-            href: /dynamics365/customer-service/use/oc-bot-dashboard?context=/dynamics365/contact-center/context/use-context
-          - name: Voicemail dashboard
-            href: /dynamics365/customer-service/use/oc-voicemail-dashboard?context=/dynamics365/contact-center/context/use-context
-          - name: Proactive Outbound dashboard
-            href: proactive-outbound-dashboard.md
-          - name: Bot-Intent dashboard
-            href: bot-intent-historical.md
-        - name: Use conversations
-          items:
-          - name: Manage all ongoing conversations
-            href: all-ongoing-conversations.md
-          - name: Manage ongoing record conversations
-            href: manage-ongoing-record-conversations.md
-        - name: Manage ongoing conversations
+        - name: Manage all ongoing conversations
           href: all-ongoing-conversations.md
-        - name: Use knowledge management analytics
-          href: /dynamics365/customer-service/use/knowledge-search-analytics-cs?context=/dynamics365/contact-center/context/use-context
-        - name: View copilot analytics report
-          href: copilot-analytics-report.md
-        - name: View agent insights dashboard
-          href: agent-insights.md
-        - name: Monitor conversations
-          items: 
-            - name: Monitor, assign, transfer, and forcibly end conversations
-              href: /dynamics365/customer-service/use/monitor-conversations?context=/dynamics365/contact-center/context/use-context
-            - name: Monitor and analyze sentiments
-              href: /dynamics365/customer-service/use/supervisor-sentiment-monitoring?context=/dynamics365/contact-center/context/use-context
-        - name: View and understand Ongoing Conversations dashboard
-          href: /dynamics365/customer-service/use/ongoing-conversations-dashboard?context=/dynamics365/contact-center/context/use-context
-        - name: Analytics reports refresh and data retention
-          href: /dynamics365/customer-service/use/info-analytics-reports?context=/dynamics365/contact-center/context/use-context
-        - name: Use metrics
-          href: /dynamics365/customer-service/use/oc-metrics-dimensions?context=/dynamics365/contact-center/context/use-context
-        - name: Personalize analytics
-          items: 
-          - name: Manage report filters
-            href: /dynamics365/customer-service/use/report-filters-groups?context=/dynamics365/contact-center/context/use-context
-          - name: Manage report bookmarks
-            href: /dynamics365/customer-service/use/manage-bookmarks?context=/dynamics365/contact-center/context/use-context
-        - name: Forecast reports
-          items:
-          - name: Forecast agent, case, and conversation volumes
-            href: /dynamics365/customer-service/use/use-volume-forecasting?context=/dynamics365/contact-center/context/use-context
-        - name: Manage report visuals
-          items:
-          - name: Customize visual display
-            href: /dynamics365/customer-service/use/customize-reports?context=/dynamics365/contact-center/context/use-context
-          - name: Export and import visual customizations
-            href: /dynamics365/customer-service/use/export-import-visual-customization?context=/dynamics365/contact-center/context/use-context
-        - name: Customize the bot dashboard
-          href: customize-agent-dashboard.md
-        - name: Customize data models
-          items:
-          - name: Overview of data model customization
-            href: /dynamics365/customer-service/use/datamodel-overview?context=/dynamics365/contact-center/context/use-context
-          - name: Use the out-of-the-box data model in your custom reports
-            href: /dynamics365/customer-service/use/use-datamodel?context=/dynamics365/contact-center/context/use-context
-          - name: Data models and report mappings for historical analytics reports
-            href: /dynamics365/customer-service/use/oob-data-models?context=/dynamics365/contact-center/context/use-context
-          - name: Data model mapping for real-time analytics reports
-            href: /dynamics365/customer-service/use/datamapping-realtime?context=/dynamics365/contact-center/context/use-context
-          - name: Dataverse entities used in historical and real-time analytics
-            href: /dynamics365/customer-service/use/dataverse-entities?context=/dynamics365/contact-center/context/use-context
-      - name: Report issues in Dynamics 365 Contact Center
-        href: /dynamics365/customer-service/use/report-issues?context=/dynamics365/contact-center/context/use-context
-      - name: Share feedback
-        href: /dynamics365/customer-service/use/cs-share-feedback?context=/dynamics365/contact-center/context/use-context
-      - name: Workforce management
+        - name: Manage ongoing record conversations
+          href: manage-ongoing-record-conversations.md
+      - name: Manage ongoing conversations
+        href: all-ongoing-conversations.md
+      - name: Use knowledge management analytics
+        href: /dynamics365/customer-service/use/knowledge-search-analytics-cs?context=/dynamics365/contact-center/context/use-context
+      - name: View copilot analytics report
+        href: copilot-analytics-report.md
+      - name: View agent insights dashboard
+        href: agent-insights.md
+      - name: Monitor conversations
         items:
-        - name: Overview of Workforce Management
-          href: /dynamics365/customer-service/use/workforce-management-overview?context=/dynamics365/contact-center/context/use-context
-        - name: Forecasting
-          items: 
-          - name: Create and manage forecast scenarios
-            href: workforce-management-forecast-scenarios.md
-          - name: Import historical data
-            href: workforce-management-import-historical-data.md
-          - name: Estimate AI agent credits from forecasts
-            href: workforce-management-credit-estimation.md
-        - name: Capacity planning
-          items:
-          - name: Create and manage capacity plans
-            href: workforce-management-capacity-planning.md
-        - name: Shift planning and scheduling
-          items:
-          - name: Create and manage shift plans
-            href: workforce-management-shift-plan.md
-          - name: Manage schedules
-            href: workforce-management-schedule-workforce.md
-          - name: Create and manage shift rotation policies
-            href: workforce-management-shift-rotation-policies.md
-          - name: Use auto schedule to schedule service representatives
-            href: workforce-management-use-auto-schedule.md
-          - name: Use shift bidding
-            href: workforce-management-representative-shift-bidding.md
-          - name: Use shift swapping
-            href: workforce-management-use-shift-swapping.md
-          - name: Use shift-based routing for work items
-            href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/use-context
-          - name: Use the schedule calendar
-            href: /dynamics365/customer-service/use/use-agent-calendar?context=/dynamics365/contact-center/context/use-context
-        - name: Time-off request management
-          items:
-          - name: Manage time-off requests
-            href: workforce-management-view-time-off-requests.md
-          - name: Create a time-off request
-            href: workforce-management-create-time-off-request.md
-        - name: Intraday management
-          items:
-          - name: Use the adherence tracker
-            href: workforce-management-adherence-tracker.md
-          - name: Use the adherence history report
-            href: workforce-management-use-adherence-history-report.md
-      - name: Quality management
+        - name: Monitor, assign, transfer, and forcibly end conversations
+          href: /dynamics365/customer-service/use/monitor-conversations?context=/dynamics365/contact-center/context/use-context
+        - name: Monitor and analyze sentiments
+          href: /dynamics365/customer-service/use/supervisor-sentiment-monitoring?context=/dynamics365/contact-center/context/use-context
+      - name: View and understand Ongoing Conversations dashboard
+        href: /dynamics365/customer-service/use/ongoing-conversations-dashboard?context=/dynamics365/contact-center/context/use-context
+      - name: Analytics reports refresh and data retention
+        href: /dynamics365/customer-service/use/info-analytics-reports?context=/dynamics365/contact-center/context/use-context
+      - name: Use metrics
+        href: /dynamics365/customer-service/use/oc-metrics-dimensions?context=/dynamics365/contact-center/context/use-context
+      - name: Personalize analytics
         items:
-        - name: Overview of Quality Management Agent
-          href: overview-quality-management.md
-        - name: Use evaluation criteria
-          href: evaluation-criteria.md
-        - name: Use evaluation plan
-          href: evaluation-plan.md
-        - name: Use evaluations for real-time conversations
-          href: realtime-evaluation-plan.md
-        - name: Use on-demand evaluation
-          href: on-demand-evaluation.md
-        - name: Use evaluations
-          href: use-evaluations.md
-    - name: Known issues in Customer Service and Dynamics 365 Contact Center
-      href: https://go.microsoft.com/fwlink/p/?linkid=2165393
-    - name: Responsible AI
+        - name: Manage report filters
+          href: /dynamics365/customer-service/use/report-filters-groups?context=/dynamics365/contact-center/context/use-context
+        - name: Manage report bookmarks
+          href: /dynamics365/customer-service/use/manage-bookmarks?context=/dynamics365/contact-center/context/use-context
+      - name: Forecast reports
+        items:
+        - name: Forecast agent, case, and conversation volumes
+          href: /dynamics365/customer-service/use/use-volume-forecasting?context=/dynamics365/contact-center/context/use-context
+      - name: Manage report visuals
+        items:
+        - name: Customize visual display
+          href: /dynamics365/customer-service/use/customize-reports?context=/dynamics365/contact-center/context/use-context
+        - name: Export and import visual customizations
+          href: /dynamics365/customer-service/use/export-import-visual-customization?context=/dynamics365/contact-center/context/use-context
+      - name: Customize the bot dashboard
+        href: customize-agent-dashboard.md
+      - name: Customize data models
+        items:
+        - name: Overview of data model customization
+          href: /dynamics365/customer-service/use/datamodel-overview?context=/dynamics365/contact-center/context/use-context
+        - name: Use the out-of-the-box data model in your custom reports
+          href: /dynamics365/customer-service/use/use-datamodel?context=/dynamics365/contact-center/context/use-context
+        - name: Data models and report mappings for historical analytics reports
+          href: /dynamics365/customer-service/use/oob-data-models?context=/dynamics365/contact-center/context/use-context
+        - name: Data model mapping for real-time analytics reports
+          href: /dynamics365/customer-service/use/datamapping-realtime?context=/dynamics365/contact-center/context/use-context
+        - name: Dataverse entities used in historical and real-time analytics
+          href: /dynamics365/customer-service/use/dataverse-entities?context=/dynamics365/contact-center/context/use-context
+    - name: Report issues in Dynamics 365 Contact Center
+      href: /dynamics365/customer-service/use/report-issues?context=/dynamics365/contact-center/context/use-context
+    - name: Share feedback
+      href: /dynamics365/customer-service/use/cs-share-feedback?context=/dynamics365/contact-center/context/use-context
+    - name: Workforce management
       items:
-      - name: Overview
-        href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/use-context
-      - name: Responsible AI FAQ for AI Agents
-        href: ../implement/faq-rai-ai-agents.md
-      - name: Responsible AI FAQ for Copilot in Customer Service
-        href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/use-context
-      - name: Responsible AI FAQs for NLUs in AI agents
-        href: ../implement/natural-language-ai-faq.md?context=/dynamics365/contact-center/context/use-context
-      - name: Transparency note
+      - name: Overview of Workforce Management
+        href: /dynamics365/customer-service/use/workforce-management-overview?context=/dynamics365/contact-center/context/use-context
+      - name: Forecasting
         items:
-        - name: Real-time voice agents
-          href: ../implement/transparency-note-real-time-voice-agents.md?context=/dynamics365/contact-center/context/use-context
-        - name: Constrained speech recognition
-          href: ../implement/transparency-note.md?context=/dynamics365/contact-center/context/use-context
-    - name: Resources
+        - name: Create and manage forecast scenarios
+          href: workforce-management-forecast-scenarios.md
+        - name: Import historical data
+          href: workforce-management-import-historical-data.md
+        - name: Estimate AI agent credits from forecasts
+          href: workforce-management-credit-estimation.md
+      - name: Capacity planning
+        items:
+        - name: Create and manage capacity plans
+          href: workforce-management-capacity-planning.md
+      - name: Shift planning and scheduling
+        items:
+        - name: Create and manage shift plans
+          href: workforce-management-shift-plan.md
+        - name: Manage schedules
+          href: workforce-management-schedule-workforce.md
+        - name: Create and manage shift rotation policies
+          href: workforce-management-shift-rotation-policies.md
+        - name: Use auto schedule to schedule service representatives
+          href: workforce-management-use-auto-schedule.md
+        - name: Use shift bidding
+          href: workforce-management-representative-shift-bidding.md
+        - name: Use shift swapping
+          href: workforce-management-use-shift-swapping.md
+        - name: Use shift-based routing for work items
+          href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/use-context
+        - name: Use the schedule calendar
+          href: /dynamics365/customer-service/use/use-agent-calendar?context=/dynamics365/contact-center/context/use-context
+      - name: Time-off request management
+        items:
+        - name: Manage time-off requests
+          href: workforce-management-view-time-off-requests.md
+        - name: Create a time-off request
+          href: workforce-management-create-time-off-request.md
+      - name: Intraday management
+        items:
+        - name: Use the adherence tracker
+          href: workforce-management-adherence-tracker.md
+        - name: Use the adherence history report
+          href: workforce-management-use-adherence-history-report.md
+    - name: Quality management
       items:
-      - name: Training
-        href: /training/dynamics365/customer-service
-      - name: Support
-        href: /dynamics365/get-started/support/
-      - name: Blog
-        href: https://cloudblogs.microsoft.com/dynamics365
-      - name: Community
-        href: https://community.dynamics.com
-    - name: Implement Dynamics 365 Contact center
-      href: ../implement/international-availability.md
-    - name: Administer Dynamics 365 Contact Center
-      href: ../administer/cc-admin-center.md
-    - name: Extend Dynamics 365 Contact Center
-      href: ../extend/configure-servicenow-connector.md
-    - name: Dynamics 365 Customer Service documentation
-      href: /dynamics365/customer-service/
-    - name: Contribute to documentation
-      href: /dynamics365/get-started/contribute?context=/dynamics365/contact-center/context/use-context
+      - name: Overview of Quality Management Agent
+        href: overview-quality-management.md
+      - name: Use evaluation criteria
+        href: evaluation-criteria.md
+      - name: Use evaluation plan
+        href: evaluation-plan.md
+      - name: Use on-demand evaluation
+        href: on-demand-evaluation.md
+      - name: Use evaluations
+        href: use-evaluations.md
+  - name: Known issues in Customer Service and Dynamics 365 Contact Center
+    href: https://go.microsoft.com/fwlink/p/?linkid=2165393
+  - name: Responsible AI
+    items:
+    - name: Overview
+      href: /dynamics365/customer-service/implement/responsible-ai-overview?context=/dynamics365/contact-center/context/use-context
+    - name: Responsible AI FAQ for AI Agents
+      href: ../implement/faq-rai-ai-agents.md
+    - name: Responsible AI FAQ for Copilot in Customer Service
+      href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/use-context
+    - name: Responsible AI FAQs for NLUs in AI agents
+      href: ../implement/natural-language-ai-faq.md?context=/dynamics365/contact-center/context/use-context
+    - name: Transparency note
+      items:
+      - name: Real-time voice agents
+        href: ../implement/transparency-note-real-time-voice-agents.md?context=/dynamics365/contact-center/context/use-context
+      - name: Constrained speech recognition
+        href: ../implement/transparency-note.md?context=/dynamics365/contact-center/context/use-context
+  - name: Resources
+    items:
+    - name: Training
+      href: /training/dynamics365/customer-service
+    - name: Support
+      href: /dynamics365/get-started/support/
+    - name: Blog
+      href: https://cloudblogs.microsoft.com/dynamics365
+    - name: Community
+      href: https://community.dynamics.com
+  - name: Implement Dynamics 365 Contact center
+    href: ../implement/international-availability.md
+  - name: Administer Dynamics 365 Contact Center
+    href: ../administer/cc-admin-center.md
+  - name: Extend Dynamics 365 Contact Center
+    href: ../extend/configure-servicenow-connector.md
+  - name: Dynamics 365 Customer Service documentation
+    href: /dynamics365/customer-service/
+  - name: Contribute to documentation
+    href: /dynamics365/get-started/contribute?context=/dynamics365/contact-center/context/use-context

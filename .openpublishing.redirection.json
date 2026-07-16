@@ -2,6 +2,16 @@
   "redirections": [
 
     {
+      "source_path": "contact-center/use/ongoing-quality-evaluation-agent-conversations.md",
+      "redirect_url": "/previous-versions/dynamics365/contact-center/use/ongoing-quality-evaluation-agent-conversations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "contact-center/use/realtime-evaluation-plan.md",
+      "redirect_url": "/previous-versions/dynamics365/contact-center/use/realtime-evaluation-plan",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "contact-center/administer/bot-connectivity-issues.md",
       "redirect_url": "/dynamics365/customer-service/administer/configure-fallback-actions-ivr-agent",
       "redirect_document_id": "false"

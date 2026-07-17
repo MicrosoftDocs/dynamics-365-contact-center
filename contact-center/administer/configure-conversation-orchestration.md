@@ -4,7 +4,7 @@ description: Learn how to manage intelligent conversation routing with conversat
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 06/30/2026
+ms.date: 07/16/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
@@ -16,7 +16,7 @@ ms.collection: bap-ai-copilot
 
 Conversation orchestration keeps every conversation actively managed throughout the conversation lifecycle from initiation through resolution. Conversation orchestration monitors each conversation as conditions evolve, such as an increase in wait time, queues filling up, or service representatives going offline, and automatically runs the relevant action in accordance with your configured playbooks. Administrators define the logic by using natural-language playbooks, and conversation orchestration handles the execution. When you publish a playbook, the system converts your natural language playbooks into a structured runtime format.
 
-In the preview release, conversation orchestration is available for voice and live chat channels only.
+In this preview release, conversation orchestration is available for voice and live chat channels only.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
@@ -53,7 +53,7 @@ The supported scenarios are as follows:
 
 ## Understand playbooks
 
-Configure playbooks per scenario through guided templates that keep instructions focused and reliable. A playbook consists of a trigger event and a set of conditions and actions to run when the trigger event occurs.
+Configure playbooks for each scenario through guided templates that keep instructions focused and reliable. A playbook consists of a trigger event and a set of conditions and actions to run when the trigger event occurs.
 
 - **Queues**: The queues for which the playbook applies.
 - **Trigger event**: The event that initiates the playbook, such as a conversation waiting in queue or conversation transferred.
@@ -194,7 +194,7 @@ Consider a queue configured with two playbooks, each designed to handle a distin
 
 Although both playbooks target Gold-tier customers, they differ in their triggering condition&mdash;one is based on elapsed wait time, and the other on real-time agent availability.
 
-**How playbooks are run**
+**How playbooks run**
 
 **Scenario 1: Agents are available initially**
 
@@ -218,15 +218,55 @@ Although both playbooks target Gold-tier customers, they differ in their trigger
 | Issue | Resolution |
 |-------|------------|
 | Playbook isn't routing conversations | Verify the playbook status is Active, check that the correct queues are selected, and ensure the channel matches your conversation type. |
-| Priority hasn't increased as expected | Confirm the time interval setting, verify context variable values match your conditions, and check that the conversation is in a queue where the playbook is active. Also verify that the queue doesn't have custom prioritization rules configured. |
-| Overflow isn't triggered | Verify agent availability settings (presence, capacity, skills), check that the "no agents available" condition is being met, and ensure the playbook is active for the correct queue. |
-| Dynamic prioritization isn't being applied to a queue | The queue might have custom prioritization rules configured. Remove the custom prioritization configuration from the queue settings to enable dynamic prioritization. |
+| Priority isn't increasing as expected | Confirm the time interval setting, verify context variable values match your conditions, and check that the conversation is in a queue where the playbook is active. Also verify that the queue doesn't have custom prioritization rules configured. |
+| Overflow isn't triggered | Verify agent availability settings (presence, capacity, skills), check that the "no agents available" condition is met, and ensure the playbook is active for the correct queue. |
+| Dynamic prioritization isn't applied to a queue | The queue might have custom prioritization rules configured. Remove the custom prioritization configuration from the queue settings to enable dynamic prioritization. |
 | Assignment to a previously interacted representative didn't occur |Verify the queue membership and presence status of the previous representatives and check if their last interactions with the customer was within the configured recency window.|
 | Assignment to a preferred representative didn't occur | Verify the contact for preferred representative mapping in Copilot Service admin center. Check whether the preferred representative is a member of the queue where the new conversation is routed and has an allowed presence status.|
 
-## View diagnostics using a custom query
+## View diagnostics by using a custom query
 
 To help you monitor and troubleshoot your playbooks, conversation orchestration provides diagnostics information for each conversation that is processed by an active playbook. You can view the diagnostics information by using a custom query. Learn more in [Sample queries and dashboards](/dynamics365/guidance/resources/conversation-diagnostics-sample-queries#conversation-orchestration).
+
+## Migrate conversation orchestration playbooks
+
+You can port conversation orchestration playbooks across environments and organizations. Move a playbook from a source environment to a destination environment by adding it to a solution and using the solution export and import. This approach follows the same application lifecycle management approach used to move other routing and channel configurations by using solutions. Learn about how to use solutions or the Configuration Migration tool in [Overview of tools and apps used for ALM in Power Platform](/power-platform/alm/tools-apps-used-alm).
+
+> [!IMPORTANT]
+> A playbook references other configuration tables, like queues and context variables. Every related entity a playbook uses must already exist in the destination environment or organization before you import the solution, otherwise, the solution import fails. Create or migrate those tables in the destination first, then import the playbook solution.
+
+### Prepare the destination environment
+
+Ensure the tables that the playbook depends on are present in the target environment.
+
+1. Create or migrate the queues the playbook references.
+
+1. Create or migrate the context variables the playbook reads or writes.
+1. Confirm any other dependent components already exist in the destination.
+1. Confirm the destination values match the source. If a referenced queue or context variable exists in the target but under a different name or configuration, the playbook might not work as expected.
+
+### Export the solution from the source environment
+
+In the source environment, ensure the conversation orchestration playbooks are published.
+
+1. Open [Power Apps](https://make.powerapps.com) and select or create a solution.
+
+1. Select and add **CC User Prompt** from other tables to the solution.
+1. Review the components that are added.
+1. Select the solution and choose **Export**. Save the exported solution (.zip) file.
+
+### Import the solution into the destination environment
+
+1. In the destination environment, open **Solutions** and choose **Import solution**.
+
+1. Select the exported .zip file and complete the import. If the import reports a missing dependency, it means a referenced entity, such as a queue or context variable isn't present in the destination.
+1. Create or migrate the missing entity, then rerun the import.
+
+### Verify the imported playbook
+
+Confirm the playbook appears in the destination environment with all its steps and actions intact.
+
+Verify that each queue and context variable the playbook references resolves to the correct destination record. Run test conversations to trigger and confirm playbook runs as expected.
 
 ### Related information
 

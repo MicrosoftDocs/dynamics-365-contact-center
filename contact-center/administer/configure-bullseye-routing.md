@@ -92,6 +92,10 @@ Create user groups to organize members by skills, language, region, or other att
 
 1. Save the changes.
 
+### View diagnostics for bullseye routing
+
+You can view the diagnostics information by using a custom query. Learn more in [Sample queries and dashboards](/dynamics365/guidance/resources/conversation-diagnostics-sample-queries).
+
 ### Related information
 
 [Set up unified routing](/dynamics365/customer-service/administer/overview-unified-routing)  

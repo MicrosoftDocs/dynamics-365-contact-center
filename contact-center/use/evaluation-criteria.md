@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 07/10/2026
+ms.date: 07/17/2026
 ms.custom: bap-template 
 ---
 
@@ -51,6 +51,8 @@ Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best pra
 
 1. Turn on the **Criteria scoring** toggle to enable scoring per criteria.
 
+1. Turn on the **Allow scoring for question** toggle to define weights per question within a section.
+
 1. Select your language from the **Language** dropdown list. By default, all existing criteria are in English. You can't change the language after you save a criteria, even in the **Draft** state. Evaluation results are returned in the same language. 
 
 1.  In the **Add form level instructions** section, enter instructions, if any.
@@ -89,6 +91,87 @@ Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best pra
     You can delete or duplicate a section or question, as required.
 
 1.  Select **Save**, and then select **Publish**.
+
+## Define scores for your evaluation criteria
+
+Quality evaluation uses a weighted scoring model that calculates scores at the question level, aggregates them into section scores, and then combines those scores to determine the overall evaluation score.
+
+Every evaluation is built from the following levels:
+
+| Level | Component | Description |
+|-------|-----------|-------------|
+| 1 | Evaluation criteria | The top-level scoring framework that you configure. It defines the overall structure, sections, and weight for an evaluation. |
+| 2 | Sections | Groups of related questions. Each section has a percentage weight. All section weights must total 100%. |
+| 3 | Questions | Individual questions within each section. Each question is scored on a scale of 0 to 100. |
+
+### Section scoring
+
+A section's contribution to the overall score depends on the section weight and the scores of the questions in that section.
+
+Equal distribution (default): When you don't configure question-level weights, the model distributes the section weight equally across all questions in the section. The model calculates the section score by using the following formula:
+
+Section score = Average of all question scores × Section weight percentage
+
+### Question-level weightage
+
+When you configure question-level weights, the system calculates scores by using the assigned weight of each question. This approach lets organizations give greater importance to specific questions based on business requirements. The weighted question scores are then aggregated to calculate the section score and overall evaluation score.
+
+> [!NOTE]
+> You enable question-level weightage through a separate toggle. It doesn't affect previously created criteria unless administrators choose to enable the feature.
+
+When you enable question-level weightage:
+
+- Each section must still have a total section weight percentage.
+- You can assign specific weight percentages to individual questions within a section.
+- The combined weight of all questions in a section can't exceed the section's assigned weight.
+- Validation messages appear when the total question weights exceed the section weight limit.
+
+**Question scoring**: Each question produces a score between 0 and 100. The scoring method depends on the question type.
+
+- For **Yes/no** and **single-answer** questions:
+
+  - A correct answer scores 100.
+  - An incorrect answer scores 0.
+
+- For multi-select questions:
+
+  - All option set values within a question must total exactly 100.
+  - The question score equals the sum of points for the selected answers, capped at 100.
+  - Selecting an incorrect option doesn't reduce the score. There are no penalties.
+
+- For single-select questions:
+
+    Single-select questions allow evaluators to choose one option from a predefined list. Supervisors assign a score (0-100) to each option, and the selected option determines the question score. Option scores don't need to add up to 100.
+
+    Example:
+
+    Excellent = 100
+    Good = 75
+    Needs Improvement = 50
+    Poor = 0
+    
+    If Good is selected, the question score is 75/100.
+    
+    - For **Descriptive** questions, there's no scoring.
+    
+### Overall evaluation score
+
+The overall evaluation score is the sum of all section scores.
+
+Overall score = Sum of all section scores, out of 100
+
+### Scoring with extended criteria
+
+Extended criteria (child criteria) let organizations enforce a shared evaluation baseline while allowing individual business units to add their own evaluation questions.
+
+When an evaluation runs against extended criteria, the score is calculated in two parts:
+
+- **Parent portion score**: Scored by using the standard section and question scoring logic from the source criteria.
+- **Child portion score**: Scored by using the standard section and question scoring logic from the extended criteria.
+
+At the extended-criteria level, admins assign a percentage weight to the parent portion and a percentage weight to the child portion. The parent and child weights must total 100%.
+
+Final score = (Parent portion score × Parent weight percentage) + (Child portion score × Child weight percentage)
 
 ## Mark a question as critical
 

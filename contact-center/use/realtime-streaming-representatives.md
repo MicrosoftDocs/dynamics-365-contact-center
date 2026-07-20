@@ -4,7 +4,7 @@ description: Use the Representatives view in Dynamics 365 Contact Center to moni
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
-ms.date: 06/23/2026
+ms.date: 07/20/2026
 ms.topic: concept-article
 ms.custom: bap-template
 ---
@@ -27,7 +27,7 @@ The **Representatives** view enables supervisors to:
 - Monitor representative availability in real time.
 - Understand how representatives are distributed across presence statuses and how long they have been in that presence status.
 - View assigned queues and adjust queue membership.
-- Reset representative status and modify representative attributes such as skills and capacity profiles.
+- Reset representative presence status.
 - Analyze how representative presence status changed during the last 24 hours.
 - Analyze representative performance over the selected time period, such as conversation assignments answered compared to the total number offered.
 
@@ -86,8 +86,6 @@ The representative performance section provides insights into the following area
 - **Queues**: Number of queues assigned to the representative. Selecting the value opens the right side pane that shows the queues to which the representative has been added.
 
 - **Skills**: Indicates the count of assigned skills. Selecting the value opens the right side pane that shows the skills assigned to the representative.
-
-Use filters and search to identify representatives with low answer rates and take corrective action.
 
 ## Related information
 

@@ -1,7 +1,7 @@
 ---
 title: Use service representative availability APIs
-description: Learn how to use the representative availability APIs in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
-ms.date: 04/30/2026
+description: Learn how to use the representative availability APIs in Dynamics 365 Contact Center.
+ms.date: 07/27/2026
 ms.topic: article
 author: gandhamm
 ms.author: mgandham
@@ -17,7 +17,11 @@ You can use these APIs in scenarios such as:
 - When AI agents need to escalate ongoing conversations to those queues only where service representatives are available.
 - You want customers to initiate conversations only when the queues are within operating hours or have available representatives.
 
-The representative availability APIs are applicable for all channels, including voice, live chat, and digital messaging.
+The representative availability APIs are applicable for all channels.
+
+> [!NOTE]
+> - Representative availability APIs don't consider overflow handling for the queue or percentage-based routing configuration defined at the workstream level. When multiple route-to-queue rules match, the APIs return results based on the first matching queue.
+> - Queue metrics, such as average wait time and queue position, refresh in near real time. Representative-related metrics, such as representative availability and the number of available representatives in a queue, refresh approximately every five minutes. The queue configuration, like operating hours, refreshes every 10 minutes.
 
 ## Prerequisites
 

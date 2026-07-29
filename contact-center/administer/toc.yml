@@ -242,8 +242,10 @@
           href: /dynamics365/customer-service/administer/add-outbound-dialer-settings?context=/dynamics365/contact-center/context/administer-context  
         - name: Use Azure Virtual Desktop to access voice channel
           href: configure-voice-avd.md
+        - name: Enable voice call experiences
+          href: /dynamics365/customer-service/administer/configure-voice-call-experiences?context=/dynamics365/contact-center/context/administer-context   
         - name: Set up microphone connection on representative sign-in
-          href: /dynamics365/customer-service/administer/configure-voice-call-experiences?context=/dynamics365/contact-center/context/administer-context 
+          href: set-up-microphone-connection.md
         - name: Configure settings to improve call quality over Citrix virtual desktop
           href: configure-voice-citrix-virtual-desktop.md
         - name: Install and manage desktop companion application 

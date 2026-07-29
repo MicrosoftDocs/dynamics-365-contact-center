@@ -1,7 +1,7 @@
 ---
 title: Configure a custom messaging channel using messaging APIs
 description: Learn how to configure a custom messaging channel in Dynamics 365 Customer Service and Dynamics 365 Contact Center using Messaging APIs, including authentication, webhook setup, and managed identity configuration.
-ms.date: 09/11/2025
+ms.date: 07/28/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham

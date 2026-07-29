@@ -201,4 +201,5 @@ Classification rulesets, assignment rules, overflow rules (and other ruleset typ
 [Overview of contact center agents](overview-contact-center-agents.md)  
 [Responsible AI at Microsoft](https://www.microsoft.com/ai/responsible-ai?msockid=2128a9baf27c62973b80bee0f3bb6398)  
 [Responsible AI FAQ for Service Operations Agent](../implement/service-operations-agent-rai-faq.md)  
-[Use AI-generated conversations for agentic simulations](configure-simulation-agent.md)  
+[Use AI-generated conversations for agentic simulations (preview)](configure-simulation-agent.md)  
+[Use industry templates to set up a contact center (preview)](use-industry-templates.md)  

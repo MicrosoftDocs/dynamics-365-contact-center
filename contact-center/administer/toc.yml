@@ -242,8 +242,10 @@
           href: /dynamics365/customer-service/administer/add-outbound-dialer-settings?context=/dynamics365/contact-center/context/administer-context  
         - name: Use Azure Virtual Desktop to access voice channel
           href: configure-voice-avd.md
+        - name: Enable voice call experiences
+          href: /dynamics365/customer-service/administer/configure-voice-call-experiences?context=/dynamics365/contact-center/context/administer-context   
         - name: Set up microphone connection on representative sign-in
-          href: /dynamics365/customer-service/administer/configure-voice-call-experiences?context=/dynamics365/contact-center/context/administer-context 
+          href: set-up-microphone-connection.md
         - name: Configure settings to improve call quality over Citrix virtual desktop
           href: configure-voice-citrix-virtual-desktop.md
         - name: Install and manage desktop companion application 
@@ -330,10 +332,12 @@
             href: overview-service-operations-agent.md
           - name: Use Service Operations Agent
             href: use-service-operations-agent.md
-          - name: Configure conversation orchestration using natural language playbooks
+          - name: Configure conversation orchestration using natural language playbooks (preview)
             href: configure-conversation-orchestration.md
-          - name: Use AI-generated conversations for agentic simulations
-            href: configure-simulation-agent.md 
+          - name: Use AI-generated conversations for agentic simulations (preview)
+            href: configure-simulation-agent.md
+          - name: Use industry templates to set up a contact center (preview)
+            href: use-industry-templates.md
       - name: Autonomous service agents
         items:
         - name: Overview of autonomous service agents

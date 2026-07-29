@@ -4,7 +4,7 @@ description: Real-time streaming analytics deliver event-driven metric updates s
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
-ms.date: 06/23/2026
+ms.date: 07/29/2026
 ms.topic: concept-article
 ms.custom: bap-template
 ---

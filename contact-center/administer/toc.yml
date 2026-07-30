@@ -164,8 +164,10 @@
         items: 
         - name: Overview of Quality Management Agent
           href: ../use/overview-quality-management.md
-        - name: Manage quality evaluation
-          href: manage-quality-evaluation-agent.md
+        - name: Quality evaluation
+          items:
+          - name: Manage quality evaluation
+            href: manage-quality-evaluation-agent.md
         - name: Configure screen recording
           href: configure-screen-recording.md
       - name: Email

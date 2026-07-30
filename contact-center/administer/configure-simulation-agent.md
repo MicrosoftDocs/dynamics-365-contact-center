@@ -63,3 +63,4 @@ In preview release, simulations are available for the inbound workstreams of the
 
 [Overview of contact center agents](overview-contact-center-agents.md)  
 [Use Service Operations Agent](use-service-operations-agent.md)  
+[Use industry templates to set up a contact center (preview)](use-industry-templates.md)  

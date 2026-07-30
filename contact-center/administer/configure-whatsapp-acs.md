@@ -1,7 +1,7 @@
 ---
 title: Configure a WhatsApp channel through Azure Communication Services 
 description: Use this article to learn how to configure the WhatsApp channel through Azure Communication Services.
-ms.date: 04/17/2026
+ms.date: 07/27/2026
 ms.topic: how-to
 author: gandhamm
 ms.author: mgandham
@@ -32,13 +32,18 @@ To enhance customer satisfaction and improve communications, the omnichannel cap
 ## Prerequisites
 
 - Channels are provisioned in your environment. Learn more in [provision channels](../implement/provision-channels.md).
-- You have an Azure account with an active subscription. Make sure that the Azure subscription and Dynamics 365 account are in the same tenant. Learn more in [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
-   - Create or use an existing Azure Communication Services resource. Learn more in [Create and manage Communication Services resources](/azure/communication-services/quickstarts/create-communication-resource).
-    - Obtain a phone number that can send and receive SMS. You have several options:
-       - Purchase a phone number or import one from Azure Communication Services. Learn more in [Get and manage phone number](/azure/communication-services/quickstarts/telephony/get-phone-number) or [import phone numbers](/dynamics365/customer-service/administer/voice-channel-sync-from-acs?context=/dynamics365/contact-center/context/administer-context).
-       -    Migrate your existing WhatsApp business accounts with phone number.
-   - Set up Advanced Messaging for WhatsApp. Learn more in [Advanced Messaging for WhatsApp in Azure Communication Services](/azure/communication-services/concepts/advanced-messaging/whatsapp/whatsapp-overview) and [Register WhatsApp business account](/azure/communication-services/quickstarts/advanced-messaging/whatsapp/connect-whatsapp-business-account).
-   - Set up Event Grid with Microsoft Entra app authentication. Learn more in [Handle Advanced Messaging events](/azure/communication-services/quickstarts/advanced-messaging/whatsapp/handle-advanced-messaging-events) and [Deliver events to Microsoft Entra protected endpoints](/azure/event-grid/secure-webhook-delivery).
+- Make sure that the Azure subscription and Dynamics 365 account are in the same tenant.
+
+### Setup advanced messaging for WhatsApp
+
+- Register and connect your [WhatsApp Business Account through Azure Communication Services](/azure/communication-services/quickstarts/advanced-messaging/whatsapp/connect-whatsapp-business-account) in the Azure portal.
+
+### Setup Event Grid
+     
+ - Set up Event Grid with Microsoft Entra app authentication. Learn more in [Handle Advanced Messaging events](/azure/communication-services/quickstarts/advanced-messaging/whatsapp/handle-advanced-messaging-events) and [Deliver events to Microsoft Entra protected endpoints](/azure/event-grid/secure-webhook-delivery).
+
+  > [!IMPORTANT]
+  > Review [Deliver events to Microsoft Entra protected endpoints](/azure/event-grid/secure-webhook-delivery) and make sure you configure all of the required Microsoft Entra application permissions and role assignments. Missing permissions can cause webhook endpoint validation to fail and prevent WhatsApp events from reaching Dynamics 365 Contact Center. 
 
 ## End-to-end walkthrough
 
@@ -72,6 +77,10 @@ Gather the following details before you create the WhatsApp channel in [the foll
 
 ## Create a WhatsApp channel
 
+> [!IMPORTANT]
+> Before you create a WhatsApp channel in Dynamics 365 Contact Center, make sure your [WhatsApp business account is registered](#setup-advanced-messaging-for-whatsapp) and connected through Azure Communication Services in the Azure portal.
+
+
 Create a WhatsApp channel in Copilot Service admin center.
 
 1. In **Customer support**, select **Channels**.
@@ -91,8 +100,8 @@ In the following instructions, you provide the information from the Azure portal
 1. On the **Channel settings** page:
 
    - **ACS resource name**: Paste the name of the resource.
-   - **Event grid app ID**: Paste the **Microsoft Entra Tenant ID**.
-   - **Event grid app tenant ID**: Paste the **Microsoft Entra Application or URI**.
+   - **Event grid app ID**: Paste the **Microsoft Entra Application or URI**.
+   - **Event grid app tenant ID**: Paste the **Microsoft Entra Tenant ID**.
    - **ACS connecting string**: Paste the primary key **Connection string**.
 
 1. Select the checkbox to confirm that the Azure Communication Services resource is connected to only one organization, and then select **Next**.

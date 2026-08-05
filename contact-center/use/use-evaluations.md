@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 07/29/2026
+ms.date: 08/05/2026
 ms.custom: bap-template
 ---
 
@@ -105,6 +105,10 @@ When enabled, the **Evaluation Summary** section includes a **Regenerate summary
 - View the summary generation status and the last generated date and time.
 
 Learn more about the admin settings to enable the feature in [Manage quality evaluation](../administer/manage-quality-evaluation-agent.md).
+
+## Troubleshoot failed quality evaluations
+
+If a quality evaluation doesn't complete successfully, refer to the [Troubleshoot failed quality evaluations](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/quality-evaluation-retry) article to determine the cause and resolve the problem.
 
 ## Related information
 

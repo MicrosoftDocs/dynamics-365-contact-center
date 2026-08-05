@@ -131,3 +131,4 @@ If you disable the option:
 [Use on-demand evaluation](../use/on-demand-evaluation.md)   
 [Use evaluation criteria](../use/evaluation-criteria.md)    
 [Use evaluations](../use/use-evaluations.md)
+[Troubleshoot failed quality evaluations](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/quality-evaluation-retry)

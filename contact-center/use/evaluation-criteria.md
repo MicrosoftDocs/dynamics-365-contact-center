@@ -362,3 +362,4 @@ Creating extended criteria introduces a parent–child relationship between sour
 [Manage quality evaluation](../administer/manage-quality-evaluation-agent.md)  
 [Use evaluation plan](evaluation-plan.md)  
 [Use evaluations](use-evaluations.md)
+[Troubleshoot failed quality evaluations](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/quality-evaluation-retry)

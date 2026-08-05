@@ -121,3 +121,4 @@ You can also request an evaluation for an individual email record from the **Eva
 [Use evaluations](use-evaluations.md)  
 [Use evaluation criteria](evaluation-criteria.md)  
 [Manage quality evaluation](../administer/manage-quality-evaluation-agent.md)
+[Troubleshoot failed quality evaluations](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/quality-evaluation-retry)

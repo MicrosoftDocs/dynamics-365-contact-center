@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 07/03/2026
+ms.date: 08/05/2026
 ms.custom: bap-template
 ---
 
@@ -64,13 +64,13 @@ To view the evaluation record, in the site map of Copilot Service workspace:
 - Go to **Cases** and then select a case. Go to **Related** > **Evaluations** to view the evaluation records.
 - Go to **Evaluations**. The **All evaluations** data grid appears. Select the required evaluation record. The evaluation for the selected case appears in the **Evaluations** side pane.
 
-## On-demand evaluation for conversations
+## On-demand evaluation for closed conversations
 
-To request evaluation for closed conversations:
+Request an evaluation of closed conversations to assess agent performance, compliance adherence, and service quality.
 
 1. Go to **Activities** > **Closed Conversations**.
 
-1. Select a closed conversation, and then on the specific conversation, select **Request evaluation**.
+1. Select one or more closed conversations, and then select **Request evaluation**.
 
 1. On the **Request evaluation** dialog, select the following:
 

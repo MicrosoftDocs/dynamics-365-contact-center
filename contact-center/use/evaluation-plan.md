@@ -171,3 +171,4 @@ Each batch run supports a maximum of 20,000 records.
 [Use evaluations](use-evaluations.md)  
 [Use evaluation criteria](evaluation-criteria.md)  
 [Use on-demand evaluation](on-demand-evaluation.md)
+[Troubleshoot failed quality evaluations](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/quality-evaluation-retry)

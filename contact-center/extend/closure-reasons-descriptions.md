@@ -46,6 +46,18 @@ When a session in the conversation is closed, the system identifies the reason a
 |192350029|**BotCallFailureExternalTransfer**|When agent transfers the call to an external phone number because of some internal failure and conversation ends.|
 |192350030|**BotCallFailurePromptAndEscalate**|When conversation isn't ending as caller hears a prompt, wait music, and then sent to the default fallback queue where the caller is transferred to a representative or handled according to the behavior defined for the fallback queue.|
 |192350031|**BotCallFailureEscalate**|When conversation isn't ending as caller hears wait music, and is sent to the default fallback queue, where the caller is transferred to a representative or handled according to the behavior defined for the fallback queue.|
+| 192350034 | **ManuallyClosedSession** | Occurs when an individual session is manually closed while the conversation itself might remain open. |
+| 192350036 | **ExternalAgentAccept** | Occurs when an external (non-microsoft/partner) representative accepts the conversation. |
+| 192350037 | **ExternalAgentReject** | Occurs when an external representative declines the conversation. |
+| 192350038 | **ExternalAgentTransfer** | Occurs when the conversation is transferred to or from an external representative. |
+| 192350054 | **VoiceConnectivityProblem** | Occurs when the session ends because of a voice/telephony connectivity problem. |
+| 192350055 | **MaximumSessionsReached** | Occurs when the session can't proceed because the representative's maximum concurrent session limit is reached. |
+| 192350056 | **CallTimedOut** | Occurs when a voice call ends because it timed out. |
+| 192350061 | **CustomerNonResponseTimeoutRule** | Occurs when a timeout rule is triggered because the customer didn't respond within the configured time. |
+| 192350062 | **AgentNonResponseTimeoutRule** | Occurs when a timeout rule is triggered because the representative didn't respond within the configured time. |
+| 192350063 | **AgentMovedConversationToWaiting** | Occurs when a representative moves the conversation to the waiting state, ending the active session. |
+| 192350064 | **AutoRejectedDueToBrowserRefresh** | Occurs when a conversation notification is automatically rejected because the representative refreshed the browser. |
+| 192350065 | **AutoRejectAsOutboundCallInProgress** | Occurs when an incoming conversation is automatically rejected because the representative is on an outbound call. |
 
 ## Related information
 

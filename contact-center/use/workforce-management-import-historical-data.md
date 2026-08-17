@@ -1,7 +1,7 @@
 ---
 title: Import historical data
 description: Learn how to import historical data to use in your case and conversation forecast scenarios.
-ms.date: 04/30/2026
+ms.date: 08/17/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -29,7 +29,7 @@ To configure a forecast scenario to use historical data, upload a data file.
 1. For **File**, select **Choose File**, and then select the required file.
 1. Select **Save**.
 
-You can now use this file as your data source when you [create a new forecast report](workforce-management-forecast-scenarios.md#create-a-short-term-or-long-term-forecast-report).
+You can now use this file as your data source when you [create a new forecast report](workforce-management-forecast-scenarios.md#create-a-forecast-scenario).
 
 ## Required data
 

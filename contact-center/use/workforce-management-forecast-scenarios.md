@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes in Dynamics 365 Contact Center and Customer Service.
-ms.date: 05/01/2026
+ms.date: 08/17/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -12,115 +12,108 @@ ms.collection:
 
 # Create and manage forecast scenarios
 
-Learn how to access and interpret forecast reports in Copilot Service workspace to ensure accurate staffing decisions.
+[!INCLUDEcc-feature-availability-embedded-yes]
+
+Create a forecast scenario to define what to analyze and how often to generate predictions. Short-term and long-term scenarios both forecast volume and average handle time (AHT) from your historical data. They differ in interval and horizon. This article describes how to create short-term and long-term forecast scenarios and how to manage them after creation.
 
 > [!IMPORTANT]
-> This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. This feature isn't intended for use in making, and you shouldn't use it to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365 Copilot Service workspace, this feature, and any associated feature or service in compliance with all applicable laws. This compliance includes laws that relate to accessing individual employee analytics, and monitoring, recording, and storing communications with end users. This compliance also includes your responsibility to adequately notify end users that their communications with customer service representatives might be monitored, recorded, or stored and as required by applicable laws, obtaining consent from end users before your organization uses this feature with them. Customers are also encouraged to have a mechanism in place to inform their customer service representatives that their communication with end users might be monitored, recorded, or stored.
-
-## Overview
-
-Forecast scenarios are essential to predict future demand in terms of volume, such as the number of customer interactions, cases, or conversations that are expected within your contact center.
-
-You can use the forecast reports for case and conversation volumes in the following ways:
-
-- Forecast upcoming case and conversation volumes using historical traffic data, whether sourced internally from Dynamics 365 or externally from an imported file upload.
-- Rely on predicted conversation volumes for service representative planning if your administrator configured AI agents for your conversation channels. The system excludes conversations that AI agents handle without having a service representative join the conversation.
-- Forecast case and conversation volumes on a daily basis for a time range up to three years for long-term business planning.
-- Forecast case and conversation volumes at 15-minute intervals for a time range of up to six weeks for short-term staffing and intraday planning.
-- Slice forecasted volumes and service representative demand by channel and queue.
-- View a rollup of actual and forecasted volume on an hourly, daily, weekly, monthly, and yearly basis.
-- Automatically detect seasonality from historical traffic with the settings option to import your holiday calendar. This function helps the forecasting model to predict case or conversation volumes during special, seasonal events.
-- Trigger forecasts on demand with the **Run forecast scenario** option.
-
-> [!NOTE]
-> - Forecast reports provide accurate volume estimates but might not fully account for external factors, such as unexpected trends or sudden business needs.
->
-> - Forecast reports are currently available in specific geographical locations. Learn more in [Supported regions and languages for analytics and insights](/dynamics365/customer-service/administer/cs-region-availability-service-limits#supported-regions-and-languages-for-analytics-and-insights).
+> Forecasting isn't intended for use in making decisions that affect a person's employment. You're responsible for using this feature in compliance with applicable laws, including those that govern access to employee analytics and the monitoring, recording, and storage of communications with end users. For the complete responsible-use notice, review the [Overview of forecasting](workforce-management-forecast-overview.md).
 
 ## Prerequisites
 
-- Your administrator assigned a role to you that has **Read** privileges on the **msdyn_dataanalyticsreport_forecast** table. 
+- A security role with the **Read** privilege on the `msdyn_dataanalyticsreport_forecast` table.
+- For an external data source, upload the file beforehand through the **Manage External Data** option. Learn more in [Import historical data for forecast scenarios](workforce-management-import-historical-data.md).
 
-## Forecast scenario types
+## Create a forecast scenario
 
-You can create either short-term or long-term forecasts.
+Create a forecast scenario to define what data to analyze and how often to generate forecasts.
 
-- **Short term**: This report is typically used for daily forecasts. It shows intraday actual and predicted case and conversation volumes in 15-minute intervals for up to six weeks. The available forecast range depends on how much historical case or conversation data exists.
+1. In the site map of Copilot Service workspace, select **Forecasting** under **Workforce Management**. The **Active Forecast Scenarios** page appears.
+1. Select **New**, and then select either **Short-term** or **Long-term**. The **New Forecast Scenario** page appears.
+1. On the **Details** card, enter the following information:
 
-- **Long term**: This report shows the actual and predicted daily case and conversation volumes for up to three years. The available forecast range depends on how much historical case or conversation data exists.
+   - **Name**: Specify a unique name so you can identify the scenario later.
+   - **Duration (Days)**: Enter the number of days the forecast covers.
+     - Short-term scenarios support up to 42 days.
+     - Long-term scenarios support up to 1,095 days.
+   - **Interval**: Values are set automatically to intraday (short-term) or daily (long-term).
+   - **Time zone**: Select the time zone for forecast generation and display.
 
-## Create a short-term or long-term forecast report
+1. On the **Configuration parameters** card, configure the following options:
 
-1. In the site map of Copilot Service workspace, select **Forecasting** under **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.
-1. Select **New**, and then select either **Short-term** or **Long-term** from the dropdown menu. The **New Forecast Scenario** page appears.
-1. On the **Details** card, fill in the **Name** and **Duration (Days)** fields.
-1. On the **Configuration parameters** card, select the following:
-      1. **Forecast entity**: Select either **Conversation** or **Case**.
-      1. **Channels**: Search for and select the channel you want. You can select multiple channels.
-      1. **Queues**: Use the search option to find the queue you want or select **New Record** > **Queues** to create one. You can select multiple queues.
-1. On the **Forecast run schedule** card, fill in the following details:
-      1. **Auto-extension**: Set the toggle to **Yes** if you want to run the forecast. If you set the toggle to **No**, the forecast schedule remains in draft state and doesn't get created.
-         >[!NOTE]  
-         > You can have up to 10 forecast scenarios with Auto-extension enabled. 
-      1. **Day of the week**: Select the weekday on which the report should be generated. Use for long-term forecasts only. 
-      1. **Run time slot**: For short-term, use the dropdown menu to select the time window you want the system to use when it runs the report. The forecast scenario for short term runs every day. For long-term, select the day.
-      1. **Run time zone**: Use the dropdown menu to select the time zone you want the system to use when it runs the report.
-1. On the **Historical data** card, fill in the following details:
-      1. **Data source**: Select **Internal**: Select **Internal** or **External**.
-      1. **Historical data start date**: Select the date from which you want to track the data. By default, this date is set to two years before the current date when you create the report.
-      1. **Seasonality**: Use the dropdown menu to select a holiday calendar if applicable.
-      1. **External data**: If you're using external data as your data source, select the search field, browse to your file, and then select it. Learn how to import an external data file in [Import data for forecast scenarios](workforce-management-import-historical-data.md).
+   - **Forecast entity**: Select **Conversation** or **Case**.
+   - **Channels**: Select one or more channels.
+   - **Queues**: Select one or more queues.
+
+1. On the **Historical data** card, configure the following options:
+
+   - **Data source**: Select **Internal** or **External**.
+   - **Historical data start date**: Select the start date.
+   - **Seasonality**: Select a holiday calendar.
+   - **External data**: If you selected **External** as the data source, upload the file. You must upload the file beforehand through the **Manage External Data** option. Learn more in [Import historical data for forecast scenarios](workforce-management-import-historical-data.md).
+
+1. On the **Forecast refresh schedule** card, configure the following options:
+
+   - **Auto refresh**: Turn on to run the forecast on a regular schedule.
+   - **Day of the week**: Select the day the forecast runs. This option is available for long-term forecasts.
+   - **Run time slot**:
+     - For short-term forecasts, select the time window used for daily forecast runs.
+     - For long-term forecasts, select the scheduled run time.
+
 1. Select **Save**.
 
-> [!NOTE]  
-> - The forecast scenario runs within two hours of initial setup. Subsequent runs follow the schedule set on the **Forecast Run Schedule** card.
-> - Forecasts generated with internal data from the managed workforce system remain available even when data is limited. However, forecast accuracy improves as the volume of data increases. 
+> [!NOTE]
+> - After you save, the scenario doesn't run immediately. It stays in **Draft** until its first scheduled run.
+> - Auto refresh isn't available when you use an external data source.
+> - Forecast accuracy improves as more historical data accumulates.
 
-## View your forecast reports
+## Manage an existing scenario
 
-1. In the site map of Copilot Service workspace, select **Forecast scenarios** under **Workforce Management**. The **Active Forecast Scenarios** dashboard appears.
-1. Select the **Reports** tab. A list of the reports you created appears.
+After you create a scenario, return to it to keep the forecast current. You can update its inputs as your business changes, generate a fresh forecast on demand, check the status of past runs, or remove scenarios you no longer need.
 
-The first time you access the dashboard, scenarios you configured appear in **Draft** status until the first run occurs. After that, the scenario shows as **In progress** until it completes. For each scenario, the following details are displayed:
+To manage a scenario, open it from the **Active Forecast Scenarios** page, and then select an action on the command bar.
 
-- **Name**: The name of you gave the scenario.
-- **Current Status**: The state of the scenario. This status can be **Draft**, **Completed**.
-- **Interval**: The type of scenario.
-- **Duration**: The length of time.
-- **Target entity**: The record type.
-- **Last Run On**: The date the scenario last ran. This date is based on the **Forecast run schedule** you selected.
-- **Is recurring**: Indicates whether the scenario repeats.
-- **Recurrence time slot**: The day or time the report runs.
-- **Recurrence time zone**: The time zone in which the report runs.
+### Edit the scenario
 
-### Data visualization
+Select **Edit** to update editable inputs, such as the **Name**, **Duration (Days)**, **Historical data start date**, **Seasonality**, and refresh schedule. After creation, you can't change the settings that define the scenario: **Forecast type**, **Interval**, **Forecast entity**, and **Data source**.
 
-When you open a report, the following visualizations are available:
+### Create a new snapshot
 
-**Duration**: Allows you to enter the date range or use the sliders to set the dates.
+Select **Create New Snapshot** to generate a new version of the forecast output that reflects the latest history and any changes you made to the scenario. The newest snapshot becomes the default that capacity planning uses, and you can switch to or revert to an earlier snapshot in the report.
 
-**Channel**: Select one or more channels for which you want data displayed.
+When you create a new snapshot, the following actions occur:
 
-**Queue**: Select one or more queues for which you want data displayed.
+- Forecasting starts a background job to generate the forecast for the scenario.
+- Progress appears in the job history.
+- When the job finishes, the report updates with the new output version.
+- Capacity planning data refreshes automatically from the latest forecast.
 
-**Trend chart**: Shows the actual historical volumes from the past to the predicted volume in the future. The forecast is based on actual case and conversation records created in the past.
+> [!NOTE]
+> **Create New Snapshot** is unavailable when **Auto refresh** is turned on.
 
-**Detailed view**: You can filter the data in the following ways:
-   - **All**: Displays the actual and forecasted numbers across all channels and queues. 
-   - **Channel**: Displays the actual and forecasted numbers, sliced by each channel. 
-   - **Queue**: Displays the actual and forecasted numbers, sliced by each queue.
-     
-     For all the filters, you can use the drill up and down buttons to drill to specific levels in the hierarchy.
+### View output
 
-### Run forecasts on demand
+Select **View Output** to open the report and analyze actual and predicted volume and AHT. 
 
-As a supervisor, you can manually trigger a forecast run for a scenario by selecting **Run forecast scenario**. This capability supports planning and operational analysis scenarios where you need refreshed forecast results without waiting for the next scheduled run.
+### View job history
 
-When you run a forecast scenario on demand, the following actions occur:
+Use job history to confirm that a forecast ran successfully and to troubleshoot when results look wrong or are missing. It records every scheduled and on-demand run for the scenario, so you can see what ran, when, and whether it succeeded.
 
-- The system starts a background job to generate the forecast for the current scenario.
-- Forecast generation runs asynchronously and can take varying amounts of time depending on data volume and scenario configuration.
-- Supervisors can monitor progress and status in the job history.
-- After the background job completes, updated forecast outputs are available in forecast reports and views.
-- Completion of the forecast run also triggers a capacity planning job to refresh staffing requirements based on the latest forecast output.
+1. Open a forecast scenario.
+1. Select **View Job History** to review past runs and their status.
 
+The job history shows the following details for each run:
+
+- **Job status**: Whether the run is in progress, completed, or failed.
+- **Job type**: The kind of run, such as a forecast scenario run.
+- **Run details**: The timing of the run and related information.
+
+### Delete a scenario
+
+Select **Delete** to remove a scenario you no longer need. You can't delete a scenario that a capacity plan uses.
+
+## Related information
+
+- [Overview of forecasting](workforce-management-forecast-overview.md)
+- [Forecast with weighted average (preview)](workforce-management-forecast-weighted-average.md)
+- [Import historical data for forecast scenarios](workforce-management-import-historical-data.md)

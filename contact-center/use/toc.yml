@@ -403,13 +403,17 @@
       - name: Overview of Workforce Management
         href: /dynamics365/customer-service/use/workforce-management-overview?context=/dynamics365/contact-center/context/use-context
       - name: Forecasting
-        items:
+        items: 
+        - name: Overview of forecasting
+          href: workforce-management-forecast-overview.md
         - name: Create and manage forecast scenarios
           href: workforce-management-forecast-scenarios.md
-        - name: Import historical data
-          href: workforce-management-import-historical-data.md
         - name: Estimate AI agent credits from forecasts
           href: workforce-management-credit-estimation.md
+        - name: Forecast with weighted average (preview)
+          href: workforce-management-forecast-weighted-average.md
+        - name: Import historical data
+          href: workforce-management-import-historical-data.md
       - name: Capacity planning
         items:
         - name: Create and manage capacity plans

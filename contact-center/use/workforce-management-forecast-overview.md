@@ -1,7 +1,7 @@
 ---
 title: Overview of forecasting
 description: Learn how Workforce Management forecasting predicts conversation and case volume and average handle time so you can plan staffing in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
-ms.date: 08/17/2026
+ms.date: 08/19/2026
 ms.topic: overview
 author: lalexms
 ms.author: laalexan
@@ -12,8 +12,6 @@ ms.custom: bap-template
 ---
 
 # Overview of forecasting
-
-[!INCLUDEcc-feature-availability-embedded-yes]
 
 Forecasting predicts the future demand on your support operations so you can plan staffing and day-to-day operations with confidence. A forecast estimates two things, broken down by channel and queue: how much work will arrive (the volume of conversations and cases) and how long each interaction takes to handle (the average handle time, or AHT).
 

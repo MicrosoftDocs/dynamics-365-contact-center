@@ -12,8 +12,6 @@ ms.collection:
 
 # Create and manage forecast scenarios
 
-[!INCLUDEcc-feature-availability-embedded-yes]
-
 Create a forecast scenario to define what to analyze and how often to generate predictions. Short-term and long-term scenarios both forecast volume and average handle time (AHT) from your historical data. They differ in interval and horizon. This article describes how to create short-term and long-term forecast scenarios and how to manage them after creation.
 
 > [!IMPORTANT]

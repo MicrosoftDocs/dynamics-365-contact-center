@@ -1,7 +1,7 @@
 ---
 title: Forecast with weighted average (preview)
 description: Learn how to build a weighted average forecast (preview) from selected historical days in Workforce Management for Dynamics 365 Customer Service and Contact Center.
-ms.date: 08/17/2026
+ms.date: 08/19/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -12,8 +12,6 @@ ms.custom: bap-template
 ---
 
 # Forecast with weighted average (preview)
-
-[!INCLUDEcc-feature-availability-embedded-yes]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 

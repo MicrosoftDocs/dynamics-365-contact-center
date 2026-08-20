@@ -408,6 +408,8 @@
           href: workforce-management-forecast-overview.md
         - name: Create and manage forecast scenarios
           href: workforce-management-forecast-scenarios.md
+        - name: View and analyze forecast results
+          href: workforce-management-view-analyze-forecasts.md
         - name: Estimate AI agent credits from forecasts
           href: workforce-management-credit-estimation.md
         - name: Forecast with weighted average (preview)

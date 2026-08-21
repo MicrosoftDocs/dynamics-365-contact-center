@@ -279,8 +279,7 @@ private async Task OnEventActivityAsync(
 
 private void BridgeAgentMessage(IActivity activity)
 {
-    var tags = new { deliveryMode = "bridged" };
-    activity.ChannelData = System.Text.Json.JsonSerializer.Serialize(tags);
+    SetChannelData(activity, "deliveryMode", "bridged");
 }
 ```
 
@@ -358,23 +357,18 @@ public static class DynamicsAgentClient
 
     private static void BridgeAgentMessage(IActivity activity)
     {
-        var tags = new { deliveryMode = "bridged" };
-        activity.ChannelData = System.Text.Json.JsonSerializer.Serialize(tags);
+        SetChannelData(activity, "deliveryMode", "bridged");
     }
 
     private static void AddEscalationContext(IActivity activity)
     {
-        var context = new
+        var command = new
         {
-            tags = new { deliveryMode = "bridged" },
-            command = new
-            {
                 type = "Escalate",
-                value = new { }
-            }
+                context = new Dictionary<string, object>()
         };
 
-        activity.ChannelData = System.Text.Json.JsonSerializer.Serialize(context);
+        SetChannelData(activity, "tags", JsonSerializer.Serialize(command));
     }
 
     private static void AddEndConversationContext(IActivity activity)
@@ -425,6 +419,91 @@ private async Task OnMessageActivityAsync(
     reply.Text = $"You said: {userMessage}";
 
     await DynamicsAgentClient.BridgeAndSendActivityAsync(turnContext, reply, cancellationToken);
+}
+```
+
+### Pass context variables to the representative
+
+You can hand anything your agent learns during the conversation — a name, an order number, a case reference — to the human representative, [notification templates](/dynamics365/customer-service/administer/notification-templates#notification-fields), or [routing](/dynamics365/customer-service/administer/configure-route-to-queue-rules) by putting it in the context object of the escalation command. Contact Center converts each entry into a context variable on the conversation, and displayable ones appear in the representative's context panel when they accept the conversation. If you use this capability, ensure you have your context variables [configured on the workstream](/dynamics365/customer-service/administer/manage-context-variables).
+
+The context object travels inside the same command that triggers the transfer. There's no separate "set context" call. Each property becomes one context variable. An example payload is shared in the following section:
+
+```json
+{
+  "type": "Escalate",
+  "context": {
+    "visitorName": { "value": "John Doe", "isDisplayable": true },
+    "orderId":     { "value": 12121,      "isDisplayable": true },
+    "tier":        "gold"
+  }
+}
+```
+
+The `isDisplayable` field determines if the context value is displayed to the service rep in their desktop. It's an optional field. If you don't set it, the field doesn't display.
+
+This code example captures a name during the conversation and includes it in escalation:
+
+```csharp
+// Wrapper that makes a context variable visible to the representative.
+public sealed class ContextVariable
+{
+    [JsonPropertyName("value")]         public object? Value { get; set; }
+    [JsonPropertyName("isDisplayable")] public bool IsDisplayable { get; set; }
+
+    public static ContextVariable Displayable(object? value) =>
+        new() { Value = value, IsDisplayable = true };
+}
+
+public static async Task EscalateConversationAsync(
+    ITurnContext turnContext,
+    IDictionary<string, object>? contextVars,
+    CancellationToken cancellationToken)
+{
+    // Customer-facing message.
+    var customerMessage = Activity.CreateMessageActivity();
+    customerMessage.Text = "Let me transfer you to a live agent. One moment please.";
+    BridgeAgentMessage(customerMessage);
+
+    // Representative-facing message carrying the context. Must be a message activity.
+    var agentMessage = Activity.CreateMessageActivity();
+    agentMessage.Text = "Customer requested an agent.";
+    AddEscalationContext(agentMessage, contextVars);
+
+    await turnContext.SendActivitiesAsync(
+        new[] { customerMessage, agentMessage }, cancellationToken);
+}
+
+// Collect a value earlier in the conversation, for example "name: John Doe".
+if (userMessage.StartsWith("name:", StringComparison.OrdinalIgnoreCase))
+{
+    // Read the ORIGINAL activity text so the customer's capitalization is preserved —
+    // a lowercased copy would store "john doe".
+    var rawText = turnContext.Activity.Text ?? string.Empty;
+    var separator = rawText.IndexOf(':', StringComparison.Ordinal);
+    var visitorName = separator >= 0 ? rawText[(separator + 1)..].Trim() : string.Empty;
+
+    if (!string.IsNullOrWhiteSpace(visitorName))
+    {
+        // Store per conversation — use persisted storage in production.
+        _contextVariables[turnContext.Activity.Conversation.Id] =
+            new Dictionary<string, object>
+            {
+                ["visitorName"] = ContextVariable.Displayable(visitorName)
+            };
+
+        var reply = Activity.CreateMessageActivity();
+        reply.Text = $"Thanks {visitorName}! I'll pass your name to the agent if you're transferred.";
+        await DynamicsAgentClient.BridgeAndSendActivityAsync(turnContext, reply, cancellationToken);
+        return;
+    }
+}
+
+// Later, on escalation, hand the collected values over.
+if (userMessage.Contains("agent"))
+{
+    _contextVariables.TryGetValue(turnContext.Activity.Conversation.Id, out var vars);
+    await DynamicsAgentClient.EscalateConversationAsync(turnContext, vars, cancellationToken);
+    return;
 }
 ```
 

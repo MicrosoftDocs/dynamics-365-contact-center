@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 07/29/2026
+ms.date: 08/20/2026
 ms.custom: bap-template
 ---
 
@@ -62,7 +62,13 @@ Before you create and activate an evaluation plan for cases, enable the **Enable
             - **Start date**: Specify the start date for the plan.
             - **End date**: Specify the end date for the plan.
         
-    1.  In the **Conditions** section, select **Add** to add conditions to your evaluation plan. For example, Add **Conversation status**> **Equals** > **Closed** or add **Channel type > Contains data > Live chat.**
+    1.  In the **Conditions** section, select **Add** to add conditions to your evaluation plan. Available conditions depend on the selected record type. For example,
+
+         - To evaluate open cases: Select **Field**: State, **Operator**: Equals, **Value**: Open
+
+         - To evaluate records from a specific business unit: Select **Related entity**: Owning User, **Field**: Business Unit, **Operator**: Equals, **Value**: Select a business unit
+
+         - To exclude records that have already been evaluated: Select **Related entity**: Evaluation (Related Record), **Operator**: Does Not Contain Data
 
     1.  In the **Assign evaluation** section, provide the following:
 

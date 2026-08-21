@@ -4,7 +4,7 @@ description: Learn how to build a custom Azure agent and integrate it with Dynam
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 04/28/2026
+ms.date: 08/21/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ---
@@ -424,9 +424,9 @@ private async Task OnMessageActivityAsync(
 
 ### Pass context variables to the representative
 
-You can hand anything your agent learns during the conversation — a name, an order number, a case reference — to the human representative, [notification templates](/dynamics365/customer-service/administer/notification-templates#notification-fields), or [routing](/dynamics365/customer-service/administer/configure-route-to-queue-rules) by putting it in the context object of the escalation command. Contact Center converts each entry into a context variable on the conversation, and displayable ones appear in the representative's context panel when they accept the conversation. If you use this capability, ensure you have your context variables [configured on the workstream](/dynamics365/customer-service/administer/manage-context-variables).
+You can pass information that your agent collects during a conversation, such as a customer name, an order number, or a case ID, to the representative, [notification templates](/dynamics365/customer-service/administer/notification-templates#notification-fields), or [routing](/dynamics365/customer-service/administer/configure-route-to-queue-rules) by putting it in the context object of the escalation command. The system creates a context variable for each value. The context variables configured to be displayed appear in the representative's context panel when they accept the conversation. To use this capability, ensure that the corresponding context variables are [configured on the workstream](/dynamics365/customer-service/administer/manage-context-variables).
 
-The context object travels inside the same command that triggers the transfer. There's no separate "set context" call. Each property becomes one context variable. An example payload is shared in the following section:
+The system includes the context object in the same command that initiates the transfer or escalation. No separate call is required to set context. Each property in the context object is converted into a context variable. An example payload is as follows.
 
 ```json
 {

@@ -258,6 +258,8 @@
           href: /dynamics365/customer-service/administer/voice-forward-calls?context=/dynamics365/contact-center/context/administer-context
         - name: Configure voicemail to manage inbound calls
           href: /dynamics365/customer-service/administer/voice-channel-voicemail?context=/dynamics365/contact-center/context/administer-context
+        - name: Configure customer-first direct callback
+          href: configure-customer-first-callback.md
         - name: Configure direct callback
           href: /dynamics365/customer-service/administer/voice-channel-direct-callback?context=/dynamics365/contact-center/context/administer-context
         - name: Configure outbound and inbound profiles

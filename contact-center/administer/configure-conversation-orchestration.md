@@ -4,7 +4,7 @@ description: Learn how to manage intelligent conversation routing with conversat
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 07/16/2026
+ms.date: 08/24/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
@@ -16,7 +16,7 @@ ms.collection: bap-ai-copilot
 
 Conversation orchestration keeps every conversation actively managed throughout the conversation lifecycle from initiation through resolution. Conversation orchestration monitors each conversation as conditions evolve, such as an increase in wait time, queues filling up, or service representatives going offline, and automatically runs the relevant action in accordance with your configured playbooks. Administrators define the logic by using natural-language playbooks, and conversation orchestration handles the execution. When you publish a playbook, the system converts your natural language playbooks into a structured runtime format.
 
-In this preview release, conversation orchestration is available for voice and live chat channels only.
+Conversation orchestration is available for voice and messaging channels only.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
@@ -35,17 +35,19 @@ The supported scenarios are as follows:
 
 - [**Dynamic prioritization**](/dynamics365/customer-service/administer/assignment-methods#how-dynamic-prioritization-works-preview):
 
-  - Update priority based on transfer to queue
-  - Escalate priority based on conversation wait time
+  - Update priority based on transfer to queue.
+  - Escalate priority based on conversation wait time.
 
 - **Overflow handling**:
 
-  - [Overflow based on support representative availability in the queue, sign in status, and queue operating hours](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview)
-  - [Handle overflow for direct inward dialled calls when a representative isn't available](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-direct-inward-dialled-calls-preview)
+  - [Overflow based on support representative availability in the queue, sign in status, and queue operating hours, wait time in queue, and queue position](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview).
+  - [Handle overflow for direct inward dialed calls when a representative isn't available](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-direct-inward-dialled-calls-preview).
 
-- [**Assign to a preferred or previously engaged representative**](/dynamics365/customer-service/administer/configure-preferred-agent#assign-to-a-previously-engaged-or-preferred-expert-by-using-conversation-orchestration-playbooks-preview):
+- **Assign to a preferred expert or previously engaged representative**:
 
-  - Reconnect customers with a preferred or a previously engaged expert for context continuity and optimal service
+  - [Assign to a previously engaged or preferred expert by using conversation orchestration playbooks](/dynamics365/customer-service/administer/configure-preferred-agent#assign-to-a-previously-engaged-or-preferred-expert-by-using-conversation-orchestration-playbooks-preview).
+
+  - [Keep same expert for asynchronous chats, by checking presence status, and active conversation limits of the expert](/dynamics365/customer-service/administer/configure-preferred-agent#keep-same-expert-for-returning-asynchronous-chats-with-active-conversation-limit-and-presence-status-checks).
 
 - [**Bullseye routing through user groups**](configure-bullseye-routing.md):
 
@@ -77,7 +79,7 @@ In Copilot Service admin center, go to **Customer support** > **Conversation Orc
 
 ### Create a playbook
 
-By default, the conversation orchestration page displays three popular prompts. Use **Prompt gallery** to view prompts for the different scenarios.
+By default, the conversation orchestration page displays six popular prompts. Use **Prompt gallery** to view prompts for the different scenarios.
 
 1. On the **Conversation Orchestration** page, select **Prompt gallery**. The pop-up window displays prompt templates for all scenarios by default.
 1. In the drop-down field, select one of the following categories and then a prompt template that matches your scenario:

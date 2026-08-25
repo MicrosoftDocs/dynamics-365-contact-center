@@ -4,7 +4,7 @@ description: Real-time streaming analytics deliver event-driven metric updates s
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
-ms.date: 07/29/2026
+ms.date: 08/25/2026
 ms.topic: concept-article
 ms.custom: bap-template
 ---
@@ -59,7 +59,7 @@ Sign in to your org. Access the dashboards by using the https://supervisor-previ
 |portal.in.contactcenterai.powerplatform.com/experience/supervisor    |    PROD     | India |
 |portal.jp.contactcenterai.powerplatform.com/experience/supervisor    | PROD        | Japan |
 |portal.ch.contactcenterai.powerplatform.com/experience/supervisor     |  PROD       | Switzerland|
-|portal.ae.contactcenterai.powerplatform.com/experience/supervisor    |   PROD      | United Arab States|
+|portal.ae.contactcenterai.powerplatform.com/experience/supervisor    |   PROD      | United Arab Emirates|
 |portal.uk.contactcenterai.powerplatform.com/experience/supervisor     |   PROD      |United Kingdom |
 |portal.us.contactcenterai.powerplatform.com/experience/supervisor    | PROD        | United States |
 

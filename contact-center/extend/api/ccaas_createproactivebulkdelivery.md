@@ -1,11 +1,11 @@
 ---
 title: Use CCaaS_CreateProactiveBulkDelivery API
-description: Learn about the CCaaS_CreateProactiveBulkDelivery and CCaaS_CreateProactiveBulkDeliveryV2 APIs that enable organizations to initiate proactive outbound deliveries to multiple customers in a single request in Dynamics 365 Contact Center.
+description: Learn about the CCaaS_CreateProactiveBulkDelivery and CCaaS_CreateProactiveDeliveryBulkV2 APIs that enable organizations to initiate proactive outbound deliveries to multiple customers in a single request in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: reference
-ms.date: 07/01/2026
+ms.date: 08/25/2026
 ms.collection: bap-ai-copilot
 ms.custom: bap-template
 ---
@@ -72,13 +72,13 @@ Use the `CCaaS_CreateProactiveBulkDelivery` API to initiate proactive outbound d
 }
 ```
 
-## Use CCaaS_CreateProactiveBulkDeliveryV2 API
+## Use CCaaS_CreateProactiveDeliveryBulkV2 API
 
-The `CCaaS_CreateProactiveBulkDeliveryV2` API provides the same bulk delivery capability as `CCaaS_CreateProactiveBulkDelivery`, with `RequestId` optional and `ProactiveEngagements` no longer required.
+The `CCaaS_CreateProactiveDeliveryBulkV2` API provides the same bulk delivery capability as `CCaaS_CreateProactiveBulkDelivery`, with `RequestId` optional and `ProactiveEngagements` no longer required.
 
 ### Request details
 
-- **URL**: `https://<orgurl>/api/data/v9.2/CCaaS_CreateProactiveBulkDeliveryV2`
+- **URL**: `https://<orgurl>/api/data/v9.2/CCaaS_CreateProactiveDeliveryBulkV2`
 - **Method**: POST
 - **Version**: 1.0
 - **OData Operation**: Action

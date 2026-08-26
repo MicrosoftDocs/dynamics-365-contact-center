@@ -78,13 +78,15 @@ You can enable Customer Intent Agent to analyze past conversations within the Cu
 You need to run the AI model on data sources like conversations to identify intent groups and related intents.
 
 1. On the **Customer Intent Agent** page, select **Manage** for **Manage intent discovery settings (optional)**.
-
+1. Select **Edit** for business profile to provide a business profile to consider while mining intents. (optional)
 1. On the **Manage intent discovery setup** page, select **Setup intent discovery for a new LOB**.
 1. In **Add settings for intent discovery**, enter the details:
    - **Name**: An intuitive name that meets your business requirement.
    - **Data source**: Available for conversations only and therefore read-only.
-   - **Data source rules**:  Create a rule for the selected data sources. This step is required. Only cases, conversations, and emails that meet the rules you set are used for intent discovery.
-
+   - **Data source rules**: Create a rule for the selected data sources. This step is required. Only cases, conversations, and emails that meet the rules you set are used for intent discovery.
+   
+1. Provide guidance to shape the granularity of generated intents and the total number of intents and intent groups. With guidance, you can also control when a case should map to an existing intent versus when it warrants a new one, and the heuristic used to classify and cluster cases. (optional)
+1. Select **Auto-promote high-confidence intents** to auto-promote intents that meet the confidence and case or conversation count thresholds you set. Choose the maximum promotions per run and whether to auto-promote intents as pending or approved. (optional)
 1. If you want to simulate the intent discovery, select **Test**. After the discovery is complete, a simulation of the intent and intent groups is available.
 1. Select **Add into job schedule** to run the intent discovery.
 1. In **Test results**, select the simulation to view the details. The simulation details are displayed. Simulation uses the last 1,000 records to generate intent and intent groups. The simulation helps administrators evaluate the intents and intent groups.
@@ -93,13 +95,19 @@ You need to run the AI model on data sources like conversations to identify inte
    > [!NOTE]
    > You can view the simulation for successful runs only. The simulation job shows a failure message if the simulation is unsuccessful.
 
+### Discovery updates to existing intents
+
+Your intent library stays current. Existing intents are updated so that the titles, descriptions, attributes, and common customer utterances continue to reflect your products and triage processes as they change. An intent is updated when intent guidance changes, when a newly-mined case surfaces a crucial attribute, or when the model determines that existing details are out of date.
+
+Updates to proposed intents appear as usual on the job details page, while updates to intents already in the library appear on a separate tab with **Change Reason** and **Change Summary** columns. Promoting an updated intent patches the existing intent with the new title, description, and attributes.
+
 ### Promote intents to intent library
 
 1. On **Customer Intent Agent**, select **Manage** under **Manage intents**.
 1. On the **Manage intent discovery setup** page, select the discovery job or jobs you want to review and select **View job details**.
-1. In the job details, you see how many new intents and intent groups were generated in this discovery job.
+1. In the job details page, you see how many new intents and intent groups were generated in this discovery job.
 1. Select the intents or intent groups you want to promote to your intent library and then select **Move to intent library**.
-1. After you review the job, select **Mark jobs** as reviewed. This action lets you and other administrators know the jobs that are pending review.
+1. After you review the job, select **Mark jobs** as reviewed. This action helps you and other administrators distinguish the jobs that are reviewed and pending review.
 
 ## Manage intents
 
@@ -110,7 +118,7 @@ You need to run the AI model on data sources like conversations to identify inte
    - **Intent group**: Select the intent group that you want to associate with the intent.
    - **Line of business**: Select the line of business that you want to associate with the intent.
    - **Review status**: Select **Pending**, **Approved**, or **Discarded** in the list to indicate the default status that you'd like to set for the intent.
-   - **Autonomous support**: Select **Self-service support** if you want the front door agent to autonomously handle this intent for immediate deflection.
+   - **Autonomous support**: Select **Self-service support** if you want the AI agent to autonomously handle this intent for immediate deflection.
 1. Save the information.
 1. On the **Attributes** tab, add the attributes that you want to associate with the intent. The attributes are used to provide additional information about the intent. You can add multiple attributes for an intent.
 1. On the **Knowledge articles** tab, select **Add** to associate the knowledge articles with the intent. The knowledge articles are used to provide additional information about the intent. You can add multiple knowledge articles for an intent.
@@ -123,7 +131,7 @@ You can manage the intents to be used in AI agent in bulk. On the **Manage inten
 
 You can logically organize the intents into intent groups. The intent group represents the business expertise needed to solve the intents belonging to the group. The intent groups that the AI model identifies are displayed on the **All intent groups** page. You can manage the intent groups by reviewing, approving, or updating the intents in them.
 
-1. On the **Customer Intent Agent** page, select **Manage** for **Manage intent groups and intents**. The **All intent groups** page displays the list of intents that the AI model discovered. If you create a custom intent group, the intent source shows as **Admin edited**. The **Intents** column displays the number of intents in each intent group.
+1. On the **Customer Intent Agent** page, select **Manage** for **Manage intent groups**. The **All intent groups** page lists the intent groups that the AI model discovered. If you create a custom intent group, the intent source shows as **Admin edited**. The **Intents** column displays the number of intents in each intent group.
 
    :::image type="content" source="../media/list-of-intent-groups.png" alt-text="Screenshot of intent groups list." lightbox="../media/list-of-intent-groups.png":::
 
@@ -132,7 +140,7 @@ You can logically organize the intents into intent groups. The intent group repr
    :::image type="content" source="../media/manage-intents.png" alt-text="Screenshot of manage intents in intent group." lightbox="../media/manage-intents.png":::
 
 1. Select **Manage intents** to add new intents or remove existing ones.
-1. On the **Manage intents** dialog, you can do the  updates:
+1. On the **Manage intents** dialog, you can make the following updates:
    - Select **Add intents** > **Add existing**, and select the intents that you want to add to the group. A message appears, stating that changing the intents might affect other processes. 
    - Select **Add**. The intents are added to the list.
    - Select an intent, and then do the following actions:
@@ -204,7 +212,7 @@ These guidelines define how intent-level, group-level, and organizational-level 
 
 |Guidelines  |Why it matters |Example   |
 |---------|---------|---------|
-|Define complex disambiguation logic across related intents.    |   Helps the agent handle overlapping or multi-intent requests effectively.      |   Define complex disambiguation logic across related intents.	Helps the agent handle overlapping or multi-intent requests effectively.	"If a user mentions both 'cancel order' and 'return product,' prioritize return flow first, then confirm if cancellation is still needed."      |
+|Define complex disambiguation logic across related intents.    |   Helps the agent handle overlapping or multi-intent requests effectively.      |	"If a user mentions both 'cancel order' and 'return product,' prioritize return flow first, then confirm if cancellation is still needed."      |
 
 **Intent instruction guidelines**
 
@@ -233,7 +241,7 @@ Connectors let systems work together, transfer data, and allow AI agents to auto
     
     Learn more in [Share a custom connector in your organization](/connectors/custom-connectors/share).
 1. Specify if the type for the connector is **General** or **For specific intents**.
-1. If you select **For specific intents**, you need to map the custom connector as a solution as explained in the section that follows.
+1. If you select **For specific intents**, you must first make the custom connector available for specific intents. You can then map its actions as tools to intents, as described in the following section.
 1. Select **Save**.
 
 ### Map a tool to an intent

@@ -1,10 +1,10 @@
 ---
-title: Session closure reasons
+title: Session closure reasons in Dynamics 365 Contact Center
 description: Learn about session closure reasons and their descriptions to help you understand what they mean.
 author: neeranelli
 ms.author: nenellim
 ms.topic: reference
-ms.date: 06/18/2025
+ms.date: 08/31/2026
 ms.reviewer: nenellim
 ---
 

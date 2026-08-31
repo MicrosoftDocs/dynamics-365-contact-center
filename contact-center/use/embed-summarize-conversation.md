@@ -1,17 +1,17 @@
 ---
-title: Use Copilot to summarize conversations in non-Microsoft CRM systems
-description: Learn how customer service representatives can use Copilot to summarize cases and conversations in Copilot Service workspace.
+title: Summarize conversations with Copilot in non-Microsoft CRM systems
+description: Learn how to generate conversation summaries with Copilot in non-Microsoft CRM systems.
 author: gandhamm 
 ms.author: mgandham 
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 01/13/2026
+ms.date: 08/27/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 
-# Use Copilot to summarize conversations in non-Microsoft CRM systems
+# Summarize conversations with Copilot in non-Microsoft CRM systems
 
 [!INCLUDE[cc-feature-availability-embed](../includes/cc-feature-availability-embed.md)]
 
@@ -21,9 +21,13 @@ ms.custom: bap-template
 
 [!INCLUDE[cc-conv-summary-prereq](../../shared/cc-conv-summary-prereq.md)]
 
-## Navigation
+## Open conversation summarization
 
-When you sign in to a non-Microsoft CRM, and launch the embedded experience, sign in to your Dynamics account and then select **Summarize conversation** from the communication panel when you're in a conversation with a customer.
+1. Sign in to a non-Microsoft CRM system.
+1. Launch the embedded experience.
+1. Sign in to your Dynamics account.
+1. Open a customer conversation.
+1. In the communication panel, select **Summarize conversation**.
 
 ## View a conversation summary
 

@@ -1,11 +1,11 @@
 ---
 title: View Copilot analytics report
-description: Learn how to access and interpret the Copilot analytics report in Dynamics 365 Customer Service.
+description: Learn how to open, filter, and interpret the Copilot analytics report.
 author: gandhamm 
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
-ms.date: 12/09/2025
+ms.date: 08/27/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ms.collection: bap-ai-copilot
@@ -20,7 +20,7 @@ ms.collection: bap-ai-copilot
 > |----------|----------|
 >  | No  | Yes   |
 
-Copilot enables customer service representatives (service representatives or representatives) to efficiently complete tasks related to conversations and email. With the Copilot report, supervisors and customer service managers can identify the effect that Copilot has across their customer service operation.
+The Copilot analytics report helps supervisors and customer service managers understand how customer service representatives (service representatives or representatives) use Copilot for conversations and email.
 
 The system stores the Copilot interaction data in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteraction), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteractiondata), [msdyn_copilottranscript](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscript), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscriptdata) tables. You can use the information to build custom metrics in reporting and analytics and understand how your organization uses Copilot.
 
@@ -30,14 +30,14 @@ The system stores the Copilot interaction data in the [msdyn_copilotinteraction]
 
 - Your administrator must enable Copilot analytics in the Copilot Service admin center app. Learn more in [Manage Copilot analytics](/dynamics365/customer-service/administer/copilot-analytics).
 
-## Access the report
+## Open the Copilot analytics report
 
-To view the Copilot analytics report, select **Copilot analytics** from the Copilot Service workspace menu.
+In Copilot Service workspace, select **Copilot analytics** from the menu.
 
 > [!NOTE]
 > Case summary isn't available for the Contact Center embedded experience.
 
-## Copilot report filters and metrics
+## Filter and interpret the report
 
 You can use filters to focus on the information that's important to you:
 
@@ -73,9 +73,9 @@ The Copilot report displays the following metrics.
 | -------|---------|
 | Agent ratings | The number of times service representatives rated a Copilot response positively or negatively. |
 
-## Next Steps
+## Next steps
 
-You can view the [transcripts of interactions]( /dynamics365/customer-service/develop/download-copilot-transcript-data?context=/dynamics365/contact-center/extend-context) between service representatives and Copilot.
+You can [view transcripts of interactions](/dynamics365/customer-service/develop/download-copilot-transcript-data?context=/dynamics365/contact-center/extend-context) between service representatives and Copilot.
 
 ### Related information
 

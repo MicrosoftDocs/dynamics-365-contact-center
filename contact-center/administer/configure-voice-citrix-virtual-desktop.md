@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection:
-ms.date: 07/24/2025
+ms.date: 08/31/2026
 ms.custom: bap-template
 ---
 
@@ -38,7 +38,7 @@ Representatives can access the voice channel from the Citrix virtual desktop aft
 1. Connect to the virtual desktop.
 1. Open a browser window and access Copilot Service workspace.
 
-## Experience for representatives when local device disconnects from the virtual desktop 
+## Experience for representatives when local device disconnects from the virtual desktop
 
 Learn about the [experience for representatives when their local device disconnects](../administer/configure-voice-avd.md#rdc-disconnects) from the virtual desktop instance. 
 

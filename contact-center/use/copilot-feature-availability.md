@@ -1,19 +1,19 @@
 ---
-title: Copilot feature availability across products
-description: Learn about the Copilot features availability across Dynamics 365 Contact Center, Dynamics 365 Customer Service, and Microsoft 365 Copilot for Service.
+title: Compare Copilot feature availability
+description: Compare Copilot feature availability across Dynamics 365 Contact Center and Dynamics 365 Customer Service experiences.
 author: gandhamm 
 ms.author: mgandham 
 ms.reviewer: mgandham
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
-ms.date: 07/28/2026
+ms.date: 08/27/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 
-# Copilot feature availability across products
+# Compare Copilot feature availability
 
-This article provides information about the Copilot features supported across Customer Service, standalone and embedded experiences in Dynamics 365 Contact Center, and Microsoft 365 Copilot for Service.
+Use the following table to compare Copilot features in Dynamics 365 Customer Service and the standalone and embedded experiences in Dynamics 365 Contact Center.
 
 | Feature                   | Dynamics 365 Customer Service | Dynamics 365 Contact Center&mdash;standalone experience | Dynamics 365 Contact Center&mdash;embedded experience |
 |---------------------------|-------------------------------|-----------------------------------------------------|---------------------------------------------------|
@@ -30,7 +30,7 @@ This article provides information about the Copilot features supported across Cu
 | [Summarize closed conversations in non-Microsoft CRMs](/microsoft-copilot-service/copilot-ask-a-question#generate-conversation-summary) | No | No | No |
 | [View custom record summaries](/dynamics365/customer-service/administer/copilot-enable-custom-record-summaries) | Yes | No | No |
 | [Summarize cases in non-Microsoft CRMs](copilot-use-summary.md) | No | No | Yes |
-| [Resolution Notes](/microsoft-copilot-service/copilot-ask-a-question#generate-resolution-notes) | No | No | Yes |
+| [Generate resolution notes](/microsoft-copilot-service/copilot-ask-a-question#generate-resolution-notes) | No | No | Yes |
 | [Write an email from Copilot help pane](use-copilot-email.md) | Yes | Yes | Yes |
 | [Use Copilot email assist from email editor](use-copilot-email.md) | Yes | Yes | No |
 | [Translate copilot generated email drafts](use-copilot-email.md#translate-responses) | Yes | Yes | Yes |
@@ -44,6 +44,6 @@ This article provides information about the Copilot features supported across Cu
 | [Use targeted phrases in Copilot to get responses from plugins (preview)](use-ask-a-question.md#use-targeted-phrases-in-copilot-to-get-responses-from-plugins-preview) | Yes | Yes | Yes |
 | [Use Copilot analytics](copilot-analytics-report.md) | Yes | Yes | No |
 
-### Related information
+## Related information
 
 [FAQs about Responsible AI](/dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/implement-context)  

@@ -1,21 +1,21 @@
 ---
-title: Enable Copilot features 
-description: Learn how to enable the various Copilot features in Dynamics 365 Contact Center.
+title: Configure Copilot features
+description: Learn how to configure Copilot features and make them available to service representatives in Dynamics 365 Contact Center.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: neeranelli
 ms.topic: how-to
-ms.date: 01/13/2026
+ms.date: 08/27/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ms.collection: bap-ai-copilot
 ---
 
-# Manage Copilot features
+# Configure Copilot features
 
-Copilot provides real-time AI assistance that helps customer service representatives (service representatives or representatives) automate time-consuming tasks to handle cases efficiently and resolve issues faster so that they can deliver value to customers.
+Copilot provides real-time AI assistance to help customer service representatives (service representatives or representatives) handle cases and customer conversations.
 
-When you enable the Copilot features, service representatives can do the following actions:
+When you enable Copilot, service representatives can use the following features:
 
 |Feature| Dynamics 365 Contact Center&mdash;embedded | Dynamics 365 Contact Center&mdash;standalone |
 |----------|----------|----------|
@@ -34,23 +34,23 @@ You have the System Administrator role.
 
 ## Region availability and data movement
 
-The respond to questions, compose an email, and summarize cases and conversations features are generally available in the North America region only. These features are in preview in the rest of the supported regions. More information: [Region availability](/dynamics365/customer-service/administer/cs-region-availability-service-limits#region-availability-of-analytics-and-insights?context=/dynamics365/contact-center/context/administer-context).
+The features that answer questions, compose emails, and summarize cases and conversations are generally available only in North America. These features are in preview in other supported regions. Learn more in [Region availability](/dynamics365/customer-service/administer/cs-region-availability-service-limits#region-availability-of-analytics-and-insights?context=/dynamics365/contact-center/context/administer-context).
 
 ## Supported languages
 
-To learn about supported languages for Copilot, see [Language support for AI-based analytics and insights]( /dynamics365/customer-service/administer/cs-region-availability-service-limits#language-support-for-ai-based-analytics-and-insights-in-customer-service?context=/dynamics365/contact-center/context/administer-context).
+To learn about supported languages for Copilot, see [Language support for AI-based analytics and insights](/dynamics365/customer-service/administer/cs-region-availability-service-limits#language-support-for-ai-based-analytics-and-insights-in-customer-service?context=/dynamics365/contact-center/context/administer-context).
 
 ## Opt in to continue with Copilot setup
 
-In Copilot Service admin center, the [**Copilot for questions and emails**](copilot-enable-help-pane.md) or [**Summaries**](copilot-enable-summary.md) page, when you enable the copilot features, you must opt in to continue with the setup. The opt-in page displays a link to review the terms and conditions. You can select **Opt in** to continue with the setup.  
+When you enable Copilot features on the [**Copilot for questions and emails**](copilot-enable-help-pane.md) or [**Summaries**](copilot-enable-summary.md) page in Copilot Service admin center, you must opt in to continue setup. Review the terms and conditions, and then select **Opt in**.
 
 ## Opt out from using Copilot features
 
-In Copilot Service admin center, opt out from the copilot features on the **Copilot for questions and emails** or **Summaries** page. When you opt out, the application erases the training data. If you want to use the features again, you must consent to the terms of use and opt in.
+In Copilot Service admin center, opt out of Copilot features on the **Copilot for questions and emails** or **Summaries** page. When you opt out, the application erases the training data. To use the features again, consent to the terms of use and opt in.
 
 ## Make Copilot available to service representatives
 
-For service representatives to use the copilot features, enable the copilot features in [experience profiles](/dynamics365/customer-service/administer/add-profile-default?context=/dynamics365/contact-center/administer-context). By default, service representatives added to the out-of-the-box experience profiles can use the Copilot features.
+For service representatives to use Copilot features, enable the features in [experience profiles](/dynamics365/customer-service/administer/add-profile-default?context=/dynamics365/contact-center/administer-context). By default, service representatives added to the default experience profiles can use Copilot.
 
 To limit the copilot features that the representative can use, create or edit a custom profile and enable specific copilot features for the profile. You can then [assign the custom profile to the service representatives](/dynamics365/customer-service/administer/add-profile-default?context=/dynamics365/contact-center/administer-context).
 
@@ -60,20 +60,21 @@ Perform the following steps to add the Copilot features to the custom experience
    - **Support experience** > **Workspaces**
    - **Copilot for questions and emails** > **Agent access** > **Experience profiles**
 1. Select the required experience profile.
-1. On the **Productivity Pane**, turn on the **Copilot for questions and emails* toggle.
+1. On the **Productivity pane**, turn on the **Copilot for questions and emails** toggle.
 
    :::image type="content" source="../media/copilot-help-pane-enable-mini.png" alt-text="Screenshot of the Productivity panel in experience profile." lightbox="../media/copilot-help-pane-enable.png":::|
 
-1. In the **Copilot AI features** section, select edit and then select the features, such as **Ask a question**, **Write an email**, **Case summary**, **Live conversation summary** to enable for the profile.  
-1. Save the changes.
+1. In **Copilot AI features**, select **Edit**.
+1. Select the features to enable for the profile, such as **Ask a question**, **Write an email**, **Case summary**, and **Live conversation summary**.
+1. Select **Save**.
 
-## Record service representatives interactions with Copilot
+## Record representative interactions with Copilot
 
-In the **Summaries** and **Copilot for questions and emails** configuration pages, you can select **Record transcripts of representative interactions with Copilot, representative actions, and representative feedback on AI suggestions** to record and understand how service representatives are interacting with Copilot and how Copilot is performing in a support organization. Agents can also share feedback about Copilot actions, which helps Copilot perform better. You can also [download](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscriptdata?context=/dynamics365/contact-center/extend-context) and use the data to analyze knowledge sources, and build usage reports.
+On the **Summaries** and **Copilot for questions and emails** configuration pages, select **Record transcripts of representative interactions with Copilot, representative actions, and representative feedback on AI suggestions** to capture representative interactions and feedback. Representatives can also share feedback about Copilot actions. You can [download Copilot transcript data](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscriptdata?context=/dynamics365/contact-center/extend-context) to analyze knowledge sources and build usage reports.
 
 ## Assign roles and privileges
 
-Out of the box, users with the Customer Service Representative role only can use the copilot features. Therefore, make sure that users with custom roles have the following privileges:
+By default, only users with the Customer Service Representative role can use Copilot features. Ensure that users with custom roles have the following privileges:
 
 - prvCreatemsdyn_copilotinteraction 
 - prvAppendmsdyn_copilotinteraction 

@@ -1,21 +1,21 @@
 ---
-title: Enable features in Copilot pane
-description: Learn how to enable features that appear in the Copilot help pane to increase customer service representative productivity.
+title: Configure Copilot features in the help pane
+description: Learn how to configure Copilot experiences, knowledge filters, prompts, and agents in the Copilot help pane.
 author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 04/21/2026
+ms.date: 08/27/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 
-# Enable features in Copilot pane
+# Configure Copilot features in the help pane
 
 [!INCLUDE[cc-feature-availability-embedded-yes](../includes/cc-feature-availability-embedded-yes.md)]
 
-The Copilot help pane lets customer service representatives (service representatives or representatives) use Copilot features to respond to questions, compose emails, and draft chat responses in Copilot Service workspace.
+Configure the Copilot help pane so customer service representatives (service representatives or representatives) can ask questions, compose emails, and draft chat responses in Copilot Service workspace.
 
 ## Prerequisites
 
@@ -24,15 +24,15 @@ The Copilot help pane lets customer service representatives (service representat
 
    :::image type="content" source="../media/ppac-gen-ai-features.png" alt-text="Power Platform Admin center Bing chat.":::
 
-## Enable Copilot settings
+## Enable Copilot experiences
 
-To enable the Copilot features in Copilot Service admin center, perform the following steps:
+In Copilot Service admin center:
 
 1. In **Support experience**, select **Productivity**.
 1. For **Copilot settings**, select **Manage**.
-1. Select one or both of the following options.
-   - **Copilot immersive**: Lets representatives use AI in a conversational, focused experience to resolve cases.
-   - **Copilot side pane**: Displays Copilot in the side pane so representatives can chat with AI using knowledge sources.
+1. Select one or both of the following options:
+   - **Copilot immersive (preview):** Lets representatives use AI in a conversational, focused experience to resolve cases.
+   - **Copilot help pane - Ask a Question:** Displays Copilot in the help pane so representatives can chat with AI using knowledge sources.
   
 ## Enable agents within Copilot
 
@@ -61,13 +61,13 @@ Specify filters that are applied by default in the background to filter knowledg
 1. Specify the required conditions for the filter.
 1. Select **Finish editing**.
     
-### Representative Filters
+### Representative filters
 
 Specify the filters that representatives can apply to further filter and refine Copilot responses. Representatives can view and select or deselect these filters in the Copilot help pane for the **Ask a question** feature. If a filter isn't configured as a representative filter, it operates in the background and isn't visible to representatives.
 
 To configure a representative filter, do the following steps:
 
-1. Select **Add Filter** for **Representative Filters**.
+1. Select **+ Add Filter** for **Representative Filters**.
 1. Specify the required knowledge base field that representatives can use. You can also specify the display name and add the values from the field that the representative can select.
 1. Turn on the **Filter status** toggle. This toggle must be turned on for the representative to view the filter.
 1. Select **Finish editing**.
@@ -76,7 +76,7 @@ To configure a representative filter, do the following steps:
 
 Specify the filters that are automatically applied. The representatives don't need to explicitly set them in the Copilot help pane. To configure automated filters, do the following steps:
 
-1. Select **Add Filter** for **Automated Filters**.
+1. Select **+ Add Filter** for **Automated filters**.
 1. Specify the required knowledge base field and the rules that correspond to the field's value. The filter rule is applied only on the record type the representative is currently working on.
 1. Turn on the **Use untagged content if the field value is null** toggle to view the content if the field value doesn't match the specified value.
 1. Turn on the **Allow representatives to view or change this filter** toggle for service representatives to view a visual cue that the automated filter is applied and change the filtering options. Based on your setting, the following actions apply: 
@@ -118,7 +118,7 @@ The following settings are available on the **Overview** tab:
 
 You can provide custom instructions to guide how Copilot generates responses when service representatives use the **Ask a question** experience. Custom instructions can provide guidance on tone and style. They can also include formatting preferences, escalation guidance, compliance reminders, and organization-specific terminology.
 
-> [!Note]
+> [!NOTE]
 > Custom instructions are applied only when your organization's Dynamics 365 knowledge base is selected as a knowledge source. If you're using other sources, such as Copilot Studio, custom instructions aren't applied.
 
 To enable custom instructions for Copilot responses, perform the following steps:
@@ -144,11 +144,11 @@ Deterministic response helps to ensure Copilot returns consistent, repeatable ou
 
 **Enhanced features**
 
-If you enabled the Copilot immersive experience, enhanced features are always available. For the Copilot side pane, you must select the **Allow enhanced features** checkbox to enable the following capabilities:
+If you enabled the Copilot immersive experience, enhanced features are always available. For the Copilot side pane, you must select **Allow enhanced features:** to enable the following capabilities:
 
 - **Support for advanced case analysis**: Copilot can help your representatives quickly understand complex cases by analyzing all relevant context and presenting clear, structured insights. It highlights key events, signals, and relationships across the case lifecycle to reduce time spent piecing information together. By surfacing patterns, risks, and recommended next steps, advanced case analysis enables faster, more confident decision-making. This allows your representatives to focus on resolution rather than investigation.
 - **App navigation via prompt**: Copilot lets representatives navigate their work using natural language instead of clicks and menus. With a simple prompt, representatives can open records, move between related views, or take action without breaking their flow. This reduces context switching and makes everyday tasks faster and more intuitive. The result is a more fluid, conversational way to work across applications.
-- **Interactive card and diagram rendering**: Copilot can transforms responses into rich, interactive visuals such as cards, tables, and diagrams when they improve clarity. Information is presented in the most effective format for quick understanding, rather than long blocks of text. These visual responses are easy to scan, interact with, and reuse in downstream workflows. This helps representatives grasp insights faster and act on them with confidence.
+- **Interactive card and diagram rendering**: Copilot can transform responses into rich, interactive visuals such as cards, tables, and diagrams when they improve clarity. Information is presented in the most effective format for quick understanding, rather than long blocks of text. These visual responses are easy to scan, interact with, and reuse in downstream workflows. This capability helps representatives grasp insights faster and act on them with confidence.
 - **Multistep reasoning and knowledge retrieval**: Copilot can reason through complex requests by breaking them into steps and gathering the right information along the way. It combines context, knowledge, and logic to produce responses that reflect deeper understanding rather than one‑shot answers. This enables more accurate guidance for multi-part questions and complex scenarios. Users get clearer, more complete outcomes without needing to manually guide each step.
 
 **Suggested prompts**
@@ -157,7 +157,7 @@ Select the **Suggested prompts** checkbox to allow Copilot to suggest prompts fo
 
 **Proactive insights** 
 
-Select the **Proactive insights** checkbox to allow Copilot to suggest knowledge-based answers and insights to representatives when they're chatting with customers. Proactive prompting enables service representatives to discover and prompt Copilot effortlessly, without the need for manual typing. This feature saves the service representative’s time and improves the quality of their overall experience.
+Select **Proactive insights** to allow Copilot to suggest knowledge-based answers and insights to representatives when they're chatting with customers. Proactive prompting reduces the need for representatives to type prompts manually.
 
 To configure prompts from your organization, select the **Prompts** tab, and then in the **Prompts from my organization** section, select **Add new prompt** to add the prompts that you want to use.
 
@@ -184,16 +184,17 @@ You can configure the following settings on the **Immersive settings** tab:
 Type the default instructions you want Copilot to provide to your representatives to specify how Copilot should show the representatives their tasks.
 
 **Case overview card**
+
 Use the dropdown menus to configure the way you want Copilot to display case details in the card that appears in the immersive mode. Select the **Display label to user** and **Display customer info** checkboxes if you want Copilot to share specific case details.
 
 ### Email settings tab
 
 You can configure the following settings on the **Email settings** tab:
 
-**Help pane - Write an email**: Let Copilot help representatives draft emails in the help pane. 
-**Email sentiments (preview)**: Let representatives view AI-generated sentiment for emails. Learn more in [Configure email](/dynamics365/customer-service/administer/customer-service-hub-user-guide-email-admin).
-**Copilot-recommended templates**: Let representatives use Copilot-recommended templates for emails. Learn more in [Configure the enhanced insert email template selection dialog](/power-apps/user/customize-insert-email-template).
-**Trusted webpages**: Add up to five trusted web domains as sources for Copilot to search and generate responses from. Copilot searches for information up to two levels down from the configured domain. You must enable the Bing Search in Power Platform admin center to add trusted web sources. Learn more in [Enable data across geographic locations](/microsoft-copilot-studio/manage-data-movement-outside-us#enable-data-across-geographic-locations).
+- **Help pane - Write an email:** Let Copilot help representatives draft emails in the help pane.
+- **Email sentiments (preview)**: Let representatives view AI-generated sentiment for emails. Learn more in [Configure email](/dynamics365/customer-service/administer/customer-service-hub-user-guide-email-admin).
+- **Copilot-recommended templates**: Let representatives use Copilot-recommended templates for emails. Learn more in [Configure the enhanced insert email template selection dialog](/power-apps/user/customize-insert-email-template).
+- **Trusted webpages**: Add up to five trusted web domains as sources for Copilot to search and generate responses from. Copilot searches for information up to two levels down from the configured domain. You must enable Bing Search in Power Platform admin center to add trusted web sources. Learn more in [Enable data across geographic locations](/microsoft-copilot-studio/manage-data-movement-outside-us#enable-data-across-geographic-locations).
 
 Copilot uses articles that are two nodes down the configured domain.
 
@@ -236,7 +237,7 @@ Configure the prompt settings as described in the following table:
 |--------|--------------|
 |Prompt Text | Displays the text of the prompt as it appears to service representatives in Copilot. This is the instruction Copilot runs when the representative selects the prompt. |
 |In Guide | Indicates whether the prompt appears as a guided option in Copilot. Guided prompts help representatives discover commonly used actions without needing to know the exact wording. |
-|Alias | Defines an alternate name or shorthand for the prompt. Aliases allow Copilot to recognize different phrasings that map to the same prompt behavior.
+|Alias | Defines an alternate name or shorthand for the prompt. Aliases allow Copilot to recognize different phrasings that map to the same prompt behavior. |
 | Filter | Specifies any conditions that must be met for the prompt to be available. Filters are evaluated at runtime to determine whether the prompt applies to the current context. If no filter is specified, the prompt is available in all applicable contexts. |
 | Entity | Specifies the record type the prompt applies to, such as Case. Prompts are available only when a representative is working with the selected entity type. |
 | Scope | Specifies where the prompt is available. For the Customer Support agent, prompts can be scoped to Copilot immersive, ensuring they appear only in the immersive Copilot experience. |
@@ -246,7 +247,7 @@ Configure the prompt settings as described in the following table:
 
 Turn on **Extend agent with Copilot Studio** to enable extensibility for your agent. When this setting is enabled, you can enhance the agent by using Copilot Studio to add tools, configure knowledge sources, and customize behavior beyond the default capabilities. Learn more in [Extend Copilot in Customer Service with Copilot Studio](/dynamics365/customer-service/administer/extend-copilot-with-copilot-studio).
 
-## Admin Management agent (preview)
+## Configure the Admin Management agent (preview)
 
 The **Admin Management (Preview)** agent provides Copilot capabilities that help administrators understand and manage Copilot configuration and behavior. The agent uses the same tab-based configuration experience as other Copilot agents and exposes only the settings that are relevant to administrators.
 
@@ -292,7 +293,7 @@ To manage prompts, perform the following steps:
    - **Remove prompt**: Select the checkbox next to the prompt you want to remove, and then select **Remove prompt** to delete it from the list.
 1. Select **Save**.
 
-#### User access tab
+### User access tab
 
 Use the **User access** tab to control which users can use the Admin Management agent.
 
@@ -303,7 +304,7 @@ Select one of the following options:
 
 Changes to user access take effect after you save the settings.
 
-### Related information
+## Related information
 
 [FAQ about Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)  
 [Responsible AI FAQ about copilot features](/dynamics365/customer-service/implement/faq-responsible-ai-copilot)  

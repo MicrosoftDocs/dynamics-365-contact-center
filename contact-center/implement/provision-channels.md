@@ -1,7 +1,7 @@
 ---
 title: Provision channels in Dynamics 365 Contact Center
 description: Perform the steps in this article to provision and add channels so that you can start using the product.
-ms.date: 07/21/2025
+ms.date: 08/31/2026
 ms.topic: how-to
 author: neeranelli
 ms.author: nenellim
@@ -29,9 +29,9 @@ You can provision the following channels:
 ## Prerequisites
 
 - Specific licensing requirements might apply to provision the channels. Use the following resources to learn more:
-   - [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544)
-   - [Pricing](https://www.microsoft.com/dynamics-365/products/contact-center/pricing)
-   - [How to purchase through Volume Licensing](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy)
+  - [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544)
+  - [Pricing](https://www.microsoft.com/dynamics-365/products/contact-center/pricing)
+  - [How to purchase through Volume Licensing](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy)
 - Review the [system requirements for Dynamics 365 Contact Center](system-requirements-contact-center.md) to set up the prerequisites.
 - Set up the Dynamics 365 System Administrator role on the root business unit for your organization. Learn more in [assign security roles to a user in Power Platform](/power-platform/admin/assign-security-roles) and [Create or edit business units](/power-platform/admin/create-edit-business-units).
 
@@ -62,10 +62,10 @@ In the trial version of Dynamics 365 Contact Center, all channels are enabled ou
 > [!IMPORTANT]
 > You can turn off a channel if you no longer need it. However, if you turn off all the channels, you need to reconfigure any newly-enabled channel because the previous configurations won't work.
 
-1. Select  **Customer Support** > **Channels** > **Manage channels**. 
+1. Select  **Customer Support** > **Channels** > **Manage channels**.
 1. Clear the checkbox for the channel that you want to turn off. The application displays a confirmation message. Select **Turn off**.
 
-### Related information
+## Related information
 
 [Create workstreams](/dynamics365/customer-service/administer/create-workstreams)  
 [Manage users](/dynamics365/customer-service/administer/users-user-profiles)  

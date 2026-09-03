@@ -88,7 +88,9 @@ additionalContent:
       - url: /dynamics365/customer-service/administer/configure-bot-virtual-agent?context=/dynamics365/contact-center/context/administer-context
         text: Integrate a Copilot Studio agent
       - url: administer/manage-customer-intent-agent.md
-        text: Configure Customer Intent Agent   
+        text: Configure Customer Intent Agent  
+      - url: /dynamics365/customer-service/administer/admin-km-agent?context=/dynamics365/contact-center/context/administer-context
+        text: Manage Customer Knowledge Management Agent
     - title: Develop
       links:
       - url: /dynamics365/customer-service/develop/reference/about-entity-reference?context=/dynamics365/contact-center/context/extend-context
@@ -128,8 +130,8 @@ additionalContent:
       links:
       - url: use/diagnose-dashboard.md
         text: Diagnose contact center health using Application Insights dashboard
-      - url: /dynamics365/customer-service/use/realtime-summary-dashboard?context=/dynamics365/contact-center/context/use-context
-        text: View summary report in real-time analytics
+      - url: use/realtime-streaming.md
+        text: Use real-time streaming analytics (preview)
       - url: /dynamics365/customer-service/use/customize-reports?context=/dynamics365/contact-center/context/use-context
         text: Customize visual display
        

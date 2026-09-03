@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 08/27/2026
+ms.date: 09/03/2026
 ms.custom: bap-template
 ai-usage: ai-assisted
 ---
@@ -124,6 +124,8 @@ The **Quality library** lists all quality indicators and guardrails available in
 
 [Contact center agents in Dynamics 365 Contact Center](overview-contact-center-agents.md)  
 
-[Use quality and coaching skills](../use/use-quality-coach.md)
+[Use quality and coaching skills](../use/use-quality-coach.md)  
+
+[Use the Quality Assurance Agent dashboard](../use/quality-assurance-agent-dashboard.md)
 
 [Responsible AI FAQ for AI agents](../implement/faq-rai-ai-agents.md)

@@ -502,6 +502,8 @@
           href: /dynamics365/customer-service/administer/auto-close-conversation-powerapps?context=/dynamics365/contact-center/context/administer-context
         - name: Enable transfer of conversations
           href: /dynamics365/customer-service/administer/enable-transfer-consult?context=/dynamics365/contact-center/context/administer-context
+        - name: Set up consult with AI agents during voice conversations (preview)
+          href: set-up-consult-ai-agents.md
         - name: Manage authentication settings
           items:
           - name: Configure authentication settings for chat

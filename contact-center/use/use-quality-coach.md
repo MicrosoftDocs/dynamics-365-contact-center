@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 07/29/2026
+ms.date: 09/03/2026
 ms.custom: bap-template
 ---
 
@@ -57,5 +57,7 @@ Quality and coaching skills provide real-time guidance to help service represent
 ## Related information
 
 [Configure quality and coaching skills](../administer/configure-quality-coach.md)  
+
+[Use the Quality Assurance Agent dashboard](../use/quality-assurance-agent-dashboard.md)
 
 [Responsible AI FAQ for AI agents](../implement/faq-rai-ai-agents.md)

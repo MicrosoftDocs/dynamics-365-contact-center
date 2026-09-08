@@ -78,7 +78,7 @@
         href: ../administer/overview-contact-center-agents.md
       - name: Quality Assurance Agent
         items:
-        - name: Use quality and coaching skills
+        - name: Use quality and coaching skill
           href: use-quality-coach.md
     - name: Use autonomous service agents
       items:

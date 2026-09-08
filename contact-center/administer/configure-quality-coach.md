@@ -1,5 +1,5 @@
 ---
-title: Configure quality and coaching skills in Dynamics 365 Contact Center
+title: Configure quality and coaching skill in Dynamics 365 Contact Center
 description: Create evaluation plans, quality indicators, and guardrails for AI-powered quality evaluations and coaching guidance.
 author: Soumyasd27
 ms.author: sdas
@@ -12,7 +12,7 @@ ms.custom: bap-template
 ai-usage: ai-assisted
 ---
 
-# Configure quality and coaching skills
+# Configure quality and coaching skill
 
 [!INCLUDE [cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
 
@@ -34,7 +34,7 @@ Quality and coaching skills help organizations consistently monitor, measure, an
 - You must have the Omnichannel Administrator role.
 - Set up [consumption-based billing and capacity](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 
-## Open quality and coaching skills
+## Open quality and coaching skill
 
 1. In Copilot Service admin center, go to **Customer Support** > **Quality and coaching**.
 1. Select **Evaluation plans** to create and manage evaluation plans, or select **Quality library** to manage quality indicators and guardrails.
@@ -113,6 +113,6 @@ The **Quality library** lists all quality indicators and guardrails available in
 ## Related information
 
 - [Contact center agents in Dynamics 365 Contact Center](overview-contact-center-agents.md)
-- [Use quality and coaching skills](../use/use-quality-coach.md)
+- [Use quality and coaching skill](../use/use-quality-coach.md)
 - [Use the Quality Assurance Agent dashboard](../use/quality-assurance-agent-dashboard.md)
 - [Responsible AI FAQ for AI agents](../implement/faq-rai-ai-agents.md)

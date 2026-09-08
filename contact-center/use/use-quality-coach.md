@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 09/03/2026
+ms.date: 09/08/2026
 ms.custom: bap-template
 ---
 
@@ -43,6 +43,14 @@ Select a score to open a side pane that shows the quality score trend, AI-genera
 Open a closed conversation to view its details. In addition to the quality score trend, the conversation transcript includes coaching nudges for context about how representative actions affected the quality results.
 
 The **Ongoing QAA conversations** page shows similar information for active conversations.
+
+### Request on-demand evaluations
+
+1. In the site map of Copilot Service workspace, select **Conversations**.
+1. In the view selector, select **Closed QAA conversations**.
+1. Select one or more closed conversations and then select **Request QAA evaluations**.
+1. On the **QAA evaluations** dialog, search and select any evaluation plan.
+1. Select **Confirm** to proceed with the evaluations.
 
 ## Manage quality and coaching skills as a service representative
 

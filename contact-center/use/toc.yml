@@ -420,7 +420,7 @@
           href: workforce-management-credit-estimation.md
         - name: Forecast with weighted average (preview)
           href: workforce-management-forecast-weighted-average.md
-        - name: Import historical data
+        - name: Manage external data
           href: workforce-management-import-historical-data.md
       - name: Capacity planning
         items:

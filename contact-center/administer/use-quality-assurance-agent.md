@@ -21,7 +21,7 @@ Quality Assurance Agent brings AI-powered support to contact center supervisors 
 
 Agent skills help supervisors manage, set up, and use the agent effectively.
 
-**Quality and coaching**: Monitor, measure, and improve customer conversations consistently by using AI‑powered evaluations and real‑time coaching. Learn more in [Configure quality and coaching skills](configure-quality-coach.md) and [Use quality and coaching skills](../use/use-quality-coach.md).
+**Quality and coaching**: Monitor, measure, and improve customer conversations consistently by using AI‑powered evaluations and real‑time coaching. Learn more in [Configure quality and coaching skill](configure-quality-coach.md) and [Use quality and coaching skill](../use/use-quality-coach.md).
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team’s performance and improve customer satisfaction. This feature isn't intended for use in making—and shouldn't be used to make—decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365, this feature, and any associated feature or service in compliance with all applicable laws, including laws relating to accessing individual employee analytics and monitoring, recording, and storing communications with end users. This responsibility also includes adequately notifying end users that their communications with representatives might be monitored, recorded, or stored and, as required by applicable laws, obtaining consent from end users before using the feature with them. Customers are also encouraged to have a mechanism in place to inform their representatives that their communications with end users might be monitored, recorded, or stored.
@@ -33,7 +33,7 @@ Agent skills help supervisors manage, set up, and use the agent effectively.
 
 ## Configure skills for Quality Assurance Agent
 
-In the site map of Copilot Service admin center, go to **Customer support** > **Quality and Coaching**. The **Quality and Coaching** page appears, where you can configure the skills for the agent.
+In the site map of Copilot Service admin center, go to **Customer support** > **Quality and Coaching**. The **Quality and Coaching** page appears, where you can configure the skill for the agent.
 
 ## Related information
 

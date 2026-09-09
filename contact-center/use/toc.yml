@@ -316,6 +316,8 @@
           href: diagnose-dashboard.md
         - name: Proactive engagement report
           href: proactive-engagement-dashboard.md
+      - name: Use quality evaluation historical analytics dashboard
+        href: quality-evaluation-historical-analytics.md
       - name: Use historical analytics dashboards
         items:
         - name: Dashboards

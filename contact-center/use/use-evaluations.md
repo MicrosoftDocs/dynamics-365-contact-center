@@ -114,4 +114,6 @@ If a quality evaluation doesn't complete successfully, refer to the [Troubleshoo
 
 [Manage quality evaluation](../administer/manage-quality-evaluation-agent.md)  
 [Use evaluation plan](evaluation-plan.md)  
-[Use evaluation criteria](evaluation-criteria.md)
+[Use evaluation criteria](evaluation-criteria.md)  
+[Use the quality evaluation historical analytics dashboards](quality-evaluation-historical-analytics.md)  
+[Manage the quality evaluation historical analytics dashboard](../administer/manage-quality-evaluation-historical-analytics.md)

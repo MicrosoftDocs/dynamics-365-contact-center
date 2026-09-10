@@ -130,5 +130,7 @@ If you disable the option:
 [Use evaluation plan](../use/evaluation-plan.md)   
 [Use on-demand evaluation](../use/on-demand-evaluation.md)   
 [Use evaluation criteria](../use/evaluation-criteria.md)    
-[Use evaluations](../use/use-evaluations.md)
+[Use evaluations](../use/use-evaluations.md)  
+[Manage the quality evaluation historical analytics dashboard](manage-quality-evaluation-historical-analytics.md#manage-the-quality-evaluation-historical-analytics-dashboard)  
+[Use the quality evaluation historical analytics dashboards](../use/quality-evaluation-historical-analytics.md#use-the-quality-evaluation-historical-analytics-dashboards)  
 [Troubleshoot failed quality evaluations](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/quality-evaluation-retry)

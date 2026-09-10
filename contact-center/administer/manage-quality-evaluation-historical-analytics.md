@@ -28,4 +28,6 @@ To enable the dashboard:
 
 ## Related information
 
-[View the quality evaluation historical analytics dashboard](../use/quality-evaluation-historical-analytics.md)
+[View the quality evaluation historical analytics dashboard](../use/quality-evaluation-historical-analytics.md)  
+[Manage quality evaluation](manage-quality-evaluation-agent.md)  
+[Use evaluation plan](../use/evaluation-plan.md#use-evaluation-plan)

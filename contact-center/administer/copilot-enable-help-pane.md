@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 08/27/2026
+ms.date: 09/10/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
@@ -195,6 +195,8 @@ You can configure the following settings on the **Email settings** tab:
 - **Email sentiments (preview)**: Let representatives view AI-generated sentiment for emails. Learn more in [Configure email](/dynamics365/customer-service/administer/customer-service-hub-user-guide-email-admin).
 - **Copilot-recommended templates**: Let representatives use Copilot-recommended templates for emails. Learn more in [Configure the enhanced insert email template selection dialog](/power-apps/user/customize-insert-email-template).
 - **Trusted webpages**: Add up to five trusted web domains as sources for Copilot to search and generate responses from. Copilot searches for information up to two levels down from the configured domain. You must enable Bing Search in Power Platform admin center to add trusted web sources. Learn more in [Enable data across geographic locations](/microsoft-copilot-studio/manage-data-movement-outside-us#enable-data-across-geographic-locations).
+ > [!CAUTION]
+ > - Email generation from trusted webpages might not work as expected because the Bing Search API used by this option is deprecated. Learn more in [Bing Search API retirement](/lifecycle/announcements/bing-search-api-retirement).
 
 Copilot uses articles that are two nodes down the configured domain.
 

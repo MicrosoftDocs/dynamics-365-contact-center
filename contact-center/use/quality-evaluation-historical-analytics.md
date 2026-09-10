@@ -92,4 +92,6 @@ To sort records based on their evaluation scores:
 
 ## Related information
 
-[Manage the quality evaluation historical analytics dashboard](../administer/manage-quality-evaluation-historical-analytics.md)
+[Manage the quality evaluation historical analytics dashboard](../administer/manage-quality-evaluation-historical-analytics.md)  
+[Manage quality evaluation](../administer/manage-quality-evaluation-agent.md) 
+[Use evaluation plan](../use/evaluation-plan.md#use-evaluation-plan)  

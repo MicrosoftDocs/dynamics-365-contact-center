@@ -1,7 +1,7 @@
 ---
 title: Create and manage capacity plans
 description: Learn how to set up capacity plans to help you forecast staffing needs and effectively manage your workforce.
-ms.date: 04/30/2026
+ms.date: 09/14/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -62,3 +62,16 @@ In the **Capacity Plan Output** section, **Detailed view**, you can filter the d
  
 You can use the drill up and down buttons to drill to navigate the hierarchy.
 
+## Use a planning group with a capacity plan
+
+When you create a capacity plan from a forecast scenario, the capacity plan automatically inherits the forecast scenario's planning group. The planning group keeps the capacity plan aligned with the forecast scenario's time zone, channels, and queues.
+
+When you create a capacity plan from an uploaded forecast file, select the planning group manually.
+
+Learn more in [Use planning groups](workforce-management-use-planning-groups.md).
+
+## Related information
+
+[Use the adherence tracker](workforce-management-adherence-tracker.md)  
+[Configure shift activity types](../administer/workforce-management-shift-activity-types.md)  
+[Enable adherence historical analytics](../administer/workforce-management-enable-adherence-historical-analytics.md)

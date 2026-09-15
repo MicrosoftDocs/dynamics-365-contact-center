@@ -4,7 +4,7 @@ description: Review historical adherence data to understand how customer service
 author: lalexms
 ms.author: laalexan
 ms.reviewer: laalexan
-ms.date: 06/15/2026
+ms.date: 09/14/2026
 ms.topic: how-to
 ms.custom: bap-template
 ---
@@ -41,6 +41,14 @@ Use the filters at the top of the report to analyze adherence data for specific 
 
 > [!NOTE]
 > The report supports up to two years of historical data. Data older than two years isn't available.
+
+### Filter the report by planning group
+
+Use the **Planning group** filter to scope the report to one or more planning groups. You can combine planning groups with the report's existing duration, time zone, shift plan, and service representative filters in a single view.
+
+The report associates representatives with planning groups through their scheduled shifts. Planning groups must be configured and have assigned representatives before the filter returns results.
+
+After you apply the filter, the report recalculates adherence percentages, time out of adherence, total schedule time, and representative-level metrics for the selected planning groups. This change provides a planning group-level view instead of a contact center-wide aggregate.
 
 ## Review summary metrics
 
@@ -222,9 +230,8 @@ The 30 minutes of training doesn't affect the adherence score because the activi
 
 The report records each adherence status change as a separate interval. This approach ensures that the values shown in the **Activity summary** grid align with the summary metrics and provides a detailed record of how the adherence percentage was calculated.
 
-### Related information
+## Related information
 
 [Use the adherence tracker](workforce-management-adherence-tracker.md)  
 [Configure shift activity types](../administer/workforce-management-shift-activity-types.md)  
 [Enable adherence historical analytics](../administer/workforce-management-enable-adherence-historical-analytics.md)
-

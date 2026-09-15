@@ -5,7 +5,7 @@ author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
-ms.date: 08/31/2026
+ms.date: 09/14/2026
 ms.custom: bap-template
 ms.collection:
 ---
@@ -18,6 +18,12 @@ Administrators and IT professionals can use this information to prepare for futu
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability in a major future release. The feature or capability will continue to work and will be fully supported until it's officially removed. This deprecation notification might span a few years. After removal, the feature or capability won't work. We're informing you now to give you enough time to adjust and update your code before the feature or capability is removed.
+
+## Forecasting in Contact Center to be deprecated
+
+Effective October 30, 2026, forecasting for case and conversation volumes and for customer service representatives for conversations will be deprecated in Dynamics 365 Contact Center. Support ends on October 30, 2026, after which the feature will be removed.
+
+We recommend that you use [forecast scenarios in workforce engagement management](../use/workforce-management-forecast-scenarios.md), which provides more advanced forecasting along with capacity planning, scheduling, and intraday management.
 
 ## Apple Messages for Business is deprecated
 

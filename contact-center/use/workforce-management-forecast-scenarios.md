@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes in Dynamics 365 Contact Center and Customer Service.
-ms.date: 08/17/2026
+ms.date: 09/14/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -65,6 +65,23 @@ Create a forecast scenario to define what data to analyze and how often to gener
 > - Auto refresh isn't available when you use an external data source.
 > - Forecast accuracy improves as more historical data accumulates.
 
+## Associate a forecast scenario with a planning group
+
+Select a planning group when you create or edit a forecast scenario to use the demand scope defined for that group.
+
+When you select a planning group:
+
+- The **Time zone**, **Channel**, and **Queue** values are populated from the planning group and become read-only. This behavior keeps the forecast scenario aligned with the planning group's configuration.
+- The forecast scenario uses the planning group's time zone, channels, and queues when it generates the forecast.
+
+When you don't select a planning group, you can manually configure the **Time zone**, **Channel**, and **Queue** values. The existing scenario-creation workflow remains unchanged.
+
+The forecast scenario list includes a **Planning group** column. Use the column to sort or filter scenarios by planning group.
+
+Capacity plans created from a forecast scenario inherit the scenario's planning group. If you create a capacity plan from an uploaded forecast file, select the planning group manually.
+
+Learn more in [Set up and manage planning groups](workforce-management-use-planning-groups.md).
+
 ## Manage an existing scenario
 
 After you create a scenario, return to it to keep the forecast current. You can update its inputs as your business changes, generate a fresh forecast on demand, check the status of past runs, or remove scenarios you no longer need.
@@ -115,3 +132,4 @@ Select **Delete** to remove a scenario you no longer need. You can't delete a sc
 - [Overview of forecasting](workforce-management-forecast-overview.md)
 - [Forecast with weighted average (preview)](workforce-management-forecast-weighted-average.md)
 - [Import historical data for forecast scenarios](workforce-management-import-historical-data.md)
+

@@ -29,6 +29,8 @@ When a customer selects the callback option from an overflowing queue:
 
 Callback profiles control how callbacks are handled for customers. Create multiple profiles and apply them to different queues or overflow scenarios to meet specific business requirements. For example, a profile can require customer verification before the call is connected, while another profile can play an informational message before the transfer.
 
+The system automatically closes direct callback requests after seven days.
+
 ## Prerequisites
 
 - Provision the Microsoft Copilot Studio agent in your environment.

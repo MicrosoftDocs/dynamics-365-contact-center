@@ -7,17 +7,11 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days 
-ms.date: 07/10/2026
+ms.date: 09/18/2026
 ms.custom: bap-template
 ---
 
 #  Manage quality evaluation
-
-**Conversations**: [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
-
-**Cases**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
-
-**Emails**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
 Quality evaluation enables organizations to deliver consistent and scalable quality oversight across customer support interactions. Quality evaluation uses a supervisor-defined evaluation framework to autonomously score interactions, generate summaries, and surface actionable insights to enhance interaction quality. Quality evaluation automates quality evaluations across cases, closed and active conversations, and emails (preview). Learn more about supported message channels in [Overview of channels](/dynamics365/customer-service/use/channels).
 

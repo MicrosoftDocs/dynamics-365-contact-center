@@ -4,7 +4,7 @@ description: Customer-first direct callback helps reduce representative idle tim
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 08/24/2026
+ms.date: 09/18/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ---
@@ -20,7 +20,6 @@ With customer-first direct callback, the system calls the customer first when th
 When a customer selects the callback option from an overflowing queue:
 
 1. The system keeps the callback request in the queue.
-
 1. The callback request moves through the queue according to routing priority.
 1. When the callback request reaches the front of the queue and at least one representative is available, the system initiates the callback.
 1. The system calls the customer.
@@ -81,6 +80,10 @@ The system automatically closes direct callback requests after seven days.
      - Customers continue through the standard queue experience.
        The system evaluates active callback conversations and automatically resumes callback offers when capacity becomes available.
 1. On the **Dialing** page, in **Callback number**, select one of the following options to determine the number from which callback is offered.
+
+   > [!IMPORTANT]
+   > Configure inbound calls and outbound callbacks to use the same phone platform. For example, if a customer calls an Azure Communication Services number but the callback uses a Microsoft Teams number, the system doesn't initiate the callback and automatically closes the callback request.
+
    - **Use dialed-in number**: Uses the same number that the customer originally called. Specify the fallback number to handle cases when the customer-dialed number doesn't support outbound calling.
    - **Always use specific number**: Specify a dedicated outbound callback number.
    - **Callback dialing mode**: Configure the agent.

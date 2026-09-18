@@ -7,17 +7,11 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 08/20/2026
+ms.date: 09/18/2026
 ms.custom: bap-template
 ---
 
 # Use evaluation plan
-
-**Conversations**: [!INCLUDE[cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
-
-**Cases**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
-
-**Email**: [!INCLUDE[cc-feature-availability-cs-only](../includes/cc-feature-availability-cs-only.md)]
 
 Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. You can define criteria methods, conditions, and evaluation plans to support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and how to enable bulk evaluations to streamline your review process.
 
@@ -53,14 +47,15 @@ Before you create and activate an evaluation plan for cases, enable the **Enable
         1.  **Frequency type:** Select **Trigger,** and then provide the following:
             - **Occurrence**: Select **Closed conversations**.
             - **Start date**: Specify the start date for the plan.
-            - **End date**: Specify the end date for the plan.
+            - **End date**: To specify an end date for the plan, select **Add end date and time**. If you don't specify an end date, the evaluation plan continues to run until it's manually deactivated or modified.
             
     1. If you select **Cases**, then in the **Frequency** section, select the following options:
 
         1.  **Frequency type:** Select **Recurring,** and then provide the following information:
             - **Occurrence**: Select **Daily**.
             - **Start date**: Specify the start date for the plan.
-            - **End date**: Specify the end date for the plan.
+            - **End date**: Optionally, specify an end date for the plan by selecting **Add end date and time**.
+            If you don't specify an end date, the evaluation plan continues to run according to its recurrence configuration until it's manually deactivated or modified.
         
     1.  In the **Conditions** section, select **Add** to add conditions to your evaluation plan. Available conditions depend on the selected record type. For example,
 
@@ -69,6 +64,22 @@ Before you create and activate an evaluation plan for cases, enable the **Enable
          - To evaluate records from a specific business unit: Select **Related entity**: Owning User, **Field**: Business Unit, **Operator**: Equals, **Value**: Select a business unit
 
          - To exclude records that have already been evaluated: Select **Related entity**: Evaluation (Related Record), **Operator**: Does Not Contain Data
+
+    1. In the **Sampling** section, provide the following information:
+
+        > [!NOTE]
+        > The **Sampling** section appears when the record type is **Case** and frequency is set to **Recurring** only.  After you activate a plan with sampling, the sampling fields become noneditable. To edit the sampling settings, you must first pause the plan.
+
+        - **Sampling mode**: Select **Absolute Number** or **Percentage**.
+        - **Sampling value**: For **Absolute number**, enter a value of 1 or more. If the value is less than 1, you receive an error message stating that the sampling value must be at least 1 when the sampling mode is set to absolute number. For **Percentage**, enter the percentage of eligible records to sample.
+        - **Selection strategy**: Select **Top** or **Bottom** to enable the system to select records from the top or bottom of the list.
+        - **Filter date type**: Select a filter date type, such as **Created On** or **Modified On**.
+        - **Sample by**: Optionally, select **Representative** to ensure that eligible records are distributed evenly across representatives.
+
+       To choose which representatives to include in sampling, add a condition using the **Owner** field in **Conditions**. Select one or more users or a team. At runtime, the system determines the representatives that belong to the selected team and applies representative-based sampling across those users.
+
+        > [!NOTE]
+        > If the system can't distribute the sample evenly across representatives, it doesn't create an evaluation batch. The evaluation run is recorded in [run history](#view-run-history-for-a-plan) and the system logs the execution result.
 
     1.  In the **Assign evaluation** section, provide the following:
 
@@ -96,6 +107,14 @@ You can use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluat
 When you run an evaluation plan, it generates a run‑history record that captures the plan name, execution timestamp, total number of records processed, and the final status. This record provides structured visibility into batch runs and their outcomes.
 
 Select **Run history** on your evaluation plan to view the details.
+
+If you enable sampling for cases, the **Run history** tab displays the outcomes of each evaluation run, which includes the following columns:
+
+- **Records identified by condition**: The total number of records that meet the evaluation plan's conditions.
+- **Records identified by sampling**: The number of records selected based on your sampling settings.
+- **Records eligible for evaluation**: The final number of records evaluated, calculated as the minimum of the values in the **Records identified by condition** and **Records identified by sampling** columns.
+
+Each batch run supports a maximum of 20,000 records.
 
 ## Use on-demand evaluation
 
@@ -149,27 +168,6 @@ You can view the evaluation results in the following ways:
 
 - From the **Run history** tab of an evaluation plan. The status shows as **Completed** when the run is successful.
 - From the **Evaluations** grid, when you select **Evaluations** in Copilot Service workspace.
-
-## Use sampling in recurring evaluation plans
-
-Sampling lets you evaluate a subset of records instead of all records identified by an evaluation plan. For example, you can run evaluations on 10 percent of 100 records. The **Sampling** section appears when the record type is **Case** and frequency is set to **Recurring** only.
-
-1. In the **Sampling** section of the **Evaluation Plans** page, provide the following information:
-1. In the **Sampling mode** dropdown, select either **Absolute number** or **Percentage**.
-    1. If you select **Absolute number**, then provide the following information:
-        1. **Sampling value**: Enter a value of 1 or more. If the value is less than 1, you receive an error message stating that the sampling value must be at least 1 when the sampling mode is set to absolute number.
-        1. **Selection strategy**: Select **Top** or **Bottom**. Based on the absolute number you specified, the system selects records from the top or bottom of the list. 
-        1. **Filter data type**: Select a filter data type, such as **Created On** or **Modified On**.
-
-After you activate a plan with sampling, the sampling fields become noneditable. To edit the sampling settings, you must first pause the plan.
-
-The **Run history** tab displays the outcomes of each evaluation run. It includes the following columns:
-
-- **Records identified by condition**: The total number of records that meet the evaluation plan's conditions.
-- **Records identified by sampling**: The number of records selected based on your sampling settings.
-- **Records eligible for evaluation**: The final number of records evaluated, calculated as the minimum of the values in the **Records identified by condition** and **Records identified by sampling** columns.
-
-Each batch run supports a maximum of 20,000 records.
 
 ## Related information
 

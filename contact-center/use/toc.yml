@@ -402,9 +402,11 @@
       href: /dynamics365/customer-service/use/report-issues?context=/dynamics365/contact-center/context/use-context
     - name: Share feedback
       href: /dynamics365/customer-service/use/cs-share-feedback?context=/dynamics365/contact-center/context/use-context
+    - name: Overview of the Workforce Engagement Management app (preview)
+      href: workforce-management-wem-app-overview.md
     - name: Workforce management
       items:
-      - name: Overview of Workforce Management
+      - name: Overview of Workforce management
         href: /dynamics365/customer-service/use/workforce-management-overview?context=/dynamics365/contact-center/context/use-context
       - name: Workforce setup
         items:

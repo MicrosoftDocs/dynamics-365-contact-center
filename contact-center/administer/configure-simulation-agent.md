@@ -4,7 +4,7 @@ description: Simulate your AI agents in Dynamics 365 Contact Center to validate 
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 06/23/2026
+ms.date: 09/21/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ---
@@ -21,7 +21,7 @@ In preview release, simulations are available for the inbound workstreams of the
 
 ## Prerequisites
 
-- System administrator or Omnichannel administrator.
+- System administrator and Omnichannel administrator.
 
 - Voice channel is [provisioned](../implement/provision-channels.md).
 
@@ -37,6 +37,9 @@ In preview release, simulations are available for the inbound workstreams of the
 1. On the page that appears, enter a natural language prompt or select a prompt in the prompt library to run a simulation. The prompt library is grouped into suggested, saved, and recent prompts. The simulation process starts. If there's an issue with the prompt, the tool displays the error or asks clarifying questions.
 
    :::image type="content" source="../media/simulation-page.png" alt-text="Screenshot of the Agentic Simulations page displaying prompt validation and a results pane with metrics like total conversations and average sentiment." lightbox="../media/simulation-page.png":::
+
+   > [!NOTE]
+   > In the prompt, ensure that you use a valid phone number that's configured for simulation.
 
 1. While the simulation is running, you can view the conversations in the [**Ongoing conversation**](/dynamics365/customer-service/use/realtime-ongoing) report.
 

@@ -4,7 +4,7 @@ description: Set up an AI-first contact center quickly using industry templates 
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 07/29/2026
+ms.date: 09/21/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ---
@@ -23,6 +23,7 @@ Use an industry template when you want a faster path from environment setup to v
 
 - [Voice channel](..\implement\provision-channels.md) is provisioned.
 
+- System administrator and Omnichannel administrator.
 - [Phone number is configured](/dynamics365/customer-service/administer/voice-channel-inbound-calling).
 - Make sure that the contact center environment is ready for the capabilities that the template provisions, such as phone-number selection, workstreams, knowledge, real-time voice agents, and [simulations](configure-simulation-agent.md).
 

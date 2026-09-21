@@ -5,7 +5,7 @@ author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
-ms.date: 05/11/2026
+ms.date: 09/21/2026
 ms.custom: bap-template
 ---
 
@@ -22,20 +22,24 @@ Make sure that the following prerequisites are met:
 - SMS for Infobip is provisioned in Copilot Service admin center. Learn more in [Provision channels](../implement/provision-channels.md).
 - An active Infobip account with a provisioned SMS phone number is available. To request access or acquire a phone number, contact the Infobip account owner.
 - Permissions on the secure columns are configured. Learn more in [Configure permissions to access secure columns](/dynamics365/customer-service/implement/add-users-assign-roles#configure-permissions-to-access-secure-columns).
+- The **Organization ID** of the Dynamics 365 environment where you want to configure the SMS channel. Learn more in [Find your environment and organization IDs](/power-platform/admin/determine-org-id-name). Use the organization ID, not the environment ID, tenant ID, or Microsoft Entra application ID.
 
 ## Get Infobip account details
 
-An SMS channel is enabled within the application that's integrated with Infobip. This integration uses API Base URL to send and receive text messages.
+You enable an SMS channel within the application that's integrated with Infobip. This integration uses the API Base URL to send and receive text messages. Complete the following steps in the Infobip portal.
 
-1. Sign in to the Infobip Portal and note the **API Base URL** and **API Key** values. These values are required to create the SMS configuration in Copilot Service admin center.
-1. Make sure an SMS phone number is provisioned in your Infobip account and associated with an Infobip application.
+1. Sign in to the [Infobip portal](https://portal.infobip.com/) and note the **API Base URL**.
+
+1. Go to **Developer tools** > **Applications and entities** > **Applications**, and select **Create application**. Set **Application ID** to the organization ID from the first step, and create the application.
+1. Go to **Channels and numbers** > **Numbers** > **My numbers**, and select your SMS phone number. In its general settings, associate the number with the application you created, and save the changes.
+1. Create an API key with the `message:send` scope, and save it securely. Use this key and the **API Base URL** to configure the messaging account in Copilot Service admin center. You also use the same key for HMAC authentication in the following connection setup.
 
 > [!NOTE]
 > To make sure that non-Microsoft SMS providers handle opt-out commands properly, you must configure your consent settings with the provider directly.
 
 ## Set up the SMS channel for Infobip
 
-To configure the SMS channel, complete the following tasks:
+In Copilot Service admin center, complete the following tasks to configure the SMS channel:
 
 - Configure SMS via Infobip account
 - Configure workstream for the SMS channel
@@ -85,11 +89,35 @@ To configure the workstream, make sure you perform the steps to create a workstr
 
 ## Establish a connection between the omnichannel application and Infobip
 
-Perform the following steps to configure the webhook URL in Infobip so that SMS messages from the omnichannel application are processed correctly:
+After you configure the messaging account, complete the following steps to receive incoming messages and delivery notifications.
 
-1. Copy the callback URL from **Callback information** in the account setup.
-1. Sign in to the Infobip portal and navigate to your notification profile.
+### Configure HMAC authentication
+
+1. In the Infobip portal, go to **Developer tools** > **Subscriptions Management** > **Authentication settings**.
+1. Select **Create authentication settings**, enter a name, and select **HMAC** as the authentication type.
+1. Use the same API key that you entered in Copilot Service admin center as the secret key.
+1. Select `HMAC_SHA_512` (recommended) as the algorithm. `HMAC_SHA_384` and `HMAC_SHA_256` are also supported.
+1. Save the authentication settings.
+
+### Configure the notification profile
+
+1. In Copilot Service admin center, copy the callback URL from **Callback information** in the messaging account setup.
+1. In the Infobip portal, go to **Subscriptions Management** > **Notification profiles**, select **Create notification profile**, and enter a name.
 1. In the **Webhook URL** field of the notification profile, paste the callback URL copied in step 1.
+1. Under **Security settings**, select the HMAC authentication settings you created, and save the profile.
+
+### Configure the SMS subscription
+
+1. In the Infobip portal, go to **Developer tools** > **Subscriptions Management** > **Subscriptions**, select **Create subscription**, choose **SMS** under **Channels**, and enter a subscription name and ID.
+1. Select the following events and formats:
+   - **Inbound message**: `inbound-message.sms.v2.json`
+   - **Delivery**: `delivery.sms.v5.json`
+1. In the application filter, select the application whose **Application ID** matches your Dynamics 365 organization ID.
+1. Select the notification profile you created, and save the subscription.
+1. Return to **Channels and numbers** > **Numbers** > **My numbers**, and select your SMS number. Verify that its general settings reference the same application.
+1. On the **SMS** tab, set the default inbound forwarding action to **Apply subscription** so that incoming messages use the subscription. Learn more in [Manage numbers](https://www.infobip.com/docs/resources-and-numbers/manage-resources).
+
+To verify the setup, send an SMS to the configured number, confirm that it reaches a service representative, and reply from the conversation. If messages don't arrive, check the number's application assignment, the subscription's application filter and events, the default inbound forwarding action, and that the HMAC secret matches the API key in the messaging account.
 
 ## Flow of data between the omnichannel application and Infobip
 
@@ -101,9 +129,8 @@ For an incoming text message sent by a customer to the SMS phone number, the mes
 
 For an outgoing message sent by the contact center from within the application, the message is first sent to the Infobip service and then Infobip sends it to the customer. Apart from the text message, the application uses the APIs provided by Infobip to send the customer's phone number, SMS phone number, and the Infobip account information (API Base URL and API Key) to the Infobip service.
 
-### Related information
+## Related information
 
-[Overview of SMS channels](/dynamics365/customer-service/administer/sms-channel-overview)  
 [Overview of SMS channels](/dynamics365/customer-service/administer/sms-channel-overview)  
 [Configure an SMS channel using Azure Communication Services](/dynamics365/customer-service/administer/configure-sms-channel-acs)  
 [Infobip messaging API documentation](https://www.infobip.com/docs/api)  

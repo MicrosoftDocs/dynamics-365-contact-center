@@ -178,6 +178,16 @@
       "source_path": "contact-center/use/workforce-management-use-break-distribution.md",
       "redirect_url": "/contact-center/use/workforce-management-use-auto-schedule",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "contact-center/administer/enable-copilot-plugins-for-generative-ai.md",
+      "redirect_url": "/dynamics365/customer-service/administer/extend-copilot-with-copilot-studio",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "contact-center/administer/knowledge-copilot.md",
+      "redirect_url": "/dynamics365/customer-service/administer/extend-copilot-with-copilot-studio",
+      "redirect_document_id": "false"
     }
 
   ]

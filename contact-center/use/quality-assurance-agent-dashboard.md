@@ -72,5 +72,5 @@ The **By Customer Service Representative** table shows quality performance for e
 ## Related information
 
 [Configure quality and coaching skills](../administer/configure-quality-coach.md)  
-[Use quality and coaching skills](use-quality-coach.md#use-quality-and-coaching-skills)  
+[Use quality and coaching skills](use-quality-coach.md#use-quality-and-coaching-skill)  
 [Responsible AI FAQ for AI agents](../implement/faq-rai-ai-agents.md)

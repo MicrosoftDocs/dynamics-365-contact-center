@@ -5,7 +5,7 @@ author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
-ms.date: 07/10/2026
+ms.date: 09/22/2026
 ms.custom: bap-template 
 ---
 
@@ -41,21 +41,35 @@ When agents use the desktop companion application, the system first saves screen
 
 ## Enable screen and audio recording for representatives
 
-You can configure tenant-level controls for screen recording and audio recording in Copilot Service admin center. You must still configure workstream-level settings before recordings are captured. By default:
+You can configure tenant-level controls for screen recording and audio recording in Copilot Service admin center. You must still configure workstream-level settings before recordings are captured.
 
-- Audio recording is enabled for backward compatibility with existing environments that already rely on workstream-level audio recording settings.
-- Screen recording is disabled until an administrator explicitly enables it.
+- Audio recording: Turn on this setting to enable call and transcript recordings. Then configure the workstream-level audio recording settings to record the call, the transcript, or both.
+- Screen recording: Turn on this setting to enable screen capture of representative workflows.
 
 Perform the following steps:
 
 1. In the site map of Copilot Service admin center, go to **Workspaces**.
 1. [Create a new experience profile](/dynamics365/customer-service/administer/create-agent-experience-profile) or add to an existing profile.
-1. In **Productivity pane**, edit and turn on screen recording. The screen recording icon appears in the productivity pane.
-1. Go to **Quality Management** in the site map. On the **Quality Management** page, select **Manage** for **Enable screen and call recording**.
-1. On the **Screen and audio recording** page, the following settings are available.
-    - **Turn on screen recording**: When you enable the toggle, the following options become available:
-        - **Display red border**: Control whether representatives see a red border during screen recording. A red border indicates that screen recording is active. If disabled, the border isn't displayed.
+1. In the **Productivity pane**, edit and turn on screen recording. The screen recording icon appears in the **Productivity pane**.
+1. In the site map, go to **Quality Management**, and on the **Quality Management** page, select **Manage** for **Enable screen and call recording**.
+1. On the **Screen and audio recording** page, you see the following settings.
+
+    - **Turn on screen recording**: Enable this setting to access and configure the following screen recording options:
+
+        - **Display red border**: Control whether representatives see a red border during screen recording. By default, a red border is displayed around the representative's screen to indicate that recording is active. If you deselect the default-on checkbox, the red border is removed from the representative's screen and no on-screen recording indicator is displayed.
+
+        Deselecting the **Display red border** opens the **Turn off display of red border during screen recording** dialog, which displays the following notice:
+
+        > [!IMPORTANT]
+        > You are responsible for configuring and using screen recording functionality in compliance with applicable law. By selecting **I agree**, you attest that, outside of Dynamics 365 functionality, your organization has provided and secured any legally required or otherwise appropriate notice and consent from any individual being recorded to use this functionality without the red border during screen recording.
+
+        You must read the full notice and select **I agree** to apply the change. Selecting **Cancel** cancels the change, and the red border remains enabled. Acknowledgement is recorded per administrator and per environment for audit purposes.
+
+        > [!NOTE]
+        > The option to turn off the screen recording indicator is available to US customers only. For all other regions, the **Display red border** checkbox remains selected and can't be edited. When the recording indicator isn't available for a tenant, the option is hidden or disabled in the user interface, and a message indicates that the recording indicator is required.
+
         - **Multi-screen capture**: When enabled, representatives can select which monitors are recorded in a multimonitor setup. When disabled, all monitors are recorded by default.
+
     - **Turn on audio recording**: Enable the toggle. Disabling audio recording at the tenant level overrides all workstream configurations and prevents audio recording across the organization.
 
 > [!NOTE]

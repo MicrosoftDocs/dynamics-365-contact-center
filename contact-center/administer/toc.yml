@@ -130,6 +130,8 @@
           href: workforce-management-package-installation.md
         - name: User management
           href: workforce-management-user-management.md
+        - name: Workforce management security roles (preview)
+          href: workforce-management-security-roles.md
         - name: Forecasting
           items:
           - name: Enable volume forecasting
@@ -162,6 +164,8 @@
         items: 
         - name: Overview of Quality Management Agent
           href: ../use/overview-quality-management.md
+        - name: Quality management security roles (preview)
+          href: workforce-management-quality-management-security-roles.md
         - name: Quality evaluation
           items:
           - name: Manage quality evaluation

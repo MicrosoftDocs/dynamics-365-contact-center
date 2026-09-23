@@ -654,7 +654,16 @@
         - name: Best practices for configuration lifecycle management
           href: alm-best-practices.md
       - name: Migration solutions
-        items:      
+        items:
+        - name: Plan migration from Azure Communication Services
+          href: migrate-from-azure-communication-services.md
+          items:
+          - name: Migrate Direct Offer to Teams Calling Plan
+            href: migrate-direct-offer-to-teams-calling-plan.md
+          - name: Migrate Direct Routing to Teams Direct Routing
+            href: migrate-azure-communication-services-direct-routing-to-teams-direct-routing.md
+          - name: Migrate Direct Routing to Operator Connect
+            href: migrate-azure-communication-services-direct-routing-to-operator-connect.md
         - name: Migrate configuration data for records channel using solutions
           href: /dynamics365/customer-service/administer/migrate-record-routing-config-using-solutions?context=/dynamics365/contact-center/context/administer-context
         - name: Migration configuration data for channels using solutions

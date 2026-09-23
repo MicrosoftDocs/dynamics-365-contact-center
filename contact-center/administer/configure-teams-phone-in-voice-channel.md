@@ -67,7 +67,7 @@ As a Teams administrator, run the following Teams PowerShell cmdlets in administ
 
 ## Assign license to Teams resource account
 
-Complete the steps in [Assign a license](/microsoftteams/manage-resource-accounts#assign-a-license) to assign a license to the Teams resource account.
+Complete the steps in [Assign a license](/microsoftteams/aa-cq-manage-resource-accounts#assign-a-license) to assign a license to the Teams resource account.
 
 ## Assign service number to Teams resource account
 

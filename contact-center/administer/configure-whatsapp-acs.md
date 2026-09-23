@@ -19,6 +19,7 @@ The success of social media customer service, like all other customer services, 
 To enhance customer satisfaction and improve communications, the omnichannel capability in the application enables you to send and receive WhatsApp messages using [Azure Communication Services](/azure/communication-services). You can use the WhatsApp channel feature to engage in conversations with customers for product inquiry and customer service scenarios with those who prefer to communicate using WhatsApp. 
 
 > [!IMPORTANT]
+> - [!INCLUDE[Deprecation of Azure Communication Services](../includes/cc-acs-deprecation.md)] 
 > - From June 2026, usernames and a new customer identifier called the Business-Scoped User ID are being released for WhatsApp. For updates on the timeline for this change, refer to [WhatsApp Business-Scoped User IDs](https://developers.facebook.com/documentation/business-messaging/whatsapp/business-scoped-user-ids/) in the Meta documentation.
 > - A Business-Scoped User ID will be assigned to every WhatsApp user that interacts with your organization. When a user adopts a WhatsApp username, their phone number is no longer be sent, and their Business-Scoped User ID becomes the primary identifier.
 > - With this change, the Contact Book is enabled by default for your business WhatsApp account. By keeping your Contact Book enabled, you preserve your ability to identify customers by phone number even after they adopt a username. If you disable the Contact Book, the phone number is permanently lost as an identifier for the WhatsApp customer.
@@ -52,15 +53,14 @@ To enhance customer satisfaction and improve communications, the omnichannel cap
 1. [Create a workstream for the WhatsApp channel](#create-a-workstream-for-the-whatsapp-channel).
 1. [Set up WhatsApp message templates](#set-up-whatsapp-message-templates).
 
-
 ## Get Azure Communication Services details
 
 Gather the following details before you create the WhatsApp channel in [the following section](#create-a-whatsapp-channel). You might find it helpful to have the Azure portal and the Copilot Service admin center open in separate browser tabs.
-   
+
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/).
 
 1. Search for and select the Azure Communication Services resource that you created in [Prerequisites](#prerequisites).
- 
+
 1. Copy the name of the resource. You'll paste this value in the **ACS resource name** field when you create the WhatsApp channel in the admin center.
 
 1. Select **Events**. Select the event subscription that you created when you set up Advanced Messaging for WhatsApp in [Prerequisites](#prerequisites).
@@ -137,8 +137,8 @@ In the following instructions, you provide the information from the Azure portal
    > - Both subscriptions are required. Without the outbound delivery-status subscription, the application won't receive delivery, read, or failure updates for outbound WhatsApp messages, and representatives won't see delivery failure notifications in the conversation.
    > - If your Azure Communication Services resource contains only one WhatsApp channel that isn't shared with other channels or workloads, you can skip configuring the advanced filters for both subscriptions. You can filter by event type. Use the `data.to` and `data.from` filters only when the same ACS resource is shared across multiple channels or workloads.
 
-10. Select the checkbox to confirm that the WhatsApp channel is set up correctly, and then select **Done**.
-               
+1. Select the checkbox to confirm that the WhatsApp channel is set up correctly, and then select **Done**.
+
 ## Create a workstream for the WhatsApp channel
 
 To configure routing and work distribution, create a [workstream](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context) with the **Channel** set to **WhatsApp** or select an existing one.
@@ -163,8 +163,9 @@ You must create WhatsApp message templates before you can add them to your Whats
 
 Create as many templates as you require.
 
-### Related information
+## Related information
 
+[Plan migration from Azure Communication Services](migrate-from-azure-communication-services.md)  
 [Configure automated messages](/dynamics365/customer-service/administer/configure-automated-message?context=/dynamics365/contact-center/context/administer-context)   
 [Configure a post-conversation survey](/dynamics365/customer-service/administer/configure-post-conversation-survey?context=/dynamics365/contact-center/context/administer-context)  
 [Skill-based routing](/dynamics365/customer-service/administer/overview-skill-work-distribution?context=/dynamics365/contact-center/context/administer-context)   

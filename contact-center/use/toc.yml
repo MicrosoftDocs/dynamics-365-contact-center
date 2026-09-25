@@ -462,6 +462,8 @@
           href: workforce-management-use-adherence-history-report.md
         - name: Use workforce alerts for volume spikes (preview)
           href: workforce-management-use-volume-spike-alerts.md
+        - name: Use workforce alerts for adherence notifications (preview)
+          href: workforce-management-use-adherence-alerts.md
     - name: Quality management
       items:
       - name: Overview of Quality Management Agent

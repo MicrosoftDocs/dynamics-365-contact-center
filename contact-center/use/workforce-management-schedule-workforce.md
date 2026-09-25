@@ -1,7 +1,7 @@
 ---
 title: Manage schedules in Workforce Management
 description: Use the Schedule Workforce page to view, manage, and publish customer service representative schedules across shift plans in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
-ms.date: 07/10/2026
+ms.date: 09/25/2026
 ms.topic: how-to
 author: cbms03
 ms.author: cbrahmandam
@@ -10,7 +10,7 @@ ms.reviewer: laalexan
 
 # Manage schedules in Workforce Management
 
-The **Schedule Workforce** page enables supervisors to view, manage, and publish schedules for customer service representatives (service representatives, representatives) across shift plans. It provides an interactive schedule board to assign activities, adjust schedules, and monitor workforce coverage in real time.
+The **Schedule Workforce** page enables supervisors to view, manage, and publish schedules for customer service representatives (service representatives or representatives) across shift plans. It provides an interactive schedule board to assign activities, adjust schedules, and monitor workforce coverage in real time.
 
 ## Access the Schedule Workforce page
 
@@ -28,6 +28,7 @@ Hover over an activity to view the following details:
   - Shift plan name  
   - Start and end times  
   - Status (for example, **Committed** or **Unpublished**)  
+  
 
 ## Change the schedule view
 
@@ -66,6 +67,11 @@ When you select a shift plan, the schedule board updates and displays the follow
 - Demand for the selected shift plan
 - Representatives associated with the shift plan
 
+> [!NOTE]
+> - The view uses the time zone defined for the selected shift plan by default.
+> - To view overnight schedules, select a shift plan that includes overnight shifts. A visual marker on the timeline separates activities that span two dates.
+> - When you select multiple shift plans, the view automatically switches to a 24-hour format.  
+
 Use **Representative assignment view** to control which representatives appear on the schedule board:
 
 | View | Description |
@@ -77,22 +83,23 @@ Use **Representative assignment view** to control which representatives appear o
 
 ## Add representatives to a shift plan and publish the schedule
 
-> [!NOTE]
-> You can publish schedules in segments of up to six weeks.
+> [!NOTE]  
+> You can publish schedules in segments of up to six weeks at a time.
 
-1. Select one or more representatives.
-1. Select **Add**.
+1. Select one or more representatives, and then select **Add**.
 1. Select **Add agents to schedule**.
 1. Add representatives for the entire schedule or specific days.
 1. Select **Publish**.
 1. Select the date range to publish.
 1. Confirm the publication operation.
 
-## View daily paid hours
+## View daily paid hours and scheduled hours
 
-The schedule board displays each representative's paid hours next to their name.
+The schedule board displays each representative's paid and scheduled hours next to their name.
 
-The calculation includes only activities marked as **Paid** in Copilot Service admin center.
+The calculation of paid hours includes only activities marked as **Paid** in Copilot Service admin center.
+
+For overnight shift activities, hover over the paid or scheduled hours to view a breakdown of hours for the current day and the following day.
 
 ## View representative details
 
@@ -101,17 +108,17 @@ Select a representative's name on the schedule board to open a details pane that
 - Assigned skills
 - Assigned queues
 - A link to the representative's calendar
+
 You can view the calendar in the following formats:
 
-- Day
-- Week
-- Month
-- Agenda
+  - Day
+  - Week
+  - Month
+  - Agenda
 
 ## Add extra bookings
 
-1. Go to the required date on the schedule board.
-1. Right-click the desired time slot for a representative.
+1. Go to the required date on the schedule board, and then right-click the time slot for the representative.
 1. Select **Add shift booking**.
 1. Select an activity type.
 1. Specify the booking duration.
@@ -126,10 +133,11 @@ The booking appears on the schedule board.
 1. In the side pane, select an activity.
 1. Specify the start time and duration.
 1. Verify the time zone.
-1. Select **Schedule ad-hoc activity**.
+1. Set the activity date for a single day or a recurring schedule.
+1. Select **Schedule ad-hoc activity**.  
 
-> [!IMPORTANT]
-> You can schedule ad-hoc activities only for the current day. To assign activities on future dates, add them directly from the schedule board.
+> [!NOTE]  
+> For a recurring activity, select the day of the week on which it occurs. 
 
 ## Edit bookings
 
@@ -143,6 +151,9 @@ If you need to update a booking, you can either drag it to a new time slot or ed
 1. Select a booking on the schedule board.
 1. Drag the booking to a different time slot or representative.
 1. Release the booking in the new location.
+
+> [!NOTE]  
+> To select multiple bookings, hold down Ctrl and select each booking. You can then copy and paste the selected bookings by dragging and dropping them or by using keyboard shortcuts.
 
 ### Edit a booking manually
 

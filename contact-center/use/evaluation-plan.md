@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 09/18/2026
+ms.date: 09/28/2026
 ms.custom: bap-template
 ---
 
@@ -42,21 +42,28 @@ Before you create and activate an evaluation plan for cases, enable the **Enable
         - **Description**: Enter description.
         - **Record type**: Select **record type** as **Conversations** or **Cases**.
 
-    1.  If you select **Conversations**, then in the **Frequency** section, select the following options:
+    1.  If you select **Conversations**, then in the **Set up a schedule** section, select one of the following options:
 
-        1.  **Frequency type:** Select **Trigger,** and then provide the following:
-            - **Occurrence**: Select **Closed conversations**.
-            - **Start date**: Specify the start date for the plan.
-            - **End date**: To specify an end date for the plan, select **Add end date and time**. If you don't specify an end date, the evaluation plan continues to run until it's manually deactivated or modified.
-            
-    1. If you select **Cases**, then in the **Frequency** section, select the following options:
+        - **Frequency type:** Select **Trigger**, **Recurring**, or **Once**.
+            - **Trigger**: Runs evaluations when a specified event occurs, such as when a conversation is closed. Use this option to automatically evaluate future conversations that meet the configured conditions.
+                - **Event**: Select **Closed conversations**.
+                - **Plan start date**: Specify the start date for the plan.
+                - **Plan end date**: To specify an end date for the plan, select **Add end date and time**. If you don't specify an end date, the evaluation plan continues to run until it's manually deactivated or modified.
+            - **Recurring**: Runs evaluations on a schedule, independent of conversation events. Use this option to evaluate previously closed conversations or to perform ongoing quality reviews of conversations that match the configured conditions.
+                - **Occurrence**: Select **Daily**.
+                - **Plan start date**: Specify the start date for the plan.
+                - **End date**: Optionally, specify an end date for the plan by selecting **Add end date and time**. If you don't specify an end date, the evaluation plan continues to run according to its recurrence configuration until it's manually deactivated or modified.
+            - **Once**: Runs a single evaluation against conversations that match the configured conditions. Use this option to evaluate a specific set of conversations without creating an ongoing evaluation schedule.
+        - **Plan start date**: Specify the start date for the plan.
 
-        1.  **Frequency type:** Select **Recurring,** and then provide the following information:
+    1. If you select **Cases**, then in the **Set up a schedule** section, select the following options:
+
+        - **Frequency type:** Select **Recurring,** and then provide the following information:
             - **Occurrence**: Select **Daily**.
             - **Start date**: Specify the start date for the plan.
             - **End date**: Optionally, specify an end date for the plan by selecting **Add end date and time**.
             If you don't specify an end date, the evaluation plan continues to run according to its recurrence configuration until it's manually deactivated or modified.
-        
+
     1.  In the **Conditions** section, select **Add** to add conditions to your evaluation plan. Available conditions depend on the selected record type. For example,
 
          - To evaluate open cases: Select **Field**: State, **Operator**: Equals, **Value**: Open

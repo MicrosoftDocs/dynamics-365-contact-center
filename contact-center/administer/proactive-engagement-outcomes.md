@@ -27,34 +27,36 @@ Proactive engagement outcomes for voice and SMS are available from three sources
 
 ### [Voice](#tab/voice)
 
-**SIP-based outcomes**
-
-SIP-based outcomes are fixed, system-defined outcomes from the telephony layer.
-
-Azure Communication Services returns SIP-based early media outcomes, such as LiveAnswer, AnsweringMachine, Busy, and NoAnswer. The system stores these outcomes as result values in the proactive delivery entity.
+Voice outcomes are fixed, system-defined results that describe a proactive call or explain why the customer wasn't called. These results use call information, including SIP diagnostics and early media results from Azure Communication Services. The system stores them as result values in the proactive delivery entity.
 
 > [!NOTE]
-> In preview dial mode, **AnsweringMachine**, **AnsweringMachineHangup**, and **NotAHandset** outcomes aren't available. In these cases, service representatives must classify whether the call reached an answering machine by using disposition codes.
+> Automatic answering machine detection isn't available in Preview dial mode. However, a Preview delivery can have an **AnsweringMachine** result when its recorded dispositions include the system **Answering machine** disposition. **AnsweringMachineHangup** and **NotAHandset** aren't derived for Preview calls.
 
 | Result | Description | SIP codes |
 |--------|-------------|-----------|
-| LiveAnswer | Answered by someone or something and interacted with AI agent. | |
-| AnsweringMachine | Determined as answering machine. Left message or voicemail if AI agent has answering machine detection topic enabled and configured to leave a message. | |
-| AnsweringMachineHangup | Determined as answering machine, AI agent hung up as configured in the topic and didn't leave a message or voicemail. | |
-| Undetermined | Answered by someone or something but didn't interact or have a conversation with AI agent. | |
-| NotAHandset | Detected as some tone such as SIT or FAX that indicates it's not a service representative or an answering machine. | |
-| BotFailed | AI agent failed to get started or failed during conversation with customer where phone went off-hook. | |
-| CallEnded | Preview dial mode call where customer phone went off-hook. | |
-| Busy | Customer returned busy signal, as indicated by SIP diagnostic information or early media results from Azure Communication Services. Customer phone didn't go off the hook. | 486 (Busy Here), 600 (Busy Everywhere) |
-| NoAnswer | Customer phone dial resulted in no answer, SIP diagnostic information, or early media results from Azure Communication Services. Customer phone didn't go off the hook. | 603 (Decline), 607 (Unwanted) |
-| InvalidAddress | Customer phone dial resulted in invalid address, as indicated by diagnostic information or early media results from Azure Communication Services. Customer phone didn't go off the hook. | 404 (Not Found), 410 (Gone), 484 (Address Incomplete), 485 (Ambiguous), 604 (Does Not Exist Anywhere) |
-| CallFailed | Customer phone didn't go off the hook and there was no SIP diagnostic information or early media results from Azure Communication Services. | 408 (Request Timeout), 480 (Temporarily Unavailable), 487 (Request Terminated), 500 (Server Internal Error), 502 (Bad Gateway), 503 (Service Unavailable), 504 (Server Time-out) |
-| NonRetriableError | A permanent error indicating a protocol or configuration issue. No reattempts are made. | 401 (Unauthorized), 405 (Method Not Allowed), 407 (Proxy Authentication Required), 415 (Unsupported Media Type), 488 (Not Acceptable Here), 501 (Not Implemented), 505 (Version Not Supported) |
-| Terminated | Preview dial mode call where customer wasn't attempted to be engaged because no representative was available or accepted after launching the call and valid window to contact the customer ended. | |
-| Unknown | Customer phone was attempted to be engaged, but there isn't enough information available about the attempt due to some error condition. | |
-| Cancelled | Customer wasn't attempted to be engaged because there was a request to cancel the delivery. | |
-| Expired | There was no more valid time window to engage the customer, or expiration date specified was in the past. Customer wasn't attempted to be engaged. | |
-| Error | Customer wasn't attempted to be engaged because of invalid configuration or data condition during the valid time window to engage with the customer. |
+| LiveAnswer | The call was answered and classified as a live answer rather than an answering machine. | None |
+| AnsweringMachine | The call reached an answering machine. For AI-led calls, the AI agent leaves a message or voicemail when its **Answering Machine Detection** system topic is enabled and configured to leave a message. | None |
+| AnsweringMachineHangup | The call reached an answering machine, and the AI agent hung up as configured in its **Answering Machine Detection** system topic without leaving a message or voicemail. | None |
+| Undetermined | The call was answered by someone or something, but no interaction or conversation with the AI agent was detected. | None |
+| NotAHandset | A tone, such as SIT or fax tone, indicated that the call didn't reach a person or an answering machine. | None |
+| BotFailed | The AI agent failed to start or failed during a conversation with the customer after the call was answered. | None|
+| CallEnded | In Preview dial mode, the customer answered and the call ended. This result can also occur in other dial modes when the call ended without a more specific outcome. | None|
+| NoAnswer | The call to the customer wasn't answered, was declined, or returned a busy signal, as indicated by SIP diagnostic information or early media results from Azure Communication Services. Busy responses are reported as **NoAnswer**. | 486 (Busy Here), 600 (Busy Everywhere), 603 (Decline), 607 (Unwanted) |
+| InvalidAddress | The call to the customer failed because the destination phone number or address was invalid, as indicated by diagnostic information or early media results from Azure Communication Services. The customer's call wasn't connected. | 404 (Not Found), 410 (Gone), 484 (Address Incomplete), 485 (Ambiguous), 604 (Does Not Exist Anywhere) |
+| CallFailed | The call attempt failed. This result can occur with or without SIP diagnostic information or early media results. In Preview dial mode, it can also occur when the available call information doesn't establish another outcome. | 408 (Request Timeout), 480 (Temporarily Unavailable), 487 (Request Terminated), 500 (Server Internal Error), 502 (Bad Gateway), 503 (Service Unavailable), 504 (Server Time-out) |
+| NonRetriableError | A protocol or configuration issue was classified as a nonretriable error. This result doesn't trigger an automatic reattempt. | 401 (Unauthorized), 405 (Method Not Allowed), 407 (Proxy Authentication Required), 415 (Unsupported Media Type), 488 (Not Acceptable Here), 501 (Not Implemented), 505 (Version Not Supported) |
+| Abandoned | In representative-led Progressive or Predictive dial mode, the customer answered, but the allowed wait time for a representative was exceeded. | None |
+| Terminated | In Preview dial mode, no representative was available or accepted the call before the valid contact window ended. The customer wasn't called. | None |
+| CSRCancelled | In Preview dial mode, the representative accepted the call but then selected **Cancel** after reviewing the customer's details, without dialing the customer. | None |
+| Unknown | An error left insufficient information about the customer call attempt to determine its outcome. | None |
+| Cancelled | The customer wasn't called because there was a request to cancel the delivery. | None |
+| Expired | The customer wasn't called because no valid contact window remained or the specified expiration time had passed. | None |
+| Error | The customer wasn't called because an invalid configuration or data condition prevented the delivery during the valid contact window. | None |
+
+
+> [!NOTE]
+> Busy responses are recorded as **NoAnswer** for current SIP-derived results. Historical records might contain **Busy**.
+
 
 ### [SMS](#tab/sms)
 

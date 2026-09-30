@@ -5,7 +5,7 @@ author: gandhamm
 ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: reference
-ms.date: 05/05/2026
+ms.date: 09/29/2026
 ms.update-cycle: 180-days
 ms.collection: bap-ai-copilot
 ms.custom: bap-template 
@@ -50,7 +50,7 @@ The `msdyn_proactive_delivery` table contains delivery requests accepted through
 | Window End Date | msdyn_window_end_date | Date and Time | The end timestamp for the call window in the `yyyy-MM-ddTHH:mm:ss.fffZ` format.|
 | Start Date | msdyn_start_date | Date and Time | Actual start time of the call. |
 | End Date | msdyn_end_date | Date and Time | Actual end time of the call.|
-| Result | msdyn_result | Text | Final outcome of the call: **CallEnded**, **CallFailed**, **BotFailed**, **Expired**, **Cancelled**, or **Error**. |
+| Result | msdyn_result | Text | Final outcome of the delivery. The values depend on the channel, for example, **LiveAnswer**, **NoAnswer**, or **CallFailed** for voice, and **MessageSent**, **MessageFailed**, **ResponseTimeout**, or **ConversationClosed** for SMS. **Expired**, **Cancelled**, and **Error** apply to both channels. Learn more in [Outcome types in Dynamics 365 Contact Center](../administer/proactive-engagement-outcomes.md#outcome-types-in-dynamics-365-contact-center). |
 | Result Date | msdyn_result_date | Date and Time | Timestamp when the result was determined. |
 | Disposition Codes | msdyn_disposition_codes | Text | Comma-separated list of quoted disposition codes such as PromiseToPay, SpokeToAgent. |
 

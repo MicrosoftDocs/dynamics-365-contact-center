@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: reference
 ms.collection: bap-ai-copilot
-ms.date: 06/05/2026
+ms.date: 09/29/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -62,12 +62,27 @@ Voice outcomes are fixed, system-defined results that describe a proactive call 
 
 **Delivery outcomes**
 
-Applicable to SMS only, delivery outcomes are fixed and system-defined that reflect whether the SMS message was successfully delivered to the recipient.
+Delivery outcomes are fixed, system-defined outcomes that reflect the lifecycle of the outbound SMS engagement, from sending the message to closing the resulting conversation. The system stores the SMS engagement outcome as the result value in the proactive delivery entity. Outcomes reflect SMS lifecycle events, timeouts, and delivery-processing conditions.
 
 | Result | Description |
 | ------ | ----------- |
-| Delivered | The SMS message was successfully delivered to the customer device. |
-| Not delivered | The SMS message could not be delivered to the customer device. |
+| MessageSent | The SMS message was sent to the SMS provider or carrier for delivery to the customer device. This result doesn't confirm that the message reached the customer device. |
+| MessageFailed | The SMS provider or carrier failed to deliver the outbound SMS message to the customer device. |
+| ResponseTimeout | The customer didn't reply to the outbound SMS message within the configured first response timeout. No conversation is created. |
+| ConsumerEngaged | The customer replied to the outbound SMS message and engaged with the AI agent. |
+| AgentEscalation | The AI agent escalated the SMS conversation to a service representative. |
+| AgentAccepted | A service representative accepted the escalated SMS conversation. |
+| ConversationEnded | The customer's response triggered the end of conversation topic in the AI agent. |
+| ConversationClosed | The AI agent or service representative closed the SMS conversation, or the system closed it automatically. |
+| ConversationCancelled | The SMS conversation was closed because a new proactive engagement was sent to the same customer. |
+| ConversationCutoffExceeded | The customer engaged with the outbound SMS message, but the conversation wasn't closed and had no activity for 15 days. |
+| ConversationExists | The SMS message wasn't sent because an active conversation already exists between the same sender and recipient. |
+| EngagementAbandoned | A new outbound SMS message was sent to the same customer from the same sender before the customer replied, so the previous engagement was abandoned. |
+| OptOutReceived | The customer replied with an opt-out request, and the system validated the opt-out with the SMS provider's consent service. |
+| Cancelled | The customer wasn't contacted because there was a request to cancel the delivery. |
+| Expired | There was no more valid time window to contact the customer, or the specified expiration date was in the past. The customer wasn't contacted. |
+| Error | The customer wasn't contacted because of an invalid configuration or data condition during the valid time window to contact the customer. |
+| Unknown | There isn't enough information available about the engagement attempt because of an error condition. |
 
 ---
 
@@ -93,7 +108,7 @@ The system enforces timeout mechanisms at two stages of a proactive SMS engageme
 
 ### Pre-conversation: First response timeout
 
-Configured on the proactive engagement SMS settings. The timer starts when the outbound SMS is delivered.
+Configured on the proactive engagement SMS settings. The timer starts when the system sends the outbound SMS message. Carrier delivery confirmation isn't required.
 
 - **If customer replies within timeout**: A conversation is created.
 - **If customer doesn't reply in time**: The delivery times out and no conversation is created.

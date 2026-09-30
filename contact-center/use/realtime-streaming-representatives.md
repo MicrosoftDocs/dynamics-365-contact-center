@@ -4,7 +4,7 @@ description: Use the Representatives view in Dynamics 365 Contact Center to moni
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
-ms.date: 07/20/2026
+ms.date: 09/29/2026
 ms.topic: concept-article
 ms.custom: bap-template
 ---
@@ -22,14 +22,14 @@ The **Representatives** view provides real-time visibility into individual repre
 > - This is a production-ready preview feature.
 > - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
 
-The **Representatives** view enables supervisors to:
+Supervisors can use the **Representatives** view to:
 
 - Monitor representative availability in real time.
-- Understand how representatives are distributed across presence statuses and how long they have been in that presence status.
+- Review the distribution of representatives across presence statuses and how long each representative has been in their current status.
 - View assigned queues and adjust queue membership.
 - Reset representative presence status.
 - Analyze how representative presence status changed during the last 24 hours.
-- Analyze representative performance over the selected time period, such as conversation assignments answered compared to the total number offered.
+- Analyze representative performance over the selected time period, such as the number of conversation assignments answered compared with the number offered.
 
 In **Real-time streaming analytics**, select the **Representatives** tab.
 
@@ -38,21 +38,25 @@ In **Real-time streaming analytics**, select the **Representatives** tab.
 >
 > Customers are solely responsible for using Dynamics 365, this feature, and any associated feature or service in compliance with all applicable laws, including laws that are related to accessing individual employee analytics, and monitoring, recording, and storing communications with users. As part of this compliance, customers must adequately notify users that their communications with customer service representatives (service representatives or representatives) might be monitored, recorded, or stored. As required by applicable laws, customers must also obtain consent from users before they use this feature with them. In addition, customers are encouraged to have a mechanism in place to inform their service representatives that their communications with users might be monitored, recorded, or stored.
 
+## Filter representative performance data
+
+Use the **Representative** filter to view performance metrics for a specific representative. Enter all or part of a representative's name in the search box, and then select the representative from the results. The dashboard updates to display performance metrics for the selected representative.
+
 ### Representative performance
 
-The representative performance section provides insights into the following areas:
+The representative performance section displays the following metrics:
 
-- **Online Representatives**: Shows the number of representatives who are currently available and connected to the system.
+- **Online Representatives**: Shows the number of representatives who are available and connected to the system.
 
-- **Offline Representatives**: Shows the number of representatives who are currently offline or unavailable to receive work.
+- **Offline Representatives**: Shows the number of representatives who are offline or unavailable to receive work.
 
-- **Representatives in active conversations**: Shows the number of representatives who are currently engaged in customer conversations.
+- **Representatives in active conversations**: Shows the number of representatives who are engaged in customer conversations.
 
-- **Representative presence**: Displays the distribution of representatives across presence states, such as Available, Busy, Busy - DND, Away, Offline, and custom presence statuses. Each status includes a count and a visual bar representation. A live indicator shows real-time data.
+- **Representative presence**: Displays the distribution of representatives across presence states, such as Available, Busy, Busy - DND, Away, Offline, and custom presence statuses. Each status includes a count and a bar that represents that count. A live indicator shows real-time data.
 
-## Use with the Representatives grid
+## Use the Representatives grid
 
-- Use the search box to search representatives by name or attributes.
+- Use the search box to search for representatives by name or attributes.
 
 - Perform actions on representatives with the following options:
 
@@ -65,33 +69,41 @@ The representative performance section provides insights into the following area
     1. Select one or more representatives using the checkbox.
     1. Select **Update presence**.
     1. Set a new presence state from the available options.
+    
+   - **Update user attributes**
+   1. Select one or more representatives by using the checkbox.
+   1. Select one of the following options:
+   - **Update skills**: Add, remove, or replace skills and update proficiency levels for the selected representatives.
+   - **Update capacity profiles**: Add, remove, or replace capacity profiles.
+   - **Update capacity units**: Update the default capacity units for the selected representatives.
+- Save the changes.
 
- In the grid, each row represents a single representative. You see the corresponding details:
+Each row in the grid represents one representative and displays the following information:
 
 - **Representative name**: Name of the representative.
 
-- **Presence status**: Includes a colored status indicator with **Set by** information that indicates whether the system or the person updated status.
+- **Presence status**: Includes a colored status indicator and **Set by** information that identifies whether the system or a user changed the presence status.
 
-- **Duration**: Time spent in the current presence status in hh:mm.
+- **Duration**: Time spent in the current presence status, displayed as hours and minutes (hh:mm).
 
 - **Availability (Capacity Profiles)**: Numeric value representing assigned capacity profile. Select this value to view available and consumed capacity for each capacity profile assigned to the representative.
 
 - **Availability (Capacity Units)**: Indicates consumed versus total capacity, with a visual bar and numbers (for example, 6/15).
-- **Conv. Assignments (Answered/Offered)**: Ratio of answered conversation assignments to offered conversations assignments. For example: 12/18.
+  
+- **Conv. Assignments (Answered/Offered)**: Ratio of answered conversation assignments to offered conversations assignments, such as 12/18.
 
 - **Active conversations**: Number of currently active conversations.
 
-- **Assignment – Unanswered**: Number of conversation assignments that aren't accepted. Visual bar representation includes classification of how many of these are explicitly rejected by representatives versus how many aren't accepted leading to timeout.
+- **Assignment – Unanswered**: Number of conversation assignments that aren't accepted. A bar shows how many assignments representatives explicitly reject and how many time out before representatives accept them.
 
-- **Queues**: Number of queues assigned to the representative. Selecting the value opens the right side pane that shows the queues to which the representative has been added.
+- **Queues**: Number of queues assigned to the representative. Select the value to open a pane that lists the queues assigned to the representative.
 
-- **Skills**: Indicates the count of assigned skills. Selecting the value opens the right side pane that shows the skills assigned to the representative.
+- **Skills**: Number of skills assigned to the representative. Select the value to open a pane that lists those skills.
 
 ## Related information
 
-[Overview of real-time streaming analytics (preview)](realtime-streaming.md)
-[Real-time streaming analytics (preview)](realtime-streaming.md)
+[Overview of real-time streaming analytics (preview)](realtime-streaming.md)  
 [Wallboard](realtime-streaming-wallboard.md)  
 [Assisted Service](realtime-streaming-assisted-service.md)  
-[Queues](realtime-streaming-queues.md)   
+[Queues](realtime-streaming-queues.md)  
 [Conversations](realtime-streaming-conversations.md)

@@ -54,7 +54,7 @@ Before you create and activate an evaluation plan for cases, enable the **Enable
                 - **Plan start date**: Specify the start date for the plan.
                 - **End date**: Optionally, specify an end date for the plan by selecting **Add end date and time**. If you don't specify an end date, the evaluation plan continues to run according to its recurrence configuration until it's manually deactivated or modified.
             - **Once**: Runs a single evaluation against conversations that match the configured conditions. Use this option to evaluate a specific set of conversations without creating an ongoing evaluation schedule.
-        - **Plan start date**: Specify the start date for the plan.
+                - **Plan start date**: Specify the start date for the plan.
 
     1. If you select **Cases**, then in the **Set up a schedule** section, select the following options:
 

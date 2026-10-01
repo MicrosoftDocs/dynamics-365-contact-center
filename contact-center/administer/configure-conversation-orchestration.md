@@ -4,7 +4,7 @@ description: Learn how to manage intelligent conversation routing with conversat
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 08/24/2026
+ms.date: 10/01/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
@@ -69,6 +69,62 @@ A playbook can have one of the following statuses.
 |--------|-------------|
 | **Draft** | The playbook is saved but not active. You can make changes freely. |
 | **Active** | The playbook is published and actively orchestrates conversations. |
+
+## Supported trigger events, conditions, and actions
+
+In conversation orchestration, you configure natural language playbooks that specify the trigger events to respond to, the conditions to evaluate, and the actions to take when those conditions are met.
+
+The following table lists the supported trigger events, conditions, and actions that you can use in conversation orchestration playbooks.
+
+| Type | Event, condition, or action | Description |
+|------|-----------------------------|-------------|
+| Trigger event | **Conversation waiting in queue** | Triggers orchestration while a conversation is waiting in a queue. Use this event with elapsed-wait conditions to dynamically change the priority, run an overflow action, or expand the pool of representatives who are eligible for assignment. |
+| Trigger event | **Conversation transferred to queue** | Triggers orchestration when a conversation is transferred to a queue. For example, use this event to update the conversation priority after the transfer. |
+| Trigger event | **Conversation routed to queue** | Triggers orchestration when a conversation is routed to a queue. Use this event to assign the conversation to a previously engaged or preferred representative. |
+| Trigger event | **Consult to queue** | Triggers orchestration when a conversation is consulted to a queue. For example, use this event to update the conversation priority during a consult. |
+| Trigger event | **Representative signs in** | Triggers orchestration when a representative signs in. |
+| Trigger event | **Timer elapsed** | Triggers a recurring or timed evaluation after the configured timer elapses. For example, use this event to update conversation priority or expand the pool of representatives who are eligible for assignment. |
+| Trigger event | **Direct inbound call is offered to a user** | Triggers orchestration when a direct inward dialed call is offered to a representative. Use this event to run an overflow action based on the configured conditions. |
+| Condition | **Queue is out of operating hours** | Evaluates whether the queue is outside its configured operating hours, including when the queue transitions out of operating hours while conversations are waiting. Use this condition to trigger overflow actions. |
+| Condition | **All representatives are signed out** | Evaluates whether all representatives in the queue are signed out, including when this state occurs while conversations are already waiting. Use this condition to trigger overflow actions. |
+| Condition | **Estimated average wait time exceeds a threshold** | Evaluates whether the queue-level estimated average wait time exceeds the configured threshold. Use this condition to trigger overflow actions. |
+| Condition | **Conversation wait time exceeds a threshold** | Evaluates whether the actual time that a conversation has waited in the queue exceeds the configured threshold. Use this condition to trigger overflow actions. |
+| Condition | **Number of conversations waiting exceeds a threshold** | Evaluates whether the number of conversations waiting in the queue exceeds the configured threshold. Use this condition to trigger overflow actions. |
+| Condition | **User rejects the call, the notification times out, or the user is unavailable when a direct dial call is offered** | Evaluates the representative's response or availability when a direct inward dialed call is offered. Use this condition to trigger an overflow action. |
+| Condition | **User's presence status and active conversation limit** | Evaluates whether a representative has an allowed presence status and is within their active conversation limit. Use this condition to assign a returning asynchronous conversation. |
+| Action | **Change priority** | Changes the priority of a conversation based on the configured policy or elapsed wait time. |
+| Action | **Transfer to another queue** | Transfers the conversation to another queue when the configured conditions are met. |
+| Action | **Transfer to an external number** | Transfers the conversation to an external number. |
+| Action | **Offer callback** | Offers the customer a callback as an alternative to continuing to wait in the queue. |
+| Action | **Offer voicemail** | Offers voicemail as the configured action. |
+| Action | **Keep the conversation unassigned** | Keeps the conversation unassigned in its current queue as the configured treatment. |
+| Action | **End conversation** | Ends the conversation when the configured conditions are met. |
+| Action | **Expand assignment pool** | Progressively expands the pool of representatives eligible for assignment. |
+| Action | **Assign to previously engaged representative** | Attempts to assign the conversation to a representative who previously interacted with the customer, subject to the configured checks. |
+| Action | **Assign to preferred representative** | Attempts to assign the conversation to the preferred representative who is mapped to the contact. |
+| Action | **Assign to next available representative** | Uses the queue assignment method to assign the conversation to the next available representative if the preferred representative can't be assigned. |
+
+| Action | **Set user presence** | Sets a representative's presence to the specified presence status. |
+
+## Sample event-action mappings
+
+The following examples show how you can use event-action mappings for common prioritization, overflow, and assignment scenarios.
+
+| Scenario | Trigger event | Action |
+|----------|---------------|--------|
+| **Reprioritize conversations when transferred or consulted**<br><br>Preserve or increase a customer's priority when a conversation is transferred or consulted to another queue so that high-priority requests continue to receive the intended level of attention. | A conversation is transferred or consulted to a queue. | Change the conversation priority. |
+| **Prioritize customers whose wait time is increasing**<br><br>Automatically increase the priority of conversations that waited longer than a defined interval to reduce the risk of prolonged waits. | A conversation is waiting in a queue. | Update the conversation priority when the configured timer elapses. |
+| **Give customers an alternative when the queue is out of operating hours**<br><br>Provide customers with an alternative when the queue is closed. | A conversation is waiting in a queue that is out of operating hours. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
+| **Give customers an alternative when all representatives are signed out**<br><br>Provide customers with an alternative when no representatives are signed in to serve the queue. | A conversation is waiting in a queue where all representatives are signed out. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
+| **Give customers an alternative when the estimated average wait time is high**<br><br>Provide customers with an alternative when the queue-level estimated average wait time exceeds the configured threshold. | A conversation is waiting in a queue where the estimated average wait time exceeds the configured threshold. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
+| **Give customers an alternative when their conversation wait time is high**<br><br>Provide customers with an alternative when an individual conversation waited longer than the configured threshold. | A conversation is waiting in a queue and its wait time exceeds the configured threshold. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
+| **Give customers an alternative when queue demand is high**<br><br>Provide customers with an alternative when the number of conversations waiting exceeds the configured threshold. | A conversation is waiting in a queue where the number of waiting conversations exceeds the configured threshold. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
+| **Help direct-dial callers when the intended representative is unavailable**<br><br>Provide an alternative path when the intended representative rejects a direct inward dialed call, doesn't respond, or is unavailable. | A direct inward dialed call is offered to a representative, and the representative rejects the call, the notification times out, or the representative is unavailable. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
+| **Reconnect customers with a representative who knows their history**<br><br>Route a customer to a previously engaged representative when possible to reduce the need to repeat information and provide a continuous service experience. | A conversation is routed to a queue. | Assign the conversation to the previously engaged representative. If the representative is unavailable, use the configured fallback, such as assigning the conversation to the next available representative. |
+| **Connect customers with their preferred representative**<br><br>Route the conversation to the representative associated with the customer when available to provide a personalized experience. | A conversation is routed to a queue. | Assign the conversation to the preferred representative. If the representative is unavailable, use the configured fallback, such as assigning the conversation to the next available representative. |
+| **Keep returning asynchronous conversations with the same representative**<br><br>Reassign a resumed chat or messaging conversation to the previous representative when the representative is available and has capacity, which preserves ownership and customer context. | A returning asynchronous conversation is available for assignment. | Assign the returning conversation to the same representative. Otherwise, use the configured fallback to assign it to the next available representative or keep it unassigned in the queue. |
+| **Broaden the representative pool as customers continue to wait**<br><br>Start with a targeted group of representatives and progressively include more groups over time to balance specialized service with faster assignment. | A conversation is waiting in a queue. | Expand the assignment pool to include the next configured user group after the configured timer elapses. |
+| **Set representatives to the appropriate availability status when they sign in**<br><br>Automatically apply the configured presence status at sign-in so that representatives begin work in the intended state. | A representative signs in. | Set the representative's presence to the specified status. |
 
 ## Manage playbooks
 

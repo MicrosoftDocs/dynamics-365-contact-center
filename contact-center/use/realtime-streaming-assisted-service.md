@@ -4,7 +4,7 @@ description: Real-time assisted service gives contact center supervisors live vi
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
-ms.date: 07/29/2026
+ms.date: 10/06/2026
 ms.topic: concept-article
 ms.custom: bap-template
 ---
@@ -15,16 +15,16 @@ ms.custom: bap-template
 
 [This article is prerelease documentation and is subject to change.]
 
-The **Assisted service** view provides an interactive, drill-down view of contact center performance. Unlike wallboards, this view is designed for detailed analysis and investigation. Assisted service includes both live metrics (for example, current active conversations) and aggregated metrics (for example, answer rate or abandon rate).
+The **Assisted service** view provides an interactive, drill-down view of contact center performance. Unlike wallboards, this view supports detailed analysis and investigation. It includes live metrics, such as current active conversations, and aggregated metrics, such as answer rate and abandon rate.
 
 > [!IMPORTANT]
 >
 > - This is a production-ready preview feature.
 > - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
 
-Trendline indicators show the exact lines plotted on graph with the interval of an hour. Trendline indicators are displayed in green, red, or grey to help supervisors quickly identify performance trends. The color of a delta is determined by the threshold configuration defined for the metric. For example, Active Conversations (with Representatives) and Active Conversations (with Virtual Agents) display deltas in grey because these metrics don't have defined higher-is-better or lower-is-better thresholds. Service Level might display an increasing delta in green because higher values indicate better performance. Abandon Rate might display an increasing delta in red because lower values are preferred, making an increase an unfavorable trend.
-
 In **Real-time streaming analytics**, select the **Assisted Service** tab.
+
+Trendline indicators show values plotted at one-hour intervals. Trendline indicators are displayed in green, red, or gray to help supervisors quickly identify performance trends. The color of a delta is determined by the threshold configuration for the metric. For example, **Active Conversations (with Representatives)** and **Active Conversations (with Virtual Agents)** display deltas in gray because these metrics don't have defined higher-is-better or lower-is-better thresholds. **Service Level** might display an increasing delta in green because higher values indicate better performance. **Abandon Rate** might display an increasing delta in red because lower values are preferred, making an increase an unfavorable trend.
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and shouldn't be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements.
@@ -33,22 +33,25 @@ In **Real-time streaming analytics**, select the **Assisted Service** tab.
 
 ## Assisted service capabilities
 
-Use assisted service to:
+Use the Assisted service view to:
 
-- Filter data by period, channel, and queues.
+- Filter data by period, channel, business unit, and queues. Learn more in [Filter options](realtime-streaming.md#filter-options).
 - Review performance funnels.
-- Understand how metrics relate to one another.
+- Understand relationships between metrics.
 - Investigate issues identified on the wallboard.
 
 Select **See details** for a metric to view:
 
 - Metric definition and calculation methodology.
-- Trendlines show how metric trends (improving or deteriorating) over the selected time period.
+- Metric trends (improving or deteriorating) over the selected time period.
 - Threshold values (Normal, At risk, and Critical) configured for the metric.
 
-This transparency helps supervisors understand what each metric means and how it's calculated. Visual thresholds help distinguish between healthy performance and metrics that require attention.
+These details help supervisors understand what each metric means and how it's calculated. Visual thresholds help distinguish between healthy performance and metrics that require attention.
 
 ## Assisted service insights
+
+> [!NOTE]
+> For percentage-based metrics, calculations are based only on conversations completed within the last 15 minutes. Conversations that reached the relevant outcome during that period but were completed outside the 15-minute window aren't included.
 
 Assisted service includes insights into the following areas:
 
@@ -58,7 +61,7 @@ The **Total Conversations** card in this section provides breakdowns such as the
 
 ### Self-serve and containment
 
-This section contains the **Virtual Agent containment rate** metric, which displays the percentage of virtual agent-handled conversations that are fully resolved without escalation to a representative. Also, this card displays the count of contained and escalated conversations and the virtual agent duration.
+This section contains the **Virtual Agent containment rate** metric, which displays the percentage of virtual agent-handled conversations that are fully resolved without escalation to a representative. The card also displays the count of contained and escalated conversations and the virtual agent duration.
 
   - **Average virtual agent duration**: The time taken by a virtual agent to manage a conversation, measured from when the virtual agent engages with the customer until the interaction is either resolved by the virtual agent, escalated to a representative, abandoned by the customer, or disconnected.
 

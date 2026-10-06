@@ -5,7 +5,7 @@ author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
-ms.date: 07/29/2026
+ms.date: 10/06/2026
 ms.custom: bap-template
 ---
 
@@ -22,11 +22,9 @@ The **Wallboard** view in **Real-time streaming analytics** provides a consolida
 > - This is a production-ready preview feature.
 > - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
 
-Apply filters such as **Period**, **Channels**, and **Queues**. The **Period** filter applies only to aggregated metrics. Live metrics aren't affected by time-based filters and update only based on channel, queue, and other non-time filters.
+In **Real-time streaming analytics**, select the **Wallboard** tab. The wallboard displays metric cards and presence information for the currently applied filters. Apply filters such as **Period**, **Channels**, **Business Unit**, and **Queues**. Learn more in [Filter options](realtime-streaming.md#filter-options).
 
-Trend indicators show how a metric has changed compared to the previous measurement interval. They update every five minutes, and the accompanying value indicates the magnitude of the change. For example, If Abandon Rate shows as ▲ +0.4% in red, it indicates that the abandon rate has increased by 0.4 percentage points since the previous interval.
-
-In **Real-time streaming analytics**, select the **Wallboard** tab. Use **Filter** to refine the data shown on the wallboard. The wallboard displays metric cards and presence information for the currently applied filters.
+Trend indicators show how a metric changed compared to the previous measurement interval. They update every five minutes, and the accompanying value indicates the magnitude of the change. For example, if **Abandon Rate** shows as ▲ +0.4% in red, it indicates that the abandon rate increased by 0.4 percentage points since the previous interval.
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and shouldn't be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements.
@@ -42,6 +40,9 @@ Use the wallboard to:
 - Review workforce availability and presence distribution.
 - Track response and service performance metrics.
 - Identify metrics marked as critical or at risk.
+
+> [!NOTE]
+> For percentage-based metrics, calculations are based only on conversations completed within the last 15 minutes. Conversations that reached the relevant outcome during that period but were completed outside the 15-minute window aren't included.
 
 ## Monitor active conversation volume
 

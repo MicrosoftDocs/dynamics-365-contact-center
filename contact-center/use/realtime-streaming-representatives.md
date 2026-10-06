@@ -4,7 +4,7 @@ description: Use the Representatives view in Dynamics 365 Contact Center to moni
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
-ms.date: 09/29/2026
+ms.date: 10/06/2026
 ms.topic: concept-article
 ms.custom: bap-template
 ---
@@ -31,20 +31,20 @@ Supervisors can use the **Representatives** view to:
 - Analyze how representative presence status changed during the last 24 hours.
 - Analyze representative performance over the selected time period, such as the number of conversation assignments answered compared with the number offered.
 
-In **Real-time streaming analytics**, select the **Representatives** tab.
+In **Real-time streaming analytics**, select the **Representatives** tab. Apply filters such as **Period**, **Business Unit**, and **Representative**. Learn more in [Filter options](realtime-streaming.md#filter-options).
+
+The **Representative** filter is available only in the **Representatives** view. Use the **Representative** filter to view performance metrics for a specific representative. Enter all or part of a representative's name in the search box, and then select the representative from the results. The dashboard updates to display performance metrics for the selected representative.
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and shouldn't be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements.
 >
 > Customers are solely responsible for using Dynamics 365, this feature, and any associated feature or service in compliance with all applicable laws, including laws that are related to accessing individual employee analytics, and monitoring, recording, and storing communications with users. As part of this compliance, customers must adequately notify users that their communications with customer service representatives (service representatives or representatives) might be monitored, recorded, or stored. As required by applicable laws, customers must also obtain consent from users before they use this feature with them. In addition, customers are encouraged to have a mechanism in place to inform their service representatives that their communications with users might be monitored, recorded, or stored.
 
-## Filter representative performance data
-
-Use the **Representative** filter to view performance metrics for a specific representative. Enter all or part of a representative's name in the search box, and then select the representative from the results. The dashboard updates to display performance metrics for the selected representative.
-
 ### Representative performance
 
 The representative performance section displays the following metrics:
+
+- **Representative presence**: Shows the distribution of representatives across presence states, such as **Available**, **Busy**, **Busy - DND**, **Away**, **Offline**, and custom presence statuses. Each status includes a count and a bar that represents that count. A live indicator shows real-time data.
 
 - **Online Representatives**: Shows the number of representatives who are available and connected to the system.
 
@@ -52,7 +52,9 @@ The representative performance section displays the following metrics:
 
 - **Representatives in active conversations**: Shows the number of representatives who are engaged in customer conversations.
 
-- **Representative presence**: Displays the distribution of representatives across presence states, such as Available, Busy, Busy - DND, Away, Offline, and custom presence statuses. Each status includes a count and a bar that represents that count. A live indicator shows real-time data.
+- **Idle representatives**: Shows the number of online representatives who don't currently have active conversations or conversations in wrap-up status. Representatives with active workload aren't counted as idle. Use this metric to identify available capacity and determine whether representatives can accept additional work.
+
+- **Representatives in wrap-up**: Shows the number of representatives who have at least one conversation in wrap-up state and are currently completing post-conversation work after a customer interaction ends and before becoming available for the next assignment. Wrap-up activities can include documenting the interaction, updating notes, or completing follow-up tasks. Use this metric to understand how much of the workforce is occupied with after-conversation work rather than actively handling new interactions.
 
 ## Use the Representatives grid
 

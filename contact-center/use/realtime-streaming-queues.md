@@ -1,11 +1,11 @@
 ---
 title: Use the Queues view to monitor queue metrics and performance (preview)
-description: Monitor queue metrics with the Queues view in Dynamics 365 Contact Center. Filter by time, channel, and queue to track queue health and performance.
+description: Use the Queues view to monitor queue health, wait times, transfers, overflows, callbacks, and representative availability.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
-ms.date: 07/29/2026
+ms.date: 10/06/2026
 ms.custom: bap-template
 ---
 
@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [This article is prerelease documentation and is subject to change.]
 
-The **Queues** view provides queue-level operational visibility grouped by business units. You can filter by period, channel, and queue. For each queue, supervisors can access queue health by viewing metrics such as **Queue backlog**, **Current longest wait time**, **Abandon rate**, and **Average speed to answer**.
+The **Queues** view provides queue-level operational metrics grouped by business unit. Filter the view by period, channel, business unit, or queue to monitor metrics such as **Queue backlog**, **Current longest wait time**, **Abandon rate**, and **Average speed to answer**. Learn more in [Filter options](realtime-streaming.md#filter-options).
 
 In **Real-time streaming analytics**, select the **Queues** tab.
 
@@ -27,7 +27,10 @@ In **Real-time streaming analytics**, select the **Queues** tab.
 
 ## Queue details
 
-In **Queues**, use the search functionality to find specific queues and business units. You can view the following details:
+> [!NOTE]
+> For percentage-based metrics, calculations are based only on conversations completed within the last 15 minutes. Conversations that reached the relevant outcome during that period but were completed outside the 15-minute window aren't included.
+
+Use search in the **Queues** view to find specific queues and business units. The view includes the following details:
 
   - **Average speed to answer**: This metric is calculated as the time from when the conversation enters the queue until it's assigned to and accepted by the representative, divided by the total number of conversations that were accepted over the selected time period.
 

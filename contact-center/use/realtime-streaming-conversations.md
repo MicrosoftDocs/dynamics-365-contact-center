@@ -5,7 +5,7 @@ author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
-ms.date: 07/29/2026
+ms.date: 10/06/2026
 ms.custom: bap-template
 ---
 
@@ -22,7 +22,7 @@ The **Conversations** view in real-time streaming analytics provides a centraliz
 > - This is a production-ready preview feature.
 > - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
 
-In **Real-time streaming analytics**, select the **Conversations** tab. The **Conversations** view displays categorized and filterable conversation data across channels.
+In **Real-time streaming analytics**, select the **Conversations** tab. Filter data by period, channel, business unit, and queues. Learn more in [Filter options](realtime-streaming.md#filter-options).
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and shouldn't be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements.

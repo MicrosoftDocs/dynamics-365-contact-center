@@ -292,6 +292,8 @@
           href: realtime-streaming-representatives.md
         - name: Monitor conversations in real time
           href: realtime-streaming-conversations.md
+        - name: Monitor self-service operations in real time
+          href: realtime-streaming-self-service.md
       - name: Use real-time analytics dashboards
         items:
         - name: Overview of real-time analytics reports

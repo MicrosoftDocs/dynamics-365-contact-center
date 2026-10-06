@@ -1,10 +1,10 @@
 ---
 title: Overview of real-time streaming analytics (preview)
-description: Real-time streaming analytics deliver event-driven metric updates so supervisors see the current state of their contact center. Explore live monitoring and faster decisions today.
+description: Learn how real-time streaming analytics provides live contact center metrics for operational monitoring and faster decision-making.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
-ms.date: 08/25/2026
+ms.date: 10/06/2026
 ms.topic: concept-article
 ms.custom: bap-template
 ---
@@ -15,16 +15,16 @@ ms.custom: bap-template
 
 [This article is prerelease documentation and is subject to change.]
 
-Real-time streaming analytics provides supervisors with visibility into contact center operations, so they can monitor key metrics as they change and take immediate action.
+Real-time streaming analytics provides supervisors with visibility into contact center operations so they can monitor key metrics as they change and take immediate action.
 
 > [!IMPORTANT]
 >
 > - This is a production-ready preview feature.
 > - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
 
-Supervisors rely on operational metrics such as queue backlog, representative availability, service level, abandon rate, and so on to make time-critical decisions. Traditional dashboards refresh at scheduled intervals and re-render entire views, which can delay the availability of insights during active monitoring.
+Supervisors use operational metrics such as queue backlog, representative availability, service level, and abandon rate to make time-sensitive decisions. Traditional dashboards refresh at scheduled intervals and re-render entire views, which can delay insights during active monitoring.
 
-Real-time streaming analytics uses an event-driven architecture to deliver live metric updates. It gives supervisors a current view of contact center performance. It enables faster responses, reduced wait times, proactive service-level agreement management, and better staffing decisions. By working with streaming data, configurable KPIs, and intuitive wallboards, supervisors can respond more quickly to operational issues, manage staffing more effectively, and improve customer experiences.
+Real-time streaming analytics uses an event-driven architecture to deliver live performance insights, enabling supervisors to respond faster, manage staffing effectively, maintain service levels, and enhance customer experiences.
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and shouldn't be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements.
@@ -37,11 +37,11 @@ Before you use real-time streaming analytics, make sure that the following requi
 
 - Omnichannel for Contact Center is configured and in use.
 - You have the Omnichannel Supervisor role to view analytics dashboards and take action.
-- Customer interaction channels (such as, voice, chat, or or other asynchronous messaging channels) are set up and generate live interaction data.
+- Customer interaction channels, such as voice, chat, or other asynchronous messaging channels, are configured and generate live interaction data.
 
 ## Access real-time streaming analytics
 
-Sign in to your org. Access the dashboards by using the https://supervisor-preview URL. Depending on your environment type (production or first release) and your organization's region, use one of the following links.
+Sign in to your organization. Access the dashboards by using the `https://supervisor-preview` URL. Depending on your environment type (production or first release) and your organization's region, use one of the following links.
 
 |URL |Environment  |  GEO  |
 |---------|---------|----------|
@@ -75,10 +75,22 @@ The following views are available:
 | [Queues](realtime-streaming-queues.md) | Displays queue-level metrics such as backlog, wait times, service levels, and abandon rates. |
 | [Representatives](realtime-streaming-representatives.md) | Shows representative availability, presence status, workload, and performance metrics. |
 | [Conversations](realtime-streaming-conversations.md)| Provides visibility into active, queued, and completed customer conversations and supports conversation management actions. |
+| [Self Service](realtime-streaming-self-service.md) | Provides visibility into containment outcomes, escalation trends, self-service engagement volumes, supported languages, customer intents, and operational health metrics. |
 
 ## Filter options
 
-Use the filter dropdown to refine results based on the available attributes. For example: **Period**, **Channel**, and **Queues**.
+Use the filter dropdown to refine results based on the following attributes.
+
+- **Period**: Use the **Period** filter to view metrics for a specific time range, such as the last 15 minutes, hour, or day. The selected period applies to historical and aggregated metrics across the dashboard. Live metrics ignore the selected **Period** filter and update based only on applicable real-time filters, such as **Business Unit**, **Channel**, and **Queue**.
+
+- **Channel**: Use the **Channel** filter to scope analytics data to a specific engagement channel, such as voice, chat, SMS, or social messaging. Filtering by channel helps supervisors analyze performance, activity, and workload metrics for a particular communication method.
+
+- **Business Unit**: Filter dashboard metrics by business unit. Select a business unit to view data only for the associated representatives, conversations, queues, and operational activities. Select **All business units** to view organization-wide metrics. The selected business unit filter is applied consistently across all dashboard tabs.
+
+- **Queues**: Use the **Queue** filter to view metrics for one or more queues. Applying a queue filter narrows the displayed data to conversations, representatives, and operational metrics associated with the selected queues, helping supervisors monitor queue-specific performance and staffing levels.
+
+- **Representative**: Applicable to the **Representative** view only. Learn more in [Monitor representatives in real time (preview)](realtime-streaming-representatives.md).
+
 
 ## Understand metric types
 
@@ -86,7 +98,7 @@ Metrics in real-time streaming analytics are categorized into two types:
 
 ### Live metrics
 
-Live metrics reflect the current operational state and update continuously. These metrics are identified by a **Live** tag in the user interface. Examples of live metrics:
+Live metrics reflect the current operational state and update continuously. You can identify these metrics on the user interface by the **Live** tag. Examples include:
 
 - Active conversations
 - Queue backlog
@@ -95,7 +107,7 @@ Live metrics reflect the current operational state and update continuously. Thes
 
 ### Aggregated metrics
 
-Aggregated metrics summarize data over a selected time period. These metrics adhere to the time period you select and update as the underlying data changes. Examples of aggregated metrics:
+Aggregated metrics summarize data over a selected time period. These metrics adhere to the time period you select and update as the underlying data changes. Examples include:
 
 - Service level
 - Abandon rate
@@ -107,11 +119,11 @@ Metrics have predefined thresholds that indicate their operational state. Unders
 
 | Status | Description | Visual indicator |
 |--------|-------------|------------------|
-| **Normal** | Metric is within expected range | Default display |
-| **At risk** | Metric is approaching critical levels | Amber background with **At risk** tag |
-| **Critical** | Metric is outside acceptable thresholds | Red background with **Critical** tag |
+| **Normal** | Metric is within expected range. | Default display. |
+| **At risk** | Metric is approaching critical levels. | Amber background with **At risk** tag. |
+| **Critical** | Metric is outside acceptable thresholds. | Red background with **Critical** tag. |
 
-Select **See details** for any metric to view threshold ranges, metric definitions, calculations, and trendlines. Trendlines indicate improving or deteriorating trends. This option is available in every dashboard except wallboards.
+Select **See details** for any metric to view threshold ranges, metric definitions, calculations, and trendlines. Trendlines indicate improving or deteriorating trends. This option is available in every dashboard except the Wallboard view.
 
 ## Related information
 

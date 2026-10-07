@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 09/18/2026
+ms.date: 10/07/2026
 ms.custom: bap-template
 ---
 
@@ -30,7 +30,7 @@ Use on-demand evaluation to check cases, conversations, and emails. Request eval
 
 ## On-demand evaluation for cases
 
-To request evaluations for multiple cases from the case grid:
+To request evaluations for multiple cases from the case grid, complete these steps:
 
 1. Select the required records.
     
@@ -70,8 +70,12 @@ Request an evaluation of closed conversations to assess agent performance, compl
 
    - **Evaluation criteria:** Search and select an evaluation criteria.
    - **Evaluation method:** Select an evaluation method: **AI assisted**, **Manual**, or **AI agent**.
-   - **Assigned to:** Select the user.
-   - **Evaluation due date:** Select a due date for the evaluation.
+   - **Participant evaluated**: By default, quality evaluations assess the **Entire record**. Select a different option to limit the evaluation scope to a specific participant in the conversation transcript.
+       - **Entire record**: Evaluates only the portion of the conversation associated with the current conversation owner. Contributions from other participants aren't included. This option is the default.
+       - **Current owner**: Evaluates only the portion of the conversation associated with the current conversation owner. Contributions from other participants aren't included in the evaluation.
+       - **IVR/Bot**: Evaluates only the interactions between the customer and the IVR or bot in the conversation transcript. Representative and other participant interactions aren't included.
+   - **Owner**: Select the owner.
+   - **Evaluation expiration date:** Select a due date for the evaluation.
     
 1.  Select **Request**.
 

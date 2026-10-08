@@ -4,7 +4,7 @@ description: Learn how real-time streaming analytics provides live contact cente
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
-ms.date: 10/06/2026
+ms.date: 10/07/2026
 ms.topic: concept-article
 ms.custom: bap-template
 ---
@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [This article is prerelease documentation and is subject to change.]
 
-Real-time streaming analytics provides supervisors with visibility into contact center operations so they can monitor key metrics as they change and take immediate action.
+Real-time streaming analytics gives supervisors visibility into contact center operations so they can monitor key metrics as they change and take immediate action.
 
 > [!IMPORTANT]
 >
@@ -41,7 +41,7 @@ Before you use real-time streaming analytics, make sure that the following requi
 
 ## Access real-time streaming analytics
 
-Sign in to your organization. Access the dashboards by using the `https://supervisor-preview` URL. Depending on your environment type (production or first release) and your organization's region, use one of the following links.
+Sign in to your organization. Access the dashboards by using the `https://supervisor-preview` URL. Depending on your environment type (production or first release) and organization region, use one of the following links.
 
 |URL |Environment  |  GEO  |
 |---------|---------|----------|
@@ -66,7 +66,7 @@ Sign in to your organization. Access the dashboards by using the `https://superv
 
 ## Top navigation tabs
 
-The following views are available:
+The following views are available in real-time streaming analytics:
 
 | View | Description |
 |------|-------------|
@@ -98,7 +98,7 @@ Metrics in real-time streaming analytics are categorized into two types:
 
 ### Live metrics
 
-Live metrics reflect the current operational state and update continuously. You can identify these metrics on the user interface by the **Live** tag. Examples include:
+Live metrics show the current operational state and update continuously. You can identify these metrics in the user interface by the **Live** tag. Examples include:
 
 - Active conversations
 - Queue backlog
@@ -107,7 +107,7 @@ Live metrics reflect the current operational state and update continuously. You 
 
 ### Aggregated metrics
 
-Aggregated metrics summarize data over a selected time period. These metrics adhere to the time period you select and update as the underlying data changes. Examples include:
+Aggregated metrics summarize data over a selected time period. These metrics follow the selected time period and update as the underlying data changes. Examples include:
 
 - Service level
 - Abandon rate
@@ -123,7 +123,17 @@ Metrics have predefined thresholds that indicate their operational state. Unders
 | **At risk** | Metric is approaching critical levels. | Amber background with **At risk** tag. |
 | **Critical** | Metric is outside acceptable thresholds. | Red background with **Critical** tag. |
 
-Select **See details** for any metric to view threshold ranges, metric definitions, calculations, and trendlines. Trendlines indicate improving or deteriorating trends. This option is available in every dashboard except the Wallboard view.
+Select **See details** for any metric to view threshold ranges, metric definitions, calculations, and trendlines. Trendlines indicate whether metrics are improving or deteriorating. This option is available in every dashboard except the Wallboard view.
+
+## Language support
+
+Learn more about the languages supported for real-time streaming analytics in [Explore feature availability by language](https://releaseplans.microsoft.com/en-US/availability-reports/?report=featurelangreport).
+
+The dashboard language is determined in the following priority order:
+
+- If you configure a user-level locale setting in the Dataverse organization, it takes the highest priority.
+- If you don't configure a user-level locale, the system uses the organization-level locale setting.
+- If neither a user-level nor organization-level locale is configured, the system uses the browser locale setting.
 
 ## Related information
 

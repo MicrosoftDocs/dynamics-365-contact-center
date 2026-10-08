@@ -5,7 +5,7 @@ author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
-ms.date: 10/06/2026
+ms.date: 10/07/2026
 ms.custom: bap-template
 ---
 
@@ -63,29 +63,29 @@ Displays the number of conversations currently in progress. The metric separates
 
 The **Self-service agent performance** section provides insight into the effectiveness of self-service agents and customer outcomes.
 
-**Self-service agent engaged conversations**: Displays the number of conversations handled by self-service agents during the time selected in the **Period** filter. The metric includes:
+- **Self-service agent engaged conversations**: Shows the number of conversations handled by self-service agents during the time selected in the **Period** filter. The metric includes:
 
-- **Active**: Conversations that a self-service agent currently handles.
-- **Completed**: Conversations that self-service successfully processes. This category includes all conversations that self-service resolves, escalates to a human representative (whether active or closed), or that the customer abandons during self-service. It also includes conversations that end due to a bot failure during the interaction.
+    - **Active**: Conversations that a self-service agent currently handles.
+    - **Completed**: Conversations that self-service successfully processes. This category includes all conversations that self-service resolves, escalates to a human representative (whether active or closed), or that the customer abandons during self-service. It also includes conversations that end due to a bot failure during the interaction.
 
-**Containment rate**: Displays the percentage of conversations that self-service successfully resolves without requiring escalation. The following categories provide a breakdown of completed self-service conversations:
+- **Containment rate**: Shows the percentage of conversations that self-service successfully resolves without requiring escalation. The following categories provide a breakdown of completed self-service conversations:
 
-- **Contained**: Conversations that the self-service agent successfully resolves.
-- **Escalated**: Conversations that the self-service agent transfers to a representative.
-- **Fallback**: Conversations that the self-service agent routes through fallback handling paths.
-- **Customer abandonments**: Conversations that customers disconnect while interacting with the self-service agent before escalation to a representative.
+    - **Contained**: Conversations that the self-service agent successfully resolves.
+    - **Escalated**: Conversations that the self-service agent transfers to a representative.
+    - **Fallback**: Conversations that the self-service agent routes through fallback handling paths.
+    - **Customer abandonments**: Conversations that customers disconnect while interacting with the self-service agent before escalation to a representative.
 
-**Self-service engaged conversations by last language**: Displays the top 10 conversations by volume that self-service agents handle, grouped by last language. Use this metric to understand language trends and identify opportunities for multilingual optimization.
+- **Self-service engaged conversations by last language**: Shows the top 10 conversations by volume that self-service agents handle, grouped by last language. Use this metric to understand language trends and identify opportunities for multilingual optimization.
 
-**Self-service engaged conversations by final intents**: Displays the top 10 conversations by volume that self-service agents handle, grouped by final intents. This visualization can help identify common customer requests, high-volume support topics, and opportunities for content and intent optimization.
+- **Self-service engaged conversations by final intents**: Shows the top 10 conversations by volume that self-service agents handle, grouped by final intents. This visualization can help identify common customer requests, high-volume support topics, and opportunities for content and intent optimization.
 
-**Active conversations**: Displays the number of self-service conversations that are currently in progress.
+- **Active conversations**: Shows the number of self-service conversations that are currently in progress.
 
-**Average self-service agent duration**: Displays the average duration of conversations that self-service agents handle. Use this metric to understand engagement duration and identify unusually long interactions.
+- **Average self-service agent duration**: Shows the average duration of conversations that self-service agents handle. Use this metric to understand engagement duration and identify unusually long interactions.
 
-**Average time to escalate**: The average time a self-service agent takes to escalate a conversation to a human representative after engaging with the customer. Lower values might indicate rapid escalation, while higher values can indicate extended self-service engagement before transfer.
+- **Average time to escalate**: The average time a self-service agent takes to escalate a conversation to a human representative after engaging with the customer. Lower values might indicate rapid escalation, while higher values can indicate extended self-service engagement before transfer.
 
-**Average time to contain**: Displays the average time a self-service agent takes to resolve a conversation, measured from the time the self-service agent becomes engaged. This metric helps evaluate containment efficiency.
+- **Average time to contain**: Shows the average time a self-service agent takes to resolve a conversation, measured from the time the self-service agent becomes engaged. This metric helps evaluate containment efficiency.
 
 ## Self-service agents
 

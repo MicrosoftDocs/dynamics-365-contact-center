@@ -7,13 +7,13 @@ ms.reviewer: sdas
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 09/28/2026
+ms.date: 10/07/2026
 ms.custom: bap-template
 ---
 
 # Use evaluation plan
 
-Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. You can define criteria methods, conditions, and evaluation plans to support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and how to enable bulk evaluations to streamline your review process.
+Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. You can define criteria, methods, conditions, and evaluation plans to support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and how to enable bulk evaluations to streamline your review process.
 
 > [!IMPORTANT]
 >
@@ -35,12 +35,12 @@ Before you create and activate an evaluation plan for cases, enable the **Enable
 
 1.  On the **Evaluation plans** page, select **New**.
 
-1.  On the **New Evaluation Plan** page,
+1.  On the **New Evaluation Plan** page, provide the following information:
 
     1.  In the **Evaluation plan details** section, provide the following information:
-        - **Plan name**: Enter plan name.
-        - **Description**: Enter description.
-        - **Record type**: Select **record type** as **Conversations** or **Cases**.
+        - **Plan name**: Enter a name for the plan.
+        - **Description**: Enter a description for the plan.
+        - **Record type**: Select **Conversations** or **Cases**.
 
     1.  If you select **Conversations**, then in the **Set up a schedule** section, select one of the following options:
 
@@ -58,7 +58,7 @@ Before you create and activate an evaluation plan for cases, enable the **Enable
 
     1. If you select **Cases**, then in the **Set up a schedule** section, select the following options:
 
-        - **Frequency type:** Select **Recurring,** and then provide the following information:
+        - **Frequency type:** Select **Recurring**, and then provide the following information:
             - **Occurrence**: Select **Daily**.
             - **Start date**: Specify the start date for the plan.
             - **End date**: Optionally, specify an end date for the plan by selecting **Add end date and time**.
@@ -75,7 +75,7 @@ Before you create and activate an evaluation plan for cases, enable the **Enable
     1. In the **Sampling** section, provide the following information:
 
         > [!NOTE]
-        > The **Sampling** section appears when the record type is **Case** and frequency is set to **Recurring** only.  After you activate a plan with sampling, the sampling fields become noneditable. To edit the sampling settings, you must first pause the plan.
+        > The **Sampling** section appears when the record type is **Case** and frequency is set to **Recurring** only. After you activate a plan with sampling, the sampling fields become noneditable. To edit the sampling settings, you must first pause the plan.
 
         - **Sampling mode**: Select **Absolute Number** or **Percentage**.
         - **Sampling value**: For **Absolute number**, enter a value of 1 or more. If the value is less than 1, you receive an error message stating that the sampling value must be at least 1 when the sampling mode is set to absolute number. For **Percentage**, enter the percentage of eligible records to sample.
@@ -90,17 +90,22 @@ Before you create and activate an evaluation plan for cases, enable the **Enable
 
     1.  In the **Assign evaluation** section, provide the following:
 
-        1.  **Evaluation criteria:** Select the criteria from the dropdown. Example, select **Closed Conversations Default Criteria**.
+        - **Evaluation criteria:** Select the criteria from the dropdown. For example, select **Closed Conversations Default Criteria**.
 
-        1.  **Evaluation method:** Select from **AI assisted, AI agent**, or **Manual.**
+        - **Evaluation method:** Select from **AI assisted, AI agent**, or **Manual.**
         > [!NOTE]
         > If you select the **AI assisted** or **AI agent** evaluation method, make sure that **AI response enabled** is selected for your questions in the criteria, as follows:
         > - For **AI agent** mode: All questions must be AI-enabled. Manual editing isn't allowed.
         > - For **AI assisted** mode: At least one question must be AI-enabled.
+        
+        - If you select the **AI assisted** option, select **Team** or **User** from the **Assigned To** dropdown list.
 
-        1.  If you select the **AI assisted** option, from the **Assigned To** dropdown list, you need to select **Team** or **User**.
-
-        1.  **Due date**: Select a due date.
+        - **Participant evaluated**: By default, quality evaluations assess the **Entire record**. Select a different option to limit the evaluation scope to a specific participant in the conversation transcript. This option is available only for trigger-based evaluation plans.
+           - **Entire record**: Evaluates the complete conversation transcript, including all participant interactions. This is the default option.
+           - **Current owner**: Evaluates only the portion of the conversation associated with the current conversation owner. Contributions from other participants aren't included in the evaluation.
+           - **IVR/Bot**: Evaluates only the interactions between the customer and the IVR or bot in the conversation transcript. Representative and other participant interactions aren't included.
+       - **Owner**: Select the owner.
+       - **Evaluation expiration (in days)**: Enter the number of days after which the evaluation expires.
 
 1.  Select **Save**.
 
@@ -111,7 +116,7 @@ You can use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluat
 
 ### View run history for a plan
 
-When you run an evaluation plan, it generates a run‑history record that captures the plan name, execution timestamp, total number of records processed, and the final status. This record provides structured visibility into batch runs and their outcomes.
+When you run an evaluation plan, it generates a run history record that captures the plan name, execution timestamp, total number of records processed, and the final status. This record provides structured visibility into batch runs and their outcomes.
 
 Select **Run history** on your evaluation plan to view the details.
 

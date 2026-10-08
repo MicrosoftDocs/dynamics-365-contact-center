@@ -35,7 +35,7 @@ The retirement doesn't affect voice configurations that already use Microsoft Te
 | Microsoft Teams Phone extensibility | No change | No action is required. |
 | Voice through Azure Communication Services | Supported through September 30, 2028 | Migrate to Microsoft Teams Phone extensibility. |
 | SMS through Azure Communication Services | Supported through September 30, 2028 | Migrate to SMS through Twilio or Infobip. |
-| WhatsApp through Azure Communication Services | Supported through September 30, 2028 | Migrate to Meta Direct or WhatsApp through Twilio. |
+| WhatsApp through Azure Communication Services | Supported through September 30, 2028 | Migrate to WhatsApp through Twilio. |
 | SMS through Twilio or Infobip | No change | No action is required. |
 | WhatsApp through Twilio | No change | No action is required. |
 
@@ -143,7 +143,7 @@ WhatsApp through Twilio is a supported provider-based alternative.
 
 ### Will an existing SMS or WhatsApp configuration migrate automatically?
 
-No. Plan to assess, configure, test, and validate each channel in the destination service. Microsoft will provide migration guidance, tooling, and support during the transition.
+No. Plan to assess, configure, test, and validate each channel in the destination service. Microsoft will provide migration guidance and support during the transition.
 
 ### Do service-level agreements or contracts change during the retirement period?
 

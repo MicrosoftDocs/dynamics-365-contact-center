@@ -1,19 +1,19 @@
 ---
-title: Use evaluation plan 
-description: Create and manage evaluation plans in Dynamics 365 Customer Service and Dynamics 365 Contact Center for consistent reviews of cases and conversations. Learn how to activate and optimize evaluations.
+title: Use evaluation plan
+description: Create, activate, and manage evaluation plans in Dynamics 365 Customer Service and Contact Center to consistently review cases and conversations.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
-ms.topic: how-to 
+ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 10/07/2026
+ms.date: 10/09/2026
 ms.custom: bap-template
 ---
 
 # Use evaluation plan
 
-Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. You can define criteria, methods, conditions, and evaluation plans to support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and how to enable bulk evaluations to streamline your review process.
+Evaluation plans help supervisors perform consistent and objective reviews of cases and conversations. You can define criteria, methods, and conditions to support both manual and AI-driven assessments. This article describes how to create, activate, and manage evaluation plans, and how to enable bulk evaluations to streamline your review process.
 
 > [!IMPORTANT]
 >
@@ -29,20 +29,20 @@ Evaluation plans help supervisors perform consistent and objective reviews of ca
 
 ## Create and activate evaluation plan for cases and closed conversations
 
-Before you create and activate an evaluation plan for cases, enable the **Enable bulk evaluations** checkbox in Copilot Service admin center. Learn more in [Enable quality evaluation](../administer/manage-quality-evaluation-agent.md).
+Before you create and activate an evaluation plan for cases, select the **Enable bulk evaluations** checkbox in Copilot Service admin center. Learn more in [Enable quality evaluation](../administer/manage-quality-evaluation-agent.md).
 
-1.  In Copilot Service workspace, go to **Evaluation Plans**.
+1. In Copilot Service workspace, go to **Evaluation Plans**.
 
-1.  On the **Evaluation plans** page, select **New**.
+1. On the **Evaluation plans** page, select **New**.
 
-1.  On the **New Evaluation Plan** page, provide the following information:
+1. On the **New Evaluation Plan** page, provide the following information:
 
-    1.  In the **Evaluation plan details** section, provide the following information:
-        - **Plan name**: Enter a name for the plan.
-        - **Description**: Enter a description for the plan.
-        - **Record type**: Select **Conversations** or **Cases**.
+    1. In the **Evaluation plan details** section, provide the following information:
+       - **Plan name**: Enter a name for the plan.
+       - **Description**: Enter a description for the plan.
+       - **Record type**: Select **Conversations** or **Cases**.
 
-    1.  If you select **Conversations**, then in the **Set up a schedule** section, select one of the following options:
+    1. If you select **Conversations**, then in the **Set up a schedule** section, select one of the following options:
 
         - **Frequency type:** Select **Trigger**, **Recurring**, or **Once**.
             - **Trigger**: Runs evaluations when a specified event occurs, such as when a conversation is closed. Use this option to automatically evaluate future conversations that meet the configured conditions.
@@ -88,7 +88,7 @@ Before you create and activate an evaluation plan for cases, enable the **Enable
         > [!NOTE]
         > If the system can't distribute the sample evenly across representatives, it doesn't create an evaluation batch. The evaluation run is recorded in [run history](#view-run-history-for-a-plan) and the system logs the execution result.
 
-    1.  In the **Assign evaluation** section, provide the following:
+1. In the **Assign evaluation** section, provide the following information:
 
         - **Evaluation criteria:** Select the criteria from the dropdown. For example, select **Closed Conversations Default Criteria**.
 
@@ -107,18 +107,19 @@ Before you create and activate an evaluation plan for cases, enable the **Enable
        - **Owner**: Select the owner.
        - **Evaluation expiration (in days)**: Enter the number of days after which the evaluation expires.
 
-1.  Select **Save**.
+1. Select **Save**.
 
-1.  Select **Activate plan**. The **Activate plan** dialog appears.
-1.  Select **Activate plan**. On successful activation, a success message appears.
-
-You can use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases, conversations, and emails when needed.
+1. Select **Activate plan**. The **Activate plan** dialog appears.
+1. Select **Activate plan**. On successful activation, a success message appears.
 
 ### View run history for a plan
 
-When you run an evaluation plan, it generates a run history record that captures the plan name, execution timestamp, total number of records processed, and the final status. This record provides structured visibility into batch runs and their outcomes.
+Run history is available only for recurring evaluation plans that process records in bulk batches. Each run history record captures information such as the plan name, execution timestamp, total number of records processed, and final status.
 
-Select **Run history** on your evaluation plan to view the details.
+To view run history for a recurring plan, select **Run history** on the evaluation plan.
+
+> [!NOTE]
+> Run history isn't available for trigger-based evaluation plans. Trigger-based evaluation plans create evaluations when qualifying events occur and don't generate batch execution records. This behavior is by design.
 
 If you enable sampling for cases, the **Run history** tab displays the outcomes of each evaluation run, which includes the following columns:
 
@@ -136,11 +137,14 @@ You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-ev
 
 You can create and activate trigger-based evaluation plans for resolved cases only. Trigger-based evaluations run automatically when a case is resolved and specific conditions are met.
 
-When you [create and activate an evaluation plan](#create-and-activate-evaluation-plan-for-cases-and-closed-conversations) from the **Evaluation plans** page, select the **Frequency type** as **Trigger** and **Evaluation Trigger Config** as **Default Trigger Config for Resolved Cases**. 
+When you [create and activate an evaluation plan](#create-and-activate-evaluation-plan-for-cases-and-closed-conversations) from the **Evaluation plans** page, select the **Frequency type** as **Trigger** and **Evaluation Trigger Config** as **Default Trigger Config for Resolved Cases**.
 
-When a case is resolved, the system creates one evaluation for each plan that matches the specified conditions. Multiple evaluations can be created for the same case. 
+When a case is resolved, the system creates one evaluation for each plan that matches the specified conditions. Multiple evaluations can be created for the same case.
 
 To view the evaluations, go to the **Evaluations** page. When the **AI agent status** shows as **Completed**, select the required evaluation and review the **Evaluation Summary**.
+
+> [!NOTE]
+> Trigger-based evaluation plans don't display execution details on the **Run history** tab. To view evaluations created by a trigger-based plan, go to the **Evaluations** page and filter by the evaluation plan name.
 
 ## Activate, pause, resume, or delete evaluation plans
 
@@ -164,7 +168,7 @@ You can't edit active evaluation plans, or modify the existing record type or ev
 
 1. Select **Activate plan** to activate the plan.
 
-## Enable bulk evaluation for cases
+## Run bulk evaluation for cases
 
 Bulk evaluations enable automatic evaluations on large sets of records using recurring evaluation plans. To perform bulk evaluations, make sure that bulk evaluations are turned on for cases in the Copilot Service admin center, evaluation plans for cases are created and activated, and the frequency for the plans is set to recurring.
 
@@ -177,14 +181,14 @@ Bulk evaluations enable automatic evaluations on large sets of records using rec
 Each batch run supports a maximum of 20,000 records.
 
 You can view the evaluation results in the following ways:
-
-- From the **Run history** tab of an evaluation plan. The status shows as **Completed** when the run is successful.
-- From the **Evaluations** grid, when you select **Evaluations** in Copilot Service workspace.
+ 
+- From the **Run history** tab, available for recurring evaluation plans that run bulk evaluations only.
+- From the **Evaluations** grid in Copilot Service workspace.
 
 ## Related information
 
 [Manage quality evaluation](../administer/manage-quality-evaluation-agent.md)  
 [Use evaluations](use-evaluations.md)  
 [Use evaluation criteria](evaluation-criteria.md)  
-[Use on-demand evaluation](on-demand-evaluation.md)
+[Use on-demand evaluation](on-demand-evaluation.md)  
 [Troubleshoot failed quality evaluations](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/quality-evaluation-retry)

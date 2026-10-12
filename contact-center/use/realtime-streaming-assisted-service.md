@@ -4,7 +4,7 @@ description: Real-time assisted service gives contact center supervisors live vi
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
-ms.date: 10/06/2026
+ms.date: 10/12/2026
 ms.topic: concept-article
 ms.custom: bap-template
 ---
@@ -51,21 +51,21 @@ These details help supervisors understand what each metric means and how it's ca
 ## Assisted service insights
 
 > [!NOTE]
-> For percentage-based metrics, calculations are based only on conversations completed within the last 15 minutes. Conversations that reached the relevant outcome during that period but were completed outside the 15-minute window aren't included.
+> For percentage-based metrics, the selected time period determines the set of conversations used to calculate the metric. The percentage is then calculated based on the conversations within that set that meet the metric outcome. For example, if you select the last 15 minutes, Answer rate considers only conversations offered to the queue during those 15 minutes and determines how many of them were answered. A conversation offered 30 minutes ago isn't included, even if it was answered within the last 15 minutes.
 
 Assisted service includes insights into the following areas:
 
-### Conversation volume split
+### Conversation volume
 
 The **Total Conversations** card in this section provides breakdowns such as the total number of conversations created over the selected time period, including both inbound and outbound conversations.
 
 ### Self-serve and containment
 
-This section contains the **Virtual Agent containment rate** metric, which displays the percentage of virtual agent-handled conversations that are fully resolved without escalation to a representative. The card also displays the count of contained and escalated conversations and the virtual agent duration.
+The **Virtual Agent containment rate** metric shows the percentage of virtual agent-handled conversations that are fully resolved without escalation to a representative. The card also displays the count of contained and escalated conversations and the virtual agent duration.
 
   - **Average virtual agent duration**: The time taken by a virtual agent to manage a conversation, measured from when the virtual agent engages with the customer until the interaction is either resolved by the virtual agent, escalated to a representative, abandoned by the customer, or disconnected.
 
-### Assisted service
+### Assisted service operations summary
 
 For human-assisted interactions, real-time streaming analytics provides visibility into the following metrics:
 
@@ -73,21 +73,23 @@ For human-assisted interactions, real-time streaming analytics provides visibili
 
   - **Active conversations**: The total number of ongoing virtual agent and representative conversations. Active conversations include all conversations currently in an active state. The representative or the virtual agent and the customer are both engaged.
 
-  - **Abandon rate**: Percentage of conversations disconnected by customers after queue entry but before representative acceptance, out of total queued conversations over the selected period of time.
-
-  - **Average speed to answer**: Average time from when the conversation enters the queue to when a representative accepts it.
-
-  - **Current longest wait time**: The longest time any conversation is in the selected queue or selected set of queues and is still pending assignment. For transferred conversations, it considers conversations transferred from a source queue to the selected destination queue, and measures wait time from when the conversation entered the destination queue until the current time.
+  - **Representative presence**: The presence status of each representative, including Offline, Available, Away, Busy, and Busy-DND. This also includes any custom presence statuses configured in the system.
 
   - **Queue backlog**: Count of incoming conversations in open state that are pending assignment from the queue. These incoming conversations might be directly routed to a queue, escalated from virtual agent, transferred from another queue manually, or routed due to overflow conditions.
 
-  - **Representative presence**: The presence status of each representative, including Offline, Available, Away, Busy, and Busy-DND. This also includes any custom presence statuses configured in the system.
+  - **Longest wait time**: The longest time any conversation is in the selected queue or selected set of queues and is still pending assignment. For transferred conversations, it considers conversations transferred from a source queue to the selected destination queue, and measures wait time from when the conversation entered the destination queue until the current time.
 
-  - **Service level (20s)**: Percentage of conversations accepted by representatives within 20 seconds of entering a queue.
+  - **Abandon rate**: Percentage of conversations disconnected by customers after queue entry but before representative acceptance, out of total queued conversations over the selected period of time.
 
   - **System disconnected conversations**: Conversations that the system ends automatically after queue entry but before representative assignment, due to technical, inactivity, or overflow conditions.
 
-## Overflow metrics
+  - **Service level (20s)**: Percentage of conversations accepted by representatives within 20 seconds of entering a queue.
+
+  - **Average speed to answer**: Average time from when the conversation enters the queue to when a representative accepts it.
+
+  - **Queue transfer rate**: The percentage of conversation queue entries that resulted in a transfer to another queue, including user-initiated transfers and transfers due to in-queue overflow. It's calculated as queue entries with at least one transfer to another queue divided by the total queue entries × 100.
+
+### Overflow metrics
 
 These metrics display the information related to prequeue and in-queue overflowed conversations. It indicates the percentage of initiated callbacks successfully answered by customers.
 

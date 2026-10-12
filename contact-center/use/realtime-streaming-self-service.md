@@ -5,7 +5,7 @@ author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
-ms.date: 10/07/2026
+ms.date: 10/12/2026
 ms.custom: bap-template
 ---
 
@@ -34,7 +34,7 @@ Apply filters such as **Period**, **Channel**, **Business Unit**, and **Queue**.
 > [!NOTE]
 > - Live metrics update in real time and don't use the selected **Period** filter. Only **Channel**, **Queue**, and other non-time filters are applied.
 > - All non-live metrics reflect data from the time interval selected in the **Period** filter.
-> - For percentage-based metrics, calculations are based only on conversations completed within the last 15 minutes. Conversations that reached the relevant outcome during that period but were completed outside the 15-minute window aren't included.
+> - For percentage-based metrics, the selected time period determines the set of conversations used to calculate the metric. The percentage is then calculated based on the conversations within that set that meet the metric outcome. For example, if you select the last 15 minutes, Answer rate considers only conversations offered to the queue during those 15 minutes and determines how many of them were answered. A conversation offered 30 minutes ago isn't included, even if it was answered within the last 15 minutes.
 
 ## Conversation volume split
 

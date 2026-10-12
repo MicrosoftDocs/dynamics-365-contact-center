@@ -5,7 +5,7 @@ author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
-ms.date: 10/06/2026
+ms.date: 10/12/2026
 ms.custom: bap-template
 ---
 
@@ -28,7 +28,7 @@ In **Real-time streaming analytics**, select the **Queues** tab.
 ## Queue details
 
 > [!NOTE]
-> For percentage-based metrics, calculations are based only on conversations completed within the last 15 minutes. Conversations that reached the relevant outcome during that period but were completed outside the 15-minute window aren't included.
+> For percentage-based metrics, the selected time period determines the set of conversations used to calculate the metric. The percentage is then calculated based on the conversations within that set that meet the metric outcome. For example, if you select the last 15 minutes, Answer rate considers only conversations offered to the queue during those 15 minutes and determines how many of them were answered. A conversation offered 30 minutes ago isn't included, even if it was answered within the last 15 minutes.
 
 Use search in the **Queues** view to find specific queues and business units. The view includes the following details:
 
@@ -36,11 +36,11 @@ Use search in the **Queues** view to find specific queues and business units. Th
 
   - **Abandon rate**: Abandon rate is the percentage of incoming conversations in which the customer explicitly disconnected before the conversation is accepted by a representative, out of the total number of incoming conversations that entered the queue during the selected period.
 
-    Abandon rate = (Number of conversations abandoned by the customer before representative acceptance / Total incoming conversations that entered the queue) × 100
+    Abandon rate = (Number of conversations abandoned by the customer before representative acceptance / Total incoming conversations that entered the queue) × 100.
      
     This metric excludes system disconnects caused by technical issues, and conversations closed because of overflow conditions.
 
-  - **Callbacks**: Indicates the percentage of callbacks answered. Hover over or click the metric to view detailed callback statistics, including offered, opted-in, initiated, and answered callbacks for the queue.
+  - **Callbacks**: Indicates the percentage of callbacks answered. Hover over or select the metric to view detailed callback statistics, including offered, opted-in, initiated, and answered callbacks for the queue.
 
   - **Conversation transfers (In versus Out)**: A conversation transfer is counted as inbound when a conversation moves into the queue, either manually from another source queue (user initiated) or automatically because of an overflow like the wait time in a source queue exceeds the defined threshold.
 

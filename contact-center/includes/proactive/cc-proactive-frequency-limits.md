@@ -1,5 +1,3 @@
-**Frequency limits**
-
 On the **Frequency limits** page, do as follows:
 
 1. Select **Use frequency limits** to turn on frequency controls, and then enter values for:
@@ -16,5 +14,7 @@ On the **Frequency limits** page, do as follows:
 1. Under **Time zones**, select how to determine the time zone for each contact:
    - **Use customer's local time zone when available (defaults to UTC if not available)**: The system uses the time zone attribute on each contact record to evaluate quiet hours in that contact's local time. If no time zone is specified on the contact, UTC is used. You must explicitly provide the time zone value in the uploaded file or API payload - the system doesn't auto-detect or geo-infer time zones.
    - **Use Coordinated Universal Time (UTC)**: The system evaluates all contacts against quiet hours by using UTC, regardless of their location.
+
+   In the API payload, specify a Windows standard time-zone name, such as `Pacific Standard Time`, or a Dataverse time-zone code as a string, such as `"35"`. Display names and IANA time-zone names aren't accepted. To learn more, see [Use CCaaS_CreateProactiveDelivery API](../../extend/api/ccaas_createproactivedelivery.md#contact-object).
 
 1. Select **Next**.

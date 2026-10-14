@@ -198,8 +198,14 @@
         items:
         - name: Overview of proactive engagement
           href: overview-proactive-engagement.md
-        - name: Configure proactive engagement
-          href: configure-proactive-engagement.md
+        - name: Set up proactive engagement
+          items:
+          - name: How to set up proactive engagement
+            href: configure-proactive-engagement.md
+          - name: Configure proactive engagement for voice
+            href: configure-proactive-engagement-voice.md
+          - name: Configure proactive engagement for messaging
+            href: configure-proactive-engagement-messaging.md
         - name: Configure agents for AI-led proactive engagement
           href: configure-agents-for-ai-led-proactive-engagement.md
         - name: Manage consent for proactive engagement

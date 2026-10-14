@@ -131,6 +131,7 @@ For an outgoing message sent by the contact center from within the application, 
 
 ## Related information
 
+[Configure proactive engagement for messaging](configure-proactive-engagement-messaging.md)  
 [Overview of SMS channels](/dynamics365/customer-service/administer/sms-channel-overview)  
 [Configure an SMS channel using Azure Communication Services](/dynamics365/customer-service/administer/configure-sms-channel-acs)  
 [Infobip messaging API documentation](https://www.infobip.com/docs/api)  

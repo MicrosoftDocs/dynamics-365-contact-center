@@ -1,10 +1,8 @@
-**Details**
-
 On the **Details** page, configure the engagement identity, routing, and business unit.
 
 1. In **Engagement details**, enter the following information:
    - **Name**: A name for the proactive engagement. The service representative sees the name on the conversation form.
-   - **Description**: A description that helps service representatives understand the purpose of the call. The name and description are visible to representatives during the call.
+   - **Description**: Enter a description that helps service representatives understand the purpose of the engagement. The name and description are visible to representatives during the conversation.
    - **Workstream**: Select the outbound workstream. If you create the proactive engagement from within a workstream, this value is preselected.
    - **Channel type**: The channel used for the proactive engagement.
 

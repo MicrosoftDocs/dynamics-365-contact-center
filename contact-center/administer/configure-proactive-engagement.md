@@ -1,370 +1,74 @@
 ---
-title: Configure proactive engagement in Dynamics 365 Contact Center
-description: Learn how to set up proactive engagement, including dial modes and operational rules for optimized customer service in Dynamics 365 Contact Center.
+title: How to set up proactive engagement
+description: Prepare shared prerequisites, choose an audience, and find the voice or messaging setup guide for proactive engagement in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection: bap-ai-copilot
-ms.date: 07/01/2026
+ms.date: 10/14/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
-# Configure proactive engagement
+# How to set up proactive engagement
 
-Proactive engagement in Dynamics 365 helps your organization improve customer interactions by initiating outbound communications through the voice and SMS channels. This feature helps your business streamline customer outreach, boost agent productivity, and deliver personalized experiences. This article explains how to configure proactive engagement settings, including dialing modes, routing details, and operational rules to optimize your customer service operations.
+This article describes how to set up proactive engagement for voice or messaging. Learn more about proactive engagement and supported scenarios in [Overview of proactive engagement](overview-proactive-engagement.md).
 
 ## Prerequisites
 
-### [Voice](#tab/voice)
-
-- Voice channel is provisioned and configured. Learn more in [Provision channels](../implement/provision-channels.md) and [Install the voice channel](/dynamics365/customer-service/administer/voice-channel-install?context=/dynamics365/contact-center/context/administer-context).
-
-### [SMS](#tab/sms)
-
-- SMS channel is provisioned and configured. Learn more in [Provision channels](../implement/provision-channels.md) and [Configure SMS channel](/dynamics365/customer-service/administer/configure-sms-channel?context=/dynamics365/contact-center/context/administer-context).
-
----
-
+- [Provision the required channels](../implement/provision-channels.md).
 - Dynamics 365 Customer Insights if you want to use journey for your customer journey authoring.
 - Microsoft Copilot Studio to use Copilot agents.
+- For voice engagements that use direct routing, review the [requirements for direct routing](configure-proactive-engagement-voice.md#requirements-for-direct-routing).
 
-## Set up an outbound workstream
+> [!NOTE]
+> Your organization is responsible for honoring customer consent and opt-out preferences. To learn how to view and manage opt-out records, see [Manage consent for proactive engagement](proactive-engagement-manage-consent.md).
 
-### [Voice](#tab/voice)
 
-1. Create a workstream by selecting the **Outbound** option. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context).
+## Set up proactive engagement
 
-1. In the **Setup Behaviors** section of the workstream, select **Setup**.
+Complete the following steps:
 
-1. On the **Phone number** page, select a number in the **Shared numbers** list. You can use a number configured for an outbound profile (for representative dialing in Copilot Service workspace) or outbound workstream only. Learn more in [Configure phone numbers for outbound calling](/dynamics365/customer-service/administer/voice-channel-outbound-calling#configure-phone-numbers-for-outbound-calling).
-    > [!NOTE]
-    > By using Azure Communication Services, you can use Direct Routing numbers only. By using Teams Phone numbers, you can use Direct Routing, Direct Offer, and Operator Connect numbers.
+1. Choose an audience and intake method. Define the audience and how customer contact information is provided:
 
-1. Set up the language and outbound behaviors. Learn more in [Configure the voice channel](/dynamics365/customer-service/administer/voice-channel-inbound-calling?tabs=enhancedvoice#configure-a-voice-channel).
-1. Configure [work distribution](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution). Optionally add an [AI agent](/dynamics365/customer-service/administer/create-workstreams#add-an-agent-to-a-workstream) to the workstream, and configure representative notifications. The following notification templates are available out of the box:
-    - **Voice call - outbound agent dial - default**: For preview dial mode calls
-    - **Voice call - outbound pre-dial - default**: For predictive, progressive, and Copilot dial mode calls
+   - Contact Center: Use file upload, the CCaaS API, or MCP (preview).
+   - Conversational Journeys in Customer Insights: Use a customer journey when Dynamics 365 Customer Insights - Journeys is enabled.
 
-### [SMS](#tab/sms)
+    Then configure the required customer identification and routing details for your channel.
+1. Set up an outbound workstream. Configure an outbound workstream for [voice](configure-proactive-engagement-voice.md#set-up-an-outbound-workstream) or [messaging](configure-proactive-engagement-messaging.md#set-up-an-outbound-workstream). 
 
-1. Create a workstream by selecting the **Outbound** option and setting the type to **Messaging** and channel to **SMS**. Learn more in [Create and manage workstreams](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context).
+1. Complete the configuration steps for the required channel in the **Create new proactive engagement** pane in  Copilot Service admin center.
 
-1. Set up the outbound workstream behaviors in the **Setup up your SMS channel** section of the workstream as follows:
+> [!NOTE]
+> Delivery windows and expiration dates can extend up to 30 days into the future. If you don't specify a delivery window, the system uses a 24-hour window starting immediately or on the earliest scheduled date, if it's in the future.
 
-    - Select **Setup**, and on the page that appears, select the **SMS Number** in the list. Numbers available to use only are displayed. Learn more in [Configure SMS channel](/dynamics365/customer-service/administer/configure-sms-channel?context=/dynamics365/contact-center/context/administer-context).
-    - Set up the outbound behaviors. Learn more in [Configure SMS channel](/dynamics365/customer-service/administer/configure-sms-channel?context=/dynamics365/contact-center/context/administer-context).
-1. Configure [work distribution](/dynamics365/customer-service/administer/create-workstreams#configure-work-distribution), optionally add an [AI agent](/dynamics365/customer-service/administer/create-workstreams#add-an-agent-to-a-workstream) to the workstream, and configure representative notifications.
+   - **Voice**: [Configure proactive engagement for voice](configure-proactive-engagement-voice.md).
+   - **SMS**: [Configure proactive engagement for messaging](configure-proactive-engagement-messaging.md), including [SMS content](configure-proactive-engagement-messaging.md#sms).
+   - **MMS (preview)**: [Configure proactive engagement for messaging](configure-proactive-engagement-messaging.md), including [MMS content and attachments](configure-proactive-engagement-messaging.md#mms-preview). MMS uses an SMS workstream with an MMS-capable provider and number. It doesn't use a separate MMS workstream.
+   - **WhatsApp (preview)**: [Configure proactive engagement for messaging](configure-proactive-engagement-messaging.md), including [WhatsApp templates](configure-proactive-engagement-messaging.md#whatsapp-preview).
 
----
+> [!IMPORTANT]
+> - Proactive engagement in WhatsApp and MMS is a preview feature.
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://www.microsoft.com/en-us/business-applications/legal/supp-powerplatform-preview/), and are available before an official release so that customers can get early access and provide feedback.
 
-The system automatically configures the routing rules based on the proactive engagement settings. These rules appear under the **Auto generated rules (advanced)** section of the workstream.
-
-## Configure settings to engage proactively with customers
-
-1. In the site map of Copilot Service admin center, go to the settings by using one of the following methods. Then, create a proactive engagement setting.
-
-   - Select **Productivity** under **Support experience**. Select **Manage** for **Proactive engagements**, and then select **New**.
-   - Select **Workstreams** under **Customer support**, select an outbound workstream for voice, and on the workstream page, select **New proactive engagement**.
-
-   The **Create new proactive engagement** wizard guides you through the steps outlined in the following sections:
-   - **Audience**
-   - **Details**
-   - **Dialing modes** (voice only)
-   - **Display number configuration** (voice only)
-   - **Reattempts** (voice only)
-   - **Frequency limits**
-   - **Preferences** (SMS only)
-   - **SMS template configuration** (SMS only)
-   - **Summary**
-
-### [Voice](#tab/voice)
-
-[!INCLUDE [proactive-audience](../includes/proactive/cc-proactive-audience.md)]
-
-2. Under **Engagement type**, select one of the options to determine how the call is handled:
-
-      - **Led by representatives**: Always connect customers to service representatives.
-      - **Led by AI**: Let Copilot interact with customers first as they answer the calls, then add representatives at the right moment.
-
-   > [!NOTE]
-   > A single workstream can run both AI-led and representative-led proactive engagements simultaneously.
-
-3. Select **Next**.
-
-[!INCLUDE [proactive-details](../includes/proactive/cc-proactive-details.md)]
-
-**Dialing modes**
-
-The dial modes determine how the system places outbound calls to customers. Learn more in [Dial modes for proactive engagement](proactive-engagement-dial-modes.md).
-
-1. Select one of the following dial modes:
-   - **Copilot**: Applies to AI agent-led engagements. The system automatically dials the customer and connects the call to the AI agent when the customer answers. Use this mode for high-volume outbound calls.
-   - **Preview**: Applies to representative-led engagements. The system notifies a service representative of the outbound call request and after acceptance, places the call to the customer.
-   - **Progressive**: Applies to both representative- and AI agent-led engagements. The system starts calls equal to the number of available representatives, and on customer answer adds a representative or AI agent based on the engagement type. If type is representative led, service representatives are reserved ahead of time for a good customer experience.
-   - **Predictive**: The system starts calls proportional to the number of available agents or representatives, and on customer answer adds a representative or AI agent based on the engagement type. A predictive model considers factors like representative availability, abandonment rate, and answer rate to determine the number of calls to initiate per representative. If type is representative led, representatives are reserved ahead of time to ensure a good customer experience.
-
-1. Priority determines the processing order of the proactive engagement. Select one of the following priority levels:
-   - **Normal**
-   - **High**
-   - **Critical**
-   
-     Priority also determines the processing order when multiple proactive engagements compete for the same representatives (same queue and skill set). Higher-priority engagements are processed first. For example, if a critical and a normal proactive engagement both target the same queue, the system processes the critical engagement first and handles the normal engagement only when no higher-priority requests are pending.
-     
-     The system processes proactive engagements with same priority in a queue in a round robin manner to ensure fair processing.
-
-1. In **Call order**, select one of the following options to define how the system processes requests within each proactive engagement:
-   - **Earliest Scheduled Date** - Processes records that are close to end of calling window first.
-   - **Last in First Out** - Processes most recent records first, in a last in first out manner.
-   - **First in, First Out** - Processes older records first, in a first in first out manner.
-   - **Custom priority ascending**: Processes records in ascending order based on a priority attribute (date or number) specified in the contact list or API payload.
-   - **Custom priority descending**: Processes records in descending order based on the priority attribute.
-      When custom priority is used, if a runtime misconfiguration is detected - such as missing or invalid priority data - the system falls back to first in, first out processing of the misconfigured records.
-
-1. For Copilot dial mode, configure the **Call settings**:
-   - Select the **Max number of concurrent calls for Copilot Mode** that refers to the maximum number of calls the AI agent can make concurrently. The maximum number that you can specify is 500.
-   - Under **Operating hours**, select the checkbox if calls can be made outside of queue hours. This setting is available for Copilot dial mode only.
-   - Select the action for how the call needs to be handled if the AI agent fails during the call.
-      - **Stop making calls immediately**: No further calls are made.
-      - **Continue making calls**:
-         - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
-
-1. For preview dial mode, configure the **Call settings**:
-   - **Automatic**: The system initiates the call after a countdown timer expires. The timer starts when a representative accepts the invite. Specify the duration in seconds for the timer. Service representatives can start the call early or cancel it before the timer expires.
-   - **Manual**: The service representative must manually start the call after reviewing customer details.
-       > [!NOTE]
-       > Timer and delayed start are available on Teams Phone Extensibility only. If you're using Azure Communication Services, preview calls start automatically after the representative accepts the invite.
-
-   - **Skip CSR availability checks**: Select this option if you want preview calls to be added to the routing backlog irrespective of representative availability. By default, proactive engagement queues preview calls proportional to the number of available representatives, accounting for calls that are already in waiting. If selected, specify a **Maximum number of conversations in waiting** value. You can specify up to 50.
-
-1. For AI agent-led predictive dial mode, configure the **Call settings**:
-   - Select the action for how the call needs to be handled if the AI agent fails during the call.
-      - **Stop making calls immediately**: No further calls are made.
-      - **Continue making calls**:
-        - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
-
-1. For AI agent-led progressive dial mode, configure the **Call settings**:
-   - Select the max number of calls that can be assigned to the representative in **Maximum calls per representative**. This setting is available for the progressive dial mode. A lower number indicates a balanced call volume for the representative. You can specify up to five calls.
-   - Select the action for how the call needs to be handled if the AI agent fails during the call.
-      - **Stop making calls immediately**: No further calls are made.
-      - **Continue making calls**:
-        - **Rate of failure reaches**: Select a value from the **Percent** dropdown list. The default value is one and the maximum value is five.
-        > [!NOTE]
-        > For AI agent-led engagements, answering machine detection is configured in the Copilot IVR agents.
-
-1. For representative-led progressive and predictive dial modes,
-   - Select the action if answering machine is detected.
-     - **End call immediately** ends the call if a voicemail or answering machine is detected.
-     - **Leave a voicemail** plays the text in **Voicemail prompt** at the appropriate time, at the end of the greeting.
-         - **Call is abandoned after**: Enter the duration after which a call is considered abandoned if no service representative connects after the customer answers.
-         - **Abandoned message**: Enter the message that plays to the customer waiting on line if the call is abandoned before the call ends.
-       > [!IMPORTANT]
-       > The call connection time for service representative-led progressive and predictive dial modes isn't compliant with the Telephone Consumer Protection Act (TCPA). Review applicable telecommunications regulations before using service representative-led modes.
-
-1. For AI agent-led engagements, select **Use rules** to set rules for the following parameters that help control the throttling and pacing for the proactive engagement:
-   - **Abandonment rate**: (Copilot, progressive, and predictive modes). The percentage of customers who hang up before connecting with a representative.
-   - **Average wait time**: (Copilot, progressive, and predictive modes). The average amount of time it takes for customers to connect to representatives.
-   - **Escalation count**: (Copilot mode). The total number of escalations made from the AI agent.
-   - **Open concurrent escalations**: (Copilot mode). The total number of open escalations that aren't resolved.
-   - **Percentage of queue**: (Predictive mode) To balance queue capacity, set how much percent of the queue you want dedicated to the proactive engagement.
-
-1. For representative-led progressive and predictive dial modes, select **Use rules** to set rules for the following parameters that help control the throttling and pacing for the proactive engagement:
-   - **Abandonment rate**: The maximum percentage of customers who don't get connected to a representative before the threshold mentioned in the duration. The proactive engagement pauses if the threshold is reached and requires manual intervention to restart the proactive engagement.
-   - **Percentage of queue**: To balance queue capacity, set the percent of the queue you want dedicated to the proactive engagement.
-
-1. Select **Next**.
-
-**Display number configuration**
-
-On **Display number configuration**, choose the phone numbers to use for outbound calls.
-
-1. The **Workstream number** is the default display number and you can't change it for the engagement.
-
-1. In **Display numbers**, select one or more phone numbers to use as display numbers. You can't use shared numbers for existing workstreams as display numbers.
-
-   > [!NOTE]
-   > Calls originate from the display number.
-   > Display numbers must match the number type of the workstream number. For example, if the workstream uses Azure Communication Services Direct Routing numbers, display numbers must also be Azure Communication Services Direct Routing numbers.
-      > You can use numbers that aren't used in an outbound workstream.
-   > You configure multiple display numbers at the engagement level only. You can't add multiple display numbers on the workstream itself.
-
-1. Under **Distribution**, choose how the system selects the number to use for each call:
-
-   - **Automated**: The system rotates through display numbers by using pseudo-random selection, ensuring equal distribution across all configured numbers. You can't control a specific number to be used for a specific call.
-   - **Rule-based**: Create custom rules to distribute calls based on contact attributes. Specify up to five rules by using the following fields:
-     - **Field**: The contact attribute to match on, such as State, City, or Zip code.
-     - **Condition**: The matching condition, such as **Starts with**.
-     - **Value**: The value to match.
-     - **Display number**: The number to use when the rule matches.
-
-1. Select **Next**.
-
-**Reattempts**
-
-On the **Reattempts** page, configure retry behavior for contacts who aren't reached on the first attempt.
-
-1. Under **Abandonment reasons**, select the call outcomes that trigger a reattempt:
-
-   - **No answer**
-   - **Busy**
-   - **Failed**
-   - **Answering Machine**
-
-   This list of systemic outcomes is fixed. You can't add custom values to it.
-
-1. In **Disposition codes**, select any disposition codes that trigger a reattempt. These codes represent business outcomes that service representatives set during or after a call. To make a code available for reattempt selection, create it under the category **Not right party**. The same disposition codes also appear on the representative's screen during the call. Learn more in [Configure disposition codes](configure-disposition-codes.md).
-
-1. Under **Retry settings**, specify **Number of attempts**, **Wait time**, and one of the following **Priority** values:
-   - Same as new deliveries
-   - Higher than new deliveries
-   - Lower than new deliveries
-
-1. Under **Follow up on SMS**, optionally select an SMS proactive engagement configuration to use when all retry attempts are exhausted.
-Select **None** if no fallback is needed.
-
-   > [!NOTE]
-   > SMS fallback is currently in preview and requires opting in to the preview.
-
-1. Select **Next**.
-
-[!INCLUDE [proactive-frequency-limits](../includes/proactive/cc-proactive-frequency-limits.md)]
-
-**Summary**
-
-Review all settings on the **Summary** page, and select **Create**.
-
-[!INCLUDE [proactive-file-upload](../includes/proactive/cc-proactive-file-upload.md)]
-
-Learn more about available outcomes and SIP-based result values in [Outcomes for proactive engagement](proactive-engagement-outcomes.md).
-
-### [SMS](#tab/sms)
-
-[!INCLUDE [proactive-audience](../includes/proactive/cc-proactive-audience.md)]
-[!INCLUDE [proactive-details](../includes/proactive/cc-proactive-details.md)]
-
-**Preferences**
-
-On the **Preferences** page, configure channel behaviors and throttling rules for the SMS engagement.
-
-1. Under **Channel behaviors**, configure the following:
-
-   - **First response timeout**: Set the duration (in minutes, hours, or days) the system waits for a customer to respond to the initial SMS before the request expires. If the recipient doesn't respond within the timeout period, the request expires and any later reply is treated as a new anonymous inbound conversation, losing the context. The default is 5 minutes.
-   - **Priority level**: Select the priority for the engagement — **Normal**, **High**, or **Critical**. Priority determines which proactive engagement is processed first when multiple engagements compete for the same queue and skillset.
-   - **Message order**: Select how messages within the engagement are processed:
-     - **Earliest Scheduled Date**: Processes records that are close to the end of the messaging window first.
-     - **Last in First Out**: Processes the most recent records first.
-     - **First in, First Out**: Processes older records first.
-     - **Custom priority ascending**: Processes records in ascending order based on a priority attribute specified in the contact list or API payload.
-     - **Custom priority descending**: Processes records in descending order based on the priority attribute.
-
-1. Under **Rules**, select **Use rules** to set throttling and pacing rules for the engagement. Configure conditions based on the following parameters:
-
-   - **Average wait time**: The average amount of time it takes for customers to connect to representatives.
-   - **Escalation count**: The total number of escalations made from the AI agent.
-   - **Open concurrent escalations**: The total number of open escalations that haven't been resolved.
-
-   For each rule, specify the threshold value, the time window (**In the last**), and the **Decrease concurrent calls by** percentage to control pacing when the condition is met.
-
-1. Select **Next**.
-
-**SMS template configuration**
-
-On the **SMS template configuration** page, create and customize the SMS message template for this engagement.
-
-1. Under **Templates**, turn on **Enable message templates for this workflow**. This setting is turned on by default if you select **Upload a file** as the intake method. For **CCaaS API** and **MCP**, this is optional&mdash;the message content can be included directly in the payload instead.
-
-1. In the **Message** field, compose the SMS message to send to customers. Use the personalization menu to insert dynamic fields from the contact record, including:
-   - **First Name**
-   - **Last Name**
-   - **Phone Number**
-   - **Email**
-   - **Postal Code**
-   - **Country**
-   - **City**
-   - **Street**
-
-   The **Preview** pane on the right shows a directional rendering of the message as it would appear on a mobile device. Actual renditions might vary.
-
-   > [!NOTE]
-   > The message field supports up to 1000 characters.
-
-1. Select **Next**.
-
-[!INCLUDE [proactive-frequency-limits](../includes/proactive/cc-proactive-frequency-limits.md)]
-
-**Summary**
-
-Review all settings on the **Summary** page, and select **Create**.
-
-[!INCLUDE [proactive-file-upload](../includes/proactive/cc-proactive-file-upload.md)]
-
----
 
 ## Manage proactive engagements
 
-### Configure multiparty (account) engagements
+Use the following options to manage proactive engagements for voice and messaging:
 
-Contact chaining lets you group related contacts, such as members of the same household or account, and treat them as a single unit for engagement purposes.
+   - **Voice**:
+     - For contact chaining, phone number order, and retry behavior across related contacts, see [Configure multiparty (account) engagements](configure-proactive-engagement-voice.md#configure-multiparty-account-engagements).
+     - For cancellation policies and suppressing future calls, see [Configure voice call cancellation and suppression](configure-proactive-engagement-voice.md#configure-voice-call-cancellation-and-suppression).
+   - **Messaging**: For cancellation and reporting, see [Manage messaging engagements](configure-proactive-engagement-messaging.md#manage-messaging-engagements).
 
-- You can group up to five contacts when you are uploading a file or submitting requests through the API.
-- All contacts in the chain are considered for every attempt. The system dials contacts in the order they appear in the file or API array.
-- If all phone numbers across all chained contacts are exhausted on an attempt, the system waits for the configured retry interval before starting the next attempt and cycles through all contacts again.
-
-### Configure call cancellation and suppression
-
-You can cancel pending calls and optionally suppress future calls that match defined criteria.
-
-1. In the site map, select **Productivity** under **Support experience**, and select **Manage** for **Proactive engagements**.
-
-1. Select **Go to settings**, and then select **Add a cancellation policy**.
-
-1. Specify filter criteria using any combination of the following in AND conditions:
-   - Proactive engagement configuration ID
-   - Country/Region
-   - State
-   - Postal code
-
-1. Optionally, specify an end date in **Execute policy until**. Contacts matching the criteria won't be processed for new calls during the specified period.
-1. Optionally, enter a **Comment**. Cancelled calls are marked in the delivery tables with a reference to the cancellation policy to enable reporting.
-
-> [!NOTE]
-> Cancellation applies to queued calls only. You can also trigger cancellation and suppression through the CCaaS API. Learn more in [Use CCaaS_CreateProactiveVoiceDelivery API](../extend/api/ccaas_createproactivevoicedelivery.md).
-
-## Requirements for direct routing
-
-If your organization uses direct routing for telephony, the following configuration requirements apply to representative-led progressive and predictive dial modes. These requirements ensure that the Session Border Controller (SBC) can handle the call-transfer scenarios that progressive and predictive dialing rely on.
-
-### SBC interoperability requirements
-
-- **RFC 3891 Replaces: header support**: The SBC must accept INVITE messages that contain both the `Require: replaces` header and the `Replaces` header. This capability is essential for the mid-call transfer flows used in progressive and predictive dial modes.
-- **Standard direct routing interoperability**: The SBC must support RFC 3325 handling for `P-Asserted-Identity` with Privacy ID, along with other direct routing SIP requirements relevant to your deployment.
-- **TLS and SIP trust alignment**: The SBC trust store must include all supported root certificate authorities (CAs) for Teams SIP interface certificates. Teams SIP interface client and server certificates can chain to any one of the supported root CAs, so the SBC trust store must include all supported roots.
-
-### Oracle SBC configuration guidance for Replaces
-
-For Oracle SBC deployments, Replaces support is driven by `sip-profile` configuration. Replaces header support is configured by applying a SIP profile to a session-agent, realm, or SIP interface. The `replace-dialogs` parameter is the key control.
-
-Oracle-documented ACLI sequence (core parameter only):
-
-```text
-configure terminal
-session-router
-sip-profile
-  replace-dialogs enabled
-done
-```
-
-> [!NOTE]
-> After enabling `replace-dialogs`, bind the SIP profile to the specific session-agent, realm, or SIP interface used for the Microsoft-facing leg per your Oracle release and deployment model. Oracle's documentation is explicit about where the profile can be applied, but the exact attachment point should match your topology and software version.
-
-> [!IMPORTANT]
-> Oracle documentation states that if the endpoints participating in the Replaces scenario are in the same realm, the realm-config must have `mm-in-realm` enabled. Otherwise, the SBC can't generate the SDP for the 200 OK and the call is unsuccessful.
-
-### Related information
+## Related information
 
 [Overview of proactive engagement](overview-proactive-engagement.md)  
+[Configure proactive engagement for voice](configure-proactive-engagement-voice.md)  
+[Configure proactive engagement for messaging](configure-proactive-engagement-messaging.md)  
 [Dial modes for proactive engagement](proactive-engagement-dial-modes.md)  
+[Manage consent for proactive engagement](proactive-engagement-manage-consent.md)  
 [Outcomes for proactive engagement](proactive-engagement-outcomes.md)  
 [Best practices for proactive engagement campaigns](proactive-engagement-best-practices.md)  
 [How proactive engagement works](../use/how-proactive-engagement-works.md)  

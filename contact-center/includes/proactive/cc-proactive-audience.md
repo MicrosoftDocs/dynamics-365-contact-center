@@ -1,5 +1,3 @@
- **Audience**
-
 On the **Audience** page, configure how you source customers and lead the engagement.
 
 1. Under **Select your audience**, choose how to provide customer contact information:

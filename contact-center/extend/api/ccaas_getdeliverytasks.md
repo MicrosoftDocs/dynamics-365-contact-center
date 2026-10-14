@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Use CCaaS_GetDeliveryTasks API
 
-You can use the `CCaaS_GetDeliveryTasks` API to retrieve the status and details of a proactive delivery task created through the Proactive Engagement service. It returns the current status, retry information, [contact chaining](../../administer/configure-proactive-engagement.md#configure-multiparty-account-engagements) state, and the individual deliveries associated with the task.
+You can use the `CCaaS_GetDeliveryTasks` API to retrieve the status and details of a proactive delivery task created through the Proactive Engagement service. It returns the current status, retry information, [contact chaining](../../administer/configure-proactive-engagement-voice.md#configure-multiparty-account-engagements) state, and the individual deliveries associated with the task.
 
 ## Prerequisites
 

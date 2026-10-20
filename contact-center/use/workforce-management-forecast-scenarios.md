@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes in Dynamics 365 Contact Center and Customer Service.
-ms.date: 09/14/2026
+ms.date: 10/19/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -21,18 +21,20 @@ Create a forecast scenario to define what to analyze and how often to generate p
 
 - A security role with the **Read** privilege on the `msdyn_dataanalyticsreport_forecast` table.
 - For an external data source, upload the file beforehand through the **Manage External Data** option. Learn more in [Import historical data for forecast scenarios](workforce-management-import-historical-data.md).
+- Enough historical data for each queue and channel to support the forecast duration and start date. Learn more in [Understand minimum data requirements and forecast accuracy](#understand-minimum-data-requirements-and-forecast-accuracy).
 
 ## Create a forecast scenario
 
-Create a forecast scenario to define what data to analyze and how often to generate forecasts.
+Create a forecast scenario to define what data to analyze, when forecast values start, and how often to generate forecasts. Ensure you have enough historical data for the start date and duration you choose. Learn more in [Understand minimum data requirements and forecast accuracy](#understand-minimum-data-requirements-and-forecast-accuracy).
 
 1. In the site map of Copilot Service workspace, select **Forecasting** under **Workforce Management**. The **Active Forecast Scenarios** page appears.
 1. Select **New**, and then select either **Short-term** or **Long-term**. The **New Forecast Scenario** page appears.
 1. On the **Details** card, enter the following information:
 
    - **Name**: Specify a unique name so you can identify the scenario later.
-   - **Duration (Days)**: Enter the number of days the forecast covers.
-     - Short-term scenarios support up to 42 days.
+   - **Forecast Start Date**: Select the first date you want to see forecast values for. The date must fall within the supported forecast window for the forecast type. A later start date requires more historical data.
+   - **Duration (Days)**: Enter the number of days to forecast, starting from the **Forecast Start Date**.
+     - Short-term scenarios support up to 84 days.
      - Long-term scenarios support up to 1,095 days.
    - **Interval**: Values are set automatically to intraday (short-term) or daily (long-term).
    - **Time zone**: Select the time zone for forecast generation and display.
@@ -63,7 +65,6 @@ Create a forecast scenario to define what data to analyze and how often to gener
 > [!NOTE]
 > - After you save, the scenario doesn't run immediately. It stays in **Draft** until its first scheduled run.
 > - Auto refresh isn't available when you use an external data source.
-> - Forecast accuracy improves as more historical data accumulates.
 
 ## Associate a forecast scenario with a planning group
 
@@ -108,7 +109,7 @@ When you create a new snapshot, the following actions occur:
 
 ### View output
 
-Select **View Output** to open the report and analyze actual and predicted volume and AHT. 
+Select **View Output** to open the report and analyze actual and predicted volume and AHT.
 
 ### View job history
 
@@ -123,13 +124,80 @@ The job history shows the following details for each run:
 - **Job type**: The kind of run, such as a forecast scenario run.
 - **Run details**: The timing of the run and related information.
 
+If a queue and channel are flagged with **Insufficient Historical Data**, review their completion status to determine whether a forecast was generated **with reduced confidence** or skipped. Learn about the generation and skip conditions in [When history is insufficient](#when-history-is-insufficient).
+
 ### Delete a scenario
 
 Select **Delete** to remove a scenario you no longer need. You can't delete a scenario that a capacity plan uses.
 
+## Understand minimum data requirements and forecast accuracy
+
+Forecasting checks the historical data for each queue and channel before it generates a forecast. If a queue and channel don't have the minimum amount of history, forecasting generates a forecast with reduced confidence or skips that queue and channel.
+
+### How forecast dates affect the data requirement
+
+Forecasting always starts predicting on the day after the **Historical End Date**, the last day with actual data. If you select a later **Forecast Start Date**, forecasting still predicts the days in between but doesn't show them. These hidden days are the **gap**. Because forecasting predicts the gap, the gap counts toward the history you need.
+
+For example, if the historical end date is September 30, 2026, and you select a forecast start date of October 9, the gap is eight days (October 1 through October 8). With a duration of 20 days, you see predictions for October 9 through October 28.
+
+Available history is counted in calendar days, from the **Historical data start date** through the **Historical End Date**, including both dates.
+
+### Minimum historical data
+
+The system calculates the requirement for each queue and channel. All values in the following table are calendar days. Round fractional results up to the next full day.
+
+| Forecast type | Required history, including the gap | Baseline history with no gap |
+| --- | --- | --- |
+| Short-term | Gap + duration | Duration |
+| Long-term | (Gap + duration) / 2, rounded up | Duration / 2, rounded up |
+
+For example, a 365-day long-term forecast with no gap requires 183 days of history, not 182 days.
+
+### When history is insufficient
+
+If a queue and channel have enough history to meet the gap-adjusted requirement, forecasting generates their forecast normally. The grace period described in this section applies only when history falls short of that requirement. It isn't a limit on gaps when sufficient history is available.
+
+If history falls short of the gap-adjusted requirement, the queue and channel are flagged with **Insufficient Historical Data**. Forecasting still generates a forecast **with reduced confidence** only when both of the following conditions are met:
+
+- The gap is within the grace period: no more than half the duration, rounded up to a full day, for short-term forecasts; no more than 90 days for long-term forecasts.
+- Available history meets the baseline requirement with no gap: at least the duration for short-term forecasts, or half the duration rounded up for long-term forecasts.
+
+If either condition isn't met, forecasting skips that queue and channel and generates no forecast for them. The reason remains **Insufficient Historical Data**. Review the queue and channel completion status to distinguish a forecast generated **with reduced confidence** from a skipped forecast. For information about reviewing runs, go to [View job history](#view-job-history).
+
+### Short-term examples
+
+For a 20-day short-term forecast, the baseline history requirement is 20 days and the grace period is 10 days.
+
+| Gap (days) | Available history (days) | Required history (days) | Result for the queue and channel |
+| --- | --- | --- | --- |
+| 0 | 30 | 20 | Forecast generated. |
+| 0 | 15 | 20 | Skipped: history is below the 20-day baseline. **Insufficient Historical Data**. |
+| 8 | 22 | 28 | Forecast generated with **Insufficient Historical Data** and **reduced confidence**: the gap is within 10 days and history meets the 20-day baseline. |
+| 12 | 22 | 32 | Skipped: history is below the requirement and the gap exceeds 10 days. **Insufficient Historical Data**. |
+| 12 | 32 | 32 | Forecast generated: history meets the gap-adjusted requirement, so the grace period doesn't apply. |
+
+### Long-term examples
+
+For a 365-day long-term forecast, the baseline history requirement is 183 days and the grace period is 90 days.
+
+| Gap (days) | Available history (days) | Required history (days) | Result for the queue and channel |
+| --- | --- | --- | --- |
+| 0 | 200 | 183 | Forecast generated. |
+| 0 | 150 | 183 | Skipped: history is below the 183-day baseline. **Insufficient Historical Data**. |
+| 60 | 205 | 213 | Forecast generated with **Insufficient Historical Data** and **reduced confidence**: the gap is within 90 days and history meets the 183-day baseline. |
+| 120 | 205 | 243 | Skipped: history is below the requirement and the gap exceeds 90 days. **Insufficient Historical Data**. |
+| 120 | 243 | 243 | Forecast generated: history meets the gap-adjusted requirement, so the grace period doesn't apply. |
+
+### Forecast accuracy
+
+Meeting the minimum requirement lets forecasting run, but it doesn't guarantee an accurate forecast. To get more reliable results:
+
+- Provide as much history as you can. Forecast accuracy improves as more historical data accumulates.
+- Keep the gap small. Selecting a forecast start date close to the historical end date reduces the history you need.
+- Review forecasts flagged with **Insufficient Historical Data** before you use them for capacity planning. These forecasts are generated **with reduced confidence**.
+
 ## Related information
 
-- [Overview of forecasting](workforce-management-forecast-overview.md)
-- [Forecast with weighted average (preview)](workforce-management-forecast-weighted-average.md)
-- [Import historical data for forecast scenarios](workforce-management-import-historical-data.md)
-
+[Overview of forecasting](workforce-management-forecast-overview.md)  
+[Forecast with weighted average (preview)](workforce-management-forecast-weighted-average.md)  
+[Import historical data for forecast scenarios](workforce-management-import-historical-data.md)

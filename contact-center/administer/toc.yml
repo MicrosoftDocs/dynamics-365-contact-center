@@ -170,8 +170,12 @@
           items:
           - name: Manage quality evaluation
             href: manage-quality-evaluation-agent.md
-        - name: Configure screen recording
-          href: configure-screen-recording.md
+        - name: Screen recording
+          items: 
+          - name: Configure screen recording
+            href: configure-screen-recording.md
+          - name: Configure data masking for screen recordings
+            href: mask-data-in-screen-recording.md
       - name: Email
         items:
         - name: Configure email

@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 10/09/2026
+ms.date: 10/23/2026
 ms.custom: bap-template
 ---
 
@@ -64,7 +64,7 @@ Before you create and activate an evaluation plan for cases, select the **Enable
             - **End date**: Optionally, specify an end date for the plan by selecting **Add end date and time**.
             If you don't specify an end date, the evaluation plan continues to run according to its recurrence configuration until it's manually deactivated or modified.
 
-    1.  In the **Conditions** section, select **Add** to add conditions to your evaluation plan. Available conditions depend on the selected record type. For example,
+    1. In the **Conditions** section, select **Add** to add conditions to your evaluation plan. Available conditions depend on the selected record type. For example,
 
          - To evaluate open cases: Select **Field**: State, **Operator**: Equals, **Value**: Open
 
@@ -88,7 +88,7 @@ Before you create and activate an evaluation plan for cases, select the **Enable
         > [!NOTE]
         > If the system can't distribute the sample evenly across representatives, it doesn't create an evaluation batch. The evaluation run is recorded in [run history](#view-run-history-for-a-plan) and the system logs the execution result.
 
-1. In the **Assign evaluation** section, provide the following information:
+    1. In the **Assign evaluation** section, provide the following information:
 
         - **Evaluation criteria:** Select the criteria from the dropdown. For example, select **Closed Conversations Default Criteria**.
 
@@ -131,7 +131,7 @@ Each batch run supports a maximum of 20,000 records.
 
 ## Use on-demand evaluation
 
-You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases and conversations when needed.
+You can also use [on-demand evaluation](on-demand-evaluation.md#use-on-demand-evaluation) to check cases, conversations, and emails when needed.
 
 ## Configure trigger-based evaluation plans for resolved cases
 
@@ -154,7 +154,8 @@ To view the evaluations, go to the **Evaluations** page. When the **AI agent sta
 
 1. Select the action that you want to take. On the respective dialog box, confirm the action and save.
 
-When you pause a plan, it finishes the current batch and then stops before the next run. When you resume, the plan starts at its next scheduled time.
+- When you pause a plan, it finishes the current batch and then stops before the next run.
+- When you resume, the plan starts at its next scheduled time.
 
 ## Edit evaluation plans
 
@@ -167,6 +168,12 @@ You can't edit active evaluation plans, or modify the existing record type or ev
 1. Save the changes.
 
 1. Select **Activate plan** to activate the plan.
+
+## Overall evaluation score
+
+The evaluation score is calculated from the applicable questions in the evaluation. The overall evaluation score is the sum of all section scores. Overall score = Sum of all section scores, out of 100. However, questions marked as **Not Applicable** are excluded from the score calculation.
+
+Use the score breakdown to understand the overall evaluation score to the individual responses included in the evaluation. The breakdown provides information about the scores at the section and question levels, including the question weights and their contribution to the overall score. Learn more in [View evaluations](use-evaluations.md#view-evaluations).
 
 ## Run bulk evaluation for cases
 

@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 09/18/2026
+ms.date: 10/23/2026
 ms.custom: bap-template 
 ---
 
@@ -17,8 +17,11 @@ This article explains how to use, edit, and extend evaluation criteria, includin
 
 ## Prerequisites
 
+Before you create evaluation criteria, make sure that:
+
 - Enable [Quality evaluation](../administer/manage-quality-evaluation-agent.md).
-- Assign the required [roles and privileges](../administer/manage-quality-evaluation-agent.md#roles-and-privileges).
+- Complete prerequisites to use knowledge sources in evaluation criteria.
+- Assign required [roles and privileges](../administer/manage-quality-evaluation-agent.md#roles-and-privileges).
 - Set up [Microsoft Copilot credits](/dynamics365/customer-service/administer/setup-pay-as-you-go?context=/dynamics365/contact-center/context/administer-context).
 - Provide consent for potential [data movement across regions](../administer/manage-quality-evaluation-agent.md#data-movement-across-regions).
 
@@ -49,29 +52,43 @@ Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best pra
 
 1. Turn on the **Allow scoring for question** toggle to define weights per question within a section.
 
-1. Select your language from the **Language** dropdown list. By default, all existing criteria are in English. You can't change the language after you save a criteria, even in the **Draft** state. Evaluation results are returned in the same language. 
+1. Select your language from the **Language** dropdown list. By default, all existing criteria are in English. You can't change the language after you save a criteria, even in the **Draft** state. Evaluation results are returned in the same language.
+
+1. In the **Knowledge sources** section, turn on the **Link knowledge article** toggle, if you want to associate published knowledge articles to an evaluation criteria. Learn more in [Use knowledge sources in evaluation criteria](#use-knowledge-sources-in-evaluation-criteria).
+
+    - In **Knowledge source**, add a published knowledge article. The latest version of the article is used.
+
+    - Define the evaluation criteria questions.
+
+    - For applicable questions, turn on the toggle to use a knowledge source and link the knowledge article.
+
+    - Provide any supplemental instructions required for the question.
+
+    - Save and publish the evaluation criterion.
 
 1.  In the **Add form level instructions** section, enter instructions, if any.
 
 1.  In **Section 1**, enter the following details:
 
-    1.  **Section name**: Enter a name.
+    - **Section name**: Enter a name.
 
-    1.  **Description**: Enter a description.
+    - **Description**: Enter a description.
 
-    1.  **Section weight (%)**: Assign a weight to the evaluation criteria. The total weight across sections must equal 100%.
+    - **Section weight (%)**: Assign a weight to the evaluation criteria. The total weight across sections must equal 100%.
 
 1.  Select **Add question** if you want to add a question.
 
     For each question, enter the following details:
 
-    1.  **Select answer type**: Select from the options, **Yes/No**, **Multi-select**, **Single-select**, or **Descriptive**.
+    -  **Select answer type**: Select from the options, **Yes/No**, **Multi-select**, **Single-select**, or **Descriptive**.
 
-    1.  **Form question text**: Enter the form question text.
+    -  **Form question text**: Enter the form question text.
 
-    1.  **Add question-level instructions**: Enter instructions for the question, if any. Instructions help generate evaluation answers and improve accuracy.
+    - **Add question-level instructions**: Enter instructions for the question, if any. Instructions help generate evaluation answers and improve accuracy.
+
+    - **Allow Not Applicable responses**: Select to allow evaluators to mark the question as not applicable. When selected, other answer choices are cleared, and the question is excluded from the evaluation score. The score is calculated based only on applicable questions. Learn more in [Overall evaluation score](evaluation-plan.md#overall-evaluation-score).
     
-    1. Select **AI response enabled** to allow AI to predict an answer for this question. If you don't select this option, AI doesn't process the input or return an answer. Evaluation creation fails if the criteria lacks AI-enabled questions for the selected mode in an evaluation plan, as follows:
+    - Select **AI response enabled** to allow AI to predict an answer for this question. If you don't select this option, AI doesn't process the input or return an answer. Evaluation creation fails if the criteria lacks AI-enabled questions for the selected mode in an evaluation plan, as follows:
 
     - **AI agent mode**: All questions must be AI-enabled. Manual editing isn't allowed.
     - **AI assisted mode**: At least one question must be AI-enabled.
@@ -80,7 +97,7 @@ Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best pra
 
     1.  Depending on the answer type, select **Scoring enabled** to add scoring. Turn off the scoring toggle if you don't want to create a criteria with scoring.
 
-    1. Select **Mark as critical question** if you want the question to be marked as critical.
+    1. Select **Mark as critical question** if you want the question to be marked as critical. Learn more in [Mark a question as critical](#mark-a-question-as-critical).
 
 1.  For **Answer options** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required. If you marked the question as critical, you must select the **Mark as fail** option for an answer to avoid errors.
 
@@ -150,12 +167,6 @@ When you enable question-level weightage:
     
     - For **Descriptive** questions, there's no scoring.
     
-### Overall evaluation score
-
-The overall evaluation score is the sum of all section scores.
-
-Overall score = Sum of all section scores, out of 100
-
 ### Scoring with extended criteria
 
 Extended criteria (child criteria) let organizations enforce a shared evaluation baseline while allowing individual business units to add their own evaluation questions.
@@ -270,6 +281,29 @@ After you create source criteria for your business unit, you can extend the crit
 1. Select the checkbox for the default criteria, and then select **Copy**. You receive a copy of the prefilled default criteria form as the source. You can make edits as needed.
 
 1. Select **Save** when you finish making edits.
+
+## Use knowledge sources in evaluation criteria
+
+### Prerequisites
+
+- Knowledge-source-based evaluation criteria is enabled in your environment.
+- A published knowledge article exists in Dynamics 365.
+- You have permissions to create and manage evaluation criteria.
+- Dataverse Copilot indexing and knowledge sources are enabled from the Copilot Service admin center.
+
+Knowledge adherence enables evaluators to use knowledge articles as reference sources for specific evaluation questions. During evaluation, the system retrieves relevant information from the linked articles and uses it to generate responses. The feature uses existing knowledge base assist retrieval capabilities and requires Dataverse Copilot provisioning for knowledge retrieval.
+
+When an evaluation runs, the agent grounds its scoring against the linked article and cites the reasoning from the knowledge article sources, which helps customers enforce their own evaluation policies.
+
+For any case, you can view the criteria and the knowledge source used for the answers provided in the evaluation summary. You can also select the knowledge article link to go through the article details.
+
+### Limitations
+
+- You can add one knowledge article per criteria and link the article to two knowledge-enabled questions per criteria.
+- Supported for the case entity and for on-demand evaluations only.
+- Simulation on knowledge criteria isn’t supported.
+- Knowledge sources can't be added if the character limit of the criteria has been reached.
+- Only Dynamics 365 knowledge articles are supported.
 
 ## Best practices for evaluation criteria
 

@@ -7,7 +7,7 @@ ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 09/18/2026
+ms.date: 10/22/2026
 ms.custom: bap-template
 ---
 
@@ -74,20 +74,24 @@ Edit evaluations and modify responses in an evaluation after it's submitted. Whe
 > [!NOTE]
 > You can't edit evaluations that are in **In progress** status. The **Edit** action remains disabled for nonsubmitted evaluations.
 
-### Requirements to edit an evaluation
+### Prerequisites
 
 Before you edit a submitted evaluation, make sure that you meet the following requirements.
 
 - The evaluation must be **submitted (completed)**.
 - You have the **Quality Admin** or the **Quality Manager** role, or the **Override submitted evaluation** (Miscellaneous privilege) added to your role. In Power Platform admin center, search for the **Evaluation (msdyn_evaluation)** table and the **Miscellaneous privileges** > **Override Submitted evaluation (prvOverrideSubmittedEval)** privilege. Learn more in [User management](/dynamics365/customer-service/implement/overview-users).
 
-To edit:
+To edit, perform the following steps:
 
 1. In the site map of Copilot Service workspace, go to **Evaluations** in **Service**.
 1. Select and open an evaluation with the status **Completed**. The evaluation opens in a read-only view and indicates that it's submitted.
 1. Select **Edit**. The evaluation switches to **Edit** mode and indicates that you can update responses and submit when ready.
 1. Update the answers as required.
 1. Select **Submit** to apply your changes. Your changes don't take effect until you submit. After you submit, the evaluation returns to the submitted (read-only) state.
+
+## Mark an evaluation as inactive
+
+All evaluation records are active by default. You can mark an evaluation record as inactive to exclude it from average quality scores and reports. Marking an evaluation as inactive doesn't delete the evaluation record.
 
 ## Regenerate evaluation summaries
 

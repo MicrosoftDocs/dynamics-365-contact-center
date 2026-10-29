@@ -1,7 +1,7 @@
 ---
 title: Estimate AI agent credits from forecasts
 description: Use AI credit estimation in Dynamics 365 Customer Service and Dynamics 365 Contact Center to project AI credit consumption based on forecasted demand.
-ms.date: 05/14/2026
+ms.date: 10/27/2026
 author: lalexms
 ms.author: laalexan
 ms.reviewer: laalexan
@@ -23,20 +23,21 @@ AI credit estimation is integrated with Workforce Management forecasting scenari
 ## Prerequisites
 
 - [Workforce Management](../administer/workforce-management-package-installation.md) is set up.
-- Forecast scenarios are configured with forecasted case or conversation volumes.
+- You have a security role with the **Read** privilege on the `msdyn_dataanalyticsreport_forecast` table.
+- At least one forecast scenario is created and run, with forecasted case or conversation volumes.
 
 ## Create a forecast scenario
 
-Before you estimate AI credit consumption, create and run a forecast scenario.
+Before you estimate AI credit consumption, create and run a forecast scenario. AI credit estimates are based on the forecasted volumes in the scenario.
 
-1. In **Copilot Service workspace**, go to **Workforce Management** > **Forecasting**.
-1. Select **New forecast scenario**.
-1. Define the planning horizon.
-1. Select an entity type, such as **Case** or **Conversation**.
+1. In the site map of Copilot Service workspace, select **Forecasting** under **Workforce Management**. The **Active Forecast Scenarios** page appears.
+1. Select **New**, and then select either **Short-term** or **Long-term**.
+1. Define the planning horizon in **Duration (Days)**.
+1. In **Forecast entity**, select **Case** or **Conversation**.
 1. Select the queues and channels to include in the forecast.
-1. Run the forecast to generate predicted workload volumes.
+1. Save and run the forecast to generate predicted workload volumes.
 
-The forecasting model analyzes historical traffic patterns, including seasonal trends and workload variations, to generate projected demand across queues and channels.
+The forecasting model analyzes historical traffic patterns, including seasonal trends and workload variations, to generate projected demand across queues and channels. Learn more about all the forecast scenario settings in [Create and manage forecast scenarios](workforce-management-forecast-scenarios.md).
 
 ## Estimate AI agent credits
 
@@ -48,7 +49,7 @@ After the forecast scenario is generated, you can estimate AI credit consumption
     - **Quality Evaluation Agent**
     - **Case Management Agent**
     - **Customer Intent Agent**
-1. Define the percentage of forecasted workload that each AI agent or feature is expected to handle.
+1. For each selected AI agent, enter the percentage of the forecasted workload that you expect the agent to handle.
 1. Review the projected AI credit consumption.
 
 The estimator provides the following metrics:
@@ -85,7 +86,8 @@ These projections help organizations support budgeting, operational planning, an
 
 AI credit estimation provides a unified view of forecasted workload demand and projected AI credit requirements. Organizations can use these insights to validate assumptions, optimize AI usage, and plan workforce capacity effectively.
 
-### Related information
+## Related information
 
-- [Create and manage forecast scenarios](workforce-management-forecast-scenarios.md)
-- [Import historical data](workforce-management-import-historical-data.md)
+[Create and manage forecast scenarios](workforce-management-forecast-scenarios.md)  
+[Import historical data for forecast scenarios](workforce-management-import-historical-data.md)  
+[View and analyze forecasts](workforce-management-view-analyze-forecasts.md)

@@ -1,57 +1,44 @@
 ---
-title: Configure conversation orchestration in Dynamics 365 Contact Center (preview)
+title: Configure conversation orchestration in Dynamics 365 Contact Center
 description: Learn how to manage intelligent conversation routing with conversation orchestration. Set up dynamic prioritization and overflow actions to enhance customer service.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 10/01/2026
+ms.date: 10/30/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
+ai-usage: ai-assisted
 ---
 
-# Configure conversation orchestration by using natural language playbooks (preview)
+# Configure conversation orchestration by using natural language playbooks
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+> [!IMPORTANT]
+> Conversation orchestration consumes Copilot credits only when you publish a playbook, which makes the configured orchestration logic active for use. After you publish, the playbook can process any number of customer conversations without consuming extra Copilot credits. When you save the playbook as a draft or enable conversation orchestration, it doesn't consume Copilot credits.
 
 Conversation orchestration keeps every conversation actively managed throughout the conversation lifecycle from initiation through resolution. Conversation orchestration monitors each conversation as conditions evolve, such as an increase in wait time, queues filling up, or service representatives going offline, and automatically runs the relevant action in accordance with your configured playbooks. Administrators define the logic by using natural-language playbooks, and conversation orchestration handles the execution. When you publish a playbook, the system converts your natural language playbooks into a structured runtime format.
 
 Conversation orchestration is available for voice and messaging channels only.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
-
 ## Prerequisites
 
 - Specific licensing requirements apply to configure and use conversation orchestration in Dynamics 365 Contact Center. Learn more in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 - System administrator or Omnichannel administrator role.
-- The Power Platform [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview) mandates the use of an Azure subscription that the system charges when the agent runs. Make sure that you [set up consumption-based billing](/dynamics365/customer-service/administer/setup-pay-as-you-go).
+- Set up [consumption-based billing](/dynamics365/customer-service/administer/setup-pay-as-you-go). If you use the Power Platform [pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview), you need an Azure subscription.
 - Unified routing enabled for your environment.
 - At least one [queue](/dynamics365/customer-service/administer/queues-omnichannel?context=/dynamics365/contact-center/context/administer-context) and [workstream](/dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context) is configured for voice or messaging channels.
 - A voice or messaging channel is configured.
 
 ## Supported scenarios
 
-The supported scenarios are as follows:
+Use the following playbook templates to configure conversation orchestration for your queues.
 
-- [**Dynamic prioritization**](/dynamics365/customer-service/administer/assignment-methods#how-dynamic-prioritization-works-preview):
-
-  - Update priority based on transfer to queue.
-  - Escalate priority based on conversation wait time.
-
-- **Overflow handling**:
-
-  - [Overflow based on support representative availability in the queue, sign in status, and queue operating hours, wait time in queue, and queue position](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview).
-  - [Handle overflow for direct inward dialed calls when a representative isn't available](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-direct-inward-dialled-calls-preview).
-
-- **Assign to a preferred expert or previously engaged representative**:
-
-  - [Assign to a previously engaged or preferred expert by using conversation orchestration playbooks](/dynamics365/customer-service/administer/configure-preferred-agent#assign-to-a-previously-engaged-or-preferred-expert-by-using-conversation-orchestration-playbooks-preview).
-
-  - [Keep same expert for asynchronous chats, by checking presence status, and active conversation limits of the expert](/dynamics365/customer-service/administer/configure-preferred-agent#keep-same-expert-for-returning-asynchronous-chats-with-active-conversation-limit-and-presence-status-checks).
-
-- [**Bullseye routing through user groups**](configure-bullseye-routing.md):
-
-  - Expand the pool of representatives through user groups in the queue based on conversation wait time.
+| Scenario | Description | Playbook templates |
+|----------|-------------|--------------------|
+| Dynamic prioritization | [Automatically increase or reset conversation priority](/dynamics365/customer-service/administer/assignment-methods#how-dynamic-prioritization-works) based on wait time, queue transfers, or queue consults so that higher-value or time-sensitive conversations are routed sooner. Tailor priority by context variables, such as customer tier or product ownership. Dynamic prioritization works with existing overflow rules, assignment rules, and other conversation orchestration playbooks. It doesn't apply to queues with custom prioritization rules. Use classification rules to set the initial conversation priority score. | **Escalate priority based on conversation wait time**<br><br>**Update priority of the conversation during queue transfers**<br><br>**Update priority of the conversation during queue consults** |
+| Overflow handling | Configure [real-time overflow actions](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-work-items-in-queue) when queue conditions change, such as when the queue is outside operating hours, all representatives are signed out, no representatives are available, wait times are high, or queue demand is high. For [direct inbound calls](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-direct-inward-dialled-calls), configure fallback actions when the target representative is unavailable, rejects the call, or doesn't respond before the notification times out. | **Manage overflow of incoming conversations using advanced conditions**<br><br>**Handle overflow for direct inbound call** |
+| Assign to a preferred expert or previously engaged representative | [Route conversations to a preferred expert mapped to the contact or to a representative who previously interacted with the customer](/dynamics365/customer-service/administer/configure-preferred-agent#assign-to-a-previously-engaged-or-preferred-expert-by-using-conversation-orchestration-playbooks), with fallback to the next best available expert. For [returning asynchronous chats](/dynamics365/customer-service/administer/configure-preferred-agent#keep-same-expert-for-returning-asynchronous-chats-with-active-conversation-limit-and-presence-status-checks), keep the same expert when representative affinity is enabled and the expert meets the presence and active conversation limit requirements. | **Assign to a previous or preferred expert**<br><br>**Keep the same expert for async chats** |
+| Bullseye routing through user groups | Start assignment with a targeted Level 0 user group, then progressively expand to additional user groups as wait time increases. Earlier groups remain active and take priority over later groups, without transferring the conversation to another queue. Configure user groups, then configure a [bullseye playbook](configure-bullseye-routing.md) for one or more queues. | **Bullseye routing** |
 
 ## Understand playbooks
 
@@ -70,65 +57,9 @@ A playbook can have one of the following statuses.
 | **Draft** | The playbook is saved but not active. You can make changes freely. |
 | **Active** | The playbook is published and actively orchestrates conversations. |
 
-## Supported trigger events, conditions, and actions
-
-In conversation orchestration, you configure natural language playbooks that specify the trigger events to respond to, the conditions to evaluate, and the actions to take when those conditions are met.
-
-The following table lists the supported trigger events, conditions, and actions that you can use in conversation orchestration playbooks.
-
-| Type | Event, condition, or action | Description |
-|------|-----------------------------|-------------|
-| Trigger event | **Conversation waiting in queue** | Triggers orchestration while a conversation is waiting in a queue. Use this event with elapsed-wait conditions to dynamically change the priority, run an overflow action, or expand the pool of representatives who are eligible for assignment. |
-| Trigger event | **Conversation transferred to queue** | Triggers orchestration when a conversation is transferred to a queue. For example, use this event to update the conversation priority after the transfer. |
-| Trigger event | **Conversation routed to queue** | Triggers orchestration when a conversation is routed to a queue. Use this event to assign the conversation to a previously engaged or preferred representative. |
-| Trigger event | **Consult to queue** | Triggers orchestration when a conversation is consulted to a queue. For example, use this event to update the conversation priority during a consult. |
-| Trigger event | **Representative signs in** | Triggers orchestration when a representative signs in. |
-| Trigger event | **Timer elapsed** | Triggers a recurring or timed evaluation after the configured timer elapses. For example, use this event to update conversation priority or expand the pool of representatives who are eligible for assignment. |
-| Trigger event | **Direct inbound call is offered to a user** | Triggers orchestration when a direct inward dialed call is offered to a representative. Use this event to run an overflow action based on the configured conditions. |
-| Condition | **Queue is out of operating hours** | Evaluates whether the queue is outside its configured operating hours, including when the queue transitions out of operating hours while conversations are waiting. Use this condition to trigger overflow actions. |
-| Condition | **All representatives are signed out** | Evaluates whether all representatives in the queue are signed out, including when this state occurs while conversations are already waiting. Use this condition to trigger overflow actions. |
-| Condition | **Estimated average wait time exceeds a threshold** | Evaluates whether the queue-level estimated average wait time exceeds the configured threshold. Use this condition to trigger overflow actions. |
-| Condition | **Conversation wait time exceeds a threshold** | Evaluates whether the actual time that a conversation has waited in the queue exceeds the configured threshold. Use this condition to trigger overflow actions. |
-| Condition | **Number of conversations waiting exceeds a threshold** | Evaluates whether the number of conversations waiting in the queue exceeds the configured threshold. Use this condition to trigger overflow actions. |
-| Condition | **User rejects the call, the notification times out, or the user is unavailable when a direct dial call is offered** | Evaluates the representative's response or availability when a direct inward dialed call is offered. Use this condition to trigger an overflow action. |
-| Condition | **User's presence status and active conversation limit** | Evaluates whether a representative has an allowed presence status and is within their active conversation limit. Use this condition to assign a returning asynchronous conversation. |
-| Action | **Change priority** | Changes the priority of a conversation based on the configured policy or elapsed wait time. |
-| Action | **Transfer to another queue** | Transfers the conversation to another queue when the configured conditions are met. |
-| Action | **Transfer to an external number** | Transfers the conversation to an external number. |
-| Action | **Offer callback** | Offers the customer a callback as an alternative to continuing to wait in the queue. |
-| Action | **Offer voicemail** | Offers voicemail as the configured action. |
-| Action | **Keep the conversation unassigned** | Keeps the conversation unassigned in its current queue as the configured treatment. |
-| Action | **End conversation** | Ends the conversation when the configured conditions are met. |
-| Action | **Expand assignment pool** | Progressively expands the pool of representatives eligible for assignment. |
-| Action | **Assign to previously engaged representative** | Attempts to assign the conversation to a representative who previously interacted with the customer, subject to the configured checks. |
-| Action | **Assign to preferred representative** | Attempts to assign the conversation to the preferred representative who is mapped to the contact. |
-| Action | **Assign to next available representative** | Uses the queue assignment method to assign the conversation to the next available representative if the preferred representative can't be assigned. |
-
-| Action | **Set user presence** | Sets a representative's presence to the specified presence status. |
-
-## Sample event-action mappings
-
-The following examples show how you can use event-action mappings for common prioritization, overflow, and assignment scenarios.
-
-| Scenario | Trigger event | Action |
-|----------|---------------|--------|
-| **Reprioritize conversations when transferred or consulted**<br><br>Preserve or increase a customer's priority when a conversation is transferred or consulted to another queue so that high-priority requests continue to receive the intended level of attention. | A conversation is transferred or consulted to a queue. | Change the conversation priority. |
-| **Prioritize customers whose wait time is increasing**<br><br>Automatically increase the priority of conversations that waited longer than a defined interval to reduce the risk of prolonged waits. | A conversation is waiting in a queue. | Update the conversation priority when the configured timer elapses. |
-| **Give customers an alternative when the queue is out of operating hours**<br><br>Provide customers with an alternative when the queue is closed. | A conversation is waiting in a queue that is out of operating hours. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
-| **Give customers an alternative when all representatives are signed out**<br><br>Provide customers with an alternative when no representatives are signed in to serve the queue. | A conversation is waiting in a queue where all representatives are signed out. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
-| **Give customers an alternative when the estimated average wait time is high**<br><br>Provide customers with an alternative when the queue-level estimated average wait time exceeds the configured threshold. | A conversation is waiting in a queue where the estimated average wait time exceeds the configured threshold. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
-| **Give customers an alternative when their conversation wait time is high**<br><br>Provide customers with an alternative when an individual conversation waited longer than the configured threshold. | A conversation is waiting in a queue and its wait time exceeds the configured threshold. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
-| **Give customers an alternative when queue demand is high**<br><br>Provide customers with an alternative when the number of conversations waiting exceeds the configured threshold. | A conversation is waiting in a queue where the number of waiting conversations exceeds the configured threshold. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
-| **Help direct-dial callers when the intended representative is unavailable**<br><br>Provide an alternative path when the intended representative rejects a direct inward dialed call, doesn't respond, or is unavailable. | A direct inward dialed call is offered to a representative, and the representative rejects the call, the notification times out, or the representative is unavailable. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
-| **Reconnect customers with a representative who knows their history**<br><br>Route a customer to a previously engaged representative when possible to reduce the need to repeat information and provide a continuous service experience. | A conversation is routed to a queue. | Assign the conversation to the previously engaged representative. If the representative is unavailable, use the configured fallback, such as assigning the conversation to the next available representative. |
-| **Connect customers with their preferred representative**<br><br>Route the conversation to the representative associated with the customer when available to provide a personalized experience. | A conversation is routed to a queue. | Assign the conversation to the preferred representative. If the representative is unavailable, use the configured fallback, such as assigning the conversation to the next available representative. |
-| **Keep returning asynchronous conversations with the same representative**<br><br>Reassign a resumed chat or messaging conversation to the previous representative when the representative is available and has capacity, which preserves ownership and customer context. | A returning asynchronous conversation is available for assignment. | Assign the returning conversation to the same representative. Otherwise, use the configured fallback to assign it to the next available representative or keep it unassigned in the queue. |
-| **Broaden the representative pool as customers continue to wait**<br><br>Start with a targeted group of representatives and progressively include more groups over time to balance specialized service with faster assignment. | A conversation is waiting in a queue. | Expand the assignment pool to include the next configured user group after the configured timer elapses. |
-| **Set representatives to the appropriate availability status when they sign in**<br><br>Automatically apply the configured presence status at sign-in so that representatives begin work in the intended state. | A representative signs in. | Set the representative's presence to the specified status. |
-
 ## Manage playbooks
 
-In Copilot Service admin center, go to **Customer support** > **Conversation Orchestration (Preview)**. The **Conversation orchestration (Preview)** > **New** page displays available playbook templates organized by scenario.
+In Copilot Service admin center, go to **Customer support** > **Conversation Orchestration**. The **Conversation orchestration** > **New** page displays available playbook templates organized by scenario.
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team’s performance and improve customer satisfaction. This feature is not intended for use in making&mdash;and should not be used to make&mdash;decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. Customers are solely responsible for using Dynamics 365, this feature, and any associated feature or service in compliance with all applicable laws, including laws relating to accessing individual employee analytics and monitoring, recording, and storing communications with end users. This also includes adequately notifying end users that their communications with representatives may be monitored, recorded, or stored and, as required by applicable laws, obtaining consent from end users before using the feature with them. Customers are also encouraged to have a mechanism in place to inform their representatives that their communications with end users may be monitored, recorded, or stored.
@@ -138,39 +69,27 @@ In Copilot Service admin center, go to **Customer support** > **Conversation Orc
 By default, the conversation orchestration page displays six popular prompts. Use **Prompt gallery** to view prompts for the different scenarios.
 
 1. On the **Conversation Orchestration** page, select **Prompt gallery**. The pop-up window displays prompt templates for all scenarios by default.
-1. In the drop-down field, select one of the following categories and then a prompt template that matches your scenario:
-   - Dynamic prioritization:
-      - **Escalate priority based on wait time**: For wait time-based dynamic or real-time prioritization.
-      - **Escalate priority based on transfer to queue**: For transfer-based prioritization.
-   - Overflow handling:
-      - **Configure overflow when queue goes out of operating hours**: For out of operating hours overflow.
-      - **Configure overflow when all users are logged out**: For all representatives in the queue are signed out overflow.
-      - **Configure overflow based on support representative availability in the queue**: For representative availability overflow.
-      - **Handle overflow for direct inward dialed call**: For overflow conditions when representative isn't available to take a direct inward dialed call.
-   - Assign to a predicted expert:
-      - **Assign to a previous or preferred expert**: For a preferred expert or expert who previously interacted with the customer.
-   - Bullseye routing with user groups
-
-1. In the playbook editor, accept the default name or enter a name in **Playbook name**.
-1. Select **Queues** > **Edit** to open the queues pane.
+2. In the drop-down field, select a scenario category, and then select a playbook template. Learn more in [Supported scenarios](#supported-scenarios).
+3. In the playbook editor, accept the default name or enter a name in **Playbook name**.
+4. Select **Queues** > **Edit** to open the queues pane.
    1. **Channel**: Select **Voice** or **Messaging**.
-   1. In **Apply to**, select how to apply the playbook.
+   2. In **Apply to**, select how to apply the playbook.
       - **All queues**: Applies to all queues for the selected channel.
       - **List of queues**: Select specific queues from the list.
       - **All queues except**: Applies to all queues except the ones you exclude.
-   1. Select **Save**.
+   3. Select **Save**.
 
-1. Optionally, add context variables to create conditions based on customer or conversation attributes:
+5. Optionally, add context variables to create conditions based on customer or conversation attributes:
    1. In the **Add variables** section, select **Add customer attribute**.
-   1. Choose from available context variables such as CustomerTier, Is VIP Customer, Preferred Language, Customer Region, or Account Type.
-   1. Provide a description for how the variable appears in the playbook.
-   1. Select the values you want to use in your conditions.
+   2. Choose from available context variables such as CustomerTier, Is VIP Customer, Preferred Language, Customer Region, or Account Type.
+   3. Provide a description for how the variable appears in the playbook.
+   4. Select the values you want to use in your conditions.
 
-1. Configure conditions and actions based on your selected template. See **Tips for this playbook** on the edit playbook page to optimally configure the conditions.
+6. Configure conditions and actions based on your selected template. See **Tips for this playbook** on the edit playbook page to optimally configure the conditions.
 
-1. Select **Save**. The playbook is saved as a draft.
+7. Select **Save**. The playbook is saved as a draft.
 
-1. Review your configuration for any validation warnings, and then select **Publish** to activate the playbook.
+8. Review your configuration for any validation warnings, and then select **Publish** to activate the playbook.
 
 > [!NOTE]
 > Administrators configure natural language playbooks. The system uses a language model to convert them to a structured runtime format. The system uses the resulting runtime format to perform playbook actions. Because the system uses a language model to convert playbooks into a structured runtime format, the converted output might not fully capture the intended playbook logic. Any deviations can be identified only during runtime. Administrators should test and monitor runtime behavior and revise the playbook if orchestration doesn't work as intended.
@@ -214,7 +133,7 @@ When you configure multiple playbooks that apply to the same queue, conversation
 
 You can't have multiple active playbooks for the same scenario and the same queue. This configuration creates a conflict that prevents publishing.
 
-For example, if you have an active "Escalate priority based on wait time" playbook for Queue A, you can't publish another wait time-based priority playbook for Queue A - even if the time interval or priority values are different. Instead, edit the existing playbook to update its configuration.
+For example, if you have an active **Escalate priority based on conversation wait time** playbook for Queue A, you can't publish another wait time-based priority playbook for Queue A - even if the time interval or priority values are different. Instead, edit the existing playbook to update its configuration.
 
 When you attempt to publish a playbook that conflicts with an existing active playbook, the system displays an error message similar to the following one:
 
@@ -286,6 +205,62 @@ Although both playbooks target Gold-tier customers, they differ in their trigger
 
 To help you monitor and troubleshoot your playbooks, conversation orchestration provides diagnostics information for each conversation that is processed by an active playbook. You can view the diagnostics information by using a custom query. Learn more in [Sample queries and dashboards](/dynamics365/guidance/resources/conversation-diagnostics-sample-queries#conversation-orchestration).
 
+## Supported trigger events, conditions, and actions
+
+In conversation orchestration, you configure natural language playbooks that specify the trigger events to respond to, the conditions to evaluate, and the actions to take when those conditions are met.
+
+The following table lists the supported trigger events, conditions, and actions that you can use in conversation orchestration playbooks.
+
+| Type | Event, condition, or action | Description |
+|------|-----------------------------|-------------|
+| Trigger event | **Conversation waiting in queue** | Triggers orchestration while a conversation is waiting in a queue. Use this event with elapsed-wait conditions to dynamically change the priority, run an overflow action, or expand the pool of representatives who are eligible for assignment. |
+| Trigger event | **Conversation transferred to queue** | Triggers orchestration when a conversation is transferred to a queue. For example, use this event to update the conversation priority after the transfer. |
+| Trigger event | **Conversation routed to queue** | Triggers orchestration when a conversation is routed to a queue. Use this event to assign the conversation to a previously engaged or preferred representative. |
+| Trigger event | **Consult to queue** | Triggers orchestration when a conversation is consulted to a queue. For example, use this event to update the conversation priority during a consult. |
+| Trigger event | **Representative signs in** | Triggers orchestration when a representative signs in. |
+| Trigger event | **Timer elapsed** | Triggers a recurring or timed evaluation after the configured timer elapses. For example, use this event to update conversation priority or expand the pool of representatives who are eligible for assignment. |
+| Trigger event | **Direct inbound call is offered to a user** | Triggers orchestration when a direct inward dialed call is offered to a representative. Use this event to run an overflow action based on the configured conditions. |
+| Condition | **Queue is out of operating hours** | Evaluates whether the queue is outside its configured operating hours, including when the queue transitions out of operating hours while conversations are waiting. Use this condition to trigger overflow actions. |
+| Condition | **All representatives are signed out** | Evaluates whether all representatives in the queue are signed out, including when this state occurs while conversations are already waiting. Use this condition to trigger overflow actions. |
+| Condition | **Estimated average wait time exceeds a threshold** | Evaluates whether the queue-level estimated average wait time exceeds the configured threshold. Use this condition to trigger overflow actions. |
+| Condition | **Conversation wait time exceeds a threshold** | Evaluates whether the actual time that a conversation has waited in the queue exceeds the configured threshold. Use this condition to trigger overflow actions. |
+| Condition | **Number of conversations waiting exceeds a threshold** | Evaluates whether the number of conversations waiting in the queue exceeds the configured threshold. Use this condition to trigger overflow actions. |
+| Condition | **User rejects the call, the notification times out, or the user is unavailable when a direct dial call is offered** | Evaluates the representative's response or availability when a direct inward dialed call is offered. Use this condition to trigger an overflow action. |
+| Condition | **User's presence status and active conversation limit** | Evaluates whether a representative has an allowed presence status and is within their active conversation limit. Use this condition to assign a returning asynchronous conversation. |
+| Action | **Change priority** | Changes the priority of a conversation based on the configured policy or elapsed wait time. |
+| Action | **Transfer to another queue** | Transfers the conversation to another queue when the configured conditions are met. |
+| Action | **Transfer to an external number** | Transfers the conversation to an external number. |
+| Action | **Offer callback** | Offers the customer a callback as an alternative to continuing to wait in the queue. |
+| Action | **Offer voicemail** | Offers voicemail as the configured action. |
+| Action | **Keep the conversation unassigned** | Keeps the conversation unassigned in its current queue as the configured treatment. |
+| Action | **End conversation** | Ends the conversation when the configured conditions are met. |
+| Action | **Expand assignment pool** | Progressively expands the pool of representatives eligible for assignment. |
+| Action | **Assign to previously engaged representative** | Attempts to assign the conversation to a representative who previously interacted with the customer, subject to the configured checks. |
+| Action | **Assign to preferred representative** | Attempts to assign the conversation to the preferred representative who is mapped to the contact. |
+| Action | **Assign to next available representative** | Uses the queue assignment method to assign the conversation to the next available representative if the preferred representative can't be assigned. |
+
+| Action | **Set user presence** | Sets a representative's presence to the specified presence status. |
+
+## Sample event-action mappings
+
+The following examples show how you can use event-action mappings for common prioritization, overflow, and assignment scenarios.
+
+| Scenario | Trigger event | Action |
+|----------|---------------|--------|
+| **Reprioritize conversations when transferred or consulted**<br><br>Preserve or increase a customer's priority when a conversation is transferred or consulted to another queue so that high-priority requests continue to receive the intended level of attention. | A conversation is transferred or consulted to a queue. | Change the conversation priority. |
+| **Prioritize customers whose wait time is increasing**<br><br>Automatically increase the priority of conversations that waited longer than a defined interval to reduce the risk of prolonged waits. | A conversation is waiting in a queue. | Update the conversation priority when the configured timer elapses. |
+| **Give customers an alternative when the queue is out of operating hours**<br><br>Provide customers with an alternative when the queue is closed. | A conversation is waiting in a queue that is out of operating hours. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
+| **Give customers an alternative when all representatives are signed out**<br><br>Provide customers with an alternative when no representatives are signed in to serve the queue. | A conversation is waiting in a queue where all representatives are signed out. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
+| **Give customers an alternative when the estimated average wait time is high**<br><br>Provide customers with an alternative when the queue-level estimated average wait time exceeds the configured threshold. | A conversation is waiting in a queue where the estimated average wait time exceeds the configured threshold. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
+| **Give customers an alternative when their conversation wait time is high**<br><br>Provide customers with an alternative when an individual conversation waited longer than the configured threshold. | A conversation is waiting in a queue and its wait time exceeds the configured threshold. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
+| **Give customers an alternative when queue demand is high**<br><br>Provide customers with an alternative when the number of conversations waiting exceeds the configured threshold. | A conversation is waiting in a queue where the number of waiting conversations exceeds the configured threshold. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
+| **Help direct-dial callers when the intended representative is unavailable**<br><br>Provide an alternative path when the intended representative rejects a direct inward dialed call, doesn't respond, or is unavailable. | A direct inward dialed call is offered to a representative, and the representative rejects the call, the notification times out, or the representative is unavailable. | [!INCLUDE[cc-run-overflow-action](../includes/cc-overflow-action.md)] |
+| **Reconnect customers with a representative who knows their history**<br><br>Route a customer to a previously engaged representative when possible to reduce the need to repeat information and provide a continuous service experience. | A conversation is routed to a queue. | Assign the conversation to the previously engaged representative. If the representative is unavailable, use the configured fallback, such as assigning the conversation to the next available representative. |
+| **Connect customers with their preferred representative**<br><br>Route the conversation to the representative associated with the customer when available to provide a personalized experience. | A conversation is routed to a queue. | Assign the conversation to the preferred representative. If the representative is unavailable, use the configured fallback, such as assigning the conversation to the next available representative. |
+| **Keep returning asynchronous conversations with the same representative**<br><br>Reassign a resumed chat or messaging conversation to the previous representative when the representative is available and has capacity, which preserves ownership and customer context. | A returning asynchronous conversation is available for assignment. | Assign the returning conversation to the same representative. Otherwise, use the configured fallback to assign it to the next available representative or keep it unassigned in the queue. |
+| **Broaden the representative pool as customers continue to wait**<br><br>Start with a targeted group of representatives and progressively include more groups over time to balance specialized service with faster assignment. | A conversation is waiting in a queue. | Expand the assignment pool to include the next configured user group after the configured timer elapses. |
+| **Set representatives to the appropriate availability status when they sign in**<br><br>Automatically apply the configured presence status at sign-in so that representatives begin work in the intended state. | A representative signs in. | Set the representative's presence to the specified status. |
+
 ## Migrate conversation orchestration playbooks
 
 You can port conversation orchestration playbooks across environments and organizations. Move a playbook from a source environment to a destination environment by adding it to a solution and using the solution export and import. This approach follows the same application lifecycle management approach used to move other routing and channel configurations by using solutions. Learn about how to use solutions or the Configuration Migration tool in [Overview of tools and apps used for ALM in Power Platform](/power-platform/alm/tools-apps-used-alm).
@@ -326,12 +301,12 @@ Confirm the playbook appears in the destination environment with all its steps a
 
 Verify that each queue and context variable the playbook references resolves to the correct destination record. Run test conversations to trigger and confirm playbook runs as expected.
 
-### Related information
+## Related information
 
 [Set up unified routing](/dynamics365/customer-service/administer/overview-unified-routing)  
 [Create and manage queues](/dynamics365/customer-service/administer/queues-omnichannel)  
 [Configure context variables](/dynamics365/customer-service/administer/manage-context-variables)  
 [Dynamic prioritization scenarios](/dynamics365/customer-service/administer/assignment-methods#how-dynamic-prioritization-works)  
 [Assign to preferred or previously interacted representatives](/dynamics365/customer-service/administer/configure-preferred-agent)  
-[Overflow scenario](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-work-items-in-queue-preview)  
+[Overflow scenario](/dynamics365/customer-service/administer/manage-overflow#use-natural-language-playbooks-to-configure-overflow-actions-for-work-items-in-queue)  
 [Conversation orchestration: Responsible AI FAQ](../implement/conversation-orchestration-rai-faq.md)  

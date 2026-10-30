@@ -1,23 +1,20 @@
 ---
-title: Configure bullseye routing using conversation orchestration playbooks (preview)
+title: Configure bullseye routing using conversation orchestration playbooks
 description: Configure bullseye routing to optimize customer service assignments. Discover how to evaluate assignment flows and prioritize users effectively.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
-ms.date: 07/13/2026
+ms.date: 10/30/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
+ai-usage: ai-assisted
 ---
 
-# Configure bullseye routing by using conversation orchestration playbooks (preview)
+# Configure bullseye routing by using conversation orchestration playbooks
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-Bullseye routing assigns conversations by progressively expanding the pool of eligible users within a queue until it finds a suitable match. It doesn't assign from a fixed pool or wait for overflow rules to trigger. It uses levels to define how the assignment scope expands over time.
+Bullseye routing starts assignment with a targeted Level 0 user group, then progressively expands the pool of eligible representatives to more user groups as wait time increases. Earlier groups remain active and take priority over later groups. The conversation stays in the same queue throughout this process.
 
 By configuring this behavior in [conversation orchestration](configure-conversation-orchestration.md), you ensure that the system first attempts assignment within the most targeted set of users before gradually expanding to a broader set when no match is found.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 ## Prerequisites
 
@@ -26,7 +23,8 @@ By configuring this behavior in [conversation orchestration](configure-conversat
 
 ## Configure bullseye routing
 
-Follow the steps in [Create a playbook](configure-conversation-orchestration.md) to configure the bullseye playbook with levels and wait times for routing. Use the onscreen help and tips to define the levels.
+1. [Create user groups](#create-user-groups) and associate them with your queues.
+1. Follow the steps in [Create a playbook](configure-conversation-orchestration.md#create-a-playbook) and select the **Bullseye routing** template. Configure the playbook for one or more queues, with levels and wait times for routing. Use the onscreen help and tips to define the levels.
 
 - Ensure multiple queues selected in a playbook share common user groups. The playbook displays user groups that are common across the selected queues only during configuration.
 - Create different bullseye routing playbooks for different queues if the queues don't share user groups.
@@ -96,7 +94,7 @@ Create user groups to organize members by skills, language, region, or other att
 
 You can view the diagnostics information by using a custom query. Learn more in [Sample queries and dashboards](/dynamics365/guidance/resources/conversation-diagnostics-sample-queries).
 
-### Related information
+## Related information
 
 [Set up unified routing](/dynamics365/customer-service/administer/overview-unified-routing)  
 [Assignment methods](/dynamics365/customer-service/administer/assignment-methods)  

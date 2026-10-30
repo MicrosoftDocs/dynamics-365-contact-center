@@ -50,7 +50,7 @@
             href: /dynamics365/customer-service/administer/configure-preferred-agent?context=/dynamics365/contact-center/context/administer-context
           - name: Manage overflow of work items in queues
             href: /dynamics365/customer-service/administer/manage-overflow?context=/dynamics365/contact-center/context/administer-context
-          - name: Configure bullseye routing using conversation orchestration (preview)
+          - name: Configure bullseye routing using conversation orchestration
             href: configure-bullseye-routing.md
         - name: Set up skill-based routing
           items:
@@ -252,7 +252,7 @@
           href: /dynamics365/customer-service/administer/voice-channel-inbound-calling?context=/dynamics365/contact-center/context/administer-context
         - name: Set up outbound calling
           href: /dynamics365/customer-service/administer/voice-channel-outbound-calling?context=/dynamics365/contact-center/context/administer-context
-        - name: Enable representatives to search for contacts and open records from outbound dialer (preview)
+        - name: Enable representatives to search for contacts and open records from outbound dialer
           href: /dynamics365/customer-service/administer/add-outbound-dialer-settings?context=/dynamics365/contact-center/context/administer-context  
         - name: Use Azure Virtual Desktop to access voice channel
           href: configure-voice-avd.md
@@ -348,7 +348,7 @@
             href: overview-service-operations-agent.md
           - name: Use Service Operations Agent
             href: use-service-operations-agent.md
-          - name: Configure conversation orchestration using natural language playbooks (preview)
+          - name: Configure conversation orchestration using natural language playbooks
             href: configure-conversation-orchestration.md
           - name: Use AI-generated conversations for agentic simulations (preview)
             href: configure-simulation-agent.md

@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: how-to
 ms.collection:
-ms.date: 02/20/2026
+ms.date: 10/30/2026
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
@@ -59,10 +59,13 @@ As a Teams administrator, run the following Teams PowerShell cmdlets in administ
 1. Copy the Object ID of the new Teams resource account. You need it for running the next cmdlets.
 
 1. Associate the organization's Azure Communication Services resource with the Teams resource account.
-   ```
-   Set-CsOnlineApplicationInstance -Identity <TeamsResourceAccountObjectId> -ApplicationId "4b8f0dce-d7d5-47a3-a27c-1764b90505e2" -AcsResourceId "<OrganizationAzureCommunicationServiceImmutableResourceID>"
    
-   Sync-CsOnlineApplicationInstance -ObjectId <TeamsResourceAccountObjectId> -ApplicationId "4b8f0dce-d7d5-47a3-a27c-1764b90505e2" -AcsResourceId "<OrganizationAzureCommunicationServiceImmutableResourceID >"
+   ```
+   New-CsOnlineApplicationInstance -UserPrincipalName "<NewTeamsResourceAccountEmailAddress>" -DisplayName "<NewTeamsResourceAccountDisplayName>" -ApplicationId "<DynamicsAppId>"
+
+   Set-CsOnlineApplicationInstance -Identity "<TeamsResourceAccountObjectId>" -ApplicationId "<DynamicsAppId>" -AcsResourceId "<AzureCommunicationServicesResourceId>"
+
+   Sync-CsOnlineApplicationInstance -ObjectId "<TeamsResourceAccountObjectId>" -ApplicationId "<DynamicsAppId>" -AcsResourceId "<AzureCommunicationServicesResourceId>"
    ```
 
 ## Assign license to Teams resource account
@@ -91,6 +94,7 @@ If you're assigning a Direct Routing service phone to the Teams resource account
    ```   
    Set-CsPhoneNumberAssignment -Identity <TeamsResourceAccountEmailAddress> -PhoneNumber <OperatorConnectPhoneNumberInE164Format> -PhoneNumberType OperatorConnect
    ```
+
 
 ## Configure Teams Phone in the voice channel
 

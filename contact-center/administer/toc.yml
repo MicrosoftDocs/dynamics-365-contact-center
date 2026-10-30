@@ -645,10 +645,14 @@
           items:
           - name: Manage Omnichannel historical analytics reports
             href: /dynamics365/customer-service/administer/oc-historical-analytics-reports?context=/dynamics365/contact-center/context/administer-context
+          - name: Manage historical analytics reports in Shared Analytics Platform platform
+            href: enable-contact-center-analytics.md
           - name: Manage Knowledge analytics
             href: /dynamics365/customer-service/administer/enable-knowledge-search-insights?context=/dynamics365/contact-center/context/administer-context
         - name: Customize data models of historical and real-time analytics reports
           href: /dynamics365/customer-service/administer/model-customize-reports?context=/dynamics365/contact-center/context/administer-context
+        - name: Choose your Contact center analytics journey
+          href: modern-contact-center-analytics-journey.md
         - name: Configure forecasting
           items:
           - name: Configure forecasting for conversation

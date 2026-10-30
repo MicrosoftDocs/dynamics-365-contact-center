@@ -132,6 +132,114 @@
               href: api/api-conversation-webhook.md           
           - name: Error handling
             href: error-handling.md                   
+      - name: Shared Analytics Platform
+        items:
+        - name: Understand data model in Shared Analytics Platform
+          href: overview-data-model.md
+        - name: Aggregate tables
+          items:
+          - name: AggConversation
+            href: analytics/aggconversation.md
+          - name: AggBotSession
+            href: analytics/aggbotsession.md
+          - name: AggConversationBotOutcome
+            href: analytics/aggconversationbotoutcome.md
+          - name: AggConversationBotOutcomeByBot
+            href: analytics/aggconversationbotoutcomebybot.md
+          - name: AggConversationBotOutcomeByBotTopic
+            href: analytics/aggconversationbotoutcomebybottopic.md
+          - name: AggCustomerSupportJourney
+            href: analytics/aggcustomersupportjourney.md
+          - name: AggAgentAvailability
+            href: analytics/aggagentavailability.md
+          - name: AggAgentCapacity
+            href: analytics/AggAgentCapacity.md
+          - name: AggAgentPerformance
+            href: analytics/aggagentperformance.md
+          - name: AggQueuePerformance
+            href: analytics/aggqueueperformance.md
+          - name: AggVoiceConversationInsights
+            href: analytics/aggvoiceconversationinsights.md
+        - name: Dimension tables
+          items:
+          - name: DimBusinessUnit
+            href: analytics/DimBusinessUnit.md
+          - name: DimBot
+            href: analytics/DimBot.md
+          - name: DimBotTopic
+            href: analytics/DimBotTopic.md
+          - name: DimBotTerminalOutcomeProperty
+            href: analytics/DimBotTerminalOutcomeProperty.md
+          - name: DimCapacityProfile
+            href: analytics/DimCapacityProfile.md
+          - name: DimChannel
+            href: analytics/DimChannel.md
+          - name: DimConversationDirection
+            href: analytics/DimConversationDirection.md
+          - name: DimConversationStatus
+            href: analytics/DimConversationStatus.md
+          - name: DimConversationType
+            href: analytics/DimConversationType.md
+          - name: DimDate
+            href: analytics/DimDate.md
+          - name: DimDispositionCode
+            href: analytics/DimDispositionCode.md
+          - name: DimLiveWorkStream
+            href: analytics/DimLiveWorkStream.md
+          - name: DimOverflowAction
+            href: analytics/DimOverflowAction.md
+          - name: DimOverflowCondition
+            href: analytics/DimOverflowCondition.md
+          - name: DimQueue
+            href: analytics/DimQueue.md
+          - name: DimParticipantMode
+            href: analytics/DimParticipantMode.md
+          - name: DimPresence
+            href: analytics/DimPresence.md
+          - name: DimQueue
+            href: analytics/DimQueue.md
+          - name: DimSessionClosureReason
+            href: analytics/DimSessionClosureReason.md
+          - name: DimSessionStatus
+            href: analytics/DimSessionStatus.md
+          - name: DimSystemUser
+            href: analytics/DimSystemUser.md
+          - name: DimTimeZone
+            href: analytics/DimTimeZone.md
+        - name: Helper tables
+          items:
+          - name: HelperEntityStatus
+            href: analytics/HelperEntityStatus.md
+          - name: HelperOptionSet
+            href: analytics/HelperOptionSet.md
+          - name: LocalizationLanguageLocale
+            href: analytics/LocalizationLanguageLocale.md
+        - name: Mapping tables
+          items:
+          - name: MapConversationDispositionCode
+            href: analytics/MapConversationDispositionCode.md
+          - name: MapQueueMembership
+            href: analytics/MapQueueMembership.md
+        - name: Fact tables
+          items:
+          - name: FactAgentCapacityHistory
+            href: analytics/FactAgentCapacityHistory.md
+          - name: FactBotSession
+            href: analytics/FactBotSession.md
+          - name: FactAgentStatusHistory
+            href: analytics/FactAgentStatusHistory.md
+          - name: FactConversation
+            href: analytics/FactConversation.md
+          - name: FactQueueSegment
+            href: analytics/FactQueueSegment.md
+          - name: FactSession
+            href: analytics/FactSession.md
+          - name: FactSessionParticipant
+            href: analytics/FactSessionParticipant.md
+          - name: FactVoiceConversationInsights
+            href: analytics/FactVoiceConversationInsights.md
+        - name: Create a Dataverse shortcut in Microsoft Fabric by using a service principal
+          href: connect-dataverse-shortcut.md
       - name: Voice
         items: 
         - name: Download call recordings in bulk

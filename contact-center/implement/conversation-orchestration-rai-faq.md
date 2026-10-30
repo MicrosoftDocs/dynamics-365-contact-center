@@ -6,11 +6,12 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 06/01/2026
+ms.date: 10/30/2026
 ms.update-cycle: 180-days
 ms.custom: 
 - bap-template
 - responsible-ai-faq
+ai-usage: ai-assisted
 ---
 
 # Responsible AI FAQ for conversation orchestration
@@ -39,13 +40,17 @@ Conversation orchestration in Dynamics 365 Contact Center manages how conversati
 
 Administrators define these behaviors using natural language playbooks. This approach allows organizations to manage complex distribution scenarios while maintaining consistent customer experiences as conditions evolve. Some of the key conversation orchestration capabilities include the following features:
 
-- **Overflow handling**: Automatically applies overflow actions, such as offering callbacks or alternate experiences, based on real-time conditions including expert availability, time of day, and service priorities.
+- **Overflow handling**: Applies real-time overflow actions when a queue is outside operating hours, all representatives are signed out, no representatives are available, wait times are high, or queue demand is high. For direct inbound calls, applies fallback actions when the target representative is unavailable, rejects the call, or doesn't respond before the notification times out.
 
-- **Dynamic priority escalation across the conversation lifecycle**: Adjusts conversation priority automatically based on lifecycle events such as increasing wait time or transfer into a new queue, ensuring conversations are continuously re-evaluated and progressed without manual intervention.
+- **Dynamic prioritization**: Increases or resets conversation priority based on wait time, queue transfers, or queue consults. You can tailor priority by context variables, such as customer tier or product ownership. Dynamic prioritization works with existing overflow rules, assignment rules, and other conversation orchestration playbooks, but doesn't apply to queues with custom prioritization rules. Use classification rules to set the initial conversation priority score.
+
+- **Assignment to a preferred expert or previously engaged representative**: Routes conversations to a preferred expert mapped to the contact or to a representative who previously interacted with the customer, with fallback to the next best available expert. For returning asynchronous chats, keeps the same expert when representative affinity is enabled and the expert meets the presence and active conversation limit requirements.
+
+- **Bullseye routing through user groups**: Starts assignment with a targeted Level 0 user group, then progressively expands to additional user groups as wait time increases. Earlier groups remain active and take priority over later groups, without transferring the conversation to another queue.
 
 ## What is the intended use of conversation orchestration?
 
-The system is used to author and configure dynamic routing and assignment criteria, using natural language-based playbooks. A language model is used during authoring to convert these natural language playbooks into a structured runtime format before publication.
+Use conversation orchestration to author and configure dynamic routing and assignment criteria through natural language playbooks. When you publish a playbook, the system uses a language model to convert it into a structured runtime format. Published playbooks use this format to perform actions without consuming Copilot credits or AI tokens at runtime.
 
 ## How is conversation orchestration evaluated? What metrics were used to measure performance?
 
@@ -70,8 +75,6 @@ The feature has the following limitations:
 
 Administrators of Dynamics 365 Contact Center can delete any saved or published playbooks, disable the feature toggle to turn off the feature, and log a service request with Microsoft if they need to provide feedback.
 
+## Related information
 
-### Related information
-
-[Configure conversation orchestration using AI-driven playbooks](../administer/configure-conversation-orchestration.md)  
-
+[Configure conversation orchestration using AI-driven playbooks](../administer/configure-conversation-orchestration.md)    

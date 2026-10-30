@@ -318,6 +318,44 @@
           href: diagnose-dashboard.md
         - name: Proactive engagement report
           href: proactive-engagement-dashboard.md
+      - name: Use historical dashboards in Shared Analytics Platform
+        items:
+        - name: Overview of contact center historical analytics in the Shared Analytics Platform
+          href: data-intelligence-analytics-overview.md
+        - name: Metrics
+          items:
+          - name: Conversation metrics
+            href: conversation-metrics.md
+          - name: Queue metrics
+            href: queue-segment-metrics.md
+          - name: Session metrics
+            href: session-metrics-dashboard.md
+          - name: Availability metrics
+            href: availability-metrics.md
+          - name: Capacity metrics
+            href: capacity-metrics-dashboard.md
+          - name: Bot metrics
+            href: bot-metrics.md
+          - name: Voice insight metrics
+            href: voice-insight-metrics.md
+        - name: Dashboards
+          items:
+          - name: Conversation dashboard
+            href: conversation-dashboard.md
+          - name: Queue dashboard
+            href: queue-segments-dashboard.md
+          - name: Bot dashboard
+            href: bot-dashboard.md
+          - name: Agent dashboard
+            href: contact-center-agent-dashboard.md
+          - name: Voice dashboard
+            href: voice-dashboard.md
+        - name: Customize your reports
+          items:
+          - name: Choose your Contact Center analytics journey
+            href: ../administer/modern-contact-center-analytics-journey.md
+          - name: Connect Microsoft Fabric to Dataverse using a service principal
+            href: ../extend/connect-dataverse-shortcut.md
       - name: Use quality evaluation historical analytics dashboard
         href: quality-evaluation-historical-analytics.md
       - name: Use historical analytics dashboards

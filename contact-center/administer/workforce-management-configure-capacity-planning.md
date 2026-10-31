@@ -1,7 +1,7 @@
 ---
 title: Enable capacity planning
-description: Learn how to enable capacity planning so that supervisors can plan for the right number of service representatives.
-ms.date: 04/30/2026
+description: Learn how to enable capacity planning so supervisors can forecast staffing requirements in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
+ms.date: 10/30/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan

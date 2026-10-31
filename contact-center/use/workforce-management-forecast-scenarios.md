@@ -19,6 +19,7 @@ Create a forecast scenario to define what to analyze and how often to generate p
 
 ## Prerequisites
 
+- An administrator must install the [Workforce Management for Customer Service package](../administer/workforce-management-package-installation.md) from the Power Platform admin center before you can use Workforce Management capabilities, including forecasting and forecast scenarios.
 - A security role with the **Read** privilege on the `msdyn_dataanalyticsreport_forecast` table.
 - For an external data source, upload the file beforehand through the **Manage External Data** option. Learn more in [Import historical data for forecast scenarios](workforce-management-import-historical-data.md).
 - Enough historical data for each queue and channel to support the forecast duration and start date. Learn more in [Understand minimum data requirements and forecast accuracy](#understand-minimum-data-requirements-and-forecast-accuracy).

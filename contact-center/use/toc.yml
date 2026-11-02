@@ -12,6 +12,8 @@
         href: ccw-overview.md
       - name: Use the inbox
         href: /dynamics365/customer-service/use/use-inbox?context=/dynamics365/contact-center/context/use-context
+      - name: Use Human Assist (preview)
+        href: use-human-assist.md
       - name: Use timeline
         href: /powerapps/user/add-activities?context=/dynamics365/contact-center/context/use-context
       - name: Learn about linking timeline notes with table records
@@ -278,7 +280,7 @@
         href: /dynamics365/customer-service/use/join-a-teams-call?context=/dynamics365/contact-center/context/use-context
     - name: Analytics dashboards and insights
       items:
-      - name: Use real-time streaming analytics (preview)
+      - name: Use real-time streaming analytics
         items:
         - name: Overview of real-time streaming analytics
           href: realtime-streaming.md
@@ -290,10 +292,10 @@
           href: realtime-streaming-queues.md
         - name: Monitor representatives in real time
           href: realtime-streaming-representatives.md
-        - name: Monitor conversations in real time
-          href: realtime-streaming-conversations.md
         - name: Monitor self-service operations in real time
           href: realtime-streaming-self-service.md
+        - name: Monitor conversations in real time (preview)
+          href: realtime-streaming-conversations.md
       - name: Use real-time analytics dashboards
         items:
         - name: Overview of real-time analytics reports

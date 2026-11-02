@@ -629,6 +629,10 @@
           href: enable-agent-insights.md
         - name: Configure analytics and insights dashboards
           href: /dynamics365/customer-service/administer/configure-customer-service-analytics-insights-csh?context=/dynamics365/contact-center/context/administer-context
+        - name: Manage real-time streaming analytics
+          items:
+          - name: Configure thresholds
+            href: realtime-configure-thresholds.md
         - name: Manage real-time analytics dashboards
           items:
           - name: Manage Omnichannel real-time analytics reports

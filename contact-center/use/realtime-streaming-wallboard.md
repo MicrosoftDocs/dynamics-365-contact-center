@@ -1,30 +1,23 @@
 ---
-title: Monitor real-time metrics in the Wallboard view (preview)
+title: Monitor real-time metrics in the Wallboard view
 description: Learn how to use the Wallboard view in real-time streaming analytics in Dynamics 365 Contact Center to monitor real-time operational metrics, representative presence, and conversation health.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
-ms.date: 10/12/2026
+ms.date: 11/02/2026
 ms.custom: bap-template
 ---
 
-# Monitor real-time metrics in the Wallboard view (preview)
+# Monitor real-time metrics in the Wallboard view
 
 [!INCLUDE [cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
 
-[This article is prerelease documentation and is subject to change.]
+Use the **Wallboard** view in Dynamics 365 Contact Center to monitor operational metrics, representative presence, and conversation health in real time. The wallboard helps you monitor conversation load, queue health, representative availability, service performance, and customer wait indicators from a single screen.
 
-The **Wallboard** view in **Real-time streaming analytics** provides a consolidated, real-time view of operational metrics for supervisors and managers. The wallboard helps monitor conversation load, queue health, representative availability, service performance, and customer wait indicators from a single screen.
+In the Contact Center Supervisor app, in **Real-time streaming analytics**, select **Wallboard**. The wallboard displays metric cards and presence status information for the currently applied filters. Apply filters such as **Period**, **Channels**, **Business Unit**, and **Queues**. Learn more in [Filter options](realtime-streaming.md#filter-options).
 
-> [!IMPORTANT]
->
-> - This is a production-ready preview feature.
-> - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
-
-In **Real-time streaming analytics**, select the **Wallboard** tab. The wallboard displays metric cards and presence information for the currently applied filters. Apply filters such as **Period**, **Channels**, **Business Unit**, and **Queues**. Learn more in [Filter options](realtime-streaming.md#filter-options).
-
-Trend indicators show how a metric changed compared to the previous measurement interval. They update every five minutes, and the accompanying value indicates the magnitude of the change. For example, if **Abandon Rate** shows as ▲ +0.4% in red, it indicates that the abandon rate increased by 0.4 percentage points since the previous interval.
+Trend indicators show how a metric changed compared with the previous measurement interval. They update every five minutes, and the accompanying value indicates the magnitude of the change. For example, if **Abandon Rate** shows as ▲ +0.4% in red, it indicates that the abandon rate increased by 0.4 percentage points since the previous interval.
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and shouldn't be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements.
@@ -42,55 +35,43 @@ Use the wallboard to:
 - Identify metrics marked as critical or at risk.
 
 > [!NOTE]
-> For percentage-based metrics, the selected time period determines the set of conversations used to calculate the metric. The percentage is then calculated based on the conversations within that set that meet the metric outcome. For example, if you select the last 15 minutes, **Answer rate** considers only conversations offered to the queue during those 15 minutes and determines how many of them were answered. A conversation offered 30 minutes ago isn't included, even if it was answered within the last 15 minutes.
+> Percentage-based metrics are calculated using data from the selected time period. The percentage is then calculated based on the conversations within that set that meet the metric outcome. For example, if you select the last 15 minutes, **Answer rate** considers only conversations offered to the queue during those 15 minutes and determines how many of them were answered. A conversation offered 30 minutes ago isn't included, even if it was answered within the last 15 minutes.
 
-## Monitor active conversation volume
+- **Active conversations**: The total number of active conversations and a split of conversation handling types. Use this metric to quickly understand how many conversations are active and how the workload is distributed between representatives and virtual agents.
 
-The **Active conversations** card shows the total number of active conversations and a split of conversation handling types. Use this card to quickly understand how many conversations are active and how the workload is distributed between representatives and virtual agents.
+- **Online Representatives**: The number of representatives who are currently online. Use this metric to compare current staffing against conversation demand.
 
-## Check online representative count
+- **Representative Presence**: The panel shows the number of representatives in each presence state.
 
-The **Online Representatives** card shows the number of representatives who are currently online. Use this card to compare current staffing against conversation demand.
+    Presence states can include:
+    - **Available**
+    - **Busy**
+    - **Busy - DND**
+    - **Away**
+    - **Offline**
+    - Your custom presence statuses
 
-## Review representative presence
+    Each row displays the number for the representatives in a particular presence status. Use this panel to understand current workforce availability and identify whether representatives are available to receive more work.
 
-The **Representative Presence** panel shows the number of representatives in each presence state.
+- **Queue backlog**: The number of conversations that are pending assignment. Use this metric to identify queue buildup and determine whether intervention is needed.
 
-Presence states can include:
+- **Current longest wait time**: The longest time any conversation has waited in the selected queue and is still pending assignment.
 
-- **Available**
-- **Busy**
-- **Busy - DND**
-- **Away**
-- **Offline**
-- Your custom presence statuses
+- **Service level**: The percentage of conversations answered within the service-level target configured for the queue out of the total conversations offered to the queue.
 
-Each row displays the count for the representatives in a particular presence status. Use this panel to understand current workforce availability and identify whether representatives are available to receive more work.
+    It's calculated as conversations answered within the queue's configured service-level target divided by the total conversations offered to the queue × 100. If you select multiple queues, you evaluate conversations against the service-level target configured for each queue, and aggregate the results across the selected queues. If a queue doesn't have a configured target, the default target of 20 seconds applies.
 
-## Track conversations waiting in queue
+    Learn how to [define queue-specific thresholds](/dynamics365/customer-service/administer/queues-omnichannel#define-metrics-threshold-for-a-queue).
 
-The **Queue backlog** card shows the number of conversations that are pending assignment. Use this card to identify queue buildup and determine whether intervention is needed.
+- **Abandon rate**: The percentage of conversations that customers disconnect before a representative accepts them. If a conversation is transferred from one queue to another, the abandon rate is calculated separately for each queue. Use this metric to identify potential issues with customer wait times or staffing levels that might contribute to abandoned conversations.
 
-## Review the current longest wait time
-
-The **Current longest wait time** card shows the longest time any conversation has waited in the selected queue and is still pending assignment.
-
-## Monitor service level
-
-The **Service level** card shows the percentage of conversations answered within 20 seconds. Use this card to track whether the operation is meeting its response target.
-
-## Monitor abandon rate
-
-The **Abandon rate** card shows the percentage of customers who abandoned conversations before being answered. Use this metric to identify whether customer wait times or staffing levels are contributing to lost conversations.
-
-## Track average speed to answer
-
-The **Avg. Speed to answer** card shows the average time taken to answer incoming conversations. Use this card to assess how quickly the system or representatives answer incoming customer conversations.
+- **Average speed to answer**: The average time from when a conversation enters a queue until a representative accepts it. If a conversation is transferred from one queue to another, the metric is calculated separately for each queue. Use this metric to monitor how quickly representatives accept incoming customer conversations.
 
 ## Related information
 
-[Overview of real-time streaming analytics (preview)](realtime-streaming.md)  
+[Overview of real-time streaming analytics](realtime-streaming.md)  
 [Assisted Service](realtime-streaming-assisted-service.md)  
 [Queues](realtime-streaming-queues.md)  
 [Representatives](realtime-streaming-representatives.md)  
-[Conversations](realtime-streaming-conversations.md)
+[Conversations](realtime-streaming-conversations.md)  
+[Self-service](realtime-streaming-self-service.md#monitor-self-service-operations-in-real-time)

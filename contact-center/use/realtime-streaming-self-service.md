@@ -1,28 +1,21 @@
 ---
-title: Monitor self-service operations in real time (preview)
+title: Monitor self-service operations in real time
 description: Use the Self Service view to monitor containment, escalation, engagement volume, language, intent, and agent performance metrics.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
-ms.date: 10/12/2026
+ms.date: 11/02/2026
 ms.custom: bap-template
 ---
 
-# Monitor self-service operations in real time (preview)
+# Monitor self-service operations in real time
 
 [!INCLUDE [cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
 
-[This article is prerelease documentation and is subject to change.]
-
 The **Self Service** view helps supervisors monitor self-service agent performance across customer conversations. It provides visibility into containment outcomes, escalation trends, self-service engagement volumes, supported languages, customer intents, and operational health metrics.
 
-> [!IMPORTANT]
->
-> - This is a production-ready preview feature.
-> - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
-
-In **Real-time streaming analytics**, select the **Self Service** tab. The **Self Service** view displays operational metrics and trends related to self-service agent interactions.
+In the Contact Center Supervisor app, in **Real-time streaming analytics**, select **Self Service**. The **Self Service** view appears which displays operational metrics and trends related to self-service agent interactions.
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and shouldn't be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements.
@@ -36,28 +29,24 @@ Apply filters such as **Period**, **Channel**, **Business Unit**, and **Queue**.
 > - All non-live metrics reflect data from the time interval selected in the **Period** filter.
 > - For percentage-based metrics, the selected time period determines the set of conversations used to calculate the metric. The percentage is then calculated based on the conversations within that set that meet the metric outcome. For example, if you select the last 15 minutes, Answer rate considers only conversations offered to the queue during those 15 minutes and determines how many of them were answered. A conversation offered 30 minutes ago isn't included, even if it was answered within the last 15 minutes.
 
-## Conversation volume split
+## Conversation Volume (Assisted Service and Self-Service)
 
 The **Conversation volume split** section provides a high-level view of customer conversation volumes and routing distribution.
 
-- **Total conversations**: Displays the total number of customer conversations created. The metric also breaks down conversations by:
+- **Total conversations**: Shows the total number of customer conversations created. The metric also breaks down conversations by:
 
     - **Inbound**: Conversations initiated by customers.
     - **Outbound**: Conversations initiated by the organization.
 
-### Conversations offered
+- **Conversations offered**: Shows the total number of conversations offered for handling. The metric distinguishes between conversations that were:
 
-Displays the total number of conversations offered for handling. The metric distinguishes between conversations that were:
+- Offered to self-service agents
+- Routed directly to customer service representatives
 
-- Offered to self-service agents.
-- Routed directly to customer service representatives.
+- **Active conversations**: Shows the number of conversations currently in progress. The metric separates active conversations into:
 
-### Active conversations
-
-Displays the number of conversations currently in progress. The metric separates active conversations into:
-
-- Conversations currently handled by self-service agents.
-- Conversations currently handled by representatives.
+    - Conversations currently handled by self-service agents
+    - Conversations currently handled by representatives
 
 ## Self-service agent performance
 
@@ -65,25 +54,24 @@ The **Self-service agent performance** section provides insight into the effecti
 
 - **Self-service agent engaged conversations**: Shows the number of conversations handled by self-service agents during the time selected in the **Period** filter. The metric includes:
 
-    - **Active**: Conversations that a self-service agent currently handles.
-    - **Completed**: Conversations that self-service successfully processes. This category includes all conversations that self-service resolves, escalates to a human representative (whether active or closed), or that the customer abandons during self-service. It also includes conversations that end due to a bot failure during the interaction.
+    - **Active**: Conversations that a self-service agent is currently handling.
+    - **Completed**: Conversations that self-service processed. This category includes all conversations that self-service agent might have resolved, escalated to a human representative (whether active or closed), or that the customer abandoned during self-service. It also includes conversations that ended due to a self-service agent failure during the interaction.
 
-- **Containment rate**: Shows the percentage of conversations that self-service successfully resolves without requiring escalation. The following categories provide a breakdown of completed self-service conversations:
+- **Containment rate**: Shows the percentage of conversations that self-service agent resolved without requiring escalation. The following categories provide a breakdown of completed self-service conversations:
 
-    - **Contained**: Conversations that the self-service agent successfully resolves.
-    - **Escalated**: Conversations that the self-service agent transfers to a representative.
-    - **Fallback**: Conversations that the self-service agent routes through fallback handling paths.
-    - **Customer abandonments**: Conversations that customers disconnect while interacting with the self-service agent before escalation to a representative.
+    - **Contained**: Conversations that the self-service agent resolved.
+    - **Escalated**: Conversations that the self-service agent transferred to a representative.
+    - **Fallback**: Conversations that the self-service agent routed through fallback handling paths.
 
-- **Self-service engaged conversations by last language**: Shows the top 10 conversations by volume that self-service agents handle, grouped by last language. Use this metric to understand language trends and identify opportunities for multilingual optimization.
+- **Self-service agent engaged conversations by last language**: Shows the top 10 conversations by volume that self-service agents handle, grouped by last language. Use this metric to understand language trends and identify opportunities for multilingual optimization.
 
-- **Self-service engaged conversations by final intents**: Shows the top 10 conversations by volume that self-service agents handle, grouped by final intents. This visualization can help identify common customer requests, high-volume support topics, and opportunities for content and intent optimization.
+- **Self-service agent engaged conversations by final intents**: Shows the top 10 conversations by volume that self-service agents handle, grouped by final intent. This visualization can help identify common customer requests, high-volume support topics, and opportunities for content and intent optimization.
 
-- **Active conversations**: Shows the number of self-service conversations that are currently in progress.
+- **Self-service agent active conversations**: Shows the number of self-service agent conversations that are currently in progress.
 
 - **Average self-service agent duration**: Shows the average duration of conversations that self-service agents handle. Use this metric to understand engagement duration and identify unusually long interactions.
 
-- **Average time to escalate**: The average time a self-service agent takes to escalate a conversation to a human representative after engaging with the customer. Lower values might indicate rapid escalation, while higher values can indicate extended self-service engagement before transfer.
+- **Average time to escalate**: The average time a self-service agent takes to escalate a conversation to a human representative after engaging with the customer. Lower values might indicate rapid escalation, while higher values might indicate extended self-service engagement before transfer.
 
 - **Average time to contain**: Shows the average time a self-service agent takes to resolve a conversation, measured from the time the self-service agent becomes engaged. This metric helps evaluate containment efficiency.
 
@@ -91,7 +79,7 @@ The **Self-service agent performance** section provides insight into the effecti
 
 The **Self-service agents** section provides performance metrics for individual self-service agents.
 
-For each agent, the dashboard displays:
+For each agent, the view displays:
 
 - **Self-service agent name**: Name of the self-service agent.
 - **Engaged conversations**: Total conversations in which the self-service agent was engaged.
@@ -108,11 +96,11 @@ Use the search box to locate a specific self-service agent and review its perfor
 
 ## View detailed metrics
 
-Select **See details** on any dashboard tile to view more information for the selected metric and investigate conversation trends in greater detail.
+Select **See details** on any tile to view more information for the selected metric and investigate conversation trends in greater detail.
 
 ## Related information
 
-[Overview of real-time streaming analytics (preview)](realtime-streaming.md)  
+[Overview of real-time streaming analytics](realtime-streaming.md)  
 [Wallboard](realtime-streaming-wallboard.md)  
 [Queues](realtime-streaming-queues.md)  
 [Representatives](realtime-streaming-representatives.md)  

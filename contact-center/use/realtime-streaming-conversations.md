@@ -1,11 +1,11 @@
 ---
 title: Monitor conversations in real time (preview)
-description: Monitor conversations in real-time with a centralized supervisor dashboard. Apply filters, take bulk actions, and customize grids to manage customer interactions.
+description: Monitor conversations in real time with a centralized supervisor dashboard. Apply filters, take bulk actions, and customize grids to manage customer interactions.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
-ms.date: 10/06/2026
+ms.date: 11/02/2026
 ms.custom: bap-template
 ---
 
@@ -15,14 +15,14 @@ ms.custom: bap-template
 
 [This article is prerelease documentation and is subject to change.]
 
-The **Conversations** view in real-time streaming analytics provides a centralized view of ongoing, queued, and completed customer conversations. Supervisors can monitor activity, apply filters, search conversations, and take bulk actions to efficiently manage customer interactions.
+The **Conversations** view in real-time streaming analytics shows ongoing, queued, and completed customer conversations in one place. Supervisors can monitor activity, apply filters, search conversations, and take bulk actions to efficiently manage customer interactions.
 
 > [!IMPORTANT]
 >
 > - This is a production-ready preview feature.
 > - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
 
-In **Real-time streaming analytics**, select the **Conversations** tab. Filter data by period, channel, business unit, and queues. Learn more in [Filter options](realtime-streaming.md#filter-options).
+In the Contact Center Supervisor app, in **Real-time streaming analytics**, select **Conversations**. Filter data by period, channel, business unit, and queues. Learn more in [Filter options](realtime-streaming.md#filter-options).
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and shouldn't be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements.
@@ -31,7 +31,7 @@ In **Real-time streaming analytics**, select the **Conversations** tab. Filter d
 
 ## Key capabilities
 
-- Monitor real-time conversation activity. 
+- Monitor real-time conversation activity.
 - Identify waiting conversations quickly.
 - Perform bulk actions for faster resolution.  
 - Filter and search for targeted insights.
@@ -42,16 +42,16 @@ In **Real-time streaming analytics**, select the **Conversations** tab. Filter d
 
 Use the bulk selection toolbar to manage multiple conversations.
 
-1. Select conversations using the checkbox.
+1. Select the checkbox for each conversation you want to manage.
 1. Select one of the following actions:
 
-   - **Assign** - Assign conversations to a representative  
-   - **Transfer** - Transfer conversations to another queue or representative  
-   - **Force close** - Close conversations manually  
+   - **Assign**: Assign unassigned conversations to a representative.  
+   - **Transfer**: Transfer conversations to another queue or representative.  
+   - **Force close**: Close conversations manually.  
 
 ### Search conversations
 
-Use the search box to find conversations based on subject, customer, and representative.
+Use the search box to find conversations by subject, customer, and representative.
 
 ## View conversation by queues
 
@@ -67,18 +67,19 @@ Each tab shows the number of conversations in that state.
 
 Each row in the grid provides key details about a conversation:
 
-- **Subject** - Conversation title  
-- **Customer** - Associated customer  
-- **Channel** - Communication channel  
-- **Assigned representative** - Representative assigned to the conversation
-- **Created on** - Start time of the conversation  
-- **Closed on** - End time of the conversation  
-- **Status reason** - Current status reason  
+- **Subject**: Conversation title  
+- **Customer**: Associated customer  
+- **Channel**: Communication channel  
+- **Assigned representative**: Representative assigned to the conversation
+- **Created on**: Start time of the conversation  
+- **Closed on**: End time of the conversation  
+- **Status reason**: Shows why the conversation is in its current status
 
 ## Related information
 
-[Overview of real-time streaming analytics (preview)](realtime-streaming.md)  
+[Overview of real-time streaming analytics](realtime-streaming.md)  
 [Wallboard](realtime-streaming-wallboard.md)  
 [Assisted Service](realtime-streaming-assisted-service.md)  
 [Queues](realtime-streaming-queues.md)  
 [Representatives](realtime-streaming-representatives.md)  
+[Self-service](realtime-streaming-self-service.md)

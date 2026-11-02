@@ -15,6 +15,8 @@ Use the **Agent** dashboard to review customer service representative activity a
 
 Review all service representatives in the summary view, or open the drill-down view for one representative. The individual view shows the same types of metrics for the selected representative, with daily breakdowns.
 
+:::image type="content" source="../media/03-agent-tab.png" alt-text="Screenshot of the Agent dashboard showing session KPIs, accepted session and handle time trends, and metrics by representative and date.":::
+
 ## Data source
 
 The **Agent** dashboard uses aggregate performance and availability data: `AggAgentPerformance` for session performance sections and `AggAgentAvailability` for the availability section. Learn more in [AggAgentPerformance](../extend/analytics/aggagentperformance.md) and [AggAgentAvailability](../extend/analytics/aggagentavailability.md).

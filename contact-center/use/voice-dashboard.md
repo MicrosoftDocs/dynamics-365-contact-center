@@ -14,6 +14,8 @@ Use the **Voice** dashboard to monitor voice-channel performance in Contact Cent
 
 Voice conversations are customer interactions through the voice channel. The dashboard combines conversation-level, session-level, queue-level, and agent-level views to help supervisors assess voice workload, service efficiency, handling patterns, and conversation quality signals.
 
+:::image type="content" source="../media/04-voice-tab.png" alt-text="Screenshot of the Voice dashboard showing conversation KPIs, talk and hold time trends, conversation style metrics, and metrics by representative.":::
+
 ## Data sources
 
 The **Voice** dashboard uses three aggregate tables in the Shared Analytics Platform data model:

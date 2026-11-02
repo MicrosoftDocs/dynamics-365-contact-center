@@ -16,6 +16,8 @@ Use the **Conversation** dashboard to review customer conversations across your 
 
 The dashboard combines key performance indicators (KPIs), trend charts, and drill-down views for conversation volume, engagement, wait times, handling efficiency, transfers, and abandonment.
 
+:::image type="content" source="../media/01-conversation-tab.png" alt-text="Screenshot of the Conversation dashboard showing conversation KPIs, volume and abandonment trends, and metrics by channel, date, and queue." :::
+
 Use the dashboard to:
 
 - Monitor customer demand across engagement channels.

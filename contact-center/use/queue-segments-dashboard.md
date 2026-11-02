@@ -19,6 +19,8 @@ A queue segment is the portion of a customer interaction associated with a speci
 
 Review queue volume, service levels, wait times, transfers, and customer satisfaction to understand how work moves through each queue. Supervisors can use these queue-specific measurements to identify bottlenecks, evaluate staffing effectiveness, and improve service performance.
 
+:::image type="content" source="../media/02-queue-tab.png" alt-text="Screenshot of the Queue dashboard showing queue segment KPIs, service level and handle time trends, and metrics by channel, queue, and date.":::
+
 ## Data source
 
 The **Queue Segments** dashboard uses `AggQueuePerformance`. Learn more in [AggQueuePerformance table reference](../extend/analytics/aggqueueperformance.md).

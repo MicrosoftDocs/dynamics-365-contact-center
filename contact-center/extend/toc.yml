@@ -44,6 +44,8 @@
             href: api/ccaas_createproactivevoicedelivery.md
           - name: Use CCaaS_CancelDeliveryTask API
             href: api/ccaas_canceldeliverytask.md
+          - name: Use CCaaS_CancelProactiveEngagement API
+            href: api/ccaas_cancelproactiveengagement.md
           - name: Use CCaaS_CreateProactiveSMSDelivery API
             href: api/ccaas_createproactivesmsdelivery.md
           - name: Use CCaaS_CreateProactiveBulkDelivery API

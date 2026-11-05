@@ -162,7 +162,7 @@
           href: /dynamics365/customer-service/administer/configure-routing-on-agent-calendar?context=/dynamics365/contact-center/context/administer-context
       - name: Quality management
         items: 
-        - name: Overview of Quality Management Agent
+        - name: Overview of Quality Management
           href: ../use/overview-quality-management.md
         - name: Quality management security roles (preview)
           href: workforce-management-quality-management-security-roles.md

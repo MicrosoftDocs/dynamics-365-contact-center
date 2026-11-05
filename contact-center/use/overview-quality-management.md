@@ -1,24 +1,26 @@
 ---
-title: Overview of Quality Management Agent
-description: Quality Management Agent supports coaching, compliance, and continuous improvement across customer interactions. See how it optimizes your service team's productivity.
+title: Overview of Quality Management
+description: Quality Management supports coaching, compliance, and continuous improvement across customer interactions. Learn how it optimizes your service team's productivity.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: overview
 ms.collection: bap-ai-copilot
-ms.date: 07/06/2026
+ms.date: 11/05/2026
 ms.custom: bap-template
 ---
 
-# Overview of Quality Management Agent
+# Overview of Quality Management
 
-Quality Management Agent is a set of AI-powered quality management capabilities in Dynamics 365 Customer Service that help organizations evaluate service quality, support compliance requirements, and improve service representative performance.
+Quality Management provides capabilities for evaluating customer interactions, governing outgoing communications, and capturing interaction context through screen and call recording.
 
-Quality Management Agent is a core component of Workforce Engagement Management, a broader category of capabilities for optimizing your service team's productivity and experience. Workforce Engagement Management also includes [Workforce Management](/dynamics365/customer-service/use/workforce-management-overview), which supports the workforce planning lifecycle, from forecasting customer demand to monitoring schedule adherence in real time.
+Quality Management is a core component of Workforce Engagement Management, a broader category of capabilities for optimizing your service team's productivity and experience. Workforce Engagement Management also includes [Workforce Management](/dynamics365/customer-service/use/workforce-management-overview), which supports the workforce planning lifecycle, from forecasting customer demand to monitoring schedule adherence in real time.
 
-Quality Management Agent provides a unified approach to evaluating service quality, enforcing communication standards, and gaining visibility into service representative activities.
+Quality Evaluation Agent powers the quality evaluation and governance capabilities. Screen and call recording is a separate Quality Management capability.
 
-Key skills include:
+:::image type="content" source="../media/quality-management-architecture-overview.png" alt-text="Diagram showing Quality Management capabilities: quality evaluation and governance powered by Quality Evaluation Agent, and screen and call recording.":::
+
+Key capabilities include:
 
 - **Quality evaluation**, which assesses customer interactions against defined evaluation criteria and provides insights to support coaching and improvement efforts. Learn more in [Manage quality evaluation](../administer/manage-quality-evaluation-agent.md).
 

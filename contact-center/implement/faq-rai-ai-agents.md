@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 07/03/2026
+ms.date: 11/05/2026
 ms.update-cycle: 180-days
 ms.custom: 
 - bap-template
@@ -68,13 +68,11 @@ The capabilities of Case Management Agent include:
 - **Autonomous case resolution**: Drafts and sends emails based on determined intent from customer queries, using knowledge and custom workflows.
 - **Automated follow-up and closure**: Sends follow-up emails and resolves cases based on predefined rules, streamlining the case closure process.
 
-### Quality Management Agent
+### Quality Evaluation Agent
 
-Quality Management Agent in Dynamics 365 provides a unified, AI-powered framework to help organizations define standards, evaluate performance, and improve customer interactions at scale. It brings together the following core skills:
+Quality Evaluation Agent in Dynamics 365 provides a unified, AI-powered framework to help organizations define standards, evaluate performance, and improve customer interactions at scale. It brings together the following core skills:
 
-**Quality evaluation**: Assesses interactions base on criteria that you define and generates insights on how to improve quality.
-
-**Screen and call recording**: Screen recordings capture what representatives did during interactions, providing deeper visibility into workflows and behaviors beyond conversation transcripts.
+**Quality evaluation**: Assesses interactions based on criteria that you define and generates insights on how to improve quality.
 
 **Governance**: The AI-powered rule-based system acts as a safeguard layer on top of other AI agents and human-authored communications such as email. The system intercepts outbound email body and attachments, evaluates them against predefined guardrail policies, and then sends the email to the customer if it meets the policy requirements. If the output violates a policy, it can log activity or block the message to prevent noncompliant results from reaching end users based on the policy configured.
 

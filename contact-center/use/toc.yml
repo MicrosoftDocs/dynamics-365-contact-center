@@ -506,9 +506,9 @@
           href: workforce-management-use-volume-spike-alerts.md
         - name: Use workforce alerts for adherence notifications (preview)
           href: workforce-management-use-adherence-alerts.md
-    - name: Quality management
+    - name: Quality Management
       items:
-      - name: Overview of Quality Management Agent
+      - name: Overview of Quality Management
         href: overview-quality-management.md
       - name: Quality evaluation
         items:

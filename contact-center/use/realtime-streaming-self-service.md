@@ -5,7 +5,7 @@ author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: concept-article
-ms.date: 11/02/2026
+ms.date: 11/04/2026
 ms.custom: bap-template
 ---
 
@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 The **Self Service** view helps supervisors monitor self-service agent performance across customer conversations. It provides visibility into containment outcomes, escalation trends, self-service engagement volumes, supported languages, customer intents, and operational health metrics.
 
-In the Contact Center Supervisor app, in **Real-time streaming analytics**, select **Self Service**. The **Self Service** view appears which displays operational metrics and trends related to self-service agent interactions.
+In the Contact Center Supervisor app, in **Real-time streaming analytics**, select **Self Service**. The **Self Service** view appears, which displays operational metrics and trends related to self-service agent interactions.
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and shouldn't be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements.
@@ -38,10 +38,10 @@ The **Conversation volume split** section provides a high-level view of customer
     - **Inbound**: Conversations initiated by customers.
     - **Outbound**: Conversations initiated by the organization.
 
-- **Conversations offered**: Shows the total number of conversations offered for handling. The metric distinguishes between conversations that were:
+- **Conversations offered**: The total number of conversations that entered the queue, including conversations that customers abandoned before a representative accepted them. This metric identifies how incoming conversations are distributed between self-service and assisted-service channels. Conversations are categorized as:
 
-- Offered to self-service agents
-- Routed directly to customer service representatives
+    - To self-service agents: Conversations initially routed to self-service automation.
+    - To representatives directly: Conversations routed directly to human representatives without engaging self-service.
 
 - **Active conversations**: Shows the number of conversations currently in progress. The metric separates active conversations into:
 
@@ -55,9 +55,9 @@ The **Self-service agent performance** section provides insight into the effecti
 - **Self-service agent engaged conversations**: Shows the number of conversations handled by self-service agents during the time selected in the **Period** filter. The metric includes:
 
     - **Active**: Conversations that a self-service agent is currently handling.
-    - **Completed**: Conversations that self-service processed. This category includes all conversations that self-service agent might have resolved, escalated to a human representative (whether active or closed), or that the customer abandoned during self-service. It also includes conversations that ended due to a self-service agent failure during the interaction.
+    - **Completed**: Conversations that self-service processed. This category includes all conversations that a self-service agent resolved, escalated to a human representative (whether active or closed), or that the customer abandoned during self-service. It also includes conversations that ended due to a self-service agent failure during the interaction.
 
-- **Containment rate**: Shows the percentage of conversations that self-service agent resolved without requiring escalation. The following categories provide a breakdown of completed self-service conversations:
+- **Containment rate**: Shows the percentage of conversations that a self-service agent resolved without requiring escalation. The following categories provide a breakdown of completed self-service conversations:
 
     - **Contained**: Conversations that the self-service agent resolved.
     - **Escalated**: Conversations that the self-service agent transferred to a representative.

@@ -4,7 +4,7 @@ description: Real-time assisted service gives contact center supervisors live vi
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
-ms.date: 11/02/2026
+ms.date: 11/04/2026
 ms.topic: concept-article
 ms.custom: bap-template
 ---
@@ -59,7 +59,7 @@ This section provides an overview of conversation volume and shows how conversat
     - Inbound: Conversations initiated by customers.
     - Outbound: Conversations initiated by representatives or automated systems.
 
-- **Conversations offered**: The **Conversations offered** metric shows the number of customer conversations presented for handling. This metric identifies how incoming conversations are distributed between self-service and assisted-service channels. Conversations are categorized as:
+- **Conversations offered**: The total number of conversations that entered the queue, including conversations that customers abandoned before a representative accepted them. This metric identifies how incoming conversations are distributed between self-service and assisted-service channels. Conversations are categorized as:
 
     - To self-service agents: Conversations initially routed to self-service automation.
     - To representatives directly: Conversations routed directly to human representatives without engaging self-service.

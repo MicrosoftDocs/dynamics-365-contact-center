@@ -1,7 +1,7 @@
 ---
 title: Manage external data
 description: Learn how to upload and manage external data for workforce management forecasts and capacity plans.
-ms.date: 09/08/2026
+ms.date: 11/03/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -30,7 +30,7 @@ Before you upload an external data file, make sure that you meet the following r
 
 * Your administrator installed the Workforce Management package in the environment.
 * You have the **WFM Forecaster** or **WFM Administrator** security role.
-* Your file is saved in CSV format, with the exact column headers described for the file type that you’re uploading.
+* Your file is saved in CSV format, with the exact column headers described for the file type that you’re uploading. Your file is 128 MB or smaller.
 * Your file contains only one data interval. Don’t combine daily rows and 15-minute interval rows in the same file.
 * For historical data, your file covers a continuous date range. You can include up to two years of workload history, counted back from the date when you create the forecast scenario.
 
@@ -86,6 +86,10 @@ You can also override forecast handle time in this file. Overriding handle time 
    > The **File** field is locked until the record exists. Until you save, the field shows the message that the record isn't created yet.
 
 7. For **File**, select **Choose File**, and then select your CSV file.
+
+   > [!NOTE]
+   > The maximum upload size is 128 MB.
+
 8. Select **Save**. Validation runs automatically, and **Validation Status** is set.
 9. Check **Validation Status**. If the file failed validation, correct the file and upload it again. For more information, go to [Validate an uploaded file](#validate-an-uploaded-file).
 

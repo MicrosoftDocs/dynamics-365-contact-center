@@ -183,19 +183,19 @@
     - name: Use messaging channels
       items:
       - name: Introduction to channels
-        href: /dynamics365/customer-service/use/channels?context=/dynamics365/contact-center/context/use-context
-      - name: Overview of SMS channels
-        href: /dynamics365/customer-service/use/sms-channel-overview?context=/dynamics365/contact-center/context/use-context
+        href: channels.md
       - name: Use SMS channel
-        href: /dynamics365/customer-service/use/sms-telesign-twilio?context=/dynamics365/contact-center/context/use-context
+        href: sms-twilio.md
       - name: Use Facebook channel
-        href: /dynamics365/customer-service/use/facebook?context=/dynamics365/contact-center/context/use-context
+        href: facebook.md
       - name: Use WhatsApp channel
-        href: /dynamics365/customer-service/use/whatsapp?context=/dynamics365/contact-center/context/use-context
+        href: whatsapp.md
+      - name: Use LINE channel
+        href: line.md
+      - name: Use custom messaging channels
+        href: custom-messaging.md
       - name: Use Microsoft Teams channel
-        href: /dynamics365/customer-service/use/teams-channel?context=/dynamics365/contact-center/context/use-context
-      - name: Use WeChat channel
-        href: /dynamics365/customer-service/use/wechat-channel?context=/dynamics365/contact-center/context/use-context
+        href: teams-channel.md
       - name: View social profiles
         href: /dynamics365/customer-service/use/supported-channels-social-profiles?context=/dynamics365/contact-center/context/use-context
       - name: Understand disconnected chats

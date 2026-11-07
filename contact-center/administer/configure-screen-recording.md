@@ -1,15 +1,15 @@
 ---
-title: Configure screen and audio recording with desktop companion application
-description: Learn how to enable and review screen recordings in Dynamics 365 Contact Center and Dynamics 365 Customer Service to improve agent performance and ensure compliance.
+title: Configure screen recording with the desktop companion application
+description: Learn how to enable and review screen recordings in Dynamics 365 Contact Center and Dynamics 365 Customer Service to improve representative performance and ensure compliance.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
-ms.date: 10/22/2026
-ms.custom: bap-template 
+ms.date: 11/06/2026
+ms.custom: bap-template
 ---
 
-# Configure screen and audio recording with desktop companion application
+# Configure screen recording with the desktop companion application
 
 [!INCLUDE [cc-feature-availability](../includes/cc-feature-availability.md)]
 
@@ -18,7 +18,7 @@ Screen recording captures the on-screen activity of a customer service represent
 Screen recording helps organizations support quality, compliance, training, and operational insights by allowing authorized users to review how work is handled in real workflows.
 
 > [!NOTE]
-> When Dynamics 365 Contact Center is embedded in third-party applications such as Salesforce, only automated screen recording for voice calls is supported. Features such as screen recording profiles, manual screen recording, data masking, and the screen recording side pane aren't supported. Administrative and supervisor capabilities remain available through Customer Service admin center and Customer Service workspace.
+> When Dynamics 365 Contact Center is embedded in third-party applications such as Salesforce, only automated screen recording for voice calls is supported. Features such as screen recording profiles, manual screen recording, data masking, and the screen recording side pane aren't supported. Administrative and supervisor capabilities remain available through Copilot Service admin center and Copilot Service workspace.
 
 > [!IMPORTANT]
 > This feature is intended to help customer service managers or supervisors enhance their team's performance and improve customer satisfaction. It isn't intended to be used, and shouldn't be used, to make decisions that affect the employment of an employee or group of employees, including compensation, rewards, seniority, or other rights or entitlements. <br> 
@@ -40,22 +40,19 @@ Screen recording captures a representative’s on-screen actions while the repre
 
 Recordings typically capture customer interactions such as conversations, chats, and cases. Authorized roles can access these recordings for review and analysis.
 
-When representatives use the desktop companion application, the system first saves screen recordings locally and then securely uploads them to the organization’s Dataverse environment. After a successful upload, the application automatically deletes the local recording file. To ensure secure upload to Dataverse, keep the desktop companion application running in the background
+When representatives use the desktop companion application, the system first saves screen recordings locally and then securely uploads them to the organization’s Dataverse environment. After a successful upload, the application automatically deletes the local recording file. To ensure secure upload to Dataverse, keep the desktop companion application running in the background.
 
-## Enable screen and audio recording for representatives
+## Enable screen recording for representatives
 
-You can configure tenant-level controls for screen recording and audio recording in Copilot Service admin center. You must still configure workstream-level settings before recordings are captured.
+You can configure tenant-level controls for screen recording in Copilot Service admin center. You must still configure workstream-level settings before recordings are captured. Turn on screen recording to enable screen capture of representative workflows.
 
-- Audio recording: Turn on this setting to enable call and transcript recordings. Then configure the workstream-level audio recording settings to record the call, the transcript, or both.
-- Screen recording: Turn on this setting to enable screen capture of representative workflows.
-
-To turn on screen and audio recording:
+To turn on screen recording:
 
 1. In the site map of Copilot Service admin center, go to **Workspaces**.
-1. [Create a new experience profile](/dynamics365/customer-service/administer/create-agent-experience-profile) or add to an existing profile.
+1. [Create an experience profile](/dynamics365/customer-service/administer/create-agent-experience-profile) or add to an existing profile.
 1. In the **Productivity pane**, edit and turn on screen recording. The screen recording icon appears in the **Productivity pane**.
 1. In the site map, go to **Quality Management**, and on the **Quality Management** page, select **Manage** for **Enable screen and call recording**.
-1. On the **Screen and audio recording** page, the following settings are available:
+1. On the **Enable screen and call recording** page, the following settings are available:
 
     - **Turn on screen recording**: Enable this setting to access and configure the following screen recording options:
 
@@ -66,17 +63,15 @@ To turn on screen and audio recording:
         > [!IMPORTANT]
         > You are responsible for configuring and using screen recording functionality in compliance with applicable law. By selecting **I agree**, you attest that, outside of Dynamics 365 functionality, your organization has provided and secured any legally required or otherwise appropriate notice and consent from any individual being recorded to use this functionality without the red border during screen recording.
 
-        You must read the full notice and select **I agree** to apply the change. Selecting **Cancel** cancels the change, and the red border remains enabled. Acknowledgement is recorded per administrator and per environment for audit purposes.
+        You must read the full notice and select **I agree** to apply the change. Selecting **Cancel** cancels the change, and the red border remains enabled. Acknowledgment is recorded per administrator and per environment for audit purposes.
 
         > [!NOTE]
         > The option to turn off the screen recording indicator is available to US customers only. For all other regions, the **Display red border** checkbox remains selected and can't be edited. When the recording indicator isn't available for a tenant, the option is hidden or disabled in the user interface, and a message indicates that the recording indicator is required.
 
-        - **Multi-screen capture**: When enabled, representatives can select which monitors are recorded in a multimonitor setup. When disabled, all monitors are recorded by default.
-
-    - **Turn on audio recording**: Enable the toggle. Disabling audio recording at the tenant level overrides all workstream configurations and prevents audio recording across the organization.
+        - **Multi-screen capture**: When enabled, representatives can select which monitors are recorded in a multi-monitor setup. When disabled, all monitors are recorded by default.
 
 > [!NOTE]
-> Screen recording and audio recording operate independently. Disabling the tenant-level setting prevents feature usage, even if workstream settings remain configured.
+> Disabling the tenant-level setting prevents feature usage, even if workstream settings remain configured.
 
 ## Types of screen recording
 
@@ -91,13 +86,13 @@ Recordings are capped at two hours. When the limit is reached, the current recor
 Only authorized users can review recordings to understand how customer interactions were handled. Representatives can't access or view their own screen recordings.
 
 1. In the site map of Copilot Service workspace, go to **Screen Recordings**.
-1. On the **Active Screen Recordings** page, search for recordings by using filters such as Name, Agent, Session type, or Created on.
+1. On the **Active Screen Recordings** page, search for recordings by using filters such as **Name**, **Agent**, **Session type**, or **Created on**.
 1. Review the list of recordings that match your search criteria.
 1. Select a recording to view the recording details or download the file, if required.
 
 ### Playback of screen recordings
 
-Users with the **Screen Recording Supervisor** or **Screen Recording Admin** role can play back screen recordings within closed conversations. Authorized users can review recordings directly from the Customer Service workspace application.
+Users with the **Screen Recording Supervisor** or **Screen Recording Admin** role can play back screen recordings within closed conversations. Authorized users can review recordings directly from the Copilot Service workspace application.
 
 ## Manage your screen recordings
 
@@ -116,7 +111,7 @@ Define retention periods for screen recordings and transcripts to help your orga
 1. In **Bulk Deletion Wizard**, select **Next**.
 1. In **Define search criteria**, in the **Look for** dropdown, select **Screen Recordings**.
 1. Select the **Select** link, and then select **Created On**.
-1. In the operator list, change **Equals** to **Older Than X Days**. Enter the retention period in days (for example, 365 for one year) in the **Choose Date** text box. 
+1. In the operator list, change **Equals** to **Older Than X Days**. Enter the retention period in days (for example, 365 for one year) in the **Choose Date** text box.
 1. Select **Next**.
 1. Enter a name for the job, such as **Bulk Delete Screen Recordings Older Than 1 Year**.
 1. Schedule the job time for a low-activity period (for example, 3:00 AM).
@@ -134,13 +129,9 @@ To configure retention for transcripts, repeat the steps for screen recordings, 
 
 Learn more about long-term data retention with Dataverse in [Dataverse long term data retention overview](/power-apps/maker/data-platform/data-retention-overview).
 
-### Playback of screen recordings
-
-Users with the **Screen Recording Supervisor** or **Screen Recording Admin** role can play back screen recordings within closed conversations. Authorized users can review recordings directly from the Customer Service workspace application.
-
 ## Related information
 
 [Dataverse long-term data retention FAQ](/power-apps/maker/data-platform/data-retention-faq)  
 [Configure call recording, transcription, and real-time translation](/dynamics365/customer-service/administer/voice-channel-configure-transcripts)  
-[Enable screen recording for representatives](/dynamics365/customer-service/use/csw-productivity-pane)  
+[Use the productivity pane to help resolve customer issues](/dynamics365/customer-service/use/csw-productivity-pane)  
 [Configure data masking for screen recordings](mask-data-in-screen-recording.md)

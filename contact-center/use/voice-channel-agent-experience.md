@@ -129,3 +129,4 @@ If you select a rating from 1 to 4, the app shows predefinted options such as "I
 [Overview of the voice channel](/dynamics365/customer-service/administer/voice-channel?context=/dynamics365/contact-center/context/administer-context)  
 [Enable voice consult with Microsoft Teams users](/dynamics365/customer-service/administer/voice-consult-microsoft-teams-user?context=/dynamics365/contact-center/context/administer-context)  
 [Call a customer](/dynamics365/customer-service/use/voice-channel-call-customer?context=/dynamics365/contact-center/context/use-context)  
+[Authenticate customers during a call (preview)](authenticate-customers-during-call.md)

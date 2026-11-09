@@ -129,6 +129,6 @@ GET /api/data/v9.0/CCaaS_GetDeliveryTasks(DeliveryTaskId=68b36193-49cc-4749-8118
 ### Related information
 
 [Use CCaaS_CreateProactiveDelivery API](ccaas_createproactivedelivery.md)  
-[Use CCaaS_CancelDeliveryTask API](ccaas_canceldeliverytask.md)  
+[Use CCaaS_CancelProactiveEngagement API](ccaas_cancelproactiveengagement.md)  
 [Use CCaaS_CreateOperation API](ccaas_createoperation.md)  
 [Use proactive engagement tables for reporting](../proactive-engagement-tables.md)  

@@ -277,7 +277,7 @@ You can cancel pending calls and optionally suppress future calls that match def
 1. Optionally, enter a **Comment**. Cancelled calls are marked in the delivery tables with a reference to the cancellation policy to enable reporting.
 
 > [!NOTE]
-> Cancellation applies to queued calls only. To cancel an individual delivery through the CCaaS API, use `CCaaS_CreateOperation` with the `Cancel` operation and the delivery ID. To cancel all pending and future attempts in a contact chain, use `CCaaS_CancelDeliveryTask` with the delivery task ID. Learn more in [Use CCaaS_CreateOperation API](../extend/api/ccaas_createoperation.md).
+> Cancellation applies to queued calls only. To cancel an individual delivery through the CCaaS API, use `CCaaS_CreateOperation` with the `Cancel` operation and the delivery ID. To cancel all pending and future attempts in a contact chain, use `CCaaS_CancelProactiveEngagement` with the delivery task ID. Learn more in [Use CCaaS_CreateOperation API](../extend/api/ccaas_createoperation.md) and [Use CCaaS_CancelProactiveEngagement API](../extend/api/ccaas_cancelproactiveengagement.md).
 
 
 

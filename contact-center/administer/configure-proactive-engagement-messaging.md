@@ -194,7 +194,7 @@ Messaging engagements support one contact per request. Contact chaining and conf
 To cancel messaging engagements through the CCaaS APIs:
 
 - To cancel a pending delivery, use [CCaaS_CreateOperation](../extend/api/ccaas_createoperation.md) with the `Cancel` operation and `DeliveryId`.
-- To stop future attempts for a delivery task, use [CCaaS_CancelDeliveryTask](../extend/api/ccaas_canceldeliverytask.md) with `DeliveryTaskId`.
+- To stop future attempts for a delivery task, use [CCaaS_CancelProactiveEngagement](../extend/api/ccaas_cancelproactiveengagement.md) with `DeliveryTaskId`.
 
 Cancellation doesn't recall messages that are already sent, and work that already started might continue.
 

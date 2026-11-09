@@ -5,9 +5,10 @@ author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: concept-article
-ms.date: 09/14/2026
+ms.date: 11/04/2026
 ms.custom: bap-template
 ms.collection:
+ai-usage: ai-assisted
 ---
 
 # Deprecations in Dynamics 365 Contact Center
@@ -18,6 +19,12 @@ Administrators and IT professionals can use this information to prepare for futu
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability in a major future release. The feature or capability will continue to work and will be fully supported until it's officially removed. This deprecation notification might span a few years. After removal, the feature or capability won't work. We're informing you now to give you enough time to adjust and update your code before the feature or capability is removed.
+
+## CCaaS_CancelDeliveryTask API is deprecated
+
+The `CCaaS_CancelDeliveryTask` API is deprecated and will be removed in a future release. The API continues to work until it's removed.
+
+Use the [CCaaS_CancelProactiveEngagement API](../extend/api/ccaas_cancelproactiveengagement.md) instead. To cancel a delivery task, send the same `DeliveryTaskId` to `CCaaS_CancelProactiveEngagement`. To cancel a scheduled callback, send `CallbackConversationId` instead. The new API also cancels deliveries by proactive engagement configuration or contact, including pending journey deliveries.
 
 ## WhatsApp channel through Azure Communication Services is deprecated
 

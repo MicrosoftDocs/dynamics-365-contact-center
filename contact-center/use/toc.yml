@@ -72,6 +72,12 @@
         href: /dynamics365/customer-service/use/voice-channel-transfer-consult?context=/dynamics365/contact-center/context/use-context
       - name: Monitor voice calls
         href: /dynamics365/customer-service/use/voice-channel-monitor-calls?context=/dynamics365/contact-center/context/use-context
+    - name: Biometric authentication and fraud detection (preview)
+      items:
+      - name: Authenticate customers during a call
+        href: authenticate-customers-during-call.md
+      - name: Track business performance
+        href: biometric-authentication-fraud-detection-business-performance.md
     - name: Use contact center agents
       items:
       - name: Overview of contact center Agents

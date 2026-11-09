@@ -37,6 +37,12 @@
       "url": "https://github.com/MicrosoftDocs/dynamics-365-customer-engagement-pr",
       "branch": "main",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "contact-center-ai-shared",
+      "url": "https://github.com/MicrosoftDocs/contact-center-intelligence-pr",
+      "branch": "main",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {},

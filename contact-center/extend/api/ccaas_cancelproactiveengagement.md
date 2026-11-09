@@ -153,6 +153,5 @@ Canceled deliveries get the status `Cancelled`. The [msdyn_proactive_delivery](.
 
 [Use CCaaS_CreateProactiveDelivery API](ccaas_createproactivedelivery.md)  
 [Use CCaaS_GetDeliveryTasks API](ccaas_getdeliverytasks.md)  
-[Use CCaaS_CancelDeliveryTask API](ccaas_canceldeliverytask.md)  
 [Use CCaaS_CreateOperation API](ccaas_createoperation.md)  
 [Use proactive engagement tables for reporting](../proactive-engagement-tables.md)  

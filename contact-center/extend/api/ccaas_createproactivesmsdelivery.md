@@ -64,7 +64,7 @@ You can use the `CCaaS_CreateProactiveSMSDelivery` API to create a proactive out
 ### Related information
 
 [Use CCaaS_CreateProactiveDelivery API](ccaas_createproactivedelivery.md)  
-[Use CCaaS_CancelDeliveryTask API](ccaas_canceldeliverytask.md)  
+[Use CCaaS_CancelProactiveEngagement API](ccaas_cancelproactiveengagement.md)  
 [Use CCaaS_CreateProactiveVoiceDelivery API](ccaas_createproactivevoicedelivery.md)  
 [Use CCaaS_CreateOperation API](ccaas_createoperation.md)  
 [Use proactive engagement tables for reporting](../proactive-engagement-tables.md)  

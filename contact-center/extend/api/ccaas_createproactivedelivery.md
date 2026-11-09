@@ -268,7 +268,7 @@ The identifiers are GUID strings. Dataverse can also include OData annotations, 
 | Property | Type | Description |
 |---|---|---|
 | `DeliveryId` | String (GUID) | The unique identifier of the first individual dial or message delivery. Use this value with [CCaaS_CreateOperation](ccaas_createoperation.md) and the `Cancel` operation to cancel that delivery. |
-| `DeliveryTaskId` | String (GUID) | The unique identifier of the task that manages the contact chain and all reattempts. Use this value with [CCaaS_CancelDeliveryTask](ccaas_canceldeliverytask.md) to cancel pending and future attempts for the task. |
+| `DeliveryTaskId` | String (GUID) | The unique identifier of the task that manages the contact chain and all reattempts. Use this value with [CCaaS_CancelProactiveEngagement](ccaas_cancelproactiveengagement.md) to cancel pending and future attempts for the task. |
 
 ### Handle throttling
 
@@ -286,6 +286,6 @@ For contact-list intake scenarios, review [CCaaS_CreateProactiveBulkDelivery](cc
 
 [Use CCaaS_CreateProactiveVoiceDelivery API](ccaas_createproactivevoicedelivery.md)  
 [Use CCaaS_CreateOperation API](ccaas_createoperation.md)  
-[Use CCaaS_CancelDeliveryTask API](ccaas_canceldeliverytask.md)  
+[Use CCaaS_CancelProactiveEngagement API](ccaas_cancelproactiveengagement.md)  
 [Configure proactive engagement](../../administer/configure-proactive-engagement.md)  
 [Use proactive engagement tables for reporting](../proactive-engagement-tables.md)

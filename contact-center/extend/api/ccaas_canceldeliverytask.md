@@ -5,12 +5,16 @@ author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: reference
-ms.date: 06/05/2026
+ms.date: 11/04/2026
 ms.collection: bap-ai-copilot
 ms.custom: bap-template
+ai-usage: ai-assisted
 ---
 
 # Use CCaaS_CancelDeliveryTask API
+
+> [!IMPORTANT]
+> The `CCaaS_CancelDeliveryTask` API is deprecated and will be removed in a future release. Use the [CCaaS_CancelProactiveEngagement API](ccaas_cancelproactiveengagement.md) with the same `DeliveryTaskId` instead, or with `CallbackConversationId` for a scheduled callback. Learn more in [Deprecations in Dynamics 365 Contact Center](../../implement/deprecations-contact-center.md).
 
 You can use the `CCaaS_CancelDeliveryTask` API to cancel all pending and future delivery attempts for a contact or an account. When a delivery task is canceled, no further attempts are made for the associated contact(s).
 

@@ -222,6 +222,40 @@
             href: proactive-engagement-outcomes.md
           - name: Best practices for proactive engagement
             href: proactive-engagement-best-practices.md
+      - name: Biometric authentication and fraud detection (preview)
+        items:
+        - name: Overview of Biometric authentication and fraud detection
+          href: biometric-authentication-fraud-detection-overview.md
+        - name: Voice biometrics basics
+          href: biometric-authentication-basics.md
+        - name: Identification and authentication for voice biometrics
+          href: identification-biometric-authentication.md
+        - name: Compare authentication methods for the voice channel
+          href: compare-authentication-methods-voice-channel.md
+        - name: Set up Biometric authentication and fraud detection
+          items:
+          - name: Configure authentication profiles
+            href: configure-authentication-profiles.md
+          - name: Enable on a workstream
+            href: enable-biometric-authentication-fraud-detection-workstream.md
+          - name: Capture customer consent
+            href: capture-consent-for-voice-enrollment.md
+        - name: Manage voice enrollment, authentication, and unenrollment
+          href: manage-voice-enrollment-authentication.md
+        - name: Manage customer consent and data
+          href: manage-customer-consent-data.md
+        - name: Monitor and optimize system performance
+          href: monitor-optimize-system-performance.md  
+        - name: Fraud detection
+          items:
+          - name: Overview of fraud detection
+            href: fraud-detection-overview.md
+          - name: Review fraud cases
+            href: fraud-detection-review-cases.md
+          - name: Manage fraudster watchlists
+            href: manage-fraudster-watchlists.md
+          - name: Manage fraudster voiceprints
+            href: manage-fraudster-voiceprints.md            
       - name: Voice
         items:
         - name: Introduction to the voice channel

@@ -95,12 +95,6 @@ For human-assisted interactions, real-time streaming analytics provides visibili
 
   - **Average speed to answer**: Average time from when the conversation enters the queue to when a representative accepts it.
 
-  - **Average handle time**: The metric shows the average handle time for conversations handled by one or more representatives. For each conversation, the total handle time is the sum of the talk, hold, active chat, and wrap-up time across all associated conversations or segments, including those created when the conversation is transferred between representatives or queues.
-
-  Average handle time (Conversation) = Total handle time for all handled conversations divided by the  Total number of handled conversations
-
-  - **Representative transfer rate**: The percentage of handled conversation assignments that representatives transfer to another representative or queue. The metric is calculated at the representative level and can be aggregated across representatives in a queue or business unit.
-
   -  **Queue transfer rate**: The percentage of conversation queue entries that resulted in a transfer to another queue, including representative-initiated transfers and transfers due to in-queue overflow.
 
 ### Overflow metrics

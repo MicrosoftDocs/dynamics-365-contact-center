@@ -1,23 +1,25 @@
 ---
 title: Use evaluation criteria
-description: Learn how to use, edit, and extend evaluation criteria to assess cases and conversations effectively in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
+description: Learn how to create, edit, extend, and test evaluation criteria for quality evaluations in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 ms.update-cycle: 180-days
-ms.date: 10/23/2026
+ms.date: 11/12/2026
 ms.custom: bap-template 
 ---
 
 # Use evaluation criteria
 
-This article explains how to use, edit, and extend evaluation criteria, including best practices to create clear and actionable instructions. Learn how to use built-in criteria, customize evaluation plans, and optimize quality assessments for your organization.
+Evaluation criteria define the questions, instructions, and scoring that you use to assess cases and conversations in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
+
+Learn how to use built-in criteria, create and customize criteria, configure scoring, manage versions, test with simulations, extend criteria across business units, and link knowledge articles to guide evaluations.
 
 ## Prerequisites
 
-Before you create evaluation criteria, make sure that:
+Before you create evaluation criteria, complete the following tasks:
 
 - Enable [Quality evaluation](../administer/manage-quality-evaluation-agent.md).
 - Complete prerequisites to use knowledge sources in evaluation criteria.
@@ -29,24 +31,23 @@ Before you create evaluation criteria, make sure that:
 
 As a Quality Evaluator, you can use or copy the out-of-the-box evaluation criteria, create a new evaluation criteria, and edit published evaluation criteria. 
 
-- Use the **Support quality** or **Closed Conversations Default Criteria**.
 
 > [!NOTE]
 > The out-of-the-box evaluation criteria are prefilled, published, and read-only.
 
 To view evaluation criteria, complete the following steps:
 
-1. In the site map of Copilot Service workspace, go to **Evaluation criteria.**
+1. In the site map of Copilot Service workspace, go to **Evaluation criteria**.
 
 1. On the **Evaluation criteria** page, select the out-of-the-box evaluation criteria to view the details.
 
 ## Create evaluation criteria
 
-Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best practices for evaluation criteria](#best-practices-for-evaluation-criteria) when you create evaluation criteria.
+Refer to the [limitations](#limitations-for-evaluation-criteria) and [instructions for evaluation criteria](#best-practices-for-evaluation-criteria) when you create evaluation criteria.
 
-1.  On the **Evaluation criteria** page, select **New**.
+1. On the **Evaluation criteria** page, select **New**.
 
-1.  On the **New evaluation criteria** page, in the **Criteria details** section, enter the **Criteria name** and **Description**.
+1. On the **New evaluation criteria** page, in the **Criteria details** section, enter the **Criteria name** and **Description**.
 
 1. Turn on the **Criteria scoring** toggle to enable scoring per criteria.
 
@@ -64,11 +65,9 @@ Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best pra
 
     - Provide any supplemental instructions required for the question.
 
-    - Save and publish the evaluation criterion.
+1. In the **Add form level instructions** section, enter instructions, if any.
 
-1.  In the **Add form level instructions** section, enter instructions, if any.
-
-1.  In **Section 1**, enter the following details:
+1. In **Section 1**, enter the following details:
 
     - **Section name**: Enter a name.
 
@@ -76,34 +75,34 @@ Refer to the [[limitations]](#limitations-for-evaluation-criteria) and [Best pra
 
     - **Section weight (%)**: Assign a weight to the evaluation criteria. The total weight across sections must equal 100%.
 
-1.  Select **Add question** if you want to add a question.
+1. Select **Add question** if you want to add a question.
 
     For each question, enter the following details:
 
-    -  **Select answer type**: Select from the options, **Yes/No**, **Multi-select**, **Single-select**, or **Descriptive**.
+    - **Select answer type**: Select from the options, **Yes/No**, **Multi-select**, **Single-select**, or **Descriptive**.
 
-    -  **Form question text**: Enter the form question text.
+    - **Form question text**: Enter the form question text.
 
     - **Add question-level instructions**: Enter instructions for the question, if any. Instructions help generate evaluation answers and improve accuracy.
 
     - **Allow Not Applicable responses**: Select to allow evaluators to mark the question as not applicable. When selected, other answer choices are cleared, and the question is excluded from the evaluation score. The score is calculated based only on applicable questions. Learn more in [Overall evaluation score](evaluation-plan.md#overall-evaluation-score).
-    
+
     - Select **AI response enabled** to allow AI to predict an answer for this question. If you don't select this option, AI doesn't process the input or return an answer. Evaluation creation fails if the criteria lacks AI-enabled questions for the selected mode in an evaluation plan, as follows:
 
     - **AI agent mode**: All questions must be AI-enabled. Manual editing isn't allowed.
     - **AI assisted mode**: At least one question must be AI-enabled.
-    
-    This requirement applies to both on-demand evaluations and evaluation plans.
 
-    1.  Depending on the answer type, select **Scoring enabled** to add scoring. Turn off the scoring toggle if you don't want to create a criteria with scoring.
+        This requirement applies to both on-demand evaluations and evaluation plans.
 
-    1. Select **Mark as critical question** if you want the question to be marked as critical. Learn more in [Mark a question as critical](#mark-a-question-as-critical).
+    - Depending on the answer type, select **Scoring enabled** to add scoring. Turn off the scoring toggle if you don't want to create a criteria with scoring.
 
-1.  For **Answer options** depending on the answer type you select, the answer options appear. Provide **answer-level instructions** for your answers, as required. If you marked the question as critical, you must select the **Mark as fail** option for an answer to avoid errors.
+    - Select **Mark as critical question** if you want the question to be marked as critical. Learn more in [Mark a question as critical](#mark-a-question-as-critical).
+
+1. For **Answer options** depending on the answer type you select, the answer options appear. In **Answer options**, provide answer-level instructions for each answer. If you marked the question as critical, you must select the **Mark as fail** option for an answer to avoid errors.
 
     You can delete or duplicate a section or question, as required.
 
-1.  Select **Save**, and then select **Publish**.
+1. Select **Save**, and then select **Publish**.
 
 ## Define scores for your evaluation criteria
 
@@ -121,18 +120,18 @@ Every evaluation is built from the following levels:
 
 A section's contribution to the overall score depends on the section weight and the scores of the questions in that section.
 
-Equal distribution (default): When you don't configure question-level weights, the model distributes the section weight equally across all questions in the section. The model calculates the section score by using the following formula:
+**Equal distribution (default)**: When you don't configure question-level weights, the model distributes the section weight equally across all questions in the section. The model calculates the section score by using the following formula:
 
 Section score = Average of all question scores × Section weight percentage
 
-### Question-level weightage
+### Question-level weighting
 
 When you configure question-level weights, the system calculates scores by using the assigned weight of each question. This approach lets organizations give greater importance to specific questions based on business requirements. The weighted question scores are then aggregated to calculate the section score and overall evaluation score.
 
 > [!NOTE]
-> You enable question-level weightage through a separate toggle. It doesn't affect previously created criteria unless administrators choose to enable the feature.
+> You enable question-level weighting through a separate toggle. It doesn't affect previously created criteria unless administrators choose to enable the feature.
 
-When you enable question-level weightage:
+When you enable question-level weighting:
 
 - Each section must still have a total section weight percentage.
 - You can assign specific weight percentages to individual questions within a section.
@@ -156,17 +155,10 @@ When you enable question-level weightage:
 
     Single-select questions allow evaluators to choose one option from a predefined list. Supervisors assign a score (0-100) to each option, and the selected option determines the question score. Option scores don't need to add up to 100.
 
-    Example:
+    Example: Excellent = 100, Good = 75, Needs Improvement = 50, Poor = 0. If Good is selected, the question score is 75/100.
 
-    Excellent = 100
-    Good = 75
-    Needs Improvement = 50
-    Poor = 0
-    
-    If Good is selected, the question score is 75/100.
-    
-    - For **Descriptive** questions, there's no scoring.
-    
+    For **Descriptive** questions, there's no scoring.
+
 ### Scoring with extended criteria
 
 Extended criteria (child criteria) let organizations enforce a shared evaluation baseline while allowing individual business units to add their own evaluation questions.
@@ -182,7 +174,7 @@ Final score = (Parent portion score × Parent weight percentage) + (Child portio
 
 ## Mark a question as critical
 
-Turn on **Mark as critical question** to designate a question as critical within a criteria. Critical questions highlight mandatory requirements such as compliance, safety, or mandatory process steps that must not be missed.
+Turn on **Mark as critical question** to designate a question as critical within a criteria. Critical questions highlight requirements such as compliance, safety, or required process steps.
 
 If a critical question is answered with a fail option, the entire evaluation or simulation fails. You can mark multiple questions as critical within a criteria, but each critical question must have at least one fail option configured. If not, an error appears. Scoring doesn't change when a critical question causes an evaluation to fail.
 
@@ -217,14 +209,14 @@ To edit your published evaluation criteria, complete the following steps:
 Each edit and publish action increments the evaluation criteria version. The latest published version is always used for new evaluations. Supervisors can review prior versions, restore any version to make it the current one, or discard draft changes as needed.
 
 1. Select the source criteria and go to the **Versioning History** tab to view versions and version numbers along with the latest data that might be added to the criteria.
-1. Select **Record** to go to a specific version and view the details in read-only.
+1. Select **Record** to go to a specific version and view the details in read-only mode.
 1. Select **Restore/Publish** to republish the selected version as the latest. This action discards the current draft and increments the version number of the published criteria.
 
 You can also add the **Version** column to the evaluation grid to track versions. Learn more in [Evaluations](use-evaluations.md).
 
 ## Create and run a simulation
 
-Before running a simulation, you need to enable the **QEA Simulation** flow. Learn more in [Configure connection references](/dynamics365/customer-service/administer/admin-km-agent-connections).
+Before you run a simulation, you need to enable the **QEA Simulation** flow. Learn more in [Configure connection references](/dynamics365/customer-service/administer/admin-km-agent-connections#set-up-connection-references-for-quality-evaluation).
 
 Supervisors can select any criteria in **Draft** or **Published** state and run a simulation test with real case and conversation data to preview quality evaluation prediction outcomes.
 
@@ -265,16 +257,16 @@ After you create source criteria for your business unit, you can extend the crit
 
     1.  **Extended scoring weight**: If the source criteria has scoring criteria enabled, provide the extended scoring weight.
 
-    1.  **Source scoring weight**: Gets auto calculated, depending on the extended scoring criteria.
+    1.  **Source scoring weight**: Calculated automatically from the extended scoring weight.
 
 1.  Select **Add question** to add questions to the extended criteria.
 
 1.  Select **Save**, and then select **Publish**.
 
     > [!NOTE]
-    > - The **Source criteria details** in the **Extended criteria details** page isn't editable. However, if you make updates to the source criteria, the extended criteria is updated as well.
+    > - The **Source criteria details** on the **Extended criteria details** page isn't editable. However, if you make updates to the source criteria, the extended criteria updates.
     > - The **Criteria scoring** reflects the selection you made in the source criteria.
-    > - You can't extend an out-of-the-box criteria. For example, **Support quality**.
+    > - You can't extend an out-of-the-box criteria such as, **Support quality**.
 
 ## Copy the default evaluation criteria for cases and conversations
 
@@ -284,18 +276,18 @@ After you create source criteria for your business unit, you can extend the crit
 
 ## Use knowledge sources in evaluation criteria
 
-### Prerequisites
+Knowledge adherence enables evaluators to use knowledge articles as reference sources for specific evaluation questions. During evaluation, the system retrieves relevant information from the linked articles and uses it to generate responses. The feature uses existing knowledge base assist retrieval capabilities and requires Dataverse Copilot provisioning for knowledge retrieval.
+
+When an evaluation runs, the agent grounds its scoring against the linked article and cites the reasoning from the knowledge article sources, which helps your organization enforce their own evaluation policies.
+
+For any case, you can view the criteria and the knowledge source used for the answers provided in the evaluation summary. You can also select the knowledge article link to view the article.
+
+### Prerequisites for knowledge sources
 
 - Knowledge-source-based evaluation criteria is enabled in your environment.
 - A published knowledge article exists in Dynamics 365.
 - You have permissions to create and manage evaluation criteria.
-- Dataverse Copilot indexing and knowledge sources are enabled from the Copilot Service admin center.
-
-Knowledge adherence enables evaluators to use knowledge articles as reference sources for specific evaluation questions. During evaluation, the system retrieves relevant information from the linked articles and uses it to generate responses. The feature uses existing knowledge base assist retrieval capabilities and requires Dataverse Copilot provisioning for knowledge retrieval.
-
-When an evaluation runs, the agent grounds its scoring against the linked article and cites the reasoning from the knowledge article sources, which helps customers enforce their own evaluation policies.
-
-For any case, you can view the criteria and the knowledge source used for the answers provided in the evaluation summary. You can also select the knowledge article link to go through the article details.
+- Dataverse Copilot provisioning and knowledge sources are enabled from the Copilot Service admin center.
 
 ### Limitations
 
@@ -307,35 +299,7 @@ For any case, you can view the criteria and the knowledge source used for the an
 
 ## Best practices for evaluation criteria
 
-- **Criteria-level instructions:** Define instructions that apply to the entire evaluation criteria. Include comprehensive goals, expectations, and constraints to guide evaluation behavior across all questions and answers.
-
-- **Question-level instructions**: Provide specific instructions for each question to help generate accurate evaluation answers. These instructions are scoped to the question only, and don’t influence other parts of the evaluation.
-
-    - **Question text**: Define each evaluation question to assess a single, well-defined objective to help ensure clarity and direct alignment with the answer options.
-
-    - **Keep the question specific**: Use specific questions to keep evaluations focused and accurate. For example,
-    
-        |Avoid |Prefer |
-        |---------|---------|
-        |Was communication handled appropriately?    |     Was a complete resolution email sent?    |
-        |Was the case handled correctly?    | Did the response include all required details?  |
-
-- **Answer-level instructions**: Include answer-specific instructions for each answer option to help clarify the intent and context of the response.
-
-    - **Define answer conditions explicitly**: Avoid double negatives. State conditions as direct truths. Answer Yes, if any of the following conditions is true: 
-    1. [Condition A] 
-    2. [Condition B] 
-    3. [Condition C]
-
-    - **Answer choices**: Clearly define answer options, especially for multi-choice or list-type questions. Make sure you include fallback options to handle ambiguous or unexpected responses. Answer conditions are explicit with no double negatives.
-
-- **Clarity drives accuracy**: Use precise and detailed instructions to improve evaluation accuracy. Avoid vague language and ensure that all instructions are explicit, contextual, and actionable.
-
-- **Put exclusion rules first**: State what is to be ignored before defining what should be evaluated. Don't consider [excluded record types] as evidence, even if they mention or describe [relevant information].
-
-- **Specify the exact data source**: Name the exact record type. Based only on [specific record type] from [specific actor].
-
-    - **Require evidence from the source**: Ensure that evidence is verified against the actual record rather than inferred from excluded sources.
+Learn more in [Write instructions for evaluation criteria](evaluation-criteria-best-practices.md).
 
 ## Limitations for evaluation criteria
 
@@ -375,7 +339,7 @@ When you exceed limits:
 
 **Extended criteria**
 
-Creating extended criteria introduces a parent–child relationship between source criteria and extended criteria.
+Creating extended criteria introduces a parent-child relationship between source criteria and extended criteria.
 
 - Question limits: The system enforces question limits independently for parent and child criteria, with up to 50 questions each.
 - Character limits: The system calculates recommended character limits (for example, 90,000 characters) by using both parent and child content combined.
@@ -383,13 +347,13 @@ Creating extended criteria introduces a parent–child relationship between sour
 |Limit type  | Behavior  |
 |---------|---------|
 |Question count     |  50 total per criteria        |
-|Recommended size    |   Language‑specific warning  appears   |
+|Recommended size    |   Language-specific warning appears   |
 |Hard size limit    |   Approximately 700,000 characters; saving is blocked      |
 |Instruction limit    |    2,000 characters    |
 
 ## Related information
 
 [Manage quality evaluation](../administer/manage-quality-evaluation-agent.md)  
-[Use evaluation plan](evaluation-plan.md)  
-[Use evaluations](use-evaluations.md)
+[Use evaluation plans](evaluation-plan.md)  
+[Use evaluations](use-evaluations.md)  
 [Troubleshoot failed quality evaluations](/troubleshoot/dynamics-365/customer-service/omnichannel-for-customer-service/quality-evaluation-retry)

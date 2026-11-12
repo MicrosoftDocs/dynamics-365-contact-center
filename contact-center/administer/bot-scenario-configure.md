@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 08/27/2026
+ms.date: 11/12/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
@@ -58,8 +58,11 @@ Use the Interactive Voice Response (IVR) voice agent sample in Microsoft Copilot
 The voice agent template helps customers track the status of their orders. When a customer calls the phone number linked to the agent's workstream, the workflow is as follows:
 
 1. The agent greets the customer and asks how it can help. The AI agent template has a Dataverse query that replicates an API call which happens at the start of a call. This query returns a holiday sale message for Valentine’s Day. 
+
    > [!NOTE]
-   > The customer can select Spanish-US by selecting * (asterisk). However, the rest of the AI agent's workflow hasn't been translated to Spanish. The agent will continue to respond in English.
+   > - The customer can select Spanish-US by selecting * (asterisk). However, the rest of the AI agent's workflow isn't translated to Spanish. The agent continues to respond in English.
+   > - To disclose AI-generated voice interactions, configure an audible disclosure message in the greeting experience before the voice agent begins servicing requests. 
+
 1. The customer says, "I want to track my order."
 1. The agent recognizes the customer's intent to track an order and prompts the customer to provide the order number or phone number. If the customer says a phrase that the AI agent can't handle, the agent uses **Generative Answers** to provide information. The agent redirects the user to the main menu with the prompt, "What else can I help you with?"
 1. The AI agent initiates a Dataverse query to trigger Automatic Number Identification to validate the caller. In this example, the Dataverse table returns sample Automatic Number Identification information to the AI agent. The agent then asks the customer if they want to look up the status of the order associated with that phone number.

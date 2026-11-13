@@ -1,7 +1,8 @@
 ---
 title: Create and manage shift rotation policies
 description: Learn how supervisors can create and manage shift rotation policies for service representatives in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
-ms.date: 08/21/2026
+ai-usage: ai-assisted
+ms.date: 11/02/2026
 ms.topic: how-to
 author: cbms03
 ms.author: cbrahmandam
@@ -71,7 +72,7 @@ You can filter, sort, and search the list to find a specific policy.
 1. Select **Save**.
 
 > [!IMPORTANT]
-> Changes to a shift rotation policy take effect during the next scheduler run. Previously generated schedules aren't updated.
+> Changes to a shift rotation policy take effect during the next scheduler run. Previously generated schedules and bookings aren't updated.
 
 ## Pause or resume a shift rotation policy
 
@@ -115,3 +116,15 @@ You can assign a shift plan from a rotation policy or select a rotation policy f
 
 > [!NOTE]
 > A shift plan can have only one rotation policy. You can assign the same rotation policy to multiple shift plans.
+
+### Remove a rotation policy from a shift plan
+
+1. Open the shift plan.
+1. In the shift plan settings, clear **Rotation policy**.
+1. Select **Save**.
+
+Future scheduling runs for the shift plan use non-rotation scheduling and representative eligibility rules.
+
+## Cover extra staffing needs
+
+If rotation assignments don't meet a shift plan's staffing needs, the scheduler can use flexible workers or other eligible representatives to provide extra coverage.

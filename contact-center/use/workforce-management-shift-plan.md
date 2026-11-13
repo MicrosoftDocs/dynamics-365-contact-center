@@ -1,7 +1,8 @@
 ---
 title: Create and schedule a shift plan
 description: Learn how to create and schedule a shift plan in Copilot Service workspace to help you more easily manage your staffing needs.
-ms.date: 09/25/2026
+ai-usage: ai-assisted
+ms.date: 11/12/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -39,7 +40,12 @@ Your administrator must enable the feature in Copilot Service admin center. Lear
      > [!NOTE]
      > Select a capacity plan to use the forecasted capacity for each time interval to optimize staffing.
 
-   - **Shift Rotation Policy**: Select the applicable shift rotation policy.
+   - **Shift Rotation Policy**: Select the applicable shift rotation policy. A policy defines its activation date, time zone, rotation cadence, recurring time slots, and the representatives assigned to each slot. When the scheduler generates schedules for this shift plan, it rotates representative assignments based on the policy.
+
+      > [!NOTE]
+      > Changes to a shift rotation policy apply only to future scheduling runs. Existing bookings from previous runs aren't changed.
+
+      To stop the rotation from advancing, pause the policy. The scheduler continues to use representatives in their current slot positions. To stop using rotation assignments for this shift plan, remove the policy; future runs use non-rotation scheduling and the shift plan's representative eligibility rules. Learn more in [Create and manage shift rotation policies](workforce-management-shift-rotation-policies.md).
    - **Planning Group**: Select the applicable planning group. The shift plan inherits the planning group's time zone.
    - **Skills**: The preferred skills a service representative must have to work the shift.
    - **Queues**: The support queues that service representatives are assigned to during the shift.

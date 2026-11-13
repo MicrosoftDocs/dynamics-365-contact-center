@@ -1,7 +1,7 @@
 ---
 title: Create and manage forecast scenarios
 description: Learn how to use forecast scenario reports to predict case and conversation volumes in Dynamics 365 Contact Center and Customer Service.
-ms.date: 10/19/2026
+ms.date: 11/10/2026
 ms.topic: how-to
 author: lalexms
 ms.author: laalexan
@@ -23,6 +23,7 @@ Create a forecast scenario to define what to analyze and how often to generate p
 - A security role with the **Read** privilege on the `msdyn_dataanalyticsreport_forecast` table.
 - For an external data source, upload the file beforehand through the **Manage External Data** option. Learn more in [Import historical data for forecast scenarios](workforce-management-import-historical-data.md).
 - Enough historical data for each queue and channel to support the forecast duration and start date. Learn more in [Understand minimum data requirements and forecast accuracy](#understand-minimum-data-requirements-and-forecast-accuracy).
+- Optional: To use an operation calendar in the forecast, an operation calendar that defines when your team is available. Set up operation calendars in the site map of Copilot Service workspace under **Workforce Management** > **Operating Calendars**. To create or edit operation calendars, you must have the WFM Administrator or WFM Forecaster security role.
 
 ## Create a forecast scenario
 
@@ -37,8 +38,10 @@ Create a forecast scenario to define what data to analyze, when forecast values 
    - **Duration (Days)**: Enter the number of days to forecast, starting from the **Forecast Start Date**.
      - Short-term scenarios support up to 84 days.
      - Long-term scenarios support up to 1,095 days.
-   - **Interval**: Values are set automatically to intraday (short-term) or daily (long-term).
+   - **Interval**: The value is set automatically to **Short Term** or **Long Term**, based on the forecast type you selected.
+   - **Planning Interval (Minutes)**: Available only for short-term scenarios. The value is set to 15 minutes and can't be changed. If you select a planning group, the value matches the planning group's interval, such as 30 or 60 minutes.
    - **Time zone**: Select the time zone for forecast generation and display.
+   - **Operation Calendar**: Optionally, select the operation calendar that defines when your service or support team is available. The list shows the calendars set up in Copilot Service workspace under **Workforce Management** > **Operating Calendars**. Forecast intervals that fall outside the calendar's available hours are set to null to indicate that the team is closed, not that demand is zero. If you leave this field blank, the forecast assumes 24/7 availability. This field is available for both short-term and long-term scenarios.
 
 1. On the **Configuration parameters** card, configure the following options:
 
@@ -50,7 +53,6 @@ Create a forecast scenario to define what data to analyze, when forecast values 
 
    - **Data source**: Select **Internal** or **External**.
    - **Historical data start date**: Select the start date.
-   - **Seasonality**: Select a holiday calendar.
    - **External data**: If you selected **External** as the data source, upload the file. You must upload the file beforehand through the **Manage External Data** option. Learn more in [Import historical data for forecast scenarios](workforce-management-import-historical-data.md).
 
 1. On the **Forecast refresh schedule** card, configure the following options:
@@ -75,6 +77,7 @@ When you select a planning group:
 
 - The **Time zone**, **Channel**, and **Queue** values are populated from the planning group and become read-only. This behavior keeps the forecast scenario aligned with the planning group's configuration.
 - The forecast scenario uses the planning group's time zone, channels, and queues when it generates the forecast.
+- For short-term scenarios, the **Planning Interval (Minutes)** value matches the planning group's interval.
 
 When you don't select a planning group, you can manually configure the **Time zone**, **Channel**, and **Queue** values. The existing scenario-creation workflow remains unchanged.
 
@@ -92,7 +95,7 @@ To manage a scenario, open it from the **Active Forecast Scenarios** page, and t
 
 ### Edit the scenario
 
-Select **Edit** to update editable inputs, such as the **Name**, **Duration (Days)**, **Historical data start date**, **Seasonality**, and refresh schedule. After creation, you can't change the settings that define the scenario: **Forecast type**, **Interval**, **Forecast entity**, and **Data source**.
+Select **Edit** to update editable inputs, such as the **Name**, **Duration (Days)**, **Operation Calendar**, **Historical data start date**, and refresh schedule. After creation, you can't change the settings that define the scenario: **Forecast type**, **Interval**, **Forecast entity**, and **Data source**.
 
 ### Create a new snapshot
 

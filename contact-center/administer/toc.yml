@@ -8,6 +8,14 @@
         href: ../implement/overview-contact-center.md?context=/dynamics365/contact-center/context/administer-context
       - name: Use Copilot Service admin center
         href: cc-admin-center.md
+      - name: Contact Center Admin Workspace (preview)
+        items:
+        - name: Contact Center Admin Workspace overview
+          href: contact-center-admin-workspace-overview.md
+        - name: Visualize and edit configuration with Visual Designer
+          href: visualize-edit-configuration-with-visual-designer.md
+        - name: Trace conversations with Journey Visualization
+          href: trace-conversations-with-journey-visualization.md
       - name: Manage user roles and personas
         items:
         - name: Manage users

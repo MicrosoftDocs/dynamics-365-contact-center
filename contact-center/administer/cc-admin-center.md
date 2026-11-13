@@ -37,3 +37,4 @@ The app is automatically installed in all the Dynamics 365 Contact Center organi
 ### Related information
  
 [International availability of Dynamics 365 Contact Center](../implement/international-availability.md)  
+[Contact Center Admin Workspace overview (preview)](contact-center-admin-workspace-overview.md)  

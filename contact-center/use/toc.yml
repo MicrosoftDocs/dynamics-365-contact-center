@@ -12,6 +12,8 @@
         href: ccw-overview.md
       - name: Use the inbox
         href: /dynamics365/customer-service/use/use-inbox?context=/dynamics365/contact-center/context/use-context
+      - name: Use Human Assist (preview)
+        href: use-human-assist.md
       - name: Use timeline
         href: /powerapps/user/add-activities?context=/dynamics365/contact-center/context/use-context
       - name: Learn about linking timeline notes with table records

@@ -97,19 +97,11 @@ This deployment requires your own host integration. In addition to completing th
 
 ### Get the workspace embed URL
 
-> [!NOTE]
-> Until general availability, the Contact Center workspace URL isn't available in Copilot Service admin center. Use the URL for your region in [Access Contact Center workspace](../use/contact-center-workspace-overview.md#access-contact-center-workspace).
+To get the Contact Center workspace URL for your region, see [Access Contact Center workspace](../use/contact-center-workspace-overview.md#access-contact-center-workspace).
 
-Use the URL provided by Copilot Service admin center:
+ Configure your host application with the workspace URL for your organization's region, preserving any environment information in the URL.
 
-1. Open Copilot Service admin center.
-1. On the welcome page, under **Your default contact center**, select **Open**.
-1. Select the **Conversation widget** tab.
-1. Under **Integration into third-party systems**, copy the primary Contact Center workspace URL for your environment.
-
-The URL for the earlier embedded experience is also available and is labeled as legacy.
-
-Keep the environment information in the copied URL. Use Microsoft Entra sign-in for authentication, and keep access tokens, passwords, and client secrets outside the embed URL and CTI driver.
+Use Microsoft Entra sign-in for authentication, and keep access tokens, passwords, and client secrets outside the embed URL and CTI driver.
 
 ### Configure the host application
 

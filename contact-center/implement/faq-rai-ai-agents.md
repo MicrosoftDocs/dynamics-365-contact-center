@@ -1,14 +1,14 @@
 ---
 title: Responsible AI FAQ for AI agents
-description: This FAQ provides information about the AI agents in Dynamics 365 Contact Center and Dynamics 365 Customer Service. This FAQ also includes key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
+description: Learn how AI agents in Dynamics 365 Customer Service and Contact Center work, how they're evaluated, their limitations, and how to use them responsibly.
 author: neeranelli
 ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 11/16/2026
+ms.date: 11/17/2026
 ms.update-cycle: 180-days
-ms.custom: 
+ms.custom:
 - bap-template
 - responsible-ai-faq
 ---
@@ -16,7 +16,7 @@ ms.custom:
 
 [!INCLUDE[cc-feature-availability](../includes/cc-feature-availability.md)]
 
-This FAQ article describes the AI impact of AI agents in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
+This FAQ article describes the responsible use of AI agents in Dynamics 365 Customer Service and Dynamics 365 Contact Center.
 
 ## What are AI agents?
 
@@ -30,15 +30,15 @@ Customer Intent Agent uses generative AI to autonomously discover customer inten
 
 - **Improve dynamic conversations**: Service representatives quickly understand customer needs, guide interactions with relevant follow-up questions, and offer real-time tailored solutions.
 
-- **Assist service representatives**: A curated list of questions and suggested solutions appear in the chat response box, enhancing efficiency and reducing typing effort.
+- **Assist service representatives**: A curated list of questions and suggested solutions appears in the chat response box, enhancing efficiency and reducing typing effort.
 
 - **Enhance self-service capabilities**: The agent generates follow-up questions and queries knowledge sources based on collected information. This approach increases deflection rates and lets service representatives focus on complex cases.
 
-Beyond intent discovery, Customer Intent Agent can autonomously lead conversations using business instructions, enterprise functions, and knowledge articles linked to each intent:
+Beyond intent discovery, Customer Intent Agent can autonomously lead conversations by using business instructions, enterprise functions, and knowledge articles linked to each intent:
 
-- **Follows business instructions**: The instructions defined by the business to make sure of consistent tone, policy compliance, and best‑practice workflows.
+- **Follows business instructions**: The instructions defined by the business to ensure consistent tone, policy compliance, and best‑practice workflows.
 
-- **Invokes enterprise functions**: During a chat or voice session, Customer Intent Agent can call business‑exposed APIs, such as, order lookup, status update, and claim submission to act on the customer’s behalf.
+- **Invokes enterprise functions**: During a chat or voice session, Customer Intent Agent can call business-exposed APIs, such as order lookup, status update, and claim submission to act on the customer's behalf.
 
 - **Retrieves and synthesizes knowledge**: The agent pulls in relevant knowledge articles and contextual data so every answer is based on accurate and current business content.
 
@@ -48,18 +48,18 @@ Beyond intent discovery, Customer Intent Agent can autonomously lead conversatio
 
 Customer Knowledge Management Agent helps create and manage customer knowledge in real time. After a case is closed, Customer Knowledge Management Agent:
 
-- **Analyzes case details and related information**: Includes notes, conversations, and emails to draft a knowledge article.
+- **Analyzes case details and related information**: Uses notes, conversations, and emails to draft a knowledge article.
 
 - **Fills knowledge gaps**: Identifies whether the new article is necessary by comparing the case against the existing Dynamics 365 knowledge base, avoiding duplicates.
 
-- **Ensures compliance**: Sensitive data is scrubbed automatically, and organizations can extend compliance checks with custom automation.
+- **Ensures compliance**:  Removes sensitive data automatically, and organizations can add their own automation to extend compliance checks.
 
 ### Case Management Agent
 
 > [!NOTE]
 > Case Management Agent is available in Customer Service only.
 
-Case Management Agent helps automate case handling, saving time service representatives spend on manually filling case details. Administrators can customize the agent's behavior by configuring rules per the organization's requirements.
+Case Management Agent helps automate case handling, reducing the time service representatives spend filling in case details. Administrators can customize the agent's behavior by configuring rules based on the organization's requirements.
 
 The capabilities of Case Management Agent include:
 
@@ -70,27 +70,29 @@ The capabilities of Case Management Agent include:
 
 ### Quality Evaluation Agent
 
-Quality Evaluation Agent in Dynamics 365 provides a unified, AI-powered framework to help organizations define standards, evaluate performance, and improve customer interactions at scale. It brings together the following core skills:
+Quality Evaluation Agent in Dynamics 365 provides a unified, AI-powered framework to help organizations define standards, evaluate performance, and improve customer interactions. It brings together the following core skills:
 
 **Quality evaluation**: Assesses interactions based on criteria that you define and generates insights on how to improve quality.
 
-**Governance**: The AI-powered rule-based system acts as a safeguard layer on top of other AI agents and human-authored communications such as email. The system intercepts outbound email body and attachments, evaluates them against predefined guardrail policies, and then sends the email to the customer if it meets the policy requirements. If the output violates a policy, it can log activity or block the message to prevent noncompliant results from reaching end users based on the policy configured.
+**Governance**: The AI-powered rule-based system acts as a safeguard layer on top of other AI agents and human-authored communications such as email. The system intercepts the body of outbound email and attachments, evaluates them against predefined guardrail policies, and then sends the email to the customer if it meets the policy requirements. If the output violates a policy, it can log activity or block the message, depending on the policy, to prevent noncompliant results from reaching end users.
+
+**Coaching (preview)**: Turns quality evaluation insights into personalized scorecard and training for customer service representatives. Supervisors can assign knowledge article reviews, AI-powered scenario role-play, and knowledge checks that target specific skill gaps, then track how the training improves quality over time.
 
 ### Quality Assurance Agent
 
 [!INCLUDE [cc-feature-availability-cc-and-cci](../includes/cc-feature-availability-cc-cci.md)]
 
-Quality Assurance Agent delivers real-time quality evaluation, compliance monitoring, and coaching guidance for customer service conversations in Dynamics 365 Contact Center. It analyzes live interactions between customers and service representatives to detect quality problems, identify compliance risks, and provide real-time coaching nudges to improve agent performance.
+Quality Assurance Agent delivers real-time quality evaluation, compliance monitoring, and coaching guidance for customer service conversations in Dynamics 365 Contact Center. It analyzes live interactions between customers and service representatives to detect quality problems, identify compliance risks, and provide real-time coaching nudges to improve representative performance. Quality Assurance Agent can:
 
 - Analyze conversation content such as text or chat in real time.
 
 - Evaluate interactions against predefined quality criteria and compliance rules.
 
-- Detect patterns such as policy violations and agent behavior signals. For example, tone, adherence.
+- Detect patterns such as policy violations and representative behavior signals, such as tone and adherence.
 
 - Trigger coaching prompts (nudges) and alerts for compliance concerns.
-    
-## What is the system’s intended use?
+
+## What is the system's intended use?
 
 These AI agents are designed to:
 
@@ -100,11 +102,11 @@ These AI agents are designed to:
 
 - Automatically extract and populate the relevant case and related entity fields from customer emails and chats to reduce manual data entry for customer service representatives. This automation helps ensure that the case information is complete right from case creation.
 
-- Evaluate customer support interactions using your organization’s evaluation criteria. Governance policies enforce guardrail policies on email body and attachments. Supervisors manage these policies. The policies apply to emails sent by Case Management Agent (autonomous flow) and emails composed by customer service representatives. The capability is available with initial support for the email channel, where compliance risk and brand impact are the highest.
+- Evaluate customer support interactions by using your organization’s evaluation criteria. Governance policies enforce guardrail policies on email body and attachments. Supervisors manage these policies. The policies apply to emails sent by Case Management Agent (autonomous flow) and emails composed by customer service representatives. The capability is available with initial support for the email channel, where compliance risk and brand impact are the highest.
 
 - Support quality and compliance in customer interactions. Quality Assurance Agent enables organizations to monitor conversations, provide real-time feedback to agents during live engagements, enforce organizational and regulatory guardrails, and ultimately improve overall customer service outcomes.
 
-## How is AI agent evaluated? What metrics are used to measure performance?
+## How are AI agents evaluated? What metrics are used to measure performance?
 
 Microsoft evaluates performance by using internal support data and ongoing pilots within Microsoft Customer Service and Support (CSS). Assess Customer Intent Agent based on the accuracy of extracted intents against manually identified ground truth derived from internal support data. Similarly, evaluate Customer Knowledge Management Agent for the quality and relevance of generated knowledge articles. It aligns with the established ground truth and avoids duplication. Evaluate Case Management Agent based on the quality and relevance of its predictions for the configured fields, generated from the specified context sources.
 
@@ -138,7 +140,7 @@ AI agents have the following limitations:
 
 The AI agents generate intents and knowledge articles based on the data that already exists in your Dataverse instance. They don't collect any other data beyond basic telemetry and any feedback you provide. The data within your CRM system is analyzed to create intent libraries and draft knowledge articles, and governance policies.
 
-Quality Assurance Agent processes customer-agent conversation data, such as chat transcripts and configured business rules, such as quality criteria and compliance guardrails. It doesn't independently generate new training data at runtime. Instead, it evaluates interactions based on pre-defined logic and models.
+Quality Assurance Agent processes customer-agent conversation data, such as chat transcripts and configured business rules, such as quality criteria and compliance guardrails. It doesn't independently generate new training data at runtime. Instead, it evaluates interactions based on predefined logic and models.
 
 ## What operational factors and settings allow for effective and responsible use of the system?
 

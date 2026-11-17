@@ -532,6 +532,14 @@
           href: use-evaluations.md
         - name: Write instructions for evaluation criteria
           href: evaluation-criteria-best-practices.md
+      - name: Quality and coaching (preview)
+        items:
+        - name: Overview of coaching and development 
+          href: overview-coach-development.md
+        - name: Manage coaching and development
+          href: manage-coach-development-supervisor.md
+        - name: Use coaching and development
+          href: use-coach-development-representative.md
   - name: Known issues in Customer Service and Dynamics 365 Contact Center
     href: https://go.microsoft.com/fwlink/p/?linkid=2165393
   - name: Responsible AI

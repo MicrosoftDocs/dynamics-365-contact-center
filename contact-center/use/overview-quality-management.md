@@ -1,12 +1,12 @@
 ---
 title: Overview of Quality Management
-description: Quality Management supports coaching, compliance, and continuous improvement across customer interactions. Learn how it optimizes your service team's productivity.
+description: Learn how Quality Management in Dynamics 365 Customer Service and Contact Center supports quality evaluation, governance, coaching, and recording.
 author: Soumyasd27
 ms.author: sdas
 ms.reviewer: sdas
 ms.topic: overview
 ms.collection: bap-ai-copilot
-ms.date: 11/05/2026
+ms.date: 11/17/2026
 ms.custom: bap-template
 ---
 
@@ -16,9 +16,7 @@ Quality Management provides capabilities for evaluating customer interactions, g
 
 Quality Management is a core component of Workforce Engagement Management, a broader category of capabilities for optimizing your service team's productivity and experience. Workforce Engagement Management also includes [Workforce Management](/dynamics365/customer-service/use/workforce-management-overview), which supports the workforce planning lifecycle, from forecasting customer demand to monitoring schedule adherence in real time.
 
-Quality Evaluation Agent powers the quality evaluation and governance capabilities. Screen and call recording is a separate Quality Management capability.
-
-:::image type="content" source="../media/quality-management-architecture-overview.png" alt-text="Diagram showing Quality Management capabilities: quality evaluation and governance powered by Quality Evaluation Agent, and screen and call recording.":::
+Quality Evaluation Agent powers the quality evaluation, governance, and coaching and development capabilities. Screen and call recording is a separate Quality Management capability.
 
 Key capabilities include:
 
@@ -27,7 +25,9 @@ Key capabilities include:
 - **Governance**, which helps enforce compliance policies for outgoing customer communications.
 Learn more in [Configure governance policies](/dynamics365/customer-service/administer/configure-governance-policies) and [Use governance policies](/dynamics365/customer-service/use/use-governance-policies).
     > [!NOTE]
-    > This feature is applicable to Dynamics 365 Customer Service only.
+    > This feature applies only to Dynamics 365 Customer Service.
+
+- **Coaching and development**, which uses quality evaluation insights to create personalized scorecards for representatives, coaching dashboards for teams, and targeted training. Supervisors can use these tools to close gaps and track quality improvements over time. Learn more in [Overview of coaching and development (preview)](overview-coach-development.md).
 
 - **Screen and call recording**, which captures interaction context beyond conversation transcripts, providing a more complete view of representative workflows and customer engagements. Learn more in [Configure screen recording with desktop companion application](../administer/configure-screen-recording.md).
 

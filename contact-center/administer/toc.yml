@@ -180,6 +180,10 @@
           items:
           - name: Manage quality evaluation
             href: manage-quality-evaluation-agent.md
+        - name: Quality and coaching (preview)
+          items:
+          - name: Set up coaching and development 
+            href: setup-coach-development-admin.md
         - name: Screen recording
           items: 
           - name: Configure screen recording

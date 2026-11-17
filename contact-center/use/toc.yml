@@ -8,6 +8,8 @@
       href: ../implement/overview-contact-center.md?context=/dynamics365/contact-center/context/use-context
     - name: Representative experience
       items:
+      - name: Contact Center workspace overview (preview)
+        href: contact-center-workspace-overview.md
       - name: Overview of Copilot Service workspace
         href: ccw-overview.md
       - name: Use the inbox

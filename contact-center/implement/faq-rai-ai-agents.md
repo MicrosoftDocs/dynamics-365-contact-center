@@ -6,7 +6,7 @@ ms.author: nenellim
 ms.reviewer: nenellim
 ms.topic: faq
 ms.collection: bap-ai-copilot
-ms.date: 11/05/2026
+ms.date: 11/16/2026
 ms.update-cycle: 180-days
 ms.custom: 
 - bap-template
@@ -78,7 +78,7 @@ Quality Evaluation Agent in Dynamics 365 provides a unified, AI-powered framewor
 
 ### Quality Assurance Agent
 
-[!INCLUDE [cc-feature-availability-cc-only](../includes/cc-feature-availability-cc-only.md)]
+[!INCLUDE [cc-feature-availability-cc-and-cci](../includes/cc-feature-availability-cc-cci.md)]
 
 Quality Assurance Agent delivers real-time quality evaluation, compliance monitoring, and coaching guidance for customer service conversations in Dynamics 365 Contact Center. It analyzes live interactions between customers and service representatives to detect quality problems, identify compliance risks, and provide real-time coaching nudges to improve agent performance.
 

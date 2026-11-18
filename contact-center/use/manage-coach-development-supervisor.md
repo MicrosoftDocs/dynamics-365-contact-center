@@ -35,8 +35,8 @@ You see only the business units that you're authorized to access. Representative
 
 1. In the site map of Workforce Engagement Management (preview) app, go to **Coaching setup**, and then select the **Scorecards** tab.
 1. In **Scorecard settings**, select **Add business unit**.
-1. On the **Manage scorecard settings** dialog box, in **Scorecard details**, select the following settings:
-    - **Business unit**: Select one business unit. Keep the default scorecard settings or edit them.
+1. In the **Manage scorecard settings** dialog box, in **Scorecard details**, select the following settings:
+    - **Business unit**: Select one or more business units. Keep the default scorecard settings or edit them.
     - **Schedule**: Select how often scorecards update. **Weekly** scorecards are based on the previous week's conversations and cases. **Monthly** scorecards are based on the previous month's conversations and cases.
     - **Scorecard information**: Select **Quantitative data** to include performance KPIs and metrics, **AI insights** to include AI-generated coaching insights and feedback, or both.
 
@@ -62,7 +62,7 @@ In the site map of Workforce Engagement Management (preview), go to **Coaching &
 
 ### Review and publish scorecards
 
-When review is required, scorecards are created with **Pending review** status. Perform the following steps:
+If review is required, the system creates scorecards with **Pending review** status. Perform the following steps:
 
 1. Open a representative's scorecard.
 1. Review the coaching overview, insights, opportunities for growth, and scores.
@@ -79,7 +79,7 @@ When review is required, scorecards are created with **Pending review** status. 
 
 ## View impact
 
-On the **Coaching & development** page, select **Impact**, and then select a business unit and period. Review the following:
+On the **Coaching & development** page, select the **Impact** tab, and then select a business unit and period. Review the following:
 
 - **Team performance trends**: Daily average quality, with markers for when scorecards were published and training was completed.
 - **Before, after, and follow-up**: Quality at baseline (before coaching), after training completion, and at a later follow-up, with the change and its 95% confidence interval.
@@ -92,9 +92,9 @@ On the **Coaching & development** page, select **Impact**, and then select a bus
 
 ## Create and assign training
 
-On the **Coaching & development** page, select the **Training** tab. The **Training** page includes the **Training dashboard**, **Assignments**, and **Training library** views.
+On the **Coaching & development** page, select the **Training** tab. The **Training** page includes **Assignments** and **Training library** views.
 
-### Training types
+You can assign the following training types to representatives, depending on what you want them to learn or practice.
 
 | Training type | Description |
 |---|---|
@@ -102,13 +102,28 @@ On the **Coaching & development** page, select the **Training** tab. The **Train
 | Knowledge check | A quiz generated from knowledge articles that checks the representative's understanding.  |
 | Scenario-based training | An AI coach simulates a customer and provides feedback during practice. |
 
-### Use recommended training
+### Assign training and track progress
 
-Copilot generates **Recommended actions** from coaching insights, representative performance, and training signals. Each recommendation shows the opportunity for growth, the representative to assign it to, **Why recommended**, and the **Recommended training**, with the reason that the training type fits the gap. When published training already addresses the gap, it's recommended before new training.
+Assign published training from a recommended action or **Assignments**.
 
-1. On the **Training dashboard**, review a recommended action and its reason.
-1. Select **Assign** to assign existing published training.
-1. If suitable training isn't available, create training. The opportunity for growth is carried into the new training.
+1. On the **Training** tab, select **Assignments** > **New training assignment**.
+1. In **New training assignment**, select the training type and the source material in **Training content**.
+1. In **Assignment details**, provide the following information:
+    - **Assignment name**: Enter the assignment name.
+    - **Assign to**: Select the representative you want to assign the training to.
+    - **Requirement**: Set the assignment as **Required** or **Recommended**.
+    - **Due date**: Specify a due date. Use **Assignments** to update due dates, edit assignments, cancel assignments, and track progress.
+1. Select **Assign training** or **Save draft**.
+
+| Assignment status | Description |
+|---|---|
+| Not started | The training is assigned, and the representative didn't start it.  |
+| In progress | The representative started the training. |
+| Overdue | The due date passed before the representative completed the training.  |
+| Completed | The representative completed the training. Scenario-based training is marked complete automatically when the representative finishes the practice. Completion is tracked, but scenario-based training isn't scored as pass or fail.  |
+| Cancelled | The assignment was withdrawn. It's excluded from overdue counts but remains visible in history. |
+
+Scorecard acknowledgment and training completion are tracked independently. Acknowledging a scorecard doesn't complete training, and completing training doesn't change the scorecard status.
 
 ### Create training
 
@@ -120,25 +135,11 @@ Copilot generates **Recommended actions** from coaching insights, representative
     - **Development focus**: Select the opportunity for growth that the training addresses. Suggestions come from your team's opportunities for growth. Each training has one development focus.
     - **Context & instructions**: Describe the scenario, behaviors, or knowledge that the training should cover.
 1. Select **Generate training**. Copilot generates editable training content from your source material. To finish later, select **Save draft**.
-1. Review and edit the generated content. Select **Test as representative** to preview the training as a representative experiences it.
+1. Review and edit the generated content.
 1. Select **Publish**. Published training is available to assign and reuse.
 
 > [!IMPORTANT]
 > You can assign only published training. Review AI-generated training for accuracy and appropriateness before publishing it.
-
-### Assign training and track progress
-
-Assign published training from a recommended action or the training library. Select the representatives, set the assignment as **Required** or **Recommended**, and specify a due date. Use **Assignments** to update due dates, edit assignments, cancel assignments, and track progress.
-
-| Assignment status | Description |
-|---|---|
-| Not started | The training is assigned and the representative didn't start it.  |
-| In progress | The representative started the training. |
-| Overdue | The due date passed before the representative completed the training.  |
-| Completed | The representative completed the training. Scenario-based training is marked complete automatically when the representative finishes the practice. Completion is tracked, but scenario-based training isn't scored as pass or fail.  |
-| Cancelled | The assignment was withdrawn. It's excluded from overdue counts but remains visible in history. |
-
-Scorecard acknowledgment and training completion are tracked independently. Acknowledging a scorecard doesn't complete training, and completing training doesn't change the scorecard status.
 
 ## Related information
 

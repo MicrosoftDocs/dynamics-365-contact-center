@@ -37,19 +37,19 @@ Before you begin, ensure that:
 
 | Persona | Security role | Privileges |
 |---|---|---|
-| Administrator | Quality Administrator | - Configure connection references and enable the **Agent Coach CSR Insights** flow. <br> - Turn on scorecards, and training assignment and creation.   |
+| Administrator | Quality Administrator | - Configure connection references and enable the **Agent Coach CSR Insights** and **Agent Coach Impact** flow. <br> - Turn on scorecards, and training assignment and creation.   |
 | Supervisor | Quality Manager | - Assign scorecards to business units and configure scorecard settings in coaching setup. <br> - Review, edit, and publish scorecards, and use the coaching dashboard to obtain coaching insights. <br> - Create, generate, publish, and assign training, and track assignments on the **Training** tab.<br> - View coaching and training impact on the **Impact** tab. |
 | Representative | Customer Service Representative | - Review, acknowledge, and comment on scorecards. <br> - Open and complete assigned training in **My training**.  |
 
 ## Configure connection references and enable flows
 
-When you go to the **Coaching** page in the Workforce Engagement Management (preview) app, the **Prerequisites** section shows whether connection references and flows are set up. Configure connection references and turn on the **Agent Coach CSR Insights** flow. These connections link the flow to data sources such as Microsoft Dataverse and Copilot Studio.
+When you go to the **Coaching** page in the Workforce Engagement Management (preview) app, the **Prerequisites** section shows whether connection references and flows are set up. Configure connection references and turn on the **Agent Coach CSR Insights** and **Agent Coach Impact** flow. These connections link the flow to data sources such as Microsoft Dataverse and Copilot Studio.
 
 1. In the Workforce Engagement Management (preview) app, go to **Admin settings** > **Quality management**.
 1. On the **Quality management** page, for **Coaching (preview)**, select **Manage**. 
 1. On the **Coaching (preview)** page, in **Prerequisites**, check the status of **Step 1: Connection References** and **Step 2: Power Automate Flows**.
     1. If **Step 1: Connection References** shows as **In progress** or **Incomplete**, select **Manage connections**. In the **Configure Connections** dialog box, select **Update connection references to use your connector** to complete connection references.
-    1. If **Step 2: Power Automate Flows** shows as **Not Started**, select **Enable** to enable the **Agent Coach CSR Insights** flow. If the flow is turned off, use the navigation link to open the flow in Power Automate and enable it.
+    1. If **Step 2: Power Automate Flows** shows as **Not Started**, select **Enable** to enable the **Agent Coach CSR Insights** and **Agent Coach Impact** flow. If the flow is turned off, use the navigation link to open the flow in Power Automate and enable it.
 
 1. When all tiles show as **Ready**, the prerequisites are complete.
 

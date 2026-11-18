@@ -1,6 +1,6 @@
 ---
 title: Use Human Assist (preview)
-description: Use Human Assist to get real-time resolution steps and suggested replies during customer conversations in Dynamics 365 Contact Center.
+description: Use human assist to get real-time resolution steps and suggested replies during customer conversations in Dynamics 365 Contact Center.
 author: neeranelli
 ms.author: nenellim
 ms.topic: how-to
@@ -10,11 +10,11 @@ ms.custom: bap-template
 ai-usage: ai-assisted
 ---
 
-# Use Human Assist (preview)
+# Use human assist (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Human Assist provides customer service representatives (service representatives or representatives) with real-time resolution steps and suggested replies during customer conversations by using an AI agent and reasoning logic in Copilot Service workspace.
+Human assist provides customer service representatives (service representatives or representatives) with real-time resolution steps and suggested replies during customer conversations by using an AI agent and reasoning logic in Copilot Service workspace.
 
 You stay in control of every action. Insert, edit, or ignore suggested replies, and approve tools before they run. Human Assist uses approved knowledge sources to provide consistent guidance, with links to the underlying sources.
 
@@ -22,13 +22,13 @@ You stay in control of every action. Insert, edit, or ignore suggested replies, 
 
 ## Prerequisites
 
-Before you use Human Assist, your administrator must complete the following setup:
+Before you use human assist, your administrator must complete the following setup:
 
-- Create a real-time AI agent with knowledge, tools, and instructions specifically for Human Assist, rather than a self-service scenario. Learn more in [Configure real-time agents](/microsoft-copilot-studio/voice-realtime-configure?tabs=digitalmessagingagent).
+- Create a real-time AI agent with knowledge, tools, and instructions specifically for human assist, rather than a self-service scenario. Learn more in [Configure real-time agents](/microsoft-copilot-studio/voice-realtime-configure?tabs=digitalmessagingagent).
 
-- When you configure connectors and tools, give each input parameter a clear name and description. Human Assist relies on these descriptions to map details from the conversation, such as a card number or account number, to the correct parameter. Generic parameters, such as a Dataverse connector's row item, can't be mapped correctly. To work with Dataverse, use a Power Automate flow that exposes clearly defined inputs and performs the Dataverse operation internally, rather than calling the Dataverse connector directly.
+- When you configure connectors and tools, give each input parameter a clear name and description. Human assist relies on these descriptions to map details from the conversation, such as a card number or account number, to the correct parameter. Generic parameters, such as a Dataverse connector's row item, can't be mapped correctly. To work with Dataverse, use a Power Automate flow that exposes clearly defined inputs and performs the Dataverse operation internally, rather than calling the Dataverse connector directly.
 
-- Enable the Human Assist capabilities for representatives through [experience profiles](/dynamics365/customer-service/administer/create-agent-experience-profile). In the experience profile, ensure that every channel that you plan to use is enabled, including the voice channel.
+- Enable the human assist capabilities for representatives through [experience profiles](/dynamics365/customer-service/administer/create-agent-experience-profile). In the experience profile, ensure that every channel that you plan to use is enabled, including the voice channel.
 
 
 - Enable Copilot feedback for the tenant to let representatives send feedback to Microsoft.
@@ -128,10 +128,10 @@ How well Human Assist performs depends mostly on how its AI agent is designed: t
 - **Match the structure to the complexity.** One AI agent is enough for a single, simple process. For several processes, use a main AI agent that identifies the request and one child agent for each process. Give each child agent a short description of what it handles and what it doesn't. Human Assist uses that description to route the conversation.
 - **Write each process as small, specific steps.** Include one action or one piece of information per step, in order, and name the system or tool involved. Vague steps, such as "follow the usual process," and steps that combine several actions are hard to track and coach.
 - **Separate running a tool from sharing its result.** Use one step to run the tool and another step to tell the customer the outcome, so each step can be tracked on its own.
-- **Make completed work visible in the conversation.** Human Assist tracks resolution steps from the conversation, or from the transcript on a call. When a representative works in another application, a short message to the customer after the step is done, such as "I've found your booking," lets Human Assist recognize the step as completed. A promise, such as "I'll check that now," isn't evidence that the step happened.
+- **Make completed work visible in the conversation.** Human assist tracks resolution steps from the conversation, or from the transcript on a call. When a representative works in another application, a short message to the customer after the step is done, such as "I've found your booking," lets human assist recognize the step as completed. A promise, such as "I'll check that now," isn't evidence that the step happened.
 - **Use what the customer already said.** Instruct the AI agent to read the whole conversation and not to ask again for details the customer already gave, including details given to a self-service agent before the handoff.
 - **Don't let the AI agent guess facts.** When knowledge doesn't cover a question, the AI agent should suggest a holding reply and let the representative confirm, rather than invent a price, date, availability, or policy.
-- **Describe content, not layout.** Human Assist decides how to present replies and steps. Prescribing a reply format or template tends to crowd out the guidance.
+- **Describe content, not layout.** Human assist decides how to present replies and steps. Prescribing a reply format or template tends to crowd out the guidance.
 - **Write for the languages in scope.** Resolution steps support English, Arabic, and Spanish. Suggested replies support English only. Test every language you plan to use.
 
 ### Test and improve
@@ -152,9 +152,10 @@ How well Human Assist performs depends mostly on how its AI agent is designed: t
 | A suggested reply contains instructions meant for the representative. | Representative guidance is mixed with customer-facing wording. | AI agent instructions |
 | A reply states a price or policy that isn't in your knowledge. | No knowledge covers the question, or general knowledge is allowed. | Knowledge sources and AI agent settings |
 | A tool runs with the wrong values. | Tool inputs are generic or poorly described. | Tool and flow input descriptions |
+| An expected tool isn't offered. | The instructions tell the AI agent to wait for representative approval. Human assist already asks the representative to approve every tool run, so this instruction isn't needed. | AI agent instructions |
 | The wrong process is suggested. | Child agent descriptions overlap. | Child agent descriptions |
 | Steps are long, vague, or hard to follow. | The instructions contain compound or generic steps. | Process steps in the AI agent instructions |
-| Nothing appears at the start of a conversation. | This behavior is expected. Suggestions start after the customer's third message. | No action needed |
+| Nothing appears at the start of a conversation. | Suggestions start after the customer's third message. | No action needed |
 | Nothing appears on voice. | Transcription is turned off, or the voice channel provider isn't enabled in the experience profile. | Experience profile and voice settings |
 
 ## Known limitations

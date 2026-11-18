@@ -50,7 +50,7 @@ Coaching and development includes the following components:
 
 ## AI-generated content
 
-Coaching and development uses generative AI to create coaching tips, coaching insights, scorecard overviews and insights, training recommendations, and training content.
+Coaching and development uses generative AI to create coaching tips, coaching insights, scorecard overviews and insights, and training content.
 
 > [!IMPORTANT]
 > AI-generated content might be incorrect. Review AI-generated content for accuracy and appropriateness before you use or publish it. Scores can reflect interactions in which multiple people participated and might not be directly attributable to one representative. Changes displayed in the impact view are observed and don't prove that coaching or training caused the change.
@@ -60,7 +60,7 @@ Human review and control are built into the experience:
 - Representatives decide whether to apply real-time coaching tips and can rate them as **Helpful** or **Not helpful**.
 - Supervisors can modify default coaching instructions before publishing them.
 - Scorecards can require supervisor review before AI-generated insights are shared.
-- Supervisors review, edit, and test generated training before publishing it.
+- Supervisors review and edit generated training before publishing it.
 
 ## Related information
 

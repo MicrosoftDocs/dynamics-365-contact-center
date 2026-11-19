@@ -6,7 +6,7 @@ ms.author: mgandham
 ms.reviewer: mgandham
 ms.topic: how-to 
 ms.collection: bap-ai-copilot
-ms.date: 09/10/2026
+ms.date: 11/17/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
@@ -20,6 +20,7 @@ Configure the Copilot help pane so customer service representatives (service rep
 ## Prerequisites
 
 - You have the System Administrator role.
+- To use your organization's knowledge base as a knowledge source, Dataverse search must be turned on for your environment. Learn more in [Configure Dataverse search for your environment](/power-platform/admin/configure-relevance-search-organization).
 - If you aren't in the North America region and you want to use the web search powered by Bing feature, then you must enable data movement across regions and Bing search in Power Platform admin center. Learn more in [Enable data movement across regions](/power-platform/admin/geographical-availability-copilot).
 
    :::image type="content" source="../media/ppac-gen-ai-features.png" alt-text="Power Platform Admin center Bing chat.":::
@@ -170,6 +171,7 @@ Select the **Include a knowledge base or another type of knowledge source** chec
 > [!Note]
 > - Copilot uses the content attribute only in the knowledge article table to generate responses for the **Ask a question**, **Write an email**, and **Draft a response** features. You can't customize this behavior.
 > - Copilot uses knowledge articles tagged with the same language as the user interface to generate responses.
+> - Ensure Dataverse search is turned on for your environment before you use your organization's knowledge base as a knowledge source. Learn more in [Configure Dataverse search for your environment](/power-platform/admin/configure-relevance-search-organization).
 > - Make sure you have [knowledge management](/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search#setup-overview) configured in your environment and your knowledge article parameters are as follows:
 >    - It was updated to the latest version.
 >    - The state is set to **Published**.

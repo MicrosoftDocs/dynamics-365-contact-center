@@ -165,7 +165,7 @@ To manage an existing bookmark, perform the following steps as required:
 
 ## Language support
 
-Learn more about the languages supported for real-time streaming analytics in [Explore feature availability by language](https://releaseplans.microsoft.com/en-US/availability-reports/?report=featurelangreport).
+Learn more about the supported languages in [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability).
 
 The dashboard language is determined in the following priority order:
 

@@ -236,30 +236,22 @@
             href: proactive-engagement-outcomes.md
           - name: Best practices for proactive engagement
             href: proactive-engagement-best-practices.md
-      - name: Biometric authentication and fraud detection (preview)
+      - name: Biometric authentication and fraud detection
         items:
         - name: Overview of Biometric authentication and fraud detection
           href: biometric-authentication-fraud-detection-overview.md
-        - name: Voice biometrics basics
-          href: biometric-authentication-basics.md
-        - name: Identification and authentication for voice biometrics
-          href: identification-biometric-authentication.md
-        - name: Compare authentication methods for the voice channel
-          href: compare-authentication-methods-voice-channel.md
-        - name: Set up Biometric authentication and fraud detection
+        - name: Biometric authentication
           items:
-          - name: Configure authentication profiles
-            href: configure-authentication-profiles.md
-          - name: Enable on a workstream
-            href: enable-biometric-authentication-fraud-detection-workstream.md
-          - name: Capture customer consent
-            href: capture-consent-for-voice-enrollment.md
-        - name: Manage voice enrollment, authentication, and unenrollment
-          href: manage-voice-enrollment-authentication.md
-        - name: Manage customer consent and data
-          href: manage-customer-consent-data.md
-        - name: Monitor and optimize system performance
-          href: monitor-optimize-system-performance.md  
+          - name: Biometric authentication basics
+            href: biometric-authentication-basics.md
+          - name: Identification for biometric authentication
+            href: identification-biometric-authentication.md
+          - name: Manage voice enrollment, authentication, and unenrollment
+            href: manage-voice-enrollment-authentication.md
+          - name: Manage customer consent and data
+            href: manage-customer-consent-data.md
+          - name: Monitor and optimize system performance
+            href: monitor-optimize-system-performance.md
         - name: Fraud detection
           items:
           - name: Overview of fraud detection
@@ -269,7 +261,15 @@
           - name: Manage fraudster watchlists
             href: manage-fraudster-watchlists.md
           - name: Manage fraudster voiceprints
-            href: manage-fraudster-voiceprints.md            
+            href: manage-fraudster-voiceprints.md        
+        - name: Set up and configure
+          items:
+          - name: Configure authentication profiles
+            href: configure-authentication-profiles.md
+          - name: Enable for a workstream
+            href: enable-biometric-authentication-fraud-detection-workstream.md
+          - name: Capture customer consent
+            href: capture-consent-for-voice-enrollment.md            
       - name: Voice
         items:
         - name: Introduction to the voice channel
@@ -770,6 +770,8 @@
           href: /dynamics365/customer-service/implement/faq-responsible-ai-copilot?context=/dynamics365/contact-center/context/administer-context
         - name: Responsible AI FAQs for NLUs in AI agents
           href: ../implement/natural-language-ai-faq.md?context=/dynamics365/contact-center/context/administer-context
+        - name: Application card for biometric authentication and fraud detection
+          href: ../implement/application-card-biometric-authentication-fraud-detection.md?context=/dynamics365/contact-center/context/administer-context
         - name: Transparency note
           items:
           - name: Real-time voice agents

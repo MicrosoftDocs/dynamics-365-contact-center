@@ -1,11 +1,11 @@
 ---
-title: Manage fraudster voiceprints (preview)
+title: Manage fraudster voiceprints
 description: Learn how to view, filter, move, and delete fraudster voiceprints in the biometric authentication and fraud detection app in Dynamics 365 Contact Center.
 author: timsavage
 ms.author: timsavage
 ms.reviewer: puneetsingh
 ms.topic: how-to
-ms.date: 11/09/2026
+ms.date: 11/20/2026
 ms.custom: 
     - bap-template
     - ai-gen-docs-bap
@@ -15,17 +15,13 @@ ai-usage: ai-assisted
 #customer intent: As a fraud analyst or contact center administrator, I want to manage the fraudster voiceprints in my inventory so that I can keep my watchlists accurate and act on matching cases.
 ---
 
-# Manage fraudster voiceprints (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Manage fraudster voiceprints
 
 Fraud detection screens incoming callers against fraudsters' voices on your organization's watchlist on an incoming call. In the **Biometric authentication and fraud detection** app, the **Fraudster voiceprint** screen shows all the fraudster voiceprints in your inventory in one place, so you can review them, keep them organized across watchlists, and remove the ones you no longer need.
 
 This article shows you how to view your fraudster voiceprints, open the case that a voiceprint relates to, filter voiceprints by watchlist, move a voiceprint to a different watchlist, and delete a voiceprint.
 
 [!INCLUDE [fraud-detection](../includes/cc-fraud-detection-note.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -79,6 +75,7 @@ Delete a voiceprint stored within your Dataverse environment when you no longer 
 > Deleting a voiceprint stored within your Dataverse environment is a permanent action and can't be undone.
 
 ## Related information
+
 * [Fraud detection overview (preview)](fraud-detection-overview.md)
 * [Review fraud detection cases (preview)](fraud-detection-review-cases.md)
 * [Manage fraudster watchlists (preview)](manage-fraudster-watchlists.md)

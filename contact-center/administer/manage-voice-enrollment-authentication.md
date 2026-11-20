@@ -1,11 +1,11 @@
 ---
-title: Manage voice enrollment and authentication (preview)
+title: Manage voice enrollment and authentication
 description: Learn how biometric authentication and fraud detection enrolls customer voiceprints and authenticates callers in Dynamics 365 Contact Center.
 author: timsavage
 ms.author: timsavage
 ms.reviewer: puneetsingh
 ms.topic: how-to
-ms.date: 11/09/2026
+ms.date: 11/20/2026
 ms.custom: 
     - bap-template
     - ai-gen-docs-bap
@@ -15,13 +15,9 @@ ai-usage: ai-assisted
 #customer intent: As a contact center administrator, I want to configure how voice enrollment and authentication collect and use customer speech so that I can balance authentication accuracy against customer experience.
 ---
 
-# Manage voice enrollment and authentication (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Manage voice enrollment and authentication
 
 Biometric authentication uses voice biometrics to enroll your customer's voiceprint stored within your Dataverse environment and then verify your customer's identity on later calls. This article explains how enrollment and authentication collect customer speech, how to tune the amount of speech required for your organization's risk tolerance, and how the design of your bot and agent conversations affects results.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## How enrollment and authentication use speech
 
@@ -92,6 +88,7 @@ When your customer withdraws consent or you need to remove their voiceprint, you
 To manage customer consent and stored voice data, use your customer consent and data management screen. Learn more in [Capture customer consent for biometric authentication and fraud detection](capture-consent-for-voice-enrollment.md).
 
 ## Related information
+
 - [Capture customer consent for biometric authentication and fraud detection](capture-consent-for-voice-enrollment.md)
 - [Configure authentication profiles](configure-authentication-profiles.md)
 - [Voice biometrics basics](biometric-authentication-basics.md)

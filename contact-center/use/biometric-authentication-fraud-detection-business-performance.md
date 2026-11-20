@@ -1,11 +1,11 @@
 ---
-title: View biometric authentication and fraud detection business performance (preview)
+title: View business performance
 description: Learn how to use the Business Performance screen to monitor voice enrollment, authentication, and fraud detection metrics in Dynamics 365 Contact Center.
 author: timsavage
 ms.author: timsavage
 ms.reviewer: puneetsingh
 ms.topic: how-to
-ms.date: 11/09/2026
+ms.date: 11/20/2026
 ms.custom: 
     - bap-template
     - ai-gen-docs-bap
@@ -15,15 +15,11 @@ ai-usage: ai-assisted
 #customer intent: As a supervisor or analyst, I want to review voice enrollment, authentication, and fraud detection metrics so that I can measure how well the biometric authentication and fraud detection capabilities perform for my organization.
 ---
 
-# View biometric authentication and fraud detection business performance (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# View business performance
 
 The **Biometric authentication and fraud detection** app brings your voice enrollment, authentication, and fraud detection reporting together on a single **Business Performance** screen. As a supervisor or analyst, use this screen to see how many customers enrolled their voiceprints, how reliably callers authenticate, and how effectively your team responds to fraud alerts. The metrics help you spot trends, compare authentication profiles, and decide where to focus improvements.
 
 This article shows you how to open the **Business Performance** screen, read each of its three tabs, and filter the data to answer specific questions.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Open the Business Performance screen
 
@@ -87,7 +83,7 @@ Each tab supports the same filters, so you can narrow any report to a specific p
 > The filter selections persist across the three tabs when you switch tabs.
 
 ## Related information
-- [Monitor and optimize system performance (preview)](../administer/monitor-optimize-system-performance.md)
+- [Monitor and optimize system performance](../administer/monitor-optimize-system-performance.md)
 - [Fraud detection overview (preview)](../administer/fraud-detection-overview.md)
 - [Authenticate customers during a call (preview)](authenticate-customers-during-call.md)
 - [Configure authentication profiles (preview)](../administer/configure-authentication-profiles.md)

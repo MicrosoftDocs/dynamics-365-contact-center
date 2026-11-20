@@ -1,11 +1,11 @@
 ---
-title: Manage fraudster watchlists (preview)
+title: Manage fraudster watchlists
 description: Learn how to create, edit, and delete fraudster watchlists in the biometric authentication and fraud detection app for Dynamics 365 Contact Center.
 author: timsavage
 ms.author: timsavage
 ms.reviewer: puneetsingh
 ms.topic: how-to
-ms.date: 11/09/2026
+ms.date: 11/20/2026
 ms.custom: 
     - bap-template
     - ai-gen-docs-bap
@@ -14,17 +14,13 @@ ai-usage: ai-assisted
 #customer intent: As a fraud analyst, I want to manage fraudster watchlists so that I can group fraudster voiceprints for monitoring and matching.
 ---
 
-# Manage fraudster watchlists (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Manage fraudster watchlists
 
 A *fraudster watchlist* is a list of fraudster voiceprints stored within your Dataverse environment that Dynamics 365 Contact Center uses for monitoring and matching. When an incoming call matches a voiceprint on your watchlist, the service can generate alerts for customer service representatives and fraud analysts. As a fraud analyst, you manage your watchlists to organize voiceprints and control which groups are used to screen calls.
 
 This article shows you how to create, edit, and delete fraudster watchlists in the **Biometric authentication and fraud detection** app.
 
 [!INCLUDE [fraud-detection](../includes/cc-fraud-detection-note.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

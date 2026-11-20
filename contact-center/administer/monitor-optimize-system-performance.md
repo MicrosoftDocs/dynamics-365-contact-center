@@ -1,5 +1,5 @@
 ---
-title: Monitor and optimize system performance for biometric authentication and fraud detection (preview)
+title: Monitor and optimize system performance
 description: Use the System optimization screen to monitor voice-biometric decisioning performance and tune authentication, playback, and synthetic-speech thresholds in Dynamics 365 Contact Center.
 author: timsavage
 ms.author: timsavage
@@ -15,13 +15,9 @@ ai-usage: ai-assisted
 #customer intent: As a contact center administrator, I want to monitor voice-biometric decisioning performance and tune thresholds so that I can balance security and customer experience for my organization.
 ---
 
-# Monitor and optimize system performance (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Monitor and optimize system performance
 
 The **System optimization** screen in the **Biometric authentication and fraud detection** app helps administrators, compliance officers, and risk managers understand how individual factors and thresholds affect voice-biometric decisioning performance. Use it to see how secure your current configuration is and to predict the effect of a threshold change before you apply it.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

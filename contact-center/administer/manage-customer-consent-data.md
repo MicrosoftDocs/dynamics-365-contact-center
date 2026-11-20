@@ -1,11 +1,11 @@
 ---
-title: Manage customer consent and voice-authentication data (preview)
+title: Manage customer consent and voice-authentication data
 description: Look up a customer by customer ID and manage their consent status, voiceprint lock status, and voice-authentication data in the biometric authentication and fraud detection app.
 author: timsavage
 ms.author: timsavage
 ms.reviewer: puneetsingh
 ms.topic: how-to
-ms.date: 11/09/2026
+ms.date: 11/20/2026
 ms.custom: 
     - bap-template
     - ai-gen-docs-bap
@@ -14,15 +14,11 @@ ai-usage: ai-assisted
 ---
 
 
-# Manage customer consent and voice-authentication data (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Manage customer consent and voice-authentication data
 
 As a supervisor, use the customer consent screen in the **Biometric authentication and fraud detection** app to look up your customer's voice-authentication data and manage it. You can review your customer's consent status and enrollment details, change their consent, lock or unlock their voiceprint stored within your Dataverse environment, and delete their voice-authentication data when needed.
 
 You search for a customer by using the **customer ID** as the key, so have your customer ID ready before you start. Use this article when you need to respond to your customer's consent choice, service a data request, or remove voice-authentication data that's no longer needed.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -112,5 +108,6 @@ For the exact scope of each delete option, go to [Operations and their impact on
 After deletion, the removed data no longer appears in the customer's record. If you deleted all customer data, searching for that customer ID returns no results.
 
 ## Related information
+
 - [Capture customer consent in the Biometric authentication and fraud detection app](capture-consent-for-voice-enrollment.md)
 - [Manage voice enrollment and authentication](manage-voice-enrollment-authentication.md)

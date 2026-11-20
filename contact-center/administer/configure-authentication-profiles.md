@@ -1,11 +1,11 @@
 ---
-title: Configure authentication profiles (preview)
+title: Configure authentication profiles
 description: Configure voice enrollment, authentication, and fraud detection settings in authentication profiles for Dynamics 365 Contact Center.
 author: timsavage
 ms.author: timsavage
 ms.reviewer: puneetsingh
 ms.topic: how-to
-ms.date: 11/09/2026
+ms.date: 11/20/2026
 ms.custom: 
     - bap-template
     - ai-gen-docs-bap
@@ -14,17 +14,13 @@ ai-usage: ai-assisted
 #customer intent: As a contact center administrator, I want to configure authentication profiles so that I can tailor voice enrollment, authentication, and fraud detection to different customer requirements.
 ---
 
-# Configure authentication profiles (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Configure authentication profiles
 
 An *authentication profile* is a collection of settings that controls how biometric authentication and fraud detection enrolls, authenticates, and screens callers in the voice channel. Because you configure each profile independently, you can tailor profiles to different customer requirements. For example, use a higher-security profile for high-value transactions and a lower-friction profile for routine calls.
 
 [!INCLUDE [bafd-note-small](../includes/cc-bafd-note-small.md)]
 
 This article shows you how to open the list of authentication profiles, review the settings in a profile, and tune the toggles and thresholds that control voice enrollment, authentication, and fraud detection. It's intended for administrators who manage voice authentication for their contact center.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -72,6 +68,6 @@ Longer settings improve authentication, playback detection, and synthetic-speech
 > Biometric authentication uses the profile's authentication speech requirement at the moment of the authentication attempt. Existing voiceprints remain usable even if you change the profile's speech requirements level after your customer enrolls.
 
 ## Related information
-- [Biometric authentication and fraud detection overview (preview)](biometric-authentication-fraud-detection-overview.md)
-- [Enable the biometric authentication and fraud detection workstream (preview)](enable-biometric-authentication-fraud-detection-workstream.md)
+- [Biometric authentication and fraud detection overview](biometric-authentication-fraud-detection-overview.md)
+- [Enable for a workstream](enable-biometric-authentication-fraud-detection-workstream.md)
 - [Manage voice enrollment and authentication (preview)](manage-voice-enrollment-authentication.md)

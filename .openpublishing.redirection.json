@@ -188,6 +188,11 @@
       "source_path": "contact-center/administer/knowledge-copilot.md",
       "redirect_url": "/dynamics365/customer-service/administer/extend-copilot-with-copilot-studio",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "contact-center/administer/compare-authentication-methods-voice-channel.md",
+      "redirect_url": "/contact-center/administer/biometric-authentication-fraud-detection-overview",
+      "redirect_document_id": "false"
     }
 
   ]

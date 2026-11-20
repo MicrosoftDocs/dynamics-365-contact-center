@@ -1,11 +1,11 @@
 ---
-title: Authenticate customers during a call (preview)
+title: Authenticate customers during a call
 description: Learn how to accept calls, register and enroll customers for voice authentication, and respond to authentication and fraud results in Dynamics 365 Contact Center.
 author: timsavage
 ms.author: timsavage
 ms.reviewer: puneetsingh
 ms.topic: how-to
-ms.date: 11/09/2026
+ms.date: 11/20/2026
 ms.custom: 
     - bap-template
     - ai-gen-docs-bap
@@ -15,20 +15,16 @@ ai-usage: ai-assisted
 #customer intent: As a customer service representative, I want to enroll and verify callers by voice during a call so that I can confirm their identity without asking security questions.
 ---
 
-# Authenticate customers during a call (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Authenticate customers during a call
 
 As a customer service representative, you can confirm a caller's identity by voice while you talk to them. Biometric authentication listens to your customer's voice during the conversation, compares it to the voiceprint that your customer enrolled earlier, which is stored within your Dataverse environment, and shows you whether the caller is authenticated. If a caller's voice matches a fraudster on your organization's watchlist and real-time fraudster alerting is enabled, you also see a fraud alert so that you can follow your organization's escalation process.
 
 This article shows you how to accept an incoming call, register and enroll a new customer for voice authentication, and read the authentication and fraud results on later calls. You do this work from the Copilot Service workspace.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 ## Prerequisites
 
 - Permissions required to access the Copilot Service workspace as a customer service representative.
-- The voice workstream behavior has biometric authentication enabled. Learn more in [Enable biometric authentication and fraud detection on a workstream](../administer/enable-biometric-authentication-fraud-detection-workstream.md).
+- The voice workstream behavior has biometric authentication enabled. Learn more in [Enable for a workstream](../administer/enable-biometric-authentication-fraud-detection-workstream.md).
 - Your queue is configured to route inbound calls to you.
 
 ## Accept an incoming call
@@ -75,4 +71,4 @@ If the caller's voice matches a fraudster on your organization's watchlist, a su
 
 - [Use agent dashboard and call controls in the voice channel](voice-channel-agent-experience.md)
 - [Biometric authentication and fraud detection overview](../administer/biometric-authentication-fraud-detection-overview.md)
-- [View biometric authentication and fraud detection business performance](biometric-authentication-fraud-detection-business-performance.md)
+- [View business performance](biometric-authentication-fraud-detection-business-performance.md)

@@ -1,11 +1,11 @@
 ---
-title: Identification for biometric authentication (preview)
+title: Identification for biometric authentication
 description: Learn how identification differs from authentication in the voice channel and how to choose a robust, unique customer identifier for voice biometrics.
 author: timsavage
 ms.author: timsavage
 ms.reviewer: puneetsingh
 ms.topic: concept-article
-ms.date: 11/09/2026
+ms.date: 11/20/2026
 ms.custom: 
     - bap-template
     - ai-gen-docs-bap
@@ -14,13 +14,9 @@ ai-usage: ai-assisted
 #customer intent: As a contact center administrator or architect, I want to understand how identification differs from authentication and how to choose a customer identifier so that I can plan a voice biometrics implementation.
 ---
 
-# Identification for biometric authentication (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Identification for biometric authentication
 
 This article explains how identification and authentication play distinct roles in a voice interaction and how to select your customer identifier that biometric authentication can rely on for consent, voiceprint creation, and authentication. It's intended for administrators and architects who are planning a biometric authentication implementation and need to make these design decisions before deployment.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Identification compared to authentication
 
@@ -48,6 +44,7 @@ Avoid using a telephone number, caller ID, or automatic number identification (A
 The platform doesn't create end-user identifiers, but it provides tools and integration patterns that automatically render the identifier to the biometric authentication service in real time.
 
 ## Related information
+
 - [Biometric authentication and fraud detection overview](biometric-authentication-fraud-detection-overview.md)
 - [Voice biometrics basics](biometric-authentication-basics.md)
 - [Capture customer consent for voice enrollment](capture-consent-for-voice-enrollment.md)

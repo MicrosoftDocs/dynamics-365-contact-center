@@ -1,11 +1,11 @@
 ---
-title: Enable biometric authentication and fraud detection on a workstream (preview)
+title: Enable the behavior for a workstream
 description: Turn on the biometric authentication and fraud detection behavior for a workstream so the fraud and authentication flow runs on incoming calls in Dynamics 365 Contact Center.
 author: timsavage
 ms.author: timsavage
 ms.reviewer: puneetsingh
 ms.topic: how-to
-ms.date: 11/09/2026
+ms.date: 11/20/2026
 ms.custom: 
     - bap-template
     - ai-gen-docs-bap
@@ -15,15 +15,11 @@ ai-usage: ai-assisted
 #customer intent: As a contact center administrator, I want to enable biometric authentication and fraud detection on a workstream so that the fraud and authentication flow runs on every incoming call for my organization.
 ---
 
-# Enable biometric authentication and fraud detection on a workstream (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Enable the behavior for a workstream
 
 Enable the **Biometric authentication and fraud detection** behavior on a workstream to control how incoming calls to the workstream are handled. When you turn on this behavior and select an authentication profile, every incoming call on the workstream's phone number goes through the configured biometric authentication and fraud detection checks and the outcome is displayed to the contact center representative.
 
 [!INCLUDE [bafd-note-small](../includes/cc-bafd-note-small.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

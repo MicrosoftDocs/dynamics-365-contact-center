@@ -1,11 +1,11 @@
 ---
-title: Capture customer consent for voice enrollment (preview)
+title: Capture customer consent for voice enrollment
 description: Capture voice-biometric consent in biometric authentication and fraud detection for human-to-human conversations before a voiceprint is created.
 author: timsavage
 ms.author: timsavage
 ms.reviewer: puneetsingh
 ms.topic: how-to
-ms.date: 11/09/2026
+ms.date: 11/20/2026
 ms.custom: 
     - bap-template
     - ai-gen-docs-bap
@@ -14,17 +14,13 @@ ai-usage: ai-assisted
 #customer intent: As a contact center administrator, I want to capture customer consent before a voiceprint is created so that voice enrollment complies with voice-biometric regulations.
 ---
 
-# Capture customer consent for voice enrollment (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Capture customer consent for voice enrollment
 
 Voice-biometric regulations in many jurisdictions require explicit customer consent before a voiceprint is created and stored within your Dataverse environment. Biometric authentication captures this consent during enrollment, and enrollment proceeds only after your customer grants consent. You must obtain legally sufficient consent from your customer. 
 
 The exact consent experience can be customized to match your organization's requirements. This article shows you how biometric authentication captures consent in a human-to-human conversation with your customer service representative (service representative or representative). 
 
 Use this article to understand the consent flow in each channel and to help your representatives and voice agent respond correctly.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

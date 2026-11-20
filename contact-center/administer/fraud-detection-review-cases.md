@@ -1,11 +1,11 @@
 ---
-title: Review fraud cases (preview)
+title: Review fraud cases
 description: Learn how to review, assign, and flag fraud cases and create fraudster voiceprints in the biometric authentication and fraud detection app in Dynamics 365 Contact Center.
 author: timsavage
 ms.author: timsavage
 ms.reviewer: puneetsingh
 ms.topic: how-to
-ms.date: 11/09/2026
+ms.date: 11/20/2026
 ms.custom: 
     - bap-template
     - ai-gen-docs-bap
@@ -15,17 +15,13 @@ ai-usage: ai-assisted
 #customer intent: As a fraud analyst, I want to review incoming calls as cases and flag fraudsters so that future calls from the same voice trigger a suspected-fraud alert for representatives.
 ---
 
-# Review fraud cases (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Review fraud cases
 
 Fraud detection records each incoming call as a case in the **Biometric authentication and fraud detection** app. As a fraud analyst, you review these cases to investigate suspicious calls, assign work to the right analyst, and flag callers as fraudsters. When you flag a case as fraud, you help protect your organization from future calls by the same fraudster.
 
 This article shows you how to open a case, review its details, assign an analyst, flag a case as fraud or not fraud, and create a fraudster voiceprint from a case. After you flag a caller as a fraudster, the next call from that voice shows a suspected-fraud banner to the representative after the caller is authenticated.
 
 [!INCLUDE [fraud-detection](../includes/cc-fraud-detection-note.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -75,6 +71,7 @@ After you create the voiceprint, the caller is treated as a fraudster. After the
 > To create a fraudster voiceprint, use an audio sample that contains at least 12 seconds of net speech.
 
 ## Related information
+
 - [Fraud detection overview](fraud-detection-overview.md)
 - [Manage fraudster voiceprints](manage-fraudster-voiceprints.md)
 - [Manage fraudster watchlists](manage-fraudster-watchlists.md)

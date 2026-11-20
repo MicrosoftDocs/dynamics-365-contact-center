@@ -1,11 +1,11 @@
 ---
-title: Biometric authentication and fraud detection overview (preview)
+title: Biometric authentication and fraud detection overview
 description: Learn how biometric authentication and fraud detection uses voice biometrics, synthetic-speech detection, and anti-spoofing to verify customer identity in the voice channel.
 author: timsavage
 ms.author: timsavage
 ms.reviewer: puneetsingh
 ms.topic: overview
-ms.date: 11/09/2026
+ms.date: 11/20/2026
 ms.custom: 
     - bap-template
     - ai-gen-docs-bap
@@ -14,15 +14,13 @@ ai-usage: ai-assisted
 #customer intent: As a contact center administrator, I want to understand what biometric authentication and fraud detection is and how it verifies caller identity so that I can decide whether to adopt it in the voice channel.
 ---
 
-# Biometric authentication and fraud detection overview (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Biometric authentication and fraud detection overview
 
 [!INCLUDE [bafd-note](../includes/cc-bafd-note.md)]
 
 This article explains what biometric authentication and fraud detection is, why organizations use it, how it verifies identity, detects fraud, and the ways it fits into a voice interaction. It's intended for administrators and decision-makers who are evaluating biometric authentication and fraud detection for Dynamics 365 Contact Center.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+Learn about the capabilities, intended uses, limitations, and responsible use of biometric authentication and fraud detection in the [Application card for biometric authentication and fraud detection](../implement/application-card-biometric-authentication-fraud-detection.md).
 
 ## Why use biometric authentication 
 

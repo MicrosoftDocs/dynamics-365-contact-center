@@ -1,11 +1,11 @@
 ---
-title: Fraud detection overview (preview)
+title: Fraud detection overview
 description: Learn how fraud detection uses voice biometrics to detect known fraudsters on incoming calls in Dynamics 365 Contact Center.
 author: timsavage
 ms.author: timsavage
 ms.reviewer: puneetsingh
 ms.topic: overview
-ms.date: 11/09/2026
+ms.date: 11/20/2026
 ms.custom: 
     - bap-template
     - ai-gen-docs-bap
@@ -15,17 +15,13 @@ ai-usage: ai-assisted
 #customer intent: As a fraud analyst or contact center administrator, I want to understand how fraud detection identifies known fraudsters so that I can protect my organization and its customers from fraudulent calls.
 ---
 
-# Fraud detection overview (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Fraud detection overview
 
 [!INCLUDE [bafd-note-small](../includes/cc-bafd-note-small.md)]
 
 Fraud detection is a voice-biometric capability that compares the voice of each caller against your organization's watchlist of fraudster voiceprints stored within your Dataverse environment and raises an alert when it finds a potential match, so you can respond before a fraudster completes a fraudulent transaction.
 
 [!INCLUDE [fraud-detection](../includes/cc-fraud-detection-note.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## How fraud detection works
 
@@ -61,6 +57,7 @@ Each case carries a **Fraud severity** and a **Fraudster score**:
 Fraud detection supports separation of duties so that the work of investigating fraud is divided among distinct roles. It introduces a **Fraud analyst** role, which investigates calls and manages voiceprints, and a **Fraud supervisor** role, which oversees the fraud analysts' work, deletes fraudster voiceprints, and curates watchlists to improve the overall fraud detection performance.
 
 ## Related information
+
 - [Review fraud cases](fraud-detection-review-cases.md)
 - [Manage fraudster watchlists](manage-fraudster-watchlists.md)
 - [Manage fraudster voiceprints](manage-fraudster-voiceprints.md)

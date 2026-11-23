@@ -68,6 +68,9 @@ As you progress, the checklist automatically tracks steps as **Completed**, **Sk
 
 Review the suggested reply and its knowledge source links. Insert the reply, edit it, or ignore it. The customer doesn't receive the reply unless you choose to send it.
 
+> [!NOTE]
+> Knowledge source links support public websites only. Links to static documents aren't surfaced. However, if the document includes a public link within it, the URL of the link is surfaced.
+
 ### Approve tool runs
 
 When the AI agent requests an action, such as a refund or an account update, approve and trigger the tool run. The AI agent doesn't run tools on its own.

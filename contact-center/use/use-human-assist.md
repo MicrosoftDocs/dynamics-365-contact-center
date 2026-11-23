@@ -40,7 +40,7 @@ Before you use human assist, your administrator must complete the following setu
 
 ## Supported channels, languages, and workspaces
 
-Human Assist is available in Copilot Service workspace. The preview supports live chat, voice, SMS, Microsoft Teams, Direct Line, Messaging API, and WhatsApp.
+Human Assist is available in Copilot Service workspace and Contact Center Workspace. The preview supports live chat, voice, SMS, Microsoft Teams, Direct Line, Messaging API, and WhatsApp.
 
 For voice conversations, Human Assist uses the real-time call transcript. It doesn't process audio directly, so it doesn't work when transcription is turned off. Email isn't supported.
 
@@ -53,7 +53,7 @@ Conversations in other languages aren't blocked, but the preview doesn't support
 
 ## Use resolution steps and suggested replies
 
-Open a conversation for a supported channel in Copilot Service workspace. Human Assist provides guidance alongside the conversation after the customer sends at least three messages.
+Open a conversation for a supported channel in Copilot Service workspace or Contact Center workspace. Human Assist provides guidance alongside the conversation after the customer sends at least three messages.
 
 ### Follow resolution steps
 

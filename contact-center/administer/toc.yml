@@ -44,6 +44,8 @@
           href: /dynamics365/customer-service/administer/create-workstreams?context=/dynamics365/contact-center/context/administer-context
         - name: Create and manage queues for unified routing
           href: /dynamics365/customer-service/administer/queues-omnichannel?context=/dynamics365/contact-center/context/administer-context
+        - name: Manage queue profiles
+          href: manage-queue-profiles.md
         - name: Configure work classification
           items:
           - name: Configure work classification rules

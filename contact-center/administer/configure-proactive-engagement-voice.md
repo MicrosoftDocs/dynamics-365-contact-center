@@ -77,7 +77,7 @@ The **Create new proactive engagement** wizard guides you through the steps outl
 - Summary
 
 > [!NOTE]
-> Delivery windows and expiration dates can't extend more than 30 days into the future. If a request or uploaded record doesn't specify a delivery window, the system uses a 24-hour window that starts immediately, or at the requested earliest schedule date when that date is in the future.
+> You can't extend delivery windows and expiration dates beyond 30 days. If a request or uploaded record doesn't specify a delivery window, the system uses a 24-hour window that starts immediately, or at the requested earliest schedule date when the date is in the future.
 
 ## Audience
 
@@ -114,7 +114,7 @@ The dial modes determine how the system places outbound calls to customers. Lear
    
      Priority also determines the processing order when multiple proactive engagements compete for the same representatives (same queue and skill set). Higher-priority engagements are processed first. For example, if a critical and a normal proactive engagement both target the same queue, the system processes the critical engagement first and handles the normal engagement only when no higher-priority requests are pending.
      
-     The system processes proactive engagements with same priority in a queue in a round robin manner to ensure fair processing.
+     The system processes proactive engagements with same priority in a queue using round robin to ensure fair processing.
 
 1. In **Call order**, select one of the following options to define how the system processes requests within each proactive engagement:
    - **Earliest Scheduled Date** - Processes records that are close to end of calling window first.
@@ -125,8 +125,8 @@ The dial modes determine how the system places outbound calls to customers. Lear
       When custom priority is used, if a runtime misconfiguration is detected - such as missing or invalid priority data - the system falls back to first in, first out processing of the misconfigured records.
 
 1. For Copilot dial mode, configure the **Call settings**:
-   - Select the **Max number of concurrent calls for Copilot Mode** that refers to the maximum number of calls the AI agent can make concurrently. The maximum number that you can specify is 500.
-   - Under **Operating hours**, select the checkbox if calls can be made outside of queue hours. This setting is available for Copilot dial mode only.
+   - Select the **Max number of concurrent calls for Copilot Mode** that refers to the maximum number of calls the AI agent can make concurrently. The maximum number that you can specify is 1000.
+   - **Operating hours**: Available for Copilot dial mode only. Select to allow calls outside of queue hours.
    - Select the action for how the call needs to be handled if the AI agent fails during the call.
       - **Stop making calls immediately**: No further calls are made.
       - **Continue making calls**:
@@ -138,7 +138,7 @@ The dial modes determine how the system places outbound calls to customers. Lear
        > [!NOTE]
        > Timer and delayed start are available on Teams Phone Extensibility only. If you're using Azure Communication Services, preview calls start automatically after the representative accepts the invite.
 
-   - **Skip CSR availability checks**: Select this option if you want preview calls to be added to the routing backlog irrespective of representative availability. By default, proactive engagement queues preview calls proportional to the number of available representatives, accounting for calls that are already in waiting. If selected, specify a **Maximum number of conversations in waiting** value. You can specify up to 50.
+   - **Skip CSR availability checks**: Select if you want preview calls to be added to the routing backlog irrespective of representative availability. By default, proactive engagement queues preview calls proportional to the number of available representatives, accounting for calls that are already in waiting. If selected, specify a **Maximum number of conversations in waiting** value. You can specify up to 50.
 
 1. For AI agent-led predictive dial mode, configure the **Call settings**:
    - Select the action for how the call needs to be handled if the AI agent fails during the call.
@@ -232,12 +232,15 @@ On the **Retry attempts** page, configure retry behavior for contacts you don't 
 1. Select **Next**.
 
 ## Frequency limits
+
 [!INCLUDE [proactive-frequency-limits](../includes/proactive/cc-proactive-frequency-limits.md)]
 
 ## Summary
 
 Review all settings on the **Summary** page, and select **Create**.
+
 ## File upload
+
 [!INCLUDE [proactive-file-upload](../includes/proactive/cc-proactive-file-upload.md)]
 
 Learn more about available outcomes and SIP-based result values in [Outcomes for proactive engagement](proactive-engagement-outcomes.md).
